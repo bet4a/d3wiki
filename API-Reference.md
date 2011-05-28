@@ -3,7 +3,7 @@
 ### Selections
 
 * [[d3.select|Selections#d3_select]] - select an element from the current document.
-* [[d3.selectAll|Selections#d3_selectAll]] - select elements from the current document.
+* [[d3.selectAll|Selections#d3_selectAll]] - select multiple elements from the current document.
 * [[d3.ns|Selections#d3_ns]] - access or extend known XML namespaces.
 * [[d3.event|Selections#d3_event]] - access the current user event for interaction.
 
