@@ -1,14 +1,19 @@
 ## Documentation
 
 * [[API Reference]]
-* [[Google Group|http://groups.google.com/group/d3-js]]
 
-### Tutorials
+## Tutorials
 
 * [[A Bar Chart, Part 1|http://mbostock.github.com/d3/tutorial/bar-1.html]]
 * [[A Bar Chart, Part 2|http://mbostock.github.com/d3/tutorial/bar-2.html]]
 * [[For Protovis Users|http://mbostock.github.com/d3/tutorial/protovis.html]]
 * [[Jan Willem Tulp's blog|http://www.janwillemtulp.com/category/d3/]]
+
+## Support
+
+* [[d3-js Google Group|http://groups.google.com/group/d3-js]]
+* [[@mbostock Twitter|http://twitter.com/mbostock]]
+* [[@mbostock GitHub|https://github.com/inbox/new/mbostock]]
 
 ## Examples
 
