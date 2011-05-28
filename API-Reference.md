@@ -1,4 +1,4 @@
-## Core
+## d3.core
 
 ### Selections
 
