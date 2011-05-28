@@ -1,4 +1,4 @@
-Everything in D3 is scoped under the `d3` namespace.
+Everything in D3 is scoped under the `d3` namespace. D3 is broken up into several modules so that you can pick and choose which elements you need. The default build of `d3.js` includes the *core*, *scale* and *svg* modules. However, you can edit the makefile to produce a custom build that suites your needs.
 
 ## d3 (core)
 
