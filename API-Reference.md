@@ -14,17 +14,17 @@
 
 ### Working with Arrays
 
-* d3.ascending
-* d3.descending
-* d3.min
-* d3.max
-* d3.keys
-* d3.values
-* d3.entries
-* d3.split
-* d3.merge
-* d3.range
-* d3.nest
+* [[d3.ascending|Arrays#d3_ascending]] - compare two values for sorting.
+* [[d3.descending|Arrays#d3_descending]] - compare two values for sorting.
+* [[d3.min|Arrays#d3_min]] - find the minimum value in an array.
+* [[d3.max|Arrays#d3_max]] - find the maximum value in an array.
+* [[d3.keys|Arrays#d3_keys]] - list the keys of an associative array.
+* [[d3.values|Arrays#d3_values]] - list the values of an associated array.
+* [[d3.entries|Arrays#d3_entries]] - list the key-value entries of an associative array.
+* [[d3.split|Arrays#d3_split]] - split an array into multiple arrays.
+* [[d3.merge|Arrays#d3_merge]] - merge multiple arrays into one array.
+* [[d3.range|Arrays#d3_range]] - generate a range of numeric values.
+* [[d3.nest|Arrays#d3_nest]] - group array elements hierarchically.
 
 ### Loading External Data
 
