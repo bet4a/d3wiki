@@ -1,6 +1,6 @@
 ## Documentation
 
-* [API Reference|API]
+* [[API Reference|API]]
 
 ## Examples
 
