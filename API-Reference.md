@@ -1,3 +1,5 @@
+Everything in D3 is scoped under the `d3` namespace.
+
 ## d3 (core)
 
 ### Selections
