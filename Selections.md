@@ -198,7 +198,7 @@ Sorts the elements in the current selection according to the specified comparato
 
 <a name="on" href="#on">#</a> selection.<b>on</b>(<i>type</i>, <i>listener</i>)
 
-Adds or removes an event *listener* to each element in the current selection, for the specified *type*. The *type* is a string event type name, such as "click", "mouseover", or "submit". If an event listener was already registered for the same type on the selected element, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "click.foo" and "click.bar".
+Adds or removes an event *listener* to each element in the current selection, for the specified *type*. The *type* is a string event type name, such as "click", "mouseover", or "submit". If an event listener was already registered for the same type on the selected element, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "click.foo" and "click.bar". The specified *listener* is invoked in the same manner as other operator functions, being passed the current datum `d` and index `i`, with the `this` context as the current DOM element. To access the current event, use the global [d3.event](#d3_event).
 
 <a name="transition" href="#transition">#</a> selection.<b>transition</b>()
 
@@ -259,6 +259,10 @@ Returns true if the current selection is empty; a selection is empty if it conta
 Returns the first non-null element in the current selection. If the selection is empty, returns null.
 
 ## Miscellany
+
+<a name="d3_event" href="#d3_event">#</a> d3.<b>event</b>
+
+Stores the current event, if any. This global is during an event listener callback registered with the [on](#on) operator. The current event is reset after the listener is notified in a finally block. This allows the listener function to have the same form as other operator functions, being passed the current datum `d` and index `i`.
 
 <a name="ns_prefix" href="#ns_prefix">#</a> d3.ns.<b>prefix</b>
 
