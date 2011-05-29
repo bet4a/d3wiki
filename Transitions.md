@@ -44,7 +44,7 @@ An interpolator is selected automatically based on the ending value. If the endi
 
 <a name="attrTween" href="#attrTween">#</a> transition.<b>attrTween</b>(<i>name</i>, <i>tween</i>)
 
-Transitions the value of the attribute with the specified *name* according to the specified *tween* function. The starting and ending value of the transition are determined by *tween*. The specified *tween* function is invoked when the transition starts on each element, being passed the current datum `d`, the current index `i` and the current attribute value `a`, with the `this` context as the current DOM element. The return value of *tween* is an **interpolator**: a function that maps a parametric value *t* in the domain [0,1] to a color, number or arbitrary value.
+Transitions the value of the attribute with the specified *name* according to the specified *tween* function. The starting and ending value of the transition are determined by *tween*. The specified *tween* function is invoked when the transition starts on each element, being passed the current datum `d`, the current index `i` and the current attribute value `a`, with the `this` context as the current DOM element. The return value of *tween* is an interpolator: a function that maps a parametric value *t* in the domain [0,1] to a color, number or arbitrary value.
 
 The attr operator is built on top of the attrTween operator. The tween function used by the attr operator depends on whether the end value is a function or a constant. If *value* is a function:
 
