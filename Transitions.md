@@ -10,9 +10,9 @@ D3 has many built-in interpolators to simplify the transitioning of arbitrary va
 
 Only one transition may be active on a given element at a given time. However, you may schedule multiple transitions on the same element; provided they are staggered in time, each transition will run in sequence. Furthermore, if a newer transition runs on a given element, it implicitly cancels any older transitions, including any that were scheduled but not yet run. This allows new transitions, such as those in response to a new user event, to supersede older transitions, even if those older transitions are staged or have staggered delays. Multi-stage transitions (transitions that are created during the "end" event of an earlier transition) are considered the same "age" as the original transition; internally this is implemented using monotonically-increasing unique IDs, which are inherited when multi-stage transitions are created.
 
-## Creating Transitions
+## Starting Transitions
 
-Transitions are typically created using the [[transition|Selections#transition]] operator on an existing selection. However, you can also start a transition using the top-level method. Transitions start automatically upon creation, based on the designated delay which defaults to zero; however, note that a zero-delay transition actually starts after a minimal (<10ms) delay, pending the first timer callback.
+Transitions are typically created using the [[transition|Selections#transition]] operator on an existing selection. Transitions start automatically upon creation, based on the designated delay which defaults to zero; however, note that a zero-delay transition actually starts after a minimal (<10ms) delay, pending the first timer callback.
 
 <a name="d3_transition" href="#d3_transition">#</a> d3.<b>transition</b>()
 
