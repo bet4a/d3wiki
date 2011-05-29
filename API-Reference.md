@@ -106,111 +106,106 @@ Also see the `csv` module.
 * [[hsl.darker|Colors#hsl_darker]] - decrease lightness by some exponential factor (gamma).
 * [[hsl.rgb|Colors#hsl_rgb]] - convert from HSL to RGB.
 
-## d3.behavior
+## d3.scale
 
-### [[Zoom|Behavior-Zoom]]
+### [[Quantitative|Scale-Quantitative]]
 
-* [[d3.behavior.zoom|Behavior-Zoom#zoom]]
-* [[zoom.on|Behavior-Zoom#on]]
+* [[d3.scale.linear|Scale-Quantitative#linear]]
+* [[linear.invert|Scale-Quantitative#linear_invert]]
+* [[linear.domain|Scale-Quantitative#linear_domain]]
+* [[linear.range|Scale-Quantitative#linear_range]]
+* [[linear.rangeRound|Scale-Quantitative#linear_rangeRound]]
+* [[linear.interpolate|Scale-Quantitative#linear_interpolate]]
+* [[linear.clamp|Scale-Quantitative#linear_clamp]]
+* [[linear.ticks|Scale-Quantitative#linear_ticks]]
+* [[linear.tickFormat|Scale-Quantitative#linear_tickFormat]]
+* [[d3.scale.sqrt|Scale-Quantitative#sqrt]]
+* [[d3.scale.pow|Scale-Quantitative#pow]]
+* [[pow.invert|Scale-Quantitative#pow_invert]]
+* [[pow.domain|Scale-Quantitative#pow_domain]]
+* [[pow.range|Scale-Quantitative#pow_range]]
+* [[pow.rangeRound|Scale-Quantitative#pow_rangeRound]]
+* [[pow.interpolate|Scale-Quantitative#pow_interpolate]]
+* [[pow.clamp|Scale-Quantitative#pow_clamp]]
+* [[pow.ticks|Scale-Quantitative#pow_ticks]]
+* [[pow.tickFormat|Scale-Quantitative#pow_tickFormat]]
+* [[pow.exponent|Scale-Quantitative#pow_exponent]]
+* [[d3.scale.log|Scale-Quantitative#log]]
+* [[log.invert|Scale-Quantitative#log_invert]]
+* [[log.domain|Scale-Quantitative#log_domain]]
+* [[log.range|Scale-Quantitative#log_range]]
+* [[log.rangeRound|Scale-Quantitative#log_rangeRound]]
+* [[log.interpolate|Scale-Quantitative#log_interpolate]]
+* [[log.clamp|Scale-Quantitative#log_clamp]]
+* [[log.ticks|Scale-Quantitative#log_ticks]]
+* [[log.tickFormat|Scale-Quantitative#log_tickFormat]]
 
-## d3.chart
+### [[Quantize|Scale-Quantize]]
 
-### [[Box|Chart-Box]]
+* [[d3.scale.quantize|Scale-Quantize#quantize]]
+* [[quantize.domain|Scale-Quantize#domain]]
+* [[quantize.range|Scale-Quantize#range]]
 
-* [[d3.chart.box|Chart-Box#box]]
-* [[box.width|Chart-Box#width]]
-* [[box.height|Chart-Box#height]]
-* [[box.tickFormat|Chart-Box#tickFormat]]
-* [[box.duration|Chart-Box#duration]]
-* [[box.domain|Chart-Box#domain]]
-* [[box.value|Chart-Box#value]]
-* [[box.whiskers|Chart-Box#whiskers]]
-* [[box.quartiles|Chart-Box#quartiles]]
+### [[Quantile|Scale-Quantile]]
 
-### [[Bullet|Chart-Bullet]]
+* [[d3.scale.quantile|Scale-Quantile#quantile]]
+* [[quantile.domain|Scale-Quantile#domain]]
+* [[quantile.range|Scale-Quantile#range]]
+* [[quantile.quantiles|Scale-Quantile#quantiles]]
 
-* [[d3.chart.bullet|Chart-Bullet#bullet]]
-* [[bullet.orient|Chart-Bullet#orient]]
-* [[bullet.ranges|Chart-Bullet#ranges]]
-* [[bullet.markers|Chart-Bullet#markers]]
-* [[bullet.measures|Chart-Bullet#measures]]
-* [[bullet.width|Chart-Bullet#width]]
-* [[bullet.height|Chart-Bullet#height]]
-* [[bullet.tickFormat|Chart-Bullet#tickFormat]]
-* [[bullet.duration|Chart-Bullet#duration]]
+### [[Ordinal|Scale-Ordinal]]
 
-### [[QQ|Chart-QQ]]
+* [[d3.scale.ordinal|Scale-Ordinal#ordinal]]
+* [[ordinal.domain|Scale-Ordinal#domain]]
+* [[ordinal.range|Scale-Ordinal#range]]
+* [[ordinal.rangePoints|Scale-Ordinal#rangePoints]]
+* [[ordinal.rangeBands|Scale-Ordinal#rangeBands]]
+* [[ordinal.rangeRoundBands|Scale-Ordinal#rangeRoundBands]]
+* [[ordinal.rangeBand|Scale-Ordinal#rangeBand]]
+* [[d3.scale.category10|Scale-Ordinal#category10]]
+* [[d3.scale.category20|Scale-Ordinal#category20]]
+* [[d3.scale.category20b|Scale-Ordinal#category20b]]
+* [[d3.scale.category20c|Scale-Ordinal#category20c]]
 
-* [[d3.chart.qq|Chart-QQ#qq]]
-* [[qq.width|Chart-QQ#width]]
-* [[qq.height|Chart-QQ#height]]
-* [[qq.duration|Chart-QQ#duration]]
-* [[qq.domain|Chart-QQ#domain]]
-* [[qq.count|Chart-QQ#count]]
-* [[qq.x|Chart-QQ#x]]
-* [[qq.y|Chart-QQ#y]]
-* [[qq.tickFormat|Chart-QQ#tickFormat]]
+## d3.svg
 
-## d3.csv
+### [[Events|SVG-Events]]
 
-### [[CSV]]
+* [[d3.svg.mouse|SVG-Events#mouse]]
+* [[d3.svg.touches|SVG-Events#touches]]
 
-* [[d3.csv|CSV#csv]]
-* [[d3.csv.parse|CSV#parse]]
-* [[d3.csv.parseRows|CSV#parseRows]]
-* [[d3.csv.format|CSV#format]]
+### [[Shapes|SVG-Shapes]]
 
-## d3.geo
-
-### [[Paths|Geo-Paths]]
-
-* [[d3.geo.path|Geo-Paths#path]]
-* [[path.projection|Geo-Paths#projection]]
-* [[path.area|Geo-Paths#area]]
-* [[path.centroid|Geo-Paths#centroid]]
-* [[path.pointRadius|Geo-Paths#pointRadius]]
-* [[d3.geo.bounds|Geo-Paths#bounds]]
-
-### [[Projections|Geo-Projections]]
-
-* [[d3.geo.mercator|Geo-Projections#mercator]]
-* [[mercator.scale|Geo-Projections#mercator_scale]]
-* [[mercator.translate|Geo-Projections#mercator_translate]]
-* [[d3.geo.albers|Geo-Projections#albers]]
-* [[albers.origin|Geo-Projections#albers_origin]]
-* [[albers.parallels|Geo-Projections#albers_parallels]]
-* [[albers.scale|Geo-Projections#albers_scale]]
-* [[albers.translate|Geo-Projections#albers_translate]]
-* [[d3.geo.albersUsa|Geo-Projections#albersUsa]]
-* [[albersUsa.scale|Geo-Projections#albersUsa_scale]]
-* [[albersUsa.translate|Geo-Projections#albersUsa_translate]]
-
-## d3.geom
-
-### [[Voronoi|Geom-Voronoi]]
-
-* [[d3.geom.voronoi|Geom-Voronoi#voronoi]]
-* [[d3.geom.delaunay|Geom-Voronoi#delaunay]]
-
-### [[Quadtree|Geom-Quadtree]]
-
-* [[d3.geom.quadtree|Geom-Quadtree#quadtree]]
-* [[quadtree.visit|Geom-Quadtree#visit]]
-
-### [[Polygon|Geom-Polygon]]
-
-* [[d3.geom.polygon|Geom-Polygon#polygon]]
-* [[polygon.area|Geom-Polygon#area]]
-* [[polygon.centroid|Geom-Polygon#centroid]]
-* [[polygon.clip|Geom-Polygon#clip]]
-
-### [[Hull|Geom-Hull]]
-
-* [[d3.geom.hull|Geom-Hull#hull]]
-
-### [[Contour|Geom-Contour]]
-
-* [[d3.geom.contour|Geom-Contour#contour]]
+* [[d3.svg.line|SVG-Shapes#line]]
+* [[line.x|SVG-Shapes#line_x]]
+* [[line.y|SVG-Shapes#line_y]]
+* [[line.interpolate|SVG-Shapes#line_interpolate]]
+* [[line.tension|SVG-Shapes#line_tension]]
+* [[d3.svg.diagonal|SVG-Shapes#diagonal]]
+* [[diagonal.source|SVG-Shapes#diagonal_source]]
+* [[diagonal.target|SVG-Shapes#diagonal_target]]
+* [[diagonal.projection|SVG-Shapes#diagonal_projection]]
+* [[d3.svg.chord|SVG-Shapes#chord]]
+* [[chord.radius|SVG-Shapes#chord_radius]]
+* [[chord.source|SVG-Shapes#chord_source]]
+* [[chord.target|SVG-Shapes#chord_target]]
+* [[chord.startAngle|SVG-Shapes#chord_startAngle]]
+* [[chord.endAngle|SVG-Shapes#chord_endAngle]]
+* [[d3.svg.area|SVG-Shapes#area]]
+* [[area.x|SVG-Shapes#area_x]]
+* [[area.y0|SVG-Shapes#area_y0]]
+* [[area.y1|SVG-Shapes#area_y1]]
+* [[area.interpolate|SVG-Shapes#area_interpolate]]
+* [[area.tension|SVG-Shapes#area_tension]]
+* [[d3.svg.arc|SVG-Shapes#arc]]
+* [[arc.innerRadius|SVG-Shapes#arc_innerRadius]]
+* [[arc.outerRadius|SVG-Shapes#arc_outerRadius]]
+* [[arc.startAngle|SVG-Shapes#arc_startAngle]]
+* [[arc.endAngle|SVG-Shapes#arc_endAngle]]
+* [[arc.centroid|SVG-Shapes#arc_centroid]]
+* [[d3.svg.symbol|SVG-Shapes#symbol]]
+* [[symbol.type|SVG-Shapes#symbol_type]]
+* [[symbol.size|SVG-Shapes#symbol_size]]
 
 ## d3.layout
 
@@ -320,106 +315,43 @@ Also see the `csv` module.
 * [[chord.chords|Layout-Chord#chords]]
 * [[chord.groups|Layout-Chord#groups]]
 
-## d3.scale
+## d3.chart
 
-### [[Quantitative|Scale-Quantitative]]
+### [[Box|Chart-Box]]
 
-* [[d3.scale.linear|Scale-Quantitative#linear]]
-* [[linear.invert|Scale-Quantitative#linear_invert]]
-* [[linear.domain|Scale-Quantitative#linear_domain]]
-* [[linear.range|Scale-Quantitative#linear_range]]
-* [[linear.rangeRound|Scale-Quantitative#linear_rangeRound]]
-* [[linear.interpolate|Scale-Quantitative#linear_interpolate]]
-* [[linear.clamp|Scale-Quantitative#linear_clamp]]
-* [[linear.ticks|Scale-Quantitative#linear_ticks]]
-* [[linear.tickFormat|Scale-Quantitative#linear_tickFormat]]
-* [[d3.scale.sqrt|Scale-Quantitative#sqrt]]
-* [[d3.scale.pow|Scale-Quantitative#pow]]
-* [[pow.invert|Scale-Quantitative#pow_invert]]
-* [[pow.domain|Scale-Quantitative#pow_domain]]
-* [[pow.range|Scale-Quantitative#pow_range]]
-* [[pow.rangeRound|Scale-Quantitative#pow_rangeRound]]
-* [[pow.interpolate|Scale-Quantitative#pow_interpolate]]
-* [[pow.clamp|Scale-Quantitative#pow_clamp]]
-* [[pow.ticks|Scale-Quantitative#pow_ticks]]
-* [[pow.tickFormat|Scale-Quantitative#pow_tickFormat]]
-* [[pow.exponent|Scale-Quantitative#pow_exponent]]
-* [[d3.scale.log|Scale-Quantitative#log]]
-* [[log.invert|Scale-Quantitative#log_invert]]
-* [[log.domain|Scale-Quantitative#log_domain]]
-* [[log.range|Scale-Quantitative#log_range]]
-* [[log.rangeRound|Scale-Quantitative#log_rangeRound]]
-* [[log.interpolate|Scale-Quantitative#log_interpolate]]
-* [[log.clamp|Scale-Quantitative#log_clamp]]
-* [[log.ticks|Scale-Quantitative#log_ticks]]
-* [[log.tickFormat|Scale-Quantitative#log_tickFormat]]
+* [[d3.chart.box|Chart-Box#box]]
+* [[box.width|Chart-Box#width]]
+* [[box.height|Chart-Box#height]]
+* [[box.tickFormat|Chart-Box#tickFormat]]
+* [[box.duration|Chart-Box#duration]]
+* [[box.domain|Chart-Box#domain]]
+* [[box.value|Chart-Box#value]]
+* [[box.whiskers|Chart-Box#whiskers]]
+* [[box.quartiles|Chart-Box#quartiles]]
 
-### [[Quantize|Scale-Quantize]]
+### [[Bullet|Chart-Bullet]]
 
-* [[d3.scale.quantize|Scale-Quantize#quantize]]
-* [[quantize.domain|Scale-Quantize#domain]]
-* [[quantize.range|Scale-Quantize#range]]
+* [[d3.chart.bullet|Chart-Bullet#bullet]]
+* [[bullet.orient|Chart-Bullet#orient]]
+* [[bullet.ranges|Chart-Bullet#ranges]]
+* [[bullet.markers|Chart-Bullet#markers]]
+* [[bullet.measures|Chart-Bullet#measures]]
+* [[bullet.width|Chart-Bullet#width]]
+* [[bullet.height|Chart-Bullet#height]]
+* [[bullet.tickFormat|Chart-Bullet#tickFormat]]
+* [[bullet.duration|Chart-Bullet#duration]]
 
-### [[Quantile|Scale-Quantile]]
+### [[QQ|Chart-QQ]]
 
-* [[d3.scale.quantile|Scale-Quantile#quantile]]
-* [[quantile.domain|Scale-Quantile#domain]]
-* [[quantile.range|Scale-Quantile#range]]
-* [[quantile.quantiles|Scale-Quantile#quantiles]]
-
-### [[Ordinal|Scale-Ordinal]]
-
-* [[d3.scale.ordinal|Scale-Ordinal#ordinal]]
-* [[ordinal.domain|Scale-Ordinal#domain]]
-* [[ordinal.range|Scale-Ordinal#range]]
-* [[ordinal.rangePoints|Scale-Ordinal#rangePoints]]
-* [[ordinal.rangeBands|Scale-Ordinal#rangeBands]]
-* [[ordinal.rangeRoundBands|Scale-Ordinal#rangeRoundBands]]
-* [[ordinal.rangeBand|Scale-Ordinal#rangeBand]]
-* [[d3.scale.category10|Scale-Ordinal#category10]]
-* [[d3.scale.category20|Scale-Ordinal#category20]]
-* [[d3.scale.category20b|Scale-Ordinal#category20b]]
-* [[d3.scale.category20c|Scale-Ordinal#category20c]]
-
-## d3.svg
-
-### [[Events|SVG-Events]]
-
-* [[d3.svg.mouse|SVG-Events#mouse]]
-* [[d3.svg.touches|SVG-Events#touches]]
-
-### [[Shapes|SVG-Shapes]]
-
-* [[d3.svg.line|SVG-Shapes#line]]
-* [[line.x|SVG-Shapes#line_x]]
-* [[line.y|SVG-Shapes#line_y]]
-* [[line.interpolate|SVG-Shapes#line_interpolate]]
-* [[line.tension|SVG-Shapes#line_tension]]
-* [[d3.svg.diagonal|SVG-Shapes#diagonal]]
-* [[diagonal.source|SVG-Shapes#diagonal_source]]
-* [[diagonal.target|SVG-Shapes#diagonal_target]]
-* [[diagonal.projection|SVG-Shapes#diagonal_projection]]
-* [[d3.svg.chord|SVG-Shapes#chord]]
-* [[chord.radius|SVG-Shapes#chord_radius]]
-* [[chord.source|SVG-Shapes#chord_source]]
-* [[chord.target|SVG-Shapes#chord_target]]
-* [[chord.startAngle|SVG-Shapes#chord_startAngle]]
-* [[chord.endAngle|SVG-Shapes#chord_endAngle]]
-* [[d3.svg.area|SVG-Shapes#area]]
-* [[area.x|SVG-Shapes#area_x]]
-* [[area.y0|SVG-Shapes#area_y0]]
-* [[area.y1|SVG-Shapes#area_y1]]
-* [[area.interpolate|SVG-Shapes#area_interpolate]]
-* [[area.tension|SVG-Shapes#area_tension]]
-* [[d3.svg.arc|SVG-Shapes#arc]]
-* [[arc.innerRadius|SVG-Shapes#arc_innerRadius]]
-* [[arc.outerRadius|SVG-Shapes#arc_outerRadius]]
-* [[arc.startAngle|SVG-Shapes#arc_startAngle]]
-* [[arc.endAngle|SVG-Shapes#arc_endAngle]]
-* [[arc.centroid|SVG-Shapes#arc_centroid]]
-* [[d3.svg.symbol|SVG-Shapes#symbol]]
-* [[symbol.type|SVG-Shapes#symbol_type]]
-* [[symbol.size|SVG-Shapes#symbol_size]]
+* [[d3.chart.qq|Chart-QQ#qq]]
+* [[qq.width|Chart-QQ#width]]
+* [[qq.height|Chart-QQ#height]]
+* [[qq.duration|Chart-QQ#duration]]
+* [[qq.domain|Chart-QQ#domain]]
+* [[qq.count|Chart-QQ#count]]
+* [[qq.x|Chart-QQ#x]]
+* [[qq.y|Chart-QQ#y]]
+* [[qq.tickFormat|Chart-QQ#tickFormat]]
 
 ## d3.time
 
@@ -427,3 +359,71 @@ Also see the `csv` module.
 
 * [[d3.time.format|Time-Formatting#format]]
 * [[format.parse|Time-Formatting#parse]]
+
+## d3.behavior
+
+### [[Zoom|Behavior-Zoom]]
+
+* [[d3.behavior.zoom|Behavior-Zoom#zoom]]
+* [[zoom.on|Behavior-Zoom#on]]
+
+## d3.csv
+
+### [[CSV]]
+
+* [[d3.csv|CSV#csv]]
+* [[d3.csv.parse|CSV#parse]]
+* [[d3.csv.parseRows|CSV#parseRows]]
+* [[d3.csv.format|CSV#format]]
+
+## d3.geo
+
+### [[Paths|Geo-Paths]]
+
+* [[d3.geo.path|Geo-Paths#path]]
+* [[path.projection|Geo-Paths#projection]]
+* [[path.area|Geo-Paths#area]]
+* [[path.centroid|Geo-Paths#centroid]]
+* [[path.pointRadius|Geo-Paths#pointRadius]]
+* [[d3.geo.bounds|Geo-Paths#bounds]]
+
+### [[Projections|Geo-Projections]]
+
+* [[d3.geo.mercator|Geo-Projections#mercator]]
+* [[mercator.scale|Geo-Projections#mercator_scale]]
+* [[mercator.translate|Geo-Projections#mercator_translate]]
+* [[d3.geo.albers|Geo-Projections#albers]]
+* [[albers.origin|Geo-Projections#albers_origin]]
+* [[albers.parallels|Geo-Projections#albers_parallels]]
+* [[albers.scale|Geo-Projections#albers_scale]]
+* [[albers.translate|Geo-Projections#albers_translate]]
+* [[d3.geo.albersUsa|Geo-Projections#albersUsa]]
+* [[albersUsa.scale|Geo-Projections#albersUsa_scale]]
+* [[albersUsa.translate|Geo-Projections#albersUsa_translate]]
+
+## d3.geom
+
+### [[Voronoi|Geom-Voronoi]]
+
+* [[d3.geom.voronoi|Geom-Voronoi#voronoi]]
+* [[d3.geom.delaunay|Geom-Voronoi#delaunay]]
+
+### [[Quadtree|Geom-Quadtree]]
+
+* [[d3.geom.quadtree|Geom-Quadtree#quadtree]]
+* [[quadtree.visit|Geom-Quadtree#visit]]
+
+### [[Polygon|Geom-Polygon]]
+
+* [[d3.geom.polygon|Geom-Polygon#polygon]]
+* [[polygon.area|Geom-Polygon#area]]
+* [[polygon.centroid|Geom-Polygon#centroid]]
+* [[polygon.clip|Geom-Polygon#clip]]
+
+### [[Hull|Geom-Hull]]
+
+* [[d3.geom.hull|Geom-Hull#hull]]
+
+### [[Contour|Geom-Contour]]
+
+* [[d3.geom.contour|Geom-Contour#contour]]
