@@ -31,6 +31,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[selection.node|Selections#node]] - access the first node in a selection.
 * [[selection.select|Selections#select]] - subselect a descendant element for each selected element.
 * [[selection.selectAll|Selections#selectAll]] - subselect multiple descendants for each selected element.
+* [[d3.event|Selections#d3_event]] - access the current user event for interaction.
 * [[d3.ns|Selections#d3_ns]] - access or extend known XML namespaces.
 * [[d3.functor|Selections#d3_functor]] - create a function that returns a constant.
 
@@ -65,7 +66,6 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 ### [[Events]]
 
 * [[d3.dispatch|Events#d3_dispatch]] - create a custom event dispatcher.
-* [[d3.event|Events#d3_event]] - access the current user event for interaction.
 
 ### [[Working with Arrays|Arrays]]
 
