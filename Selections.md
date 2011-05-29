@@ -26,7 +26,7 @@ Selects all elements that match the specified selector. The elements will be sel
 
 <a href="#d3_selectAll">#</a> d3.<b>selectAll</b>(<i>nodes</i>)
 
-Selects the specified array of elements. This is useful if you already have a reference to nodes, such as `d3.select(this.childNodes)` within an event listener, or a global such as `document.links`. The *nodes* argument doesn't have to be an array exactly; any psuedo-array that can be coerced into an array will work, such as a `NodeList` or an `arguments`.
+Selects the specified array of elements. This is useful if you already have a reference to nodes, such as `d3.select(this.childNodes)` within an event listener, or a global such as `document.links`. The *nodes* argument doesn't have to be an array exactly; any pseudo-array that can be coerced into an array will work, such as a `NodeList` or an `arguments`.
 
 ## Operating on Selections
 
