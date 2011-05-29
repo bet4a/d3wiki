@@ -1,40 +1,40 @@
 # Selections
 
-A selection is an array of elements pulled from the current document. D3 uses [[CSS3|http://www.w3.org/TR/css3-selectors/]] to select elements. For example, you can select by tag ("div"), class (".awesome"), unique identifier ("#foo"), attribute ("[color=red]"), or containment ("parent child"). Selectors can also be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR). If your browser doesn't support the [[W3C Selectors API|http://www.w3.org/TR/selectors-api/]], you can include [[Sizzle|http://sizzlejs.com/]] before D3 for backwards-compatibility. After selecting elements, you apply operators to them to do stuff. These operators wrap the [[W3C DOM API|http://www.w3.org/TR/DOM-Level-3-Core/]], setting attributes (`attr`), styles (`style`), properties (`property`), HTML (`html`) and text (`text`) content. Attribute values and such are specified as either constants or functions; the latter are evaluated for each element.
+A selection is an array of elements pulled from the current document. D3 uses [[CSS3|http://www.w3.org/TR/css3-selectors/]] to select elements. For example, you can select by tag ("div"), class (".awesome"), unique identifier ("#foo"), attribute ("[color=red]"), or containment ("parent child"). Selectors can also be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR). If your browser doesn't support the [[W3C Selectors API|http://www.w3.org/TR/selectors-api/]], you can include [[Sizzle|http://sizzlejs.com/]] before D3 for backwards-compatibility.
 
-You won't generally need to use for loops or recursive functions to modify the document with D3. That's because you operate on entire selections at once, rather than looping over individual elements. This is true even for hierarchical structures like nested lists because you can create subselections. However, you can still loop over elements manually if you want to: there's an `each` operator which invokes an arbitrary function, and each selection is just an array, so elements can be accessed directly (e.g., `[0]`).
+After selecting elements, you apply operators to them to do stuff. These operators wrap the [[W3C DOM API|http://www.w3.org/TR/DOM-Level-3-Core/]], setting attributes (`attr`), styles (`style`), properties (`property`), HTML (`html`) and text (`text`) content. Attribute values and such are specified as either constants or functions; the latter are evaluated for each element. You can also join selections to data; this data is available to operators for data-driven transformations. In addition, joining to data produces *enter* and *exit* subselections, so that you may add or remove elements in response to changes in data.
 
-D3 supports method chaining for brevity when applying multiple operators: the operator return value is the selection. The `append` and `insert` operators add a new element for each element in the current selection, returning the added nodes, thus allowing the convenient creation of nested structures. The `remove` operator discards selected elements.
-
-You can also join selections to data; this data is available to operators for data-driven transformations. In addition, joining to data produces *enter* and *exit* subselections, so that you may add or remove elements in response to changes in data.
+You won't generally need to use for loops or recursive functions to modify the document with D3. That's because you operate on entire selections at once, rather than looping over individual elements. However, you can still loop over elements manually if you want to: there's an `each` operator which invokes an arbitrary function, and each selection is just an array, so elements can be accessed directly (e.g., `[0]`). D3 supports method chaining for brevity when applying multiple operators: the operator return value is the selection.
 
 ## Generating Selections
 
 D3 provides two top-level methods for selecting elements: `select` and `selectAll`. These methods accept selector strings; the former selects only the first matching element, while the latter selects *all* matching elements in document traversal order. These methods can also accept nodes, which is useful for integration with third-party libraries (such as jQuery) or developer tools (`$0`).
 
-> <b>d3.select</b>(<i>selector</i>) <a name="d3_select"></a><br>
+> d3.<b>select</b>(<i>selector</i>) <a name="d3_select"></a><br>
 
 Selects the first element that matches the specified selector string, returning a single-element selection. If no elements in the current document match the specified selector, returns the empty selection. If multiple elements match the selector, only the first matching element in document traversal order will be selected.
 
-> <b>d3.select</b>(<i>node</i>)
+> d3.<b>select</b>(<i>node</i>)
 
 Selects the specified node. This is useful if you already have a reference to a node, such as `d3.select(this)` within an event listener. Or maybe you selected something previously with jQuery, or want to select a global such as `document.body`.
 
-> <b>d3.selectAll</b>(<i>selector</i>) <a name="d3_selectAll"></a><br>
+> d3.<b>selectAll</b>(<i>selector</i>) <a name="d3_selectAll"></a><br>
 
 Selects all elements that match the specified selector. The elements will be selected in document traversal order (top-to-bottom). If no elements in the current document match the specified selector, returns the empty selection.
 
-> <b>d3.selectAll</b>(<i>nodes</i>)
+> d3.<b>selectAll</b>(<i>nodes</i>)
 
 Selects the specified array of elements. This is useful if you already have a reference to nodes, such as `d3.select(this.childNodes)` within an event listener. Or maybe you selected something previously with jQuery, or want to select a global such as `document.links`. The *nodes* argument doesn't have to be an array exactly; really any psuedo-array that can be coerced into an array, such as a `NodeList` or an `arguments`.
 
 ## Working with Selections
 
-Selections are arrays of elements—literally. D3 binds additional methods to the array so that you can apply operators to the selected elements, such as setting an attribute on all the selected elements. In this way, D3 is similar to jQuery. But selections in D3 are grouped; rather than a one-dimensional array, each selection is an *array of arrays* of elements. This reason for this grouping is to preserve hierarchical structure with subselections; for example, if you want to select all unordered lists (`ul`) on the page, and then all list elements (`li`) within, D3 maintains the grouping such that the index `i` refers to the index of each list element within its parent list, rather than globally. Most of the time, you can ignore this grouping, since it happens under the hood. But that's why a single-element selection looks like `[ [node] ]` rather than `[node]`.
+Selections are arrays of elements—literally. D3 binds additional methods to the array so that you can apply operators to the selected elements, such as setting an attribute on all the selected elements. In this way, D3 is similar to jQuery. One nuance is that D3 selecions are grouped: rather than a one-dimensional array, each selection is an *array of arrays* of elements. This preserves the hierarchical structure of subselections. Most of the time, you can ignore this detail, but that's why a single-element selection looks like `[ [node] ]` rather than `[node]`.
 
 If you want to learn how selections work, try selecting elements interactively using your browser's developer console. You can inspect the returned array to see which elements were selected, and how they are grouped. You can also then apply operators to the selected elements and see how the page content changes.
 
 ### Content
+
+D3 has a variety of operators which affect the document content. These are what you'll use the most to display data!
 
 > selection.<b>attr</b>(<i>name</i>[, <i>value</i>])
 
