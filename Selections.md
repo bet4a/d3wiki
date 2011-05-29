@@ -1,10 +1,8 @@
 # Selections
 
-A selection is an array of elements pulled from the current document. D3 uses [[CSS3|http://www.w3.org/TR/css3-selectors/]] to select elements. For example, you can select by tag ("div"), class (".awesome"), unique identifier ("#foo"), attribute ("[color=red]"), or containment ("parent child"). Selectors can also be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR). If your browser doesn't support the [[W3C Selectors API|http://www.w3.org/TR/selectors-api/]], you can include [[Sizzle|http://sizzlejs.com/]] before D3 for backwards-compatibility.
+A selection is an array of elements pulled from the current document. D3 uses [[CSS3|http://www.w3.org/TR/css3-selectors/]] to select elements. For example, you can select by tag ("div"), class (".awesome"), unique identifier ("#foo"), attribute ("[color=red]"), or containment ("parent child"). Selectors can also be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR). If your browser doesn't support the [[W3C Selectors API|http://www.w3.org/TR/selectors-api/]], you can include [[Sizzle|http://sizzlejs.com/]] before D3 for backwards-compatibility. After selecting elements, you apply operators to them to do stuff. These operators wrap the [[W3C DOM API|http://www.w3.org/TR/DOM-Level-3-Core/]], setting attributes (`attr`), styles (`style`), properties (`property`), HTML (`html`) and text (`text`) content. Attribute values and such are specified as either constants or functions; the latter are evaluated for each element.
 
-After selecting elements, you apply operators to them to do stuff. These operators wrap the [[W3C DOM API|http://www.w3.org/TR/DOM-Level-3-Core/]], setting attributes (`attr`), styles (`style`), properties (`property`), HTML (`html`) and text (`text`) content. Attribute values and such are specified as either constants or functions; the latter are evaluated for each element.
-
-You won't generally need to use for loops or recursive functions to modify the document with D3. That's because you operate on entire selections at once, rather than looping over individual elements. This is true even for hierarchical structures, such as nested lists, because you can create subselections. However, if you want to loop over elements manually, you still can. There's an `each` operator which invokes an arbitrary function, and since each selection is simply an array, elements can also be accessed directly (e.g., `[0]`).
+You won't generally need to use for loops or recursive functions to modify the document with D3. That's because you operate on entire selections at once, rather than looping over individual elements. This is true even for hierarchical structures like nested lists because you can create subselections. However, you can still loop over elements manually if you want to: there's an `each` operator which invokes an arbitrary function, and each selection is just an array, so elements can be accessed directly (e.g., `[0]`).
 
 D3 supports method chaining for brevity when applying multiple operators: the operator return value is the selection. The `append` and `insert` operators add a new element for each element in the current selection, returning the added nodes, thus allowing the convenient creation of nested structures. The `remove` operator discards selected elements.
 
@@ -28,9 +26,75 @@ Selects all elements that match the specified selector. The elements will be sel
 
 > <b>d3.selectAll</b>(<i>nodes</i>)
 
-Selects the specified array of elements. This is useful if you already have a reference to nodes, such as `d3.select(this.childNodes)` within an event listener. Or maybe you selected something previously with jQuery, or want to select a global such as `document.links`. The specified *nodes* do not have to be an array exactly, but any psuedo-array that can be coerced into an array, such as a NodeList or arguments array.
+Selects the specified array of elements. This is useful if you already have a reference to nodes, such as `d3.select(this.childNodes)` within an event listener. Or maybe you selected something previously with jQuery, or want to select a global such as `document.links`. The *nodes* argument doesn't have to be an array exactly; really any psuedo-array that can be coerced into an array, such as a `NodeList` or an `arguments`.
 
 ## Working with Selections
+
+Selections are arrays of elements—literally. D3 binds additional methods to the array so that you can apply operators to the selected elements, such as setting an attribute on all the selected elements. In this way, D3 is similar to jQuery. But selections in D3 are grouped; rather than a one-dimensional array, each selection is an *array of arrays* of elements. This reason for this grouping is to preserve hierarchical structure with subselections; for example, if you want to select all unordered lists (`ul`) on the page, and then all list elements (`li`) within, D3 maintains the grouping such that the index `i` refers to the index of each list element within its parent list, rather than globally. Most of the time, you can ignore this grouping, since it happens under the hood. But that's why a single-element selection looks like `[ [node] ]` rather than `[node]`.
+
+If you want to learn how selections work, try selecting elements interactively using your browser's developer console. You can inspect the returned array to see which elements were selected, and how they are grouped. You can also then apply operators to the selected elements and see how the page content changes.
+
+### Content
+
+> selection.<b>attr</b>(<i>name</i>[, <i>value</i>])
+
+If *value* is specified, sets the attribute with the specified name to the specified value on all selected elements. If *value* is a constant, then all elements are given the same attribute value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`. The function's return value is then used to set each element's attribute. A null value will remove the specified attribute.
+
+If *value* is not specified, returns the value of the specified attribute for the first non-null element in the selection. This is generally useful only if you know the element contains exactly one element.
+
+> selection.<b>classed</b>(<i>name</i>[, <i>value</i>])
+
+This operator is a convenience routine for setting the "class" attribute. It understands that the "class" attribute is a set of tokens separated by spaces; under the hood, it will use the [[classList|https://developer.mozilla.org/en/DOM/element.classList]] if available, for convenient adding, removing and toggling of CSS classes.
+
+If *value* is specified, sets whether or not the class with the specified name is associated with the selected elements. If *value* is a constant and truthy, then all elements are given the specified class; if falsey, then the class is removed from all selected elements. If *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`. The function's return value is then used to add or remove the specified class on each element.
+
+If *value* is not specified, returns true if and only if the first non-null element in this selection has the class with the specified name. This is generally useful only if you know the element contains exactly one element.
+
+> selection.<b>style</b>(<i>name</i>[, <i>value</i>])
+
+> selection.<b>property</b>(<i>name</i>[, <i>value</i>])
+
+> selection.<b>text</b>([<i>value</i>])
+
+> selection.<b>html</b>([<i>value</i>])
+
+> selection.<b>append</b>(<i>name</i>)
+
+> selection.<b>insert</b>(<i>name</i>, <i>before</i>)
+
+> selection.<b>remove</b>()
+
+> selection.<b>sort</b>(<i>comparator</i>)
+
+### Data
+
+> selection.<b>data</b>(<i>data</i>[, <i>join</i>])
+
+> selection.<b>enter()</b>
+
+> selection.<b>exit()</b>
+
+> selection.<b>filter</b>(<i>function</i>)
+
+> selection.<b>map</b>(<i>function</i>)
+
+### Animation & Interaction
+
+> selection.<b>on</b>(<i>type</i>, <i>listener</i>)
+
+> selection.<b>transition</b>()
+
+### Control
+
+> selection.<b>each</b>(<i>function</i>)
+
+> selection.<b>call</b>(<i>function</i>[, <i>arguments…</i>])
+
+> selection.<b>empty</b>()
+
+> selection.<b>node</b>()
+
+### Subselections
 
 Whereas the top-level select methods query the entire document, a selection's `select` and `selectAll` methods restrict queries to descendants of each selected element; we call this subselection. For example, `d3.selectAll("p").select("b")` returns the first bold ("b") elements in every paragraph ("p") element.
 
