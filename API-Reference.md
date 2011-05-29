@@ -63,10 +63,6 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.interpolateArray|Transitions#d3_interpolateArray]] - interpolate two arrays of values.
 * [[d3.interpolateObject|Transitions#d3_interpolateObject]] - interpolate two arbitrary objects.
 
-### [[Events]]
-
-* [[d3.dispatch|Events#d3_dispatch]] - create a custom event dispatcher.
-
 ### [[Working with Arrays|Arrays]]
 
 * [[d3.ascending|Arrays#d3_ascending]] - compare two values for sorting.
@@ -80,6 +76,12 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.merge|Arrays#d3_merge]] - merge multiple arrays into one array.
 * [[d3.range|Arrays#d3_range]] - generate a range of numeric values.
 * [[d3.nest|Arrays#d3_nest]] - group array elements hierarchically.
+* [[nest.key|Arrays#nest_key]] - add a level to the nest hierarchy.
+* [[nest.sortKeys|Arrays#nest_sortKeys]] - sort the current nest level by key.
+* [[nest.sortValues|Arrays#nest_sortValues]] - sort the leaf nest level by value.
+* [[nest.map|Arrays#nest_map]] - evaluate the nest operator, returning an associative array.
+* [[nest.entries|Arrays#nest_entries]] - evaluate the nest operator, returning an array of key-values tuples.
+* [[nest.rollup|Arrays#nest_rollup]] - evaluate the nest operator, return an associative array rollup.
 
 ### [[Loading External Resources|Loading]]
 
@@ -89,7 +91,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.html|Loading#d3_html]] - load an HTML document fragment.
 * [[d3.xml|Loading#d3_xml]] - load an XML document fragment.
 
-Also see the `csv` module.
+Also see the [[CSV]] module.
 
 ### [[Number Formatting|Formatting]]
 
@@ -105,6 +107,10 @@ Also see the `csv` module.
 * [[hsl.brighter|Colors#hsl_brighter]] - increase lightness by some exponential factor (gamma).
 * [[hsl.darker|Colors#hsl_darker]] - decrease lightness by some exponential factor (gamma).
 * [[hsl.rgb|Colors#hsl_rgb]] - convert from HSL to RGB.
+
+### [[Internals]]
+
+* [[d3.dispatch|Internals#d3_dispatch]] - create a custom event dispatcher.
 
 ## d3.scale
 
