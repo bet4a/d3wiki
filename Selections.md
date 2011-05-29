@@ -255,3 +255,31 @@ Returns true if the current selection is empty; a selection is empty if it conta
 <a name="node" href="#node">#</a> selection.<b>node</b>()
 
 Returns the first non-null element in the current selection. If the selection is empty, returns null.
+
+## Miscellany
+
+<a name="ns_prefix" href="#ns_prefix">#</a> d3.ns.<b>prefix</b>
+
+The map of registered namespace prefixes. The default value is:
+
+    {
+      svg: "http://www.w3.org/2000/svg",
+      xhtml: "http://www.w3.org/1999/xhtml",
+      xlink: "http://www.w3.org/1999/xlink",
+      xml: "http://www.w3.org/XML/1998/namespace",
+      xmlns: "http://www.w3.org/2000/xmlns/"
+    }
+
+Additional prefixes may be assigned as needed to create elements or attributes in other namespaces.
+
+<a name="ns_qualify" href="#ns_qualify">#</a> d3.ns.<b>qualify</b>(<i>name</i>)
+
+Qualifies the specified *name*, which may have a namespace prefix. If the name contains a colon (":"), the substring before the colon is interpreted as the namespace prefix, which must be registered in d3.ns.**prefix**; the return value is an object with `space` and `local` attributes containing the full namespace URL and the local name. For example, the result of qualify("svg:text") is:
+
+    {space: "http://www.w3.org/2000/svg", local: "text"}
+
+If the name does not contain a colon, this function merely returns the input name. This function is used internally to decide whether to use a namespaced method (such as `createElementNS`) or a non-namespaced equivalent.
+
+<a name="functor" href="#functor">#</a> d3.<b>functor</b>(<i>value</i>)
+
+If the specified *value* is a function, returns the specified value. Otherwise, returns a function that returns the specified value. This method is used internally as a lazy way of upcasting constant values to functions, in cases where a property may be specified either as a function or a constant. For example, many D3 layouts allow properties to be specified this way, and it simplifies the implementation if we automatically convert constant values to functions.
