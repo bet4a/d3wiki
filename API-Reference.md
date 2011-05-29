@@ -422,3 +422,8 @@ Also see the `csv` module.
 * [[symbol.size|SVG-Shapes#symbol_size]]
 
 ## d3.time
+
+### [[Formatting|Time-Formatting]]
+
+* [[d3.time.format|Time-Formatting#format]]
+* [[format.parse|Time-Formatting#parse]]
