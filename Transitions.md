@@ -2,7 +2,7 @@
 
 > [[API Reference|API-Reference]]
 
-A transition is a special type of [[selection|Selections]] where the operators apply smoothly over time rather than instantaneously. You derive a transition from a selection using the [[transition|Selections#transition]] operator. While transitions generally support the same operators as selections (such as [attr](#attr) and [style](#style)), not all operators are yet supported; for example, you must append elements before a transition starts. A [remove](#remove) operator is provided for convenient removal of elements when the transition ends.
+A transition is a special type of [[selection|Selections]] where the operators apply smoothly over time rather than instantaneously. You derive a transition from a selection using the [[transition|Selections#transition]] operator. While transitions generally support the same operators as selections (such as [attr](#attr) and [style](#style)), not all operators are supported; for example, you must append elements before a transition starts. A [remove](#remove) operator is provided for convenient removal of elements when the transition ends.
 
 Transitions may have per-element delays and durations, computed using functions of data similar to other operators. This makes it easy to stagger a transition for different elements, either based on data or index. For example, you can sort elements and then stagger the transition for better perception of element reordering during the transition. For more details on these techniques, see [["Animated Transitions in Statistical Data Graphics"|http://vis.berkeley.edu/papers/animated_transitions/]] by Heer & Robertson.
 
@@ -34,7 +34,7 @@ Specifies per-element *duration* in milliseconds. If *duration* is a constant, t
 
 <a name="ease" href="#ease">#</a> transition.<b>ease</b>(<i>value</i>[, <i>arguments</i>])
 
-Specifies the transition [[easing function|http://www.robertpenner.com/easing/]]. If *value* is a function, it is used to ease the current parametric timing value *t* in the range [0,1]; otherwise, *value* is assumed to be a string and the arguments are passed to the [d3.ease][#d3_ease] method to generate an easing function. The default easing function is "cubic-in-out". Note that it is not possible to customize the easing function per-element or per-attribute; however, if you use the "linear" easing function, you can apply custom easing inside your interpolator by using [attrTween](#attrTween) or [styleTween](#styleTween).
+Specifies the transition [[easing function|http://www.robertpenner.com/easing/]]. If *value* is a function, it is used to ease the current parametric timing value *t* in the range [0,1]; otherwise, *value* is assumed to be a string and the arguments are passed to the [d3.ease](#d3_ease) method to generate an easing function. The default easing function is "cubic-in-out". Note that it is not possible to customize the easing function per-element or per-attribute; however, if you use the "linear" easing function, you can apply custom easing inside your interpolator using [attrTween](#attrTween) or [styleTween](#styleTween).
 
 ## Operating on Transitions
 
@@ -44,7 +44,7 @@ Specifies the transition [[easing function|http://www.robertpenner.com/easing/]]
 
 Transitions the value of the attribute with the specified *name* to the specified *value*. The starting value of the transition is the current attribute value, and the ending value is the specified *value*.  If *value* is a constant, then all elements are transitioned to the same attribute value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order) as the element starts transitioning, being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to transition each element's attribute. Null values are not supported; if you want to remove the attribute after the transition finishes, listen to the [end](#each) event.
 
-An interpolator is selected automatically based on the ending value. If the ending value is a number, the starting value is coerced to a number and [interpolateNumber](#interpolateNumber) is used. If the ending value is a string, a check is performed to see if the string represents a color of the form `/^(#|rgb\(|hsl\()/`, or one of the [[CSS named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]]; if the ending value is a color, the starting value is coerced to an RGB color and [interpolateRgb](#interpolateRgb) is used. Otherwise, [interpolateString](#interpolateString) is used, which interpolates numbers embedded within strings.
+An interpolator is selected automatically based on the ending value. If the ending value is a number, the starting value is coerced to a number and [interpolateNumber](#interpolateNumber) is used. If the ending value is a string, a check is performed to see if the string represents a color of the form `/^(#|rgb\(|hsl\()/`, or one of the [[CSS named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]]; if so, the starting value is coerced to an RGB color and [interpolateRgb](#interpolateRgb) is used. Otherwise, [interpolateString](#interpolateString) is used, which interpolates numbers embedded within strings.
 
 <a name="attrTween" href="#attrTween">#</a> transition.<b>attrTween</b>(<i>name</i>, <i>tween</i>)
 
@@ -68,7 +68,7 @@ The attrTween operator is used when you need a custom interpolator, such as one 
 
 Transitions the value of the CSS style property with the specified *name* to the specified *value*. An optional *priority* may also be specified, either as null or the string "important" (without the exclamation point). The starting value of the transition is the current computed style property value, and the ending value is the specified *value*.  If *value* is a constant, then all elements are transitioned to the same style property value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order) as the element starts transitioning, being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to transition each element's style property. Null values are not supported; if you want to remove the style property after the transition finishes, listen to the [end](#each) event.
 
-An interpolator is selected automatically based on the ending value. If the ending value is a number, the starting value is coerced to a number and [interpolateNumber](#interpolateNumber) is used. If the ending value is a string, a check is performed to see if the string represents a color of the form `/^(#|rgb\(|hsl\()/`, or one of the [[CSS named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]]; if the ending value is a color, the starting value is coerced to an RGB color and [interpolateRgb](#interpolateRgb) is used. Otherwise, [interpolateString](#interpolateString) is used, which interpolates numbers embedded within strings.
+An interpolator is selected automatically based on the ending value. If the ending value is a number, the starting value is coerced to a number and [interpolateNumber](#interpolateNumber) is used. If the ending value is a string, a check is performed to see if the string represents a color of the form `/^(#|rgb\(|hsl\()/`, or one of the [[CSS named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]]; if so, the starting value is coerced to an RGB color and [interpolateRgb](#interpolateRgb) is used. Otherwise, [interpolateString](#interpolateString) is used, which interpolates numbers embedded within strings.
 
 Note that the computed starting value may be different than the value that was previously set, particularly if the style property was set using a shorthand property (such as the "font" style, which is shorthand for "font-size", "font-face", etc.).
 
@@ -108,7 +108,7 @@ Transitions may be derived from existing transitions, in a similar manner to sub
 
 For each element in the current transition, selects the first descendant element that matches the specified *selector* string. If no element matches the specified selector for the current element, the element at the current index will be null in the returned selection; operators (with the exception of [data](#data)) automatically skip null elements, thereby preserving the index of the existing selection. If the current element has associated data, this data is inherited by the returned subselection, and automatically bound to the newly selected elements. If multiple elements match the selector, only the first matching element in document traversal order will be selected.
 
-This method is approximately equivalent to
+This method is approximately equivalent to:
 
     selection.select(selector).transition()
 
@@ -118,7 +118,7 @@ where *selection* is the current transition's underlying selection. In addition,
 
 For each element in the current transition, selects descendant elements that match the specified *selector* string. The returned selection is grouped by the ancestor node in the current selection. If no element matches the specified selector for the current element, the group at the current index will be empty in the returned selection. The subselection does not inherit data from the current selection; however, if data was previously bound to the selected elements, that data will be available to operators.
 
-This method is approximately equivalent to
+This method is approximately equivalent to:
 
     selection.selectAll(selector).transition()
 
@@ -128,16 +128,16 @@ where *selection* is the current transition's underlying selection. In addition,
 
 <a name="each" href="#each">#</a> transition.<b>each</b>(<i>type</i>, <i>listener</i>)
 
-Add a listener for transition events. Currently only "end" events are supported. The listener will be invoked for each individual element in the transition, even if the transition has a constant delay and duration. The end event can be used to initiate multi-stage transitions by selecting the current element (`d3.select(this)`) and deriving a new transition. Any transitions created during the end event will inherit the current transition ID, and thus will not override a newer transition that was previously scheduled.
+Add a listener for transition events. Currently only "end" events are supported. The listener will be invoked for each individual element in the transition, even if the transition has a constant delay and duration. The end event can be used to initiate multi-stage transitions by selecting the current element, `this`, and deriving a new transition. Any transitions created during the end event will inherit the current transition ID, and thus will not override a newer transition that was previously scheduled.
 
-Note: there is no way to remove the event listener. And, this operator has the same name as the selection [[each|Selections#each]] operator, which is somewhat confusing. It should probably be renamed to "onEach".
+Note: there is currently no way to remove listeners. And, this operator has the same name as the selection [[each|Selections#each]] operator, which is somewhat confusing. It should probably be renamed to "on".
 
-<a name="call" href="#call">#</a> transition.<b>call</b>(<i>function</i>)
+<a name="call" href="#call">#</a> transition.<b>call</b>(<i>function</i>[, <i>arguments…</i>])
 
 Invokes the specified *function* once, passing in the current transition along with any optional *arguments*. The call operator always returns the current transition, regardless of the return value of the specified function. The call operator is identical to invoking a function by hand; but it makes it easier to use method chaining. For example, say we want to set a number of attributes the same way in a number of different places. So we take the code and wrap it in a reusable function:
 
-    function foo(selection) {
-      selection
+    function foo(transition) {
+      transition
           .attr("name1", "value1")
           .attr("name2", "value2");
     }
@@ -166,7 +166,7 @@ Returns a built-in easing function of the specified *type*, with any optional *a
 * exp - raises 2 to a power based on *t*.
 * circle - the quarter circle.
 * elastic(a, p) - simulates an elastic band; may extend slightly beyond 0 and 1.
-* back(s) - like backing into a parking space.
+* back(s) - simulates backing into a parking space.
 * bounce - simulates a bouncy collision.
 
 These built-in types may be extended using a variety of modes:
@@ -218,9 +218,7 @@ Returns a string interpolator between the two strings *a* and *b*. The string in
 
     /[-+]?(?:\d+\.\d+|\d+\.|\.\d+|\d+)(?:[eE][-]?\d+)?/
 
-For each number embedded in *b*, the interpolator will attempt to find a corresponding number in *a*. If a corresponding number is found, a numeric interpolator is created using [interpolateNumber](#interpolateNumber). The remaining parts of the string *b* are used as a template: the static parts of the string *b* remain constant for the interpolation, with the interpolated numeric values embedded in the template.
-
-For example, if *a* is "300 12px sans-serif", and *b* is "500 36px Comic-Sans", two embedded numbers are found. The remaining static parts of the string are a space between the two numbers (" "), and the suffix ("px Comic-Sans"). The result of the interpolator at *t* = .5 is "400 24px Comic-Sans".
+For each number embedded in *b*, the interpolator will attempt to find a corresponding number in *a*. If a corresponding number is found, a numeric interpolator is created using [interpolateNumber](#interpolateNumber). The remaining parts of the string *b* are used as a template: the static parts of the string *b* remain constant for the interpolation, with the interpolated numeric values embedded in the template. For example, if *a* is "300 12px sans-serif", and *b* is "500 36px Comic-Sans", two embedded numbers are found. The remaining static parts of the string are a space between the two numbers (" "), and the suffix ("px Comic-Sans"). The result of the interpolator at *t* = .5 is "400 24px Comic-Sans".
 
 <a name="d3_interpolateRgb" href="#d3_interpolateRgb">#</a> d3.<b>interpolateRgb</b>(<i>a</i>, <i>b</i>)
 
@@ -232,16 +230,14 @@ Returns an HSL color space interpolator between the two colors *a* and *b*. The 
 
 <a name="d3_interpolateArray" href="#d3_interpolateArray">#</a> d3.<b>interpolateArray</b>(<i>a</i>, <i>b</i>)
 
-Returns an array interpolator between the two arrays *a* and *b*. Internally, an array template is created that is the same length in *b*. For each element in *b*, if there exists a corresponding element in *a*, a generic interpolator is created for the two elements using [interpolate](#interpolate). If there is no such element, the static value from *b* is used in the template. Then, for each evaluation of the array interpolator for the parameterized time *t*, the template's embedded interpolators are evaluated. The updated array template is then returned.
+Returns an array interpolator between the two arrays *a* and *b*. Internally, an array template is created that is the same length in *b*. For each element in *b*, if there exists a corresponding element in *a*, a generic interpolator is created for the two elements using [interpolate](#interpolate). If there is no such element, the static value from *b* is used in the template. Then, for the given parameter *t*, the template's embedded interpolators are evaluated. The updated array template is then returned. For example, if *a* is the array [0, 1] and *b* is the array [1, 10, 100], then the result of the interpolator for *t* = .5 is the array [.5, 5.5, 100].
 
-For example, say that *a* is the array [0, 1] and *b* is the array [1, 10, 100]. The result of the interpolator for time *t* is the array [.5, 5.5, 100].
-
-Note that no defensive copy of the template array is created; modifications of the returned array may adversely affect subsequent evaluation of the interpolator. No copy is made because interpolators should be fast, as they are part of the inner loop of animation.
+Note: no defensive copy of the template array is created; modifications of the returned array may adversely affect subsequent evaluation of the interpolator. No copy is made because interpolators should be fast, as they are part of the inner loop of animation.
 
 <a name="d3_interpolateObject" href="#d3_interpolateObject">#</a> d3.<b>interpolateObject</b>(<i>a</i>, <i>b</i>)
 
-Returns an object interpolator between the two objects *a* and *b*. Internally, an object template is created that has the same properties as *b*. For each property in *b*, if there exists a corresponding property in *a*, a generic interpolator is created for the two elements using [interpolate](#interpolate). If there is no such property, the static value from *b* is used in the template. Then, for each evaluation of the object interpolator for the parameterized time *t*, the template's embedded interpolators are evaluated. The updated object template is then returned.
+Returns an object interpolator between the two objects *a* and *b*. Internally, an object template is created that has the same properties as *b*. For each property in *b*, if there exists a corresponding property in *a*, a generic interpolator is created for the two elements using [interpolate](#interpolate). If there is no such property, the static value from *b* is used in the template. Then, for the given parameter *t*, the template's embedded interpolators are evaluated and the updated object template is then returned. For example, if *a* is the object {x: 0, y: 1} and *b* is the object {x: 1, y: 10, z: 100}, the result of the interpolator for *t* = .5 is the object {x: .5, y: 5.5, z: 100}.
 
-For example, say that *a* is the object {x: 0, y: 1} and *b* is the object {x: 1, y: 10, z: 100}. The result of the interpolator for time *t* is the object {x: .5, y: 5.5, z: 100}. Object interpolation is particularly useful for *dataspace interpolation*, where data is interpolated rather than attribute values. For example, you can interpolate an object which describes an arc in a pie chart, and then use [[d3.svg.arc|SVG-Shapes#arc]] to compute the new SVG path data.
+Object interpolation is particularly useful for *dataspace interpolation*, where data is interpolated rather than attribute values. For example, you can interpolate an object which describes an arc in a pie chart, and then use [[d3.svg.arc|SVG-Shapes#arc]] to compute the new SVG path data.
 
-Note that no defensive copy of the template object is created; modifications of the returned object may adversely affect subsequent evaluation of the interpolator. No copy is made because interpolators should be fast, as they are part of the inner loop of animation.
+Note: no defensive copy of the template object is created; modifications of the returned object may adversely affect subsequent evaluation of the interpolator. No copy is made because interpolators should be fast, as they are part of the inner loop of animation.
