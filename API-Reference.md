@@ -383,4 +383,42 @@ Also see the `csv` module.
 
 ## d3.svg
 
+### [[Events|SVG-Events]]
+
+* [[d3.svg.mouse|SVG-Events#mouse]]
+* [[d3.svg.touches|SVG-Events#touches]]
+
+### [[Shapes|SVG-Shapes]]
+
+* [[d3.svg.line|SVG-Shapes#line]]
+* [[line.x|SVG-Shapes#line_x]]
+* [[line.y|SVG-Shapes#line_y]]
+* [[line.interpolate|SVG-Shapes#line_interpolate]]
+* [[line.tension|SVG-Shapes#line_tension]]
+* [[d3.svg.diagonal|SVG-Shapes#diagonal]]
+* [[diagonal.source|SVG-Shapes#diagonal_source]]
+* [[diagonal.target|SVG-Shapes#diagonal_target]]
+* [[diagonal.projection|SVG-Shapes#diagonal_projection]]
+* [[d3.svg.chord|SVG-Shapes#chord]]
+* [[chord.radius|SVG-Shapes#chord_radius]]
+* [[chord.source|SVG-Shapes#chord_source]]
+* [[chord.target|SVG-Shapes#chord_target]]
+* [[chord.startAngle|SVG-Shapes#chord_startAngle]]
+* [[chord.endAngle|SVG-Shapes#chord_endAngle]]
+* [[d3.svg.area|SVG-Shapes#area]]
+* [[area.x|SVG-Shapes#area_x]]
+* [[area.y0|SVG-Shapes#area_y0]]
+* [[area.y1|SVG-Shapes#area_y1]]
+* [[area.interpolate|SVG-Shapes#area_interpolate]]
+* [[area.tension|SVG-Shapes#area_tension]]
+* [[d3.svg.arc|SVG-Shapes#arc]]
+* [[arc.innerRadius|SVG-Shapes#arc_innerRadius]]
+* [[arc.outerRadius|SVG-Shapes#arc_outerRadius]]
+* [[arc.startAngle|SVG-Shapes#arc_startAngle]]
+* [[arc.endAngle|SVG-Shapes#arc_endAngle]]
+* [[arc.centroid|SVG-Shapes#arc_centroid]]
+* [[d3.svg.symbol|SVG-Shapes#symbol]]
+* [[symbol.type|SVG-Shapes#symbol_type]]
+* [[symbol.size|SVG-Shapes#symbol_size]]
+
 ## d3.time
