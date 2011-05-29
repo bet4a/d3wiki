@@ -38,23 +38,23 @@ D3 has a variety of operators which affect the document content. These are what 
 
 <a name="attr" href="#attr">#</a> selection.<b>attr</b>(<i>name</i>[, <i>value</i>])
 
-If *value* is specified, sets the attribute with the specified name to the specified value on all selected elements. If *value* is a constant, then all elements are given the same attribute value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`. The function's return value is then used to set each element's attribute. A null value will remove the specified attribute.
+If *value* is specified, sets the attribute with the specified name to the specified value on all selected elements. If *value* is a constant, then all elements are given the same attribute value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's attribute. A null value will remove the specified attribute.
 
 If *value* is not specified, returns the value of the specified attribute for the first non-null element in the selection. This is generally useful only if you know the element contains exactly one element.
 
-The specified *name* may have a namespace prefix, such as "xlink:href" to specify an "href" attribute in the XLink namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to `d3.ns.prefix`.
+The specified *name* may have a namespace prefix, such as "xlink:href" to specify an "href" attribute in the XLink namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to d3.ns.**prefix**.
 
 <a name="classed" href="#classed">#</a> selection.<b>classed</b>(<i>name</i>[, <i>value</i>])
 
 This operator is a convenience routine for setting the "class" attribute; it understands that the "class" attribute is a set of tokens separated by spaces. Under the hood, it will use the [[classList|https://developer.mozilla.org/en/DOM/element.classList]] if available, for convenient adding, removing and toggling of CSS classes.
 
-If *value* is specified, sets whether or not the specified class is associated with the selected elements. If *value* is a constant and truthy, then all elements are assigned the specified class, if not already assigned; if falsey, then the class is removed from all selected elements, if assigned. If *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`. The function's return value is then used to assign or unassign the specified class on each element.
+If *value* is specified, sets whether or not the specified class is associated with the selected elements. If *value* is a constant and truthy, then all elements are assigned the specified class, if not already assigned; if falsey, then the class is removed from all selected elements, if assigned. If *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to assign or unassign the specified class on each element.
 
 If *value* is not specified, returns true if and only if the first non-null element in this selection has the specified class. This is generally useful only if you know the element contains exactly one element.
 
 <a name="style" href="#style">#</a> selection.<b>style</b>(<i>name</i>[, <i>value</i>[, <i>priority</i>]])
 
-If *value* is specified, sets the CSS style property with the specified name to the specified value on all selected elements. If *value* is a constant, then all elements are given the same style value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`. The function's return value is then used to set each element's style property. A null value will remove the style property. An optional *priority* may also be specified, either as null or the string "important" (without the exclamation point).
+If *value* is specified, sets the CSS style property with the specified name to the specified value on all selected elements. If *value* is a constant, then all elements are given the same style value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's style property. A null value will remove the style property. An optional *priority* may also be specified, either as null or the string "important" (without the exclamation point).
 
 If *value* is not specified, returns the current *computed* value of the specified style property for the first non-null element in the selection. This is generally useful only if you know the element contains exactly one element. Note that the computed value may be *different* than the value that was previously set, particularly if the style property was set using a shorthand property (such as the "font" style, which is shorthand for "font-size", "font-face", etc.).
 
@@ -62,7 +62,7 @@ If *value* is not specified, returns the current *computed* value of the specifi
 
 Some HTML elements have special properties that are not addressable using standard attributes or styles. For example, form text fields have a `value` string property, and checkboxes have a `checked` boolean property. You can use the `property` operator to get or set these properties, or any other addressable field on the underlying element, such as `className`.
 
-If *value* is specified, sets the property with the specified name to the specified value on all selected elements. If *value* is a constant, then all elements are given the same property value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`. The function's return value is then used to set each element's property. A null value will delete the specified attribute.
+If *value* is specified, sets the property with the specified name to the specified value on all selected elements. If *value* is a constant, then all elements are given the same property value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's property. A null value will delete the specified attribute.
 
 If *value* is not specified, returns the value of the specified property for the first non-null element in the selection. This is generally useful only if you know the element contains exactly one element.
 
@@ -70,7 +70,7 @@ If *value* is not specified, returns the value of the specified property for the
 
 The `text` operator is based on the [[textContent|http://www.w3.org/TR/DOM-Level-3-Core/core.html#Node3-textContent]] property; setting the text content will replace any existing child elements.
 
-If *value* is specified, sets the text content to the specified value on all selected elements. If *value* is a constant, then all elements are given the same text content; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`. The function's return value is then used to set each element's text content. A null value will clear the content.
+If *value* is specified, sets the text content to the specified value on all selected elements. If *value* is a constant, then all elements are given the same text content; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's text content. A null value will clear the content.
 
 If *value* is not specified, returns the text content for the first non-null element in the selection. This is generally useful only if you know the element contains exactly one element.
 
@@ -78,7 +78,7 @@ If *value* is not specified, returns the text content for the first non-null ele
 
 The `html` operator is based on the [[innerHTML|http://www.w3.org/TR/html5/apis-in-html-documents.html#innerhtml]] property; setting the inner HTML content will replace any existing child elements. Also, you may prefer to use the `append` or `insert` operators to create HTML content in a data-driven way; this operator is intended for when you want a little bit of HTML, say for rich formatting.
 
-If *value* is specified, sets the inner HTML content to the specified value on all selected elements. If *value* is a constant, then all elements are given the same inner HTML content; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`. The function's return value is then used to set each element's inner HTML content. A null value will clear the content.
+If *value* is specified, sets the inner HTML content to the specified value on all selected elements. If *value* is a constant, then all elements are given the same inner HTML content; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's inner HTML content. A null value will clear the content.
 
 If *value* is not specified, returns the inner HTML content for the first non-null element in the selection. This is generally useful only if you know the element contains exactly one element.
 
@@ -86,13 +86,13 @@ If *value* is not specified, returns the inner HTML content for the first non-nu
 
 Appends a new element with the specified *name* as the last child of each element in the current selection. Returns a new selection containing the appended elements. Each new element inherits the data of the current elements, if any, in the same manner as [select](#select) for subselections. The name must be specified as a constant, though in the future we might allow appending of existing elements or a function to generate the name dynamically.
 
-The element's tag *name* may have a namespace prefix, such as "svg:text" to create a "text" element in the SVG namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to `d3.ns.prefix`.
+The element's tag *name* may have a namespace prefix, such as "svg:text" to create a "text" element in the SVG namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to d3.ns.**prefix**.
 
 <a name="insert" href="#insert">#</a> selection.<b>insert</b>(<i>name</i>, <i>before</i>)
 
 Inserts a new element with the specified *name* before the element matching the specified *before* selector, for each element in the current selection. Returns a new selection containing the inserted elements. If the before selector does not match any elements, then the new element will be the last child as with [append](#append). Each new element inherits the data of the current elements (if any), in the same manner as [select](#select) for subselections. The name and before selector must be specified as constants, though in the future we might allow inserting of existing elements or a function to generate the name or selector dynamically.
 
-The element's tag *name* may have a namespace prefix, such as "svg:text" to create a "text" element in the SVG namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to `d3.ns.prefix`.
+The element's tag *name* may have a namespace prefix, such as "svg:text" to create a "text" element in the SVG namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to d3.ns.**prefix**.
 
 <a name="remove" href="#remove">#</a> selection.<b>remove</b>()
 
@@ -136,7 +136,7 @@ Assuming that the body is initially empty, the above code will create six new DI
 
 Another way to think about the entering placeholder nodes is that they are pointers to the parent node (in this example, the document body); however, they only support append and insert.
 
-Note that appending entering nodes does not immediately affect the updating selection; you must reselect `div` if you want it to reflect these additions. Perhaps in the future we'll change this behavior, such that appending entering nodes will be immediately assigned to the updating selection and obviating the need for a reselect. However, this change isn't strictly backwards-compatible as it will likely require doing any updates *before* enter, so as to avoid redundant operators to both updating and entering elements.
+Note that appending entering nodes does not immediately affect the updating selection; you must reselect if you want it to reflect these additions. Perhaps in the future we'll change this behavior, such that appending entering nodes will be immediately assigned to the updating selection and obviating the need for a reselect. However, this change isn't strictly backwards-compatible as it will likely require doing any updates *before* enter, so as to avoid redundant operators to both updating and entering elements.
 
 <a name="exit" href="#exit">#</a> selection.<b>exit()</b>
 
@@ -182,11 +182,11 @@ If you want the document traversal order to match the selection data order, you 
 
 <a name="filter" href="#filter">#</a> selection.<b>filter</b>(<i>function</i>)
 
-Filters the selection, returning a new selection that contains only the elements for which the specified *function* returns true. As with other operators, the specified function is passed the current datum `d` and index `i`; the `this` context is the current DOM element. Unlike the built-in array [[filter|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter]] method, the returned selection preserves the index of the original selection; thus, you can use the filter operator to apply other operators to a subset of elements, with affecting the associated data or index.
+Filters the selection, returning a new selection that contains only the elements for which the specified *function* returns true. As with other operators, the specified function is passed the current datum `d` and index `i`, with the `this` context as the current DOM element. Unlike the built-in array [[filter|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter]] method, the returned selection preserves the index of the original selection; thus, you can use the filter operator to apply other operators to a subset of elements, with affecting the associated data or index.
 
 <a name="map" href="#map">#</a> selection.<b>map</b>(<i>function</i>)
 
-Assigns new data to the current selection based on the current data. The specified *function* is invoked for each element in the current selection, being passed the current datum `d` and index `i`; the `this` context is the current DOM element. The return value of the function becomes the new data for the current DOM element, bound to `__data__`. This is conceptually similar to the built-in array [[map|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Map]] method, however this modifies the data bound to the current selection, rather than returning a new array. This operator has no effect on the index.
+Assigns new data to the current selection based on the current data. The specified *function* is invoked for each element in the current selection, being passed the current datum `d` and index `i`, with the `this` context as the current DOM element. The return value of the function becomes the new data for the current DOM element, bound to `__data__`. This is conceptually similar to the built-in array [[map|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Map]] method, however this modifies the data bound to the current selection, rather than returning a new array. This operator has no effect on the index.
 
 <a name="sort" href="#sort">#</a> selection.<b>sort</b>(<i>comparator</i>)
 
