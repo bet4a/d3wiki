@@ -66,7 +66,7 @@ Start a transition on multiple descendants for each selected element. Inherits e
 
 <a name="each" href="#each">#</a> transition.<b>each</b>(<i>type</i>, <i>listener</i>)
 
-Add a listener for transition events. Currently only supports "end" events. There is no way to remove the event listener. And, this operator has the same name as the selection [each][Selections#each] operator, which is somewhat confusing. It should probably be renamed to "on" or "onEach".
+Add a listener for transition events. Currently only supports "end" events. There is no way to remove the event listener. And, this operator has the same name as the selection [[each|Selections#each]] operator, which is somewhat confusing. It should probably be renamed to "on" or "onEach".
 
 <a name="call" href="#call">#</a> transition.<b>call</b>(<i>function</i>)
 
