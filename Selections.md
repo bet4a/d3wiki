@@ -136,6 +136,8 @@ Assuming that the body is initially empty, the above code will create six new DI
 
 Another way to think about the entering placeholder nodes is that they are pointers to the parent node (in this example, the document body); however, they only support append and insert.
 
+Note that appending entering nodes does not immediately affect the updating selection; you must reselect `div` if you want it to reflect these additions. Perhaps in the future we'll change this behavior, such that appending entering nodes will be immediately assigned to the updating selection and obviating the need for a reselect. However, this change isn't strictly backwards-compatible as it will likely require doing any updates *before* enter, so as to avoid redundant operators to both updating and entering elements.
+
 <a name="exit" href="#exit">#</a> selection.<b>exit()</b>
 
 Returns the exiting selection: existing DOM elements in the current selection for which no new data element was found. This method is only defined on a selection returned by the [data](#data) operator. The exiting selection defines all the normal operators, though typically the main one you'll want to use is [remove](#remove); the other operators exist primarily so you can define an exiting transition as desired. Note that the *exit* operator merely returns a reference to the exiting selection, and it is up to you to remove the new nodes.
@@ -180,7 +182,11 @@ If you want the document traversal order to match the selection data order, you 
 
 <a name="filter" href="#filter">#</a> selection.<b>filter</b>(<i>function</i>)
 
+Filters the selection, returning a new selection that contains only the elements for which the specified *function* returns true. As with other operators, the specified function is passed the current datum `d` and index `i`; the `this` context is the current DOM element. Unlike the built-in array [[filter|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter]] method, the returned selection preserves the index of the original selection; thus, you can use the filter operator to apply other operators to a subset of elements, with affecting the associated data or index.
+
 <a name="map" href="#map">#</a> selection.<b>map</b>(<i>function</i>)
+
+Assigns new data to the current selection based on the current data. The specified *function* is invoked for each element in the current selection, being passed the current datum `d` and index `i`; the `this` context is the current DOM element. The return value of the function becomes the new data for the current DOM element, bound to `__data__`. This is conceptually similar to the built-in array [[map|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Map]] method, however this modifies the data bound to the current selection, rather than returning a new array. This operator has no effect on the index.
 
 <a name="sort" href="#sort">#</a> selection.<b>sort</b>(<i>comparator</i>)
 
