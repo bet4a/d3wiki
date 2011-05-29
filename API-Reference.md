@@ -4,7 +4,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 ## d3 (core)
 
-### Selections
+### [[Selections]]
 
 * [[d3.select|Selections#d3_select]] - select an element from the current document.
 * [[d3.selectAll|Selections#d3_selectAll]] - select multiple elements from the current document.
@@ -34,7 +34,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.ns|Selections#d3_ns]] - access or extend known XML namespaces.
 * [[d3.functor|Selections#d3_functor]] - create a function that returns a constant.
 
-### Transitions
+### [[Transitions]]
 
 * [[d3.transition|Transitions#d3_transition]] - start an animated transition.
 * [[d3.ease|Transitions#d3_ease]] - customize transition timing.
