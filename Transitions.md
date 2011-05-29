@@ -22,7 +22,11 @@ Create an animated transition. This is equivalent to `d3.select(document).transi
 
 Specifies the transition *delay* in milliseconds. If *delay* is a constant, then all elements are given the same delay; otherwise, if *delay* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's delay. The default delay is 0.
 
-Setting the delay to be a multiple of the index `i` is a convenient way to stagger transitions for elements. You can also compute the delay as a function of the data, thereby creating a data-driven animation.
+Setting the delay to be a multiple of the index `i` is a convenient way to stagger transitions for elements. For example, if you used a fixed duration of *duration*, and have *n* elements in the current selection, you can stagger the transition over 2 \* *duration* by saying:
+
+    .delay(function(d, i) { return i / n * duration; })
+
+You may also compute the delay as a function of the data, thereby creating a data-driven animation.
 
 <a name="duration" href="#duration">#</a> transition.<b>duration</b>(<i>duration</i>)
 
@@ -30,7 +34,7 @@ Specifies per-element *duration* in milliseconds. If *duration* is a constant, t
 
 <a name="ease" href="#ease">#</a> transition.<b>ease</b>(<i>value</i>[, <i>arguments</i>])
 
-Specifies the transition easing function. If *value* is a function, it is used to ease the current parametric timing value *t* in the range [0,1]; otherwise, *value* is assumed to be a string and the arguments are passed to the [d3.ease][#d3_ease] method to generate an easing function. The default easing function is "cubic-in-out".
+Specifies the transition [[easing function|http://www.robertpenner.com/easing/]]. If *value* is a function, it is used to ease the current parametric timing value *t* in the range [0,1]; otherwise, *value* is assumed to be a string and the arguments are passed to the [d3.ease][#d3_ease] method to generate an easing function. The default easing function is "cubic-in-out". Note that it is not possible to customize the easing function per-element or per-attribute; however, if you use the "linear" easing function, you can apply custom easing inside your interpolator by using [attrTween](#attrTween) or [styleTween](#styleTween).
 
 ## Operating on Transitions
 
@@ -38,79 +42,151 @@ Specifies the transition easing function. If *value* is a function, it is used t
 
 <a name="attr" href="#attr">#</a> transition.<b>attr</b>(<i>name</i>, <i>value</i>)
 
-Transitions the value of the attribute with the specified *name* to the specified *value*. The starting value of the transition is the current attribute value, and the ending value is the specified *value*.  If *value* is a constant, then all elements are given the same attribute value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's attribute. Null values are not supported.
+Transitions the value of the attribute with the specified *name* to the specified *value*. The starting value of the transition is the current attribute value, and the ending value is the specified *value*.  If *value* is a constant, then all elements are transitioned to the same attribute value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order) as the element starts transitioning, being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to transition each element's attribute. Null values are not supported; if you want to remove the attribute after the transition finishes, listen to the [end](#each) event.
 
-An interpolator is selected automatically based on the ending value. If the ending value is a number, the starting value is coerced to a number and [interpolateNumber](#interpolateNumber) is used. If the ending value is a string, a check is performed to see if the string represents a color of the form `/^(#|rgb\(|hsl\()/`, or one of the [[CSS named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]]; if it is, the starting value is coerced to an RGB color and [interpolateRgb](#interpolateRgb) is used. Otherwise, [interpolateString](#interpolateString) is used, which interpolates numbers embedded within strings.
+An interpolator is selected automatically based on the ending value. If the ending value is a number, the starting value is coerced to a number and [interpolateNumber](#interpolateNumber) is used. If the ending value is a string, a check is performed to see if the string represents a color of the form `/^(#|rgb\(|hsl\()/`, or one of the [[CSS named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]]; if the ending value is a color, the starting value is coerced to an RGB color and [interpolateRgb](#interpolateRgb) is used. Otherwise, [interpolateString](#interpolateString) is used, which interpolates numbers embedded within strings.
 
 <a name="attrTween" href="#attrTween">#</a> transition.<b>attrTween</b>(<i>name</i>, <i>tween</i>)
 
-Transitions the value of the attribute with the specified *name* according to the specified *tween* function. The starting and ending value of the transition are determined by *tween*. The specified *tween* function is invoked when the transition starts on each element, being passed the current datum `d`, the current index `i` and the current attribute value `a`, with the `this` context as the current DOM element. The return value of *tween* is an interpolator: a function that maps a parametric value *t* in the domain [0,1] to a color, number or arbitrary value.
+Transitions the value of the attribute with the specified *name* according to the specified *tween* function. The starting and ending value of the transition are determined by *tween*; the *tween* function is invoked when the transition starts on each element, being passed the current datum `d`, the current index `i` and the current attribute value `a`, with the `this` context as the current DOM element. The return value of *tween* must be an interpolator: a function that maps a parametric value *t* in the domain [0,1] to a color, number or arbitrary value.
 
-The attr operator is built on top of the attrTween operator. The tween function used by the attr operator depends on whether the end value is a function or a constant. If *value* is a function:
+For example, the attr operator is built on top of the attrTween operator. The tween function used by the attr operator depends on whether the end value is a function or a constant. If the end value is a function:
 
     function tween(d, i, a) {
       return d3.interpolate(a, String(value.call(this, d, i)));
     }
 
-Otherwise, *value* is assumed to be a constant:
+Otherwise, if the end value is a constant:
 
     function tween(d, i, a) {
       return d3.interpolate(a, String(value));
     }
 
-The attrTween operator is intended to be used when you need a custom interpolator, such as one that understands the semantics of SVG path data. Use the attr operator for the simple, common case where an interpolator can be automatically derived from the current attribute value to the desired end value.
+The attrTween operator is used when you need a custom interpolator, such as one that understands the semantics of SVG path data. One common technique is *dataspace interpolation*, where [interpolateObject](#interpolateObject) is used to interpolate two data values, and the result of this interpolation is then used (say, with a [[shape|SVG-Shapes]]) to compute the new attribute value. Use the attr operator for the simpler common case where an interpolator can be automatically derived from the current attribute value to the desired end value.
 
 <a name="style" href="#style">#</a> transition.<b>style</b>(<i>name</i>, <i>value</i>[, <i>priority</i>])
 
-Smoothly transition to the new style property value.
+Transitions the value of the CSS style property with the specified *name* to the specified *value*. An optional *priority* may also be specified, either as null or the string "important" (without the exclamation point). The starting value of the transition is the current computed style property value, and the ending value is the specified *value*.  If *value* is a constant, then all elements are transitioned to the same style property value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order) as the element starts transitioning, being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to transition each element's style property. Null values are not supported; if you want to remove the style property after the transition finishes, listen to the [end](#each) event.
+
+An interpolator is selected automatically based on the ending value. If the ending value is a number, the starting value is coerced to a number and [interpolateNumber](#interpolateNumber) is used. If the ending value is a string, a check is performed to see if the string represents a color of the form `/^(#|rgb\(|hsl\()/`, or one of the [[CSS named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]]; if the ending value is a color, the starting value is coerced to an RGB color and [interpolateRgb](#interpolateRgb) is used. Otherwise, [interpolateString](#interpolateString) is used, which interpolates numbers embedded within strings.
+
+Note that the computed starting value may be different than the value that was previously set, particularly if the style property was set using a shorthand property (such as the "font" style, which is shorthand for "font-size", "font-face", etc.).
 
 <a name="styleTween" href="#styleTween">#</a> transition.<b>styleTween</b>(<i>name</i>, <i>tween</i>[, <i>priority</i>])
 
-Smoothly transition between two style property values.
+Transitions the value of the CSS style property with the specified *name* according to the specified *tween* function. An optional *priority* may also be specified, either as null or the string "important" (without the exclamation point). The starting and ending value of the transition are determined by *tween*; the *tween* function is invoked when the transition starts on each element, being passed the current datum `d`, the current index `i` and the current attribute value `a`, with the `this` context as the current DOM element. The return value of *tween* must be an interpolator: a function that maps a parametric value *t* in the domain [0,1] to a color, number or arbitrary value.
+
+For example, the style operator is built on top of the styleTween operator. The tween function used by the style operator depends on whether the end value is a function or a constant. If the end value is a function:
+
+    function tween(d, i, a) {
+      return d3.interpolate(a, String(value.call(this, d, i)));
+    }
+
+Otherwise, if the end value is a constant:
+
+    function tween(d, i, a) {
+      return d3.interpolate(a, String(value));
+    }
+
+The styleTween operator is used when you need a custom interpolator, such as one that understands the semantics of CSS3 transforms. Use the style operator for the simpler common case where an interpolator can be automatically derived from the current computed style property value to the desired end value.
 
 <a name="text" href="#text">#</a> transition.<b>text</b>(<i>value</i>)
 
-Set the text content when the transition starts.
+The `text` operator is based on the [[textContent|http://www.w3.org/TR/DOM-Level-3-Core/core.html#Node3-textContent]] property; setting the text content will replace any existing child elements.
+
+Set the text content to the specified value on all selected elements when the transition starts. If *value* is a constant, then all elements are given the same text content; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order) as the element starts transitioning, being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's text content. A null value will clear the content.
 
 <a name="remove" href="#remove">#</a> transition.<b>remove</b>()
 
-Remove selected elements at the end of a transition. If the transition is cancelled, the selected elements will not be removed.
+Remove the selected elements at the end of a transition. If a newer transition is scheduled on any of the selected elements, these elements will not be removed; however, the "end" event will still be dispatched.
 
 ### Subtransitions
 
+Transitions may be derived from existing transitions, in a similar manner to subselections. Subtransitions inherit easing, duration and delay from the parent transition.
+
 <a name="select" href="#select">#</a> transition.<b>select</b>(<i>selector</i>)
 
-Start a transition on a descendant element for each selected element. Inherits easing, duration and delay.
+For each element in the current transition, selects the first descendant element that matches the specified *selector* string. If no element matches the specified selector for the current element, the element at the current index will be null in the returned selection; operators (with the exception of [data](#data)) automatically skip null elements, thereby preserving the index of the existing selection. If the current element has associated data, this data is inherited by the returned subselection, and automatically bound to the newly selected elements. If multiple elements match the selector, only the first matching element in document traversal order will be selected.
+
+This method is approximately equivalent to
+
+    selection.select(selector).transition()
+
+where *selection* is the current transition's underlying selection. In addition, the returned new transition inherits easing, duration and delay from the current transition.
 
 <a name="selectAll" href="#selectAll">#</a> transition.<b>selectAll</b>(<i>selector</i>)
 
-Start a transition on multiple descendants for each selected element. Inherits easing, duration and delay.
+For each element in the current transition, selects descendant elements that match the specified *selector* string. The returned selection is grouped by the ancestor node in the current selection. If no element matches the specified selector for the current element, the group at the current index will be empty in the returned selection. The subselection does not inherit data from the current selection; however, if data was previously bound to the selected elements, that data will be available to operators.
+
+This method is approximately equivalent to
+
+    selection.selectAll(selector).transition()
+
+where *selection* is the current transition's underlying selection. In addition, the returned new transition inherits easing, duration and delay from the current transition. The duration and delay for each subelement is inherited from the duration and delay of the parent element in the current transition.
 
 ### Control
 
 <a name="each" href="#each">#</a> transition.<b>each</b>(<i>type</i>, <i>listener</i>)
 
-Add a listener for transition events. Currently only supports "end" events. There is no way to remove the event listener. And, this operator has the same name as the selection [[each|Selections#each]] operator, which is somewhat confusing. It should probably be renamed to "on" or "onEach".
+Add a listener for transition events. Currently only "end" events are supported. The listener will be invoked for each individual element in the transition, even if the transition has a constant delay and duration. The end event can be used to initiate multi-stage transitions by selecting the current element (`d3.select(this)`) and deriving a new transition. Any transitions created during the end event will inherit the current transition ID, and thus will not override a newer transition that was previously scheduled.
+
+Note: there is no way to remove the event listener. And, this operator has the same name as the selection [[each|Selections#each]] operator, which is somewhat confusing. It should probably be renamed to "onEach".
 
 <a name="call" href="#call">#</a> transition.<b>call</b>(<i>function</i>)
 
-Call a function passing in the current transition.
+Invokes the specified *function* once, passing in the current transition along with any optional *arguments*. The call operator always returns the current transition, regardless of the return value of the specified function. The call operator is identical to invoking a function by hand; but it makes it easier to use method chaining. For example, say we want to set a number of attributes the same way in a number of different places. So we take the code and wrap it in a reusable function:
+
+    function foo(selection) {
+      selection
+          .attr("name1", "value1")
+          .attr("name2", "value2");
+    }
+
+Now, we can say this:
+
+    foo(d3.selectAll("div").transition())
+
+Or equivalently:
+
+    d3.selectAll("div").transition().call(foo);
+
+In many cases, it is possible to call the same function *foo* on both transitions and selections, due to identical methods on both selections and transitions! The `this` context of the called function is also the current transition. This is slightly redundant with the first argument, which we might fix in the future.
 
 ## Easing
 
-<a name="d3_ease" href="#d3_ease">#</a> d3.<b>ease</b>(<i>name</i>[, <i>arguments…</i>])
+<a name="d3_ease" href="#d3_ease">#</a> d3.<b>ease</b>(<i>type</i>[, <i>arguments…</i>])
 
-Customize transition timing.
+Returns a built-in easing function of the specified *type*, with any optional *arguments*. An easing function takes the current parameterized time value *t* in the domain [0,1], and maps it to another value in a similar range; it is typically used to set transition [easing](#ease). The following easing types are supported:
+
+* linear - the identity function, *t*.
+* poly(k) - raises *t* to the specified power *k* (e.g., 3).
+* quad - equivalent to poly(2).
+* cubic - equivalent to poly(3).
+* sin - applies the trigonometric function *sin*.
+* exp - raises 2 to a power based on *t*.
+* circle - the quarter circle.
+* elastic(a, p) - simulates an elastic band; may extend slightly beyond 0 and 1.
+* back(s) - like backing into a parking space.
+* bounce - simulates a bouncy collision.
+
+These built-in types may be extended using a variety of modes:
+
+* in - the identity function.
+* out - reverses the easing direction to [1,0].
+* in-out - copies and mirrors the easing function from [0,.5] and [.5,1].
+* out-in - copies and mirrors the easing function from [1,.5] and [.5,0].
+
+The default easing function is "cubic-in-out" which provides suitable [[slow-in slow-out|http://en.wikipedia.org/wiki/12_basic_principles_of_animation#Slow_in_and_slow_out]] animation.
 
 ## Timers
 
 <a name="d3_timer" href="#d3_timer">#</a> d3.<b>timer</b>(<i>function</i>)
 
-Start a custom animation timer.
+Start a custom animation timer, invoking the specified *function* repeatedly until it returns true. If your browser supports it, this uses [[requestAnimationFrame|http://paulirish.com/2011/requestanimationframe-for-smart-animating/]] for fluid and efficient animation. D3 internally maintains an efficient timer queue so that thousands of timers can be processed concurrently with minimal overhead; in addition, this timer queue guarantees consistent timing when concurrent or staged transitions are scheduled.
 
 <a name="d3_timer_flush" href="#d3_timer_flush">#</a> d3.timer.<b>flush</b>()
 
-Immediately execute any zero-delay timers. Normally, zero-delay transitions are executed after an instantaneous delay. However, this can sometimes cause a brief flicker if the browser renders the page twice: once at the end of the first event loop, then again immediately on the first timer callback. By flushing the timer queue at the end of the first event loop, you can run any zero-delay transitions immediately and avoid the flicker.
+Immediately execute any zero-delay timers. Normally, zero-delay transitions are executed after an instantaneous delay (<10ms). This can cause a brief flicker if the browser renders the page twice: once at the end of the first event loop, then again immediately on the first timer callback. By flushing the timer queue at the end of the first event loop, you can run any zero-delay transitions immediately and avoid the flicker.
 
 ## Interpolation
 
