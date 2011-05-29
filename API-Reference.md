@@ -19,10 +19,10 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.interpolateNumber|Transitions#d3_interpolateNumber]] - interpolate two numbers.
 * [[d3.interpolateRound|Transitions#d3_interpolateRound]] - interpolate two integers.
 * [[d3.interpolateString|Transitions#d3_interpolateString]] - interpolate two strings.
-* [[d3.interpolateString|Transitions#d3_interpolateRgb]] - interpolate two RGB colors.
-* [[d3.interpolateString|Transitions#d3_interpolateHsl]] - interpolate two HSL colors.
-* [[d3.interpolateString|Transitions#d3_interpolateArray]] - interpolate two arrays of values.
-* [[d3.interpolateString|Transitions#d3_interpolateObjects]] - interpolate two arbitrary objects.
+* [[d3.interpolateRgb|Transitions#d3_interpolateRgb]] - interpolate two RGB colors.
+* [[d3.interpolateHsl|Transitions#d3_interpolateHsl]] - interpolate two HSL colors.
+* [[d3.interpolateArray|Transitions#d3_interpolateArray]] - interpolate two arrays of values.
+* [[d3.interpolateObject|Transitions#d3_interpolateObject]] - interpolate two arbitrary objects.
 
 ### Events
 
