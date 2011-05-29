@@ -37,6 +37,18 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 ### [[Transitions]]
 
 * [[d3.transition|Transitions#d3_transition]] - start an animated transition.
+* [[transition.delay|Transitions#delay]] - specify per-element delay in milliseconds.
+* [[transition.duration|Transitions#duration]] - specify per-element duration in milliseconds.
+* [[transition.ease|Transitions#ease]] - specify transition easing function.
+* [[transition.attr|Transitions#attr]] - smoothly transition to the new attribute value.
+* [[transition.attrTween|Transitions#attrTween]] - smoothly transition between two attribute values.
+* [[transition.style|Transitions#style]] - smoothly transition to the new style property value.
+* [[transition.styleTween|Transitions#styleTween]] - smoothly transition between two style property values.
+* [[transition.text|Transitions#text]] - set the text content when the transition starts.
+* [[transition.select|Transitions#select]] - start a transition on a descendant element for each selected element.
+* [[transition.selectAll|Transitions#selectAll]] - start a transition on multiple descendants for each selected element.
+* [[transition.remove|Transitions#remove]] - remove selected elements at the end of a transition.
+* [[transition.each|Transitions#each]] - add a listener for transition end events.
 * [[d3.ease|Transitions#d3_ease]] - customize transition timing.
 * [[d3.interpolate|Transitions#d3_interpolate]] - interpolate two values.
 * [[d3.interpolateNumber|Transitions#d3_interpolateNumber]] - interpolate two numbers.
