@@ -8,6 +8,29 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 * [[d3.select|Selections#d3_select]] - select an element from the current document.
 * [[d3.selectAll|Selections#d3_selectAll]] - select multiple elements from the current document.
+* [[attr|Selections#attr]] - get or set attribute values.
+* [[classed|Selections#classed]] - add or remove CSS classes.
+* [[style|Selections#style]] - get or set style properties.
+* [[property|Selections#property]] - get or set raw properties.
+* [[text|Selections#text]] - get or set text content.
+* [[html|Selections#html]] - get or set inner HTML content.
+* [[append|Selections#append]] - create and append new elements.
+* [[insert|Selections#insert]] - create and insert new elements before existing elements.
+* [[remove|Selections#remove]] - remove elements from the document.
+* [[data|Selections#data]] - bind data to elements, and compute a relational join.
+* [[enter|Selections#enter]] - returns placeholders for missing elements.
+* [[exit|Selections#exit]] - returns elements that are no longer needed.
+* [[filter|Selections#filter]] - filter a selection based on data.
+* [[map|Selections#map]] - modify the data associated with the selected elements.
+* [[sort|Selections#sort]] - sort elements in the document based on data.
+* [[on|Selections#on]] - add or remove event listeners for interaction.
+* [[transition|Selections#transition]] - start a transition on the selected elements.
+* [[each|Selections#each]] - call a function for each selected element.
+* [[call|Selections#call]] - call a function passing in the current selection.
+* [[empty|Selections#empty]] - returns true if the selection is empty.
+* [[node|Selections#node]] - access the first node in a selection.
+* [[select|Selections#select]] - subselect a descendant element for each selected element.
+* [[selectAll|Selections#selectAll]] - subselect multiple descendants for each selected element.
 * [[d3.ns|Selections#d3_ns]] - access or extend known XML namespaces.
 * [[d3.functor|Selections#d3_functor]] - create a function that returns a constant.
 
