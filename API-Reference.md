@@ -49,6 +49,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[transition.selectAll|Transitions#selectAll]] - start a transition on multiple descendants for each selected element.
 * [[transition.remove|Transitions#remove]] - remove selected elements at the end of a transition.
 * [[transition.each|Transitions#each]] - add a listener for transition end events.
+* [[transition.call|Transitions#call]] - call a function passing in the current transition.
 * [[d3.ease|Transitions#d3_ease]] - customize transition timing.
 * [[d3.interpolate|Transitions#d3_interpolate]] - interpolate two values.
 * [[d3.interpolateNumber|Transitions#d3_interpolateNumber]] - interpolate two numbers.
