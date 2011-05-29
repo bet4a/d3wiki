@@ -62,12 +62,12 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.interpolateArray|Transitions#d3_interpolateArray]] - interpolate two arrays of values.
 * [[d3.interpolateObject|Transitions#d3_interpolateObject]] - interpolate two arbitrary objects.
 
-### Events
+### [[Events]]
 
 * [[d3.dispatch|Events#d3_dispatch]] - create a custom event dispatcher.
 * [[d3.event|Events#d3_event]] - access the current user event for interaction.
 
-### Working with Arrays
+### [[Working with Arrays|Arrays]]
 
 * [[d3.ascending|Arrays#d3_ascending]] - compare two values for sorting.
 * [[d3.descending|Arrays#d3_descending]] - compare two values for sorting.
@@ -81,36 +81,244 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.range|Arrays#d3_range]] - generate a range of numeric values.
 * [[d3.nest|Arrays#d3_nest]] - group array elements hierarchically.
 
-### Loading External Resources
+### [[Loading External Resources|Loading]]
 
-* [[d3.xhr|Resources#d3_xhr]] - load a resource using `XMLHttpRequest`.
-* [[d3.text|Resources#d3_text]] - load a text file.
-* [[d3.json|Resources#d3_json]] - load a JSON blob.
-* [[d3.html|Resources#d3_html]] - load an HTML document fragment.
-* [[d3.xml|Resources#d3_xml]] - load an XML document fragment.
+* [[d3.xhr|Loading#d3_xhr]] - load a resource using `XMLHttpRequest`.
+* [[d3.text|Loading#d3_text]] - load a text file.
+* [[d3.json|Loading#d3_json]] - load a JSON blob.
+* [[d3.html|Loading#d3_html]] - load an HTML document fragment.
+* [[d3.xml|Loading#d3_xml]] - load an XML document fragment.
 
 Also see the `csv` module.
 
-### Number Formatting
+### [[Number Formatting|Formatting]]
 
-* d3.format
+* [[d3.format|Formatting#d3_format]] - format a number as a string.
 
-### Colors
+### [[Colors]]
 
-* d3.rgb
-* d3.hsl
+* [[d3.rgb|Colors#d3_rgb]] - specify a color in RGB space.
+* [[rgb.brighter|Colors#rgb_brighter]] - increase RGB channels by some exponential factor (gamma).
+* [[rgb.darker|Colors#rgb_darker]] - decrease RGB channels by some exponential factor (gamma).
+* [[rgb.hsl|Colors#rgb_hsl]] - convert from RGB to HSL.
+* [[d3.hsl|Colors#d3_hsl]] - specify a color in HSL space.
+* [[hsl.brighter|Colors#hsl_brighter]] - increase lightness by some exponential factor (gamma).
+* [[hsl.darker|Colors#hsl_darker]] - decrease lightness by some exponential factor (gamma).
+* [[hsl.rgb|Colors#hsl_rgb]] - convert from HSL to RGB.
 
 ## d3.behavior
 
+### [[Zoom|Behavior-Zoom]]
+
+* [[d3.behavior.zoom|Behavior-Zoom#zoom]]
+* [[zoom.on|Behavior-Zoom#on]]
+
 ## d3.chart
+
+### [[Box|Chart-Box]]
+
+* [[d3.chart.box|Chart-Box#box]]
+* [[box.width|Chart-Box#width]]
+* [[box.height|Chart-Box#height]]
+* [[box.tickFormat|Chart-Box#tickFormat]]
+* [[box.duration|Chart-Box#duration]]
+* [[box.domain|Chart-Box#domain]]
+* [[box.value|Chart-Box#value]]
+* [[box.whiskers|Chart-Box#whiskers]]
+* [[box.quartiles|Chart-Box#quartiles]]
+
+### [[Bullet|Chart-Bullet]]
+
+* [[d3.chart.bullet|Chart-Bullet#bullet]]
+* [[bullet.orient|Chart-Bullet#orient]]
+* [[bullet.ranges|Chart-Bullet#ranges]]
+* [[bullet.markers|Chart-Bullet#markers]]
+* [[bullet.measures|Chart-Bullet#measures]]
+* [[bullet.width|Chart-Bullet#width]]
+* [[bullet.height|Chart-Bullet#height]]
+* [[bullet.tickFormat|Chart-Bullet#tickFormat]]
+* [[bullet.duration|Chart-Bullet#duration]]
+
+### [[QQ|Chart-QQ]]
+
+* [[d3.chart.qq|Chart-QQ#qq]]
+* [[qq.width|Chart-QQ#width]]
+* [[qq.height|Chart-QQ#height]]
+* [[qq.duration|Chart-QQ#duration]]
+* [[qq.domain|Chart-QQ#domain]]
+* [[qq.count|Chart-QQ#count]]
+* [[qq.x|Chart-QQ#x]]
+* [[qq.y|Chart-QQ#y]]
+* [[qq.tickFormat|Chart-QQ#tickFormat]]
 
 ## d3.csv
 
+### [[CSV]]
+
+* [[d3.csv|CSV#csv]]
+* [[d3.csv.parse|CSV#parse]]
+* [[d3.csv.parseRows|CSV#parseRows]]
+* [[d3.csv.format|CSV#format]]
+
 ## d3.geo
+
+### [[Paths|Geo-Paths]]
+
+* [[d3.geo.path|Geo-Paths#path]]
+* [[path.projection|Geo-Paths#projection]]
+* [[path.area|Geo-Paths#area]]
+* [[path.centroid|Geo-Paths#centroid]]
+* [[path.pointRadius|Geo-Paths#pointRadius]]
+* [[d3.geo.bounds|Geo-Paths#bounds]]
+
+### [[Projections|Geo-Projections]]
+
+* [[d3.geo.mercator|Geo-Projections#mercator]]
+* [[mercator.scale|Geo-Projections#mercator_scale]]
+* [[mercator.translate|Geo-Projections#mercator_translate]]
+* [[d3.geo.albers|Geo-Projections#albers]]
+* [[albers.origin|Geo-Projections#albers_origin]]
+* [[albers.parallels|Geo-Projections#albers_parallels]]
+* [[albers.scale|Geo-Projections#albers_scale]]
+* [[albers.translate|Geo-Projections#albers_translate]]
+* [[d3.geo.albersUsa|Geo-Projections#albersUsa]]
+* [[albersUsa.scale|Geo-Projections#albersUsa_scale]]
+* [[albersUsa.translate|Geo-Projections#albersUsa_translate]]
 
 ## d3.geom
 
+### [[Voronoi|Geom-Voronoi]]
+
+* [[d3.geom.voronoi|Geom-Voronoi#voronoi]]
+* [[d3.geom.delaunay|Geom-Voronoi#delaunay]]
+
+### [[Quadtree|Geom-Quadtree]]
+
+* [[d3.geom.quadtree|Geom-Quadtree#quadtree]]
+* [[quadtree.visit|Geom-Quadtree#visit]]
+
+### [[Polygon|Geom-Polygon]]
+
+* [[d3.geom.polygon|Geom-Polygon#polygon]]
+* [[polygon.area|Geom-Polygon#area]]
+* [[polygon.centroid|Geom-Polygon#centroid]]
+* [[polygon.clip|Geom-Polygon#clip]]
+
+### [[Hull|Geom-Hull]]
+
+* [[d3.geom.hull|Geom-Hull#hull]]
+
+### [[Contour|Geom-Contour]]
+
+* [[d3.geom.contour|Geom-Contour#contour]]
+
 ## d3.layout
+
+### [[Force|Layout-Force]]
+
+* [[d3.layout.force|Layout-Force#force]]
+* [[force.on|Layout-Force#on]]
+* [[force.nodes|Layout-Force#nodes]]
+* [[force.links|Layout-Force#links]]
+* [[force.size|Layout-Force#size]]
+* [[force.distance|Layout-Force#distance]]
+* [[force.drag|Layout-Force#drag]]
+* [[force.charge|Layout-Force#charge]]
+* [[force.gravity|Layout-Force#gravity]]
+* [[force.theta|Layout-Force#theta]]
+* [[force.start|Layout-Force#start]]
+* [[force.resume|Layout-Force#resume]]
+* [[force.stop|Layout-Force#stop]]
+* [[force.drag|Layout-Force#drag]]
+
+### [[Stack|Layout-Stack]]
+
+* [[d3.layout.stack|Layout-Stack#stack]]
+* [[stack.values|Layout-Stack#values]]
+* [[stack.order|Layout-Stack#order]]
+* [[stack.offset|Layout-Stack#offset]]
+* [[stack.x|Layout-Stack#x]]
+* [[stack.y|Layout-Stack#y]]
+* [[stack.out|Layout-Stack#out]]
+
+### [[Treemap|Layout-Treemap]]
+
+* [[d3.layout.treemap|Layout-Treemap#treemap]]
+* [[treemap.sort|Layout-Treemap#sort]]
+* [[treemap.children|Layout-Treemap#children]]
+* [[treemap.value|Layout-Treemap#value]]
+* [[treemap.size|Layout-Treemap#size]]
+* [[treemap.round|Layout-Treemap#round]]
+* [[treemap.sticky|Layout-Treemap#sticky]]
+
+### [[Tree|Layout-Tree]]
+
+* [[d3.layout.tree|Layout-Tree#tree]]
+* [[tree.sort|Layout-Tree#sort]]
+* [[tree.children|Layout-Tree#children]]
+* [[tree.links|Layout-Tree#links]]
+* [[tree.separation|Layout-Tree#separation]]
+* [[tree.size|Layout-Tree#size]]
+
+### [[Pie|Layout-Pie]]
+
+* [[d3.layout.pie|Layout-Pie#pie]]
+* [[pie.value|Layout-Pie#value]]
+* [[pie.sort|Layout-Pie#sort]]
+* [[pie.startAngle|Layout-Pie#startAngle]]
+* [[pie.endAngle|Layout-Pie#endAngle]]
+
+### [[Partition|Layout-Partition]]
+
+* [[d3.layout.partition|Layout-Partition#partition]]
+* [[partition.sort|Layout-Partition#sort]]
+* [[partition.children|Layout-Partition#children]]
+* [[partition.value|Layout-Partition#value]]
+* [[partition.size|Layout-Partition#size]]
+
+### [[Pack|Layout-Pack]]
+
+* [[d3.layout.pack|Layout-Pack#pack]]
+* [[pack.sort|Layout-Pack#sort]]
+* [[pack.children|Layout-Pack#children]]
+* [[pack.value|Layout-Pack#value]]
+* [[pack.size|Layout-Pack#size]]
+
+### [[Histogram|Layout-Histogram]]
+
+* [[d3.layout.histogram|Layout-Histogram#histogram]]
+* [[histogram.value|Layout-Histogram#value]]
+* [[histogram.range|Layout-Histogram#range]]
+* [[histogram.bins|Layout-Histogram#bins]]
+* [[histogram.frequency|Layout-Histogram#frequency]]
+
+### [[Hierarchy|Layout-Hierarchy]]
+
+* [[d3.layout.hierarchy|Layout-Hierarchy#hierarchy]]
+* [[hierarchy.sort|Layout-Hierarchy#sort]]
+* [[hierarchy.children|Layout-Hierarchy#children]]
+* [[hierarchy.value|Layout-Hierarchy#value]]
+* [[hierarchy.revalue|Layout-Hierarchy#revalue]]
+
+### [[Cluster|Layout-Cluster]]
+
+* [[d3.layout.cluster|Layout-Cluster#cluster]]
+* [[cluster.sort|Layout-Cluster#sort]]
+* [[cluster.children|Layout-Cluster#children]]
+* [[cluster.links|Layout-Cluster#links]]
+* [[cluster.separation|Layout-Cluster#separation]]
+* [[cluster.size|Layout-Cluster#size]]
+
+### [[Chord|Layout-Chord]]
+
+* [[d3.layout.chord|Layout-Chord#chord]]
+* [[chord.matrix|Layout-Chord#matrix]]
+* [[chord.padding|Layout-Chord#padding]]
+* [[chord.sortGroups|Layout-Chord#sortGroups]]
+* [[chord.sortSubgroups|Layout-Chord#sortSubgroups]]
+* [[chord.sortChords|Layout-Chord#sortChords]]
+* [[chord.chords|Layout-Chord#chords]]
+* [[chord.groups|Layout-Chord#groups]]
 
 ## d3.scale
 
