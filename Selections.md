@@ -184,7 +184,7 @@ If you want the document traversal order to match the selection data order, you 
 
 <a name="filter" href="#filter">#</a> selection.<b>filter</b>(<i>function</i>)
 
-Filters the selection, returning a new selection that contains only the elements for which the specified *function* returns true. As with other operators, the specified function is passed the current datum `d` and index `i`, with the `this` context as the current DOM element. Unlike the built-in array [[filter|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter]] method, the returned selection preserves the index of the original selection; thus, you can use the filter operator to apply other operators to a subset of elements, with affecting the associated data or index.
+Filters the selection, returning a new selection that contains only the elements for which the specified *function* returns true. As with other operators, the specified function is passed the current datum `d` and index `i`, with the `this` context as the current DOM element. Unlike the built-in array [[filter|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter]] method, the returned selection preserves the index of the original selection; thus, you can use the filter operator to apply other operators to a subset of elements, without affecting the associated data or index.
 
 <a name="map" href="#map">#</a> selection.<b>map</b>(<i>function</i>)
 
