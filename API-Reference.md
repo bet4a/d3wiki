@@ -322,6 +322,65 @@ Also see the `csv` module.
 
 ## d3.scale
 
+### [[Quantitative|Scale-Quantitative]]
+
+* [[d3.scale.linear|Scale-Quantitative#linear]]
+* [[linear.invert|Scale-Quantitative#linear_invert]]
+* [[linear.domain|Scale-Quantitative#linear_domain]]
+* [[linear.range|Scale-Quantitative#linear_range]]
+* [[linear.rangeRound|Scale-Quantitative#linear_rangeRound]]
+* [[linear.interpolate|Scale-Quantitative#linear_interpolate]]
+* [[linear.clamp|Scale-Quantitative#linear_clamp]]
+* [[linear.ticks|Scale-Quantitative#linear_ticks]]
+* [[linear.tickFormat|Scale-Quantitative#linear_tickFormat]]
+* [[d3.scale.sqrt|Scale-Quantitative#sqrt]]
+* [[d3.scale.pow|Scale-Quantitative#pow]]
+* [[pow.invert|Scale-Quantitative#pow_invert]]
+* [[pow.domain|Scale-Quantitative#pow_domain]]
+* [[pow.range|Scale-Quantitative#pow_range]]
+* [[pow.rangeRound|Scale-Quantitative#pow_rangeRound]]
+* [[pow.interpolate|Scale-Quantitative#pow_interpolate]]
+* [[pow.clamp|Scale-Quantitative#pow_clamp]]
+* [[pow.ticks|Scale-Quantitative#pow_ticks]]
+* [[pow.tickFormat|Scale-Quantitative#pow_tickFormat]]
+* [[pow.exponent|Scale-Quantitative#pow_exponent]]
+* [[d3.scale.log|Scale-Quantitative#log]]
+* [[log.invert|Scale-Quantitative#log_invert]]
+* [[log.domain|Scale-Quantitative#log_domain]]
+* [[log.range|Scale-Quantitative#log_range]]
+* [[log.rangeRound|Scale-Quantitative#log_rangeRound]]
+* [[log.interpolate|Scale-Quantitative#log_interpolate]]
+* [[log.clamp|Scale-Quantitative#log_clamp]]
+* [[log.ticks|Scale-Quantitative#log_ticks]]
+* [[log.tickFormat|Scale-Quantitative#log_tickFormat]]
+
+### [[Quantize|Scale-Quantize]]
+
+* [[d3.scale.quantize|Scale-Quantize#quantize]]
+* [[quantize.domain|Scale-Quantize#domain]]
+* [[quantize.range|Scale-Quantize#range]]
+
+### [[Quantile|Scale-Quantile]]
+
+* [[d3.scale.quantile|Scale-Quantile#quantile]]
+* [[quantile.domain|Scale-Quantile#domain]]
+* [[quantile.range|Scale-Quantile#range]]
+* [[quantile.quantiles|Scale-Quantile#quantiles]]
+
+### [[Ordinal|Scale-Ordinal]]
+
+* [[d3.scale.ordinal|Scale-Ordinal#ordinal]]
+* [[ordinal.domain|Scale-Ordinal#domain]]
+* [[ordinal.range|Scale-Ordinal#range]]
+* [[ordinal.rangePoints|Scale-Ordinal#rangePoints]]
+* [[ordinal.rangeBands|Scale-Ordinal#rangeBands]]
+* [[ordinal.rangeRoundBands|Scale-Ordinal#rangeRoundBands]]
+* [[ordinal.rangeBand|Scale-Ordinal#rangeBand]]
+* [[d3.scale.category10|Scale-Ordinal#category10]]
+* [[d3.scale.category20|Scale-Ordinal#category20]]
+* [[d3.scale.category20b|Scale-Ordinal#category20b]]
+* [[d3.scale.category20c|Scale-Ordinal#category20c]]
+
 ## d3.svg
 
 ## d3.time
