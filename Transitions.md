@@ -1,5 +1,7 @@
 # Transitions
 
+> [[API Reference|API-Reference]]
+
 A transition is a special type of [[selection|Selections]] where the operators apply smoothly over time rather than instantaneously. You can derive a transition from a selection using the [[transition|Selections#transition]] operator, or by using the top-level [d3.transition](#d3_transition) method followed by a subselect. While transitions generally support the same operators as selections (such as [attr](#attr) and [style](#style)), not all operators are yet supported; for example, you must append elements before a transition starts. A [remove](#remove) operator is provided for convenient removal of elements when the transition ends.
 
 Transitions may have per-element delays and durations, computed using functions of data similar to other operators. This makes it easy to stagger a transition for different elements, either based on data or index. For example, you can sort elements and then stagger the transition for better perception of element reordering during the transition. For more details on these techniques, see [["Animated Transitions in Statistical Data Graphics"|http://vis.berkeley.edu/papers/animated_transitions/]] by Heer & Robertson.
