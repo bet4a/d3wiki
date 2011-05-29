@@ -224,16 +224,24 @@ For example, if *a* is "300 12px sans-serif", and *b* is "500 36px Comic-Sans", 
 
 <a name="d3_interpolateRgb" href="#d3_interpolateRgb">#</a> d3.<b>interpolateRgb</b>(<i>a</i>, <i>b</i>)
 
-Interpolate two colors in RGB space.
+Returns an RGB color space interpolator between the two colors *a* and *b*. The colors *a* and *b* need not be in RGB, but they will be converted to RGB using [[d3.rgb|Colors#d3_rgb]]. The red, green and blue channels are interpolated linearly in a manner equivalent to [interpolateRound](#interpolateRound), as fractional channel values are not allowed. The return value of the interpolator is always a string representing the RGB color, such as "rgb(255,0,0)" for red.
 
 <a name="d3_interpolateHsl" href="#d3_interpolateHsl">#</a> d3.<b>interpolateHsl</b>(<i>a</i>, <i>b</i>)
 
-Interpolate two colors in HSL space. The resulting interpolator still returns an RGB color string for browser compatibility, however.
+Returns an HSL color space interpolator between the two colors *a* and *b*. The colors *a* and *b* need not be in HSL, but they will be converted to HSL using [[d3.hsl|Colors#d3_hsl]]. The hue, saturation and lightness are interpolated linearly in a manner equivalent to [interpolateNumber](#interpolateNumber). (Thus, the shortest path between the start and end hue is not necessarily used.) The return value of the interpolator is always a string representing the RGB color, such as "#ff0000" for red; an RGB color string is returned for browser compatibility, as not all browsers support HSL colors in CSS.
 
 <a name="d3_interpolateArray" href="#d3_interpolateArray">#</a> d3.<b>interpolateArray</b>(<i>a</i>, <i>b</i>)
 
-Interpolate two arrays of values.
+Returns an array interpolator between the two arrays *a* and *b*. Internally, an array template is created that is the same length in *b*. For each element in *b*, if there exists a corresponding element in *a*, a generic interpolator is created for the two elements using [interpolate](#interpolate). If there is no such element, the static value from *b* is used in the template. Then, for each evaluation of the array interpolator for the parameterized time *t*, the template's embedded interpolators are evaluated. The updated array template is then returned.
+
+For example, say that *a* is the array [0, 1] and *b* is the array [1, 10, 100]. The result of the interpolator for time *t* is the array [.5, 5.5, 100].
+
+Note that no defensive copy of the template array is created; modifications of the returned array may adversely affect subsequent evaluation of the interpolator. No copy is made because interpolators should be fast, as they are part of the inner loop of animation.
 
 <a name="d3_interpolateObject" href="#d3_interpolateObject">#</a> d3.<b>interpolateObject</b>(<i>a</i>, <i>b</i>)
 
-Interpolate two arbitrary objects.
+Returns an object interpolator between the two objects *a* and *b*. Internally, an object template is created that has the same properties as *b*. For each property in *b*, if there exists a corresponding property in *a*, a generic interpolator is created for the two elements using [interpolate](#interpolate). If there is no such property, the static value from *b* is used in the template. Then, for each evaluation of the object interpolator for the parameterized time *t*, the template's embedded interpolators are evaluated. The updated object template is then returned.
+
+For example, say that *a* is the object {x: 0, y: 1} and *b* is the object {x: 1, y: 10, z: 100}. The result of the interpolator for time *t* is the object {x: .5, y: 5.5, z: 100}. Object interpolation is particularly useful for *dataspace interpolation*, where data is interpolated rather than attribute values. For example, you can interpolate an object which describes an arc in a pie chart, and then use [[d3.svg.arc|SVG-Shapes#arc]] to compute the new SVG path data.
+
+Note that no defensive copy of the template object is created; modifications of the returned object may adversely affect subsequent evaluation of the interpolator. No copy is made because interpolators should be fast, as they are part of the inner loop of animation.
