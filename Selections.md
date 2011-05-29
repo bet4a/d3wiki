@@ -1,12 +1,12 @@
 # Selections
 
-A selection is a filtered set of elements from the current document. After selecting elements, you can apply operators to them, such as setting attributes or styles. You can also join selections to data; this data is available to operators for data-driven transformations. In addition, joining to data produces enter and exit subselections, letting you add or remove elements in response to changes in data.
+A selection is an array of elements from the current document. D3 uses [[CSS3 Selectors|http://www.w3.org/TR/css3-selectors/]] to select elements. For example, you can select by tag ("tag"), class (".class"), unique identifier ("#id"), attribute ("[name=value]"), or containment ("parent child"). Selectors can also be intersected (".a.b") or unioned (".a, .b").
 
-D3 uses [[CSS3 Selectors|http://www.w3.org/TR/css3-selectors/]] to filter elements. For example, you can select elements by tag ("tag"), class (".class"), unique identifier ("#id"), attribute ("[name=value]"), or containment ("parent child"). Selectors can also be intersected (".a.b") or unioned (".a, .b").
-
-Any number of operators can be applied to selected elements. These operators wrap the [[W3C DOM API|http://www.w3.org/TR/DOM-Level-3-Core/]], setting attributes (`attr`), styles (`style`), properties (`property`), HTML (`html`) and text (`text`) content. Operator values are specified either as constants or functions; the latter are evaluated for each element. While the built-in operators satisfy most needs, the `each` operator invokes an arbitrary JavaScript callback for total generality. Since each selection is simply an array, elements can also be accessed directly (e.g., `[0]`).
+After selecting elements, you can apply operators to them. These operators wrap the [[W3C DOM API|http://www.w3.org/TR/DOM-Level-3-Core/]], setting attributes (`attr`), styles (`style`), properties (`property`), HTML (`html`) and text (`text`) content. Operator values are specified either as constants or functions; the latter are evaluated for each element. While the built-in operators satisfy most needs, the `each` operator invokes an arbitrary JavaScript callback for total generality. Since each selection is simply an array, elements can also be accessed directly (e.g., `[0]`).
 
 D3 supports method chaining for brevity when applying multiple operators: the operator return value is the selection. The `append` and `insert` operators add a new element for each element in the current selection, returning the added nodes, thus allowing the convenient creation of nested structures. The `remove` operator discards selected elements.
+
+You can also join selections to data; this data is available to operators for data-driven transformations. In addition, joining to data produces *enter* and *exit* subselections, so that you may add or remove elements in response to changes in data.
 
 ## Generating Selections
 
