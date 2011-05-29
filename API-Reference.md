@@ -51,6 +51,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[transition.each|Transitions#each]] - add a listener for transition end events.
 * [[transition.call|Transitions#call]] - call a function passing in the current transition.
 * [[d3.ease|Transitions#d3_ease]] - customize transition timing.
+* [[d3.timer|Transitions#d3_timer]] - start a custom animation timer.
+* [[d3.timer.flush|Transitions#d3_timer_flush]] - immediately execute any zero-delay timers.
 * [[d3.interpolate|Transitions#d3_interpolate]] - interpolate two values.
 * [[d3.interpolateNumber|Transitions#d3_interpolateNumber]] - interpolate two numbers.
 * [[d3.interpolateRound|Transitions#d3_interpolateRound]] - interpolate two integers.
