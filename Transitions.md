@@ -180,9 +180,11 @@ The default easing function is "cubic-in-out" which provides suitable [[slow-in 
 
 ## Timers
 
+D3 internally maintains an efficient timer queue so that thousands of timers can be processed concurrently with minimal overhead; in addition, this timer queue guarantees consistent timing of animations when concurrent or staged transitions are scheduled. If your browser supports it, the timer queue will use [[requestAnimationFrame|http://paulirish.com/2011/requestanimationframe-for-smart-animating/]] for fluid and efficient animation. The timer queue is also smart about using setTimeout when there is a long delay before the next scheduled event.
+
 <a name="d3_timer" href="#d3_timer">#</a> d3.<b>timer</b>(<i>function</i>)
 
-Start a custom animation timer, invoking the specified *function* repeatedly until it returns true. If your browser supports it, this uses [[requestAnimationFrame|http://paulirish.com/2011/requestanimationframe-for-smart-animating/]] for fluid and efficient animation. D3 internally maintains an efficient timer queue so that thousands of timers can be processed concurrently with minimal overhead; in addition, this timer queue guarantees consistent timing when concurrent or staged transitions are scheduled.
+Start a custom animation timer, invoking the specified *function* repeatedly until it returns true. There is no way to cancel the timer after it starts, so make sure your timer function returns true when done!
 
 <a name="d3_timer_flush" href="#d3_timer_flush">#</a> d3.timer.<b>flush</b>()
 
@@ -190,21 +192,35 @@ Immediately execute any zero-delay timers. Normally, zero-delay transitions are 
 
 ## Interpolation
 
+D3 has many built-in interpolators to simplify the transitioning of arbitrary values; an interpolator is a function that maps a parametric value *t* in the domain [0,1] to a color, number or arbitrary value.
+
 <a name="d3_interpolate" href="#d3_interpolate">#</a> d3.<b>interpolate</b>(<i>a</i>, <i>b</i>)
 
-Interpolate two values.
+Returns the default interpolator between the two values *a* and *b*. The type of interpolator is based on the type of the end value *b*. If *b* is a number, *a* is coerced to a number and [interpolateNumber](#interpolateNumber) is used. If *b* is a string, a check is performed to see if *b* represents a color of the form `/^(#|rgb\(|hsl\()/`, or one of the [[CSS named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]]; if *b* is a color, *a* is coerced to an RGB color and [interpolateRgb](#interpolateRgb) is used. Otherwise, [interpolateString](#interpolateString) is used, which interpolates numbers embedded within strings.
 
 <a name="d3_interpolateNumber" href="#d3_interpolateNumber">#</a> d3.<b>interpolateNumber</b>(<i>a</i>, <i>b</i>)
 
-Interpolate two numbers.
+Returns a numeric interpolator between the two numbers *a* and *b*. The returned interpolator is equivalent to:
+
+  function interpolate(t) {
+    return a * (1 - t) + b * t;
+  }
+
+Caution: avoid interpolating to or from the number zero when the interpolator is used to generate a string (such as with [attr](#attr)). Very small values, when stringified, may be converted to scientific notation and cause a temporarily invalid attribute or style property value. For example, the number 0.0000001 is converted to the string "1e-7". This is particularly noticeable when interpolating opacity values. To avoid scientific notation, start or end the transition at 1e-6, which is the smallest value that is not stringified in exponential notation.
 
 <a name="d3_interpolateRound" href="#d3_interpolateRound">#</a> d3.<b>interpolateRound</b>(<i>a</i>, <i>b</i>)
 
-Interpolate two integers.
+Returns a numeric interpolator between the two numbers *a* and *b*; the interpolator is similar to [interpolateNumber](#interpolateNumber), except it will round the resulting value to the nearest integer.
 
 <a name="d3_interpolateString" href="#d3_interpolateString">#</a> d3.<b>interpolateString</b>(<i>a</i>, <i>b</i>)
 
-Interpolate two strings.
+Returns a string interpolator between the two strings *a* and *b*. The string interpolator finds numbers embedded in *a* and *b*, where each number is of the form:
+
+    /[-+]?(?:\d+\.\d+|\d+\.|\.\d+|\d+)(?:[eE][-]?\d+)?/
+
+For each number embedded in *b*, the interpolator will attempt to find a corresponding number in *a*. If a corresponding number is found, a numeric interpolator is created using [interpolateNumber](#interpolateNumber). The remaining parts of the string *b* are used as a template: the static parts of the string *b* remain constant for the interpolation, with the interpolated numeric values embedded in the template.
+
+For example, if *a* is "300 12px sans-serif", and *b* is "500 36px Comic-Sans", two embedded numbers are found. The remaining static parts of the string are a space between the two numbers (" "), and the suffix ("px Comic-Sans"). The result of the interpolator at *t* = .5 is "400 24px Comic-Sans".
 
 <a name="d3_interpolateRgb" href="#d3_interpolateRgb">#</a> d3.<b>interpolateRgb</b>(<i>a</i>, <i>b</i>)
 
