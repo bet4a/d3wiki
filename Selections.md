@@ -10,6 +10,8 @@ You can also join selections to data; this data is available to operators for da
 
 ## Generating Selections
 
+D3 provides two top-level methods for selecting elements, called `select` and `selectAll`. These methods accept selectors; the former selects only the first matching element, while the latter selects *all* matching elements in document traversal order. These methods also directly accept nodes, which is useful for integration with third-party libraries (such as jQuery) or developer tools (`$0`).
+
 > <b>d3.select</b>(<i>selector</i>) <a name="d3_select"></a><br>
 > <b>d3.select</b>(<i>node</i>)
 
