@@ -202,9 +202,9 @@ Returns the default interpolator between the two values *a* and *b*. The type of
 
 Returns a numeric interpolator between the two numbers *a* and *b*. The returned interpolator is equivalent to:
 
-  function interpolate(t) {
-    return a * (1 - t) + b * t;
-  }
+    function interpolate(t) {
+      return a * (1 - t) + b * t;
+    }
 
 Caution: avoid interpolating to or from the number zero when the interpolator is used to generate a string (such as with [attr](#attr)). Very small values, when stringified, may be converted to scientific notation and cause a temporarily invalid attribute or style property value. For example, the number 0.0000001 is converted to the string "1e-7". This is particularly noticeable when interpolating opacity values. To avoid scientific notation, start or end the transition at 1e-6, which is the smallest value that is not stringified in exponential notation.
 
