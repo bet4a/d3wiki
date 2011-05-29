@@ -196,17 +196,11 @@ Sorts the elements in the current selection according to the specified comparato
 
 <a name="on" href="#on">#</a> selection.<b>on</b>(<i>type</i>, <i>listener</i>)
 
+Adds or removes an event *listener* to each element in the current selection, for the specified *type*. The *type* is a string event type name, such as "click", "mouseover", or "submit". If an event listener was already registered for the same type on the selected element, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "click.foo" and "click.bar".
+
 <a name="transition" href="#transition">#</a> selection.<b>transition</b>()
 
-### Control
-
-<a name="each" href="#each">#</a> selection.<b>each</b>(<i>function</i>)
-
-<a name="call" href="#call">#</a> selection.<b>call</b>(<i>function</i>[, <i>arguments…</i>])
-
-<a name="empty" href="#empty">#</a> selection.<b>empty</b>()
-
-<a name="node" href="#node">#</a> selection.<b>node</b>()
+Starts a [[transition|Transitions]] for the current selection. Transitions behave much like selections, except operators animate smoothly over time rather than applying instantaneously.
 
 ### Subselections
 
@@ -214,8 +208,50 @@ Whereas the top-level select methods query the entire document, a selection's [s
 
 <a name="select" href="#select">#</a> selection.<b>select</b>(<i>selector</i>)
 
-…
+For each element in the current selection, selects the first descendant element that matches the specified *selector* string. If no element matches the specified selector for the current element, the element at the current index will be null in the returned selection; operators (with the exception of [data](#data)) automatically skip null elements, thereby preserving the index of the existing selection. If the current element has associated data, this data is inherited by the returned subselection, and automatically bound to the newly selected elements. If multiple elements match the selector, only the first matching element in document traversal order will be selected.
 
 <a name="selectAll" href="#selectAll">#</a> selection.<b>selectAll</b>(<i>selector</i>)
 
-…
+For each element in the current selection, selects descendant elements that match the specified *selector* string. The returned selection is grouped by the ancestor node in the current selection. If no element matches the specified selector for the current element, the group at the current index will be empty in the returned selection. The subselection does not inherit data from the current selection; however, if the [data](#data) value is specified as a function, this function will be based the data `d` of the ancestor node and the group index `i`.
+
+Grouping by selectAll also affects subsequent entering placeholder nodes. Thus, to specify the parent node when appending entering nodes, use select followed by selectAll:
+
+    d3.select("body").selectAll("div")
+
+You can see the parent node of each group by inspecting the `parentNode` property of each group array, such as `selection[0].parentNode`.
+
+### Control
+
+For advanced usage, D3 has a few additional operators for custom control flow.
+
+<a name="each" href="#each">#</a> selection.<b>each</b>(<i>function</i>)
+
+Invokes the specified *function* for each element in the current selection, passing in the current datum `d` and index `i`, with the `this` context of the current DOM element. This operator is used internally by nearly every other operator, and can be used to invoke arbitrary code for each selected element. The each operator can be used to process selections recursively, by using `d3.select(this)` within the callback function.
+
+<a name="call" href="#call">#</a> selection.<b>call</b>(<i>function</i>[, <i>arguments…</i>])
+
+Invokes the specified *function* once, passing in the current selection along with any optional *arguments*. The call operator always returns the current selection, regardless of the return value of the specified function. The call operator is identical to invoking a function by hand; but it makes it easier to use method chaining. For example, say we want to set a number of attributes the same way in a number of different places. So we take the code and wrap it in a reusable function:
+
+    function foo(selection) {
+      selection
+          .attr("name1", "value1")
+          .attr("name2", "value2");
+    }
+
+Now, we can say this:
+
+    foo(d3.selectAll("div"))
+
+Or equivalently:
+
+    d3.selectAll("div").call(foo);
+
+The `this` context of the called function is also the current selection. This is slightly redundant with the first argument, which we might fix in the future.
+
+<a name="empty" href="#empty">#</a> selection.<b>empty</b>()
+
+Returns true if the current selection is empty; a selection is empty if it contains no non-null elements.
+
+<a name="node" href="#node">#</a> selection.<b>node</b>()
+
+Returns the first non-null element in the current selection. If the selection is empty, returns null.
