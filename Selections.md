@@ -100,11 +100,83 @@ Removes the elements in the current selection from the current document. General
 
 ### Data
 
-<a name="data" href="#data">#</a> selection.<b>data</b>(<i>data</i>[, <i>join</i>])
+<a name="data" href="#data">#</a> selection.<b>data</b>(<i>data</i>[, <i>key</i>])
+
+Joins the specified array of data with the current selection. The specified *data* is an array of data values, such as an array of numbers or objects. In the simplest case, the first datum in the specified array is assigned to the first element in the current selection, the second datum to the second selected element, and so on. When data is assigned to an element, it is stored in the property `__data__`, thus making the data "sticky" so that the data is available on re-selection.
+
+To control how data is joined to elements, an optional *key* function may be specified. This replaces the default behavior which assigns by index. The key function is invoked once for each element in the new data array, and once again for each existing element in the selection. In both cases the key function is passed the datum `d` and the index `i`. When the key function is evaluated on new data elements, the `this` context is the data array; when the key function is evaluated on the existing selection, the `this` context is the associated DOM element. The key function returns a string which is used to join a datum with its corresponding element, based on the previously-bound data. For example, if each datum as a unique field `name`, the join might be specified as:
+
+    .data(data, function(d) { return d.name; })
+
+For a more detailed example of how the key function affects the data join, see the tutorial [[A Bar Chart, Part 2|http://mbostock.github.com/d3/tutorial/bar-2.html]].
+
+The result of the `data` operator is the *update* selection; this represents the selected DOM elements that were successfully bound to the specified data elements. The *update* selection also contains a reference to the [enter](#enter) and [exit](#exit) selections, for adding and removing nodes in correspondence with data. For example, if the default key-by-index is used, and the existing selection contains fewer elements than the specified data, then the *enter* selection will contain placeholders for the new data. On the other hand, if the existing contains more elements than the data, then the *exit* selection will contain the extra elements. And, if the existing selection exactly matches the data, then both the enter and exit selections will be empty, with all nodes in the update selection.
+
+If a key function is specified, the `data` operator also affects the index of nodes; this index is passed as the second argument `i` to any operator function values. However, note that existing DOM elements are not automatically reordered; use the [sort](#sort) operator as needed.
 
 <a name="enter" href="#enter">#</a> selection.<b>enter()</b>
 
+Returns the entering selection: placeholder nodes for each data element for which no corresponding existing DOM element was found in the current selection. This method is only defined on a selection returned by the [data](#data) operator. In addition, the entering selection only defines [append](#append) and [insert](#insert) operators; you must use these operators to instantiate the entering nodes before modifying any content. Note that the *enter* operator merely returns a reference to the entering selection, and it is up to you to add the new nodes.
+
+As a simple example, consider the case where the existing selection is empty, and we wish to create new nodes to match our data:
+
+    d3.select("body").selectAll("div")
+        .data([4, 8, 15, 16, 23, 42])
+      .enter().append("div")
+        .text(function(d) { return d; });
+
+Assuming that the body is initially empty, the above code will create six new DIV elements, append them to the body in order, and assign their text content as the associated (string-coerced) number:
+
+    <div>4</div>
+    <div>8</div>
+    <div>15</div>
+    <div>16</div>
+    <div>23</div>
+    <div>42</div>
+
+Another way to think about the entering placeholder nodes is that they are pointers to the parent node (in this example, the document body); however, they only support append and insert.
+
 <a name="exit" href="#exit">#</a> selection.<b>exit()</b>
+
+Returns the exiting selection: existing DOM elements in the current selection for which no new data element was found. This method is only defined on a selection returned by the [data](#data) operator. The exiting selection defines all the normal operators, though typically the main one you'll want to use is [remove](#remove); the other operators exist primarily so you can define an exiting transition as desired. Note that the *exit* operator merely returns a reference to the exiting selection, and it is up to you to remove the new nodes.
+
+As a simple example, consider updating the six DIV elements created in the above example for the enter operator. Here we bind those elements to a new array of data with some new and some old:
+
+    var div = d3.select("body").selectAll("div")
+        .data([1, 2, 4, 8, 16, 32], function(d) { return d; });
+
+Now `div`—the result of the data operator—refers to the updating selection. Since we specified a key function using the identity function, and the new data array contains the numbers [4, 8, 16] which also exist in the old data array, this updating selection contains three DIV elements. Let's say we leave those elements as-is. We can instantiate and add the new elements [1, 2, 32] using the entering selection:
+
+    div.enter().append("div")
+        .text(function(d) { return d; });
+
+Likewise, we can remove the exiting elements [15, 23, 42]:
+
+    div.exit().remove();
+
+Now the document body looks like this:
+
+    <div>4</div>
+    <div>8</div>
+    <div>16</div>
+    <div>1</div>
+    <div>2</div>
+    <div>32</div>
+
+Note that the DOM elements are now out-of-order. However, the selection index (the second `i` argument to any operator functions), will correctly match the new data array. For example, we could assign an index attribute:
+
+    d3.selectAll("div").attr("index", function(d, i) { return i; });
+
+This would result in:
+
+    <div index="2">4</div>
+    <div index="3">8</div>
+    <div index="4">16</div>
+    <div index="0">1</div>
+    <div index="1">2</div>
+    <div index="5">32</div>
+
+If you want the document traversal order to match the selection data order, you can use the [sort](#sort) operator to reorder elements.
 
 <a name="filter" href="#filter">#</a> selection.<b>filter</b>(<i>function</i>)
 
