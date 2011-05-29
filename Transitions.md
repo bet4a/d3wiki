@@ -8,23 +8,29 @@ Transitions may have per-element delays and durations, computed using functions 
 
 D3 has many built-in interpolators to simplify the transitioning of arbitrary values. For instance, you can transition from the font string "500 12px sans-serif" to "300 42px sans-serif", and D3 will in find the numbers embedded within the string, interpolating both font size and weight automatically. You can even interpolate arbitrary nested objects and arrays or SVG path data. D3 also allows custom interpolators should you find the built-in ones insufficient; you can specify a custom interpolator using the [attrTween](#attrTween) and [styleTween](#styleTween) operators. D3's interpolators also provide the basis for the [[scale|Scales]] module, and can be used independently from transitions; an interpolator is a function that maps a parametric value *t* in the domain [0,1] to a color, number or arbitrary value.
 
-## Starting Transitions
+Only one transition may be active on a given element at a given time. However, you may schedule multiple transitions on the same element; provided they are staggered in time, each transition will run in sequence. Furthermore, if a newer transition runs on a given element, it implicitly cancels any older transitions, including any that were scheduled but not yet run. This allows new transitions, such as those in response to a new user event, to supersede older transitions, even if those older transitions are staged or have staggered delays. Multi-stage transitions (transitions that are created during the "end" event of an earlier transition) are considered the same "age" as the original transition; internally this is implemented using monotonically-increasing unique IDs, which are inherited when multi-stage transitions are created.
+
+## Creating Transitions
+
+Transitions are typically created using the [[transition|Selections#transition]] operator on an existing selection. However, you can also start a transition using the top-level method. Transitions start automatically upon creation, based on the designated delay which defaults to zero; however, note that a zero-delay transition actually starts after a minimal (<10ms) delay, pending the first timer callback.
 
 <a name="d3_transition" href="#d3_transition">#</a> d3.<b>transition</b>()
 
-Start an animated transition.
+Create an animated transition. This is equivalent to saying `d3.select(document).transition()`. This method is used rarely, as it is typically easier to derive a transition from an existing selection, rather than deriving a selection from an existing transition.
 
 <a name="delay" href="#delay">#</a> transition.<b>delay</b>(<i>value</i>)
 
-Specify per-element delay in milliseconds.
+Specifies per-element delay *value* in milliseconds. If *value* is a constant, then all elements are given the same delay; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's delay.
+
+Setting the delay to be a multiple of the index `i` is a convenient way to stagger transitions for elements. You can also compute the delay as a function of the data, thereby creating a data-driven animation.
 
 <a name="duration" href="#duration">#</a> transition.<b>duration</b>(<i>value</i>)
 
-Specify per-element duration in milliseconds.
+Specifies per-element duration *value* in milliseconds. If *value* is a constant, then all elements are given the same duration; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's duration.
 
-<a name="ease" href="#ease">#</a> transition.<b>ease</b>(<i>value</i>)
+<a name="ease" href="#ease">#</a> transition.<b>ease</b>(<i>value</i>[, <i>arguments</i>])
 
-Specify transition easing function.
+Specifies the transition easing function. If *value* is a function, it is used to ease the current parametric timing value *t* in the range [0,1]; otherwise, *value* is assumed to be a string and the arguments are passed to the [d3.ease][#d3_ease] method to generate an easing function.
 
 ## Operating on Transitions
 
@@ -79,6 +85,16 @@ Call a function passing in the current transition.
 <a name="d3_ease" href="#d3_ease">#</a> d3.<b>ease</b>(<i>name</i>[, <i>arguments…</i>])
 
 Customize transition timing.
+
+## Timers
+
+<a name="d3_timer" href="#d3_timer">#</a> d3.<b>timer</b>(<i>function</i>)
+
+Start a custom animation timer.
+
+<a name="d3_timer_flush" href="#d3_timer_flush">#</a> d3.timer.<b>flush</b>()
+
+Immediately execute any zero-delay timers. Normally, zero-delay transitions are executed after an instantaneous delay. However, this can sometimes cause a brief flicker if the browser renders the page twice: once at the end of the first event loop, then again immediately on the first timer callback. By flushing the timer queue at the end of the first event loop, you can run any zero-delay transitions immediately and avoid the flicker.
 
 ## Interpolation
 
