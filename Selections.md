@@ -1,5 +1,7 @@
 # Selections
 
+> [[API Reference|API-Reference]]
+
 A **selection** is an array of elements pulled from the current document. D3 uses [[CSS3|http://www.w3.org/TR/css3-selectors/]] to select elements. For example, you can select by tag ("div"), class (".awesome"), unique identifier ("#foo"), attribute ("[color=red]"), or containment ("parent child"). Selectors can also be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR). If your browser doesn't support selectors natively, you can include [[Sizzle|http://sizzlejs.com/]] before D3 for backwards-compatibility.
 
 After selecting elements, you apply **operators** to them to do stuff. These operators can get or set [attributes](#attr), [styles](#style), [properties](#property), [HTML](#html) and [text](#text) content. Attribute values and such are specified as either constants or functions; the latter are evaluated for each element. You can also join selections to [data](#data); this data is available to operators for data-driven transformations. In addition, joining to data produces [enter](#enter) and [exit](#enter) subselections, so that you may [add](#append) or [remove](#remove) elements in response to changes in data.
