@@ -1,4 +1,6 @@
-Everything in D3 is scoped under the `d3` namespace. D3 is broken up into several modules so that you can pick and choose which elements you need. The default build of `d3.js` includes the *core*, *scale* and *svg* modules. However, you can edit the makefile to produce a custom build that suites your needs.
+Everything in D3 is scoped under the `d3` namespace. D3 is broken up into several modules so that you can pick and choose which elements you need. The default build of `d3.js` includes the *core*, *scale* and *svg* modules. However, you can edit the [[Makefile|https://github.com/mbostock/d3/blob/master/Makefile]] to produce a custom build that suites your needs. D3 does not introduce anything else in the global namespace. However, for nonstandard browsers we do register polyfills for `Date.now` and `Object.create`.
+
+D3 uses [[semantic versioning|http://semver.org]]. You can find the current version of D3 as `d3.version`.
 
 ## d3 (core)
 
@@ -7,12 +9,25 @@ Everything in D3 is scoped under the `d3` namespace. D3 is broken up into severa
 * [[d3.select|Selections#d3_select]] - select an element from the current document.
 * [[d3.selectAll|Selections#d3_selectAll]] - select multiple elements from the current document.
 * [[d3.ns|Selections#d3_ns]] - access or extend known XML namespaces.
-* [[d3.event|Selections#d3_event]] - access the current user event for interaction.
+* [[d3.functor|Selections#d3_functor]] - create a function that returns a constant.
 
 ### Transitions
 
 * [[d3.transition|Transitions#d3_transition]] - start an animated transition.
 * [[d3.ease|Transitions#d3_ease]] - customize transition timing.
+* [[d3.interpolate|Transitions#d3_interpolate]] - interpolate two values.
+* [[d3.interpolateNumber|Transitions#d3_interpolateNumber]] - interpolate two numbers.
+* [[d3.interpolateRound|Transitions#d3_interpolateRound]] - interpolate two integers.
+* [[d3.interpolateString|Transitions#d3_interpolateString]] - interpolate two strings.
+* [[d3.interpolateString|Transitions#d3_interpolateRgb]] - interpolate two RGB colors.
+* [[d3.interpolateString|Transitions#d3_interpolateHsl]] - interpolate two HSL colors.
+* [[d3.interpolateString|Transitions#d3_interpolateArray]] - interpolate two arrays of values.
+* [[d3.interpolateString|Transitions#d3_interpolateObjects]] - interpolate two arbitrary objects.
+
+### Events
+
+* [[d3.dispatch|Events#d3_dispatch]] - create a custom event dispatcher.
+* [[d3.event|Events#d3_event]] - access the current user event for interaction.
 
 ### Working with Arrays
 
@@ -28,13 +43,15 @@ Everything in D3 is scoped under the `d3` namespace. D3 is broken up into severa
 * [[d3.range|Arrays#d3_range]] - generate a range of numeric values.
 * [[d3.nest|Arrays#d3_nest]] - group array elements hierarchically.
 
-### Loading External Data
+### Loading External Resources
 
-* d3.xhr
-* d3.text
-* d3.json
-* d3.html
-* d3.xml
+* [[d3.xhr|Resources#d3_xhr]] - load a resource using `XMLHttpRequest`.
+* [[d3.text|Resources#d3_text]] - load a text file.
+* [[d3.json|Resources#d3_json]] - load a JSON blob.
+* [[d3.html|Resources#d3_html]] - load an HTML document fragment.
+* [[d3.xml|Resources#d3_xml]] - load an XML document fragment.
+
+Also see the `csv` module.
 
 ### Number Formatting
 
