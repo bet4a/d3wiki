@@ -32,7 +32,23 @@ And finally, **iteration methods** that apply functions to elements in the array
 
 <a name="d3_ascending" href="#d3_ascending">#</a> d3.<b>ascending</b>(<i>a</i>, <i>b</i>)
 
+The comparator function for natural order:
+
+    function(a, b) {
+      return a < b ? -1 : a > b ? 1 : 0;
+    }
+
+This comparator can be used in conjunction with the built-in array sort method to sort elements by their natural order, ascending. Note that if no comparator function is specified to the built-in sort method, the default order is lexicographic (alphabetical), not natural! 
+
 <a name="d3_descending" href="#d3_descending">#</a> d3.<b>descending</b>(<i>a</i>, <i>b</i>)
+
+The comparator function for reverse natural order:
+
+    function(a, b) {
+      return b < a ? -1 : b > a ? 1 : 0;
+    }
+
+This comparator can be used in conjunction with the built-in array sort method to sort elements by their natural order, descending. Note that if no comparator function is specified to the built-in sort method, the default order is lexicographic, not natural! 
 
 <a name="d3_min" href="#d3_min">#</a> d3.<b>min</b>(<i>array</i>[, <i>function</i>])
 
