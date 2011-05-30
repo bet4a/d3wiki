@@ -116,64 +116,65 @@ Also see the [[CSV]] module.
 
 ## d3.scale
 
-### [[Quantitative|Scale-Quantitative]]
+### [[Quantitative|Scales#quantitative]]
 
-* [[d3.scale.linear|Scale-Quantitative#linear]]
-* [[linear.invert|Scale-Quantitative#linear_invert]]
-* [[linear.domain|Scale-Quantitative#linear_domain]]
-* [[linear.range|Scale-Quantitative#linear_range]]
-* [[linear.rangeRound|Scale-Quantitative#linear_rangeRound]]
-* [[linear.interpolate|Scale-Quantitative#linear_interpolate]]
-* [[linear.clamp|Scale-Quantitative#linear_clamp]]
-* [[linear.ticks|Scale-Quantitative#linear_ticks]]
-* [[linear.tickFormat|Scale-Quantitative#linear_tickFormat]]
-* [[d3.scale.sqrt|Scale-Quantitative#sqrt]]
-* [[d3.scale.pow|Scale-Quantitative#pow]]
-* [[pow.invert|Scale-Quantitative#pow_invert]]
-* [[pow.domain|Scale-Quantitative#pow_domain]]
-* [[pow.range|Scale-Quantitative#pow_range]]
-* [[pow.rangeRound|Scale-Quantitative#pow_rangeRound]]
-* [[pow.interpolate|Scale-Quantitative#pow_interpolate]]
-* [[pow.clamp|Scale-Quantitative#pow_clamp]]
-* [[pow.ticks|Scale-Quantitative#pow_ticks]]
-* [[pow.tickFormat|Scale-Quantitative#pow_tickFormat]]
-* [[pow.exponent|Scale-Quantitative#pow_exponent]]
-* [[d3.scale.log|Scale-Quantitative#log]]
-* [[log.invert|Scale-Quantitative#log_invert]]
-* [[log.domain|Scale-Quantitative#log_domain]]
-* [[log.range|Scale-Quantitative#log_range]]
-* [[log.rangeRound|Scale-Quantitative#log_rangeRound]]
-* [[log.interpolate|Scale-Quantitative#log_interpolate]]
-* [[log.clamp|Scale-Quantitative#log_clamp]]
-* [[log.ticks|Scale-Quantitative#log_ticks]]
-* [[log.tickFormat|Scale-Quantitative#log_tickFormat]]
+* [[d3.scale.linear|Scales#linear]] - construct a linear quantitative scale.
+* [[linear.invert|Scales#linear_invert]] - get the domain value corresponding to a given range value.
+* [[linear.domain|Scales#linear_domain]] - get or set the scale's input domain.
+* [[linear.range|Scales#linear_range]] - get or set the scale's output range.
+* [[linear.rangeRound|Scales#linear_rangeRound]] - set the scale's output range, and enable rounding.
+* [[linear.interpolate|Scales#linear_interpolate]] - get or set the scale's output interpolator.
+* [[linear.clamp|Scales#linear_clamp]] - enable or disable clamping of the output range.
+* [[linear.ticks|Scales#linear_ticks]] - get representative values from the input domain.
+* [[linear.tickFormat|Scales#linear_tickFormat]] - get a formatter for displaying tick values.
+* [[d3.scale.sqrt|Scales#sqrt]] - construct a quantitative scale with a square root transform.
+* [[d3.scale.pow|Scales#pow]] - construct a quantitative scale with an exponential transform.
+* [[pow.invert|Scales#pow_invert]] - get the domain value corresponding to a given range value. 
+* [[pow.domain|Scales#pow_domain]] - get or set the scale's input domain.
+* [[pow.range|Scales#pow_range]] - get or set the scale's output range.
+* [[pow.rangeRound|Scales#pow_rangeRound]] - set the scale's output range, and enable rounding.
+* [[pow.interpolate|Scales#pow_interpolate]] - get or set the scale's output interpolator.
+* [[pow.clamp|Scales#pow_clamp]] - enable or disable clamping of the output range.
+* [[pow.ticks|Scales#pow_ticks]] - get representative values from the input domain.
+* [[pow.tickFormat|Scales#pow_tickFormat]] - get a formatter for displaying tick values.
+* [[pow.exponent|Scales#pow_exponent]] - get or set the exponent power.
+* [[d3.scale.log|Scales#log]] - construct a quantitative scale with an logarithmic transform.
+* [[log.invert|Scales#log_invert]] - get the domain value corresponding to a given range value. 
+* [[log.domain|Scales#log_domain]] - get or set the scale's input domain.
+* [[log.range|Scales#log_range]] - get or set the scale's output range.
+* [[log.rangeRound|Scales#log_rangeRound]] - set the scale's output range, and enable rounding.
+* [[log.interpolate|Scales#log_interpolate]] - get or set the scale's output interpolator.
+* [[log.clamp|Scales#log_clamp]] - enable or disable clamping of the output range.
+* [[log.ticks|Scales#log_ticks]] - get representative values from the input domain.
+* [[log.tickFormat|Scales#log_tickFormat]] - get a formatter for displaying tick values.
 
-### [[Quantize|Scale-Quantize]]
+### [[Quantize|Scales#quantize]]
 
-* [[d3.scale.quantize|Scale-Quantize#quantize]]
-* [[quantize.domain|Scale-Quantize#domain]]
-* [[quantize.range|Scale-Quantize#range]]
+* [[d3.scale.quantize|Scales#quantize]]
+* [[quantize.domain|Scales#quantize_domain]]
+* [[quantize.range|Scales#quantize_range]]
 
-### [[Quantile|Scale-Quantile]]
+### [[Quantile|Scales#quantile]]
 
-* [[d3.scale.quantile|Scale-Quantile#quantile]]
-* [[quantile.domain|Scale-Quantile#domain]]
-* [[quantile.range|Scale-Quantile#range]]
-* [[quantile.quantiles|Scale-Quantile#quantiles]]
+* [[d3.scale.quantile|Scales#quantile]]
+* [[quantile.domain|Scales#quantile_domain]]
+* [[quantile.range|Scales#quantile_range]]
+* [[quantile.quantiles|Scales#quantile_quantiles]]
 
-### [[Ordinal|Scale-Ordinal]]
+### [[Ordinal|Scales#ordinal]]
 
-* [[d3.scale.ordinal|Scale-Ordinal#ordinal]]
-* [[ordinal.domain|Scale-Ordinal#domain]]
-* [[ordinal.range|Scale-Ordinal#range]]
-* [[ordinal.rangePoints|Scale-Ordinal#rangePoints]]
-* [[ordinal.rangeBands|Scale-Ordinal#rangeBands]]
-* [[ordinal.rangeRoundBands|Scale-Ordinal#rangeRoundBands]]
-* [[ordinal.rangeBand|Scale-Ordinal#rangeBand]]
-* [[d3.scale.category10|Scale-Ordinal#category10]]
-* [[d3.scale.category20|Scale-Ordinal#category20]]
-* [[d3.scale.category20b|Scale-Ordinal#category20b]]
-* [[d3.scale.category20c|Scale-Ordinal#category20c]]
+* [[d3.scale.ordinal|Scales#ordinal]]
+* [[ordinal.domain|Scales#ordinal_domain]]
+* [[ordinal.range|Scales#ordinal_range]]
+* [[ordinal.rangePoints|Scales#ordinal_rangePoints]]
+* [[ordinal.rangeBands|Scales#ordinal_rangeBands]]
+* [[ordinal.rangeRoundBands|Scales#ordinal_rangeRoundBands]]
+* [[ordinal.rangeBand|Scales#ordinal_rangeBand]]
+* [[d3.scale.category10|Scales#category10]]
+* [[d3.scale.category20|Scales#category20]]
+* [[d3.scale.category20b|Scales#category20b]]
+* [[d3.scale.category20c|Scales#category20c]]
+
 
 ## d3.svg
 
