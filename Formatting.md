@@ -1,5 +1,16 @@
 > [[API Reference|API-Reference]]
 
+Formatting numbers is one of those things you don't normally think about until an ugly "0.30000000000000004" appears on your axis labels. Also, maybe you want to group thousands to improve readability, and use fixed precision, such as "$1,240.10". Or, maybe you want to display only the significant digits of a particular number. D3 makes this easy using a standard **number format**. For example, to create a function that zero-fills to four digits, say:
+
+    var zero = d3.format("04d");
+
+Now you can conveniently format numbers:
+
+    zero(2); // "0002"
+    zero(123); // "0123"
+
+In addition to numbers, D3 also supports formatting and parsing [[dates|Time-Formatting]], and [[comma-separated values|CSV]].
+
 ## Number Formatting
 
 <a name="d3_format" href="#d3_format">#</a> d3.<b>format</b>(<i>specifier</i>)
@@ -12,10 +23,10 @@ Returns a new format function with the given string *specifier*. A format functi
 
 The *comma* (",") option enables the use of a comma for a thousands separator. The *width* defines the minimum field width. If not specified, then the width will be determined by the content. If *width* is preceded by a zero ("0"), zero-padding is enabled. The available *type* values are:
 
-* exponent ("e") - use Number.toExponential.
-* general ("g") - use Number.toPrecision.
-* fixed ("f") - use Number.toFixed.
-* integer ("d") - use Number.toString, but ignore any non-integer values.
+* exponent ("e") - use [[Number.toExponential|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toExponential]].
+* general ("g") - use [[Number.toPrecision|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toPrecision]].
+* fixed ("f") - use [[Number.toFixed|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toFixed]].
+* integer ("d") - use [[Number.toString|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toString]], but ignore any non-integer values.
 * rounded ("r") - like fixed, but round to *precision* significant digits.
 * percentage ("%") - like fixed, but multiply by 100 and suffix with "%".
 * rounded percentage ("p") - like rounded, but multiply by 100 and suffix with "%".
