@@ -4,6 +4,8 @@
 
 A scale object, such as that returned by [d3.scale.linear](#linear), is both an object and a function. (In fact, every function is also an object in JavaScript, though not every object is a function.) That is: you can call the scale like any other function, and the scale has additional methods that change its behavior.
 
+Like other classes in D3, scales follow the method chaining pattern where setter methods return the scale itself, allowing multiple setters to be invoked in a concise statement.
+
 ## Linear Scales
 
 Linear scales are the most common scale, and a good default choice to map a continuous input domain to a continuous output range. The mapping is *linear* in that the output range value *y* can be expressed as a linear function of the input domain value *x*: *y* = *mx* + *b*. The input domain is typically a dimension of the data that you want to visualize, such as the height of students (measured in meters) in a sample population. The output range is typically a dimension of the desired output visualization, such as the height of bars (measured in pixels) in a histogram.
@@ -14,21 +16,39 @@ Constructs a new linear scale with the default domain [0,1] and the default rang
 
 <a name="linear_invert" href="#linear_invert">#</a> linear.<b>invert</b>(<i>y</i>)
 
-Returns the value in the input domain *x* for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. For a valid value *y* in the output range, linear(linear.invert(*y*)) equals *y*; similarly, for a valid value *x* in the input domain, linear.invert(linear(*x*)) equals *x*. The invert operator is particularly useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
+Returns the value in the input domain *x* for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. For a valid value *y* in the output range, linear(linear.invert(*y*)) equals *y*; similarly, for a valid value *x* in the input domain, linear.invert(linear(*x*)) equals *x*. Equivalently, you can construct the invert operator by building a new scale while swapping the domain and range. The invert operator is particularly useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
 
 Note: the invert operator is only supported if the output range is numeric! D3 allows the output range to be any type; under the hood, [[d3.interpolate|Transitions#d3_interpolate]] or a custom interpolator of your choice is used to map the normalized parameter *t* to a value in the output range. Thus, the output range may be colors, strings, or even arbitrary objects! As there is no facility to "uninterpolate" arbitrary types, the invert operator is currently supported only on numeric ranges.
 
-<a name="linear_domain" href="#linear_domain">#</a> linear.<b>domain</b>([<i>values</i>])
+<a name="linear_domain" href="#linear_domain">#</a> linear.<b>domain</b>([<i>numbers</i>])
 
-Gets or sets the scale's input domain to the specified array of *values*.
+If *numbers* is specified, sets the scale's input domain to the specified array of numbers. The array must contain two or more numbers. If the elements in the given array are not numbers, they will be coerced to numbers; this coercion happens similarly when the scale is called. Thus, a linear can be used to encode types such as [[date objects|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date]] that can be converted to numbers. (You can implement your own convertible number objects using [[valueOf|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/valueOf]].) If *numbers* is not specified, returns the scale's current input domain.
+
+Although linear scales typically have just two numeric values in their domain, you can specify more than two values for a *polylinear* scale. In this case, there must be an equivalent number of values in the output range. A polylinear scale represents multiple piecewise linear scales that divide a continuous domain and range. This is particularly useful for defining diverging quantitative scales. For example, to interpolate between white and red for negative values, and white and green for positive values, say:
+
+    var color = d3.scale.linear()
+        .domain([-1, 0, 1])
+        .range(["red", "white", "green"]);
+
+The resulting value of color(-.5) is "#ff8080", and the value of color(.5) is "#80c080". Internally, polylinear scales perform a binary search for the output interpolator corresponding to the given domain value. By repeating values in both the domain and range, you can also force a chunk of the input domain to map to a constant in the output range.
 
 <a name="linear_range" href="#linear_range">#</a> linear.<b>range</b>([<i>values</i>])
 
+If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](#linear_interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
+
 <a name="linear_rangeRound" href="#linear_rangeRound">#</a> linear.<b>rangeRound</b>(<i>values</i>)
 
-<a name="linear_interpolate" href="#linear_interpolate">#</a> linear.<b>interpolate</b>([<i>interpolator</i>])
+Sets the scale's output range to the specified array of values, while also setting the scale's interpolator to [[d3.interpolateRound|Transitions#d3_interpolateRound]]. This is a convenience routine for when the values output by the scale should be exact integers, such as to avoid antialiasing artifacts. It is also possible to round the output values manually after the scale is applied.
+
+<a name="linear_interpolate" href="#linear_interpolate">#</a> linear.<b>interpolate</b>([<i>factory</i>])
+
+Sets the scale's output interpolator using the specified *factory*. The interpolator factory defaults to [[d3.interpolate|Transitions#d3_interpolate]], and is used to map the normalized domain parameter *t* in [0,1] to the corresponding value in the output range. The interpolator factory will be used to construct interpolators for each adjacent pair of values from the output range.
 
 <a name="linear_clamp" href="#linear_clamp">#</a> linear.<b>clamp</b>([<i>boolean</i>])
+
+If *boolean* is specified, enables or disables clamping accordingly. By default, clamping is disabled, such that if a value outside the input domain is passed to the scale, the scale may return a value outside the output range through linear extrapolation. For example, with the default domain and range of [0,1], an input value of 2 will return an output value of 2. If clamping is enabled, the normalized domain parameter *t* is clamped to the range [0,1], such that the return value of the scale is always within the scale's output range.
+
+If *boolean* is not specified, returns whether or not the scale currently clamps values to within the output range.
 
 <a name="linear_ticks" href="#linear_ticks">#</a> linear.<b>ticks</b>([<i>count</i>])
 
