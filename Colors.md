@@ -20,15 +20,23 @@ Constructs a new RGB color by parsing the specified *color* string. If *color* i
 * rgb shorthand hexadecimal - "#fea"
 * named - "red", "white", "blue"
 
-The resulting color is stored as red, green and blue integer channel values in the range [0,255]. The channels are available as the `r`, `g` and `b` attributes of the returned object.
+The resulting color is stored as red, green and blue integer channel values in the range [0,255]. The channels are available as the `r`, `g` and `b` attributes of the returned object. The list of supported [[named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]] is specified by CSS.
 
 <a name="rgb_brighter" href="#rgb_brighter">#</a> rgb.<b>brighter</b>([<i>k</i>])
 
+Returns a brighter copy of this color. Each channel is multiplied by 0.7 ^ *-k*. The the gamma value *k* is omitted, it defaults to 1. Channel values are capped at the maximum value of 255, and the minimum value of 30.
+
 <a name="rgb_darker" href="#rgb_darker">#</a> rgb.<b>darker</b>([<i>k</i>])
+
+Returns a darker copy of this color. Each channel is multiplied by 0.7 ^ *k*. The the gamma value *k* is omitted, it defaults to 1.
 
 <a name="rgb_hsl" href="#rgb_hsl">#</a> rgb.<b>hsl</b>()
 
+Returns the equivalent color in HSL space.
+
 <a name="rgb_toString" href="#rgb_toString">#</a> rgb.<b>toString</b>()
+
+Converts this RGB color to a string, such as "#f7eaba".
 
 ## HSL
 
