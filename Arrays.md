@@ -86,20 +86,63 @@ Merges the specified *arrays* into a single array. This method is similar to the
 
 <a name="d3_range" href="#d3_range">#</a> d3.<b>range</b>([<i>start</i>, ]<i>stop</i>[, <i>step</i>])
 
-Generates an array containing an arithmetic progression, similar to the Python built-in [[range|http://docs.python.org/library/functions.html#range]]. This method is often used to iterate over a sequence of numeric or integer values, such as the indexes into an array. Unlike the Python version, the arguments are not required to be integers, though the results are more predictable if they are due to floating point precision. If *step* is omitted, it defaults to 1. If *start* is omitted, it defaults to 0. The full form returns an array of numbers [start, start + step, start + 2 \* step, …]. If *step* is positive, the last element is the largest *start* + *i* \* *step* less than *stop*; if *step* is negative, the last element is the smallest *start* + *i* \* *step* greater than *stop*. If the returned array would contain an infinite number of values, an error is thrown rather than causing an infinite loop.
+Generates an array containing an arithmetic progression, similar to the Python built-in [[range|http://docs.python.org/library/functions.html#range]]. This method is often used to iterate over a sequence of numeric or integer values, such as the indexes into an array. Unlike the Python version, the arguments are not required to be integers, though the results are more predictable if they are due to floating point precision. If *step* is omitted, it defaults to 1. If *start* is omitted, it defaults to 0. The full form returns an array of numbers [*start*, *start* + *step*, *start* + 2 \* *step*, …]. If *step* is positive, the last element is the largest *start* + *i* \* *step* less than *stop*; if *step* is negative, the last element is the smallest *start* + *i* \* *step* greater than *stop*. If the returned array would contain an infinite number of values, an error is thrown rather than causing an infinite loop.
 
 ### Nest
 
+Nesting allows elements in an array to be grouped into a hierarchical tree structure; think of it like the GROUP BY operator in SQL, except you can have multiple levels of grouping, and the resulting output is a tree rather than a flat table. The levels in the tree are specified by key functions. The leaf nodes of the tree can be sorted by value, while the internal nodes can be sorted by key. An optional rollup function will collapse the elements in each leaf node using a summary function. The nest operator (the object returned by [d3.nest](#d3_nest)) is reusable, and does not retain any references to the data that is nested.
+
+For example, consider the following tabular data structure of Barley yields, from various sites in Minnesota during 1931-2:
+
+    [{yield: 27.00, variety: "Manchuria", year: 1931, site: "University Farm"},
+     {yield: 48.87, variety: "Manchuria", year: 1931, site: "Waseca"},
+     {yield: 27.43, variety: "Manchuria", year: 1931, site: "Morris"}, …]
+
+To facilitate visualization, it may be useful to nest the elements first by year, and then by variety, as follows:
+
+    var nest = d3.nest()
+        .key(function(d) { return d.year; })
+        .key(function(d) { return d.variety; })
+        .entries(yields);
+
+This returns a nested array. Each element of the outer array is a key-values pair, listing the values for each distinct key:
+
+    [{key: 1931, values: [
+       {key: "Manchuria", values: [
+         {yield: 27.00, variety: "Manchuria", year: 1931, site: "University Farm"},
+         {yield: 48.87, variety: "Manchuria", year: 1931, site: "Waseca"},
+         {yield: 27.43, variety: "Manchuria", year: 1931, site: "Morris"}, …]},
+       {key: "Glabron", values: [
+         {yield: 43.07, variety: "Glabron", year: 1931, site: "University Farm"},
+         {yield: 55.20, variety: "Glabron", year: 1931, site: "Waseca"}, …]}, …]},
+     {key: 1932, values: …}]
+
+The nested form allows easy iteration and generation of hierarchical structures in SVG or HTML.
+
 <a name="d3_nest" href="#d3_nest">#</a> d3.<b>nest</b>()
+
+Creates a new nest operator. The set of keys is initially empty. If the [map](#nest_map) or [entries](#nest_entries) operator is invoked before any key functions are registered, the nest operator simply returns the input array.
 
 <a name="nest_key" href="#nest_key">#</a> nest.<b>key</b>(<i>function</i>)
 
+Registers a new key *function*. The key function will be invoked for each element in the input array, and must return a string identifier that is used to assign the element to its group. Most often, the function is implemented as a simple accessor, such as the year and variety accessors in the example above. Each time a key is registered, it is pushed onto the end of an internal keys array, and the resulting map or entries will have an additional hierarchy level. This is not currently a facility to remove or query the registered keys. The most-recently registered key is referred to as the current key in subsequent methods.
+
 <a name="nest_sortKeys" href="#nest_sortKeys">#</a> nest.<b>sortKeys</b>(<i>comparator</i>)
+
+Sorts key values for the current key using the specified *comparator*. In no comparator is specified for the current key, the order in which keys will be returned is undefined. Note that this only affects the result of the entries operator; the order of keys returned by the map operator is always undefined, regardless of comparator.
 
 <a name="nest_sortValues" href="#nest_sortValues">#</a> nest.<b>sortValues</b>(<i>comparator</i>)
 
+Sorts leaf elements using the specified *comparator*. This is roughly equivalent to sorting the input array before applying the nest operator; however it is typically more efficient as the size of each group is smaller. If no value comparator is specified, elements will be returned in the order they appeared in the input array. This applies to both the map and entries operators.
+
 <a name="nest_rollup" href="#nest_rollup">#</a> nest.<b>rollup</b>(<i>function</i>)
+
+Specifies a rollup *function* to be applied on each group of leaf elements. The return value of the rollup function will replace the array of leaf values in either the associative array returned by the map operator, or the values attribute of each entry returned by the entries operator.
 
 <a name="nest_map" href="#nest_map">#</a> nest.<b>map</b>(<i>array</i>)
 
+Applies the nest operator to the specified *array*, returning an associative array. Each entry in the returned associative array corresponds to a distinct key value returned by the first key function. The entry value depends on the number of registered key functions: if there is an additional key, the value is another nested associative array; otherwise, the value is the array of elements filtered from the input *array* that have the given key value.
+
 <a name="nest_entries" href="#nest_entries">#</a> nest.<b>entries</b>(<i>array</i>)
+
+Applies the nest operator to the specified *array*, returning an array of key-values entries. Conceptually, this is similar to applying [d3.entries](#d3_entries) to the associative array returned by [map](#nest_map), but it applies to every level of the hierarchy rather than just the first (outermost) level. Each entry in the returned array corresponds to a distinct key value returned by the first key function. The entry value depends on the number of registered key functions: if there is an additional key, the value is another nested array of entries; otherwise, the value is the array of elements filtered from the input *array* that have the given key value.
