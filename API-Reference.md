@@ -116,7 +116,6 @@ Also see the [[CSV]] module.
 
 ## d3.scale
 
-
 ### [[Quantitative|Quantitative-Scales#quantitative]]
 
 * [[d3.scale.linear|Quantitative-Scales#linear]] - construct a linear quantitative scale.
@@ -148,19 +147,13 @@ Also see the [[CSV]] module.
 * [[log.clamp|Quantitative-Scales#log_clamp]] - enable or disable clamping of the output range.
 * [[log.ticks|Quantitative-Scales#log_ticks]] - get representative values from the input domain.
 * [[log.tickFormat|Quantitative-Scales#log_tickFormat]] - get a formatter for displaying tick values.
-
-### [[Quantize|Quantize-Scales#quantize]]
-
-* [[d3.scale.quantize|Quantize-Scales#quantize]]
-* [[quantize.domain|Quantize-Scales#quantize_domain]]
-* [[quantize.range|Quantize-Scales#quantize_range]]
-
-### [[Quantile|Quantile-Scales#quantile]]
-
-* [[d3.scale.quantile|Quantile-Scales#quantile]]
-* [[quantile.domain|Quantile-Scales#quantile_domain]]
-* [[quantile.range|Quantile-Scales#quantile_range]]
-* [[quantile.quantiles|Quantile-Scales#quantile_quantiles]]
+* [[d3.scale.quantize|Quantitative-Scales#quantize]]
+* [[quantize.domain|Quantitative-Scales#quantize_domain]]
+* [[quantize.range|Quantitative-Scales#quantize_range]]
+* [[d3.scale.quantile|Quantitative-Scales#quantile]]
+* [[quantile.domain|Quantitative-Scales#quantile_domain]]
+* [[quantile.range|Quantitative-Scales#quantile_range]]
+* [[quantile.quantiles|Quantitative-Scales#quantile_quantiles]]
 
 ### [[Ordinal|Ordinal-Scales#ordinal]]
 
