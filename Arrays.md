@@ -50,35 +50,43 @@ Returns -1 if *a* is greater than *b*, or 1 if *a* is less than *b*, or 0. This 
 
 Note that if no comparator function is specified to the built-in sort method, the default order is lexicographic (alphabetical), not natural! This can lead to bugs when sorting an array of numbers.
 
-<a name="d3_min" href="#d3_min">#</a> d3.<b>min</b>(<i>array</i>[, <i>function</i>])
+<a name="d3_min" href="#d3_min">#</a> d3.<b>min</b>(<i>array</i>[, <i>accessor</i>])
 
-Returns the minimum value in the given *array*. If the array is empty, returns undefined. An optional accessor *function* may be specified, which is equivalent to calling *array.map(function)* before computing the minimum value. Unlike the built-in [Math.min](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/min), this method ignores any values that cannot be coerced to a number, such as NaN or undefined. Thus, when computing the domain of a [[scale|Scales]] from data, only the defined region of the data is considered, rather than applying a degenerate domain.
+Returns the minimum value in the given *array*. If the array is empty, returns undefined. An optional *accessor* function may be specified, which is equivalent to calling *array.map(function)* before computing the minimum value. Unlike the built-in [Math.min](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/min), this method ignores any values that cannot be coerced to a number, such as NaN or undefined. Thus, when computing the domain of a [[scale|Scales]] from data, only the defined region of the data is considered, rather than applying a degenerate domain.
 
-<a name="d3_max" href="#d3_max">#</a> d3.<b>max</b>(<i>array</i>[, <i>function</i>])
+<a name="d3_max" href="#d3_max">#</a> d3.<b>max</b>(<i>array</i>[, <i>accessor</i>])
 
-Returns the maximum value in the given *array*. If the array is empty, returns undefined. An optional accessor *function* may be specified, which is equivalent to calling *array.map(function)* before computing the maximum value. Unlike the built-in [Math.max](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/max), this method ignores any values that cannot be coerced to a number, such as NaN or undefined. Thus, when computing the domain of a [[scale|Scales]] from data, only the defined region of the data is considered, rather than applying a degenerate domain.
+Returns the maximum value in the given *array*. If the array is empty, returns undefined. An optional *accessor* function may be specified, which is equivalent to calling *array.map(function)* before computing the maximum value. Unlike the built-in [Math.max](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/max), this method ignores any values that cannot be coerced to a number, such as NaN or undefined. Thus, when computing the domain of a [[scale|Scales]] from data, only the defined region of the data is considered, rather than applying a degenerate domain.
 
 ## Associative Arrays
 
+Another common data type in JavaScript is the associative array, or more simply the object, which has a set of named properties. In Java this is referred to as a map, and in Python, a dictionary. JavaScript provides a standard mechanism for iterating over the keys (or property names) in an associative array: the [for…in loop](https://developer.mozilla.org/en/JavaScript/Reference/Statements/for...in). However, note that the iteration order is undefined. D3 provides several operators for converting associative arrays to standard indexed arrays. 
+
 <a name="d3_keys" href="#d3_keys">#</a> d3.<b>keys</b>(<i>object</i>)
 
-Returns an array containing the property names of the specified object (an associative array). The order of the returned array is not defined, though it will be consistent with your browser's iteration order when using a [for…in loop](https://developer.mozilla.org/en/JavaScript/Reference/Statements/for...in).
+Returns an array containing the property names of the specified object (an associative array). The order of the returned array is undefined.
 
 <a name="d3_values" href="#d3_values">#</a> d3.<b>values</b>(<i>object</i>)
 
-Returns an array containing the property values of the specified object (an associative array). The order of the returned array is not defined, though it will be consistent with your browser's iteration order when using a [for…in loop](https://developer.mozilla.org/en/JavaScript/Reference/Statements/for...in).
+Returns an array containing the property values of the specified object (an associative array). The order of the returned array is undefined.
 
 <a name="d3_entries" href="#d3_entries">#</a> d3.<b>entries</b>(<i>object</i>)
 
-Returns an array containing the property keys and values of the specified object (an associative array). Each entry is an object with a key and value attribute, such as {key: "foo", value: 42}. The order of the returned array is not defined, though it will be consistent with your browser's iteration order when using a [for…in loop](https://developer.mozilla.org/en/JavaScript/Reference/Statements/for...in).
+Returns an array containing the property keys and values of the specified object (an associative array). Each entry is an object with a key and value attribute, such as {key: "foo", value: 42}. The order of the returned array is undefined.
 
 ## Array Operators
 
 <a name="d3_split" href="#d3_split">#</a> d3.<b>split</b>(<i>array</i>[, <i>function</i>])
 
+Splits the specified *array* into multiple arrays at breakpoints identified by the specified *function*. If no breakpoint function is specified, the array will be split at any null or undefined values. Elements that are identified as breakpoints will not be included in the returned arrays. This method is often used in conjunction with the [[line|Shapes#line]] shape, such that missing data points are elided; each contiguous slice of the array where the data *is* defined is rendered as a line segment.
+
 <a name="d3_merge" href="#d3_merge">#</a> d3.<b>merge</b>(<i>arrays</i>)
 
+Merges the specified *arrays* into a single array. This method is similar to the built-in array concat method; the only difference is that it is more convenient when you have an array of arrays.
+
 <a name="d3_range" href="#d3_range">#</a> d3.<b>range</b>([<i>start</i>, ]<i>stop</i>[, <i>step</i>])
+
+Generates an array containing an arithmetic progression, similar to the Python built-in [[range|http://docs.python.org/library/functions.html#range]]. This method is often used to iterate over a sequence of numeric or integer values, such as the indexes into an array. Unlike the Python version, the arguments are not required to be integers, though the results are more predictable if they are due to floating point precision. If *step* is omitted, it defaults to 1. If *start* is omitted, it defaults to 0. The full form returns an array of numbers [start, start + step, start + 2 \* step, …]. If *step* is positive, the last element is the largest *start* + *i* \* *step* less than *stop*; if *step* is negative, the last element is the smallest *start* + *i* \* *step* greater than *stop*. If the returned array would contain an infinite number of values, an error is thrown rather than causing an infinite loop.
 
 ### Nest
 
