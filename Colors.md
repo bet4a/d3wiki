@@ -32,7 +32,7 @@ Returns a darker copy of this color. Each channel is multiplied by 0.7 ^ *k*. Th
 
 <a name="rgb_hsl" href="#rgb_hsl">#</a> rgb.<b>hsl</b>()
 
-Returns the equivalent color in HSL space.
+Returns the equivalent color in HSL space; see [d3.hsl](#d3_hsl) for details on the returned object.
 
 <a name="rgb_toString" href="#rgb_toString">#</a> rgb.<b>toString</b>()
 
