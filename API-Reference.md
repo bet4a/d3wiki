@@ -103,10 +103,12 @@ Also see the [[CSV]] module.
 * [[rgb.brighter|Colors#rgb_brighter]] - increase RGB channels by some exponential factor (gamma).
 * [[rgb.darker|Colors#rgb_darker]] - decrease RGB channels by some exponential factor (gamma).
 * [[rgb.hsl|Colors#rgb_hsl]] - convert from RGB to HSL.
+* [[rgb.toString|Colors#rgb_toString]] - convert an RGB color to a string.
 * [[d3.hsl|Colors#d3_hsl]] - specify a color in HSL space.
 * [[hsl.brighter|Colors#hsl_brighter]] - increase lightness by some exponential factor (gamma).
 * [[hsl.darker|Colors#hsl_darker]] - decrease lightness by some exponential factor (gamma).
 * [[hsl.rgb|Colors#hsl_rgb]] - convert from HSL to RGB.
+* [[hsl.toString|Colors#hsl_toString]] - convert an HSL color to a string.
 
 ### [[Internals]]
 
