@@ -79,9 +79,9 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[nest.key|Arrays#nest_key]] - add a level to the nest hierarchy.
 * [[nest.sortKeys|Arrays#nest_sortKeys]] - sort the current nest level by key.
 * [[nest.sortValues|Arrays#nest_sortValues]] - sort the leaf nest level by value.
+* [[nest.rollup|Arrays#nest_rollup]] - specify a rollup function for leaf values.
 * [[nest.map|Arrays#nest_map]] - evaluate the nest operator, returning an associative array.
 * [[nest.entries|Arrays#nest_entries]] - evaluate the nest operator, returning an array of key-values tuples.
-* [[nest.rollup|Arrays#nest_rollup]] - evaluate the nest operator, return an associative array rollup.
 
 ### [[Loading External Resources|Loading]]
 
