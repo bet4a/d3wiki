@@ -116,65 +116,65 @@ Also see the [[CSV]] module.
 
 ## d3.scale
 
-### [[Quantitative|Scales#quantitative]]
 
-* [[d3.scale.linear|Scales#linear]] - construct a linear quantitative scale.
-* [[linear.invert|Scales#linear_invert]] - get the domain value corresponding to a given range value.
-* [[linear.domain|Scales#linear_domain]] - get or set the scale's input domain.
-* [[linear.range|Scales#linear_range]] - get or set the scale's output range.
-* [[linear.rangeRound|Scales#linear_rangeRound]] - set the scale's output range, and enable rounding.
-* [[linear.interpolate|Scales#linear_interpolate]] - get or set the scale's output interpolator.
-* [[linear.clamp|Scales#linear_clamp]] - enable or disable clamping of the output range.
-* [[linear.ticks|Scales#linear_ticks]] - get representative values from the input domain.
-* [[linear.tickFormat|Scales#linear_tickFormat]] - get a formatter for displaying tick values.
-* [[d3.scale.sqrt|Scales#sqrt]] - construct a quantitative scale with a square root transform.
-* [[d3.scale.pow|Scales#pow]] - construct a quantitative scale with an exponential transform.
-* [[pow.invert|Scales#pow_invert]] - get the domain value corresponding to a given range value. 
-* [[pow.domain|Scales#pow_domain]] - get or set the scale's input domain.
-* [[pow.range|Scales#pow_range]] - get or set the scale's output range.
-* [[pow.rangeRound|Scales#pow_rangeRound]] - set the scale's output range, and enable rounding.
-* [[pow.interpolate|Scales#pow_interpolate]] - get or set the scale's output interpolator.
-* [[pow.clamp|Scales#pow_clamp]] - enable or disable clamping of the output range.
-* [[pow.ticks|Scales#pow_ticks]] - get representative values from the input domain.
-* [[pow.tickFormat|Scales#pow_tickFormat]] - get a formatter for displaying tick values.
-* [[pow.exponent|Scales#pow_exponent]] - get or set the exponent power.
-* [[d3.scale.log|Scales#log]] - construct a quantitative scale with an logarithmic transform.
-* [[log.invert|Scales#log_invert]] - get the domain value corresponding to a given range value. 
-* [[log.domain|Scales#log_domain]] - get or set the scale's input domain.
-* [[log.range|Scales#log_range]] - get or set the scale's output range.
-* [[log.rangeRound|Scales#log_rangeRound]] - set the scale's output range, and enable rounding.
-* [[log.interpolate|Scales#log_interpolate]] - get or set the scale's output interpolator.
-* [[log.clamp|Scales#log_clamp]] - enable or disable clamping of the output range.
-* [[log.ticks|Scales#log_ticks]] - get representative values from the input domain.
-* [[log.tickFormat|Scales#log_tickFormat]] - get a formatter for displaying tick values.
+### [[Quantitative|Quantitative-Scales#quantitative]]
 
-### [[Quantize|Scales#quantize]]
+* [[d3.scale.linear|Quantitative-Scales#linear]] - construct a linear quantitative scale.
+* [[linear.invert|Quantitative-Scales#linear_invert]] - get the domain value corresponding to a given range value.
+* [[linear.domain|Quantitative-Scales#linear_domain]] - get or set the scale's input domain.
+* [[linear.range|Quantitative-Scales#linear_range]] - get or set the scale's output range.
+* [[linear.rangeRound|Quantitative-Scales#linear_rangeRound]] - set the scale's output range, and enable rounding.
+* [[linear.interpolate|Quantitative-Scales#linear_interpolate]] - get or set the scale's output interpolator.
+* [[linear.clamp|Quantitative-Scales#linear_clamp]] - enable or disable clamping of the output range.
+* [[linear.ticks|Quantitative-Scales#linear_ticks]] - get representative values from the input domain.
+* [[linear.tickFormat|Quantitative-Scales#linear_tickFormat]] - get a formatter for displaying tick values.
+* [[d3.scale.sqrt|Quantitative-Scales#sqrt]] - construct a quantitative scale with a square root transform.
+* [[d3.scale.pow|Quantitative-Scales#pow]] - construct a quantitative scale with an exponential transform.
+* [[pow.invert|Quantitative-Scales#pow_invert]] - get the domain value corresponding to a given range value. 
+* [[pow.domain|Quantitative-Scales#pow_domain]] - get or set the scale's input domain.
+* [[pow.range|Quantitative-Scales#pow_range]] - get or set the scale's output range.
+* [[pow.rangeRound|Quantitative-Scales#pow_rangeRound]] - set the scale's output range, and enable rounding.
+* [[pow.interpolate|Quantitative-Scales#pow_interpolate]] - get or set the scale's output interpolator.
+* [[pow.clamp|Quantitative-Scales#pow_clamp]] - enable or disable clamping of the output range.
+* [[pow.ticks|Quantitative-Scales#pow_ticks]] - get representative values from the input domain.
+* [[pow.tickFormat|Quantitative-Scales#pow_tickFormat]] - get a formatter for displaying tick values.
+* [[pow.exponent|Quantitative-Scales#pow_exponent]] - get or set the exponent power.
+* [[d3.scale.log|Quantitative-Scales#log]] - construct a quantitative scale with an logarithmic transform.
+* [[log.invert|Quantitative-Scales#log_invert]] - get the domain value corresponding to a given range value. 
+* [[log.domain|Quantitative-Scales#log_domain]] - get or set the scale's input domain.
+* [[log.range|Quantitative-Scales#log_range]] - get or set the scale's output range.
+* [[log.rangeRound|Quantitative-Scales#log_rangeRound]] - set the scale's output range, and enable rounding.
+* [[log.interpolate|Quantitative-Scales#log_interpolate]] - get or set the scale's output interpolator.
+* [[log.clamp|Quantitative-Scales#log_clamp]] - enable or disable clamping of the output range.
+* [[log.ticks|Quantitative-Scales#log_ticks]] - get representative values from the input domain.
+* [[log.tickFormat|Quantitative-Scales#log_tickFormat]] - get a formatter for displaying tick values.
 
-* [[d3.scale.quantize|Scales#quantize]]
-* [[quantize.domain|Scales#quantize_domain]]
-* [[quantize.range|Scales#quantize_range]]
+### [[Quantize|Quantize-Scales#quantize]]
 
-### [[Quantile|Scales#quantile]]
+* [[d3.scale.quantize|Quantize-Scales#quantize]]
+* [[quantize.domain|Quantize-Scales#quantize_domain]]
+* [[quantize.range|Quantize-Scales#quantize_range]]
 
-* [[d3.scale.quantile|Scales#quantile]]
-* [[quantile.domain|Scales#quantile_domain]]
-* [[quantile.range|Scales#quantile_range]]
-* [[quantile.quantiles|Scales#quantile_quantiles]]
+### [[Quantile|Quantile-Scales#quantile]]
 
-### [[Ordinal|Scales#ordinal]]
+* [[d3.scale.quantile|Quantile-Scales#quantile]]
+* [[quantile.domain|Quantile-Scales#quantile_domain]]
+* [[quantile.range|Quantile-Scales#quantile_range]]
+* [[quantile.quantiles|Quantile-Scales#quantile_quantiles]]
 
-* [[d3.scale.ordinal|Scales#ordinal]]
-* [[ordinal.domain|Scales#ordinal_domain]]
-* [[ordinal.range|Scales#ordinal_range]]
-* [[ordinal.rangePoints|Scales#ordinal_rangePoints]]
-* [[ordinal.rangeBands|Scales#ordinal_rangeBands]]
-* [[ordinal.rangeRoundBands|Scales#ordinal_rangeRoundBands]]
-* [[ordinal.rangeBand|Scales#ordinal_rangeBand]]
-* [[d3.scale.category10|Scales#category10]]
-* [[d3.scale.category20|Scales#category20]]
-* [[d3.scale.category20b|Scales#category20b]]
-* [[d3.scale.category20c|Scales#category20c]]
+### [[Ordinal|Ordinal-Scales#ordinal]]
 
+* [[d3.scale.ordinal|Ordinal-Scales#ordinal]]
+* [[ordinal.domain|Ordinal-Scales#ordinal_domain]]
+* [[ordinal.range|Ordinal-Scales#ordinal_range]]
+* [[ordinal.rangePoints|Ordinal-Scales#ordinal_rangePoints]]
+* [[ordinal.rangeBands|Ordinal-Scales#ordinal_rangeBands]]
+* [[ordinal.rangeRoundBands|Ordinal-Scales#ordinal_rangeRoundBands]]
+* [[ordinal.rangeBand|Ordinal-Scales#ordinal_rangeBand]]
+* [[d3.scale.category10|Ordinal-Scales#category10]]
+* [[d3.scale.category20|Ordinal-Scales#category20]]
+* [[d3.scale.category20b|Ordinal-Scales#category20b]]
+* [[d3.scale.category20c|Ordinal-Scales#category20c]]
 
 ## d3.svg
 
