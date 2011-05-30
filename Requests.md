@@ -8,7 +8,7 @@ When loading data asynchronously, code that depends on the loaded data should ge
 
     d3.json("path/to/file.json", function(json) {
       data = json;
-      visualizeit(); // and I will advertise it
+      visualizeit();
     });
 
 By default, your browser will not allow cross-domain requests. (This is also true of the local file system, which is why the [[README|https://github.com/mbostock/d3/blob/master/README.md]] recommends using a local web server to host the examples.) While it is possible to use JSONP to workaround this security restriction, this is unsafe from a security perspective because it allows the external site to run arbitrary JavaScript. Instead, use the header Access-Control-Allow-Origin: * to allow your browser to request an external resource safely. For more details, see the W3C recommendation on [[Cross-Origin Resource Sharing|http://www.w3.org/TR/cors/]].
