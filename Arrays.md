@@ -4,27 +4,68 @@ When using D3—and doing data visualization in general—you tend to do a lot o
 
 This includes **mutator methods** that modify the array:
 
-* [reverse](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/reverse) - Reverse the order of the elements of the array.
-* [shift](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/shift) - Remove the first element from the array.
-* [sort](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort) - Sort the elements of the array.
-* [splice](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/splice) - Add or remove elements from the array.
-* [unshift](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/unshift) - Add one or more elements to the front of the array.
+* [array.reverse](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/reverse) - Reverse the order of the elements of the array.
+* [array.shift](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/shift) - Remove the first element from the array.
+* [array.sort](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort) - Sort the elements of the array.
+* [array.splice](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/splice) - Add or remove elements from the array.
+* [array.unshift](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/unshift) - Add one or more elements to the front of the array.
 
 There are also **accessor methods** that return some representation of the array:
 
-* [concat](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/concat) - Join the array with other array(s) or value(s).
-* [join](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/join) - Join all elements of the array into a string.
-* [slice](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/slice) - Extract a section of the array.
-* [indexOf](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/indexOf) - Find the first occurrence of a value within the array.
-* [lastIndexOf](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/lastIndexOf) - Find the last occurrence of a value within the array.
+* [array.concat](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/concat) - Join the array with other array(s) or value(s).
+* [array.join](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/join) - Join all elements of the array into a string.
+* [array.slice](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/slice) - Extract a section of the array.
+* [array.indexOf](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/indexOf) - Find the first occurrence of a value within the array.
+* [array.lastIndexOf](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/lastIndexOf) - Find the last occurrence of a value within the array.
 
 And finally, **iteration methods** that apply functions to elements in the array:
 
-* [filter](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/filter) - Create a new array with only the elements for which a predicate is true.
-* [forEach](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/forEach) - Call a function for each element in the array.
-* [every](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/every) - See if every element in the array satisfies a predicate.
-* [map](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/map) - Create a new array with the result of a function of every element in the array.
-* [some](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/some) - See if at least one element in the array satisfies a predicate.
-* [reduce](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/reduce) - Apply a function to reduce the array to a single value (from left-to-right).
-* [reduceRight](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/reduceRight) - Apply a function to reduce the array to a single value (from right-to-left).
+* [array.filter](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/filter) - Create a new array with only the elements for which a predicate is true.
+* [array.forEach](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/forEach) - Call a function for each element in the array.
+* [array.every](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/every) - See if every element in the array satisfies a predicate.
+* [array.map](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/map) - Create a new array with the result of a function of every element in the array.
+* [array.some](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/some) - See if at least one element in the array satisfies a predicate.
+* [array.reduce](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/reduce) - Apply a function to reduce the array to a single value (from left-to-right).
+* [array.reduceRight](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/reduceRight) - Apply a function to reduce the array to a single value (from right-to-left).
 
+## Ordering
+
+<a name="d3_ascending" href="#d3_ascending">#</a> d3.<b>ascending</b>(<i>a</i>, <i>b</i>)
+
+<a name="d3_descending" href="#d3_descending">#</a> d3.<b>descending</b>(<i>a</i>, <i>b</i>)
+
+<a name="d3_min" href="#d3_min">#</a> d3.<b>min</b>(<i>array</i>[, <i>function</i>])
+
+<a name="d3_max" href="#d3_max">#</a> d3.<b>max</b>(<i>array</i>[, <i>function</i>])
+
+## Associative Arrays
+
+<a name="d3_keys" href="#d3_keys">#</a> d3.<b>keys</b>(<i>object</i>)
+
+<a name="d3_values" href="#d3_values">#</a> d3.<b>values</b>(<i>object</i>)
+
+<a name="d3_entries" href="#d3_entries">#</a> d3.<b>entries</b>(<i>object</i>)
+
+## Array Operators
+
+<a name="d3_split" href="#d3_split">#</a> d3.<b>split</b>(<i>array</i>[, <i>function</i>])
+
+<a name="d3_merge" href="#d3_merge">#</a> d3.<b>merge</b>(<i>arrays</i>)
+
+<a name="d3_range" href="#d3_range">#</a> d3.<b>range</b>([<i>start</i>, ]<i>stop</i>[, <i>step</i>])
+
+### Nest
+
+<a name="d3_nest" href="#d3_nest">#</a> d3.<b>nest</b>()
+
+<a name="nest_key" href="#nest_key">#</a> nest.<b>key</b>(<i>function</i>)
+
+<a name="nest_sortKeys" href="#nest_sortKeys">#</a> nest.<b>sortKeys</b>(<i>comparator</i>)
+
+<a name="nest_sortValues" href="#nest_sortValues">#</a> nest.<b>sortValues</b>(<i>comparator</i>)
+
+<a name="nest_rollup" href="#nest_rollup">#</a> nest.<b>rollup</b>(<i>function</i>)
+
+<a name="nest_map" href="#nest_map">#</a> nest.<b>map</b>(<i>array</i>)
+
+<a name="nest_entries" href="#nest_entries">#</a> nest.<b>entries</b>(<i>array</i>)
