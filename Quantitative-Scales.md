@@ -40,7 +40,9 @@ Sets the scale's output range to the specified array of values, while also setti
 
 <a name="linear_interpolate" href="#linear_interpolate">#</a> linear.<b>interpolate</b>([<i>factory</i>])
 
-Sets the scale's output interpolator using the specified *factory*. The interpolator factory defaults to [[d3.interpolate|Transitions#d3_interpolate]], and is used to map the normalized domain parameter *t* in [0,1] to the corresponding value in the output range. The interpolator factory will be used to construct interpolators for each adjacent pair of values from the output range.
+If *factory* is specified, sets the scale's output interpolator using the specified *factory*. The interpolator factory defaults to [[d3.interpolate|Transitions#d3_interpolate]], and is used to map the normalized domain parameter *t* in [0,1] to the corresponding value in the output range. The interpolator factory will be used to construct interpolators for each adjacent pair of values from the output range.
+
+If *factory* is not specified, returns the scale's interpolator factory.
 
 <a name="linear_clamp" href="#linear_clamp">#</a> linear.<b>clamp</b>([<i>boolean</i>])
 
@@ -48,9 +50,13 @@ If *boolean* is specified, enables or disables clamping accordingly. By default,
 
 If *boolean* is not specified, returns whether or not the scale currently clamps values to within the output range.
 
-<a name="linear_ticks" href="#linear_ticks">#</a> linear.<b>ticks</b>([<i>count</i>])
+<a name="linear_ticks" href="#linear_ticks">#</a> linear.<b>ticks</b>(<i>count</i>)
 
-<a name="linear_tickFormat" href="#linear_tickFormat">#</a> linear.<b>tickFormat</b>([<i>count</i>])
+Returns approximately *count* representative values from the scale's input domain. The returned tick values are uniformly spaced, have human-readable values (such as multiples of powers of 10), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain.
+
+<a name="linear_tickFormat" href="#linear_tickFormat">#</a> linear.<b>tickFormat</b>(<i>count</i>)
+
+Returns a [[number format|Formatting#d3_format]] function suitable for displaying a tick value. The specified *count* should have the same value as the count that is used to generate the tick values. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate precision based on the fixed interval between tick values.
 
 ## Power Scales
 
