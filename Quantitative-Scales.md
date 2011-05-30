@@ -2,9 +2,15 @@
 
 **Scales** are functions that map from an input domain to an output range. **Quantitative** scales have a continuous domain, such as the set of real numbers, or dates. There are also [[ordinal scales|Ordinal-Scales]], which have a discrete domain, such as a set of names or categories. Scales are an optional feature in D3; you don't have to use them, if you prefer to do the math yourself. However, using scales can greatly simplify the code needed to map a dimension of data to a visual representation.
 
+A scale object, such as that returned by [d3.scale.linear](#linear), is both an object and a function. (In fact, every function is also an object in JavaScript, though not every object is a function.) That is, you can call the scale like any other function. And, the scale has additional methods that change its behavior, such as setting the domain.
+
 ## Linear Scales
 
+Linear scales are the most common, and are used to map a continuous input domain to a continuous output range. The mapping is linear in that the output range value *y* can be expressed as a linear function of the input domain value *x*: *y* = *mx* + *b*. The input domain is typically a dimension of the data that you want to visualize, such as the height of students (measured in meters) in a sample population. The output range is typically a dimension of the desired visual encoding, such as the height of bars (measured in pixels) in a histogram.
+
 <a name="linear" href="#linear">#</a> d3.scale.<b>linear</b>()
+
+Constructs a new linear scale with the default domain [0,1] and the default range [0,1]. The returned scale is a function that takes a single argument *x* representing a value in the input domain; the return value is the corresponding value in the output range. Thus, the default linear scale is equivalent to the identity function for numbers; for example linear(0.5) returns 0.5.
 
 <a name="linear_invert" href="#linear_invert">#</a> linear.<b>invert</b>(<i>y</i>)
 
