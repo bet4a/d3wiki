@@ -147,13 +147,13 @@ Also see the [[CSV]] module.
 * [[log.clamp|Quantitative-Scales#log_clamp]] - enable or disable clamping of the output range.
 * [[log.ticks|Quantitative-Scales#log_ticks]] - get representative values from the input domain.
 * [[log.tickFormat|Quantitative-Scales#log_tickFormat]] - get a formatter for displaying tick values.
-* [[d3.scale.quantize|Quantitative-Scales#quantize]]
-* [[quantize.domain|Quantitative-Scales#quantize_domain]]
-* [[quantize.range|Quantitative-Scales#quantize_range]]
-* [[d3.scale.quantile|Quantitative-Scales#quantile]]
-* [[quantile.domain|Quantitative-Scales#quantile_domain]]
-* [[quantile.range|Quantitative-Scales#quantile_range]]
-* [[quantile.quantiles|Quantitative-Scales#quantile_quantiles]]
+* [[d3.scale.quantize|Quantitative-Scales#quantize]] - construct a linear quantitative scale with a discrete output range.
+* [[quantize.domain|Quantitative-Scales#quantize_domain]] - get or set the scale's input domain.
+* [[quantize.range|Quantitative-Scales#quantize_range]] - get or set the scale's output range (as discrete values).
+* [[d3.scale.quantile|Quantitative-Scales#quantile]] - construct a quantitative scale mapping to quantiles.
+* [[quantile.domain|Quantitative-Scales#quantile_domain]] - get or set the scale's input domain (as discrete values).
+* [[quantile.range|Quantitative-Scales#quantile_range]] - get or set the scale's output range (as discrete values).
+* [[quantile.quantiles|Quantitative-Scales#quantile_quantiles]] - get the scale's quantile bin thresholds.
 
 ### [[Ordinal|Ordinal-Scales#ordinal]]
 
