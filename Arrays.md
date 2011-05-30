@@ -32,35 +32,45 @@ And finally, **iteration methods** that apply functions to elements in the array
 
 <a name="d3_ascending" href="#d3_ascending">#</a> d3.<b>ascending</b>(<i>a</i>, <i>b</i>)
 
-The comparator function for natural order:
+Returns -1 if *a* is less than *b*, or 1 if *a* is greater than *b*, or 0. This is the comparator function for natural order, and can be used in conjunction with the built-in array sort method to arrange elements in ascending order:
 
     function(a, b) {
       return a < b ? -1 : a > b ? 1 : 0;
     }
 
-This comparator can be used in conjunction with the built-in array sort method to sort elements by their natural order, ascending. Note that if no comparator function is specified to the built-in sort method, the default order is lexicographic (alphabetical), not natural! 
+Note that if no comparator function is specified to the built-in sort method, the default order is lexicographic (alphabetical), not natural! This can lead to bugs when sorting an array of numbers.
 
 <a name="d3_descending" href="#d3_descending">#</a> d3.<b>descending</b>(<i>a</i>, <i>b</i>)
 
-The comparator function for reverse natural order:
+Returns -1 if *a* is greater than *b*, or 1 if *a* is less than *b*, or 0. This is the comparator function for reverse natural order, and can be used in conjunction with the built-in array sort method to arrange elements in descending order:
 
     function(a, b) {
       return b < a ? -1 : b > a ? 1 : 0;
     }
 
-This comparator can be used in conjunction with the built-in array sort method to sort elements by their natural order, descending. Note that if no comparator function is specified to the built-in sort method, the default order is lexicographic, not natural! 
+Note that if no comparator function is specified to the built-in sort method, the default order is lexicographic (alphabetical), not natural! This can lead to bugs when sorting an array of numbers.
 
 <a name="d3_min" href="#d3_min">#</a> d3.<b>min</b>(<i>array</i>[, <i>function</i>])
 
+Returns the minimum value in the given *array*. If the array is empty, returns undefined. An optional accessor *function* may be specified, which is equivalent to calling *array.map(function)* before computing the minimum value. Unlike the built-in [Math.min](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/min), this method ignores any values that cannot be coerced to a number, such as NaN or undefined. Thus, when computing the domain of a [[scale|Scales]] from data, only the defined region of the data is considered, rather than applying a degenerate domain.
+
 <a name="d3_max" href="#d3_max">#</a> d3.<b>max</b>(<i>array</i>[, <i>function</i>])
+
+Returns the maximum value in the given *array*. If the array is empty, returns undefined. An optional accessor *function* may be specified, which is equivalent to calling *array.map(function)* before computing the maximum value. Unlike the built-in [Math.max](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/max), this method ignores any values that cannot be coerced to a number, such as NaN or undefined. Thus, when computing the domain of a [[scale|Scales]] from data, only the defined region of the data is considered, rather than applying a degenerate domain.
 
 ## Associative Arrays
 
 <a name="d3_keys" href="#d3_keys">#</a> d3.<b>keys</b>(<i>object</i>)
 
+Returns an array containing the property names of the specified object (an associative array). The order of the returned array is not defined, though it will be consistent with your browser's iteration order when using a [for…in loop](https://developer.mozilla.org/en/JavaScript/Reference/Statements/for...in).
+
 <a name="d3_values" href="#d3_values">#</a> d3.<b>values</b>(<i>object</i>)
 
+Returns an array containing the property values of the specified object (an associative array). The order of the returned array is not defined, though it will be consistent with your browser's iteration order when using a [for…in loop](https://developer.mozilla.org/en/JavaScript/Reference/Statements/for...in).
+
 <a name="d3_entries" href="#d3_entries">#</a> d3.<b>entries</b>(<i>object</i>)
+
+Returns an array containing the property keys and values of the specified object (an associative array). Each entry is an object with a key and value attribute, such as {key: "foo", value: 42}. The order of the returned array is not defined, though it will be consistent with your browser's iteration order when using a [for…in loop](https://developer.mozilla.org/en/JavaScript/Reference/Statements/for...in).
 
 ## Array Operators
 
