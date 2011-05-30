@@ -83,13 +83,13 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[nest.map|Arrays#nest_map]] - evaluate the nest operator, returning an associative array.
 * [[nest.entries|Arrays#nest_entries]] - evaluate the nest operator, returning an array of key-values tuples.
 
-### [[Loading External Resources|Loading]]
+### [[Loading External Resources|Requests]]
 
-* [[d3.xhr|Loading#d3_xhr]] - load a resource using `XMLHttpRequest`.
-* [[d3.text|Loading#d3_text]] - load a text file.
-* [[d3.json|Loading#d3_json]] - load a JSON blob.
-* [[d3.html|Loading#d3_html]] - load an HTML document fragment.
-* [[d3.xml|Loading#d3_xml]] - load an XML document fragment.
+* [[d3.xhr|Requests#d3_xhr]] - request a resource using `XMLHttpRequest`.
+* [[d3.text|Requests#d3_text]] - request a text file.
+* [[d3.json|Requests#d3_json]] - request a JSON blob.
+* [[d3.html|Requests#d3_html]] - request an HTML document fragment.
+* [[d3.xml|Requests#d3_xml]] - request an XML document fragment.
 
 Also see the [[CSV]] module.
 
