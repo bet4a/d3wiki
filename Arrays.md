@@ -99,11 +99,12 @@ Generates an array containing an arithmetic progression, similar to the Python b
 
 <a name="d3_permute" href="#d3_permute">#</a> d3.<b>permute</b>(<i>array</i>, <i>indexes</i>)
 
-…
+Returns a permutation of the specified *array* using the specified array of *indexes*. The returned array contains the corresponding element in array for each index in indexes, in order. For example, permute(["a", "b", "c"], [1, 2, 0])
+returns ["b", "c", "a"]. It is acceptable for the array of indexes to be a different length from the array of elements, and for indexes to be duplicated or omitted.
 
 <a name="d3_zip" href="#d3_zip">#</a> d3.<b>zip</b>(<i>arrays…</i>)
 
-…
+Returns an array of arrays, where the ith array contains the ith element from each of the argument *arrays*. The returned array is truncated in length to the shortest array in *arrays*. If *arrays* contains only a single array, the returned array contains one-element arrays. With no arguments, the returned array is empty.
 
 ### Nest
 
