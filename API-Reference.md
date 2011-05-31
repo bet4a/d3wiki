@@ -172,17 +172,17 @@ Also see the [[CSV]] module.
 
 ### [[Ordinal|Ordinal-Scales#ordinal]]
 
-* [[d3.scale.ordinal|Ordinal-Scales#ordinal]]
-* [[ordinal.domain|Ordinal-Scales#ordinal_domain]]
-* [[ordinal.range|Ordinal-Scales#ordinal_range]]
-* [[ordinal.rangePoints|Ordinal-Scales#ordinal_rangePoints]]
-* [[ordinal.rangeBands|Ordinal-Scales#ordinal_rangeBands]]
-* [[ordinal.rangeRoundBands|Ordinal-Scales#ordinal_rangeRoundBands]]
-* [[ordinal.rangeBand|Ordinal-Scales#ordinal_rangeBand]]
-* [[d3.scale.category10|Ordinal-Scales#category10]]
-* [[d3.scale.category20|Ordinal-Scales#category20]]
-* [[d3.scale.category20b|Ordinal-Scales#category20b]]
-* [[d3.scale.category20c|Ordinal-Scales#category20c]]
+* [[d3.scale.ordinal|Ordinal-Scales#ordinal]] - construct an ordinal scale.
+* [[ordinal.domain|Ordinal-Scales#ordinal_domain]] - get or set the scale's input domain.
+* [[ordinal.range|Ordinal-Scales#ordinal_range]] - get or set the scale's output range.
+* [[ordinal.rangePoints|Ordinal-Scales#ordinal_rangePoints]] - divide a continuous output range for discrete points.
+* [[ordinal.rangeBands|Ordinal-Scales#ordinal_rangeBands]] - divide a continuous output range for discrete bands.
+* [[ordinal.rangeRoundBands|Ordinal-Scales#ordinal_rangeRoundBands]] - divide a continuous output range for discrete bands.
+* [[ordinal.rangeBand|Ordinal-Scales#ordinal_rangeBand]] - get the discrete range band width.
+* [[d3.scale.category10|Ordinal-Scales#category10]] - construct an ordinal scale with ten categorical colors.
+* [[d3.scale.category20|Ordinal-Scales#category20]] - construct an ordinal scale with twenty categorical colors.
+* [[d3.scale.category20b|Ordinal-Scales#category20b]] - construct an ordinal scale with twenty categorical colors.
+* [[d3.scale.category20c|Ordinal-Scales#category20c]] - construct an ordinal scale with twenty categorical colors.
 
 ## d3.svg
 
