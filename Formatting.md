@@ -39,6 +39,10 @@ Returns the value *x* rounded to *n* digits after the decimal point. If *n* is o
 
 ## Strings
 
+<a name="d3_requote" href="#d3_requote">#</a> d3.<b>requote</b>(*string*)
+
+Returns an quoted (escaped) version of the specified *string* such that the string may be embedded in a regular expression as a string literal.
+
 ## Dates
 
 See the [[d3.time|Time-Formatting]] module.
