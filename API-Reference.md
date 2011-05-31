@@ -34,7 +34,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.event|Selections#d3_event]] - access the current user event for interaction.
 * [[d3.ns|Selections#d3_ns]] - access or extend known XML namespaces.
 * [[d3.functor|Selections#d3_functor]] - create a function that returns a constant.
-* [[d3.rebind|Sections#d3_rebind]] - 
+* [[d3.rebind|Selections#d3_rebind]] - 
 
 ### [[Transitions]]
 
