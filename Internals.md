@@ -30,4 +30,4 @@ Removes the specified *listener* from this dispatcher. If the *listener* is not 
 
 <a name="dispatch_dispatch" href="#dispatch_dispatch">#</a> dispatch.<b>dispatch</b>(<i>arguments…</i>)
 
-Notifies each registered listener, passing the listener the specified *arguments*. The `this` context of the dispatch method will be used as the `this` context of the registered listeners. For example, to invoke all registered listeners with the context *foo* and the argument *bar*, say dispatch.call(*foo*, *bar*).
+Notifies each registered listener, passing the listener the specified *arguments*. The `this` context of the dispatch method will be used as the context of the registered listeners. For example, to invoke all registered listeners with the context *foo* and the argument *bar*, say dispatch.call(*foo*, *bar*).
