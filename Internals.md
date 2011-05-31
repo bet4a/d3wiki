@@ -1,5 +1,7 @@
 > [[API Reference]]
 
+D3 has a variety of internal methods that may be useful if you are implementing your own layout or chart template.
+
 ## Functions
 
 <a name="functor" href="#functor">#</a> d3.<b>functor</b>(<i>value</i>)
