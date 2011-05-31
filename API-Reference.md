@@ -34,6 +34,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.event|Selections#d3_event]] - access the current user event for interaction.
 * [[d3.ns|Selections#d3_ns]] - access or extend known XML namespaces.
 * [[d3.functor|Selections#d3_functor]] - create a function that returns a constant.
+* [[d3.rebind|Sections#d3_rebind]] - 
 
 ### [[Transitions]]
 
@@ -69,6 +70,11 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.descending|Arrays#d3_descending]] - compare two values for sorting.
 * [[d3.min|Arrays#d3_min]] - find the minimum value in an array.
 * [[d3.max|Arrays#d3_max]] - find the maximum value in an array.
+* [[d3.bisect|Arrays#d3_bisect]] - 
+* [[d3.bisectRight|Arrays#d3_bisectRight]] - 
+* [[d3.bisectLeft|Arrays#d3_bisectLeft]] - 
+* [[d3.permute|Arrays#d3_permute]] - 
+* [[d3.zip|Arrays#d3_zip]] -
 * [[d3.keys|Arrays#d3_keys]] - list the keys of an associative array.
 * [[d3.values|Arrays#d3_values]] - list the values of an associated array.
 * [[d3.entries|Arrays#d3_entries]] - list the key-value entries of an associative array.
@@ -93,9 +99,11 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 Also see the [[CSV]] module.
 
-### [[Number Formatting|Formatting]]
+### [[String Formatting|Formatting]]
 
 * [[d3.format|Formatting#d3_format]] - format a number as a string.
+* [[d3.requote|Formatting#d3_requote]] - 
+* [[d3.round|Formatting#d3_round]] - 
 
 ### [[Colors]]
 
@@ -402,6 +410,11 @@ Also see the [[CSV]] module.
 * [[d3.geo.albersUsa|Geo-Projections#albersUsa]]
 * [[albersUsa.scale|Geo-Projections#albersUsa_scale]]
 * [[albersUsa.translate|Geo-Projections#albersUsa_translate]]
+* [[d3.geo.azimuthal|Geo-Projections#azimuthal]]
+* [[azimuthal.mode|Geo-Projections#azimuthal_mode]]
+* [[azimuthal.origin|Geo-Projections#azimuthal_origin]]
+* [[azimuthal.scale|Geo-Projections#azimuthal_scale]]
+* [[azimuthal.translate|Geo-Projections#azimuthal_translate]]
 
 ## d3.geom
 
