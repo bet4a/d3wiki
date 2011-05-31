@@ -33,8 +33,6 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[selection.selectAll|Selections#selectAll]] - subselect multiple descendants for each selected element.
 * [[d3.event|Selections#d3_event]] - access the current user event for interaction.
 * [[d3.ns|Selections#d3_ns]] - access or extend known XML namespaces.
-* [[d3.functor|Selections#d3_functor]] - create a function that returns a constant.
-* [[d3.rebind|Selections#d3_rebind]] - 
 
 ### [[Transitions]]
 
@@ -121,6 +119,8 @@ Also see the [[CSV]] module.
 ### [[Internals]]
 
 * [[d3.dispatch|Internals#d3_dispatch]] - create a custom event dispatcher.
+* [[d3.functor|Internals#d3_functor]] - create a function that returns a constant.
+* [[d3.rebind|Internals#d3_rebind]] - rebind an inherited getter/setter method to a subclass.
 
 ## d3.scale
 
