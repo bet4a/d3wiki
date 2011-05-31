@@ -56,7 +56,7 @@ Returns a [[number format|Formatting#d3_format]] function suitable for displayin
 
 ## Power Scales
 
-Power scales are similar to linear scales, except there's an exponential transform that is applied to the input domain value before the output range value is computed. The mapping to the output range value *y* can be expressed as a linear function of the input domain value *x*: *y* = *mx^k* + *b*, where *k* is the exponent value.
+Power scales are similar to linear scales, except there's an exponential transform that is applied to the input domain value before the output range value is computed. The mapping to the output range value *y* can be expressed as a function of the input domain value *x*: *y* = *mx^k* + *b*, where *k* is the exponent value. Power scales also support negative values, in which case the input value is multiplied by -1, and the resulting output value is also multiplied by -1.
 
 <a name="sqrt" href="#sqrt">#</a> d3.scale.<b>sqrt</b>()
 
@@ -112,23 +112,47 @@ Returns a [[number format|Formatting#d3_format]] function suitable for displayin
 
 ## Log Scales
 
+Log scales are similar to linear scales, except there's a logarithmic transform that is applied to the input domain value before the output range value is computed. The mapping to the output range value *y* can be expressed as a function of the input domain value *x*: *y* = *m* log10(*x*) + *b*. Log scales also support negative values, in which case the input value is multiplied by -1, and the resulting output value is also multiplied by -1. However, note that the domain of a log scale should never contain zero, as log(0) is negative infinity.
+
 <a name="log" href="#log">#</a> d3.scale.<b>log</b>()
+
+Constructs a new log scale with the default domain [0,1], the default range [0,1], and the base 10. The returned scale is a function that takes a single argument *x* representing a value in the input domain; the return value is the corresponding value in the output range.
 
 <a name="log_invert" href="#log_invert">#</a> log.<b>invert</b>(<i>y</i>)
 
+Returns the value in the input domain *x* for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. For a valid value *y* in the output range, log(log.invert(*y*)) equals *y*; similarly, for a valid value *x* in the input domain, log.invert(log(*x*)) equals *x*. Equivalently, you can construct the invert operator by building a new scale while swapping the domain and range. The invert operator is particularly useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
+
+Note: the invert operator is only supported if the output range is numeric! D3 allows the output range to be any type; under the hood, [[d3.interpolate|Transitions#d3_interpolate]] or a custom interpolator of your choice is used to map the normalized parameter *t* to a value in the output range. Thus, the output range may be colors, strings, or even arbitrary objects. As there is no facility to "uninterpolate" arbitrary types, the invert operator is currently supported only on numeric ranges.
+
 <a name="log_domain" href="#log_domain">#</a> log.<b>domain</b>([<i>values</i>])
+
+If *numbers* is specified, sets the scale's input domain to the specified array of numbers. The array must contain two or more numbers. If the elements in the given array are not numbers, they will be coerced to numbers; this coercion happens similarly when the scale is called. Thus, a log scale can be used to encode any type that can be converted to numbers. If *numbers* is not specified, returns the scale's current input domain.
+
+As with linear scales (see [linear.domain](#linear_domain)), log scales can also accept more than two values for the domain and range, thus resulting in polylog scale.
 
 <a name="log_range" href="#log_range">#</a> log.<b>range</b>([<i>values</i>])
 
+If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](#log_interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
+
 <a name="log_rangeRound" href="#log_rangeRound">#</a> log.<b>rangeRound</b>(<i>values</i>)
+
+Sets the scale's output range to the specified array of values, while also setting the scale's interpolator to [[d3.interpolateRound|Transitions#d3_interpolateRound]]. This is a convenience routine for when the values output by the scale should be exact integers, such as to avoid antialiasing artifacts. It is also possible to round the output values manually after the scale is applied.
 
 <a name="log_interpolate" href="#log_interpolate">#</a> log.<b>interpolate</b>([<i>interpolator</i>])
 
+If *factory* is specified, sets the scale's output interpolator using the specified *factory*. The interpolator factory defaults to [[d3.interpolate|Transitions#d3_interpolate]], and is used to map the normalized domain parameter *t* in [0,1] to the corresponding value in the output range. The interpolator factory will be used to construct interpolators for each adjacent pair of values from the output range. If *factory* is not specified, returns the scale's interpolator factory.
+
 <a name="log_clamp" href="#log_clamp">#</a> log.<b>clamp</b>([<i>boolean</i>])
+
+If *boolean* is specified, enables or disables clamping accordingly. By default, clamping is disabled, such that if a value outside the input domain is passed to the scale, the scale may return a value outside the output range through linear extrapolation. For example, with the default domain and range of [0,1], an input value of 2 will return an output value of 2. If clamping is enabled, the normalized domain parameter *t* is clamped to the range [0,1], such that the return value of the scale is always within the scale's output range. If *boolean* is not specified, returns whether or not the scale currently clamps values to within the output range.
 
 <a name="log_ticks" href="#log_ticks">#</a> log.<b>ticks</b>()
 
+Returns representative values from the scale's input domain. The returned tick values are uniformly spaced within each power of ten, and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. Note that the number of ticks cannot be customized (due to the nature of log scales); however, you can filter the returned array of values if you want to reduce the number of ticks.
+
 <a name="log_tickFormat" href="#log_tickFormat">#</a> log.<b>tickFormat</b>()
+
+Returns a [[number format|Formatting#d3_format]] function suitable for displaying a tick value. The returned tick format is implemented as `d.toPrecision(1)`.
 
 ## Quantize Scales
 
