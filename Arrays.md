@@ -104,7 +104,7 @@ returns ["b", "c", "a"]. It is acceptable for the array of indexes to be a diffe
 
 <a name="d3_zip" href="#d3_zip">#</a> d3.<b>zip</b>(<i>arrays…</i>)
 
-Returns an array of arrays, where the ith array contains the ith element from each of the argument *arrays*. The returned array is truncated in length to the shortest array in *arrays*. If *arrays* contains only a single array, the returned array contains one-element arrays. With no arguments, the returned array is empty.
+Returns an array of arrays, where the ith array contains the ith element from each of the argument *arrays*. The returned array is truncated in length to the shortest array in *arrays*. If *arrays* contains only a single array, the returned array contains one-element arrays. With no arguments, the returned array is empty. The zip operator is equivalent a two-dimensional matrix transpose, when invoked as d3.zip.apply(*matrix*).
 
 ### Nest
 
