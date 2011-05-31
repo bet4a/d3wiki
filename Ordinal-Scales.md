@@ -32,6 +32,8 @@ A scale object, such as that returned by [d3.scale.ordinal](#ordinal), is both a
 
 …
 
+## Categorical Colors
+
 <a name="category10" href="#category10">#</a> d3.scale.<b>category10</b>()
 
 <font color="#1f77b4">#1f77b4</font>
