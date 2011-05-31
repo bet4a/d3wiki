@@ -32,7 +32,11 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[selection.select|Selections#select]] - subselect a descendant element for each selected element.
 * [[selection.selectAll|Selections#selectAll]] - subselect multiple descendants for each selected element.
 * [[d3.event|Selections#d3_event]] - access the current user event for interaction.
-* [[d3.ns|Selections#d3_ns]] - access or extend known XML namespaces.
+
+### [[Namespaces]]
+
+* [[d3.ns.prefix|#prefix]] - access or extend known XML namespaces.
+* [[d3.ns.qualify|#qualify]] - qualify a prefixed name, such as "xlink:href".
 
 ### [[Transitions]]
 
