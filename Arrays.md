@@ -58,6 +58,15 @@ Returns the minimum value in the given *array* using natural order. If the array
 
 Returns the maximum value in the given *array* using natural order. If the array is empty, returns undefined. An optional *accessor* function may be specified, which is equivalent to calling *array.map(function)* before computing the maximum value. Unlike the built-in [Math.max](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/max), this method ignores undefined values; this is useful for computing the domain of a [[scale|Scales]] while only considering the defined region of the data. In addition, elements are compared using natural order rather than numeric order. For example, the maximum of ["20", "3"] is "3", while the maximum of [20, 3] is 20.
 
+<a name="d3_bisect" href="#d3_bisect">#</a> d3.<b>bisect</b>(<i>array</i>, <i>x</i>[, <i>lo</i>[, <i>hi</i>]])
+<a name="d3_bisectRight" href="#d3_bisectRight">#</a> d3.<b>bisectRight</b>(<i>array</i>, <i>x</i>[, <i>lo</i>[, <i>hi</i>]])
+
+…
+
+<a name="d3_bisectLeft" href="#d3_bisectLeft">#</a> d3.<b>bisectLeft</b>(<i>array</i>, <i>x</i>[, <i>lo</i>[, <i>hi</i>]])
+
+…
+
 ## Associative Arrays
 
 Another common data type in JavaScript is the associative array, or more simply the object, which has a set of named properties. In Java this is referred to as a map, and in Python, a dictionary. JavaScript provides a standard mechanism for iterating over the keys (or property names) in an associative array: the [for…in loop](https://developer.mozilla.org/en/JavaScript/Reference/Statements/for...in). However, note that the iteration order is undefined. D3 provides several operators for converting associative arrays to standard indexed arrays. 
@@ -87,6 +96,14 @@ Merges the specified *arrays* into a single array. This method is similar to the
 <a name="d3_range" href="#d3_range">#</a> d3.<b>range</b>([<i>start</i>, ]<i>stop</i>[, <i>step</i>])
 
 Generates an array containing an arithmetic progression, similar to the Python built-in [[range|http://docs.python.org/library/functions.html#range]]. This method is often used to iterate over a sequence of numeric or integer values, such as the indexes into an array. Unlike the Python version, the arguments are not required to be integers, though the results are more predictable if they are due to floating point precision. If *step* is omitted, it defaults to 1. If *start* is omitted, it defaults to 0. The full form returns an array of numbers [*start*, *start* + *step*, *start* + 2 \* *step*, …]. If *step* is positive, the last element is the largest *start* + *i* \* *step* less than *stop*; if *step* is negative, the last element is the smallest *start* + *i* \* *step* greater than *stop*. If the returned array would contain an infinite number of values, an error is thrown rather than causing an infinite loop.
+
+<a name="d3_permute" href="#d3_permute">#</a> d3.<b>permute</b>(<i>array</i>, <i>indexes</i>)
+
+…
+
+<a name="d3_zip" href="#d3_zip">#</a> d3.<b>zip</b>(<i>arrays…</i>)
+
+…
 
 ### Nest
 
