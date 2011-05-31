@@ -117,8 +117,8 @@ Also see the [[CSV]] module.
 
 ### [[Namespaces]]
 
-* [[d3.ns.prefix|#prefix]] - access or extend known XML namespaces.
-* [[d3.ns.qualify|#qualify]] - qualify a prefixed name, such as "xlink:href".
+* [[d3.ns.prefix|Namespaces#prefix]] - access or extend known XML namespaces.
+* [[d3.ns.qualify|Namespaces#qualify]] - qualify a prefixed name, such as "xlink:href".
 
 ### [[Internals]]
 
