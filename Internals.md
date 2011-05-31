@@ -10,7 +10,7 @@ If the specified *value* is a function, returns the specified value. Otherwise, 
 
 ## Events
 
-<a name="d3_dispatch" href="#d3_dispatch">#</a> d3.<b>dispatch</i>(<i>types…</i>)
+<a name="d3_dispatch" href="#d3_dispatch">#</a> d3.<b>dispatch</b>(<i>types…</i>)
 
 <a name="dispatch_add" href="#dispatch_add">#</a> dispatch.<b>add</b>(<i>listener</i>)
 
