@@ -88,7 +88,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 ### [[Loading External Resources|Requests]]
 
-* [[d3.xhr|Requests#d3_xhr]] - request a resource using `XMLHttpRequest`.
+* [[d3.xhr|Requests#d3_xhr]] - request a resource using XMLHttpRequest.
 * [[d3.text|Requests#d3_text]] - request a text file.
 * [[d3.json|Requests#d3_json]] - request a JSON blob.
 * [[d3.html|Requests#d3_html]] - request an HTML document fragment.
