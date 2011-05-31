@@ -172,10 +172,20 @@ If *values* is specified, sets the scale's output range to the specified array o
 
 ## Quantile Scales
 
+Quantile scales map an input domain to a discrete range. Although the input domain is continuous and the scale will accept any reasonable input value, the input domain is specified as a discrete set of values. The number of values in (the cardinality of) the output range determines the number of quantiles that will be computed from the input domain. To compute the quantiles, the input domain is sorted, and treated as a [[population of discrete values|http://en.wikipedia.org/wiki/Quantile#Quantiles_of_a_population]]. The input domain is typically a dimension of the data that you want to visualize, such as the daily change of the stock market. The output range is typically a dimension of the desired output visualization, such as a diverging color scale.
+
 <a name="quantile" href="#quantile">#</a> d3.scale.<b>quantile</b>()
 
-<a name="quantile_domain" href="#quantile_domain">#</a> quantile.<b>domain</b>([<i>values</i>])
+Constructs a new quantile scale with an empty domain and an empty range. The returned scale is a function that takes a single argument *x* representing a value in the input domain; the return value is the corresponding value in the output range. The quantile scale is invalid until both a domain and range is specified.
+
+<a name="quantile_domain" href="#quantile_domain">#</a> quantile.<b>domain</b>([<i>numbers</i>])
+
+If *numbers* is specified, sets the input domain of the quantile scale to the specified set of discrete numeric values. The array must not be empty, and must contain at least one numeric value; NaN, null and undefined values are ignored and not considered part of the sample population. If the elements in the given array are not numbers, they will be coerced to numbers; this coercion happens similarly when the scale is called. A copy of the input array is sorted and stored internally. Thus, a quantile scale can be used to encode any type that can be converted to numbers. If *numbers* is not specified, returns the scale's current input domain.
 
 <a name="quantile_range" href="#quantile_range">#</a> quantile.<b>range</b>([<i>values</i>])
 
+If *values* is specified, sets the discrete values in the output range. The array must not be empty, and may contain any type of value. The number of values in (the cardinality, or length, of) the *values* array determines the number of quantiles that are computed. For example, to compute quartiles, *values* must be an array of four elements such as [0, 1, 2, 3]. If *values* is not specified, returns the current output range.
+
 <a name="quantile_quantiles" href="#quantile_quantiles">#</a> quantile.<b>quantiles</b>()
+
+Returns the quantile thresholds. If the output range contains *n* discrete values, the returned threshold array will contain *n* - 1 values. Values less than the first element in the thresholds array, quantiles()[0], are considered in the first quantile; greater values less than the second threshold are in the second quantile, and so on. Internally, the thresholds array is used with [[d3.bisect|Arrays#d3_bisect]] to find the output quantile associated with the given input value.
