@@ -156,11 +156,19 @@ Returns a [[number format|Formatting#d3_format]] function suitable for displayin
 
 ## Quantize Scales
 
+Quantize scales are a variant of linear scales with a discrete rather than continuous range. The input domain is still continuous, and divided into uniform segments based on the number of values in (the cardinality of) the output range. The mapping is *linear* in that the output range value *y* can be expressed as a linear function of the input domain value *x*: *y* = *mx* + *b*. The input domain is typically a dimension of the data that you want to visualize, such as the height of students (measured in meters) in a sample population. The output range is typically a dimension of the desired output visualization, such as the height of bars (measured in pixels) in a histogram.
+
 <a name="quantize" href="#quantize">#</a> d3.scale.<b>quantize</b>()
 
-<a name="quantize_domain" href="#quantize_domain">#</a> quantize.<b>domain</b>([<i>values</i>])
+Constructs a new quantize scale with the default domain [0,1] and the default range [0,1]. The returned scale is a function that takes a single argument *x* representing a value in the input domain; the return value is the corresponding value in the output range. Thus, the default quantize scale is equivalent to the [[round|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/round]] function for numbers; for example quantize(0.49) returns 0, and quantize(0.51) returns 1.
+
+<a name="quantize_domain" href="#quantize_domain">#</a> quantize.<b>domain</b>([<i>numbers</i>])
+
+If *numbers* is specified, sets the scale's input domain to the specified two-element array of numbers. The array must contain exactly two numbers. If the elements in the given array are not numbers, they will be coerced to numbers; this coercion happens similarly when the scale is called. Thus, a quantize scale can be used to encode any type that can be converted to numbers. If *numbers* is not specified, returns the scale's current input domain.
 
 <a name="quantize_range" href="#quantize_range">#</a> quantize.<b>range</b>([<i>values</i>])
+
+If *values* is specified, sets the scale's output range to the specified array of values. The array may contain any number of discrete values. The elements in the given array need not be numbers; any value or type will work. If *values* is not specified, returns the scale's current output range.
 
 ## Quantile Scales
 
