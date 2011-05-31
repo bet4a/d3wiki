@@ -99,8 +99,8 @@ Also see the [[CSV]] module.
 ### [[String Formatting|Formatting]]
 
 * [[d3.format|Formatting#d3_format]] - format a number as a string.
-* [[d3.requote|Formatting#d3_requote]] - 
-* [[d3.round|Formatting#d3_round]] - 
+* [[d3.requote|Formatting#d3_requote]] - quote a string for use in a regular expression.
+* [[d3.round|Formatting#d3_round]] - rounds a value to some digits after the decimal point.
 
 ### [[Colors]]
 
