@@ -1,6 +1,4 @@
-# Selections
-
-> [[API Reference|API-Reference]]
+> [[API Reference]]
 
 A **selection** is an array of elements pulled from the current document. D3 uses [[CSS3|http://www.w3.org/TR/css3-selectors/]] to select elements. For example, you can select by tag ("div"), class (".awesome"), unique identifier ("#foo"), attribute ("[color=red]"), or containment ("parent child"). Selectors can also be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR). If your browser doesn't support selectors natively, you can include [[Sizzle|http://sizzlejs.com/]] before D3 for backwards-compatibility.
 
@@ -261,27 +259,3 @@ Returns true if the current selection is empty; a selection is empty if it conta
 <a name="node" href="#node">#</a> selection.<b>node</b>()
 
 Returns the first non-null element in the current selection. If the selection is empty, returns null.
-
-## Namespaces
-
-<a name="ns_prefix" href="#ns_prefix">#</a> d3.ns.<b>prefix</b>
-
-The map of registered namespace prefixes. The default value is:
-
-    {
-      svg: "http://www.w3.org/2000/svg",
-      xhtml: "http://www.w3.org/1999/xhtml",
-      xlink: "http://www.w3.org/1999/xlink",
-      xml: "http://www.w3.org/XML/1998/namespace",
-      xmlns: "http://www.w3.org/2000/xmlns/"
-    }
-
-Additional prefixes may be assigned as needed to create elements or attributes in other namespaces.
-
-<a name="ns_qualify" href="#ns_qualify">#</a> d3.ns.<b>qualify</b>(<i>name</i>)
-
-Qualifies the specified *name*, which may have a namespace prefix. If the name contains a colon (":"), the substring before the colon is interpreted as the namespace prefix, which must be registered in d3.ns.**prefix**; the return value is an object with `space` and `local` attributes containing the full namespace URL and the local name. For example, the result of qualify("svg:text") is:
-
-    {space: "http://www.w3.org/2000/svg", local: "text"}
-
-If the name does not contain a colon, this function merely returns the input name. This function is used internally to decide whether to use a namespaced method (such as `createElementNS`) or a non-namespaced equivalent.
