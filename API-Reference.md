@@ -33,11 +33,6 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[selection.selectAll|Selections#selectAll]] - subselect multiple descendants for each selected element.
 * [[d3.event|Selections#d3_event]] - access the current user event for interaction.
 
-### [[Namespaces]]
-
-* [[d3.ns.prefix|#prefix]] - access or extend known XML namespaces.
-* [[d3.ns.qualify|#qualify]] - qualify a prefixed name, such as "xlink:href".
-
 ### [[Transitions]]
 
 * [[d3.transition|Transitions#d3_transition]] - start an animated transition.
@@ -119,6 +114,11 @@ Also see the [[CSV]] module.
 * [[hsl.darker|Colors#hsl_darker]] - decrease lightness by some exponential factor (gamma).
 * [[hsl.rgb|Colors#hsl_rgb]] - convert from HSL to RGB.
 * [[hsl.toString|Colors#hsl_toString]] - convert an HSL color to a string.
+
+### [[Namespaces]]
+
+* [[d3.ns.prefix|#prefix]] - access or extend known XML namespaces.
+* [[d3.ns.qualify|#qualify]] - qualify a prefixed name, such as "xlink:href".
 
 ### [[Internals]]
 
