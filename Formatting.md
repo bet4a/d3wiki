@@ -11,7 +11,7 @@ Now you can conveniently format numbers:
 
 In addition to numbers, D3 also supports formatting and parsing [[dates|Time-Formatting]], and [[comma-separated values|CSV]].
 
-## Number Formatting
+## Numbers
 
 <a name="d3_format" href="#d3_format">#</a> d3.<b>format</b>(<i>specifier</i>)
 
@@ -33,6 +33,12 @@ The *comma* (",") option enables the use of a comma for a thousands separator. T
 
 The type "n" is also supported as shorthand for ",g". The *precision* indicates how many digits should be displayed after the decimal point for a value formatted with types "f" and "%", or before and after the decimal point for a value formatted with types "g", "r" and "p".
 
-## Date Formatting
+<a name="d3_round" href="#d3_round">#</a> d3.<b>round</b>(*x*[, *n*])
+
+Returns the value *x* rounded to *n* digits after the decimal point. If *n* is omitted, it defaults to zero. The result is a number. Values are rounded to the closest multiple of 10 to the power minus *n*; if two multiples are equally close, the value is rounded up in accordance with the build-in [[round|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/round]] function.
+
+## Strings
+
+## Dates
 
 See the [[d3.time|Time-Formatting]] module.
