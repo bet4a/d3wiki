@@ -1,24 +1,54 @@
 > [[API Reference]]
 
+SVG has a number of built-in simple shapes, such as axis-aligned rectangles and circles. For greater flexibility, you can use SVG's [[path|http://www.w3.org/TR/SVG/paths.html#PathElement]] element in conjunction with D3's path data generators. If you're familiar with Protovis, you'll note that D3's path generators are similar to Protovis marks.
+
 ## Built-in Shapes
+
+All SVG shapes can be transformed using the [[transform|http://www.w3.org/TR/SVG/coords.html#TransformAttribute]] attribute. You can apply the transform either to the shape directly, or to a containing [[g|http://www.w3.org/TR/SVG/struct.html#Groups]] element. Thus, when a shape is defined as "axis-aligned", that merely means axis-aligned within the local coordinate system; you can still rotate and otherwise transform the shape. Shapes can be filled and stroked using the [[fill|http://www.w3.org/TR/SVG/painting.html#FillProperties]] and [[stroke|http://www.w3.org/TR/SVG/painting.html#StrokeProperties]] styles. (You can also use the attributes of the same name, but styles are recommended as they are compatible with external stylesheets.)
 
 <a name="svg_rect" href="#svg_rect">#</a> svg:<b>rect</b>
 
+The [[rect|http://www.w3.org/TR/SVG/shapes.html#RectElement]] element defines an axis-aligned rectangle. The top-left corner of the rectangle is positioned using the *x* and *y* attributes, while its size is specified using *width* and *height*. A rounded rectangle can be produced using the optional *rx* and *ry* attributes.
+
 <a name="svg_circle" href="#svg_circle">#</a> svg:<b>circle</b>
+
+The [[circle|http://www.w3.org/TR/SVG/shapes.html#CircleElement]] element defines a circle based on a center point and a radius. The center is positioned using the *cx* and *cy* attributes, while the radius is specified using the *r* attribute.
 
 <a name="svg_ellipse" href="#svg_ellipse">#</a> svg:<b>ellipse</b>
 
+The [[ellipse|http://www.w3.org/TR/SVG/shapes.html#EllipseElement]] element defines an axis-aligned ellipse based on a center point and two radii. The center is positioned using the *cx* and *cy* attributes, while the radii are specified using the *rx* and *ry* attributes.
+
 <a name="svg_line" href="#svg_line">#</a> svg:<b>line</b>
+
+The [[line|http://www.w3.org/TR/SVG/shapes.html#LineElement]] element defines a line segment that starts at one point and ends at another. The first point is specified using the *x1* and *x2* attributes, while the second point is specified using the *x2* and *y2* attributes. The line element is a popular choice for drawing rules, reference lines, axes and tick marks.
 
 <a name="svg_polyline" href="#svg_polyline">#</a> svg:<b>polyline</b>
 
+The [[polyline|http://www.w3.org/TR/SVG/shapes.html#PolylineElement]] element defines a set of connected straight line segments. Typically, polyline elements define open shapes. The points that make up the polyline are specified using the *points* attribute. Note: in D3, it is typically more convenient and flexible to use the [d3.svg.line](#line) path generator in conjunction with a path element.
+
 <a name="svg_polygon" href="#svg_polygon">#</a> svg:<b>polygon</b>
+
+The [[polygon|http://www.w3.org/TR/SVG/shapes.html#PolygonElement]] element defines a closed shape consisting of a set of connected straight line segments. The points that make up the polygon are specified using the *points* attribute. Note: in D3, it is typically more convenient and flexible to use the [d3.svg.line](#line) path generator in conjunction with a path element. The line can be closed using the [[closepath|http://www.w3.org/TR/SVG/paths.html#PathDataClosePathCommand]] "Z" command.
 
 <a name="svg_text" href="#svg_text">#</a> svg:<b>text</b>
 
-<a name="svg_path" href="#svg_path">#</a> svg:<b>path</b>
+The [[text|http://www.w3.org/TR/SVG/text.html#TextElement]] element defines a graphics element consisting of text. The text content of the text element (see the [[text|Selections#text]] operator) define the characters to be rendered. The anchor position of the text element is controlled using the *x* and *y* attributes; additionally, the text can be offset from the anchor using *dx* and *dy* attributes. This offset is particularly convenient for controlling the text margin and baseline, as you can use "em" units which are relative to the font size. The horizontal text alignment is controlling using the *text-anchor* attribute. Here are a few examples:
+
+    <svg:text text-anchor="start">left-align, bottom-baseline</svg:text>
+    <svg:text text-anchor="middle">center-align, bottom-baseline</svg:text>
+    <svg:text text-anchor="end">right-align, bottom-baseline</svg:text>
+    <svg:text dy=".35em" text-anchor="start">left-align, middle-baseline</svg:text>
+    <svg:text dy=".35em" text-anchor="middle">center-align, middle-baseline</svg:text>
+    <svg:text dy=".35em" text-anchor="end">right-align, middle-baseline</svg:text>
+    <svg:text dy=".71em" text-anchor="start">left-align, top-baseline</svg:text>
+    <svg:text dy=".71em" text-anchor="middle">center-align, top-baseline</svg:text>
+    <svg:text dy=".71em" text-anchor="end">right-align, top-baseline</svg:text>
+
+It's possible that there is a better way to specify the text baseline using SVG's [[baseline alignment properties|http://www.w3.org/TR/SVG/text.html#BaselineAlignmentProperties]], but these don't seem to be widely supported by browsers.
 
 ## Path Shapes
+
+<a name="svg_path" href="#svg_path">#</a> svg:<b>path</b>
 
 <a name="line" href="#line">#</a> d3.svg.<b>line</b>()
 
