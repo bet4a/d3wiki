@@ -193,16 +193,6 @@ Also see the [[CSV]] module.
 * [[line.y|SVG-Shapes#line_y]] - get or set the *y*-coordinate accessor.
 * [[line.interpolate|SVG-Shapes#line_interpolate]] - get or set the interpolation mode.
 * [[line.tension|SVG-Shapes#line_tension]] - get or set the cardinal spline tension.
-* [[d3.svg.diagonal|SVG-Shapes#diagonal]] - generate a two-dimensional Bézier connector, as in a node-link diagram.
-* [[diagonal.source|SVG-Shapes#diagonal_source]] - get or set the source point accessor.
-* [[diagonal.target|SVG-Shapes#diagonal_target]] - get or set the target point accessor.
-* [[diagonal.projection|SVG-Shapes#diagonal_projection]] - get or set an optional point transform.
-* [[d3.svg.chord|SVG-Shapes#chord]] - generate a quadratic Bézier connecting two arcs, as in a chord diagram.
-* [[chord.radius|SVG-Shapes#chord_radius]] - get or set the arc radius accessor.
-* [[chord.startAngle|SVG-Shapes#chord_startAngle]] - get or set the arc start angle accessor.
-* [[chord.endAngle|SVG-Shapes#chord_endAngle]] - get or set the arc end angle accessor.
-* [[chord.source|SVG-Shapes#chord_source]] - get or set the source arc accessor.
-* [[chord.target|SVG-Shapes#chord_target]] - get or set the target arc accessor.
 * [[d3.svg.area|SVG-Shapes#area]] - generate a piecewise linear area, as in an area chart.
 * [[area.x|SVG-Shapes#area_x]] - get or set the *x*-coordinate accessor.
 * [[area.y0|SVG-Shapes#area_y0]] - get or set the *y0*-coordinate (baseline) accessor.
@@ -218,6 +208,16 @@ Also see the [[CSV]] module.
 * [[d3.svg.symbol|SVG-Shapes#symbol]] - generate categorical symbols, as in a scatterplot.
 * [[symbol.type|SVG-Shapes#symbol_type]] - get or set the symbol type accessor.
 * [[symbol.size|SVG-Shapes#symbol_size]] - get or set the symbol size (in square pixels) accessor.
+* [[d3.svg.chord|SVG-Shapes#chord]] - generate a quadratic Bézier connecting two arcs, as in a chord diagram.
+* [[chord.radius|SVG-Shapes#chord_radius]] - get or set the arc radius accessor.
+* [[chord.startAngle|SVG-Shapes#chord_startAngle]] - get or set the arc start angle accessor.
+* [[chord.endAngle|SVG-Shapes#chord_endAngle]] - get or set the arc end angle accessor.
+* [[chord.source|SVG-Shapes#chord_source]] - get or set the source arc accessor.
+* [[chord.target|SVG-Shapes#chord_target]] - get or set the target arc accessor.
+* [[d3.svg.diagonal|SVG-Shapes#diagonal]] - generate a two-dimensional Bézier connector, as in a node-link diagram.
+* [[diagonal.source|SVG-Shapes#diagonal_source]] - get or set the source point accessor.
+* [[diagonal.target|SVG-Shapes#diagonal_target]] - get or set the target point accessor.
+* [[diagonal.projection|SVG-Shapes#diagonal_projection]] - get or set an optional point transform.
 
 ### [[Events|SVG-Events]]
 
