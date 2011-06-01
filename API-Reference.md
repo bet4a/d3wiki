@@ -186,11 +186,6 @@ Also see the [[CSV]] module.
 
 ## d3.svg
 
-### [[Events|SVG-Events]]
-
-* [[d3.svg.mouse|SVG-Events#mouse]]
-* [[d3.svg.touches|SVG-Events#touches]]
-
 ### [[Shapes|SVG-Shapes]]
 
 * [[d3.svg.line|SVG-Shapes#line]]
@@ -223,6 +218,11 @@ Also see the [[CSV]] module.
 * [[d3.svg.symbol|SVG-Shapes#symbol]]
 * [[symbol.type|SVG-Shapes#symbol_type]]
 * [[symbol.size|SVG-Shapes#symbol_size]]
+
+### [[Events|SVG-Events]]
+
+* [[d3.svg.mouse|SVG-Events#mouse]] - gets the mouse position relative to a specified container.
+* [[d3.svg.touches|SVG-Events#touches]] - gets the touch positions relative to a specified container.
 
 ## d3.layout
 
