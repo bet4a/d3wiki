@@ -2,6 +2,8 @@
 
 <a name="line" href="#line">#</a> d3.svg.<b>line</b>()
 
+
+
 <a name="line_x" href="#line_x">#</a> line.<b>x</b>([<i>x</i>])
 
 <a name="line_y" href="#line_y">#</a> line.<b>y</b>([<i>y</i>])
