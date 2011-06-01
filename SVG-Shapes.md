@@ -1,5 +1,25 @@
 > [[API Reference]]
 
+## Built-in Shapes
+
+<a name="svg_rect" href="#svg_rect">#</a> svg:<b>rect</b>
+
+<a name="svg_circle" href="#svg_circle">#</a> svg:<b>circle</b>
+
+<a name="svg_ellipse" href="#svg_ellipse">#</a> svg:<b>ellipse</b>
+
+<a name="svg_line" href="#svg_line">#</a> svg:<b>line</b>
+
+<a name="svg_polyline" href="#svg_polyline">#</a> svg:<b>polyline</b>
+
+<a name="svg_polygon" href="#svg_polygon">#</a> svg:<b>polygon</b>
+
+<a name="svg_text" href="#svg_text">#</a> svg:<b>text</b>
+
+<a name="svg_path" href="#svg_path">#</a> svg:<b>path</b>
+
+## Extended Shapes
+
 <a name="line" href="#line">#</a> d3.svg.<b>line</b>()
 
 ![line](line.png)
