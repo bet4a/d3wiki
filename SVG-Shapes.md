@@ -18,7 +18,7 @@
 
 <a name="svg_path" href="#svg_path">#</a> svg:<b>path</b>
 
-## Extended Shapes
+## Path Shapes
 
 <a name="line" href="#line">#</a> d3.svg.<b>line</b>()
 
