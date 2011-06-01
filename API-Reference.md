@@ -188,36 +188,36 @@ Also see the [[CSV]] module.
 
 ### [[Shapes|SVG-Shapes]]
 
-* [[d3.svg.line|SVG-Shapes#line]]
-* [[line.x|SVG-Shapes#line_x]]
-* [[line.y|SVG-Shapes#line_y]]
-* [[line.interpolate|SVG-Shapes#line_interpolate]]
-* [[line.tension|SVG-Shapes#line_tension]]
-* [[d3.svg.diagonal|SVG-Shapes#diagonal]]
-* [[diagonal.source|SVG-Shapes#diagonal_source]]
-* [[diagonal.target|SVG-Shapes#diagonal_target]]
-* [[diagonal.projection|SVG-Shapes#diagonal_projection]]
-* [[d3.svg.chord|SVG-Shapes#chord]]
-* [[chord.radius|SVG-Shapes#chord_radius]]
-* [[chord.source|SVG-Shapes#chord_source]]
-* [[chord.target|SVG-Shapes#chord_target]]
-* [[chord.startAngle|SVG-Shapes#chord_startAngle]]
-* [[chord.endAngle|SVG-Shapes#chord_endAngle]]
-* [[d3.svg.area|SVG-Shapes#area]]
-* [[area.x|SVG-Shapes#area_x]]
-* [[area.y0|SVG-Shapes#area_y0]]
-* [[area.y1|SVG-Shapes#area_y1]]
-* [[area.interpolate|SVG-Shapes#area_interpolate]]
-* [[area.tension|SVG-Shapes#area_tension]]
-* [[d3.svg.arc|SVG-Shapes#arc]]
-* [[arc.innerRadius|SVG-Shapes#arc_innerRadius]]
-* [[arc.outerRadius|SVG-Shapes#arc_outerRadius]]
-* [[arc.startAngle|SVG-Shapes#arc_startAngle]]
-* [[arc.endAngle|SVG-Shapes#arc_endAngle]]
-* [[arc.centroid|SVG-Shapes#arc_centroid]]
-* [[d3.svg.symbol|SVG-Shapes#symbol]]
-* [[symbol.type|SVG-Shapes#symbol_type]]
-* [[symbol.size|SVG-Shapes#symbol_size]]
+* [[d3.svg.line|SVG-Shapes#line]] - generate a piecewise linear curve, as in a line chart.
+* [[line.x|SVG-Shapes#line_x]] - get or set the *x*-coordinate accessor.
+* [[line.y|SVG-Shapes#line_y]] - get or set the *y*-coordinate accessor.
+* [[line.interpolate|SVG-Shapes#line_interpolate]] - get or set the interpolation mode.
+* [[line.tension|SVG-Shapes#line_tension]] - get or set the cardinal spline tension.
+* [[d3.svg.diagonal|SVG-Shapes#diagonal]] - generate a two-dimensional Bézier connector, as in a node-link diagram.
+* [[diagonal.source|SVG-Shapes#diagonal_source]] - get or set the source point accessor.
+* [[diagonal.target|SVG-Shapes#diagonal_target]] - get or set the target point accessor.
+* [[diagonal.projection|SVG-Shapes#diagonal_projection]] - get or set an optional point transform.
+* [[d3.svg.chord|SVG-Shapes#chord]] - generate a quadratic Bézier connecting two arcs, as in a chord diagram.
+* [[chord.radius|SVG-Shapes#chord_radius]] - get or set the arc radius accessor.
+* [[chord.startAngle|SVG-Shapes#chord_startAngle]] - get or set the arc start angle accessor.
+* [[chord.endAngle|SVG-Shapes#chord_endAngle]] - get or set the arc end angle accessor.
+* [[chord.source|SVG-Shapes#chord_source]] - get or set the source arc accessor.
+* [[chord.target|SVG-Shapes#chord_target]] - get or set the target arc accessor.
+* [[d3.svg.area|SVG-Shapes#area]] - generate a piecewise linear area, as in an area chart.
+* [[area.x|SVG-Shapes#area_x]] - get or set the *x*-coordinate accessor.
+* [[area.y0|SVG-Shapes#area_y0]] - get or set the *y0*-coordinate (baseline) accessor.
+* [[area.y1|SVG-Shapes#area_y1]] - get or set the *y1*-coordinate (topline) accessor.
+* [[area.interpolate|SVG-Shapes#area_interpolate]] - get or set the interpolation mode.
+* [[area.tension|SVG-Shapes#area_tension]] - get or set the cardinal spline tension.
+* [[d3.svg.arc|SVG-Shapes#arc]] - generate a solid arc, as in a pie or donut chart.
+* [[arc.innerRadius|SVG-Shapes#arc_innerRadius]] - get or set the inner radius accessor.
+* [[arc.outerRadius|SVG-Shapes#arc_outerRadius]] - get or set the outer radius accessor.
+* [[arc.startAngle|SVG-Shapes#arc_startAngle]] - get or set the start angle accessor.
+* [[arc.endAngle|SVG-Shapes#arc_endAngle]] - get or set the end angle accessor.
+* [[arc.centroid|SVG-Shapes#arc_centroid]] - compute the arc centroid.
+* [[d3.svg.symbol|SVG-Shapes#symbol]] - generate categorical symbols, as in a scatterplot.
+* [[symbol.type|SVG-Shapes#symbol_type]] - get or set the symbol type accessor.
+* [[symbol.size|SVG-Shapes#symbol_size]] - get or set the symbol size (in square pixels) accessor.
 
 ### [[Events|SVG-Events]]
 
