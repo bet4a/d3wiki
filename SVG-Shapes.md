@@ -2,7 +2,7 @@
 
 <a name="line" href="#line">#</a> d3.svg.<b>line</b>()
 
-
+![line](line.png)
 
 <a name="line_x" href="#line_x">#</a> line.<b>x</b>([<i>x</i>])
 
@@ -13,6 +13,8 @@
 <a name="line_tension" href="#line_tension">#</a> line.<b>tension</b>([<i>tension</i>])
 
 <a name="area" href="#area">#</a> d3.svg.<b>area</b>()
+
+![area](area.png)
 
 <a name="area_x" href="#area_x">#</a> area.<b>x</b>([<i>x</i>])
 
@@ -26,6 +28,8 @@
 
 <a name="arc" href="#arc">#</a> d3.svg.<b>arc</b>()
 
+![arc](arc.png)
+
 <a name="arc_innerRadius" href="#arc_innerRadius">#</a> arc.<b>innerRadius</b>([<i>radius</i>])
 
 <a name="arc_outerRadius" href="#arc_outerRadius">#</a> arc.<b>outerRadius</b>([<i>radius</i>])
@@ -38,11 +42,15 @@
 
 <a name="symbol" href="#symbol">#</a> d3.svg.<b>symbol</b>()
 
+![symbol](symbol.png)
+
 <a name="symbol_type" href="#symbol_type">#</a> symbol.<b>type</b>([<i>type</i>])
 
 <a name="symbol_size" href="#symbol_size">#</a> symbol.<b>size</b>([<i>size</i>])
 
 <a name="chord" href="#chord">#</a> d3.svg.<b>chord</b>()
+
+![chord](chord.png)
 
 <a name="chord_radius" href="#chord_radius">#</a> chord.<b>radius</b>([<i>radius</i>])
 
@@ -55,6 +63,8 @@
 <a name="chord_target" href="#chord_target">#</a> chord.<b>target</b>([<i>target</i>])
 
 <a name="diagonal" href="#diagonal">#</a> d3.svg.<b>diagonal</b>()
+
+![diagonal](diagonal.png)
 
 <a name="diagonal_source" href="#diagonal_source">#</a> diagonal.<b>source</b>([<i>source</i>])
 
