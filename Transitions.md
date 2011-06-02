@@ -128,9 +128,9 @@ where *selection* is the current transition's underlying selection. In addition,
 
 <a name="each" href="#each">#</a> transition.<b>each</b>(<i>type</i>, <i>listener</i>)
 
-Add a listener for transition events. Currently only "end" events are supported. The listener will be invoked for each individual element in the transition, even if the transition has a constant delay and duration. The end event can be used to initiate multi-stage transitions by selecting the current element, `this`, and deriving a new transition. Any transitions created during the end event will inherit the current transition ID, and thus will not override a newer transition that was previously scheduled.
+Add a listener for transition events, supporting both "start" and "end" events. The listener will be invoked for each individual element in the transition, even if the transition has a constant delay and duration. The start event can be used to trigger an instantaneous change as each element starts to transition. The end event can be used to initiate multi-stage transitions by selecting the current element, `this`, and deriving a new transition. Any transitions created during the end event will inherit the current transition ID, and thus will not override a newer transition that was previously scheduled.
 
-Note: there is currently no way to remove listeners. And, this operator has the same name as the selection [[each|Selections#each]] operator, which is somewhat confusing. It should probably be renamed to "on".
+Note: there is currently no way to remove listeners. And, this operator has the same name as the selection [[each|Selections#each]] operator, which is somewhat confusing. It should probably be renamed; see [[#168|https://github.com/mbostock/d3/issues/168]].
 
 <a name="call" href="#call">#</a> transition.<b>call</b>(<i>function</i>[, <i>arguments…</i>])
 
