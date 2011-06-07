@@ -14,10 +14,12 @@ It is also possible to draw both ticks and grid lines. If the ticks are not draw
 
 ### Closed Domain
 
-A **closed domain** means that we can visualize the domain extent. This can be done in by drawing a path:
+A **closed domain** means that we can visualize the domain extent. This can be done in by drawing a path that replaces the first and last tick:
 
 ![axes-closed-labels](axes-closed-labels.png)
 ![axes-closed](axes-closed.png)
+
+Note that the start and end of the path may or may not be coincident with the first and last tick. If the scale domain is nice'd, then it should always be coincident; if the scale domain is not niced, then the start and end of the path ticks probably should not have labels (as they could be arbitrary-precision values that overlap with the ticks). Or, maybe there's a setting to display the min and max of the domain even if they aren't nice values.
 
 Or by filling the background. In this case we include major and minor grid lines which subdivide the ticks:
 
