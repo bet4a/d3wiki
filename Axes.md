@@ -34,6 +34,12 @@ Sometimes we want to label sections rather than points on the axes:
 ![axes-open-region-labels](axes-open-region-labels.png)
 ![axes-closed-region-labels](axes-closed-region-labels.png)
 
+## Layering
+
+It might not be possible to implement the axis as a single component; this is because the z-ordering of the axes' visual elements may exist on different layers relative to the other chart graphics. Most commonly, the grid lines may need to be drawn over or under the chart graphics (e.g., line or area) depending on user preference. The ggplot2-style grid lines would be drawn under the elements, while the Tufte-style grid lines would be drawn over the elements.
+
+One way to solve this might be to break out the grid as a separate component. This way, the ticks and labels (and potentially a stroked frame, as in the qq-plot) could be drawn _over_ the chart graphics. Then, a grid component could be used to draw reference lines _under_ the graphics.
+
 ## Settings
 
 * scale - the associated [[scale|Scales]], either ordinal or quantitative
