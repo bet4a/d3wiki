@@ -25,7 +25,7 @@ You can also visualize the domain by filling or stroking a frame. In this case w
 
 ![axes-open-minor-labels](axes-open-minor-labels.png)
 
-Note that the grid lines can also be drawn with an open domain, as above. And the background need not be filled—we could instead stroke the background to create a frame.
+Note that the grid lines can also be drawn with an open domain, as above. And the background need not be filled—we could instead stroke the background to create a frame. The grid lines should have a "major" or "minor" class as appropriate for styling.
 
 ### Sectional
 
