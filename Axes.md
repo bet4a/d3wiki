@@ -1,4 +1,4 @@
-Each example shows axes in four orientations. In clockwise order: top, right, bottom, left. Most commonly an *x* scale would be drawn with the bottom orientation, and a *y* scale would be drawn with the left orientation. For a scatterplot matrix, you might want to alternate orientations for the edge cells.
+Each example shows axes in four orientations. In clockwise order: top, right, bottom, left. Most commonly an *x* scale would be drawn with the bottom orientation, and a *y* scale would be drawn with the left orientation. For a [scatterplot matrix](http://vis.stanford.edu/protovis/ex/flowers.html), you might want to alternate orientations for the edge cells.
 
 * grid - major, minor, none
 * domain - open, closed (true/false?)
