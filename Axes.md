@@ -1,0 +1,8 @@
+![axes-closed-labels](axes-closed-labels.png)
+![axes-closed-region-labels](axes-closed-region-labels.png)
+![axes-closed](axes-closed.png)
+![axes-open-labels](axes-open-labels.png)
+![axes-open-major-lables](axes-open-major-labels.png)
+![axes-open-minor-labels](axes-open-minor-labels.png)
+![axes-open-region-labels](axes-open-region-labels.png)
+![axes-open](axes-open.png)
