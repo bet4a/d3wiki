@@ -1,5 +1,10 @@
 Each example shows axes in four orientations. In clockwise order: top, right, bottom, left.
 
+* grid - major, minor, none
+* domain - open, closed (true/false?)
+* tick - tick, none (true/false?)
+* labels - point, section
+
 ## Open Domain
 
 An **open domain** means that only ticks or grid lines are drawn:
