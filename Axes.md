@@ -13,6 +13,8 @@ An **open domain** means that only ticks or grid lines are drawn:
 ![axes-open](axes-open.png)
 ![axes-open-major-labels](axes-open-major-labels.png)
 
+It is also possible to draw both ticks and grid lines. If the ticks are not drawn, then the labels are positioned closer to the grid lines.
+
 ## Closed Domain
 
 A **closed domain** means that we can visualize the domain extent. This can be done in by drawing a path:
