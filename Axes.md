@@ -21,7 +21,7 @@ A **closed domain** means that we can visualize the domain extent. This can be d
 
 Note that the start and end of the path may or may not be coincident with the first and last tick. If the scale domain is nice'd, then it should always be coincident; if the scale domain is not niced, then the start and end of the path ticks probably should not have labels (as they could be arbitrary-precision values that overlap with the ticks). Or, maybe there's a setting to display the min and max of the domain even if they aren't nice values.
 
-Or by filling the background. In this case we include major and minor grid lines which subdivide the ticks:
+You can also visualize the domain by filling or stroking a frame. In this case we include major and minor grid lines which subdivide the ticks:
 
 ![axes-open-minor-labels](axes-open-minor-labels.png)
 
