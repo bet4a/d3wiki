@@ -15,7 +15,7 @@ A **closed domain** means that we can visualize the domain extent. This can be d
 ![axes-closed-labels](axes-closed-labels.png)
 ![axes-closed](axes-closed.png)
 
-Or by filling the background and drawing grid lines:
+Or by filling the background and drawing grid lines. In this case we include minor grid lines which subdivide the ticks:
 
 ![axes-open-minor-labels](axes-open-minor-labels.png)
 
