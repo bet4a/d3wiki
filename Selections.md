@@ -106,7 +106,9 @@ Joins the specified array of data with the current selection. The specified *dat
 
 To control how data is joined to elements, an optional *key* function may be specified. This replaces the default behavior which assigns by index. The key function is invoked once for each element in the new data array, and once again for each existing element in the selection. In both cases the key function is passed the datum `d` and the index `i`. When the key function is evaluated on new data elements, the `this` context is the data array; when the key function is evaluated on the existing selection, the `this` context is the associated DOM element. The key function returns a string which is used to join a datum with its corresponding element, based on the previously-bound data. For example, if each datum has a unique field `name`, the join might be specified as:
 
-    .data(data, function(d) { return d.name; })
+```javascript
+.data(data, function(d) { return d.name; })
+```
 
 For a more detailed example of how the key function affects the data join, see the tutorial [[A Bar Chart, Part 2|http://mbostock.github.com/d3/tutorial/bar-2.html]].
 
@@ -120,19 +122,23 @@ Returns the entering selection: placeholder nodes for each data element for whic
 
 As a simple example, consider the case where the existing selection is empty, and we wish to create new nodes to match our data:
 
-    d3.select("body").selectAll("div")
-        .data([4, 8, 15, 16, 23, 42])
-      .enter().append("div")
-        .text(function(d) { return d; });
+```javascript
+d3.select("body").selectAll("div")
+    .data([4, 8, 15, 16, 23, 42])
+  .enter().append("div")
+    .text(function(d) { return d; });
+```
 
 Assuming that the body is initially empty, the above code will create six new DIV elements, append them to the body in order, and assign their text content as the associated (string-coerced) number:
 
-    <div>4</div>
-    <div>8</div>
-    <div>15</div>
-    <div>16</div>
-    <div>23</div>
-    <div>42</div>
+```html
+<div>4</div>
+<div>8</div>
+<div>15</div>
+<div>16</div>
+<div>23</div>
+<div>42</div>
+```
 
 Another way to think about the entering placeholder nodes is that they are pointers to the parent node (in this example, the document body); however, they only support append and insert.
 
@@ -144,39 +150,50 @@ Returns the exiting selection: existing DOM elements in the current selection fo
 
 As a simple example, consider updating the six DIV elements created in the above example for the enter operator. Here we bind those elements to a new array of data with some new and some old:
 
-    var div = d3.select("body").selectAll("div")
-        .data([1, 2, 4, 8, 16, 32], function(d) { return d; });
+```javascript
+var div = d3.select("body").selectAll("div")
+    .data([1, 2, 4, 8, 16, 32], function(d) { return d; });
+```
 
 Now `div`—the result of the data operator—refers to the updating selection. Since we specified a key function using the identity function, and the new data array contains the numbers [4, 8, 16] which also exist in the old data array, this updating selection contains three DIV elements. Let's say we leave those elements as-is. We can instantiate and add the new elements [1, 2, 32] using the entering selection:
 
-    div.enter().append("div")
-        .text(function(d) { return d; });
+```javascript
+div.enter().append("div")
+    .text(function(d) { return d; });
 
 Likewise, we can remove the exiting elements [15, 23, 42]:
 
-    div.exit().remove();
+```javascript
+div.exit().remove();
+```
 
 Now the document body looks like this:
 
-    <div>4</div>
-    <div>8</div>
-    <div>16</div>
-    <div>1</div>
-    <div>2</div>
-    <div>32</div>
+```html
+<div>4</div>
+<div>8</div>
+<div>16</div>
+<div>1</div>
+<div>2</div>
+<div>32</div>
+```
 
 Note that the DOM elements are now out-of-order. However, the selection index (the second `i` argument to any operator functions), will correctly match the new data array. For example, we could assign an index attribute:
 
-    d3.selectAll("div").attr("index", function(d, i) { return i; });
+```javascript
+d3.selectAll("div").attr("index", function(d, i) { return i; });
+```
 
 This would result in:
 
-    <div index="2">4</div>
-    <div index="3">8</div>
-    <div index="4">16</div>
-    <div index="0">1</div>
-    <div index="1">2</div>
-    <div index="5">32</div>
+```html
+<div index="2">4</div>
+<div index="3">8</div>
+<div index="4">16</div>
+<div index="0">1</div>
+<div index="1">2</div>
+<div index="5">32</div>
+```
 
 If you want the document traversal order to match the selection data order, you can use the [sort](#sort) operator to reorder elements.
 
@@ -220,7 +237,9 @@ For each element in the current selection, selects descendant elements that matc
 
 Grouping by selectAll also affects subsequent entering placeholder nodes. Thus, to specify the parent node when appending entering nodes, use select followed by selectAll:
 
-    d3.select("body").selectAll("div")
+```javascript
+d3.select("body").selectAll("div")
+```
 
 You can see the parent node of each group by inspecting the `parentNode` property of each group array, such as `selection[0].parentNode`.
 
@@ -236,19 +255,25 @@ Invokes the specified *function* for each element in the current selection, pass
 
 Invokes the specified *function* once, passing in the current selection along with any optional *arguments*. The call operator always returns the current selection, regardless of the return value of the specified function. The call operator is identical to invoking a function by hand; but it makes it easier to use method chaining. For example, say we want to set a number of attributes the same way in a number of different places. So we take the code and wrap it in a reusable function:
 
-    function foo(selection) {
-      selection
-          .attr("name1", "value1")
-          .attr("name2", "value2");
-    }
+```javascript
+function foo(selection) {
+  selection
+      .attr("name1", "value1")
+      .attr("name2", "value2");
+}
+```
 
 Now, we can say this:
 
-    foo(d3.selectAll("div"))
+```javascript
+foo(d3.selectAll("div"))
+```
 
 Or equivalently:
 
-    d3.selectAll("div").call(foo);
+```javascript
+d3.selectAll("div").call(foo);
+```
 
 The `this` context of the called function is also the current selection. This is slightly redundant with the first argument, which we might fix in the future.
 
