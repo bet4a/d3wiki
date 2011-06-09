@@ -147,7 +147,18 @@ If *interpolate* is not specified, returns the current interpolation mode.
 
 <a name="line_tension" href="#line_tension">#</a> line.<b>tension</b>([<i>tension</i>])
 
-If *tension* is specified, sets the Cardinal spline interpolation tension to the specified number in the range [0, 1]. The default tension is 0.7. In some sense, this can be interpreted as the length of the tangent; 1 will yield all zero tangents, and 0 yields a [Catmull-Rom spline](http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull.E2.80.93Rom_spline).
+If *tension* is specified, sets the Cardinal spline interpolation tension to the specified number in the range [0, 1]. The tension only affects the Cardinal interpolation modes: cardinal, cardinal-open and cardinal-closed. The default tension is 0.7. In some sense, this can be interpreted as the length of the tangent; 1 will yield all zero tangents, and 0 yields a [Catmull-Rom spline](http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull.E2.80.93Rom_spline). If *tension* is not specified, returns the current tension.
+
+Note that the tension must be specified as a constant, rather than a function, as it is constant for the entirety of the line. However, it is still possible to generate multiple lines with different tensions using the same generator. For example:
+
+```javascript
+svg.selectAll("path")
+    .data([0, 0.2, 0.4, 0.6, 0.8, 1])
+  .enter().append("svg:path")
+    .attr("d", function(d) { return line.tension(d)(data); });
+```
+
+In this example (see the [live version](http://bl.ocks.org/1016220)), the tension is set before each invocation of the line generator, thus resulting in lines with the same data but different paths.
 
 <a name="area" href="#area">#</a> d3.svg.<b>area</b>()
 
