@@ -72,11 +72,42 @@ g.append("svg:path")
 
 Whatever data is bound to `g` (in this example) will be passed to the `line` instance. Thus, the data must be specified as an array. For element element in the data array, the *x*- and *y*-accessor functions are used to pull out the control point coordinates.
 
+A path generator, such as that returned by d3.svg.line, is both an object and a function. That is: you can call the generator like any other function, and the generator has additional methods that change its behavior. Like other classes in D3, path generators follow the method chaining pattern where setter methods return the generator itself, allowing multiple setters to be invoked in a concise statement.
+
 <a name="line" href="#line">#</a> d3.svg.<b>line</b>()
+
+Constructs a new line generator with the default *x*- and *y*-accessor functions (that assume the input data is a two-element array of numbers; see below for details), and linear interpolation. The input to the generator is always an array of data elements for which to generate a line. The output is a open piecewise linear curve, or polyline, as in a line chart:
 
 ![line](line.png)
 
+By changing the interpolation, you can also generate splines and step functions. Also, don't be afraid to tack on additional path commands at the end. For example, if you want to generate a closed path, append a closepath (Z) command:
+
+```javascript
+g.append("svg:path")
+    .attr("d", function(d) { return line(d) + "Z"; });
+```
+
+The line generator is designed to work in conjunction with the [area](#area) generator. For example, when producing an area chart, you might use an area generator with a fill style, and a line generator with a stroke style to emphasize the top edge of the area. Since the line generator is only used the set the *d* attribute, you can control the appearance of the line using standard SVG styles and attributes, such as *fill*, *stroke* and *stroke-width*.
+
 <a name="line_x" href="#line_x">#</a> line.<b>x</b>([<i>x</i>])
+
+If *x* is specified, sets the *x*-accessor to the specified function. This accessor is invoked for each element in the data array passed to the line generator. The default accessor assumes that each input element is a two-element array of numbers:
+
+```javascript
+function x(d) {
+  return d[0];
+}
+```
+
+Typically, an *x*-accessor is specified because the input data is in a different format, or because you want to apply a [[scale|Quantitative Scales]]. For example, if your data is specified as an object with `x` and `y` attributes, rather than a tuple, you might dereference these attributes and apply the scales simultaneously:
+
+```javascript
+var x = d3.scale.linear().range([0, w]),
+    y = d3.scale.linear().range([0, h]),
+    l = d3.svg.line().x(function(d) { return x(d.x); }).y(function(d) { return y(d.y); });
+```
+
+If *x* is not specified, returns the current *x*-accessor.
 
 <a name="line_y" href="#line_y">#</a> line.<b>y</b>([<i>y</i>])
 
