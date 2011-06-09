@@ -34,9 +34,11 @@ And finally, **iteration methods** that apply functions to elements in the array
 
 Returns -1 if *a* is less than *b*, or 1 if *a* is greater than *b*, or 0. This is the comparator function for natural order, and can be used in conjunction with the built-in array sort method to arrange elements in ascending order:
 
-    function(a, b) {
-      return a < b ? -1 : a > b ? 1 : 0;
-    }
+```javascript
+function(a, b) {
+  return a < b ? -1 : a > b ? 1 : 0;
+}
+```
 
 Note that if no comparator function is specified to the built-in sort method, the default order is lexicographic (alphabetical), not natural! This can lead to bugs when sorting an array of numbers.
 
@@ -44,9 +46,11 @@ Note that if no comparator function is specified to the built-in sort method, th
 
 Returns -1 if *a* is greater than *b*, or 1 if *a* is less than *b*, or 0. This is the comparator function for reverse natural order, and can be used in conjunction with the built-in array sort method to arrange elements in descending order:
 
-    function(a, b) {
-      return b < a ? -1 : b > a ? 1 : 0;
-    }
+```javascript
+function(a, b) {
+  return b < a ? -1 : b > a ? 1 : 0;
+}
+```
 
 Note that if no comparator function is specified to the built-in sort method, the default order is lexicographic (alphabetical), not natural! This can lead to bugs when sorting an array of numbers.
 
@@ -69,7 +73,7 @@ Similar to bisectLeft, but returns an insertion point which comes after (to the 
 
 ## Associative Arrays
 
-Another common data type in JavaScript is the associative array, or more simply the object, which has a set of named properties. In Java this is referred to as a map, and in Python, a dictionary. JavaScript provides a standard mechanism for iterating over the keys (or property names) in an associative array: the [for…in loop](https://developer.mozilla.org/en/JavaScript/Reference/Statements/for...in). However, note that the iteration order is undefined. D3 provides several operators for converting associative arrays to standard indexed arrays. 
+Another common data type in JavaScript is the associative array, or more simply the object, which has a set of named properties. In Java this is referred to as a map, and in Python, a dictionary. JavaScript provides a standard mechanism for iterating over the keys (or property names) in an associative array: the [for…in loop](https://developer.mozilla.org/en/JavaScript/Reference/Statements/for...in). However, note that the iteration order is undefined. D3 provides several operators for converting associative arrays to standard indexed arrays.
 
 <a name="d3_keys" href="#d3_keys">#</a> d3.<b>keys</b>(<i>object</i>)
 
@@ -112,28 +116,34 @@ Nesting allows elements in an array to be grouped into a hierarchical tree struc
 
 For example, consider the following tabular data structure of Barley yields, from various sites in Minnesota during 1931-2:
 
-    [{yield: 27.00, variety: "Manchuria", year: 1931, site: "University Farm"},
-     {yield: 48.87, variety: "Manchuria", year: 1931, site: "Waseca"},
-     {yield: 27.43, variety: "Manchuria", year: 1931, site: "Morris"}, …]
+```javascript
+[{yield: 27.00, variety: "Manchuria", year: 1931, site: "University Farm"},
+ {yield: 48.87, variety: "Manchuria", year: 1931, site: "Waseca"},
+ {yield: 27.43, variety: "Manchuria", year: 1931, site: "Morris"}, …]
+```
 
 To facilitate visualization, it may be useful to nest the elements first by year, and then by variety, as follows:
 
-    var nest = d3.nest()
-        .key(function(d) { return d.year; })
-        .key(function(d) { return d.variety; })
-        .entries(yields);
+```javascript
+var nest = d3.nest()
+    .key(function(d) { return d.year; })
+    .key(function(d) { return d.variety; })
+    .entries(yields);
+```
 
 This returns a nested array. Each element of the outer array is a key-values pair, listing the values for each distinct key:
 
-    [{key: 1931, values: [
-       {key: "Manchuria", values: [
-         {yield: 27.00, variety: "Manchuria", year: 1931, site: "University Farm"},
-         {yield: 48.87, variety: "Manchuria", year: 1931, site: "Waseca"},
-         {yield: 27.43, variety: "Manchuria", year: 1931, site: "Morris"}, …]},
-       {key: "Glabron", values: [
-         {yield: 43.07, variety: "Glabron", year: 1931, site: "University Farm"},
-         {yield: 55.20, variety: "Glabron", year: 1931, site: "Waseca"}, …]}, …]},
-     {key: 1932, values: …}]
+```javascript
+[{key: 1931, values: [
+   {key: "Manchuria", values: [
+     {yield: 27.00, variety: "Manchuria", year: 1931, site: "University Farm"},
+     {yield: 48.87, variety: "Manchuria", year: 1931, site: "Waseca"},
+     {yield: 27.43, variety: "Manchuria", year: 1931, site: "Morris"}, …]},
+   {key: "Glabron", values: [
+     {yield: 43.07, variety: "Glabron", year: 1931, site: "University Farm"},
+     {yield: 55.20, variety: "Glabron", year: 1931, site: "Waseca"}, …]}, …]},
+ {key: 1932, values: …}]
+```
 
 The nested form allows easy iteration and generation of hierarchical structures in SVG or HTML.
 

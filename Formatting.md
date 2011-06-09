@@ -2,12 +2,16 @@
 
 Formatting numbers is one of those things you don't normally think about until an ugly "0.30000000000000004" appears on your axis labels. Also, maybe you want to group thousands to improve readability, and use fixed precision, such as "$1,240.10". Or, maybe you want to display only the significant digits of a particular number. D3 makes this easy using a standard **number format**. For example, to create a function that zero-fills to four digits, say:
 
-    var zero = d3.format("04d");
+```javascript
+var zero = d3.format("04d");
+```
 
 Now you can conveniently format numbers:
 
-    zero(2); // "0002"
-    zero(123); // "0123"
+```javascript
+zero(2); // "0002"
+zero(123); // "0123"
+```
 
 In addition to numbers, D3 also supports formatting and parsing [[dates|Time-Formatting]], and [[comma-separated values|CSV]].
 

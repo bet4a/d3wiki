@@ -4,12 +4,14 @@ It goes without saying that to visualize data, you'll need to access the data in
 
 When loading data asynchronously, code that depends on the loaded data should generally exist within the callback function. For example, see the [[calendar visualization|http://mbostock.github.com/d3/ex/calendar.html]] on the D3 website. Code that doesn't depend on data can run immediately when the page loads. Also, you may find it convenient to save loaded data to the global namespace, so that you can access it after the initial render, such as during a transition. You can do this using closures, or simply assign the loaded data to a global:
 
-    var data; // a global
+```javascript
+var data; // a global
 
-    d3.json("path/to/file.json", function(json) {
-      data = json;
-      visualizeit();
-    });
+d3.json("path/to/file.json", function(json) {
+  data = json;
+  visualizeit();
+});
+```
 
 By default, your browser will not allow cross-domain requests. (This is also true of the local file system, which is why the [[README|https://github.com/mbostock/d3/blob/master/README.md]] recommends using a local web server to host the examples.) While it is possible to use JSONP to workaround this security restriction, this is unsafe from a security perspective because it allows the external site to run arbitrary JavaScript. Instead, use the header Access-Control-Allow-Origin: * to allow your browser to request an external resource safely. For more details, see the W3C recommendation on [[Cross-Origin Resource Sharing|http://www.w3.org/TR/cors/]].
 

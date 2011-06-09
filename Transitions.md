@@ -24,7 +24,9 @@ Specifies the transition *delay* in milliseconds. If *delay* is a constant, then
 
 Setting the delay to be a multiple of the index `i` is a convenient way to stagger transitions for elements. For example, if you used a fixed duration of *duration*, and have *n* elements in the current selection, you can stagger the transition over 2 \* *duration* by saying:
 
-    .delay(function(d, i) { return i / n * duration; })
+```javascript
+.delay(function(d, i) { return i / n * duration; })
+```
 
 You may also compute the delay as a function of the data, thereby creating a data-driven animation.
 
@@ -52,15 +54,19 @@ Transitions the value of the attribute with the specified *name* according to th
 
 For example, the attr operator is built on top of the attrTween operator. The tween function used by the attr operator depends on whether the end value is a function or a constant. If the end value is a function:
 
-    function tween(d, i, a) {
-      return d3.interpolate(a, String(value.call(this, d, i)));
-    }
+```javascript
+function tween(d, i, a) {
+  return d3.interpolate(a, String(value.call(this, d, i)));
+}
+```
 
 Otherwise, if the end value is a constant:
 
-    function tween(d, i, a) {
-      return d3.interpolate(a, String(value));
-    }
+```javascript
+function tween(d, i, a) {
+  return d3.interpolate(a, String(value));
+}
+```
 
 The attrTween operator is used when you need a custom interpolator, such as one that understands the semantics of SVG path data. One common technique is *dataspace interpolation*, where [interpolateObject](#interpolateObject) is used to interpolate two data values, and the result of this interpolation is then used (say, with a [[shape|SVG-Shapes]]) to compute the new attribute value. Use the attr operator for the simpler common case where an interpolator can be automatically derived from the current attribute value to the desired end value.
 
@@ -78,15 +84,19 @@ Transitions the value of the CSS style property with the specified *name* accord
 
 For example, the style operator is built on top of the styleTween operator. The tween function used by the style operator depends on whether the end value is a function or a constant. If the end value is a function:
 
-    function tween(d, i, a) {
-      return d3.interpolate(a, String(value.call(this, d, i)));
-    }
+```javascript
+function tween(d, i, a) {
+  return d3.interpolate(a, String(value.call(this, d, i)));
+}
+```
 
 Otherwise, if the end value is a constant:
 
-    function tween(d, i, a) {
-      return d3.interpolate(a, String(value));
-    }
+```javascript
+function tween(d, i, a) {
+  return d3.interpolate(a, String(value));
+}
+```
 
 The styleTween operator is used when you need a custom interpolator, such as one that understands the semantics of CSS3 transforms. Use the style operator for the simpler common case where an interpolator can be automatically derived from the current computed style property value to the desired end value.
 
@@ -110,7 +120,9 @@ For each element in the current transition, selects the first descendant element
 
 This method is approximately equivalent to:
 
-    selection.select(selector).transition()
+```javascript
+selection.select(selector).transition()
+```
 
 where *selection* is the current transition's underlying selection. In addition, the returned new transition inherits easing, duration and delay from the current transition.
 
@@ -120,7 +132,9 @@ For each element in the current transition, selects descendant elements that mat
 
 This method is approximately equivalent to:
 
-    selection.selectAll(selector).transition()
+```javascript
+selection.selectAll(selector).transition()
+```
 
 where *selection* is the current transition's underlying selection. In addition, the returned new transition inherits easing, duration and delay from the current transition. The duration and delay for each subelement is inherited from the duration and delay of the parent element in the current transition.
 
@@ -136,19 +150,25 @@ Note: there is currently no way to remove listeners. And, this operator has the 
 
 Invokes the specified *function* once, passing in the current transition along with any optional *arguments*. The call operator always returns the current transition, regardless of the return value of the specified function. The call operator is identical to invoking a function by hand; but it makes it easier to use method chaining. For example, say we want to set a number of attributes the same way in a number of different places. So we take the code and wrap it in a reusable function:
 
-    function foo(transition) {
-      transition
-          .attr("name1", "value1")
-          .attr("name2", "value2");
-    }
+```javascript
+function foo(transition) {
+  transition
+      .attr("name1", "value1")
+      .attr("name2", "value2");
+}
+```
 
 Now, we can say this:
 
-    foo(d3.selectAll("div").transition())
+```javascript
+foo(d3.selectAll("div").transition())
+```
 
 Or equivalently:
 
-    d3.selectAll("div").transition().call(foo);
+```javascript
+d3.selectAll("div").transition().call(foo);
+```
 
 In many cases, it is possible to call the same function *foo* on both transitions and selections, due to identical methods on both selections and transitions! The `this` context of the called function is also the current transition. This is slightly redundant with the first argument, which we might fix in the future.
 
@@ -202,9 +222,11 @@ Returns the default interpolator between the two values *a* and *b*. The type of
 
 Returns a numeric interpolator between the two numbers *a* and *b*. The returned interpolator is equivalent to:
 
-    function interpolate(t) {
-      return a * (1 - t) + b * t;
-    }
+```javascript
+function interpolate(t) {
+  return a * (1 - t) + b * t;
+}
+```
 
 Caution: avoid interpolating to or from the number zero when the interpolator is used to generate a string (such as with [attr](#attr)). Very small values, when stringified, may be converted to scientific notation and cause a temporarily invalid attribute or style property value. For example, the number 0.0000001 is converted to the string "1e-7". This is particularly noticeable when interpolating opacity values. To avoid scientific notation, start or end the transition at 1e-6, which is the smallest value that is not stringified in exponential notation.
 
@@ -216,7 +238,9 @@ Returns a numeric interpolator between the two numbers *a* and *b*; the interpol
 
 Returns a string interpolator between the two strings *a* and *b*. The string interpolator finds numbers embedded in *a* and *b*, where each number is of the form:
 
-    /[-+]?(?:\d+\.\d+|\d+\.|\.\d+|\d+)(?:[eE][-]?\d+)?/
+```javascript
+/[-+]?(?:\d+\.\d+|\d+\.|\.\d+|\d+)(?:[eE][-]?\d+)?/
+```
 
 For each number embedded in *b*, the interpolator will attempt to find a corresponding number in *a*. If a corresponding number is found, a numeric interpolator is created using [interpolateNumber](#interpolateNumber). The remaining parts of the string *b* are used as a template: the static parts of the string *b* remain constant for the interpolation, with the interpolated numeric values embedded in the template. For example, if *a* is "300 12px sans-serif", and *b* is "500 36px Comic-Sans", two embedded numbers are found. The remaining static parts of the string are a space between the two numbers (" "), and the suffix ("px Comic-Sans"). The result of the interpolator at *t* = .5 is "400 24px Comic-Sans".
 

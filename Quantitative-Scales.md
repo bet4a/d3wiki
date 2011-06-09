@@ -24,9 +24,11 @@ If *numbers* is specified, sets the scale's input domain to the specified array 
 
 Although linear scales typically have just two numeric values in their domain, you can specify more than two values for a *polylinear* scale. In this case, there must be an equivalent number of values in the output range. A polylinear scale represents multiple piecewise linear scales that divide a continuous domain and range. This is particularly useful for defining diverging quantitative scales. For example, to interpolate between white and red for negative values, and white and green for positive values, say:
 
-    var color = d3.scale.linear()
-        .domain([-1, 0, 1])
-        .range(["red", "white", "green"]);
+```javascript
+var color = d3.scale.linear()
+    .domain([-1, 0, 1])
+    .range(["red", "white", "green"]);
+```
 
 The resulting value of color(-.5) is "#ff8080", and the value of color(.5) is "#80c080". Internally, polylinear scales perform a binary search for the output interpolator corresponding to the given domain value. By repeating values in both the domain and range, you can also force a chunk of the input domain to map to a constant in the output range.
 
@@ -62,7 +64,9 @@ Power scales are similar to linear scales, except there's an exponential transfo
 
 Constructs a new power scale with the default domain [0,1], the default range [0,1], and the exponent .5. This method is shorthand for:
 
-    d3.scale.pow().exponent(.5)
+```javascript
+d3.scale.pow().exponent(.5)
+```
 
 The returned scale is a function that takes a single argument *x* representing a value in the input domain; the return value is the corresponding value in the output range. Thus, the returned scale is equivalent to the [[sqrt|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/sqrt]] function for numbers; for example sqrt(0.25) returns 0.5.
 
