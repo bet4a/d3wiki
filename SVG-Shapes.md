@@ -2,7 +2,7 @@
 
 SVG has a number of built-in simple shapes, such as axis-aligned rectangles and circles. For greater flexibility, you can use SVG's [[path|http://www.w3.org/TR/SVG/paths.html#PathElement]] element in conjunction with D3's path data generators. If you're familiar with Protovis, you'll note that D3's path generators are similar to Protovis marks.
 
-## Built-in Shapes
+## SVG Elements
 
 All SVG shapes can be transformed using the [[transform|http://www.w3.org/TR/SVG/coords.html#TransformAttribute]] attribute. You can apply the transform either to the shape directly, or to a containing [[g|http://www.w3.org/TR/SVG/struct.html#Groups]] element. Thus, when a shape is defined as "axis-aligned", that merely means axis-aligned within the local coordinate system; you can still rotate and otherwise transform the shape. Shapes can be filled and stroked using the [[fill|http://www.w3.org/TR/SVG/painting.html#FillProperties]] and [[stroke|http://www.w3.org/TR/SVG/painting.html#StrokeProperties]] styles. (You can also use the attributes of the same name, but styles are recommended as they are compatible with external stylesheets.)
 
@@ -34,21 +34,43 @@ The [[polygon|http://www.w3.org/TR/SVG/shapes.html#PolygonElement]] element defi
 
 The [[text|http://www.w3.org/TR/SVG/text.html#TextElement]] element defines a graphics element consisting of text. The text content of the text element (see the [[text|Selections#text]] operator) define the characters to be rendered. The anchor position of the text element is controlled using the *x* and *y* attributes; additionally, the text can be offset from the anchor using *dx* and *dy* attributes. This offset is particularly convenient for controlling the text margin and baseline, as you can use "em" units which are relative to the font size. The horizontal text alignment is controlling using the *text-anchor* attribute. Here are a few examples:
 
-    <svg:text text-anchor="start">left-align, bottom-baseline</svg:text>
-    <svg:text text-anchor="middle">center-align, bottom-baseline</svg:text>
-    <svg:text text-anchor="end">right-align, bottom-baseline</svg:text>
-    <svg:text dy=".35em" text-anchor="start">left-align, middle-baseline</svg:text>
-    <svg:text dy=".35em" text-anchor="middle">center-align, middle-baseline</svg:text>
-    <svg:text dy=".35em" text-anchor="end">right-align, middle-baseline</svg:text>
-    <svg:text dy=".71em" text-anchor="start">left-align, top-baseline</svg:text>
-    <svg:text dy=".71em" text-anchor="middle">center-align, top-baseline</svg:text>
-    <svg:text dy=".71em" text-anchor="end">right-align, top-baseline</svg:text>
+```xml
+<svg:text text-anchor="start">left-align, bottom-baseline</svg:text>
+<svg:text text-anchor="middle">center-align, bottom-baseline</svg:text>
+<svg:text text-anchor="end">right-align, bottom-baseline</svg:text>
+<svg:text dy=".35em" text-anchor="start">left-align, middle-baseline</svg:text>
+<svg:text dy=".35em" text-anchor="middle">center-align, middle-baseline</svg:text>
+<svg:text dy=".35em" text-anchor="end">right-align, middle-baseline</svg:text>
+<svg:text dy=".71em" text-anchor="start">left-align, top-baseline</svg:text>
+<svg:text dy=".71em" text-anchor="middle">center-align, top-baseline</svg:text>
+<svg:text dy=".71em" text-anchor="end">right-align, top-baseline</svg:text>
+```
 
 It's possible that there is a better way to specify the text baseline using SVG's [[baseline alignment properties|http://www.w3.org/TR/SVG/text.html#BaselineAlignmentProperties]], but these don't seem to be widely supported by browsers. Lastly, the font color is typically specified using the *fill* style (you can also use *stroke*), and the font is controlled using the *font*, *font-family*, *font-size* and related styles. Some browsers also support CSS3 properties, such as *text-shadow*.
 
-## Path Shapes
+<a name="svg_path" href="#svg_path">#</a> svg:<b>path</b> d="" transform=""
 
-<a name="svg_path" href="#svg_path">#</a> svg:<b>path</b>
+The [[path|http://www.w3.org/TR/SVG/paths.html#PathElement]] element represents the outline of a shape which can be filled, stroked, used as a clipping path, or any combination of the three. The *d* attribute defines the path data, which is a [[mini-language|http://www.w3.org/TR/SVG/paths.html#PathData]] of path commands, such as *moveto* (M), *lineto* (L) and *closepath* (Z). The path element is a generalization of all other shapes in SVG, and can be used to draw nearly anything!
+
+## Path Data Generators
+
+To simplify the construction of the *d* attribute for path elements, D3 includes a number of helper classes for generating path data. If you're familiar with [[Protovis|http://vis.stanford.edu/protovis/]], you'll find that these path generators are similar to Protovis mark types: each generator is a function of data. So, if you data is a sequence of *xy* coordinates, you can define accessor functions that the path generators use to produce path data. For example, you might define a line generator:
+
+```javascript
+var line = d3.svg.line()
+    .x(function(d) { return d.x; })
+    .y(function(d) { return d.y; })
+    .interpolate("basis");
+```
+
+Then later on, you can use this function to set the *d* attribute:
+
+```javascript
+g.append("svg:path")
+    .attr("d", line);
+```
+
+Whatever data is bound to `g` (in this example) will be passed to the `line` instance. Thus, the data must be specified as an array. For element element in the data array, the *x*- and *y*-accessor functions are used to pull out the control point coordinates.
 
 <a name="line" href="#line">#</a> d3.svg.<b>line</b>()
 
