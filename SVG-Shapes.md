@@ -103,9 +103,14 @@ Typically, an *x*-accessor is specified because the input data is in a different
 
 ```javascript
 var x = d3.scale.linear().range([0, w]),
-    y = d3.scale.linear().range([0, h]),
-    l = d3.svg.line().x(function(d) { return x(d.x); }).y(function(d) { return y(d.y); });
+    y = d3.scale.linear().range([0, h]);
+
+var line = d3.svg.line()
+    .x(function(d) { return x(d.x); })
+    .y(function(d) { return y(d.y); });
 ```
+
+The *x*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the line function; however, in the common case that the line generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). In this context, the index is the index into the array of control points, rather than the index of the current element in the selection. The *x*-accessor is invoked exactly once per datum, in the order specified by the data array. Thus, it is possible to specify a nondeterministic accessor, such as a random number generator. It is also possible to specify the *x*-accessor as a constant rather than a function, in which case all points will have the same *x*-coordinate.
 
 If *x* is not specified, returns the current *x*-accessor.
 
