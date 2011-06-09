@@ -160,6 +160,7 @@ Now `div`—the result of the data operator—refers to the updating selection. 
 ```javascript
 div.enter().append("div")
     .text(function(d) { return d; });
+```
 
 Likewise, we can remove the exiting elements [15, 23, 42]:
 
