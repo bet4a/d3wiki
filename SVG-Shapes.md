@@ -91,7 +91,7 @@ The line generator is designed to work in conjunction with the [area](#area) gen
 
 <a name="line_x" href="#line_x">#</a> line.<b>x</b>([<i>x</i>])
 
-If *x* is specified, sets the *x*-accessor to the specified function. This accessor is invoked for each element in the data array passed to the line generator. The default accessor assumes that each input element is a two-element array of numbers:
+If *x* is specified, sets the *x*-accessor to the specified function or constant. This accessor is invoked for each element in the data array passed to the line generator. The default accessor assumes that each input element is a two-element array of numbers:
 
 ```javascript
 function x(d) {
@@ -116,7 +116,32 @@ If *x* is not specified, returns the current *x*-accessor.
 
 <a name="line_y" href="#line_y">#</a> line.<b>y</b>([<i>y</i>])
 
+If *y* is specified, sets the *y*-accessor to the specified function or constant. This accessor is invoked for each element in the data array passed to the line generator. The default accessor assumes that each input element is a two-element array of numbers:
+
+```javascript
+function y(d) {
+  return d[1];
+}
+```
+
+For an example of how to specify a *y*-accessor, see the similiar [x](#line_x) accessor. If *y* is not specified, returns the current *y*-accessor.
+
 <a name="line_interpolate" href="#line_interpolate">#</a> line.<b>interpolate</b>([<i>interpolate</i>])
+
+If *interpolate* is specified, sets the interpolation mode to the specified string. The following modes are supported:
+
+* linear - piecewise linear segments, as in a polyline.
+* step-before - alternate between vertical and horizontal segments, as in a step function.
+* step-after - alternate between horizontal and vertical segments, as in a step function.
+* basis - a [B-spline](http://en.wikipedia.org/wiki/B-spline), with control point duplication on the ends.
+* basis-open - an open B-spline; may not intersect the start or end.
+* basis-closed - a closed B-spline, as in a loop.
+* cardinal - a [Cardinal spline](http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Cardinal_spline), with control point duplication on the ends.
+* cardinal-open - an open Cardinal spline; may not intersect the start or end, but will intersect other control points.
+* cardinal-closed - a closed Cardinal spline, as in a loop.
+* monotone - [cubic interpolation](http://en.wikipedia.org/wiki/Monotone_cubic_interpolation) that preserves monotonicity in *y*.
+
+If *interpolate* is not specified, returns the current interpolation mode.
 
 <a name="line_tension" href="#line_tension">#</a> line.<b>tension</b>([<i>tension</i>])
 
