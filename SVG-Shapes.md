@@ -141,9 +141,13 @@ If *interpolate* is specified, sets the interpolation mode to the specified stri
 * cardinal-closed - a closed Cardinal spline, as in a loop.
 * monotone - [cubic interpolation](http://en.wikipedia.org/wiki/Monotone_cubic_interpolation) that preserves monotonicity in *y*.
 
+The behavior of some of these interpolation modes may be further customized by specifying a [tension](#line_tension).
+
 If *interpolate* is not specified, returns the current interpolation mode.
 
 <a name="line_tension" href="#line_tension">#</a> line.<b>tension</b>([<i>tension</i>])
+
+If *tension* is specified, sets the Cardinal spline interpolation tension to the specified number in the range [0, 1]. The default tension is 0.7. In some sense, this can be interpreted as the length of the tangent; 1 will yield all zero tangents, and 0 yields a [Catmull-Rom spline](http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull.E2.80.93Rom_spline).
 
 <a name="area" href="#area">#</a> d3.svg.<b>area</b>()
 
