@@ -216,7 +216,7 @@ D3 has many built-in interpolators to simplify the transitioning of arbitrary va
 
 <a name="d3_interpolate" href="#d3_interpolate">#</a> d3.<b>interpolate</b>(<i>a</i>, <i>b</i>)
 
-Returns the default interpolator between the two values *a* and *b*. The type of interpolator is based on the type of the end value *b*. If *b* is a number, *a* is coerced to a number and [interpolateNumber](#interpolateNumber) is used. If *b* is a string, a check is performed to see if *b* represents a color of the form `/^(#|rgb\(|hsl\()/`, or one of the [[CSS named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]]; if *b* is a color, *a* is coerced to an RGB color and [interpolateRgb](#interpolateRgb) is used. Otherwise, [interpolateString](#interpolateString) is used, which interpolates numbers embedded within strings.
+Returns the default interpolator between the two values *a* and *b*. The type of interpolator is based on the type of the end value *b*. If *b* is a number, *a* is coerced to a number and [interpolateNumber](#interpolateNumber) is used. If *b* is a string, a check is performed to see if *b* represents a color of the form `/^(#|rgb\(|hsl\()/`, or one of the [[CSS named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]]; if *b* is a color, *a* is coerced to an RGB color and [interpolateRgb](#interpolateRgb) is used. Otherwise, [interpolateString](#interpolateString) is used, which interpolates numbers embedded within strings. The behavior of this default interpolator may be extended to support additional types by pushing custom interpolators onto the [d3.interpolators](#d3_interpolators) array.
 
 <a name="d3_interpolateNumber" href="#d3_interpolateNumber">#</a> d3.<b>interpolateNumber</b>(<i>a</i>, <i>b</i>)
 
@@ -265,3 +265,30 @@ Returns an object interpolator between the two objects *a* and *b*. Internally, 
 Object interpolation is particularly useful for *dataspace interpolation*, where data is interpolated rather than attribute values. For example, you can interpolate an object which describes an arc in a pie chart, and then use [[d3.svg.arc|SVG-Shapes#arc]] to compute the new SVG path data.
 
 Note: no defensive copy of the template object is created; modifications of the returned object may adversely affect subsequent evaluation of the interpolator. No copy is made because interpolators should be fast, as they are part of the inner loop of animation.
+
+<a name="d3_interpolators" href="#d3_interpolators">#</a> d3.<b>interpolators</b>
+
+The array of built-in interpolator factories, as used by [d3.interpolate](#d3_interpolate). Additional interpolator factories may be pushed onto the end of this array. Each factory may return an interpolator, if it supports interpolating the two specified input values; otherwise, the factory should return a falsey value and other interpolators will be tried. The initial value of this array, in the order of evaluation, is:
+
+* interpolateNumber - if the type is number.
+* interpolateRgb - if the type is a color.
+* interpolateString - if the type is a string.
+* interpolateArray - if the type is an array.
+* interpolateObject - as a last resort.
+
+For example, to register a custom interpolator that formats dollars and cents, you might say:
+
+```javascript
+d3.interpolators.push(function(a, b) {
+  var re = /^\$([0-9,.]+)$/, ma, mb, f = d3.format(",.02f");
+  if ((ma = re.exec(a)) && (mb = re.exec(b))) {
+    a = parseFloat(ma[1]);
+    b = parseFloat(mb[1]) - a;
+    return function(t) {
+      return "$" + f(a + b * t);
+    };
+  }
+});
+```
+
+Then, `d3.interpolate("$20", "$10")(1/3)` returns $16.67.
