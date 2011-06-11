@@ -60,6 +60,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.interpolateHsl|Transitions#d3_interpolateHsl]] - interpolate two HSL colors.
 * [[d3.interpolateArray|Transitions#d3_interpolateArray]] - interpolate two arrays of values.
 * [[d3.interpolateObject|Transitions#d3_interpolateObject]] - interpolate two arbitrary objects.
+* [[d3.interpolators|Transitions#d3_interpolators]] - register a custom interpolator.
 
 ### [[Working with Arrays|Arrays]]
 
@@ -140,6 +141,7 @@ Also see the [[CSV]] module.
 * [[linear.rangeRound|Quantitative-Scales#linear_rangeRound]] - set the scale's output range, and enable rounding.
 * [[linear.interpolate|Quantitative-Scales#linear_interpolate]] - get or set the scale's output interpolator.
 * [[linear.clamp|Quantitative-Scales#linear_clamp]] - enable or disable clamping of the output range.
+* [[linear.nice|Quantitative-Scales#linear_nice]] - extend the scale domain to nice round numbers.
 * [[linear.ticks|Quantitative-Scales#linear_ticks]] - get representative values from the input domain.
 * [[linear.tickFormat|Quantitative-Scales#linear_tickFormat]] - get a formatter for displaying tick values.
 * [[d3.scale.sqrt|Quantitative-Scales#sqrt]] - construct a quantitative scale with a square root transform.
@@ -150,6 +152,7 @@ Also see the [[CSV]] module.
 * [[pow.rangeRound|Quantitative-Scales#pow_rangeRound]] - set the scale's output range, and enable rounding.
 * [[pow.interpolate|Quantitative-Scales#pow_interpolate]] - get or set the scale's output interpolator.
 * [[pow.clamp|Quantitative-Scales#pow_clamp]] - enable or disable clamping of the output range.
+* [[pow.nice|Quantitative-Scales#pow_nice]] - extend the scale domain to nice round numbers.
 * [[pow.ticks|Quantitative-Scales#pow_ticks]] - get representative values from the input domain.
 * [[pow.tickFormat|Quantitative-Scales#pow_tickFormat]] - get a formatter for displaying tick values.
 * [[pow.exponent|Quantitative-Scales#pow_exponent]] - get or set the exponent power.
@@ -160,6 +163,7 @@ Also see the [[CSV]] module.
 * [[log.rangeRound|Quantitative-Scales#log_rangeRound]] - set the scale's output range, and enable rounding.
 * [[log.interpolate|Quantitative-Scales#log_interpolate]] - get or set the scale's output interpolator.
 * [[log.clamp|Quantitative-Scales#log_clamp]] - enable or disable clamping of the output range.
+* [[log.nice|Quantitative-Scales#log_nice]] - extend the scale domain to nice powers of ten.
 * [[log.ticks|Quantitative-Scales#log_ticks]] - get representative values from the input domain.
 * [[log.tickFormat|Quantitative-Scales#log_tickFormat]] - get a formatter for displaying tick values.
 * [[d3.scale.quantize|Quantitative-Scales#quantize]] - construct a linear quantitative scale with a discrete output range.
