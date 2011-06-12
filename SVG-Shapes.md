@@ -237,7 +237,7 @@ If *tension* is specified, sets the Cardinal spline interpolation tension to the
 
 <a name="arc" href="#arc">#</a> d3.svg.<b>arc</b>()
 
-Constructs a new arc generator with the default *innerRadius*-, *outerRadius*-, *startAngle*- and *endAngle*-accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). The input to the generator is always a single element for which to generate an arc. The output is a closed solid arc, as in a pie or donut chart:
+Constructs a new arc generator with the default *innerRadius*-, *outerRadius*-, *startAngle*- and *endAngle*-accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). When the default accessors assume that the arc dimensions are all specified dynamically, it is very common to set one or more of the dimensions as a constant, such as setting the inner radius to zero for a pie chart. The input to the generator is always a single element for which to generate an arc. The output is a closed solid arc, as in a pie or donut chart:
 
 ![arc](arc.png)
 
@@ -261,11 +261,65 @@ If *radius* is not specified, returns the current *innerRadius*-accessor.
 
 <a name="arc_outerRadius" href="#arc_outerRadius">#</a> arc.<b>outerRadius</b>([<i>radius</i>])
 
+If *radius* is specified, sets the *outerRadius*-accessor to the specified function or constant. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+
+```javascript
+function outerRadius(d) {
+  return d.outerRadius;
+}
+```
+
+Typically, a *outerRadius*-accessor is specified because the input data is in a different format, because you want to apply a [[scale|Quantitative Scales]], or because you want to specify a constant inner radius for a donut chart.
+
+The *outerRadius*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *outerRadius*-accessor as a constant rather than a function.
+
+If *radius* is not specified, returns the current *outerRadius*-accessor.
+
 <a name="arc_startAngle" href="#arc_startAngle">#</a> arc.<b>startAngle</b>([<i>angle</i>])
+
+If *angle* is specified, sets the *startAngle*-accessor to the specified function or constant. Angles are specified in [radians](http://en.wikipedia.org/wiki/Radian), even though SVG typically uses degrees. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+
+```javascript
+function startAngle(d) {
+  return d.startAngle;
+}
+```
+
+For constructing pie or donut charts, you will need to compute the start angle of each arc as the end angle of the previous arc. This can be done very conveniently using the [pie](Layout-Pie) layout, which is similar to the [stack](Layout-Stack) layout; given a set of input data, the pie layout will construct arc objects with startAngle and endAngle attributes that you can use with the default arc accessors.
+
+The *startAngle*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *startAngle*-accessor as a constant rather than a function.
+
+If *angle* is not specified, returns the current *startAngle*-accessor.
 
 <a name="arc_endAngle" href="#arc_endAngle">#</a> arc.<b>endAngle</b>([<i>angle</i>])
 
-<a name="arc_centroid" href="#arc_centroid">#</a> arc.<b>centroid</b>()
+If *angle* is specified, sets the *endAngle*-accessor to the specified function or constant. Angles are specified in [radians](http://en.wikipedia.org/wiki/Radian), even though SVG typically uses degrees. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+
+```javascript
+function endAngle(d) {
+  return d.endAngle;
+}
+```
+
+For constructing pie or donut charts, you will need to compute the end angle of each arc as offset from the start angle. This can be done very conveniently using the [pie](Layout-Pie) layout, which is similar to the [stack](Layout-Stack) layout; given a set of input data, the pie layout will construct arc objects with startAngle and endAngle attributes that you can use with the default arc accessors.
+
+The *endAngle*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *endAngle*-accessor as a constant rather than a function.
+
+If *angle* is not specified, returns the current *startAngle*-accessor.
+
+<a name="arc_centroid" href="#arc_centroid">#</a> arc.<b>centroid</b>(<i>arguments…</i>)
+
+Computes the centroid of the arc that would be generated from the specified input *arguments*; typically, the arguments are the current datum (d), and optionally the current index (i). The centroid is defined as the midpoint in polar coordinates of the inner and outer radius, and the start and end angle. This provides a convenient location for arc labels. For example:
+
+```javascript
+arcs.append("svg:text")
+    .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
+    .attr("dy", ".35em")
+    .attr("text-anchor", "middle")
+    .text(function(d) { return d.value; });
+```
+
+Alternatively, you can use SVG's transform attribute to rotate text into position, though you may need to convert radians back into degrees. Yet another possibility is to use a [textPath](http://www.w3.org/TR/SVG/text.html#TextPathElement) element to curve the label along the path of the arc!
 
 <a name="symbol" href="#symbol">#</a> d3.svg.<b>symbol</b>()
 
