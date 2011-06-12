@@ -91,7 +91,7 @@ The line generator is designed to work in conjunction with the [area](#area) gen
 
 <a name="line_x" href="#line_x">#</a> line.<b>x</b>([<i>x</i>])
 
-If *x* is specified, sets the *x*-accessor to the specified function or constant. This accessor is invoked for each element in the data array passed to the line generator. The default accessor assumes that each input element is a two-element array of numbers:
+If *x* is specified, sets the *x*-accessor to the specified function or constant. If *x* is not specified, returns the current *x*-accessor. This accessor is invoked for each element in the data array passed to the line generator. The default accessor assumes that each input element is a two-element array of numbers:
 
 ```javascript
 function x(d) {
@@ -112,11 +112,9 @@ var line = d3.svg.line()
 
 The *x*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the line function; however, in the common case that the line generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). In this context, the index is the index into the array of control points, rather than the index of the current element in the selection. The *x*-accessor is invoked exactly once per datum, in the order specified by the data array. Thus, it is possible to specify a nondeterministic accessor, such as a random number generator. It is also possible to specify the *x*-accessor as a constant rather than a function, in which case all points will have the same *x*-coordinate.
 
-If *x* is not specified, returns the current *x*-accessor.
-
 <a name="line_y" href="#line_y">#</a> line.<b>y</b>([<i>y</i>])
 
-If *y* is specified, sets the *y*-accessor to the specified function or constant. This accessor is invoked for each element in the data array passed to the line generator. The default accessor assumes that each input element is a two-element array of numbers:
+If *y* is specified, sets the *y*-accessor to the specified function or constant. If *y* is not specified, returns the current *y*-accessor. This accessor is invoked for each element in the data array passed to the line generator. The default accessor assumes that each input element is a two-element array of numbers:
 
 ```javascript
 function y(d) {
@@ -126,11 +124,9 @@ function y(d) {
 
 For an example of how to specify a *y*-accessor, see the similar [x](#line_x) accessor. Note that, like most other graphics libraries, SVG uses the top-left corner as the origin and thus higher values of *y* are *lower* on the screen. For visualization we often want the origin in the bottom-left corner instead; one easy way to accomplish this is to invert the range of the *y*-scale by using range([h, 0]) instead of range([0, h]).
 
-If *y* is not specified, returns the current *y*-accessor.
-
 <a name="line_interpolate" href="#line_interpolate">#</a> line.<b>interpolate</b>([<i>interpolate</i>])
 
-If *interpolate* is specified, sets the interpolation mode to the specified string. The following modes are supported:
+If *interpolate* is specified, sets the interpolation mode to the specified string. If *interpolate* is not specified, returns the current interpolation mode. The following modes are supported:
 
 * linear - piecewise linear segments, as in a polyline.
 * step-before - alternate between vertical and horizontal segments, as in a step function.
@@ -145,11 +141,9 @@ If *interpolate* is specified, sets the interpolation mode to the specified stri
 
 The behavior of some of these interpolation modes may be further customized by specifying a [tension](#line_tension).
 
-If *interpolate* is not specified, returns the current interpolation mode.
-
 <a name="line_tension" href="#line_tension">#</a> line.<b>tension</b>([<i>tension</i>])
 
-If *tension* is specified, sets the Cardinal spline interpolation tension to the specified number in the range [0, 1]. The tension only affects the Cardinal interpolation modes: cardinal, cardinal-open and cardinal-closed. The default tension is 0.7. In some sense, this can be interpreted as the length of the tangent; 1 will yield all zero tangents, and 0 yields a [Catmull-Rom spline](http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull.E2.80.93Rom_spline). If *tension* is not specified, returns the current tension.
+If *tension* is specified, sets the Cardinal spline interpolation tension to the specified number in the range [0, 1]. If *tension* is not specified, returns the current tension. The tension only affects the Cardinal interpolation modes: cardinal, cardinal-open and cardinal-closed. The default tension is 0.7. In some sense, this can be interpreted as the length of the tangent; 1 will yield all zero tangents, and 0 yields a [Catmull-Rom spline](http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull.E2.80.93Rom_spline).
 
 Note that the tension must be specified as a constant, rather than a function, as it is constant for the entirety of the line. However, it is still possible to generate multiple lines with different tensions using the same generator. For example:
 
@@ -176,7 +170,7 @@ To create [streamgraphs](http://mbostock.github.com/d3/ex/stream.html) (stacked 
 
 <a name="area_x" href="#area_x">#</a> area.<b>x</b>([<i>x</i>])
 
-If *x* is specified, sets the *x*-accessor to the specified function or constant. This accessor is invoked for each element in the data array passed to the area generator. The default accessor assumes that each input element is a two-element array of numbers:
+If *x* is specified, sets the *x*-accessor to the specified function or constant. If *x* is not specified, returns the current *x*-accessor. This accessor is invoked for each element in the data array passed to the area generator. The default accessor assumes that each input element is a two-element array of numbers:
 
 ```javascript
 function x(d) {
@@ -198,15 +192,13 @@ var area = d3.svg.area()
 
 The *x*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the area function; however, in the common case that the area generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). In this context, the index is the index into the array of control points, rather than the index of the current element in the selection. The *x*-accessor is invoked exactly once per datum, in the order specified by the data array. Thus, it is possible to specify a nondeterministic accessor, such as a random number generator. It is also possible to specify the *x*-accessor as a constant rather than a function, in which case all points will have the same *x*-coordinate.
 
-If *x* is not specified, returns the current *x*-accessor.
-
 <a name="area_y0" href="#area_y0">#</a> area.<b>y0</b>([<i>y0</i>])
 
-If *y0* is specified, sets the *y0*-accessor to the specified function or constant. This accessor is invoked for each element in the data array passed to the area generator. The default accessor is the constant zero, thus using a fixed baseline at *y* = 0. For an example of how to specify a *y0*-accessor, see the similar [x](#area_x) accessor. If *y0* is not specified, returns the current *y0*-accessor.
+If *y0* is specified, sets the *y0*-accessor to the specified function or constant. If *y0* is not specified, returns the current *y0*-accessor. This accessor is invoked for each element in the data array passed to the area generator. The default accessor is the constant zero, thus using a fixed baseline at *y* = 0. For an example of how to specify a *y0*-accessor, see the similar [x](#area_x) accessor.
 
 <a name="area_y1" href="#area_y1">#</a> area.<b>y1</b>([<i>y1</i>])
 
-If *y1* is specified, sets the *y1*-accessor to the specified function or constant. This accessor is invoked for each element in the data array passed to the area generator. The default accessor assumes that each input element is a two-element array of numbers:
+If *y1* is specified, sets the *y1*-accessor to the specified function or constant. If *y1* is not specified, returns the current *y1*-accessor. This accessor is invoked for each element in the data array passed to the area generator. The default accessor assumes that each input element is a two-element array of numbers:
 
 ```javascript
 function y1(d) {
@@ -216,11 +208,9 @@ function y1(d) {
 
 For an example of how to specify a *y1*-accessor, see the similar [x](#area_x) accessor. Note that, like most other graphics libraries, SVG uses the top-left corner as the origin and thus higher values of *y* are *lower* on the screen. For visualization we often want the origin in the bottom-left corner instead; one easy way to accomplish this is to invert the range of the *y*-scale by using range([h, 0]) instead of range([0, h]).
 
-If *y1* is not specified, returns the current *y1*-accessor.
-
 <a name="area_interpolate" href="#area_interpolate">#</a> area.<b>interpolate</b>([<i>interpolate</i>])
 
-If *interpolate* is specified, sets the interpolation mode to the specified string. The following modes are supported:
+If *interpolate* is specified, sets the interpolation mode to the specified string. If *interpolate* is not specified, returns the current interpolation mode. The following modes are supported:
 
 * linear - piecewise linear segments, as in a polyline.
 * step-before - alternate between vertical and horizontal segments, as in a step function.
@@ -233,11 +223,9 @@ If *interpolate* is specified, sets the interpolation mode to the specified stri
 
 The behavior of some of these interpolation modes may be further customized by specifying a [tension](#area_tension). Technically, the basis-closed and cardinal-closed interpolation modes are also supported, but these make more sense in the context of a line rather than an area.
 
-If *interpolate* is not specified, returns the current interpolation mode.
-
 <a name="area_tension" href="#area_tension">#</a> area.<b>tension</b>([<i>tension</i>])
 
-If *tension* is specified, sets the Cardinal spline interpolation tension to the specified number in the range [0, 1]. The tension only affects the Cardinal interpolation modes: cardinal, cardinal-open and cardinal-closed. The default tension is 0.7. In some sense, this can be interpreted as the length of the tangent; 1 will yield all zero tangents, and 0 yields a [Catmull-Rom spline](http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull.E2.80.93Rom_spline). If *tension* is not specified, returns the current tension. Note that the tension must be specified as a constant, rather than a function, as it is constant for the entirety of the area.
+If *tension* is specified, sets the Cardinal spline interpolation tension to the specified number in the range [0, 1]. If *tension* is not specified, returns the current tension. The tension only affects the Cardinal interpolation modes: cardinal, cardinal-open and cardinal-closed. The default tension is 0.7. In some sense, this can be interpreted as the length of the tangent; 1 will yield all zero tangents, and 0 yields a [Catmull-Rom spline](http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull.E2.80.93Rom_spline). Note that the tension must be specified as a constant, rather than a function, as it is constant for the entirety of the area.
 
 <a name="arc" href="#arc">#</a> d3.svg.<b>arc</b>()
 
@@ -249,7 +237,7 @@ In fact, four forms are possible: a [circle](http://en.wikipedia.org/wiki/Circle
 
 <a name="arc_innerRadius" href="#arc_innerRadius">#</a> arc.<b>innerRadius</b>([<i>radius</i>])
 
-If *radius* is specified, sets the *innerRadius*-accessor to the specified function or constant. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+If *radius* is specified, sets the *innerRadius*-accessor to the specified function or constant. If *radius* is not specified, returns the current *innerRadius*-accessor. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
 
 ```javascript
 function innerRadius(d) {
@@ -261,11 +249,9 @@ Typically, a *innerRadius*-accessor is specified because the input data is in a 
 
 The *innerRadius*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the arc function; however, in the common case that the arc generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *innerRadius*-accessor as a constant rather than a function.
 
-If *radius* is not specified, returns the current *innerRadius*-accessor.
-
 <a name="arc_outerRadius" href="#arc_outerRadius">#</a> arc.<b>outerRadius</b>([<i>radius</i>])
 
-If *radius* is specified, sets the *outerRadius*-accessor to the specified function or constant. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+If *radius* is specified, sets the *outerRadius*-accessor to the specified function or constant. If *radius* is not specified, returns the current *outerRadius*-accessor. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
 
 ```javascript
 function outerRadius(d) {
@@ -277,11 +263,9 @@ Typically, a *outerRadius*-accessor is specified because the input data is in a 
 
 The *outerRadius*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *outerRadius*-accessor as a constant rather than a function.
 
-If *radius* is not specified, returns the current *outerRadius*-accessor.
-
 <a name="arc_startAngle" href="#arc_startAngle">#</a> arc.<b>startAngle</b>([<i>angle</i>])
 
-If *angle* is specified, sets the *startAngle*-accessor to the specified function or constant. Angles are specified in [radians](http://en.wikipedia.org/wiki/Radian), even though SVG typically uses degrees. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+If *angle* is specified, sets the *startAngle*-accessor to the specified function or constant. If *angle* is not specified, returns the current *startAngle*-accessor. Angles are specified in [radians](http://en.wikipedia.org/wiki/Radian), even though SVG typically uses degrees. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
 
 ```javascript
 function startAngle(d) {
@@ -293,11 +277,9 @@ For constructing pie or donut charts, you will need to compute the start angle o
 
 The *startAngle*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *startAngle*-accessor as a constant rather than a function.
 
-If *angle* is not specified, returns the current *startAngle*-accessor.
-
 <a name="arc_endAngle" href="#arc_endAngle">#</a> arc.<b>endAngle</b>([<i>angle</i>])
 
-If *angle* is specified, sets the *endAngle*-accessor to the specified function or constant. Angles are specified in [radians](http://en.wikipedia.org/wiki/Radian), even though SVG typically uses degrees. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+If *angle* is specified, sets the *endAngle*-accessor to the specified function or constant. If *angle* is not specified, returns the current *startAngle*-accessor. Angles are specified in [radians](http://en.wikipedia.org/wiki/Radian), even though SVG typically uses degrees. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
 
 ```javascript
 function endAngle(d) {
@@ -308,8 +290,6 @@ function endAngle(d) {
 For constructing pie or donut charts, you will need to compute the end angle of each arc as offset from the start angle. This can be done very conveniently using the [pie](Layout-Pie) layout, which is similar to the [stack](Layout-Stack) layout; given a set of input data, the pie layout will construct arc objects with startAngle and endAngle attributes that you can use with the default arc accessors.
 
 The *endAngle*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *endAngle*-accessor as a constant rather than a function.
-
-If *angle* is not specified, returns the current *startAngle*-accessor.
 
 <a name="arc_centroid" href="#arc_centroid">#</a> arc.<b>centroid</b>(<i>arguments…</i>)
 
