@@ -124,7 +124,7 @@ function y(d) {
 }
 ```
 
-For an example of how to specify a *y*-accessor, see the similiar [x](#line_x) accessor. If *y* is not specified, returns the current *y*-accessor.
+For an example of how to specify a *y*-accessor, see the similar [x](#line_x) accessor. If *y* is not specified, returns the current *y*-accessor.
 
 <a name="line_interpolate" href="#line_interpolate">#</a> line.<b>interpolate</b>([<i>interpolate</i>])
 
@@ -174,7 +174,7 @@ To create [streamgraphs](http://mbostock.github.com/d3/ex/stream.html) (stacked 
 
 <a name="area_x" href="#area_x">#</a> area.<b>x</b>([<i>x</i>])
 
-If *x* is specified, sets the *x*-accessor to the specified function or constant. This accessor is invoked for each element in the data array passed to the line generator. The default accessor assumes that each input element is a two-element array of numbers:
+If *x* is specified, sets the *x*-accessor to the specified function or constant. This accessor is invoked for each element in the data array passed to the area generator. The default accessor assumes that each input element is a two-element array of numbers:
 
 ```javascript
 function x(d) {
@@ -194,15 +194,44 @@ var area = d3.svg.area()
     .y1(function(d) { return y(d.y); });
 ```
 
-The *x*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the line function; however, in the common case that the line generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). In this context, the index is the index into the array of control points, rather than the index of the current element in the selection. The *x*-accessor is invoked exactly once per datum, in the order specified by the data array. Thus, it is possible to specify a nondeterministic accessor, such as a random number generator. It is also possible to specify the *x*-accessor as a constant rather than a function, in which case all points will have the same *x*-coordinate.
+The *x*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the area function; however, in the common case that the area generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). In this context, the index is the index into the array of control points, rather than the index of the current element in the selection. The *x*-accessor is invoked exactly once per datum, in the order specified by the data array. Thus, it is possible to specify a nondeterministic accessor, such as a random number generator. It is also possible to specify the *x*-accessor as a constant rather than a function, in which case all points will have the same *x*-coordinate.
 
 If *x* is not specified, returns the current *x*-accessor.
 
 <a name="area_y0" href="#area_y0">#</a> area.<b>y0</b>([<i>y0</i>])
 
+If *y0* is specified, sets the *y0*-accessor to the specified function or constant. This accessor is invoked for each element in the data array passed to the area generator. The default accessor is the constant zero, thus using a fixed baseline at *y* = 0. For an example of how to specify a *y0*-accessor, see the similar [x](#area_x) accessor. If *y0* is not specified, returns the current *y0*-accessor.
+
 <a name="area_y1" href="#area_y1">#</a> area.<b>y1</b>([<i>y1</i>])
 
+If *y1* is specified, sets the *y1*-accessor to the specified function or constant. This accessor is invoked for each element in the data array passed to the area generator. The default accessor assumes that each input element is a two-element array of numbers:
+
+```javascript
+function y1(d) {
+  return d[1];
+}
+```
+
+For an example of how to specify a *y1*-accessor, see the similar [x](#area_x) accessor. If *y1* is not specified, returns the current *y1*-accessor.
+
 <a name="area_interpolate" href="#area_interpolate">#</a> area.<b>interpolate</b>([<i>interpolate</i>])
+
+If *interpolate* is specified, sets the interpolation mode to the specified string. The following modes are supported:
+
+* linear - piecewise linear segments, as in a polyline.
+* step-before - alternate between vertical and horizontal segments, as in a step function.
+* step-after - alternate between horizontal and vertical segments, as in a step function.
+* basis - a [B-spline](http://en.wikipedia.org/wiki/B-spline), with control point duplication on the ends.
+* basis-open - an open B-spline; may not intersect the start or end.
+* basis-closed - a closed B-spline, as in a loop.
+* cardinal - a [Cardinal spline](http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Cardinal_spline), with control point duplication on the ends.
+* cardinal-open - an open Cardinal spline; may not intersect the start or end, but will intersect other control points.
+* cardinal-closed - a closed Cardinal spline, as in a loop.
+* monotone - [cubic interpolation](http://en.wikipedia.org/wiki/Monotone_cubic_interpolation) that preserves monotonicity in *y*.
+
+The behavior of some of these interpolation modes may be further customized by specifying a [tension](#area_tension).
+
+If *interpolate* is not specified, returns the current interpolation mode.
 
 <a name="area_tension" href="#area_tension">#</a> area.<b>tension</b>([<i>tension</i>])
 
