@@ -348,3 +348,5 @@ In the future, we may add *x*- and *y*-accessors for parity with the line and ar
 <a name="diagonal_source" href="#diagonal_source">#</a> diagonal.<b>source</b>([<i>source</i>])
 
 <a name="diagonal_target" href="#diagonal_target">#</a> diagonal.<b>target</b>([<i>target</i>])
+
+<a name="diagonal_projection" href="#diagonal_projection">#</a> diagonal.<b>projection</b>([<i>projection</i>])
