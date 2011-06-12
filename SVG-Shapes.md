@@ -223,23 +223,41 @@ If *interpolate* is specified, sets the interpolation mode to the specified stri
 * step-after - alternate between horizontal and vertical segments, as in a step function.
 * basis - a [B-spline](http://en.wikipedia.org/wiki/B-spline), with control point duplication on the ends.
 * basis-open - an open B-spline; may not intersect the start or end.
-* basis-closed - a closed B-spline, as in a loop.
 * cardinal - a [Cardinal spline](http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Cardinal_spline), with control point duplication on the ends.
 * cardinal-open - an open Cardinal spline; may not intersect the start or end, but will intersect other control points.
-* cardinal-closed - a closed Cardinal spline, as in a loop.
 * monotone - [cubic interpolation](http://en.wikipedia.org/wiki/Monotone_cubic_interpolation) that preserves monotonicity in *y*.
 
-The behavior of some of these interpolation modes may be further customized by specifying a [tension](#area_tension).
+The behavior of some of these interpolation modes may be further customized by specifying a [tension](#area_tension). Technically, the basis-closed and cardinal-closed interpolation modes are also supported, but these make more sense in the context of a line rather than an area.
 
 If *interpolate* is not specified, returns the current interpolation mode.
 
 <a name="area_tension" href="#area_tension">#</a> area.<b>tension</b>([<i>tension</i>])
 
+If *tension* is specified, sets the Cardinal spline interpolation tension to the specified number in the range [0, 1]. The tension only affects the Cardinal interpolation modes: cardinal, cardinal-open and cardinal-closed. The default tension is 0.7. In some sense, this can be interpreted as the length of the tangent; 1 will yield all zero tangents, and 0 yields a [Catmull-Rom spline](http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull.E2.80.93Rom_spline). If *tension* is not specified, returns the current tension. Note that the tension must be specified as a constant, rather than a function, as it is constant for the entirety of the area.
+
 <a name="arc" href="#arc">#</a> d3.svg.<b>arc</b>()
+
+Constructs a new arc generator with the default *innerRadius*-, *outerRadius*-, *startAngle*- and *endAngle*-accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). The input to the generator is always a single element for which to generate an arc. The output is a closed solid arc, as in a pie or donut chart:
 
 ![arc](arc.png)
 
+In fact, four forms are possible: a [circle](http://en.wikipedia.org/wiki/Circle) (when the inner radius is zero and the angular span is greater than or equal to 2π), a [circular sector](http://en.wikipedia.org/wiki/Circular_sector) (when the inner radius is zero and the angular span is less than 2π), an [annulus](http://en.wikipedia.org/wiki/Annulus_(mathematics\)) (when the inner radius is non-zero and the angular span is greater than or equal to 2π), and an annular sector (when the inner radius is non-zero and the angular span is less than 2π).
+
 <a name="arc_innerRadius" href="#arc_innerRadius">#</a> arc.<b>innerRadius</b>([<i>radius</i>])
+
+If *radius* is specified, sets the *innerRadius*-accessor to the specified function or constant. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+
+```javascript
+function innerRadius(d) {
+  return d.innerRadius;
+}
+```
+
+Typically, a *innerRadius*-accessor is specified because the input data is in a different format, because you want to apply a [[scale|Quantitative Scales]], or because you want to specify a constant inner radius for a donut chart.
+
+The *innerRadius*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the arc function; however, in the common case that the arc generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *innerRadius*-accessor as a constant rather than a function.
+
+If *radius* is not specified, returns the current *innerRadius*-accessor.
 
 <a name="arc_outerRadius" href="#arc_outerRadius">#</a> arc.<b>outerRadius</b>([<i>radius</i>])
 
