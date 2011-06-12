@@ -214,7 +214,9 @@ function y1(d) {
 }
 ```
 
-For an example of how to specify a *y1*-accessor, see the similar [x](#area_x) accessor. If *y1* is not specified, returns the current *y1*-accessor.
+For an example of how to specify a *y1*-accessor, see the similar [x](#area_x) accessor. Note that, like most other graphics libraries, SVG uses the top-left corner as the origin and thus higher values of *y* are *lower* on the screen. For visualization we often want the origin in the bottom-left corner instead; one easy way to accomplish this is to invert the range of the *y*-scale by using range([h, 0]) instead of range([0, h]).
+
+If *y1* is not specified, returns the current *y1*-accessor.
 
 <a name="area_interpolate" href="#area_interpolate">#</a> area.<b>interpolate</b>([<i>interpolate</i>])
 
