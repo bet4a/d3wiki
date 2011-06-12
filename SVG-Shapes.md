@@ -321,6 +321,8 @@ vis.selectAll("path")
     .attr("d", d3.svg.symbol());
 ```
 
+In the future, we may add *x*- and *y*-accessors for parity with the line and area generators.
+
 <a name="symbol_type" href="#symbol_type">#</a> symbol.<b>type</b>([<i>type</i>])
 
 <a name="symbol_size" href="#symbol_size">#</a> symbol.<b>size</b>([<i>size</i>])
