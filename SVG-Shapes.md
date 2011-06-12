@@ -162,9 +162,41 @@ In this example (see the [live version](http://bl.ocks.org/1016220)), the tensio
 
 <a name="area" href="#area">#</a> d3.svg.<b>area</b>()
 
+Constructs a new area generator with the default *x*-, *y0*- and *y1*-accessor functions (that assume the input data is a two-element array of numbers; see below for details), and linear interpolation. The input to the generator is always an array of data elements for which to generate a line. The output is a closed piecewise linear curve, or polygon, as in an area chart:
+
 ![area](area.png)
 
+Conceptually, the polygon is formed using two [lines](#line): the top line is formed using the *x*- and *y1*-accessor functions, and proceeds from left-to-right; the bottom line is added to this line, using the *x*- and *y0*-accessor functions, and proceeds from right-to-left. By setting the [transform](http://www.w3.org/TR/SVG/coords.html#TransformAttribute) attribute to rotate the path element by 90 degrees, you can also generate vertical areas. By changing the interpolation, you can also generate splines and step functions.
+
+The area generator is designed to work in conjunction with the [line](#line) generator. For example, when producing an area chart, you might use an area generator with a fill style, and a line generator with a stroke style to emphasize the top edge of the area. Since the area generator is only used the set the *d* attribute, you can control the appearance of the area using standard SVG styles and attributes, such as *fill*.
+
+To create [streamgraphs](http://mbostock.github.com/d3/ex/stream.html) (stacked area charts), use the [stack](Layout-Stack) layout. This layout sets the y0 attribute for each value in a series, which can be used from the *y0*- and *y1*-accessors. Note that each series must have the same number of values per series, and each value must have the same *x*-coordinate; if you have missing data or inconsistent *x*-coordinates per series, you must resample and interpolate your data before computing the stacked layout.
+
 <a name="area_x" href="#area_x">#</a> area.<b>x</b>([<i>x</i>])
+
+If *x* is specified, sets the *x*-accessor to the specified function or constant. This accessor is invoked for each element in the data array passed to the line generator. The default accessor assumes that each input element is a two-element array of numbers:
+
+```javascript
+function x(d) {
+  return d[0];
+}
+```
+
+Typically, an *x*-accessor is specified because the input data is in a different format, or because you want to apply a [[scale|Quantitative Scales]]. For example, if your data is specified as an object with `x` and `y` attributes, rather than a tuple, you might dereference these attributes and apply the scales simultaneously:
+
+```javascript
+var x = d3.scale.linear().range([0, w]),
+    y = d3.scale.linear().range([h, 0]);
+
+var area = d3.svg.area()
+    .x(function(d) { return x(d.x); })
+    .y0(h)
+    .y1(function(d) { return y(d.y); });
+```
+
+The *x*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the line function; however, in the common case that the line generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). In this context, the index is the index into the array of control points, rather than the index of the current element in the selection. The *x*-accessor is invoked exactly once per datum, in the order specified by the data array. Thus, it is possible to specify a nondeterministic accessor, such as a random number generator. It is also possible to specify the *x*-accessor as a constant rather than a function, in which case all points will have the same *x*-coordinate.
+
+If *x* is not specified, returns the current *x*-accessor.
 
 <a name="area_y0" href="#area_y0">#</a> area.<b>y0</b>([<i>y0</i>])
 
