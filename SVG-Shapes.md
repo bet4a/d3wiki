@@ -229,7 +229,7 @@ If *tension* is specified, sets the Cardinal spline interpolation tension to the
 
 <a name="arc" href="#arc">#</a> d3.svg.<b>arc</b>()
 
-Constructs a new arc generator with the default *innerRadius*-, *outerRadius*-, *startAngle*- and *endAngle*-accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). When the default accessors assume that the arc dimensions are all specified dynamically, it is very common to set one or more of the dimensions as a constant, such as setting the inner radius to zero for a pie chart. The input to the generator is always a single element for which to generate an arc. The output is a closed solid arc, as in a pie or donut chart:
+Constructs a new arc generator with the default *innerRadius*-, *outerRadius*-, *startAngle*- and *endAngle*-accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). While the default accessors assume that the arc dimensions are all specified dynamically, it is very common to set one or more of the dimensions as a constant, such as setting the inner radius to zero for a pie chart. The input to the generator is always a single element for which to generate an arc. The output is a closed solid arc, as in a pie or donut chart:
 
 ![arc](arc.png)
 
@@ -307,7 +307,19 @@ Alternatively, you can use SVG's transform attribute to rotate text into positio
 
 <a name="symbol" href="#symbol">#</a> d3.svg.<b>symbol</b>()
 
+Constructs a new symbol generator with the default *type*- and *size*-accessor functions (that make no assumptions about input data, and produce a circle sized 64 square pixels; see below for details). While the default accessors generate static symbols, it is common to set one or more of the accessors using a function, such as setting the size proportional to a dimension of data for a scatterplot. The input to the generator is always a single element for which to generate a symbol. The output is a symbol, as in a dot plot:
+
 ![symbol](symbol.png)
+
+Note that the symbol does not include accessors for *x* and *y*. Instead, you can use the path element's [transform](http://www.w3.org/TR/SVG/coords.html#TransformAttribute) attribute to position the symbols, as in:
+
+```javascript
+vis.selectAll("path")
+    .data(data)
+  .enter().append("svg:path")
+    .attr("transform", function(d) { return "translate(" + x(d.x) + "," + y(d.y) + ")"; })
+    .attr("d", d3.svg.symbol());
+```
 
 <a name="symbol_type" href="#symbol_type">#</a> symbol.<b>type</b>([<i>type</i>])
 
