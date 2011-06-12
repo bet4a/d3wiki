@@ -124,7 +124,7 @@ function y(d) {
 }
 ```
 
-For an example of how to specify a *y*-accessor, see the similar [x](#line_x) accessor. Note that, like most other graphics libraries, SVG uses the top-left corner as the origin. Thus, higher values of *y* are lower on the screen. In math and visualizations, we often want the origin in the bottom-left corner instead; one easy way to accomplish this is to invert the range of the *y*-scale by using range([h, 0]) instead of range([0, h]).
+For an example of how to specify a *y*-accessor, see the similar [x](#line_x) accessor. Note that, like most other graphics libraries, SVG uses the top-left corner as the origin and thus higher values of *y* are *lower* on the screen. For visualization we often want the origin in the bottom-left corner instead; one easy way to accomplish this is to invert the range of the *y*-scale by using range([h, 0]) instead of range([0, h]).
 
 If *y* is not specified, returns the current *y*-accessor.
 
