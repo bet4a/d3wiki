@@ -6,6 +6,8 @@
 
 <a name="children" href="#children">#</a> treemap.<b>children</b>([<i>children</i>])
 
+<a name="links" href="#links">#</a> treemap.<b>links</b>(<i>nodes</i>)
+
 <a name="value" href="#value">#</a> treemap.<b>value</b>([<i>value</i>])
 
 <a name="size" href="#size">#</a> treemap.<b>size</b>([<i>size</i>])
