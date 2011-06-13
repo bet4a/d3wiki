@@ -1,6 +1,4 @@
-# Transitions ▸ [[Core]]
-
-> [[API Reference|API-Reference]]
+> [[API Reference]] ▸ [[Core]]
 
 A transition is a special type of [[selection|Selections]] where the operators apply smoothly over time rather than instantaneously. You derive a transition from a selection using the [[transition|Selections#transition]] operator. While transitions generally support the same operators as selections (such as [attr](#attr) and [style](#style)), not all operators are supported; for example, you must append elements before a transition starts. A [remove](#remove) operator is provided for convenient removal of elements when the transition ends.
 
