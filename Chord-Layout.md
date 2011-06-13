@@ -1,5 +1,7 @@
 > [[API Reference]] ▸ [[Layouts]]
 
+![chord](chord.png)
+
 <a name="chord" href="#chord">#</a> d3.layout.<b>chord</b>()
 
 <a name="matrix" href="#matrix">#</a> chord.<b>matrix</b>([<i>matrix</i>])
