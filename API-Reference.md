@@ -397,7 +397,7 @@ Also see the [[CSV]] module.
 * [[d3.csv.parseRows|CSV#parseRows]]
 * [[d3.csv.format|CSV#format]]
 
-## [[d3.geo (Geo)|Geo]]
+## [[d3.geo (Geography)|Geo]]
 
 ### [[Paths|Geo-Paths]]
 
