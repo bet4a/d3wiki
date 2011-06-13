@@ -452,7 +452,7 @@ function projection(d) {
 }
 ```
 
-For example, to produce a radial diagonal, assuming that the *y* attribute defines the radius in pixels, and the *x* attribute defines the angle in degrees:
+The default accessor is thus compatible with D3's various node layouts, including [tree](Layout-Tree), [partition](Layout-Partition) and [cluster](Layout-Cluster). For example, to produce a radial diagonal, assuming that the *y* attribute defines the radius in pixels, and the *x* attribute defines the angle in degrees:
 
 ```javascript
 function projection(d) {
