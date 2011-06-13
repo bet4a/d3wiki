@@ -270,11 +270,11 @@ Also see the [[CSV]] module.
 ### [[Hierarchy|Hierarchy-Layout]]
 
 * [[d3.layout.hierarchy|Hierarchy-Layout#hierarchy]] - derive a custom hierarchical layout implementation.
-* [[hierarchy.sort|Hierarchy-Layout#sort]]
-* [[hierarchy.children|Hierarchy-Layout#children]]
-* [[hierarchy.links|Hierarchy-Layout#links]]
-* [[hierarchy.value|Hierarchy-Layout#value]]
-* [[hierarchy.revalue|Hierarchy-Layout#revalue]]
+* [[hierarchy.sort|Hierarchy-Layout#sort]] - get or set the comparator function for sibling nodes.
+* [[hierarchy.children|Hierarchy-Layout#children]] - get or set the accessor function for child nodes.
+* [[hierarchy.links|Hierarchy-Layout#links]] - compute the parent-child links between tree nodes.
+* [[hierarchy.value|Hierarchy-Layout#value]] - get or set the value accessor function.
+* [[hierarchy.revalue|Hierarchy-Layout#revalue]] - recompute the hierarchy values.
 
 ### [[Histogram|Histogram-Layout]]
 
@@ -296,49 +296,49 @@ Also see the [[CSV]] module.
 ### [[Partition|Partition-Layout]]
 
 * [[d3.layout.partition|Partition-Layout#partition]] - recursively partition a node tree into a sunburst or icicle.
-* [[partition.sort|Partition-Layout#sort]]
-* [[partition.children|Partition-Layout#children]]
-* [[partition.links|Partition-Layout#links]]
-* [[partition.value|Partition-Layout#value]]
-* [[partition.size|Partition-Layout#size]]
+* [[partition.sort|Partition-Layout#sort]] - control the order in which sibling nodes are traversed.
+* [[partition.children|Partition-Layout#children]] - get or set the children accessor function.
+* [[partition.links|Partition-Layout#links]] - compute the parent-child links between tree nodes.
+* [[partition.value|Partition-Layout#value]] - get or set the value accessor used to size circles.
+* [[partition.size|Partition-Layout#size]] - specify the layout size in *x* and *y*.
 
 ### [[Pie|Pie-Layout]]
 
 * [[d3.layout.pie|Pie-Layout#pie]] - compute the start and end angles for arcs in a pie or donut chart.
-* [[pie.value|Pie-Layout#value]]
-* [[pie.sort|Pie-Layout#sort]]
-* [[pie.startAngle|Pie-Layout#startAngle]]
-* [[pie.endAngle|Pie-Layout#endAngle]]
+* [[pie.value|Pie-Layout#value]] - get or set the value accessor function.
+* [[pie.sort|Pie-Layout#sort]] - control the clockwise order of pie slices.
+* [[pie.startAngle|Pie-Layout#startAngle]] - get or set the overall start angle of the pie.
+* [[pie.endAngle|Pie-Layout#endAngle]] - get or set the overall end angle of the pie.
 
 ### [[Stack|Stack-Layout]]
 
 * [[d3.layout.stack|Stack-Layout#stack]] - compute the baseline for each series in a stacked bar or area chart.
-* [[stack.values|Stack-Layout#values]]
-* [[stack.order|Stack-Layout#order]]
-* [[stack.offset|Stack-Layout#offset]]
-* [[stack.x|Stack-Layout#x]]
-* [[stack.y|Stack-Layout#y]]
-* [[stack.out|Stack-Layout#out]]
+* [[stack.values|Stack-Layout#values]] - get or set the values accessor function per series.
+* [[stack.order|Stack-Layout#order]] - control the order in which series are stacked.
+* [[stack.offset|Stack-Layout#offset]] - specify the overall baseline algorithm.
+* [[stack.x|Stack-Layout#x]] - get or set the *x*-dimension accessor function.
+* [[stack.y|Stack-Layout#y]] - get or set the *y*-dimension accessor function.
+* [[stack.out|Stack-Layout#out]] - get or set the output function for storing the baseline.
 
 ### [[Tree|Tree-Layout]]
 
 * [[d3.layout.tree|Tree-Layout#tree]] - position a tree of nodes tidily.
-* [[tree.sort|Tree-Layout#sort]]
-* [[tree.children|Tree-Layout#children]]
-* [[tree.links|Tree-Layout#links]]
-* [[tree.separation|Tree-Layout#separation]]
-* [[tree.size|Tree-Layout#size]]
+* [[tree.sort|Tree-Layout#sort]] - control the order in which sibling nodes are traversed.
+* [[tree.children|Tree-Layout#children]] - get or set the children accessor function.
+* [[tree.links|Tree-Layout#links]] - compute the parent-child links between tree nodes.
+* [[tree.separation|Tree-Layout#separation]] - get or set the spacing function between neighboring nodes.
+* [[tree.size|Tree-Layout#size]] - specify the layout size in *x* and *y*.
 
 ### [[Treemap|Treemap-Layout]]
 
 * [[d3.layout.treemap|Treemap-Layout#treemap]] - use recursive spatial subdivision to display a tree of nodes.
-* [[treemap.sort|Treemap-Layout#sort]]
-* [[treemap.children|Treemap-Layout#children]]
-* [[treemap.links|Treemap-Layout#links]]
-* [[treemap.value|Treemap-Layout#value]]
-* [[treemap.size|Treemap-Layout#size]]
-* [[treemap.round|Treemap-Layout#round]]
-* [[treemap.sticky|Treemap-Layout#sticky]]
+* [[treemap.sort|Treemap-Layout#sort]] - control the order in which sibling nodes are traversed.
+* [[treemap.children|Treemap-Layout#children]] - get or set the children accessor function.
+* [[treemap.links|Treemap-Layout#links]] - compute the parent-child links between tree nodes.
+* [[treemap.value|Treemap-Layout#value]] - get or set the value accessor used to size treemap cells.
+* [[treemap.size|Treemap-Layout#size]] - specify the layout size in *x* and *y*.
+* [[treemap.round|Treemap-Layout#round]] - enable or disable rounding to exact pixels.
+* [[treemap.sticky|Treemap-Layout#sticky]] - make the layout sticky for stable updates.
 
 ## [[d3.chart (Charts)|Charts]]
 
