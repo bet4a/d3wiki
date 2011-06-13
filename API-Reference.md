@@ -2,7 +2,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 is broken up into severa
 
 D3 uses [[semantic versioning|http://semver.org]]. You can find the current version of D3 as `d3.version`.
 
-## d3 (core)
+## [d3 (core)](Core)
 
 ### [[Selections]]
 
