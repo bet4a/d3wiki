@@ -1,4 +1,4 @@
-> [[API Reference]]
+> [[API Reference]] ▸ [[Core]]
 
 SVG has a different namespace from HTML, so D3 provides a few tools to simplify dealing with namespaces.
 
