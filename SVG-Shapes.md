@@ -166,7 +166,7 @@ Conceptually, the polygon is formed using two [lines](#line): the top line is fo
 
 The area generator is designed to work in conjunction with the [line](#line) generator. For example, when producing an area chart, you might use an area generator with a fill style, and a line generator with a stroke style to emphasize the top edge of the area. Since the area generator is only used the set the *d* attribute, you can control the appearance of the area using standard SVG styles and attributes, such as *fill*.
 
-To create [streamgraphs](http://mbostock.github.com/d3/ex/stream.html) (stacked area charts), use the [stack](Layout-Stack) layout. This layout sets the y0 attribute for each value in a series, which can be used from the *y0*- and *y1*-accessors. Note that each series must have the same number of values per series, and each value must have the same *x*-coordinate; if you have missing data or inconsistent *x*-coordinates per series, you must resample and interpolate your data before computing the stacked layout.
+To create [streamgraphs](http://mbostock.github.com/d3/ex/stream.html) (stacked area charts), use the [stack](Stack-Layout) layout. This layout sets the y0 attribute for each value in a series, which can be used from the *y0*- and *y1*-accessors. Note that each series must have the same number of values per series, and each value must have the same *x*-coordinate; if you have missing data or inconsistent *x*-coordinates per series, you must resample and interpolate your data before computing the stacked layout.
 
 <a name="area_x" href="#area_x">#</a> area.<b>x</b>([<i>x</i>])
 
@@ -273,7 +273,7 @@ function startAngle(d) {
 }
 ```
 
-For constructing pie or donut charts, you will need to compute the start angle of each arc as the end angle of the previous arc. This can be done very conveniently using the [pie](Layout-Pie) layout, which is similar to the [stack](Layout-Stack) layout; given a set of input data, the pie layout will construct arc objects with startAngle and endAngle attributes that you can use with the default arc accessors.
+For constructing pie or donut charts, you will need to compute the start angle of each arc as the end angle of the previous arc. This can be done very conveniently using the [pie](Pie-Layout) layout, which is similar to the [stack](Stack-Layout) layout; given a set of input data, the pie layout will construct arc objects with startAngle and endAngle attributes that you can use with the default arc accessors.
 
 The *startAngle*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *startAngle*-accessor as a constant rather than a function.
 
@@ -287,7 +287,7 @@ function endAngle(d) {
 }
 ```
 
-For constructing pie or donut charts, you will need to compute the end angle of each arc as offset from the start angle. This can be done very conveniently using the [pie](Layout-Pie) layout, which is similar to the [stack](Layout-Stack) layout; given a set of input data, the pie layout will construct arc objects with startAngle and endAngle attributes that you can use with the default arc accessors.
+For constructing pie or donut charts, you will need to compute the end angle of each arc as offset from the start angle. This can be done very conveniently using the [pie](Pie-Layout) layout, which is similar to the [stack](Stack-Layout) layout; given a set of input data, the pie layout will construct arc objects with startAngle and endAngle attributes that you can use with the default arc accessors.
 
 The *endAngle*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *endAngle*-accessor as a constant rather than a function.
 
@@ -348,7 +348,7 @@ Constructs a new chord generator with the default accessor functions (that assum
 
 ![chord](chord.png)
 
-A chord generator is often used in conjunction with an [arc generator](#arc), so as to draw annular segments at the start and end of the chords. In addition, the [chord layout](Layout-Chord) is useful for generating objects that describe a set of grouped chords from a matrix, compatible with the default accessors. 
+A chord generator is often used in conjunction with an [arc generator](#arc), so as to draw annular segments at the start and end of the chords. In addition, the [chord layout](Chord-Layout) is useful for generating objects that describe a set of grouped chords from a matrix, compatible with the default accessors. 
 
 <a name="chord_source" href="#chord_source">#</a> chord.<b>source</b>([<i>source</i>])
 
@@ -452,7 +452,7 @@ function projection(d) {
 }
 ```
 
-The default accessor is thus compatible with D3's various node layouts, including [tree](Layout-Tree), [partition](Layout-Partition) and [cluster](Layout-Cluster). For example, to produce a radial diagonal, assuming that the *y* attribute defines the radius in pixels, and the *x* attribute defines the angle in degrees:
+The default accessor is thus compatible with D3's various node layouts, including [tree](Tree-Layout), [partition](Partition-Layout) and [cluster](Cluster-Layout). For example, to produce a radial diagonal, assuming that the *y* attribute defines the radius in pixels, and the *x* attribute defines the angle in degrees:
 
 ```javascript
 function projection(d) {
