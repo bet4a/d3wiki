@@ -344,7 +344,11 @@ If *size* is specified, sets the *size*-accessor to the specified function or co
 
 <a name="chord" href="#chord">#</a> d3.svg.<b>chord</b>()
 
+Constructs a new chord generator with the default accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). While the default accessors assume that the chord dimensions are all specified dynamically, it is very common to set one or more of the dimensions as a constant, such as setting the radius to a constant. The input to the generator is always a single element for which to generate a chord. The output is a closed path connecting two [arcs](http://en.wikipedia.org/wiki/Arc_(geometry\)) with quadratic Bézier curves, as in a chord diagram:
+
 ![chord](chord.png)
+
+A chord generator is often used in conjunction with an [arc generator](#arc), so as to draw annular segments at the start and end of the chords. In addition, the [chord layout](Layout-Chord) is useful for generating objects that describe a set of grouped chords from a matrix, compatible with the default accessors. 
 
 <a name="chord_radius" href="#chord_radius">#</a> chord.<b>radius</b>([<i>radius</i>])
 
