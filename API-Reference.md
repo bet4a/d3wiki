@@ -230,6 +230,26 @@ Also see the [[CSV]] module.
 
 ## [d3.layout (Layouts)](Layouts)
 
+### [[Chord|Chord-Layout]]
+
+* [[d3.layout.chord|Chord-Layout#chord]]
+* [[chord.matrix|Chord-Layout#matrix]]
+* [[chord.padding|Chord-Layout#padding]]
+* [[chord.sortGroups|Chord-Layout#sortGroups]]
+* [[chord.sortSubgroups|Chord-Layout#sortSubgroups]]
+* [[chord.sortChords|Chord-Layout#sortChords]]
+* [[chord.chords|Chord-Layout#chords]]
+* [[chord.groups|Chord-Layout#groups]]
+
+### [[Cluster|Cluster-Layout]]
+
+* [[d3.layout.cluster|Cluster-Layout#cluster]]
+* [[cluster.sort|Cluster-Layout#sort]]
+* [[cluster.children|Cluster-Layout#children]]
+* [[cluster.links|Cluster-Layout#links]]
+* [[cluster.separation|Cluster-Layout#separation]]
+* [[cluster.size|Cluster-Layout#size]]
+
 ### [[Force|Force-Layout]]
 
 * [[d3.layout.force|Force-Layout#force]]
@@ -247,6 +267,46 @@ Also see the [[CSV]] module.
 * [[force.stop|Force-Layout#stop]]
 * [[force.drag|Force-Layout#drag]]
 
+### [[Hierarchy|Hierarchy-Layout]]
+
+* [[d3.layout.hierarchy|Hierarchy-Layout#hierarchy]]
+* [[hierarchy.sort|Hierarchy-Layout#sort]]
+* [[hierarchy.children|Hierarchy-Layout#children]]
+* [[hierarchy.value|Hierarchy-Layout#value]]
+* [[hierarchy.revalue|Hierarchy-Layout#revalue]]
+
+### [[Histogram|Histogram-Layout]]
+
+* [[d3.layout.histogram|Histogram-Layout#histogram]]
+* [[histogram.value|Histogram-Layout#value]]
+* [[histogram.range|Histogram-Layout#range]]
+* [[histogram.bins|Histogram-Layout#bins]]
+* [[histogram.frequency|Histogram-Layout#frequency]]
+
+### [[Pack|Pack-Layout]]
+
+* [[d3.layout.pack|Pack-Layout#pack]]
+* [[pack.sort|Pack-Layout#sort]]
+* [[pack.children|Pack-Layout#children]]
+* [[pack.value|Pack-Layout#value]]
+* [[pack.size|Pack-Layout#size]]
+
+### [[Partition|Partition-Layout]]
+
+* [[d3.layout.partition|Partition-Layout#partition]]
+* [[partition.sort|Partition-Layout#sort]]
+* [[partition.children|Partition-Layout#children]]
+* [[partition.value|Partition-Layout#value]]
+* [[partition.size|Partition-Layout#size]]
+
+### [[Pie|Pie-Layout]]
+
+* [[d3.layout.pie|Pie-Layout#pie]]
+* [[pie.value|Pie-Layout#value]]
+* [[pie.sort|Pie-Layout#sort]]
+* [[pie.startAngle|Pie-Layout#startAngle]]
+* [[pie.endAngle|Pie-Layout#endAngle]]
+
 ### [[Stack|Stack-Layout]]
 
 * [[d3.layout.stack|Stack-Layout#stack]]
@@ -257,16 +317,6 @@ Also see the [[CSV]] module.
 * [[stack.y|Stack-Layout#y]]
 * [[stack.out|Stack-Layout#out]]
 
-### [[Treemap|Treemap-Layout]]
-
-* [[d3.layout.treemap|Treemap-Layout#treemap]]
-* [[treemap.sort|Treemap-Layout#sort]]
-* [[treemap.children|Treemap-Layout#children]]
-* [[treemap.value|Treemap-Layout#value]]
-* [[treemap.size|Treemap-Layout#size]]
-* [[treemap.round|Treemap-Layout#round]]
-* [[treemap.sticky|Treemap-Layout#sticky]]
-
 ### [[Tree|Tree-Layout]]
 
 * [[d3.layout.tree|Tree-Layout#tree]]
@@ -276,65 +326,15 @@ Also see the [[CSV]] module.
 * [[tree.separation|Tree-Layout#separation]]
 * [[tree.size|Tree-Layout#size]]
 
-### [[Pie|Pie-Layout]]
+### [[Treemap|Treemap-Layout]]
 
-* [[d3.layout.pie|Pie-Layout#pie]]
-* [[pie.value|Pie-Layout#value]]
-* [[pie.sort|Pie-Layout#sort]]
-* [[pie.startAngle|Pie-Layout#startAngle]]
-* [[pie.endAngle|Pie-Layout#endAngle]]
-
-### [[Partition|Partition-Layout]]
-
-* [[d3.layout.partition|Partition-Layout#partition]]
-* [[partition.sort|Partition-Layout#sort]]
-* [[partition.children|Partition-Layout#children]]
-* [[partition.value|Partition-Layout#value]]
-* [[partition.size|Partition-Layout#size]]
-
-### [[Pack|Pack-Layout]]
-
-* [[d3.layout.pack|Pack-Layout#pack]]
-* [[pack.sort|Pack-Layout#sort]]
-* [[pack.children|Pack-Layout#children]]
-* [[pack.value|Pack-Layout#value]]
-* [[pack.size|Pack-Layout#size]]
-
-### [[Histogram|Histogram-Layout]]
-
-* [[d3.layout.histogram|Histogram-Layout#histogram]]
-* [[histogram.value|Histogram-Layout#value]]
-* [[histogram.range|Histogram-Layout#range]]
-* [[histogram.bins|Histogram-Layout#bins]]
-* [[histogram.frequency|Histogram-Layout#frequency]]
-
-### [[Hierarchy|Hierarchy-Layout]]
-
-* [[d3.layout.hierarchy|Hierarchy-Layout#hierarchy]]
-* [[hierarchy.sort|Hierarchy-Layout#sort]]
-* [[hierarchy.children|Hierarchy-Layout#children]]
-* [[hierarchy.value|Hierarchy-Layout#value]]
-* [[hierarchy.revalue|Hierarchy-Layout#revalue]]
-
-### [[Cluster|Cluster-Layout]]
-
-* [[d3.layout.cluster|Cluster-Layout#cluster]]
-* [[cluster.sort|Cluster-Layout#sort]]
-* [[cluster.children|Cluster-Layout#children]]
-* [[cluster.links|Cluster-Layout#links]]
-* [[cluster.separation|Cluster-Layout#separation]]
-* [[cluster.size|Cluster-Layout#size]]
-
-### [[Chord|Chord-Layout]]
-
-* [[d3.layout.chord|Chord-Layout#chord]]
-* [[chord.matrix|Chord-Layout#matrix]]
-* [[chord.padding|Chord-Layout#padding]]
-* [[chord.sortGroups|Chord-Layout#sortGroups]]
-* [[chord.sortSubgroups|Chord-Layout#sortSubgroups]]
-* [[chord.sortChords|Chord-Layout#sortChords]]
-* [[chord.chords|Chord-Layout#chords]]
-* [[chord.groups|Chord-Layout#groups]]
+* [[d3.layout.treemap|Treemap-Layout#treemap]]
+* [[treemap.sort|Treemap-Layout#sort]]
+* [[treemap.children|Treemap-Layout#children]]
+* [[treemap.value|Treemap-Layout#value]]
+* [[treemap.size|Treemap-Layout#size]]
+* [[treemap.round|Treemap-Layout#round]]
+* [[treemap.sticky|Treemap-Layout#sticky]]
 
 ## [[d3.chart (Charts)|Charts]]
 
