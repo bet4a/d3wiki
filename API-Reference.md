@@ -244,28 +244,28 @@ Also see the [[CSV]] module.
 ### [[Cluster|Cluster-Layout]]
 
 * [[d3.layout.cluster|Cluster-Layout#cluster]] - cluster entities into a dendrogram.
-* [[cluster.sort|Cluster-Layout#sort]]
-* [[cluster.children|Cluster-Layout#children]]
-* [[cluster.links|Cluster-Layout#links]]
-* [[cluster.separation|Cluster-Layout#separation]]
-* [[cluster.size|Cluster-Layout#size]]
+* [[cluster.sort|Cluster-Layout#sort]] - get or set the comparator function for sibling nodes.
+* [[cluster.children|Cluster-Layout#children]] - get or set the accessor function for child nodes.
+* [[cluster.links|Cluster-Layout#links]] - compute the parent-child links between tree nodes.
+* [[cluster.separation|Cluster-Layout#separation]] - get or set the spacing function between neighboring nodes.
+* [[cluster.size|Cluster-Layout#size]] - get or set the layout size in *x* and *y*.
 
 ### [[Force|Force-Layout]]
 
 * [[d3.layout.force|Force-Layout#force]] - position linked nodes using physical simulation.
-* [[force.on|Force-Layout#on]]
-* [[force.nodes|Force-Layout#nodes]]
-* [[force.links|Force-Layout#links]]
-* [[force.size|Force-Layout#size]]
-* [[force.distance|Force-Layout#distance]]
-* [[force.drag|Force-Layout#drag]]
-* [[force.charge|Force-Layout#charge]]
-* [[force.gravity|Force-Layout#gravity]]
-* [[force.theta|Force-Layout#theta]]
-* [[force.start|Force-Layout#start]]
-* [[force.resume|Force-Layout#resume]]
-* [[force.stop|Force-Layout#stop]]
-* [[force.drag|Force-Layout#drag]]
+* [[force.on|Force-Layout#on]] - listen to updates in the computed layout positions.
+* [[force.nodes|Force-Layout#nodes]] - get or set the array of nodes to layout.
+* [[force.links|Force-Layout#links]] - get or set the array of links between nodes.
+* [[force.size|Force-Layout#size]] - get or set the layout size in *x* and *y*.
+* [[force.distance|Force-Layout#distance]] - get or set the link distance.
+* [[force.friction|Force-Layout#friction]] - get or set the friction coefficient.
+* [[force.charge|Force-Layout#charge]] - get or set the charge strength.
+* [[force.gravity|Force-Layout#gravity]] - get or set the gravity strength.
+* [[force.theta|Force-Layout#theta]] - get or set the accuracy of the charge interaction.
+* [[force.start|Force-Layout#start]] - start or restart the simulation when the nodes change.
+* [[force.resume|Force-Layout#resume]] - reheat the cooling parameter and restart simulation.
+* [[force.stop|Force-Layout#stop]] - immediately terminate the simulation.
+* [[force.drag|Force-Layout#drag]] - bind a behavior to nodes to allow interactive dragging.
 
 ### [[Hierarchy|Hierarchy-Layout]]
 
