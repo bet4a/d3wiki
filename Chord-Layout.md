@@ -6,11 +6,11 @@
 
 <a name="padding" href="#padding">#</a> chord.<b>padding</b>([<i>padding</i>])
 
-<a name="sortGroups" href="#sortGroups">#</a> chord.<b>sortGroups</b>([<i>sort</i>])
+<a name="sortGroups" href="#sortGroups">#</a> chord.<b>sortGroups</b>([<i>comparator</i>])
 
-<a name="sortSubgroups" href="#sortSubgroups">#</a> chord.<b>sortSubgroups</b>([<i>sort</i>])
+<a name="sortSubgroups" href="#sortSubgroups">#</a> chord.<b>sortSubgroups</b>([<i>comparator</i>])
 
-<a name="sortChords" href="#sortChords">#</a> chord.<b>sortChords</b>([<i>sort</i>])
+<a name="sortChords" href="#sortChords">#</a> chord.<b>sortChords</b>([<i>comparator</i>])
 
 <a name="chords" href="#chords">#</a> chord.<b>chords</b>()
 
