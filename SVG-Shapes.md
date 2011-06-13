@@ -412,10 +412,44 @@ The *endAngle*-accessor is invoked in a similar manner as other value functions 
 
 <a name="diagonal" href="#diagonal">#</a> d3.svg.<b>diagonal</b>()
 
+Constructs a new diagonal generator with the default accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). The input to the generator is always a single element for which to generate a diagonal. The output is a cubic Bézier connecting the source and target points; the tangents are specified to produce smooth fan-in and fan-out when connecting nodes, as in a [node-link diagram](http://mbostock.github.com/d3/ex/tree.html):
+
 ![diagonal](diagonal.png)
+
+Although diagonals are work by default in Cartesian (axis-aligned) orientations, they can be made to work in radial and other layouts using a [projection](#diagonal_projection).
 
 <a name="diagonal_source" href="#diagonal_source">#</a> diagonal.<b>source</b>([<i>source</i>])
 
+If *source* is specified, sets the *source*-accessor to the specified function or constant. If *source* is not specified, returns the current *source*-accessor. The purpose of the *source* accessor is to return an object that describes the starting point of the diagonal. The returned object is subsequently passed to the [projection](#diagonal_projection). The default accessor assumes that the input data is an object with suitably-named attributes:
+
+```javascript
+function source(d) {
+  return d.source;
+}
+```
+
+The *source*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the diagonal function; however, in the common case that the symbol generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *source*-accessor as a constant rather than a function.
+
 <a name="diagonal_target" href="#diagonal_target">#</a> diagonal.<b>target</b>([<i>target</i>])
 
+If *target* is specified, sets the *target*-accessor to the specified function or constant. If *target* is not specified, returns the current *target*-accessor. The purpose of the *target* accessor is to return an object that describes the ending point of the diagonal. The returned object is subsequently passed to the [projection](#diagonal_projection). The default accessor assumes that the input data is an object with suitably-named attributes:
+
+```javascript
+function target(d) {
+  return d.target;
+}
+```
+
+The *target*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *source*-accessor as a constant rather than a function.
+
 <a name="diagonal_projection" href="#diagonal_projection">#</a> diagonal.<b>projection</b>([<i>projection</i>])
+
+If *projection* is specified, sets the *projection* to the specified function. If *projection* is not specified, returns the current *projection*. The *projection* converts the starting or ending point returned by the source and target accessors, returning a two-element array of numbers. The default accessor assumes that the input point is an object with *x* and *y* attributes:
+
+```javascript
+function projection(d) {
+  return [d.x, d.y];
+}
+```
+
+The *projection* is invoked in a similar manner as other value functions in D3. The function is passed two arguments, the current source or target point (derived from the current data, d) and the current index (i).
