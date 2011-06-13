@@ -1,4 +1,4 @@
-# Transitions
+# Transitions ▸ [[Core]]
 
 > [[API Reference|API-Reference]]
 
