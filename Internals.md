@@ -1,4 +1,4 @@
-> [[API Reference]]
+> [[API Reference]] ▸ [[Core]]
 
 D3 has a variety of internal methods that may be useful if you are implementing your own layout or chart template.
 
