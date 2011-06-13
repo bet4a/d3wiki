@@ -360,6 +360,8 @@ function source(d) {
 }
 ```
 
+The purpose of the *source* accessor is to return an object that describes the starting arc of the chord. The returned object is subsequently passed to the [radius](#chord_radius), [startAngle](#chord_startAngle) and [endAngle](#chord_endAngle) accessors. This allows these other accessors to be reused for both the source and target arc descriptions.
+
 The *source*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the arc function; however, in the common case that the symbol generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *source*-accessor as a constant rather than a function.
 
 <a name="chord_target" href="#chord_target">#</a> chord.<b>target</b>([<i>target</i>])
@@ -371,6 +373,8 @@ function target(d) {
   return d.target;
 }
 ```
+
+The purpose of the *target* accessor is to return an object that describes the ending arc of the chord. The returned object is subsequently passed to the [radius](#chord_radius), [startAngle](#chord_startAngle) and [endAngle](#chord_endAngle) accessors. This allows these other accessors to be reused for both the source and target arc descriptions.
 
 The *target*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *target*-accessor as a constant rather than a function.
 
