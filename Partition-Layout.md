@@ -6,6 +6,8 @@
 
 <a name="children" href="#children">#</a> partition.<b>children</b>([<i>children</i>])
 
+<a name="links" href="#links">#</a> partition.<b>links</b>(<i>nodes</i>)
+
 <a name="value" href="#value">#</a> partition.<b>value</b>([<i>value</i>])
 
 <a name="size" href="#size">#</a> partition.<b>size</b>([<i>size</i>])
