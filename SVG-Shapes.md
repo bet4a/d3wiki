@@ -344,21 +344,41 @@ If *size* is specified, sets the *size*-accessor to the specified function or co
 
 <a name="chord" href="#chord">#</a> d3.svg.<b>chord</b>()
 
-Constructs a new chord generator with the default accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). While the default accessors assume that the chord dimensions are all specified dynamically, it is very common to set one or more of the dimensions as a constant, such as setting the radius to a constant. The input to the generator is always a single element for which to generate a chord. The output is a closed path connecting two [arcs](http://en.wikipedia.org/wiki/Arc_(geometry\)) with quadratic Bézier curves, as in a chord diagram:
+Constructs a new chord generator with the default accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). While the default accessors assume that the chord dimensions are all specified dynamically, it is very common to set one or more of the dimensions as a constant, such as the radius. The input to the generator is always a single element for which to generate a chord. The output is a closed path connecting two [arcs](http://en.wikipedia.org/wiki/Arc_(geometry\)) with quadratic Bézier curves, as in a [chord diagram](http://mbostock.github.com/d3/ex/chord.html):
 
 ![chord](chord.png)
 
 A chord generator is often used in conjunction with an [arc generator](#arc), so as to draw annular segments at the start and end of the chords. In addition, the [chord layout](Layout-Chord) is useful for generating objects that describe a set of grouped chords from a matrix, compatible with the default accessors. 
+
+<a name="chord_source" href="#chord_source">#</a> chord.<b>source</b>([<i>source</i>])
+
+If *source* is specified, sets the *source*-accessor to the specified function or constant. If *source* is not specified, returns the current *source*-accessor. The default accessor assumes that the input data is an object with suitably-named attributes:
+
+```javascript
+function source(d) {
+  return d.source;
+}
+```
+
+The *source*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the arc function; however, in the common case that the symbol generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *source*-accessor as a constant rather than a function.
+
+<a name="chord_target" href="#chord_target">#</a> chord.<b>target</b>([<i>target</i>])
+
+If *target* is specified, sets the *target*-accessor to the specified function or constant. If *target* is not specified, returns the current *target*-accessor. The default accessor assumes that the input data is an object with suitably-named attributes:
+
+```javascript
+function target(d) {
+  return d.target;
+}
+```
+
+The *target*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *target*-accessor as a constant rather than a function.
 
 <a name="chord_radius" href="#chord_radius">#</a> chord.<b>radius</b>([<i>radius</i>])
 
 <a name="chord_startAngle" href="#chord_startAngle">#</a> chord.<b>startAngle</b>([<i>angle</i>])
 
 <a name="chord_endAngle" href="#chord_endAngle">#</a> chord.<b>endAngle</b>([<i>angle</i>])
-
-<a name="chord_source" href="#chord_source">#</a> chord.<b>source</b>([<i>source</i>])
-
-<a name="chord_target" href="#chord_target">#</a> chord.<b>target</b>([<i>target</i>])
 
 <a name="diagonal" href="#diagonal">#</a> d3.svg.<b>diagonal</b>()
 
