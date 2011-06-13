@@ -233,13 +233,13 @@ Also see the [[CSV]] module.
 ### [[Chord|Chord-Layout]]
 
 * [[d3.layout.chord|Chord-Layout#chord]] - produce a chord diagram from a matrix of relationships.
-* [[chord.matrix|Chord-Layout#matrix]]
-* [[chord.padding|Chord-Layout#padding]]
-* [[chord.sortGroups|Chord-Layout#sortGroups]]
-* [[chord.sortSubgroups|Chord-Layout#sortSubgroups]]
-* [[chord.sortChords|Chord-Layout#sortChords]]
-* [[chord.chords|Chord-Layout#chords]]
-* [[chord.groups|Chord-Layout#groups]]
+* [[chord.matrix|Chord-Layout#matrix]] - get or set the matrix data backing the layout.
+* [[chord.padding|Chord-Layout#padding]] - get or set the angular padding between chord segments.
+* [[chord.sortGroups|Chord-Layout#sortGroups]] - get or set the comparator function for groups.
+* [[chord.sortSubgroups|Chord-Layout#sortSubgroups]] - get or set the comparator function for subgroups.
+* [[chord.sortChords|Chord-Layout#sortChords]] - get or set the comparator function for chords (z-order).
+* [[chord.chords|Chord-Layout#chords]] - retrieve the computed chord angles.
+* [[chord.groups|Chord-Layout#groups]] - retrieve the computed group angles.
 
 ### [[Cluster|Cluster-Layout]]
 
