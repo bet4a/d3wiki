@@ -1,4 +1,4 @@
-> [[API Reference]]
+> [[API Reference]] ▸ [[Scales]]
 
 **Scales** are functions that map from an input domain to an output range. **Ordinal** scales have a discrete domain, such as a set of names or categories. There are also [[quantitative scales|Quantitative-Scales]], which have a continuous domain, such the set of real numbers. Scales are an optional feature in D3; you don't have to use them, if you prefer to do the math yourself. However, using scales can greatly simplify the code needed to map a dimension of data to a visual representation.
 
