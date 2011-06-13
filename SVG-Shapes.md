@@ -321,7 +321,7 @@ vis.selectAll("path")
     .attr("d", d3.svg.symbol());
 ```
 
-In the future, we may add *x*- and *y*-accessors for parity with the line and area generators. The symbol will be centered at the origin (0,0) of the local coordinate system.
+In the future, we may add *x*- and *y*-accessors for parity with the line and area generators. The symbol will be centered at the origin (0,0) of the local coordinate system. You can also use SVG's built-in basic shapes to produce many of these symbol types, though D3's symbol generator is useful in conjunction with path elements because you can easily change the symbol type and size as a function of data.
 
 <a name="symbol_type" href="#symbol_type">#</a> symbol.<b>type</b>([<i>type</i>])
 
@@ -334,11 +334,13 @@ If *type* is specified, sets the *type*-accessor to the specified function or co
 * triangle-down - a downward-pointing [equilateral triangle](http://en.wikipedia.org/wiki/Equilateral_triangle).
 * triangle-up - an upward-pointing equilateral triangle.
 
-Types are normalized to have the same area in square pixels, according to the specified [size](#symbol_size). However, note that different types' sizes may be affected by the stroke and stroke width in different ways. All of the types are designed to be visible when only a fill style is used (unlike the Protovis cross).
+Types are normalized to have the same area in square pixels, according to the specified [size](#symbol_size). However, note that different types' sizes may be affected by the stroke and stroke width in different ways. All of the types are designed to be visible when only a fill style is used (unlike the Protovis cross), although they generally look better when both a fill and stroke is used.
 
 The *type*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the arc function; however, in the common case that the symbol generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *type*-accessor as a constant rather than a function.
 
 <a name="symbol_size" href="#symbol_size">#</a> symbol.<b>size</b>([<i>size</i>])
+
+If *size* is specified, sets the *size*-accessor to the specified function or constant in square pixels. If *size* is not specified, returns the current *size*-accessor.  The default is 64. This accessor is invoked on the argument passed to the symbol generator. Typically, a *size*-accessor is specified as a function when you want the size of the symbol to encode a [quantitative dimension](Quantitative-Scales) of data, or a constant it you simply want to make all the dots bigger or smaller. If you want to specify a radius rather than the size, you must do so indirectly, for example using a [pow](Quantitative-Scales#pow) scale with exponent 2.
 
 <a name="chord" href="#chord">#</a> d3.svg.<b>chord</b>()
 
