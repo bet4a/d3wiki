@@ -232,7 +232,7 @@ Also see the [[CSV]] module.
 
 ### [[Chord|Chord-Layout]]
 
-* [[d3.layout.chord|Chord-Layout#chord]]
+* [[d3.layout.chord|Chord-Layout#chord]] - produce a chord diagram from a matrix of relationships.
 * [[chord.matrix|Chord-Layout#matrix]]
 * [[chord.padding|Chord-Layout#padding]]
 * [[chord.sortGroups|Chord-Layout#sortGroups]]
@@ -243,7 +243,7 @@ Also see the [[CSV]] module.
 
 ### [[Cluster|Cluster-Layout]]
 
-* [[d3.layout.cluster|Cluster-Layout#cluster]]
+* [[d3.layout.cluster|Cluster-Layout#cluster]] - cluster entities into a dendrogram.
 * [[cluster.sort|Cluster-Layout#sort]]
 * [[cluster.children|Cluster-Layout#children]]
 * [[cluster.links|Cluster-Layout#links]]
@@ -252,7 +252,7 @@ Also see the [[CSV]] module.
 
 ### [[Force|Force-Layout]]
 
-* [[d3.layout.force|Force-Layout#force]]
+* [[d3.layout.force|Force-Layout#force]] - position linked nodes using physical simulation.
 * [[force.on|Force-Layout#on]]
 * [[force.nodes|Force-Layout#nodes]]
 * [[force.links|Force-Layout#links]]
@@ -269,7 +269,7 @@ Also see the [[CSV]] module.
 
 ### [[Hierarchy|Hierarchy-Layout]]
 
-* [[d3.layout.hierarchy|Hierarchy-Layout#hierarchy]]
+* [[d3.layout.hierarchy|Hierarchy-Layout#hierarchy]] - derive a custom hierarchical layout implementation.
 * [[hierarchy.sort|Hierarchy-Layout#sort]]
 * [[hierarchy.children|Hierarchy-Layout#children]]
 * [[hierarchy.value|Hierarchy-Layout#value]]
@@ -277,7 +277,7 @@ Also see the [[CSV]] module.
 
 ### [[Histogram|Histogram-Layout]]
 
-* [[d3.layout.histogram|Histogram-Layout#histogram]]
+* [[d3.layout.histogram|Histogram-Layout#histogram]] - compute the distribution of data using quantized bins.
 * [[histogram.value|Histogram-Layout#value]]
 * [[histogram.range|Histogram-Layout#range]]
 * [[histogram.bins|Histogram-Layout#bins]]
@@ -285,7 +285,7 @@ Also see the [[CSV]] module.
 
 ### [[Pack|Pack-Layout]]
 
-* [[d3.layout.pack|Pack-Layout#pack]]
+* [[d3.layout.pack|Pack-Layout#pack]] - produce a hierarchical layout using recursive circle-packing.
 * [[pack.sort|Pack-Layout#sort]]
 * [[pack.children|Pack-Layout#children]]
 * [[pack.value|Pack-Layout#value]]
@@ -293,7 +293,7 @@ Also see the [[CSV]] module.
 
 ### [[Partition|Partition-Layout]]
 
-* [[d3.layout.partition|Partition-Layout#partition]]
+* [[d3.layout.partition|Partition-Layout#partition]] - recursively partition a node tree into a sunburst or icicle.
 * [[partition.sort|Partition-Layout#sort]]
 * [[partition.children|Partition-Layout#children]]
 * [[partition.value|Partition-Layout#value]]
@@ -301,7 +301,7 @@ Also see the [[CSV]] module.
 
 ### [[Pie|Pie-Layout]]
 
-* [[d3.layout.pie|Pie-Layout#pie]]
+* [[d3.layout.pie|Pie-Layout#pie]] - compute the start and end angles for arcs in a pie or donut chart.
 * [[pie.value|Pie-Layout#value]]
 * [[pie.sort|Pie-Layout#sort]]
 * [[pie.startAngle|Pie-Layout#startAngle]]
@@ -309,7 +309,7 @@ Also see the [[CSV]] module.
 
 ### [[Stack|Stack-Layout]]
 
-* [[d3.layout.stack|Stack-Layout#stack]]
+* [[d3.layout.stack|Stack-Layout#stack]] - compute the baseline for each series in a stacked bar or area chart.
 * [[stack.values|Stack-Layout#values]]
 * [[stack.order|Stack-Layout#order]]
 * [[stack.offset|Stack-Layout#offset]]
@@ -319,7 +319,7 @@ Also see the [[CSV]] module.
 
 ### [[Tree|Tree-Layout]]
 
-* [[d3.layout.tree|Tree-Layout#tree]]
+* [[d3.layout.tree|Tree-Layout#tree]] - position a tree of nodes tidily.
 * [[tree.sort|Tree-Layout#sort]]
 * [[tree.children|Tree-Layout#children]]
 * [[tree.links|Tree-Layout#links]]
@@ -328,7 +328,7 @@ Also see the [[CSV]] module.
 
 ### [[Treemap|Treemap-Layout]]
 
-* [[d3.layout.treemap|Treemap-Layout#treemap]]
+* [[d3.layout.treemap|Treemap-Layout#treemap]] - use recursive spatial subdivision to display a tree of nodes.
 * [[treemap.sort|Treemap-Layout#sort]]
 * [[treemap.children|Treemap-Layout#children]]
 * [[treemap.value|Treemap-Layout#value]]
