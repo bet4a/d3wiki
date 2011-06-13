@@ -188,7 +188,7 @@ Also see the [[CSV]] module.
 * [[d3.scale.category20b|Ordinal-Scales#category20b]] - construct an ordinal scale with twenty categorical colors.
 * [[d3.scale.category20c|Ordinal-Scales#category20c]] - construct an ordinal scale with twenty categorical colors.
 
-## d3.svg
+## [d3.svg (SVG)](SVG)
 
 ### [[Shapes|SVG-Shapes]]
 
@@ -228,7 +228,7 @@ Also see the [[CSV]] module.
 * [[d3.svg.mouse|SVG-Events#mouse]] - gets the mouse position relative to a specified container.
 * [[d3.svg.touches|SVG-Events#touches]] - gets the touch positions relative to a specified container.
 
-## d3.layout
+## [d3.layout (Layouts)](Layouts)
 
 ### [[Force|Layout-Force]]
 
@@ -336,7 +336,7 @@ Also see the [[CSV]] module.
 * [[chord.chords|Layout-Chord#chords]]
 * [[chord.groups|Layout-Chord#groups]]
 
-## d3.chart
+## [[d3.chart (Charts)|Charts]]
 
 ### [[Box|Chart-Box]]
 
@@ -374,21 +374,21 @@ Also see the [[CSV]] module.
 * [[qq.y|Chart-QQ#y]]
 * [[qq.tickFormat|Chart-QQ#tickFormat]]
 
-## d3.time
+## [[d3.time (Time)|Time]]
 
 ### [[Formatting|Time-Formatting]]
 
 * [[d3.time.format|Time-Formatting#format]]
 * [[format.parse|Time-Formatting#parse]]
 
-## d3.behavior
+## [[d3.behavior (Behaviors)|Behaviors]]
 
 ### [[Zoom|Behavior-Zoom]]
 
 * [[d3.behavior.zoom|Behavior-Zoom#zoom]]
 * [[zoom.on|Behavior-Zoom#on]]
 
-## d3.csv
+## [[d3.csv (CSV)|CSV]]
 
 ### [[CSV]]
 
@@ -397,7 +397,7 @@ Also see the [[CSV]] module.
 * [[d3.csv.parseRows|CSV#parseRows]]
 * [[d3.csv.format|CSV#format]]
 
-## d3.geo
+## [[d3.geo (Geo)|Geo]]
 
 ### [[Paths|Geo-Paths]]
 
@@ -427,7 +427,7 @@ Also see the [[CSV]] module.
 * [[azimuthal.scale|Geo-Projections#azimuthal_scale]]
 * [[azimuthal.translate|Geo-Projections#azimuthal_translate]]
 
-## d3.geom
+## [[d3.geom (Geometry)|Geom]]
 
 ### [[Voronoi|Geom-Voronoi]]
 
