@@ -376,9 +376,39 @@ The *target*-accessor is invoked in the same manner as other value functions in 
 
 <a name="chord_radius" href="#chord_radius">#</a> chord.<b>radius</b>([<i>radius</i>])
 
+If *radius* is specified, sets the *radius*-accessor to the specified function or constant. If *radius* is not specified, returns the current *radius*-accessor. The default accessor assumes that the input source or target description is an object with suitably-named attributes:
+
+```javascript
+function radius(d) {
+  return d.radius;
+}
+```
+
+The *radius*-accessor is invoked in a similar manner as other value functions in D3. The function is passed two arguments, the current source description (derived from the current datum, d) and the current index (i). It is also possible to specify the *radius*-accessor as a constant rather than a function.
+
 <a name="chord_startAngle" href="#chord_startAngle">#</a> chord.<b>startAngle</b>([<i>angle</i>])
 
+If *startAngle* is specified, sets the *startAngle*-accessor to the specified function or constant. If *startAngle* is not specified, returns the current *startAngle*-accessor. Angles are specified in [radians](http://en.wikipedia.org/wiki/Radian), even though SVG typically uses degrees. The default accessor assumes that the input source or target description is an object with suitably-named attributes:
+
+```javascript
+function startAngle(d) {
+  return d.startAngle;
+}
+```
+
+The *startAngle*-accessor is invoked in a similar manner as other value functions in D3. The function is passed two arguments, the current source or target description (derived from the current datum, d) and the current index (i). It is also possible to specify the *startAngle*-accessor as a constant rather than a function.
+
 <a name="chord_endAngle" href="#chord_endAngle">#</a> chord.<b>endAngle</b>([<i>angle</i>])
+
+If *endAngle* is specified, sets the *endAngle*-accessor to the specified function or constant. If *endAngle* is not specified, returns the current *endAngle*-accessor. Angles are specified in [radians](http://en.wikipedia.org/wiki/Radian), even though SVG typically uses degrees. The default accessor assumes that the input source or target description is an object with suitably-named attributes:
+
+```javascript
+function endAngle(d) {
+  return d.endAngle;
+}
+```
+
+The *endAngle*-accessor is invoked in a similar manner as other value functions in D3. The function is passed two arguments, the current source or target description (derived from the current datum, d) and the current index (i). It is also possible to specify the *endAngle*-accessor as a constant rather than a function.
 
 <a name="diagonal" href="#diagonal">#</a> d3.svg.<b>diagonal</b>()
 
