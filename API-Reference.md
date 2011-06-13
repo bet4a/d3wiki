@@ -272,6 +272,7 @@ Also see the [[CSV]] module.
 * [[d3.layout.hierarchy|Hierarchy-Layout#hierarchy]] - derive a custom hierarchical layout implementation.
 * [[hierarchy.sort|Hierarchy-Layout#sort]]
 * [[hierarchy.children|Hierarchy-Layout#children]]
+* [[hierarchy.links|Hierarchy-Layout#links]]
 * [[hierarchy.value|Hierarchy-Layout#value]]
 * [[hierarchy.revalue|Hierarchy-Layout#revalue]]
 
@@ -288,6 +289,7 @@ Also see the [[CSV]] module.
 * [[d3.layout.pack|Pack-Layout#pack]] - produce a hierarchical layout using recursive circle-packing.
 * [[pack.sort|Pack-Layout#sort]]
 * [[pack.children|Pack-Layout#children]]
+* [[pack.links|Pack-Layout#links]]
 * [[pack.value|Pack-Layout#value]]
 * [[pack.size|Pack-Layout#size]]
 
@@ -296,6 +298,7 @@ Also see the [[CSV]] module.
 * [[d3.layout.partition|Partition-Layout#partition]] - recursively partition a node tree into a sunburst or icicle.
 * [[partition.sort|Partition-Layout#sort]]
 * [[partition.children|Partition-Layout#children]]
+* [[partition.links|Partition-Layout#links]]
 * [[partition.value|Partition-Layout#value]]
 * [[partition.size|Partition-Layout#size]]
 
@@ -331,6 +334,7 @@ Also see the [[CSV]] module.
 * [[d3.layout.treemap|Treemap-Layout#treemap]] - use recursive spatial subdivision to display a tree of nodes.
 * [[treemap.sort|Treemap-Layout#sort]]
 * [[treemap.children|Treemap-Layout#children]]
+* [[treemap.links|Treemap-Layout#links]]
 * [[treemap.value|Treemap-Layout#value]]
 * [[treemap.size|Treemap-Layout#size]]
 * [[treemap.round|Treemap-Layout#round]]
