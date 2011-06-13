@@ -1,3 +1,5 @@
+> [[API Reference]] ▸ [[Layouts]]
+
 ![treemap](treemap.png)
 
 <a name="treemap" href="#treemap">#</a> d3.layout.<b>treemap</b>()
