@@ -352,7 +352,7 @@ A chord generator is often used in conjunction with an [arc generator](#arc), so
 
 <a name="chord_source" href="#chord_source">#</a> chord.<b>source</b>([<i>source</i>])
 
-If *source* is specified, sets the *source*-accessor to the specified function or constant. If *source* is not specified, returns the current *source*-accessor. The default accessor assumes that the input data is an object with suitably-named attributes:
+If *source* is specified, sets the *source*-accessor to the specified function or constant. If *source* is not specified, returns the current *source*-accessor. The purpose of the *source* accessor is to return an object that describes the starting arc of the chord. The returned object is subsequently passed to the [radius](#chord_radius), [startAngle](#chord_startAngle) and [endAngle](#chord_endAngle) accessors. This allows these other accessors to be reused for both the source and target arc descriptions. The default accessor assumes that the input data is an object with suitably-named attributes:
 
 ```javascript
 function source(d) {
@@ -360,21 +360,17 @@ function source(d) {
 }
 ```
 
-The purpose of the *source* accessor is to return an object that describes the starting arc of the chord. The returned object is subsequently passed to the [radius](#chord_radius), [startAngle](#chord_startAngle) and [endAngle](#chord_endAngle) accessors. This allows these other accessors to be reused for both the source and target arc descriptions.
-
 The *source*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the arc function; however, in the common case that the symbol generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *source*-accessor as a constant rather than a function.
 
 <a name="chord_target" href="#chord_target">#</a> chord.<b>target</b>([<i>target</i>])
 
-If *target* is specified, sets the *target*-accessor to the specified function or constant. If *target* is not specified, returns the current *target*-accessor. The default accessor assumes that the input data is an object with suitably-named attributes:
+If *target* is specified, sets the *target*-accessor to the specified function or constant. If *target* is not specified, returns the current *target*-accessor. The purpose of the *target* accessor is to return an object that describes the ending arc of the chord. The returned object is subsequently passed to the [radius](#chord_radius), [startAngle](#chord_startAngle) and [endAngle](#chord_endAngle) accessors. This allows these other accessors to be reused for both the source and target arc descriptions. The default accessor assumes that the input data is an object with suitably-named attributes:
 
 ```javascript
 function target(d) {
   return d.target;
 }
 ```
-
-The purpose of the *target* accessor is to return an object that describes the ending arc of the chord. The returned object is subsequently passed to the [radius](#chord_radius), [startAngle](#chord_startAngle) and [endAngle](#chord_endAngle) accessors. This allows these other accessors to be reused for both the source and target arc descriptions.
 
 The *target*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *target*-accessor as a constant rather than a function.
 
