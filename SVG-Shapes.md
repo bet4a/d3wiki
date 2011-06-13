@@ -416,7 +416,7 @@ Constructs a new diagonal generator with the default accessor functions (that as
 
 ![diagonal](diagonal.png)
 
-Although diagonals are work by default in Cartesian (axis-aligned) orientations, they can be made to work in radial and other layouts using a [projection](#diagonal_projection).
+Although diagonals are default to Cartesian (axis-aligned) orientations, they can be used in radial and other orientations using a [projection](#diagonal_projection).
 
 <a name="diagonal_source" href="#diagonal_source">#</a> diagonal.<b>source</b>([<i>source</i>])
 
