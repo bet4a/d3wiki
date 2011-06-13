@@ -130,7 +130,7 @@ Also see the [[CSV]] module.
 * [[dispatch.remove|Internals#dispatch_remove]] - unregister an event listener.
 * [[dispatch.dispatch|Internals#dispatch_dispatch]] - dispatch an event to registered listeners.
 
-## d3.scale
+## [d3.scale (Scales)](Scales)
 
 ### [[Quantitative|Quantitative-Scales#quantitative]]
 
