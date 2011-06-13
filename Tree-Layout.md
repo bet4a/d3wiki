@@ -6,7 +6,7 @@
 
 <a name="children" href="#children">#</a> tree.<b>children</b>([<i>children</i>])
 
-<a name="links" href="#links">#</a> tree.<b>links</b>()
+<a name="links" href="#links">#</a> tree.<b>links</b>(<i>nodes</i>)
 
 <a name="separation" href="#separation">#</a> tree.<b>separation</b>([<i>separation</i>])
 
