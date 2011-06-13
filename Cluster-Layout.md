@@ -1,3 +1,5 @@
+> [[API Reference]] ▸ [[Layouts]]
+
 ![cluster](cluster.png)
 
 <a name="cluster" href="#cluster">#</a> d3.layout.<b>cluster</b>()
