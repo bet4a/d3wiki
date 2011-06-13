@@ -1,3 +1,5 @@
+> [[API Reference]] ▸ [[Layouts]]
+
 ![stack](stack.png)
 
 <a name="stack" href="#stack">#</a> d3.layout.<b>stack</b>()
