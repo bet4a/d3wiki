@@ -1,3 +1,5 @@
+> [[API Reference]] ▸ [[Layouts]]
+
 ![diagonal](diagonal.png)
 
 <a name="tree" href="#tree">#</a> d3.layout.<b>tree</b>()
