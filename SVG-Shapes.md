@@ -455,7 +455,7 @@ function projection(d) {
 For example, to produce a radial diagonal, assuming that the *y* attribute defines the radius in pixels, and the *x* attribute defines the angle in degrees:
 
 ```javascript
-function(d) {
+function projection(d) {
   var r = d.y, a = (d.x - 90) / 180 * Math.PI;
   return [r * Math.cos(a), r * Math.sin(a)];
 }
