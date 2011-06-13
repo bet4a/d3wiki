@@ -1,3 +1,5 @@
+> [[API Reference]] ▸ [[Layouts]]
+
 ![pack](pack.png)
 
 <a name="pack" href="#pack">#</a> d3.layout.<b>pack</b>()
