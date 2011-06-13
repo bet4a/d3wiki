@@ -452,4 +452,13 @@ function projection(d) {
 }
 ```
 
+For example, to produce a radial diagonal, assuming that the *y* attribute defines the radius in pixels, and the *x* attribute defines the angle in degrees:
+
+```javascript
+function(d) {
+  var r = d.y, a = (d.x - 90) / 180 * Math.PI;
+  return [r * Math.cos(a), r * Math.sin(a)];
+}
+```
+
 The *projection* is invoked in a similar manner as other value functions in D3. The function is passed two arguments, the current source or target point (derived from the current data, d) and the current index (i).
