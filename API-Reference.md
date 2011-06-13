@@ -366,6 +366,19 @@ Also see the [[CSV]] module.
 * [[bullet.tickFormat|Bullet-Chart#tickFormat]]
 * [[bullet.duration|Bullet-Chart#duration]]
 
+### [[Horizon|Horizon-Chart]]
+
+* [[d3.chart.horizon|Horizon-Chart#horizon]]
+* [[horizon.duration|Horizon-Chart#duration]]
+* [[horizon.bands|Horizon-Chart#bands]]
+* [[horizon.mode|Horizon-Chart#mode]]
+* [[horizon.colors|Horizon-Chart#colors]]
+* [[horizon.interpolate|Horizon-Chart#interpolate]]
+* [[horizon.x|Horizon-Charts#x]]
+* [[horizon.y|Horizon-Charts#y]]
+* [[horizon.width|Horizon-Charts#width]]
+* [[horizon.height|Horizon-Charts#height]]
+
 ### [[QQ|QQ-Chart]]
 
 * [[d3.chart.qq|QQ-Chart#qq]]
