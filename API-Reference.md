@@ -279,19 +279,19 @@ Also see the [[CSV]] module.
 ### [[Histogram|Histogram-Layout]]
 
 * [[d3.layout.histogram|Histogram-Layout#histogram]] - compute the distribution of data using quantized bins.
-* [[histogram.value|Histogram-Layout#value]]
-* [[histogram.range|Histogram-Layout#range]]
-* [[histogram.bins|Histogram-Layout#bins]]
-* [[histogram.frequency|Histogram-Layout#frequency]]
+* [[histogram.value|Histogram-Layout#value]] - get or set the value accessor function.
+* [[histogram.range|Histogram-Layout#range]] - get or set the considered value range.
+* [[histogram.bins|Histogram-Layout#bins]] - specify how values are organized into bins.
+* [[histogram.frequency|Histogram-Layout#frequency]] - compute the distribution as counts or probabilities.
 
 ### [[Pack|Pack-Layout]]
 
 * [[d3.layout.pack|Pack-Layout#pack]] - produce a hierarchical layout using recursive circle-packing.
-* [[pack.sort|Pack-Layout#sort]]
-* [[pack.children|Pack-Layout#children]]
-* [[pack.links|Pack-Layout#links]]
-* [[pack.value|Pack-Layout#value]]
-* [[pack.size|Pack-Layout#size]]
+* [[pack.sort|Pack-Layout#sort]] - control the order in which sibling nodes are traversed.
+* [[pack.children|Pack-Layout#children]] - get or set the children accessor function.
+* [[pack.links|Pack-Layout#links]] - compute the parent-child links between tree nodes.
+* [[pack.value|Pack-Layout#value]] - get or set the value accessor used to size circles.
+* [[pack.size|Pack-Layout#size]] - specify the layout size in *x* and *y*.
 
 ### [[Partition|Partition-Layout]]
 
