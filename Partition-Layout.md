@@ -1,3 +1,5 @@
+> [[API Reference]] ▸ [[Layouts]]
+
 ![partition](partition.png)
 
 <a name="partition" href="#partition">#</a> d3.layout.<b>partition</b>()
