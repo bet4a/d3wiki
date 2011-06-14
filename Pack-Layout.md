@@ -1,10 +1,10 @@
 > [[API Reference]] ▸ [[Layouts]]
 
-Enclosure diagrams use containment (nesting) to represent the hierarchy. The size of each circle reveals a quantitative dimension of each data point, and the cumulative size of each subtree. Although **circle packing** does not use space as efficiently as a [[treemap|Treemap-Layout]], the “wasted” space more effectively reveals the hierarchy.
+Enclosure diagrams use containment (nesting) to represent the hierarchy. The size of each circle reveals a quantitative dimension of each data point, and the cumulative size of each subtree. Although [circle packing](http://en.wikipedia.org/wiki/Circle_packing) does not use space as efficiently as a [[treemap|Treemap-Layout]], the “wasted” space more effectively reveals the hierarchy.
 
 [![pack](pack.png)](http://mbostock.github.com/d3/ex/pack.html)
 
-By flattening the hierarchy, the pack layout can also be used to create [bubble charts](http://www-958.ibm.com/software/data/cognos/manyeyes/page/Bubble_Chart.html):
+By flattening the hierarchy, the **pack layout** can also be used to create [bubble charts](http://www-958.ibm.com/software/data/cognos/manyeyes/page/Bubble_Chart.html):
 
 [![bubble](bubble.png)](http://mbostock.github.com/d3/ex/bubble.html)
 
