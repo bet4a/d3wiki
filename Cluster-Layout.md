@@ -83,6 +83,15 @@ With this children accessor, the input to the layout must itself be an object wi
 
 <a name="links" href="#links">#</a> cluster.<b>links</b>(<i>nodes</i>)
 
+Given the specified array of *nodes*, such as the computed nodes returned by the cluster layout, returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. This method is useful for retrieving a set of link descriptions suitable for display, often in conjunction with the [diagonal](SVG-Shapes#diagonal) shape generator. For example:
+
+```javascript
+var link = svg.selectAll("path")
+    .data(cluster.links(nodes))
+  .enter().append("svg:path")
+    .attr("d", d3.svg.diagonal());
+```
+
 <a name="separation" href="#separation">#</a> cluster.<b>separation</b>([<i>separation</i>])
 
 <a name="size" href="#size">#</a> cluster.<b>size</b>([<i>size</i>])
