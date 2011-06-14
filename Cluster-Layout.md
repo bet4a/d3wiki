@@ -6,11 +6,9 @@ The **cluster layout** produces [dendrograms](http://en.wikipedia.org/wiki/Dendr
 
 The cluster layout is part of D3's family of [[hierarchical|Hierarchical-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes. The layout has a size in *x* and *y*, but this represents an arbitrary coordinate system; for example, you can treat *x* as a radius and *y* as an angle to produce a radial rather than Cartesian layout.
 
-The layout object returned by d3.layout.cluster is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior. Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
-
 <a name="cluster" href="#cluster">#</a> d3.layout.<b>cluster</b>()
 
-Creates a new cluster layout with the default settings. The default sort order is null. The default children accessor assumes each input node is an object with a `children` array. The default separation function uses one node width for siblings, and two node widths for non-siblings. The default size is 1×1.
+Creates a new cluster layout with the default settings. The default sort order is null. The default children accessor assumes each input node is an object with a `children` array. The default separation function uses one node width for siblings, and two node widths for non-siblings. The default size is 1×1. The layout object returned by d3.layout.cluster is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior. Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
 
 <a name="sort" href="#sort">#</a> cluster.<b>sort</b>([<i>comparator</i>])
 
@@ -25,6 +23,50 @@ function comparator(a, b) {
 Sorting by the node's name or key is also common. This can be done easily using [d3.ascending](Arrays#d3_ascending) or [d3.descending](Arrays#d3_descending).
 
 <a name="children" href="#children">#</a> cluster.<b>children</b>([<i>children</i>])
+
+If *children* is specified, sets the specified children accessor function. If *children* is not specified, returns the current children accessor function, which by default assumes that the input data is an object with a `children` array:
+
+```javascript
+function children(d) {
+  return d.children;
+}
+```
+
+Often, it is convenient to load the node hierarchy using [d3.json](Requests#d3_json), and represent the input hierarchy efficiently as a nested [JSON](http://json.org) object, rather than an explicit array of children. In this case, the leaf nodes of the hierarchy may be simple numbers rather than objects. Using the *children* accessor function, you can easily tell the layout how to traverse the input hierarchy. For example, if the input is:
+
+```javascript
+{
+  "analytics": {
+    "cluster": {
+      "AgglomerativeCluster": 3938,
+      "CommunityStructure": 3812,
+      "MergeEdge": 743
+    },
+    "graph": {
+      "BetweennessCentrality": 3534,
+      "LinkDistance": 5731
+    }
+  }
+}
+```
+
+Then a suitable *children* accessor will iterate over the values in each object, if the current node is an object, or return null for non-objects to indicate that the specified input is a leaf node:
+
+```javascript
+function children(d) {
+  return isNaN(d) ? d3.values(d) : null;
+}
+```
+
+However, note that with this accessor, the data associated with each node will only have access to the child nodes, and will not know its own key! To store the name of the current node, in addition to the child nodes, we can use the [d3.entries](Arrays#d3_entries) helper:
+
+```javascript
+function children(d) {
+  return isNaN(d.value) ? d3.values(d.value) : null;
+}
+```
+
+With this children accessor, the input to the layout must itself be an object with key and value attributes. This can be achieved by saying d3.entries(*object*)[0], where *object* is the root JSON object.
 
 <a name="links" href="#links">#</a> cluster.<b>links</b>(<i>nodes</i>)
 
