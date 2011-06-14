@@ -10,16 +10,61 @@ The chord layout is designed to work in conjunction with the [chord shape](SVG-S
 
 <a name="chord" href="#chord">#</a> d3.layout.<b>chord</b>()
 
+Constructs a new chord layout. By default, the input data is not sorted, and there is no padding between groups. Unlike some of the other layouts, the chord layout is not a function to be applied to data; instead, data is specified by setting the associated [matrix](#matrix), and retrieved using the [chords](#chords) and [groups](#groups) accessors.
+
 <a name="matrix" href="#matrix">#</a> chord.<b>matrix</b>([<i>matrix</i>])
+
+If *matrix* is specified, sets the input data matrix used by this layout. If *matrix* is not specified, returns the current data matrix, which defaults to undefined. The input matrix must be a [square matrix](http://en.wikipedia.org/wiki/Matrix_(mathematics\)#Square_matrices) of numbers, such as:
+
+```javascript
+[[11975,  5871, 8916, 2868],
+ [ 1951, 10048, 2060, 6171],
+ [ 8010, 16145, 8090, 8045],
+ [ 1013,   990,  940, 6907]]
+```
+
+Each row in the matrix corresponds to a distinct group, such as a hair color in the above example. Each column *i* in the matrix corresponds to the same group as row *i*; the cell *ij* corresponds to the relationship from group *i* to group *j*.
 
 <a name="padding" href="#padding">#</a> chord.<b>padding</b>([<i>padding</i>])
 
+If *padding* is specified, sets the angular padding between groups to the specified value in [radians](http://en.wikipedia.org/wiki/Radian). If *padding* is not specified, returns the current padding, which defaults to zero. You may wish to compute the padding as a function of the number of groups (the number of rows or columns in the associated matrix).
+
 <a name="sortGroups" href="#sortGroups">#</a> chord.<b>sortGroups</b>([<i>comparator</i>])
+
+If *comparator* is specified, sets the sort order of groups (rows) for the layout using the specified comparator function. The comparator function is invoked for pairs of rows, being passed the sum of row *i* and row *j*. Typically, the comparator should be specified as either [d3.ascending](Arrays#d3_ascending) or [d3.descending](Arrays#d3_descending). If *comparator* is not specified, returns the current group sort order, which defaults to null for no sorting.
 
 <a name="sortSubgroups" href="#sortSubgroups">#</a> chord.<b>sortSubgroups</b>([<i>comparator</i>])
 
+If *comparator* is specified, sets the sort order of subgroups (columns within rows) for the layout using the specified comparator function. The comparator function is invoked for pairs of cells, being passed the value of each cell. Typically, the comparator should be specified as either [d3.ascending](Arrays#d3_ascending) or [d3.descending](Arrays#d3_descending). If *comparator* is not specified, returns the current subgroup sort order, which defaults to null for no sorting.
+
 <a name="sortChords" href="#sortChords">#</a> chord.<b>sortChords</b>([<i>comparator</i>])
+
+If *comparator* is specified, sets the sort order of chords (z-order) for the layout using the specified comparator function. The comparator function is invoked for pairs of chords, being passed the minimum value of the associated source and target cells. Typically, the comparator should be specified as either [d3.ascending](Arrays#d3_ascending) or [d3.descending](Arrays#d3_descending). If *comparator* is not specified, returns the current chord sort order, which defaults to null for no sorting.
 
 <a name="chords" href="#chords">#</a> chord.<b>chords</b>()
 
+Returns the computed chord objects, given the layout's current configuration and associated matrix. If the chord objects were previously-computed, this method returns the cached value. Changing any attribute of the layout implicitly clears the previously-computed chords, if any, such that the next call to this method will recompute the layout. The returned objects have the following properties:
+
+* source - an object describing the source.
+* target - an object describing the target.
+
+These objects, in turn, describe the underlying entity:
+
+* index - the row index, *i*
+* subindex - the column index, *j*
+* startAngle - the start angle of the arc, in radians
+* endAngle - the end angle of the arc, in radians
+* value - the value of the associated cell *ij*, a number
+
+Note that these objects conveniently match the default accessors for the [chord](SVG-Shapes#chord) generator; however, you can still override the accessors to tweak the layout, or simply manipulate the returned objects.
+
 <a name="groups" href="#groups">#</a> chord.<b>groups</b>()
+
+Returns the computed group objects, given the layout's current configuration and associated matrix. If the group objects were previously-computed, this method returns the cached value. Changing any attribute of the layout implicitly clears the previously-computed groups, if any, such that the next call to this method will recompute the layout. The returned objects have the following properties:
+
+* index - the row index, *i*
+* startAngle - the start angle of the arc, in radians
+* endAngle - the end angle of the arc, in radians
+* value - the sum of the associated row *i*, a number
+
+Note that these objects conveniently match the default accessors for the [arc](SVG-Shapes#arc) generator; however, you can still override the accessors to tweak the layout, or simply manipulate the returned objects.
