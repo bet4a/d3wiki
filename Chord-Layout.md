@@ -35,11 +35,11 @@ If *comparator* is specified, sets the sort order of groups (rows) for the layou
 
 <a name="sortSubgroups" href="#sortSubgroups">#</a> chord.<b>sortSubgroups</b>([<i>comparator</i>])
 
-If *comparator* is specified, sets the sort order of subgroups (columns within rows) for the layout using the specified comparator function. The comparator function is invoked for pairs of cells, being passed the value of each cell. Typically, the comparator should be specified as either [d3.ascending](Arrays#d3_ascending) or [d3.descending](Arrays#d3_descending). If *comparator* is not specified, returns the current subgroup sort order, which defaults to null for no sorting.
+If *comparator* is specified, sets the sort order of subgroups (columns within rows) for the layout using the specified comparator function. The comparator function is invoked for pairs of cells, being passed the value of each cell. Typically, the comparator should be specified as either ascending or descending. If *comparator* is not specified, returns the current subgroup sort order, which defaults to null for no sorting.
 
 <a name="sortChords" href="#sortChords">#</a> chord.<b>sortChords</b>([<i>comparator</i>])
 
-If *comparator* is specified, sets the sort order of chords (z-order) for the layout using the specified comparator function. The comparator function is invoked for pairs of chords, being passed the minimum value of the associated source and target cells. Typically, the comparator should be specified as either [d3.ascending](Arrays#d3_ascending) or [d3.descending](Arrays#d3_descending). If *comparator* is not specified, returns the current chord sort order, which defaults to null for no sorting.
+If *comparator* is specified, sets the sort order of chords (z-order) for the layout using the specified comparator function. The comparator function is invoked for pairs of chords, being passed the minimum value of the associated source and target cells. Typically, the comparator should be specified as either ascending or descending. If *comparator* is not specified, returns the current chord sort order, which defaults to null for no sorting.
 
 <a name="chords" href="#chords">#</a> chord.<b>chords</b>()
 
