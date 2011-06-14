@@ -8,7 +8,7 @@ Like most other layouts, the object returned by d3.layout.cluster is both an obj
 
 <a name="cluster" href="#cluster">#</a> d3.layout.<b>cluster</b>()
 
-Creates a new cluster layout with the default settings: the default sort order is null; the default children accessor assumes each input node is an object with a children array; the default separation function uses one node width for siblings, and two node widths for non-siblings; the default size is 1×1.
+Creates a new cluster layout with the default settings: the default sort order is null; the default children accessor assumes each input data is an object with a children array; the default separation function uses one node width for siblings, and two node widths for non-siblings; the default size is 1×1.
 
 The cluster layout is part of D3's family of [[hierarchical|Hierarchical-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes.  Note that these position objects are not the same as the input data passed to the layout function; the computed layout nodes wrap the data objects, and provide several attributes:
 
