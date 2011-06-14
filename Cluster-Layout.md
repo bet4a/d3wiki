@@ -8,7 +8,7 @@ The cluster layout is part of D3's family of [[hierarchical|Hierarchical-Layout]
 
 <a name="cluster" href="#cluster">#</a> d3.layout.<b>cluster</b>()
 
-Creates a new cluster layout with the default settings. The default sort order is null. The default children accessor assumes each input node is an object with a `children` array. The default separation function uses one node width for siblings, and two node widths for non-siblings. The default size is 1×1. The layout object returned by d3.layout.cluster is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior. Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
+Creates a new cluster layout with the default settings. The default sort order is null. The default children accessor assumes each input node is an object with a children array. The default separation function uses one node width for siblings, and two node widths for non-siblings. The default size is 1×1. The layout object returned by d3.layout.cluster is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior. Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
 
 <a name="sort" href="#sort">#</a> cluster.<b>sort</b>([<i>comparator</i>])
 
@@ -24,7 +24,7 @@ Sorting by the node's name or key is also common. This can be done easily using 
 
 <a name="children" href="#children">#</a> cluster.<b>children</b>([<i>children</i>])
 
-If *children* is specified, sets the specified children accessor function. If *children* is not specified, returns the current children accessor function, which by default assumes that the input data is an object with a `children` array:
+If *children* is specified, sets the specified children accessor function. If *children* is not specified, returns the current children accessor function, which by default assumes that the input data is an object with a children array:
 
 ```javascript
 function children(d) {
