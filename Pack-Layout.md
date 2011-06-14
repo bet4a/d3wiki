@@ -12,7 +12,7 @@ Like most other layouts, the object returned by d3.layout.pack is both an object
 
 <a name="pack" href="#pack">#</a> d3.layout.<b>pack</b>()
 
-Creates a new pack layout with the default settings: the default sort order is by ascending value; the default children accessor assumes each input node is an object with a children array; the default size is 1×1.
+Creates a new pack layout with the default settings: the default sort order is by ascending value; the default children accessor assumes each input data is an object with a children array; the default size is 1×1.
 
 The pack layout is part of D3's family of [[hierarchical|Hierarchical-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes, along with several other attributes:
 
