@@ -4,11 +4,22 @@ The **cluster layout** produces [dendrograms](http://en.wikipedia.org/wiki/Dendr
 
 [![cluster](cluster.png)](http://mbostock.github.com/d3/ex/cluster.html)
 
-The cluster layout is part of D3's family of [[hierarchical|Hierarchical-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes. The layout has a size in *x* and *y*, but this represents an arbitrary coordinate system; for example, you can treat *x* as a radius and *y* as an angle to produce a radial rather than Cartesian layout.
+Like most other layouts, the object returned by d3.layout.cluster is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior. Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
 
 <a name="cluster" href="#cluster">#</a> d3.layout.<b>cluster</b>()
 
-Creates a new cluster layout with the default settings. The default sort order is null. The default children accessor assumes each input node is an object with a children array. The default separation function uses one node width for siblings, and two node widths for non-siblings. The default size is 1×1. The layout object returned by d3.layout.cluster is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior. Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
+Creates a new cluster layout with the default settings. The default sort order is null. The default children accessor assumes each input node is an object with a children array. The default separation function uses one node width for siblings, and two node widths for non-siblings. The default size is 1×1.
+
+The cluster layout is part of D3's family of [[hierarchical|Hierarchical-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes.  Note that these are not the same as the input data passed to the layout function; the computed layout nodes wrap the data objects, and provide several attributes:
+
+* parent - the parent node, or null for the root.
+* children - the array of child nodes, or null for leaf nodes.
+* depth - the depth of the node, starting at 0 for the root.
+* x - the computed *x*-coordinate of the node position.
+* y - the computed *y*-coordinate of the node position.
+* data - the underlying data represented by this node.
+
+Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system; for example, you can treat *x* as a radius and *y* as an angle to produce a radial rather than Cartesian layout.
 
 <a name="sort" href="#sort">#</a> cluster.<b>sort</b>([<i>comparator</i>])
 
@@ -31,6 +42,8 @@ function children(d) {
   return d.children;
 }
 ```
+
+The children accessor is first invoked for root node in the hierarchy. If the accessor returns null, then the node is assumed to be a leaf node at the layout traversal terminates. Otherwise, the accessor should return an array of data elements representing the child nodes.
 
 Often, it is convenient to load the node hierarchy using [d3.json](Requests#d3_json), and represent the input hierarchy efficiently as a nested [JSON](http://json.org) object, rather than an explicit array of children. In this case, the leaf nodes of the hierarchy may be simple numbers rather than objects. Using the *children* accessor function, you can easily tell the layout how to traverse the input hierarchy. For example, if the input is:
 
