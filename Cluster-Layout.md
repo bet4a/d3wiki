@@ -83,7 +83,12 @@ With this children accessor, the input to the layout must itself be an object wi
 
 <a name="links" href="#links">#</a> cluster.<b>links</b>(<i>nodes</i>)
 
-Given the specified array of *nodes*, such as the computed nodes returned by the cluster layout, returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. This method is useful for retrieving a set of link descriptions suitable for display, often in conjunction with the [diagonal](SVG-Shapes#diagonal) shape generator. For example:
+Given the specified array of *nodes*, such as the computed nodes returned by the cluster layout, returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. Each link is an object with two attributes:
+
+* source - the parent node (as described above).
+* target - the child node.
+
+This method is useful for retrieving a set of link descriptions suitable for display, often in conjunction with the [diagonal](SVG-Shapes#diagonal) shape generator. For example:
 
 ```javascript
 svg.selectAll("path")
@@ -94,4 +99,24 @@ svg.selectAll("path")
 
 <a name="separation" href="#separation">#</a> cluster.<b>separation</b>([<i>separation</i>])
 
+If *separation* is specified, uses the specified function to compute separation between neighboring nodes. If *separation* is not specified, returns the current separation function, which defaults to:
+
+```javascript
+function separation(a, b) {
+  return a.parent == b.parent ? 1 : 2;
+}
+```
+
+A variation that is more appropriate for radial layouts reduces the separation gap proportionally to the radius:
+
+```javascript
+function separation(a, b) {
+  return (a.parent == b.parent ? 1 : 2) / a.depth;
+}
+```
+
+The separation function is passed two neighboring nodes *a* and *b*, and must return the desired separation between nodes. The nodes are typically siblings, though the nodes may also be cousins (or even more distant relations) if the layout decides to place such nodes adjacent.
+
 <a name="size" href="#size">#</a> cluster.<b>size</b>([<i>size</i>])
+
+If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1. Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system. For example, to produce a radial layout where the tree breadth (*x*) in measured in degrees, and the tree depth (*y*) is a radius *r* in pixels, say [360, *r*].
