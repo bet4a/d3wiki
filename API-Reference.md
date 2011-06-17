@@ -68,6 +68,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.descending|Arrays#d3_descending]] - compare two values for sorting.
 * [[d3.min|Arrays#d3_min]] - find the minimum value in an array.
 * [[d3.max|Arrays#d3_max]] - find the maximum value in an array.
+* [[d3.sum|Arrays#d3_sum]] - compute the sum of an array of numbers.
 * [[d3.bisect|Arrays#d3_bisect]] - search for a value in a sorted array.
 * [[d3.bisectRight|Arrays#d3_bisectRight]] - search for a value in a sorted array.
 * [[d3.bisectLeft|Arrays#d3_bisectLeft]] - search for a value in a sorted array.
@@ -397,6 +398,8 @@ Also see the [[CSV]] module.
 
 * [[d3.time.format|Time-Formatting#format]]
 * [[format.parse|Time-Formatting#parse]]
+* [[d3.time.format.utc|Time-Formatting#format_utc]]
+* [[d3.time.format.iso|Time-Formatting#format_iso]]
 
 ## [[d3.behavior (Behaviors)|Behaviors]]
 
