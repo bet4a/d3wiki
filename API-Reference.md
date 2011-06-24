@@ -198,12 +198,25 @@ Also see the [[CSV]] module.
 * [[line.y|SVG-Shapes#line_y]] - get or set the *y*-coordinate accessor.
 * [[line.interpolate|SVG-Shapes#line_interpolate]] - get or set the interpolation mode.
 * [[line.tension|SVG-Shapes#line_tension]] - get or set the cardinal spline tension.
+* [[d3.svg.line.radial|SVG-Shapes#line_radial]] - generate a piecewise linear curve, as in a polar line chart.
+* [[line.radius|SVG-Shapes#line_radial_radius]] - get or set the *radius* accessor.
+* [[line.angle|SVG-Shapes#line_radial_angle]] - get or set the *angle* accessor.
 * [[d3.svg.area|SVG-Shapes#area]] - generate a piecewise linear area, as in an area chart.
-* [[area.x|SVG-Shapes#area_x]] - get or set the *x*-coordinate accessor.
+* [[area.x|SVG-Shapes#area_x]] - get or set the *x*-coordinate accessors.
+* [[area.x0|SVG-Shapes#area_x0]] - get or set the *x0*-coordinate (baseline) accessor.
+* [[area.x1|SVG-Shapes#area_x1]] - get or set the *x1*-coordinate (topline) accessor.
+* [[area.y|SVG-Shapes#area_y]] - get or set the *y*-coordinate accessors.
 * [[area.y0|SVG-Shapes#area_y0]] - get or set the *y0*-coordinate (baseline) accessor.
 * [[area.y1|SVG-Shapes#area_y1]] - get or set the *y1*-coordinate (topline) accessor.
 * [[area.interpolate|SVG-Shapes#area_interpolate]] - get or set the interpolation mode.
 * [[area.tension|SVG-Shapes#area_tension]] - get or set the cardinal spline tension.
+* [[d3.svg.area.radial|SVG-Shapes#area_radial]] - generate a piecewise linear area, as in a polar area chart.
+* [[area.radius|SVG-Shapes#area_radial_radius]] - get or set the *radius* accessors.
+* [[area.innerRadius|SVG-Shapes#area_radial_innerRadius]] - get or set the inner *radius* (baseline) accessor.
+* [[area.outerRadius|SVG-Shapes#area_radial_outerRadius]] - get or set the outer *radius* (topline) accessor.
+* [[area.angle|SVG-Shapes#area_radial_angle]] - get or set the *angle* accessors.
+* [[area.startAngle|SVG-Shapes#area_radial_startAngle]] - get or set the *angle* (baseline) accessor.
+* [[area.endAngle|SVG-Shapes#area_radial_endAngle]] - get or set the *angle* (topline) accessor.
 * [[d3.svg.arc|SVG-Shapes#arc]] - generate a solid arc, as in a pie or donut chart.
 * [[arc.innerRadius|SVG-Shapes#arc_innerRadius]] - get or set the inner radius accessor.
 * [[arc.outerRadius|SVG-Shapes#arc_outerRadius]] - get or set the outer radius accessor.
@@ -223,6 +236,7 @@ Also see the [[CSV]] module.
 * [[diagonal.source|SVG-Shapes#diagonal_source]] - get or set the source point accessor.
 * [[diagonal.target|SVG-Shapes#diagonal_target]] - get or set the target point accessor.
 * [[diagonal.projection|SVG-Shapes#diagonal_projection]] - get or set an optional point transform.
+* [[d3.svg.diagonal.radial|SVG-Shapes#diagonal_radial]] - generate a two-dimensional Bézier connector, as in a node-link diagram.
 
 ### [[Events|SVG-Events]]
 
@@ -230,6 +244,10 @@ Also see the [[CSV]] module.
 * [[d3.svg.touches|SVG-Events#touches]] - gets the touch positions relative to a specified container.
 
 ## [d3.layout (Layouts)](Layouts)
+
+### [[Bundle|Bundle-Layout]]
+
+* [[d3.layout.bundle|Bundle-Layout#bundle]] - apply Holten's *hierarchical bundling* algorithm to edges.
 
 ### [[Chord|Chord-Layout]]
 
