@@ -533,3 +533,7 @@ function projection(d) {
 ```
 
 The *projection* is invoked in a similar manner as other value functions in D3. The function is passed two arguments, the current source or target point (derived from the current data, d) and the current index (i).
+
+<a name="diagonal_radial" href="#diagonal_radial">#</a> d3.svg.diagonal.<b>radial</b>()
+
+…
