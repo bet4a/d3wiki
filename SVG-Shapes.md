@@ -136,6 +136,7 @@ If *interpolate* is specified, sets the interpolation mode to the specified stri
 * basis - a [B-spline](http://en.wikipedia.org/wiki/B-spline), with control point duplication on the ends.
 * basis-open - an open B-spline; may not intersect the start or end.
 * basis-closed - a closed B-spline, as in a loop.
+* bundle - equivalent to *basis*, except the *tension* parameter is used to straighten the spline.
 * cardinal - a [Cardinal spline](http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Cardinal_spline), with control point duplication on the ends.
 * cardinal-open - an open Cardinal spline; may not intersect the start or end, but will intersect other control points.
 * cardinal-closed - a closed Cardinal spline, as in a loop.
@@ -157,6 +158,34 @@ svg.selectAll("path")
 ```
 
 In this example (see the [live version](http://bl.ocks.org/1016220)), the tension is set before each invocation of the line generator, thus resulting in lines with the same data but different paths.
+
+<a name="line_radial" href="#line_radial">#</a> d3.svg.line.<b>radial</b>()
+
+Constructs a new radial line generator with the default *radius*- and *angle*-accessor functions (that assume the input data is a two-element array of numbers; see below for details), and linear interpolation. The input to the generator is always an array of data elements for which to generate a line. The output is a open piecewise linear curve, or polyline, as with the Cartesian [line](#line) generator.
+
+<a name="line_radial_radius" href="#line_radial_radius">#</a> line.<b>radius</b>([<i>radius</i>])
+
+If *radius* is specified, sets the *radius*-accessor to the specified function or constant. If *radius* is not specified, returns the current *radius*-accessor. This accessor is invoked for each element in the data array passed to the line generator. The default accessor assumes that each input element is a two-element array of numbers:
+
+```javascript
+function radius(d) {
+  return d[0];
+}
+```
+
+This method is a transformation of the Cartesian [line.x](#line_x) method.
+
+<a name="line_radial_angle" href="#line_radial_angle">#</a> line.<b>angle</b>([<i>angle</i>])
+
+If *angle* is specified, sets the *angle*-accessor to the specified function or constant in radians. If *angle* is not specified, returns the current *angle*-accessor. This accessor is invoked for each element in the data array passed to the line generator. The default accessor assumes that each input element is a two-element array of numbers:
+
+```javascript
+function angle(d) {
+  return d[1];
+}
+```
+
+This method is a transformation of the Cartesian [line.y](#line_y) method.
 
 <a name="area" href="#area">#</a> d3.svg.<b>area</b>()
 
