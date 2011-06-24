@@ -223,6 +223,18 @@ var area = d3.svg.area()
 
 The *x*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the area function; however, in the common case that the area generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). In this context, the index is the index into the array of control points, rather than the index of the current element in the selection. The *x*-accessor is invoked exactly once per datum, in the order specified by the data array. Thus, it is possible to specify a nondeterministic accessor, such as a random number generator. It is also possible to specify the *x*-accessor as a constant rather than a function, in which case all points will have the same *x*-coordinate.
 
+<a name="area_x0" href="#area_x0">#</a> area.<b>x0</b>([<i>x0</i>])
+
+…
+
+<a name="area_x1" href="#area_x1">#</a> area.<b>x1</b>([<i>x1</i>])
+
+…
+
+<a name="area_y" href="#area_y">#</a> area.<b>y</b>([<i>y</i>])
+
+…
+
 <a name="area_y0" href="#area_y0">#</a> area.<b>y0</b>([<i>y0</i>])
 
 If *y0* is specified, sets the *y0*-accessor to the specified function or constant. If *y0* is not specified, returns the current *y0*-accessor. This accessor is invoked for each element in the data array passed to the area generator. The default accessor is the constant zero, thus using a fixed baseline at *y* = 0. For an example of how to specify a *y0*-accessor, see the similar [x](#area_x) accessor.
@@ -257,6 +269,34 @@ The behavior of some of these interpolation modes may be further customized by s
 <a name="area_tension" href="#area_tension">#</a> area.<b>tension</b>([<i>tension</i>])
 
 If *tension* is specified, sets the Cardinal spline interpolation tension to the specified number in the range [0, 1]. If *tension* is not specified, returns the current tension. The tension only affects the Cardinal interpolation modes: cardinal, cardinal-open and cardinal-closed. The default tension is 0.7. In some sense, this can be interpreted as the length of the tangent; 1 will yield all zero tangents, and 0 yields a [Catmull-Rom spline](http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull.E2.80.93Rom_spline). Note that the tension must be specified as a constant, rather than a function, as it is constant for the entirety of the area.
+
+<a name="area_radial" href="#area_radial">#</a> d3.svg.area.<b>radial</b>()
+
+…
+
+<a name="area_radial_radius" href="#area_radial_radius">#</a> area.<b>radius</b>([<i>radius</i>])
+
+…
+
+<a name="area_radial_innerRadius" href="#area_radial_innerRadius">#</a> area.<b>innerRadius</b>([<i>radius</i>])
+
+…
+
+<a name="area_radial_outerRadius" href="#area_radial_innerRadius">#</a> area.<b>innerRadius</b>([<i>radius</i>])
+
+…
+
+<a name="area_radial_angle" href="#area_radial_angle">#</a> area.<b>angle</b>([<i>angle</i>])
+
+…
+
+<a name="area_radial_startAngle" href="#area_radial_startAngle">#</a> area.<b>startAngle</b>([<i>angle</i>])
+
+…
+
+<a name="area_radial_endAngle" href="#area_radial_endAngle">#</a> area.<b>endAngle</b>([<i>angle</i>])
+
+…
 
 <a name="arc" href="#arc">#</a> d3.svg.<b>arc</b>()
 
