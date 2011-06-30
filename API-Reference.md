@@ -72,6 +72,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.bisect|Arrays#d3_bisect]] - search for a value in a sorted array.
 * [[d3.bisectRight|Arrays#d3_bisectRight]] - search for a value in a sorted array.
 * [[d3.bisectLeft|Arrays#d3_bisectLeft]] - search for a value in a sorted array.
+* [[d3.first|Arrays#d3_first]] - find the lowest element in an array.
+* [[d3.last|Arrays#d3_last]] - find the highest element in an array.
 * [[d3.permute|Arrays#d3_permute]] - reorder an array of elements according to an array of indexes.
 * [[d3.zip|Arrays#d3_zip]] - transpose an array of arrays.
 * [[d3.keys|Arrays#d3_keys]] - list the keys of an associative array.
