@@ -172,6 +172,10 @@ In many cases, it is possible to call the same function *foo* on both transition
 
 ## Easing
 
+<a name="_ease" href="#_ease">#</a> <b>ease</b>(<i>t</i>)
+
+Given a parametric time *t* in the range [0,1], returns the eased time. The returned value is typically in the range [0,1] as well, but may extend slightly beyond this range for certain easing functions, such as "elastic". Easing functions are commonly used by transitions to perform slow-in slow-out animation, and may be implemented directly or constructed using [d3.ease](#d3_ease).
+
 <a name="d3_ease" href="#d3_ease">#</a> d3.<b>ease</b>(<i>type</i>[, <i>arguments…</i>])
 
 Returns a built-in easing function of the specified *type*, with any optional *arguments*. An easing function takes the current parameterized time value *t* in the domain [0,1], and maps it to another value in a similar range; it is typically used to set transition [easing](#ease). The following easing types are supported:
