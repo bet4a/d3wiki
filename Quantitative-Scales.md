@@ -10,7 +10,11 @@ Linear scales are the most common scale, and a good default choice to map a cont
 
 <a name="linear" href="#linear">#</a> d3.scale.<b>linear</b>()
 
-Constructs a new linear scale with the default domain [0,1] and the default range [0,1]. The returned scale is a function that takes a single argument *x* representing a value in the input domain; the return value is the corresponding value in the output range. Thus, the default linear scale is equivalent to the identity function for numbers; for example linear(0.5) returns 0.5.
+Constructs a new linear scale with the default domain [0,1] and the default range [0,1]. Thus, the default linear scale is equivalent to the identity function for numbers; for example linear(0.5) returns 0.5.
+
+<a name="_linear" href="#_linear">#</a> <b>linear</b>(<i>x</i>)
+
+Given a value *x* in the input domain, returns the corresponding value in the output range.
 
 <a name="linear_invert" href="#linear_invert">#</a> linear.<b>invert</b>(<i>y</i>)
 
@@ -76,7 +80,11 @@ The returned scale is a function that takes a single argument *x* representing a
 
 <a name="pow" href="#pow">#</a> d3.scale.<b>pow</b>()
 
-Constructs a new power scale with the default domain [0,1], the default range [0,1], and the default exponent 1. The returned scale is a function that takes a single argument *x* representing a value in the input domain; the return value is the corresponding value in the output range. Thus, the default power scale is equivalent to the identity function for numbers; for example pow(0.5) returns 0.5.
+Constructs a new power scale with the default domain [0,1], the default range [0,1], and the default exponent 1. Thus, the default power scale is equivalent to the identity function for numbers; for example pow(0.5) returns 0.5.
+
+<a name="_pow" href="#_pow">#</a> <b>pow</b>(<i>x</i>)
+
+Given a value *x* in the input domain, returns the corresponding value in the output range.
 
 <a name="pow_invert" href="#pow_invert">#</a> pow.<b>invert</b>(<i>y</i>)
 
@@ -128,7 +136,11 @@ Log scales are similar to linear scales, except there's a logarithmic transform 
 
 <a name="log" href="#log">#</a> d3.scale.<b>log</b>()
 
-Constructs a new log scale with the default domain [0,1], the default range [0,1], and the base 10. The returned scale is a function that takes a single argument *x* representing a value in the input domain; the return value is the corresponding value in the output range.
+Constructs a new log scale with the default domain [0,1], the default range [0,1], and the base 10.
+
+<a name="_log" href="#_log">#</a> <b>log</b>(<i>x</i>)
+
+Given a value *x* in the input domain, returns the corresponding value in the output range.
 
 <a name="log_invert" href="#log_invert">#</a> log.<b>invert</b>(<i>y</i>)
 
@@ -176,7 +188,11 @@ Quantize scales are a variant of linear scales with a discrete rather than conti
 
 <a name="quantize" href="#quantize">#</a> d3.scale.<b>quantize</b>()
 
-Constructs a new quantize scale with the default domain [0,1] and the default range [0,1]. The returned scale is a function that takes a single argument *x* representing a value in the input domain; the return value is the corresponding value in the output range. Thus, the default quantize scale is equivalent to the [[round|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/round]] function for numbers; for example quantize(0.49) returns 0, and quantize(0.51) returns 1.
+Constructs a new quantize scale with the default domain [0,1] and the default range [0,1]. Thus, the default quantize scale is equivalent to the [[round|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/round]] function for numbers; for example quantize(0.49) returns 0, and quantize(0.51) returns 1.
+
+<a name="_quantize" href="#_quantize">#</a> <b>quantize</b>(<i>x</i>)
+
+Given a value *x* in the input domain, returns the corresponding value in the output range.
 
 <a name="quantize_domain" href="#quantize_domain">#</a> quantize.<b>domain</b>([<i>numbers</i>])
 
@@ -192,7 +208,11 @@ Quantile scales map an input domain to a discrete range. Although the input doma
 
 <a name="quantile" href="#quantile">#</a> d3.scale.<b>quantile</b>()
 
-Constructs a new quantile scale with an empty domain and an empty range. The returned scale is a function that takes a single argument *x* representing a value in the input domain; the return value is the corresponding value in the output range. The quantile scale is invalid until both a domain and range is specified.
+Constructs a new quantile scale with an empty domain and an empty range. The quantile scale is invalid until both a domain and range is specified.
+
+<a name="_quantile" href="#_quantile">#</a> <b>quantile</b>(<i>x</i>)
+
+Given a value *x* in the input domain, returns the corresponding value in the output range.
 
 <a name="quantile_domain" href="#quantile_domain">#</a> quantile.<b>domain</b>([<i>numbers</i>])
 
