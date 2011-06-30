@@ -75,6 +75,14 @@ Locate the insertion point for *x* in *array* to maintain sorted order. The argu
 
 Similar to bisectLeft, but returns an insertion point which comes after (to the right of) any existing entries of *x* in *array*. The returned insertion point *i* partitions the *array* into two halves so that all *v* <= *x* for *v* in *array*.slice(lo, i) for the left side and all *v* > *x* for *v* in *array*.slice(i, hi) for the right side.
 
+<a name="d3_first" href="#d3_first">#</a> d3.<b>first</b>(<i>array</i>[, <i>comparator</i>])
+
+Returns the lowest element in the specified *array*, as ordered by the specified *comparator*. If no comparator is specified, [d3.ascending](#d3_ascending) is used. This method is similar to [d3.min](#d3_min), except you can use an arbitrary comparator, rather than mapping array elements to a numeric value.
+
+<a name="d3_last" href="#d3_last">#</a> d3.<b>last</b>(<i>array</i>[, <i>comparator</i>])
+
+Returns the highest element in the specified *array*, as ordered by the specified *comparator*. If no comparator is specified, [d3.ascending](#d3_ascending) is used. This method is similar to [d3.max](#d3_max), except you can use an arbitrary comparator, rather than mapping array elements to a numeric value.
+
 ## Associative Arrays
 
 Another common data type in JavaScript is the associative array, or more simply the object, which has a set of named properties. In Java this is referred to as a map, and in Python, a dictionary. JavaScript provides a standard mechanism for iterating over the keys (or property names) in an associative array: the [for…in loop](https://developer.mozilla.org/en/JavaScript/Reference/Statements/for...in). However, note that the iteration order is undefined. D3 provides several operators for converting associative arrays to standard indexed arrays.
