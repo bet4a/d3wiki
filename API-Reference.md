@@ -49,9 +49,11 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[transition.remove|Transitions#remove]] - remove selected elements at the end of a transition.
 * [[transition.each|Transitions#each]] - add a listener for transition end events.
 * [[transition.call|Transitions#call]] - call a function passing in the current transition.
+* [[ease|Transitions#_ease]] - a parametric easing function.
 * [[d3.ease|Transitions#d3_ease]] - customize transition timing.
 * [[d3.timer|Transitions#d3_timer]] - start a custom animation timer.
 * [[d3.timer.flush|Transitions#d3_timer_flush]] - immediately execute any zero-delay timers.
+* [[interpolate|Transitions#_interpolate]] - a parametric interpolation function.
 * [[d3.interpolate|Transitions#d3_interpolate]] - interpolate two values.
 * [[d3.interpolateNumber|Transitions#d3_interpolateNumber]] - interpolate two numbers.
 * [[d3.interpolateRound|Transitions#d3_interpolateRound]] - interpolate two integers.
@@ -138,6 +140,7 @@ Also see the [[CSV]] module.
 ### [[Quantitative|Quantitative-Scales#quantitative]]
 
 * [[d3.scale.linear|Quantitative-Scales#linear]] - construct a linear quantitative scale.
+* [[linear|Quantitative-Scales#_linear]] - get the range value corresponding to a given domain value.
 * [[linear.invert|Quantitative-Scales#linear_invert]] - get the domain value corresponding to a given range value.
 * [[linear.domain|Quantitative-Scales#linear_domain]] - get or set the scale's input domain.
 * [[linear.range|Quantitative-Scales#linear_range]] - get or set the scale's output range.
@@ -149,6 +152,7 @@ Also see the [[CSV]] module.
 * [[linear.tickFormat|Quantitative-Scales#linear_tickFormat]] - get a formatter for displaying tick values.
 * [[d3.scale.sqrt|Quantitative-Scales#sqrt]] - construct a quantitative scale with a square root transform.
 * [[d3.scale.pow|Quantitative-Scales#pow]] - construct a quantitative scale with an exponential transform.
+* [[pow|Quantitative-Scales#_pow]] - get the range value corresponding to a given domain value.
 * [[pow.invert|Quantitative-Scales#pow_invert]] - get the domain value corresponding to a given range value. 
 * [[pow.domain|Quantitative-Scales#pow_domain]] - get or set the scale's input domain.
 * [[pow.range|Quantitative-Scales#pow_range]] - get or set the scale's output range.
@@ -160,6 +164,7 @@ Also see the [[CSV]] module.
 * [[pow.tickFormat|Quantitative-Scales#pow_tickFormat]] - get a formatter for displaying tick values.
 * [[pow.exponent|Quantitative-Scales#pow_exponent]] - get or set the exponent power.
 * [[d3.scale.log|Quantitative-Scales#log]] - construct a quantitative scale with an logarithmic transform.
+* [[log|Quantitative-Scales#_log]] - get the range value corresponding to a given domain value.
 * [[log.invert|Quantitative-Scales#log_invert]] - get the domain value corresponding to a given range value. 
 * [[log.domain|Quantitative-Scales#log_domain]] - get or set the scale's input domain.
 * [[log.range|Quantitative-Scales#log_range]] - get or set the scale's output range.
@@ -170,9 +175,11 @@ Also see the [[CSV]] module.
 * [[log.ticks|Quantitative-Scales#log_ticks]] - get representative values from the input domain.
 * [[log.tickFormat|Quantitative-Scales#log_tickFormat]] - get a formatter for displaying tick values.
 * [[d3.scale.quantize|Quantitative-Scales#quantize]] - construct a linear quantitative scale with a discrete output range.
+* [[quantize|Quantitative-Scales#_quantize]] - get the range value corresponding to a given domain value.
 * [[quantize.domain|Quantitative-Scales#quantize_domain]] - get or set the scale's input domain.
 * [[quantize.range|Quantitative-Scales#quantize_range]] - get or set the scale's output range (as discrete values).
 * [[d3.scale.quantile|Quantitative-Scales#quantile]] - construct a quantitative scale mapping to quantiles.
+* [[quantile|Quantitative-Scales#_quantile]] - get the range value corresponding to a given domain value.
 * [[quantile.domain|Quantitative-Scales#quantile_domain]] - get or set the scale's input domain (as discrete values).
 * [[quantile.range|Quantitative-Scales#quantile_range]] - get or set the scale's output range (as discrete values).
 * [[quantile.quantiles|Quantitative-Scales#quantile_quantiles]] - get the scale's quantile bin thresholds.
@@ -180,6 +187,7 @@ Also see the [[CSV]] module.
 ### [[Ordinal|Ordinal-Scales#ordinal]]
 
 * [[d3.scale.ordinal|Ordinal-Scales#ordinal]] - construct an ordinal scale.
+* [[ordinal|Ordinal-Scales#_ordinal]] - get the range value corresponding to a given domain value.
 * [[ordinal.domain|Ordinal-Scales#ordinal_domain]] - get or set the scale's input domain.
 * [[ordinal.range|Ordinal-Scales#ordinal_range]] - get or set the scale's output range.
 * [[ordinal.rangePoints|Ordinal-Scales#ordinal_rangePoints]] - divide a continuous output range for discrete points.
