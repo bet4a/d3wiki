@@ -216,6 +216,10 @@ Immediately execute any zero-delay timers. Normally, zero-delay transitions are 
 
 D3 has many built-in interpolators to simplify the transitioning of arbitrary values; an interpolator is a function that maps a parametric value *t* in the domain [0,1] to a color, number or arbitrary value.
 
+<a name="_interpolate" href="#_interpolate">#</a> <b>interpolate</b>(<i>t</i>)
+
+Given a parameter *t* in the range [0,1], returns the associated interpolation value. Interpolators are commonly used in conjunction with scales to map an input domain (such as a quantitative dimension) to an output range (such as a range of colors or pixel positions). Interpolators may be specified directly by declaring a function, or indirectly using [d3.interpolate](#d3_interpolate).
+
 <a name="d3_interpolate" href="#d3_interpolate">#</a> d3.<b>interpolate</b>(<i>a</i>, <i>b</i>)
 
 Returns the default interpolator between the two values *a* and *b*. The type of interpolator is based on the type of the end value *b*. If *b* is a number, *a* is coerced to a number and [interpolateNumber](#interpolateNumber) is used. If *b* is a string, a check is performed to see if *b* represents a color of the form `/^(#|rgb\(|hsl\()/`, or one of the [[CSS named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]]; if *b* is a color, *a* is coerced to an RGB color and [interpolateRgb](#interpolateRgb) is used. Otherwise, [interpolateString](#interpolateString) is used, which interpolates numbers embedded within strings. The behavior of this default interpolator may be extended to support additional types by pushing custom interpolators onto the [d3.interpolators](#d3_interpolators) array.
