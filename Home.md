@@ -22,6 +22,7 @@
 * [Koalas to the Max!](http://www.koalastothemax.com/) - Vadim Ogievetsky
 * [Urban Water Explorer](http://www.visualizing.org/visualizations/urban-water-explorer/) - Jan Willem Tulp
 * [What Do You Work For?](http://www.datavizchallenge.org/viz/73) - Jeffrey Baumes
+* [Misc. Examples](http://labratrevenge.com/experiments) - Justin Palmer
 
 Using D3? Post your examples here! More examples on the [D3 website](http://mbostock.github.com/d3/ex/) and in the [[Git repository|https://github.com/mbostock/d3/tree/master/examples]].
 
