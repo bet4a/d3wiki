@@ -8,6 +8,7 @@
 * [[A Bar Chart, Part 2|http://mbostock.github.com/d3/tutorial/bar-2.html]]
 * [[For Protovis Users|http://mbostock.github.com/d3/tutorial/protovis.html]]
 * [[Jan Willem Tulp's blog|http://www.janwillemtulp.com/category/d3/]]
+* [[Introduction to D3|http://dealloc.me/2011/06/24/d3-is-not-a-graphing-library.html]]
 
 ## Support
 
