@@ -78,7 +78,11 @@ A path generator, such as that returned by d3.svg.line, is both an object and a 
 
 <a name="line" href="#line">#</a> d3.svg.<b>line</b>()
 
-Constructs a new line generator with the default *x*- and *y*-accessor functions (that assume the input data is a two-element array of numbers; see below for details), and linear interpolation. By changing the interpolation, you can also generate splines and step functions. Also, don't be afraid to tack on additional path commands at the end. For example, if you want to generate a closed path, append a closepath (Z) command:
+Constructs a new line generator with the default *x*- and *y*-accessor functions (that assume the input data is a two-element array of numbers; see below for details), and linear interpolation. The returned function generates path data for an open piecewise linear curve, or polyline, as in a line chart:
+
+![line](line.png)
+
+By changing the interpolation, you can also generate splines and step functions. Also, don't be afraid to tack on additional path commands at the end. For example, if you want to generate a closed path, append a closepath (Z) command:
 
 ```javascript
 g.append("svg:path")
@@ -87,11 +91,9 @@ g.append("svg:path")
 
 The line generator is designed to work in conjunction with the [area](#area) generator. For example, when producing an area chart, you might use an area generator with a fill style, and a line generator with a stroke style to emphasize the top edge of the area. Since the line generator is only used the set the *d* attribute, you can control the appearance of the line using standard SVG styles and attributes, such as *fill*, *stroke* and *stroke-width*.
 
-<a name="_line" href="#_line">#</a> <b>line</b>(<i>data</i>[, <i>i</i>])
+<a name="_line" href="#_line">#</a> <b>line</b>(<i>data</i>[, <i>index</i>])
 
-The input to the generator is always an array of *data* elements for which to generate a line. The return value is the path data string for an open piecewise linear curve, or polyline, as in a line chart:
-
-![line](line.png)
+Returns the path data string for the specified array of *data* elements. An optional *index* may be specified, which is passed through to the line's accessor functions.
 
 <a name="line_x" href="#line_x">#</a> line.<b>x</b>([<i>x</i>])
 
@@ -163,7 +165,11 @@ In this example (see the [live version](http://bl.ocks.org/1016220)), the tensio
 
 <a name="line_radial" href="#line_radial">#</a> d3.svg.line.<b>radial</b>()
 
-Constructs a new radial line generator with the default *radius*- and *angle*-accessor functions (that assume the input data is a two-element array of numbers; see below for details), and linear interpolation. The input to the generator is always an array of data elements for which to generate a line. The output is a open piecewise linear curve, or polyline, as with the Cartesian [line](#line) generator.
+Constructs a new radial line generator with the default *radius*- and *angle*-accessor functions (that assume the input data is a two-element array of numbers; see below for details), and linear interpolation. The returned function generates path data for an open piecewise linear curve, or polyline, as with the Cartesian [line](#line) generator.
+
+<a name="_line_radial" href="#_line_radial">#</a> <b>line</b>(<i>data</i>[, <i>index</i>])
+
+Returns the path data string for the specified array of *data* elements. An optional *index* may be specified, which is passed through to the line's accessor functions.
 
 <a name="line_radial_radius" href="#line_radial_radius">#</a> line.<b>radius</b>([<i>radius</i>])
 
@@ -191,7 +197,7 @@ This method is a transformation of the Cartesian [line.y](#line_y) method.
 
 <a name="area" href="#area">#</a> d3.svg.<b>area</b>()
 
-Constructs a new area generator with the default *x*-, *y0*- and *y1*-accessor functions (that assume the input data is a two-element array of numbers; see below for details), and linear interpolation. The input to the generator is always an array of data elements for which to generate a line. The output is a closed piecewise linear curve, or polygon, as in an area chart:
+Constructs a new area generator with the default *x*-, *y0*- and *y1*-accessor functions (that assume the input data is a two-element array of numbers; see below for details), and linear interpolation. The returned function generates path data for a closed piecewise linear curve, or polygon, as in an area chart:
 
 ![area](area.png)
 
@@ -200,6 +206,10 @@ Conceptually, the polygon is formed using two [lines](#line): the top line is fo
 The area generator is designed to work in conjunction with the [line](#line) generator. For example, when producing an area chart, you might use an area generator with a fill style, and a line generator with a stroke style to emphasize the top edge of the area. Since the area generator is only used the set the *d* attribute, you can control the appearance of the area using standard SVG styles and attributes, such as *fill*.
 
 To create [streamgraphs](http://mbostock.github.com/d3/ex/stream.html) (stacked area charts), use the [stack](Stack-Layout) layout. This layout sets the y0 attribute for each value in a series, which can be used from the *y0*- and *y1*-accessors. Note that each series must have the same number of values per series, and each value must have the same *x*-coordinate; if you have missing data or inconsistent *x*-coordinates per series, you must resample and interpolate your data before computing the stacked layout.
+
+<a name="_area" href="#_area">#</a> <b>area</b>(<i>data</i>[, <i>index</i>])
+
+Returns the path data string for the specified array of *data* elements. An optional *index* may be specified, which is passed through to the area's accessor functions.
 
 <a name="area_x" href="#area_x">#</a> area.<b>x</b>([<i>x</i>])
 
@@ -276,6 +286,10 @@ If *tension* is specified, sets the Cardinal spline interpolation tension to the
 
 …
 
+<a name="_area_radial" href="#_area_radial">#</a> <b>area</b>(<i>data</i>[, <i>index</i>])
+
+Returns the path data string for the specified array of *data* elements. An optional *index* may be specified, which is passed through to the area's accessor functions.
+
 <a name="area_radial_radius" href="#area_radial_radius">#</a> area.<b>radius</b>([<i>radius</i>])
 
 …
@@ -302,11 +316,15 @@ If *tension* is specified, sets the Cardinal spline interpolation tension to the
 
 <a name="arc" href="#arc">#</a> d3.svg.<b>arc</b>()
 
-Constructs a new arc generator with the default *innerRadius*-, *outerRadius*-, *startAngle*- and *endAngle*-accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). While the default accessors assume that the arc dimensions are all specified dynamically, it is very common to set one or more of the dimensions as a constant, such as setting the inner radius to zero for a pie chart. The input to the generator is always a single element for which to generate an arc. The output is a closed solid arc, as in a pie or donut chart:
+Constructs a new arc generator with the default *innerRadius*-, *outerRadius*-, *startAngle*- and *endAngle*-accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). While the default accessors assume that the arc dimensions are all specified dynamically, it is very common to set one or more of the dimensions as a constant, such as setting the inner radius to zero for a pie chart. The returned function generates path data for a closed solid arc, as in a pie or donut chart:
 
 ![arc](arc.png)
 
 In fact, four forms are possible: a [circle](http://en.wikipedia.org/wiki/Circle) (when the inner radius is zero and the angular span is greater than or equal to 2π), a [circular sector](http://en.wikipedia.org/wiki/Circular_sector) (when the inner radius is zero and the angular span is less than 2π), an [annulus](http://en.wikipedia.org/wiki/Annulus_(mathematics\)) (when the inner radius is non-zero and the angular span is greater than or equal to 2π), and an annular sector (when the inner radius is non-zero and the angular span is less than 2π).
+
+<a name="_arc" href="#_arc">#</a> <b>arc</b>(<i>datum</i>[, <i>index</i>])
+
+Returns the path data string for the specified *datum*. An optional *index* may be specified, which is passed through to the arc's accessor functions.
 
 <a name="arc_innerRadius" href="#arc_innerRadius">#</a> arc.<b>innerRadius</b>([<i>radius</i>])
 
@@ -380,7 +398,7 @@ Alternatively, you can use SVG's transform attribute to rotate text into positio
 
 <a name="symbol" href="#symbol">#</a> d3.svg.<b>symbol</b>()
 
-Constructs a new symbol generator with the default *type*- and *size*-accessor functions (that make no assumptions about input data, and produce a circle sized 64 square pixels; see below for details). While the default accessors generate static symbols, it is common to set one or more of the accessors using a function, such as setting the size proportional to a dimension of data for a scatterplot. The input to the generator is always a single element for which to generate a symbol. The output is a symbol, as in a dot plot:
+Constructs a new symbol generator with the default *type*- and *size*-accessor functions (that make no assumptions about input data, and produce a circle sized 64 square pixels; see below for details). While the default accessors generate static symbols, it is common to set one or more of the accessors using a function, such as setting the size proportional to a dimension of data for a scatterplot. The returned function generates path data for various symbols, as in a dot plot:
 
 ![symbol](symbol.png)
 
@@ -395,6 +413,10 @@ vis.selectAll("path")
 ```
 
 In the future, we may add *x*- and *y*-accessors for parity with the line and area generators. The symbol will be centered at the origin (0,0) of the local coordinate system. You can also use SVG's built-in basic shapes to produce many of these symbol types, though D3's symbol generator is useful in conjunction with path elements because you can easily change the symbol type and size as a function of data.
+
+<a name="_symbol" href="#_symbol">#</a> <b>symbol</b>(<i>datum</i>[, <i>index</i>])
+
+Returns the path data string for the specified *datum*. An optional *index* may be specified, which is passed through to the symbol's accessor functions.
 
 <a name="symbol_type" href="#symbol_type">#</a> symbol.<b>type</b>([<i>type</i>])
 
@@ -417,11 +439,15 @@ If *size* is specified, sets the *size*-accessor to the specified function or co
 
 <a name="chord" href="#chord">#</a> d3.svg.<b>chord</b>()
 
-Constructs a new chord generator with the default accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). While the default accessors assume that the chord dimensions are all specified dynamically, it is very common to set one or more of the dimensions as a constant, such as the radius. The input to the generator is always a single element for which to generate a chord. The output is a closed path connecting two [arcs](http://en.wikipedia.org/wiki/Arc_(geometry\)) with quadratic Bézier curves, as in a [chord diagram](http://mbostock.github.com/d3/ex/chord.html):
+Constructs a new chord generator with the default accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). While the default accessors assume that the chord dimensions are all specified dynamically, it is very common to set one or more of the dimensions as a constant, such as the radius. The returned function generates path data for a closed shape connecting two [arcs](http://en.wikipedia.org/wiki/Arc_(geometry\)) with quadratic Bézier curves, as in a [chord diagram](http://mbostock.github.com/d3/ex/chord.html):
 
 ![chord](chord.png)
 
 A chord generator is often used in conjunction with an [arc generator](#arc), so as to draw annular segments at the start and end of the chords. In addition, the [chord layout](Chord-Layout) is useful for generating objects that describe a set of grouped chords from a matrix, compatible with the default accessors. 
+
+<a name="_chord" href="#_chord">#</a> <b>chord</b>(<i>datum</i>[, <i>index</i>])
+
+Returns the path data string for the specified *datum*. An optional *index* may be specified, which is passed through to the chord's accessor functions.
 
 <a name="chord_source" href="#chord_source">#</a> chord.<b>source</b>([<i>source</i>])
 
@@ -485,11 +511,15 @@ The *endAngle*-accessor is invoked in a similar manner as other value functions 
 
 <a name="diagonal" href="#diagonal">#</a> d3.svg.<b>diagonal</b>()
 
-Constructs a new diagonal generator with the default accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). The input to the generator is always a single element for which to generate a diagonal. The output is a cubic Bézier connecting the source and target points; the tangents are specified to produce smooth fan-in and fan-out when connecting nodes, as in a [node-link diagram](http://mbostock.github.com/d3/ex/tree.html):
+Constructs a new diagonal generator with the default accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). The returned function generates the path data for a cubic Bézier connecting the source and target points; the tangents are specified to produce smooth fan-in and fan-out when connecting nodes, as in a [node-link diagram](http://mbostock.github.com/d3/ex/tree.html):
 
 ![diagonal](diagonal.png)
 
 Although diagonals default to Cartesian (axis-aligned) orientations, they can be used in radial and other orientations using a [projection](#diagonal_projection).
+
+<a name="_diagonal" href="#_diagonal">#</a> <b>diagonal</b>(<i>datum</i>[, <i>index</i>])
+
+Returns the path data string for the specified *datum*. An optional *index* may be specified, which is passed through to the diagonal's accessor functions.
 
 <a name="diagonal_source" href="#diagonal_source">#</a> diagonal.<b>source</b>([<i>source</i>])
 
@@ -539,3 +569,7 @@ The *projection* is invoked in a similar manner as other value functions in D3. 
 <a name="diagonal_radial" href="#diagonal_radial">#</a> d3.svg.diagonal.<b>radial</b>()
 
 …
+
+<a name="_diagonal_radial" href="#_diagonal_radial">#</a> <b>diagonal</b>(<i>datum</i>[, <i>index</i>])
+
+Returns the path data string for the specified *datum*. An optional *index* may be specified, which is passed through to the diagonal's accessor functions.
