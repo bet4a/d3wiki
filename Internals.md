@@ -18,7 +18,25 @@ D3 uses a dispatcher to handle custom events.
 
 <a name="d3_dispatch" href="#d3_dispatch">#</a> d3.<b>dispatch</b>(<i>types…</i>)
 
-Creates a new dispatcher object for the specified *types*. Each argument is a string representing the name of the event type, such as "zoom" or "change". The returned object is an associative array; each type name is associated with a dispatch object.
+Creates a new dispatcher object for the specified *types*. Each argument is a string representing the name of the event type, such as "zoom" or "change". The returned object is an associative array; each type name is associated with a dispatch object. For example, if you wanted to create an event dispatcher for "start" and "end" events, you can say:
+
+```javascript
+var event = d3.dispatch("start", "end");
+```
+
+Then, you can access the dispatchers for the different event types as `event.start` and `event.end`. For example, you might add an event listener:
+
+```javascript
+event.start.add(listener);
+```
+
+And then later dispatch an event to all registered listeners:
+
+```javascript
+event.start.dispatch();
+```
+
+The `dispatch` method will preserve the context in which it is called, and pass any arguments, along to the registered listeners. Thus, by passing different arguments to the dispatch method, you can pass whatever arguments you want to the listeners; most commonly, you might create an object that represents the event, or pass along the current datum (*d*) and index (*i*). You can also control the "this" context of the listeners using [call](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/Call) or [apply](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/Apply).
 
 <a name="dispatch_add" href="#dispatch_add">#</a> dispatch.<b>add</b>(<i>listener</i>)
 
