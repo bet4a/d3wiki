@@ -78,11 +78,7 @@ A path generator, such as that returned by d3.svg.line, is both an object and a 
 
 <a name="line" href="#line">#</a> d3.svg.<b>line</b>()
 
-Constructs a new line generator with the default *x*- and *y*-accessor functions (that assume the input data is a two-element array of numbers; see below for details), and linear interpolation. The input to the generator is always an array of data elements for which to generate a line. The output is a open piecewise linear curve, or polyline, as in a line chart:
-
-![line](line.png)
-
-By changing the interpolation, you can also generate splines and step functions. Also, don't be afraid to tack on additional path commands at the end. For example, if you want to generate a closed path, append a closepath (Z) command:
+Constructs a new line generator with the default *x*- and *y*-accessor functions (that assume the input data is a two-element array of numbers; see below for details), and linear interpolation. By changing the interpolation, you can also generate splines and step functions. Also, don't be afraid to tack on additional path commands at the end. For example, if you want to generate a closed path, append a closepath (Z) command:
 
 ```javascript
 g.append("svg:path")
@@ -90,6 +86,12 @@ g.append("svg:path")
 ```
 
 The line generator is designed to work in conjunction with the [area](#area) generator. For example, when producing an area chart, you might use an area generator with a fill style, and a line generator with a stroke style to emphasize the top edge of the area. Since the line generator is only used the set the *d* attribute, you can control the appearance of the line using standard SVG styles and attributes, such as *fill*, *stroke* and *stroke-width*.
+
+<a name="_line" href="#_line">#</a> <b>line</b>(<i>data</i>[, <i>i</i>])
+
+The input to the generator is always an array of *data* elements for which to generate a line. The return value is the path data string for an open piecewise linear curve, or polyline, as in a line chart:
+
+![line](line.png)
 
 <a name="line_x" href="#line_x">#</a> line.<b>x</b>([<i>x</i>])
 
