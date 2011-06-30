@@ -6,7 +6,11 @@ A scale object, such as that returned by [d3.scale.ordinal](#ordinal), is both a
 
 <a name="ordinal" href="#ordinal">#</a> d3.scale.<b>ordinal</b>()
 
-Constructs a new ordinal scale with an empty domain and an empty range. The returned scale is a function that takes a single argument x representing a value in the input domain; the return value is the corresponding value in the output range. The ordinal scale is invalid (always returning undefined) until an output range is specified.
+Constructs a new ordinal scale with an empty domain and an empty range. The ordinal scale is invalid (always returning undefined) until an output range is specified.
+
+<a name="_ordinal" href="#_ordinal">#</a> <b>ordinal</b>(<i>x</i>)
+
+Given a value *x* in the input domain, returns the corresponding value in the output range.
 
 <a name="ordinal_domain" href="#ordinal_domain">#</a> ordinal.<b>domain</b>([<i>values</i>])
 
