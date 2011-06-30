@@ -4,7 +4,7 @@
 
 Constructs a new histogram function with the default value accessor, range function, and bin function. By default, the histogram function returns frequencies.
 
-<a name="histogram_histogram" href="#histogram_histogram"> <b>histogram</b>(<i>values</i>[, <i>index</i>])
+<a name="histogram_histogram" href="#histogram_histogram">#</a> <b>histogram</b>(<i>values</i>[, <i>index</i>])
 
 Evaluates the histogram function on the specified array of *values*. An optional *index* may be specified, which is passed along to the range and bin function.
 
