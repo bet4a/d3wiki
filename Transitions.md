@@ -172,10 +172,6 @@ In many cases, it is possible to call the same function *foo* on both transition
 
 ## Easing
 
-<a name="_ease" href="#_ease">#</a> <b>ease</b>(<i>t</i>)
-
-Given a parametric time *t* in the range [0,1], returns the eased time. The returned value is typically in the range [0,1] as well, but may extend slightly beyond this range for certain easing functions, such as "elastic". Easing functions are commonly used by transitions to perform slow-in slow-out animation, and may be implemented directly or constructed using [d3.ease](#d3_ease).
-
 <a name="d3_ease" href="#d3_ease">#</a> d3.<b>ease</b>(<i>type</i>[, <i>arguments…</i>])
 
 Returns a built-in easing function of the specified *type*, with any optional *arguments*. An easing function takes the current parameterized time value *t* in the domain [0,1], and maps it to another value in a similar range; it is typically used to set transition [easing](#ease). The following easing types are supported:
@@ -200,6 +196,10 @@ These built-in types may be extended using a variety of modes:
 
 The default easing function is "cubic-in-out" which provides suitable [[slow-in slow-out|http://en.wikipedia.org/wiki/12_basic_principles_of_animation#Slow_in_and_slow_out]] animation.
 
+<a name="_ease" href="#_ease">#</a> <b>ease</b>(<i>t</i>)
+
+Given a parametric time *t* in the range [0,1], returns the eased time. The returned value is typically in the range [0,1] as well, but may extend slightly beyond this range for certain easing functions, such as "elastic".
+
 ## Timers
 
 D3 internally maintains an efficient timer queue so that thousands of timers can be processed concurrently with minimal overhead; in addition, this timer queue guarantees consistent timing of animations when concurrent or staged transitions are scheduled. If your browser supports it, the timer queue will use [[requestAnimationFrame|http://paulirish.com/2011/requestanimationframe-for-smart-animating/]] for fluid and efficient animation. The timer queue is also smart about using setTimeout when there is a long delay before the next scheduled event.
@@ -216,13 +216,13 @@ Immediately execute any zero-delay timers. Normally, zero-delay transitions are 
 
 D3 has many built-in interpolators to simplify the transitioning of arbitrary values; an interpolator is a function that maps a parametric value *t* in the domain [0,1] to a color, number or arbitrary value.
 
-<a name="_interpolate" href="#_interpolate">#</a> <b>interpolate</b>(<i>t</i>)
-
-Given a parameter *t* in the range [0,1], returns the associated interpolation value. Interpolators are commonly used in conjunction with scales to map an input domain (such as a quantitative dimension) to an output range (such as a range of colors or pixel positions). Interpolators may be specified directly by declaring a function, or indirectly using [d3.interpolate](#d3_interpolate).
-
 <a name="d3_interpolate" href="#d3_interpolate">#</a> d3.<b>interpolate</b>(<i>a</i>, <i>b</i>)
 
 Returns the default interpolator between the two values *a* and *b*. The type of interpolator is based on the type of the end value *b*. If *b* is a number, *a* is coerced to a number and [interpolateNumber](#interpolateNumber) is used. If *b* is a string, a check is performed to see if *b* represents a color of the form `/^(#|rgb\(|hsl\()/`, or one of the [[CSS named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]]; if *b* is a color, *a* is coerced to an RGB color and [interpolateRgb](#interpolateRgb) is used. Otherwise, [interpolateString](#interpolateString) is used, which interpolates numbers embedded within strings. The behavior of this default interpolator may be extended to support additional types by pushing custom interpolators onto the [d3.interpolators](#d3_interpolators) array.
+
+<a name="_interpolate" href="#_interpolate">#</a> <b>interpolate</b>(<i>t</i>)
+
+Given a parameter *t* in the range [0,1], returns the associated interpolation value. Interpolators are commonly used in conjunction with scales to map an input domain (such as a quantitative dimension) to an output range (such as a range of colors or pixel positions).
 
 <a name="d3_interpolateNumber" href="#d3_interpolateNumber">#</a> d3.<b>interpolateNumber</b>(<i>a</i>, <i>b</i>)
 
