@@ -40,6 +40,8 @@ time = +date; // convert a Date object to time in milliseconds
 date = new Date(time); // convert a time in milliseconds to a Date object
 ```
 
+If you prefer to be explicit, you can also use the date object's [getTime](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getTime) method, but the + operator is shorter and possibly faster.
+
 <a name="parse" href="#parse">#</a> format.<b>parse</b>(<i>string</i>)
 
 …
