@@ -4,7 +4,7 @@ D3 includes a helper module for parsing and formatting dates modeled after the v
 
 <a name="format" href="#format">#</a> d3.time.<b>format</b>(<i>specifier</i>)
 
-Constructs a new time formatter using the given *specifier*. The specifier string may contain the following directives.
+Constructs a new local time formatter using the given *specifier*. The specifier string may contain the following directives.
 
 * %a - abbreviated weekday name.
 * %A - full weekday name.
@@ -41,7 +41,7 @@ For %U, all days in a new year preceding the first Sunday are considered to be i
 
 <a name="format_utc" href="#format_utc">#</a> d3.time.format.<b>utc</b>(<i>specifier</i>)
 
-…
+Constructs a new UTC time formatter using the given *specifier*. The specifier may contain the same directives as the local time [format](#format). Internally, this time formatter is implemented using the UTC methods on the Date object, such as [getUTCDate](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getUTCDate) and [setUTCDate](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/setUTCDate) in place of [getDate](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getDate) and [setDate](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/setDate).
 
 <a name="format_iso" href="#format_iso">#</a> d3.time.format.<b>iso</b>
 
