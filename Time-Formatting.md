@@ -64,4 +64,4 @@ Constructs a new UTC time formatter using the given *specifier*. The specifier m
 
 <a name="format_iso" href="#format_iso">#</a> d3.time.format.<b>iso</b>
 
-The full ISO 8601 UTC time format: "%Y-%m-%dT%H:%M:%SZ".
+The full [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) UTC time format: "%Y-%m-%dT%H:%M:%SZ".
