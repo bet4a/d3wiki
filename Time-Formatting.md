@@ -19,9 +19,9 @@ Constructs a new time formatter using the given *specifier*. The specifier strin
 * %M - minute as a decimal number [00,59].
 * %p - either AM or PM.
 * %S - second as a decimal number [00,61].
-* %U - week number of the year (Sunday as the first day of the week) as a decimal number [00,53]. All days in a new year preceding the first Sunday are considered to be in week 0.
+* %U - week number of the year (Sunday as the first day of the week) as a decimal number [00,53].
 * %w - weekday as a decimal number [0(Sunday),6].
-* %W - week number of the year (Monday as the first day of the week) as a decimal number [00,53]. All days in a new year preceding the first Monday are considered to be in week 0.
+* %W - week number of the year (Monday as the first day of the week) as a decimal number [00,53].
 * %x - date, as "%m/%d/%y".
 * %X - time, as "%H:%M:%S".
 * %y - year without century as a decimal number [00,99].
@@ -29,7 +29,7 @@ Constructs a new time formatter using the given *specifier*. The specifier strin
 * %Z - time zone offset, such as "-0700".
 * %% - a literal "%" character.	
 
-In some implementations of strftime and strptime (as in Python), a directive may include an optional field width or precision; this feature is not yet implemented in D3, but may be added in the future. Also note that the JavaScript environment does not provide a standard API for accessing locale-specific date and time formatters, so D3's implementation assumes the conventions of the English language (United States).
+For %U, all days in a new year preceding the first Sunday are considered to be in week 0. For %W, all days in a new year preceding the first Monday are considered to be in week 0. In some implementations of strftime and strptime (as in Python), a directive may include an optional field width or precision; this feature is not yet implemented in D3, but may be added in the future. Also note that the JavaScript environment does not provide a standard API for accessing locale-specific date and time formatters, so D3's implementation assumes the conventions of the English language (United States).
 
 <a name="_format" href="#_format">#</a> <b>format</b>(<i>date</i>)
 
