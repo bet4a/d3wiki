@@ -33,7 +33,12 @@ For %U, all days in a new year preceding the first Sunday are considered to be i
 
 <a name="_format" href="#_format">#</a> <b>format</b>(<i>date</i>)
 
-…
+Formats the specified *date*, returning the corresponding string. The *date* must be a JavaScript [Date](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date) object. Note that when dates are used in conjunction with [quantitative scales](Quantitative-Scales), the dates are implicitly coerced to numbers representing the number of milliseconds since [UNIX epoch](http://en.wikipedia.org/wiki/Unix_time). To convert between numbers and dates, you can use the following code:
+
+```javascript
+time = +date; // convert a Date object to time in milliseconds
+date = new Date(time); // convert a time in milliseconds to a Date object
+```
 
 <a name="parse" href="#parse">#</a> format.<b>parse</b>(<i>string</i>)
 
