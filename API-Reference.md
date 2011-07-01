@@ -112,7 +112,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[format|Time-Formatting#_format]] - format a date into a string.
 * [[format.parse|Time-Formatting#parse]] - parse a string into a date.
 * [[d3.time.format.utc|Time-Formatting#format_utc]] - create a new UTC time formatter for a given specifier.
-* [[d3.time.format.iso|Time-Formatting#format_iso]] - the ISO 8061 UTC time formatter, %Y-%m-%dT%H:%M:%SZ.
+* [[d3.time.format.iso|Time-Formatting#format_iso]] - the ISO 8601 UTC time formatter.
 
 ### [[CSV Formatting (d3.csv)|CSV]]
 
