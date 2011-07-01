@@ -100,8 +100,6 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.html|Requests#d3_html]] - request an HTML document fragment.
 * [[d3.xml|Requests#d3_xml]] - request an XML document fragment.
 
-Also see the [[CSV]] module.
-
 ### [[String Formatting|Formatting]]
 
 * [[d3.format|Formatting#d3_format]] - format a number as a string.
