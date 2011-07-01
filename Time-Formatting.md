@@ -11,7 +11,8 @@ Constructs a new local time formatter using the given *specifier*. The specifier
 * %b - abbreviated month name.
 * %B - full month name.
 * %c - date and time, as "%a %b %e %H:%M:%S %Y".
-* %d - day of the month as a decimal number [01,31].
+* %d - zero-padded day of the month as a decimal number [01,31].
+* %e - space-padded day of the month as a decimal number [ 1,31].
 * %H - hour (24-hour clock) as a decimal number [00,23].
 * %I - hour (12-hour clock) as a decimal number [01,12].
 * %j - day of the year as a decimal number [001,366].
@@ -44,7 +45,18 @@ If you prefer to be explicit, you can also use the date object's [getTime](https
 
 <a name="parse" href="#parse">#</a> format.<b>parse</b>(<i>string</i>)
 
-…
+Parses the specified *string*, returning the corresponding date object. If the parsing fails, returns null. Unlike "natural language" date parsers (including JavaScript's built-in [parse](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/parse)), this method is strict: if the specified string does not exactly match the associated format specifier, this method returns null. For example, if the associated format is the full ISO 8601 string "%Y-%m-%dT%H:%M:%SZ", then the string "2011-07-01T19:15:28Z" will be parsed correctly, but "2011-07-01T19:15:28", "2011-07-01 19:15:28" and "2011-07-01" will return null, despite being valid 8601 dates. If desired, you can use multiple formats to try multiple format specifiers sequentially.
+
+The following directives are **not** yet supported for parsing:
+
+* %j - day of the year.
+* %U - week number of the year.
+* %w - weekday number.
+* %W - week number of the year.
+* %Z - time zone offset, such as "-0700".
+* %% - a literal "%" character.	
+
+Also, note that %d and %e are considered equivalent for parsing.
 
 <a name="format_utc" href="#format_utc">#</a> d3.time.format.<b>utc</b>(<i>specifier</i>)
 
@@ -52,4 +64,4 @@ Constructs a new UTC time formatter using the given *specifier*. The specifier m
 
 <a name="format_iso" href="#format_iso">#</a> d3.time.format.<b>iso</b>
 
-… %Y-%m-%dT%H:%M:%SZ
+The full ISO 8601 UTC time format: "%Y-%m-%dT%H:%M:%SZ".
