@@ -108,17 +108,18 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 ### [[Time Formatting (d3.time)|Time-Formatting]]
 
-* [[d3.time.format|Time-Formatting#format]]
-* [[format.parse|Time-Formatting#parse]]
-* [[d3.time.format.utc|Time-Formatting#format_utc]]
-* [[d3.time.format.iso|Time-Formatting#format_iso]]
+* [[d3.time.format|Time-Formatting#format]] - create a new local time formatter for a given specifier.
+* [[format|Time-Formatting#_format]] - format a date into a string.
+* [[format.parse|Time-Formatting#parse]] - parse a string into a date.
+* [[d3.time.format.utc|Time-Formatting#format_utc]] - create a new UTC time formatter for a given specifier.
+* [[d3.time.format.iso|Time-Formatting#format_iso]] - the ISO 8061 UTC time formatter, %Y-%m-%dT%H:%M:%SZ.
 
 ### [[CSV Formatting (d3.csv)|CSV]]
 
-* [[d3.csv|CSV#csv]]
-* [[d3.csv.parse|CSV#parse]]
-* [[d3.csv.parseRows|CSV#parseRows]]
-* [[d3.csv.format|CSV#format]]
+* [[d3.csv|CSV#csv]] - request a comma-separated values (CSV) file.
+* [[d3.csv.parse|CSV#parse]] - parse a CSV string into objects using the header row.
+* [[d3.csv.parseRows|CSV#parseRows]] - parse a CSV string into tuples, ignoring the header row.
+* [[d3.csv.format|CSV#format]] - format an array of tuples into a CSV string.
 
 ### [[Colors]]
 
