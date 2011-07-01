@@ -108,6 +108,20 @@ Also see the [[CSV]] module.
 * [[d3.requote|Formatting#d3_requote]] - quote a string for use in a regular expression.
 * [[d3.round|Formatting#d3_round]] - rounds a value to some digits after the decimal point.
 
+### [[Time Formatting (d3.time)|Time-Formatting]]
+
+* [[d3.time.format|Time-Formatting#format]]
+* [[format.parse|Time-Formatting#parse]]
+* [[d3.time.format.utc|Time-Formatting#format_utc]]
+* [[d3.time.format.iso|Time-Formatting#format_iso]]
+
+### [[CSV Formatting (d3.csv)|CSV]]
+
+* [[d3.csv|CSV#csv]]
+* [[d3.csv.parse|CSV#parse]]
+* [[d3.csv.parseRows|CSV#parseRows]]
+* [[d3.csv.format|CSV#format]]
+
 ### [[Colors]]
 
 * [[d3.rgb|Colors#d3_rgb]] - specify a color in RGB space.
@@ -429,30 +443,12 @@ Also see the [[CSV]] module.
 * [[qq.y|QQ-Chart#y]]
 * [[qq.tickFormat|QQ-Chart#tickFormat]]
 
-## [[d3.time (Time)|Time]]
-
-### [[Formatting|Time-Formatting]]
-
-* [[d3.time.format|Time-Formatting#format]]
-* [[format.parse|Time-Formatting#parse]]
-* [[d3.time.format.utc|Time-Formatting#format_utc]]
-* [[d3.time.format.iso|Time-Formatting#format_iso]]
-
 ## [[d3.behavior (Behaviors)|Behaviors]]
 
 ### [[Zoom|Zoom-Behavior]]
 
 * [[d3.behavior.zoom|Zoom-Behavior#zoom]]
 * [[zoom.on|Zoom-Behavior#on]]
-
-## [[d3.csv (CSV)|CSV]]
-
-### [[CSV]]
-
-* [[d3.csv|CSV#csv]]
-* [[d3.csv.parse|CSV#parse]]
-* [[d3.csv.parseRows|CSV#parseRows]]
-* [[d3.csv.format|CSV#format]]
 
 ## [[d3.geo (Geography)|Geo]]
 
