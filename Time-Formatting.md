@@ -47,7 +47,7 @@ If you prefer to be explicit, you can also use the date object's [getTime](https
 
 Parses the specified *string*, returning the corresponding date object. If the parsing fails, returns null. Unlike "natural language" date parsers (including JavaScript's built-in [parse](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/parse)), this method is strict: if the specified string does not exactly match the associated format specifier, this method returns null. For example, if the associated format is the full ISO 8601 string "%Y-%m-%dT%H:%M:%SZ", then the string "2011-07-01T19:15:28Z" will be parsed correctly, but "2011-07-01T19:15:28", "2011-07-01 19:15:28" and "2011-07-01" will return null, despite being valid 8601 dates. If desired, you can use multiple formats to try multiple format specifiers sequentially.
 
-The following directives are **not** yet supported for parsing:
+The following directives are *not yet supported* for parsing:
 
 * %j - day of the year.
 * %U - week number of the year.
