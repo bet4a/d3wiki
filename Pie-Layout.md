@@ -10,7 +10,7 @@ You don't *need* to use the pie layout to create a pie chart; you can just use t
 
 Constructs a new pie function with the default value accessor (number), sort comparator (null), start angle (0) and end angle (2π).
 
-<a name="_pie" href="#_pie">#</a> pie(<i>values</i>[, <i>index</i>])
+<a name="_pie" href="#_pie">#</a> <b>pie</b>(<i>values</i>[, <i>index</i>])
 
 Evaluates the pie function on the specified array of *values*. An optional *index* may be specified, which is passed along to the start and end angle functions. The return value is an array of arc descriptors:
 
