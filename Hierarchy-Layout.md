@@ -8,6 +8,8 @@ The hierarchy layout is an *abstract* layout that is not used directly, but inst
 * [[Tree|Tree-Layout]] - position a tree of nodes tidily.
 * [[Treemap|Treemap-Layout]] - use recursive spatial subdivision to display a tree of nodes.
 
+Although not a hierarchy layout, the [bundle layout](Bundle-Layout) is also designed to work in conjunction with hierarchies.
+
 <a name="hierarchy" href="#hierarchy">#</a> d3.layout.<b>hierarchy</b>()
 
 Creates a new hierarchy layout with the default settings: the default sort order is by descending value; the default value accessor assumes each input data is an object with a numeric value attribute; and the default children accessor assumes each input data is an object with a children array.
