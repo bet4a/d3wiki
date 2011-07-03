@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Layouts]]
+> [[API Reference]] ▸ [[Layouts]] ▸ [Hierarchy](Hierarchy-Layout)
 
 The **cluster layout** produces [dendrograms](http://en.wikipedia.org/wiki/Dendrogram): node-link diagrams that place leaf nodes of the tree at the same depth. For example, a cluster layout can be used to organize software classes in a package hierarchy:
 
