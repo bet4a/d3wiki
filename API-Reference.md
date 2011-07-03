@@ -279,7 +279,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 ### [[Bundle|Bundle-Layout]]
 
-* [[d3.layout.bundle|Bundle-Layout#bundle]] - apply Holten's *hierarchical bundling* algorithm to edges.
+* [[d3.layout.bundle|Bundle-Layout#bundle]] - construct a new default bundle layout.
+* [[bundle|Bundle-Layout#_bundle]] - apply Holten's *hierarchical bundling* algorithm to edges.
 
 ### [[Chord|Chord-Layout]]
 
@@ -331,7 +332,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 ### [[Histogram|Histogram-Layout]]
 
-* [[d3.layout.histogram|Histogram-Layout#histogram]] - compute the distribution of data using quantized bins.
+* [[d3.layout.histogram|Histogram-Layout#histogram]] - construct a new default histogram layout.
+* [[histogram|Histogram-Layout#_histogram]] - compute the distribution of data using quantized bins.
 * [[histogram.value|Histogram-Layout#value]] - get or set the value accessor function.
 * [[histogram.range|Histogram-Layout#range]] - get or set the considered value range.
 * [[histogram.bins|Histogram-Layout#bins]] - specify how values are organized into bins.
@@ -359,7 +361,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 ### [[Pie|Pie-Layout]]
 
-* [[d3.layout.pie|Pie-Layout#pie]] - compute the start and end angles for arcs in a pie or donut chart.
+* [[d3.layout.pie|Pie-Layout#pie]] - construct a new default pie layout.
+* [[pie|Pie-Layout#_pie]] - compute the start and end angles for arcs in a pie or donut chart.
 * [[pie.value|Pie-Layout#value]] - get or set the value accessor function.
 * [[pie.sort|Pie-Layout#sort]] - control the clockwise order of pie slices.
 * [[pie.startAngle|Pie-Layout#startAngle]] - get or set the overall start angle of the pie.
@@ -367,7 +370,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 ### [[Stack|Stack-Layout]]
 
-* [[d3.layout.stack|Stack-Layout#stack]] - compute the baseline for each series in a stacked bar or area chart.
+* [[d3.layout.stack|Stack-Layout#stack]] - construct a new default stack layout.
+* [[stack|Stack-Layout#_stack]] - compute the baseline for each series in a stacked bar or area chart.
 * [[stack.values|Stack-Layout#values]] - get or set the values accessor function per series.
 * [[stack.order|Stack-Layout#order]] - control the order in which series are stacked.
 * [[stack.offset|Stack-Layout#offset]] - specify the overall baseline algorithm.
