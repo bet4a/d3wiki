@@ -4,7 +4,7 @@
 
 [![chord](chord.png)](http://mbostock.github.com/d3/ex/chord.html)
 
-A chord diagram visualizes these relationships by drawing quadratic Bézier curves between arcs. The source and target arcs represents two mirrored subsets of the total population, such as the number of people with black hair that prefer blonde hair, and the number of people with blonde hair that prefer black hair.
+A chord diagram visualizes these relationships by drawing quadratic Bézier curves between arcs. The source and target arcs represents two mirrored subsets of the total population, such as the number of people with black hair that prefer blonde hair, and the number of people with blonde hair that prefer black hair. As another example, consider this chord diagram of [software dependencies](http://bl.ocks.org/1046712).
 
 The chord layout is designed to work in conjunction with the [chord shape](SVG-Shapes#chord) and the [arc shape](SVG-Shapes#arc). The layout is used to generate data objects which describe the chords, serving as input to the chord shape. The layout also generates descriptions for the groups, which can be used as input to the arc shape.
 
