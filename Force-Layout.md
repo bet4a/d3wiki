@@ -47,15 +47,17 @@ If *friction* is specified, sets the friction coefficient to the specified value
 
 If *charge* is specified, sets the charge strength to the specified value. If *charge* is not specified, returns the current charge strength, which defaults to -30. A negative value results in node repulsion, while a positive value results in node attraction. For graph layout, negative values should be used; for [*n*-body simulation](http://mbostock.github.com/protovis/ex/nbody.html), positive values can be used. All nodes are assumed to be infinitesimal points with equal charge and mass.
 
-Unlike links, which only affect two linked nodes, the charge force is global: every node affects every other node, even if they are on disconnected subgraphs. To avoid quadratic performance slowdown for large graphs, the force layout uses the [Barnes–Hut approximation](http://en.wikipedia.org/wiki/Barnes-Hut_simulation) which takes O(*n* log *n*) per tick. For each tick, a quadtree is created to store the current node positions; then for each node, the sum charge force of all other nodes on the given node are computed. For clusters of nodes that are far away, the charge force is approximated by treating the distance cluster of nodes as a single, larger node. The [theta](#theta) parameter determines the accuracy of the computation.
+<a name="theta" href="#theta">#</a> force.<b>theta</b>([<i>theta</i>])
+
+If *theta* is specified, sets the Barnes–Hut approximation criterion to the specified value. If *theta* is not specified, returns the current value, which defaults to 0.8.  Unlike links, which only affect two linked nodes, the charge force is global: every node affects every other node, even if they are on disconnected subgraphs.
+
+To avoid quadratic performance slowdown for large graphs, the force layout uses the [Barnes–Hut approximation](http://en.wikipedia.org/wiki/Barnes-Hut_simulation) which takes O(*n* log *n*) per tick. For each tick, a quadtree is created to store the current node positions; then for each node, the sum charge force of all other nodes on the given node are computed. For clusters of nodes that are far away, the charge force is approximated by treating the distance cluster of nodes as a single, larger node. *Theta* determines the accuracy of the computation: if the ratio of the area of a quadrant in the quadtree to the distance between a node to the quadrants's center of mass is less than *theta*, all nodes in the given quadrant are treated as a single, larger node rather than computed individually.
 
 <a name="gravity" href="#gravity">#</a> force.<b>gravity</b>([<i>gravity</i>])
 
-If *gravity* is specified, sets the gravitational strength to the specified value. If *gravity* is not specified, returns the current gravitational strength, which defaults to 0.1.
+If *gravity* is specified, sets the gravitational strength to the specified value. If *gravity* is not specified, returns the current gravitational strength, which defaults to 0.1. The name of this parameter is perhaps misleading; it does not corresponding to physical [gravity](http://en.wikipedia.org/wiki/Gravitation) (which can be simulated using a positive [charge](#charge) parameter). Instead, gravity is implemented as a weak geometric constraint similar to a virtual spring connecting each node to the center of the layout's [size](#size). This approach has nice properties: near the center of the layout, the gravitational strength is almost zero, avoiding any local distortion of the layout; as nodes get pushed farther away from the center, the gravitational strength becomes strong in linear proportion to the distance. Thus, gravity will always overcome repulsive charge forces as some threshold, prevent disconnected nodes from escaping the layout.
 
-<a name="theta" href="#theta">#</a> force.<b>theta</b>([<i>theta</i>])
-
-Get or set the accuracy of the charge interaction (Barnes–Hut approximation).
+Gravity can be disabled by setting the gravitational strength to zero. If you disable gravity, it is recommended that you implement some other geometric constraint to prevent nodes from escaping the layout, such as constraining them within the layout's bounds.
 
 <a name="nodes" href="#nodes">#</a> force.<b>nodes</b>([<i>nodes</i>])
 
