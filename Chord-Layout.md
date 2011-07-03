@@ -50,11 +50,11 @@ Returns the computed chord objects, given the layout's current configuration and
 
 These objects, in turn, describe the underlying entity:
 
-* index - the row index, *i*
-* subindex - the column index, *j*
-* startAngle - the start angle of the arc, in radians
-* endAngle - the end angle of the arc, in radians
-* value - the value of the associated cell *ij*, a number
+* index - the row index, *i*.
+* subindex - the column index, *j*.
+* startAngle - the start angle of the arc, in radians.
+* endAngle - the end angle of the arc, in radians.
+* value - the value of the associated cell *ij*, a number.
 
 Note that these objects conveniently match the default accessors for the [chord](SVG-Shapes#chord) generator; however, you can still override the accessors to tweak the layout, or simply manipulate the returned objects.
 
@@ -62,9 +62,9 @@ Note that these objects conveniently match the default accessors for the [chord]
 
 Returns the computed group objects, given the layout's current configuration and associated matrix. If the group objects were previously-computed, this method returns the cached value. Changing any attribute of the layout implicitly clears the previously-computed groups, if any, such that the next call to this method will recompute the layout. The returned objects have the following properties:
 
-* index - the row index, *i*
-* startAngle - the start angle of the arc, in radians
-* endAngle - the end angle of the arc, in radians
-* value - the sum of the associated row *i*, a number
+* index - the row index, *i*.
+* startAngle - the start angle of the arc, in radians.
+* endAngle - the end angle of the arc, in radians.
+* value - the sum of the associated row *i*, a number.
 
 Note that these objects conveniently match the default accessors for the [arc](SVG-Shapes#arc) generator; however, you can still override the accessors to tweak the layout, or simply manipulate the returned objects.
