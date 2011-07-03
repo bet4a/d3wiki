@@ -32,43 +32,37 @@ function children(d) {
 }
 ```
 
-The children accessor is first invoked for root node in the hierarchy. If the accessor returns null, then the node is assumed to be a leaf node at the layout traversal terminates. Otherwise, the accessor should return an array of data elements representing the child nodes.
-
-Often, it is convenient to load the node hierarchy using [d3.json](Requests#d3_json), and represent the input hierarchy efficiently as a nested [JSON](http://json.org) object, rather than an explicit array of children. In this case, the leaf nodes of the hierarchy may be simple numbers rather than objects. Using the *children* accessor function, you can easily tell the layout how to traverse the input hierarchy. For example, if the input is:
+Often, it is convenient to load the node hierarchy using [d3.json](Requests#d3_json), and represent the input hierarchy as a nested [JSON](http://json.org) object. For example:
 
 ```javascript
 {
-  "analytics": {
-    "cluster": {
-      "AgglomerativeCluster": 3938,
-      "CommunityStructure": 3812,
-      "MergeEdge": 743
+ "name": "flare",
+ "children": [
+  {
+   "name": "analytics",
+   "children": [
+    {
+     "name": "cluster",
+     "children": [
+      {"name": "AgglomerativeCluster", "size": 3938},
+      {"name": "CommunityStructure", "size": 3812},
+      {"name": "MergeEdge", "size": 743}
+     ]
     },
-    "graph": {
-      "BetweennessCentrality": 3534,
-      "LinkDistance": 5731
+    {
+     "name": "graph",
+     "children": [
+      {"name": "BetweennessCentrality", "size": 3534},
+      {"name": "LinkDistance", "size": 5731}
+     ]
     }
+   ]
   }
+ ]
 }
 ```
 
-Then a suitable *children* accessor will iterate over the values in each object, if the current node is an object, or return null for non-objects to indicate that the specified input is a leaf node:
-
-```javascript
-function children(d) {
-  return isNaN(d) ? d3.values(d) : null;
-}
-```
-
-However, note that with this accessor, the data associated with each node will only have access to the child nodes, and will not know its own key! To store the name of the current node, in addition to the child nodes, we can use the [d3.entries](Arrays#d3_entries) helper:
-
-```javascript
-function children(d) {
-  return isNaN(d.value) ? d3.values(d.value) : null;
-}
-```
-
-With this children accessor, the input to the layout must itself be an object with key and value attributes. This can be achieved by saying d3.entries(*object*)[0], where *object* is the root JSON object.
+The children accessor is first invoked for root node in the hierarchy. If the accessor returns null, then the node is assumed to be a leaf node at the layout traversal terminates. Otherwise, the accessor should return an array of data elements representing the child nodes.
 
 <a name="nodes" href="#nodes">#</a> cluster.<b>nodes</b>(<i>root</i>)
 
