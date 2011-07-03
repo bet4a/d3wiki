@@ -4,6 +4,8 @@ A flexible force-directed graph layout implementation using position [Verlet int
 
 ![force](force.png)
 
+Additional custom forces and constraints may be applied on the "tick" event, simply by updating the *x* and *y* attributes of nodes. For example, this can be used to implement [multiple](http://bl.ocks.org/1021953) [foci](http://bl.ocks.org/1021841). The layout algorithm is also extremely robust in dealing with [disconnected graphs](http://bl.ocks.org/929623).
+
 <a name="force" href="#force">#</a> d3.layout.<b>force</b>()
 
 <a name="size" href="#size">#</a> force.<b>size</b>([<i>size</i>])
