@@ -28,10 +28,10 @@ Specifies how to extract values from the associated element in *layers*; *access
 
 If *offset* is specified, sets the stack offset algorithm to the specified value. If *offset* is not specified, returns the current offset algorithm. The following string values are supported:
 
-* silhouette -
-* wiggle -
-* expand -
-* zero -
+* silhouette - center the stream, as in [ThemeRiver](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.39.2977&rep=rep1&type=pdf).
+* wiggle - minimize weighted change in slope.
+* expand - normalize layers to fill the range [0,1].
+* zero - use a zero baseline, *i.e.*, the *y*-axis.
 
 In addition to a string, *offset* may be specified as a function. The input to the offset function is the layer data, converted to a standardized representation: a two-dimensional array of values, where each value is represented as a two-element array [*x*, *y*]. The return value of the offset function must be an array of values which represents the *y*-coordinates of the baseline. For example, the default "zero" offset is implemented as:
 
@@ -49,9 +49,9 @@ function offset(data) {
 
 If *order* is specified, sets the stack order to the specified value. If *order* is not specified, returns the current order. The following string values are supported:
 
-* inside-out - 
-* reverse -
-* default -
+* inside-out - sort by index of maximum value, then use balanced weighting.
+* reverse - reverse the input layer order.
+* default - use the input layer order.
 
 In addition to a string, *order* may be specified as a function. The input to the order function is the layer data, converted to the standardized representation: a two-dimensional array of values, where each value is represented as a two-element array [*x*, *y*]. The return value of the order function must be an array of indexes which represents the layer order. For example, the default order is implemented as:
 
