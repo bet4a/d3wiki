@@ -8,28 +8,56 @@ Additional custom forces and constraints may be applied on the "tick" event, sim
 
 <a name="force" href="#force">#</a> d3.layout.<b>force</b>()
 
+Constructs a new, default force-directed layout.
+
 <a name="size" href="#size">#</a> force.<b>size</b>([<i>size</i>])
+
+Get or set the layout size in *x* and *y*.
 
 <a name="distance" href="#distance">#</a> force.<b>distance</b>([<i>distance</i>])
 
+Get or set the link distance.
+
 <a name="friction" href="#friction">#</a> force.<b>friction</b>([<i>friction</i>])
+
+Get or set the friction coefficient in [0,1].
 
 <a name="charge" href="#charge">#</a> force.<b>charge</b>([<i>charge</i>])
 
+Get or set the charge strength. A negative number is recommended for repulsion.
+
 <a name="gravity" href="#gravity">#</a> force.<b>gravity</b>([<i>gravity</i>])
+
+Get or set the gravity strength.
 
 <a name="theta" href="#theta">#</a> force.<b>theta</b>([<i>theta</i>])
 
+Get or set the accuracy of the charge interaction (Barnes–Hut approximation).
+
 <a name="nodes" href="#nodes">#</a> force.<b>nodes</b>([<i>nodes</i>])
+
+Get or set the array of nodes to layout.
 
 <a name="links" href="#links">#</a> force.<b>links</b>([<i>links</i>])
 
+Get or set the array of links between nodes.
+
 <a name="start" href="#start">#</a> force.<b>start</b>()
+
+Start the simulation. Can also be used to restart the simulation when the nodes or links change. As the layout stabilizes, it cools, slowing down movement and eventually stopping. This way, it doesn't hog the CPU or drain the battery.
 
 <a name="resume" href="#resume">#</a> force.<b>resume</b>()
 
+Reheat the cooling parameter (*alpha*) and restart simulation.
+
 <a name="stop" href="#stop">#</a> force.<b>stop</b>()
+
+Immediately terminate the simulation.
 
 <a name="on" href="#on">#</a> force.<b>on</b>(<i>type</i>, <i>listener</i>)
 
+Listen to "tick" updates in the computed layout positions. Use this to update the displayed nodes and links.
+
 <a name="drag" href="#drag">#</a> force.<b>drag</b>()
+
+Bind a behavior to nodes to allow interactive dragging. Use in conjunction with the [call](Selections#call) operator on the nodes.
