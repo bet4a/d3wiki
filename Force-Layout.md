@@ -26,15 +26,13 @@ If *size* is specified, sets the available layout size to the specified two-elem
 
 <a name="distance" href="#distance">#</a> force.<b>distance</b>([<i>distance</i>])
 
-If *distance* is specified, sets the target distance between linked nodes to the specified value. If *distance* is not specified, returns the layout's current target distance, which defaults to 20. Typically, the distance is specified in pixels; however, the units are arbitrary relative to the layout's [size](#size).
-
-Links are not implemented as "spring forces", as in common in other force-directed layouts, but as weak geometric constraints. For each tick of the layout, the distance between each pair of linked nodes is computed, and compared to the target distance; the links are then moved towards each other, or away from each other, so as to converge on the desired distance. This method of constraints on top of position Verlet integration is vastly more stable than traditional methods using spring forces, and also allows for the flexible implementation of [other constraints](http://www.csse.monash.edu.au/~tdwyer/Dwyer2009FastConstraints.pdf), such as hierarchical layering.
+If *distance* is specified, sets the target distance between linked nodes to the specified value. If *distance* is not specified, returns the layout's current target distance, which defaults to 20. Typically, the distance is specified in pixels; however, the units are arbitrary relative to the layout's [size](#size). Links are not implemented as "spring forces", as in common in other force-directed layouts, but as weak geometric constraints. For each tick of the layout, the distance between each pair of linked nodes is computed and compared to the target distance; the links are then moved towards each other, or away from each other, so as to converge on the desired distance. This method of constraints relaxation on top of position Verlet integration is vastly more stable than previous methods using spring forces, and also allows for the flexible implementation of [other constraints](http://www.csse.monash.edu.au/~tdwyer/Dwyer2009FastConstraints.pdf) in the tick event listener, such as hierarchical layering.
 
 The current implementation does not allow variable link distances or strengths; this is being tracked as issue [#211](https://github.com/mbostock/d3/issues/211) and will be added in a future release. The goal will be to allow the link distance and strength to be computed as a function on the link objects, allowing total flexibility in the link specification.
 
 <a name="friction" href="#friction">#</a> force.<b>friction</b>([<i>friction</i>])
 
-Get or set the friction coefficient in [0,1].
+If *friction* is specified, sets the friction coefficient to the specified value. If *friction* is not specified, returns the current coefficient, which defaults to 0.9. The name of this parameter is perhaps misleading; it does not correspond to a standard physical [coefficient of friction](http://en.wikipedia.org/wiki/Friction#Coefficient_of_friction). Instead, it more closely approximates velocity decay: at each tick of the simulation, the particle velocity is scaled by the specified *friction*. Thus, a value of 1 corresponds to a frictionless environment, while a value of 0 freezes all particles in place. Values outside the range [0,1] are not recommended and may have destabilizing effects.
 
 <a name="charge" href="#charge">#</a> force.<b>charge</b>([<i>charge</i>])
 
