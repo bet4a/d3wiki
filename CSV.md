@@ -58,4 +58,4 @@ An optional *accessor* function may be specified as the second argument. This fu
 
 <a name="format" href="#format">#</a> d3.csv.<b>format</b>(<i>rows</i>)
 
-…
+Converts the specified array of *rows* into comma-separated values format, returning a string. This operation is the reverse of [parseRows](#parseRows). Each row will be separated by a newline (\n), and each column within each row will be separated by a comma (,). Values that contain either commas, double-quotes (") or newlines will be escaped using double-quotes. For example, format([["\"foo\""]]) returns """foo""".
