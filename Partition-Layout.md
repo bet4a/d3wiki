@@ -4,25 +4,11 @@ The **partition layout** produces adjacency diagrams: a space-filling variant of
 
 ![partition](partition.png)
 
-Like most other layouts, the object returned by d3.layout.partition is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior. Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
+Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
 
 <a name="partition" href="#partition">#</a> d3.layout.<b>partition</b>()
 
 Creates a new partition layout with the default settings: the default sort order is by descending value; the default value accessor assumes each input data is an object with a value number; the default children accessor assumes each input data is an object with a children array; the default size is 1×1.
-
-The partition layout is part of D3's family of [[hierarchical|Hierarchical-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes. Note that these position objects are not the same as the input data passed to the layout function; the computed layout nodes wrap the data objects, and provide several attributes:
-
-* parent - the parent node, or null for the root.
-* children - the array of child nodes, or null for leaf nodes.
-* value - the node value, as returned by the value accessor.
-* depth - the depth of the node, starting at 0 for the root.
-* x - the minimum *x*-coordinate of the node position.
-* y - the minimum *y*-coordinate of the node position.
-* dx - the *x*-extent of the node position. 
-* dy - the *y*-extent of the node position. 
-* data - the underlying data represented by this node.
-
-Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system; for example, you can treat *x* as a radius and *y* as an angle to produce a radial rather than Cartesian layout. In Cartesian orientation, *x*, *y*, *dx* and *dy* correspond to the "x", "y", "width" and "height" attributes of the SVG [[rect|SVG-Shapes#svg_rect]] element. In radial orientation, they can be used to compute the innerRadius, startAngle, outerRadius and endAngle of an [[arc|SVG-Shapes#arc]] generator. The Cartesian orientation may be called an **icicle tree**, while the radial orientation is called a **sunburst**.
 
 <a name="sort" href="#sort">#</a> partition.<b>sort</b>([<i>comparator</i>])
 
@@ -84,9 +70,24 @@ function children(d) {
 
 With this children accessor, the input to the layout must itself be an object with key and value attributes. This can be achieved by saying d3.entries(*object*)[0], where *object* is the root JSON object.
 
+<a name="nodes" href="#nodes">#</a> partition.<b>nodes</b>(<i>root</i>)
+
+Runs the partition layout, returning the array of nodes associated with the specified *root* node. The partition layout is part of D3's family of [[hierarchical|Hierarchical-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes. Several attributes are populated on each node:
+
+* parent - the parent node, or null for the root.
+* children - the array of child nodes, or null for leaf nodes.
+* value - the node value, as returned by the value accessor.
+* depth - the depth of the node, starting at 0 for the root.
+* x - the minimum *x*-coordinate of the node position.
+* y - the minimum *y*-coordinate of the node position.
+* dx - the *x*-extent of the node position. 
+* dy - the *y*-extent of the node position. 
+
+Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system; for example, you can treat *x* as a radius and *y* as an angle to produce a radial rather than Cartesian layout. In Cartesian orientation, *x*, *y*, *dx* and *dy* correspond to the "x", "y", "width" and "height" attributes of the SVG [[rect|SVG-Shapes#svg_rect]] element. In radial orientation, they can be used to compute the innerRadius, startAngle, outerRadius and endAngle of an [[arc|SVG-Shapes#arc]] generator. The Cartesian orientation may be called an **icicle tree**, while the radial orientation is called a **sunburst**.
+
 <a name="links" href="#links">#</a> partition.<b>links</b>(<i>nodes</i>)
 
-Given the specified array of *nodes*, such as the computed nodes returned by the partition layout, returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. Each link is an object with two attributes:
+Given the specified array of *nodes*, such as those returned [nodes](#nodes), returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. Each link is an object with two attributes:
 
 * source - the parent node (as described above).
 * target - the child node.
