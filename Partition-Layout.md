@@ -8,7 +8,7 @@ Like other classes in D3, layouts follow the method chaining pattern where sette
 
 <a name="partition" href="#partition">#</a> d3.layout.<b>partition</b>()
 
-Creates a new partition layout with the default settings: the default sort order is by descending value; the default value accessor assumes each input data is an object with a value number; the default children accessor assumes each input data is an object with a children array; the default size is 1×1.
+Creates a new partition layout with the default settings: the default sort order is by descending value; the default value accessor assumes each input data is an object with a numeric `value` attribute; the default children accessor assumes each input data is an object with a `children` array; the default size is 1×1.
 
 <a name="sort" href="#sort">#</a> partition.<b>sort</b>([<i>comparator</i>])
 
