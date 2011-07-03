@@ -26,7 +26,11 @@ If *size* is specified, sets the available layout size to the specified two-elem
 
 <a name="distance" href="#distance">#</a> force.<b>distance</b>([<i>distance</i>])
 
-Get or set the link distance.
+If *distance* is specified, sets the target distance between linked nodes to the specified value. If *distance* is not specified, returns the layout's current target distance, which defaults to 20. Typically, the distance is specified in pixels; however, the units are arbitrary relative to the layout's [size](#size).
+
+Links are not implemented as "spring forces", as in common in other force-directed layouts, but as weak geometric constraints. For each tick of the layout, the distance between each pair of linked nodes is computed, and compared to the target distance; the links are then moved towards each other, or away from each other, so as to converge on the desired distance. This method of constraints on top of position Verlet integration is vastly more stable than traditional methods using spring forces, and also allows for the flexible implementation of [other constraints](http://www.csse.monash.edu.au/~tdwyer/Dwyer2009FastConstraints.pdf), such as hierarchical layering.
+
+The current implementation does not allow variable link distances or strengths; this is being tracked as issue [#211](https://github.com/mbostock/d3/issues/211) and will be added in a future release. The goal will be to allow the link distance and strength to be computed as a function on the link objects, allowing total flexibility in the link specification.
 
 <a name="friction" href="#friction">#</a> force.<b>friction</b>([<i>friction</i>])
 
