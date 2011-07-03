@@ -16,7 +16,7 @@ Note that the y attribute is the same as the length attribute, in frequency mode
 
 <a name="value" href="#value">#</a> histogram.<b>value</b>([<i>accessor</i>])
 
-Specifies how to extract a value from the associated data; *accessor* is a function which is invoked on each input value passed to [histogram](#_histogram), equivalent to calling *array.map(accessor)* before computing the histogram. The default value function is the built-in [Number](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number), which is similar to the identity function. If *accessor* is not specified, returns the current value accessor.
+Specifies how to extract a value from the associated data; *accessor* is a function which is invoked on each input value passed to [histogram](#_histogram), equivalent to calling *values.map(accessor)* before computing the histogram. The default value function is the built-in [Number](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number), which is similar to the identity function. If *accessor* is not specified, returns the current value accessor.
 
 <a name="range" href="#range">#</a> histogram.<b>range</b>([<i>range</i>])
 
