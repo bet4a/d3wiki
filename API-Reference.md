@@ -297,6 +297,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.layout.cluster|Cluster-Layout#cluster]] - cluster entities into a dendrogram.
 * [[cluster.sort|Cluster-Layout#sort]] - get or set the comparator function for sibling nodes.
 * [[cluster.children|Cluster-Layout#children]] - get or set the accessor function for child nodes.
+* [[cluster.nodes|Cluster-Layout#nodes]] - compute the cluster layout and return the array of nodes.
 * [[cluster.links|Cluster-Layout#links]] - compute the parent-child links between tree nodes.
 * [[cluster.separation|Cluster-Layout#separation]] - get or set the spacing function between neighboring nodes.
 * [[cluster.size|Cluster-Layout#size]] - get or set the layout size in *x* and *y*.
@@ -323,6 +324,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.layout.hierarchy|Hierarchy-Layout#hierarchy]] - derive a custom hierarchical layout implementation.
 * [[hierarchy.sort|Hierarchy-Layout#sort]] - get or set the comparator function for sibling nodes.
 * [[hierarchy.children|Hierarchy-Layout#children]] - get or set the accessor function for child nodes.
+* [[hierarchy.nodes|Hierarchy-Layout#nodes]] - compute the layout and return the array of nodes.
 * [[hierarchy.links|Hierarchy-Layout#links]] - compute the parent-child links between tree nodes.
 * [[hierarchy.value|Hierarchy-Layout#value]] - get or set the value accessor function.
 * [[hierarchy.revalue|Hierarchy-Layout#revalue]] - recompute the hierarchy values.
@@ -340,6 +342,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.layout.pack|Pack-Layout#pack]] - produce a hierarchical layout using recursive circle-packing.
 * [[pack.sort|Pack-Layout#sort]] - control the order in which sibling nodes are traversed.
 * [[pack.children|Pack-Layout#children]] - get or set the children accessor function.
+* [[pack.nodes|Pack-Layout#nodes]] - compute the pack layout and return the array of nodes.
 * [[pack.links|Pack-Layout#links]] - compute the parent-child links between tree nodes.
 * [[pack.value|Pack-Layout#value]] - get or set the value accessor used to size circles.
 * [[pack.size|Pack-Layout#size]] - specify the layout size in *x* and *y*.
@@ -349,6 +352,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.layout.partition|Partition-Layout#partition]] - recursively partition a node tree into a sunburst or icicle.
 * [[partition.sort|Partition-Layout#sort]] - control the order in which sibling nodes are traversed.
 * [[partition.children|Partition-Layout#children]] - get or set the children accessor function.
+* [[partition.nodes|Partition-Layout#nodes]] - compute the partition layout and return the array of nodes.
 * [[partition.links|Partition-Layout#links]] - compute the parent-child links between tree nodes.
 * [[partition.value|Partition-Layout#value]] - get or set the value accessor used to size circles.
 * [[partition.size|Partition-Layout#size]] - specify the layout size in *x* and *y*.
@@ -376,6 +380,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.layout.tree|Tree-Layout#tree]] - position a tree of nodes tidily.
 * [[tree.sort|Tree-Layout#sort]] - control the order in which sibling nodes are traversed.
 * [[tree.children|Tree-Layout#children]] - get or set the children accessor function.
+* [[tree.nodes|Tree-Layout#nodes]] - compute the tree layout and return the array of nodes.
 * [[tree.links|Tree-Layout#links]] - compute the parent-child links between tree nodes.
 * [[tree.separation|Tree-Layout#separation]] - get or set the spacing function between neighboring nodes.
 * [[tree.size|Tree-Layout#size]] - specify the layout size in *x* and *y*.
@@ -385,6 +390,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.layout.treemap|Treemap-Layout#treemap]] - use recursive spatial subdivision to display a tree of nodes.
 * [[treemap.sort|Treemap-Layout#sort]] - control the order in which sibling nodes are traversed.
 * [[treemap.children|Treemap-Layout#children]] - get or set the children accessor function.
+* [[treemap.nodes|Treemap-Layout#nodes]] - compute the treemap layout and return the array of nodes.
 * [[treemap.links|Treemap-Layout#links]] - compute the parent-child links between tree nodes.
 * [[treemap.value|Treemap-Layout#value]] - get or set the value accessor used to size treemap cells.
 * [[treemap.size|Treemap-Layout#size]] - specify the layout size in *x* and *y*.
