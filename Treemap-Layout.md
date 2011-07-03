@@ -8,6 +8,8 @@
 
 <a name="children" href="#children">#</a> treemap.<b>children</b>([<i>children</i>])
 
+<a name="nodes" href="#nodes">#</a> treemap.<b>nodes</b>(<i>root</i>)
+
 <a name="links" href="#links">#</a> treemap.<b>links</b>(<i>nodes</i>)
 
 <a name="value" href="#value">#</a> treemap.<b>value</b>([<i>value</i>])
