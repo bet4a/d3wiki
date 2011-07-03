@@ -31,6 +31,7 @@ function children(d) {
   return d.children;
 }
 ```
+
 Often, it is convenient to load the node hierarchy using [d3.json](Requests#d3_json), and represent the input hierarchy as a nested [JSON](http://json.org) object. For example:
 
 ```javascript
