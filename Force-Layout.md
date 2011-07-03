@@ -1,8 +1,17 @@
 > [[API Reference]] ▸ [[Layouts]]
 
-A flexible force-directed graph layout implementation using position [Verlet integration](http://en.wikipedia.org/wiki/Verlet_integration) to allow [simple constraints](http://www.csse.monash.edu.au/~tdwyer/Dwyer2009FastConstraints.pdf). For more on physical simulations, see [Thomas Jakobsen](http://www.gamasutra.com/resource_guide/20030121/jacobson_pfv.htm). This implementation uses a [quadtree](Quadtree-Geom) to accelerate charge interaction using the [Barnes–Hut approximation](http://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation). In addition to the repulsive [charge](#charge) force, a psuedo-[gravity](#gravity) force keeps nodes centered in the visible area, while links are fixed-[distance](#distance) geometric constraints. Additional custom forces and constraints may be applied on the "tick" event, simply by updating the *x* and *y* attributes of nodes. For example, this can be used to implement [multiple](http://bl.ocks.org/1021953) [foci](http://bl.ocks.org/1021841). Thanks to gravity, the layout algorithm is also extremely robust in dealing with [disconnected graphs](http://bl.ocks.org/929623). Force-directed layout can also be applied to [trees](http://bl.ocks.org/1062288).
+A flexible force-directed graph layout implementation using position [Verlet integration](http://en.wikipedia.org/wiki/Verlet_integration) to allow [simple constraints](http://www.csse.monash.edu.au/~tdwyer/Dwyer2009FastConstraints.pdf). For more on physical simulations, see [Thomas Jakobsen](http://www.gamasutra.com/resource_guide/20030121/jacobson_pfv.htm). This implementation uses a [quadtree](Quadtree-Geom) to accelerate charge interaction using the [Barnes–Hut approximation](http://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation). In addition to the repulsive [charge](#charge) force, a psuedo-[gravity](#gravity) force keeps nodes centered in the visible area and avoids expulsion of disconnected subgraphs, while links are fixed-[distance](#distance) geometric constraints. Additional custom forces and constraints may be applied on the "tick" event, simply by updating the *x* and *y* attributes of nodes.
 
 ![force](force.png)
+
+Some fun examples:
+
+* [divergent forces](http://bl.ocks.org/1021841)
+* [multiple foci](http://bl.ocks.org/1021953)
+* [graph constructor](http://bl.ocks.org/929623)
+* [force-directed tree](http://bl.ocks.org/1062288)
+* [force-directed symbols](http://bl.ocks.org/1062383)
+* [force-directed images and labels](http://bl.ocks.org/950642)
 
 Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement. Unlike some of the other layout implementations which are stateless, the force layout keeps a reference to the associated nodes and links internally; thus, a given force layout instance can only be used with a single dataset.
 
