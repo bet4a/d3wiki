@@ -2,6 +2,7 @@
 
 See one of:
 
+* [[Bundle|Bundle-Layout]] - apply Holten's *hierarchical bundling algorithm* to edges.
 * [[Chord|Chord-Layout]] - produce a chord diagram from a matrix of relationships.
 * [[Cluster|Cluster-Layout]] - cluster entities into a dendrogram.
 * [[Force|Force-Layout]] - position linked nodes using physical simulation.
