@@ -91,16 +91,53 @@ The layout also initializes the *source* and *target* attributes on the associat
 
 <a name="resume" href="#resume">#</a> force.<b>resume</b>()
 
-Reheat the cooling parameter (*alpha*) and restart simulation.
+Reheat the cooling parameter (*alpha*) and restart simulation. This method sets the internal *alpha* parameter to 0.1, and then restarts the [timer](Transitions#d3_timer). Typically, you don't need to call this method directly; it is called automatically by [start](#start). It is also called automatically by [drag](#drag) on mouseover.
 
 <a name="stop" href="#stop">#</a> force.<b>stop</b>()
 
-Immediately terminate the simulation.
+Immediately terminates the simulation, setting *alpha* to zero. This can be used to stop the simulation explicitly, for example, if you want to show animation or allow other interaction. If you do not stop the layout explicitly, it will still stop automatically after the layout's cooling parameter decays below some threshold.
 
 <a name="on" href="#on">#</a> force.<b>on</b>(<i>type</i>, <i>listener</i>)
 
-Listen to "tick" updates in the computed layout positions. Use this to update the displayed nodes and links.
+Registers the specified *listener* to receive events of the specified *type* from the force layout. Currently, only "tick" events are supported, which are dispatched for each tick of the simulation. Listen to tick events to update the displayed positions of nodes and links. For example, if you initially display the nodes and links like so:
+
+```javascript
+var link = vis.selectAll("line")
+    .data(links)
+  .enter().append("svg:line")
+    .attr("x1", function(d) { return d.source.x; })
+    .attr("y1", function(d) { return d.source.y; })
+    .attr("x2", function(d) { return d.target.x; })
+    .attr("y2", function(d) { return d.target.y; });
+
+var node = vis.selectAll("circle")
+    .data(nodes)
+  .enter().append("svg:circle")
+    .attr("cx", function(d) { return d.x; })
+    .attr("cy", function(d) { return d.y; })
+    .attr("r", 5);
+```
+
+You can update their positions on tick:
+
+```javascript
+force.on("tick", function() {
+  link.attr("x1", function(d) { return d.source.x; })
+      .attr("y1", function(d) { return d.source.y; })
+      .attr("x2", function(d) { return d.target.x; })
+      .attr("y2", function(d) { return d.target.y; });
+
+  node.attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+});
+```
+
+In this case, we've stored the selections `node` and `link` on initialization, so that we don't need to reselect the nodes on every tick. If you prefer, you can display nodes and links differently; for example, you might use [symbols](SVG-Shapes#symbol) rather than circles.
 
 <a name="drag" href="#drag">#</a> force.<b>drag</b>()
 
-Bind a behavior to nodes to allow interactive dragging. Use in conjunction with the [call](Selections#call) operator on the nodes.
+Bind a behavior to nodes to allow interactive dragging. Use this in conjunction with the [call](Selections#call) operator on the nodes; for example, say `node.call(force.drag)` on initialization. The drag event sets the *fixed* attribute of nodes on mouseover, such that as soon as the mouse is over a node, it stops moving. Fixing on mouseover, rather than on mousedown, makes it easier to catch moving nodes. When a mousedown event is received, and on each subsequent mousemove until mouseup, the node center is set to the current mouse position. In addition, each mousemove triggers a [resume](#resume) of the force layout, reheating the simulation.
+
+Implementation note: the mousemove and mouseup event listeners are registered on the current window, such that when the user starts dragging a node, they can continue to drag the node even if the mouse leaves the window. Each event listener uses the "force" namespace, so as to avoid collision with other event listeners you may wish to bind to nodes or to the window. If a node is moved by the drag behavior, the subsequent click event that would be triggered by the final mouseup is captured and stopped from propagating. This allows you to register click event handlers on nodes that will only be triggered if nodes are clicked *without* dragging.
+
+Also, note that the offset between the node's center and the mouse position is always zero. This can lead to an initial jump on mousemove to center the node under the mouse. However, this is typically only noticeable with large nodes, and can be fixed in a future release.
