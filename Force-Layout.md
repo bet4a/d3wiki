@@ -61,15 +61,28 @@ Gravity can be disabled by setting the gravitational strength to zero. If you di
 
 <a name="nodes" href="#nodes">#</a> force.<b>nodes</b>([<i>nodes</i>])
 
-Get or set the array of nodes to layout.
+If *nodes* is specified, sets the layout's associated nodes to the specified array. If *nodes* is not specified, returns the current array, which defaults to the empty array. Each node has the following attributes:
+
+* index - the zero-based index of the node within the *nodes* array.
+* x - the *x*-coordinate of the current node position.
+* y - the *y*-coordinate of the current node position.
+* px - the *x*-coordinate of the previous node position.
+* py - the *y*-coordinate of the previous node position.
+* fixed - a boolean indicating whether node position is locked.
+
+These attributes do not need to be set before passing the nodes to the layout; if they are not set, suitable defaults will be initialized by the layout when [start](#start) is called. However, be aware that if you are storing other data on your nodes, your data attributes should not conflict with the above properties used by the layout.
 
 <a name="links" href="#links">#</a> force.<b>links</b>([<i>links</i>])
+
+
 
 Get or set the array of links between nodes.
 
 <a name="start" href="#start">#</a> force.<b>start</b>()
 
-Start the simulation. Can also be used to restart the simulation when the nodes or links change. As the layout stabilizes, it cools, slowing down movement and eventually stopping. This way, it doesn't hog the CPU or drain the battery.
+Starts the simulation; this method must be called when the layout is first created, after assigning the nodes and links. In addition, it should be called again whenever the nodes or links change. Internally, the layout uses a cooling parameter *alpha* which controls the layout temperature: as the physical simulation converges on a stable layout, the temperature drops, causing nodes to move more slowly. Eventually, *alpha* drops below a threshold and the simulation stops completely, freeing the CPU and avoiding battery drain. The layout can be reheated using [resume](#resume) or by restarting; this happens automatically when using the [drag](#drag) behavior.
+
+On start, the layout initializes various attributes on the associated nodes. The *index* of each node is computed by iterating over the array, starting at zero. The initial *x* and *y* coordinates, if not already set externally to a valid number, are computed by examining neighboring nodes: if a linked node already has an initial position in *x* or *y*, the corresponding coordinates are applied to the new node. This increases the stability of the graph layout when new nodes are added, rather than using the default which is to initialize the position randomly within the layout's [size](#size). The previous *px* and *py* position is set to the initial position, if not already set, giving new nodes an initial velocity of zero. Finally, the *fixed* boolean defaults to false.
 
 <a name="resume" href="#resume">#</a> force.<b>resume</b>()
 
