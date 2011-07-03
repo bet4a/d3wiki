@@ -401,6 +401,63 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[treemap.round|Treemap-Layout#round]] - enable or disable rounding to exact pixels.
 * [[treemap.sticky|Treemap-Layout#sticky]] - make the layout sticky for stable updates.
 
+## [[d3.geo (Geography)|Geo]]
+
+### [[Paths|Geo-Paths]]
+
+* [[d3.geo.path|Geo-Paths#path]]
+* [[path.projection|Geo-Paths#projection]]
+* [[path.area|Geo-Paths#area]]
+* [[path.centroid|Geo-Paths#centroid]]
+* [[path.pointRadius|Geo-Paths#pointRadius]]
+* [[d3.geo.bounds|Geo-Paths#bounds]]
+
+### [[Projections|Geo-Projections]]
+
+* [[d3.geo.mercator|Geo-Projections#mercator]]
+* [[mercator.scale|Geo-Projections#mercator_scale]]
+* [[mercator.translate|Geo-Projections#mercator_translate]]
+* [[d3.geo.albers|Geo-Projections#albers]]
+* [[albers.origin|Geo-Projections#albers_origin]]
+* [[albers.parallels|Geo-Projections#albers_parallels]]
+* [[albers.scale|Geo-Projections#albers_scale]]
+* [[albers.translate|Geo-Projections#albers_translate]]
+* [[d3.geo.albersUsa|Geo-Projections#albersUsa]]
+* [[albersUsa.scale|Geo-Projections#albersUsa_scale]]
+* [[albersUsa.translate|Geo-Projections#albersUsa_translate]]
+* [[d3.geo.azimuthal|Geo-Projections#azimuthal]]
+* [[azimuthal.mode|Geo-Projections#azimuthal_mode]]
+* [[azimuthal.origin|Geo-Projections#azimuthal_origin]]
+* [[azimuthal.scale|Geo-Projections#azimuthal_scale]]
+* [[azimuthal.translate|Geo-Projections#azimuthal_translate]]
+
+## [[d3.geom (Geometry)|Geom]]
+
+### [[Voronoi|Voronoi-Geom]]
+
+* [[d3.geom.voronoi|Voronoi-Geom#voronoi]]
+* [[d3.geom.delaunay|Voronoi-Geom#delaunay]]
+
+### [[Quadtree|Quadtree-Geom]]
+
+* [[d3.geom.quadtree|Quadtree-Geom#quadtree]]
+* [[quadtree.visit|Quadtree-Geom#visit]]
+
+### [[Polygon|Polygon-Geom]]
+
+* [[d3.geom.polygon|Polygon-Geom#polygon]]
+* [[polygon.area|Polygon-Geom#area]]
+* [[polygon.centroid|Polygon-Geom#centroid]]
+* [[polygon.clip|Polygon-Geom#clip]]
+
+### [[Hull|Hull-Geom]]
+
+* [[d3.geom.hull|Hull-Geom#hull]]
+
+### [[Contour|Contour-Geom]]
+
+* [[d3.geom.contour|Contour-Geom#contour]]
+
 ## [[d3.chart (Charts)|Charts]]
 
 ### [[Box|Box-Chart]]
@@ -458,60 +515,3 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 * [[d3.behavior.zoom|Zoom-Behavior#zoom]]
 * [[zoom.on|Zoom-Behavior#on]]
-
-## [[d3.geo (Geography)|Geo]]
-
-### [[Paths|Geo-Paths]]
-
-* [[d3.geo.path|Geo-Paths#path]]
-* [[path.projection|Geo-Paths#projection]]
-* [[path.area|Geo-Paths#area]]
-* [[path.centroid|Geo-Paths#centroid]]
-* [[path.pointRadius|Geo-Paths#pointRadius]]
-* [[d3.geo.bounds|Geo-Paths#bounds]]
-
-### [[Projections|Geo-Projections]]
-
-* [[d3.geo.mercator|Geo-Projections#mercator]]
-* [[mercator.scale|Geo-Projections#mercator_scale]]
-* [[mercator.translate|Geo-Projections#mercator_translate]]
-* [[d3.geo.albers|Geo-Projections#albers]]
-* [[albers.origin|Geo-Projections#albers_origin]]
-* [[albers.parallels|Geo-Projections#albers_parallels]]
-* [[albers.scale|Geo-Projections#albers_scale]]
-* [[albers.translate|Geo-Projections#albers_translate]]
-* [[d3.geo.albersUsa|Geo-Projections#albersUsa]]
-* [[albersUsa.scale|Geo-Projections#albersUsa_scale]]
-* [[albersUsa.translate|Geo-Projections#albersUsa_translate]]
-* [[d3.geo.azimuthal|Geo-Projections#azimuthal]]
-* [[azimuthal.mode|Geo-Projections#azimuthal_mode]]
-* [[azimuthal.origin|Geo-Projections#azimuthal_origin]]
-* [[azimuthal.scale|Geo-Projections#azimuthal_scale]]
-* [[azimuthal.translate|Geo-Projections#azimuthal_translate]]
-
-## [[d3.geom (Geometry)|Geom]]
-
-### [[Voronoi|Voronoi-Geom]]
-
-* [[d3.geom.voronoi|Voronoi-Geom#voronoi]]
-* [[d3.geom.delaunay|Voronoi-Geom#delaunay]]
-
-### [[Quadtree|Quadtree-Geom]]
-
-* [[d3.geom.quadtree|Quadtree-Geom#quadtree]]
-* [[quadtree.visit|Quadtree-Geom#visit]]
-
-### [[Polygon|Polygon-Geom]]
-
-* [[d3.geom.polygon|Polygon-Geom#polygon]]
-* [[polygon.area|Polygon-Geom#area]]
-* [[polygon.centroid|Polygon-Geom#centroid]]
-* [[polygon.clip|Polygon-Geom#clip]]
-
-### [[Hull|Hull-Geom]]
-
-* [[d3.geom.hull|Hull-Geom#hull]]
-
-### [[Contour|Contour-Geom]]
-
-* [[d3.geom.contour|Contour-Geom#contour]]
