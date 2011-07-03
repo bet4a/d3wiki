@@ -4,7 +4,7 @@
 
 <a name="stack" href="#stack">#</a> d3.layout.<b>stack</b>()
 
-<a name="_stack" href="#_stack">#</a> <b>stack</b>(<i>data</i>[, <i>index</i>])
+<a name="_stack" href="#_stack">#</a> <b>stack</b>(<i>layers</i>[, <i>index</i>])
 
 <a name="values" href="#values">#</a> stack.<b>values</b>([<i>accessor</i>])
 
