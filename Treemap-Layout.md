@@ -66,12 +66,57 @@ The children accessor is first invoked for root node in the hierarchy. If the ac
 
 <a name="nodes" href="#nodes">#</a> treemap.<b>nodes</b>(<i>root</i>)
 
+Runs the treemap layout, returning the array of nodes associated with the specified *root* node. The treemap layout is part of D3's family of [[hierarchical|Hierarchical-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes. Several attributes are populated on each node:
+
+* parent - the parent node, or null for the root.
+* children - the array of child nodes, or null for leaf nodes.
+* value - the node value, as returned by the value accessor.
+* depth - the depth of the node, starting at 0 for the root.
+* x - the minimum *x*-coordinate of the node position.
+* y - the minimum *y*-coordinate of the node position.
+* dx - the *x*-extent of the node position. 
+* dy - the *y*-extent of the node position. 
+
+Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system; for example, you can treat *x* as a radius and *y* as an angle to produce a radial rather than Cartesian layout. In Cartesian orientation, *x*, *y*, *dx* and *dy* correspond to the "x", "y", "width" and "height" attributes of the SVG [[rect|SVG-Shapes#svg_rect]] element.
+
 <a name="links" href="#links">#</a> treemap.<b>links</b>(<i>nodes</i>)
+
+Given the specified array of *nodes*, such as those returned [nodes](#nodes), returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. Each link is an object with two attributes:
+
+* source - the parent node (as described above).
+* target - the child node.
+
+This method is useful for retrieving a set of link descriptions suitable for display, often in conjunction with the [diagonal](SVG-Shapes#diagonal) shape generator. For example:
+
+```javascript
+svg.selectAll("path")
+    .data(partition.links(nodes))
+  .enter().append("svg:path")
+    .attr("d", d3.svg.diagonal());
+```
 
 <a name="value" href="#value">#</a> treemap.<b>value</b>([<i>value</i>])
 
+If *value* is specified, sets the value accessor to the specified function. If *value* is not specified, returns the current value accessor, which assumes that the input data is an object with a numeric value attribute:
+
+```javascript
+function value(d) {
+  return d.value;
+}
+```
+
+The value accessor is invoked for each input data element, and must return a number representing the numeric value of the node. This value is used to set the area of each node proportionally to the value.
+
 <a name="size" href="#size">#</a> treemap.<b>size</b>([<i>size</i>])
+
+If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1.
 
 <a name="round" href="#round">#</a> treemap.<b>round</b>([<i>round</i>])
 
+If *round* is specified, sets whether or not the treemap layout will round to exact pixel boundaries. This can be nice to avoid antialiasing artifacts in SVG. If *round* is not specified, returns whether the treemap will be rounded.
+
 <a name="sticky" href="#sticky">#</a> treemap.<b>sticky</b>([<i>sticky</i>])
+
+If *sticky* is specified, sets whether or not the treemap layout is "sticky": a *sticky* treemap layout will preserve the relative arrangement of nodes across transitions. The allocation of nodes into squarified horizontal and vertical rows is persisted across updates by storing a *z* attribute on the last element in each row; this allows nodes to be resized smoothly, without shuffling or occlusion that would impede perception of changing values. Note, however, that this results in a suboptimal layout for one of the two state. If *sticky* is not specified, returns whether the treemap layout is sticky.
+
+Implementation note: sticky treemaps cache the array of nodes internally; therefore, it is not possible to reuse the same layout instance on multiple datasets. Since version [1.25.0](https://github.com/mbostock/d3/tree/v1.25.0), hierarchy layouts no longer copy the input data by default on each invocation, so it may be possible to eliminate caching and make the layout fully stateless.
