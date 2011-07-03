@@ -74,15 +74,20 @@ These attributes do not need to be set before passing the nodes to the layout; i
 
 <a name="links" href="#links">#</a> force.<b>links</b>([<i>links</i>])
 
+If *links* is specified, sets the layout's associated links to the specified array. If *links* is not specified, returns the current array, which defaults to the empty array. Each link has the following attributes:
 
+* source - the source node (an element in *nodes*).
+* target - the target node (an element in *nodes*).
 
-Get or set the array of links between nodes.
+In the future, we plan on allowing the link strength and distance to be customized on a per-link basis, which would allow you to take advantage of additional data stored on the link objects.
 
 <a name="start" href="#start">#</a> force.<b>start</b>()
 
 Starts the simulation; this method must be called when the layout is first created, after assigning the nodes and links. In addition, it should be called again whenever the nodes or links change. Internally, the layout uses a cooling parameter *alpha* which controls the layout temperature: as the physical simulation converges on a stable layout, the temperature drops, causing nodes to move more slowly. Eventually, *alpha* drops below a threshold and the simulation stops completely, freeing the CPU and avoiding battery drain. The layout can be reheated using [resume](#resume) or by restarting; this happens automatically when using the [drag](#drag) behavior.
 
 On start, the layout initializes various attributes on the associated nodes. The *index* of each node is computed by iterating over the array, starting at zero. The initial *x* and *y* coordinates, if not already set externally to a valid number, are computed by examining neighboring nodes: if a linked node already has an initial position in *x* or *y*, the corresponding coordinates are applied to the new node. This increases the stability of the graph layout when new nodes are added, rather than using the default which is to initialize the position randomly within the layout's [size](#size). The previous *px* and *py* position is set to the initial position, if not already set, giving new nodes an initial velocity of zero. Finally, the *fixed* boolean defaults to false.
+
+The layout also initializes the *source* and *target* attributes on the associated links: for convenience, these attributes may be specified as a numeric index rather than a direct link, such that the nodes and links can be read-in from a JSON file or other static description that may not allow circular linking. The *source* and *target* attributes on incoming links are only replaced with the corresponding entries in *nodes* if these attributes are numbers; thus, these attributes on existing links are unaffected when the layout is restarted.
 
 <a name="resume" href="#resume">#</a> force.<b>resume</b>()
 
