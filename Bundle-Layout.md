@@ -1,6 +1,6 @@
 > [[API Reference]] ▸ [[Layouts]]
 
-Implements Danny Holten's [hierarchical edge bundling](http://www.win.tue.nl/~dholten/papers/bundles_infovis.pdf) algorithm. For each input link, a path is computed that travels through the tree, up the parent hierarchy to the least common ancestor, and then back down to the destination node. This sequence of nodes can then be used in conjunction with other hierarchical layouts, such as [cluster](Cluster-Layout) to generate bundled splines between nodes:
+Implements Danny Holten's [hierarchical edge bundling](http://www.win.tue.nl/~dholten/papers/bundles_infovis.pdf) algorithm. For each input link, a path is computed that travels through the tree, up the parent hierarchy to the least common ancestor, and then back down to the destination node. This sequence of nodes can then be used in conjunction with other [hierarchical layouts](Hierarchical-Layout), such as [cluster](Cluster-Layout) to generate bundled splines between nodes:
 
 ![bundle](bundle.png)
 
