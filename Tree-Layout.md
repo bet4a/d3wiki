@@ -10,17 +10,6 @@ Like most other layouts, the object returned by d3.layout.tree is both an object
 
 Creates a new tree layout with the default settings: the default sort order is null; the default children accessor assumes each input data is an object with a children array; the default separation function uses one node width for siblings, and two node widths for non-siblings; the default size is 1×1.
 
-The tree layout is part of D3's family of [[hierarchical|Hierarchical-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes.  Note that these position objects are not the same as the input data passed to the layout function; the computed layout nodes wrap the data objects, and provide several attributes:
-
-* parent - the parent node, or null for the root.
-* children - the array of child nodes, or null for leaf nodes.
-* depth - the depth of the node, starting at 0 for the root.
-* x - the computed *x*-coordinate of the node position.
-* y - the computed *y*-coordinate of the node position.
-* data - the underlying data represented by this node.
-
-Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system; for example, you can treat *x* as a radius and *y* as an angle to produce a radial rather than Cartesian layout.
-
 <a name="sort" href="#sort">#</a> tree.<b>sort</b>([<i>comparator</i>])
 
 If *comparator* is specified, sets the sort order of sibling nodes for the layout using the specified comparator function.  If *comparator* is not specified, returns the current group sort order, which defaults to null for no sorting. The comparator function is invoked for pairs of nodes, being passed the input data for each node. The default comparator is null, which disables sorting and uses tree traversal order. For example, to sort sibling nodes in descending order by the associated input data's numeric value attribute, say:
@@ -81,9 +70,21 @@ function children(d) {
 
 With this children accessor, the input to the layout must itself be an object with key and value attributes. This can be achieved by saying d3.entries(*object*)[0], where *object* is the root JSON object.
 
+<a name="nodes" href="#nodes">#</a> tree.<b>nodes</b>(<i>root</i>)
+
+Runs the tree layout, returning the array of nodes associated with the specified *root* node. The tree layout is part of D3's family of [[hierarchical|Hierarchical-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes. Several attributes are populated on each node:
+
+* parent - the parent node, or null for the root.
+* children - the array of child nodes, or null for leaf nodes.
+* depth - the depth of the node, starting at 0 for the root.
+* x - the computed *x*-coordinate of the node position.
+* y - the computed *y*-coordinate of the node position.
+
+Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system; for example, you can treat *x* as a radius and *y* as an angle to produce a radial rather than Cartesian layout.
+
 <a name="links" href="#links">#</a> tree.<b>links</b>(<i>nodes</i>)
 
-Given the specified array of *nodes*, such as the computed nodes returned by the tree layout, returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. Each link is an object with two attributes:
+Given the specified array of *nodes*, such as those returned by [nodes](#nodes), returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. Each link is an object with two attributes:
 
 * source - the parent node (as described above).
 * target - the child node.
