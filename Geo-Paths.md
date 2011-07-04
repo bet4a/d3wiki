@@ -31,7 +31,9 @@ Returns the path data string for the given *feature*, which may be any GeoJSON f
 * Feature - a feature containing one of the above geometry objects.
 * FeatureCollection - an array of feature objects.
 
-For example, to display multiple features:
+For polygons, you should specify the style property "fill-rule" as "evenodd" on path elements. This ensures that geographic features with holes (such as [South Africa](http://en.wikipedia.org/wiki/South_Africa) surrounding [Lesotho](http://en.wikipedia.org/wiki/Lesotho)) are displayed correctly.
+
+To display multiple features, you can either place them in a single feature collection and a single path element, or create multiple distinct path elements:
 
 ```javascript
 vis.selectAll("path")
@@ -40,7 +42,7 @@ vis.selectAll("path")
     .attr("d", d3.geo.path());
 ```
 
-An optional *index* may be specified, which is passed along to the [pointRadius](#pointRadius) accessor. Note: you probably want to specify the style property "fill-rule" as "evenodd". Without this, geographic features with holes (such as [South Africa](http://en.wikipedia.org/wiki/South_Africa) surrounding [Lesotho](http://en.wikipedia.org/wiki/Lesotho)) will not display correctly.
+An optional *index* may be specified, which is passed along to the [pointRadius](#pointRadius) accessor.
 
 <a name="path_projection" href="#path_projection">#</a> path.<b>projection</b>([<i>projection</i>])
 
