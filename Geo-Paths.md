@@ -11,7 +11,7 @@ Some other tools you may be interested in:
 * [ColorBrewer](http://colorbrewer2.org) - color scales for maps.
 * [PostGIS](http://postgis.refractions.net/) - a geospatial database.
 
-The primary mechanism for displaying geographic data is [d3.geo.path](#path). In many ways, this class is similar to [d3.svg.line](SVG-Shapes#line): given a geometry or feature object, it generates the path data string suitable for the "d" attribute of an SVG path element.
+The primary mechanism for displaying geographic data is [d3.geo.path](#path). In many ways, this class is similar to [d3.svg.line](SVG-Shapes#line) and the other SVG shape generators: given a geometry or feature object, it generates the path data string suitable for the "d" attribute of an SVG path element.
 
 <a name="path" href="#path">#</a> d3.geo.<b>path</b>()
 
