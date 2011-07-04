@@ -19,7 +19,19 @@ Creates a new geographic path generator with the default settings: the [albersUs
 
 <a name="_path" href="#_path">#</a> <b>path</b>(<i>feature</i>[, <i>index</i>])
 
-Returns the path data string for the given *feature*. For example, to display multiple features:
+Returns the path data string for the given *feature*, which may be any GeoJSON feature or geometry object:
+
+* Point - a single position.
+* MultiPoint - an array of positions.
+* LineString - an array of positions forming a continuous line.
+* MultiLineString - an array of arrays of positions forming several lines.
+* Polygon - an array of arrays of positions forming a polygon (possibly with holes).
+* MultiPolygon - a multidimensional array of positions forming multiple polygons.
+* GeometryCollection - an array of geometry objects.
+* Feature - a feature containing one of the above geometry objects.
+* FeatureCollection - an array of feature objects.
+
+For example, to display multiple features:
 
 ```javascript
 vis.selectAll("path")
@@ -28,7 +40,7 @@ vis.selectAll("path")
     .attr("d", d3.geo.path());
 ```
 
-Note: you probably want to specify the style property "fill-rule" as "evenodd". Without this, geographic features with holes (such as [South Africa](http://en.wikipedia.org/wiki/South_Africa) surrounding [Lesotho](http://en.wikipedia.org/wiki/Lesotho)) will not display correctly.
+An optional *index* may be specified, which is passed along to the [pointRadius](#pointRadius) accessor. Note: you probably want to specify the style property "fill-rule" as "evenodd". Without this, geographic features with holes (such as [South Africa](http://en.wikipedia.org/wiki/South_Africa) surrounding [Lesotho](http://en.wikipedia.org/wiki/Lesotho)) will not display correctly.
 
 <a name="path_projection" href="#path_projection">#</a> path.<b>projection</b>([<i>projection</i>])
 
