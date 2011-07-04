@@ -415,22 +415,26 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 ### [[Projections|Geo-Projections]]
 
-* [[d3.geo.mercator|Geo-Projections#mercator]]
-* [[mercator.scale|Geo-Projections#mercator_scale]]
-* [[mercator.translate|Geo-Projections#mercator_translate]]
-* [[d3.geo.albers|Geo-Projections#albers]]
-* [[albers.origin|Geo-Projections#albers_origin]]
-* [[albers.parallels|Geo-Projections#albers_parallels]]
-* [[albers.scale|Geo-Projections#albers_scale]]
-* [[albers.translate|Geo-Projections#albers_translate]]
-* [[d3.geo.albersUsa|Geo-Projections#albersUsa]]
-* [[albersUsa.scale|Geo-Projections#albersUsa_scale]]
-* [[albersUsa.translate|Geo-Projections#albersUsa_translate]]
-* [[d3.geo.azimuthal|Geo-Projections#azimuthal]]
-* [[azimuthal.mode|Geo-Projections#azimuthal_mode]]
-* [[azimuthal.origin|Geo-Projections#azimuthal_origin]]
-* [[azimuthal.scale|Geo-Projections#azimuthal_scale]]
-* [[azimuthal.translate|Geo-Projections#azimuthal_translate]]
+* [[d3.geo.mercator|Geo-Projections#mercator]] - construct a new spherical Mercator projection.
+* [[mercator|Geo-Projections#_mercator]] - project the specified position.
+* [[mercator.scale|Geo-Projections#mercator_scale]] - get or set the projection's scale factor.
+* [[mercator.translate|Geo-Projections#mercator_translate]] - get or set the projection's translate offset.
+* [[d3.geo.albers|Geo-Projections#albers]] - construct a new Albers equal-area conic projection.
+* [[albers|Geo-Projections#_albers]] - project the specified position.
+* [[albers.origin|Geo-Projections#albers_origin]] - get or set the projection's origin.
+* [[albers.parallels|Geo-Projections#albers_parallels]] - get or set the projection's two standard parallels.
+* [[albers.scale|Geo-Projections#albers_scale]] - get or set the projection's scale factor.
+* [[albers.translate|Geo-Projections#albers_translate]] - get or set the projection's translate offset.
+* [[d3.geo.albersUsa|Geo-Projections#albersUsa]] - construct a new composite Albers projection for the United States.
+* [[albersUsa|Geo-Projections#_albersUsa]] - project the specified position.
+* [[albersUsa.scale|Geo-Projections#albersUsa_scale]] - get or set the projection's scale factor.
+* [[albersUsa.translate|Geo-Projections#albersUsa_translate]] - get or set the projection's translate offset.
+* [[d3.geo.azimuthal|Geo-Projections#azimuthal]] - construct a new Azimuthal (orthographic or stereographic) projection.
+* [[azimuthal|Geo-Projections#_azimuthal]] - project the specified position.
+* [[azimuthal.mode|Geo-Projections#azimuthal_mode]] - get or set the projection's mode (orthographic or stereographic).
+* [[azimuthal.origin|Geo-Projections#azimuthal_origin]] - get or set the projection's origin.
+* [[azimuthal.scale|Geo-Projections#azimuthal_scale]] - get or set the projection's scale factor.
+* [[azimuthal.translate|Geo-Projections#azimuthal_translate]] - get or set the projection's translate offset.
 
 ## [[d3.geom (Geometry)|Geom]]
 
