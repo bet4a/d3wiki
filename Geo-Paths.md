@@ -31,9 +31,7 @@ Returns the path data string for the given *feature*, which may be any GeoJSON f
 * Feature - a feature containing one of the above geometry objects.
 * FeatureCollection - an array of feature objects.
 
-For polygons, you should specify the style property "fill-rule" as "evenodd" on path elements. This ensures that geographic features with holes (such as [South Africa](http://en.wikipedia.org/wiki/South_Africa) surrounding [Lesotho](http://en.wikipedia.org/wiki/Lesotho)) are displayed correctly.
-
-To display multiple features, you can either place them in a single feature collection and a single path element, or create multiple distinct path elements:
+For polygons, you should specify the style property "fill-rule" as "evenodd" on path elements. This ensures that geographic features with holes (such as [South Africa](http://en.wikipedia.org/wiki/South_Africa) surrounding [Lesotho](http://en.wikipedia.org/wiki/Lesotho)) are displayed correctly. To display multiple features, you can either place them in a single feature collection and a single path element, or create multiple distinct path elements:
 
 ```javascript
 vis.selectAll("path")
@@ -45,6 +43,17 @@ vis.selectAll("path")
 An optional *index* may be specified, which is passed along to the [pointRadius](#pointRadius) accessor.
 
 <a name="path_projection" href="#path_projection">#</a> path.<b>projection</b>([<i>projection</i>])
+
+If *projection* is specified, sets the projection used by the path generator to the specified projection function. If *projection* is not specified, returns the current projection, which defaults to [albersUsa](Geo-Projections#albersUsa). Typically, the projection is one of D3's built-in [projections](Geo-Projections); however, any function can be used. The function takes a two-element array of numbers representing the coordinates of a single position, [*longitude*, *latitude*], and returns a similar two-element array of numbers representing the projected pixel position [*x*, *y*]. For example, a rudimentary spherical Mercator projection:
+
+```javascript
+function mercator(coordinates) {
+  return [
+    coordinates[0] / 360,
+    (-180 / Math.PI * Math.log(Math.tan(Math.PI / 4 + coordinates[1] * Math.PI / 360))) / 360
+  ];
+}
+```
 
 <a name="path_area" href="#path_area">#</a> path.<b>area</b>(<i>feature</i>)
 
