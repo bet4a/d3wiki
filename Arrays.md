@@ -103,7 +103,7 @@ Returns an array containing the property keys and values of the specified object
 
 <a name="d3_split" href="#d3_split">#</a> d3.<b>split</b>(<i>array</i>[, <i>function</i>])
 
-Splits the specified *array* into multiple arrays at breakpoints identified by the specified *function*. If no breakpoint function is specified, the array will be split at any null or undefined values. Elements that are identified as breakpoints will not be included in the returned arrays. This method is often used in conjunction with the [[line|Shapes#line]] shape, such that missing data points are elided; each contiguous slice of the array where the data *is* defined is rendered as a line segment.
+Splits the specified *array* into multiple arrays at breakpoints identified by the specified *function*. If no breakpoint function is specified, the array will be split at any null or undefined values. Elements that are identified as breakpoints will not be included in the returned arrays. This method is often used in conjunction with the [[line|SVG-Shapes#line]] shape, such that missing data points are elided; each contiguous slice of the array where the data *is* defined is rendered as a line segment.
 
 <a name="d3_merge" href="#d3_merge">#</a> d3.<b>merge</b>(<i>arrays</i>)
 
