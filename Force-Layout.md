@@ -15,7 +15,7 @@ Some fun examples:
 
 Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement. Unlike some of the other layout implementations which are stateless, the force layout keeps a reference to the associated nodes and links internally; thus, a given force layout instance can only be used with a single dataset.
 
-Note: this layout depends on [d3.geom.quadtree](Quadtree-Geom), so you must load d3.geom.js or build a custom d3.js that includes d3.geom.quadtree.
+Note: this layout depends on [d3.geom.quadtree](Quadtree-Geom), so you must load d3.geom.js, or build a custom d3.js that includes d3.geom.quadtree.
 
 <a name="force" href="#force">#</a> d3.layout.<b>force</b>()
 
