@@ -405,12 +405,13 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 ### [[Paths|Geo-Paths]]
 
-* [[d3.geo.path|Geo-Paths#path]]
-* [[path.projection|Geo-Paths#projection]]
-* [[path.area|Geo-Paths#area]]
-* [[path.centroid|Geo-Paths#centroid]]
-* [[path.pointRadius|Geo-Paths#pointRadius]]
-* [[d3.geo.bounds|Geo-Paths#bounds]]
+* [[d3.geo.path|Geo-Paths#path]] - create a new geographic path generator.
+* [[path|Geo-Paths#_path]] - generate the path data string for a given geographic feature.
+* [[path.pointRadius|Geo-Paths#pointRadius]] - get or set the radius to display point features.
+* [[path.projection|Geo-Paths#projection]] - get or set the geographic projection.
+* [[path.area|Geo-Paths#area]] - compute the projected area of a given feature.
+* [[path.centroid|Geo-Paths#centroid]] - compute the projected centroid of a given feature.
+* [[d3.geo.bounds|Geo-Paths#bounds]] - compute the latitude-longitude bounding box for a given feature.
 
 ### [[Projections|Geo-Projections]]
 
