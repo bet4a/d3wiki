@@ -15,6 +15,8 @@ Some fun examples:
 
 Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement. Unlike some of the other layout implementations which are stateless, the force layout keeps a reference to the associated nodes and links internally; thus, a given force layout instance can only be used with a single dataset.
 
+Note: this layout depends on [d3.geom.quadtree](Quadtree-Geom), so you must load d3.geom.js or build a custom d3.js that includes d3.geom.quadtree.
+
 <a name="force" href="#force">#</a> d3.layout.<b>force</b>()
 
 Constructs a new force-directed layout with the default settings: size 1×1, friction 0.9, distance 20, charge strength -30, gravity strength 0.1, and theta parameter 0.8. The default nodes and links are the empty array, and when the layout is started, the internal alpha cooling parameter is set to 0.1. The general pattern for constructing force-directed layouts is to set all the configuration properties, and then call [start](#start):
