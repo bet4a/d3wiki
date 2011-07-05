@@ -2,7 +2,7 @@ D3 is a javascript library geared towards visualizations, animations and interac
 
 ## How do I get started using D3? ##
 
-The easiest way is to copy the following text into a file bar.html and play with it.
+The easiest way is to copy the following text into a file `bar.html` and play with it.
 
     <!doctype html>
     <html>
@@ -86,4 +86,4 @@ The easiest way is to copy the following text into a file bar.html and play with
     </body>
     </html>
 
-After you have this working download the library [here](https://github.com/mbostock/d3/archives/master).
+After you have this working download the library [here](https://github.com/mbostock/d3/archives/master) and setup your testing structure.
