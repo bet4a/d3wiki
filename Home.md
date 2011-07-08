@@ -29,31 +29,42 @@
 
 ### Concepts & Techniques
 
+#### Charts and Chart Components
+
 * [Date Ticks](http://bl.ocks.org/1071269)
 * [Venn Diagram using Clipping](http://bl.ocks.org/1067636)
 * [Venn Diagram using Opacity](http://bl.ocks.org/1067616)
-* [OMG Particles!](http://bl.ocks.org/1062544)
+* [Marimekko Chart](http://bl.ocks.org/1005090)
+* [Histogram](http://bl.ocks.org/993912)
+* [Grouped Bar Chart](http://bl.ocks.org/882152)
+
+#### Trees and Graphs
+
+* [Dependency Chord Diagram](http://bl.ocks.org/1046712)
+* [Hierarchical Edge Bundling](http://bl.ocks.org/1044242)
+* [Partition Layout (Zoomable Icicle)](http://bl.ocks.org/1005873)
+* [Tree Layout (Animated)](http://bl.ocks.org/999346)
+* [Tree Layout (Collapsible)](http://bl.ocks.org/1061834)
+* [Treemap Layout in SVG](http://bl.ocks.org/972398)
+* [Sunburst Layout with Labels](http://bl.ocks.org/910126)
 * [Force Layout with Symbols](http://bl.ocks.org/1062383)
 * [Force Layout with Multiple Foci](http://bl.ocks.org/1021841)
 * [Force Layout with Images and Labels](http://bl.ocks.org/950642)
-* [Dynamic Force Layout](http://bl.ocks.org/929623)
-* [Collapsible Force Layout](http://bl.ocks.org/1062288)
-* [Collapsible Tree Layout](http://bl.ocks.org/1061834)
-* [Dependency Chord Diagram](http://bl.ocks.org/1046712)
-* [Hierarchical Edge Bundling](http://bl.ocks.org/1044242)
+* [Force Layout (Animated)](http://bl.ocks.org/929623)
+* [Force Layout (Collapsible)](http://bl.ocks.org/1062288)
+
+#### Miscellaneous
+
 * [Superformula Explorer](http://bl.ocks.org/1021103)
 * [Superformula Tweening](http://bl.ocks.org/1020902)
+* [OMG Particles!](http://bl.ocks.org/1062544)
 * [Line Tension](http://bl.ocks.org/1016220)
-* [Zoomable Icicle](http://bl.ocks.org/1005873)
-* [Marimekko Chart](http://bl.ocks.org/1005090)
-* [Dynamic Tree Layout](http://bl.ocks.org/999346)
-* [Histogram](http://bl.ocks.org/993912)
-* [Treemap](http://bl.ocks.org/972398)
-* [Sunburst with Labels](http://bl.ocks.org/910126)
+* [Raindrops](http://bl.ocks.org/849853)
+
+#### Maps
+
 * [Google Maps](http://bl.ocks.org/899711)
 * [Polymaps](http://bl.ocks.org/899670)
-* [Grouped Bar Chart](http://bl.ocks.org/882152)
-* [Raindrops](http://bl.ocks.org/849853)
 
 Using D3? Post your examples here! More examples on the [D3 website](http://mbostock.github.com/d3/ex/) and in the [[Git repository|https://github.com/mbostock/d3/tree/master/examples]]. If you just want to share a quick example, consider using [Gist](http://gist.github.com) and [bl.ocks](http://bl.ocks.org).
 
