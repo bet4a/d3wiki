@@ -71,6 +71,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.min|Arrays#d3_min]] - find the minimum value in an array.
 * [[d3.max|Arrays#d3_max]] - find the maximum value in an array.
 * [[d3.sum|Arrays#d3_sum]] - compute the sum of an array of numbers.
+* [[d3.quantile|Arrays#d3_quantile]] - compute a quantile for a sorted array of numbers.
 * [[d3.bisect|Arrays#d3_bisect]] - search for a value in a sorted array.
 * [[d3.bisectRight|Arrays#d3_bisectRight]] - search for a value in a sorted array.
 * [[d3.bisectLeft|Arrays#d3_bisectLeft]] - search for a value in a sorted array.
@@ -310,7 +311,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[force.nodes|Force-Layout#nodes]] - get or set the array of nodes to layout.
 * [[force.links|Force-Layout#links]] - get or set the array of links between nodes.
 * [[force.size|Force-Layout#size]] - get or set the layout size in *x* and *y*.
-* [[force.distance|Force-Layout#distance]] - get or set the link distance.
+* [[force.linkDistance|Force-Layout#linkDistance]] - get or set the link distance.
+* [[force.linkStrength|Force-Layout#linkStrength]] - get or set the link strength.
 * [[force.friction|Force-Layout#friction]] - get or set the friction coefficient.
 * [[force.charge|Force-Layout#charge]] - get or set the charge strength.
 * [[force.gravity|Force-Layout#gravity]] - get or set the gravity strength.
