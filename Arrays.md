@@ -66,6 +66,10 @@ Returns the maximum value in the given *array* using natural order. If the array
 
 Returns the sum of the given *array*. If the array is empty, returns 0. An optional *accessor* function may be specified, which is equivalent to calling *array.map(accessor)* before computing the sum. This method ignores invalid values such as NaN and undefined; this is useful for computing the sum of data while only considering the well-defined values.
 
+<a name="d3_quantile" href="#d3_quantile">#</a> d3.<b>quantile</b>(<i>numbers</i>, <i>p</i>)
+
+Returns the *p*-quantile of the given sorted array of *numbers*, where *p* is a number in the range [0,1]. For example, the median can be computed using *p* = 0.5, the first quartile at *p* = 0.25, and the third quartile at *p* = 0.75. This particular implementation uses the [R-7](http://en.wikipedia.org/wiki/Quantile#Quantiles_of_a_population) algorithm, which is the default for the R programming language and Excel. This method requires that *numbers* contains numeric elements and is already sorted in ascending order, such as by [d3.ascending](#d3_ascending).
+
 <a name="d3_bisectLeft" href="#d3_bisectLeft">#</a> d3.<b>bisectLeft</b>(<i>array</i>, <i>x</i>[, <i>lo</i>[, <i>hi</i>]])
 
 Locate the insertion point for *x* in *array* to maintain sorted order. The arguments *lo* and *hi* may be used to specify a subset of the array which should be considered; by default the entire array is used. If *x* is already present in *array*, the insertion point will be before (to the left of) any existing entries. The return value is suitable for use as the first argument to [[splice|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/splice]] assuming that *array* is already sorted. The returned insertion point *i* partitions the *array* into two halves so that all *v* < *x* for *v* in *array*.slice(lo, i) for the left side and all v >= x for v in *array*.slice(i, hi) for the right side.
