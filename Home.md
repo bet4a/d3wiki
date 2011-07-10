@@ -4,6 +4,7 @@
 
 ## Tutorials
 
+* [[Three Little Circles|http://mbostock.github.com/d3/tutorial/circle.html]]
 * [[A Bar Chart, Part 1|http://mbostock.github.com/d3/tutorial/bar-1.html]]
 * [[A Bar Chart, Part 2|http://mbostock.github.com/d3/tutorial/bar-2.html]]
 * [[For Protovis Users|http://mbostock.github.com/d3/tutorial/protovis.html]]
