@@ -26,7 +26,8 @@
 * [Urban Water Explorer](http://www.visualizing.org/visualizations/urban-water-explorer/) - Jan Willem Tulp
 * [What Do You Work For?](http://www.datavizchallenge.org/viz/73) - Jeffrey Baumes
 * [Misc. Examples](http://labratrevenge.com/experiments) - Justin Palmer
-* [Collusion FireFox Addon](http://collusion.toolness.org/)
+* [Collusion FireFox Addon](http://collusion.toolness.org/) - Atul Varma
+* [UK University Statistics](http://keminglabs.com/ukuni/) - Keming Labs
 
 ### Concepts & Techniques
 
