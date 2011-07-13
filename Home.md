@@ -55,6 +55,7 @@
 * [Force Layout with Images and Labels](http://bl.ocks.org/950642)
 * [Force Layout (Animated)](http://bl.ocks.org/929623)
 * [Force Layout (Collapsible)](http://bl.ocks.org/1062288)
+* [Force Layout from XML](http://bl.ocks.org/1080941)
 
 #### Miscellaneous
 
