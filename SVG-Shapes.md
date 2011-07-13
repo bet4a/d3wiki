@@ -56,7 +56,7 @@ The [[path|http://www.w3.org/TR/SVG/paths.html#PathElement]] element represents 
 
 ## Path Data Generators
 
-To simplify the construction of the *d* attribute for path elements, D3 includes a number of helper classes for generating path data. If you're familiar with [[Protovis|http://vis.stanford.edu/protovis/]], you'll find that these path generators are similar to Protovis mark types: each generator is a function of data. So, if you data is a sequence of *xy* coordinates, you can define accessor functions that the path generators use to produce path data. For example, you might define a line generator:
+To simplify the construction of the *d* attribute for path elements, D3 includes a number of helper classes for generating path data. If you're familiar with [[Protovis|http://vis.stanford.edu/protovis/]], you'll find that these path generators are similar to Protovis mark types: each generator is a function of data. So, if your data is a sequence of *xy* coordinates, you can define accessor functions that the path generators use to produce path data. For example, you might define a line generator:
 
 ```javascript
 var line = d3.svg.line()
