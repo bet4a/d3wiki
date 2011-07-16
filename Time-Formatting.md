@@ -32,6 +32,14 @@ Constructs a new local time formatter using the given *specifier*. The specifier
 
 For %U, all days in a new year preceding the first Sunday are considered to be in week 0. For %W, all days in a new year preceding the first Monday are considered to be in week 0. In some implementations of strftime and strptime (as in Python), a directive may include an optional field width or precision; this feature is not yet implemented in D3, but may be added in the future. Also note that the JavaScript environment does not provide a standard API for accessing locale-specific date and time formatters, so D3's implementation assumes the conventions of the English language (United States).
 
+The returned *format* is both an object and a function. For example:
+
+```javascript
+var format = d3.time.format("%Y-%m-%d");
+format.parse("2011-01-01"); // returns a Date
+format(new Date(2011, 0, 1)); // returns a string
+```
+
 <a name="_format" href="#_format">#</a> <b>format</b>(<i>date</i>)
 
 Formats the specified *date*, returning the corresponding string. The *date* must be a JavaScript [Date](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date) object. Note that when dates are used in conjunction with [quantitative scales](Quantitative-Scales), the dates are implicitly coerced to numbers representing the number of milliseconds since [UNIX epoch](http://en.wikipedia.org/wiki/Unix_time). To convert between numbers and dates, you can use the following code:
