@@ -64,6 +64,7 @@
 * [OMG Particles!](http://bl.ocks.org/1062544)
 * [Line Tension](http://bl.ocks.org/1016220)
 * [Raindrops](http://bl.ocks.org/849853)
+* [Linear Gradients](http://bl.ocks.org/1086421)
 
 #### Maps
 
