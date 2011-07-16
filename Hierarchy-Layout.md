@@ -77,7 +77,7 @@ Runs the hierarchy layout, returning the array of nodes associated with the spec
 * value - the node value, as returned by the value accessor.
 * depth - the depth of the node, starting at 0 for the root.
 
-In addition, most hierarchy layouts also comute *x* and *y* positions for nodes; see the implementing class for details.
+In addition, most hierarchy layouts also compute *x* and *y* positions for nodes; see the implementing class for details.
 
 <a name="links" href="#links">#</a> hierarchy.<b>links</b>(<i>nodes</i>)
 
