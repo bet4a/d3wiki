@@ -86,7 +86,7 @@ If *links* is specified, sets the layout's associated links to the specified arr
 * source - the source node (an element in *nodes*).
 * target - the target node (an element in *nodes*).
 
-In the future, we plan on allowing the link strength and distance to be customized on a per-link basis, which would allow you to take advantage of additional data stored on the link objects.
+You can also customize the link [strength](#linkStrength) and [distance](#linkDistance) on a per-link basis using an accessor function.
 
 <a name="start" href="#start">#</a> force.<b>start</b>()
 
