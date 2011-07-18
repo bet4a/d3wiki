@@ -28,6 +28,7 @@
 * [Misc. Examples](http://labratrevenge.com/experiments) - Justin Palmer
 * [Collusion FireFox Addon](http://collusion.toolness.org/) - Atul Varma
 * [UK University Statistics](http://keminglabs.com/ukuni/) - Keming Labs
+* [Slopegraphs](http://skedasis.com/d3/slopegraph/) - Hamilton Ulmer
 
 ### Concepts & Techniques
 
