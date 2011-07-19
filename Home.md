@@ -50,6 +50,7 @@
 * [Tree Layout (Collapsible)](http://bl.ocks.org/1061834)
 * [Treemap Layout in SVG](http://bl.ocks.org/972398)
 * [Sunburst Layout with Labels](http://bl.ocks.org/910126)
+* [Indented Tree (Collapsible)](http://bl.ocks.org/1093025)
 * [Force Layout with Symbols](http://bl.ocks.org/1062383)
 * [Force Layout with Custom Forces](http://bl.ocks.org/1021841)
 * [Force Layout with Multiple Foci](http://bl.ocks.org/1021953)
