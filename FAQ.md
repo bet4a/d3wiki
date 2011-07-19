@@ -89,3 +89,7 @@ The easiest way is to copy the following text into a file `bar.html` and play wi
 ```
 
 After you have this working download the library [here](https://github.com/mbostock/d3/archives/master) and setup your testing structure.
+
+## Why are mouse events not firing on `<svg>` in Safari?
+
+You need to add a background `<rect>` element that fills the area of interest e.g. with `fill="#fff"`. In Safari, mouse events will only fire on `<svg>` if the mouse is over a child element.
