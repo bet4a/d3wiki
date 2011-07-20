@@ -107,14 +107,6 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.requote|Formatting#d3_requote]] - quote a string for use in a regular expression.
 * [[d3.round|Formatting#d3_round]] - rounds a value to some digits after the decimal point.
 
-### [[Time Formatting (d3.time)|Time-Formatting]]
-
-* [[d3.time.format|Time-Formatting#format]] - create a new local time formatter for a given specifier.
-* [[format|Time-Formatting#_format]] - format a date into a string.
-* [[format.parse|Time-Formatting#parse]] - parse a string into a date.
-* [[d3.time.format.utc|Time-Formatting#format_utc]] - create a new UTC time formatter for a given specifier.
-* [[d3.time.format.iso|Time-Formatting#format_iso]] - the ISO 8601 UTC time formatter.
-
 ### [[CSV Formatting (d3.csv)|CSV]]
 
 * [[d3.csv|CSV#csv]] - request a comma-separated values (CSV) file.
@@ -275,6 +267,61 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 * [[d3.svg.mouse|SVG-Events#mouse]] - gets the mouse position relative to a specified container.
 * [[d3.svg.touches|SVG-Events#touches]] - gets the touch positions relative to a specified container.
+
+## [d3.time (Time)](Time)
+
+### [[Time Formatting]]
+
+* [[d3.time.format|Time-Formatting#format]] - create a new local time formatter for a given specifier.
+* [[format|Time-Formatting#_format]] - format a date into a string.
+* [[format.parse|Time-Formatting#parse]] - parse a string into a date.
+* [[d3.time.format.utc|Time-Formatting#format_utc]] - create a new UTC time formatter for a given specifier.
+* [[d3.time.format.iso|Time-Formatting#format_iso]] - the ISO 8601 UTC time formatter.
+
+### [[Time Scales]]
+
+* [[d3.time.scale|Time-Scales#scale]] - construct a linear local time scale.
+* [[d3.time.scale.utc|Time-Scales#utc]] - construct a linear UTC time scale.
+* [[scale|Time-Scales#_scale]] - get the range value corresponding to a given domain value.
+* [[scale.invert|Time-Scales#invert]] - get the domain value corresponding to a given range value.
+* [[scale.domain|Time-Scales#domain]] - get or set the scale's input domain.
+* [[scale.range|Time-Scales#range]] - get or set the scale's output range.
+* [[scale.rangeRound|Time-Scales#rangeRound]] - set the scale's output range, and enable rounding.
+* [[scale.interpolate|Time-Scales#interpolate]] - get or set the scale's output interpolator.
+* [[scale.clamp|Time-Scales#clamp]] - enable or disable clamping of the output range.
+* [[scale.ticks|Time-Scales#ticks]] - get representative values from the input domain.
+* [[scale.tickFormat|Time-Scales#tickFormat]] - get a formatter for displaying tick values.
+
+### [[Time Intervals]]
+
+* [[d3.time.day|Time-Intervals#day]] - round down to the nearest day (12:00 AM) in local time.
+* [[d3.time.day.utc|Time-Intervals#day_utc]] - round down to the nearest day (12:00 AM) UTC.
+* [[d3.time.days|Time-Intervals#days]] - get the days in the given range.
+* [[d3.time.days.utc|Time-Intervals#days_utc]] - get the days in the given range.
+* [[d3.time.hour|Time-Intervals#hour]] - round down to the nearest hour (0th minute) in local time.
+* [[d3.time.hour.utc|Time-Intervals#hour_utc]] - round down to the nearest hour (0th minute) UTC.
+* [[d3.time.hours|Time-Intervals#hours]] - get the hours in the given range.
+* [[d3.time.hours.utc|Time-Intervals#hours_utc]] - get the hours in the given range.
+* [[d3.time.minute|Time-Intervals#minute]] - round down to the nearest minute (0th second) in local time.
+* [[d3.time.minute.utc|Time-Intervals#minute_utc]] - round down to the nearest minute (0th second) UTC.
+* [[d3.time.minutes|Time-Intervals#minutes]] - get the minutes in the given range.
+* [[d3.time.minutes.utc|Time-Intervals#minutes_utc]] - get the minutes in the given range.
+* [[d3.time.month|Time-Intervals#month]] - round down to the nearest month (1st date) in local time.
+* [[d3.time.month.utc|Time-Intervals#month_utc]] - round down to the nearest month (1st date) UTC.
+* [[d3.time.months|Time-Intervals#months]] - get the months in the given range.
+* [[d3.time.months.utc|Time-Intervals#months_utc]] - get the months in the given range.
+* [[d3.time.second|Time-Intervals#second]] - round down to the nearest second (0th millisecond) in local time.
+* [[d3.time.second.utc|Time-Intervals#second_utc]] - round down to the nearest second (0th millisecond) UTC.
+* [[d3.time.seconds|Time-Intervals#seconds]] - get the seconds in the given range.
+* [[d3.time.seconds.utc|Time-Intervals#seconds_utc]] - get the seconds in the given range.
+* [[d3.time.week|Time-Intervals#week]] - round down to the nearest week (Sunday) in local time.
+* [[d3.time.week.utc|Time-Intervals#week_utc]] - round down to the nearest week (Sunday) UTC.
+* [[d3.time.weeks|Time-Intervals#weeks]] - get the weeks in the given range.
+* [[d3.time.weeks.utc|Time-Intervals#weeks_utc]] - get the weeks in the given range.
+* [[d3.time.year|Time-Intervals#year]] - round down to the nearest year (January 1) in local time.
+* [[d3.time.year.utc|Time-Intervals#year_utc]] - round down to the nearest year (January 1) UTC.
+* [[d3.time.years|Time-Intervals#years]] - get the years in the given range.
+* [[d3.time.years.utc|Time-Intervals#years_utc]] - get the years in the given range.
 
 ## [d3.layout (Layouts)](Layouts)
 
