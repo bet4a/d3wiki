@@ -44,18 +44,30 @@ If *boolean* is specified, enables or disables clamping accordingly. By default,
 
 Returns approximately *count* representative dates from the scale's input domain. The returned tick dates are uniformly spaced (modulo irregular time intervals, such as months and leap years), have human-readable values (such as midnights), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain.
 
-The following time intervals are supported:
+The following time intervals are used:
 
-* 1-, 5-, 15- and 30-[second](Time-Intervals#second)
-* 1-, 5-, 15- and 30-[minute](Time-Intervals#minute)
-* 1-, 3-, 6- and 12-[hour](Time-Intervals#hour)
-* 1- and 2-[day](Time-Intervals#day)
-* 1-[week](Time-Intervals#week)
-* 1- and 3-[month](Time-Intervals#month)
-* 1-[year](Time-Intervals#year)
+* 1-, 5-, 15- and 30-[second](Time-Intervals#second).
+* 1-, 5-, 15- and 30-[minute](Time-Intervals#minute).
+* 1-, 3-, 6- and 12-[hour](Time-Intervals#hour).
+* 1- and 2-[day](Time-Intervals#day).
+* 1-[week](Time-Intervals#week).
+* 1- and 3-[month](Time-Intervals#month).
+* 1-[year](Time-Intervals#year).
 
 This set of time intervals is somewhat arbitrary and additional values may be added in the future.
 
 <a name="tickFormat" href="#tickFormat">#</a> scale.<b>tickFormat</b>(<i>count</i>)
 
 Returns a [[time format|Time-Formatting]] function suitable for displaying a tick value. The specified *count* should have the same value as the count that is used to generate the tick values. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate display based on the input date.
+
+The following time formats are used:
+
+* %Y - for year boundaries, such as "2011".
+* %B - for month boundaries, such as "February".
+* %b %d - for week boundaries, such as "Feb 06".
+* %a %d - for day boundaries, such as "Mon 07".
+* %I %p - for hour boundaries, such as "01 AM".
+* %I:%M - for minute boundaries, such as "01:23".
+* :%S - for second boundaries, such as ":45".
+
+By using multi-scale time formats, the default tick format provides both local and global context for each time interval. For example, by showing the sequence [11 PM, Mon 07, 01 AM], the tick formatter reveals information about hours, dates, and day simultaneously—rather than just the hours. If you'd prefer single-scale time formatting, you can always use your own [d3.time.format](Time-Formatting).
