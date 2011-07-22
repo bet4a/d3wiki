@@ -1,6 +1,6 @@
 > [[API Reference]] ▸ [[Layouts]] ▸ [Hierarchy](Hierarchy-Layout)
 
-The **tree** layout produces tidy node-link diagrams of trees using the Rheingold–Tilford “tidy” algorithm. For example, a tree layout can be used to organize software classes in a package hierarchy:
+The **tree** layout produces tidy node-link diagrams of trees using the Reingold–Tilford “tidy” algorithm. For example, a tree layout can be used to organize software classes in a package hierarchy:
 
 [![diagonal](diagonal.png)](http://mbostock.github.com/d3/ex/tree.html)
 
