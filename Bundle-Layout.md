@@ -8,7 +8,7 @@ For example, consider this visualization of [software dependencies](http://bl.oc
 
 <a name="bundle" href="#bundle">#</a> d3.layout.<b>bundle</b>()
 
-Constructs a new default bundle layout. Currently, the bundle layout is stateless and thus only has a default configuration.
+Constructs a new default bundle layout. Currently, the bundle layout is stateless and thus only has a default configuration. The returned layout object is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior.
 
 <a name="_bundle" href="#_bundle">#</a> <b>bundle</b>(<i>links</i>)
 
