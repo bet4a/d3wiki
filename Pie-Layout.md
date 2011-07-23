@@ -6,9 +6,11 @@ The pie layout is a convenience for computing the start and end angles are arcs 
 
 You don't *need* to use the pie layout to create a pie chart; you can just use the [arc shape](SVG-Shapes#arc) directly if you prefer. The pie layout simply makes it easier to convert an array of data into an array of objects with startAngle and endAngle attributes that range from 0 to 2π, which you can then pass to the arc shape generator.
 
+Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
+
 <a name="pie" href="#pie">#</a> d3.layout.<b>pie</b>()
 
-Constructs a new pie function with the default value accessor (number), sort comparator (null), start angle (0) and end angle (2π).
+Constructs a new pie function with the default value accessor (number), sort comparator (null), start angle (0) and end angle (2π). The returned layout object is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior.
 
 <a name="_pie" href="#_pie">#</a> <b>pie</b>(<i>values</i>[, <i>index</i>])
 
