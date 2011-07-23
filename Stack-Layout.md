@@ -6,9 +6,11 @@ The stack layout takes a two-dimensional array of data and computes a baseline; 
 
 The stack layout operates in an arbitrary two-dimensional *x* and *y* coordinate space, similar to D3's other layouts, including [tree](Tree-Layout). Thus, layers can be stacked vertically, horizontally, or even [radially](http://hint.fm/projects/flickr/). While the "zero" offset is the default, a streamgraph can be generated using the "wiggle" offset, which attempts to minimize change in slope weighted by layer thickness.
 
+Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
+
 <a name="stack" href="#stack">#</a> d3.layout.<b>stack</b>()
 
-Constructs a new stack layout with the default offset (zero) and order (null).
+Constructs a new stack layout with the default offset (zero) and order (null). The returned layout object is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior.
 
 <a name="_stack" href="#_stack">#</a> <b>stack</b>(<i>layers</i>[, <i>index</i>])
 
