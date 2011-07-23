@@ -1,10 +1,10 @@
 > [[API Reference]] ▸ [[Layouts]]
 
-A **histogram layout** shows the distribution of data by grouping discrete data points into bins. Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
+A **histogram layout** shows the distribution of data by grouping discrete data points into bins.
 
 <a name="histogram" href="#histogram">#</a> d3.layout.<b>histogram</b>()
 
-Constructs a new histogram function with the default value accessor, range function, and bin function. By default, the histogram function returns frequencies. The returned layout object is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior.
+Constructs a new histogram function with the default value accessor, range function, and bin function. By default, the histogram function returns frequencies. The returned layout object is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior. Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
 
 <a name="_histogram" href="#_histogram">#</a> <b>histogram</b>(<i>values</i>[, <i>index</i>])
 
