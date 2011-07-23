@@ -4,11 +4,11 @@ Implements Danny Holten's [hierarchical edge bundling](http://www.win.tue.nl/~dh
 
 ![bundle](bundle.png)
 
-For example, consider this visualization of [software dependencies](http://bl.ocks.org/1044242). Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
+For example, consider this visualization of [software dependencies](http://bl.ocks.org/1044242).
 
 <a name="bundle" href="#bundle">#</a> d3.layout.<b>bundle</b>()
 
-Constructs a new default bundle layout. Currently, the bundle layout is stateless and thus only has a default configuration. The returned layout object is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior.
+Constructs a new default bundle layout. Currently, the bundle layout is stateless and thus only has a default configuration. The returned layout object is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior. Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
 
 <a name="_bundle" href="#_bundle">#</a> <b>bundle</b>(<i>links</i>)
 
