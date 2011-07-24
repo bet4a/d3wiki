@@ -29,6 +29,7 @@
 * [Collusion FireFox Addon](http://collusion.toolness.org/) - Atul Varma
 * [UK University Statistics](http://keminglabs.com/ukuni/) - Keming Labs
 * [Slopegraphs](http://skedasis.com/d3/slopegraph/) - Hamilton Ulmer
+* [Marmoset chimerism dotplot](http://is04607.com/~drio/primates/marmoset/svg_chimerism/) - David Rio Deiros
 
 ### Concepts & Techniques
 
