@@ -30,6 +30,7 @@
 * [UK University Statistics](http://keminglabs.com/ukuni/) - Keming Labs
 * [Slopegraphs](http://skedasis.com/d3/slopegraph/) - Hamilton Ulmer
 * [Marmoset chimerism dotplot](http://goo.gl/UEaFW) - David Rio Deiros
+* [UN Global Pulse 2010 Visualization](http://www.visualizing.org/visualizations/un-global-pulse-visualization) - Eduardo Graells & Ruth Garcia
 
 ### Concepts & Techniques
 
