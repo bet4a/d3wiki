@@ -47,6 +47,7 @@
 #### Trees and Graphs
 
 * [Dependency Chord Diagram](http://bl.ocks.org/1046712)
+* [Chord Layout Transitions](http://fleetinbeing.net/d3e/chord.html)
 * [Hierarchical Edge Bundling](http://bl.ocks.org/1044242)
 * [Partition Layout (Zoomable Icicle)](http://bl.ocks.org/1005873)
 * [Tree Layout (Animated)](http://bl.ocks.org/999346)
