@@ -32,6 +32,7 @@
 * [Marmoset chimerism dotplot](http://goo.gl/UEaFW) - David Rio Deiros
 * [UN Global Pulse 2010 Visualization](http://www.visualizing.org/visualizations/un-global-pulse-visualization) - Eduardo Graells & Ruth Garcia
 * [U.S. Population Pyramid](http://vis.stanford.edu/jheer/d3/pyramid/shift.html) - Jeff Heer
+* [Lines Spent (Chrome Commits)](http://neugierig.org/software/datavis/lines-spent/) - Evan Martin
 
 ### Concepts & Techniques
 
