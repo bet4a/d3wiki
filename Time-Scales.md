@@ -40,11 +40,25 @@ If *factory* is specified, sets the scale's output interpolator using the specif
 
 If *boolean* is specified, enables or disables clamping accordingly. By default, clamping is disabled, such that if a value outside the input domain is passed to the scale, the scale may return a value outside the output range through linear extrapolation. For example, with the default domain and range of [0,1], an input value of 2 will return an output value of 2. If clamping is enabled, the normalized domain parameter *t* is clamped to the range [0,1], such that the return value of the scale is always within the scale's output range. If *boolean* is not specified, returns whether or not the scale currently clamps values to within the output range.
 
-<a name="ticks" href="#ticks">#</a> scale.<b>ticks</b>(<i>count</i>)
+<a name="ticks" href="#ticks">#</a> scale.<b>ticks</b>(<i>count</i>[, <i>step</i>])
 
-Returns approximately *count* representative dates from the scale's input domain. The returned tick dates are uniformly spaced (modulo irregular time intervals, such as months and leap years), have human-readable values (such as midnights), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain.
+Returns representative dates from the scale's input domain. The returned tick dates are uniformly spaced (modulo irregular time intervals, such as months and leap years), have human-readable values (such as midnights), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data.
 
-The following time intervals are considered:
+If *count* is a number, then approximately *count* ticks will be returned. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain. If *count* is a function, then this function will be invoked, being passed the start date and end date of the scale's domain, in addition to the optional *step* argument. For example, to create ten default ticks, say:
+
+```javascript
+scale.ticks(10)
+```
+
+While to create ticks at 15-minute intervals, say:
+
+```javascript
+scale.ticks(d3.time.minutes, 15)
+```
+
+Note: for UTC scales, make sure to use the appropriate UTC range method (such as d3.time.minutes.utc).
+
+The following time intervals are considered for automatic ticks:
 
 * 1-, 5-, 15- and 30-[second](Time-Intervals#second).
 * 1-, 5-, 15- and 30-[minute](Time-Intervals#minute).
