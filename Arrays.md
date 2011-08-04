@@ -68,7 +68,7 @@ Returns the sum of the given *array*. If the array is empty, returns 0. An optio
 
 <a name="d3_quantile" href="Arrays#d3_quantile">#</a> d3.<b>quantile</b>(<i>numbers</i>, <i>p</i>)
 
-Returns the *p*-quantile of the given sorted array of *numbers*, where *p* is a number in the range [0,1]. For example, the median can be computed using *p* = 0.5, the first quartile at *p* = 0.25, and the third quartile at *p* = 0.75. This particular implementation uses the [R-7](http://en.wikipedia.org/wiki/Quantile#Quantiles_of_a_population) algorithm, which is the default for the R programming language and Excel. This method requires that *numbers* contains numeric elements and is already sorted in ascending order, such as by [d3.ascending](#d3_ascending).
+Returns the *p*-quantile of the given sorted array of *numbers*, where *p* is a number in the range [0,1]. For example, the median can be computed using *p* = 0.5, the first quartile at *p* = 0.25, and the third quartile at *p* = 0.75. This particular implementation uses the [R-7](http://en.wikipedia.org/wiki/Quantile#Quantiles_of_a_population) algorithm, which is the default for the R programming language and Excel. This method requires that *numbers* contains numeric elements and is already sorted in ascending order, such as by [d3.ascending](Arrays#d3_ascending).
 
 <a name="d3_bisectLeft" href="Arrays#d3_bisectLeft">#</a> d3.<b>bisectLeft</b>(<i>array</i>, <i>x</i>[, <i>lo</i>[, <i>hi</i>]])
 
@@ -81,11 +81,11 @@ Similar to bisectLeft, but returns an insertion point which comes after (to the 
 
 <a name="d3_first" href="Arrays#d3_first">#</a> d3.<b>first</b>(<i>array</i>[, <i>comparator</i>])
 
-Returns the lowest element in the specified *array*, as ordered by the specified *comparator*. If no comparator is specified, [d3.ascending](#d3_ascending) is used. This method is similar to [d3.min](#d3_min), except you can use an arbitrary comparator, rather than mapping array elements to a numeric value.
+Returns the lowest element in the specified *array*, as ordered by the specified *comparator*. If no comparator is specified, [d3.ascending](Arrays#d3_ascending) is used. This method is similar to [d3.min](Arrays#d3_min), except you can use an arbitrary comparator, rather than mapping array elements to a numeric value.
 
 <a name="d3_last" href="Arrays#d3_last">#</a> d3.<b>last</b>(<i>array</i>[, <i>comparator</i>])
 
-Returns the highest element in the specified *array*, as ordered by the specified *comparator*. If no comparator is specified, [d3.ascending](#d3_ascending) is used. This method is similar to [d3.max](#d3_max), except you can use an arbitrary comparator, rather than mapping array elements to a numeric value.
+Returns the highest element in the specified *array*, as ordered by the specified *comparator*. If no comparator is specified, [d3.ascending](Arrays#d3_ascending) is used. This method is similar to [d3.max](Arrays#d3_max), except you can use an arbitrary comparator, rather than mapping array elements to a numeric value.
 
 ## Associative Arrays
 
@@ -128,7 +128,7 @@ Returns an array of arrays, where the ith array contains the ith element from ea
 
 ### <a name="_nest"></a> Nest
 
-Nesting allows elements in an array to be grouped into a hierarchical tree structure; think of it like the GROUP BY operator in SQL, except you can have multiple levels of grouping, and the resulting output is a tree rather than a flat table. The levels in the tree are specified by key functions. The leaf nodes of the tree can be sorted by value, while the internal nodes can be sorted by key. An optional rollup function will collapse the elements in each leaf node using a summary function. The nest operator (the object returned by [d3.nest](#d3_nest)) is reusable, and does not retain any references to the data that is nested.
+Nesting allows elements in an array to be grouped into a hierarchical tree structure; think of it like the GROUP BY operator in SQL, except you can have multiple levels of grouping, and the resulting output is a tree rather than a flat table. The levels in the tree are specified by key functions. The leaf nodes of the tree can be sorted by value, while the internal nodes can be sorted by key. An optional rollup function will collapse the elements in each leaf node using a summary function. The nest operator (the object returned by [d3.nest](Arrays#d3_nest)) is reusable, and does not retain any references to the data that is nested.
 
 For example, consider the following tabular data structure of Barley yields, from various sites in Minnesota during 1931-2:
 
@@ -165,7 +165,7 @@ The nested form allows easy iteration and generation of hierarchical structures 
 
 <a name="d3_nest" href="Arrays#d3_nest">#</a> d3.<b>nest</b>()
 
-Creates a new nest operator. The set of keys is initially empty. If the [map](#nest_map) or [entries](#nest_entries) operator is invoked before any key functions are registered, the nest operator simply returns the input array.
+Creates a new nest operator. The set of keys is initially empty. If the [map](Arrays#nest_map) or [entries](Arrays#nest_entries) operator is invoked before any key functions are registered, the nest operator simply returns the input array.
 
 <a name="nest_key" href="Arrays#nest_key">#</a> nest.<b>key</b>(<i>function</i>)
 
@@ -189,4 +189,4 @@ Applies the nest operator to the specified *array*, returning an associative arr
 
 <a name="nest_entries" href="Arrays#nest_entries">#</a> nest.<b>entries</b>(<i>array</i>)
 
-Applies the nest operator to the specified *array*, returning an array of key-values entries. Conceptually, this is similar to applying [d3.entries](#d3_entries) to the associative array returned by [map](#nest_map), but it applies to every level of the hierarchy rather than just the first (outermost) level. Each entry in the returned array corresponds to a distinct key value returned by the first key function. The entry value depends on the number of registered key functions: if there is an additional key, the value is another nested array of entries; otherwise, the value is the array of elements filtered from the input *array* that have the given key value.
+Applies the nest operator to the specified *array*, returning an array of key-values entries. Conceptually, this is similar to applying [d3.entries](Arrays#d3_entries) to the associative array returned by [map](Arrays#nest_map), but it applies to every level of the hierarchy rather than just the first (outermost) level. Each entry in the returned array corresponds to a distinct key value returned by the first key function. The entry value depends on the number of registered key functions: if there is an additional key, the value is another nested array of entries; otherwise, the value is the array of elements filtered from the input *array* that have the given key value.

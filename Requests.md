@@ -21,7 +21,7 @@ By default, your browser will not allow cross-domain requests. (This is also tru
 
 Issues an HTTP GET request for the specified *url*. An optional *mime* type may be specified as the second argument, such as "application/json". The request is processed asynchronously, such that this method returns immediately after opening the request. When the data is available, the specified *callback* will be invoked, being passed the [[XMLHttpRequest|http://www.w3.org/TR/XMLHttpRequest/]] object. If an error occurs, the callback function will instead be invoked with null.
 
-This method is typically not used directly. Instead, one of the type-specific methods is used instead, such as: [text](#d3_text) for plain text, [json](#d3_json) for JSON, [xml](#d3_xml) for XML, [html](#d3_html) for HTML, and [[csv|CSV]] for comma-separated values.
+This method is typically not used directly. Instead, one of the type-specific methods is used instead, such as: [text](Requests#d3_text) for plain text, [json](Requests#d3_json) for JSON, [xml](Requests#d3_xml) for XML, [html](Requests#d3_html) for HTML, and [[csv|CSV]] for comma-separated values.
 
 <a name="d3_text" href="Requests#d3_text">#</a> d3.<b>text</b>(<i>url</i>[, <i>mime</i>], <i>callback</i>)
 

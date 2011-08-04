@@ -2,13 +2,13 @@
 
 A **selection** is an array of elements pulled from the current document. D3 uses [[CSS3|http://www.w3.org/TR/css3-selectors/]] to select elements. For example, you can select by tag ("div"), class (".awesome"), unique identifier ("#foo"), attribute ("[color=red]"), or containment ("parent child"). Selectors can also be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR). If your browser doesn't support selectors natively, you can include [[Sizzle|http://sizzlejs.com/]] before D3 for backwards-compatibility.
 
-After selecting elements, you apply **operators** to them to do stuff. These operators can get or set [attributes](#attr), [styles](#style), [properties](#property), [HTML](#html) and [text](#text) content. Attribute values and such are specified as either constants or functions; the latter are evaluated for each element. You can also join selections to [data](#data); this data is available to operators for data-driven transformations. In addition, joining to data produces [enter](#enter) and [exit](#enter) subselections, so that you may [add](#append) or [remove](#remove) elements in response to changes in data.
+After selecting elements, you apply **operators** to them to do stuff. These operators can get or set [attributes](Selections#attr), [styles](Selections#style), [properties](Selections#property), [HTML](Selections#html) and [text](Selections#text) content. Attribute values and such are specified as either constants or functions; the latter are evaluated for each element. You can also join selections to [data](Selections#data); this data is available to operators for data-driven transformations. In addition, joining to data produces [enter](Selections#enter) and [exit](Selections#enter) subselections, so that you may [add](Selections#append) or [remove](Selections#remove) elements in response to changes in data.
 
-You won't generally need to use for loops or recursive functions to modify the document with D3. That's because you operate on entire selections at once, rather than looping over individual elements. However, you can still loop over elements manually if you wish: there's an [each](#each) operator which invokes an arbitrary function, and selections are arrays, so elements can be accessed directly (e.g., `selection[0][0]`). D3 supports method chaining for brevity when applying multiple operators: the operator return value is the selection.
+You won't generally need to use for loops or recursive functions to modify the document with D3. That's because you operate on entire selections at once, rather than looping over individual elements. However, you can still loop over elements manually if you wish: there's an [each](Selections#each) operator which invokes an arbitrary function, and selections are arrays, so elements can be accessed directly (e.g., `selection[0][0]`). D3 supports method chaining for brevity when applying multiple operators: the operator return value is the selection.
 
 ## Selecting Elements
 
-D3 provides two top-level methods for selecting elements: [select](#d3_select) and [selectAll](#d3_selectAll). These methods accept selector strings; the former selects only the first matching element, while the latter selects *all* matching elements in document traversal order. These methods can also accept nodes, which is useful for integration with third-party libraries such as jQuery or developer tools (`$0`).
+D3 provides two top-level methods for selecting elements: [select](Selections#d3_select) and [selectAll](Selections#d3_selectAll). These methods accept selector strings; the former selects only the first matching element, while the latter selects *all* matching elements in document traversal order. These methods can also accept nodes, which is useful for integration with third-party libraries such as jQuery or developer tools (`$0`).
 
 <a name="d3_select" href="Selections#d3_select">#</a> d3.<b>select</b>(<i>selector</i>)
 
@@ -84,13 +84,13 @@ If *value* is not specified, returns the inner HTML content for the first non-nu
 
 <a name="append" href="Selections#append">#</a> selection.<b>append</b>(<i>name</i>)
 
-Appends a new element with the specified *name* as the last child of each element in the current selection. Returns a new selection containing the appended elements. Each new element inherits the data of the current elements, if any, in the same manner as [select](#select) for subselections. The name must be specified as a constant, though in the future we might allow appending of existing elements or a function to generate the name dynamically.
+Appends a new element with the specified *name* as the last child of each element in the current selection. Returns a new selection containing the appended elements. Each new element inherits the data of the current elements, if any, in the same manner as [select](Selections#select) for subselections. The name must be specified as a constant, though in the future we might allow appending of existing elements or a function to generate the name dynamically.
 
 The element's tag *name* may have a namespace prefix, such as "svg:text" to create a "text" element in the SVG namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to d3.ns.**prefix**.
 
 <a name="insert" href="Selections#insert">#</a> selection.<b>insert</b>(<i>name</i>, <i>before</i>)
 
-Inserts a new element with the specified *name* before the element matching the specified *before* selector, for each element in the current selection. Returns a new selection containing the inserted elements. If the before selector does not match any elements, then the new element will be the last child as with [append](#append). Each new element inherits the data of the current elements (if any), in the same manner as [select](#select) for subselections. The name and before selector must be specified as constants, though in the future we might allow inserting of existing elements or a function to generate the name or selector dynamically.
+Inserts a new element with the specified *name* before the element matching the specified *before* selector, for each element in the current selection. Returns a new selection containing the inserted elements. If the before selector does not match any elements, then the new element will be the last child as with [append](Selections#append). Each new element inherits the data of the current elements (if any), in the same manner as [select](Selections#select) for subselections. The name and before selector must be specified as constants, though in the future we might allow inserting of existing elements or a function to generate the name or selector dynamically.
 
 The element's tag *name* may have a namespace prefix, such as "svg:text" to create a "text" element in the SVG namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to d3.ns.**prefix**.
 
@@ -112,13 +112,13 @@ To control how data is joined to elements, an optional *key* function may be spe
 
 For a more detailed example of how the key function affects the data join, see the tutorial [[A Bar Chart, Part 2|http://mbostock.github.com/d3/tutorial/bar-2.html]].
 
-The result of the `data` operator is the *update* selection; this represents the selected DOM elements that were successfully bound to the specified data elements. The *update* selection also contains a reference to the [enter](#enter) and [exit](#exit) selections, for adding and removing nodes in correspondence with data. For example, if the default key-by-index is used, and the existing selection contains fewer elements than the specified data, then the *enter* selection will contain placeholders for the new data. On the other hand, if the existing contains more elements than the data, then the *exit* selection will contain the extra elements. And, if the existing selection exactly matches the data, then both the enter and exit selections will be empty, with all nodes in the update selection.
+The result of the `data` operator is the *update* selection; this represents the selected DOM elements that were successfully bound to the specified data elements. The *update* selection also contains a reference to the [enter](Selections#enter) and [exit](Selections#exit) selections, for adding and removing nodes in correspondence with data. For example, if the default key-by-index is used, and the existing selection contains fewer elements than the specified data, then the *enter* selection will contain placeholders for the new data. On the other hand, if the existing contains more elements than the data, then the *exit* selection will contain the extra elements. And, if the existing selection exactly matches the data, then both the enter and exit selections will be empty, with all nodes in the update selection.
 
-If a key function is specified, the `data` operator also affects the index of nodes; this index is passed as the second argument `i` to any operator function values. However, note that existing DOM elements are not automatically reordered; use the [sort](#sort) operator as needed.
+If a key function is specified, the `data` operator also affects the index of nodes; this index is passed as the second argument `i` to any operator function values. However, note that existing DOM elements are not automatically reordered; use the [sort](Selections#sort) operator as needed.
 
 <a name="enter" href="Selections#enter">#</a> selection.<b>enter()</b>
 
-Returns the entering selection: placeholder nodes for each data element for which no corresponding existing DOM element was found in the current selection. This method is only defined on a selection returned by the [data](#data) operator. In addition, the entering selection only defines [append](#append) and [insert](#insert) operators; you must use these operators to instantiate the entering nodes before modifying any content. Note that the *enter* operator merely returns a reference to the entering selection, and it is up to you to add the new nodes.
+Returns the entering selection: placeholder nodes for each data element for which no corresponding existing DOM element was found in the current selection. This method is only defined on a selection returned by the [data](Selections#data) operator. In addition, the entering selection only defines [append](Selections#append) and [insert](Selections#insert) operators; you must use these operators to instantiate the entering nodes before modifying any content. Note that the *enter* operator merely returns a reference to the entering selection, and it is up to you to add the new nodes.
 
 As a simple example, consider the case where the existing selection is empty, and we wish to create new nodes to match our data:
 
@@ -146,7 +146,7 @@ Note that appending entering nodes does not immediately affect the updating sele
 
 <a name="exit" href="Selections#exit">#</a> selection.<b>exit()</b>
 
-Returns the exiting selection: existing DOM elements in the current selection for which no new data element was found. This method is only defined on a selection returned by the [data](#data) operator. The exiting selection defines all the normal operators, though typically the main one you'll want to use is [remove](#remove); the other operators exist primarily so you can define an exiting transition as desired. Note that the *exit* operator merely returns a reference to the exiting selection, and it is up to you to remove the new nodes.
+Returns the exiting selection: existing DOM elements in the current selection for which no new data element was found. This method is only defined on a selection returned by the [data](Selections#data) operator. The exiting selection defines all the normal operators, though typically the main one you'll want to use is [remove](Selections#remove); the other operators exist primarily so you can define an exiting transition as desired. Note that the *exit* operator merely returns a reference to the exiting selection, and it is up to you to remove the new nodes.
 
 As a simple example, consider updating the six DIV elements created in the above example for the enter operator. Here we bind those elements to a new array of data with some new and some old:
 
@@ -196,7 +196,7 @@ This would result in:
 <div index="5">32</div>
 ```
 
-If you want the document traversal order to match the selection data order, you can use the [sort](#sort) operator to reorder elements.
+If you want the document traversal order to match the selection data order, you can use the [sort](Selections#sort) operator to reorder elements.
 
 <a name="filter" href="Selections#filter">#</a> selection.<b>filter</b>(<i>function</i>)
 
@@ -214,11 +214,11 @@ Sorts the elements in the current selection according to the specified comparato
 
 <a name="on" href="Selections#on">#</a> selection.<b>on</b>(<i>type</i>, <i>listener</i>)
 
-Adds or removes an event *listener* to each element in the current selection, for the specified *type*. The *type* is a string event type name, such as "click", "mouseover", or "submit". If an event listener was already registered for the same type on the selected element, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "click.foo" and "click.bar". The specified *listener* is invoked in the same manner as other operator functions, being passed the current datum `d` and index `i`, with the `this` context as the current DOM element. To access the current event, use the global [d3.event](#d3_event).
+Adds or removes an event *listener* to each element in the current selection, for the specified *type*. The *type* is a string event type name, such as "click", "mouseover", or "submit". If an event listener was already registered for the same type on the selected element, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "click.foo" and "click.bar". The specified *listener* is invoked in the same manner as other operator functions, being passed the current datum `d` and index `i`, with the `this` context as the current DOM element. To access the current event, use the global [d3.event](Selections#d3_event).
 
 <a name="d3_event" href="Selections#d3_event">#</a> d3.<b>event</b>
 
-Stores the current event, if any. This global is during an event listener callback registered with the [on](#on) operator. The current event is reset after the listener is notified in a finally block. This allows the listener function to have the same form as other operator functions, being passed the current datum `d` and index `i`.
+Stores the current event, if any. This global is during an event listener callback registered with the [on](Selections#on) operator. The current event is reset after the listener is notified in a finally block. This allows the listener function to have the same form as other operator functions, being passed the current datum `d` and index `i`.
 
 <a name="transition" href="Selections#transition">#</a> selection.<b>transition</b>()
 
@@ -226,15 +226,15 @@ Starts a [[transition|Transitions]] for the current selection. Transitions behav
 
 ### Subselections
 
-Whereas the top-level select methods query the entire document, a selection's [select](#select) and [selectAll](#selectAll) operators restrict queries to descendants of each selected element; we call this "subselection". For example, `d3.selectAll("p").select("b")` returns the first bold ("b") elements in every paragraph ("p") element. Subselecting via selectAll groups elements by ancestor. Thus, `d3.selectAll("p").selectAll("b")` groups by paragraph, while `d3.selectAll("p b")` returns a flat selection. Subselecting via select is similar, but preserves groups and propagates data. Grouping plays an important role in the data join, and functional operators may depend on the numeric index of the current element within its group.
+Whereas the top-level select methods query the entire document, a selection's [select](Selections#select) and [selectAll](Selections#selectAll) operators restrict queries to descendants of each selected element; we call this "subselection". For example, `d3.selectAll("p").select("b")` returns the first bold ("b") elements in every paragraph ("p") element. Subselecting via selectAll groups elements by ancestor. Thus, `d3.selectAll("p").selectAll("b")` groups by paragraph, while `d3.selectAll("p b")` returns a flat selection. Subselecting via select is similar, but preserves groups and propagates data. Grouping plays an important role in the data join, and functional operators may depend on the numeric index of the current element within its group.
 
 <a name="select" href="Selections#select">#</a> selection.<b>select</b>(<i>selector</i>)
 
-For each element in the current selection, selects the first descendant element that matches the specified *selector* string. If no element matches the specified selector for the current element, the element at the current index will be null in the returned selection; operators (with the exception of [data](#data)) automatically skip null elements, thereby preserving the index of the existing selection. If the current element has associated data, this data is inherited by the returned subselection, and automatically bound to the newly selected elements. If multiple elements match the selector, only the first matching element in document traversal order will be selected.
+For each element in the current selection, selects the first descendant element that matches the specified *selector* string. If no element matches the specified selector for the current element, the element at the current index will be null in the returned selection; operators (with the exception of [data](Selections#data)) automatically skip null elements, thereby preserving the index of the existing selection. If the current element has associated data, this data is inherited by the returned subselection, and automatically bound to the newly selected elements. If multiple elements match the selector, only the first matching element in document traversal order will be selected.
 
 <a name="selectAll" href="Selections#selectAll">#</a> selection.<b>selectAll</b>(<i>selector</i>)
 
-For each element in the current selection, selects descendant elements that match the specified *selector* string. The returned selection is grouped by the ancestor node in the current selection. If no element matches the specified selector for the current element, the group at the current index will be empty in the returned selection. The subselection does not inherit data from the current selection; however, if the [data](#data) value is specified as a function, this function will be based the data `d` of the ancestor node and the group index `i`.
+For each element in the current selection, selects descendant elements that match the specified *selector* string. The returned selection is grouped by the ancestor node in the current selection. If no element matches the specified selector for the current element, the group at the current index will be empty in the returned selection. The subselection does not inherit data from the current selection; however, if the [data](Selections#data) value is specified as a function, this function will be based the data `d` of the ancestor node and the group index `i`.
 
 Grouping by selectAll also affects subsequent entering placeholder nodes. Thus, to specify the parent node when appending entering nodes, use select followed by selectAll:
 

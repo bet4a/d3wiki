@@ -11,7 +11,7 @@ Some other tools you may be interested in:
 * [ColorBrewer](http://colorbrewer2.org) - color scales for maps.
 * [PostGIS](http://postgis.refractions.net/) - a geospatial database.
 
-The primary mechanism for displaying geographic data is [d3.geo.path](#path). In many ways, this class is similar to [d3.svg.line](SVG-Shapes#line) and the other SVG shape generators: given a geometry or feature object, it generates the path data string suitable for the "d" attribute of an SVG path element.
+The primary mechanism for displaying geographic data is [d3.geo.path](Geo-Paths#path). In many ways, this class is similar to [d3.svg.line](SVG-Shapes#line) and the other SVG shape generators: given a geometry or feature object, it generates the path data string suitable for the "d" attribute of an SVG path element.
 
 <a name="path" href="Geo-Paths#path">#</a> d3.geo.<b>path</b>()
 
@@ -40,7 +40,7 @@ vis.selectAll("path")
     .attr("d", d3.geo.path());
 ```
 
-An optional *index* may be specified, which is passed along to the [pointRadius](#pointRadius) accessor.
+An optional *index* may be specified, which is passed along to the [pointRadius](Geo-Paths#pointRadius) accessor.
 
 <a name="path_projection" href="Geo-Paths#path_projection">#</a> path.<b>projection</b>([<i>projection</i>])
 
@@ -71,7 +71,7 @@ Note: this method depends on [d3.geom.polygon](Polygon-Geom), so you must load d
 
 <a name="path_pointRadius" href="Geo-Paths#path_pointRadius">#</a> path.<b>pointRadius</b>([<i>radius</i>])
 
-If *radius* is specified, sets the radius used to display Point and MultiPoint features to the specified number. If *radius* is not specified, returns the current radius. While the radius is commonly specified as a number constant, it may also be specified as a function which is computed per feature, being passed the *feature* and *index* arguments from the [path](#_path) function. For example, if your GeoJSON data has additional properties, you might access those properties inside the radius function to vary the point size; alternatively, you could [d3.svg.symbol](SVG-Shapes#symbol) and a [projection](Geo-Projections) for more control over the display.
+If *radius* is specified, sets the radius used to display Point and MultiPoint features to the specified number. If *radius* is not specified, returns the current radius. While the radius is commonly specified as a number constant, it may also be specified as a function which is computed per feature, being passed the *feature* and *index* arguments from the [path](Geo-Paths#_path) function. For example, if your GeoJSON data has additional properties, you might access those properties inside the radius function to vary the point size; alternatively, you could [d3.svg.symbol](SVG-Shapes#symbol) and a [projection](Geo-Projections) for more control over the display.
 
 <a name="bounds" href="Geo-Paths#bounds">#</a> d3.geo.<b>bounds</b>(<i>feature</i>)
 

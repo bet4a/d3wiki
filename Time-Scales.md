@@ -1,8 +1,8 @@
 > [[API Reference]] ▸ [[Time]]
 
-D3's **time scale** is an extension of [d3.scale.linear](Quantitative-Scales#linear) that uses JavaScript [Date](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date) objects as the domain representation. Thus, unlike the normal linear scale, domain values are coerced to dates rather than numbers; similarly, the [invert](#invert) function returns a date. Most conveniently, the time scale also provides suitable [ticks](#ticks) based on [time intervals](Time-Intervals), taking the pain out of generating axes for nearly any time-based domain.
+D3's **time scale** is an extension of [d3.scale.linear](Quantitative-Scales#linear) that uses JavaScript [Date](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date) objects as the domain representation. Thus, unlike the normal linear scale, domain values are coerced to dates rather than numbers; similarly, the [invert](Time-Scales#invert) function returns a date. Most conveniently, the time scale also provides suitable [ticks](Time-Scales#ticks) based on [time intervals](Time-Intervals), taking the pain out of generating axes for nearly any time-based domain.
 
-A scale object, such as that returned by [d3.time.scale](#scale), is both an object and a function. That is: you can call the scale like any other function, and the scale has additional methods that change its behavior. Like other classes in D3, scales follow the method chaining pattern where setter methods return the scale itself, allowing multiple setters to be invoked in a concise statement.
+A scale object, such as that returned by [d3.time.scale](Time-Scales#scale), is both an object and a function. That is: you can call the scale like any other function, and the scale has additional methods that change its behavior. Like other classes in D3, scales follow the method chaining pattern where setter methods return the scale itself, allowing multiple setters to be invoked in a concise statement.
 
 <a name="scale" href="Time-Scales#scale">#</a> d3.time.<b>scale</b>()
 
@@ -26,7 +26,7 @@ If *dates* is specified, sets the scale's input domain to the specified array of
 
 <a name="range" href="Time-Scales#range">#</a> scale.<b>range</b>([<i>values</i>])
 
-If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](#interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
+If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](Time-Scales#interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
 
 <a name="rangeRound" href="Time-Scales#rangeRound">#</a> scale.<b>rangeRound</b>([<i>values</i>])
 

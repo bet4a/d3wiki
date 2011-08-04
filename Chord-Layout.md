@@ -10,7 +10,7 @@ The chord layout is designed to work in conjunction with the [chord shape](SVG-S
 
 <a name="chord" href="Chord-Layout#chord">#</a> d3.layout.<b>chord</b>()
 
-Constructs a new chord layout. By default, the input data is not sorted, and there is no padding between groups. Unlike some of the other layouts, the chord layout is not a function to be applied to data; instead, data is specified by setting the associated [matrix](#matrix), and retrieved using the [chords](#chords) and [groups](#groups) accessors.
+Constructs a new chord layout. By default, the input data is not sorted, and there is no padding between groups. Unlike some of the other layouts, the chord layout is not a function to be applied to data; instead, data is specified by setting the associated [matrix](Chord-Layout#matrix), and retrieved using the [chords](Chord-Layout#chords) and [groups](Chord-Layout#groups) accessors.
 
 <a name="matrix" href="Chord-Layout#matrix">#</a> chord.<b>matrix</b>([<i>matrix</i>])
 

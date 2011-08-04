@@ -18,20 +18,20 @@ Evaluates the pie function on the specified array of *values*. An optional *inde
 * startAngle - the start angle of the arc in radians.
 * endAngle - the end angle of the arc in radians.
 
-The elements are returned in the original order, matching *values*, even if a [sort](#sort) order is applied; this preserves the original index of each element in the values array, which is nice if you are using the index to generate a categorical color or other display property.
+The elements are returned in the original order, matching *values*, even if a [sort](Pie-Layout#sort) order is applied; this preserves the original index of each element in the values array, which is nice if you are using the index to generate a categorical color or other display property.
 
 <a name="value" href="Pie-Layout#value">#</a> pie.<b>value</b>([<i>accessor</i>])
 
-Specifies how to extract a value from the associated data; *accessor* is a function which is invoked on each input value passed to [pie](#_pie), equivalent to calling *values.map(accessor)* before computing the pie layout. The default value function is the built-in [Number](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number), which is similar to the identity function. If *accessor* is not specified, returns the current value accessor.
+Specifies how to extract a value from the associated data; *accessor* is a function which is invoked on each input value passed to [pie](Pie-Layout#_pie), equivalent to calling *values.map(accessor)* before computing the pie layout. The default value function is the built-in [Number](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number), which is similar to the identity function. If *accessor* is not specified, returns the current value accessor.
 
 <a name="sort" href="Pie-Layout#sort">#</a> pie.<b>sort</b>([<i>comparator</i>])
 
-If *comparator* is specified, sets the sort order of data for the layout using the specified comparator function.  If *comparator* is not specified, returns the current sort order, which defaults to null, preserving the original order of the input values. The comparator function is invoked for pairs of data elements from the *values* array passed to [pie](#_pie).  Comparator functions may also be implemented using [d3.ascending](Arrays#d3_ascending) or [d3.descending](Arrays#d3_descending).
+If *comparator* is specified, sets the sort order of data for the layout using the specified comparator function.  If *comparator* is not specified, returns the current sort order, which defaults to null, preserving the original order of the input values. The comparator function is invoked for pairs of data elements from the *values* array passed to [pie](Pie-Layout#_pie).  Comparator functions may also be implemented using [d3.ascending](Arrays#d3_ascending) or [d3.descending](Arrays#d3_descending).
 
 <a name="startAngle" href="Pie-Layout#startAngle">#</a> pie.<b>startAngle</b>([<i>angle</i>])
 
-If *angle* is specified, sets the overall start angle of the pie layout to the specified value in radians. If *angle* is not specified, returns the current value, which defaults to 0. The start angle can be specified either as a constant or as a function; if a function, it is evaluated once when the [pie](#_pie) function is called, being passed the current *data* and *index*.
+If *angle* is specified, sets the overall start angle of the pie layout to the specified value in radians. If *angle* is not specified, returns the current value, which defaults to 0. The start angle can be specified either as a constant or as a function; if a function, it is evaluated once when the [pie](Pie-Layout#_pie) function is called, being passed the current *data* and *index*.
 
 <a name="endAngle" href="Pie-Layout#endAngle">#</a> pie.<b>endAngle</b>([<i>angle</i>])
 
-If *angle* is specified, sets the overall end angle of the pie layout to the specified value in radians. If *angle* is not specified, returns the current value, which defaults to 2π. The end angle can be specified either as a constant or as a function; if a function, it is evaluated once when the [pie](#_pie) function is called, being passed the current *data* and *index*.
+If *angle* is specified, sets the overall end angle of the pie layout to the specified value in radians. If *angle* is not specified, returns the current value, which defaults to 2π. The end angle can be specified either as a constant or as a function; if a function, it is evaluated once when the [pie](Pie-Layout#_pie) function is called, being passed the current *data* and *index*.

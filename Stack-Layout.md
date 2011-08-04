@@ -12,17 +12,17 @@ Constructs a new stack layout with the default offset (zero) and order (null). T
 
 <a name="_stack" href="Stack-Layout#_stack">#</a> <b>stack</b>(<i>layers</i>[, <i>index</i>])
 
-Computes the *y*-coordinate baseline for each series (layer) in *layers*, and then propagate that baseline to the other layers. In the simplest case, *layers* is a two-dimensional array of numbers. The [y](#y) and [x](#x) accessors are used to define the *y*-thickness of each layer at the given *x*-position, respectively. Thus, by default the following attributes are required on each value:
+Computes the *y*-coordinate baseline for each series (layer) in *layers*, and then propagate that baseline to the other layers. In the simplest case, *layers* is a two-dimensional array of numbers. The [y](Stack-Layout#y) and [x](Stack-Layout#x) accessors are used to define the *y*-thickness of each layer at the given *x*-position, respectively. Thus, by default the following attributes are required on each value:
 
 * x - the *x*-position of the value.
 * y - the *y*-thickness of the value.
 * y0 - the minimum *y*-position of the value (baseline).
 
-These attributes can be customized by overriding the accessors and the [out](#out) function.
+These attributes can be customized by overriding the accessors and the [out](Stack-Layout#out) function.
 
 <a name="values" href="Stack-Layout#values">#</a> stack.<b>values</b>([<i>accessor</i>])
 
-Specifies how to extract values from the associated element in *layers*; *accessor* is a function which is invoked on each input layer passed to [stack](#_stack), equivalent to calling *layers.map(accessor)* before computing the stack layout. The default values function is the built-in [Object](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object), which is similar to the identity function. If *accessor* is not specified, returns the current values accessor.
+Specifies how to extract values from the associated element in *layers*; *accessor* is a function which is invoked on each input layer passed to [stack](Stack-Layout#_stack), equivalent to calling *layers.map(accessor)* before computing the stack layout. The default values function is the built-in [Object](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object), which is similar to the identity function. If *accessor* is not specified, returns the current values accessor.
 
 <a name="offset" href="Stack-Layout#offset">#</a> stack.<b>offset</b>([<i>offset</i>])
 
@@ -98,4 +98,4 @@ function out(d, y0, y) {
 }
 ```
 
-The *setter* is invoked for each input value, for each input layer, being passed the current data (d), the computed *y0* value, and the computed *y*-thickness. In all cases except the "expand" offset, the *y*-thickness is the same as the input value returned by [y](#y), and thus may be ignored.
+The *setter* is invoked for each input value, for each input layer, being passed the current data (d), the computed *y0* value, and the computed *y*-thickness. In all cases except the "expand" offset, the *y*-thickness is the same as the input value returned by [y](Stack-Layout#y), and thus may be ignored.

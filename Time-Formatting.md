@@ -68,7 +68,7 @@ Also, note that %d and %e are considered equivalent for parsing.
 
 <a name="format_utc" href="Time-Formatting#format_utc">#</a> d3.time.format.<b>utc</b>(<i>specifier</i>)
 
-Constructs a new UTC time formatter using the given *specifier*. The specifier may contain the same directives as the local time [format](#format). Internally, this time formatter is implemented using the UTC methods on the Date object, such as [getUTCDate](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getUTCDate) and [setUTCDate](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/setUTCDate) in place of [getDate](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getDate) and [setDate](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/setDate).
+Constructs a new UTC time formatter using the given *specifier*. The specifier may contain the same directives as the local time [format](Time-Formatting#format). Internally, this time formatter is implemented using the UTC methods on the Date object, such as [getUTCDate](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getUTCDate) and [setUTCDate](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/setUTCDate) in place of [getDate](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getDate) and [setDate](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/setDate).
 
 <a name="format_iso" href="Time-Formatting#format_iso">#</a> d3.time.format.<b>iso</b>
 

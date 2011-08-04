@@ -2,7 +2,7 @@
 
 **Scales** are functions that map from an input domain to an output range. **Quantitative** scales have a continuous domain, such as the set of real numbers, or dates. There are also [[ordinal scales|Ordinal-Scales]], which have a discrete domain, such as a set of names or categories. Scales are an optional feature in D3; you don't have to use them, if you prefer to do the math yourself. However, using scales can greatly simplify the code needed to map a dimension of data to a visual representation.
 
-A scale object, such as that returned by [d3.scale.linear](#linear), is both an object and a function. That is: you can call the scale like any other function, and the scale has additional methods that change its behavior. Like other classes in D3, scales follow the method chaining pattern where setter methods return the scale itself, allowing multiple setters to be invoked in a concise statement.
+A scale object, such as that returned by [d3.scale.linear](Quantitative-Scales#linear), is both an object and a function. That is: you can call the scale like any other function, and the scale has additional methods that change its behavior. Like other classes in D3, scales follow the method chaining pattern where setter methods return the scale itself, allowing multiple setters to be invoked in a concise statement.
 
 ## Linear Scales
 
@@ -38,7 +38,7 @@ The resulting value of color(-.5) is "#ff8080", and the value of color(.5) is "#
 
 <a name="linear_range" href="Quantitative-Scales#linear_range">#</a> linear.<b>range</b>([<i>values</i>])
 
-If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](#linear_interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
+If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](Quantitative-Scales#linear_interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
 
 <a name="linear_rangeRound" href="Quantitative-Scales#linear_rangeRound">#</a> linear.<b>rangeRound</b>(<i>values</i>)
 
@@ -96,11 +96,11 @@ Note: the invert operator is only supported if the output range is numeric! D3 a
 
 If *numbers* is specified, sets the scale's input domain to the specified array of numbers. The array must contain two or more numbers. If the elements in the given array are not numbers, they will be coerced to numbers; this coercion happens similarly when the scale is called. Thus, a power scale can be used to encode any type that can be converted to numbers. If *numbers* is not specified, returns the scale's current input domain.
 
-As with linear scales (see [linear.domain](#linear_domain)), power scales can also accept more than two values for the domain and range, thus resulting in polypower scale.
+As with linear scales (see [linear.domain](Quantitative-Scales#linear_domain)), power scales can also accept more than two values for the domain and range, thus resulting in polypower scale.
 
 <a name="pow_range" href="Quantitative-Scales#pow_range">#</a> pow.<b>range</b>([<i>values</i>])
 
-If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](#pow_interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
+If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](Quantitative-Scales#pow_interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
 
 <a name="pow_rangeRound" href="Quantitative-Scales#pow_rangeRound">#</a> pow.<b>rangeRound</b>(<i>values</i>)
 
@@ -152,11 +152,11 @@ Note: the invert operator is only supported if the output range is numeric! D3 a
 
 If *numbers* is specified, sets the scale's input domain to the specified array of numbers. The array must contain two or more numbers. If the elements in the given array are not numbers, they will be coerced to numbers; this coercion happens similarly when the scale is called. Thus, a log scale can be used to encode any type that can be converted to numbers. If *numbers* is not specified, returns the scale's current input domain.
 
-As with linear scales (see [linear.domain](#linear_domain)), log scales can also accept more than two values for the domain and range, thus resulting in polylog scale.
+As with linear scales (see [linear.domain](Quantitative-Scales#linear_domain)), log scales can also accept more than two values for the domain and range, thus resulting in polylog scale.
 
 <a name="log_range" href="Quantitative-Scales#log_range">#</a> log.<b>range</b>([<i>values</i>])
 
-If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](#log_interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
+If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](Quantitative-Scales#log_interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
 
 <a name="log_rangeRound" href="Quantitative-Scales#log_rangeRound">#</a> log.<b>rangeRound</b>(<i>values</i>)
 

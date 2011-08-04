@@ -2,7 +2,7 @@
 
 **Scales** are functions that map from an input domain to an output range. **Ordinal** scales have a discrete domain, such as a set of names or categories. There are also [[quantitative scales|Quantitative-Scales]], which have a continuous domain, such the set of real numbers. Scales are an optional feature in D3; you don't have to use them, if you prefer to do the math yourself. However, using scales can greatly simplify the code needed to map a dimension of data to a visual representation.
 
-A scale object, such as that returned by [d3.scale.ordinal](#ordinal), is both an object and a function. That is: you can call the scale like any other function, and the scale has additional methods that change its behavior. Like other classes in D3, scales follow the method chaining pattern where setter methods return the scale itself, allowing multiple setters to be invoked in a concise statement.
+A scale object, such as that returned by [d3.scale.ordinal](Ordinal-Scales#ordinal), is both an object and a function. That is: you can call the scale like any other function, and the scale has additional methods that change its behavior. Like other classes in D3, scales follow the method chaining pattern where setter methods return the scale itself, allowing multiple setters to be invoked in a concise statement.
 
 <a name="ordinal" href="Ordinal-Scales#ordinal">#</a> d3.scale.<b>ordinal</b>()
 
@@ -22,7 +22,7 @@ Setting the domain on an ordinal scale is optional. If no domain is set, each un
 
 If *values* is specified, sets the output range of the ordinal scale to the specified array of values. The first element in the domain will be mapped to the first element in *values*, the second domain value to the second range value, and so on. If there are fewer elements in the range than in the domain, the scale will recycle values from the start of the range. If *values* is not specified, this method returns the current output range.
 
-This method is intended for when the set of discrete output values is computed explicitly, such as a set of categorical colors. In other cases, such as determining the layout of an ordinal scatterplot or bar chart, you may find the [rangePoints](#rangePoints) or [rangeBands](#rangeBands) operators more convenient.
+This method is intended for when the set of discrete output values is computed explicitly, such as a set of categorical colors. In other cases, such as determining the layout of an ordinal scatterplot or bar chart, you may find the [rangePoints](Ordinal-Scales#rangePoints) or [rangeBands](Ordinal-Scales#rangeBands) operators more convenient.
 
 <a name="ordinal_rangePoints" href="Ordinal-Scales#ordinal_rangePoints">#</a> ordinal.<b>rangePoints</b>(<i>interval</i>[, <i>padding</i>])
 
@@ -34,7 +34,7 @@ Sets the output range from the specified continuous *interval*. The array *inter
 
 <a name="ordinal_rangeRoundBands" href="Ordinal-Scales#ordinal_rangeRoundBands">#</a> ordinal.<b>rangeRoundBands</b>(<i>interval</i>[, <i>padding</i>])
 
-Like [rangeBands](#rangeBands), except guarantees that the band width and offset is a integer value, so as to avoid antialiasing artifacts.
+Like [rangeBands](Ordinal-Scales#rangeBands), except guarantees that the band width and offset is a integer value, so as to avoid antialiasing artifacts.
 
 <a name="ordinal_rangeBand" href="Ordinal-Scales#ordinal_rangeBand">#</a> ordinal.<b>rangeBand</b>()
 
