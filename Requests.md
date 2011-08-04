@@ -17,24 +17,24 @@ By default, your browser will not allow cross-domain requests. (This is also tru
 
 ## Issuing Requests
 
-<a name="d3_xhr" href="#d3_xhr">#</a> d3.<b>xhr</b>(<i>url</i>[, <i>mime</i>], <i>callback</i>)
+<a name="d3_xhr" href="Requests#d3_xhr">#</a> d3.<b>xhr</b>(<i>url</i>[, <i>mime</i>], <i>callback</i>)
 
 Issues an HTTP GET request for the specified *url*. An optional *mime* type may be specified as the second argument, such as "application/json". The request is processed asynchronously, such that this method returns immediately after opening the request. When the data is available, the specified *callback* will be invoked, being passed the [[XMLHttpRequest|http://www.w3.org/TR/XMLHttpRequest/]] object. If an error occurs, the callback function will instead be invoked with null.
 
 This method is typically not used directly. Instead, one of the type-specific methods is used instead, such as: [text](#d3_text) for plain text, [json](#d3_json) for JSON, [xml](#d3_xml) for XML, [html](#d3_html) for HTML, and [[csv|CSV]] for comma-separated values.
 
-<a name="d3_text" href="#d3_text">#</a> d3.<b>text</b>(<i>url</i>[, <i>mime</i>], <i>callback</i>)
+<a name="d3_text" href="Requests#d3_text">#</a> d3.<b>text</b>(<i>url</i>[, <i>mime</i>], <i>callback</i>)
 
 Issues an HTTP GET request for the text file at the specified *url*. An optional *mime* type may be specified as the second argument, such as "text/plain". The request is processed asynchronously, such that this method returns immediately after opening the request. When the text is available, the specified *callback* will be invoked, being passed the text string, per the `responseText` attribute of the request. If an error occurs, the callback function will instead of invoked with null.
 
-<a name="d3_json" href="#d3_json">#</a> d3.<b>json</b>(<i>url</i>, <i>callback</i>)
+<a name="d3_json" href="Requests#d3_json">#</a> d3.<b>json</b>(<i>url</i>, <i>callback</i>)
 
 Issues an HTTP GET request for the JSON file at the specified *url*. The *mime* type "application/json" will be used. The request is processed asynchronously, such that this method returns immediately after opening the request. When the text is available, the specified *callback* will be invoked, being passed the JSON result (typically, an object or an array, depending on the contents of the file), parsed from the `responseText` attribute of the request. If an error occurs, the callback function will instead of invoked with null.
 
-<a name="d3_xml" href="#d3_xml">#</a> d3.<b>xml</b>(<i>url</i>[, <i>mime</i>], <i>callback</i>)
+<a name="d3_xml" href="Requests#d3_xml">#</a> d3.<b>xml</b>(<i>url</i>[, <i>mime</i>], <i>callback</i>)
 
 Issues an HTTP GET request for the XML file at the specified *url*. An optional *mime* type may be specified as the second argument, such as "application/xml". The request is processed asynchronously, such that this method returns immediately after opening the request. When the XML content is available, the specified *callback* will be invoked, being passed the root (document) element of the loaded XML content, per the `responseXML` attribute of the request. If an error occurs, the callback function will instead of invoked with null.
 
-<a name="d3_html" href="#d3_html">#</a> d3.<b>html</b>(<i>url</i>, <i>callback</i>)
+<a name="d3_html" href="Requests#d3_html">#</a> d3.<b>html</b>(<i>url</i>, <i>callback</i>)
 
 Issues an HTTP GET request for the HTML file at the specified *url*. The *mime* type "text/html" will be used. The request is processed asynchronously, such that this method returns immediately after opening the request. When the HTML content is available, the specified *callback* will be invoked, being passed the root (document) element of the loaded HTML content. This is generated as a document fragment from the `responseText` attribute of the request. If an error occurs, the callback function will instead of invoked with null.

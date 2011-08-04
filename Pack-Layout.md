@@ -10,11 +10,11 @@ By flattening the hierarchy, the **pack layout** can also be used to create [bub
 
 Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
 
-<a name="pack" href="#pack">#</a> d3.layout.<b>pack</b>()
+<a name="pack" href="Pack-Layout#pack">#</a> d3.layout.<b>pack</b>()
 
 Creates a new pack layout with the default settings: the default sort order is by ascending value; the default children accessor assumes each input data is an object with a children array; the default size is 1×1.
 
-<a name="sort" href="#sort">#</a> pack.<b>sort</b>([<i>comparator</i>])
+<a name="sort" href="Pack-Layout#sort">#</a> pack.<b>sort</b>([<i>comparator</i>])
 
 If *comparator* is specified, sets the sort order of sibling nodes for the layout using the specified comparator function.  If *comparator* is not specified, returns the current group sort order, which defaults to ascending order by the associated input data's numeric value attribute:
 
@@ -26,7 +26,7 @@ function comparator(a, b) {
 
 The comparator function is invoked for pairs of nodes, being passed the input data for each node. A null comparator disables sorting and uses tree traversal order. Comparator functions may also be implemented using [d3.ascending](Arrays#d3_ascending) or [d3.descending](Arrays#d3_descending).
 
-<a name="children" href="#children">#</a> pack.<b>children</b>([<i>children</i>])
+<a name="children" href="Pack-Layout#children">#</a> pack.<b>children</b>([<i>children</i>])
 
 If *children* is specified, sets the specified children accessor function. If *children* is not specified, returns the current children accessor function, which by default assumes that the input data is an object with a children array:
 
@@ -68,7 +68,7 @@ Often, it is convenient to load the node hierarchy using [d3.json](Requests#d3_j
 
 The children accessor is first invoked for root node in the hierarchy. If the accessor returns null, then the node is assumed to be a leaf node at the layout traversal terminates. Otherwise, the accessor should return an array of data elements representing the child nodes.
 
-<a name="nodes" href="#nodes">#</a> pack.<b>nodes</b>(<i>root</i>)
+<a name="nodes" href="Pack-Layout#nodes">#</a> pack.<b>nodes</b>(<i>root</i>)
 
 Runs the pack layout, returning the array of nodes associated with the specified *root* node. The cluster layout is part of D3's family of [[hierarchical|Hierarchical-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the *root* node of the hierarchy, and the output return value is an array representing the computed positions of all nodes.  Several attributes are populated on each node:
 
@@ -79,7 +79,7 @@ Runs the pack layout, returning the array of nodes associated with the specified
 * x - the computed *x*-coordinate of the node position.
 * y - the computed *y*-coordinate of the node position.
 
-<a name="links" href="#links">#</a> pack.<b>links</b>(<i>nodes</i>)
+<a name="links" href="Pack-Layout#links">#</a> pack.<b>links</b>(<i>nodes</i>)
 
 Given the specified array of *nodes*, such as those returned by [nodes](#nodes), returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. Each link is an object with two attributes:
 
@@ -95,7 +95,7 @@ svg.selectAll("path")
     .attr("d", d3.svg.diagonal());
 ```
 
-<a name="value" href="#value">#</a> pack.<b>value</b>([<i>value</i>])
+<a name="value" href="Pack-Layout#value">#</a> pack.<b>value</b>([<i>value</i>])
 
 If *value* is specified, sets the value accessor to the specified function. If *value* is not specified, returns the current value accessor, which assumes that the input data is an object with a numeric value attribute:
 
@@ -107,6 +107,6 @@ function value(d) {
 
 The value accessor is invoked for each input data element, and must return a number representing the numeric value of the node. This value is used to set the area of each circle proportionally to the value. However, note that circle size is strictly comparable only to other nodes at the same depth in the hierarchy, as there is typically wasted space between packed child circles and their parent.
 
-<a name="size" href="#size">#</a> pack.<b>size</b>([<i>size</i>])
+<a name="size" href="Pack-Layout#size">#</a> pack.<b>size</b>([<i>size</i>])
 
 If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1.
