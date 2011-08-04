@@ -10,7 +10,7 @@ You won't generally need to use for loops or recursive functions to modify the d
 
 D3 provides two top-level methods for selecting elements: [select](#d3_select) and [selectAll](#d3_selectAll). These methods accept selector strings; the former selects only the first matching element, while the latter selects *all* matching elements in document traversal order. These methods can also accept nodes, which is useful for integration with third-party libraries such as jQuery or developer tools (`$0`).
 
-<a name="d3_select" href="#d3_select">#</a> d3.<b>select</b>(<i>selector</i>)
+<a name="d3_select"></a> [#](#d3_select) d3.<b>select</b>(<i>selector</i>)
 
 Selects the first element that matches the specified selector string, returning a single-element selection. If no elements in the current document match the specified selector, returns the empty selection. If multiple elements match the selector, only the first matching element in document traversal order will be selected.
 
