@@ -61,8 +61,8 @@
 * [Force Layout with Custom Forces](http://bl.ocks.org/1021841)
 * [Force Layout with Multiple Foci](http://bl.ocks.org/1021953)
 * [Force Layout with Images and Labels](http://bl.ocks.org/950642)
-* [Force Layout (Animated)](http://bl.ocks.org/929623)
-* [Force Layout (Collapsible)](http://bl.ocks.org/1062288)
+* [Force Layout (Interactive Construction)](http://bl.ocks.org/929623)
+* [Force Layout (Collapsible Hierarchy)](http://bl.ocks.org/1062288)
 * [Force Layout from XML](http://bl.ocks.org/1080941)
 
 #### Miscellaneous
