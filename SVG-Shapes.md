@@ -72,7 +72,7 @@ g.append("svg:path")
     .attr("d", line);
 ```
 
-Whatever data is bound to `g` (in this example) will be passed to the `line` instance. Thus, the data must be specified as an array. For element element in the data array, the *x*- and *y*-accessor functions are used to pull out the control point coordinates.
+Whatever data is bound to `g` (in this example) will be passed to the `line` instance. Thus, the data must be specified as an array. For every element in the data array, the *x*- and *y*-accessor functions are used to pull out the control point coordinates.
 
 A path generator, such as that returned by d3.svg.line, is both an object and a function. That is: you can call the generator like any other function, and the generator has additional methods that change its behavior. Like other classes in D3, path generators follow the method chaining pattern where setter methods return the generator itself, allowing multiple setters to be invoked in a concise statement.
 
@@ -233,7 +233,7 @@ var area = d3.svg.area()
     .y1(function(d) { return y(d.y); });
 ```
 
-The *x*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the area function; however, in the common case that the area generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). In this context, the index is the index into the array of control points, rather than the index of the current element in the selection. The *x*-accessor is invoked exactly once per datum, in the order specified by the data array. Thus, it is possible to specify a nondeterministic accessor, such as a random number generator. It is also possible to specify the *x*-accessor as a constant rather than a function, in which case all points will have the same *x*-coordinate.
+The *x*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the area function; however, in the common case that the area generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). In this context, the index is the index into the array of control points, rather than the index of the current element in the selection. The *x*-accessor is invoked exactly once per datum, in the order specified by the data array. Thus, it is possible to specify a non-deterministic accessor, such as a random number generator. It is also possible to specify the *x*-accessor as a constant rather than a function, in which case all points will have the same *x*-coordinate.
 
 <a name="area_x0" href="SVG-Shapes#area_x0">#</a> area.<b>x0</b>([<i>x0</i>])
 
