@@ -45,6 +45,7 @@
 * [Marimekko Chart](http://bl.ocks.org/1005090)
 * [Histogram](http://bl.ocks.org/993912)
 * [Grouped Bar Chart](http://bl.ocks.org/882152)
+* [Stacked Bar Chart](http://bl.ocks.org/1134768)
 
 #### Trees and Graphs
 
