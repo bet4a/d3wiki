@@ -78,6 +78,7 @@
 * [Linear Gradients](http://bl.ocks.org/1086421)
 * [Force Directed States of America](http://bl.ocks.org/1073373)
 * [Rounded Rectangles](http://bl.ocks.org/1123639)
+* [Spermatozoa](http://bl.ocks.org/1136236)
 
 #### Maps
 
