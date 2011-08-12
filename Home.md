@@ -34,6 +34,7 @@
 * [U.S. Population Pyramid](http://vis.stanford.edu/jheer/d3/pyramid/shift.html) - Jeff Heer
 * [Lines Spent (Chrome Commits)](http://neugierig.org/software/datavis/lines-spent/) - Evan Martin
 * [Transit time from my office](http://beaugunderson.com/d3/routes/google.html) - Beau Gunderson
+* WindHistory.com: [maps](http://windhistory.com/map.html#9.00/37.8931/-121.7366) and [charts](http://windhistory.com/station.html?KSAF) - Nelson Minar
 
 ### Concepts & Techniques
 
