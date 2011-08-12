@@ -84,6 +84,7 @@
 
 * [Google Maps](http://bl.ocks.org/899711)
 * [Polymaps](http://bl.ocks.org/899670)
+* [Polymaps with custom tiler](http://bl.ocks.org/900050)
 
 Using D3? Post your examples here! More examples on the [D3 website](http://mbostock.github.com/d3/ex/) and in the [[Git repository|https://github.com/mbostock/d3/tree/master/examples]]. If you just want to share a quick example, consider using [Gist](http://gist.github.com) and [bl.ocks](http://bl.ocks.org).
 
