@@ -11,6 +11,10 @@
 * [[Jan Willem Tulp's blog|http://www.janwillemtulp.com/category/d3/]]
 * [[Justin Palmer's Introduction to D3|http://dealloc.me/2011/06/24/d3-is-not-a-graphing-library.html]]
 
+## Publications
+
+* [[D3: Data-Driven Documents|http://vis.stanford.edu/papers/d3]]<br>Michael Bostock, Vadim Ogievetsky, Jeffrey Heer<br>*IEEE Trans. Visualization & Comp. Graphics (Proc. InfoVis)*, 2011
+
 ## Support
 
 * [[d3-js Google Group|http://groups.google.com/group/d3-js]]
