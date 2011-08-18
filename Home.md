@@ -72,6 +72,7 @@
 * [Force Layout (Interactive Construction)](http://bl.ocks.org/929623)
 * [Force Layout (Collapsible Hierarchy)](http://bl.ocks.org/1062288)
 * [Force Layout from XML](http://bl.ocks.org/1080941)
+* [Force Layout with Directed Edges (Curves and Arrow Markers)](http://bl.ocks.org/1153292)
 * [Bounded Force Layout](http://bl.ocks.org/1129492)
 
 #### Miscellaneous
