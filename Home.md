@@ -53,6 +53,7 @@
 * [Histogram](http://bl.ocks.org/993912)
 * [Grouped Bar Chart](http://bl.ocks.org/882152)
 * [Stacked Bar Chart](http://bl.ocks.org/1134768)
+* [Small Multiples](http://bl.ocks.org/1157787)
 
 #### Trees and Graphs
 
