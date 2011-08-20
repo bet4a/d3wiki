@@ -22,7 +22,7 @@ The [[ellipse|http://www.w3.org/TR/SVG/shapes.html#EllipseElement]] element defi
 
 <a name="svg_line" href="SVG-Shapes#svg_line">#</a> svg:<b>line</b> x1="0" y1="0" x2="0" y2="0"
 
-The [[line|http://www.w3.org/TR/SVG/shapes.html#LineElement]] element defines a line segment that starts at one point and ends at another. The first point is specified using the *x1* and *x2* attributes, while the second point is specified using the *x2* and *y2* attributes. The line element is a popular choice for drawing rules, reference lines, axes and tick marks.
+The [[line|http://www.w3.org/TR/SVG/shapes.html#LineElement]] element defines a line segment that starts at one point and ends at another. The first point is specified using the *x1* and *y1* attributes, while the second point is specified using the *x2* and *y2* attributes. The line element is a popular choice for drawing rules, reference lines, axes and tick marks.
 
 <a name="svg_polyline" href="SVG-Shapes#svg_polyline">#</a> svg:<b>polyline</b> points=""
 
