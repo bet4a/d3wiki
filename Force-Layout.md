@@ -76,6 +76,7 @@ If *nodes* is specified, sets the layout's associated nodes to the specified arr
 * px - the *x*-coordinate of the previous node position.
 * py - the *y*-coordinate of the previous node position.
 * fixed - a boolean indicating whether node position is locked.
+* weight - the node weight; the number of associated links.
 
 These attributes do not need to be set before passing the nodes to the layout; if they are not set, suitable defaults will be initialized by the layout when [start](Force-Layout#start) is called. However, be aware that if you are storing other data on your nodes, your data attributes should not conflict with the above properties used by the layout.
 
