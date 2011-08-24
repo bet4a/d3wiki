@@ -1,8 +1,6 @@
-# Release Notes
+## Release Notes
 
-.
-
-## 2.0.0 - August 23, 2011
+### 2.0.0 - August 23, 2011
 
 The enter selection now merges into the update selection when you append or insert. This means you no longer need to re-select after entering new nodes; those new nodes will be automatically merged into the update selection.
 
