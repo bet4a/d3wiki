@@ -1,6 +1,6 @@
 > [[API Reference]] ▸ [[Core]]
 
-A transition is a special type of [[selection|Selections]] where the operators apply smoothly over time rather than instantaneously. You derive a transition from a selection using the [[transition|Selections#transition]] operator. While transitions generally support the same operators as selections (such as [attr](Transitions#wiki-attr) and [style](Transitions#wiki-style)), not all operators are supported; for example, you must append elements before a transition starts. A [remove](Transitions#wiki-remove) operator is provided for convenient removal of elements when the transition ends.
+A transition is a special type of [[selection|Selections]] where the operators apply smoothly over time rather than instantaneously. You derive a transition from a selection using the [[transition|Selections#wiki-transition]] operator. While transitions generally support the same operators as selections (such as [attr](Transitions#wiki-attr) and [style](Transitions#wiki-style)), not all operators are supported; for example, you must append elements before a transition starts. A [remove](Transitions#wiki-remove) operator is provided for convenient removal of elements when the transition ends.
 
 Transitions may have per-element delays and durations, computed using functions of data similar to other operators. This makes it easy to stagger a transition for different elements, either based on data or index. For example, you can sort elements and then stagger the transition for better perception of element reordering during the transition. For more details on these techniques, see [["Animated Transitions in Statistical Data Graphics"|http://vis.berkeley.edu/papers/animated_transitions/]] by Heer & Robertson.
 
@@ -10,7 +10,7 @@ Only one transition may be *active* on a given element at a given time. However,
 
 ## Starting Transitions
 
-Transitions are created using the [[transition|Selections#transition]] operator on a selection. Transitions start automatically upon creation after a delay which defaults to zero; however, note that a zero-delay transition actually starts after a minimal (<10ms) delay, pending the first timer callback. Transitions have a default duration of 250ms.
+Transitions are created using the [[transition|Selections#wiki-transition]] operator on a selection. Transitions start automatically upon creation after a delay which defaults to zero; however, note that a zero-delay transition actually starts after a minimal (<10ms) delay, pending the first timer callback. Transitions have a default duration of 250ms.
 
 <a name="d3_transition" href="Transitions#wiki-d3_transition">#</a> d3.<b>transition</b>()
 
@@ -142,7 +142,7 @@ where *selection* is the current transition's underlying selection. In addition,
 
 Add a listener for transition events, supporting both "start" and "end" events. The listener will be invoked for each individual element in the transition, even if the transition has a constant delay and duration. The start event can be used to trigger an instantaneous change as each element starts to transition. The end event can be used to initiate multi-stage transitions by selecting the current element, `this`, and deriving a new transition. Any transitions created during the end event will inherit the current transition ID, and thus will not override a newer transition that was previously scheduled.
 
-Note: there is currently no way to remove listeners. And, this operator has the same name as the selection [[each|Selections#each]] operator, which is somewhat confusing. It should probably be renamed; see [[#168|https://github.com/mbostock/d3/issues/168]].
+Note: there is currently no way to remove listeners. And, this operator has the same name as the selection [[each|Selections#wiki-each]] operator, which is somewhat confusing. It should probably be renamed; see [[#168|https://github.com/mbostock/d3/issues/168]].
 
 <a name="call" href="Transitions#wiki-call">#</a> transition.<b>call</b>(<i>function</i>[, <i>arguments…</i>])
 
@@ -252,11 +252,11 @@ For each number embedded in *b*, the interpolator will attempt to find a corresp
 
 <a name="d3_interpolateRgb" href="Transitions#wiki-d3_interpolateRgb">#</a> d3.<b>interpolateRgb</b>(<i>a</i>, <i>b</i>)
 
-Returns an RGB color space interpolator between the two colors *a* and *b*. The colors *a* and *b* need not be in RGB, but they will be converted to RGB using [[d3.rgb|Colors#d3_rgb]]. The red, green and blue channels are interpolated linearly in a manner equivalent to [interpolateRound](Transitions#wiki-interpolateRound), as fractional channel values are not allowed. The return value of the interpolator is always a string representing the RGB color, such as "rgb(255,0,0)" for red.
+Returns an RGB color space interpolator between the two colors *a* and *b*. The colors *a* and *b* need not be in RGB, but they will be converted to RGB using [[d3.rgb|Colors#wiki-d3_rgb]]. The red, green and blue channels are interpolated linearly in a manner equivalent to [interpolateRound](Transitions#wiki-interpolateRound), as fractional channel values are not allowed. The return value of the interpolator is always a string representing the RGB color, such as "rgb(255,0,0)" for red.
 
 <a name="d3_interpolateHsl" href="Transitions#wiki-d3_interpolateHsl">#</a> d3.<b>interpolateHsl</b>(<i>a</i>, <i>b</i>)
 
-Returns an HSL color space interpolator between the two colors *a* and *b*. The colors *a* and *b* need not be in HSL, but they will be converted to HSL using [[d3.hsl|Colors#d3_hsl]]. The hue, saturation and lightness are interpolated linearly in a manner equivalent to [interpolateNumber](Transitions#wiki-interpolateNumber). (Thus, the shortest path between the start and end hue is not necessarily used.) The return value of the interpolator is always a string representing the RGB color, such as "#ff0000" for red; an RGB color string is returned for browser compatibility, as not all browsers support HSL colors in CSS.
+Returns an HSL color space interpolator between the two colors *a* and *b*. The colors *a* and *b* need not be in HSL, but they will be converted to HSL using [[d3.hsl|Colors#wiki-d3_hsl]]. The hue, saturation and lightness are interpolated linearly in a manner equivalent to [interpolateNumber](Transitions#wiki-interpolateNumber). (Thus, the shortest path between the start and end hue is not necessarily used.) The return value of the interpolator is always a string representing the RGB color, such as "#ff0000" for red; an RGB color string is returned for browser compatibility, as not all browsers support HSL colors in CSS.
 
 <a name="d3_interpolateArray" href="Transitions#wiki-d3_interpolateArray">#</a> d3.<b>interpolateArray</b>(<i>a</i>, <i>b</i>)
 
@@ -268,7 +268,7 @@ Note: no defensive copy of the template array is created; modifications of the r
 
 Returns an object interpolator between the two objects *a* and *b*. Internally, an object template is created that has the same properties as *b*. For each property in *b*, if there exists a corresponding property in *a*, a generic interpolator is created for the two elements using [interpolate](Transitions#wiki-interpolate). If there is no such property, the static value from *b* is used in the template. Then, for the given parameter *t*, the template's embedded interpolators are evaluated and the updated object template is then returned. For example, if *a* is the object {x: 0, y: 1} and *b* is the object {x: 1, y: 10, z: 100}, the result of the interpolator for *t* = .5 is the object {x: .5, y: 5.5, z: 100}.
 
-Object interpolation is particularly useful for *dataspace interpolation*, where data is interpolated rather than attribute values. For example, you can interpolate an object which describes an arc in a pie chart, and then use [[d3.svg.arc|SVG-Shapes#arc]] to compute the new SVG path data.
+Object interpolation is particularly useful for *dataspace interpolation*, where data is interpolated rather than attribute values. For example, you can interpolate an object which describes an arc in a pie chart, and then use [[d3.svg.arc|SVG-Shapes#wiki-arc]] to compute the new SVG path data.
 
 Note: no defensive copy of the template object is created; modifications of the returned object may adversely affect subsequent evaluation of the interpolator. No copy is made because interpolators should be fast, as they are part of the inner loop of animation.
 

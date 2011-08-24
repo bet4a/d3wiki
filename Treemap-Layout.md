@@ -77,7 +77,7 @@ Runs the treemap layout, returning the array of nodes associated with the specif
 * dx - the *x*-extent of the node position.
 * dy - the *y*-extent of the node position.
 
-Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system; for example, you can treat *x* as a radius and *y* as an angle to produce a radial rather than Cartesian layout. In Cartesian orientation, *x*, *y*, *dx* and *dy* correspond to the "x", "y", "width" and "height" attributes of the SVG [[rect|SVG-Shapes#svg_rect]] element.
+Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system; for example, you can treat *x* as a radius and *y* as an angle to produce a radial rather than Cartesian layout. In Cartesian orientation, *x*, *y*, *dx* and *dy* correspond to the "x", "y", "width" and "height" attributes of the SVG [[rect|SVG-Shapes#wiki-svg_rect]] element.
 
 <a name="links" href="Treemap-Layout#wiki-links">#</a> treemap.<b>links</b>(<i>nodes</i>)
 
