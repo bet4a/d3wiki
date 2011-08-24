@@ -4,7 +4,9 @@
 
 ### Selections
 
-The **enter-update** pattern has been simplified: the [enter](Selections#wiki-enter) selection now merges into the [update](Selections#wiki-data) selection when you append or insert. This new approach reduces code duplication between enter and update. For example, say you had a selection of circles and wanted to update their radii, while also adding and removing nodes. Previously you had to call the `attr` operator twice, separately for enter and update:
+The **enter-update** pattern has been simplified: the [enter](Selections#wiki-enter) selection now merges into the [update](Selections#wiki-data) selection when you append or insert. This new approach reduces code duplication between enter and update. Rather than applying operators to both the enter and update selection separately, you can now apply them to the update selection after entering the nodes.
+
+For example, say you had a selection of circles and wanted to update their radii, while also adding and removing nodes. Previously you had to call the `attr` operator twice, separately for enter and update:
 
 ```javascript
 var circle = svg.selectAll("circle").data([data]);
