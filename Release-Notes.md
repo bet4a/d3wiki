@@ -30,13 +30,25 @@ circle.attr("r", radius); // for enter and update
 
 If you want to run operators only on the updating nodes, you can run them on the update selection before entering new nodes.
 
-Selection's `select` and `selectAll` operators can now take functions.
+The [select](Selections#wiki-select) and (selectAll)[Selections#wiki-selectAll] operators can now take **selector functions**, in addition to selector strings. This is also true of select and selectAll on transitions. For example, if you want to select the first child of every element, you can say:
+
+```javascript
+var children = g.select(function() { return this.firstChild; });
+```
+
+If you want, you could even create new elements dynamically and insert them into the DOM. This is an advanced feature, but might be useful for more advanced selection and creation. For example, you could use XPath rather than selectors if you wanted.
 
 ### Transitions
 
-Transitions are now arrays of elements, just like selections. You can now inspect them in the developer console. Each array is wrapped in an object that stores the delay and duration of the associated transition. Transition's `each` operator can now be called with one argument, with the same behavior as selection. Transitions also expose an `id` property, which can be useful for debugging concurrent transitions; this id is inherited by subtransitions, fixing a bug where nested transitions would compete for element ownership.
+Transitions are now **transparent** arrays of elements, and you can inspect them in the developer console just like selections. Each selected element is wrapped in an object that stores the delay and duration of the associated transition. (Recall that these values are computed on a per-element basis for staggered animations.) Internally, some of the timing logic that manages transitions has also been cleaned up, improving performance and fixing a few timing bugs.
 
-Transition has a new `tween` operator which is used internally by all the other tweens (`style`, `attr`, *etc.*). You can use this operator directly if you want to define a custom tween as part of the transition; use this instead of listening for a transition "tick" event.
+A new, generic [tween](Transitions#wiki-tween) operator is used internally by all the other tweens (`style`, `attr`, *etc.*). You can use this operator directly if you want to define a custom tween as part of the transition; use this instead of listening for a transition "tick" event. For example, the `text` operator does not interpolate by default. You can now interpolate text content by saying:
+
+```javascript
+
+```
+
+The transition [each](Transitions#wiki-each) operator can now be called with one argument (a callback function), offering the same functionality as the selection's [each](Selections#wiki-each) operator. Transitions now expose an [id](Transitions#wiki-id) property, which can be useful for debugging concurrent transitions; this identifier is inherited by subtransitions, fixing a bug with nested transitions.
 
 ### SVG
 
