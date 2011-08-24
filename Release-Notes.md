@@ -6,7 +6,7 @@
 
 The **enter-update** pattern has been simplified: the [enter](Selections#wiki-enter) selection now merges into the [update](Selections#wiki-data) selection when you append or insert. This new approach reduces code duplication between enter and update. Rather than applying operators to both the enter and update selection separately, you can now apply them to the update selection after entering the nodes.
 
-For example, say you had a selection of circles and wanted to update their radii. Previously you had to call the attr operator twice, once for enter and once for update:
+For example, say you had a selection of circles and wanted to update their radii. Previously you had to call the [attr](Selections#wiki-attr) operator twice, once for enter and once for update:
 
 ```javascript
 var circle = svg.selectAll("circle").data([data]);
@@ -15,7 +15,7 @@ circle.enter().append("svg:circle").attr("r", radius); // for enter
 circle.attr("r", radius); // for update
 ```
 
-In addition, if you wanted `circle` to refer to all the on-screen nodes (enter plus update) subsequently, you'd have to reselect as well to merge the enter and update selections:
+In addition, if you wanted *circle* to refer to all the on-screen nodes (enter plus update) subsequently, you'd have to reselect as well to merge the enter and update selections:
 
 ```javascript
 circle = svg.selectAll("circle"); // reselect
