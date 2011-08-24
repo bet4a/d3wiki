@@ -142,7 +142,8 @@ Assuming that the body is initially empty, the above code will create six new DI
 
 Another way to think about the entering placeholder nodes is that they are pointers to the parent node (in this example, the document body); however, they only support append and insert.
 
-Note that appending entering nodes does not immediately affect the updating selection; you must reselect if you want it to reflect these additions. Perhaps in the future we'll change this behavior, such that appending entering nodes will be immediately assigned to the updating selection and obviating the need for a reselect. However, this change isn't strictly backwards-compatible as it will likely require doing any updates *before* enter, so as to avoid redundant operators to both updating and entering elements.
+The enter selection merges into the update selection when you append or insert. This approach reduces code duplication between enter and update. Rather than applying operators to both the enter and update selection separately, you can now apply them to the update selection after entering the nodes. In the rare case that you want to run operators only on the
+updating nodes, you can run them on the update selection before entering new nodes.
 
 <a name="exit" href="Selections#wiki-exit">#</a> selection.<b>exit()</b>
 
