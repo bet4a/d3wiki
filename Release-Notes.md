@@ -65,7 +65,7 @@ You might want to write your tweens as reusable functions (say, closures) rather
 
 ### Axes
 
-A new **axis** component has been added to the [d3.svg](SVG-Shapes) module. The axis component makes it easy to add reference lines, ticks and labels to any visualization. This display of the axes is highly customizable, and best of all, the axes support smooth transitions automatically. See this [quick demo](http://bl.ocks.org/1166403) of axes used by an area chart. More documentation and examples for this component will be coming in the new few days.
+A new **axis** component has been added to the [d3.svg](SVG-Shapes) module. The axis component makes it easy to add reference lines, ticks and labels to any visualization. This display of the axes is highly customizable, and best of all, the axes support smooth transitions automatically. See this [quick demo](http://bl.ocks.org/1166403) of axes used by an area chart. More documentation and examples for this component will be coming in the next few days.
 
 ### Extending and Overriding
 
