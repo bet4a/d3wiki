@@ -2,7 +2,7 @@
 
 ## 2.0.0 - August 23, 2011
 
-The **enter-update** pattern has been simplified: the enter selection now merges into the update selection when you append or insert. This means you no longer need to reselect after appending entering nodes; those new nodes will be automatically merged into the update selection. For example, say you had a selection of circles and wanted to update their radii, while also adding and removing nodes:
+The **enter-update** pattern has been simplified: the [enter](Selections#wiki-enter) selection now merges into the [update](Selections#wiki-data) selection when you append or insert. This means you no longer need to reselect after appending entering nodes; those new nodes will be automatically merged into the update selection. For example, say you had a selection of circles and wanted to update their radii, while also adding and removing nodes:
 
 ```javascript
 var circle = svg.selectAll("circle").data([data]);
