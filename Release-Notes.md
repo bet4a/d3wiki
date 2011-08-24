@@ -9,14 +9,14 @@ The **enter-update** pattern has been simplified: the [enter](Selections#wiki-en
 ```javascript
 var circle = svg.selectAll("circle").data([data]);
 circle.exit().remove();
-circle.enter().append("svg:circle").attr("r", radius);
-circle.attr("r", radius);
+circle.enter().append("svg:circle").attr("r", radius); // for enter
+circle.attr("r", radius); // for update
 ```
 
 If you then want `circle` to refer to all the on-screen nodes (enter plus update), you'd have to reselect as well:
 
 ```javascript
-circle = svg.selectAll("circle");
+circle = svg.selectAll("circle"); // reselect
 ```
 
 In 2.0, you can eliminate this duplicate code because entering nodes will add them to both the enter selection and the update selection. Running operators such as `attr` on the update selection *after* enter will apply to both the entering and updating nodes:
@@ -24,8 +24,8 @@ In 2.0, you can eliminate this duplicate code because entering nodes will add th
 ```javascript
 var circle = svg.selectAll("circle").data([data]);
 circle.exit().remove();
-circle.enter().append("svg:circle");
-circle.attr("r", radius);
+circle.enter().append("svg:circle"); // adds enter to update
+circle.attr("r", radius); // for enter and update
 ```
 
 If you want to run operators only on the updating nodes, you can run them on the update selection before entering new nodes.
