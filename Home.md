@@ -1,6 +1,7 @@
 ## Documentation
 
 * [[API Reference]]
+* [[Release Notes]]
 
 ## Tutorials
 
