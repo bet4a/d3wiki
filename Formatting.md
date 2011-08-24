@@ -17,7 +17,7 @@ In addition to numbers, D3 also supports formatting and parsing [[dates|Time-For
 
 ## Numbers
 
-<a name="d3_format" href="Formatting#d3_format">#</a> d3.<b>format</b>(<i>specifier</i>)
+<a name="d3_format" href="Formatting#wiki-d3_format">#</a> d3.<b>format</b>(<i>specifier</i>)
 
 Returns a new format function with the given string *specifier*. A format function takes a number as the only argument, and returns a string representing the formatted number. The format specifier is modeled after Python 3.1's built-in [[format specification mini-language|http://docs.python.org/release/3.1.3/library/string.html#formatspec]]. The general form of a specifier is [*sign*][0][*width*][,][.*precision*][*type*]. The *sign* can be one of the following:
 
@@ -37,13 +37,13 @@ The *comma* (",") option enables the use of a comma for a thousands separator. T
 
 The type "n" is also supported as shorthand for ",g". The *precision* indicates how many digits should be displayed after the decimal point for a value formatted with types "f" and "%", or before and after the decimal point for a value formatted with types "g", "r" and "p".
 
-<a name="d3_round" href="Formatting#d3_round">#</a> d3.<b>round</b>(*x*[, *n*])
+<a name="d3_round" href="Formatting#wiki-d3_round">#</a> d3.<b>round</b>(*x*[, *n*])
 
-Returns the value *x* rounded to *n* digits after the decimal point. If *n* is omitted, it defaults to zero. The result is a number. Values are rounded to the closest multiple of 10 to the power minus *n*; if two multiples are equally close, the value is rounded up in accordance with the build-in [[round|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/round]] function. Note that the resulting number when converted to a string may be imprecise due to IEEE floating point precision; to format a number to a string with a fixed number of decimal points, use [d3.format](Formatting#d3_format) instead.
+Returns the value *x* rounded to *n* digits after the decimal point. If *n* is omitted, it defaults to zero. The result is a number. Values are rounded to the closest multiple of 10 to the power minus *n*; if two multiples are equally close, the value is rounded up in accordance with the build-in [[round|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/round]] function. Note that the resulting number when converted to a string may be imprecise due to IEEE floating point precision; to format a number to a string with a fixed number of decimal points, use [d3.format](Formatting#wiki-d3_format) instead.
 
 ## Strings
 
-<a name="d3_requote" href="Formatting#d3_requote">#</a> d3.<b>requote</b>(*string*)
+<a name="d3_requote" href="Formatting#wiki-d3_requote">#</a> d3.<b>requote</b>(*string*)
 
 Returns an quoted (escaped) version of the specified *string* such that the string may be embedded in a regular expression as a string literal.
 

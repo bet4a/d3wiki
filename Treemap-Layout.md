@@ -6,11 +6,11 @@ Introduced by [Ben Shneiderman](http://www.cs.umd.edu/hcil/treemap-history/) in 
 
 Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
 
-<a name="treemap" href="Treemap-Layout#treemap">#</a> d3.layout.<b>treemap</b>()
+<a name="treemap" href="Treemap-Layout#wiki-treemap">#</a> d3.layout.<b>treemap</b>()
 
 Creates a new treemap layout with the default settings: the default sort order is by descending value; the default value accessor assumes each input data is an object with a numeric value attribute; the default children accessor assumes each input data is an object with a children array; the default size is 1×1.
 
-<a name="sort" href="Treemap-Layout#sort">#</a> treemap.<b>sort</b>([<i>comparator</i>])
+<a name="sort" href="Treemap-Layout#wiki-sort">#</a> treemap.<b>sort</b>([<i>comparator</i>])
 
 If *comparator* is specified, sets the sort order of sibling nodes for the layout using the specified comparator function.  If *comparator* is not specified, returns the current group sort order, which defaults to descending order by the associated input data's numeric value attribute:
 
@@ -20,9 +20,9 @@ function comparator(a, b) {
 }
 ```
 
-The comparator function is invoked for pairs of nodes, being passed the input data for each node. A null comparator disables sorting and uses tree traversal order. Comparator functions may also be implemented using [d3.ascending](Arrays#d3_ascending) or [d3.descending](Arrays#d3_descending).
+The comparator function is invoked for pairs of nodes, being passed the input data for each node. A null comparator disables sorting and uses tree traversal order. Comparator functions may also be implemented using [d3.ascending](Arrays#wiki-d3_ascending) or [d3.descending](Arrays#wiki-d3_descending).
 
-<a name="children" href="Treemap-Layout#children">#</a> treemap.<b>children</b>([<i>children</i>])
+<a name="children" href="Treemap-Layout#wiki-children">#</a> treemap.<b>children</b>([<i>children</i>])
 
 If *children* is specified, sets the specified children accessor function. If *children* is not specified, returns the current children accessor function, which by default assumes that the input data is an object with a children array:
 
@@ -32,7 +32,7 @@ function children(d) {
 }
 ```
 
-Often, it is convenient to load the node hierarchy using [d3.json](Requests#d3_json), and represent the input hierarchy as a nested [JSON](http://json.org) object. For example:
+Often, it is convenient to load the node hierarchy using [d3.json](Requests#wiki-d3_json), and represent the input hierarchy as a nested [JSON](http://json.org) object. For example:
 
 ```javascript
 {
@@ -64,7 +64,7 @@ Often, it is convenient to load the node hierarchy using [d3.json](Requests#d3_j
 
 The children accessor is first invoked for root node in the hierarchy. If the accessor returns null, then the node is assumed to be a leaf node at the layout traversal terminates. Otherwise, the accessor should return an array of data elements representing the child nodes.
 
-<a name="nodes" href="Treemap-Layout#nodes">#</a> treemap.<b>nodes</b>(<i>root</i>)
+<a name="nodes" href="Treemap-Layout#wiki-nodes">#</a> treemap.<b>nodes</b>(<i>root</i>)
 
 Runs the treemap layout, returning the array of nodes associated with the specified *root* node. The treemap layout is part of D3's family of [[hierarchical|Hierarchical-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes. Several attributes are populated on each node:
 
@@ -79,14 +79,14 @@ Runs the treemap layout, returning the array of nodes associated with the specif
 
 Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system; for example, you can treat *x* as a radius and *y* as an angle to produce a radial rather than Cartesian layout. In Cartesian orientation, *x*, *y*, *dx* and *dy* correspond to the "x", "y", "width" and "height" attributes of the SVG [[rect|SVG-Shapes#svg_rect]] element.
 
-<a name="links" href="Treemap-Layout#links">#</a> treemap.<b>links</b>(<i>nodes</i>)
+<a name="links" href="Treemap-Layout#wiki-links">#</a> treemap.<b>links</b>(<i>nodes</i>)
 
-Given the specified array of *nodes*, such as those returned [nodes](Treemap-Layout#nodes), returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. Each link is an object with two attributes:
+Given the specified array of *nodes*, such as those returned [nodes](Treemap-Layout#wiki-nodes), returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. Each link is an object with two attributes:
 
 * source - the parent node (as described above).
 * target - the child node.
 
-This method is useful for retrieving a set of link descriptions suitable for display, often in conjunction with the [diagonal](SVG-Shapes#diagonal) shape generator. For example:
+This method is useful for retrieving a set of link descriptions suitable for display, often in conjunction with the [diagonal](SVG-Shapes#wiki-diagonal) shape generator. For example:
 
 ```javascript
 svg.selectAll("path")
@@ -95,7 +95,7 @@ svg.selectAll("path")
     .attr("d", d3.svg.diagonal());
 ```
 
-<a name="value" href="Treemap-Layout#value">#</a> treemap.<b>value</b>([<i>value</i>])
+<a name="value" href="Treemap-Layout#wiki-value">#</a> treemap.<b>value</b>([<i>value</i>])
 
 If *value* is specified, sets the value accessor to the specified function. If *value* is not specified, returns the current value accessor, which assumes that the input data is an object with a numeric value attribute:
 
@@ -107,15 +107,15 @@ function value(d) {
 
 The value accessor is invoked for each input data element, and must return a number representing the numeric value of the node. This value is used to set the area of each node proportionally to the value.
 
-<a name="size" href="Treemap-Layout#size">#</a> treemap.<b>size</b>([<i>size</i>])
+<a name="size" href="Treemap-Layout#wiki-size">#</a> treemap.<b>size</b>([<i>size</i>])
 
 If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1.
 
-<a name="round" href="Treemap-Layout#round">#</a> treemap.<b>round</b>([<i>round</i>])
+<a name="round" href="Treemap-Layout#wiki-round">#</a> treemap.<b>round</b>([<i>round</i>])
 
 If *round* is specified, sets whether or not the treemap layout will round to exact pixel boundaries. This can be nice to avoid antialiasing artifacts in SVG. If *round* is not specified, returns whether the treemap will be rounded.
 
-<a name="sticky" href="Treemap-Layout#sticky">#</a> treemap.<b>sticky</b>([<i>sticky</i>])
+<a name="sticky" href="Treemap-Layout#wiki-sticky">#</a> treemap.<b>sticky</b>([<i>sticky</i>])
 
 If *sticky* is specified, sets whether or not the treemap layout is "sticky": a *sticky* treemap layout will preserve the relative arrangement of nodes across transitions. The allocation of nodes into squarified horizontal and vertical rows is persisted across updates by storing a *z* attribute on the last element in each row; this allows nodes to be resized smoothly, without shuffling or occlusion that would impede perception of changing values. Note, however, that this results in a suboptimal layout for one of the two states. If *sticky* is not specified, returns whether the treemap layout is sticky.
 

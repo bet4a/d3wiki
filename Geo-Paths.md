@@ -11,13 +11,13 @@ Some other tools you may be interested in:
 * [ColorBrewer](http://colorbrewer2.org) - color scales for maps.
 * [PostGIS](http://postgis.refractions.net/) - a geospatial database.
 
-The primary mechanism for displaying geographic data is [d3.geo.path](Geo-Paths#path). In many ways, this class is similar to [d3.svg.line](SVG-Shapes#line) and the other SVG shape generators: given a geometry or feature object, it generates the path data string suitable for the "d" attribute of an SVG path element.
+The primary mechanism for displaying geographic data is [d3.geo.path](Geo-Paths#wiki-path). In many ways, this class is similar to [d3.svg.line](SVG-Shapes#wiki-line) and the other SVG shape generators: given a geometry or feature object, it generates the path data string suitable for the "d" attribute of an SVG path element.
 
-<a name="path" href="Geo-Paths#path">#</a> d3.geo.<b>path</b>()
+<a name="path" href="Geo-Paths#wiki-path">#</a> d3.geo.<b>path</b>()
 
-Creates a new geographic path generator with the default settings: the [albersUsa](Geo-Projections#albersUsa) projection and a point radius of 4.5 pixels.
+Creates a new geographic path generator with the default settings: the [albersUsa](Geo-Projections#wiki-albersUsa) projection and a point radius of 4.5 pixels.
 
-<a name="_path" href="Geo-Paths#_path">#</a> <b>path</b>(<i>feature</i>[, <i>index</i>])
+<a name="_path" href="Geo-Paths#wiki-_path">#</a> <b>path</b>(<i>feature</i>[, <i>index</i>])
 
 Returns the path data string for the given *feature*, which may be any GeoJSON feature or geometry object:
 
@@ -40,11 +40,11 @@ vis.selectAll("path")
     .attr("d", d3.geo.path());
 ```
 
-An optional *index* may be specified, which is passed along to the [pointRadius](Geo-Paths#pointRadius) accessor.
+An optional *index* may be specified, which is passed along to the [pointRadius](Geo-Paths#wiki-pointRadius) accessor.
 
-<a name="path_projection" href="Geo-Paths#path_projection">#</a> path.<b>projection</b>([<i>projection</i>])
+<a name="path_projection" href="Geo-Paths#wiki-path_projection">#</a> path.<b>projection</b>([<i>projection</i>])
 
-If *projection* is specified, sets the projection used by the path generator to the specified projection function. If *projection* is not specified, returns the current projection, which defaults to [albersUsa](Geo-Projections#albersUsa). Typically, the projection is one of D3's built-in [projections](Geo-Projections); however, any function can be used. The function takes a two-element array of numbers representing the coordinates of a single position, [*longitude*, *latitude*], and returns a similar two-element array of numbers representing the projected pixel position [*x*, *y*]. For example, a rudimentary spherical Mercator projection:
+If *projection* is specified, sets the projection used by the path generator to the specified projection function. If *projection* is not specified, returns the current projection, which defaults to [albersUsa](Geo-Projections#wiki-albersUsa). Typically, the projection is one of D3's built-in [projections](Geo-Projections); however, any function can be used. The function takes a two-element array of numbers representing the coordinates of a single position, [*longitude*, *latitude*], and returns a similar two-element array of numbers representing the projected pixel position [*x*, *y*]. For example, a rudimentary spherical Mercator projection:
 
 ```javascript
 function mercator(coordinates) {
@@ -57,22 +57,22 @@ function mercator(coordinates) {
 
 If you want to use a projection that D3 does not already support, you might be able to adapt [Proj4js](http://trac.osgeo.org/proj4js/).
 
-<a name="path_area" href="Geo-Paths#path_area">#</a> path.<b>area</b>(<i>feature</i>)
+<a name="path_area" href="Geo-Paths#wiki-path_area">#</a> path.<b>area</b>(<i>feature</i>)
 
 Computes the projected area (in square pixels) for the specified *feature*. Point, MultiPoint, LineString and MultiLineString features are ignored, returning zero. For Polygon and MultiPolygon features, this method first computes the area of the exterior ring, and then subtracts the area of any interior holes.
 
 Note: this method depends on [d3.geom.polygon](Polygon-Geom), so you must load d3.geom.js, or build a custom d3.js that includes d3.geom.polygon.
 
-<a name="path_centroid" href="Geo-Paths#path_area">#</a> path.<b>centroid</b>(<i>feature</i>)
+<a name="path_centroid" href="Geo-Paths#wiki-path_area">#</a> path.<b>centroid</b>(<i>feature</i>)
 
 Computes the projected centroid (in pixels) for the specified *feature*. This method is currently only supported for Polygon and MultiPolygon features. This is handy for, say, labeling state or county boundaries, or displaying a symbol map. The [noncontiguous cartogram](http://mbostock.github.com/d3/ex/cartogram.html) example scales each state around its centroid.
 
 Note: this method depends on [d3.geom.polygon](Polygon-Geom), so you must load d3.geom.js, or build a custom d3.js that includes d3.geom.polygon.
 
-<a name="path_pointRadius" href="Geo-Paths#path_pointRadius">#</a> path.<b>pointRadius</b>([<i>radius</i>])
+<a name="path_pointRadius" href="Geo-Paths#wiki-path_pointRadius">#</a> path.<b>pointRadius</b>([<i>radius</i>])
 
-If *radius* is specified, sets the radius used to display Point and MultiPoint features to the specified number. If *radius* is not specified, returns the current radius. While the radius is commonly specified as a number constant, it may also be specified as a function which is computed per feature, being passed the *feature* and *index* arguments from the [path](Geo-Paths#_path) function. For example, if your GeoJSON data has additional properties, you might access those properties inside the radius function to vary the point size; alternatively, you could [d3.svg.symbol](SVG-Shapes#symbol) and a [projection](Geo-Projections) for more control over the display.
+If *radius* is specified, sets the radius used to display Point and MultiPoint features to the specified number. If *radius* is not specified, returns the current radius. While the radius is commonly specified as a number constant, it may also be specified as a function which is computed per feature, being passed the *feature* and *index* arguments from the [path](Geo-Paths#wiki-_path) function. For example, if your GeoJSON data has additional properties, you might access those properties inside the radius function to vary the point size; alternatively, you could [d3.svg.symbol](SVG-Shapes#wiki-symbol) and a [projection](Geo-Projections) for more control over the display.
 
-<a name="bounds" href="Geo-Paths#bounds">#</a> d3.geo.<b>bounds</b>(<i>feature</i>)
+<a name="bounds" href="Geo-Paths#wiki-bounds">#</a> d3.geo.<b>bounds</b>(<i>feature</i>)
 
 Given a GeoJSON *feature*, returns the corresponding bounding box. The bounding box is represented by a two-dimensional array: [​[*left*, *bottom*], [*right*, *top*]​], where *left* is the minimum longitude, *bottom* is the minimum latitude, *right* is maximum longitude, and *top* is the maximum latitude.
