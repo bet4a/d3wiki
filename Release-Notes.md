@@ -34,7 +34,7 @@ Note: in the rare case that you want to run operators only on the updating nodes
 
 ### Selector Functions
 
-The [select](Selections#wiki-select) and (selectAll)[Selections#wiki-selectAll] operators can now take **selector functions**, in addition to selector strings such as "#id" and ".class". For example, if you want to select the first child of every element, you can now say:
+The [select](Selections#wiki-select) and [selectAll](Selections#wiki-selectAll) operators can now take **selector functions**, in addition to selector strings such as "#id" and ".class". For example, if you want to select the first child of every element, you can now say:
 
 ```javascript
 var children = g.select(function() { return this.firstChild; });
