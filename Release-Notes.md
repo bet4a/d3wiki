@@ -75,4 +75,4 @@ Prototype injection also means that selections and transitions can be extended a
 
 ### Tests
 
-D3 now has an extensive test suite built with [Vows](http://vowsjs.org). As of the 2.0.0 release, we have 1,200+ tests and 90% coverage of the core library. More tests are under development. The tests are written to test the behavior of each of D3's operators, and may be interesting to explore if you have questions about how D3 works, complementing the API reference.
+D3 now has an extensive test suite built with [Vows](http://vowsjs.org). As of the 2.0.0 release, we have 1,200+ tests and 90% coverage of the core library. More tests are under development. The tests are written to verify the behavior of each of D3's operators, and may be interesting to explore if you have questions about how D3 works, complementing the API reference.
