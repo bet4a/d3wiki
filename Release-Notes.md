@@ -2,7 +2,29 @@
 
 ## 2.0.0 - August 23, 2011
 
-The enter selection now merges into the update selection when you append or insert. This means you no longer need to re-select after entering new nodes; those new nodes will be automatically merged into the update selection.
+The **enter-update** pattern has been simplified: the enter selection now merges into the update selection when you append or insert. This means you no longer need to reselect after appending entering nodes; those new nodes will be automatically merged into the update selection. For example, say you had a selection of circles and wanted to update their radii, while also adding and removing nodes:
+
+```javascript
+var circle = svg.selectAll("circle").data([data]);
+circle.exit().remove();
+circle.enter().append("svg:circle").attr("r", radius);
+circle.attr("r", radius);
+```
+
+If you then want `circle` to refer to all the remaining nodes (enter and update), you'd have to reselect as well:
+
+```javascript
+circle = svg.selectAll("circle");
+```
+
+Now you can eliminate a bunch of duplicate code because entering nodes will add them to both the enter selection and the update selection. So, running operators such as `attr` on the update selection after enter will apply to both the entering and updating nodes:
+
+```javascript
+var circle = svg.selectAll("circle").data([data]);
+circle.exit().remove();
+circle.enter().append("svg:circle");
+circle.attr("r", radius);
+```
 
 A new **axis** component has been added to the d3.svg module.
 
