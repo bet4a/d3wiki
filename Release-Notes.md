@@ -40,7 +40,7 @@ The [select](Selections#wiki-select) and [selectAll](Selections#wiki-selectAll) 
 var children = g.select(function() { return this.firstChild; });
 ```
 
-This also means that selection can dynamic create new elements, or reorder existing elements by re-inserting them into the DOM. This is an advanced feature, but you might find it useful for extending D3. For example, you could use XPath rather than selectors if you wanted.
+This also means that selection can dynamically create new elements, or reorder existing elements by re-inserting them into the DOM. This is an advanced feature, but you might find it useful for extending D3. For example, you could use XPath rather than selectors if you wanted.
 
 ### Transparent Transitions
 
