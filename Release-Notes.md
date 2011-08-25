@@ -30,7 +30,7 @@ circle.enter().append("svg:circle"); // adds enter to update
 circle.attr("r", radius); // for enter and update
 ```
 
-Note: in the rare case that you want to run operators only on the updating nodes, you can run them on the update selection before entering new nodes.
+Note: in the rare case that you want to run operators only on the updating nodes, you can run them on the update selection before entering new nodes. If you want to run operators only on the entering nodes, you can still do that (as before) by applying them to the enter selection.
 
 ### Selector Functions
 
