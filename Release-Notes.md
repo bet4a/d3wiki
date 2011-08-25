@@ -48,7 +48,7 @@ Transitions are now **transparent** arrays of elements, and you can inspect them
 
 The [each](Transitions#wiki-wiki-each) operator can now be called with one argument (a callback function), offering compatibility with the selection's [each](Selections#wiki-wiki-each) operator. Transitions now expose an [id](Transitions#wiki-wiki-id) property, which can be useful for debugging concurrent transitions; this identifier is inherited by subtransitions, fixing a bug with nested transitions.
 
-**Sequenced** transitions are now also easier to implement, thanks to the [transition](Transitions#wiki-transition) operator, which returns a copy of the current transition. The copy inherits the delay, duration, id and easing of the original transition. You can then modify the delay to sequence multiple transitions. For example, here's how you would enter a circle, and then remove it after a couple seconds:
+**Sequenced** transitions are now also easier to implement, thanks to the transition's [transition](Transitions#wiki-transition) operator, which returns a copy of the current transition. The copy inherits the delay, duration, id and easing of the original transition. You can then modify the delay to sequence multiple transitions, without needing to listen for the "end" event. For example, here's how you would enter a circle, and then remove it after a couple seconds:
 
 ```javascript
 svg.append("svg:circle")
