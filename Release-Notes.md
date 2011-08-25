@@ -48,6 +48,22 @@ Transitions are now **transparent** arrays of elements, and you can inspect them
 
 The [each](Transitions#wiki-wiki-each) operator can now be called with one argument (a callback function), offering compatibility with the selection's [each](Selections#wiki-wiki-each) operator. Transitions now expose an [id](Transitions#wiki-wiki-id) property, which can be useful for debugging concurrent transitions; this identifier is inherited by subtransitions, fixing a bug with nested transitions.
 
+**Sequenced** transitions are now also easier to implement, thanks to the [transition](Transitions#wiki-transition) operator, which returns a copy of the current transition. The copy inherits the delay, duration, id and easing of the original transition. You can then modify the delay to sequence multiple transitions. For example, here's how you would enter a circle, and then remove it after a couple seconds:
+
+```javascript
+svg.append("svg:circle")
+    .attr("r", 1e-6)
+  .transition()
+    .ease(Math.sqrt)
+    .attr("r", 4.5)
+  .transition()
+    .delay(2000)
+    .attr("r", 1e-6)
+    .remove();
+```
+
+You can also use this technique to use different easing functions for different tweens! For example, you could use "cubic-in-out" easing for position properties, and "linear" for color.
+
 ### Custom Tweens
 
 A new, generic [tween](Transitions#wiki-wiki-tween) operator has been added, which is used internally by the other tweens (`style`, `attr`, *etc.*). You can use this operator directly if you want to define a custom tween as part of the transition; use this instead of listening for a transition "tick" event. For example, the `text` operator does not interpolate by default, but you can now interpolate text content by saying:
