@@ -44,8 +44,10 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[transition.style|Transitions#wiki-style]] - smoothly transition to the new style property value.
 * [[transition.styleTween|Transitions#wiki-styleTween]] - smoothly transition between two style property values.
 * [[transition.text|Transitions#wiki-text]] - set the text content when the transition starts.
+* [[transition.tween|Transitions#wiki-tween]] - specify a custom tween operator to run as part of the transition.
 * [[transition.select|Transitions#wiki-select]] - start a transition on a descendant element for each selected element.
 * [[transition.selectAll|Transitions#wiki-selectAll]] - start a transition on multiple descendants for each selected element.
+* [[transition.transition|Transitions#wiki-transition]] - start another transition on the same elements.
 * [[transition.remove|Transitions#wiki-remove]] - remove selected elements at the end of a transition.
 * [[transition.each|Transitions#wiki-each]] - add a listener for transition end events.
 * [[transition.call|Transitions#wiki-call]] - call a function passing in the current transition.
