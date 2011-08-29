@@ -10,7 +10,7 @@ Only one transition may be *active* on a given element at a given time. However,
 
 ## Starting Transitions
 
-Transitions are created using the [[transition|Selections#wiki-transition]] operator on a selection. Transitions start automatically upon creation after a delay which defaults to zero; however, note that a zero-delay transition actually starts after a minimal (<10ms) delay, pending the first timer callback. Transitions have a default duration of 250ms.
+Transitions are created using the [[transition|Selections#wiki-transition]] operator on a selection. Transitions start automatically upon creation after a delay which defaults to zero; however, note that a zero-delay transition actually starts after a minimal (~17ms) delay, pending the first timer callback. Transitions have a default duration of 250ms.
 
 <a name="d3_transition" href="Transitions#wiki-d3_transition">#</a> d3.<b>transition</b>()
 
@@ -104,6 +104,21 @@ The `text` operator is based on the [[textContent|http://www.w3.org/TR/DOM-Level
 
 Set the text content to the specified value on all selected elements when the transition starts. If *value* is a constant, then all elements are given the same text content; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order) as the element starts transitioning, being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's text content. A null value will clear the content.
 
+<a name="tween" href="Transitions#wiki-tween">#</a> transition.<b>tween</b>(<i>name</i>, <i>factory</i>)
+
+Registers a custom tween for the specified *name*. When the transition starts, the specified *factory* function will be invoked for each selected element in the transition, so as to compute the tween function. If the factory returns null, then the tween is not run on the selected element. This method is used internally by the [attr](#wiki-attr) and [style](#wiki-style) tweens, and can be used to interpolate other document content. For example, to interpolate text content:
+
+```javascript
+selection.transition().tween("text", function() {
+  var i = d3.interpolate(this.textContent, "yellow");
+  return function(t) {
+    this.textContent = i(t);
+  };
+});
+```
+
+Tweens are typically written as reusable functions (say, closures) rather than the above example which hard-codes the transition to "yellow". See D3's source for inspiration.
+
 <a name="remove" href="Transitions#wiki-remove">#</a> transition.<b>remove</b>()
 
 Remove the selected elements at the end of a transition. If a newer transition is scheduled on any of the selected elements, these elements will not be removed; however, the "end" event will still be dispatched.
@@ -135,6 +150,10 @@ selection.selectAll(selector).transition()
 ```
 
 where *selection* is the current transition's underlying selection. In addition, the returned new transition inherits easing, duration and delay from the current transition. The duration and delay for each subelement is inherited from the duration and delay of the parent element in the current transition.
+
+<a name="transition" href="Transitions#wiki-transition">#</a> transition.<b>transition</b>()
+
+Creates a new transition on the same selected elements, inheriting the delay and duration. This can be used to create concurrent transitions with different easing for different properties, or overlapping but different delays and durations. It can also be used to define sequenced transitions by setting the delay of the returned transition to the end time of the current transition.
 
 ### Control
 
