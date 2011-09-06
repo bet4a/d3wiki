@@ -14,6 +14,7 @@
 * [[Luke Francl's D3 for Mere Mortals|http://www.recursion.org/d3-for-mere-mortals/]]
 * [[Jérôme Cukier's blog|http://www.jeromecukier.net/blog/category/d3/]]
 * [[Creating Basic Charts using d3.js|http://www.verisi.com/resources/d3-tutorial-basic-charts.htm]]
+* [[Try D3 Now|http://christopheviau.com/d3_tutorial/]]
 
 ## Publications
 
@@ -78,6 +79,9 @@
 * [Force Layout from XML](http://bl.ocks.org/1080941)
 * [Force Layout with Directed Edges (Curves and Arrow Markers)](http://bl.ocks.org/1153292)
 * [Bounded Force Layout](http://bl.ocks.org/1129492)
+* [[Simple Sparklines|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
+* [[A basic SVG line chart in ASP.Net MVC using d3.js|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]] 
+
 
 #### Miscellaneous
 
