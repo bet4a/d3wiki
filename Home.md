@@ -13,6 +13,7 @@
 * [[Justin Palmer's Introduction to D3|http://dealloc.me/2011/06/24/d3-is-not-a-graphing-library.html]]
 * [[Luke Francl's D3 for Mere Mortals|http://www.recursion.org/d3-for-mere-mortals/]]
 * [[Jérôme Cukier's blog|http://www.jeromecukier.net/blog/category/d3/]]
+* [[Creating Basic Charts using d3.js|http://www.verisi.com/resources/d3-tutorial-basic-charts.htm]]
 
 ## Publications
 
