@@ -79,8 +79,10 @@
 * [Force Layout from XML](http://bl.ocks.org/1080941)
 * [Force Layout with Directed Edges (Curves and Arrow Markers)](http://bl.ocks.org/1153292)
 * [Bounded Force Layout](http://bl.ocks.org/1129492)
-* [[Simple Sparklines|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
-* [[A basic SVG line chart in ASP.Net MVC using d3.js|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]] 
+* [[Sparklines|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
+* [[Line charts|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]] 
+* [[Building a tree diagram|http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/]] 
+
 
 
 #### Miscellaneous
