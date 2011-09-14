@@ -59,6 +59,10 @@
 * [Grouped Bar Chart](http://bl.ocks.org/882152)
 * [Stacked Bar Chart](http://bl.ocks.org/1134768)
 * [Small Multiples](http://bl.ocks.org/1157787)
+* [[Sparklines|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
+* [[Line charts|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
+* [[Scatterplot and Heatmap|http://jsfiddle.net/indiemaps/gzPDU/]]
+
 
 #### Trees and Graphs
 
@@ -79,9 +83,7 @@
 * [Force Layout (Collapsible Hierarchy)](http://bl.ocks.org/1062288)
 * [Force Layout from XML](http://bl.ocks.org/1080941)
 * [Force Layout with Directed Edges (Curves and Arrow Markers)](http://bl.ocks.org/1153292)
-* [Bounded Force Layout](http://bl.ocks.org/1129492)
-* [[Sparklines|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
-* [[Line charts|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]] 
+* [Bounded Force Layout](http://bl.ocks.org/1129492) 
 * [[Building a tree diagram|http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/]] 
 
 
