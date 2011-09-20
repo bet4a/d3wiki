@@ -102,6 +102,7 @@
 * [Rounded Rectangles](http://bl.ocks.org/1123639)
 * [Spermatozoa](http://bl.ocks.org/1136236)
 * [Spline, Zoom and Pan](http://bl.ocks.org/1182434)
+* [Arc Tweens](http://bl.ocks.org/1098617)
 
 #### Maps
 
