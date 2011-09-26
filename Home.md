@@ -47,6 +47,7 @@
 * WindHistory.com: [maps](http://windhistory.com/map.html#9.00/37.8931/-121.7366) and [charts](http://windhistory.com/station.html?KSAF) - Nelson Minar
 * [Students' seating habits](http://www.skyrill.com/seatinghabits/) - Skyrill.com
 * [World Wide Women's Rights](http://www.wimdows.nl/datavis/lib/D3/ciripleth-area-exp.html) - Wimdows.nl
+* [Old Visualizations Made New Again](http://vallandingham.me/vis/) - Jim Vallandingham
 
 ### Concepts & Techniques
 
