@@ -201,7 +201,7 @@ If you want the document traversal order to match the selection data order, you 
 
 <a name="filter" href="Selections#wiki-filter">#</a> selection.<b>filter</b>(<i>function</i>)
 
-Filters the selection, returning a new selection that contains only the elements for which the specified *function* returns true. As with other operators, the specified function is passed the current datum `d` and index `i`, with the `this` context as the current DOM element. Like the built-in array [[filter|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter]] method, the returned selection *does not* preserve the index of the original selection; it returns a copy with elements removed. If you want to preserve the index, use [select](#Selections_select) instead. For example, to select every other element:
+Filters the selection, returning a new selection that contains only the elements for which the specified *function* returns true. As with other operators, the specified function is passed the current datum `d` and index `i`, with the `this` context as the current DOM element. Like the built-in array [[filter|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter]] method, the returned selection *does not* preserve the index of the original selection; it returns a copy with elements removed. If you want to preserve the index, use [select](Selections#wiki-select) instead. For example, to select every other element:
 
 ```javascript
 var odds = selection.select(function(d, i) { return i & 1 ? this : null; }));
@@ -239,6 +239,8 @@ Whereas the top-level select methods query the entire document, a selection's [s
 
 For each element in the current selection, selects the first descendant element that matches the specified *selector* string. If no element matches the specified selector for the current element, the element at the current index will be null in the returned selection; operators (with the exception of [data](Selections#wiki-data)) automatically skip null elements, thereby preserving the index of the existing selection. If the current element has associated data, this data is inherited by the returned subselection, and automatically bound to the newly selected elements. If multiple elements match the selector, only the first matching element in document traversal order will be selected.
 
+Since 2.0, *selector* may also be specified as a function that returns an element, or null if there is no matching element. The specified *selector* is invoked in the same manner as other operator functions, being passed the current datum `d` and index `i`, with the `this` context as the current DOM element. 
+
 <a name="selectAll" href="Selections#wiki-selectAll">#</a> selection.<b>selectAll</b>(<i>selector</i>)
 
 For each element in the current selection, selects descendant elements that match the specified *selector* string. The returned selection is grouped by the ancestor node in the current selection. If no element matches the specified selector for the current element, the group at the current index will be empty in the returned selection. The subselection does not inherit data from the current selection; however, if the [data](Selections#wiki-data) value is specified as a function, this function will be based the data `d` of the ancestor node and the group index `i`.
@@ -250,6 +252,8 @@ d3.select("body").selectAll("div")
 ```
 
 You can see the parent node of each group by inspecting the `parentNode` property of each group array, such as `selection[0].parentNode`.
+
+Since 2.0, *selector* may also be specified as a function that returns an array of elements (or a NodeList), or the empty array if there are no matching elements. The specified *selector* is invoked in the same manner as other operator functions, being passed the current datum `d` and index `i`, with the `this` context as the current DOM element. 
 
 ### Control
 
