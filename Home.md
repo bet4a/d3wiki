@@ -56,6 +56,7 @@
 
 #### Charts and Chart Components
 
+* [Axis Component](http://bl.ocks.org/1166403)
 * [Date Ticks](http://bl.ocks.org/1071269)
 * [Venn Diagram using Clipping](http://bl.ocks.org/1067636)
 * [Venn Diagram using Opacity](http://bl.ocks.org/1067616)
@@ -67,7 +68,6 @@
 * [[Sparklines|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
 * [[Line charts|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
 * [[Scatterplot and Heatmap|http://jsfiddle.net/indiemaps/gzPDU/]]
-
 
 #### Trees and Graphs
 
