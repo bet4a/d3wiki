@@ -30,7 +30,7 @@
 
 ## Talks
 
-* [Force Layouts](http://vimeo.com/29458354) [(Slides)](http://mbostock.github.com/d3/talks/20110921/) <br>Trulia, September 2011.
+* [Force Layouts](http://vimeo.com/29458354) [(Slides)](http://mbostock.github.com/d3/talk/20110921/) <br>Trulia, September 2011.
 
 ## Examples
 
