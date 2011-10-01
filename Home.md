@@ -28,6 +28,10 @@
 * [[@mbostock Twitter|http://twitter.com/mbostock]]
 * [[@mbostock GitHub|https://github.com/inbox/new/mbostock]]
 
+## Talks
+
+* [Force Layouts](http://vimeo.com/29458354)<br>Trulia, September 2011.
+
 ## Examples
 
 ### Visualizations
@@ -91,8 +95,6 @@
 * [Bounded Force Layout](http://bl.ocks.org/1129492) 
 * [[Building a tree diagram|http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/]] 
 
-
-
 #### Miscellaneous
 
 * [Superformula Explorer](http://bl.ocks.org/1021103)
@@ -107,6 +109,7 @@
 * [Spermatozoa](http://bl.ocks.org/1136236)
 * [Spline, Zoom and Pan](http://bl.ocks.org/1182434)
 * [Arc Tweens](http://bl.ocks.org/1098617)
+* [Show Reel](http://bl.ocks.org/1256572)
 
 #### Maps
 
