@@ -17,6 +17,7 @@
 * [[Creating Basic Charts using d3.js|http://www.verisi.com/resources/d3-tutorial-basic-charts.htm]]
 * [[Try D3 Now|http://christopheviau.com/d3_tutorial/]]
 * [[Scale Graph|http://www.ivanteoh.com/blog/2011/07/d3-tutorial-scale-graph/]]
+* [[Using Inkscape with d3|http://christopheviau.com/d3_tutorial/d3_inkscape/]]
 
 ## Publications
 
