@@ -265,6 +265,18 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.svg.diagonal.radial|SVG-Shapes#wiki-diagonal_radial]] - create a new diagonal generator.
 * [[diagonal|SVG-Shapes#wiki-_diagonal_radial]] - generate a two-dimensional Bézier connector, as in a node-link diagram.
 
+### [[Axes|SVG-Axes]]
+
+# [[d3.svg.axis|SVG-Axes#wiki-axis]] - create a new axis generator.
+* [[axis|SVG-Axes#wiki-_axis]] - creates or updates an axis for the given selection or transition.
+* [[axis.scale|SVG-Axes#wiki-scale]] - get or set the axis scale.
+* [[axis.orient|SVG-Axes#wiki-orient]] - get or set the axis orientation.
+* [[axis.ticks|SVG-Axes#wiki-ticks]] - control how ticks are generated for the axis.
+* [[axis.tickSubdivide|SVG-Axes#wiki-tickSubdivide]] - optionally subdivide ticks uniformly.
+* [[axis.tickSize|SVG-Axes#wiki-tickSize]] - specify the size of major, minor and end ticks.
+* [[axis.tickPadding|SVG-Axes#wiki-tickPadding]] - specify padding between ticks and tick labels.
+* [[axis.tickFormat|SVG-Axes#wiki-tickFormat]] - override the tick formatting for labels.
+
 ### [[Events|SVG-Events]]
 
 * [[d3.svg.mouse|SVG-Events#wiki-mouse]] - gets the mouse position relative to a specified container.
