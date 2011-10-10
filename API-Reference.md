@@ -267,7 +267,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 ### [[Axes|SVG-Axes]]
 
-# [[d3.svg.axis|SVG-Axes#wiki-axis]] - create a new axis generator.
+* [[d3.svg.axis|SVG-Axes#wiki-axis]] - create a new axis generator.
 * [[axis|SVG-Axes#wiki-_axis]] - creates or updates an axis for the given selection or transition.
 * [[axis.scale|SVG-Axes#wiki-scale]] - get or set the axis scale.
 * [[axis.orient|SVG-Axes#wiki-orient]] - get or set the axis orientation.
