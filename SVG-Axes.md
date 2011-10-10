@@ -20,6 +20,6 @@ The *selection* can also be a [transition](Transitions).
 
 <a name="axis_tickSubdivide" href="SVG-Axes#wiki-axis_tickSubdivide">#</a> axis.<b>tickSubdivide</b>([<i>n</i>])
 
-<a name="axis_tickSize" href="SVG-Axes#wiki-axis_tickSize">#</a> axis.<b>tickSize</b>([<i>major</i>[[, <i>minor</i>], <i>end</i>]])
+<a name="axis_tickSize" href="SVG-Axes#wiki-axis_tickSize">#</a> axis.<b>tickSize</b>([<i>major</i>[​[, <i>minor</i>], <i>end</i>]])
 
 <a name="axis_tickPadding" href="SVG-Axes#wiki-axis_tickPadding">#</a> axis.<b>tickPadding</b>([<i>padding</i>])
