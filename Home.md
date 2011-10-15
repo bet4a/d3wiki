@@ -82,6 +82,7 @@
 * [Partition Layout (Zoomable Icicle)](http://bl.ocks.org/1005873)
 * [Tree Layout (Animated)](http://bl.ocks.org/999346)
 * [Tree Layout (Collapsible)](http://bl.ocks.org/1061834)
+* [Tree Layout (Collapsible, with Labels)](http://bl.ocks.org/1249394)
 * [Treemap Layout in SVG](http://bl.ocks.org/972398)
 * [Sunburst Layout with Labels](http://bl.ocks.org/910126)
 * [Indented Tree (Collapsible)](http://bl.ocks.org/1093025)
