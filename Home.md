@@ -9,7 +9,6 @@
 * [[A Bar Chart, Part 1|http://mbostock.github.com/d3/tutorial/bar-1.html]]
 * [[A Bar Chart, Part 2|http://mbostock.github.com/d3/tutorial/bar-2.html]]
 * [[For Protovis Users|http://mbostock.github.com/d3/tutorial/protovis.html]]
-* [[Use the Force!|http://mbostock.github.com/d3/talk/20110921/]]
 * [[Jan Willem Tulp's blog|http://www.janwillemtulp.com/category/d3/]]
 * [[Justin Palmer's Introduction to D3|http://dealloc.me/2011/06/24/d3-is-not-a-graphing-library.html]]
 * [[Luke Francl's D3 for Mere Mortals|http://www.recursion.org/d3-for-mere-mortals/]]
@@ -31,7 +30,8 @@
 
 ## Talks
 
-* [Force Layouts](http://vimeo.com/29458354) [(Slides)](http://mbostock.github.com/d3/talk/20110921/) <br>Trulia, September 2011.
+* [SVG Open Keynote (Slides)](http://mbostock.github.com/d3/talk/20111018/) <br>Microsoft Research, October 2011.
+* [Use the Force!](http://vimeo.com/29458354) [(Slides)](http://mbostock.github.com/d3/talk/20110921/) <br>Trulia, September 2011.
 
 ## Examples
 
