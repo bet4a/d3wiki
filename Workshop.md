@@ -174,6 +174,12 @@ var circle = svg.selectAll("circle");
 - exit transition
 - enter+update
 
+### nested selections (grouping)
+
+- two-dimensional arrays
+- creating a table / selecting tr then td
+- small multiples
+
 ## installing
 
 - text editor (TextWrangler)
@@ -205,6 +211,11 @@ $ open -a Google\ Chrome --args --allow-file-access-from-files
 - symbol
 - line.radial, area.radial
 
+## working with text
+
+- d3.format
+- d3.time.format
+
 ## scales
 
 ### quantitative scales
@@ -220,6 +231,7 @@ $ open -a Google\ Chrome --args --allow-file-access-from-files
 
 - ordinal
 - category*
+- lib/colorbrewer
 
 ### displaying ticks and axes
 
@@ -227,6 +239,27 @@ $ open -a Google\ Chrome --args --allow-file-access-from-files
 
 ## geographic data
 
+- geojson
+- projections
+- d3.geo.path
+- greatArc, greatCircle
+- bounds
+
 ## force layouts
 
+- numerical integration / position verlet
+- friction
+- repulsive charge force
+- attractive charge force
+- gravity
+- link constraints
+- custom forces
+- collision detection
+
 ## hierarchical layouts
+
+- flare.json, flare-imports.json
+- treemap
+- partition (icicle)
+- radial partition (sunburst)
+- tree
