@@ -249,6 +249,13 @@ $ open -a Google\ Chrome --args --allow-file-access-from-files
 
 - axis component
 
+## basic charts
+
+- bar chart
+- area chart
+- line chart
+- donut chart
+
 ## geographic data
 
 - geojson
