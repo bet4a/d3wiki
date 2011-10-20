@@ -32,16 +32,18 @@ DOM manipulation.
 - selection.append = appendChild
 - selection.insert = insertBefore
 - selection.remove = removeChild
+- namespace prefixes, d3.ns*
 
 ### modifying elements (constant values)
 
-- selection.attr = setAttribute
-- selection.style = style.setProperty
+- selection.attr = setAttribute, setAttributeNS
+- selection.style = style.setProperty, priority
 - selection.classed = classList.add or classList.remove
 - selection.property = direct assignment
 - selection.text = textContent
 - selection.html = innerHTML
-- getting and setting
+- getting, setting and removing
+- string coercion
 
 ### basic transitions
 
@@ -50,6 +52,8 @@ DOM manipulation.
 - transition.delay
 - transition.duration
 - transition.ease: cubic-in-out, elastic, bounce
+- custom tweens
+- d3.timer
 
 ### a note about interpolation
 
@@ -63,7 +67,7 @@ DOM manipulation.
 
 ### interaction
 
-- selection.on
+- selection.on = addEventListener, removeEventListener
 
 ```javascript
 var svg = d3.select("body").text(null).append("svg:svg")
@@ -214,6 +218,9 @@ $ open -a Google\ Chrome --args --allow-file-access-from-files
 
 ## working with text
 
+- svg:text
+- x, y
+- text-anchor, dy (dominant-baseline?)
 - d3.format
 - d3.time.format
 
