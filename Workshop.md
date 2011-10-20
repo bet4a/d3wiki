@@ -204,7 +204,7 @@ $ open -a Google\ Chrome --args --allow-file-access-from-files
 
 - xhr: json, csv, text, xml, html
 - array extras: sort, filter, map, reduce
-- basic statistics: min, max, sum, mean, median, quantile
+- basic statistics: min, max, sum, mean, median, quantile, histogram
 - converting objects to arrays: d3.values, d3.keys, d3.entries
 - nest
 - parsing times
