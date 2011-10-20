@@ -58,6 +58,7 @@ DOM manipulation.
 ### a note about interpolation
 
 - d3.interpolate
+- d3_interpolateByName
 - d3.interpolateNumber
 - d3.interpolateString
 - d3.interpolateRgb
