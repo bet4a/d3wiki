@@ -161,6 +161,7 @@ svg.on("mousemove", function() {
 
 - d, i, this
 - return value
+- anonymous functions *vs.* named functions
 
 ```javascript
 for (var i = 0; i < 10; i++) svg.append("svg:circle");
@@ -226,6 +227,8 @@ $ open -a Google\ Chrome --args --allow-file-access-from-files
 - d3.time.format
 
 ## scales
+
+- scales are functions
 
 ### quantitative scales
 
