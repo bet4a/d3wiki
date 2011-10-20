@@ -125,5 +125,6 @@ Using D3? Post your examples here! More examples on the [D3 website](http://mbos
 
 ## Under Development
 
+* [[Workshop]]
 * [[Axes]]
 * [[FAQ]]
