@@ -41,6 +41,7 @@ DOM manipulation.
 - selection.property = direct assignment
 - selection.text = textContent
 - selection.html = innerHTML
+- getting and setting
 
 ### basic transitions
 
