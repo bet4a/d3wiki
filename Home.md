@@ -71,7 +71,7 @@
 * [Grouped Bar Chart](http://bl.ocks.org/882152)
 * [Stacked Bar Chart](http://bl.ocks.org/1134768)
 * [Small Multiples](http://bl.ocks.org/1157787)
-* [Multiple Pie (Donut) Charts](http://bl.ocks.org/1305111)
+* [Pie Multiples](http://bl.ocks.org/1305111) / [Pie Multiples with Nesting](http://bl.ocks.org/1305337)
 * [[Sparklines|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
 * [[Line charts|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
 * [[Scatterplot and Heatmap|http://jsfiddle.net/indiemaps/gzPDU/]]
