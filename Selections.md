@@ -104,6 +104,26 @@ Removes the elements in the current selection from the current document. General
 
 Joins the specified array of data with the current selection. The specified *data* is an array of data values, such as an array of numbers or objects. In the simplest case, the first datum in the specified array is assigned to the first element in the current selection, the second datum to the second selected element, and so on. When data is assigned to an element, it is stored in the property `__data__`, thus making the data "sticky" so that the data is available on re-selection.
 
+The *data* array specifies the data for each group in the selection. Thus, if the selection has multiple groups (such as a selectAll followed by a selectAll), then *data* should be specified as a function that returns an array, assuming that you want different data for each group. One common scenario with subselections is that a two-dimensional array is bound to the parent element, and then the contained one-element arrays are bound to each subselection for the children elements. In this case, the *data* function can be the identity function: it is invoked for each parent element, and returns the array of data for selected child elements. For example, to create a table from a two-dimensional array:
+
+```javascript
+var matrix = [
+  [11975,  5871, 8916, 2868],
+  [ 1951, 10048, 2060, 6171],
+  [ 8010, 16145, 8090, 8045],
+  [ 1013,   990,  940, 6907]
+];
+
+var tr = d3.select("body").append("table").selectAll("tr")
+    .data(matrix)
+  .enter().append("tr");
+
+var td = tr.selectAll("td")
+    .data(function(d) { return d; })
+  .enter().append("td")
+    .text(function(d) { return d; });
+```
+
 To control how data is joined to elements, an optional *key* function may be specified. This replaces the default behavior which assigns by index. The key function is invoked once for each element in the new data array, and once again for each existing element in the selection. In both cases the key function is passed the datum `d` and the index `i`. When the key function is evaluated on new data elements, the `this` context is the data array; when the key function is evaluated on the existing selection, the `this` context is the associated DOM element. The key function returns a string which is used to join a datum with its corresponding element, based on the previously-bound data. For example, if each datum has a unique field `name`, the join might be specified as:
 
 ```javascript
