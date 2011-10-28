@@ -233,6 +233,23 @@ Thus, you can use either select or filter to apply operators to a subset of elem
 
 Assigns new data to the current selection based on the current data. The specified *function* is invoked for each element in the current selection, being passed the current datum `d` and index `i`, with the `this` context as the current DOM element. The return value of the function becomes the new data for the current DOM element, bound to `__data__`. This is conceptually similar to the built-in array [[map|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Map]] method, however this modifies the data bound to the current selection, rather than returning a new array. This operator has no effect on the index.
 
+This operator can be used to access HTML5 [custom data attributes](http://www.w3.org/TR/html5/elements.html#custom-data-attribute) with D3. For example, given the following elements:
+
+```html
+<ul id="list">
+  <li data-username="shawnbot">Shawn Allen</li>
+  <li data-username="mbostock">Mike Bostock</li>
+</ul>
+```
+
+You can expose the custom data attributes to D3 by setting each element’s data as the built-in [dataset](http://www.w3.org/TR/html5/elements.html#dom-dataset) property:
+
+```javascript
+selection.map(function() { return this.dataset; })
+```
+
+This can then be used, [for example](http://bl.ocks.org/1323729), to sort elements by username.
+
 <a name="sort" href="Selections#wiki-sort">#</a> selection.<b>sort</b>(<i>comparator</i>)
 
 Sorts the elements in the current selection according to the specified comparator function. The comparator function is passed two data elements *a* and *b* to compare, returning either a negative, positive, or zero value. If negative, then *a* should be before *b*; if positive, then *a* should be after *b*; otherwise, *a* and *b* are considered equal and the order is arbitrary. Note that the sort is not guaranteed to be stable; however, it is guaranteed to have the same behavior as your browser's built-in [[sort|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort]] method on arrays.
