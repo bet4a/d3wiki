@@ -1,6 +1,6 @@
 > [[API Reference]] ▸ [[Core]]
 
-D3 has a variety of internal methods that may be useful if you are implementing your own layout or chart template.
+D3 has a few internal methods defined in the core module that are re-used by other modules; these are not considered part of the public API and should be used with caution outside of D3 as they are not guaranteed to remain backwards-compatible.
 
 ## Functions
 
