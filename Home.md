@@ -55,7 +55,7 @@
 * [World Wide Women's Rights](http://www.wimdows.nl/datavis/lib/D3/ciripleth-area-exp.html) - Wimdows.nl
 * [Old Visualizations Made New Again](http://vallandingham.me/vis/) - Jim Vallandingham
 * [Scatterize](http://webtasks.keck.waisman.wisc.edu/scatterize/d/Acdck0qHJo#h=2&m=OLS&x=1&y=6) - Nate Vack
-* [What part of GDP per capita is peoples' income?](http://www.larsko.org/v/igdp/) - Lars Kotthoff 
+* [Various visualisations especially with d3.geo](http://www.larsko.org/VisualisationPlayground) - Lars Kotthoff 
 * [Global Life Expectancy](http://projects.flowingdata.com/life-expectancy/) - Nathan Yau/FlowingData
 
 ### Concepts & Techniques
