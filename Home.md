@@ -70,6 +70,7 @@
 * [Histogram](http://bl.ocks.org/993912)
 * [Grouped Bar Chart](http://bl.ocks.org/882152)
 * [Stacked Bar Chart](http://bl.ocks.org/1134768)
+* [Reorderable Stacked Bar Chart](http://bl.ocks.org/1327441)
 * [Small Multiples](http://bl.ocks.org/1157787)
 * [Pie Multiples](http://bl.ocks.org/1305111) / [Pie Multiples with Nesting](http://bl.ocks.org/1305337)
 * [[Sparklines|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
