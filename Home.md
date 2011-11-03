@@ -116,6 +116,7 @@
 * [Arc Tweens](http://bl.ocks.org/1098617)
 * [Show Reel](http://bl.ocks.org/1256572)
 * [VVVV viewer](http://vvvvjs.quasipartikel.at/)
+* [Table Sorting](http://bl.ocks.org/1226718)
 
 #### Maps
 
