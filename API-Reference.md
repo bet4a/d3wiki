@@ -64,6 +64,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.interpolateHsl|Transitions#wiki-d3_interpolateHsl]] - interpolate two HSL colors.
 * [[d3.interpolateArray|Transitions#wiki-d3_interpolateArray]] - interpolate two arrays of values.
 * [[d3.interpolateObject|Transitions#wiki-d3_interpolateObject]] - interpolate two arbitrary objects.
+* [[d3.interpolateTransform|Transitions#wiki-d3_interpolateTransform]] - interpolate two 2D matrix transforms.
 * [[d3.interpolators|Transitions#wiki-d3_interpolators]] - register a custom interpolator.
 
 ### [[Working with Arrays|Arrays]]
@@ -72,6 +73,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.descending|Arrays#wiki-d3_descending]] - compare two values for sorting.
 * [[d3.min|Arrays#wiki-d3_min]] - find the minimum value in an array.
 * [[d3.max|Arrays#wiki-d3_max]] - find the maximum value in an array.
+* [[d3.extent|Arrays#wiki-d3_extent]] - find the minimum and maximum value in an array.
 * [[d3.sum|Arrays#wiki-d3_sum]] - compute the sum of an array of numbers.
 * [[d3.quantile|Arrays#wiki-d3_quantile]] - compute a quantile for a sorted array of numbers.
 * [[d3.bisect|Arrays#wiki-d3_bisect]] - search for a value in a sorted array.
@@ -94,6 +96,11 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[nest.rollup|Arrays#wiki-nest_rollup]] - specify a rollup function for leaf values.
 * [[nest.map|Arrays#wiki-nest_map]] - evaluate the nest operator, returning an associative array.
 * [[nest.entries|Arrays#wiki-nest_entries]] - evaluate the nest operator, returning an array of key-values tuples.
+
+### Math
+
+* [[d3.random.normal|Math#wiki-random_normal]] - generate a random number with a normal distribution.
+* [[d3.transform|Math#wiki-transform]] - compute the standard form of a 2D matrix transform.
 
 ### [[Loading External Resources|Requests]]
 
@@ -138,10 +145,9 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 * [[d3.functor|Internals#wiki-d3_functor]] - create a function that returns a constant.
 * [[d3.rebind|Internals#wiki-d3_rebind]] - rebind an inherited getter/setter method to a subclass.
-* [[d3.dispatch|Internals#wiki-d3_dispatch]] - create a custom event dispatcher.
-* [[dispatch.add|Internals#wiki-dispatch_add]] - register an event listener.
-* [[dispatch.remove|Internals#wiki-dispatch_remove]] - unregister an event listener.
-* [[dispatch.dispatch|Internals#wiki-dispatch_dispatch]] - dispatch an event to registered listeners.
+* [[d3.dispatch|Internals#wiki-d3_dispatch]] - create custom event dispatchers.
+* [[dispatch.on|Internals#wiki-dispatch_on]] - register an event listener.
+* [[dispatch|Internals#wiki-_dispatch]] - dispatch an event to registered listeners.
 
 ## [d3.scale (Scales)](Scales)
 
@@ -276,6 +282,17 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[axis.tickSize|SVG-Axes#wiki-tickSize]] - specify the size of major, minor and end ticks.
 * [[axis.tickPadding|SVG-Axes#wiki-tickPadding]] - specify padding between ticks and tick labels.
 * [[axis.tickFormat|SVG-Axes#wiki-tickFormat]] - override the tick formatting for labels.
+
+### [[Controls|SVG-Controls]]
+
+* [[d3.svg.brush|SVG-Controls#wiki-brush]]
+* [[brush|SVG-Controls#wiki-_brush]]
+* [[brush.x|SVG-Controls#wiki-brush_x]]
+* [[brush.y|SVG-Controls#wiki-brush_y]]
+* [[brush.extent|SVG-Controls#wiki-brush_extent]]
+* [[brush.clear|SVG-Controls#wiki-brush_clear]]
+* [[brush.empty|SVG-Controls#wiki-brush_empty]]
+* [[brush.on|SVG-Controls#wiki-brush_on]]
 
 ### [[Events|SVG-Events]]
 
@@ -573,3 +590,4 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 * [[d3.behavior.zoom|Zoom-Behavior#wiki-zoom]]
 * [[zoom.on|Zoom-Behavior#wiki-on]]
+* [[zoom.extent|Zoom-Behavior#wiki-extent]]
