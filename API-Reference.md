@@ -528,57 +528,6 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 * [[d3.geom.contour|Contour-Geom#wiki-contour]]
 
-## [[d3.chart (Charts)|Charts]]
-
-### [[Box|Box-Chart]]
-
-* [[d3.chart.box|Box-Chart#wiki-box]]
-* [[box.width|Box-Chart#wiki-width]]
-* [[box.height|Box-Chart#wiki-height]]
-* [[box.tickFormat|Box-Chart#wiki-tickFormat]]
-* [[box.duration|Box-Chart#wiki-duration]]
-* [[box.domain|Box-Chart#wiki-domain]]
-* [[box.value|Box-Chart#wiki-value]]
-* [[box.whiskers|Box-Chart#wiki-whiskers]]
-* [[box.quartiles|Box-Chart#wiki-quartiles]]
-
-### [[Bullet|Bullet-Chart]]
-
-* [[d3.chart.bullet|Bullet-Chart#wiki-bullet]]
-* [[bullet.orient|Bullet-Chart#wiki-orient]]
-* [[bullet.ranges|Bullet-Chart#wiki-ranges]]
-* [[bullet.markers|Bullet-Chart#wiki-markers]]
-* [[bullet.measures|Bullet-Chart#wiki-measures]]
-* [[bullet.width|Bullet-Chart#wiki-width]]
-* [[bullet.height|Bullet-Chart#wiki-height]]
-* [[bullet.tickFormat|Bullet-Chart#wiki-tickFormat]]
-* [[bullet.duration|Bullet-Chart#wiki-duration]]
-
-### [[Horizon|Horizon-Chart]]
-
-* [[d3.chart.horizon|Horizon-Chart#wiki-horizon]]
-* [[horizon.duration|Horizon-Chart#wiki-duration]]
-* [[horizon.bands|Horizon-Chart#wiki-bands]]
-* [[horizon.mode|Horizon-Chart#wiki-mode]]
-* [[horizon.colors|Horizon-Chart#wiki-colors]]
-* [[horizon.interpolate|Horizon-Chart#wiki-interpolate]]
-* [[horizon.x|Horizon-Charts#wiki-x]]
-* [[horizon.y|Horizon-Charts#wiki-y]]
-* [[horizon.width|Horizon-Charts#wiki-width]]
-* [[horizon.height|Horizon-Charts#wiki-height]]
-
-### [[QQ|QQ-Chart]]
-
-* [[d3.chart.qq|QQ-Chart#wiki-qq]]
-* [[qq.width|QQ-Chart#wiki-width]]
-* [[qq.height|QQ-Chart#wiki-height]]
-* [[qq.duration|QQ-Chart#wiki-duration]]
-* [[qq.domain|QQ-Chart#wiki-domain]]
-* [[qq.count|QQ-Chart#wiki-count]]
-* [[qq.x|QQ-Chart#wiki-x]]
-* [[qq.y|QQ-Chart#wiki-y]]
-* [[qq.tickFormat|QQ-Chart#wiki-tickFormat]]
-
 ## [[d3.behavior (Behaviors)|Behaviors]]
 
 ### [[Drag|Drag-Behavior]]
