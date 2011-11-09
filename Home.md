@@ -56,7 +56,8 @@
 * [Old Visualizations Made New Again](http://vallandingham.me/vis/) - Jim Vallandingham
 * [Scatterize](http://webtasks.keck.waisman.wisc.edu/scatterize/d/Acdck0qHJo#h=2&m=OLS&x=1&y=6) - Nate Vack
 * [Various visualisations especially with d3.geo](http://www.larsko.org/VisualisationPlayground) - Lars Kotthoff 
-* [Global Life Expectancy](http://projects.flowingdata.com/life-expectancy/) - Nathan Yau/FlowingData
+* [Global Life Expectancy](http://projects.flowingdata.com/life-expectancy/) - Nathan Yau (FlowingData)
+* [Vegetable Nutrition w/ Parallel Coordinates](http://exposedata.com/parallel/veggie/vegetables-d3.html) - Kai Chang
 
 ### Concepts & Techniques
 
