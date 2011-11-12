@@ -1,5 +1,27 @@
 # Release Notes
 
+Patch versions always include various bug fixes; see the full compare for details. For major and minor versions, new features are listed below.
+
+## 2.5.0 - November 04, 2011
+
+Brush component. 2D transform transitions. Namespaced events for d3.dispatch. Extended ISO 8601. Extents for zoom behavior. Array extents.
+
+## 2.4.0 - October 10, 2011
+
+SI-prefix ("r") format. Multiple classes for the classed operator. Mean and median.
+
+## 2.3.0 - September 27, 2011
+
+Azimuthal and Bonne projections. Great arcs and great circle clipping. Variable log ticks.
+
+## 2.2.0 - September 17, 2011
+
+Equirectangular projection. Variable-strength charge for force layouts.
+
+## 2.1.0 - August 29, 2011
+
+Subtransitions (transition.transition). Great circles.
+
 ## 2.0.0 - August 23, 2011
 
 ### Enter and Update
