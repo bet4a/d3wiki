@@ -26,7 +26,7 @@ Recommendations for reusable chart templates for D3.
 
 * Likewise, a label function is needed for the (e.g.) bar chart to extract the text label for each data element.
 
-* Color should be configurable using the standard d3.scale.ordinal rather than by specifying an array of color strings. This allows greater control over the color encoding, and is more standard. As much as possible, charts should be consistent with the rest of D3 and teach people the underlying API.
+* Color should be configurable using the standard d3.scale.ordinal rather than by specifying an array of color strings. This allows greater control over the color encoding, and is more standard. As much as possible, charts should be consistent with the rest of D3 and teach people the underlying API. *Edit:* Though, you might want to specify a value accessor for color, similar to the value accessor that for bar length, or x & y position in a scatterplot. But the tricky thing is that color can be quantitative (steelblue-brown), ordinal (white, grey, black) or categorical (category10), so the user would need someway of controlling the encoding. I wouldn't want to do type inference to determine the appropriate encoding. Perhaps then you'd specify both a scale and a value accessor. The color is then determined as scale(value(data)). That should work!
 
 * We might want to allow the parent selector to be an SVG element (such as svg:g), so that it's possible to have multiple charts within the same SVG element, and to apply clipping or masking to the chart. To do this, the bar chart will need to detect the type of parent element, and then determine whether to create a containing svg:svg or svg:g.
 
