@@ -58,6 +58,7 @@
 * [Various visualisations especially with d3.geo](http://www.larsko.org/VisualisationPlayground) - Lars Kotthoff 
 * [Global Life Expectancy](http://projects.flowingdata.com/life-expectancy/) - Nathan Yau (FlowingData)
 * [Vegetable Nutrition w/ Parallel Coordinates](http://exposedata.com/parallel/veggie/vegetables-d3.html) - Kai Chang
+* [London Olympics Perceptions - Donuts to Chord Diagram Transition](http://www.visualizing.org/visualizations/uk-olympic-sentiment-analysis) - Kyle Foreman, Peter Hamilton, Cristina Grigoruta
 
 ### Concepts & Techniques
 
