@@ -131,6 +131,18 @@
 
 Using D3? Post your examples here! More examples on the [D3 website](http://mbostock.github.com/d3/ex/) and in the [[Git repository|https://github.com/mbostock/d3/tree/master/examples]]. If you just want to share a quick example, consider using [Gist](http://gist.github.com) and [bl.ocks](http://bl.ocks.org).
 
+#### Wish List
+* adjacency matrix
+* arc diagram
+* polar area diagram (nightingale)
+* gantt, other timelines and timing diagram
+* sankey diagram and parallel sets
+* adjacency matrix
+* candlestick or ohlc
+* fibonacci scale
+* data table
+* hypergraph
+
 ## Under Development
 
 * [[Workshop]]
