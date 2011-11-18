@@ -60,6 +60,7 @@
 * [Global Life Expectancy](http://projects.flowingdata.com/life-expectancy/) - Nathan Yau (FlowingData)
 * [Vegetable Nutrition w/ Parallel Coordinates](http://exposedata.com/parallel/) - Kai Chang
 * [London Olympics Perceptions - Donuts to Chord Diagram Transition](http://www.visualizing.org/visualizations/uk-olympic-sentiment-analysis) - Kyle Foreman, Peter Hamilton, Cristina Grigoruta
+* [Euro Debt Crisis](http://bl.ocks.org/1308257)
 
 ### Concepts & Techniques
 
@@ -76,6 +77,7 @@
 * [Reorderable Stacked Bar Chart](http://bl.ocks.org/1327441)
 * [Small Multiples](http://bl.ocks.org/1157787)
 * [Pie Multiples](http://bl.ocks.org/1305111) / [Pie Multiples with Nesting](http://bl.ocks.org/1305337)
+* [Pie Chart Updating (Part 1)](http://bl.ocks.org/1346395) [(Part 2)](http://bl.ocks.org/1346410)
 * [[Sparklines|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
 * [[Line charts|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
 * [[Scatterplot and Heatmap|http://jsfiddle.net/indiemaps/gzPDU/]]
@@ -85,6 +87,7 @@
 * [Dependency Chord Diagram](http://bl.ocks.org/1046712)
 * [Chord Layout Transitions](http://fleetinbeing.net/d3e/chord.html)
 * [Hierarchical Edge Bundling](http://bl.ocks.org/1044242)
+* [Hierarchical Bar Chart](http://bl.ocks.org/1283663)
 * [Partition Layout (Zoomable Icicle)](http://bl.ocks.org/1005873)
 * [Tree Layout (Animated)](http://bl.ocks.org/999346)
 * [Tree Layout (Collapsible)](http://bl.ocks.org/1061834)
@@ -101,7 +104,8 @@
 * [Force Layout from XML](http://bl.ocks.org/1080941)
 * [Force Layout with Directed Edges (Curves and Arrow Markers)](http://bl.ocks.org/1153292)
 * [Bounded Force Layout](http://bl.ocks.org/1129492) 
-* [[Building a tree diagram|http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/]] 
+* [Building a tree diagram](http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/)
+* [Force-Based Label Placement](http://bl.ocks.org/1377729)
 
 #### Miscellaneous
 
@@ -120,7 +124,12 @@
 * [Show Reel](http://bl.ocks.org/1256572)
 * [VVVV viewer](http://vvvvjs.quasipartikel.at/)
 * [Table Sorting](http://bl.ocks.org/1226718)
+* [Merge Sort](http://bl.ocks.org/1243323)
 * [Epicyclic Gearing](http://bl.ocks.org/1353700)
+* [Parallel Coordinates](http://bl.ocks.org/1341281)
+* [DOM-to-Canvas](http://bl.ocks.org/1276463)
+* [Transform Transitions](http://bl.ocks.org/1345853)
+* [PJAX](http://bl.ocks.org/1367999)
 
 #### Maps
 
