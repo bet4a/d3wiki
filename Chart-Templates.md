@@ -1,4 +1,4 @@
-Recommendations for reusable chart templates for D3.
+Recommendations for reusable chart templates for D3. There is an implementation in progress [here](https://gist.github.com/1363743).
 
 ## Recommendations
 
