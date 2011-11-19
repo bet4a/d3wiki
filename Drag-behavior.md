@@ -4,7 +4,7 @@ The drag behavior makes it possible to interactively drag an element with the mo
 
 <a name="drag" href="Drag-behavior#wiki-drag">#</a> d3.behavior.<b>drag</b>()
 
-Constructs a new force-directed layout with the default settings: size 1×1, friction 0.9, distance 20, charge strength -30, gravity strength 0.1, and theta parameter 0.8. The default nodes and links are the empty array, and when the layout is started, the internal alpha cooling parameter is set to 0.1. The general pattern for constructing force-directed layouts is to set all the configuration properties, and then call [start](Force-Layout#wiki-start):
+Constructs a new drag behavior.
 
 ```javascript
 var drag = d3.behavior.drag()
@@ -16,7 +16,7 @@ var drag = d3.behavior.drag()
 
 <a name="on" href="Drag-behavior#wiki-on">#</a> drag.<b>on</b>(<i>type</i>, <i>listener</i>)
 
-Registers the specified *listener* to receive events of the specified *type* from the force layout. Currently, "drag", "dragstart" and "dragend" events are supported. 
+Registers the specified *listener* to receive events of the specified *type*. Currently, "drag", "dragstart" and "dragend" events are supported. 
 
 Listen to drag events to update the displayed positions of elements. For example, if you initially display a rectangle like so:
 
