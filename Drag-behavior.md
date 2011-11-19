@@ -48,4 +48,4 @@ Implementation note: the mousemove and mouseup event listeners are registered on
 
 
 An example which also shows how to ignore mouse events on text is given here
-(http://bl.ocks.org/1378144)
+http://bl.ocks.org/1378144
