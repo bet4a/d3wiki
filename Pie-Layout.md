@@ -26,7 +26,7 @@ Specifies how to extract a value from the associated data; *accessor* is a funct
 
 <a name="sort" href="Pie-Layout#wiki-sort">#</a> pie.<b>sort</b>([<i>comparator</i>])
 
-If *comparator* is specified, sets the sort order of data for the layout using the specified comparator function.  If *comparator* is not specified, returns the current sort order, which defaults to null, preserving the original order of the input values. The comparator function is invoked for pairs of data elements from the *values* array passed to [pie](Pie-Layout#wiki-_pie).  Comparator functions may also be implemented using [d3.ascending](Arrays#wiki-d3_ascending) or [d3.descending](Arrays#wiki-d3_descending).
+If *comparator* is specified, sets the sort order of data for the layout using the specified comparator function.  If *comparator* is not specified, returns the current sort order. The sort order defaults to descending value. Sorting preserves the index (and z-index) of input values, affecting only the computed angles. The comparator function is invoked for pairs of data elements from the *values* array passed to [pie](Pie-Layout#wiki-_pie). Comparator functions may also be implemented using [d3.ascending](Arrays#wiki-d3_ascending) or [d3.descending](Arrays#wiki-d3_descending).
 
 <a name="startAngle" href="Pie-Layout#wiki-startAngle">#</a> pie.<b>startAngle</b>([<i>angle</i>])
 
