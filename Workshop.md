@@ -71,11 +71,11 @@ DOM manipulation.
 - selection.on = addEventListener, removeEventListener
 
 ```javascript
-var svg = d3.select("body").text(null).append("svg:svg")
+var svg = d3.select("body").text(null).append("svg")
     .attr("width", 960)
     .attr("height", 500);
 
-svg.append("svg:rect")
+svg.append("rect")
     .attr("width", "100%")
     .attr("height", "100%")
     .style("fill", "white");
@@ -110,7 +110,7 @@ svg.on("mousemove", function() {
 ```
 
 ```javascript
-var circle = svg.append("svg:circle")
+var circle = svg.append("circle")
     .attr("r", 24)
     .style("fill", "brown");
 
@@ -123,7 +123,7 @@ svg.on("mousemove", function() {
 ```
 
 ```javascript
-var circle = svg.append("svg:circle")
+var circle = svg.append("circle")
     .attr("r", 24)
     .style("fill", "brown");
 
@@ -139,7 +139,7 @@ svg.on("mousemove", function() {
 ```javascript
 svg.on("mousemove", function() {
   var mouse = d3.svg.mouse(this);
-  svg.append("svg:circle")
+  svg.append("circle")
       .attr("cx", mouse[0])
       .attr("cy", mouse[1])
       .attr("r", 0)
@@ -164,7 +164,7 @@ svg.on("mousemove", function() {
 - anonymous functions *vs.* named functions
 
 ```javascript
-for (var i = 0; i < 10; i++) svg.append("svg:circle");
+for (var i = 0; i < 10; i++) svg.append("circle");
 var circle = svg.selectAll("circle");
 ```
 
