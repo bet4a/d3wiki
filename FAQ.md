@@ -41,15 +41,15 @@ The easiest way is to copy the following text into a file `bar.html` and play wi
           .range([0, h - m[0] - m[2]]);
            
     var vis = d3.select("#chart")
-      .append("svg:svg")
+      .append("svg")
         .attr("width", w)
         .attr("height", h)
-      .append("svg:g")
+      .append("g")
         .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
     vis.selectAll("rect.bar")
         .data(data)
-      .enter().append("svg:rect")
+      .enter().append("rect")
         .attr("class", "bar")
         .attr("x", function(d, i) { return x(i); })
         .attr("y", function(d) { return h - m[0] - m[2] - y(d.v); })
@@ -58,7 +58,7 @@ The easiest way is to copy the following text into a file `bar.html` and play wi
  
     vis.selectAll("text.value")
         .data(data)
-      .enter().append("svg:text")
+      .enter().append("text")
         .attr("class", "value")
         .attr("x", function(d, i) { return x(i) + x.rangeBand() / 2; })
         .attr("y", function(d) { return h - m[0] - m[2] - y(d.v); }) 
@@ -68,7 +68,7 @@ The easiest way is to copy the following text into a file `bar.html` and play wi
 
     vis.selectAll("text.label")
         .data(data)
-      .enter().append("svg:text")
+      .enter().append("text")
         .attr("class", "label")
         .attr("x", function(d, i) { return x(i) + x.rangeBand() / 2; })
         .attr("y", h - m[0] - m[2] - y(0)) 
@@ -76,7 +76,7 @@ The easiest way is to copy the following text into a file `bar.html` and play wi
         .attr("text-anchor", "middle")
         .text(function(d) { return d.l; });
 
-    vis.append("svg:line")
+    vis.append("line")
       .attr("class", "xaxis")
       .attr("x1", 0)
       .attr("x2", w - m[1] - m[3])
