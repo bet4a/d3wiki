@@ -130,6 +130,7 @@
 * [DOM-to-Canvas](http://bl.ocks.org/1276463)
 * [Transform Transitions](http://bl.ocks.org/1345853)
 * [PJAX](http://bl.ocks.org/1367999)
+* [Square Circle Spiral Illusion](http://bl.ocks.org/1386444)
 
 #### Maps
 
