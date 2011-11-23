@@ -2,6 +2,10 @@
 
 Patch versions always include various bug fixes; see the full compare for details. For major and minor versions, new features are listed below.
 
+## 2.6.0 - November 23, 2011
+
+Namespaces are now optional (in most cases)! Ordinal scale support for axes and brushes. Drag behavior supports configurable origin. Dispatchers can be used to access current listeners.
+
 ## 2.5.0 - November 04, 2011
 
 Brush component. 2D transform transitions. Namespaced events for d3.dispatch. Extended ISO 8601. Extents for zoom behavior. Array extents.
