@@ -88,7 +88,7 @@ This method is useful for retrieving a set of link descriptions suitable for dis
 ```javascript
 svg.selectAll("path")
     .data(tree.links(nodes))
-  .enter().append("svg:path")
+  .enter().append("path")
     .attr("d", d3.svg.diagonal());
 ```
 
