@@ -94,6 +94,7 @@
 * [Tree Layout (Collapsible, with Labels)](http://bl.ocks.org/1249394)
 * [Treemap Layout in SVG](http://bl.ocks.org/972398)
 * [Sunburst Layout with Labels](http://bl.ocks.org/910126)
+* [Sunburst: Coffee Flavour Wheel](http://www.jasondavies.com/coffee-wheel/)
 * [Indented Tree (Collapsible)](http://bl.ocks.org/1093025)
 * [Force Layout with Symbols](http://bl.ocks.org/1062383)
 * [Force Layout with Custom Forces](http://bl.ocks.org/1021841)
@@ -105,6 +106,7 @@
 * [Force Layout with Directed Edges (Curves and Arrow Markers)](http://bl.ocks.org/1153292)
 * [Bounded Force Layout](http://bl.ocks.org/1129492) 
 * [Building a tree diagram](http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/)
+* [Reveal animation on a tree with a clip path](http://blog.pixelingene.com/2011/08/progressive-reveal-animations-in-svg-using-a-svgclippath/)
 * [Force-Based Label Placement](http://bl.ocks.org/1377729)
 
 #### Miscellaneous
