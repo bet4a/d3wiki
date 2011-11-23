@@ -22,7 +22,7 @@ Listen to drag events to update the displayed positions of elements. For example
 ```javascript
 var rect = svg.selectAll("rect")
     .data([{x: 0, y: 0}])
-  .enter().append("svg:rect")
+  .enter().append("rect")
     .attr("width", 100)
     .attr("height", 100)
     .style("fill", "#f00")
