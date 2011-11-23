@@ -112,7 +112,7 @@ Registers the specified *listener* to receive events of the specified *type* fro
 ```javascript
 var link = vis.selectAll("line")
     .data(links)
-  .enter().append("svg:line")
+  .enter().append("line")
     .attr("x1", function(d) { return d.source.x; })
     .attr("y1", function(d) { return d.source.y; })
     .attr("x2", function(d) { return d.target.x; })
@@ -120,7 +120,7 @@ var link = vis.selectAll("line")
 
 var node = vis.selectAll("circle")
     .data(nodes)
-  .enter().append("svg:circle")
+  .enter().append("circle")
     .attr("cx", function(d) { return d.x; })
     .attr("cy", function(d) { return d.y; })
     .attr("r", 5);
