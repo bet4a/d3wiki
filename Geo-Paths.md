@@ -36,7 +36,7 @@ For polygons, you should specify the style property "fill-rule" as "evenodd" on 
 ```javascript
 vis.selectAll("path")
     .data(features)
-  .enter().append("svg:path")
+  .enter().append("path")
     .attr("d", d3.geo.path());
 ```
 
