@@ -61,6 +61,7 @@
 * [Vegetable Nutrition w/ Parallel Coordinates](http://exposedata.com/parallel/) - Kai Chang
 * [London Olympics Perceptions - Donuts to Chord Diagram Transition](http://www.visualizing.org/visualizations/uk-olympic-sentiment-analysis) - Kyle Foreman, Peter Hamilton, Cristina Grigoruta
 * [Euro Debt Crisis](http://bl.ocks.org/1308257)
+* [Fuzzy Link-Bot](http://www.atomodo.com/flb/?e=13839,25793#) - Entity co-occurrence in music news by Andrew Collins.
 
 ### Concepts & Techniques
 
