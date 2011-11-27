@@ -38,3 +38,7 @@ Issues an HTTP GET request for the XML file at the specified *url*. An optional 
 <a name="d3_html" href="Requests#wiki-d3_html">#</a> d3.<b>html</b>(<i>url</i>, <i>callback</i>)
 
 Issues an HTTP GET request for the HTML file at the specified *url*. The *mime* type "text/html" will be used. The request is processed asynchronously, such that this method returns immediately after opening the request. When the HTML content is available, the specified *callback* will be invoked, being passed the root (document) element of the loaded HTML content. This is generated as a document fragment from the `responseText` attribute of the request. If an error occurs, the callback function will instead be invoked with null.
+
+<a name="d3_csv" href="CSV">#</a> d3.<b>csv</b>(<i>url</i>, <i>callback</i>)
+
+See [[CSV]].
