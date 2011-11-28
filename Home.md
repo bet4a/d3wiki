@@ -84,6 +84,7 @@
 * [[Scatterplot and Heatmap|http://jsfiddle.net/indiemaps/gzPDU/]]
 * [[Animated Sankey Diagram (alluvial)|http://nickrabinowitz.com/projects/d3/alluvial/alluvial-dynamic.html]]
 * [Parallel Coordinates](http://bl.ocks.org/1341281)
+* [Backbone-D3](http://drsm79.github.com/Backbone-d3/index.html)
 
 #### Trees and Graphs
 
