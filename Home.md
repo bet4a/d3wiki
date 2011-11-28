@@ -140,6 +140,7 @@
 * [PJAX](http://bl.ocks.org/1367999)
 * [Square Circle Spiral Illusion](http://bl.ocks.org/1386444)
 * [Adventures in D3](https://github.com/enjalot/adventures_in_d3)
+* [Time Series](https://github.com/boorad/d3-tsline)
 
 #### Maps
 
