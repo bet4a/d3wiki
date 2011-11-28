@@ -16,11 +16,26 @@ The *selection* can also be a [transition](Transitions).
 
 <a name="axis_orient" href="SVG-Axes#wiki-axis_orient">#</a> axis.<b>orient</b>([<i>orientation</i>])
 
+Describes how to display the axis tick marks and numeric labels in relation to the axis line. Valid values are `top`, `bottom`, `left` and `right`. For a vertical axis, you should specify `left` or `right` and for a horizontal axis, you will want to specify `top` or `bottom`.
+
 <a name="axis_ticks" href="SVG-Axes#wiki-axis_ticks">#</a> axis.<b>ticks</b>([<i>arguments…</i>])
+
+The number of major ticks on the axis. These will receive text labels. 
 
 <a name="axis_tickSubdivide" href="SVG-Axes#wiki-axis_tickSubdivide">#</a> axis.<b>tickSubdivide</b>([<i>n</i>])
 
+The number of subdivisions to make in between major tick marks.
+
 <a name="axis_tickSize" href="SVG-Axes#wiki-axis_tickSize">#</a> axis.<b>tickSize</b>([<i>major</i>[​[, <i>minor</i>], <i>end</i>]])
+
+The length of the major, minor and ending tick marks. The end tick mark is the last one drawn in the scale and depending on spacing, it may end up quite close to the tick mark that precedes it. You can pass 0 to suppress displaying it. For example:
+
+    yAxis = d3.svg.axis()
+      .scale(y)
+      .ticks(4)
+      .tickSize(6, 3, 0)
+
+This will give you major tick marks of size 6, minor of size 3 and no ending mark.
 
 <a name="axis_tickPadding" href="SVG-Axes#wiki-axis_tickPadding">#</a> axis.<b>tickPadding</b>([<i>padding</i>])
 
