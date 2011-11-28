@@ -82,6 +82,8 @@
 * [[Sparklines|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
 * [[Line charts|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
 * [[Scatterplot and Heatmap|http://jsfiddle.net/indiemaps/gzPDU/]]
+* [[Animated Sankey Diagram (alluvial)|http://nickrabinowitz.com/projects/d3/alluvial/alluvial-dynamic.html]]
+* [Parallel Coordinates](http://bl.ocks.org/1341281)
 
 #### Trees and Graphs
 
@@ -129,7 +131,6 @@
 * [Table Sorting](http://bl.ocks.org/1226718)
 * [Merge Sort](http://bl.ocks.org/1243323)
 * [Epicyclic Gearing](http://bl.ocks.org/1353700)
-* [Parallel Coordinates](http://bl.ocks.org/1341281)
 * [DOM-to-Canvas](http://bl.ocks.org/1276463)
 * [Transform Transitions](http://bl.ocks.org/1345853)
 * [PJAX](http://bl.ocks.org/1367999)
