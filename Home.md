@@ -17,6 +17,8 @@
 * [[Try D3 Now|http://christopheviau.com/d3_tutorial/]]
 * [[Scale Graph|http://www.ivanteoh.com/blog/2011/07/d3-tutorial-scale-graph/]]
 * [[Using Inkscape with d3|http://christopheviau.com/d3_tutorial/d3_inkscape/]]
+* [Simple D3.js Bar Chart Webcast](http://enja.org/2011/09/15/simple-d3-js-pie-chart-webcast/)
+
 
 ## Publications
 
@@ -136,6 +138,7 @@
 * [Transform Transitions](http://bl.ocks.org/1345853)
 * [PJAX](http://bl.ocks.org/1367999)
 * [Square Circle Spiral Illusion](http://bl.ocks.org/1386444)
+* [Adventures in D3](https://github.com/enjalot/adventures_in_d3)
 
 #### Maps
 
