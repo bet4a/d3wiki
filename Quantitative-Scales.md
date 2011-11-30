@@ -136,7 +136,7 @@ Log scales are similar to linear scales, except there's a logarithmic transform 
 
 <a name="log" href="Quantitative-Scales#wiki-log">#</a> d3.scale.<b>log</b>()
 
-Constructs a new log scale with the default domain [0,1], the default range [0,1], and the base 10.
+Constructs a new log scale with the default domain [1,10], the default range [0,1], and the base 10.
 
 <a name="_log" href="Quantitative-Scales#wiki-_log">#</a> <b>log</b>(<i>x</i>)
 
