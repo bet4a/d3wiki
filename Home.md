@@ -142,7 +142,7 @@
 * [Square Circle Spiral Illusion](http://bl.ocks.org/1386444)
 * [Adventures in D3](https://github.com/enjalot/adventures_in_d3)
 * [Time Series](https://github.com/boorad/d3-tsline)
-
+* [Voronoi-based point picker](http://bl.ocks.org/1405439)
 #### Maps
 
 * [Google Maps](http://bl.ocks.org/899711)
