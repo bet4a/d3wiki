@@ -66,6 +66,7 @@
 * [Fuzzy Link-Bot](http://www.atomodo.com/flb/?e=13839,25793#) - Entity co-occurrence in music news by Andrew Collins.
 * [Job Flow](https://github.com/fod/job_flow_vis)
 * [Visualizing a newborn's feeding and diaper activity](http://jerseyshots.com/viz/newborn.html) - Jimmie Yoo
+* [Wall Street Occupation and other visualizations](http://dataist.wordpress.com/tag/d3-js/) - Jens Finnäs (Dataist)
 
 ### Concepts & Techniques
 
