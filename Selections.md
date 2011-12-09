@@ -219,9 +219,9 @@ This would result in:
 
 If you want the document traversal order to match the selection data order, you can use the [sort](Selections#wiki-sort) operator to reorder elements.
 
-<a name="filter" href="Selections#wiki-filter">#</a> selection.<b>filter</b>(<i>function</i>)
+<a name="filter" href="Selections#wiki-filter">#</a> selection.<b>filter</b>(<i>selector</i>)
 
-Filters the selection, returning a new selection that contains only the elements for which the specified *function* returns true. As with other operators, the specified function is passed the current datum `d` and index `i`, with the `this` context as the current DOM element. Like the built-in array [[filter|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter]] method, the returned selection *does not* preserve the index of the original selection; it returns a copy with elements removed. If you want to preserve the index, use [select](Selections#wiki-select) instead. For example, to select every other element:
+Filters the selection, returning a new selection that contains only the elements for which the specified *selector* is true. The *selector* may be specified either as a function or as a selector string, such as ".foo". As with other operators, the function is passed the current datum `d` and index `i`, with the `this` context as the current DOM element. Like the built-in array [[filter|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter]] method, the returned selection *does not* preserve the index of the original selection; it returns a copy with elements removed. If you want to preserve the index, use [select](Selections#wiki-select) instead. For example, to select every other element:
 
 ```javascript
 var odds = selection.select(function(d, i) { return i & 1 ? this : null; }));
@@ -253,6 +253,10 @@ This can then be used, [for example](http://bl.ocks.org/1323729), to sort elemen
 <a name="sort" href="Selections#wiki-sort">#</a> selection.<b>sort</b>(<i>comparator</i>)
 
 Sorts the elements in the current selection according to the specified comparator function. The comparator function is passed two data elements *a* and *b* to compare, returning either a negative, positive, or zero value. If negative, then *a* should be before *b*; if positive, then *a* should be after *b*; otherwise, *a* and *b* are considered equal and the order is arbitrary. Note that the sort is not guaranteed to be stable; however, it is guaranteed to have the same behavior as your browser's built-in [[sort|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort]] method on arrays.
+
+<a name="order" href="Selections#wiki-order">#</a> selection.<b>order</b>()
+
+Re-inserts elements into the document such that the document order matches the selection order. This is equivalent to calling sort() if the data is already sorted, but much faster.
 
 ### Animation & Interaction
 
