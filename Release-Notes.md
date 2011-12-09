@@ -2,6 +2,10 @@
 
 Patch versions always include various bug fixes; see the full compare for details. For major and minor versions, new features are listed below.
 
+## 2.7.0 - December 8, 2011
+
+The filter method can now take a selector, such as filter(".foo"). A new order() method reorders document elements to match selection order; this is faster than sort() if your data is already in-order.
+
 ## 2.6.0 - November 23, 2011
 
 Namespaces are now optional (in most cases)! Ordinal scale support for axes and brushes. Drag behavior supports configurable origin. Dispatchers can be used to access current listeners.
