@@ -23,6 +23,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[selection.filter|Selections#wiki-filter]] - filter a selection based on data.
 * [[selection.map|Selections#wiki-map]] - modify the data associated with the selected elements.
 * [[selection.sort|Selections#wiki-sort]] - sort elements in the document based on data.
+* [[selection.order|Selections#wiki-order]] - reorders elements in the document to match the selection.
 * [[selection.on|Selections#wiki-on]] - add or remove event listeners for interaction.
 * [[selection.transition|Selections#wiki-transition]] - start a transition on the selected elements.
 * [[selection.each|Selections#wiki-each]] - call a function for each selected element.
