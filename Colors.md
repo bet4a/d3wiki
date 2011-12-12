@@ -36,7 +36,7 @@ Returns the equivalent color in HSL space; see [d3.hsl](Colors#wiki-d3_hsl) for 
 
 <a name="rgb_toString" href="Colors#wiki-rgb_toString">#</a> rgb.<b>toString</b>()
 
-Converts this RGB color to a string, such as "#f7eaba".
+Converts this RGB color to a hexadecimal string, such as "#f7eaba".
 
 ## HSL
 
@@ -70,4 +70,4 @@ Returns the equivalent color in RGB space; see [d3.rgb](Colors#wiki-d3_rgb) for 
 
 <a name="hsl_toString" href="Colors#wiki-hsl_toString">#</a> hsl.<b>toString</b>()
 
-Converts this HSL color to a string, such as "hsl(120,40%,10%)".
+Converts this HSL color to an RGB hexadecimal string, such as "#f7eaba".
