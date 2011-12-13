@@ -17,6 +17,7 @@ Evaluates the pie function on the specified array of *values*. An optional *inde
 * value - the data value, returned by the *value* accessor.
 * startAngle - the start angle of the arc in radians.
 * endAngle - the end angle of the arc in radians.
+* data - the original datum for this arc.
 
 The elements are returned in the original order, matching *values*, even if a [sort](Pie-Layout#wiki-sort) order is applied; this preserves the original index of each element in the values array, which is nice if you are using the index to generate a categorical color or other display property.
 
