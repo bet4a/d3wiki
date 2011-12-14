@@ -40,6 +40,10 @@ Like [rangeBands](Ordinal-Scales#wiki-rangeBands), except guarantees that the ba
 
 Returns the band width. This method is used in conjunction with rangeBands or rangeRoundBands.
 
+<a name="ordinal_rangeExtent" href="Ordinal-Scales#wiki-ordinal_rangeExtent">#</a> ordinal.<b>rangeExtent</b>()
+
+Returns a two-element array representing the extent of the scale's range i.e. the smallest and largest values.
+
 ## Categorical Colors
 
 <a name="category10" href="Ordinal-Scales#wiki-category10">#</a> d3.scale.<b>category10</b>()
