@@ -67,6 +67,7 @@
 * [Job Flow](https://github.com/fod/job_flow_vis)
 * [Visualizing a newborn's feeding and diaper activity](http://jerseyshots.com/viz/newborn.html) - Jimmie Yoo
 * [Inequality in America](http://visual.ly/vizbox/inequality-in-america/) - EJ Fox for Visual.ly
+* [Current Article Popularity Trends on Hacker News](http://hn.metamx.com/) -  Vadim Ogievetsky
 
 ### Concepts & Techniques
 
