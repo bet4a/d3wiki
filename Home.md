@@ -93,6 +93,7 @@
 * [Parallel Coordinates](http://bl.ocks.org/1341281)
 * [Backbone-D3](http://drsm79.github.com/Backbone-d3/index.html)
 * [Horizon Chart](http://bl.ocks.org/1483226)
+* [Gauge](http://bl.ocks.org/1499279)
 
 #### Trees and Graphs
 
