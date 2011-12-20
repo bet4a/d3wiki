@@ -62,6 +62,10 @@ Returns the minimum value in the given *array* using natural order. If the array
 
 Returns the maximum value in the given *array* using natural order. If the array is empty, returns undefined. An optional *accessor* function may be specified, which is equivalent to calling *array.map(accessor)* before computing the maximum value. Unlike the built-in [Math.max](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/max), this method ignores undefined values; this is useful for computing the domain of a [[scale|Scales]] while only considering the defined region of the data. In addition, elements are compared using natural order rather than numeric order. For example, the maximum of ["20", "3"] is "3", while the maximum of [20, 3] is 20.
 
+<a name="d3_extent" href="Arrays#wiki-d3_extent">#</a> d3.<b>extent</b>(<i>array</i>[, <i>accessor</i>])
+
+Returns the minimum and maximum value in the given *array* using natural order. This is equivalent to calling [d3.min](#wiki-d3_min) and [d3.max](#wiki-d3_max) simultaneously.
+
 <a name="d3_sum" href="Arrays#wiki-d3_sum">#</a> d3.<b>sum</b>(<i>array</i>[, <i>accessor</i>])
 
 Returns the sum of the given *array*. If the array is empty, returns 0. An optional *accessor* function may be specified, which is equivalent to calling *array.map(accessor)* before computing the sum. This method ignores invalid values such as NaN and undefined; this is useful for computing the sum of data while only considering the well-defined values.
