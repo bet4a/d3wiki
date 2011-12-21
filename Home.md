@@ -122,7 +122,7 @@
 * [Reveal animation on a tree with a clip path](http://blog.pixelingene.com/2011/08/progressive-reveal-animations-in-svg-using-a-svgclippath/)
 * [Force-Based Label Placement](http://bl.ocks.org/1377729)
 
-#### Miscellaneous
+#### Miscellaneous visualizations
 
 * [Superformula Explorer](http://bl.ocks.org/1021103)
 * [Superformula Tweening](http://bl.ocks.org/1020902)
@@ -138,16 +138,21 @@
 * [Arc Tweens](http://bl.ocks.org/1098617)
 * [Show Reel](http://bl.ocks.org/1256572)
 * [VVVV viewer](http://vvvvjs.quasipartikel.at/)
-* [Table Sorting](http://bl.ocks.org/1226718)
 * [Merge Sort](http://bl.ocks.org/1243323)
 * [Epicyclic Gearing](http://bl.ocks.org/1353700)
 * [DOM-to-Canvas](http://bl.ocks.org/1276463)
 * [Transform Transitions](http://bl.ocks.org/1345853)
-* [PJAX](http://bl.ocks.org/1367999)
 * [Square Circle Spiral Illusion](http://bl.ocks.org/1386444)
 * [Adventures in D3](https://github.com/enjalot/adventures_in_d3)
 * [Time Series](https://github.com/boorad/d3-tsline)
 * [Voronoi-based point picker](http://bl.ocks.org/1405439)
+
+#### Useful snippets
+
+* [Masking with external svg elements](http://bl.ocks.org/1503463)
+* [PJAX](http://bl.ocks.org/1367999)
+* [Table Sorting](http://bl.ocks.org/1226718)
+
 #### Maps
 
 * [Google Maps](http://bl.ocks.org/899711)
