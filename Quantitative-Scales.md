@@ -186,7 +186,7 @@ Returns a [[number format|Formatting#wiki-d3_format]] function suitable for disp
 var formatNumber = d3.format(",.0f"), // for formatting integers
     formatCurrency = function(d) { return "$" + formatNumber(d); };
 
-axis.ticks(20, formatCurrency);
+scale.ticks(20, formatCurrency);
 ```
 
 ## Quantize Scales
