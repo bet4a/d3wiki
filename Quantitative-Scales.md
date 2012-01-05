@@ -178,9 +178,16 @@ Extends the domain so that it starts and ends on nice round values. This method 
 
 Returns representative values from the scale's input domain. The returned tick values are uniformly spaced within each power of ten, and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. Note that the number of ticks cannot be customized (due to the nature of log scales); however, you can filter the returned array of values if you want to reduce the number of ticks.
 
-<a name="log_tickFormat" href="Quantitative-Scales#wiki-log_tickFormat">#</a> log.<b>tickFormat</b>()
+<a name="log_tickFormat" href="Quantitative-Scales#wiki-log_tickFormat">#</a> log.<b>tickFormat</b>([<i>count</i>, [<i>format</i>]])
 
-Returns a [[number format|Formatting#wiki-d3_format]] function suitable for displaying a tick value. The returned tick format is implemented as `d.toPrecision(1)`.
+Returns a [[number format|Formatting#wiki-d3_format]] function suitable for displaying a tick value. The returned tick format is implemented as `d.toPrecision(1)`. If a *count* is specified, then some of the tick labels may not be displayed; this is useful if there is not enough room to fit all of the tick labels. However, note that the tick marks will still be displayed (so that the log scale distortion remains visible). When specifying a count, you may also override the *format* function. For example, to display 20 ticks of a currency:
+
+```js
+var formatNumber = d3.format(",.0f"), // for formatting integers
+    formatCurrency = function(d) { return "$" + formatNumber(d); };
+
+axis.ticks(20, formatCurrency);
+```
 
 ## Quantize Scales
 
