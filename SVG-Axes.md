@@ -20,7 +20,9 @@ Describes how to display the axis tick marks and numeric labels in relation to t
 
 <a name="axis_ticks" href="SVG-Axes#wiki-axis_ticks">#</a> axis.<b>ticks</b>([<i>arguments…</i>])
 
-The number of major ticks on the axis. These will receive text labels. 
+Sets the number of labeled major tick marks. The specified *arguments* are passed to the scale’s ticks method to compute the tick values. For [quantitative scales](Quantitative-Scales#wiki-linear_ticks), specify the desired tick count such as axis.ticks(20). For [time scales](Time-Scales#wiki-ticks), you can pass in a count or a function, such as axis.ticks(d3.time.minutes, 15).
+
+The *arguments* are also passed to the scale’s tickFormat method to generate the default tick format. Thus, for [log scales](Quantitative-Scales#wiki-log_tickFormat), you might specify both a count and a tick format function.
 
 <a name="axis_tickSubdivide" href="SVG-Axes#wiki-axis_tickSubdivide">#</a> axis.<b>tickSubdivide</b>([<i>n</i>])
 
@@ -30,10 +32,12 @@ The number of subdivisions to make in between major tick marks.
 
 The length of the major, minor and ending tick marks. The end tick mark is the last one drawn in the scale and depending on spacing, it may end up quite close to the tick mark that precedes it. You can pass 0 to suppress displaying it. For example:
 
-    yAxis = d3.svg.axis()
-      .scale(y)
-      .ticks(4)
-      .tickSize(6, 3, 0)
+```js
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .ticks(4)
+    .tickSize(6, 3, 0);
+```
 
 This will give you major tick marks of size 6, minor of size 3 and no ending mark.
 
@@ -41,4 +45,4 @@ This will give you major tick marks of size 6, minor of size 3 and no ending mar
 
 <a name="axis_tickFormat" href="SVG-Axes#wiki-axis_tickFormat">#</a> axis.<b>tickFormat</b>([<i>format</i>])
 
-A [format](Formatting#wiki-d3_format) can be passed to override the scale's default.
+A [format](Formatting#wiki-d3_format) can be passed to override the scale's default. For example, `axis.tickFormat(d3.format(",.0f"))` will display integers with comma-grouping for thousands. Note that for log scales, the tick format must be passed to the [ticks](#ticks) method, instead.
