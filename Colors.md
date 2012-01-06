@@ -4,7 +4,7 @@ Constructing visualizations often involves working with colors. Even though your
 
 Note: while you can work with colors directly, you might also want to take a look at D3's built-in [[interpolateRgb|Transitions#wiki-d3_interpolateRgb]], [[interpolateHsl|Transitions#wiki-d3_interpolateHsl]] and [[scales|Scales]].
 
-If you are looking for color palettes, see the [ordinal scales](Ordinal-Scales) reference.
+If you are looking for **color palettes**, see the [ordinal scales](Ordinal-Scales) reference.
 
 ## RGB
 
