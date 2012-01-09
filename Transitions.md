@@ -293,6 +293,10 @@ Object interpolation is particularly useful for *dataspace interpolation*, where
 
 Note: no defensive copy of the template object is created; modifications of the returned object may adversely affect subsequent evaluation of the interpolator. No copy is made because interpolators should be fast, as they are part of the inner loop of animation.
 
+<a name="d3_interpolateTransform" href="Transitions#wiki-d3_interpolateTransform">#</a> d3.<b>interpolateTransform</b>(<i>a</i>, <i>b</i>)
+
+Returns an interpolator between the two 2D affine [transforms](Math#wiki-transform) represented by *a* and *b*. Each transform is decomposed to a standard representation of translate, rotate, *x*-skew and scale; these component transformations are then interpolated. This behavior is standarded by CSS: see [matrix decomposition for animation](http://www.w3.org/TR/css3-2d-transforms/#matrix-decomposition).
+
 <a name="d3_interpolators" href="Transitions#wiki-d3_interpolators">#</a> d3.<b>interpolators</b>
 
 The array of built-in interpolator factories, as used by [d3.interpolate](Transitions#wiki-d3_interpolate). Additional interpolator factories may be pushed onto the end of this array. Each factory may return an interpolator, if it supports interpolating the two specified input values; otherwise, the factory should return a falsey value and other interpolators will be tried. The initial value of this array, in the order of evaluation, is:
