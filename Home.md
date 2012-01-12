@@ -179,7 +179,6 @@ Using D3? Post your examples here! More examples on the [D3 website](http://mbos
 * polar area diagram (nightingale)
 * gantt, other timelines and timing diagram
 * sankey diagram and parallel sets
-* adjacency matrix
 * candlestick or ohlc
 * fibonacci scale
 * data table
