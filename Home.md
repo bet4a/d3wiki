@@ -148,6 +148,7 @@
 * [Adventures in D3](https://github.com/enjalot/adventures_in_d3)
 * [Time Series](https://github.com/boorad/d3-tsline)
 * [Voronoi-based point picker](http://bl.ocks.org/1405439)
+* [Radar chart](http://www.larsko.org/v/euc/)
 
 #### Useful snippets
 
