@@ -272,9 +272,13 @@ Re-inserts elements into the document such that the document order matches the s
 
 ### Animation & Interaction
 
-<a name="on" href="Selections#wiki-on">#</a> selection.<b>on</b>(<i>type</i>, <i>listener</i>)
+<a name="on" href="Selections#wiki-on">#</a> selection.<b>on</b>(<i>type</i>[, <i>listener</i>])
 
-Adds or removes an event *listener* to each element in the current selection, for the specified *type*. The *type* is a string event type name, such as "click", "mouseover", or "submit". If an event listener was already registered for the same type on the selected element, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "click.foo" and "click.bar". The specified *listener* is invoked in the same manner as other operator functions, being passed the current datum `d` and index `i`, with the `this` context as the current DOM element. To access the current event, use the global [d3.event](Selections#wiki-d3_event).
+Adds or removes an event *listener* to each element in the current selection, for the specified *type*. The *type* is a string event type name, such as "click", "mouseover", or "submit".  The specified *listener* is invoked in the same manner as other operator functions, being passed the current datum `d` and index `i`, with the `this` context as the current DOM element. To access the current event, use the global [d3.event](Selections#wiki-d3_event).
+
+If an event listener was already registered for the same type on the selected element, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "click.foo" and "click.bar".
+
+If *listener* is not specified, returns the currently-assigned listener for the specified *type*, if any.
 
 <a name="d3_event" href="Selections#wiki-d3_event">#</a> d3.<b>event</b>
 
