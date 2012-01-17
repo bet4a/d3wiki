@@ -150,6 +150,7 @@
 * [Time Series](https://github.com/boorad/d3-tsline)
 * [Voronoi-based point picker](http://bl.ocks.org/1405439)
 * [Radar chart](http://www.larsko.org/v/euc/)
+* [Drag rectangle](http://bl.ocks.org/1629464)
 
 #### Useful snippets
 
