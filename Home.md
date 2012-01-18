@@ -71,6 +71,7 @@
 * [AFL Brownlow Medalists](http://www.vislives.com/2011/09/brownlow-medal-winners-visualization.html) and [David Foster Wallace's "Infinite Jest"](http://www.vislives.com/2011/12/infinite-jest-visualization.html) - Chris Pudney (VisLives!)
 * [Uber Rides by Neighborhood](http://bost.ocks.org/mike/uberdata/)
 * [Les Misérables Co-occurrence](http://bost.ocks.org/mike/miserables/)
+* [US Elections 2012 / Twitter](http://hotspots.io/election)
 
 ### Concepts & Techniques
 
