@@ -76,3 +76,37 @@ If *radius* is specified, sets the radius used to display Point and MultiPoint f
 <a name="bounds" href="Geo-Paths#wiki-bounds">#</a> d3.geo.<b>bounds</b>(<i>feature</i>)
 
 Given a GeoJSON *feature*, returns the corresponding bounding box. The bounding box is represented by a two-dimensional array: [​[*left*, *bottom*], [*right*, *top*]​], where *left* is the minimum longitude, *bottom* is the minimum latitude, *right* is maximum longitude, and *top* is the maximum latitude.
+
+<a name="greatArc" href="Geo-Paths#wiki-greatArc">#</a> d3.geo.<b>greatArc</b>()
+
+Constructs a new interpolator to approximate the shortest path between two geographic points, using a segment of a <a href="http://en.wikipedia.org/wiki/Great_circle">great circle</a>.
+
+<a name="greatArc_source" href="Geo-Paths#wiki-greatArc_source">#</a> greatArc.<b>source</b>([<i>source</i>])
+
+If *source* is specified, sets the *source*-accessor to the specified function or constant point, [*longitude*, *latitude*]. If *source* is not specified, returns the current *source*-accessor.  This accessor is invoked every time the interpolator is called.  The default is `function(d) { return d.source; }`.
+
+<a name="greatArc_target" href="Geo-Paths#wiki-greatArc_target">#</a> greatArc.<b>target</b>([<i>target</i>])
+
+If *target* is specified, sets the *target*-accessor to the specified function or constant point, [*longitude*, *latitude*]. If *source* is not specified, returns the current *target*-accessor.  This accessor is invoked every time the interpolator is called.  The default is `function(d) { return d.target; }`.
+
+<a name="greatArc_precision" href="Geo-Paths#wiki-greatArc_precision">#</a> greatArc.<b>precision</b>([<i>precision</i>])
+
+If *precision* is specified, sets the maximum segment length of the interpolated path in degrees. If *precision* is not specified, returns the current precision, which defaults to 6°.
+
+<a name="circle" href="Geo-Paths#wiki-circle">#</a> d3.geo.<b>circle</b>
+
+Represents a geographic circle with arbitrary radius and origin, which can be used to clip geographic features.  This is particularly useful for azimuthal projections.
+
+<a name="circle_origin" href="Geo-Paths#wiki-circle_origin">#</a> circle.<b>origin</b>([<i>origin</i>])
+
+If *origin* is specified, sets the circle origin.  A two-element coordinate array should be specified, or an accessor function.  If *origin* is not specified, returns the current origin, which defaults to `[0, 0]`.
+
+<a name="circle_angle" href="Geo-Paths#wiki-circle_angle">#</a> circle.<b>angle</b>([<i>angle</i>])
+
+If *angle* is specified, sets the angular radius of the circle in degrees.  If *angle* is not specified, returns the current radius, which defaults to 89.9°.
+
+<a name="circle_precision" href="Geo-Paths#wiki-circle_precision">#</a> circle.<b>precision</b>([<i>precision</i>])
+
+If *precision* is specified, sets the precision of the interpolated circle segments in degrees.  These interpolated segments are inserted when a feature is clipped by the circle.
+
+If *precision* is not specified, returns the current precision, which defaults to 6°.
