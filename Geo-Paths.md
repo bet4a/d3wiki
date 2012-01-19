@@ -81,6 +81,14 @@ Given a GeoJSON *feature*, returns the corresponding bounding box. The bounding 
 
 Constructs a new interpolator to approximate the shortest path between two geographic points, using a segment of a <a href="http://en.wikipedia.org/wiki/Great_circle">great circle</a>.
 
+<a name="_greatArc" href="Geo-Paths#wiki-_greatArc">#</a> <b>greatArc</b>([<i>…</i>])
+
+Returns a GeoJSON LineString approximating a great circle segment.  If source and target accessors are in use, they will retrieve the source and target points from the given arguments.  By default, they expect `{source: …, target: …}`.
+
+<a name="_greatArc" href="Geo-Paths#wiki-greatArc_distance">#</a> greatArc.<b>distance</b>([<i>…</i>])
+
+Returns the great circle distance along this great circle segment.  If source and target accessors are in use, they will retrieve the source and target points from the given arguments.  By default, they expect `{source: …, target: …}`.
+
 <a name="greatArc_source" href="Geo-Paths#wiki-greatArc_source">#</a> greatArc.<b>source</b>([<i>source</i>])
 
 If *source* is specified, sets the *source*-accessor to the specified function or constant point, [*longitude*, *latitude*]. If *source* is not specified, returns the current *source*-accessor.  This accessor is invoked every time the interpolator is called.  The default is `function(d) { return d.source; }`.
@@ -110,3 +118,7 @@ If *angle* is specified, sets the angular radius of the circle in degrees.  If *
 If *precision* is specified, sets the precision of the interpolated circle segments in degrees.  These interpolated segments are inserted when a feature is clipped by the circle.
 
 If *precision* is not specified, returns the current precision, which defaults to 6°.
+
+<a name="circle_clip" href="Geo-Paths#wiki-circle_clip">#</a> circle.<b>clip</b>(<i>feature</i>[, <i>index</i>])
+
+Clips a given GeoJSON *feature* or geometry object against this circle.
