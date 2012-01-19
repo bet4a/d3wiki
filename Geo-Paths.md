@@ -85,7 +85,7 @@ Constructs a new interpolator to approximate the shortest path between two geogr
 
 Returns a GeoJSON LineString approximating a great circle segment.  If source and target accessors are in use, they will retrieve the source and target points from the given arguments.  By default, they expect `{source: …, target: …}`.
 
-<a name="_greatArc" href="Geo-Paths#wiki-greatArc_distance">#</a> greatArc.<b>distance</b>([<i>…</i>])
+<a name="greatArc_distance" href="Geo-Paths#wiki-greatArc_distance">#</a> greatArc.<b>distance</b>([<i>…</i>])
 
 Returns the great circle distance along this great circle segment, in radians.  If source and target accessors are in use, they will retrieve the source and target points from the given arguments.  By default, they expect `{source: …, target: …}`.  To convert the angular distance to a linear one, simply multiply by the radius of the sphere, which is around *6,371km* on average for Earth.
 
@@ -101,7 +101,8 @@ If *target* is specified, sets the *target*-accessor to the specified function o
 
 If *precision* is specified, sets the maximum segment length of the interpolated path in degrees. If *precision* is not specified, returns the current precision, which defaults to 6°.
 
-<a name="circle" href="Geo-Paths#wiki-circle">#</a> d3.geo.<b>circle</b>
+<a name="circle" href="Geo-Paths#wiki-circle">#</a> d3.geo.<b>greatCircle</b><br>
+<a href="Geo-Paths#wiki-circle">#</a> d3.geo.<b>circle</b>
 
 Represents a geographic circle with arbitrary radius and origin, which can be used to clip geographic features.  This is particularly useful for azimuthal projections.
 
