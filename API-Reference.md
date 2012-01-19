@@ -478,6 +478,18 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[path.area|Geo-Paths#wiki-area]] - compute the projected area of a given feature.
 * [[path.centroid|Geo-Paths#wiki-centroid]] - compute the projected centroid of a given feature.
 * [[d3.geo.bounds|Geo-Paths#wiki-bounds]] - compute the latitude-longitude bounding box for a given feature.
+* [[d3.geo.greatArc|Geo-Paths#wiki-greatArc]] - approximate the shortest path between two points.
+* [[greatArc|Geo-Paths#wiki-_greatArc]] - generate a GeoJSON LineStream.
+* [[greatArc.distance|Geo-Paths#wiki-greatArc_distance]] - computes the great circle distance, in radians.
+* [[greatArc.source|Geo-Paths#wiki-greatArc_source]] - specify a source accessor.
+* [[greatArc.target|Geo-Paths#wiki-greatArc_target]] - specify a target accessor.
+* [[greatArc.precision|Geo-Paths#wiki-greatArc_precision]] - specify the precision of the piecewise arc.
+* [[d3.geo.greatCircle|Geo-Paths#wiki-circle]] - an alias for * [[d3.geo.circle|Geo-Paths#wiki-circle]].
+* [[d3.geo.circle|Geo-Paths#wiki-circle]] - clip features to a circle with arbitrary radius and origin.
+* [[circle.origin|Geo-Paths#wiki-circle_origin]] - specify the origin in latitude and longitude.
+* [[circle.angle|Geo-Paths#wiki-circle_angle]] - specify the angular radius in degrees.
+* [[circle.precision|Geo-Paths#wiki-circle_precision]] - specify the precision of the piecewise circle.
+* [[circle.clip|Geo-Paths#wiki-circle_clip]] - clip the given GeoJSON object.
 
 ### [[Projections|Geo-Projections]]
 
