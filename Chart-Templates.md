@@ -16,7 +16,7 @@ Recommendations for reusable chart templates for D3. There is an implementation 
 
 * Setting any attribute of the chart should cause it to redraw immediately. The user should not be required to call draw after changing any aspect of the chart, nor to distinguish between an initial draw and a subsequent redraw; drawing should happen automatically. In the event that multiple attributes of the chart are changed simultaneously, this may cause multiple redraws, but the performance implications are negligible. (Transitions can automatically coalesce multiple redraws by waiting for the first timer tick to start work.)
 
-* With automatic redraw, a way to specify a transition is needed. Perhaps calling transition(\[duration\]) on the chart would indicate that any subsequent changes will take place over an optional duration rather than happening immediately.
+* With automatic redraw, a way to specify a transition is needed. Perhaps calling transition([duration]) on the chart would indicate that any subsequent changes will take place over an optional duration rather than happening immediately.
 
 * For object constancy, the user needs to be able to specify a key function along with the data. This way, when the data changes, the chart can correctly transition entering, updating and exiting elements. This can default to null which means to join by index.
 
