@@ -73,6 +73,7 @@
 * [Uber Rides by Neighborhood](http://bost.ocks.org/mike/uberdata/)
 * [Les Misérables Co-occurrence](http://bost.ocks.org/mike/miserables/)
 * [US Elections 2012 / Twitter](http://hotspots.io/election)
+* [Major League Baseball Home Runs, 1995-2010](http://visual-baseball.com/d3/baseball/Drillable_Bar_Charts/HR.html) - Ken Cherven
 
 ### Concepts & Techniques
 
