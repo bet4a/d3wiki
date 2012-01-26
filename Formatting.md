@@ -34,6 +34,7 @@ The *comma* (",") option enables the use of a comma for a thousands separator. T
 * rounded ("r") - like fixed, but round to *precision* significant digits.
 * percentage ("%") - like fixed, but multiply by 100 and suffix with "%".
 * rounded percentage ("p") - like rounded, but multiply by 100 and suffix with "%".
+* SI-prefix ("s") - like rounded, but with a unit suffixed such as "9.5M" or "1.00µ".
 
 The type "n" is also supported as shorthand for ",g". The *precision* indicates how many digits should be displayed after the decimal point for a value formatted with types "f" and "%", or before and after the decimal point for a value formatted with types "g", "r" and "p".
 
