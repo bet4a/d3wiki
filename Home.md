@@ -20,6 +20,7 @@
 * [Simple D3.js Bar Chart Webcast](http://enja.org/2011/09/15/simple-d3-js-pie-chart-webcast/)
 * [On the tenth day of Xmas, get dirty with data using d3.js](http://www.12devsofxmas.co.uk/2012/01/data-visualisation/)
 * [Path and Transform Transitions](http://bost.ocks.org/mike/path/)
+* [Knowledge Stockpile on D3](http://knowledgestockpile.blogspot.com/search/label/D3)
 
 ## Publications
 
