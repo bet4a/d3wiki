@@ -74,7 +74,7 @@ Transitions the value of the CSS style property with the specified *name* to the
 
 An interpolator is selected automatically based on the ending value. If the ending value is a number, the starting value is coerced to a number and [interpolateNumber](Transitions#wiki-d3_interpolateNumber) is used. If the ending value is a string, a check is performed to see if the string represents a color of the form `/^(#|rgb\(|hsl\()/`, or one of the [[CSS named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]]; if so, the starting value is coerced to an RGB color and [interpolateRgb](Transitions#wiki-d3_interpolateRgb) is used. Otherwise, [interpolateString](Transitions#wiki-d3_interpolateString) is used, which interpolates numbers embedded within strings.
 
-Note that the computed starting value may be different than the value that was previously set, particularly if the style property was set using a shorthand property (such as the "font" style, which is shorthand for "font-size", "font-face", etc.).
+Note that the computed starting value may be different than the value that was previously set, particularly if the style property was set using a shorthand property (such as the "font" style, which is shorthand for "font-size", "font-face", etc.).  Moreover, computed dimensions such as "font-size" and "line-height" are always in pixels, so you should specify the ending value in pixels too if appropriate.
 
 <a name="styleTween" href="Transitions#wiki-styleTween">#</a> transition.<b>styleTween</b>(<i>name</i>, <i>tween</i>[, <i>priority</i>])
 
