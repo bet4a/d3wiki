@@ -21,6 +21,7 @@
 * [On the tenth day of Xmas, get dirty with data using d3.js](http://www.12devsofxmas.co.uk/2012/01/data-visualisation/)
 * [Path and Transform Transitions](http://bost.ocks.org/mike/path/)
 * [Knowledge Stockpile on D3](http://knowledgestockpile.blogspot.com/search/label/D3)
+* [Scott Murray's D3 Tutorials](http://alignedleft.com/tutorials/d3/)
 
 ## Publications
 
