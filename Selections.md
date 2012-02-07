@@ -1,6 +1,6 @@
 > [[API Reference]] ▸ [[Core]]
 
-A **selection** is an array of elements pulled from the current document. D3 uses [[CSS3|http://www.w3.org/TR/css3-selectors/]] to select elements. For example, you can select by tag ("div"), class (".awesome"), unique identifier ("#foo"), attribute ("[color=red]"), or containment ("parent child"). Selectors can also be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR). If your browser doesn't support selectors natively, you can include [[Sizzle|http://sizzlejs.com/]] before D3 for backwards-compatibility.
+A **selection** is an array of elements pulled from the current document. D3 uses [[CSS3|http://www.w3.org/TR/css3-selectors/]] to select elements. For example, you can select by tag (`div`), class (`.awesome`), unique identifier (`#foo`), attribute (`[color=red]`), or containment (`parent child`). Selectors can also be intersected (".this.that" for logical AND) or unioned (`.this, .that` for logical OR). If your browser doesn't support selectors natively, you can include [[Sizzle|http://sizzlejs.com/]] before D3 for backwards-compatibility.
 
 After selecting elements, you apply **operators** to them to do stuff. These operators can get or set [attributes](Selections#wiki-attr), [styles](Selections#wiki-style), [properties](Selections#wiki-property), [HTML](Selections#wiki-html) and [text](Selections#wiki-text) content. Attribute values and such are specified as either constants or functions; the latter are evaluated for each element. You can also join selections to [data](Selections#wiki-data); this data is available to operators for data-driven transformations. In addition, joining to data produces [enter](Selections#wiki-enter) and [exit](Selections#wiki-enter) subselections, so that you may [add](Selections#wiki-append) or [remove](Selections#wiki-remove) elements in response to changes in data.
 
@@ -24,7 +24,7 @@ Selects all elements that match the specified selector. The elements will be sel
 
 <a href="Selections#wiki-d3_selectAll">#</a> d3.<b>selectAll</b>(<i>nodes</i>)
 
-Selects the specified array of elements. This is useful if you already have a reference to nodes, such as `d3.select(this.childNodes)` within an event listener, or a global such as `document.links`. The *nodes* argument doesn't have to be an array exactly; any pseudo-array that can be coerced into an array will work, such as a `NodeList` or an `arguments`.
+Selects the specified array of elements. This is useful if you already have a reference to nodes, such as `d3.select(this.childNodes)` within an event listener, or a global such as `document.links`. The *nodes* argument doesn't have to be an array, exactly; any pseudo-array that can be coerced into an array (eg, a `NodeList` or an `arguments`) will work.
 
 ## Operating on Selections
 
@@ -40,9 +40,9 @@ D3 has a variety of operators which affect the document content. These are what 
 
 If *value* is specified, sets the attribute with the specified name to the specified value on all selected elements. If *value* is a constant, then all elements are given the same attribute value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's attribute. A null value will remove the specified attribute.
 
-If *value* is not specified, returns the value of the specified attribute for the first non-null element in the selection. This is generally useful only if you know the element contains exactly one element.
+If *value* is not specified, returns the value of the specified attribute for the first non-null element in the selection. This is generally useful only if you know that the element contains exactly one element.
 
-The specified *name* may have a namespace prefix, such as "xlink:href" to specify an "href" attribute in the XLink namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to d3.ns.**prefix**.
+The specified *name* may have a namespace prefix, such as `xlink:href`, to specify an "href" attribute in the XLink namespace. By default, D3 supports svg, xhtml, xlink, xml, and xmlns namespaces. Additional namespaces can be registered by adding to d3.ns.**prefix**.
 
 <a name="classed" href="Selections#wiki-classed">#</a> selection.<b>classed</b>(<i>name</i>[, <i>value</i>])
 
