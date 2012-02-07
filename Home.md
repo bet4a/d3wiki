@@ -23,6 +23,7 @@
 * [Path and Transform Transitions](http://bost.ocks.org/mike/path/)
 * [Knowledge Stockpile on D3](http://knowledgestockpile.blogspot.com/search/label/D3)
 * [Scott Murray's D3 Tutorials](http://alignedleft.com/tutorials/d3/)
+* [How to Make Choropleth Maps in D3](http://blog.visual.ly/how-to-make-choropleth-maps-in-d3/)
 
 ## Publications
 
