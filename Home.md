@@ -107,7 +107,6 @@
 * [Horizon Chart](http://bl.ocks.org/1483226)
 * [Gauge](http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html)
 * [Line Chart with tooltips](http://bl.ocks.org/1629644)
-* [Various animated scatterplot](http://523informationdesign.blogspot.com/2011/10/some-fun-animated-scatterplot-diagrams.html)
 
 #### Trees and Graphs
 
