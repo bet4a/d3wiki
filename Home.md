@@ -34,6 +34,7 @@
 ## Support
 
 * [[d3-js Google Group|http://groups.google.com/group/d3-js]]
+* [[d3.js on Stack Overflow|http://stackoverflow.com/questions/tagged/d3.js]]
 * [[@mbostock Twitter|http://twitter.com/mbostock]]
 * [[@mbostock GitHub|https://github.com/inbox/new/mbostock]]
 
