@@ -25,6 +25,7 @@
 * [Scott Murray's D3 Tutorials](http://alignedleft.com/tutorials/d3/)
 * [How to Make Choropleth Maps in D3](http://blog.visual.ly/how-to-make-choropleth-maps-in-d3/)
 * [Mixing Clojure into D3](http://keminglabs.com/d3.clj/)
+* [Converting dynamic SVG to PNG with node.js, d3 and Imagemagick](http://eng.wealthfront.com/2011/12/converting-dynamic-svg-to-png-with.html)
 
 ## Publications
 
