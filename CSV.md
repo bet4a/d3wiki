@@ -23,7 +23,7 @@ The resulting JavaScript array is:
 ]
 ```
 
-Note that the values themselves are always strings; they will not be automatically converted to numbers. JavaScript may coerce strings to numbers for your automatically (for example, using the + operator). Alternatively, you can convert the strings to numbers by iterating over the returned objects:
+Note that the values themselves are always strings; they will not be automatically converted to numbers. JavaScript may coerce strings to numbers for you automatically (for example, using the + operator). Alternatively, you can convert the strings to numbers by iterating over the returned objects:
 
 ```javascript
 rows.forEach(function(o) {
