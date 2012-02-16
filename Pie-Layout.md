@@ -8,7 +8,7 @@ You don't *need* to use the pie layout to create a pie chart; you can just use t
 
 <a name="pie" href="Pie-Layout#wiki-pie">#</a> d3.layout.<b>pie</b>()
 
-Constructs a new pie function with the default value accessor (number), sort comparator (null), start angle (0) and end angle (2π). The returned layout object is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior. Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
+Constructs a new pie function with the default value accessor (number), sort comparator (descending value), start angle (0) and end angle (2π). The returned layout object is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior. Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
 
 <a name="_pie" href="Pie-Layout#wiki-_pie">#</a> <b>pie</b>(<i>values</i>[, <i>index</i>])
 
@@ -27,7 +27,7 @@ Specifies how to extract a value from the associated data; *accessor* is a funct
 
 <a name="sort" href="Pie-Layout#wiki-sort">#</a> pie.<b>sort</b>([<i>comparator</i>])
 
-If *comparator* is specified, sets the sort order of data for the layout using the specified comparator function.  If *comparator* is not specified, returns the current sort order. The sort order defaults to descending value. Sorting preserves the index (and z-index) of input values, affecting only the computed angles. The comparator function is invoked for pairs of data elements from the *values* array passed to [pie](Pie-Layout#wiki-_pie). Comparator functions may also be implemented using [d3.ascending](Arrays#wiki-d3_ascending) or [d3.descending](Arrays#wiki-d3_descending).
+If *comparator* is specified, sets the sort order of data for the layout using the specified comparator function. Pass `null` to disable sorting. If *comparator* is not specified, returns the current sort order. The sort order defaults to descending value. Sorting preserves the index (and z-index) of input values, affecting only the computed angles. The comparator function is invoked for pairs of data elements from the *values* array passed to [pie](Pie-Layout#wiki-_pie). Comparator functions may also be implemented using [d3.ascending](Arrays#wiki-d3_ascending) or [d3.descending](Arrays#wiki-d3_descending).
 
 <a name="startAngle" href="Pie-Layout#wiki-startAngle">#</a> pie.<b>startAngle</b>([<i>angle</i>])
 
