@@ -19,6 +19,7 @@
 * [[Scale Graph|http://www.ivanteoh.com/blog/2011/07/d3-tutorial-scale-graph/]]
 * [[Using Inkscape with d3|http://christopheviau.com/d3_tutorial/d3_inkscape/]]
 * [Simple D3.js Bar Chart Webcast](http://enja.org/2011/09/15/simple-d3-js-pie-chart-webcast/)
+* [Pie Chart Updating with Text](http://blog.stephenboak.com/2011/08/07/easy-as-a-pie.html)
 * [On the tenth day of Xmas, get dirty with data using d3.js](http://www.12devsofxmas.co.uk/2012/01/data-visualisation/)
 * [Path and Transform Transitions](http://bost.ocks.org/mike/path/)
 * [Knowledge Stockpile on D3](http://knowledgestockpile.blogspot.com/search/label/D3)
