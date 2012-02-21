@@ -30,7 +30,7 @@
 ## Video Tutorials
 * [Simple D3.js Bar Chart Webcast](http://enja.org/2011/09/15/simple-d3-js-pie-chart-webcast/) by Ian Johnson.
 * [Using Selections in D3 to Make Data-Driven Visualizations](http://blog.visual.ly/using-selections-in-d3-to-make-data-driven-visualizations/) by Ian Johnson.
-* [Visual.ly Meetup Recap: Introductory D3 Workshop](http://blog.visual.ly/visual-ly-meetup-recap-introductory-d3-workshop/) <br> by Aleksandra Todorova, Visual.ly February 16 2011.
+* [Visual.ly Meetup Recap: Introductory D3 Workshop](http://blog.visual.ly/visual-ly-meetup-recap-introductory-d3-workshop/) by Aleksandra Todorova, Visual.ly February 16 2011.
 
 ## Publications
 
