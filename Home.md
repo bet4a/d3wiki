@@ -169,6 +169,7 @@
 * [Radar chart](http://www.larsko.org/v/euc/)
 * [Drag rectangle](http://bl.ocks.org/1629464)
 * [Elastic collisions](http://bl.ocks.org/1706523)(http://bl.ocks.org/1706849)
+* [[Creating an Animated Bubble Chart|http://vallandingham.me/bubble_charts_in_d3.html]]
 
 #### Useful snippets
 
