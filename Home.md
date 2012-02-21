@@ -18,7 +18,6 @@
 * [[Try D3 Now|http://christopheviau.com/d3_tutorial/]]
 * [[Scale Graph|http://www.ivanteoh.com/blog/2011/07/d3-tutorial-scale-graph/]]
 * [[Using Inkscape with d3|http://christopheviau.com/d3_tutorial/d3_inkscape/]]
-* [Simple D3.js Bar Chart Webcast](http://enja.org/2011/09/15/simple-d3-js-pie-chart-webcast/)
 * [Pie Chart Updating with Text](http://blog.stephenboak.com/2011/08/07/easy-as-a-pie.html)
 * [On the tenth day of Xmas, get dirty with data using d3.js](http://www.12devsofxmas.co.uk/2012/01/data-visualisation/)
 * [Path and Transform Transitions](http://bost.ocks.org/mike/path/)
@@ -27,6 +26,11 @@
 * [How to Make Choropleth Maps in D3](http://blog.visual.ly/how-to-make-choropleth-maps-in-d3/)
 * [Mixing Clojure into D3](http://keminglabs.com/d3.clj/)
 * [Converting dynamic SVG to PNG with node.js, d3 and Imagemagick](http://eng.wealthfront.com/2011/12/converting-dynamic-svg-to-png-with.html)
+
+## Video Tutorials
+* [Simple D3.js Bar Chart Webcast](http://enja.org/2011/09/15/simple-d3-js-pie-chart-webcast/) by Ian Johnson.
+* [Using Selections in D3 to Make Data-Driven Visualizations](http://blog.visual.ly/using-selections-in-d3-to-make-data-driven-visualizations/) by Ian Johnson.
+* [Visual.ly Meetup Recap: Introductory D3 Workshop](http://blog.visual.ly/visual-ly-meetup-recap-introductory-d3-workshop/) <br> by Aleksandra Todorova, Visual.ly February 16 2011.
 
 ## Publications
 
