@@ -26,6 +26,7 @@
 * [How to Make Choropleth Maps in D3](http://blog.visual.ly/how-to-make-choropleth-maps-in-d3/)
 * [Mixing Clojure into D3](http://keminglabs.com/d3.clj/)
 * [Converting dynamic SVG to PNG with node.js, d3 and Imagemagick](http://eng.wealthfront.com/2011/12/converting-dynamic-svg-to-png-with.html)
+* [Creating Animated Bubble Charts in D3](http://vallandingham.me/bubble_charts_in_d3.html)
 
 ## Video Tutorials
 * [Simple D3.js Bar Chart Webcast](http://enja.org/2011/09/15/simple-d3-js-pie-chart-webcast/) by Ian Johnson.
@@ -169,7 +170,6 @@
 * [Radar chart](http://www.larsko.org/v/euc/)
 * [Drag rectangle](http://bl.ocks.org/1629464)
 * [Elastic collisions](http://bl.ocks.org/1706523)(http://bl.ocks.org/1706849)
-* [[Creating an Animated Bubble Chart|http://vallandingham.me/bubble_charts_in_d3.html]]
 
 #### Useful snippets
 
