@@ -44,6 +44,11 @@ Returns the band width. This method is used in conjunction with rangeBands or ra
 
 Returns a two-element array representing the extent of the scale's range i.e. the smallest and largest values.
 
+<a name="ordinal_copy" href="#wiki-ordinal_copy">#</a> ordinal.<b>copy</b>()
+
+…
+
+
 ## Categorical Colors
 
 <a name="category10" href="Ordinal-Scales#wiki-category10">#</a> d3.scale.<b>category10</b>()
