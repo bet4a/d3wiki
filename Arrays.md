@@ -107,6 +107,48 @@ Returns an array containing the property values of the specified object (an asso
 
 Returns an array containing the property keys and values of the specified object (an associative array). Each entry is an object with a key and value attribute, such as {key: "foo", value: 42}. The order of the returned array is undefined.
 
+### Maps
+
+While it is tempting to use bare objects as maps in JavaScript, this can lead to unexpected behavior when built-in property names are used as keys. For example, if you try to set `object["__proto__"] = 42`, it probably won't do what you expect. The same is true if you attempt to query whether a given key is defined in the map; `"hasOwnProperty" in object` returns true because your bare object inherits the hasOwnProperty method from the Object prototype. To avoid these problems, ES6 proposes [simple maps and sets](http://wiki.ecmascript.org/doku.php?id=harmony:simple_maps_and_sets); until modern browsers support these collections, you can use d3.map instead.
+
+Note: unlike the proposed ES6 map, d3.map still uses string-coercion for keys rather than strict equality.
+
+<a name="d3_map" href="#wiki-d3_map">#</a> d3.<b>map</b>([<i>object</i>])
+
+Constructs a new map. If *object* is specified, copies all enumerable properties from the *object* into this map.
+
+<a name="map_has" href="#wiki-map_has">#</a> map.<b>has</b>(<i>key</i>)
+
+Returns true if and only if this map has an entry for the specified *key*. Note: the value may be null or undefined.
+
+<a name="map_get" href="#wiki-map_get">#</a> map.<b>get</b>(<i>key</i>)
+
+Returns the value for the specified *key*. If the map does not have an entry for the specified *key*, returns undefined.
+
+<a name="map_set" href="#wiki-map_set">#</a> map.<b>set</b>(<i>key</i>, <i>value</i>)
+
+Sets the *value* for the specified *key*; returns the new *value*. If the map previously had an entry for the same *key*, the old entry is replaced with the new value.
+
+<a name="map_remove" href="#wiki-map_remove">#</a> map.<b>remove</b>(<i>key</i>)
+
+If the map has an entry for the specified *key*, removes the entry and returns true. Otherwise, this method does nothing and returns false.
+
+<a name="map_keys" href="#wiki-map_keys">#</a> map.<b>keys</b>()
+
+Returns an array of string keys for every entry in this map. The order of the returned keys is arbitrary.
+
+<a name="map_values" href="#wiki-map_values">#</a> map.<b>values</b>()
+
+Returns an array of values for every entry in this map. The order of the returned values is arbitrary.
+
+<a name="map_entries" href="#wiki-map_entries">#</a> map.<b>entries</b>()
+
+Returns an array of key-value objects for each entry in this map. The order of the returned entries is arbitrary.
+
+<a name="map_forEach" href="#wiki-map_forEach">#</a> map.<b>forEach</b>(<i>function</i>)
+
+Calls the specified *function* for each entry in this map, passing the entry's key and value as two arguments. The `this` context of the *function* is this map. Returns undefined. The iteration order is arbitrary.
+
 ## Array Operators
 
 <a name="d3_split" href="Arrays#wiki-d3_split">#</a> d3.<b>split</b>(<i>array</i>[, <i>function</i>])
