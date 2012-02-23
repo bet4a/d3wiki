@@ -22,7 +22,7 @@ Returns the [dx, dy] translation of this transform, as a two-element array in lo
 
 <a name="transform_skew" href="#wiki-transform_skew">#</a> transform.<b>skew</b>
 
-Returns the *x*-skew φ of this transform.
+Returns the *x*-skew φ of this transform, in degrees.
 
 <a name="transform_scale" href="#wiki-transform_scale">#</a> transform.<b>scale</b>
 
