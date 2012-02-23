@@ -32,6 +32,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[selection.node|Selections#wiki-node]] - access the first node in a selection.
 * [[selection.select|Selections#wiki-select]] - subselect a descendant element for each selected element.
 * [[selection.selectAll|Selections#wiki-selectAll]] - subselect multiple descendants for each selected element.
+* [[d3.selection|Selections#wiki-d3_selection]] - with `instanceof`, check if something is a selection.
+* [[d3.selection.prototype|Selections#wiki-d3_selection_prototype]] - extend the selection prototype.
 * [[d3.event|Selections#wiki-d3_event]] - access the current user event for interaction.
 
 ### [[Transitions]]
@@ -76,6 +78,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.max|Arrays#wiki-d3_max]] - find the maximum value in an array.
 * [[d3.extent|Arrays#wiki-d3_extent]] - find the minimum and maximum value in an array.
 * [[d3.sum|Arrays#wiki-d3_sum]] - compute the sum of an array of numbers.
+* [[d3.mean|Arrays#wiki-d3_mean]] - compute the arithmetic mean of an array of numbers.
+* [[d3.median|Arrays#wiki-d3_median]] - compute the median of an array of numbers (the 0.5-quantile).
 * [[d3.quantile|Arrays#wiki-d3_quantile]] - compute a quantile for a sorted array of numbers.
 * [[d3.bisect|Arrays#wiki-d3_bisect]] - search for a value in a sorted array.
 * [[d3.bisectRight|Arrays#wiki-d3_bisectRight]] - search for a value in a sorted array.
@@ -83,7 +87,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.first|Arrays#wiki-d3_first]] - find the lowest element in an array.
 * [[d3.last|Arrays#wiki-d3_last]] - find the highest element in an array.
 * [[d3.permute|Arrays#wiki-d3_permute]] - reorder an array of elements according to an array of indexes.
-* [[d3.zip|Arrays#wiki-d3_zip]] - transpose an array of arrays.
+* [[d3.zip|Arrays#wiki-d3_zip]] - transpose a variable number of arrays.
+* [[d3.transpose|Arrays#wiki-d3_transpose]] - transpose an array of arrays.
 * [[d3.keys|Arrays#wiki-d3_keys]] - list the keys of an associative array.
 * [[d3.values|Arrays#wiki-d3_values]] - list the values of an associated array.
 * [[d3.entries|Arrays#wiki-d3_entries]] - list the key-value entries of an associative array.
