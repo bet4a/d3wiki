@@ -17,11 +17,11 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[selection.append|Selections#wiki-append]] - create and append new elements.
 * [[selection.insert|Selections#wiki-insert]] - create and insert new elements before existing elements.
 * [[selection.remove|Selections#wiki-remove]] - remove elements from the document.
-* [[selection.data|Selections#wiki-data]] - bind data to elements, and compute a relational join.
+* [[selection.data|Selections#wiki-data]] - get or set bound data to elements, and compute a relational join.
 * [[selection.enter|Selections#wiki-enter]] - returns placeholders for missing elements.
 * [[selection.exit|Selections#wiki-exit]] - returns elements that are no longer needed.
+* [[selection.datum|Selections#wiki-datum]] - get or set bound data, without computing a join.
 * [[selection.filter|Selections#wiki-filter]] - filter a selection based on data.
-* [[selection.map|Selections#wiki-map]] - modify the data associated with the selected elements.
 * [[selection.sort|Selections#wiki-sort]] - sort elements in the document based on data.
 * [[selection.order|Selections#wiki-order]] - reorders elements in the document to match the selection.
 * [[selection.on|Selections#wiki-on]] - add or remove event listeners for interaction.
