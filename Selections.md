@@ -371,3 +371,17 @@ Returns true if the current selection is empty; a selection is empty if it conta
 <a name="node" href="Selections#wiki-node">#</a> selection.<b>node</b>()
 
 Returns the first non-null element in the current selection. If the selection is empty, returns null.
+
+### Extension
+
+<a name="d3_selection" href="#wiki-d3_selection">#</a> d3.<b>selection</b>()
+
+Returns the root selection, equivalent to `d3.select(document.documentElement)`. This function can also be used to check if an object is a selection: `o instanceof d3.selection`. You can also add new methods to the selection prototype. For example, to add a convenience method for setting the "checked" property of checkboxes, you might say:
+
+```js
+d3.selection.prototype.checked = function(value) {
+  return arguments.length < 1
+      ? this.property("checked")
+      : this.property("checked", value);
+};
+```
