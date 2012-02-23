@@ -138,6 +138,8 @@ If a key function is specified, the `data` operator also affects the index of no
 
 If *values* is not specified, then this method returns the array of data for the first group in the selection. The length of the returned array will match the length of the first group, and the index of each datum in the returned array will match the corresponding index in the selection. If some of the elements in the selection are null, or if they have no associated data, then the corresponding element in the array will be undefined.
 
+The `data` method cannot be used to clear previously-bound data; use [selection.datum(null)](#wiki-datum) instead.
+
 <a name="enter" href="Selections#wiki-enter">#</a> selection.<b>enter()</b>
 
 Returns the entering selection: placeholder nodes for each data element for which no corresponding existing DOM element was found in the current selection. This method is only defined on a selection returned by the [data](Selections#wiki-data) operator. In addition, the entering selection only defines [append](Selections#wiki-append) and [insert](Selections#wiki-insert) operators; you must use these operators to instantiate the entering nodes before modifying any content. Note that the *enter* operator merely returns a reference to the entering selection, and it is up to you to add the new nodes.
