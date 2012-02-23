@@ -64,6 +64,39 @@ Returns approximately *count* representative values from the scale's input domai
 
 Returns a [[number format|Formatting#wiki-d3_format]] function suitable for displaying a tick value. The specified *count* should have the same value as the count that is used to generate the tick values. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate precision based on the fixed interval between tick values.
 
+### Identity Scales
+
+Identity scales are a special case of linear scales where the domain and range are identical; the scale and its invert method are both the identity function. These scales are occasionally useful when working with pixel coordinates, say in conjunction with the [axis](SVG-Axes) and [brush](SVG-Controls#brush) components.
+
+<a name="identity" href="#wiki-identity">#</a> d3.scale.<b>identity</b>()
+
+…
+
+<a name="_identity" href="#wiki-_identity">#</a> <b>identity</b>(<i>x</i>)
+
+…
+
+<a name="identity_invert" href="#wiki-identity_invert">#</a> identity.<b>invert</b>(<i>x</i>)
+
+…
+
+<a name="identity_domain" href="#wiki-identity_domain">#</a> identity.<b>domain</b>(<i>x</i>)<br>
+<a href="#wiki-identity_domain">#</a> identity.<b>range</b>(<i>x</i>)
+
+…
+
+<a name="identity_ticks" href="#wiki-identity_ticks">#</a> identity.<b>ticks</b>(<i>m</i>)
+
+…
+
+<a name="identity_tickFormat" href="#wiki-identity_tickFormat">#</a> identity.<b>tickFormat</b>(<i>m</i>)
+
+…
+
+<a name="identity_copy" href="#wiki-identity_copy">#</a> identity.<b>copy</b>()
+
+…
+
 ## Power Scales
 
 Power scales are similar to linear scales, except there's an exponential transform that is applied to the input domain value before the output range value is computed. The mapping to the output range value *y* can be expressed as a function of the input domain value *x*: *y* = *mx^k* + *b*, where *k* is the exponent value. Power scales also support negative values, in which case the input value is multiplied by -1, and the resulting output value is also multiplied by -1.
