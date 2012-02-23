@@ -66,7 +66,7 @@ Returns a [[number format|Formatting#wiki-d3_format]] function suitable for disp
 
 <a name="linear_copy" href="#wiki-linear_copy">#</a> linear.<b>copy</b>()
 
-…
+Returns an exact copy of this linear scale. Changes to this scale will not affect the returned scale, and vice versa.
 
 ### Identity Scales
 
@@ -74,32 +74,29 @@ Identity scales are a special case of linear scales where the domain and range a
 
 <a name="identity" href="#wiki-identity">#</a> d3.scale.<b>identity</b>()
 
-…
+Constructs a new identity scale with the default domain [0, 1] and the default range [0, 1]. An identity scale is always equivalent to the identity function.
 
-<a name="_identity" href="#wiki-_identity">#</a> <b>identity</b>(<i>x</i>)
+<a name="_identity" href="#wiki-_identity">#</a> <b>identity</b>(<i>x</i>)<br>
+<a href="#wiki-_identity">#</a> identity.<b>invert</b>(<i>x</i>)
 
-…
+Returns the given value *x*.
 
-<a name="identity_invert" href="#wiki-identity_invert">#</a> identity.<b>invert</b>(<i>x</i>)
+<a name="identity_domain" href="#wiki-identity_domain">#</a> identity.<b>domain</b>([<i>numbers</i>])<br>
+<a href="#wiki-identity_domain">#</a> identity.<b>range</b>([<i>numbers</i>])
 
-…
+If *numbers* is specified, sets the scale's input domain and output range to the specified array of numbers. The array must contain two or more numbers. If the elements in the given array are not numbers, they will be coerced to numbers; this coercion happens similarly when the scale is called. If numbers is not specified, returns the scale's current input domain (or equivalently, output range).
 
-<a name="identity_domain" href="#wiki-identity_domain">#</a> identity.<b>domain</b>(<i>x</i>)<br>
-<a href="#wiki-identity_domain">#</a> identity.<b>range</b>(<i>x</i>)
+<a name="identity_ticks" href="#wiki-identity_ticks">#</a> identity.<b>ticks</b>(<i>count</i>)
 
-…
+Returns approximately *count* representative values from the scale's input domain (or equivalently, output range). The returned tick values are uniformly spaced, have human-readable values (such as multiples of powers of 10), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain.
 
-<a name="identity_ticks" href="#wiki-identity_ticks">#</a> identity.<b>ticks</b>(<i>m</i>)
+<a name="identity_tickFormat" href="#wiki-identity_tickFormat">#</a> identity.<b>tickFormat</b>(<i>count</i>)
 
-…
-
-<a name="identity_tickFormat" href="#wiki-identity_tickFormat">#</a> identity.<b>tickFormat</b>(<i>m</i>)
-
-…
+Returns a [number format](Formatting#wiki-d3_format) function suitable for displaying a tick value. The specified *count* should have the same value as the count that is used to generate the tick values. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate precision based on the fixed interval between tick values.
 
 <a name="identity_copy" href="#wiki-identity_copy">#</a> identity.<b>copy</b>()
 
-…
+Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
 
 ## Power Scales
 
@@ -169,7 +166,7 @@ Returns a [[number format|Formatting#wiki-d3_format]] function suitable for disp
 
 <a name="pow_copy" href="#wiki-pow_copy">#</a> pow.<b>copy</b>()
 
-…
+Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
 
 ## Log Scales
 
@@ -232,7 +229,7 @@ scale.ticks(20, formatCurrency);
 
 <a name="log_copy" href="#wiki-log_copy">#</a> log.<b>copy</b>()
 
-…
+Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
 
 ## Quantize Scales
 
@@ -256,7 +253,7 @@ If *values* is specified, sets the scale's output range to the specified array o
 
 <a name="quantize_copy" href="#wiki-quantize_copy">#</a> quantize.<b>copy</b>()
 
-…
+Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
 
 ## Quantile Scales
 
@@ -284,4 +281,4 @@ Returns the quantile thresholds. If the output range contains *n* discrete value
 
 <a name="quantile_copy" href="#wiki-quantile_copy">#</a> quantile.<b>copy</b>()
 
-…
+Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
