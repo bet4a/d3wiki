@@ -100,11 +100,11 @@ Removes the elements in the current selection from the current document. General
 
 ### Data
 
-<a name="data" href="Selections#wiki-data">#</a> selection.<b>data</b>(<i>data</i>[, <i>key</i>])
+<a name="data" href="Selections#wiki-data">#</a> selection.<b>data</b>([<i>values</i>[, <i>key</i>]])
 
-Joins the specified array of data with the current selection. The specified *data* is an array of data values, such as an array of numbers or objects, or a function that returns an array of values. If a *key* function is not specified, then the first datum in the specified array is assigned to the first element in the current selection, the second datum to the second selected element, and so on. When data is assigned to an element, it is stored in the property `__data__`, thus making the data "sticky" so that the data is available on re-selection.
+Joins the specified array of data with the current selection. The specified *values* is an array of data values, such as an array of numbers or objects, or a function that returns an array of values. If a *key* function is not specified, then the first datum in the specified array is assigned to the first element in the current selection, the second datum to the second selected element, and so on. When data is assigned to an element, it is stored in the property `__data__`, thus making the data "sticky" so that the data is available on re-selection.
 
-The *data* array specifies the data **for each group** in the selection. Thus, if the selection has multiple groups (such as a [d3.selectAll](#wiki-d3_selectAll) followed by a [selection.selectAll](#wiki-selectAll)), then *data* should be specified as a function that returns an array (assuming that you want different data for each group). For example, you may bind a two-dimensional array to an initial selection, and then bind the contained inner arrays to each subselection. The *data* function in this case is the identity function: it is invoked for each group of child elements, being passed the data bound to the parent element, and returns this array of data.
+The *values* array specifies the data **for each group** in the selection. Thus, if the selection has multiple groups (such as a [d3.selectAll](#wiki-d3_selectAll) followed by a [selection.selectAll](#wiki-selectAll)), then *data* should be specified as a function that returns an array (assuming that you want different data for each group). For example, you may bind a two-dimensional array to an initial selection, and then bind the contained inner arrays to each subselection. The *values* function in this case is the identity function: it is invoked for each group of child elements, being passed the data bound to the parent element, and returns this array of data.
 
 ```javascript
 var matrix = [
@@ -135,6 +135,8 @@ For a more detailed example of how the key function affects the data join, see t
 The result of the `data` operator is the *update* selection; this represents the selected DOM elements that were successfully bound to the specified data elements. The *update* selection also contains a reference to the [enter](Selections#wiki-enter) and [exit](Selections#wiki-exit) selections, for adding and removing nodes in correspondence with data. For example, if the default by-index key is used, and the existing selection contains fewer elements than the specified data, then the *enter* selection will contain placeholders for the new data. On the other hand, if the existing contains more elements than the data, then the *exit* selection will contain the extra elements. And, if the existing selection exactly matches the data, then both the enter and exit selections will be empty, with all nodes in the update selection. For more details, see the short tutorial [Thinking With Joins](http://bost.ocks.org/mike/join/).
 
 If a key function is specified, the `data` operator also affects the index of nodes; this index is passed as the second argument `i` to any operator function values. However, note that existing DOM elements are not automatically reordered; use the [sort](Selections#wiki-sort) operator as needed.
+
+If *values* is not specified, then this method returns the array of data for the first group in the selection. The length of the returned array will match the length of the first group, and the index of each datum in the returned array will match the corresponding index in the selection. If some of the elements in the selection are null, or if they have no associated data, then the corresponding element in the array will be undefined.
 
 <a name="enter" href="Selections#wiki-enter">#</a> selection.<b>enter()</b>
 
