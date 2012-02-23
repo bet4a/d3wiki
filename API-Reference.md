@@ -210,7 +210,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.scale.identity|Quantitative-Scales#wiki-identity]] - construct a linear identity scale.
 * [[identity.invert|Quantitative-Scales#wiki-identity_invert]] - the identity function.
 * [[identity.domain|Quantitative-Scales#wiki-identity_domain]] - get or set the scale's domain and range.
-* [[identity.range|Quantitative-Scales#wiki-identity_range]] - equivalent to identity.domain.
+* [[identity.range|Quantitative-Scales#wiki-identity_domain]] - equivalent to identity.domain.
 * [[identity.ticks|Quantitative-Scales#wiki-identity_ticks]] - get representative values from the domain.
 * [[identity.tickFormat|Quantitative-Scales#wiki-identity_tickFormat]] - get a formatter for displaying tick values.
 * [[identity.copy|Quantitative-Scales#wiki-identity_copy]] - create a new scale from an existing scale.
