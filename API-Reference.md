@@ -169,6 +169,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[linear.nice|Quantitative-Scales#wiki-linear_nice]] - extend the scale domain to nice round numbers.
 * [[linear.ticks|Quantitative-Scales#wiki-linear_ticks]] - get representative values from the input domain.
 * [[linear.tickFormat|Quantitative-Scales#wiki-linear_tickFormat]] - get a formatter for displaying tick values.
+* [[linear.copy|Quantitative-Scales#wiki-linear_copy]] - create a new scale from an existing scale.
 * [[d3.scale.sqrt|Quantitative-Scales#wiki-sqrt]] - construct a quantitative scale with a square root transform.
 * [[d3.scale.pow|Quantitative-Scales#wiki-pow]] - construct a quantitative scale with an exponential transform.
 * [[pow|Quantitative-Scales#wiki-_pow]] - get the range value corresponding to a given domain value.
@@ -182,6 +183,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[pow.ticks|Quantitative-Scales#wiki-pow_ticks]] - get representative values from the input domain.
 * [[pow.tickFormat|Quantitative-Scales#wiki-pow_tickFormat]] - get a formatter for displaying tick values.
 * [[pow.exponent|Quantitative-Scales#wiki-pow_exponent]] - get or set the exponent power.
+* [[pow.copy|Quantitative-Scales#wiki-pow_copy]] - create a new scale from an existing scale.
 * [[d3.scale.log|Quantitative-Scales#wiki-log]] - construct a quantitative scale with an logarithmic transform.
 * [[log|Quantitative-Scales#wiki-_log]] - get the range value corresponding to a given domain value.
 * [[log.invert|Quantitative-Scales#wiki-log_invert]] - get the domain value corresponding to a given range value.
@@ -193,15 +195,25 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[log.nice|Quantitative-Scales#wiki-log_nice]] - extend the scale domain to nice powers of ten.
 * [[log.ticks|Quantitative-Scales#wiki-log_ticks]] - get representative values from the input domain.
 * [[log.tickFormat|Quantitative-Scales#wiki-log_tickFormat]] - get a formatter for displaying tick values.
+* [[log.copy|Quantitative-Scales#wiki-log_copy]] - create a new scale from an existing scale.
 * [[d3.scale.quantize|Quantitative-Scales#wiki-quantize]] - construct a linear quantitative scale with a discrete output range.
 * [[quantize|Quantitative-Scales#wiki-_quantize]] - get the range value corresponding to a given domain value.
 * [[quantize.domain|Quantitative-Scales#wiki-quantize_domain]] - get or set the scale's input domain.
 * [[quantize.range|Quantitative-Scales#wiki-quantize_range]] - get or set the scale's output range (as discrete values).
+* [[quantize.copy|Quantitative-Scales#wiki-quantize_copy]] - create a new scale from an existing scale.
 * [[d3.scale.quantile|Quantitative-Scales#wiki-quantile]] - construct a quantitative scale mapping to quantiles.
 * [[quantile|Quantitative-Scales#wiki-_quantile]] - get the range value corresponding to a given domain value.
 * [[quantile.domain|Quantitative-Scales#wiki-quantile_domain]] - get or set the scale's input domain (as discrete values).
 * [[quantile.range|Quantitative-Scales#wiki-quantile_range]] - get or set the scale's output range (as discrete values).
 * [[quantile.quantiles|Quantitative-Scales#wiki-quantile_quantiles]] - get the scale's quantile bin thresholds.
+* [[quantile.copy|Quantitative-Scales#wiki-quantile_copy]] - create a new scale from an existing scale.
+* [[d3.scale.identity|Quantitative-Scales#wiki-identity]] - construct a linear identity scale.
+* [[identity.invert|Quantitative-Scales#wiki-identity_invert]] - the identity function.
+* [[identity.domain|Quantitative-Scales#wiki-identity_domain]] - get or set the scale's domain and range.
+* [[identity.range|Quantitative-Scales#wiki-identity_range]] - equivalent to identity.domain.
+* [[identity.ticks|Quantitative-Scales#wiki-identity_ticks]] - get representative values from the domain.
+* [[identity.tickFormat|Quantitative-Scales#wiki-identity_tickFormat]] - get a formatter for displaying tick values.
+* [[identity.copy|Quantitative-Scales#wiki-identity_copy]] - create a new scale from an existing scale.
 
 ### [[Ordinal|Ordinal-Scales#wiki-ordinal]]
 
@@ -213,6 +225,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[ordinal.rangeBands|Ordinal-Scales#wiki-ordinal_rangeBands]] - divide a continuous output range for discrete bands.
 * [[ordinal.rangeRoundBands|Ordinal-Scales#wiki-ordinal_rangeRoundBands]] - divide a continuous output range for discrete bands.
 * [[ordinal.rangeBand|Ordinal-Scales#wiki-ordinal_rangeBand]] - get the discrete range band width.
+* [[ordinal.rangeExtent|Ordinal-Scales#wiki-ordinal_rangeExtent]] - get the minimum and maximum values of the output range.
+* [[ordinal.copy|Quantitative-Scales#wiki-ordinal_copy]] - create a new scale from an existing scale.
 * [[d3.scale.category10|Ordinal-Scales#wiki-category10]] - construct an ordinal scale with ten categorical colors.
 * [[d3.scale.category20|Ordinal-Scales#wiki-category20]] - construct an ordinal scale with twenty categorical colors.
 * [[d3.scale.category20b|Ordinal-Scales#wiki-category20b]] - construct an ordinal scale with twenty categorical colors.
