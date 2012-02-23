@@ -138,7 +138,7 @@ If a key function is specified, the `data` operator also affects the index of no
 
 If *values* is not specified, then this method returns the array of data for the first group in the selection. The length of the returned array will match the length of the first group, and the index of each datum in the returned array will match the corresponding index in the selection. If some of the elements in the selection are null, or if they have no associated data, then the corresponding element in the array will be undefined.
 
-The `data` method cannot be used to clear previously-bound data; use [selection.datum(null)](#wiki-datum) instead.
+Note: the `data` method cannot be used to clear previously-bound data; use [selection.datum](#wiki-datum) instead.
 
 <a name="enter" href="Selections#wiki-enter">#</a> selection.<b>enter()</b>
 
@@ -166,7 +166,7 @@ Assuming that the body is initially empty, the above code will create six new DI
 
 Another way to think about the entering placeholder nodes is that they are pointers to the parent node (in this example, the document body); however, they only support append and insert.
 
-The enter selection merges into the update selection when you append or insert. This approach reduces code duplication between enter and update. Rather than applying operators to both the enter and update selection separately, you can now apply them to the update selection after entering the nodes. In the rare case that you want to run operators only on the
+The enter selection **merges into the update selection** when you append or insert. This approach reduces code duplication between enter and update. Rather than applying operators to both the enter and update selection separately, you can now apply them to the update selection after entering the nodes. In the rare case that you want to run operators only on the
 updating nodes, you can run them on the update selection before entering new nodes.
 
 <a name="exit" href="Selections#wiki-exit">#</a> selection.<b>exit()</b>
@@ -245,11 +245,25 @@ var odds = selection.filter(":nth-child(odd)");
 
 Thus, you can use either select or filter to apply operators to a subset of elements.
 
-<a name="map" href="Selections#wiki-map">#</a> selection.<b>map</b>(<i>function</i>)
+<a name="map" href="Selections#wiki-map">#</a> selection.<b>datum</b>([<i>value</i>])
 
-Assigns new data to the current selection based on the current data. The specified *function* is invoked for each element in the current selection, being passed the current datum `d` and index `i`, with the `this` context as the current DOM element. The return value of the function becomes the new data for the current DOM element, bound to `__data__`. This is conceptually similar to the built-in array [[map|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Map]] method, however this modifies the data bound to the current selection, rather than returning a new array. This operator has no effect on the index.
+Gets or sets the bound data for each selected element. This method is implemented on top of [selection.property](#wiki-property):
 
-This operator can be used to access HTML5 [custom data attributes](http://www.w3.org/TR/html5/elements.html#custom-data-attribute) with D3. For example, given the following elements:
+```js
+d3.selection.prototype.datum = function(value) {
+  return arguments.length < 1
+      ? this.property("__data__")
+      : this.property("__data__", value);
+};
+```
+
+If *value* is specified, sets the element's bound data to the specified value on all selected elements. If *value* is a constant, all elements are given the same data; otherwise, if *value* is a function, then the function is evaluated for each selected element, being passed the previous datum `d` and the current index `i`, with the `this` context as the current DOM element. The function is then used to set each element's data. A null value will delete the bound data. This operator has no effect on the index.
+
+If *value* is not specified, returns the bound datum for the first non-null element in the selection. This is generally useful only if you know the selection contains exactly one element.
+
+Note: this method was previously called "map". The old name is deprecated.
+
+The `datum` method is useful for accessing HTML5 [custom data attributes](http://www.w3.org/TR/html5/elements.html#custom-data-attribute) with D3. For example, given the following elements:
 
 ```html
 <ul id="list">
@@ -261,7 +275,7 @@ This operator can be used to access HTML5 [custom data attributes](http://www.w3
 You can expose the custom data attributes to D3 by setting each element’s data as the built-in [dataset](http://www.w3.org/TR/html5/elements.html#dom-dataset) property:
 
 ```javascript
-selection.map(function() { return this.dataset; })
+selection.datum(function() { return this.dataset; })
 ```
 
 This can then be used, [for example](http://bl.ocks.org/1323729), to sort elements by username.
