@@ -1,8 +1,12 @@
 > [[API Reference]] ▸ [[Core]]
 
+## Psuedorandom Number Generation
+
 <a name="d3_random_normal" href="#wiki-d3_random_normal">#</a> d3.random.<b>normal</b>([<i>mean</i>, [<i>deviation</i>]])
 
 …
+
+## 2D Transforms
 
 <a name="d3_transform" href="#wiki-d3_transform">#</a> d3.<b>transform</b>(<i>string</i>)
 
