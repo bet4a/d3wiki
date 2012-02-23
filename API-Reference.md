@@ -208,7 +208,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[quantile.quantiles|Quantitative-Scales#wiki-quantile_quantiles]] - get the scale's quantile bin thresholds.
 * [[quantile.copy|Quantitative-Scales#wiki-quantile_copy]] - create a new scale from an existing scale.
 * [[d3.scale.identity|Quantitative-Scales#wiki-identity]] - construct a linear identity scale.
-* [[identity.invert|Quantitative-Scales#wiki-identity_invert]] - the identity function.
+* [[identity|Quantitative-Scales#wiki-_identity]] - the identity function.
+* [[identity.invert|Quantitative-Scales#wiki-_identity]] - equivalent to identity; the identity function.
 * [[identity.domain|Quantitative-Scales#wiki-identity_domain]] - get or set the scale's domain and range.
 * [[identity.range|Quantitative-Scales#wiki-identity_domain]] - equivalent to identity.domain.
 * [[identity.ticks|Quantitative-Scales#wiki-identity_ticks]] - get representative values from the domain.
