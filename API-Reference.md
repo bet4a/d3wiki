@@ -32,8 +32,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[selection.node|Selections#wiki-node]] - access the first node in a selection.
 * [[selection.select|Selections#wiki-select]] - subselect a descendant element for each selected element.
 * [[selection.selectAll|Selections#wiki-selectAll]] - subselect multiple descendants for each selected element.
-* [[d3.selection|Selections#wiki-d3_selection]] - with `instanceof`, check if something is a selection.
-* [[d3.selection.prototype|Selections#wiki-d3_selection_prototype]] - extend the selection prototype.
+* [[d3.selection|Selections#wiki-d3_selection]] - augment the selection prototype, or test instance types.
 * [[d3.event|Selections#wiki-d3_event]] - access the current user event for interaction.
 
 ### [[Transitions]]
