@@ -180,7 +180,11 @@ returns ["b", "c", "a"]. It is acceptable for the array of indexes to be a diffe
 
 <a name="d3_zip" href="Arrays#wiki-d3_zip">#</a> d3.<b>zip</b>(<i>arrays…</i>)
 
-Returns an array of arrays, where the ith array contains the ith element from each of the argument *arrays*. The returned array is truncated in length to the shortest array in *arrays*. If *arrays* contains only a single array, the returned array contains one-element arrays. With no arguments, the returned array is empty. The zip operator is equivalent a two-dimensional [[matrix transpose|http://en.wikipedia.org/wiki/Transpose]], when invoked as d3.zip.apply(*matrix*).
+Returns an array of arrays, where the ith array contains the ith element from each of the argument *arrays*. The returned array is truncated in length to the shortest array in *arrays*. If *arrays* contains only a single array, the returned array contains one-element arrays. With no arguments, the returned array is empty.
+
+<a name="d3_transpose" href="#wiki-d3_transpose">#</a> d3.<b>transpose</b>(<i>matrix</i>)
+
+Equivalent to `d3.zip.apply(matrix)`; uses the zip operator as a two-dimensional [[matrix transpose|http://en.wikipedia.org/wiki/Transpose]].
 
 ### <a name="_nest"></a> Nest
 
