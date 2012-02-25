@@ -8,20 +8,20 @@ To simplify manipulation of and iteration over time intervals, D3 provides a han
 
 Returns the specified *interval*. The following intervals are supported:
 
-* second
-* minute
-* hour
-* day
-* week (alias for sunday)
-* sunday
-* monday
-* tuesday
-* wednesday
-* thursday
-* friday
-* saturday
-* month
-* year
+* [second](#wiki-second)
+* [minute](#wiki-minute)
+* [hour](#wiki-hour)
+* [day](#wiki-day)
+* [week](#wiki-week) (alias for [sunday](#wiki-sunday))
+* [sunday](#wiki-sunday)
+* [monday](#wiki-monday)
+* [tuesday](#wiki-tuesday)
+* [wednesday](#wiki-wednesday)
+* [thursday](#wiki-thursday)
+* [friday](#wiki-friday)
+* [saturday](#wiki-saturday)
+* [month](#wiki-month)
+* [year](#wiki-year)
 
 <a name="_interval" href="#wiki-_interval">#</a> *interval*(*date*)
 
