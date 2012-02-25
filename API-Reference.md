@@ -341,23 +341,46 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[scale.clamp|Time-Scales#wiki-clamp]] - enable or disable clamping of the output range.
 * [[scale.ticks|Time-Scales#wiki-ticks]] - get representative values from the input domain.
 * [[scale.tickFormat|Time-Scales#wiki-tickFormat]] - get a formatter for displaying tick values.
+* [[scale.copy|Time-Scales#wiki-copy]] - create a new scale from an existing scale.
 
 ### [[Time Intervals]]
 
-* [[d3.time.day|Time-Intervals#wiki-day]] - round down to the nearest day (12:00 AM).
-* [[d3.time.days|Time-Intervals#wiki-days]] - get the days in the given range.
-* [[d3.time.hour|Time-Intervals#wiki-hour]] - round down to the nearest hour (0th minute).
-* [[d3.time.hours|Time-Intervals#wiki-hours]] - get the hours in the given range.
-* [[d3.time.minute|Time-Intervals#wiki-minute]] - round down to the nearest minute (0th second).
-* [[d3.time.minutes|Time-Intervals#wiki-minutes]] - get the minutes in the given range.
-* [[d3.time.month|Time-Intervals#wiki-month]] - round down to the nearest month (1st date).
-* [[d3.time.months|Time-Intervals#wiki-months]] - get the months in the given range.
-* [[d3.time.second|Time-Intervals#wiki-second]] - round down to the nearest second (0th millisecond).
-* [[d3.time.seconds|Time-Intervals#wiki-seconds]] - get the seconds in the given range.
-* [[d3.time.week|Time-Intervals#wiki-week]] - round down to the nearest week (Sunday).
-* [[d3.time.weeks|Time-Intervals#wiki-weeks]] - get the weeks in the given range.
-* [[d3.time.year|Time-Intervals#wiki-year]] - round down to the nearest year (January 1).
-* [[d3.time.years|Time-Intervals#wiki-years]] - get the years in the given range.
+* [[d3.time.interval|Time-Intervals#wiki-interval]] - a time interval in local time.
+* [[interval|Time-Intervals#wiki-_interval]] - alias for interval.floor.
+* [[interval.range|Time-Intervals#wiki-interval_range]] - returns dates within the specified range.
+* [[interval.floor|Time-Intervals#wiki-interval_floor]] - rounds down to the nearest interval.
+* [[interval.round|Time-Intervals#wiki-interval_round]] - rounds up or down to the nearest interval.
+* [[interval.ceil|Time-Intervals#wiki-interval_ceil]] - rounds up to the nearest interval.
+* [[interval.offset|Time-Intervals#wiki-interval_offset]] - returns a date offset by some interval.
+* [[interval.utc|Time-Intervals#wiki-interval_utc]] - returns the UTC-equivalent time interval.
+* [[d3.time.day|Time-Intervals#wiki-day]] - every day (12:00 AM).
+* [[d3.time.days|Time-Intervals#wiki-day]] - alias for day.range.
+* [[d3.time.hour|Time-Intervals#wiki-hour]] - every hour (e.g., 1:00 AM).
+* [[d3.time.hours|Time-Intervals#wiki-hours]] - alias for hour.range.
+* [[d3.time.minute|Time-Intervals#wiki-minute]] - every minute (e.g., 1:02 AM).
+* [[d3.time.minutes|Time-Intervals#wiki-minutes]] - alias for minute.range.
+* [[d3.time.month|Time-Intervals#wiki-month]] - every month (e.g., February 1, 12:00 AM).
+* [[d3.time.months|Time-Intervals#wiki-months]] - alias for month.range.
+* [[d3.time.second|Time-Intervals#wiki-second]] - every second (e.g., 1:02:03 AM).
+* [[d3.time.seconds|Time-Intervals#wiki-seconds]] - alias for second.range.
+* [[d3.time.sunday|Time-Intervals#wiki-sunday]] - every Sunday (e.g., February 5, 12:00 AM).
+* [[d3.time.sundays|Time-Intervals#wiki-sundays]] - alias for sunday.range.
+* [[d3.time.monday|Time-Intervals#wiki-monday]] - every Monday (e.g., February 5, 12:00 AM).
+* [[d3.time.mondays|Time-Intervals#wiki-mondays]] - alias for monday.range.
+* [[d3.time.tuesday|Time-Intervals#wiki-tuesday]] - every Tuesday (e.g., February 5, 12:00 AM).
+* [[d3.time.tuesdays|Time-Intervals#wiki-tuesdays]] - alias for tuesday.range.
+* [[d3.time.wednesday|Time-Intervals#wiki-wednesday]] - every Wednesday (e.g., February 5, 12:00 AM).
+* [[d3.time.wednesdays|Time-Intervals#wiki-wednesdays]] - alias for wednesday.range.
+* [[d3.time.thursday|Time-Intervals#wiki-thursday]] - every Thursday (e.g., February 5, 12:00 AM).
+* [[d3.time.thursdays|Time-Intervals#wiki-thursdays]] - alias for thursday.range.
+* [[d3.time.friday|Time-Intervals#wiki-friday]] - every Friday (e.g., February 5, 12:00 AM).
+* [[d3.time.fridays|Time-Intervals#wiki-fridays]] - alias for friday.range.
+* [[d3.time.saturday|Time-Intervals#wiki-saturday]] - every Saturday (e.g., February 5, 12:00 AM).
+* [[d3.time.saturdays|Time-Intervals#wiki-saturdays]] - alias for saturday.range.
+* [[d3.time.week|Time-Intervals#wiki-week]] - alias for sunday.
+* [[d3.time.weeks|Time-Intervals#wiki-weeks]] - alias for sunday.range.
+* [[d3.time.year|Time-Intervals#wiki-year]] - every year (e.g., January 1, 12:00 AM).
+* [[d3.time.years|Time-Intervals#wiki-years]] - alias for year.range.
 
 ## [d3.layout (Layouts)](Layouts)
 
