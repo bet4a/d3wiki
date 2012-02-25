@@ -4,6 +4,53 @@
 
 To simplify manipulation of and iteration over time intervals, D3 provides a handful of time utilities in addition to the time [scale](Time-Scales) and [format](Time-Formatting). The utilities support both local time and UTC time. Local time is determined by the browser's JavaScript runtime; arbitrary time zone support would be nice, but requires access to the Olson zoneinfo files.
 
+<a name="interval" href="#wiki-interval">#</a> d3.time.*interval*
+
+Returns the specified *interval*. The following intervals are supported:
+
+* second
+* minute
+* hour
+* day
+* week (alias for sunday)
+* sunday
+* monday
+* tuesday
+* wednesday
+* thursday
+* friday
+* saturday
+* month
+* year
+
+<a name="_interval" href="#wiki-_interval">#</a> *interval*(*date*)
+
+Alias for *interval*.floor(*date*).
+
+<a name="interval_floor" href="#wiki-interval_floor">#</a> *interval*.**floor**(*date*)
+
+…
+
+<a name="interval_round" href="#wiki-interval_round">#</a> *interval*.**round**(*date*)
+
+…
+
+<a name="interval_ceil" href="#wiki-interval_ceil">#</a> *interval*.**ceil**(*date*)
+
+…
+
+<a name="interval_range" href="#wiki-interval_range">#</a> *interval*.**range**(*start*, *stop*)
+
+…
+
+<a name="interval_offset" href="#wiki-interval_offset">#</a> *interval*.**offset**(*date*[, *k*])
+
+…
+
+<a name="interval_utc" href="#wiki-interval_utc">#</a> *interval*.**utc**
+
+…
+
 <a name="day" href="Time-Intervals#wiki-day">#</a> d3.time.<b>day</b>(<i>date</i>)<br>
 <a name="day_utc" href="Time-Intervals#wiki-day_utc">#</a> d3.time.day.<b>utc</b>(<i>date</i>)
 
