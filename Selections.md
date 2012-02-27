@@ -245,7 +245,7 @@ var odds = selection.filter(":nth-child(odd)");
 
 Thus, you can use either select or filter to apply operators to a subset of elements.
 
-<a name="map" href="Selections#wiki-map">#</a> selection.<b>datum</b>([<i>value</i>])
+<a name="datum" href="Selections#wiki-datum">#</a> selection.<b>datum</b>([<i>value</i>])
 
 Gets or sets the bound data for each selected element. Unlike the [selection.data](#wiki-data) method, this method does not compute a join (and thus does not compute enter and exit selections). This method is implemented on top of [selection.property](#wiki-property):
 
