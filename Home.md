@@ -98,6 +98,7 @@
 * [Venn Diagram using Clipping](http://bl.ocks.org/1067636)
 * [Venn Diagram using Opacity](http://bl.ocks.org/1067616)
 * [Marimekko Chart](http://bl.ocks.org/1005090)
+* [Histogram Chart](http://bl.ocks.org/1933560)
 * [Fixed-width Histogram](http://bl.ocks.org/993912)
 * [Variable-width Histogram](http://bl.ocks.org/1624660)
 * [Grouped Bar Chart](http://bl.ocks.org/882152) ([alternative example](http://bl.ocks.org/1351113))
