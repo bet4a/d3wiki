@@ -34,6 +34,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[selection.selectAll|Selections#wiki-selectAll]] - subselect multiple descendants for each selected element.
 * [[d3.selection|Selections#wiki-d3_selection]] - augment the selection prototype, or test instance types.
 * [[d3.event|Selections#wiki-d3_event]] - access the current user event for interaction.
+* [[d3.mouse|Selections#wiki-d3_mouse]] - gets the mouse position relative to a specified container.
+* [[d3.touches|Selections#wiki-d3_touches]] - gets the touch positions relative to a specified container.
 
 ### [[Transitions]]
 
@@ -313,11 +315,6 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[brush.clear|SVG-Controls#wiki-brush_clear]]
 * [[brush.empty|SVG-Controls#wiki-brush_empty]]
 * [[brush.on|SVG-Controls#wiki-brush_on]]
-
-### [[Events|SVG-Events]]
-
-* [[d3.svg.mouse|SVG-Events#wiki-mouse]] - gets the mouse position relative to a specified container.
-* [[d3.svg.touches|SVG-Events#wiki-touches]] - gets the touch positions relative to a specified container.
 
 ## [d3.time (Time)](Time)
 
