@@ -46,8 +46,7 @@ Returns a two-element array representing the extent of the scale's range i.e. th
 
 <a name="ordinal_copy" href="#wiki-ordinal_copy">#</a> ordinal.<b>copy</b>()
 
-…
-
+Returns an exact copy of this linear scale. Changes to this scale will not affect the returned scale, and vice versa.
 
 ## Categorical Colors
 
