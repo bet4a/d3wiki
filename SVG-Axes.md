@@ -8,11 +8,15 @@ The axis component is designed to work with any of D3’s [quantitative scales](
 
 <a name="axis" href="SVG-Axes#wiki-axis">#</a> d3.svg.<b>axis</b>()
 
+…
+
 <a name="_axis" href="SVG-Axes#wiki-_axis">#</a> <b>axis</b>(<i>selection</i>)
 
 The *selection* can also be a [transition](Transitions).
 
 <a name="axis_scale" href="SVG-Axes#wiki-axis_scale">#</a> axis.<b>scale</b>([<i>scale</i>])
+
+…
 
 <a name="axis_orient" href="SVG-Axes#wiki-axis_orient">#</a> axis.<b>orient</b>([<i>orientation</i>])
 
@@ -42,6 +46,8 @@ var yAxis = d3.svg.axis()
 This will give you major tick marks of size 6, minor of size 3 and no ending mark.
 
 <a name="axis_tickPadding" href="SVG-Axes#wiki-axis_tickPadding">#</a> axis.<b>tickPadding</b>([<i>padding</i>])
+
+…
 
 <a name="axis_tickFormat" href="SVG-Axes#wiki-axis_tickFormat">#</a> axis.<b>tickFormat</b>([<i>format</i>])
 
