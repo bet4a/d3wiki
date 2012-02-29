@@ -229,7 +229,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[ordinal.rangeRoundBands|Ordinal-Scales#wiki-ordinal_rangeRoundBands]] - divide a continuous output range for discrete bands.
 * [[ordinal.rangeBand|Ordinal-Scales#wiki-ordinal_rangeBand]] - get the discrete range band width.
 * [[ordinal.rangeExtent|Ordinal-Scales#wiki-ordinal_rangeExtent]] - get the minimum and maximum values of the output range.
-* [[ordinal.copy|Quantitative-Scales#wiki-ordinal_copy]] - create a new scale from an existing scale.
+* [[ordinal.copy|Ordinal-Scales#wiki-ordinal_copy]] - create a new scale from an existing scale.
 * [[d3.scale.category10|Ordinal-Scales#wiki-category10]] - construct an ordinal scale with ten categorical colors.
 * [[d3.scale.category20|Ordinal-Scales#wiki-category20]] - construct an ordinal scale with twenty categorical colors.
 * [[d3.scale.category20b|Ordinal-Scales#wiki-category20b]] - construct an ordinal scale with twenty categorical colors.
