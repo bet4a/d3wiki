@@ -51,7 +51,7 @@ Returns a new date equal to *date* plus *step* intervals. If *step* is negative,
 
 <a name="interval_utc" href="#wiki-interval_utc">#</a> *interval*.**utc**
 
-Returns a corresponding time interval in UTC rather than local time.
+Returns a corresponding time interval in UTC rather than local time. For example, `d3.time.day.range(start, stop)` returns local time days between *start* and *stop*, while `d3.time.day.utc.range(start, stop)` returns UTC days between *start* and *stop*.
 
 ## Intervals
 
