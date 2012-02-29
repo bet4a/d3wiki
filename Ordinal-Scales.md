@@ -42,7 +42,7 @@ Returns the band width. This method is used in conjunction with rangeBands or ra
 
 <a name="ordinal_rangeExtent" href="Ordinal-Scales#wiki-ordinal_rangeExtent">#</a> ordinal.<b>rangeExtent</b>()
 
-Returns a two-element array representing the extent of the scale's range i.e. the smallest and largest values.
+Returns a two-element array representing the extent of the scale's range, i.e., the smallest and largest values.
 
 <a name="ordinal_copy" href="#wiki-ordinal_copy">#</a> ordinal.<b>copy</b>()
 
