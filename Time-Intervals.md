@@ -113,37 +113,30 @@ Years (e.g., January 1, 2012 at 12:00 AM). Normal years are 365 days long; leap 
 
 ## Aliases
 
-<a name="days" href="Time-Intervals#wiki-days">#</a> d3.time.<b>days</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])<br>
-<a name="days_utc" href="Time-Intervals#wiki-days_utc">#</a> d3.time.days.<b>utc</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
+<a name="days" href="#wiki-days">#</a> d3.time.<b>days</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
-Returns the day boundaries (midnight) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th date will be returned, based on the day of the month. For example, a *step* of 2 will return the 1st, 3rd, 5th *etc.* of the month.
+Alias for d3.time.[day](#wiki-day).[range](#wiki-interval_range). Returns the day boundaries (midnight) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th date will be returned, based on the day of the month. For example, a *step* of 2 will return the 1st, 3rd, 5th *etc.* of the month.
 
-<a name="hours" href="Time-Intervals#wiki-hours">#</a> d3.time.<b>hours</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])<br>
-<a name="hours_utc" href="Time-Intervals#wiki-hours_utc">#</a> d3.time.hours.<b>utc</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
+<a name="hours" href="#wiki-hours">#</a> d3.time.<b>hours</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
-Returns the hour boundaries (e.g., 01 AM) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th hour will be returned, based on the hour of the day. For example, a *step* of 3 will return 9 PM, 12 AM, 3 AM, *etc.*
+Alias for d3.time.[hour](#wiki-hour).[range](#wiki-interval_range). Returns the hour boundaries (e.g., 01 AM) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th hour will be returned, based on the hour of the day. For example, a *step* of 3 will return 9 PM, 12 AM, 3 AM, *etc.*
 
-<a name="minutes" href="Time-Intervals#wiki-minutes">#</a> d3.time.<b>minutes</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])<br>
-<a name="minutes_utc" href="Time-Intervals#wiki-minutes_utc">#</a> d3.time.minutes.<b>utc</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
+<a name="minutes" href="#wiki-minutes">#</a> d3.time.<b>minutes</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
-Returns the minute boundaries (e.g., 01:23 AM) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th minute will be returned, based on the minute of the hour. For example, a *step* of 15 will return 9:45 PM, 10:00 PM, 10:15 PM, *etc.*
+Alias for d3.time.[day](#wiki-minute).[range](#wiki-interval_range). Returns the minute boundaries (e.g., 01:23 AM) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th minute will be returned, based on the minute of the hour. For example, a *step* of 15 will return 9:45 PM, 10:00 PM, 10:15 PM, *etc.*
 
-<a name="months" href="Time-Intervals#wiki-months">#</a> d3.time.<b>months</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])<br>
-<a name="months_utc" href="Time-Intervals#wiki-months_utc">#</a> d3.time.months.<b>utc</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
+<a name="months" href="#wiki-months">#</a> d3.time.<b>months</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
-Returns the month boundaries (e.g., January 01) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th month will be returned, based on the month of the year. For example, a *step* of 3 will return January, April, July, *etc.*
+Alias for d3.time.[day](#wiki-month).[range](#wiki-interval_range). Returns the month boundaries (e.g., January 01) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th month will be returned, based on the month of the year. For example, a *step* of 3 will return January, April, July, *etc.*
 
-<a name="seconds" href="Time-Intervals#wiki-seconds">#</a> d3.time.<b>seconds</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])<br>
-<a name="seconds_utc" href="Time-Intervals#wiki-seconds_utc">#</a> d3.time.seconds.<b>utc</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
+<a name="seconds" href="#wiki-seconds">#</a> d3.time.<b>seconds</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
-Returns the second boundaries (e.g., 01:23:45 AM) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th second will be returned, based on the second of the minute. For example, a *step* of 15 will return 9:01:45 PM, 9:02:00 PM, 9:02:15 PM, *etc.*
+Alias for d3.time.[second](#wiki-second).[range](#wiki-interval_range). Returns the second boundaries (e.g., 01:23:45 AM) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th second will be returned, based on the second of the minute. For example, a *step* of 15 will return 9:01:45 PM, 9:02:00 PM, 9:02:15 PM, *etc.*
 
-<a name="weeks" href="Time-Intervals#wiki-weeks">#</a> d3.time.<b>weeks</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])<br>
-<a name="weeks_utc" href="Time-Intervals#wiki-weeks_utc">#</a> d3.time.weeks.<b>utc</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
+<a name="weeks" href="#wiki-weeks">#</a> d3.time.<b>weeks</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
-Returns the week boundaries (midnight Sunday) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th week will be returned, based on the week of the year. For example, a *step* of 4 will return January 2, January 30, February 27, *etc.*
+Alias for d3.time.[sunday](#wiki-sunday).[range](#wiki-interval_range). Returns the week boundaries (midnight Sunday) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th week will be returned, based on the week of the year. For example, a *step* of 4 will return January 2, January 30, February 27, *etc.*
 
-<a name="years" href="Time-Intervals#wiki-years">#</a> d3.time.<b>years</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])<br>
-<a name="years_utc" href="Time-Intervals#wiki-years_utc">#</a> d3.time.years.<b>utc</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
+<a name="years" href="#wiki-years">#</a> d3.time.<b>years</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
-Returns the year boundaries (midnight January 1st) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th year will be returned. For example, a *step* of 5 will return 2010, 2015, 2020, *etc.*
+Alias for d3.time.[year](#wiki-year).[range](#wiki-interval_range). Returns the year boundaries (midnight January 1st) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th year will be returned. For example, a *step* of 5 will return 2010, 2015, 2020, *etc.*
