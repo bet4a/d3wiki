@@ -4,6 +4,8 @@
 
 To simplify manipulation of and iteration over time intervals, D3 provides a handful of time utilities in addition to the time [scale](Time-Scales) and [format](Time-Formatting). The utilities support both local time and UTC time. Local time is determined by the browser's JavaScript runtime; arbitrary time zone support would be nice, but requires access to the Olson zoneinfo files.
 
+## Interval
+
 <a name="interval" href="#wiki-interval">#</a> d3.time.*interval*
 
 Returns the specified *interval*. The following intervals are supported:
@@ -51,70 +53,95 @@ Returns a new date equal to *date* plus *step* intervals. If *step* is negative,
 
 Returns a corresponding time interval in UTC rather than local time.
 
-<a name="day" href="Time-Intervals#wiki-day">#</a> d3.time.<b>day</b>(<i>date</i>)<br>
-<a name="day_utc" href="Time-Intervals#wiki-day_utc">#</a> d3.time.day.<b>utc</b>(<i>date</i>)
+## Intervals
 
-Returns the latest day boundary (midnight) before or equal to *date*.
+<a name="second" href="#wiki-second">#</a> d3.time.**second**
+
+Seconds (e.g., 01:23:45.0000 AM). Always 1,000 milliseconds long.
+
+<a name="minute" href="#wiki-minute">#</a> d3.time.**minute**
+
+Minutes (e.g., 01:02:00 AM). Most browsers do not support leap seconds, so minutes are almost always 60 seconds (6e4 milliseconds) long.
+
+<a name="hour" href="#wiki-hour">#</a> d3.time.**hour**
+
+Hours (e.g., 01:00 AM). 60 minutes long (36e5 milliseconds). Note that advancing time by one hour can return the same hour number, or skip an hour number, due to Daylight Savings Time.
+
+<a name="day" href="#wiki-day">#</a> d3.time.**day**
+
+Days (e.g., February 7, 2012 at 12:00 AM). Most days are 24 hours long (864e5 milliseconds); however, with Daylight Savings Time, a day may be 23 or 25 hours long.
+
+<a name="week" href="#wiki-week">#</a> d3.time.**week**
+
+Alias for d3.time.[sunday](#wiki-sunday). A week is always 7 days, but ranges between 167 and 169 hours depending on Daylight Savings Time.
+
+<a name="sunday" href="#wiki-sunday">#</a> d3.time.**sunday**
+
+Sunday-based weeks (e.g., February 5, 2012 at 12:00 AM).
+
+<a name="monday" href="#wiki-monday">#</a> d3.time.**monday**
+
+Monday-based weeks (e.g., February 6, 2012 at 12:00 AM). 
+
+<a name="tueday" href="#wiki-tueday">#</a> d3.time.**tueday**
+
+Tueday-based weeks (e.g., February 7, 2012 at 12:00 AM). 
+
+<a name="wednesday" href="#wiki-wednesday">#</a> d3.time.**wednesday**
+
+Wednesday-based weeks (e.g., February 8, 2012 at 12:00 AM). 
+
+<a name="thursday" href="#wiki-thursday">#</a> d3.time.**thursday**
+
+Thursday-based weeks (e.g., February 9, 2012 at 12:00 AM). 
+
+<a name="friday" href="#wiki-friday">#</a> d3.time.**friday**
+
+Friday-based weeks (e.g., February 10, 2012 at 12:00 AM). 
+
+<a name="saturday" href="#wiki-saturday">#</a> d3.time.**saturday**
+
+Saturday-based weeks (e.g., February 11, 2012 at 12:00 AM). 
+
+<a name="month" href="#wiki-month">#</a> d3.time.**month**
+
+Months (e.g., February 1, 2012 at 12:00 AM). Ranges between 28 and 31 days.
+
+<a name="year" href="#wiki-year">#</a> d3.time.**year**
+
+Years (e.g., January 1, 2012 at 12:00 AM). Normal years are 365 days long; leap years are 366.
+
+## Aliases
 
 <a name="days" href="Time-Intervals#wiki-days">#</a> d3.time.<b>days</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])<br>
 <a name="days_utc" href="Time-Intervals#wiki-days_utc">#</a> d3.time.days.<b>utc</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
 Returns the day boundaries (midnight) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th date will be returned, based on the day of the month. For example, a *step* of 2 will return the 1st, 3rd, 5th *etc.* of the month.
 
-<a name="hour" href="Time-Intervals#wiki-hour">#</a> d3.time.<b>hour</b>(<i>date</i>)<br>
-<a name="hour_utc" href="Time-Intervals#wiki-hour_utc">#</a> d3.time.hour.<b>utc</b>(<i>date</i>)
-
-Returns the latest hour boundary (e.g., 01 AM) before or equal to *date*.
-
 <a name="hours" href="Time-Intervals#wiki-hours">#</a> d3.time.<b>hours</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])<br>
 <a name="hours_utc" href="Time-Intervals#wiki-hours_utc">#</a> d3.time.hours.<b>utc</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
 Returns the hour boundaries (e.g., 01 AM) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th hour will be returned, based on the hour of the day. For example, a *step* of 3 will return 9 PM, 12 AM, 3 AM, *etc.*
-
-<a name="minute" href="Time-Intervals#wiki-minute">#</a> d3.time.<b>minute</b>(<i>date</i>)<br>
-<a name="minute_utc" href="Time-Intervals#wiki-minute_utc">#</a> d3.time.minute.<b>utc</b>(<i>date</i>)
-
-Returns the latest minute boundary (e.g., 01:23 AM) before or equal to *date*.
 
 <a name="minutes" href="Time-Intervals#wiki-minutes">#</a> d3.time.<b>minutes</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])<br>
 <a name="minutes_utc" href="Time-Intervals#wiki-minutes_utc">#</a> d3.time.minutes.<b>utc</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
 Returns the minute boundaries (e.g., 01:23 AM) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th minute will be returned, based on the minute of the hour. For example, a *step* of 15 will return 9:45 PM, 10:00 PM, 10:15 PM, *etc.*
 
-<a name="month" href="Time-Intervals#wiki-month">#</a> d3.time.<b>month</b>(<i>date</i>)<br>
-<a name="month_utc" href="Time-Intervals#wiki-month_utc">#</a> d3.time.month.<b>utc</b>(<i>date</i>)
-
-Returns the latest month boundary (e.g., January 01) before or equal to *date*.
-
 <a name="months" href="Time-Intervals#wiki-months">#</a> d3.time.<b>months</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])<br>
 <a name="months_utc" href="Time-Intervals#wiki-months_utc">#</a> d3.time.months.<b>utc</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
 Returns the month boundaries (e.g., January 01) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th month will be returned, based on the month of the year. For example, a *step* of 3 will return January, April, July, *etc.*
-
-<a name="second" href="Time-Intervals#wiki-second">#</a> d3.time.<b>second</b>(<i>date</i>)<br>
-<a name="second_utc" href="Time-Intervals#wiki-second_utc">#</a> d3.time.second.<b>utc</b>(<i>date</i>)
-
-Returns the latest second boundary (e.g., 01:23:45 AM) before or equal to *date*.
 
 <a name="seconds" href="Time-Intervals#wiki-seconds">#</a> d3.time.<b>seconds</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])<br>
 <a name="seconds_utc" href="Time-Intervals#wiki-seconds_utc">#</a> d3.time.seconds.<b>utc</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
 Returns the second boundaries (e.g., 01:23:45 AM) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th second will be returned, based on the second of the minute. For example, a *step* of 15 will return 9:01:45 PM, 9:02:00 PM, 9:02:15 PM, *etc.*
 
-<a name="week" href="Time-Intervals#wiki-week">#</a> d3.time.<b>week</b>(<i>date</i>)<br>
-<a name="week_utc" href="Time-Intervals#wiki-week_utc">#</a> d3.time.week.<b>utc</b>(<i>date</i>)
-
-Returns the latest week boundary (midnight Sunday) before or equal to *date*.
-
 <a name="weeks" href="Time-Intervals#wiki-weeks">#</a> d3.time.<b>weeks</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])<br>
 <a name="weeks_utc" href="Time-Intervals#wiki-weeks_utc">#</a> d3.time.weeks.<b>utc</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
 Returns the week boundaries (midnight Sunday) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th week will be returned, based on the week of the year. For example, a *step* of 4 will return January 2, January 30, February 27, *etc.*
-
-<a name="year" href="Time-Intervals#wiki-year">#</a> d3.time.<b>year</b>(<i>date</i>)<br>
-<a name="year_utc" href="Time-Intervals#wiki-year_utc">#</a> d3.time.year.<b>utc</b>(<i>date</i>)
-
-Returns the latest year boundary (midnight January 1st) before or equal to *date*.
 
 <a name="years" href="Time-Intervals#wiki-years">#</a> d3.time.<b>years</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])<br>
 <a name="years_utc" href="Time-Intervals#wiki-years_utc">#</a> d3.time.years.<b>utc</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
