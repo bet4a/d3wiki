@@ -145,7 +145,7 @@ Alias for d3.time.[year](#wiki-year).[range](#wiki-interval_range). Returns the 
 
 <a name="dayOfYear" href="#wiki-dayOfYear">#</a> d3.time.**dayOfYear**(*date*)
 
-…
+Returns the day number for the given date. The first day of the year (January 1) is always the 0th day. Unlike the [d3.time.format](Time-Formatting)'s %j directive, dayOfYear is 0-based rather than 1-based.
 
 <a name="weekOfYear" href="#wiki-weekOfYear">#</a> d3.time.**weekOfYear**(*date*)
 
@@ -153,11 +153,11 @@ Alias for [sundayOfYear](#wiki-sundayOfYear).
 
 <a name="sundayOfYear" href="#wiki-sundayOfYear">#</a> d3.time.**sundayOfYear**(*date*)
 
-Returns the Sunday-based week number for the given date. The first day of the year (January 1) is always the 0th week.
+Returns the Sunday-based week number for the given date. The first day of the year (January 1) is always the 0th week. Equivalent to [d3.time.format](Time-Formatting)'s %U directive.
 
 <a name="mondayOfYear" href="#wiki-mondayOfYear">#</a> d3.time.**mondayOfYear**(*date*)
 
-Returns the Monday-based week number for the given date. The first day of the year (January 1) is always the 0th week.
+Returns the Monday-based week number for the given date. The first day of the year (January 1) is always the 0th week. Equivalent to [d3.time.format](Time-Formatting)'s %W directive.
 
 <a name="tuesdayOfYear" href="#wiki-tuesdayOfYear">#</a> d3.time.**tuesdayOfYear**(*date*)
 
