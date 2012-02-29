@@ -140,3 +140,41 @@ Alias for d3.time.[sunday](#wiki-sunday).[range](#wiki-interval_range). Returns 
 <a name="years" href="#wiki-years">#</a> d3.time.<b>years</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
 Alias for d3.time.[year](#wiki-year).[range](#wiki-interval_range). Returns the year boundaries (midnight January 1st) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th year will be returned. For example, a *step* of 5 will return 2010, 2015, 2020, *etc.*
+
+## Math
+
+<a name="dayOfYear" href="#wiki-dayOfYear">#</a> d3.time.**dayOfYear**(*date*)
+
+…
+
+<a name="weekOfYear" href="#wiki-weekOfYear">#</a> d3.time.**weekOfYear**(*date*)
+
+Alias for [sundayOfYear](#wiki-sundayOfYear).
+
+<a name="sundayOfYear" href="#wiki-sundayOfYear">#</a> d3.time.**sundayOfYear**(*date*)
+
+Returns the Sunday-based week number for the given date. The first day of the year (January 1) is always the 0th week.
+
+<a name="mondayOfYear" href="#wiki-mondayOfYear">#</a> d3.time.**mondayOfYear**(*date*)
+
+Returns the Monday-based week number for the given date. The first day of the year (January 1) is always the 0th week.
+
+<a name="tuesdayOfYear" href="#wiki-tuesdayOfYear">#</a> d3.time.**tuesdayOfYear**(*date*)
+
+Returns the Tuesday-based week number for the given date. The first day of the year (January 1) is always the 0th week.
+
+<a name="wednesdayOfYear" href="#wiki-wednesdayOfYear">#</a> d3.time.**wednesdayOfYear**(*date*)
+
+Returns the Wednesday-based week number for the given date. The first day of the year (January 1) is always the 0th week.
+
+<a name="thursdayOfYear" href="#wiki-thursdayOfYear">#</a> d3.time.**thursdayOfYear**(*date*)
+
+Returns the Thursday-based week number for the given date. The first day of the year (January 1) is always the 0th week.
+
+<a name="fridayOfYear" href="#wiki-fridayOfYear">#</a> d3.time.**fridayOfYear**(*date*)
+
+Returns the Friday-based week number for the given date. The first day of the year (January 1) is always the 0th week.
+
+<a name="saturdayOfYear" href="#wiki-saturdayOfYear">#</a> d3.time.**saturdayOfYear**(*date*)
+
+Returns the Saturday-based week number for the given date. The first day of the year (January 1) is always the 0th week.
