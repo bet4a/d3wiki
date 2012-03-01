@@ -4,11 +4,13 @@
 
 <a name="brush" href="#wiki-brush">#</a> d3.svg.**brush**()
 
-…
+Constructs a new brush with no default *x*- and *y*-scale, and an empty extent.
 
 <a name="_brush" href="#wiki-_brush">#</a> **brush**(*selection*)
 
-The *selection* can also be a [transition](Transitions).
+Draws or redraws this brush into the specified *selection* of elements. The brush may be drawn into multiple elements simultaneously, but not that these brushes would share the same backing extent; typically, a brush is drawn into only one element at a time.
+
+The *selection* can also be a [transition](Transitions); however, the brush does not yet support automatic transitions, so the redraw will happen instantaneously. In a subsequent release, the brush will smoothly transition to the new extent when redrawn after the [extent](#wiki-brush_extent) is set.
 
 <a name="brush_x" href="#wiki-brush_x">#</a> brush.**x**([*scale*])
 
@@ -28,12 +30,18 @@ Note that this does not automatically redraw the brush or dispatch any events to
 
 <a name="brush_clear" href="#wiki-brush_clear">#</a> brush.**clear**()
 
-…
+Clears the extent, making the brush extent [empty](#wiki-brush_empty).
 
 <a name="brush_empty" href="#wiki-brush_empty">#</a> brush.**empty**()
 
-…
+Returns true if and only if the brush extent is empty. When a brush is created, it is initially empty; the brush may also become empty with a single click on the background without moving, or if the extent is [cleared](#wiki-brush_clear). A brush is considered empty if it has zero-width or zero-height. When the brush is empty, its extent is not strictly defined.
 
 <a name="brush_on" href="#wiki-brush_on">#</a> brush.**on**(*type*[, *listener*])
 
-…
+Gets or sets the *listener* for the specified event *type*. Brushes support three types of events:
+
+* brushstart - on mousedown
+* brushmove - on mousemove, if the brush extent has changed
+* brushend - on mouseup
+
+Note that when clicking on the background, a mousedown also triggers a brushmove, since the brush extent is immediately cleared to start a new extent.
