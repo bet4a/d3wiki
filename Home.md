@@ -27,7 +27,7 @@
 * [Mixing Clojure into D3](http://keminglabs.com/d3.clj/)
 * [Converting dynamic SVG to PNG with node.js, d3 and Imagemagick](http://eng.wealthfront.com/2011/12/converting-dynamic-svg-to-png-with.html)
 * [Creating Animated Bubble Charts in D3](http://vallandingham.me/bubble_charts_in_d3.html)
-*[Visualising New Zealand's Stolen Vehicle Database Part1](http://markhansen.co.nz/stolen-vehicles-pt1/) Part2](http://markhansen.co.nz/stolen-vehicles-pt2/)
+* [Visualising New Zealand's Stolen Vehicle Database Part1](http://markhansen.co.nz/stolen-vehicles-pt1/) and [Part2](http://markhansen.co.nz/stolen-vehicles-pt2/)
 
 ## Video Tutorials
 * [Simple D3.js Bar Chart Webcast](http://enja.org/2011/09/15/simple-d3-js-pie-chart-webcast/) by Ian Johnson.
