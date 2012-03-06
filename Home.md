@@ -27,6 +27,7 @@
 * [Mixing Clojure into D3](http://keminglabs.com/d3.clj/)
 * [Converting dynamic SVG to PNG with node.js, d3 and Imagemagick](http://eng.wealthfront.com/2011/12/converting-dynamic-svg-to-png-with.html)
 * [Creating Animated Bubble Charts in D3](http://vallandingham.me/bubble_charts_in_d3.html)
+*[Visualising New Zealand's Stolen Vehicle Database Part1](http://markhansen.co.nz/stolen-vehicles-pt1/) Part2](http://markhansen.co.nz/stolen-vehicles-pt2/)
 
 ## Video Tutorials
 * [Simple D3.js Bar Chart Webcast](http://enja.org/2011/09/15/simple-d3-js-pie-chart-webcast/) by Ian Johnson.
@@ -49,6 +50,7 @@
 * [Visualizing Data with Web Standards](http://cdn-smooth.ms-studiosmedia.com/events/W3C/Day2/Web_Standards.mp4) [(Slides)](http://mbostock.github.com/d3/talk/20111116/) <br>W3Conf, November 2011.
 * [SVG Open Keynote (Slides)](http://mbostock.github.com/d3/talk/20111018/) <br>Microsoft Research, October 2011.
 * [Use the Force!](http://vimeo.com/29458354) [(Slides)](http://mbostock.github.com/d3/talk/20110921/) <br>Trulia, September 2011.
+*[D3 workshop (Slides)](http://bost.ocks.org/mike/d3/workshop/)<br>VIZBI 2012, March 5
 
 ## Examples
 
