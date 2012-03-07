@@ -312,7 +312,7 @@ Returns the *x* and *y* coordinates of the current [d3.event](#wiki-d3_event), r
 
 <a name="d3_touches" href="#wiki-d3_touches">#</a> d3.<b>touches</b>(<i>container</i>)
 
-Returns the *x* and *y* coordinates of each touch associated with the current [d3.event](#wiki-d3_event), based on the [[touches|http://developer.apple.com/library/safari/documentation/UserExperience/Reference/TouchEventClassReference/TouchEvent/TouchEvent.html#//apple_ref/javascript/instp/TouchEvent/touches]] attribute, relative to the specified *container*. The container may be an HTML or SVG container element, such as an svg:g or svg:svg. The coordinates are returned as an array of two-element arrays [[*x1*, *y1*], [*x2*, *y2*], …].
+Returns the *x* and *y* coordinates of each touch associated with the current [d3.event](#wiki-d3_event), based on the [[touches|http://developer.apple.com/library/safari/documentation/UserExperience/Reference/TouchEventClassReference/TouchEvent/TouchEvent.html#//apple_ref/javascript/instp/TouchEvent/touches]] attribute, relative to the specified *container*. The container may be an HTML or SVG container element, such as an svg:g or svg:svg. The coordinates are returned as an array of two-element arrays [ [*x1*, *y1*], [*x2*, *y2*], … ].
 
 <a name="transition" href="Selections#wiki-transition">#</a> selection.<b>transition</b>()
 
