@@ -50,7 +50,7 @@
 * [Visualizing Data with Web Standards](http://cdn-smooth.ms-studiosmedia.com/events/W3C/Day2/Web_Standards.mp4) [(Slides)](http://mbostock.github.com/d3/talk/20111116/) <br>W3Conf, November 2011.
 * [SVG Open Keynote (Slides)](http://mbostock.github.com/d3/talk/20111018/) <br>Microsoft Research, October 2011.
 * [Use the Force!](http://vimeo.com/29458354) [(Slides)](http://mbostock.github.com/d3/talk/20110921/) <br>Trulia, September 2011.
-*[D3 workshop (Slides)](http://bost.ocks.org/mike/d3/workshop/)<br>VIZBI 2012, March 5
+* [D3 workshop (Slides)](http://bost.ocks.org/mike/d3/workshop/)<br>VIZBI, March 2012.
 
 ## Examples
 
