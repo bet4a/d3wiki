@@ -148,8 +148,10 @@
 * [Force-Based Label Placement](http://bl.ocks.org/1377729)
 
 #### Miscellaneous visualizations
-
 * [Superformula Explorer](http://bl.ocks.org/1021103)
+
+![Superformula explorer](https://lh4.googleusercontent.com/-kKMSSfsDl-0/T10Wnhfs5xI/AAAAAAAAAhc/LDtTxfPOQx0/s144/superformula_explorer.png)
+
 * [Superformula Tweening](http://bl.ocks.org/1020902)
 * [OMG Particles!](http://bl.ocks.org/1062544)
 * [Line Tension](http://bl.ocks.org/1016220)
