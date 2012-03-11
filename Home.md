@@ -118,6 +118,7 @@
 * [Horizon Chart](http://bl.ocks.org/1483226)
 * [Gauge](http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html)
 * [Line Chart with tooltips](http://bl.ocks.org/1629644)
+* [Chernoff faces](http://bl.ocks.org/2011590)
 
 #### Trees and Graphs
 
