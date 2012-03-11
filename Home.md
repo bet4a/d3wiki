@@ -190,7 +190,7 @@
 * [Maps and sound](http://littleearth.ca/jsmag/)
 * [Choropleth classification systems](http://gabrielflor.it/)
 * [Choropleth with interactive parameters for NYC data visualization](https://github.com/kpeng/visionyc) (http://code.leakingalpha.com/visionyc/)
-* [Mercator and Albers to Orthographic Projection] (http://bl.ocks.org/1653763) (http://bl.ocks.org/2005817)
+* [Mercator](http://bl.ocks.org/1653763) and [Albers](http://bl.ocks.org/2005817) to Orthographic Projection  
 
 Using D3? Post your examples here! More examples on the [D3 website](http://mbostock.github.com/d3/ex/) and in the [[Git repository|https://github.com/mbostock/d3/tree/master/examples]]. If you just want to share a quick example, consider using [Gist](http://gist.github.com) and [bl.ocks](http://bl.ocks.org).
 
