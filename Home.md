@@ -124,6 +124,9 @@
 
 * [Dependency Chord Diagram](http://bl.ocks.org/1046712)
 * [Chord Layout Transitions](http://fleetinbeing.net/d3e/chord.html)
+
+![Chord Layout Transitions](https://lh3.googleusercontent.com/-e3xkG7QHD18/T12OnBppCNI/AAAAAAAAAio/sefNBfkpj8k/s144/chord_transition.png)
+
 * [Hierarchical Edge Bundling](http://bl.ocks.org/1044242)
 * [Hierarchical Bar Chart](http://bl.ocks.org/1283663)
 * [Partition Layout (Zoomable Icicle)](http://bl.ocks.org/1005873)
@@ -133,16 +136,25 @@
 * [Treemap Layout in SVG](http://bl.ocks.org/972398)
 * [Sunburst Layout with Labels](http://bl.ocks.org/910126)
 * [Sunburst: Coffee Flavour Wheel](http://www.jasondavies.com/coffee-wheel/)
+
+![Sunburst: Coffee Flavour Wheel](https://lh5.googleusercontent.com/-qMcGR2WDMuo/T12OnGsjw_I/AAAAAAAAAiY/cQ5k5Y4ISIc/s144/coffee_flavour_wheel.png)
+
 * [Indented Tree (Collapsible)](http://bl.ocks.org/1093025)
 * [Force Layout with Symbols](http://bl.ocks.org/1062383)
 * [Force Layout with Custom Forces](http://bl.ocks.org/1021841)
 * [Force Layout with Multiple Foci](http://bl.ocks.org/1021953)
 * [Force Layout with Images and Labels](http://bl.ocks.org/950642)
+
+![Force Layout with Images and Labels](https://lh6.googleusercontent.com/-MDMEzqJbwn0/T12OnanLiiI/AAAAAAAAAis/GwuxOkCK2Dk/s144/fd_layout_labels.png)
+
 * [Force Layout (Interactive Construction)](http://bl.ocks.org/929623)
 * [Force Layout (Collapsible Hierarchy)](http://bl.ocks.org/1062288)
 * [Force Layout from XML](http://bl.ocks.org/1080941)
 * [Force Layout with Directed Edges (Curves and Arrow Markers)](http://bl.ocks.org/1153292)
 * [Bounded Force Layout](http://bl.ocks.org/1129492) 
+
+![Bounded Force Layout](https://lh3.googleusercontent.com/-XHWqTjltvyM/T12OnFwNj7I/AAAAAAAAAic/473H_J--JoI/s144/bounded_fd_layout.png)
+
 * [Building a tree diagram](http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/)
 * [Reveal animation on a tree with a clip path](http://blog.pixelingene.com/2011/08/progressive-reveal-animations-in-svg-using-a-svgclippath/)
 * [Force-Based Label Placement](http://bl.ocks.org/1377729)
