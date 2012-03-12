@@ -154,19 +154,31 @@
 
 * [Superformula Tweening](http://bl.ocks.org/1020902)
 * [OMG Particles!](http://bl.ocks.org/1062544)
+
+![OMG Particles!](https://lh5.googleusercontent.com/-YDEBCc3mdQw/T12HGrGxGaI/AAAAAAAAAhk/nBzDIUVaK-o/s144/omg_particles.png)
+
 * [Line Tension](http://bl.ocks.org/1016220)
 * [Segmented Lines and Slope Coloring](http://bl.ocks.org/1117287)
 * [Raindrops](http://bl.ocks.org/849853)
 * [Linear Gradients](http://bl.ocks.org/1086421)
 * [Force Directed States of America](http://bl.ocks.org/1073373)
+
+![Force Directed States of America](https://lh4.googleusercontent.com/-v2O34cK9mgE/T12HG2t3NOI/AAAAAAAAAho/BqZ_oUzUq28/s144/fd_layout_us.png)
+
 * [Rounded Rectangles](http://bl.ocks.org/1123639)
 * [Spermatozoa](http://bl.ocks.org/1136236)
+
+![Spermatozoa](https://lh3.googleusercontent.com/-mf1b5Ro4UxM/T12HG9sGfII/AAAAAAAAAhs/jo-MOd6SgrE/s144/spermatozoa.png)
+
 * [Spline, Zoom and Pan](http://bl.ocks.org/1182434)
 * [Arc Tweens](http://bl.ocks.org/1098617)
 * [Show Reel](http://bl.ocks.org/1256572)
 * [VVVV viewer](http://vvvvjs.quasipartikel.at/)
 * [Merge Sort](http://bl.ocks.org/1243323)
 * [Epicyclic Gearing](http://bl.ocks.org/1353700)
+
+![Epicyclic Gearing](https://lh4.googleusercontent.com/-H_xArseB-SI/T12HGtQIqGI/AAAAAAAAAhg/kQE2aOcUMQk/s144/epicyclic_gearing.png)
+
 * [DOM-to-Canvas](http://bl.ocks.org/1276463)
 * [Transform Transitions](http://bl.ocks.org/1345853)
 * [Square Circle Spiral Illusion](http://bl.ocks.org/1386444)
