@@ -51,6 +51,7 @@
 * [SVG Open Keynote (Slides)](http://mbostock.github.com/d3/talk/20111018/) <br>Microsoft Research, October 2011.
 * [Use the Force!](http://vimeo.com/29458354) [(Slides)](http://mbostock.github.com/d3/talk/20110921/) <br>Trulia, September 2011.
 * [D3 workshop (Slides)](http://bost.ocks.org/mike/d3/workshop/)<br>VIZBI, March 2012.
+* [Intro to d3](http://webholics.github.com/talk-munichjs-d3/#2.0)<br>JavaScript User Group Munich, March 2012
 
 ## Examples
 
