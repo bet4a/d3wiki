@@ -174,6 +174,9 @@
 * [Arc Tweens](http://bl.ocks.org/1098617)
 * [Show Reel](http://bl.ocks.org/1256572)
 * [VVVV viewer](http://vvvvjs.quasipartikel.at/)
+
+![VVVV viewer](https://lh6.googleusercontent.com/-5_4MV5-epO4/T12Lja4_DkI/AAAAAAAAAiI/gYt8lB-WxGI/s144/vvvv_viewer.png)
+
 * [Merge Sort](http://bl.ocks.org/1243323)
 * [Epicyclic Gearing](http://bl.ocks.org/1353700)
 
@@ -182,9 +185,15 @@
 * [DOM-to-Canvas](http://bl.ocks.org/1276463)
 * [Transform Transitions](http://bl.ocks.org/1345853)
 * [Square Circle Spiral Illusion](http://bl.ocks.org/1386444)
+
+![Square Circle Spiral Illusion](https://lh4.googleusercontent.com/-c9OOwZOqWvU/T12LjUT1VzI/AAAAAAAAAiE/xS2bndODwIg/s144/spiral_illusion.png)
+
 * [Adventures in D3](https://github.com/enjalot/adventures_in_d3)
 * [Time Series](https://github.com/boorad/d3-tsline)
 * [Voronoi-based point picker](http://bl.ocks.org/1405439)
+
+![Voronoi-based point picker](https://lh3.googleusercontent.com/-q5CyBOAD5xw/T12LjdVMSMI/AAAAAAAAAiA/ALN1JWRu0XA/s144/voronoi_point_picker.png)
+
 * [Radar chart](http://www.larsko.org/v/euc/)
 * [Drag rectangle](http://bl.ocks.org/1629464)
 * [Elastic collisions](http://bl.ocks.org/1706523)(http://bl.ocks.org/1706849)
