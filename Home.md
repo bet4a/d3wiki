@@ -84,7 +84,7 @@
 * [Visualizing a newborn's feeding and diaper activity](http://jerseyshots.com/viz/newborn.html) - Jimmie Yoo
 * [Inequality in America](http://visual.ly/vizbox/inequality-in-america/) - EJ Fox for Visual.ly
 * [Current Article Popularity Trends on Hacker News](http://hn.metamx.com/) -  Vadim Ogievetsky
-* [AFL Brownlow Medalists](http://www.vislives.com/2011/09/brownlow-medal-winners-visualization.html) and [David Foster Wallace's "Infinite Jest"](http://www.vislives.com/2011/12/infinite-jest-visualization.html) - Chris Pudney (VisLives!)
+* [AFL Brownlow Medalists](http://www.vislives.com/2011/09/brownlow-medal-winners-visualization.html), [Formula 1 Lap Chart](http://www.vislives.com/2012/03/d3-lap-charts.html) and [David Foster Wallace's "Infinite Jest"](http://www.vislives.com/2011/12/infinite-jest-visualization.html) - Chris Pudney (VisLives!)
 * [Uber Rides by Neighborhood](http://bost.ocks.org/mike/uberdata/)
 * [Les Misérables Co-occurrence](http://bost.ocks.org/mike/miserables/)
 * [US Elections 2012 / Twitter](http://hotspots.io/election)
