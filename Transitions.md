@@ -12,9 +12,11 @@ Only one transition may be *active* on a given element at a given time. However,
 
 Transitions are created using the [[transition|Selections#wiki-transition]] operator on a selection. Transitions start automatically upon creation after a delay which defaults to zero; however, note that a zero-delay transition actually starts after a minimal (~17ms) delay, pending the first timer callback. Transitions have a default duration of 250ms.
 
-<a name="d3_transition" href="Transitions#wiki-d3_transition">#</a> d3.<b>transition</b>()
+<a name="d3_transition" href="#wiki-d3_transition">#</a> d3.**transition**([*selection*])
 
 Create an animated transition. This is equivalent to `d3.select(document).transition()`. This method is used rarely, as it is typically easier to derive a transition from an existing selection, rather than deriving a selection from an existing transition.
+
+When called with an optional *selection*, this method typically returns the specified selection; i.e., it is a no-op. However, within the context of [transition.each](#wiki-each), this method will create a new transition for the specified selection that inherits the delay, duration and other properties of the parent transition. This is useful for implementing [reusable components](http://bost.ocks.org/mike/chart/) that can be called either on selections or on transitions, in the latter case supporting deriving concurrent transitions. An example of this is D3’s [axis component](SVG-Axes).
 
 <a name="delay" href="Transitions#wiki-delay">#</a> transition.<b>delay</b>(<i>delay</i>)
 
