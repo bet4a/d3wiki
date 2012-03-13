@@ -163,8 +163,6 @@ If <i>type</i> is specified, adds a listener for transition events, supporting b
 
 If <i>type</i> is not specified, behaves the same as [selection.each](Selections#wiki-each).
 
-Note: there is currently no way to remove or replace listeners. This is a bug; see [[#294|https://github.com/mbostock/d3/issues/294]]. In a future release, the <i>type</i> will allow namespaces for registering multiple listeners.
-
 <a name="call" href="Transitions#wiki-call">#</a> transition.<b>call</b>(<i>function</i>[, <i>arguments…</i>])
 
 Invokes the specified *function* once, passing in the current transition along with any optional *arguments*. The call operator always returns the current transition, regardless of the return value of the specified function. The call operator is identical to invoking a function by hand; but it makes it easier to use method chaining. For example, say we want to set a number of attributes the same way in a number of different places. So we take the code and wrap it in a reusable function:
