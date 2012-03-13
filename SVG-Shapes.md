@@ -89,7 +89,7 @@ g.append("svg:path")
     .attr("d", function(d) { return line(d) + "Z"; });
 ```
 
-The line generator is designed to work in conjunction with the [area](SVG-Shapes#wiki-area) generator. For example, when producing an area chart, you might use an area generator with a fill style, and a line generator with a stroke style to emphasize the top edge of the area. Since the line generator is only used the set the *d* attribute, you can control the appearance of the line using standard SVG styles and attributes, such as *fill*, *stroke* and *stroke-width*.
+The line generator is designed to work in conjunction with the [area](SVG-Shapes#wiki-area) generator. For example, when producing an area chart, you might use an area generator with a fill style, and a line generator with a stroke style to emphasize the top edge of the area. Since the line generator is only used to set the *d* attribute, you can control the appearance of the line using standard SVG styles and attributes, such as *fill*, *stroke* and *stroke-width*.
 
 <a name="_line" href="SVG-Shapes#wiki-_line">#</a> <b>line</b>(<i>data</i>[, <i>index</i>])
 
