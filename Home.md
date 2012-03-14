@@ -3,6 +3,11 @@
 * [[API Reference]]
 * [[Release Notes]]
 
+## Support
+
+* [[d3-js Google Group|http://groups.google.com/group/d3-js]]
+* [[d3.js on Stack Overflow|http://stackoverflow.com/questions/tagged/d3.js]]
+
 ## Tutorials
 
 * [[Thinking with Joins|http://bost.ocks.org/mike/join/]]
@@ -29,7 +34,13 @@
 * [Creating Animated Bubble Charts in D3](http://vallandingham.me/bubble_charts_in_d3.html)
 * [Visualising New Zealand's Stolen Vehicle Database Part1](http://markhansen.co.nz/stolen-vehicles-pt1/) and [Part2](http://markhansen.co.nz/stolen-vehicles-pt2/)
 
-## Video Tutorials
+## Talks and Videos
+
+* [Visualizing Data with Web Standards](http://cdn-smooth.ms-studiosmedia.com/events/W3C/Day2/Web_Standards.mp4) [(Slides)](http://mbostock.github.com/d3/talk/20111116/) <br>W3Conf, November 2011.
+* [SVG Open Keynote (Slides)](http://mbostock.github.com/d3/talk/20111018/) <br>Microsoft Research, October 2011.
+* [Use the Force!](http://vimeo.com/29458354) [(Slides)](http://mbostock.github.com/d3/talk/20110921/) <br>Trulia, September 2011.
+* [D3 workshop (Slides)](http://bost.ocks.org/mike/d3/workshop/)<br>VIZBI, March 2012.
+* [Intro to d3](http://webholics.github.com/talk-munichjs-d3/#2.0)<br>JavaScript User Group Munich, March 2012
 * [Simple D3.js Bar Chart Webcast](http://enja.org/2011/09/15/simple-d3-js-pie-chart-webcast/) by Ian Johnson.
 * [Using Selections in D3 to Make Data-Driven Visualizations](http://blog.visual.ly/using-selections-in-d3-to-make-data-driven-visualizations/) by Ian Johnson.
 * [Visual.ly Meetup Recap: Introductory D3 Workshop](http://blog.visual.ly/visual-ly-meetup-recap-introductory-d3-workshop/) by Aleksandra Todorova, Visual.ly February 16 2011.
@@ -37,21 +48,6 @@
 ## Publications
 
 * [[D3: Data-Driven Documents|http://vis.stanford.edu/papers/d3]]<br>Michael Bostock, Vadim Ogievetsky, Jeffrey Heer<br>*IEEE Trans. Visualization & Comp. Graphics (Proc. InfoVis)*, 2011
-
-## Support
-
-* [[d3-js Google Group|http://groups.google.com/group/d3-js]]
-* [[d3.js on Stack Overflow|http://stackoverflow.com/questions/tagged/d3.js]]
-* [[@mbostock Twitter|http://twitter.com/mbostock]]
-* [[@mbostock GitHub|https://github.com/inbox/new/mbostock]]
-
-## Talks
-
-* [Visualizing Data with Web Standards](http://cdn-smooth.ms-studiosmedia.com/events/W3C/Day2/Web_Standards.mp4) [(Slides)](http://mbostock.github.com/d3/talk/20111116/) <br>W3Conf, November 2011.
-* [SVG Open Keynote (Slides)](http://mbostock.github.com/d3/talk/20111018/) <br>Microsoft Research, October 2011.
-* [Use the Force!](http://vimeo.com/29458354) [(Slides)](http://mbostock.github.com/d3/talk/20110921/) <br>Trulia, September 2011.
-* [D3 workshop (Slides)](http://bost.ocks.org/mike/d3/workshop/)<br>VIZBI, March 2012.
-* [Intro to d3](http://webholics.github.com/talk-munichjs-d3/#2.0)<br>JavaScript User Group Munich, March 2012
 
 ## Examples
 
