@@ -216,6 +216,7 @@
 * [Radar chart](http://www.larsko.org/v/euc/)
 * [Drag rectangle](http://bl.ocks.org/1629464)
 * [Elastic collisions](http://bl.ocks.org/1706523)(http://bl.ocks.org/1706849)
+* [Collider - a d3.js game](http://blog.latentflip.com/post/18195267992/d3-collider)
 
 #### Useful snippets
 
