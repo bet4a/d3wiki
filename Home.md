@@ -159,6 +159,8 @@
 * [Building a tree diagram](http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/)
 * [Reveal animation on a tree with a clip path](http://blog.pixelingene.com/2011/08/progressive-reveal-animations-in-svg-using-a-svgclippath/)
 * [Force-Based Label Placement](http://bl.ocks.org/1377729)
+*[Visualizing a network with Cypher and d3.js](http://maxdemarzi.com/2012/02/13/visualizing-a-network-with-cypher/)
+*[Connections in time](http://maxdemarzi.com/2012/03/08/connections-in-time/)
 
 #### Miscellaneous visualizations
 * [Superformula Explorer](http://bl.ocks.org/1021103)
