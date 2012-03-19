@@ -41,7 +41,7 @@ Returns true if and only if the brush extent is empty. When a brush is created, 
 Gets or sets the *listener* for the specified event *type*. Brushes support three types of events:
 
 * brushstart - on mousedown
-* brushmove - on mousemove, if the brush extent has changed
+* brush - on mousemove, if the brush extent has changed
 * brushend - on mouseup
 
 Note that when clicking on the background, a mousedown also triggers a brushmove, since the brush extent is immediately cleared to start a new extent.
