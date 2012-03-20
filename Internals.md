@@ -8,9 +8,9 @@ D3 has a few internal methods defined in the core module that are re-used by oth
 
 If the specified *value* is a function, returns the specified value. Otherwise, returns a function that returns the specified value. This method is used internally as a lazy way of upcasting constant values to functions, in cases where a property may be specified either as a function or a constant. For example, many D3 layouts allow properties to be specified this way, and it simplifies the implementation if we automatically convert constant values to functions.
 
-<a name="rebind" href="Internals#wiki-rebind">#</a> d3.<b>rebind</b>(<i>object</i>, <i>function</i>)
+<a name="rebind" href="Internals#wiki-rebind">#</a> d3.<b>rebind</b>(<i>target</i>, <i>source</i>, <i>names…</i>)
 
-Wraps the specified *function*. If the returned function is called with no arguments, *function* is invoked and its return value is returned; this is the "getter" mode. If the returned function is called with any arguments, *function* is invoked and *object* is returned; this is the "setter" mode. The rebind operator allows inherited methods (mix-ins) to be rebound to a subclass on a different object.
+Copies the methods with the specified *names* from *source* to *target*, and returns *target*. If a method is called with no arguments, it is invoked and its return value is returned (“getter” mode). If the method is called with arguments, it is invoked and *target* is returned (“setter” mode). The rebind operator allows inherited methods (mix-ins) to be rebound to a subclass on a different object.
 
 ## Events
 
