@@ -121,7 +121,8 @@
 * [Gauge](http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html)
 * [Line Chart with tooltips](http://bl.ocks.org/1629644)
 * [Chernoff faces](http://bl.ocks.org/2011590)
-* [Hive plot](http://bl.ocks.org/2035137)
+* [Hive plot](http://bost.ocks.org/mike/hive/)[second one](http://bl.ocks.org/2035137) 
+* [Swimlane Chart](http://bl.ocks.org/1962173)
 
 #### Trees and Graphs
 
