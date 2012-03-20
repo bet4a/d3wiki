@@ -239,19 +239,30 @@
 
 Using D3? Post your examples here! More examples on the [D3 website](http://mbostock.github.com/d3/ex/) and in the [[Git repository|https://github.com/mbostock/d3/tree/master/examples]]. If you just want to share a quick example, consider using [Gist](http://gist.github.com) and [bl.ocks](http://bl.ocks.org).
 
-## Interoperability
+### Tools
+
+#### Interoperability
 
 * [IPython-Notebook with d3.js](http://blogs.infoecho.net/echo/2012/02/05/ipython-notebook-d3-js-mashup/)
 * [Plotting library for python based on d3](https://github.com/mikedewar/d3py)
 * [Visualizing NetworkX graphs in the browser using D3](http://www.drewconway.com/zia/?p=2765)
 
-## Online Editors
+#### Online Editors
 
 * [Live coding based on Bret Victor's Inventing on Principle talk](http://gabrielflor.it/water)
 * [Project Archon](http://enja.org/code/archon/)
 * [D3.js playground](http://phrogz.net/JS/d3-playground/#BlankDefault)
 * [D3.js sandbox](http://www.cubicle6.com/d3/)
 
+#### Products
+* [Cube: Time Series Visualization](http://square.github.com/cube/)
+* [Fast Multidimensional Filtering for Coordinated Views](http://square.github.com/tesseract/)
+* [Polychart: A browser-based platform for exploring data and creating charts](http://polychart.com/)
+* [Data Visualization made Fast, Fun and Easy](http://www.plot.io/)
+
+#### Libraries
+* [Rickshaw: JavaScript toolkit for creating interactive real-time graphs](https://github.com/shutterstock/rickshaw)
+* [Dynamic Visualization LEGO](https://github.com/vogievetsky/DVL)
 
 ## Under Development
 
