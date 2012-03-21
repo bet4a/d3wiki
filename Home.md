@@ -124,6 +124,7 @@
 * [Chernoff faces](http://bl.ocks.org/2011590)
 * [Hive plot](http://bost.ocks.org/mike/hive/)[second one](http://bl.ocks.org/2035137) 
 * [Swimlane Chart](http://bl.ocks.org/1962173)
+* [Stacked layout with time axis](http://bl.ocks.org/1314483)
 
 #### Trees and Graphs
 
