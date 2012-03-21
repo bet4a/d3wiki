@@ -167,6 +167,7 @@
 * [Voronoi Diagram with Force Directed Nodes and Delaunay Links](http://www.christophermanning.org/projects/voronoi-diagram-with-force-directed-nodes-and-delaunay-links/)
 * [Building Cubic Hamiltonian Graphs from LCF Notation](http://www.christophermanning.org/projects/building-cubic-hamiltonian-graphs-from-lcf-notation/)
 * [Chicago Lobbyists Force-Directed Graph Visualization](http://www.christophermanning.org/projects/chicago-lobbyists-force-directed-graph-visualization/)
+* [Circular tree. Will your team win the NCAA Tournament?](http://thepowerrank.com/visual/NCAA_Tournament_Predictions)
 
 #### Miscellaneous visualizations
 * [Superformula Explorer](http://bl.ocks.org/1021103)
