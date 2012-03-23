@@ -261,7 +261,8 @@ Using D3? Post your examples here! More examples on the [D3 website](http://mbos
 * [Cube: Time Series Visualization](http://square.github.com/cube/)
 * [Fast Multidimensional Filtering for Coordinated Views](http://square.github.com/tesseract/)
 * [Polychart: A browser-based platform for exploring data and creating charts](http://polychart.com/)
-* [Data Visualization made Fast, Fun and Easy](http://www.plot.io/)
+* [Plot.io: Data Visualization made Fast, Fun and Easy](http://www.plot.io/)
+* [Chart.io: The Easiest Business Dashboard You'll Ever Use](http://chart.io/)
 
 #### Libraries
 * [Rickshaw: JavaScript toolkit for creating interactive real-time graphs](https://github.com/shutterstock/rickshaw)
