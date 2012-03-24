@@ -254,6 +254,7 @@ Using D3? Post your examples here! More examples on the [D3 website](http://mbos
 #### Online Editors
 
 * [Live coding based on Bret Victor's Inventing on Principle talk](http://gabrielflor.it/water)
+* [The same but with Gist integration](http://enjalot.com/tributary/2165875/sinwaves.js)
 * [Project Archon](http://enja.org/code/archon/)
 * [D3.js playground](http://phrogz.net/JS/d3-playground/#BlankDefault)
 * [D3.js sandbox](http://www.cubicle6.com/d3/)
