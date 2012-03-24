@@ -125,6 +125,7 @@
 * [Hive plot](http://bost.ocks.org/mike/hive/)[second one](http://bl.ocks.org/2035137) 
 * [Swimlane Chart](http://bl.ocks.org/1962173)
 * [Stacked layout with time axis](http://bl.ocks.org/1314483)
+* [Animated bubble charts for school data analysis](http://slodge.com/teach/)
 
 #### Trees and Graphs
 
