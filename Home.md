@@ -250,6 +250,7 @@ Using D3? Post your examples here! More examples on the [D3 website](http://mbos
 * [IPython-Notebook with d3.js](http://blogs.infoecho.net/echo/2012/02/05/ipython-notebook-d3-js-mashup/)
 * [Plotting library for python based on d3](https://github.com/mikedewar/d3py)
 * [Visualizing NetworkX graphs in the browser using D3](http://www.drewconway.com/zia/?p=2765)
+* [Pushing d3 commands to the browser from iPython](https://github.com/hhuuggoo/pushd3)
 
 #### Online Editors
 
