@@ -229,6 +229,7 @@
 * [Masking with external svg elements](http://bl.ocks.org/1503463)
 * [PJAX](http://bl.ocks.org/1367999)
 * [Table Sorting](http://bl.ocks.org/1226718)
+* [Canvas with d3 and Underscore](http://exposedata.com/canvas/stacked.html)
 
 #### Maps
 
