@@ -233,11 +233,11 @@ Registers a new key *function*. The key function will be invoked for each elemen
 
 <a name="nest_sortKeys" href="Arrays#wiki-nest_sortKeys">#</a> nest.<b>sortKeys</b>(<i>comparator</i>)
 
-Sorts key values for the current key using the specified *comparator*. If no comparator is specified for the current key, the order in which keys will be returned is undefined. Note that this only affects the result of the entries operator; the order of keys returned by the map operator is always undefined, regardless of comparator.
+Sorts key values for the current key using the specified *comparator*, such as [d3.descending](Arrays#wiki-d3_descending). If no comparator is specified for the current key, the order in which keys will be returned is undefined. Note that this only affects the result of the entries operator; the order of keys returned by the map operator is always undefined, regardless of comparator.
 
 <a name="nest_sortValues" href="Arrays#wiki-nest_sortValues">#</a> nest.<b>sortValues</b>(<i>comparator</i>)
 
-Sorts leaf elements using the specified *comparator*. This is roughly equivalent to sorting the input array before applying the nest operator; however it is typically more efficient as the size of each group is smaller. If no value comparator is specified, elements will be returned in the order they appeared in the input array. This applies to both the map and entries operators.
+Sorts leaf elements using the specified *comparator*, such as [d3.descending](Arrays#wiki-d3_descending). This is roughly equivalent to sorting the input array before applying the nest operator; however it is typically more efficient as the size of each group is smaller. If no value comparator is specified, elements will be returned in the order they appeared in the input array. This applies to both the map and entries operators.
 
 <a name="nest_rollup" href="Arrays#wiki-nest_rollup">#</a> nest.<b>rollup</b>(<i>function</i>)
 
