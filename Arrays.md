@@ -193,9 +193,9 @@ Nesting allows elements in an array to be grouped into a hierarchical tree struc
 For example, consider the following tabular data structure of Barley yields, from various sites in Minnesota during 1931-2:
 
 ```javascript
-[{yield: 27.00, variety: "Manchuria", year: 1931, site: "University Farm"},
- {yield: 48.87, variety: "Manchuria", year: 1931, site: "Waseca"},
- {yield: 27.43, variety: "Manchuria", year: 1931, site: "Morris"}, …]
+var yields = [{yield: 27.00, variety: "Manchuria", year: 1931, site: "University Farm"},
+              {yield: 48.87, variety: "Manchuria", year: 1931, site: "Waseca"},
+              {yield: 27.43, variety: "Manchuria", year: 1931, site: "Morris"}, ...]
 ```
 
 To facilitate visualization, it may be useful to nest the elements first by year, and then by variety, as follows:
@@ -214,10 +214,10 @@ This returns a nested array. Each element of the outer array is a key-values pai
    {key: "Manchuria", values: [
      {yield: 27.00, variety: "Manchuria", year: 1931, site: "University Farm"},
      {yield: 48.87, variety: "Manchuria", year: 1931, site: "Waseca"},
-     {yield: 27.43, variety: "Manchuria", year: 1931, site: "Morris"}, …]},
+     {yield: 27.43, variety: "Manchuria", year: 1931, site: "Morris"}, ...]},
    {key: "Glabron", values: [
      {yield: 43.07, variety: "Glabron", year: 1931, site: "University Farm"},
-     {yield: 55.20, variety: "Glabron", year: 1931, site: "Waseca"}, …]}, …]},
+     {yield: 55.20, variety: "Glabron", year: 1931, site: "Waseca"}, ...]}, ...]},
  {key: 1932, values: …}]
 ```
 
