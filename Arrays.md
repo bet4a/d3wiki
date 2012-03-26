@@ -229,7 +229,7 @@ Creates a new nest operator. The set of keys is initially empty. If the [map](Ar
 
 <a name="nest_key" href="Arrays#wiki-nest_key">#</a> nest.<b>key</b>(<i>function</i>)
 
-Registers a new key *function*. The key function will be invoked for each element in the input array, and must return a string identifier that is used to assign the element to its group. Most often, the function is implemented as a simple accessor, such as the year and variety accessors in the example above. Each time a key is registered, it is pushed onto the end of an internal keys array, and the resulting map or entries will have an additional hierarchy level. This is not currently a facility to remove or query the registered keys. The most-recently registered key is referred to as the current key in subsequent methods.
+Registers a new key *function*. The key function will be invoked for each element in the input array, and must return a string identifier that is used to assign the element to its group. Most often, the function is implemented as a simple accessor, such as the year and variety accessors in the example above. Each time a key is registered, it is pushed onto the end of an internal keys array, and the resulting map or entries will have an additional hierarchy level. There is not currently a facility to remove or query the registered keys. The most-recently registered key is referred to as the current key in subsequent methods.
 
 <a name="nest_sortKeys" href="Arrays#wiki-nest_sortKeys">#</a> nest.<b>sortKeys</b>(<i>comparator</i>)
 
