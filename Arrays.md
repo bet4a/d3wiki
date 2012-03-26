@@ -218,7 +218,7 @@ This returns a nested array. Each element of the outer array is a key-values pai
    {key: "Glabron", values: [
      {yield: 43.07, variety: "Glabron", year: 1931, site: "University Farm"},
      {yield: 55.20, variety: "Glabron", year: 1931, site: "Waseca"}, ...]}, ...]},
- {key: 1932, values: …}]
+ {key: 1932, values: ...}]
 ```
 
 The nested form allows easy iteration and generation of hierarchical structures in SVG or HTML.
