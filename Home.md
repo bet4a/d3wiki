@@ -230,6 +230,7 @@
 * [PJAX](http://bl.ocks.org/1367999)
 * [Table Sorting](http://bl.ocks.org/1226718)
 * [Canvas with d3 and Underscore](http://exposedata.com/canvas/stacked.html)
+* [Automatically sizing text](http://bl.ocks.org/1846692)
 
 #### Maps
 
