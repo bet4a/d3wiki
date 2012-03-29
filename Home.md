@@ -268,6 +268,7 @@ Using D3? Post your examples here! More examples on the [D3 website](http://mbos
 * [Polychart: A browser-based platform for exploring data and creating charts](http://polychart.com/)
 * [Plot.io: Data Visualization made Fast, Fun and Easy](http://www.plot.io/)
 * [Chart.io: The Easiest Business Dashboard You'll Ever Use](http://chart.io/)
+* [Trisul Network Analytic](http://trisul.org/)
 
 #### Libraries
 * [Rickshaw: JavaScript toolkit for creating interactive real-time graphs](https://github.com/shutterstock/rickshaw)
