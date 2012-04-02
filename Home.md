@@ -126,6 +126,7 @@
 * [Swimlane Chart](http://bl.ocks.org/1962173)
 * [Stacked layout with time axis](http://bl.ocks.org/1314483)
 * [Animated bubble charts for school data analysis](http://slodge.com/teach/)
+* [Pictograms](http://bl.ocks.org/2280295)
 
 #### Trees and Graphs
 
