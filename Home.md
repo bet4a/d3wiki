@@ -232,6 +232,7 @@
 * [Table Sorting](http://bl.ocks.org/1226718)
 * [Canvas with d3 and Underscore](http://exposedata.com/canvas/stacked.html)
 * [Automatically sizing text](http://bl.ocks.org/1846692)
+* [SVG to Canvas](http://bl.ocks.org/2294676)
 
 #### Maps
 
