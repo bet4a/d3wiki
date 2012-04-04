@@ -127,6 +127,7 @@
 * [Stacked layout with time axis](http://bl.ocks.org/1314483)
 * [Animated bubble charts for school data analysis](http://slodge.com/teach/)
 * [Pictograms](http://bl.ocks.org/2280295)
+* [Scatterplot for K-Means clustering visualization](K-means Clustering Visualization)
 
 #### Trees and Graphs
 
