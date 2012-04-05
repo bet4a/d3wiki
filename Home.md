@@ -34,6 +34,7 @@
 * [Creating Animated Bubble Charts in D3](http://vallandingham.me/bubble_charts_in_d3.html)
 * [Visualising New Zealand's Stolen Vehicle Database Part1](http://markhansen.co.nz/stolen-vehicles-pt1/) and [Part2](http://markhansen.co.nz/stolen-vehicles-pt2/)
 * [A Race to Entitlement](http://3angular.roberryarts.com/)
+* [D3.js experiments in the console](http://www.ultrasaurus.com/sarahblog/2012/03/d3-js-experiments-in-the-console/)
 
 ## Talks and Videos
 
