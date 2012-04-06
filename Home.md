@@ -243,7 +243,7 @@
 * [Google Maps](http://bl.ocks.org/899711)
 * [Polymaps](http://bl.ocks.org/899670)
 * [Polymaps with custom tiler](http://bl.ocks.org/900050)
-* [Map from GeoJSON data with zoom/pan](http://bl.ocks.org/1283960)
+* [Map from GeoJSON data with zoom/pan](http://bl.ocks.org/2322933)
 * [Maps and sound](http://littleearth.ca/jsmag/)
 * [Choropleth classification systems](http://gabrielflor.it/)
 * [Choropleth with interactive parameters for NYC data visualization](http://code.leakingalpha.com/visionyc/), [code](https://github.com/kpeng/visionyc) 
