@@ -237,6 +237,7 @@
 * [Automatically sizing text](http://bl.ocks.org/1846692)
 * [SVG to Canvas](http://bl.ocks.org/2294676)
 * [Templating ala Mustache, with Chernoff faces example](http://bl.ocks.org/2295155)
+* [Bay Area earthquake responses by zip code: loading external file through Yahoo Pipes](http://bl.ocks.org/1343714)
 
 #### Maps
 
