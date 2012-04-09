@@ -242,6 +242,7 @@
 
 #### Maps
 
+* [Click-to-Zoom with Albers Projection](http://bl.ocks.org/2206590)
 * [Google Maps](http://bl.ocks.org/899711)
 * [Polymaps](http://bl.ocks.org/899670)
 * [Polymaps with custom tiler](http://bl.ocks.org/900050)
