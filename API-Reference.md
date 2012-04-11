@@ -423,6 +423,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[force.start|Force-Layout#wiki-start]] - start or restart the simulation when the nodes change.
 * [[force.resume|Force-Layout#wiki-resume]] - reheat the cooling parameter and restart simulation.
 * [[force.stop|Force-Layout#wiki-stop]] - immediately terminate the simulation.
+* [[force.alpha|Force-Layout#wiki-alpha]] - get or set the layout's cooling parameter.
+* [[force.tick|Force-Layout#wiki-tick]] - run the layout simulation one step.
 * [[force.drag|Force-Layout#wiki-drag]] - bind a behavior to nodes to allow interactive dragging.
 
 ### [[Hierarchy|Hierarchy-Layout]]
