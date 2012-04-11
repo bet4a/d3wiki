@@ -97,13 +97,50 @@ On start, the layout initializes various attributes on the associated nodes. The
 
 The layout also initializes the *source* and *target* attributes on the associated links: for convenience, these attributes may be specified as a numeric index rather than a direct link, such that the nodes and links can be read-in from a JSON file or other static description that may not allow circular linking. The *source* and *target* attributes on incoming links are only replaced with the corresponding entries in *nodes* if these attributes are numbers; thus, these attributes on existing links are unaffected when the layout is restarted. The link [distances](Force-Layout#wiki-linkDistance) and [strengths](Force-Layout#wiki-linkStrength) are also computed on start.
 
+<a name="alpha" href="#wiki-alpha">#</a> force.**alpha**([*value*])
+
+Gets or sets the force layout's cooling parameter, *alpha*. If *value* is specified, sets alpha to the specified value and returns the force layout. If *value* is greater than zero, this method also restarts the force layout if it is not already running, dispatching a "start" event and enabling the tick timer. If *value* is nonpositive, and the force layout is running, this method stops the force layout on the next tick and dispatches an "end" event. If *value* is not specified, this method returns the current alpha value.
+
 <a name="resume" href="Force-Layout#wiki-resume">#</a> force.<b>resume</b>()
 
-Reheat the cooling parameter (*alpha*) and restart simulation. This method sets the internal *alpha* parameter to 0.1, and then restarts the [timer](Transitions#wiki-d3_timer). Typically, you don't need to call this method directly; it is called automatically by [start](Force-Layout#wiki-start). It is also called automatically by [drag](Force-Layout#wiki-drag) on mouseover.
+Equivalent to:
+
+```js
+force.alpha(.1);
+```
+
+Sets the cooling parameter *alpha* to 0.1. This method sets the internal *alpha* parameter to 0.1, and then restarts the [timer](Transitions#wiki-d3_timer). Typically, you don't need to call this method directly; it is called automatically by [start](Force-Layout#wiki-start). It is also called automatically by [drag](Force-Layout#wiki-drag) on mouseover.
 
 <a name="stop" href="Force-Layout#wiki-stop">#</a> force.<b>stop</b>()
 
-Immediately terminates the simulation, setting *alpha* to zero. This can be used to stop the simulation explicitly, for example, if you want to show animation or allow other interaction. If you do not stop the layout explicitly, it will still stop automatically after the layout's cooling parameter decays below some threshold.
+Equivalent to:
+
+```js
+force.alpha(0);
+```
+
+Terminates the simulation, setting the coolping parameter *alpha* to zero. This can be used to stop the simulation explicitly, for example, if you want to show animation or allow other interaction. If you do not stop the layout explicitly, it will still stop automatically after the layout's cooling parameter decays below some threshold.
+
+<a name="tick" href="#wiki-tick">#</a> force.**tick**()
+
+Runs the force layout simulation one step. This method can be used in conjunction with [start](#wiki-start) and [stop](#wiki-stop) to compute a static layout. For example:
+
+```js
+force.start();
+for (var i = 0; i < n; ++i) force.tick();
+force.stop();
+```
+
+The number of iterations depends on the graph size and complexity. The choice of initial positions can also have a dramatic impact on how quickly the graph converges on a good solution. For example, here the nodes are arranged along the diagonal:
+
+```js
+var n = nodes.length;
+nodes.forEach(function(d, i) {
+  d.x = d.y = width / n * i;
+});
+```
+
+If you do not initialize the positions manually, the force layout will initialize them randomly, resulting in somewhat unpredictable behavior.
 
 <a name="on" href="Force-Layout#wiki-on">#</a> force.<b>on</b>(<i>type</i>, <i>listener</i>)
 
@@ -112,21 +149,15 @@ Registers the specified *listener* to receive events of the specified *type* fro
 ```javascript
 var link = vis.selectAll("line")
     .data(links)
-  .enter().append("line")
-    .attr("x1", function(d) { return d.source.x; })
-    .attr("y1", function(d) { return d.source.y; })
-    .attr("x2", function(d) { return d.target.x; })
-    .attr("y2", function(d) { return d.target.y; });
+  .enter().append("line");
 
 var node = vis.selectAll("circle")
     .data(nodes)
   .enter().append("circle")
-    .attr("cx", function(d) { return d.x; })
-    .attr("cy", function(d) { return d.y; })
     .attr("r", 5);
 ```
 
-You can update their positions on tick:
+You can set their positions on tick:
 
 ```javascript
 force.on("tick", function() {
