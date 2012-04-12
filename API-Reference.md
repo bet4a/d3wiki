@@ -586,7 +586,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 ### [[Drag|Drag-Behavior]]
 
-* [[d3.behavior.drag|Drag-Behavior#wiki-zoom]]
+* [[d3.behavior.drag|Drag-Behavior#wiki-drag]]
 * [[drag.on|Drag-Behavior#wiki-on]]
 
 ### [[Zoom|Zoom-Behavior]]
