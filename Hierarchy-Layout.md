@@ -97,7 +97,7 @@ svg.selectAll("path")
 
 <a name="value" href="Hierarchy-Layout#wiki-value">#</a> hierarchy.<b>value</b>([<i>value</i>])
 
-If *value* is specified, sets the value accessor to the specified function. If *value* is not specified, returns the current value accessor, which assumes that the input data is an object with a numeric value attribute:
+If *value* is specified, sets the value accessor to the specified function. If *value* is not specified, returns the current value accessor. The default accessor assumes that the input data is an object with a numeric value attribute:
 
 ```javascript
 function value(d) {
