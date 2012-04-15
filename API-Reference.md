@@ -245,10 +245,12 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[line.y|SVG-Shapes#wiki-line_y]] - get or set the *y*-coordinate accessor.
 * [[line.interpolate|SVG-Shapes#wiki-line_interpolate]] - get or set the interpolation mode.
 * [[line.tension|SVG-Shapes#wiki-line_tension]] - get or set the cardinal spline tension.
+* [line.defined](SVG-Shapes#wiki-line_defined) - control whether the line is defined at a given point.
 * [[d3.svg.line.radial|SVG-Shapes#wiki-line_radial]] - create a new radial line generator.
 * [[line|SVG-Shapes#wiki-_line_radial]] - generate a piecewise linear curve, as in a polar line chart.
 * [[line.radius|SVG-Shapes#wiki-line_radial_radius]] - get or set the *radius* accessor.
 * [[line.angle|SVG-Shapes#wiki-line_radial_angle]] - get or set the *angle* accessor.
+* [line.defined](SVG-Shapes#wiki-line_radial_defined) - control whether the line is defined at a given point.
 * [[d3.svg.area|SVG-Shapes#wiki-area]] - create a new area generator.
 * [[area|SVG-Shapes#wiki-_area]] - generate a piecewise linear area, as in an area chart.
 * [[area.x|SVG-Shapes#wiki-area_x]] - get or set the *x*-coordinate accessors.
@@ -259,6 +261,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[area.y1|SVG-Shapes#wiki-area_y1]] - get or set the *y1*-coordinate (topline) accessor.
 * [[area.interpolate|SVG-Shapes#wiki-area_interpolate]] - get or set the interpolation mode.
 * [[area.tension|SVG-Shapes#wiki-area_tension]] - get or set the cardinal spline tension.
+* [area.defined](SVG-Shapes#wiki-area_defined) - control whether the area is defined at a given point.
 * [[d3.svg.area.radial|SVG-Shapes#wiki-area_radial]] - create a new area generator.
 * [[area|SVG-Shapes#wiki-_area_radial]] - generate a piecewise linear area, as in a polar area chart.
 * [[area.radius|SVG-Shapes#wiki-area_radial_radius]] - get or set the *radius* accessors.
@@ -267,6 +270,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[area.angle|SVG-Shapes#wiki-area_radial_angle]] - get or set the *angle* accessors.
 * [[area.startAngle|SVG-Shapes#wiki-area_radial_startAngle]] - get or set the *angle* (baseline) accessor.
 * [[area.endAngle|SVG-Shapes#wiki-area_radial_endAngle]] - get or set the *angle* (topline) accessor.
+* [area.defined](SVG-Shapes#wiki-area_radial_defined) - control whether the area is defined at a given point.
 * [[d3.svg.arc|SVG-Shapes#wiki-arc]] - create a new arc generator.
 * [[arc|SVG-Shapes#wiki-_arc]] - generate a solid arc, as in a pie or donut chart.
 * [[arc.innerRadius|SVG-Shapes#wiki-arc_innerRadius]] - get or set the inner radius accessor.
