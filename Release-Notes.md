@@ -2,6 +2,10 @@
 
 Patch versions always include various bug fixes; see the full compare for details. For major and minor versions, new features are listed below.
 
+## 2.9.0 - April 15, 2012
+
+Added `defined` methods to d3.svg.line and d3.svg.area.
+
 ## 2.8.0 - February 24, 2012
 
 Added the selection.datum operator (deprecating selection.map), which is like selection.data but doesn't compute a data-join; it can be used to get or set the data bound to elements. The brush component can now take decorative resizers. Added d3.map class (similar to ES6's map collection) for easier management of string-value maps; this is used internally by transitions, event listeners, the nest operator, and many other components. Added d3.bisector for bisecting sorted arrays with an accessor. Exposed d3.selection.enter.prototype. Generalized d3.svg.mouse to support HTML elements, and renamed to d3.mouse. Added d3.scale.identity. Added axis.tickValues. Rewrite of d3.behavior.zoom. Added "start" and "end" events to force layout, along with force.tick and force.alpha for synchronous execution. Added a variety of new time interval methods.
