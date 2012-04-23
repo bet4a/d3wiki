@@ -121,6 +121,7 @@
 * [[Scatterplot and Heatmap|http://jsfiddle.net/indiemaps/gzPDU/]]
 * [[Animated Sankey Diagram (alluvial)|http://nickrabinowitz.com/projects/d3/alluvial/alluvial-dynamic.html]]
 * [Parallel Coordinates](http://bl.ocks.org/1341281)
+* [Parallel Sets](http://www.jasondavies.com/parallel-sets/)
 * [Backbone-D3](http://drsm79.github.com/Backbone-d3/index.html)
 * [Horizon Chart](http://bl.ocks.org/1483226)
 * [Gauge](http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html)
@@ -297,7 +298,7 @@ Using D3? Post your examples here! More examples on the [D3 website](http://mbos
 * arc diagram
 * polar area diagram (nightingale)
 * gantt, other timelines and timing diagram
-* sankey diagram and parallel sets
+* sankey diagram
 * candlestick or ohlc
 * fibonacci scale
 * data table
