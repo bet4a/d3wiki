@@ -1,4 +1,4 @@
-> API Reference
+> **API Reference**
 
 Everything in D3 is scoped under the `d3` namespace. D3 is broken up into several modules so that you can pick and choose which features you need and minimize the weight. The default build of `d3.js` includes the *core*, *scale*, *svg* and *behavior* modules, at about 16KB [[uglified|https://github.com/mishoo/UglifyJS/]] and gzipped. You can edit the [[Makefile|https://github.com/mbostock/d3/blob/master/Makefile]] to produce a custom build that suits your needs. D3 does not introduce anything else in the global namespace, with the exception of two polyfills for nonstandard browsers: [[Date.now|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/now]] and [[Object.create|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/create]].
 
