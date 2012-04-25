@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Core]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Core]] ▸ **Internals**
 
 D3 has a few internal methods defined in the core module that are re-used by other modules; these are not considered part of the public API and should be used with caution outside of D3 as they are not guaranteed to remain backwards-compatible.
 
