@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[SVG]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[SVG]] ▸ **SVG Shapes**
 
 SVG has a number of built-in simple shapes, such as axis-aligned rectangles and circles. For greater flexibility, you can use SVG's [[path|http://www.w3.org/TR/SVG/paths.html#PathElement]] element in conjunction with D3's path data generators. If you're familiar with Protovis, you'll note that D3's path generators are similar to Protovis marks.
 
