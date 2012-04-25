@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Core]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Core]] ▸ **Transitions**
 
 A transition is a special type of [[selection|Selections]] where the operators apply smoothly over time rather than instantaneously. You derive a transition from a selection using the [[transition|Selections#wiki-transition]] operator. While transitions generally support the same operators as selections (such as [attr](Transitions#wiki-attr) and [style](Transitions#wiki-style)), not all operators are supported; for example, you must append elements before a transition starts. A [remove](Transitions#wiki-remove) operator is provided for convenient removal of elements when the transition ends.
 
