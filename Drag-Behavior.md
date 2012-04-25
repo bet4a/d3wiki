@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Behavior]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Behavior]] ▸ **Drag Behavior**
 
 The drag behavior makes it possible to interactively drag an element with the mouse. 
 
