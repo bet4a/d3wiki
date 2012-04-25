@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[SVG]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[SVG]] ▸ **SVG Controls**
 
 ## Brush
 
