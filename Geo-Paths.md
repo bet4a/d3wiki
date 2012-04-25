@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Geo]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Geo]] ▸ **Geo Paths**
 
 For cartographic visualizations, D3 supports a handful of utilities for displaying and manipulating **geographic data**. These utilities are based on the [GeoJSON format](http://geojson.org/geojson-spec.html)—a standard way of representing geographic features in JavaScript. For example, [GDAL](http://www.gdal.org/) includes the ogr2ogr tool which can convert binary shapefiles into GeoJSON; the shapefile is another common representation for geographic data, frequently used by the [U.S. Census Bureau](http://www.census.gov/).
 
