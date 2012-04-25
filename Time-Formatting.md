@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Time]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Time]] ▸ **Time Formatting**
 
 D3 includes a helper module for parsing and formatting dates modeled after the venerable [strptime](http://pubs.opengroup.org/onlinepubs/009695399/functions/strptime.html) and [strftime](http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html) C-library standards. These functions are also notably available in Python's [time](http://docs.python.org/library/time.html) module.
 
