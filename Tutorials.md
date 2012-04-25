@@ -1,4 +1,4 @@
-> [Home](Wiki) ▸ **Tutorials**
+> [Wiki](Home) ▸ **Tutorials**
 
 Please feel free to add links to your work!
 
