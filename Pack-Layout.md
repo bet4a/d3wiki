@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Layouts]] ▸ [Hierarchy](Hierarchy-Layout)
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Layouts]] ▸ [Hierarchy](Hierarchy-Layout) ▸ **Pack Layout**
 
 Enclosure diagrams use containment (nesting) to represent the hierarchy. The size of each circle reveals a quantitative dimension of each data point, and the cumulative size of each subtree. Although [circle packing](http://en.wikipedia.org/wiki/Circle_packing) does not use space as efficiently as a [[treemap|Treemap-Layout]], the “wasted” space more effectively reveals the hierarchy.
 
