@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Geo]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Geo]] ▸ **Geo Projections**
 
 <a name="mercator" href="Geo-Projections#wiki-mercator">#</a> d3.geo.<b>mercator</b>()
 
