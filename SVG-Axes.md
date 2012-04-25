@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[SVG]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[SVG]] ▸ **SVG Axes**
 
 D3’s [axis component](http://bl.ocks.org/1166403) displays reference lines for scales automatically. This lets you focus on displaying the data, while the axis component takes care of the tedious task of drawing axes and labeled ticks.
 
