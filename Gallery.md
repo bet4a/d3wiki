@@ -1,5 +1,26 @@
 Welcome to the **D3 gallery**. Feel free to add links to your work! More examples are available on the [D3 website](http://mbostock.github.com/d3/ex/) and in the [D3 repository](/mbostock/d3/tree/master/examples). If you want to share a quick example, consider using [Gist](http://gist.github.com) and [bl.ocks](http://bl.ocks.org).
 
+## Visual Index
+
+[![calendar](http://mbostock.github.com/d3/calendar.png)](http://mbostock.github.com/d3/ex/calendar.html)
+[![chord](http://mbostock.github.com/d3/chord.png)](http://mbostock.github.com/d3/ex/chord.html)
+[![choropleth](http://mbostock.github.com/d3/choropleth.png)](http://mbostock.github.com/d3/ex/choropleth.html)
+[![population](http://mbostock.github.com/d3/population.png)](http://mbostock.github.com/d3/ex/population.html)
+[![cartogram](http://mbostock.github.com/d3/cartogram.png)](http://mbostock.github.com/d3/ex/cartogram.html)
+[![force](http://mbostock.github.com/d3/force.png)](http://mbostock.github.com/d3/ex/force.html)
+[![treemap](http://mbostock.github.com/d3/treemap.png)](http://mbostock.github.com/d3/ex/treemap.html)
+[![sunburst](http://mbostock.github.com/d3/sunburst.png)](http://mbostock.github.com/d3/ex/sunburst.html)
+[![splom](http://mbostock.github.com/d3/splom.png)](http://mbostock.github.com/d3/ex/splom.html)
+[![stack](http://mbostock.github.com/d3/stack.png)](http://mbostock.github.com/d3/ex/stack.html)
+[![tree](http://mbostock.github.com/d3/tree.png)](http://mbostock.github.com/d3/ex/tree.html)
+[![stream](http://mbostock.github.com/d3/stream.png)](http://mbostock.github.com/d3/ex/stream.html)
+[![voronoi](http://mbostock.github.com/d3/voronoi.png)](http://mbostock.github.com/d3/ex/voronoi.html)
+[![bullet](http://mbostock.github.com/d3/bullet.png)](http://mbostock.github.com/d3/ex/bullet.html)
+[![box](http://mbostock.github.com/d3/box.png)](http://mbostock.github.com/d3/ex/box.html)
+[![pack](http://mbostock.github.com/d3/pack.png)](http://mbostock.github.com/d3/ex/pack.html)
+[![bubble](http://mbostock.github.com/d3/bubble.png)](http://mbostock.github.com/d3/ex/bubble.html)
+[![cluster](http://mbostock.github.com/d3/cluster.png)](http://mbostock.github.com/d3/ex/cluster.html)
+
 ## Tutorials
 
 * [[Thinking with Joins|http://bost.ocks.org/mike/join/]]
