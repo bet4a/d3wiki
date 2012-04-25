@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Layouts]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Layouts]] ▸ **Histogram Layout**
 
 A **histogram layout** shows the distribution of data by grouping discrete data points into bins.
 
