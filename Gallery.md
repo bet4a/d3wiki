@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ **Gallery**
 
-Welcome to the **D3 examples gallery**. Feel free to add links to your work! More examples are available in the [D3 repository](/mbostock/d3/tree/master/examples). If you want to share an example and don't have your own hosting, consider using [Gist](http://gist.github.com) and [bl.ocks](http://bl.ocks.org).
+Welcome to the **D3 gallery**. Feel free to add links to your work! More examples are available in the [D3 repository](/mbostock/d3/tree/master/examples). If you want to share an example and don't have your own hosting, consider using [Gist](http://gist.github.com) and [bl.ocks](http://bl.ocks.org).
 
 ## Visual Index
 
