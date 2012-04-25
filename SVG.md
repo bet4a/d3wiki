@@ -1,4 +1,4 @@
-> [[API Reference]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ **SVG**
 
 See one of:
 
