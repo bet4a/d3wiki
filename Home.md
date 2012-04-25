@@ -20,9 +20,15 @@ If you just want the latest release of D3 as a JavaScript file, you can download
 * http://mbostock.github.com/d3/d3.v2.js - development
 * http://mbostock.github.com/d3/d3.v2.min.js - production
 
-To get the lastest release and all the examples, go here:
+To get the lastest release and all the examples, you can find a tarball here:
 
 * https://github.com/mbostock/d3/tags
+
+Or, from the command line:
+
+```bash
+git clone git://github.com/mbostock/d3.git
+```
 
 When running the examples locally, note that your browser may enforce strict permissions for reading files out of the local file system. Some examples use AJAX which works differently via HTTP instead of local files. **To view the examples locally, you must have a local web server.** Any web server will work; for example you can run Python's built-in server:
 
