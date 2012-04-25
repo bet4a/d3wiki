@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Layouts]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Layouts]] ▸ **Pie Layout**
 
 The pie layout is a convenience for computing the start and end angles are arcs that comprise a pie or donut chart:
 
