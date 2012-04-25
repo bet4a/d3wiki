@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Layouts]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Layouts]] ▸ **Stack Layout**
 
 The stack layout takes a two-dimensional array of data and computes a baseline; the baseline is then propagated to the above layers, so as to produce a stacked graph. Several baseline algorithms are supported, along with sorting heuristics to improve perception, as described in [“Stacked Graphs—Geometry & Aesthetics”](http://www.leebyron.com/else/streamgraph/download.php?file=stackedgraphs_byron_wattenberg.pdf) by Byron & Wattenberg.
 
