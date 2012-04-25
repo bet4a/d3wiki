@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Core]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Core]] ▸ **Colors**
 
 Constructing visualizations often involves working with colors. Even though your browser understands a lot about colors, it doesn't offer much help in manipulating colors through JavaScript. So D3 provides representations for both RGB and HSL colors, allowing interpolation in both color spaces, and making colors brighter or darker. For more about color manipulation, see the Wikipedia entries on [[RGB|http://en.wikipedia.org/wiki/RGB_color_model]] and [[HSL|http://en.wikipedia.org/wiki/HSL_and_HSV]].
 
