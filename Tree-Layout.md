@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Layouts]] ▸ [Hierarchy](Hierarchy-Layout)
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Layouts]] ▸ [Hierarchy](Hierarchy-Layout) ▸ **Tree Layout**
 
 The **tree** layout produces tidy node-link diagrams of trees using the Reingold–Tilford “tidy” algorithm. For example, a tree layout can be used to organize software classes in a package hierarchy:
 
