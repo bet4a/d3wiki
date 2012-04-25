@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Layouts]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Layouts]] ▸ **Hierarchy Layout**
 
 The hierarchy layout is an *abstract* layout that is not used directly, but instead allows code sharing between multiple hierarchical layouts. For an implementation, see one of:
 
