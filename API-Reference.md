@@ -1,3 +1,5 @@
+> **API Reference**
+
 Everything in D3 is scoped under the `d3` namespace. D3 is broken up into several modules so that you can pick and choose which features you need and minimize the weight. The default build of `d3.js` includes the *core*, *scale*, *svg* and *behavior* modules, at about 16KB [[uglified|https://github.com/mishoo/UglifyJS/]] and gzipped. You can edit the [[Makefile|https://github.com/mbostock/d3/blob/master/Makefile]] to produce a custom build that suits your needs. D3 does not introduce anything else in the global namespace, with the exception of two polyfills for nonstandard browsers: [[Date.now|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/now]] and [[Object.create|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/create]].
 
 D3 uses [[semantic versioning|http://semver.org]]. You can find the current version of D3 as `d3.version`.
@@ -34,6 +36,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[selection.selectAll|Selections#wiki-selectAll]] - subselect multiple descendants for each selected element.
 * [[d3.selection|Selections#wiki-d3_selection]] - augment the selection prototype, or test instance types.
 * [[d3.event|Selections#wiki-d3_event]] - access the current user event for interaction.
+* [[d3.mouse|Selections#wiki-d3_mouse]] - gets the mouse position relative to a specified container.
+* [[d3.touches|Selections#wiki-d3_touches]] - gets the touch positions relative to a specified container.
 
 ### [[Transitions]]
 
@@ -208,7 +212,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[quantile.quantiles|Quantitative-Scales#wiki-quantile_quantiles]] - get the scale's quantile bin thresholds.
 * [[quantile.copy|Quantitative-Scales#wiki-quantile_copy]] - create a new scale from an existing scale.
 * [[d3.scale.identity|Quantitative-Scales#wiki-identity]] - construct a linear identity scale.
-* [[identity.invert|Quantitative-Scales#wiki-identity_invert]] - the identity function.
+* [[identity|Quantitative-Scales#wiki-_identity]] - the identity function.
+* [[identity.invert|Quantitative-Scales#wiki-_identity]] - equivalent to identity; the identity function.
 * [[identity.domain|Quantitative-Scales#wiki-identity_domain]] - get or set the scale's domain and range.
 * [[identity.range|Quantitative-Scales#wiki-identity_domain]] - equivalent to identity.domain.
 * [[identity.ticks|Quantitative-Scales#wiki-identity_ticks]] - get representative values from the domain.
@@ -226,7 +231,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[ordinal.rangeRoundBands|Ordinal-Scales#wiki-ordinal_rangeRoundBands]] - divide a continuous output range for discrete bands.
 * [[ordinal.rangeBand|Ordinal-Scales#wiki-ordinal_rangeBand]] - get the discrete range band width.
 * [[ordinal.rangeExtent|Ordinal-Scales#wiki-ordinal_rangeExtent]] - get the minimum and maximum values of the output range.
-* [[ordinal.copy|Quantitative-Scales#wiki-ordinal_copy]] - create a new scale from an existing scale.
+* [[ordinal.copy|Ordinal-Scales#wiki-ordinal_copy]] - create a new scale from an existing scale.
 * [[d3.scale.category10|Ordinal-Scales#wiki-category10]] - construct an ordinal scale with ten categorical colors.
 * [[d3.scale.category20|Ordinal-Scales#wiki-category20]] - construct an ordinal scale with twenty categorical colors.
 * [[d3.scale.category20b|Ordinal-Scales#wiki-category20b]] - construct an ordinal scale with twenty categorical colors.
@@ -242,10 +247,12 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[line.y|SVG-Shapes#wiki-line_y]] - get or set the *y*-coordinate accessor.
 * [[line.interpolate|SVG-Shapes#wiki-line_interpolate]] - get or set the interpolation mode.
 * [[line.tension|SVG-Shapes#wiki-line_tension]] - get or set the cardinal spline tension.
+* [line.defined](SVG-Shapes#wiki-line_defined) - control whether the line is defined at a given point.
 * [[d3.svg.line.radial|SVG-Shapes#wiki-line_radial]] - create a new radial line generator.
 * [[line|SVG-Shapes#wiki-_line_radial]] - generate a piecewise linear curve, as in a polar line chart.
 * [[line.radius|SVG-Shapes#wiki-line_radial_radius]] - get or set the *radius* accessor.
 * [[line.angle|SVG-Shapes#wiki-line_radial_angle]] - get or set the *angle* accessor.
+* [line.defined](SVG-Shapes#wiki-line_radial_defined) - control whether the line is defined at a given point.
 * [[d3.svg.area|SVG-Shapes#wiki-area]] - create a new area generator.
 * [[area|SVG-Shapes#wiki-_area]] - generate a piecewise linear area, as in an area chart.
 * [[area.x|SVG-Shapes#wiki-area_x]] - get or set the *x*-coordinate accessors.
@@ -256,6 +263,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[area.y1|SVG-Shapes#wiki-area_y1]] - get or set the *y1*-coordinate (topline) accessor.
 * [[area.interpolate|SVG-Shapes#wiki-area_interpolate]] - get or set the interpolation mode.
 * [[area.tension|SVG-Shapes#wiki-area_tension]] - get or set the cardinal spline tension.
+* [area.defined](SVG-Shapes#wiki-area_defined) - control whether the area is defined at a given point.
 * [[d3.svg.area.radial|SVG-Shapes#wiki-area_radial]] - create a new area generator.
 * [[area|SVG-Shapes#wiki-_area_radial]] - generate a piecewise linear area, as in a polar area chart.
 * [[area.radius|SVG-Shapes#wiki-area_radial_radius]] - get or set the *radius* accessors.
@@ -264,6 +272,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[area.angle|SVG-Shapes#wiki-area_radial_angle]] - get or set the *angle* accessors.
 * [[area.startAngle|SVG-Shapes#wiki-area_radial_startAngle]] - get or set the *angle* (baseline) accessor.
 * [[area.endAngle|SVG-Shapes#wiki-area_radial_endAngle]] - get or set the *angle* (topline) accessor.
+* [area.defined](SVG-Shapes#wiki-area_radial_defined) - control whether the area is defined at a given point.
 * [[d3.svg.arc|SVG-Shapes#wiki-arc]] - create a new arc generator.
 * [[arc|SVG-Shapes#wiki-_arc]] - generate a solid arc, as in a pie or donut chart.
 * [[arc.innerRadius|SVG-Shapes#wiki-arc_innerRadius]] - get or set the inner radius accessor.
@@ -313,11 +322,6 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[brush.empty|SVG-Controls#wiki-brush_empty]]
 * [[brush.on|SVG-Controls#wiki-brush_on]]
 
-### [[Events|SVG-Events]]
-
-* [[d3.svg.mouse|SVG-Events#wiki-mouse]] - gets the mouse position relative to a specified container.
-* [[d3.svg.touches|SVG-Events#wiki-touches]] - gets the touch positions relative to a specified container.
-
 ## [d3.time (Time)](Time)
 
 ### [[Time Formatting]]
@@ -340,23 +344,46 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[scale.clamp|Time-Scales#wiki-clamp]] - enable or disable clamping of the output range.
 * [[scale.ticks|Time-Scales#wiki-ticks]] - get representative values from the input domain.
 * [[scale.tickFormat|Time-Scales#wiki-tickFormat]] - get a formatter for displaying tick values.
+* [[scale.copy|Time-Scales#wiki-copy]] - create a new scale from an existing scale.
 
 ### [[Time Intervals]]
 
-* [[d3.time.day|Time-Intervals#wiki-day]] - round down to the nearest day (12:00 AM).
-* [[d3.time.days|Time-Intervals#wiki-days]] - get the days in the given range.
-* [[d3.time.hour|Time-Intervals#wiki-hour]] - round down to the nearest hour (0th minute).
-* [[d3.time.hours|Time-Intervals#wiki-hours]] - get the hours in the given range.
-* [[d3.time.minute|Time-Intervals#wiki-minute]] - round down to the nearest minute (0th second).
-* [[d3.time.minutes|Time-Intervals#wiki-minutes]] - get the minutes in the given range.
-* [[d3.time.month|Time-Intervals#wiki-month]] - round down to the nearest month (1st date).
-* [[d3.time.months|Time-Intervals#wiki-months]] - get the months in the given range.
-* [[d3.time.second|Time-Intervals#wiki-second]] - round down to the nearest second (0th millisecond).
-* [[d3.time.seconds|Time-Intervals#wiki-seconds]] - get the seconds in the given range.
-* [[d3.time.week|Time-Intervals#wiki-week]] - round down to the nearest week (Sunday).
-* [[d3.time.weeks|Time-Intervals#wiki-weeks]] - get the weeks in the given range.
-* [[d3.time.year|Time-Intervals#wiki-year]] - round down to the nearest year (January 1).
-* [[d3.time.years|Time-Intervals#wiki-years]] - get the years in the given range.
+* [[d3.time.interval|Time-Intervals#wiki-interval]] - a time interval in local time.
+* [[interval|Time-Intervals#wiki-_interval]] - alias for interval.floor.
+* [[interval.range|Time-Intervals#wiki-interval_range]] - returns dates within the specified range.
+* [[interval.floor|Time-Intervals#wiki-interval_floor]] - rounds down to the nearest interval.
+* [[interval.round|Time-Intervals#wiki-interval_round]] - rounds up or down to the nearest interval.
+* [[interval.ceil|Time-Intervals#wiki-interval_ceil]] - rounds up to the nearest interval.
+* [[interval.offset|Time-Intervals#wiki-interval_offset]] - returns a date offset by some interval.
+* [[interval.utc|Time-Intervals#wiki-interval_utc]] - returns the UTC-equivalent time interval.
+* [[d3.time.day|Time-Intervals#wiki-day]] - every day (12:00 AM).
+* [[d3.time.days|Time-Intervals#wiki-day]] - alias for day.range.
+* [[d3.time.hour|Time-Intervals#wiki-hour]] - every hour (e.g., 1:00 AM).
+* [[d3.time.hours|Time-Intervals#wiki-hours]] - alias for hour.range.
+* [[d3.time.minute|Time-Intervals#wiki-minute]] - every minute (e.g., 1:02 AM).
+* [[d3.time.minutes|Time-Intervals#wiki-minutes]] - alias for minute.range.
+* [[d3.time.month|Time-Intervals#wiki-month]] - every month (e.g., February 1, 12:00 AM).
+* [[d3.time.months|Time-Intervals#wiki-months]] - alias for month.range.
+* [[d3.time.second|Time-Intervals#wiki-second]] - every second (e.g., 1:02:03 AM).
+* [[d3.time.seconds|Time-Intervals#wiki-seconds]] - alias for second.range.
+* [[d3.time.sunday|Time-Intervals#wiki-sunday]] - every Sunday (e.g., February 5, 12:00 AM).
+* [[d3.time.sundays|Time-Intervals#wiki-sundays]] - alias for sunday.range.
+* [[d3.time.monday|Time-Intervals#wiki-monday]] - every Monday (e.g., February 5, 12:00 AM).
+* [[d3.time.mondays|Time-Intervals#wiki-mondays]] - alias for monday.range.
+* [[d3.time.tuesday|Time-Intervals#wiki-tuesday]] - every Tuesday (e.g., February 5, 12:00 AM).
+* [[d3.time.tuesdays|Time-Intervals#wiki-tuesdays]] - alias for tuesday.range.
+* [[d3.time.wednesday|Time-Intervals#wiki-wednesday]] - every Wednesday (e.g., February 5, 12:00 AM).
+* [[d3.time.wednesdays|Time-Intervals#wiki-wednesdays]] - alias for wednesday.range.
+* [[d3.time.thursday|Time-Intervals#wiki-thursday]] - every Thursday (e.g., February 5, 12:00 AM).
+* [[d3.time.thursdays|Time-Intervals#wiki-thursdays]] - alias for thursday.range.
+* [[d3.time.friday|Time-Intervals#wiki-friday]] - every Friday (e.g., February 5, 12:00 AM).
+* [[d3.time.fridays|Time-Intervals#wiki-fridays]] - alias for friday.range.
+* [[d3.time.saturday|Time-Intervals#wiki-saturday]] - every Saturday (e.g., February 5, 12:00 AM).
+* [[d3.time.saturdays|Time-Intervals#wiki-saturdays]] - alias for saturday.range.
+* [[d3.time.week|Time-Intervals#wiki-week]] - alias for sunday.
+* [[d3.time.weeks|Time-Intervals#wiki-weeks]] - alias for sunday.range.
+* [[d3.time.year|Time-Intervals#wiki-year]] - every year (e.g., January 1, 12:00 AM).
+* [[d3.time.years|Time-Intervals#wiki-years]] - alias for year.range.
 
 ## [d3.layout (Layouts)](Layouts)
 
@@ -402,6 +429,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[force.start|Force-Layout#wiki-start]] - start or restart the simulation when the nodes change.
 * [[force.resume|Force-Layout#wiki-resume]] - reheat the cooling parameter and restart simulation.
 * [[force.stop|Force-Layout#wiki-stop]] - immediately terminate the simulation.
+* [[force.alpha|Force-Layout#wiki-alpha]] - get or set the layout's cooling parameter.
+* [[force.tick|Force-Layout#wiki-tick]] - run the layout simulation one step.
 * [[force.drag|Force-Layout#wiki-drag]] - bind a behavior to nodes to allow interactive dragging.
 
 ### [[Hierarchy|Hierarchy-Layout]]
@@ -563,7 +592,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 ### [[Drag|Drag-Behavior]]
 
-* [[d3.behavior.drag|Drag-Behavior#wiki-zoom]]
+* [[d3.behavior.drag|Drag-Behavior#wiki-drag]]
 * [[drag.on|Drag-Behavior#wiki-on]]
 
 ### [[Zoom|Zoom-Behavior]]

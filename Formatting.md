@@ -19,13 +19,19 @@ In addition to numbers, D3 also supports formatting and parsing [[dates|Time-For
 
 <a name="d3_format" href="Formatting#wiki-d3_format">#</a> d3.<b>format</b>(<i>specifier</i>)
 
-Returns a new format function with the given string *specifier*. A format function takes a number as the only argument, and returns a string representing the formatted number. The format specifier is modeled after Python 3.1's built-in [[format specification mini-language|http://docs.python.org/release/3.1.3/library/string.html#formatspec]]. The general form of a specifier is [*sign*][0][*width*][,][.*precision*][*type*]. The *sign* can be one of the following:
+Returns a new format function with the given string *specifier*. A format function takes a number as the only argument, and returns a string representing the formatted number. The format specifier is modeled after Python 3.1's built-in [[format specification mini-language|http://docs.python.org/release/3.1.3/library/string.html#formatspec]]. The general form of a specifier is [*sign*][0][*width*][,][.*precision*][*type*]. 
+
+The *sign* can be one of the following:
 
 * plus ("+") - a sign should be used for both positive and negative numbers.
 * minus ("-") - a sign should be used only for negative numbers. (This is the default.)
 * space (" ") - a leading space should be used on positive numbers, and a minus sign on negative numbers.
 
-The *comma* (",") option enables the use of a comma for a thousands separator. The *width* defines the minimum field width. If not specified, then the width will be determined by the content. If *width* is preceded by a zero ("0"), zero-padding is enabled. The available *type* values are:
+The *comma* (",") option enables the use of a comma for a thousands separator. 
+
+The *width* defines the minimum field width. If not specified, then the width will be determined by the content. If *width* is preceded by a zero ("0"), zero-padding is enabled. 
+
+The available *type* values are:
 
 * exponent ("e") - use [[Number.toExponential|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toExponential]].
 * general ("g") - use [[Number.toPrecision|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toPrecision]].

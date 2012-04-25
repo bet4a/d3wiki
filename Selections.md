@@ -245,7 +245,7 @@ var odds = selection.filter(":nth-child(odd)");
 
 Thus, you can use either select or filter to apply operators to a subset of elements.
 
-<a name="map" href="Selections#wiki-map">#</a> selection.<b>datum</b>([<i>value</i>])
+<a name="datum" href="Selections#wiki-datum">#</a> selection.<b>datum</b>([<i>value</i>])
 
 Gets or sets the bound data for each selected element. Unlike the [selection.data](#wiki-data) method, this method does not compute a join (and thus does not compute enter and exit selections). This method is implemented on top of [selection.property](#wiki-property):
 
@@ -290,11 +290,13 @@ Re-inserts elements into the document such that the document order matches the s
 
 ### Animation & Interaction
 
-<a name="on" href="Selections#wiki-on">#</a> selection.<b>on</b>(<i>type</i>[, <i>listener</i>])
+<a name="on" href="Selections#wiki-on">#</a> selection.<b>on</b>(<i>type</i>[, <i>listener</i>[, <i>capture</i>]])
 
 Adds or removes an event *listener* to each element in the current selection, for the specified *type*. The *type* is a string event type name, such as "click", "mouseover", or "submit".  The specified *listener* is invoked in the same manner as other operator functions, being passed the current datum `d` and index `i`, with the `this` context as the current DOM element. To access the current event, use the global [d3.event](Selections#wiki-d3_event).
 
-If an event listener was already registered for the same type on the selected element, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "click.foo" and "click.bar".
+If an event listener was already registered for the same type on the selected element, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "click.foo" and "click.bar". To remove a listener, pass null as the *listener*.
+
+An optional *capture* flag may be specified, which corresponds to the W3C [useCapture flag](http://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-registration): "After initiating capture, all events of the specified type will be dispatched to the registered EventListener before being dispatched to any EventTargets beneath them in the tree. Events which are bubbling upward through the tree will not trigger an EventListener designated to use capture."
 
 If *listener* is not specified, returns the currently-assigned listener for the specified *type*, if any.
 
@@ -306,11 +308,11 @@ While you can use the native event's [[pageX|https://developer.mozilla.org/en/DO
 
 <a name="d3_mouse" href="#wiki-d3_mouse">#</a> d3.<b>mouse</b>(<i>container</i>)
 
-Returns the *x* and *y* coordinates of the current [[d3.event|#wiki-d3_event]], relative to the specified *container*. The container may be an HTML or SVG container element, such as an [[svg:g|http://www.w3.org/TR/SVG/struct.html#Groups]] or [[svg:svg|http://www.w3.org/TR/SVG/struct.html#SVGElement]]. The coordinates are returned as a two-element array [*x*, *y*].
+Returns the *x* and *y* coordinates of the current [d3.event](#wiki-d3_event), relative to the specified *container*. The container may be an HTML or SVG container element, such as an [[svg:g|http://www.w3.org/TR/SVG/struct.html#Groups]] or [[svg:svg|http://www.w3.org/TR/SVG/struct.html#SVGElement]]. The coordinates are returned as a two-element array [*x*, *y*].
 
 <a name="d3_touches" href="#wiki-d3_touches">#</a> d3.<b>touches</b>(<i>container</i>)
 
-Returns the *x* and *y* coordinates of each touch associated with the current d3.event, based on the [[touches|http://developer.apple.com/library/safari/documentation/UserExperience/Reference/TouchEventClassReference/TouchEvent/TouchEvent.html#//apple_ref/javascript/instp/TouchEvent/touches]] attribute, relative to the specified *container*. The container may be an HTML or SVG container element, such as an svg:g or svg:svg. The coordinates are returned as an array of two-element arrays [[*x1*, *y1*], [*x2*, *y2*], …].
+Returns the *x* and *y* coordinates of each touch associated with the current [d3.event](#wiki-d3_event), based on the [[touches|http://developer.apple.com/library/safari/documentation/UserExperience/Reference/TouchEventClassReference/TouchEvent/TouchEvent.html#//apple_ref/javascript/instp/TouchEvent/touches]] attribute, relative to the specified *container*. The container may be an HTML or SVG container element, such as an svg:g or svg:svg. The coordinates are returned as an array of two-element arrays [ [*x1*, *y1*], [*x2*, *y2*], … ].
 
 <a name="transition" href="Selections#wiki-transition">#</a> selection.<b>transition</b>()
 

@@ -89,7 +89,7 @@ g.append("svg:path")
     .attr("d", function(d) { return line(d) + "Z"; });
 ```
 
-The line generator is designed to work in conjunction with the [area](SVG-Shapes#wiki-area) generator. For example, when producing an area chart, you might use an area generator with a fill style, and a line generator with a stroke style to emphasize the top edge of the area. Since the line generator is only used the set the *d* attribute, you can control the appearance of the line using standard SVG styles and attributes, such as *fill*, *stroke* and *stroke-width*.
+The line generator is designed to work in conjunction with the [area](SVG-Shapes#wiki-area) generator. For example, when producing an area chart, you might use an area generator with a fill style, and a line generator with a stroke style to emphasize the top edge of the area. Since the line generator is only used to set the *d* attribute, you can control the appearance of the line using standard SVG styles and attributes, such as *fill*, *stroke* and *stroke-width*.
 
 <a name="_line" href="SVG-Shapes#wiki-_line">#</a> <b>line</b>(<i>data</i>[, <i>index</i>])
 
@@ -163,6 +163,14 @@ svg.selectAll("path")
 
 In this example (see the [live version](http://bl.ocks.org/1016220)), the tension is set before each invocation of the line generator, thus resulting in lines with the same data but different paths.
 
+<a name="line_defined" href="#wiki-line_defined">#</a> line.**defined**([*defined*])
+
+Gets or sets or sets the accessor function that controls where the line is defined. If *defined* is specified, sets the new accessor function and returns the line. If *defined* is not specified, returns the current accessor which defaults to `function() { return true; }`. The defined accessor can be used to define where the line is defined and undefined, which is typically useful in conjunction with missing data; the generated path data will automatically be broken into multiple distinct subpaths, skipping undefined data. For example, if you want to ignore *y*-values that are not a number (or undefined), you can say:
+
+```js
+line.defined(function(d) { return !isNaN(d[1]); });
+```
+
 <a name="line_radial" href="SVG-Shapes#wiki-line_radial">#</a> d3.svg.line.<b>radial</b>()
 
 Constructs a new radial line generator with the default *radius*- and *angle*-accessor functions (that assume the input data is a two-element array of numbers; see below for details), and linear interpolation. The returned function generates path data for an open piecewise linear curve, or polyline, as with the Cartesian [line](SVG-Shapes#wiki-line) generator.
@@ -203,7 +211,7 @@ Constructs a new area generator with the default *x*-, *y0*- and *y1*-accessor f
 
 Conceptually, the polygon is formed using two [lines](SVG-Shapes#wiki-line): the top line is formed using the *x*- and *y1*-accessor functions, and proceeds from left-to-right; the bottom line is added to this line, using the *x*- and *y0*-accessor functions, and proceeds from right-to-left. By setting the [transform](http://www.w3.org/TR/SVG/coords.html#TransformAttribute) attribute to rotate the path element by 90 degrees, you can also generate vertical areas. By changing the interpolation, you can also generate splines and step functions.
 
-The area generator is designed to work in conjunction with the [line](SVG-Shapes#wiki-line) generator. For example, when producing an area chart, you might use an area generator with a fill style, and a line generator with a stroke style to emphasize the top edge of the area. Since the area generator is only used the set the *d* attribute, you can control the appearance of the area using standard SVG styles and attributes, such as *fill*.
+The area generator is designed to work in conjunction with the [line](SVG-Shapes#wiki-line) generator. For example, when producing an area chart, you might use an area generator with a fill style, and a line generator with a stroke style to emphasize the top edge of the area. Since the area generator is only used to set the *d* attribute, you can control the appearance of the area using standard SVG styles and attributes, such as *fill*.
 
 To create [streamgraphs](http://mbostock.github.com/d3/ex/stream.html) (stacked area charts), use the [stack](Stack-Layout) layout. This layout sets the y0 attribute for each value in a series, which can be used from the *y0*- and *y1*-accessors. Note that each series must have the same number of values per series, and each value must have the same *x*-coordinate; if you have missing data or inconsistent *x*-coordinates per series, you must resample and interpolate your data before computing the stacked layout.
 
@@ -281,6 +289,14 @@ The behavior of some of these interpolation modes may be further customized by s
 <a name="area_tension" href="SVG-Shapes#wiki-area_tension">#</a> area.<b>tension</b>([<i>tension</i>])
 
 If *tension* is specified, sets the Cardinal spline interpolation tension to the specified number in the range [0, 1]. If *tension* is not specified, returns the current tension. The tension only affects the Cardinal interpolation modes: cardinal, cardinal-open and cardinal-closed. The default tension is 0.7. In some sense, this can be interpreted as the length of the tangent; 1 will yield all zero tangents, and 0 yields a [Catmull-Rom spline](http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull.E2.80.93Rom_spline). Note that the tension must be specified as a constant, rather than a function, as it is constant for the entirety of the area.
+
+<a name="area_defined" href="#wiki-area_defined">#</a> area.**defined**([*defined*])
+
+Gets or sets or sets the accessor function that controls where the area is defined. If *defined* is specified, sets the new accessor function and returns the area. If *defined* is not specified, returns the current accessor which defaults to `function() { return true; }`. The defined accessor can be used to define where the area is defined and undefined, which is typically useful in conjunction with missing data; the generated path data will automatically be broken into multiple distinct subpaths, skipping undefined data. For example, if you want to ignore *y*-values that are not a number (or undefined), you can say:
+
+```js
+area.defined(function(d) { return !isNaN(d[1]); });
+```
 
 <a name="area_radial" href="SVG-Shapes#wiki-area_radial">#</a> d3.svg.area.<b>radial</b>()
 

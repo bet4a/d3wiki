@@ -12,9 +12,11 @@ Only one transition may be *active* on a given element at a given time. However,
 
 Transitions are created using the [[transition|Selections#wiki-transition]] operator on a selection. Transitions start automatically upon creation after a delay which defaults to zero; however, note that a zero-delay transition actually starts after a minimal (~17ms) delay, pending the first timer callback. Transitions have a default duration of 250ms.
 
-<a name="d3_transition" href="Transitions#wiki-d3_transition">#</a> d3.<b>transition</b>()
+<a name="d3_transition" href="#wiki-d3_transition">#</a> d3.**transition**([*selection*])
 
 Create an animated transition. This is equivalent to `d3.select(document).transition()`. This method is used rarely, as it is typically easier to derive a transition from an existing selection, rather than deriving a selection from an existing transition.
+
+When called with an optional *selection*, this method typically returns the specified selection; i.e., it is a no-op. However, within the context of [transition.each](#wiki-each), this method will create a new transition for the specified selection that inherits the delay, duration and other properties of the parent transition. This is useful for implementing [reusable components](http://bost.ocks.org/mike/chart/) that can be called either on selections or on transitions, in the latter case supporting deriving concurrent transitions. An example of this is D3’s [axis component](SVG-Axes).
 
 <a name="delay" href="Transitions#wiki-delay">#</a> transition.<b>delay</b>(<i>delay</i>)
 
@@ -163,8 +165,6 @@ If <i>type</i> is specified, adds a listener for transition events, supporting b
 
 If <i>type</i> is not specified, behaves the same as [selection.each](Selections#wiki-each).
 
-Note: there is currently no way to remove or replace listeners. This is a bug; see [[#294|https://github.com/mbostock/d3/issues/294]]. In a future release, the <i>type</i> will allow namespaces for registering multiple listeners.
-
 <a name="call" href="Transitions#wiki-call">#</a> transition.<b>call</b>(<i>function</i>[, <i>arguments…</i>])
 
 Invokes the specified *function* once, passing in the current transition along with any optional *arguments*. The call operator always returns the current transition, regardless of the return value of the specified function. The call operator is identical to invoking a function by hand; but it makes it easier to use method chaining. For example, say we want to set a number of attributes the same way in a number of different places. So we take the code and wrap it in a reusable function:
@@ -266,7 +266,7 @@ Returns a numeric interpolator between the two numbers *a* and *b*; the interpol
 Returns a string interpolator between the two strings *a* and *b*. The string interpolator finds numbers embedded in *a* and *b*, where each number is of the form:
 
 ```javascript
-/[-+]?(?:\d+\.\d+|\d+\.|\.\d+|\d+)(?:[eE][-]?\d+)?/
+/[-+]?(?:\d+\.?\d*|\.?\d+)(?:[eE][-+]?\d+)?/g
 ```
 
 For each number embedded in *b*, the interpolator will attempt to find a corresponding number in *a*. If a corresponding number is found, a numeric interpolator is created using [interpolateNumber](Transitions#wiki-d3_interpolateNumber). The remaining parts of the string *b* are used as a template: the static parts of the string *b* remain constant for the interpolation, with the interpolated numeric values embedded in the template. For example, if *a* is "300 12px sans-serif", and *b* is "500 36px Comic-Sans", two embedded numbers are found. The remaining static parts of the string are a space between the two numbers (" "), and the suffix ("px Comic-Sans"). The result of the interpolator at *t* = .5 is "400 24px Comic-Sans".

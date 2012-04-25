@@ -2,11 +2,11 @@
 
 <a name="csv" href="CSV#wiki-csv">#</a> d3.<b>csv</b>(<i>url</i>, <i>callback</i>)
 
-Issues an HTTP GET request for the comma-separated values (CSV) file at the specified *url*. The mime type of the request will be "text/csv". The request is processed asynchronously, such that this method returns immediately after opening the request. When the CSV data is available, the specified *callback* will be invoked, being passed the [parsed rows](CSV#wiki-parse). If an error occurs, the callback function will instead of invoked with null.
+Issues an HTTP GET request for the comma-separated values (CSV) file at the specified *url*. The file contents are assumed to be [RFC4180-compliant](http://tools.ietf.org/html/rfc4180). The mime type of the request will be "text/csv". The request is processed asynchronously, such that this method returns immediately after opening the request. When the CSV data is available, the specified *callback* will be invoked with the [parsed rows](CSV#wiki-parse) as the argument. If an error occurs, the callback function will instead be invoked with null.
 
 <a name="parse" href="CSV#wiki-parse">#</a> d3.csv.<b>parse</b>(<i>string</i>)
 
-Parses the specified *string*, which is the contents of a CSV file, returning an array of objects representing the parsed rows. Unlike the [parseRows](CSV#wiki-parseRows) method, this method requires that the first line of the CSV file contain a comma-separated list of column names; these column names become the attributes on the returned objects. For example, consider the following CSV file:
+Parses the specified *string*, which is the contents of a CSV file, returning an array of objects representing the parsed rows. The string is assumed to be [RFC4180-compliant](http://tools.ietf.org/html/rfc4180). Unlike the [parseRows](CSV#wiki-parseRows) method, this method requires that the first line of the CSV file contain a comma-separated list of column names; these column names become the attributes on the returned objects. For example, consider the following CSV file:
 
 ```
 Year,Make,Model,Length
@@ -36,7 +36,7 @@ Using + rather than [parseInt](https://developer.mozilla.org/en/JavaScript/Refer
 
 <a name="parseRows" href="CSV#wiki-parseRows">#</a> d3.csv.<b>parseRows</b>(<i>string</i>[, <i>accessor</i>])
 
-Parses the specified *string*, which is the contents of a CSV file, returning an array of arrays representing the parsed rows. Unlike the [parse](CSV#wiki-parse) method, this method treats the header line as a standard row, and should be used whenever the CSV file does not contain a header. Each row is represented as an array rather than an object. Rows may have variable length. For example, consider the following CSV file:
+Parses the specified *string*, which is the contents of a CSV file, returning an array of arrays representing the parsed rows. The string is assumed to be [RFC4180-compliant](http://tools.ietf.org/html/rfc4180). Unlike the [parse](CSV#wiki-parse) method, this method treats the header line as a standard row, and should be used whenever the CSV file does not contain a header. Each row is represented as an array rather than an object. Rows may have variable length. For example, consider the following CSV file:
 
 ```
 1997,Ford,E350,2.34

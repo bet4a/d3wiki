@@ -193,9 +193,9 @@ Nesting allows elements in an array to be grouped into a hierarchical tree struc
 For example, consider the following tabular data structure of Barley yields, from various sites in Minnesota during 1931-2:
 
 ```javascript
-[{yield: 27.00, variety: "Manchuria", year: 1931, site: "University Farm"},
- {yield: 48.87, variety: "Manchuria", year: 1931, site: "Waseca"},
- {yield: 27.43, variety: "Manchuria", year: 1931, site: "Morris"}, …]
+var yields = [{yield: 27.00, variety: "Manchuria", year: 1931, site: "University Farm"},
+              {yield: 48.87, variety: "Manchuria", year: 1931, site: "Waseca"},
+              {yield: 27.43, variety: "Manchuria", year: 1931, site: "Morris"}, ...]
 ```
 
 To facilitate visualization, it may be useful to nest the elements first by year, and then by variety, as follows:
@@ -214,11 +214,11 @@ This returns a nested array. Each element of the outer array is a key-values pai
    {key: "Manchuria", values: [
      {yield: 27.00, variety: "Manchuria", year: 1931, site: "University Farm"},
      {yield: 48.87, variety: "Manchuria", year: 1931, site: "Waseca"},
-     {yield: 27.43, variety: "Manchuria", year: 1931, site: "Morris"}, …]},
+     {yield: 27.43, variety: "Manchuria", year: 1931, site: "Morris"}, ...]},
    {key: "Glabron", values: [
      {yield: 43.07, variety: "Glabron", year: 1931, site: "University Farm"},
-     {yield: 55.20, variety: "Glabron", year: 1931, site: "Waseca"}, …]}, …]},
- {key: 1932, values: …}]
+     {yield: 55.20, variety: "Glabron", year: 1931, site: "Waseca"}, ...]}, ...]},
+ {key: 1932, values: ...}]
 ```
 
 The nested form allows easy iteration and generation of hierarchical structures in SVG or HTML.
@@ -229,15 +229,15 @@ Creates a new nest operator. The set of keys is initially empty. If the [map](Ar
 
 <a name="nest_key" href="Arrays#wiki-nest_key">#</a> nest.<b>key</b>(<i>function</i>)
 
-Registers a new key *function*. The key function will be invoked for each element in the input array, and must return a string identifier that is used to assign the element to its group. Most often, the function is implemented as a simple accessor, such as the year and variety accessors in the example above. Each time a key is registered, it is pushed onto the end of an internal keys array, and the resulting map or entries will have an additional hierarchy level. This is not currently a facility to remove or query the registered keys. The most-recently registered key is referred to as the current key in subsequent methods.
+Registers a new key *function*. The key function will be invoked for each element in the input array, and must return a string identifier that is used to assign the element to its group. Most often, the function is implemented as a simple accessor, such as the year and variety accessors in the example above. Each time a key is registered, it is pushed onto the end of an internal keys array, and the resulting map or entries will have an additional hierarchy level. There is not currently a facility to remove or query the registered keys. The most-recently registered key is referred to as the current key in subsequent methods.
 
 <a name="nest_sortKeys" href="Arrays#wiki-nest_sortKeys">#</a> nest.<b>sortKeys</b>(<i>comparator</i>)
 
-Sorts key values for the current key using the specified *comparator*. If no comparator is specified for the current key, the order in which keys will be returned is undefined. Note that this only affects the result of the entries operator; the order of keys returned by the map operator is always undefined, regardless of comparator.
+Sorts key values for the current key using the specified *comparator*, such as [d3.descending](Arrays#wiki-d3_descending). If no comparator is specified for the current key, the order in which keys will be returned is undefined. Note that this only affects the result of the entries operator; the order of keys returned by the map operator is always undefined, regardless of comparator.
 
 <a name="nest_sortValues" href="Arrays#wiki-nest_sortValues">#</a> nest.<b>sortValues</b>(<i>comparator</i>)
 
-Sorts leaf elements using the specified *comparator*. This is roughly equivalent to sorting the input array before applying the nest operator; however it is typically more efficient as the size of each group is smaller. If no value comparator is specified, elements will be returned in the order they appeared in the input array. This applies to both the map and entries operators.
+Sorts leaf elements using the specified *comparator*, such as [d3.descending](Arrays#wiki-d3_descending). This is roughly equivalent to sorting the input array before applying the nest operator; however it is typically more efficient as the size of each group is smaller. If no value comparator is specified, elements will be returned in the order they appeared in the input array. This applies to both the map and entries operators.
 
 <a name="nest_rollup" href="Arrays#wiki-nest_rollup">#</a> nest.<b>rollup</b>(<i>function</i>)
 

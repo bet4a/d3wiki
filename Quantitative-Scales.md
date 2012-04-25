@@ -64,38 +64,39 @@ Returns approximately *count* representative values from the scale's input domai
 
 Returns a [[number format|Formatting#wiki-d3_format]] function suitable for displaying a tick value. The specified *count* should have the same value as the count that is used to generate the tick values. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate precision based on the fixed interval between tick values.
 
+<a name="linear_copy" href="#wiki-linear_copy">#</a> linear.<b>copy</b>()
+
+Returns an exact copy of this linear scale. Changes to this scale will not affect the returned scale, and vice versa.
+
 ### Identity Scales
 
 Identity scales are a special case of linear scales where the domain and range are identical; the scale and its invert method are both the identity function. These scales are occasionally useful when working with pixel coordinates, say in conjunction with the [axis](SVG-Axes) and [brush](SVG-Controls#brush) components.
 
 <a name="identity" href="#wiki-identity">#</a> d3.scale.<b>identity</b>()
 
-…
+Constructs a new identity scale with the default domain [0, 1] and the default range [0, 1]. An identity scale is always equivalent to the identity function.
 
-<a name="_identity" href="#wiki-_identity">#</a> <b>identity</b>(<i>x</i>)
+<a name="_identity" href="#wiki-_identity">#</a> <b>identity</b>(<i>x</i>)<br>
+<a href="#wiki-_identity">#</a> identity.<b>invert</b>(<i>x</i>)
 
-…
+Returns the given value *x*.
 
-<a name="identity_invert" href="#wiki-identity_invert">#</a> identity.<b>invert</b>(<i>x</i>)
+<a name="identity_domain" href="#wiki-identity_domain">#</a> identity.<b>domain</b>([<i>numbers</i>])<br>
+<a href="#wiki-identity_domain">#</a> identity.<b>range</b>([<i>numbers</i>])
 
-…
+If *numbers* is specified, sets the scale's input domain and output range to the specified array of numbers. The array must contain two or more numbers. If the elements in the given array are not numbers, they will be coerced to numbers; this coercion happens similarly when the scale is called. If numbers is not specified, returns the scale's current input domain (or equivalently, output range).
 
-<a name="identity_domain" href="#wiki-identity_domain">#</a> identity.<b>domain</b>(<i>x</i>)<br>
-<a href="#wiki-identity_domain">#</a> identity.<b>range</b>(<i>x</i>)
+<a name="identity_ticks" href="#wiki-identity_ticks">#</a> identity.<b>ticks</b>(<i>count</i>)
 
-…
+Returns approximately *count* representative values from the scale's input domain (or equivalently, output range). The returned tick values are uniformly spaced, have human-readable values (such as multiples of powers of 10), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain.
 
-<a name="identity_ticks" href="#wiki-identity_ticks">#</a> identity.<b>ticks</b>(<i>m</i>)
+<a name="identity_tickFormat" href="#wiki-identity_tickFormat">#</a> identity.<b>tickFormat</b>(<i>count</i>)
 
-…
-
-<a name="identity_tickFormat" href="#wiki-identity_tickFormat">#</a> identity.<b>tickFormat</b>(<i>m</i>)
-
-…
+Returns a [number format](Formatting#wiki-d3_format) function suitable for displaying a tick value. The specified *count* should have the same value as the count that is used to generate the tick values. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate precision based on the fixed interval between tick values.
 
 <a name="identity_copy" href="#wiki-identity_copy">#</a> identity.<b>copy</b>()
 
-…
+Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
 
 ## Power Scales
 
@@ -163,6 +164,10 @@ Returns approximately *count* representative values from the scale's input domai
 
 Returns a [[number format|Formatting#wiki-d3_format]] function suitable for displaying a tick value. The specified *count* should have the same value as the count that is used to generate the tick values. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate precision based on the fixed interval between tick values.
 
+<a name="pow_copy" href="#wiki-pow_copy">#</a> pow.<b>copy</b>()
+
+Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
+
 ## Log Scales
 
 Log scales are similar to linear scales, except there's a logarithmic transform that is applied to the input domain value before the output range value is computed. The mapping to the output range value *y* can be expressed as a function of the input domain value *x*: *y* = *m* log(*x*) + *b*. Log scales also support negative values, in which case the input value is multiplied by -1, and the resulting output value is also multiplied by -1. However, note that the domain of a log scale should never contain zero, as log(0) is negative infinity.
@@ -222,6 +227,10 @@ var formatNumber = d3.format(",.0f"), // for formatting integers
 scale.ticks(20, formatCurrency);
 ```
 
+<a name="log_copy" href="#wiki-log_copy">#</a> log.<b>copy</b>()
+
+Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
+
 ## Quantize Scales
 
 Quantize scales are a variant of linear scales with a discrete rather than continuous range. The input domain is still continuous, and divided into uniform segments based on the number of values in (the cardinality of) the output range. The mapping is *linear* in that the output range value *y* can be expressed as a linear function of the input domain value *x*: *y* = *mx* + *b*. The input domain is typically a dimension of the data that you want to visualize, such as the height of students (measured in meters) in a sample population. The output range is typically a dimension of the desired output visualization, such as the height of bars (measured in pixels) in a histogram.
@@ -241,6 +250,10 @@ If *numbers* is specified, sets the scale's input domain to the specified two-el
 <a name="quantize_range" href="Quantitative-Scales#wiki-quantize_range">#</a> quantize.<b>range</b>([<i>values</i>])
 
 If *values* is specified, sets the scale's output range to the specified array of values. The array may contain any number of discrete values. The elements in the given array need not be numbers; any value or type will work. If *values* is not specified, returns the scale's current output range.
+
+<a name="quantize_copy" href="#wiki-quantize_copy">#</a> quantize.<b>copy</b>()
+
+Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
 
 ## Quantile Scales
 
@@ -265,3 +278,7 @@ If *values* is specified, sets the discrete values in the output range. The arra
 <a name="quantile_quantiles" href="Quantitative-Scales#wiki-quantile_quantiles">#</a> quantile.<b>quantiles</b>()
 
 Returns the quantile thresholds. If the output range contains *n* discrete values, the returned threshold array will contain *n* - 1 values. Values less than the first element in the thresholds array, quantiles()[0], are considered in the first quantile; greater values less than the second threshold are in the second quantile, and so on. Internally, the thresholds array is used with [[d3.bisect|Arrays#wiki-d3_bisect]] to find the output quantile associated with the given input value.
+
+<a name="quantile_copy" href="#wiki-quantile_copy">#</a> quantile.<b>copy</b>()
+
+Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
