@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Time]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Time]] ▸ **Time Scales**
 
 D3's **time scale** is an extension of [d3.scale.linear](Quantitative-Scales#wiki-linear) that uses JavaScript [Date](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date) objects as the domain representation. Thus, unlike the normal linear scale, domain values are coerced to dates rather than numbers; similarly, the [invert](Time-Scales#wiki-invert) function returns a date. Most conveniently, the time scale also provides suitable [ticks](Time-Scales#wiki-ticks) based on [time intervals](Time-Intervals), taking the pain out of generating axes for nearly any time-based domain.
 
