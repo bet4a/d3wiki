@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Core]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Core]] ▸ **Math**
 
 ## Psuedorandom Number Generation
 
