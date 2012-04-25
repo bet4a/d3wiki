@@ -106,7 +106,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[nest.map|Arrays#wiki-nest_map]] - evaluate the nest operator, returning an associative array.
 * [[nest.entries|Arrays#wiki-nest_entries]] - evaluate the nest operator, returning an array of key-values tuples.
 
-### Math
+### [[Math]]
 
 * [[d3.random.normal|Math#wiki-random_normal]] - generate a random number with a normal distribution.
 * [[d3.transform|Math#wiki-transform]] - compute the standard form of a 2D matrix transform.
