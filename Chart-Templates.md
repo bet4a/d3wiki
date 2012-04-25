@@ -1,1 +1,0 @@
-See <http://bost.ocks.org/mike/chart/> for recommendations on reusable visualization components.
