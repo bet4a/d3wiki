@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Time]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Time]] ▸ **Time Intervals**
 
 **Time intervals** are irregular! For example, there are 60 seconds in a minute, but 24 hours in a day. Even more confusing, some days have 23 or 25 hours due to [daylight saving time](http://en.wikipedia.org/wiki/Daylight_saving_time), and the standard [Gregorian calendar](http://en.wikipedia.org/wiki/Gregorian_calendar) uses months of differing lengths. And then there are leap years and leap seconds!
 
