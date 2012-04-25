@@ -23,7 +23,7 @@ If you just want the latest release of D3 as a JavaScript file, you can download
 
 To get the lastest release and all the examples, you can find a tarball here:
 
-* https://github.com/mbostock/d3/tags
+* https://github.com/mbostock/d3/zipball/master
 
 Or, from the command line:
 
