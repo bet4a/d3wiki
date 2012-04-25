@@ -1,4 +1,4 @@
-Welcome to the **D3 gallery**. Feel free to add links to your work!
+Welcome to the **D3 gallery**. Feel free to add links to your work! More examples are available on the [D3 website](http://mbostock.github.com/d3/ex/) and in the [D3 repository](/mbostock/d3/tree/master/examples). If you want to share a quick example, consider using [Gist](http://gist.github.com) and [bl.ocks](http://bl.ocks.org).
 
 ## Tutorials
 
@@ -47,8 +47,6 @@ Welcome to the **D3 gallery**. Feel free to add links to your work!
 * [[D3: Data-Driven Documents|http://vis.stanford.edu/papers/d3]]<br>Michael Bostock, Vadim Ogievetsky, Jeffrey Heer<br>*IEEE Trans. Visualization & Comp. Graphics (Proc. InfoVis)*, 2011
 
 ## Examples
-
-### Visualizations
 
 * [Visualizing Networks with Hive Plots](http://bost.ocks.org/mike/hive/)
 * [The Wealth & Health of Nations](http://bost.ocks.org/mike/nations/)
@@ -247,8 +245,6 @@ Welcome to the **D3 gallery**. Feel free to add links to your work!
 * [Non-Contiguous Cartogram](http://mbostock.github.com/d3/ex/cartogram.html) 
 * [Flows of refugees between the world countries in 2008](http://bl.ocks.org/2209220)
 
-Using D3? Post your examples here! More examples on the [D3 website](http://mbostock.github.com/d3/ex/) and in the [[Git repository|https://github.com/mbostock/d3/tree/master/examples]]. If you just want to share a quick example, consider using [Gist](http://gist.github.com) and [bl.ocks](http://bl.ocks.org).
-
 ### Tools
 
 #### Interoperability
@@ -267,7 +263,8 @@ Using D3? Post your examples here! More examples on the [D3 website](http://mbos
 * [D3.js sandbox](http://www.cubicle6.com/d3/)
 
 #### Products
-* [Cube: Time Series Visualization](http://square.github.com/cube/)
+
+* [Cube: Time Series Data Collection & Analysis](http://square.github.com/cube/)
 * [Fast Multidimensional Filtering for Coordinated Views](http://square.github.com/tesseract/)
 * [Polychart: A browser-based platform for exploring data and creating charts](http://polychart.com/)
 * [Plot.io: Data Visualization made Fast, Fun and Easy](http://www.plot.io/)
@@ -275,19 +272,13 @@ Using D3? Post your examples here! More examples on the [D3 website](http://mbos
 * [Trisul Network Analytic](http://trisul.org/)
 
 #### Libraries
+
+* [Cubism.js: Time Series Visualization](http://square.github.com/cubism/)
 * [Rickshaw: JavaScript toolkit for creating interactive real-time graphs](https://github.com/shutterstock/rickshaw)
 * [Dynamic Visualization LEGO](https://github.com/vogievetsky/DVL)
 
-## Under Development
-
-* [[Workshop]]
-* [[Axes]]
-* [[FAQ]]
-* [[Chart Templates]]
-
 ### Wish List
 
-* adjacency matrix
 * arc diagram
 * polar area diagram (nightingale)
 * gantt, other timelines and timing diagram
