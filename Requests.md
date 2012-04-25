@@ -1,4 +1,4 @@
-> [[API Reference]] ▸ [[Core]]
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Core]] ▸ **Requests**
 
 It goes without saying that to visualize data, you'll need to access the data in the first place! There are a variety of ways to get data into the browser. For small datasets, you might get away with just hardcoding some values in your script. Another option is to load an external JavaScript file that defines your data as a variable. ([[JSONP|http://en.wikipedia.org/wiki/JSONP]] is a common example of this.) HTML5 even has a way of embedding data directly in the document using [[data attributes|http://ejohn.org/blog/html-5-data-attributes/]]. But, one of the most versatile ways of loading data into the browser is using an [[XMLHttpRequest|http://en.wikipedia.org/wiki/XMLHttpRequest]], or **XHR**. This allows data to be loaded asynchronously (so the rest of the page can display while data is loading), and is safer than JSONP. D3 has a variety of helper methods that simplify loading data from files.
 
