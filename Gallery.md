@@ -1,25 +1,58 @@
 Welcome to the **D3 gallery**. Feel free to add links to your work! More examples are available on the [D3 website](http://mbostock.github.com/d3/ex/) and in the [D3 repository](/mbostock/d3/tree/master/examples). If you want to share a quick example, consider using [Gist](http://gist.github.com) and [bl.ocks](http://bl.ocks.org).
 
 ## Visual Index
-
-[![calendar](http://mbostock.github.com/d3/calendar.png)](http://mbostock.github.com/d3/ex/calendar.html)
-[![chord](http://mbostock.github.com/d3/chord.png)](http://mbostock.github.com/d3/ex/chord.html)
-[![choropleth](http://mbostock.github.com/d3/choropleth.png)](http://mbostock.github.com/d3/ex/choropleth.html)
-[![population](http://mbostock.github.com/d3/population.png)](http://mbostock.github.com/d3/ex/population.html)
-[![cartogram](http://mbostock.github.com/d3/cartogram.png)](http://mbostock.github.com/d3/ex/cartogram.html)
-[![force](http://mbostock.github.com/d3/force.png)](http://mbostock.github.com/d3/ex/force.html)
-[![treemap](http://mbostock.github.com/d3/treemap.png)](http://mbostock.github.com/d3/ex/treemap.html)
-[![sunburst](http://mbostock.github.com/d3/sunburst.png)](http://mbostock.github.com/d3/ex/sunburst.html)
-[![splom](http://mbostock.github.com/d3/splom.png)](http://mbostock.github.com/d3/ex/splom.html)
-[![stack](http://mbostock.github.com/d3/stack.png)](http://mbostock.github.com/d3/ex/stack.html)
-[![tree](http://mbostock.github.com/d3/tree.png)](http://mbostock.github.com/d3/ex/tree.html)
-[![stream](http://mbostock.github.com/d3/stream.png)](http://mbostock.github.com/d3/ex/stream.html)
-[![voronoi](http://mbostock.github.com/d3/voronoi.png)](http://mbostock.github.com/d3/ex/voronoi.html)
-[![bullet](http://mbostock.github.com/d3/bullet.png)](http://mbostock.github.com/d3/ex/bullet.html)
-[![box](http://mbostock.github.com/d3/box.png)](http://mbostock.github.com/d3/ex/box.html)
-[![pack](http://mbostock.github.com/d3/pack.png)](http://mbostock.github.com/d3/ex/pack.html)
-[![bubble](http://mbostock.github.com/d3/bubble.png)](http://mbostock.github.com/d3/ex/bubble.html)
-[![cluster](http://mbostock.github.com/d3/cluster.png)](http://mbostock.github.com/d3/ex/cluster.html)
+[![box](ex/box.png)](http://mbostock.github.com/d3/ex/box.html)
+[![bubble](ex/bubble.png)](http://mbostock.github.com/d3/ex/bubble.html)
+[![bullet](ex/bullet.png)](http://mbostock.github.com/d3/ex/bullet.html)
+[![calendar](ex/calendar.png)](http://mbostock.github.com/d3/ex/calendar.html)
+[![cartogram](ex/cartogram.png)](http://mbostock.github.com/d3/ex/cartogram.html)
+[![chord](ex/chord.png)](http://mbostock.github.com/d3/ex/chord.html)
+[![choropleth](ex/choropleth.png)](http://mbostock.github.com/d3/ex/choropleth.html)
+[![cluster](ex/cluster.png)](http://mbostock.github.com/d3/ex/cluster.html)
+[![force](ex/force.png)](http://mbostock.github.com/d3/ex/force.html)
+[![pack](ex/pack.png)](http://mbostock.github.com/d3/ex/pack.html)
+[![population](ex/population.png)](http://mbostock.github.com/d3/ex/population.html)
+[![splom](ex/splom.png)](http://mbostock.github.com/d3/ex/splom.html)
+[![stack](ex/stack.png)](http://mbostock.github.com/d3/ex/stack.html)
+[![stream](ex/stream.png)](http://mbostock.github.com/d3/ex/stream.html)
+[![sunburst](ex/sunburst.png)](http://mbostock.github.com/d3/ex/sunburst.html)
+[![tree](ex/tree.png)](http://mbostock.github.com/d3/ex/tree.html)
+[![treemap](ex/treemap.png)](http://mbostock.github.com/d3/ex/treemap.html)
+[![voronoi](ex/voronoi.png)](http://mbostock.github.com/d3/ex/voronoi.html)
+[![fisheye](ex/fisheye.png)](http://bost.ocks.org/mike/fisheye/)
+[![hive](ex/hive.png)](http://bost.ocks.org/mike/hive/)
+[![miserables](ex/miserables.png)](http://bost.ocks.org/mike/miserables/)
+[![nations](ex/nations.png)](http://bost.ocks.org/mike/nations/)
+[![uber](ex/uber.png)](http://bost.ocks.org/mike/uberdata/)
+[![bezier](ex/bezier.png)](http://www.jasondavies.com/animated-bezier/)
+[![coffee](ex/coffee.png)](http://www.jasondavies.com/coffee-wheel/)
+[![collatz](ex/collatz.png)](http://www.jasondavies.com/collatz-graph/)
+[![parsets](ex/parsets.png)](http://www.jasondavies.com/parallel-sets/)
+[![cloud](ex/cloud.png)](http://www.jasondavies.com/wordcloud/)
+[![koalas](ex/koalas.png)](http://www.koalastothemax.com/)
+[![particles](ex/particles.png)](http://bl.ocks.org/1062544)
+[![force-states](ex/force-states.png)](http://bl.ocks.org/1073373)
+[![indented-tree](ex/indented-tree.png)](http://bl.ocks.org/1093025)
+[![ronded-rect](ex/ronded-rect.png)](http://bl.ocks.org/1123639)
+[![sperm](ex/sperm.png)](http://bl.ocks.org/1136236)
+[![show-reel](ex/show-reel.png)](http://bl.ocks.org/1256572)
+[![debt](ex/debt.png)](http://bl.ocks.org/1308257)
+[![epicyclic](ex/epicyclic.png)](http://bl.ocks.org/1353700)
+[![force-labels](ex/force-labels.png)](http://bl.ocks.org/1377729)
+[![illusion](ex/illusion.png)](http://bl.ocks.org/1386444)
+[![voronoi-picker](ex/voronoi-picker.png)](http://bl.ocks.org/1405439)
+[![map-zoom](ex/map-zoom.png)](http://bl.ocks.org/2206590)
+[![rain](ex/rain.png)](http://bl.ocks.org/849853)
+[![color](ex/color.png)](http://color.method.ac/)
+[![nutrient](ex/nutrient.png)](http://exposedata.com/parallel/)
+[![hn](ex/hn.png)](http://hn.metamx.com/)
+[![world](ex/world.png)](http://projects.flowingdata.com/life-expectancy/)
+[![slope](ex/slope.png)](http://skedasis.com/d3/slopegraph/)
+[![cubism](ex/cubism.png)](http://square.github.com/cubism/)
+[![ncaa](ex/ncaa.png)](http://thepowerrank.com/visual/NCAA_Tournament_Predictions)
+[![windhistory](ex/windhistory.png)](http://windhistory.com/)
+[![lcf](ex/lcf.png)](http://www.christophermanning.org/projects/building-cubic-hamiltonian-graphs-from-lcf-notation/)
+[![force-voronoi](ex/force-voronoi.png)](http://www.christophermanning.org/projects/voronoi-diagram-with-force-directed-nodes-and-delaunay-links/)
 
 ## Examples
 
@@ -102,9 +135,6 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 
 * [Dependency Chord Diagram](http://bl.ocks.org/1046712)
 * [Chord Layout Transitions](http://fleetinbeing.net/d3e/chord.html)
-
-![Chord Layout Transitions](https://lh3.googleusercontent.com/-e3xkG7QHD18/T12OnBppCNI/AAAAAAAAAio/sefNBfkpj8k/s144/chord_transition.png)
-
 * [Hierarchical Edge Bundling](http://bl.ocks.org/1044242)
 * [Hierarchical Bar Chart](http://bl.ocks.org/1283663)
 * [Partition Layout (Zoomable Icicle)](http://bl.ocks.org/1005873)
@@ -114,25 +144,16 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Treemap Layout in SVG](http://bl.ocks.org/972398)
 * [Sunburst Layout with Labels](http://bl.ocks.org/910126)
 * [Sunburst: Coffee Flavour Wheel](http://www.jasondavies.com/coffee-wheel/)
-
-![Sunburst: Coffee Flavour Wheel](https://lh5.googleusercontent.com/-qMcGR2WDMuo/T12OnGsjw_I/AAAAAAAAAiY/cQ5k5Y4ISIc/s144/coffee_flavour_wheel.png)
-
 * [Indented Tree (Collapsible)](http://bl.ocks.org/1093025)
 * [Force Layout with Symbols](http://bl.ocks.org/1062383)
 * [Force Layout with Custom Forces](http://bl.ocks.org/1021841)
 * [Force Layout with Multiple Foci](http://bl.ocks.org/1021953)
 * [Force Layout with Images and Labels](http://bl.ocks.org/950642)
-
-![Force Layout with Images and Labels](https://lh6.googleusercontent.com/-MDMEzqJbwn0/T12OnanLiiI/AAAAAAAAAis/GwuxOkCK2Dk/s144/fd_layout_labels.png)
-
 * [Force Layout (Interactive Construction)](http://bl.ocks.org/929623)
 * [Force Layout (Collapsible Hierarchy)](http://bl.ocks.org/1062288)
 * [Force Layout from XML](http://bl.ocks.org/1080941)
 * [Force Layout with Directed Edges (Curves and Arrow Markers)](http://bl.ocks.org/1153292)
 * [Bounded Force Layout](http://bl.ocks.org/1129492) 
-
-![Bounded Force Layout](https://lh3.googleusercontent.com/-XHWqTjltvyM/T12OnFwNj7I/AAAAAAAAAic/473H_J--JoI/s144/bounded_fd_layout.png)
-
 * [Building a tree diagram](http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/)
 * [Reveal animation on a tree with a clip path](http://blog.pixelingene.com/2011/08/progressive-reveal-animations-in-svg-using-a-svgclippath/)
 * [Force-Based Label Placement](http://bl.ocks.org/1377729)
@@ -145,51 +166,27 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 
 #### Miscellaneous visualizations
 * [Superformula Explorer](http://bl.ocks.org/1021103)
-
-![Superformula explorer](https://lh4.googleusercontent.com/-kKMSSfsDl-0/T10Wnhfs5xI/AAAAAAAAAhc/LDtTxfPOQx0/s144/superformula_explorer.png)
-
 * [Superformula Tweening](http://bl.ocks.org/1020902)
 * [OMG Particles!](http://bl.ocks.org/1062544)
-
-![OMG Particles!](https://lh5.googleusercontent.com/-YDEBCc3mdQw/T12HGrGxGaI/AAAAAAAAAhk/nBzDIUVaK-o/s144/omg_particles.png)
-
 * [Line Tension](http://bl.ocks.org/1016220)
 * [Segmented Lines and Slope Coloring](http://bl.ocks.org/1117287)
 * [Raindrops](http://bl.ocks.org/849853)
 * [Linear Gradients](http://bl.ocks.org/1086421)
 * [Force Directed States of America](http://bl.ocks.org/1073373)
-
-![Force Directed States of America](https://lh4.googleusercontent.com/-v2O34cK9mgE/T12HG2t3NOI/AAAAAAAAAho/BqZ_oUzUq28/s144/fd_layout_us.png)
-
 * [Rounded Rectangles](http://bl.ocks.org/1123639)
 * [Spermatozoa](http://bl.ocks.org/1136236)
-
-![Spermatozoa](https://lh3.googleusercontent.com/-mf1b5Ro4UxM/T12HG9sGfII/AAAAAAAAAhs/jo-MOd6SgrE/s144/spermatozoa.png)
-
 * [Spline, Zoom and Pan](http://bl.ocks.org/1182434)
 * [Arc Tweens](http://bl.ocks.org/1098617)
 * [Show Reel](http://bl.ocks.org/1256572)
 * [VVVV viewer](http://vvvvjs.quasipartikel.at/)
-
-![VVVV viewer](https://lh6.googleusercontent.com/-5_4MV5-epO4/T12Lja4_DkI/AAAAAAAAAiI/gYt8lB-WxGI/s144/vvvv_viewer.png)
-
 * [Merge Sort](http://bl.ocks.org/1243323)
 * [Epicyclic Gearing](http://bl.ocks.org/1353700)
-
-![Epicyclic Gearing](https://lh4.googleusercontent.com/-H_xArseB-SI/T12HGtQIqGI/AAAAAAAAAhg/kQE2aOcUMQk/s144/epicyclic_gearing.png)
-
 * [DOM-to-Canvas](http://bl.ocks.org/1276463)
 * [Transform Transitions](http://bl.ocks.org/1345853)
 * [Square Circle Spiral Illusion](http://bl.ocks.org/1386444)
-
-![Square Circle Spiral Illusion](https://lh4.googleusercontent.com/-c9OOwZOqWvU/T12LjUT1VzI/AAAAAAAAAiE/xS2bndODwIg/s144/spiral_illusion.png)
-
 * [Adventures in D3](https://github.com/enjalot/adventures_in_d3)
 * [Time Series](https://github.com/boorad/d3-tsline)
 * [Voronoi-based point picker](http://bl.ocks.org/1405439)
-
-![Voronoi-based point picker](https://lh3.googleusercontent.com/-q5CyBOAD5xw/T12LjdVMSMI/AAAAAAAAAiA/ALN1JWRu0XA/s144/voronoi_point_picker.png)
-
 * [Radar chart](http://www.larsko.org/v/euc/)
 * [Drag rectangle](http://bl.ocks.org/1629464)
 * [Elastic collisions](http://bl.ocks.org/1706523)(http://bl.ocks.org/1706849)
