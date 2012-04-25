@@ -1,3 +1,5 @@
+Welcome to the **D3 gallery**. Feel free to add links to your work!
+
 ## Tutorials
 
 * [[Thinking with Joins|http://bost.ocks.org/mike/join/]]
