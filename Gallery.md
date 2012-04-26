@@ -143,7 +143,6 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [[Animated Sankey Diagram (alluvial)|http://nickrabinowitz.com/projects/d3/alluvial/alluvial-dynamic.html]]
 * [Parallel Coordinates](http://bl.ocks.org/1341281)
 * [Parallel Sets](http://www.jasondavies.com/parallel-sets/)
-* [Backbone-D3](http://drsm79.github.com/Backbone-d3/index.html)
 * [Horizon Chart](http://bl.ocks.org/1483226)
 * [Gauge](http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html)
 * [Line Chart with tooltips](http://bl.ocks.org/1629644)
@@ -249,6 +248,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Plotting library for python based on d3](https://github.com/mikedewar/d3py)
 * [Visualizing NetworkX graphs in the browser using D3](http://www.drewconway.com/zia/?p=2765)
 * [Pushing d3 commands to the browser from iPython](https://github.com/hhuuggoo/pushd3)
+* [Dance.js: D3 with Backbone and Data.js](http://quasipartikel.at/2012/04/25/dancing-with-data/)
+* [Backbone-D3](http://drsm79.github.com/Backbone-d3/index.html)
 
 #### Online Editors
 
