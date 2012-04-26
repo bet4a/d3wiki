@@ -72,6 +72,9 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 [![windhistory](ex/windhistory.png)](http://windhistory.com/)
 [![lcf](ex/lcf.png)](http://www.christophermanning.org/projects/building-cubic-hamiltonian-graphs-from-lcf-notation/)
 [![force-voronoi](ex/force-voronoi.png)](http://www.christophermanning.org/projects/voronoi-diagram-with-force-directed-nodes-and-delaunay-links/)
+[![house-heatmap](ex/house-heatmap.png)](http://trends.truliablog.com/2011/09/house-hunter-by-day-not-so-much-after-midnight/)
+[![house-map](ex/house-map.png)](http://trends.truliablog.com/2012/02/where-are-house-hunters-searching/)
+[![open-budget](ex/open-budget.png)](http://marcinignac.com/projects/open-budget/)
 
 ## Examples
 
@@ -95,7 +98,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [World Wide Women's Rights](http://www.wimdows.nl/datavis/lib/D3/ciripleth-area-exp.html) - Wimdows.nl
 * [Old Visualizations Made New Again](http://vallandingham.me/vis/) - Jim Vallandingham
 * [Scatterize](http://webtasks.keck.waisman.wisc.edu/scatterize/d/Acdck0qHJo#h=2&m=OLS&x=1&y=6) - Nate Vack
-* [Various visualisations especially with d3.geo](http://www.larsko.org/VisualisationPlayground) - Lars Kotthoff 
+* [Various visualisations especially with d3.geo](http://www.larsko.org/VisualisationPlayground) - Lars Kotthoff
 * [Global Life Expectancy](http://projects.flowingdata.com/life-expectancy/) - Nathan Yau (FlowingData)
 * [Vegetable Nutrition w/ Parallel Coordinates](http://exposedata.com/parallel/) - Kai Chang
 * [London Olympics Perceptions - Donuts to Chord Diagram Transition](http://www.visualizing.org/visualizations/uk-olympic-sentiment-analysis) - Kyle Foreman, Peter Hamilton, Cristina Grigoruta
@@ -175,7 +178,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Force Layout (Collapsible Hierarchy)](http://bl.ocks.org/1062288)
 * [Force Layout from XML](http://bl.ocks.org/1080941)
 * [Force Layout with Directed Edges (Curves and Arrow Markers)](http://bl.ocks.org/1153292)
-* [Bounded Force Layout](http://bl.ocks.org/1129492) 
+* [Bounded Force Layout](http://bl.ocks.org/1129492)
 * [Building a tree diagram](http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/)
 * [Reveal animation on a tree with a clip path](http://blog.pixelingene.com/2011/08/progressive-reveal-animations-in-svg-using-a-svgclippath/)
 * [Force-Based Label Placement](http://bl.ocks.org/1377729)
@@ -235,9 +238,9 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Map from GeoJSON data with zoom/pan](http://bl.ocks.org/2322933)
 * [Maps and sound](http://littleearth.ca/jsmag/)
 * [Choropleth classification systems](http://gabrielflor.it/)
-* [Choropleth with interactive parameters for NYC data visualization](http://code.leakingalpha.com/visionyc/), [code](https://github.com/kpeng/visionyc) 
-* [Mercator](http://bl.ocks.org/1653763) and [Albers](http://bl.ocks.org/2005817) to Orthographic Projection 
-* [Non-Contiguous Cartogram](http://mbostock.github.com/d3/ex/cartogram.html) 
+* [Choropleth with interactive parameters for NYC data visualization](http://code.leakingalpha.com/visionyc/), [code](https://github.com/kpeng/visionyc)
+* [Mercator](http://bl.ocks.org/1653763) and [Albers](http://bl.ocks.org/2005817) to Orthographic Projection
+* [Non-Contiguous Cartogram](http://mbostock.github.com/d3/ex/cartogram.html)
 * [Flows of refugees between the world countries in 2008](http://bl.ocks.org/2209220)
 
 ### Tools
