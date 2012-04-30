@@ -28,7 +28,7 @@ Selects the specified array of elements. This is useful if you already have a re
 
 ## Operating on Selections
 
-Selections are arrays of elements—literally. D3 binds additional methods to the array so that you can apply operators to the selected elements, such as setting an attribute on all the selected elements. One nuance is that selections are *grouped*: rather than a one-dimensional array, each selection is an *array of arrays* of elements. This preserves the hierarchical structure of subselections. Most of the time, you can ignore this detail, but that's why a single-element selection looks like `[[node]]` rather than `[node]`.
+Selections are arrays of elements—literally. D3 binds additional methods to the array so that you can apply operators to the selected elements, such as setting an attribute on all the selected elements. One nuance is that selections are *grouped*: rather than a one-dimensional array, each selection is an *array of arrays* of elements. This preserves the hierarchical structure of subselections. Most of the time, you can ignore this detail, but that's why a single-element selection looks like `[[node]]` rather than `[node]`. For more on nested selections, see [Nested Selections](http://bost.ocks.org/mike/nest/).
 
 If you want to learn how selections work, try selecting elements interactively using your browser's developer console. You can inspect the returned array to see which elements were selected, and how they are grouped. You can also then apply operators to the selected elements and see how the page content changes.
 
