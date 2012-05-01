@@ -189,6 +189,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Building Cubic Hamiltonian Graphs from LCF Notation](http://www.christophermanning.org/projects/building-cubic-hamiltonian-graphs-from-lcf-notation/)
 * [Chicago Lobbyists Force-Directed Graph Visualization](http://www.christophermanning.org/projects/chicago-lobbyists-force-directed-graph-visualization/)
 * [Circular tree. Will your team win the NCAA Tournament?](http://thepowerrank.com/visual/NCAA_Tournament_Predictions)
+* [Bracket Layout](http://blockses.appspot.com/2503502)
 
 #### Miscellaneous visualizations
 * [Superformula Explorer](http://bl.ocks.org/1021103)
