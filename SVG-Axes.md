@@ -38,6 +38,18 @@ Get or set the arguments that are passed to the underlying scale’s tick functi
 
 The *arguments* are also passed to the scale’s tickFormat method to generate the default tick format. Thus, for [log scales](Quantitative-Scales#wiki-log_tickFormat), you might specify both a count and a tick format function.
 
+<a name="axis_tickValues" href="#wiki-axis_tickValues">#</a> axis.**tickValues**([*values*])
+
+Get or set the explicit tick values. If the array *values* is specified, the values are used to generate ticks rather than using the scale's tick generator. If *values* is null, clears any previously-set explicit tick values, reverting back to the scale's tick generator. If *values* is not specified, returns the currently-set tick values, if any. For example, to generate ticks at specific values:
+
+```js
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .tickValues([1, 2, 3, 5, 8, 13, 21]);
+```
+
+The explicit tick values take precedent over the tick arguments set by [axis.ticks](#axis_ticks). Note, however, that the tick arguments are still passed to the scale's [tickFormat](Quantitative-Scales#wiki-linear_tickFormat) function if tick format is not also set. Thus, it is valid to set both axis.ticks and axis.tickValues.
+
 <a name="axis_tickSubdivide" href="SVG-Axes#wiki-axis_tickSubdivide">#</a> axis.<b>tickSubdivide</b>([<i>n</i>])
 
 Get or set the tick subdivision count. If *count* is specified, sets the number of uniform subdivisions to make between major tick marks and returns the axis. If *count* is not specified, returns the current subdivision count which defaults to zero.
