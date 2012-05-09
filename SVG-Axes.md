@@ -38,7 +38,7 @@ Get or set the arguments that are passed to the underlying scale’s tick functi
 
 The *arguments* are also passed to the scale’s tickFormat method to generate the default tick format. Thus, for [log scales](Quantitative-Scales#wiki-log_tickFormat), you might specify both a count and a tick format function.
 
-<a name="tickValues" href="#wiki-axis_tickValues">#</a> axis.**tickValues**([*values*])
+<a name="tickValues" href="#wiki-tickValues">#</a> axis.**tickValues**([*values*])
 
 Get or set the explicit tick values. If the array *values* is specified, the values are used to generate ticks rather than using the scale's tick generator. If *values* is null, clears any previously-set explicit tick values, reverting back to the scale's tick generator. If *values* is not specified, returns the currently-set tick values, if any. For example, to generate ticks at specific values:
 
