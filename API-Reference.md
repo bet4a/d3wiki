@@ -306,6 +306,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[axis.scale|SVG-Axes#wiki-scale]] - get or set the axis scale.
 * [[axis.orient|SVG-Axes#wiki-orient]] - get or set the axis orientation.
 * [[axis.ticks|SVG-Axes#wiki-ticks]] - control how ticks are generated for the axis.
+* [[axis.tickValues|SVG-Axes#wiki-tickValues]] - specify tick values explicitly.
 * [[axis.tickSubdivide|SVG-Axes#wiki-tickSubdivide]] - optionally subdivide ticks uniformly.
 * [[axis.tickSize|SVG-Axes#wiki-tickSize]] - specify the size of major, minor and end ticks.
 * [[axis.tickPadding|SVG-Axes#wiki-tickPadding]] - specify padding between ticks and tick labels.
