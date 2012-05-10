@@ -24,6 +24,46 @@ These attributes can be customized by overriding the accessors and the [out](Sta
 
 Specifies how to extract values from the associated element in *layers*; *accessor* is a function which is invoked on each input layer passed to [stack](Stack-Layout#wiki-_stack), equivalent to calling *layers.map(accessor)* before computing the stack layout. The default values function is the built-in [Object](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object), which is similar to the identity function. If *accessor* is not specified, returns the current values accessor.
 
+The values accessor can be used to associate additional data per-layer, rather than per-point. For example, say your data were structured as followed:
+
+```js
+var layers = [
+  {
+    "name": "apples",
+    "values": [
+      { "x": 0, "y":  91},
+      { "x": 1, "y": 290}
+    ]
+  },
+  {  
+    "name": "oranges",
+    "values": [
+      { "x": 0, "y":  9},
+      { "x": 1, "y": 49}
+    ]
+  }
+];
+```
+
+Specify a values accessor that retrieves the points for each layer:
+
+```js
+var stack = d3.layout.stack()
+    .offset("wiggle")
+    .values(function(d) { return d.values; });
+```
+
+Then, if you wanted to add a tooltip for each layer, you might say:
+
+```js
+svg.selectAll("path")
+    .data(stack(layers))
+  .enter().append("path")
+    .attr("d", area)
+  .append("title")
+    .text(function(d) { return d.name; });
+```
+
 <a name="offset" href="Stack-Layout#wiki-offset">#</a> stack.<b>offset</b>([<i>offset</i>])
 
 If *offset* is specified, sets the stack offset algorithm to the specified value. If *offset* is not specified, returns the current offset algorithm. The following string values are supported:
