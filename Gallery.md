@@ -144,6 +144,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Pie Chart Updating (Part 1)](http://bl.ocks.org/1346395) [(Part 2)](http://bl.ocks.org/1346410)
 * [[Sparklines|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
 * [[Line charts|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
+* [[Interactive Line Graph|http://benjchristensen.com/2012/05/15/interactive-line-graph-using-d3-js/]]
 * [[Scatterplot and Heatmap|http://jsfiddle.net/indiemaps/gzPDU/]]
 * [[Animated Sankey Diagram (alluvial)|http://nickrabinowitz.com/projects/d3/alluvial/alluvial-dynamic.html]]
 * [Parallel Coordinates](http://bl.ocks.org/1341281)
