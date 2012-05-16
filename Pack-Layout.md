@@ -66,7 +66,7 @@ Often, it is convenient to load the node hierarchy using [d3.json](Requests#wiki
 }
 ```
 
-The children accessor is first invoked for root node in the hierarchy. If the accessor returns null, then the node is assumed to be a leaf node at the layout traversal terminates. Otherwise, the accessor should return an array of data elements representing the child nodes.
+The children accessor is first invoked for root node in the hierarchy. If the accessor returns null, then the node is assumed to be a leaf node and the layout traversal terminates. Otherwise, the accessor should return an array of data elements representing the child nodes.
 
 <a name="nodes" href="Pack-Layout#wiki-nodes">#</a> pack.<b>nodes</b>(<i>root</i>)
 
