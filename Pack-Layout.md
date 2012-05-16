@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Layouts]] ▸ [Hierarchy](Hierarchy-Layout) ▸ **Pack Layout**
 
-Enclosure diagrams use containment (nesting) to represent the hierarchy. The size of each circle reveals a quantitative dimension of each data point, and the cumulative size of each subtree. Although [circle packing](http://en.wikipedia.org/wiki/Circle_packing) does not use space as efficiently as a [[treemap|Treemap-Layout]], the “wasted” space more effectively reveals the hierarchy.
+Enclosure diagrams use containment (nesting) to represent the hierarchy. The size of each leaf node’s circle reveals a quantitative dimension of each data point. The enclosing circles show the approximate cumulative size of each subtree, but note that because of wasted space there is some distortion between levels; only the leaf nodes can be compared accurately. Although [circle packing](http://en.wikipedia.org/wiki/Circle_packing) does not use space as efficiently as a [[treemap|Treemap-Layout]], the “wasted” space more prominently reveals the hierarchy.
 
 [![pack](pack.png)](http://mbostock.github.com/d3/ex/pack.html)
 
@@ -105,7 +105,7 @@ function value(d) {
 }
 ```
 
-The value accessor is invoked for each input data element, and must return a number representing the numeric value of the node. This value is used to set the area of each circle proportionally to the value. However, note that circle size is strictly comparable only to other nodes at the same depth in the hierarchy, as there is typically wasted space between packed child circles and their parent.
+The value accessor is invoked for each input data element, and must return a number representing the numeric value of the node. This value is used to set the area of each circle proportionally to the value. However, note that circle size is strictly comparable only between leaf nodes; internal nodes cannot be compared accurately, as there is empty space between packed child circles and their parent.
 
 <a name="size" href="Pack-Layout#wiki-size">#</a> pack.<b>size</b>([<i>size</i>])
 
