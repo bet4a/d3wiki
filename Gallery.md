@@ -120,6 +120,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [iTunes Music Library Artist/Genre Graph](http://cgmartin.com/itunes-library-network-graph/) - Christopher Martin
 * [Data Story] (http://data-story.org) - Decio Battaglia, Kevin Mahoney and Xiaoying Riley
 * [Four Ways to Slice Obama’s 2013 Budget Proposal](http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html) - Shan Carter
+* [The Facebook Offering: How It Compares](http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html) - Jeremy Ashkenas et al.
 * [A Race to Entitlement](http://3angular.roberryarts.com/)
 * [Visualising New Zealand's Stolen Vehicle Database Part1](http://markhansen.co.nz/stolen-vehicles-pt1/) and [Part2](http://markhansen.co.nz/stolen-vehicles-pt2/)
 * [Visualizing San Francisco Home Price Ranges](http://trends.truliablog.com/vis/pricerange-sf/)
