@@ -50,6 +50,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 [![parsets](ex/parsets.png)](http://www.jasondavies.com/parallel-sets/)
 [![cloud](ex/cloud.png)](http://www.jasondavies.com/wordcloud/)
 [![budget](ex/budget.png)](http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html)
+[![facebook-ipo](ex/facebook-ipo.png)](http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html)
 [![koalas](ex/koalas.png)](http://www.koalastothemax.com/)
 [![particles](ex/particles.png)](http://bl.ocks.org/1062544)
 [![indented-tree](ex/indented-tree.png)](http://bl.ocks.org/1093025)
