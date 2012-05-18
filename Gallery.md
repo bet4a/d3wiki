@@ -259,6 +259,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Pushing d3 commands to the browser from iPython](https://github.com/hhuuggoo/pushd3)
 * [Dance.js: D3 with Backbone and Data.js](http://quasipartikel.at/2012/04/25/dancing-with-data/)
 * [Backbone-D3](http://drsm79.github.com/Backbone-d3/index.html)
+* [Viewing OpenLearn Mindmaps Using d3.js](http://blog.ouseful.info/2012/05/11/viewing-openlearn-mindmaps-using-d3-js/)
 
 #### Online Editors
 
