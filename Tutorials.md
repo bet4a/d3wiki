@@ -8,6 +8,7 @@ Please feel free to add links to your work!
 * [Three Little Circles](http://mbostock.github.com/d3/tutorial/circle.html)
 * [Thinking with Joins](http://bost.ocks.org/mike/join/)
 * [Nested Selections](http://bost.ocks.org/mike/nest/)
+* [Object Constancy](http://bost.ocks.org/mike/constancy/)
 * [A Bar Chart, Part 1](http://mbostock.github.com/d3/tutorial/bar-1.html)
 * [A Bar Chart, Part 2](http://mbostock.github.com/d3/tutorial/bar-2.html)
 * [Try D3 Now](http://christopheviau.com/d3_tutorial/) - Christophe Viau
