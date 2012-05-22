@@ -39,6 +39,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 [![area-gradient](ex/area-gradient.png)](http://mbostock.github.com/d3/talk/20111018/area-gradient.html)
 [![flight-calendar](ex/flight-calendar.png)](http://mbostock.github.com/d3/talk/20111018/calendar.html)
 [![cluster-radial](ex/cluster-radial.png)](http://mbostock.github.com/d3/talk/20111018/cluster.html)
+[![sankey](ex/sankey.png)](http://bost.ocks.org/mike/sankey/)
 [![fisheye](ex/fisheye.png)](http://bost.ocks.org/mike/fisheye/)
 [![hive](ex/hive.png)](http://bost.ocks.org/mike/hive/)
 [![miserables](ex/miserables.png)](http://bost.ocks.org/mike/miserables/)
