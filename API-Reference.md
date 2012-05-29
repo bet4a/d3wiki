@@ -512,6 +512,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[treemap.links|Treemap-Layout#wiki-links]] - compute the parent-child links between tree nodes.
 * [[treemap.value|Treemap-Layout#wiki-value]] - get or set the value accessor used to size treemap cells.
 * [[treemap.size|Treemap-Layout#wiki-size]] - specify the layout size in *x* and *y*.
+* [[treemap.padding|Treemap-Layout#wiki-padding]] - specify the padding between a parent and its children.
 * [[treemap.round|Treemap-Layout#wiki-round]] - enable or disable rounding to exact pixels.
 * [[treemap.sticky|Treemap-Layout#wiki-sticky]] - make the layout sticky for stable updates.
 
