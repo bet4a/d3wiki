@@ -123,7 +123,7 @@ If *padding* is specified, sets the new padding and returns the treemap layout; 
 * A number indicates uniform padding, in pixels, on all four sides.
 * An array of numbers indicates the top, right, left and bottom padding values.
 
-The padding may also be specified as a function which returns one of the three above values.
+The padding may also be specified as a function which returns one of the three above values. This function is evaluated for each internal (non-leaf) node, and can be used to compute padding dynamically.
 
 <a name="round" href="Treemap-Layout#wiki-round">#</a> treemap.<b>round</b>([<i>round</i>])
 
