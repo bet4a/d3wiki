@@ -113,6 +113,18 @@ The value accessor is invoked for each input data element, and must return a num
 
 If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1.
 
+<a name="padding" href="#wiki-padding">#</a> treemap.**padding**([*padding*])
+
+Get or set the padding for each treemap cell, in pixels. The padding determines the amount of extra space to reserve between the parent and its children; this space can be used to indicate the hierarchy through enclosure, or to reserve space for parent labels. If no padding is used, then the leaves of the tree will completely fill the layout's size.
+
+If *padding* is specified, sets the new padding and returns the treemap layout; if *padding* is not specified, returns the current padding. The padding may be specified several ways:
+
+* A null value disables padding; null is equivalent to zero.
+* A number indicates uniform padding, in pixels, on all four sides.
+* An array of numbers indicates the top, right, left and bottom padding values.
+
+The padding may also be specified as a function which returns one of the three above values.
+
 <a name="round" href="Treemap-Layout#wiki-round">#</a> treemap.<b>round</b>([<i>round</i>])
 
 If *round* is specified, sets whether or not the treemap layout will round to exact pixel boundaries. This can be nice to avoid antialiasing artifacts in SVG. If *round* is not specified, returns whether the treemap will be rounded.
