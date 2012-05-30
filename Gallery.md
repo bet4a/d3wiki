@@ -127,6 +127,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Visualizing San Francisco Home Price Ranges](http://trends.truliablog.com/vis/pricerange-sf/)
 * [Daily data return rates for seismic networks in the EarthScope USArray](http://anf.ucsd.edu/tools/data_return_rates/) - [Rob Newman, Array Network Facility, UCSD](https://github.com/robnewman)
 * [What Size Am I? Finding clothes that fit](http://sizes.darkgreener.com/)
+* [Baseball 2012 Predictions based on past 6 years](http://sizethreestudios.com/Projects/_moneyball) - Danny Hadley
 
 ### Concepts & Techniques
 
