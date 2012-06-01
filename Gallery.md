@@ -226,6 +226,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Drag rectangle](http://bl.ocks.org/1629464)
 * [Elastic collisions](http://bl.ocks.org/1706523)(http://bl.ocks.org/1706849)
 * [Collider - a d3.js game](http://blog.latentflip.com/post/18195267992/d3-collider)
+* [alpha-shapes aka concave hulls](http://bl.ocks.org/1552725)
 
 #### Useful snippets
 
