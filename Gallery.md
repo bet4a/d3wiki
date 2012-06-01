@@ -227,6 +227,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Elastic collisions](http://bl.ocks.org/1706523)(http://bl.ocks.org/1706849)
 * [Collider - a d3.js game](http://blog.latentflip.com/post/18195267992/d3-collider)
 * [alpha-shapes aka concave hulls](http://bl.ocks.org/1552725)
+* [Conway's Game of life as a scrolling background](http://rhokaustin.org/)
 
 #### Useful snippets
 
@@ -265,6 +266,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Dance.js: D3 with Backbone and Data.js](http://quasipartikel.at/2012/04/25/dancing-with-data/)
 * [Backbone-D3](http://drsm79.github.com/Backbone-d3/index.html)
 * [Viewing OpenLearn Mindmaps Using d3.js](http://blog.ouseful.info/2012/05/11/viewing-openlearn-mindmaps-using-d3-js/)
+* [Splay Tree animation with dart, d3, and local storage](https://bitbucket.org/davidagraf/dartsplaytree/src)
+* [Sankey diagrams from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/sankey)
 
 #### Online Editors
 
