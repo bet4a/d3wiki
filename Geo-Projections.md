@@ -18,7 +18,7 @@ The inverse projection: returns a two-element array [*longitude*, *latitude*] gi
 
 <a name="mercator_scale" href="#wiki-mercator_scale">#</a> mercator.**scale**([*scale*])
 
-Get or set the projection’s scale factor. If *scale* is specified, sets the projection’s scale factor to the specified value and returns the projection. If *scale* is not specified, returns the current scale factor which defaults to 500. The scale factor corresponds linearly to the distance between projected points.
+Get or set the projection’s scale factor. If *scale* is specified, sets the projection’s scale factor to the specified value and returns the projection. If *scale* is not specified, returns the current scale factor which defaults to 500. The scale factor corresponds linearly to the distance between projected points. Note that scale factors may not be consistent across projection types (e.g., Mercator and Albers).
 
 <a name="mercator_translate" href="#wiki-mercator_translate">#</a> mercator.**translate**([*offset*])
 
@@ -26,33 +26,39 @@ Get or set the projection's translation offset. If *offset* is specified, sets t
 
 ## Albers
 
-The Albers equal-area projection is highly recommended for choropleths as it does not preserves the relative areas of geographic features. However, you must determine appropriate parallels.
+The Albers equal-area projection is highly recommended for choropleths as it does not preserves the relative areas of geographic features. However, you must determine appropriate parallels and origin.
 
 <a name="albers" href="#wiki-albers">#</a> d3.geo.<b>albers</b>()
 
-Construct a new Albers equal-area conic projection.
+Construct a new Albers equal-area conic projection with the default scale (1000), translate ([480, 250]), origin ([-98, 38]) and parallels ([29.5, 45.5]). The default Albers projection is appropriate for displaying the [United States](http://bl.ocks.org/2869871) in a 960×500 area. The parallels of 29.5º and 45.5º were chosen by the [USGS](http://www.usgs.gov/) in their 1970 [National Atlas](http://www.nationalatlas.gov/).
 
-<a name="_albers" href="Geo-Projections#wiki-_albers">#</a> <b>albers</b>(<i>position</i>)
+<a name="_albers" href="#wiki-_albers">#</a> **albers**(*location*)
 
-Project the specified position.
+The forward projection: returns a two-element array [*x*, *y*] given the input [*longitude*, *latitude*].
 
-<a name="albers_origin" href="Geo-Projections#wiki-albers_origin">#</a> albers.<b>origin</b>([<i>origin</i>])
+<a name="albers_invert" href="#wiki-albers_invert">#</a> albers.**invert**(*point*)
 
-Get or set the projection's origin.
+The inverse projection: returns a two-element array [*longitude*, *latitude*] given the input [*x*, *y*].
 
-<a name="albers_parallels" href="Geo-Projections#wiki-albers_parallels">#</a> albers.<b>parallels</b>([<i>parallels</i>])
+<a name="albers_origin" href="#wiki-albers_origin">#</a> albers.**origin**([*origin*])
 
-Get or set the projection's two standard parallels.
+Get or set the projection’s origin. If *origin* is specified, sets the projection’s origin to the specified two-element array [*longitude*, *latitude*] and returns the projection. If *origin* is not specified, returns the current origin, which defaults to [-98, 38] ([Hutchinson, Kansas](https://maps.google.com/maps?q=Hutchinson,+Kansas&z=5)). To minimize the distortion of parallel lines, the origin should be chosen to be near the center of the region of interest.
 
-<a name="albers_scale" href="Geo-Projections#wiki-albers_scale">#</a> albers.<b>scale</b>([<i>scale</i>])
+<a name="albers_parallels" href="#wiki-albers_parallels">#</a> albers.**parallels*([*parallels*])
 
-Get or set the projection's scale factor.
+Get or set the projection’s two standard parallels. If *parallels* is specified, sets the projection’s parallels to the specified two-element array of latitudes and returns the projection. If *parallels* is not specified, returns the current parallels, which default to [29.5, 45.5]. To minimize the distortion of parallel lines, the parallels should surround the origin and cover the region of interest.
 
-<a name="albers_translate" href="Geo-Projections#wiki-albers_translate">#</a> albers.<b>translate</b>([<i>offset</i>])
+<a name="albers_scale" href="#wiki-albers_scale">#</a> albers.**scale**([*scale*])
 
-Get or set the projection's translate offset.
+Get or set the projection’s scale factor. If *scale* is specified, sets the projection’s scale factor to the specified value and returns the projection. If *scale* is not specified, returns the current scale factor which defaults to 500. The scale factor corresponds linearly to the distance between projected points. Note that scale factors may not be consistent across projection types (e.g., Mercator and Albers).
 
-<a name="albersUsa" href="Geo-Projections#wiki-albersUsa">#</a> d3.geo.<b>albersUsa</b>()
+<a name="albers_translate" href="#wiki-albers_translate">#</a> albers.**translate**([*offset*])
+
+Get or set the projection's translation offset. If *offset* is specified, sets the projection’s translation offset to the specified two-element array [*x*, *y*] and returns the projection. If *offset* is not specified, returns the current translation offset which defaults to [480, 250]. The translation offset determines the pixel coordinates of the [origin](#wiki-albers_origin). The default value is designed to place Hutchinson, Kansas at the center of a 960×500 area.
+
+## Albers USA (Composite)
+
+<a name="albersUsa" href="#wiki-albersUsa">#</a> d3.geo.**albersUsa**()
 
 Construct a new composite Albers projection for the United States.
 
