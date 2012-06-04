@@ -4,9 +4,11 @@
 
 The spherical Mercator projection is commonly used by tiled mapping libraries (such as [OpenLayers](http://openlayers.org/) and [Leaflet](http://leaflet.cloudmade.com/)). It is [conformal](http://en.wikipedia.org/wiki/Conformal_map); however, it introduces severe area distortion at world scale and thus is not recommended for choropleths.
 
+[![mercator](mercator.png)](http://bl.ocks.org/2869760)
+
 <a name="mercator" href="#wiki-mercator">#</a> d3.geo.**mercator**()
 
-Construct a new spherical Mercator projection with the default scale (500) and translate ([480, 250]). The default Mercator projection is appropriate for displaying the [entire world](http://bl.ocks.org/2869760) in a 960×500 area.
+Construct a new spherical Mercator projection with the default scale (500) and translate ([480, 250]). The default Mercator projection is appropriate for displaying the entire world in a 960×500 area.
 
 <a name="_mercator" href="#wiki-_mercator">#</a> **mercator**(*location*)
 
@@ -28,9 +30,11 @@ Get or set the projection's translation offset. If *offset* is specified, sets t
 
 The Albers equal-area projection is highly recommended for [choropleths](http://mbostock.github.com/d3/ex/choropleth.html) as it does not preserves the relative areas of geographic features. However, you must determine appropriate parallels and origin.
 
+[![albers](albers.png)](http://bl.ocks.org/2869871)
+
 <a name="albers" href="#wiki-albers">#</a> d3.geo.<b>albers</b>()
 
-Construct a new Albers equal-area conic projection with the default scale (1000), translate ([480, 250]), origin ([-98, 38]) and parallels ([29.5, 45.5]). The default Albers projection is appropriate for displaying the [United States](http://bl.ocks.org/2869871) in a 960×500 area. The parallels of 29.5º and 45.5º were chosen by the [USGS](http://www.usgs.gov/) in their 1970 [National Atlas](http://www.nationalatlas.gov/).
+Construct a new Albers equal-area conic projection with the default scale (1000), translate ([480, 250]), origin ([-98, 38]) and parallels ([29.5, 45.5]). The default Albers projection is appropriate for displaying the United States in a 960×500 area. The parallels of 29.5º and 45.5º were chosen by the [USGS](http://www.usgs.gov/) in their 1970 [National Atlas](http://www.nationalatlas.gov/).
 
 <a name="_albers" href="#wiki-_albers">#</a> **albers**(*location*)
 
@@ -58,7 +62,9 @@ Get or set the projection's translation offset. If *offset* is specified, sets t
 
 ## Albers USA (Composite)
 
-The Albers USA projection is a [composite projection](http://bl.ocks.org/2869946) of four Albers projections, designed to display the forty-eight lower United States alongside Alaska, Hawaii and Puerto Rico. Although intended for choropleths, it distorts the area of Puerto Rico (1.5x) and Alaska (0.6x); Hawaii is shown at the same scale as the lower forty-eight.
+The Albers USA projection is a composite projection of four Albers projections, designed to display the forty-eight lower United States alongside Alaska, Hawaii and Puerto Rico. Although intended for choropleths, it distorts the area of Puerto Rico (1.5x) and Alaska (0.6x); Hawaii is shown at the same scale as the lower forty-eight.
+
+[![albersUsa](albersUsa.png)](http://bl.ocks.org/2869946)
 
 The projection composition is implemented as:
 
@@ -97,9 +103,11 @@ Get or set the projection's translation offset. If *offset* is specified, sets t
 
 D3’s azimuthal projection implementation encompasses [orthographic](http://en.wikipedia.org/wiki/Orthographic_projection_(cartography\)), [stereographic](http://en.wikipedia.org/wiki/Stereographic_projection), [gnomonic](http://en.wikipedia.org/wiki/Gnomonic_projection), equidistant and equal-area projections.
 
+[![azimuthal](azimuthal.png)](http://bl.ocks.org/2870030)
+
 <a name="azimuthal" href="#wiki-azimuthal">#</a> d3.geo.<b>azimuthal</b>()
 
-Construct a new Azimuthal projection with the default mode (orthographic), origin (⟨0, 0⟩), scale (200) and translate ([480, 250]). The [default projection](http://bl.ocks.org/2870030) shows the hemisphere centered around null island in a 960×500 area. Azimuthal projections should typically be used in conjunction with [d3.geo.circle](Geo-Paths#wiki-circle)’s [clip](Geo-Paths#wiki-circle_clip) method to avoid showing the back-facing hemisphere.
+Construct a new Azimuthal projection with the default mode (orthographic), origin (⟨0, 0⟩), scale (200) and translate ([480, 250]). The default projection shows the hemisphere centered around null island in a 960×500 area. Azimuthal projections should typically be used in conjunction with [d3.geo.circle](Geo-Paths#wiki-circle)’s [clip](Geo-Paths#wiki-circle_clip) method to avoid showing the back-facing hemisphere.
 
 <a name="_azimuthal" href="#wiki-_azimuthal">#</a> **azimuthal**(*location*)
 
