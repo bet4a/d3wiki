@@ -103,7 +103,7 @@ Get or set the projection's translation offset. If *offset* is specified, sets t
 
 D3’s azimuthal projection implementation encompasses [orthographic](http://en.wikipedia.org/wiki/Orthographic_projection_(cartography\)), [stereographic](http://en.wikipedia.org/wiki/Stereographic_projection), [gnomonic](http://en.wikipedia.org/wiki/Gnomonic_projection), equidistant and equal-area projections.
 
-[![azimuthal](azimuthal.png)](http://bl.ocks.org/2870030)
+[![orthographic](orthographic.png)](http://bl.ocks.org/2870030)
 
 <a name="azimuthal" href="#wiki-azimuthal">#</a> d3.geo.<b>azimuthal</b>()
 
