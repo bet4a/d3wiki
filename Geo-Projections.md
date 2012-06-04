@@ -1,22 +1,34 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Geo]] ▸ **Geo Projections**
 
-<a name="mercator" href="Geo-Projections#wiki-mercator">#</a> d3.geo.<b>mercator</b>()
+## Mercator
 
-Construct a new spherical Mercator projection.
+The spherical Mercator is commonly used by tiled mapping libraries (such as [OpenLayers](http://openlayers.org/) and [Leaflet](http://leaflet.cloudmade.com/)). It is [conformal](http://en.wikipedia.org/wiki/Conformal_map); however, it introduces severe area distortion at world scale and is thus not recommended for choropleths.
 
-<a name="_mercator" href="Geo-Projections#wiki-_mercator">#</a> <b>mercator</b>(<i>position</i>)
+<a name="mercator" href="#wiki-mercator">#</a> d3.geo.**mercator**()
 
-Project the specified position.
+Construct a new spherical Mercator projection with the default scale (500) and translate ([480, 250]). The default Mercator projection is appropriate for displaying the [entire world](http://bl.ocks.org/2869760) in a 960×500 area.
 
-<a name="mercator_scale" href="Geo-Projections#wiki-mercator_scale">#</a> mercator.<b>scale</b>([<i>scale</i>])
+<a name="_mercator" href="#wiki-_mercator">#</a> **mercator**(*location*)
 
-Get or set the projection's scale factor.
+The forward projection: returns a two-element array [*x*, *y*] given the input [*longitude*, *latitude*].
 
-<a name="mercator_translate" href="Geo-Projections#wiki-mercator_translate">#</a> mercator.<b>translate</b>([<i>offset</i>])
+<a name="mercator_invert" href="#wiki-mercator_invert">#</a> mercator.**invert**(*point*)
 
-Get or set the projection's translate offset.
+The inverse projection: returns a two-element array [*longitude*, *latitude*] given the input [*x*, *y*].
 
-<a name="albers" href="Geo-Projections#wiki-albers">#</a> d3.geo.<b>albers</b>()
+<a name="mercator_scale" href="#wiki-mercator_scale">#</a> mercator.**scale**([*scale*])
+
+Get or set the projection’s scale factor. If *scale* is specified, sets the projection’s scale factor to the specified value and returns the projection. If *scale* is not specified, returns the current scale factor which defaults to 500. The scale factor corresponds linearly to the distance between projected points.
+
+<a name="mercator_translate" href="#wiki-mercator_translate">#</a> mercator.**translate**([*offset*])
+
+Get or set the projection's translation offset. If *offset* is specified, sets the projection’s translation offset to the specified two-element array [*x*, *y*] and returns the projection. If *offset* is not specified, returns the current translation offset which defaults to [480, 250]. The translation offset determines the pixel coordinates of the origin ([0, 0] in longitude and latitude). The default value is designed to place [null island](http://www.nullisland.com/) at the center of a 960×500 area.
+
+## Albers
+
+The Albers equal-area projection is highly recommended for choropleths as it does not preserves the relative areas of geographic features. However, you must determine appropriate parallels.
+
+<a name="albers" href="#wiki-albers">#</a> d3.geo.<b>albers</b>()
 
 Construct a new Albers equal-area conic projection.
 
@@ -55,6 +67,8 @@ Get or set the projection's scale factor.
 <a name="albersUsa_translate" href="Geo-Projections#wiki-albersUsa_translate">#</a> albersUsa.<b>translate</b>([<i>offset</i>])
 
 Get or set the projection's translate offset.
+
+## Azimuthal
 
 <a name="azimuthal" href="Geo-Projections#wiki-azimuthal">#</a> d3.geo.<b>azimuthal</b>()
 
