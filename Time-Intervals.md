@@ -127,7 +127,7 @@ Alias for d3.time.[day](#wiki-minute).[range](#wiki-interval_range). Returns the
 
 <a name="months" href="#wiki-months">#</a> d3.time.<b>months</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
-Alias for d3.time.[day](#wiki-month).[range](#wiki-interval_range). Returns the month boundaries (e.g., January 01) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th month will be returned, based on the month of the year. For example, a *step* of 3 will return January, April, July, *etc.*
+Alias for d3.time.[month](#wiki-month).[range](#wiki-interval_range). Returns the month boundaries (e.g., January 01) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th month will be returned, based on the month of the year. For example, a *step* of 3 will return January, April, July, *etc.*
 
 <a name="seconds" href="#wiki-seconds">#</a> d3.time.<b>seconds</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
