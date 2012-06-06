@@ -123,7 +123,7 @@ Alias for d3.time.[hour](#wiki-hour).[range](#wiki-interval_range). Returns the 
 
 <a name="minutes" href="#wiki-minutes">#</a> d3.time.<b>minutes</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
-Alias for d3.time.[day](#wiki-minute).[range](#wiki-interval_range). Returns the minute boundaries (e.g., 01:23 AM) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th minute will be returned, based on the minute of the hour. For example, a *step* of 15 will return 9:45 PM, 10:00 PM, 10:15 PM, *etc.*
+Alias for d3.time.[minute](#wiki-minute).[range](#wiki-interval_range). Returns the minute boundaries (e.g., 01:23 AM) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th minute will be returned, based on the minute of the hour. For example, a *step* of 15 will return 9:45 PM, 10:00 PM, 10:15 PM, *etc.*
 
 <a name="months" href="#wiki-months">#</a> d3.time.<b>months</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
