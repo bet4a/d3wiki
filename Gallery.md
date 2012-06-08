@@ -199,6 +199,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Chicago Lobbyists Force-Directed Graph Visualization](http://www.christophermanning.org/projects/chicago-lobbyists-force-directed-graph-visualization/)
 * [Circular tree. Will your team win the NCAA Tournament?](http://thepowerrank.com/visual/NCAA_Tournament_Predictions)
 * [Bracket Layout](http://blockses.appspot.com/2503502)
+* [Force Layout with Groups and Labels showing relations of football players participating in Euro 2012](http://www.torlaune.de/euro-2012/spieler-relationen/)
 
 #### Miscellaneous visualizations
 * [Superformula Explorer](http://bl.ocks.org/1021103)
