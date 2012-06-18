@@ -272,6 +272,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Splay Tree animation with dart, d3, and local storage](https://bitbucket.org/davidagraf/dartsplaytree/src)
 * [Sankey diagrams from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/sankey)
 * [Plotsk: A python/coffeescript/d3.js-based library for plotting data in a web browser] (https://github.com/davidcox/plotsk)
+* [Data visualization with D3.js and python](http://blog.nextgenetics.net/?e=7)
 
 #### Online Editors
 
