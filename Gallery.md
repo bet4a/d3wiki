@@ -271,6 +271,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Viewing OpenLearn Mindmaps Using d3.js](http://blog.ouseful.info/2012/05/11/viewing-openlearn-mindmaps-using-d3-js/)
 * [Splay Tree animation with dart, d3, and local storage](https://bitbucket.org/davidagraf/dartsplaytree/src)
 * [Sankey diagrams from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/sankey)
+* [Plotsk: A python/coffeescript/d3.js-based library for plotting data in a web browser] (https://github.com/davidcox/plotsk)
 
 #### Online Editors
 
@@ -300,9 +301,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 ### Wish List
 
 * arc diagram
-* polar area diagram (nightingale)
 * gantt, other timelines and timing diagram
-* sankey diagram
 * candlestick or ohlc
 * fibonacci scale
 * data table
