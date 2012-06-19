@@ -233,7 +233,6 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Conway's Game of life as a scrolling background](http://rhokaustin.org/)
 
 #### Useful snippets
-
 * [Masking with external svg elements](http://bl.ocks.org/1503463)
 * [PJAX](http://bl.ocks.org/1367999)
 * [Table Sorting](http://bl.ocks.org/1226718)
@@ -243,6 +242,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [d3 rendered with RaphaelJS for IE Compatibility](https://github.com/mhemesath/r2d3/blob/master/examples/pie/pie.html)
 * [Templating ala Mustache, with Chernoff faces example](http://bl.ocks.org/2295155)
 * [Bay Area earthquake responses by zip code: loading external file through Yahoo Pipes](http://bl.ocks.org/1343714)
+* [Simple HTML data tables](http://jsfiddle.net/7WQjr/)
+* [Responsive SVG resizing without re-rendering](http://jsfiddle.net/shawnbot/BJLe6/)
 
 #### Maps
 
