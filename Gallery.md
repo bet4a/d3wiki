@@ -305,5 +305,5 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * gantt, other timelines and timing diagram
 * candlestick or ohlc
 * fibonacci scale
-* data table
+* data table (maybe the airline table at the bottom of [the crossfilter example](http://square.github.com/crossfilter/)?)
 * hypergraph
