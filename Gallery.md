@@ -158,7 +158,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Horizon Chart](http://bl.ocks.org/1483226)
 * [Gauge](http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html)
 * [Line Chart with tooltips](http://bl.ocks.org/1629644)
-* [Chernoff faces](http://bl.ocks.org/2011590)
+* [Chernoff faces](http://bl.ocks.org/2011590)[Example: happy planet index](http://www.larsko.org/v/hpi/)
 * [Swimlane Chart](http://bl.ocks.org/1962173)
 * [Stacked layout with time axis](http://bl.ocks.org/1314483)
 * [Animated bubble charts for school data analysis](http://slodge.com/teach/)
