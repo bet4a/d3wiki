@@ -259,6 +259,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Mercator](http://bl.ocks.org/1653763) and [Albers](http://bl.ocks.org/2005817) to Orthographic Projection
 * [Non-Contiguous Cartogram](http://mbostock.github.com/d3/ex/cartogram.html)
 * [Flows of refugees between the world countries in 2008](http://bl.ocks.org/2209220)
+* [Interactive azimuthal projection simulating a 3D earth with stars] (http://marcneuwirth.com/blog/2012/06/24/creating-the-earth-with-d3-js/)
 
 ### Tools
 
