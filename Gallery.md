@@ -129,6 +129,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [What Size Am I? Finding clothes that fit](http://sizes.darkgreener.com/)
 * [Baseball 2012 Predictions based on past 6 years](http://sizethreestudios.com/Projects/_moneyball) - Danny Hadley
 * [Last Chart! - See the Music](http://www.lastchart.com)
+* [Multiple visualization from the Société Typographique de Neuchâtel](http://chop.leeds.ac.uk/stn/interface/gallery.php)
 
 ### Concepts & Techniques
 
