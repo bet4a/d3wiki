@@ -277,7 +277,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Sankey diagrams from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/sankey)
 * [Plotsk: A python/coffeescript/d3.js-based library for plotting data in a web browser] (https://github.com/davidcox/plotsk)
 * [Data visualization with D3.js and python](http://blog.nextgenetics.net/?e=7)
-
+* [d3.js force diagrams straight from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/anyforce)
 #### Online Editors
 
 * [Bar chart code generator and online editor](http://www.d3-generator.com/)
