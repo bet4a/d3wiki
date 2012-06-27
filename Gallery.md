@@ -303,6 +303,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Cubism.js: Time Series Visualization](http://square.github.com/cubism/)
 * [Rickshaw: JavaScript toolkit for creating interactive real-time graphs](https://github.com/shutterstock/rickshaw)
 * [Dynamic Visualization LEGO](https://github.com/vogievetsky/DVL)
+* [NVD3: Reusable charts](http://novus.github.com/nvd3/) by Novus Partners
 
 ### Wish List
 
