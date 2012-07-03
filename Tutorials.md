@@ -26,7 +26,6 @@ Please feel free to add links to your work!
 * [Path and Transform Transitions](http://bost.ocks.org/mike/path/)
 * [Towards Reusable Charts](http://bost.ocks.org/mike/chart/)
 * [Using Inkscape with d3](http://christopheviau.com/d3_tutorial/d3_inkscape/) - Christophe Viau
-* [Scale Graph](http://www.ivanteoh.com/blog/2011/07/d3-tutorial-scale-graph/) - Ivan Teoh
 * [Pie Chart Updating with Text](http://blog.stephenboak.com/2011/08/07/easy-as-a-pie.html) - Stephen Boak
 * [How to Make Choropleth Maps in D3](http://blog.visual.ly/how-to-make-choropleth-maps-in-d3/) - EJ Fox
 * [Converting dynamic SVG to PNG with node.js, d3 and Imagemagick](http://eng.wealthfront.com/2011/12/converting-dynamic-svg-to-png-with.html) - Wealthfront
