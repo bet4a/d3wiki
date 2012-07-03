@@ -277,6 +277,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Plotsk: A python/coffeescript/d3.js-based library for plotting data in a web browser] (https://github.com/davidcox/plotsk)
 * [Data visualization with D3.js and python](http://blog.nextgenetics.net/?e=7)
 * [d3.js force diagrams straight from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/anyforce)
+* [Instant interactive visualization with d3 + ggplot2](http://blog.echen.me/2012/03/05/instant-interactive-visualization-with-d3-and-ggplot2/)
+
 #### Online Editors
 
 * [Bar chart code generator and online editor](http://www.d3-generator.com/)
