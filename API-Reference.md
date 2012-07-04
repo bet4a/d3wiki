@@ -152,9 +152,9 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 ### [[Internals]]
 
-* [[d3.functor|Internals#wiki-d3_functor]] - create a function that returns a constant.
-* [[d3.rebind|Internals#wiki-d3_rebind]] - rebind an inherited getter/setter method to a subclass.
-* [[d3.dispatch|Internals#wiki-d3_dispatch]] - create custom event dispatchers.
+* [[d3.functor|Internals#wiki-functor]] - create a function that returns a constant.
+* [[d3.rebind|Internals#wiki-rebind]] - rebind an inherited getter/setter method to a subclass.
+* [[d3.dispatch|Internals#wiki-dispatch]] - create custom event dispatchers.
 * [[dispatch.on|Internals#wiki-dispatch_on]] - register an event listener.
 * [[dispatch|Internals#wiki-_dispatch]] - dispatch an event to registered listeners.
 
