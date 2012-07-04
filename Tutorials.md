@@ -19,7 +19,6 @@ Please feel free to add links to your work!
 * [Creating Basic Charts using d3.js](http://www.verisi.com/resources/d3-tutorial-basic-charts.htm) - Ben Lorica
 * [Get dirty with data using d3.js](http://www.12devsofxmas.co.uk/2012/01/data-visualisation/) - Clinton Montague
 * [For Protovis Users](http://mbostock.github.com/d3/tutorial/protovis.html)
-* [Manipulating data like a boss with d3](http://www.jeromecukier.net/blog/2012/05/28/manipulating-data-like-a-boss-with-d3/) - Jerome Cukier
 
 ### Specific Techniques
 
