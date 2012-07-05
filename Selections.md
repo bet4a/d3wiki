@@ -92,6 +92,8 @@ The element's tag *name* may have a namespace prefix, such as "svg:text" to crea
 
 Inserts a new element with the specified *name* before the element matching the specified *before* selector, for each element in the current selection. Returns a new selection containing the inserted elements. If the before selector does not match any elements, then the new element will be the last child as with [append](Selections#wiki-append). Each new element inherits the data of the current elements (if any), in the same manner as [select](Selections#wiki-select) for subselections. The name and before selector must be specified as constants, though in the future we might allow inserting of existing elements or a function to generate the name or selector dynamically.
 
+For instance, `insert("div", ":first-child")` will prepend child div nodes to the current selection.
+
 The element's tag *name* may have a namespace prefix, such as "svg:text" to create a "text" element in the SVG namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to [d3.ns.prefix](Namespaces#wiki-prefix).
 
 <a name="remove" href="Selections#wiki-remove">#</a> selection.<b>remove</b>()
