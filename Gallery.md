@@ -204,6 +204,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Circular tree. Will your team win the NCAA Tournament?](http://thepowerrank.com/visual/NCAA_Tournament_Predictions)
 * [Bracket Layout](http://blockses.appspot.com/2503502)
 * [Force Layout with Groups and Labels showing relations of football players participating in Euro 2012](http://www.torlaune.de/euro-2012/spieler-relationen/)
+* [Pedigree Tree](http://bl.ocks.org/2966094)
 
 #### Miscellaneous visualizations
 * [Superformula Explorer](http://bl.ocks.org/1021103)
