@@ -123,7 +123,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Four Ways to Slice Obama’s 2013 Budget Proposal](http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html) - Shan Carter
 * [The Facebook Offering: How It Compares](http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html) - Jeremy Ashkenas et al.
 * [A Race to Entitlement](http://3angular.roberryarts.com/)
-* [Visualising New Zealand's Stolen Vehicle Database Part1](http://markhansen.co.nz/stolen-vehicles-pt1/) and [Part2](http://markhansen.co.nz/stolen-vehicles-pt2/)
+* [Visualising New Zealand's Stolen Vehicle Database Part1](http://markhansen.co.nz/stolen-vehicles-pt1/) and [Part2](http://markhansen.co.nz/stolen-vehicles-pt2/) and [source code](https://github.com/mhansen/stolen-vehicles-pt2)
 * [Visualizing San Francisco Home Price Ranges](http://trends.truliablog.com/vis/pricerange-sf/)
 * [Daily data return rates for seismic networks in the EarthScope USArray](http://anf.ucsd.edu/tools/data_return_rates/) - [Rob Newman, Array Network Facility, UCSD](https://github.com/robnewman)
 * [What Size Am I? Finding clothes that fit](http://sizes.darkgreener.com/)
