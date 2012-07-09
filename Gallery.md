@@ -167,6 +167,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Animated bubble charts for school data analysis](http://slodge.com/teach/)
 * [Pictograms](http://bl.ocks.org/2280295)
 * [Scatterplot for K-Means clustering visualization](http://www.ericbullington.com/articles/2012/01/31/kmeans-visualization)
+* [Smoke charts](http://dyninc.github.com/d3-smokechart/) and [source code](https://github.com/dyninc/d3-smokechart)
 
 #### Trees and Graphs
 
