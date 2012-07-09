@@ -284,6 +284,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Instant interactive visualization with d3 + ggplot2](http://blog.echen.me/2012/03/05/instant-interactive-visualization-with-d3-and-ggplot2/)
 * [d3.js force diagrams with markers straight from Excel](http://excelramblings.blogspot.co.uk/2012/07/visualizing-system-integrations-using.html)
 * [Visualising a real-time DataSift feed with Node and D3.js](http://www.benh.co.uk/datasift/visualising-a-datasift-feed-with-node-and-d3/)
+* [Very limited, in-progress attempt to hook d3.js up to three.js](https://github.com/asutherland/d3-threeD)
 
 #### Online Editors
 
