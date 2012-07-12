@@ -3,8 +3,8 @@
 ## Resources
 
 * [Introduction](http://mbostock.github.com/d3/)
-* [Examples Gallery](wiki/Gallery)
-* [Tutorials and Talks](wiki/Tutorials)
+* [Examples Gallery](Gallery)
+* [Tutorials and Talks](Tutorials)
 * [[API Reference]]
 * [[Release Notes]]
 * [d3.js on Stack Overflow](http://stackoverflow.com/questions/tagged/d3.js)
