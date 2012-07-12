@@ -289,7 +289,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 #### Online Editors
 
 * [Bar chart code generator and online editor](http://www.d3-generator.com/)
-* [Live coding based on Bret Victor's Inventing on Principle talk](http://gabrielflor.it/water)
+* [Live coding based on Bret Victor's Inventing on Principle talk](http://livecoding.gabrielflor.it)
 * [The same but with Gist integration](http://enjalot.com/tributary/2165875/sinwaves.js)
 * [Project Archon](http://enja.org/code/archon/)
 * [D3.js playground](http://phrogz.net/JS/d3-playground/#BlankDefault)
