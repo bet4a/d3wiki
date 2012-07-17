@@ -81,7 +81,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 
 ## Examples
 
-* [Visualizing the World's Opinion (Zoomable Worldmap and Pie Chart](http://theartofasking.com/question/wjucdg6k)
+* [Visualizing the World's Opinion (Zoomable Worldmap and Pie Chart)](http://theartofasking.com/question/wjucdg6k)
 * [Visualizing Networks with Hive Plots](http://bost.ocks.org/mike/hive/)
 * [The Wealth & Health of Nations](http://bost.ocks.org/mike/nations/)
 * [Bézier Curves](http://www.jasondavies.com/animated-bezier/), [Collatz Graph](http://www.jasondavies.com/collatz-graph/), [Word Cloud](http://www.jasondavies.com/wordcloud/) and many [Mathematical Visualisations](http://www.jasondavies.com/toys/) - Jason Davies
