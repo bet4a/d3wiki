@@ -78,6 +78,7 @@ Runs the pack layout, returning the array of nodes associated with the specified
 * depth - the depth of the node, starting at 0 for the root.
 * x - the computed *x*-coordinate of the node position.
 * y - the computed *y*-coordinate of the node position.
+* r - the computed node radius.
 
 <a name="links" href="Pack-Layout#wiki-links">#</a> pack.<b>links</b>(<i>nodes</i>)
 
