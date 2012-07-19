@@ -186,6 +186,17 @@ Generates an array containing an arithmetic progression, similar to the Python b
 Returns a permutation of the specified *array* using the specified array of *indexes*. The returned array contains the corresponding element in array for each index in indexes, in order. For example, permute(["a", "b", "c"], [1, 2, 0])
 returns ["b", "c", "a"]. It is acceptable for the array of indexes to be a different length from the array of elements, and for indexes to be duplicated or omitted.
 
+This method can also be used to extract the values from an object into an array with a stable order. (Array indexes in JavaScript are simply properties which have a special relationship to `.length`.) Extracting keyed values in order can be useful for generating data arrays in nested selections. For example, we could display some of the Minnesota barley yield data above in table form:
+
+```
+var cols = ["site", "variety", "yield"];
+thead.selectAll('th').data(cols)
+    .enter().append('th').text(function (d) { return d.toUpperCase(); });
+tbody.selectAll('tr').data(yields)
+    .enter().append('tr').selectAll('td').data(function (row) { return d3.permute(row, cols); })
+        .enter().append('td').text(function (d) { return d; });
+```
+
 <a name="d3_zip" href="Arrays#wiki-d3_zip">#</a> d3.<b>zip</b>(<i>arrays…</i>)
 
 Returns an array of arrays, where the ith array contains the ith element from each of the argument *arrays*. The returned array is truncated in length to the shortest array in *arrays*. If *arrays* contains only a single array, the returned array contains one-element arrays. With no arguments, the returned array is empty.
