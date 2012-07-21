@@ -114,4 +114,4 @@ The separation function is passed two neighboring nodes *a* and *b*, and must re
 
 <a name="size" href="Tree-Layout#wiki-size">#</a> tree.<b>size</b>([<i>size</i>])
 
-If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1. Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system. For example, to produce a radial layout where the tree breadth (*x*) in measured in degrees, and the tree depth (*y*) is a radius *r* in pixels, say [360, *r*].
+If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1. Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system. For example, to produce a radial layout where the tree breadth (*x*) is measured in degrees, and the tree depth (*y*) is a radius *r* in pixels, say [360, *r*].
