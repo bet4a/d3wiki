@@ -133,6 +133,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Multiple visualization from the Société Typographique de Neuchâtel](http://chop.leeds.ac.uk/stn/interface/gallery.php)
 * [Prime numbers pattern](http://www.jasondavies.com/primos/)
 * [Interactive visual breakpoint detection](http://bioviz.rocq.inria.fr/plotter/) - Toby Dylan Hocking
+* [Coordinated visualizations for Consumer Packaged Goods](http://theory.info/)
 
 ### Concepts & Techniques
 
