@@ -516,7 +516,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[treemap.round|Treemap-Layout#wiki-round]] - enable or disable rounding to exact pixels.
 * [[treemap.sticky|Treemap-Layout#wiki-sticky]] - make the layout sticky for stable updates.
 
-## [[d3.geo (Geography)|Geo]]
+## [d3.geo (Geography)](Geography)
 
 ### [[Paths|Geo-Paths]]
 
@@ -563,7 +563,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[azimuthal.scale|Geo-Projections#wiki-azimuthal_scale]] - get or set the projection's scale factor.
 * [[azimuthal.translate|Geo-Projections#wiki-azimuthal_translate]] - get or set the projection's translate offset.
 
-## [[d3.geom (Geometry)|Geom]]
+## [d3.geom (Geometry)](Geometry)
 
 ### [[Voronoi|Voronoi-Geom]]
 
