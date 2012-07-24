@@ -13,7 +13,7 @@ Please feel free to add links to your work!
 * [A Bar Chart, Part 2](http://mbostock.github.com/d3/tutorial/bar-2.html)
 * [Try D3 Now](http://christopheviau.com/d3_tutorial/) - Christophe Viau
 * [D3 for Mere Mortals](http://www.recursion.org/d3-for-mere-mortals/) - Luke Francl
-* [D3 Tutorials](http://alignedleft.com/tutorials/d3/) - Scott Murray
+* [D3 Tutorials](http://alignedleft.com/tutorials/) - Scott Murray
 * [Introduction to D3](http://dealloc.me/2011/06/24/d3-is-not-a-graphing-library.html) - Justin Palmer
 * [D3.js experiments in the console](http://www.ultrasaurus.com/sarahblog/2012/03/d3-js-experiments-in-the-console/) - Sarah Allen
 * [Creating Basic Charts using d3.js](http://www.verisi.com/resources/d3-tutorial-basic-charts.htm) - Ben Lorica
