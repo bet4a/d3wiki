@@ -295,7 +295,7 @@ Note: no defensive copy of the template object is created; modifications of the 
 
 <a name="d3_interpolateTransform" href="Transitions#wiki-d3_interpolateTransform">#</a> d3.<b>interpolateTransform</b>(<i>a</i>, <i>b</i>)
 
-Returns an interpolator between the two 2D affine [transforms](Math#wiki-transform) represented by *a* and *b*. Each transform is decomposed to a standard representation of translate, rotate, *x*-skew and scale; these component transformations are then interpolated. This behavior is standarded by CSS: see [matrix decomposition for animation](http://www.w3.org/TR/css3-2d-transforms/#matrix-decomposition).
+Returns an interpolator between the two 2D affine [transforms](Math#wiki-transform) represented by *a* and *b*. Each transform is decomposed to a standard representation of translate, rotate, *x*-skew and scale; these component transformations are then interpolated. This behavior is standardized by CSS: see [matrix decomposition for animation](http://www.w3.org/TR/css3-2d-transforms/#matrix-decomposition).
 
 <a name="d3_interpolators" href="Transitions#wiki-d3_interpolators">#</a> d3.<b>interpolators</b>
 
