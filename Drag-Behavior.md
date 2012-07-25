@@ -18,6 +18,6 @@ Registers the specified *listener* to receive events of the specified *type* fro
 
 If specified, sets the *origin* accessor function to the specified value. This function should return an object with "x" and "y" properties specifying the starting coordinates of the element being dragged. If not specified, returns the current accessor function, which defaults to null.
 
-This is typically used because an element's position doesn't match the mouse position exactly, depending on where it was clicked. By default, the current mouse position is used, but this can make the element jump e.g. if you drag a <rect> by clicking on its center, this could cause it to jump since it is typically positioned using its top-left corner. This is also useful for enforcing constraints i.e. if you have constrained a position to be within certain boundaries, then that will be respected.
+This is typically used because an element's position doesn't match the mouse position exactly, depending on where it was clicked. By default, the current mouse position is used, but this can make the element jump e.g. if you drag a `<rect>` by clicking on its center, this could cause it to jump since it is typically positioned using its top-left corner. This is also useful for enforcing constraints i.e. if you have constrained a position to be within certain boundaries, then that will be respected.
 
 Example demonstrating use of *origin* and position constraints on multiple elements: http://bl.ocks.org/1557377
