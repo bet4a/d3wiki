@@ -528,7 +528,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[path.centroid|Geo-Paths#wiki-centroid]] - compute the projected centroid of a given feature.
 * [[d3.geo.bounds|Geo-Paths#wiki-bounds]] - compute the latitude-longitude bounding box for a given feature.
 * [[d3.geo.greatArc|Geo-Paths#wiki-greatArc]] - approximate the shortest path between two points.
-* [[greatArc|Geo-Paths#wiki-_greatArc]] - generate a GeoJSON LineStream.
+* [[greatArc|Geo-Paths#wiki-_greatArc]] - generate a GeoJSON LineString.
 * [[greatArc.distance|Geo-Paths#wiki-greatArc_distance]] - computes the great circle distance, in radians.
 * [[greatArc.source|Geo-Paths#wiki-greatArc_source]] - specify a source accessor.
 * [[greatArc.target|Geo-Paths#wiki-greatArc_target]] - specify a target accessor.
