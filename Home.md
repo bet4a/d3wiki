@@ -21,7 +21,7 @@ If you just want the latest release of D3 as a JavaScript file, you can download
 * http://d3js.org/d3.v2.js - development
 * http://d3js.org/d3.v2.min.js - production
 
-To get the lastest release and all the examples, you can find a tarball here:
+To get the latest release and all the examples, you can find a tarball here:
 
 * https://github.com/mbostock/d3/zipball/master
 
