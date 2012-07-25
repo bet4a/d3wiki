@@ -595,10 +595,15 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 ### [[Drag|Drag-Behavior]]
 
 * [[d3.behavior.drag|Drag-Behavior#wiki-drag]]
+* [[drag.origin|Drag-Behavior#wiki-origin]]
 * [[drag.on|Drag-Behavior#wiki-on]]
 
 ### [[Zoom|Zoom-Behavior]]
 
 * [[d3.behavior.zoom|Zoom-Behavior#wiki-zoom]]
 * [[zoom.on|Zoom-Behavior#wiki-on]]
-* [[zoom.extent|Zoom-Behavior#wiki-extent]]
+* [[zoom.scale|Zoom-Behavior#wiki-scale]]
+* [[zoom.transform|Zoom-Behavior#wiki-transform]]
+* [[zoom.scaleExtent|Zoom-Behavior#wiki-scaleExtent]]
+* [[zoom.x|Zoom-Behavior#wiki-x]]
+* [[zoom.y|Zoom-Behavior#wiki-y]]
