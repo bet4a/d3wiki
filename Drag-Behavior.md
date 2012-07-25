@@ -20,4 +20,4 @@ If specified, sets the *origin* accessor function to the specified value. This f
 
 This is typically used because an element's position doesn't match the mouse position exactly, depending on where it was clicked. By default, the current mouse position is used, but this can make the element jump e.g. if you drag a <rect> by clicking on its center, this could cause it to jump since it is typically positioned using its top-left corner. This is also useful for enforcing constraints i.e. if you have constrained a position to be within certain boundaries, then that will be respected.
 
-Example demonstrating use of *origin* and position constraints on multiple elements.
+Example demonstrating use of *origin* and position constraints on multiple elements: http://bl.ocks.org/1557377
