@@ -10,7 +10,7 @@ Returns a function for generating random numbers with a normal (Gaussian) distri
 
 <a name="d3_transform" href="#wiki-d3_transform">#</a> d3.<b>transform</b>(<i>string</i>)
 
-Parses the given 2D affine transform string, as defined by SVG's [transform attribute](http://www.w3.org/TR/SVG/coords.html#TransformAttribute). The transform is then decomposed to a standard representation of translate, rotate, x-skew and scale. This behavior is standarded by CSS: see [matrix decomposition for animation](http://www.w3.org/TR/css3-2d-transforms/#matrix-decomposition).
+Parses the given 2D affine transform string, as defined by SVG's [transform attribute](http://www.w3.org/TR/SVG/coords.html#TransformAttribute). The transform is then decomposed to a standard representation of translate, rotate, x-skew and scale. This behavior is standardized by CSS: see [matrix decomposition for animation](http://www.w3.org/TR/css3-2d-transforms/#matrix-decomposition).
 
 <a name="transform_rotate" href="#wiki-transform_rotate">#</a> transform.<b>rotate</b>
 
