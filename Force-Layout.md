@@ -119,7 +119,7 @@ Equivalent to:
 force.alpha(0);
 ```
 
-Terminates the simulation, setting the coolping parameter *alpha* to zero. This can be used to stop the simulation explicitly, for example, if you want to show animation or allow other interaction. If you do not stop the layout explicitly, it will still stop automatically after the layout's cooling parameter decays below some threshold.
+Terminates the simulation, setting the cooling parameter *alpha* to zero. This can be used to stop the simulation explicitly, for example, if you want to show animation or allow other interaction. If you do not stop the layout explicitly, it will still stop automatically after the layout's cooling parameter decays below some threshold.
 
 <a name="tick" href="#wiki-tick">#</a> force.**tick**()
 
