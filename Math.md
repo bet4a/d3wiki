@@ -1,10 +1,10 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Core]] ▸ **Math**
 
-## Psuedorandom Number Generation
+## Pseudorandom Number Generation
 
 <a name="d3_random_normal" href="#wiki-d3_random_normal">#</a> d3.random.<b>normal</b>([<i>mean</i>, [<i>deviation</i>]])
 
-Returns a function for generating random numbers with a normal (Gaussian) distribution. The expected value of the generated psuedorandom numbers is *mean*, with the given standard *deviation*. If *deviation* is not specified, it defaults to 1.0; if *mean* is not specified, it defaults to 0.0.
+Returns a function for generating random numbers with a normal (Gaussian) distribution. The expected value of the generated pseudorandom numbers is *mean*, with the given standard *deviation*. If *deviation* is not specified, it defaults to 1.0; if *mean* is not specified, it defaults to 0.0.
 
 ## 2D Transforms
 
