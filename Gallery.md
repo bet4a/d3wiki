@@ -290,6 +290,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [d3.js force diagrams with markers straight from Excel](http://excelramblings.blogspot.co.uk/2012/07/visualizing-system-integrations-using.html)
 * [Visualising a real-time DataSift feed with Node and D3.js](http://www.benh.co.uk/datasift/visualising-a-datasift-feed-with-node-and-d3/)
 * [Very limited, in-progress attempt to hook d3.js up to three.js](https://github.com/asutherland/d3-threeD)
+* [SVG to Canvas to PNG using Canvg](http://jsfiddle.net/plaliberte/HAXyd/)
 
 #### Online Editors
 
