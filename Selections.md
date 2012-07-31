@@ -144,7 +144,7 @@ Note: the `data` method cannot be used to clear previously-bound data; use [sele
 
 <a name="enter" href="Selections#wiki-enter">#</a> selection.<b>enter()</b>
 
-Returns the entering selection: placeholder nodes for each data element for which no corresponding existing DOM element was found in the current selection. This method is only defined on a selection returned by the [data](Selections#wiki-data) operator. In addition, the entering selection only defines [append](Selections#wiki-append) and [insert](Selections#wiki-insert) operators; you must use these operators to instantiate the entering nodes before modifying any content. Note that the *enter* operator merely returns a reference to the entering selection, and it is up to you to add the new nodes.
+Returns the entering selection: placeholder nodes for each data element for which no corresponding existing DOM element was found in the current selection. This method is only defined on a selection returned by the [data](Selections#wiki-data) operator. In addition, the entering selection only defines [append](Selections#wiki-append), [insert](Selections#wiki-insert) and [select](Selections#wiki-select) operators; you must use these operators to instantiate the entering nodes before modifying any content. (Enter selections also support [empty](Selections#wiki-empty) to check if they are empty.) Note that the *enter* operator merely returns a reference to the entering selection, and it is up to you to add the new nodes.
 
 As a simple example, consider the case where the existing selection is empty, and we wish to create new nodes to match our data:
 
