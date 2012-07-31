@@ -6,6 +6,7 @@ Please feel free to add links to your work!
 
 * [Introduction](http://mbostock.github.com/d3/)
 * [Introduction to D3](http://www.thecodingtutorials.blogspot.com/2012/07/introduction-to-d3.html) - Andrew Davis
+* [Using CSV (and Text) Files with D3](http://thecodingtutorials.blogspot.com/2012/07/using-csv-and-text-files-with-d3.html) - Andrew Davis
 * [Three Little Circles](http://mbostock.github.com/d3/tutorial/circle.html)
 * [Thinking with Joins](http://bost.ocks.org/mike/join/)
 * [Nested Selections](http://bost.ocks.org/mike/nest/)
