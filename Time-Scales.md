@@ -24,6 +24,10 @@ Returns the date in the input domain *x* for the corresponding value in the outp
 
 If *dates* is specified, sets the scale's input domain to the specified array of dates. The array must contain two or more dates. If the elements in the given array are not dates, they will be coerced to dates; this coercion happens similarly when the scale is called. If *dates* is not specified, returns the scale's current input domain. Although time scales typically have just two dates in their domain, you can specify more than two dates for a *polylinear* scale. In this case, there must be an equivalent number of values in the output range.
 
+<a name="nice" href="#wiki-nice">#</a> scale.**nice**(*interval*)
+
+Extends the domain so that it starts and ends on nice round values as determined by the specified [time *interval*](Time-Intervals). This method typically modifies the scale's domain, and may only extend the bounds to the nearest round value. Nicing is useful if the domain is computed from data and may be irregular. For example, for a domain of [2009-07-13T00:02, 2009-07-13T23:48], the nice domain is [2009-07-13, 2009-07-14]. If the domain has more than two values, nicing the domain only affects the first and last value.
+
 <a name="range" href="Time-Scales#wiki-range">#</a> scale.<b>range</b>([<i>values</i>])
 
 If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](Time-Scales#wiki-interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
