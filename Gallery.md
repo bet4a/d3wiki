@@ -191,6 +191,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Force Layout with Symbols](http://bl.ocks.org/1062383)
 * [Force Layout with Custom Forces](http://bl.ocks.org/1021841)
 * [Force Layout with Multiple Foci](http://bl.ocks.org/1021953)
+* [Force Layout multi foci with Convex Hulls](http://bl.ocks.org/2920551)
 * [Force Layout with Images and Labels](http://bl.ocks.org/950642)
 * [Force Layout with drag and drop support to set nodes to fixed position when dropped](http://bl.ocks.org/2883411)
 * [Force Layout (Interactive Construction)](http://bl.ocks.org/929623)
