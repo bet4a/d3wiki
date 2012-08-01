@@ -297,10 +297,9 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 
 * [Bar chart code generator and online editor](http://www.d3-generator.com/)
 * [Live coding based on Bret Victor's Inventing on Principle talk](http://livecoding.gabrielflor.it)
-* [The same but with Gist integration](http://enjalot.com/tributary/2165875/sinwaves.js)
-* [Project Archon](http://enja.org/code/archon/)
+* [Tributary](http://enjalot.com/tributary/2165875/sinwaves.js)
 * [D3.js playground](http://phrogz.net/JS/d3-playground/#BlankDefault)
-* [D3.js sandbox](http://www.cubicle6.com/d3/)
+* [A CoffeeScript console for d3.js visualization](http://fleetinbeing.net/beans/d3)
 
 #### Products
 
