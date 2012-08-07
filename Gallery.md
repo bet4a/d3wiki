@@ -136,6 +136,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Coordinated visualizations for Consumer Packaged Goods](http://theory.info/)
 * [eCommerce API Wheel for eBay](http://saranyan.github.com/commerce_wheel) - Saranyan Vigraham
 * [The business of Bond](http://007.lucklaboratories.com/)
+* [Home energy consumption](http://www.prcweb.co.uk/lab/energy) - Peter Cook
 
 ### Concepts & Techniques
 
