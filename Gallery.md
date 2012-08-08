@@ -163,6 +163,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [[Scatterplot and Heatmap|http://jsfiddle.net/indiemaps/gzPDU/]]
 * [[Animated Sankey Diagram (alluvial)|http://nickrabinowitz.com/projects/d3/alluvial/alluvial-dynamic.html]]
 * [Parallel Coordinates](http://bl.ocks.org/1341281)
+* [Parallel coordinates with fisheye distortion](http://bl.ocks.org/3290263)
 * [Parallel Sets](http://www.jasondavies.com/parallel-sets/)
 * [Parallel Sets with reorderable heading](http://www.theage.com.au/national/parsets)
 * [Horizon Chart](http://bl.ocks.org/1483226)
