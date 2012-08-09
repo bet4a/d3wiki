@@ -245,7 +245,7 @@ Given a value *x* in the input domain, returns the corresponding value in the ou
 
 <a name="quantize_domain" href="Quantitative-Scales#wiki-quantize_domain">#</a> quantize.<b>domain</b>([<i>numbers</i>])
 
-If *numbers* is specified, sets the scale's input domain to the specified two-element array of numbers. The array must contain exactly two numbers. If the elements in the given array are not numbers, they will be coerced to numbers; this coercion happens similarly when the scale is called. Thus, a quantize scale can be used to encode any type that can be converted to numbers. If *numbers* is not specified, returns the scale's current input domain.
+If *numbers* is specified, sets the scale's input domain to the specified two-element array of numbers. If the array contains more than two numbers, only the first and last number are used. If the elements in the given array are not numbers, they will be coerced to numbers; this coercion happens similarly when the scale is called. Thus, a quantize scale can be used to encode any type that can be converted to numbers. If *numbers* is not specified, returns the scale's current input domain.
 
 <a name="quantize_range" href="Quantitative-Scales#wiki-quantize_range">#</a> quantize.<b>range</b>([<i>values</i>])
 
