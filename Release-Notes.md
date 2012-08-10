@@ -5,7 +5,8 @@ Patch versions always include various bug fixes; see the full compare for detail
 ## 2.10.0 - August 9, 2012
 
 * Added [multi-valued map](http://bl.ocks.org/3305515) support for selection.attr and similar methods.
-* Added [d3.lab, d3.hcl](http://bl.ocks.org/3014589) color spaces and d3.interpolateLab, d3.interpolateHcl. * Added [d3.tween](http://bl.ocks.org/3305854) for easier customization of transition interpolators.
+* Added [d3.lab, d3.hcl](http://bl.ocks.org/3014589) color spaces and d3.interpolateLab, d3.interpolateHcl.
+* Added [d3.tween](http://bl.ocks.org/3305854) for easier customization of transition interpolators.
 * Added [d3.tsv](http://bl.ocks.org/3305937) for loading tab-separated values.
 * Added static [localization for d3.time.format](http://bl.ocks.org/3306234), including fr_FR and ru_RU locales.
 * Added a new quantitative scale: [d3.scale.threshold](http://bl.ocks.org/3306362).
