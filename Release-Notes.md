@@ -4,15 +4,35 @@ Patch versions always include various bug fixes; see the full compare for detail
 
 ## 2.10.0 - August 9, 2012
 
-Added [multi-valued map](http://bl.ocks.org/3305515) support for selection.attr and similar methods. Added [d3.lab, d3.hcl](http://bl.ocks.org/3014589) color spaces and d3.interpolateLab, d3.interpolateHcl. Added [d3.tween](http://bl.ocks.org/3305854) for easier customization of transition interpolators. Added [d3.tsv](http://bl.ocks.org/3305937) for loading tab-separated values. Added static [localization for d3.time.format](http://bl.ocks.org/3306234), including fr_FR and ru_RU locales. Added a new quantitative scale: [d3.scale.threshold](http://bl.ocks.org/3306362). Added [outer padding](http://bl.ocks.org/3310560) support for d3.scale.ordinal’s rangeBands. Added [d3.layout.pack padding](http://bl.ocks.org/3007180) support. [Custom interpolators](http://bl.ocks.org/3310323) can now be used with d3.svg.line and d3.svg.area. Added new random generators for [log-normal](http://bl.ocks.org/3048166) and [Irwin–Hall](http://bl.ocks.org/3048450) distributions. Improved [d3.time.scale’s nice](http://bl.ocks.org/3306147). Fixed incorrect tangents with [monotone interpolation](http://bl.ocks.org/3310233). Simplified [transform interpolation](http://bl.ocks.org/3173784).
+* Added [multi-valued map](http://bl.ocks.org/3305515) support for selection.attr and similar methods.
+* Added [d3.lab, d3.hcl](http://bl.ocks.org/3014589) color spaces and d3.interpolateLab, d3.interpolateHcl. * Added [d3.tween](http://bl.ocks.org/3305854) for easier customization of transition interpolators.
+* Added [d3.tsv](http://bl.ocks.org/3305937) for loading tab-separated values.
+* Added static [localization for d3.time.format](http://bl.ocks.org/3306234), including fr_FR and ru_RU locales.
+* Added a new quantitative scale: [d3.scale.threshold](http://bl.ocks.org/3306362).
+* Added [outer padding](http://bl.ocks.org/3310560) support for d3.scale.ordinal’s rangeBands.
+* Added [d3.layout.pack padding](http://bl.ocks.org/3007180) support. [Custom interpolators](http://bl.ocks.org/3310323) can now be used with d3.svg.line and d3.svg.area.
+* Added new random generators for [log-normal](http://bl.ocks.org/3048166) and [Irwin–Hall](http://bl.ocks.org/3048450) distributions.
+* Improved [d3.time.scale’s nice](http://bl.ocks.org/3306147).
+* Fixed incorrect tangents with [monotone interpolation](http://bl.ocks.org/3310233).
+* Simplified [transform interpolation](http://bl.ocks.org/3173784).
 
 ## 2.9.0 - April 15, 2012
 
-Added `defined` methods to d3.svg.line and d3.svg.area.
+* Added `defined` methods to d3.svg.line and d3.svg.area.
 
 ## 2.8.0 - February 24, 2012
 
-Added the selection.datum operator (deprecating selection.map), which is like selection.data but doesn't compute a data-join; it can be used to get or set the data bound to elements. The brush component can now take decorative resizers. Added d3.map class (similar to ES6's map collection) for easier management of string-value maps; this is used internally by transitions, event listeners, the nest operator, and many other components. Added d3.bisector for bisecting sorted arrays with an accessor. Exposed d3.selection.enter.prototype. Generalized d3.svg.mouse to support HTML elements, and renamed to d3.mouse. Added d3.scale.identity. Added axis.tickValues. Rewrite of d3.behavior.zoom. Added "start" and "end" events to force layout, along with force.tick and force.alpha for synchronous execution. Added a variety of new time interval methods.
+* Added the selection.datum operator (deprecating selection.map), which is like selection.data but doesn't compute a data-join; it can be used to get or set the data bound to elements.
+* Brush component can now take decorative resizers.
+* Added d3.map class (similar to ES6's map collection) for easier management of string-value maps; this is used internally by transitions, event listeners, the nest operator, and many other components.
+* Added d3.bisector for bisecting sorted arrays with an accessor.
+* Exposed d3.selection.enter.prototype.
+* Generalized d3.svg.mouse to support HTML elements, and renamed to d3.mouse.
+* Added d3.scale.identity.
+* Added axis.tickValues.
+* Rewrite of d3.behavior.zoom.
+* Added "start" and "end" events to force layout, along with force.tick and force.alpha for synchronous execution.
+* Added a variety of new time interval methods.
 
 ## 2.7.0 - December 8, 2011
 
