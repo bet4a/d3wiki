@@ -57,6 +57,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[transition.remove|Transitions#wiki-remove]] - remove selected elements at the end of a transition.
 * [[transition.each|Transitions#wiki-each]] - add a listener for transition end events.
 * [[transition.call|Transitions#wiki-call]] - call a function passing in the current transition.
+* [[d3.tween|Transitions#wiki-d3_tween]] - customize transition interpolation.
 * [[d3.ease|Transitions#wiki-d3_ease]] - customize transition timing.
 * [[ease|Transitions#wiki-_ease]] - a parametric easing function.
 * [[d3.timer|Transitions#wiki-d3_timer]] - start a custom animation timer.
@@ -68,6 +69,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.interpolateString|Transitions#wiki-d3_interpolateString]] - interpolate two strings.
 * [[d3.interpolateRgb|Transitions#wiki-d3_interpolateRgb]] - interpolate two RGB colors.
 * [[d3.interpolateHsl|Transitions#wiki-d3_interpolateHsl]] - interpolate two HSL colors.
+* [[d3.interpolateLab|Transitions#wiki-d3_interpolateLab]] - interpolate two L\*a\*b\* colors.
+* [[d3.interpolateHcl|Transitions#wiki-d3_interpolateHcl]] - interpolate two HCL colors.
 * [[d3.interpolateArray|Transitions#wiki-d3_interpolateArray]] - interpolate two arrays of values.
 * [[d3.interpolateObject|Transitions#wiki-d3_interpolateObject]] - interpolate two arbitrary objects.
 * [[d3.interpolateTransform|Transitions#wiki-d3_interpolateTransform]] - interpolate two 2D matrix transforms.
@@ -87,6 +90,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.bisect|Arrays#wiki-d3_bisect]] - search for a value in a sorted array.
 * [[d3.bisectRight|Arrays#wiki-d3_bisectRight]] - search for a value in a sorted array.
 * [[d3.bisectLeft|Arrays#wiki-d3_bisectLeft]] - search for a value in a sorted array.
+* [[d3.bisector|Arrays#wiki-d3_bisector]] - bisect using an accessor.
 * [[d3.first|Arrays#wiki-d3_first]] - find the lowest element in an array.
 * [[d3.last|Arrays#wiki-d3_last]] - find the highest element in an array.
 * [[d3.permute|Arrays#wiki-d3_permute]] - reorder an array of elements according to an array of indexes.
@@ -109,6 +113,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 ### [[Math]]
 
 * [[d3.random.normal|Math#wiki-random_normal]] - generate a random number with a normal distribution.
+* [[d3.random.logNormal|Math#wiki-random_logNormal]] - generate a random number with a log-normal distribution.
+* [[d3.random.irwinHall|Math#wiki-random_irwinHall]] - generate a random number with an Irwin–Hall distribution.
 * [[d3.transform|Math#wiki-transform]] - compute the standard form of a 2D matrix transform.
 
 ### [[Loading External Resources|Requests]]
@@ -118,6 +124,8 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.json|Requests#wiki-d3_json]] - request a JSON blob.
 * [[d3.html|Requests#wiki-d3_html]] - request an HTML document fragment.
 * [[d3.xml|Requests#wiki-d3_xml]] - request an XML document fragment.
+* [[d3.csv|CSV]] - request a comma-separated values (CSV) file.
+* [[d3.tsv|CSV#wiki-tsv]] - request a tab-separated values (TSV) file.
 
 ### [[String Formatting|Formatting]]
 
@@ -131,6 +139,10 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.csv.parse|CSV#wiki-parse]] - parse a CSV string into objects using the header row.
 * [[d3.csv.parseRows|CSV#wiki-parseRows]] - parse a CSV string into tuples, ignoring the header row.
 * [[d3.csv.format|CSV#wiki-format]] - format an array of tuples into a CSV string.
+* [[d3.tsv|CSV#wiki-tsv]] - request a tab-separated values (TSV) file.
+* [[d3.tsv.parse|CSV#wiki-tsv_parse]] - parse a TSV string into objects using the header row.
+* [[d3.tsv.parseRows|CSV#wiki-tsv_parseRows]] - parse a TSV string into tuples, ignoring the header row.
+* [[d3.tsv.format|CSV#wiki-tsv_format]] - format an array of tuples into a TSV string.
 
 ### [[Colors]]
 
@@ -144,6 +156,16 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[hsl.darker|Colors#wiki-hsl_darker]] - decrease lightness by some exponential factor (gamma).
 * [[hsl.rgb|Colors#wiki-hsl_rgb]] - convert from HSL to RGB.
 * [[hsl.toString|Colors#wiki-hsl_toString]] - convert an HSL color to a string.
+* [[d3.lab|Colors#wiki-d3_lab]] - specify a color in L\*a\*b\* space.
+* [[lab.brighter|Colors#wiki-lab_brighter]] - increase lightness by some exponential factor (gamma).
+* [[lab.darker|Colors#wiki-lab_darker]] - decrease lightness by some exponential factor (gamma).
+* [[lab.rgb|Colors#wiki-lab_rgb]] - convert from L\*a\*b\* to RGB.
+* [[lab.toString|Colors#wiki-lab_toString]] - convert a L\*a\*b\* color to a string.
+* [[d3.hcl|Colors#wiki-d3_hcl]] - specify a color in HCL space.
+* [[hcl.brighter|Colors#wiki-hcl_brighter]] - increase lightness by some exponential factor (gamma).
+* [[hcl.darker|Colors#wiki-hcl_darker]] - decrease lightness by some exponential factor (gamma).
+* [[hcl.rgb|Colors#wiki-hcl_rgb]] - convert from HCL to RGB.
+* [[hcl.toString|Colors#wiki-hcl_toString]] - convert an HCL color to a string.
 
 ### [[Namespaces]]
 
@@ -205,6 +227,11 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[quantize.domain|Quantitative-Scales#wiki-quantize_domain]] - get or set the scale's input domain.
 * [[quantize.range|Quantitative-Scales#wiki-quantize_range]] - get or set the scale's output range (as discrete values).
 * [[quantize.copy|Quantitative-Scales#wiki-quantize_copy]] - create a new scale from an existing scale.
+* [[d3.scale.threshold|Quantitative-Scales#wiki-threshold]] - construct a threshold scale with a discrete output range.
+* [[threshold|Quantitative-Scales#wiki-_threshold]] - get the range value corresponding to a given domain value.
+* [[threshold.domain|Quantitative-Scales#wiki-threshold_domain]] - get or set the scale's input domain.
+* [[threshold.range|Quantitative-Scales#wiki-threshold_range]] - get or set the scale's output range (as discrete values).
+* [[threshold.copy|Quantitative-Scales#wiki-threshold_copy]] - create a new scale from an existing scale.
 * [[d3.scale.quantile|Quantitative-Scales#wiki-quantile]] - construct a quantitative scale mapping to quantiles.
 * [[quantile|Quantitative-Scales#wiki-_quantile]] - get the range value corresponding to a given domain value.
 * [[quantile.domain|Quantitative-Scales#wiki-quantile_domain]] - get or set the scale's input domain (as discrete values).
@@ -462,6 +489,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[pack.links|Pack-Layout#wiki-links]] - compute the parent-child links between tree nodes.
 * [[pack.value|Pack-Layout#wiki-value]] - get or set the value accessor used to size circles.
 * [[pack.size|Pack-Layout#wiki-size]] - specify the layout size in *x* and *y*.
+* [[pack.padding|Pack-Layout#wiki-padding]] - specify the layout padding in (approximate) pixels.
 
 ### [[Partition|Partition-Layout]]
 
