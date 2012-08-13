@@ -139,7 +139,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [The business of Bond](http://007.lucklaboratories.com/)
 * [Home energy consumption](http://www.prcweb.co.uk/lab/energy) - Peter Cook
 * [Heatmap of gene expression with hierarchical clustering ](http://blog.nextgenetics.net/?e=44), [demo here] (http://blog.nextgenetics.net/demo/entry0044/) - Damian Kao
-[Graph diagram of gene ontology] (http://blog.nextgenetics.net/?e=19), [demo here] (http://blog.nextgenetics.net/demo/entry0019/demo.html) - Damian Kao
+* [Graph diagram of gene ontology] (http://blog.nextgenetics.net/?e=19), [demo here] (http://blog.nextgenetics.net/demo/entry0019/demo.html) - Damian Kao
 
 ### Concepts & Techniques
 
