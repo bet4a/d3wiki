@@ -138,6 +138,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [eCommerce API Wheel for eBay](http://saranyan.github.com/commerce_wheel) - Saranyan Vigraham
 * [The business of Bond](http://007.lucklaboratories.com/)
 * [Home energy consumption](http://www.prcweb.co.uk/lab/energy) - Peter Cook
+* [Heatmap of gene expression with hierarchical clustering ](http://blog.nextgenetics.net/?e=44) - Damian Kao
 
 ### Concepts & Techniques
 
