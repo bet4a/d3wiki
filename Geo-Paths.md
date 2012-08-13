@@ -61,13 +61,9 @@ If you want to use a projection that D3 does not already support, you might be a
 
 Computes the projected area (in square pixels) for the specified *feature*. Point, MultiPoint, LineString and MultiLineString features are ignored, returning zero. For Polygon and MultiPolygon features, this method first computes the area of the exterior ring, and then subtracts the area of any interior holes.
 
-Note: this method depends on [d3.geom.polygon](Polygon-Geom), so you must load d3.geom.js, or build a custom d3.js that includes d3.geom.polygon.
-
 <a name="path_centroid" href="Geo-Paths#wiki-path_area">#</a> path.<b>centroid</b>(<i>feature</i>)
 
 Computes the projected centroid (in pixels) for the specified *feature*. This method is currently only supported for Polygon and MultiPolygon features. This is handy for, say, labeling state or county boundaries, or displaying a symbol map. The [noncontiguous cartogram](http://mbostock.github.com/d3/ex/cartogram.html) example scales each state around its centroid.
-
-Note: this method depends on [d3.geom.polygon](Polygon-Geom), so you must load d3.geom.js, or build a custom d3.js that includes d3.geom.polygon.
 
 <a name="path_pointRadius" href="Geo-Paths#wiki-path_pointRadius">#</a> path.<b>pointRadius</b>([<i>radius</i>])
 
