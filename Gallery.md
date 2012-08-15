@@ -140,6 +140,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Home energy consumption](http://www.prcweb.co.uk/lab/energy) - Peter Cook
 * [Heatmap of gene expression with hierarchical clustering ](http://blog.nextgenetics.net/?e=44), [demo here] (http://blog.nextgenetics.net/demo/entry0044/) - Damian Kao
 * [Graph diagram of gene ontology] (http://blog.nextgenetics.net/?e=19), [demo here] (http://blog.nextgenetics.net/demo/entry0019/demo.html) - Damian Kao
+* [UMLS (Unified Medical Language System) Visualizer] (https://ncc.cchmc.org/prod/umls_visualizer/index.do)
 
 ### Concepts & Techniques
 
