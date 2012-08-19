@@ -48,7 +48,7 @@ The inverse projection: returns a two-element array [*longitude*, *latitude*] gi
 
 Get or set the projection’s origin. If *origin* is specified, sets the projection’s origin to the specified two-element array [*longitude*, *latitude*] and returns the projection. If *origin* is not specified, returns the current origin, which defaults to [-98, 38] ([Hutchinson, Kansas](https://maps.google.com/maps?q=Hutchinson,+Kansas&z=5)). To minimize the distortion of parallel lines, the origin should be chosen to be near the center of the region of interest.
 
-<a name="albers_parallels" href="#wiki-albers_parallels">#</a> albers.**parallels*([*parallels*])
+<a name="albers_parallels" href="#wiki-albers_parallels">#</a> albers.**parallels**([*parallels*])
 
 Get or set the projection’s two standard parallels. If *parallels* is specified, sets the projection’s parallels to the specified two-element array of latitudes and returns the projection. If *parallels* is not specified, returns the current parallels, which default to [29.5, 45.5]. To minimize the distortion of parallel lines, the parallels should surround the origin and cover the region of interest.
 
