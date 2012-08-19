@@ -95,7 +95,7 @@ Get or set the projection’s scale factor. If *scale* is specified, sets the pr
 
 (As noted above, a scale factor of 1000 corresponds to a scale of 1500 for Puerto Rico and 600 for Alaska.)
 
-<a name="albers_translate" href="#wiki-albers_translate">#</a> albers.**translate**([*offset*])
+<a name="albers_translate" href="#wiki-albers_translate">#</a> albersUsa.**translate**([*offset*])
 
 Get or set the projection's translation offset. If *offset* is specified, sets the projection’s translation offset to the specified two-element array [*x*, *y*] and returns the projection. If *offset* is not specified, returns the current translation offset which defaults to [480, 250]. The translation offset determines the pixel coordinates of the [origin](#wiki-albers_origin). The default value is designed to place Hutchinson, Kansas at the center of a 960×500 area.
 
