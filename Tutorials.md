@@ -5,15 +5,13 @@ Please feel free to add links to your work!
 ### Introductions & Core Concepts
 
 * [Introduction](http://mbostock.github.com/d3/)
-* [Introduction to D3](http://www.thecodingtutorials.blogspot.com/2012/07/introduction-to-d3.html) - Andrew Davis
-* [Using CSV (and Text) Files with D3](http://thecodingtutorials.blogspot.com/2012/07/using-csv-and-text-files-with-d3.html) - Andrew Davis
-* [Using Multi-Column Data with D3 Part 1](http://www.thecodingtutorials.blogspot.com/2012/08/using-multi-column-data-with-d3-part-1.html) - Andrew Davis
 * [Three Little Circles](http://mbostock.github.com/d3/tutorial/circle.html)
 * [Thinking with Joins](http://bost.ocks.org/mike/join/)
 * [Nested Selections](http://bost.ocks.org/mike/nest/)
 * [Object Constancy](http://bost.ocks.org/mike/constancy/)
 * [A Bar Chart, Part 1](http://mbostock.github.com/d3/tutorial/bar-1.html)
 * [A Bar Chart, Part 2](http://mbostock.github.com/d3/tutorial/bar-2.html)
+* [D3 Tutorials](http://alignedleft.com/tutorials/d3/) - Scott Murray
 * [Try D3 Now](http://christopheviau.com/d3_tutorial/) - Christophe Viau
 * [D3 for Mere Mortals](http://www.recursion.org/d3-for-mere-mortals/) - Luke Francl
 * [Introduction to D3](http://dealloc.me/2011/06/24/d3-is-not-a-graphing-library.html) - Justin Palmer
@@ -23,6 +21,7 @@ Please feel free to add links to your work!
 * [For Protovis Users](http://mbostock.github.com/d3/tutorial/protovis.html)
 * [Manipulating data like a boss with d3](http://www.jeromecukier.net/blog/2012/05/28/manipulating-data-like-a-boss-with-d3/) - Jerome Cukier
 * [Creating Animations and Transitions With D3](http://blog.visual.ly/creating-animations-and-transitions-with-d3-js/) - Jerome Cukier
+* [D3 Tutorials](http://thecodingtutorials.blogspot.com/search/label/D3) - Andrew Davis
 
 ### Specific Techniques
 
