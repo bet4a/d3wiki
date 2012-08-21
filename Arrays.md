@@ -91,6 +91,27 @@ Locate the insertion point for *x* in *array* to maintain sorted order. The argu
 
 Similar to bisectLeft, but returns an insertion point which comes after (to the right of) any existing entries of *x* in *array*. The returned insertion point *i* partitions the *array* into two halves so that all *v* <= *x* for *v* in *array*.slice(lo, i) for the left side and all *v* > *x* for *v* in *array*.slice(i, hi) for the right side.
 
+<a name="d3_bisector" href="#wiki-d3_bisector">#</a> d3.**bisector**(<i>accessor</i>)
+
+Returns a bisector using the specified *accessor* function. The returned object has `left` and `right` properties which are similar to [bisectLeft](#wiki-d3_bisectLeft) and [bisectRight](#wiki-d3_bisectRight), respectively. This method can be used to bisect arrays of objects instead of being limited to simple arrays of primitives. For example, given the following array of objects:
+
+```js
+var data = [
+  {date: new Date(2011,  1, 1), value: 0.5},
+  {date: new Date(2011,  2, 1), value: 0.6},
+  {date: new Date(2011,  3, 1), value: 0.7},
+  {date: new Date(2011,  4, 1), value: 0.8}
+];
+```
+
+A suitable bisect function could be constructed as:
+
+```js
+var bisect = d3.bisector(function(d) { return d.date; }).right;
+```
+
+And then applied as `bisect(data, new Date(2011, 1, 2))`, returning an index.
+
 <a name="d3_first" href="Arrays#wiki-d3_first">#</a> d3.<b>first</b>(<i>array</i>[, <i>comparator</i>])
 
 Returns the lowest element in the specified *array*, as ordered by the specified *comparator*. If no comparator is specified, [d3.ascending](Arrays#wiki-d3_ascending) is used. This method is similar to [d3.min](Arrays#wiki-d3_min), except you can use an arbitrary comparator, rather than mapping array elements to a numeric value.
