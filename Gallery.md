@@ -128,7 +128,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Visualising New Zealand's Stolen Vehicle Database Part1](http://markhansen.co.nz/stolen-vehicles-pt1/) and [Part2](http://markhansen.co.nz/stolen-vehicles-pt2/) and [source code](https://github.com/mhansen/stolen-vehicles-pt2)
 * [Visualizing San Francisco Home Price Ranges](http://trends.truliablog.com/vis/pricerange-sf/)
 * [Daily data return rates for seismic networks in the EarthScope USArray](http://anf.ucsd.edu/tools/data_return_rates/) - [Rob Newman, Array Network Facility, UCSD](https://github.com/robnewman)
-* [What Size Am I? Finding clothes that fit](http://sizes.darkgreener.com/)
+* [What Size Am I? Finding dresses that fit](http://sizes.darkgreener.com/) - Anna Powell-Smith
 * [Baseball 2012 Predictions based on past 6 years](http://sizethreestudios.com/Projects/_moneyball) - Danny Hadley
 * [Last Chart! - See the Music](http://www.lastchart.com)
 * [Multiple visualization from the Société Typographique de Neuchâtel](http://chop.leeds.ac.uk/stn/interface/gallery.php)
@@ -142,6 +142,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Graph diagram of gene ontology] (http://blog.nextgenetics.net/?e=19), [demo here] (http://blog.nextgenetics.net/demo/entry0019/demo.html) - Damian Kao
 * [UMLS (Unified Medical Language System) Visualizer] (https://ncc.cchmc.org/prod/umls_visualizer/index.do)
 * [University of Washington Departments](http://www.sorens.in/posts/2012-8-11-uw-courses) - Matthew Sorensen
+* [Baby Names in England & Wales](http://names.darkgreener.com) - Anna Powell-Smith
 
 ### Concepts & Techniques
 
