@@ -256,10 +256,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Masking with external svg elements](http://bl.ocks.org/1503463)
 * [PJAX](http://bl.ocks.org/1367999)
 * [Table Sorting](http://bl.ocks.org/1226718)
-* [Canvas with d3 and Underscore](http://exposedata.com/canvas/stacked.html)
 * [Automatically sizing text](http://bl.ocks.org/1846692)
-* [SVG to Canvas](http://bl.ocks.org/2294676)
-* [d3 rendered with RaphaelJS for IE Compatibility](https://github.com/mhemesath/r2d3/blob/master/examples/pie/pie.html)
 * [Templating ala Mustache, with Chernoff faces example](http://bl.ocks.org/2295155)
 * [Bay Area earthquake responses by zip code: loading external file through Yahoo Pipes](http://bl.ocks.org/1343714)
 * [Simple HTML data tables](http://jsfiddle.net/7WQjr/)
@@ -302,6 +299,11 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Visualising a real-time DataSift feed with Node and D3.js](http://www.benh.co.uk/datasift/visualising-a-datasift-feed-with-node-and-d3/)
 * [Very limited, in-progress attempt to hook d3.js up to three.js](https://github.com/asutherland/d3-threeD)
 * [SVG to Canvas to PNG using Canvg](http://jsfiddle.net/plaliberte/HAXyd/)
+* [Canvas with d3 and Underscore](http://exposedata.com/canvas/stacked.html)
+* [Automatically sizing text](http://bl.ocks.org/1846692)
+* [SVG to Canvas](http://bl.ocks.org/2294676)
+* [d3 rendered with RaphaelJS for IE Compatibility](https://github.com/mhemesath/r2d3/blob/master/examples/pie/pie.html)
+* [d34raphael](http://webmonarch.github.com/d34raphael/usage.html)
 
 #### Online Editors
 
