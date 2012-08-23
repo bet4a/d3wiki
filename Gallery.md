@@ -261,6 +261,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Bay Area earthquake responses by zip code: loading external file through Yahoo Pipes](http://bl.ocks.org/1343714)
 * [Simple HTML data tables](http://jsfiddle.net/7WQjr/)
 * [Responsive SVG resizing without re-rendering](http://jsfiddle.net/shawnbot/BJLe6/)
+* [Automatic floating labels using d3 force-layout](http://bl.ocks.org/1691430)
 
 #### Maps
 
