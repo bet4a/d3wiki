@@ -143,7 +143,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [UMLS (Unified Medical Language System) Visualizer] (https://ncc.cchmc.org/prod/umls_visualizer/index.do)
 * [University of Washington Departments](http://www.sorens.in/posts/2012-8-11-uw-courses) - Matthew Sorensen
 * [Baby Names in England & Wales](http://names.darkgreener.com) - Anna Powell-Smith
-* [Realtime webserver stats](http://meloncholy.com/blog/using-d3-for-realtime-webserver-stats/), [demo](http://bits.meloncholy.com/mt-stats), [Github](https://github.com/meloncholy/mt-stats-viewer), [Github](https://github.com/meloncholy/mt-stats) - Andrew Weeks
+* [Realtime webserver stats](http://meloncholy.com/blog/using-d3-for-realtime-webserver-stats/) - [demo](http://bits.meloncholy.com/mt-stats) - ([Github](https://github.com/meloncholy/mt-stats-viewer), [Github](https://github.com/meloncholy/mt-stats)) - Andrew Weeks
 
 ### Concepts & Techniques
 
