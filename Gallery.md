@@ -327,6 +327,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Trisul Network Analytic](http://trisul.org/)
 * [Explore Analytics: cloud-based data analytics and visualization](http://exploreanalytics.com/)
 * [Meshu turns your places into beautiful objects.](http://meshu.io/)
+* [Reports for Simple](http://www.simple.com/blog/Simple/announcing-reports)
 
 #### Libraries
 
