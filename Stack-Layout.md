@@ -24,7 +24,7 @@ These attributes can be customized by overriding the accessors and the [out](Sta
 
 Specifies how to extract values from the associated element in *layers*; *accessor* is a function which is invoked on each input layer passed to [stack](Stack-Layout#wiki-_stack), equivalent to calling *layers.map(accessor)* before computing the stack layout. The default values function is the built-in [Object](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object), which is similar to the identity function. If *accessor* is not specified, returns the current values accessor.
 
-The values accessor can be used to associate additional data per-layer, rather than per-point. For example, say your data were structured as followed:
+The values accessor can be used to associate additional data per-layer, rather than per-point. For example, say your data were structured as follows:
 
 ```js
 var layers = [
