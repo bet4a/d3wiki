@@ -28,7 +28,7 @@ Get or set the projection's translation offset. If *offset* is specified, sets t
 
 ## Albers
 
-The Albers equal-area projection is highly recommended for [choropleths](http://mbostock.github.com/d3/ex/choropleth.html) as it does not preserves the relative areas of geographic features. However, you must determine appropriate parallels and origin.
+The Albers equal-area projection is highly recommended for [choropleths](http://mbostock.github.com/d3/ex/choropleth.html) as it attempts to preserve the relative areas of geographic features. However, you must determine appropriate parallels and origin.
 
 [![albers](albers.png)](http://bl.ocks.org/2869871)
 
