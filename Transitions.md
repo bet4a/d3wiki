@@ -225,9 +225,19 @@ Given a parametric time *t* in the range [0,1], returns the eased time. The retu
 
 D3 internally maintains an efficient timer queue so that thousands of timers can be processed concurrently with minimal overhead; in addition, this timer queue guarantees consistent timing of animations when concurrent or staged transitions are scheduled. If your browser supports it, the timer queue will use [[requestAnimationFrame|http://paulirish.com/2011/requestanimationframe-for-smart-animating/]] for fluid and efficient animation. The timer queue is also smart about using setTimeout when there is a long delay before the next scheduled event.
 
-<a name="d3_timer" href="Transitions#wiki-d3_timer">#</a> d3.<b>timer</b>(<i>function</i>)
+<a name="d3_timer" href="Transitions#wiki-d3_timer">#</a> d3.<b>timer</b>(<i>function</i>, [<i>delay</i>, [<i>mark</i>]])
 
 Start a custom animation timer, invoking the specified *function* repeatedly until it returns true. There is no way to cancel the timer after it starts, so make sure your timer function returns true when done!
+
+The optional numeric *delay* [unit: integer, millisecond] may be specified when the given *function* should only start to be invoked after *delay* milliseconds have expired after the specified *mark* timestamp [unit: integer, milliseconds since epoch]. When *mark* is omitted, [Date.now()](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Date/now) is assumed instead. Otherwise, you may use [Date.getTime](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Date/getTime) to convert your Date object to a suitable *mark* timestamp.
+
+You may use *delay* and *mark* to specify relative and absolute moments in time when the *function* should start being invoked, e.g. a calendar-based event might be coded as
+```
+var appointment = Date(2012, 09, 29, 14, 0, 0); // @ 29/sep/2012, 1400 hours
+...
+// flash appointment on screen when it's due in 4 hours or less: note that negative (delay) is okay!
+d3.timer(flash_appointments_due, -4 * 3600 * 1000, appointment);
+```
 
 <a name="d3_timer_flush" href="Transitions#wiki-d3_timer_flush">#</a> d3.timer.<b>flush</b>()
 
