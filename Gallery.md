@@ -144,6 +144,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Baby Names in England & Wales](http://names.darkgreener.com) - Anna Powell-Smith
 * [Realtime webserver stats](http://meloncholy.com/blog/using-d3-for-realtime-webserver-stats/) - [demo](http://bits.meloncholy.com/mt-stats) - ([Github](https://github.com/meloncholy/mt-stats-viewer), [Github](https://github.com/meloncholy/mt-stats)) - Andrew Weeks
 * [TradeArc - Arc Diagram of Offseason NHL Trades](http://tradearc.laserdeathstehr.com/), ([Github](https://github.com/nstehr/NHL-Trade-Arc)) - Nathan Stehr
+* [Visualizing Swiss politicians on Twitter using D3.js](http://visurus.wordpress.com/2012/08/30/visualizing-swiss-politicians-on-twitter-using-d3-js/) - Ralph
 
 ### Concepts & Techniques
 
