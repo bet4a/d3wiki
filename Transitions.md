@@ -287,7 +287,15 @@ Returns an RGB color space interpolator between the two colors *a* and *b*. The 
 
 <a name="d3_interpolateHsl" href="Transitions#wiki-d3_interpolateHsl">#</a> d3.<b>interpolateHsl</b>(<i>a</i>, <i>b</i>)
 
-Returns an HSL color space interpolator between the two colors *a* and *b*. The colors *a* and *b* need not be in HSL, but they will be converted to HSL using [[d3.hsl|Colors#wiki-d3_hsl]]. The hue, saturation and lightness are interpolated linearly in a manner equivalent to [interpolateNumber](Transitions#wiki-d3_interpolateNumber). (Thus, the shortest path between the start and end hue is not necessarily used.) The return value of the interpolator is always a string representing the RGB color, such as "#ff0000" for red; an RGB color string is returned for browser compatibility, as not all browsers support HSL colors in CSS.
+Returns an HSL color space interpolator between the two colors *a* and *b*. The colors *a* and *b* need not be in HSL, but they will be converted to HSL using [[d3.hsl|Colors#wiki-d3_hsl]]. The hue, saturation and lightness are interpolated linearly in a manner equivalent to [interpolateNumber](Transitions#wiki-d3_interpolateNumber). (The shortest path between the start and end hue is used.) The return value of the interpolator is always a string representing the RGB color, such as "#ff0000" for red; an RGB color string is returned for browser compatibility, as not all browsers support HSL colors in CSS.
+
+<a name="d3_interpolateLab" href="#wiki-d3_interpolateLab">#</a> d3.<b>interpolateLab</b>(<i>a</i>, <i>b</i>)
+
+Returns a L\*a\*b\* color space interpolator between the two colors *a* and *b*. The colors *a* and *b* will be converted to L\*a\*\b* if necessary using [[d3.lab|Colors#wiki-d3_lab]]. The color channels are then interpolated linearly in a manner equivalent to [interpolateNumber](Transitions#wiki-d3_interpolateNumber). The return value of the interpolator is always a string representing the RGB color, such as "#ff0000" for red.
+
+<a name="d3_interpolateHcl" href="#wiki-d3_interpolateHcl">#</a> d3.<b>interpolateHcl</b>(<i>a</i>, <i>b</i>)
+
+Returns an HCL color space interpolator between the two colors *a* and *b*. The colors *a* and *b* will be converted to HCL if necessary using [[d3.hcl|Colors#wiki-d3_hcl]]. The color channels are then interpolated linearly in a manner equivalent to [interpolateNumber](Transitions#wiki-d3_interpolateNumber). (The shortest path between the start and end hue is used.) The return value of the interpolator is always a string representing the RGB color, such as "#ff0000" for red.
 
 <a name="d3_interpolateArray" href="Transitions#wiki-d3_interpolateArray">#</a> d3.<b>interpolateArray</b>(<i>a</i>, <i>b</i>)
 
