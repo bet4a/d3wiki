@@ -56,6 +56,11 @@ Please feel free to add links to your work!
 * [First steps in data visualisation using d3.js](http://vimeo.com/35005701)<br>Mike Dewar, New York Open Statistical Programming Meetup January 12 2012
 * [Data Visualization Using D3.js](http://www.ustream.tv/recorded/20313703)<br>Jim McCusker, TWed talk February 2012
 
+## Meetups
+
+* [Bay Area d3 User Group](http://www.meetup.com/Bay-Area-d3-User-Group/)
+* [NYC D3.js](http://www.meetup.com/NYC-D3-JS/)
+
 ## Publications
 
 * [[D3: Data-Driven Documents|http://vis.stanford.edu/papers/d3]]<br>Michael Bostock, Vadim Ogievetsky, Jeffrey Heer<br>*IEEE Trans. Visualization & Comp. Graphics (Proc. InfoVis)*, 2011
