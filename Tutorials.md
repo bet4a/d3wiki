@@ -32,6 +32,8 @@ Please feel free to add links to your work!
 * [How to Make Choropleth Maps in D3](http://blog.visual.ly/how-to-make-choropleth-maps-in-d3/) - EJ Fox
 * [Converting dynamic SVG to PNG with node.js, d3 and Imagemagick](http://eng.wealthfront.com/2011/12/converting-dynamic-svg-to-png-with.html) - Wealthfront
 * [Creating Animated Bubble Charts in D3](http://vallandingham.me/bubble_charts_in_d3.html) - Jim Vallandingham
+* [Multiple area charts with d3.js](http://tympanus.net/codrops/2012/08/29/multiple-area-charts-with-d3-js/)
+* [Creating a Polar Area Diagram](http://kreese.net/blog/2012/08/26/d3-js-creating-a-polar-area-diagram-radial-bar-chart/)
 
 ## Blogs
 
