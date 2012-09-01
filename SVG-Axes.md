@@ -52,9 +52,7 @@ The explicit tick values take precedent over the tick arguments set by [axis.tic
 
 <a name="tickSubdivide" href="#wiki-tickSubdivide">#</a> axis.**tickSubdivide**([*n*])
 
-Get or set the tick subdivision count. If *count* is specified, sets the number of uniform subdivision ticks to make between major tick marks and returns the axis. If *count* is not specified, returns the current subdivision tick count which defaults to zero.
-
-<font color="red">WARNING</font>: The specified *count* specifies the number of _subticks_, which is one(1) less than the number of _subdivisions_: `axis.Subdivide(1)` will produce _one_ subdivision tick per major tick, thus _subdividing_ that part of the range into _two_ subdivisions. Consequently, decimal subdivision would correspond to `axis.Subdivide(9)`, for example.
+Get or set the tick subdivision count. If *count* is specified, sets the number of uniform subdivision ticks to make **between major tick marks** and returns the axis. If *count* is not specified, returns the current subdivision tick count which defaults to zero. The specified *count* specifies the number of _minor_ ticks, which is one less than the number of _subdivisions_. For example, `axis.tickSubdivide(true)` produces one minor tick per major tick, thus cutting the space between each major tick in two. As another example, decimal subdivision is specified as `axis.tickSubdivide(9)`.
 
 <a name="tickSize" href="#wiki-tickSize">#</a> axis.**tickSize**([*major*[​[, *minor*], *end*]])
 
