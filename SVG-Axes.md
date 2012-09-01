@@ -50,7 +50,7 @@ var xAxis = d3.svg.axis()
 
 The explicit tick values take precedent over the tick arguments set by [axis.ticks](#axis_ticks). Note, however, that the tick arguments are still passed to the scale's [tickFormat](Quantitative-Scales#wiki-linear_tickFormat) function if tick format is not also set. Thus, it is valid to set both axis.ticks and axis.tickValues.
 
-<a name="tickSubdivide" href="#wiki-tickSubdivide">#</a> axis.**tickSubdivide**([*n*])
+<a name="tickSubdivide" href="#wiki-tickSubdivide">#</a> axis.**tickSubdivide**([*count*])
 
 Get or set the tick subdivision count. If *count* is specified, sets the number of uniform subdivision ticks to make **between major tick marks** and returns the axis. If *count* is not specified, returns the current subdivision tick count which defaults to zero. The specified *count* specifies the number of _minor_ ticks, which is one less than the number of _subdivisions_. For example, `axis.tickSubdivide(true)` produces one minor tick per major tick, thus cutting the space between each major tick in two. As another example, decimal subdivision is specified as `axis.tickSubdivide(9)`.
 
