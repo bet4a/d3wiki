@@ -1,6 +1,6 @@
 Say, you want to save your D3 application in a CouchDB database. This is just a proof of concept that this is possible. I use the »Focus + Context« diagram by Mike Bostock (http://bl.ocks.org/1667367) as an example.
 
-Prerequesites:
+Prerequisites:
 - A running CouchDB (see http://couchdb.apache.org/; in my Windows installation CouchDb is started as a Windows service when Windows starts).
 - An installation of couchapp (how to install couchapp, see http://couchapp.org/page/index).
 - Your favorite editor.
