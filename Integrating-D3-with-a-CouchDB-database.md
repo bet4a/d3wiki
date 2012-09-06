@@ -16,10 +16,15 @@ The steps are quite simple.
 Now you should have the following folder/file structure:
 
 d3apps
+
     _attachments
+
         d3.v2.min.js
+
         index.html
+
         sp500.csv
+
      .couchappr
 
 Open a command line window and navigate to your **d3apps** folder.
