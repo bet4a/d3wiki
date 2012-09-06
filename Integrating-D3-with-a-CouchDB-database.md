@@ -15,16 +15,14 @@ The steps are quite simple.
 
 Now you should have the following folder/file structure:
 
+<code>
 d3apps<br>
-    _attachments
-
-        d3.v2.min.js
-
-        index.html
-
-        sp500.csv
-
-     .couchappr
+    _attachments<br>
+        d3.v2.min.js<br>
+        index.html<br>
+        sp500.csv<br>
+     .couchappr<br>
+</code>
 
 Open a command line window and navigate to your **d3apps** folder.
 In the command line window issue the command (of course, couchapp must be on your path; otherwise you must supply the full path to couchapp.bat):
