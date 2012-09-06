@@ -31,7 +31,7 @@ In the command line window issue the command (of course, couchapp must be on you
 
 That's it. Now in your browser, you can navigate to http://127.0.0.1:5984/d3apps/_design/d3apps/index.html and admire your d3 application.
 
-Of course, this just shows that you can integrate and serve (!) D3 applications from a CouchDB without any middleware. Now everything needed to display the visualization is contained within CouchDB. There are no external dependencies. This example doesn't use any features of CouchDB to store and deliver the data. This will be topic of future examples.
+Of course, this just shows that you can integrate and serve (!) D3 applications from a CouchDB without any middleware. Now everything needed to display the visualization is contained within CouchDB. There are no external dependencies. This example doesn't use any features of CouchDB to store and deliver the data. This will be topic of future examples. This is just preliminary work for putting the data of my own applications into a CouchDB database. I thought this might be useful for others.
 
 
 
