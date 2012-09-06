@@ -64,3 +64,4 @@ Please feel free to add links to your work!
 ## Publications
 
 * [[D3: Data-Driven Documents|http://vis.stanford.edu/papers/d3]]<br>Michael Bostock, Vadim Ogievetsky, Jeffrey Heer<br>*IEEE Trans. Visualization & Comp. Graphics (Proc. InfoVis)*, 2011
+* [Getting Started with D3](http://shop.oreilly.com/product/0636920025429.do)<br>Mike Dewar, O'Reilly Media, June 2012
