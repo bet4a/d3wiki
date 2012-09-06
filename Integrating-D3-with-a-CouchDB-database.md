@@ -15,8 +15,7 @@ The steps are quite simple.
 
 Now you should have the following folder/file structure:
 
-d3apps
-
+d3apps<br>
     _attachments
 
         d3.v2.min.js
