@@ -17,11 +17,11 @@ Now you should have the following folder/file structure:
 
 <code>
 d3apps<br>
-    _attachments<br>
-        d3.v2.min.js<br>
-        index.html<br>
-        sp500.csv<br>
-     .couchappr<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_attachments<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d3.v2.min.js<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.html<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sp500.csv<br>
+&nbsp;&nbsp;&nbsp;&nbsp;.couchappr<br>
 </code>
 
 Open a command line window and navigate to your **d3apps** folder.
@@ -32,7 +32,6 @@ In the command line window issue the command (of course, couchapp must be on you
 That's it. Now in your browser, you can navigate to http://127.0.0.1:5984/d3apps/_design/d3apps/index.html and admire your d3 application.
 
 Of course, this just shows that you can integrate and serve (!) D3 applications from a CouchDB without any middleware. This example doesn't use any features of CouchDB to store and deliver the data. This will be topic of future examples.
-
 
 
 
