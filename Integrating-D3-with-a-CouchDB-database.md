@@ -5,7 +5,7 @@ Prerequesites:
 - An installation of couchapp (how to install couchapp, see http://couchapp.org/page/index).
 - Your favorite editor.
 
-The the steps are quite simple.
+The steps are quite simple.
 * In your favorite workspace create a new folder and name it say **d3apps**. 
 * Within this folder create a file named **.couchappr**. This file will be used by couchapp to create the CouchDB database.
 * Open this file in your text editor and add an empty object: **{}**. Nothing more is required for couchapp to create the database!
