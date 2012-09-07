@@ -1,4 +1,4 @@
-[Part 1](https://github.com/mbostock/d3/wiki/Integrating-d3-with-a-CouchDB-database-1)
+[Part 1](https://github.com/mbostock/d3/wiki/Integrating-d3-with-a-CouchDB-database-1), 
 [Part 2](https://github.com/mbostock/d3/wiki/Integrating-d3-with-a-CouchDB-database-2)
 ## Accessing data in a CouchDB database from a D3 application
 
