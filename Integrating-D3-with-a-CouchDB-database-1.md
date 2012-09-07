@@ -24,7 +24,7 @@ d3apps1
     _attachments
         index.html
         sp500.csv
-    .couchappr<br>
+    .couchappr
 ```
 
 Open a command line window and navigate to your **d3apps1** folder.
