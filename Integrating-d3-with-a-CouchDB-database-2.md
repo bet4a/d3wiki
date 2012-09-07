@@ -11,6 +11,27 @@ d3apps
     .couchappr<br>
 ```
 
+Edit the beginning of your **index.html** file as follows:
+
+```
+<!DOCTYPE html>
+<meta charset="utf-8">
+<!--
+<script src="http://mbostock.github.com/d3/d3.js?2.7.2"></script>
+<script src="http://mbostock.github.com/d3/d3.csv.js?2.7.2"></script>
+<script src="http://mbostock.github.com/d3/d3.time.js?2.7.2"></script>
+-->
+<script src="d3.v2.min.js"></script>
+```
+
+From within your **d3apps** folder, push your code into the CouchDB:
+
+```
+couchapp push d3apps
+```
+
+Now D3 will be loaded from CouchDB.
+
 ## Storing the data in CouchDB
 
 First, under **_attachments** create a new file called **import.html**.
