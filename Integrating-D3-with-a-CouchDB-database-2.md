@@ -11,7 +11,7 @@ d3apps2
         d3.v2.min.js
         index.html
         sp500.csv
-    .couchappr<br>
+    .couchapprc
 ```
 
 Delete the references to the external d3 library files and insert a reference to the local **d3.v2.min.js** file. The beginning of your **index.html** file should look as follows (with or without the out-commented lines):
