@@ -14,7 +14,7 @@ First, make a copy of your complete **d3apps2** folder and store it in your work
 <style>
 ```
 
-The **sp500.csv** file in the **_attachments** folder is no longer needed. If you haven't done so, delete it now. Also, the **d3.csv** function is no longer needed. Instead you retrieve the data from the database. Replace the function
+The **d3.csv** function is no longer needed. Instead you retrieve the data from the database. Replace the function
 
 ```
     d3.csv("sp500.csv", function(data) {
@@ -79,11 +79,21 @@ completely by following code:
     });
 ```
 
+**Don't forget:** Change  **dbName **in your **import.html** file to **d3apps3**! 
+
 From within your **d3apps3** folder, push your code into the CouchDB:
 
 ```
 couchapp push d3apps3
 ```
+
+Import your data into the CouchDB database by navigating to:
+
+```
+http://127.0.0.1:5984/d3apps3/_design/d3apps3/import.html
+```
+
+If the import has been successful, the **sp500.csv** file in the **_attachments** folder is no longer needed. If you haven't done so, delete it now. 
 
 That's it. Now D3 will load the data from the CouchDB database.
 
