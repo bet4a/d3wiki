@@ -1,3 +1,6 @@
+[Part 2](https://github.com/mbostock/d3/wiki/Integrating-d3-with-a-CouchDB-database-2), 
+[Part 3](https://github.com/mbostock/d3/wiki/Integrating-d3-with-a-CouchDB-database-3)
+
 ## Proof of concept
 
 Say, you want to save your D3 application in a CouchDB database. This is just a proof of concept that this is possible. I use the »Focus + Context« diagram by Mike Bostock (http://bl.ocks.org/1667367) as an example.
