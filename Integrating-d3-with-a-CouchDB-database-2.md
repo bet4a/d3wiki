@@ -24,7 +24,7 @@ Delete the references to the external d3 library files and insert a reference to
 <script src="d3.v2.min.js"></script>
 ```
 
-From within your **d3apps** folder, push your code into the CouchDB:
+From within your **d3apps2** folder, push your code into the CouchDB:
 
 ```
 couchapp push d3apps2
@@ -96,7 +96,7 @@ http://127.0.0.1:5984/d3apps2/_design/d3apps2/import.html
 That's it. The file is loaded and imports your data into CouchDB. You may control your import by navigating to 
 
 ```
-http://127.0.0.1:5984/_utils/database.html?d3apps
+http://127.0.0.1:5984/_utils/database.html?d3apps2
 ```
 
 There you find a new document named **"sp500"**. If you click on it, you can drill down to individual data.
