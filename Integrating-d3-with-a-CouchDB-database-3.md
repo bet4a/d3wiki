@@ -29,7 +29,7 @@ completely by following code:
 
 ```
     // This function replaces the d3.csv function.
-    $.couch.db("d3apps").openDoc("sp500", {
+    $.couch.db("d3apps3").openDoc("sp500", {
         success : function (doc) {
 
             var data = doc.data;
