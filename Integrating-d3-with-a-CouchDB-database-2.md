@@ -52,7 +52,7 @@ Then add the following code to **import.html**:
 
     // Adapt the values to your needs
     var file = "sp500.csv",
-        dbName = "d3apps",
+        dbName = "d3apps2",
         docId = "sp500",
         source = "FocusAndContext";
 
