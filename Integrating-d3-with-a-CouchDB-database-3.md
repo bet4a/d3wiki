@@ -79,7 +79,7 @@ completely by following code:
     });
 ```
 
-**Don't forget:** Change  **dbName **in your **import.html** file to **d3apps3**! 
+**Don't forget:** Change  **dbName** in your **import.html** file to **d3apps3**! 
 
 From within your **d3apps3** folder, push your code into the CouchDB:
 
