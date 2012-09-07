@@ -225,6 +225,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Pedigree Tree](http://bl.ocks.org/2966094)
 
 #### Miscellaneous visualizations
+
 * [Superformula Explorer](http://bl.ocks.org/1021103)
 * [Superformula Tweening](http://bl.ocks.org/1020902)
 * [OMG Particles!](http://bl.ocks.org/1062544)
@@ -256,7 +257,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [appplot.com - various charts] (http://appplot.com)
 * [Simple Dashboard Example](http://bl.ocks.org/3287802)
 
-#### Charts using the reusable API
+#### Charts using the [reusable API](http://bost.ocks.org/mike/chart/)
+
 * [Parallel Coordinates](http://syntagmatic.github.com/parallel-coordinates/) and [repository](https://github.com/syntagmatic/parallel-coordinates)
 * [Chernoff faces, Fisheye, Gepdesic grid, Hive plot, Horizon chart, Sankey diagram, ](https://github.com/d3/d3-plugins)
 * [Parallel Sets](https://github.com/jasondavies/d3-parsets)
@@ -267,6 +269,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 
 
 #### Useful snippets
+
 * [Masking with external svg elements](http://bl.ocks.org/1503463)
 * [PJAX](http://bl.ocks.org/1367999)
 * [Table Sorting](http://bl.ocks.org/1226718)
