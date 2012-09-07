@@ -32,7 +32,7 @@ couchapp push d3apps
 
 Now D3 will be loaded from CouchDB.
 
-## Storing the data in CouchDB
+## Storing the data in the CouchDB
 
 First, under **_attachments** create a new file called **import.html**.
 Then add the following code to **import.html**:
