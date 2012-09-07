@@ -106,4 +106,4 @@ There you find a new document named **"sp500"**. If you click on it, you can dri
 
 **A Warning:** This import file is just a quick hack to get data into the CouchDB. There's no error checking. You can execute this import only once. If something goes wrong, you have to delete "sp500" manually using Futon, the rudimentary database manager of CouchDB, fix the error and try again. After the data has been imported successfully, it's no longer needed in this application. But don't yet delete it. You need it for the third part. And keep the **import.html** file, because you might want to import additional datasets into your CouchDB database, using the same import pattern.
 
-How you can access the data in CouchDB from your D3 application, is shown in [Integrating d3 with a CouchDB database 3](https://github.com/mbostock/d3/wiki/Integrating-D3-with-a-CouchDB-database-3).
+How you can access the data in CouchDB from your D3 application, is shown in [Integrating D3 with a CouchDB database 3](https://github.com/mbostock/d3/wiki/Integrating-D3-with-a-CouchDB-database-3).
