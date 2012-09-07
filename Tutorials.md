@@ -36,7 +36,7 @@ Please feel free to add links to your work!
 * [Creating a Polar Area Diagram](http://kreese.net/blog/2012/08/26/d3-js-creating-a-polar-area-diagram-radial-bar-chart/)
 
 ### Database Integration
-* [Integrating D3 with a CouchDB database](https://github.com/mbostock/d3/wiki/Integrating-D3-with-a-CouchDB-database) - Reinhard Engel
+* [Integrating D3 with a CouchDB database 1](https://github.com/mbostock/d3/wiki/Integrating-D3-with-a-CouchDB-database-1) - Reinhard Engel
 * [Integrating D3 with a CouchDB database 2](https://github.com/mbostock/d3/wiki/Integrating-D3-with-a-CouchDB-database-2) - Reinhard Engel
 * [Integrating D3 with a CouchDB database 3](https://github.com/mbostock/d3/wiki/Integrating-D3-with-a-CouchDB-database-3) - Reinhard Engel
 
