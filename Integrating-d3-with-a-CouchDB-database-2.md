@@ -104,6 +104,6 @@ http://127.0.0.1:5984/_utils/database.html?d3apps2
 
 There you find a new document named **"sp500"**. If you click on it, you can drill down to individual data.
 
-**A Warning:** This import file is just a quick hack to get data into the CouchDB. There's no error checking. You can execute this import only once. If something goes wrong, you have to delete "sp500" manually using Futon, the rudimentary database manager of CouchDB, fix the error and try again. After the data has been imported successfully, you can delete the **sp500.csv** file. It's no longer needed in this application. But you should keep the **import.html** file, because you might want to import additional datasets into your CouchDB database, using the same import pattern.
+**A Warning:** This import file is just a quick hack to get data into the CouchDB. There's no error checking. You can execute this import only once. If something goes wrong, you have to delete "sp500" manually using Futon, the rudimentary database manager of CouchDB, fix the error and try again. After the data has been imported successfull, it's no longer needed in this application. But don't yet delete it. You need it for the third part. And keep the **import.html** file, because you might want to import additional datasets into your CouchDB database, using the same import pattern.
 
-How you can access the data in CouchDB from your D3 application is shown in [Integrating d3 with a CouchDB database 3](https://github.com/mbostock/d3/wiki/Integrating-D3-with-a-CouchDB-database-3).
+How you can access the data in CouchDB from your D3 application, is shown in [Integrating d3 with a CouchDB database 3](https://github.com/mbostock/d3/wiki/Integrating-D3-with-a-CouchDB-database-3).
