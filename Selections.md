@@ -136,7 +136,7 @@ For a more detailed example of how the key function affects the data join, see t
 
 The result of the `data` operator is the *update* selection; this represents the selected DOM elements that were successfully bound to the specified data elements. The *update* selection also contains a reference to the [enter](Selections#wiki-enter) and [exit](Selections#wiki-exit) selections, for adding and removing nodes in correspondence with data. For example, if the default by-index key is used, and the existing selection contains fewer elements than the specified data, then the *enter* selection will contain placeholders for the new data. On the other hand, if the existing contains more elements than the data, then the *exit* selection will contain the extra elements. And, if the existing selection exactly matches the data, then both the enter and exit selections will be empty, with all nodes in the update selection. For more details, see the short tutorial [Thinking With Joins](http://bost.ocks.org/mike/join/).
 
-If a key function is specified, the `data` operator also affects the index of nodes; this index is passed as the second argument `i` to any operator function values. However, note that existing DOM elements are not automatically reordered; use the [order](#wiki-order) or [sort](#wiki-sort) operator as needed.
+If a key function is specified, the `data` operator also affects the index of nodes; this index is passed as the second argument `i` to any operator function values. However, note that existing DOM elements are not automatically reordered; use [sort](#wiki-sort) or [order](#wiki-order) as needed.
 
 If *values* is not specified, then this method returns the array of data for the first group in the selection. The length of the returned array will match the length of the first group, and the index of each datum in the returned array will match the corresponding index in the selection. If some of the elements in the selection are null, or if they have no associated data, then the corresponding element in the array will be undefined.
 
@@ -223,7 +223,7 @@ This would result in:
 <div index="5">32</div>
 ```
 
-If you want the document traversal order to match the selection data order, you can use the [order](#wiki-order) or [sort](#wiki-sort) operator.
+If you want the document traversal order to match the selection data order, you can use [sort](#wiki-sort) or [order](#wiki-order).
 
 <a name="filter" href="Selections#wiki-filter">#</a> selection.<b>filter</b>(<i>selector</i>)
 
@@ -286,7 +286,7 @@ This can then be used, [for example](http://bl.ocks.org/1323729), to sort elemen
 
 Sorts the elements in the current selection according to the specified comparator function. The comparator function is passed two data elements *a* and *b* to compare, returning either a negative, positive, or zero value. If negative, then *a* should be before *b*; if positive, then *a* should be after *b*; otherwise, *a* and *b* are considered equal and the order is arbitrary. Note that the sort is not guaranteed to be stable; however, it is guaranteed to have the same behavior as your browser's built-in [[sort|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort]] method on arrays.
 
-<a name="order" href="Selections#wiki-order">#</a> selection.<b>order</b>()
+<a name="order" href="#wiki-order">#</a> selection.<b>order</b>()
 
 Re-inserts elements into the document such that the document order matches the selection order. This is equivalent to calling sort() if the data is already sorted, but much faster.
 
