@@ -308,6 +308,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [SVG to Canvas](http://bl.ocks.org/2294676)
 * [d3 rendered with RaphaelJS for IE Compatibility](https://github.com/mhemesath/r2d3/blob/master/examples/pie/pie.html)
 * [d34raphael](http://webmonarch.github.com/d34raphael/usage.html)
+* [D3 graphics in a Pergola SVG UI] (http://www.dotuscomus.com/pergola/pergola_1.4.0/ExamplesHTML/D3/multiD3.html)
 
 #### Online Editors
 
