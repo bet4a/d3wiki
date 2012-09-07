@@ -12,7 +12,7 @@ Prerequisites:
 
 The steps are quite simple.
 * In your favorite workspace create a new folder and name it say **d3apps1**. 
-* Within this folder create a file named **.couchappr**. This file will be used by couchapp to create the CouchDB database.
+* Within this folder create a file named **.couchapprc**. This file will be used by couchapp to create the CouchDB database.
 * Open this file in your text editor and add an empty object: **{}**. Nothing more is required for couchapp to create the database!
 * In the **d3apps1** folder create a subfolder named **_attachments**.
 * Copy **index.html** and **sp500.csv** of the »Focus + Context« example into the subfolder **_attachments**.
