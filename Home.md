@@ -7,6 +7,7 @@
 * [Tutorials and Talks](http://github.com/mbostock/d3/wiki/Tutorials)
 * [[API Reference]]
 * [[Release Notes]]
+* [Plugins](/d3/d3-plugins)
 * [d3.js on Stack Overflow](http://stackoverflow.com/questions/tagged/d3.js)
 * [d3-js Google Group](http://groups.google.com/group/d3-js)
 
