@@ -256,6 +256,16 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [appplot.com - various charts] (http://appplot.com)
 * [Simple Dashboard Example](http://bl.ocks.org/3287802)
 
+#### Charts using the reusable API
+* [Parallel Coordinates](http://syntagmatic.github.com/parallel-coordinates/) and [repository](https://github.com/syntagmatic/parallel-coordinates)
+* [Chernoff faces, Fisheye, Gepdesic grid, Hive plot, Horizon chart, Sankey diagram, ](https://github.com/d3/d3-plugins)
+* [Parallel Sets](https://github.com/jasondavies/d3-parsets)
+* [Word Cloud](https://github.com/jasondavies/d3-cloud/blob/master/d3.layout.cloud.js)
+* [NVD3](https://github.com/novus/nvd3)
+* [MathJax label](http://bl.ocks.org/3391642)
+* [Simple table](http://jsfiddle.net/christopheviau/v6VMf/)
+
+
 #### Useful snippets
 * [Masking with external svg elements](http://bl.ocks.org/1503463)
 * [PJAX](http://bl.ocks.org/1367999)
