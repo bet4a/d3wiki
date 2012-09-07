@@ -254,6 +254,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [alpha-shapes aka concave hulls](http://bl.ocks.org/1552725)
 * [Conway's Game of life as a scrolling background](http://rhokaustin.org/)
 * [appplot.com - various charts] (http://appplot.com)
+* [Simple Dashboard Example](http://bl.ocks.org/3287802)
 
 #### Useful snippets
 * [Masking with external svg elements](http://bl.ocks.org/1503463)
