@@ -1,9 +1,9 @@
 ## Storing the D3 library in the CouchDB
 
-This one is easy. Just move a copy of **d3.v2.min.js** into the **_attachments** folder. Then it  should look as follows:
+This one is easy. First, make a copy of your complete d3apps1 folder and store in your workspace using the name **d3apps2**. Then just move a copy of **d3.v2.min.js** into the **_attachments** folder. Then it  should look as follows:
 
 ```
-d3apps
+d3apps2
     _attachments
         d3.v2.min.js
         index.html
@@ -11,7 +11,7 @@ d3apps
     .couchappr<br>
 ```
 
-Edit the beginning of your **index.html** file as follows:
+Delete the references to the external d3 library files and insert a reference to the local **d3.v2.min.js** file. The beginning of your **index.html** file shoul then look as follows:
 
 ```
 <!DOCTYPE html>
@@ -27,7 +27,7 @@ Edit the beginning of your **index.html** file as follows:
 From within your **d3apps** folder, push your code into the CouchDB:
 
 ```
-couchapp push d3apps
+couchapp push d3apps2
 ```
 
 Now D3 will be loaded from CouchDB.
@@ -84,13 +84,13 @@ Then add the following code to **import.html**:
 From within your **d3apps** folder, push your code into the CouchDB:
 
 ```
-couchapp push d3apps
+couchapp push d3apps2
 ```
 
 Navigate to your import file:
 
 ```
-http://127.0.0.1:5984/d3apps/_design/d3apps/import.html
+http://127.0.0.1:5984/d3apps2/_design/d3apps2/import.html
 ```
 
 That's it. The file is loaded and imports your data into CouchDB. You may control your import by navigating to 
@@ -101,6 +101,6 @@ http://127.0.0.1:5984/_utils/database.html?d3apps
 
 There you find a new document named **"sp500"**. If you click on it, you can drill down to individual data.
 
-**A Warning:** This import file is just a quick hack to get data into the CouchDB. There's no error checking. You can execute this import only once. If something goes wrong, you have delete "sp500" manually using Futon, the rudimentary database manager of CouchDB, fix the error and try again. After the data has been imported successfully, you can delete the **sp500.csv** file. It's no longer needed in this application. But you should keep the **import.html** file, because you might want to import additional datasets into your CouchDB database, using the same import pattern.
+**A Warning:** This import file is just a quick hack to get data into the CouchDB. There's no error checking. You can execute this import only once. If something goes wrong, you have to delete "sp500" manually using Futon, the rudimentary database manager of CouchDB, fix the error and try again. After the data has been imported successfully, you can delete the **sp500.csv** file. It's no longer needed in this application. But you should keep the **import.html** file, because you might want to import additional datasets into your CouchDB database, using the same import pattern.
 
 How you can access the data in CouchDB from your D3 application is shown in [Integrating d3 with a CouchDB database 3](https://github.com/mbostock/d3/wiki/Integrating-D3-with-a-CouchDB-database-3).
