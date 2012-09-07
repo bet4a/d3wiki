@@ -1,6 +1,6 @@
 ## Storing the D3 library in the CouchDB
 
-This one is easy. First, make a copy of your complete **d3apps1** folder and store it in your workspace using the name **d3apps2**. Then just move a copy of **d3.v2.min.js** into the **_attachments** folder. Then it  should look as follows:
+This one is easy. First, make a copy of your complete **d3apps1** folder and store it in your workspace using the name **d3apps2**. Then just move a copy of **d3.v2.min.js** into the **_attachments** folder. Then it should look as follows:
 
 ```
 d3apps2
@@ -11,7 +11,7 @@ d3apps2
     .couchappr<br>
 ```
 
-Delete the references to the external d3 library files and insert a reference to the local **d3.v2.min.js** file. The beginning of your **index.html** file shoul then look as follows:
+Delete the references to the external d3 library files and insert a reference to the local **d3.v2.min.js** file. The beginning of your **index.html** file should look as follows (with or without the out-commented lines):
 
 ```
 <!DOCTYPE html>
