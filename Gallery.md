@@ -82,6 +82,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 
 ## Examples
 
+* [Interactive Publication History](http://www.cs.umd.edu/~bederson/papers/index.html) - Ben Bederson
 * [Visualizing the World's Opinion (Zoomable Worldmap and Pie Chart)](http://theartofasking.com/question/wjucdg6k)
 * [Visualizing Networks with Hive Plots](http://bost.ocks.org/mike/hive/)
 * [The Wealth & Health of Nations](http://bost.ocks.org/mike/nations/)
