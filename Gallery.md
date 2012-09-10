@@ -79,6 +79,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 [![house-map](ex/house-map.png)](http://trends.truliablog.com/2012/02/where-are-house-hunters-searching/)
 [![open-budget](ex/open-budget.png)](http://marcinignac.com/projects/open-budget/)
 [Drought Extends, Crops Wither](http://www.nytimes.com/interactive/2012/08/24/us/drought-crops.html)
+[![Pubs Timeline](http://www.cs.umd.edu/~bederson/images/pubs-screenshot.png)](http://www.cs.umd.edu/~bederson/papers/index.html)
 
 ## Examples
 
