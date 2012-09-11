@@ -117,6 +117,8 @@ http://127.0.0.1:5984/d3apps3/_design/d3apps3/index.html
 
 Now your data will be loaded from the CouchDB database.
 
+You can watch the result [here](https://rengel.iriscouch.com:6984/d3apps3/_design/d3apps3/index.html).
+
 ## Conclusion
 
 If you followed this tutorial, you now should have three CouchDB databases: **d3apps1**, **d3apps2**, **d3apps3**. They demonstrate different degrees of integration of an D3 application into a CouchDB database. The last one (**d3apps3**) has no dependencies on external files whatsoever (no libraries, no data files). Everything is contained in the database. Neither middleware nor a framework is required to access and display the data. The application and the data can be moved around, copied, replicated, deployed, etc. just by applying these operation to the database file. The only requirement is that the recipient has CouchDB running (which is available for all major operating systems).
