@@ -109,13 +109,13 @@ http://127.0.0.1:5984/d3apps3/_design/d3apps3/import.html
 
 If the import has been successful, the **sp500.csv** file in the **_attachments** folder is no longer needed. If you haven't done so, delete it now. 
 
-That's it. Navigate to
+That's it. Now your data will be loaded from the CouchDB database.
+
+On your local machine, navigate to
 
 ```
 http://127.0.0.1:5984/d3apps3/_design/d3apps3/index.html
 ```
-
-Now your data will be loaded from the CouchDB database.
 
 You can watch the result [here](https://rengel.iriscouch.com:6984/d3apps3/_design/d3apps3/index.html).
 
