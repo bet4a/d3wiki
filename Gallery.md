@@ -78,11 +78,14 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 [![house-heatmap](ex/house-heatmap.png)](http://trends.truliablog.com/2011/09/house-hunter-by-day-not-so-much-after-midnight/)
 [![house-map](ex/house-map.png)](http://trends.truliablog.com/2012/02/where-are-house-hunters-searching/)
 [![open-budget](ex/open-budget.png)](http://marcinignac.com/projects/open-budget/)
-[Drought Extends, Crops Wither](http://www.nytimes.com/interactive/2012/08/24/us/drought-crops.html)
-[![Pubs Timeline](http://www.cs.umd.edu/~bederson/images/pubs-screenshot.png)](http://www.cs.umd.edu/~bederson/papers/index.html)
+[![bederson-pubs](ex/bederson-pubs.png)](http://www.cs.umd.edu/~bederson/papers/index.html)
 
 ## Examples
 
+* [At the National Conventions, the Words They Used](http://www.nytimes.com/interactive/2012/09/06/us/politics/convention-word-counts.html)
+* [Drought Extends, Crops Wither](http://www.nytimes.com/interactive/2012/08/24/us/drought-crops.html)
+* [Drought and Deluge in the Lower 48](http://www.nytimes.com/interactive/2012/08/11/sunday-review/drought-history.html)
+* [Drought during Month](http://bost.ocks.org/mike/drought/)
 * [Interactive Publication History](http://www.cs.umd.edu/~bederson/papers/index.html) - Ben Bederson
 * [Visualizing the World's Opinion (Zoomable Worldmap and Pie Chart)](http://theartofasking.com/question/wjucdg6k)
 * [Visualizing Networks with Hive Plots](http://bost.ocks.org/mike/hive/)
