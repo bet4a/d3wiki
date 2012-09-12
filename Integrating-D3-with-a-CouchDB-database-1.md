@@ -1,5 +1,6 @@
 [Part 2](https://github.com/mbostock/d3/wiki/Integrating-d3-with-a-CouchDB-database-2), 
-[Part 3](https://github.com/mbostock/d3/wiki/Integrating-d3-with-a-CouchDB-database-3)
+[Part 3](https://github.com/mbostock/d3/wiki/Integrating-d3-with-a-CouchDB-database-3), 
+[Part 4](https://github.com/mbostock/d3/wiki/Integrating-d3-with-a-CouchDB-database-4)
 
 ## Proof of concept
 
@@ -37,5 +38,4 @@ couchapp push d3apps1
 That's it. Now in your browser, you can navigate to http://127.0.0.1:5984/d3apps1/_design/d3apps1/index.html and admire your d3 application.
 
 Of course, this just shows that you can integrate and serve (!) D3 applications from a CouchDB without any middleware. There is still one external dependency: the d3 library, that is loaded from GitHub. This example doesn't use any features of CouchDB to store and deliver the data. This is just preliminary work for putting the data of my own applications into a CouchDB database. I thought this might be useful for others. How the d3 library and the data can be integrated into CouchDB is shown in [Integrating D3 with a CouchDB database 2](https://github.com/mbostock/d3/wiki/Integrating-D3-with-a-CouchDB-database-2).
-
 
