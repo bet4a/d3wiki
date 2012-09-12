@@ -1,5 +1,6 @@
 [Part 1](https://github.com/mbostock/d3/wiki/Integrating-d3-with-a-CouchDB-database-1), 
-[Part 2](https://github.com/mbostock/d3/wiki/Integrating-d3-with-a-CouchDB-database-2)
+[Part 2](https://github.com/mbostock/d3/wiki/Integrating-d3-with-a-CouchDB-database-2), 
+[Part 4](https://github.com/mbostock/d3/wiki/Integrating-d3-with-a-CouchDB-database-4)
 ## Accessing data in a CouchDB database from a D3 application
 
 First, make a copy of your complete **d3apps2** folder and store it in your workspace using the name **d3apps3**. Your folder structure should look as follows:
