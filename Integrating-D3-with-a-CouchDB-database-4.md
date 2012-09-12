@@ -1,3 +1,7 @@
+[Part 1](https://github.com/mbostock/d3/wiki/Integrating-d3-with-a-CouchDB-database-1), 
+[Part 2](https://github.com/mbostock/d3/wiki/Integrating-d3-with-a-CouchDB-database-2), 
+[Part 3](https://github.com/mbostock/d3/wiki/Integrating-d3-with-a-CouchDB-database-3)
+
 Loading static data from a csv is fine, but really to use the power of CouchDB you'll want to be using views as the data source for your visualisation. This allows you to easily modify your dataset by adding/removing/editing documents.
 
 ## Changes to the couchapp
