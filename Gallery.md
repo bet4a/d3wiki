@@ -81,7 +81,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 [![bederson-pubs](ex/bederson-pubs.png)](http://www.cs.umd.edu/~bederson/papers/index.html)
 
 ## Examples
-
+* [Visualizing document similarity over time](http://www.davidmasad.com/sandbox/FirmClusters.html)
 * [At the National Conventions, the Words They Used](http://www.nytimes.com/interactive/2012/09/06/us/politics/convention-word-counts.html)
 * [Drought Extends, Crops Wither](http://www.nytimes.com/interactive/2012/08/24/us/drought-crops.html)
 * [Drought and Deluge in the Lower 48](http://www.nytimes.com/interactive/2012/08/11/sunday-review/drought-history.html)
