@@ -300,7 +300,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Flows of refugees between the world countries in 2008](http://bl.ocks.org/2209220)
 * [Interactive azimuthal projection simulating a 3D earth with stars] (http://marcneuwirth.com/blog/2012/06/24/creating-the-earth-with-d3-js/)
 * [Calculating quadtree bounding boxes and displaying them in leaflet](http://calvinmetcalf.github.com/k3/)
-* [Comparing Map Projections](http://bl.ocks.org/3711245)
+* [Projection Transitions](http://bl.ocks.org/3711652) and [Comparing Map Projections](http://bl.ocks.org/3711245)
 
 ### Tools
 
