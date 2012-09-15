@@ -8,11 +8,11 @@ Constructs a new zoom behavior.
 
 <a name="x" href="Zoom-Behavior#wiki-x">#</a> zoom.<b>x</b>([*x*])
 
-Specifies an x-scale whose domain should be automatically adjusted when zooming. If not specified, returns the current x-scale, which defaults to null.
+Specifies an x-scale whose domain should be automatically adjusted when zooming. If not specified, returns the current x-scale, which defaults to null. If the scale's domain is modified programmatically, it should be reassigned to the zoom behaviour.
 
 <a name="y" href="Zoom-Behavior#wiki-y">#</a> zoom.<b>y</b>([*y*])
 
-Specifies an y-scale whose domain should be automatically adjusted when zooming. If not specified, returns the current y-scale, which defaults to null.
+Specifies an y-scale whose domain should be automatically adjusted when zooming. If not specified, returns the current y-scale, which defaults to null. If the scale's domain is modified programmatically, it should be reassigned to the zoom behaviour.
 
 <a name="scaleExtent" href="Zoom-Behavior#wiki-scaleExtent">#</a> zoom.<b>scaleExtent</b>([*extent*])
 
