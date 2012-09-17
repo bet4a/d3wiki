@@ -150,6 +150,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Realtime webserver stats](http://meloncholy.com/blog/using-d3-for-realtime-webserver-stats/) - [demo](http://bits.meloncholy.com/mt-stats) - ([Github](https://github.com/meloncholy/mt-stats-viewer), [Github](https://github.com/meloncholy/mt-stats)) - Andrew Weeks
 * [TradeArc - Arc Diagram of Offseason NHL Trades](http://tradearc.laserdeathstehr.com/), ([Github](https://github.com/nstehr/NHL-Trade-Arc)) - Nathan Stehr
 * [Visualizing Swiss politicians on Twitter using D3.js](http://visurus.wordpress.com/2012/08/30/visualizing-swiss-politicians-on-twitter-using-d3-js/) - Ralph
+* [Close Votes - visualizing voting similarities for the Dutch 2012 national elections](http://tulpinteractive.com/close-votes/) - Jan Willem Tulp
 
 ### Concepts & Techniques
 
