@@ -233,7 +233,7 @@ The optional numeric *delay* [unit: integer, millisecond] may be specified when 
 
 You may use *delay* and *mark* to specify relative and absolute moments in time when the *function* should start being invoked, e.g. a calendar-based event might be coded as
 ```
-var appointment = Date(2012, 09, 29, 14, 0, 0); // @ 29/sep/2012, 1400 hours
+var appointment = new Date(2012, 09, 29, 14, 0, 0); // @ 29/sep/2012, 1400 hours
 ...
 // flash appointment on screen when it's due in 4 hours or less: note that negative (delay) is okay!
 d3.timer(flash_appointments_due, -4 * 3600 * 1000, appointment);
