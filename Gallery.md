@@ -152,6 +152,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Visualizing Swiss politicians on Twitter using D3.js](http://visurus.wordpress.com/2012/08/30/visualizing-swiss-politicians-on-twitter-using-d3-js/) - Ralph
 * [Close Votes - visualizing voting similarities for the Dutch 2012 national elections](http://tulpinteractive.com/close-votes/) - Jan Willem Tulp
 * [Multiple Area charts and a brush tool](http://bl.ocks.org/3630001) - Tyler Craft
+* [Enumerating vertex induced connected subgraphs](http://students.mimuw.edu.pl/~rk292662/vertex/) - Robert Kozikowski
 
 ### Concepts & Techniques
 
