@@ -153,6 +153,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Close Votes - visualizing voting similarities for the Dutch 2012 national elections](http://tulpinteractive.com/close-votes/) - Jan Willem Tulp
 * [Multiple Area charts and a brush tool](http://bl.ocks.org/3630001) - Tyler Craft
 * [Enumerating vertex induced connected subgraphs](http://students.mimuw.edu.pl/~rk292662/vertex/) - Robert Kozikowski
+* [Startup Salary & Equity Compensation](https://blog.wealthfront.com/startup-employee-equity-compensation/)
 
 ### Concepts & Techniques
 
