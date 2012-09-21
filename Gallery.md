@@ -137,7 +137,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Last Chart! - See the Music](http://www.lastchart.com)
 * [Multiple visualization from the Société Typographique de Neuchâtel](http://chop.leeds.ac.uk/stn/interface/gallery.php)
 * [Prime numbers pattern](http://www.jasondavies.com/primos/)
-* [Interactive visual breakpoint detection](http://bioviz.rocq.inria.fr/plotter/) - Toby Dylan Hocking
+* [Interactive visual breakpoint detection on SegAnnDB](http://bioviz.rocq.inria.fr/plotter/) - Toby Dylan Hocking
 * [Coordinated visualizations for Consumer Packaged Goods](http://theory.info/)
 * [eCommerce API Wheel for eBay](http://saranyan.github.com/commerce_wheel) - Saranyan Vigraham
 * [The business of Bond](http://007.lucklaboratories.com/)
