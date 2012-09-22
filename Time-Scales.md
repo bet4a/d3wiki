@@ -87,6 +87,7 @@ The following time formats are considered:
 * %I %p - for hour boundaries, such as "01 AM".
 * %I:%M - for minute boundaries, such as "01:23".
 * :%S - for second boundaries, such as ":45".
+* .%L - milliseconds for all other times, such as ".012".
 
 By using multi-scale time formats, the default tick format provides both local and global context for each time interval. For example, by showing the sequence [11 PM, Mon 07, 01 AM], the tick formatter reveals information about hours, dates, and day simultaneously—rather than just the hours. If you'd prefer single-scale time formatting, you can always use your own [d3.time.format](Time-Formatting).
 
