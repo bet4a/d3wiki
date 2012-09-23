@@ -193,6 +193,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Pictograms](http://bl.ocks.org/2280295)
 * [Scatterplot for K-Means clustering visualization](http://www.ericbullington.com/articles/2012/01/31/kmeans-visualization)
 * [Smoke charts](http://dyninc.github.com/d3-smokechart/) and [source code](https://github.com/dyninc/d3-smokechart)
+* [Pyramid charts: demographic transition in the US](http://www.newscientist.com/embedded/us-demographics-2050)
+* [Floating bubble chart: De Maastricht au traité budgétaire : les oui et les non de 39 personnalités politiques](http://www.lemonde.fr/politique/visuel/2012/09/18/de-maastricht-au-traite-budgetaire-les-oui-et-les-non-de-39-personnalites-politiques_1760615_823448.html)
 
 #### Trees and Graphs
 
@@ -232,6 +234,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Bracket Layout](http://blockses.appspot.com/2503502)
 * [Force Layout with Groups and Labels showing relations of football players participating in Euro 2012](http://www.torlaune.de/euro-2012/spieler-relationen/)
 * [Pedigree Tree](http://bl.ocks.org/2966094)
+* [Chord layout of football passes](http://www.tips-for-excel.com/MCFC/Passes.html)
 
 #### Miscellaneous visualizations
 
