@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ **Gallery**
 
-Welcome to the **D3 gallery**. Feel free to add links to your work! More examples are available in the [D3 repository](/mbostock/d3/tree/master/examples). If you want to share an example and don't have your own hosting, consider using [Gist](http://gist.github.com) and [bl.ocks](http://bl.ocks.org).
+Welcome to the **D3 gallery**. Feel free to add links to your work! More examples are available in the [D3 repository](/mbostock/d3/tree/master/examples) and you can see them in action [here](http://d3-example.herokuapp.com/). If you want to share an example and don't have your own hosting, consider using [Gist](http://gist.github.com) and [bl.ocks](http://bl.ocks.org).
 
 ## Visual Index
 
@@ -156,6 +156,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Startup Salary & Equity Compensation](https://blog.wealthfront.com/startup-employee-equity-compensation/)
 * [Pyramid charts: demographic transition in the US](http://www.newscientist.com/embedded/us-demographics-2050)
 * [Floating bubble chart: De Maastricht au traité budgétaire : les oui et les non de 39 personnalités politiques](http://www.lemonde.fr/politique/visuel/2012/09/18/de-maastricht-au-traite-budgetaire-les-oui-et-les-non-de-39-personnalites-politiques_1760615_823448.html)
+* [Open Knowledge Festival #OkFest Hashtag Graph Visualization](http://okfestival.org/hashtag/#visualisation)
+* [Exploring d3.js with data from my runs to plot my heart rate](http://blog.freshteapot.net/post/31938798971/using-d3-js-to-visualise-my-heart-rate)
 
 ### Concepts & Techniques
 
@@ -196,6 +198,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Scatterplot for K-Means clustering visualization](http://www.ericbullington.com/articles/2012/01/31/kmeans-visualization)
 * [Smoke charts](http://dyninc.github.com/d3-smokechart/) and [source code](https://github.com/dyninc/d3-smokechart)
 * [Multiple Area Charts with D3.JS](http://tympanus.net/codrops/2012/08/29/multiple-area-charts-with-d3-js/)
+* 
 
 #### Trees and Graphs
 
@@ -339,6 +342,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [d34raphael](http://webmonarch.github.com/d34raphael/usage.html)
 * [D3 graphics in a Pergola SVG UI] (http://www.dotuscomus.com/pergola/pergola_1.4.0/ExamplesHTML/D3/multiD3.html)
 * [Visualising ConAir Data With Cubism.js (Arduino, TempoDB, Sinatra)](http://sammyd.github.com/blog/2012/09/16/visualising-conair-data-with-cubism-dot-js/) 
+* [Render Geographic Information in 3D With Three.js and D3.js](http://css.dzone.com/articles/render-geographic-information)
 
 #### Online Editors
 
