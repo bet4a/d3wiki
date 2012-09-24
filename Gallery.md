@@ -154,6 +154,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Multiple Area charts and a brush tool](http://bl.ocks.org/3630001) - Tyler Craft
 * [Enumerating vertex induced connected subgraphs](http://students.mimuw.edu.pl/~rk292662/vertex/) - Robert Kozikowski
 * [Startup Salary & Equity Compensation](https://blog.wealthfront.com/startup-employee-equity-compensation/)
+* [Pyramid charts: demographic transition in the US](http://www.newscientist.com/embedded/us-demographics-2050)
+* [Floating bubble chart: De Maastricht au traité budgétaire : les oui et les non de 39 personnalités politiques](http://www.lemonde.fr/politique/visuel/2012/09/18/de-maastricht-au-traite-budgetaire-les-oui-et-les-non-de-39-personnalites-politiques_1760615_823448.html)
 
 ### Concepts & Techniques
 
@@ -193,8 +195,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Pictograms](http://bl.ocks.org/2280295)
 * [Scatterplot for K-Means clustering visualization](http://www.ericbullington.com/articles/2012/01/31/kmeans-visualization)
 * [Smoke charts](http://dyninc.github.com/d3-smokechart/) and [source code](https://github.com/dyninc/d3-smokechart)
-* [Pyramid charts: demographic transition in the US](http://www.newscientist.com/embedded/us-demographics-2050)
-* [Floating bubble chart: De Maastricht au traité budgétaire : les oui et les non de 39 personnalités politiques](http://www.lemonde.fr/politique/visuel/2012/09/18/de-maastricht-au-traite-budgetaire-les-oui-et-les-non-de-39-personnalites-politiques_1760615_823448.html)
+* [Multiple Area Charts with D3.JS](http://tympanus.net/codrops/2012/08/29/multiple-area-charts-with-d3-js/)
 
 #### Trees and Graphs
 
