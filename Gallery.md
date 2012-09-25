@@ -198,7 +198,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Scatterplot for K-Means clustering visualization](http://www.ericbullington.com/articles/2012/01/31/kmeans-visualization)
 * [Smoke charts](http://dyninc.github.com/d3-smokechart/) and [source code](https://github.com/dyninc/d3-smokechart)
 * [Multiple Area Charts with D3.JS](http://tympanus.net/codrops/2012/08/29/multiple-area-charts-with-d3-js/)
-* 
+* [Sankey Diagram with Overlap](http://bl.ocks.org/d/3779574/)
 
 #### Trees and Graphs
 
