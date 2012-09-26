@@ -59,3 +59,22 @@ An optional *accessor* function may be specified as the second argument. This fu
 <a name="format" href="CSV#wiki-format">#</a> d3.csv.<b>format</b>(<i>rows</i>)
 
 Converts the specified array of *rows* into comma-separated values format, returning a string. This operation is the reverse of [parseRows](CSV#wiki-parseRows). Each row will be separated by a newline (\n), and each column within each row will be separated by a comma (,). Values that contain either commas, double-quotes (") or newlines will be escaped using double-quotes.
+
+## TSV
+
+<a name="tsv" href="#wiki-tsv">#</a> d3.<b>tsv</b>(<i>url</i>, <i>callback</i>)
+
+See [d3.csv](#wiki-csv).
+
+<a name="tsv_parse" href="#wiki-tsv_parse">#</a> d3.tsv.<b>parse</b>(<i>string</i>)
+
+See [csv.parse](#wiki-parse).
+
+<a name="tsv_parseRows" href="#wiki-tsv_parseRows">#</a> d3.tsv.<b>parseRows</b>(<i>string</i>[, <i>accessor</i>])
+
+See [csv.parseRows](#wiki-parseRows).
+
+<a name="tsv_format" href="#wiki-tsv_format">#</a> d3.tsv.<b>format</b>(<i>rows</i>)
+
+See [csv.format](#wiki-format).
+
