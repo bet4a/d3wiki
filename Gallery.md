@@ -297,6 +297,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Responsive SVG resizing without re-rendering](http://jsfiddle.net/shawnbot/BJLe6/)
 * [Automatic floating labels using d3 force-layout](http://bl.ocks.org/1691430)
 * [Long Scroll] (http://bl.ocks.org/3689677)
+* [Custom Line Interpolation](http://bl.ocks.org/3310323)
 
 #### Maps
 
