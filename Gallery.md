@@ -159,6 +159,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Open Knowledge Festival #OkFest Hashtag Graph Visualization](http://okfestival.org/hashtag/#visualisation)
 * [Exploring d3.js with data from my runs to plot my heart rate](http://blog.freshteapot.net/post/31938798971/using-d3-js-to-visualise-my-heart-rate)
 * [Is Barack Obama the President? (Balloon charts)](http://www.isbarackobamathepresident.com/)
+* [Audo Spectrum Analyzer](http://d3-spectrum.herokuapp.com) - Ari Russo
 
 ### Concepts & Techniques
 
