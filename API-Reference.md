@@ -595,13 +595,14 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 ### [[Voronoi|Voronoi-Geom]]
 
-* [[d3.geom.voronoi|Voronoi-Geom#wiki-voronoi]]
-* [[d3.geom.delaunay|Voronoi-Geom#wiki-delaunay]]
+* [[d3.geom.voronoi|Voronoi-Geom#wiki-voronoi]] - compute the Voronoi diagram for the specified points.
+* [[d3.geom.delaunay|Voronoi-Geom#wiki-delaunay]] - compute the Delaunay triangulation for the specified points.
 
 ### [[Quadtree|Quadtree-Geom]]
 
-* [[d3.geom.quadtree|Quadtree-Geom#wiki-quadtree]]
-* [[quadtree.visit|Quadtree-Geom#wiki-visit]]
+* [[d3.geom.quadtree|Quadtree-Geom#wiki-quadtree]] - constructs a quadtree for an array of points.
+* [[quadtree.visit|Quadtree-Geom#wiki-add]] - add a point to the quadtree.
+* [[quadtree.visit|Quadtree-Geom#wiki-visit]] - recursively visit nodes in the quadtree.
 
 ### [[Polygon|Polygon-Geom]]
 
