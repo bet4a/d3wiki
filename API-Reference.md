@@ -601,7 +601,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 ### [[Quadtree|Quadtree-Geom]]
 
 * [[d3.geom.quadtree|Quadtree-Geom#wiki-quadtree]] - constructs a quadtree for an array of points.
-* [[quadtree.visit|Quadtree-Geom#wiki-add]] - add a point to the quadtree.
+* [[quadtree.add|Quadtree-Geom#wiki-add]] - add a point to the quadtree.
 * [[quadtree.visit|Quadtree-Geom#wiki-visit]] - recursively visit nodes in the quadtree.
 
 ### [[Polygon|Polygon-Geom]]
