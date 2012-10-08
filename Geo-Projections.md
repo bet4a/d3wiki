@@ -1,4 +1,4 @@
-> [Wiki](Home) ▸ [[API Reference]] ▸ [[Geography]] ▸ **Geo Projections**
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Geo]] ▸ **Geo Projections**
 
 ## Mercator
 
