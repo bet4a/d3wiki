@@ -1,4 +1,4 @@
-> [Wiki](Home) ▸ [[API Reference]] ▸ **Geography**
+> [Wiki](Home) ▸ [[API Reference]] ▸ **Geo**
 
 See one of:
 
