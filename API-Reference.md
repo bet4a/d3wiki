@@ -544,7 +544,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[treemap.round|Treemap-Layout#wiki-round]] - enable or disable rounding to exact pixels.
 * [[treemap.sticky|Treemap-Layout#wiki-sticky]] - make the layout sticky for stable updates.
 
-## [d3.geo (Geography)](Geography)
+## [d3.geo (Geography)](Geo)
 
 ### [[Paths|Geo-Paths]]
 
