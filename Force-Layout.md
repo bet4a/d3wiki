@@ -86,10 +86,10 @@ These attributes do not need to be set before passing the nodes to the layout; i
 
 If *links* is specified, sets the layout's associated links to the specified array. If *links* is not specified, returns the current array, which defaults to the empty array. Each link has the following attributes:
 
-* source - the source node (an element in *nodes* or the index of an element in *nodes*).
-* target - the target node (an element in *nodes* or the index of an element in *nodes*).
+* source - the source node (an element in *nodes*).
+* target - the target node (an element in *nodes*).
 
-You can also customize the link [strength](Force-Layout#wiki-linkStrength) and [distance](Force-Layout#wiki-linkDistance) on a per-link basis using an accessor function.
+Note: the values of the source and target attributes may be initially specified as indexes into the *nodes* array; these will be replaced by references after the call to [start](#wiki-start). Link objects may have additional fields that you specify; this data can be used to compute link [strength](Force-Layout#wiki-linkStrength) and [distance](Force-Layout#wiki-linkDistance) on a per-link basis using an accessor function.
 
 <a name="start" href="Force-Layout#wiki-start">#</a> force.<b>start</b>()
 
