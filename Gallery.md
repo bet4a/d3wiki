@@ -4,81 +4,81 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 
 ## Visual Index
 
-[![box](ex/box.png)](http://mbostock.github.com/d3/ex/box.html)
-[![bubble](ex/bubble.png)](http://mbostock.github.com/d3/ex/bubble.html)
-[![bullet](ex/bullet.png)](http://mbostock.github.com/d3/ex/bullet.html)
-[![calendar](ex/calendar.png)](http://mbostock.github.com/d3/ex/calendar.html)
-[![cartogram](ex/cartogram.png)](http://mbostock.github.com/d3/ex/cartogram.html)
-[![chord](ex/chord.png)](http://mbostock.github.com/d3/ex/chord.html)
-[![cluster](ex/cluster.png)](http://mbostock.github.com/d3/ex/cluster.html)
-[![force](ex/force.png)](http://mbostock.github.com/d3/ex/force.html)
-[![pack](ex/pack.png)](http://mbostock.github.com/d3/ex/pack.html)
-[![population](ex/population.png)](http://mbostock.github.com/d3/ex/population.html)
-[![stack](ex/stack.png)](http://mbostock.github.com/d3/ex/stack.html)
-[![stream](ex/stream.png)](http://mbostock.github.com/d3/ex/stream.html)
-[![sunburst](ex/sunburst.png)](http://mbostock.github.com/d3/ex/sunburst.html)
-[![tree](ex/tree.png)](http://mbostock.github.com/d3/ex/tree.html)
-[![treemap](ex/treemap.png)](http://mbostock.github.com/d3/ex/treemap.html)
-[![voronoi](ex/voronoi.png)](http://mbostock.github.com/d3/ex/voronoi.html)
-[![bundle](ex/bundle.png)](http://mbostock.github.com/d3/talk/20111116/bundle.html)
-[![airports-all](ex/airports-all.png)](http://mbostock.github.com/d3/talk/20111116/airports-all.html)
-[![airports](ex/airports.png)](http://mbostock.github.com/d3/talk/20111116/airports.html)
-[![iris-parallel](ex/iris-parallel.png)](http://mbostock.github.com/d3/talk/20111116/iris-parallel.html)
-[![iris-splom](ex/iris-splom.png)](http://mbostock.github.com/d3/talk/20111116/iris-splom.html)
-[![pack-hierarchy](ex/pack-hierarchy.png)](http://mbostock.github.com/d3/talk/20111116/pack-hierarchy.html)
-[![bar-hierarchy](ex/bar-hierarchy.png)](http://mbostock.github.com/d3/talk/20111116/bar-hierarchy.html)
-[![gears](ex/gears.png)](http://mbostock.github.com/d3/talk/20111116/gears.html)
-[![force-collision](ex/force-collision.png)](http://mbostock.github.com/d3/talk/20111018/collision.html)
-[![force-collapsible](ex/force-collapsible.png)](http://mbostock.github.com/d3/talk/20111116/force-collapsible.html)
-[![force-states](ex/force-states.png)](http://mbostock.github.com/d3/talk/20111018/force-states.html)
-[![azimuthal](ex/azimuthal.png)](http://mbostock.github.com/d3/talk/20111018/azimuthal.html)
-[![choropleth](ex/choropleth.png)](http://mbostock.github.com/d3/talk/20111018/choropleth.html)
-[![tree-zoom](ex/tree-zoom.png)](http://mbostock.github.com/d3/talk/20111018/tree.html)
-[![treemap-zoom](ex/treemap-zoom.png)](http://mbostock.github.com/d3/talk/20111018/treemap.html)
-[![partition-zoom](ex/partition-zoom.png)](http://mbostock.github.com/d3/talk/20111018/partition.html)
-[![area-gradient](ex/area-gradient.png)](http://mbostock.github.com/d3/talk/20111018/area-gradient.html)
-[![flight-calendar](ex/flight-calendar.png)](http://mbostock.github.com/d3/talk/20111018/calendar.html)
-[![cluster-radial](ex/cluster-radial.png)](http://mbostock.github.com/d3/talk/20111018/cluster.html)
-[![sankey](ex/sankey.png)](http://bost.ocks.org/mike/sankey/)
-[![fisheye](ex/fisheye.png)](http://bost.ocks.org/mike/fisheye/)
-[![hive](ex/hive.png)](http://bost.ocks.org/mike/hive/)
-[![miserables](ex/miserables.png)](http://bost.ocks.org/mike/miserables/)
-[![nations](ex/nations.png)](http://bost.ocks.org/mike/nations/)
-[![uber](ex/uber.png)](http://bost.ocks.org/mike/uberdata/)
-[![bezier](ex/bezier.png)](http://www.jasondavies.com/animated-bezier/)
-[![coffee](ex/coffee.png)](http://www.jasondavies.com/coffee-wheel/)
-[![collatz](ex/collatz.png)](http://www.jasondavies.com/collatz-graph/)
-[![parsets](ex/parsets.png)](http://www.jasondavies.com/parallel-sets/)
-[![cloud](ex/cloud.png)](http://www.jasondavies.com/wordcloud/)
-[![budget](ex/budget.png)](http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html)
-[![facebook-ipo](ex/facebook-ipo.png)](http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html)
-[![koalas](ex/koalas.png)](http://www.koalastothemax.com/)
-[![particles](ex/particles.png)](http://bl.ocks.org/1062544)
-[![indented-tree](ex/indented-tree.png)](http://bl.ocks.org/1093025)
-[![ronded-rect](ex/ronded-rect.png)](http://bl.ocks.org/1123639)
-[![sperm](ex/sperm.png)](http://bl.ocks.org/1136236)
-[![show-reel](ex/show-reel.png)](http://bl.ocks.org/1256572)
-[![debt](ex/debt.png)](http://bl.ocks.org/1308257)
-[![force-labels](ex/force-labels.png)](http://bl.ocks.org/1377729)
-[![illusion](ex/illusion.png)](http://bl.ocks.org/1386444)
-[![voronoi-picker](ex/voronoi-picker.png)](http://bl.ocks.org/1405439)
-[![map-zoom](ex/map-zoom.png)](http://bl.ocks.org/2206590)
-[![rain](ex/rain.png)](http://bl.ocks.org/849853)
-[![color](ex/color.png)](http://color.method.ac/)
-[![nutrient](ex/nutrient.png)](http://exposedata.com/parallel/)
-[![hn](ex/hn.png)](http://hn.metamx.com/)
-[![world](ex/world.png)](http://projects.flowingdata.com/life-expectancy/)
-[![slope](ex/slope.png)](http://skedasis.com/d3/slopegraph/)
-[![ncaa](ex/ncaa.png)](http://thepowerrank.com/visual/NCAA_Tournament_Predictions)
-[![cubism](ex/cubism.png)](http://square.github.com/cubism/)
-[![crossfilter](ex/crossfilter.png)](http://square.github.com/crossfilter/)
-[![windhistory](ex/windhistory.png)](http://windhistory.com/)
-[![lcf](ex/lcf.png)](http://www.christophermanning.org/projects/building-cubic-hamiltonian-graphs-from-lcf-notation/)
-[![force-voronoi](ex/force-voronoi.png)](http://www.christophermanning.org/projects/voronoi-diagram-with-force-directed-nodes-and-delaunay-links/)
-[![house-heatmap](ex/house-heatmap.png)](http://trends.truliablog.com/2011/09/house-hunter-by-day-not-so-much-after-midnight/)
-[![house-map](ex/house-map.png)](http://trends.truliablog.com/2012/02/where-are-house-hunters-searching/)
-[![open-budget](ex/open-budget.png)](http://marcinignac.com/projects/open-budget/)
-[![bederson-pubs](ex/bederson-pubs.png)](http://www.cs.umd.edu/~bederson/papers/index.html)
+<a href="http://mbostock.github.com/d3/ex/box.html"><img src="/mbostock/d3/wiki/ex/box.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/ex/bubble.html"><img src="/mbostock/d3/wiki/ex/bubble.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/ex/bullet.html"><img src="/mbostock/d3/wiki/ex/bullet.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/ex/calendar.html"><img src="/mbostock/d3/wiki/ex/calendar.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/ex/cartogram.html"><img src="/mbostock/d3/wiki/ex/cartogram.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/ex/chord.html"><img src="/mbostock/d3/wiki/ex/chord.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/ex/cluster.html"><img src="/mbostock/d3/wiki/ex/cluster.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/ex/force.html"><img src="/mbostock/d3/wiki/ex/force.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/ex/pack.html"><img src="/mbostock/d3/wiki/ex/pack.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/ex/population.html"><img src="/mbostock/d3/wiki/ex/population.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/ex/stack.html"><img src="/mbostock/d3/wiki/ex/stack.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/ex/stream.html"><img src="/mbostock/d3/wiki/ex/stream.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/ex/sunburst.html"><img src="/mbostock/d3/wiki/ex/sunburst.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/ex/tree.html"><img src="/mbostock/d3/wiki/ex/tree.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/ex/treemap.html"><img src="/mbostock/d3/wiki/ex/treemap.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/ex/voronoi.html"><img src="/mbostock/d3/wiki/ex/voronoi.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111116/bundle.html"><img src="/mbostock/d3/wiki/ex/bundle.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111116/airports-all.html"><img src="/mbostock/d3/wiki/ex/airports-all.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111116/airports.html"><img src="/mbostock/d3/wiki/ex/airports.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111116/iris-parallel.html"><img src="/mbostock/d3/wiki/ex/iris-parallel.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111116/iris-splom.html"><img src="/mbostock/d3/wiki/ex/iris-splom.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111116/pack-hierarchy.html"><img src="/mbostock/d3/wiki/ex/pack-hierarchy.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111116/bar-hierarchy.html"><img src="/mbostock/d3/wiki/ex/bar-hierarchy.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111116/gears.html"><img src="/mbostock/d3/wiki/ex/gears.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111018/collision.html"><img src="/mbostock/d3/wiki/ex/force-collision.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111116/force-collapsible.html"><img src="/mbostock/d3/wiki/ex/force-collapsible.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111018/force-states.html"><img src="/mbostock/d3/wiki/ex/force-states.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111018/azimuthal.html"><img src="/mbostock/d3/wiki/ex/azimuthal.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111018/choropleth.html"><img src="/mbostock/d3/wiki/ex/choropleth.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111018/tree.html"><img src="/mbostock/d3/wiki/ex/tree-zoom.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111018/treemap.html"><img src="/mbostock/d3/wiki/ex/treemap-zoom.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111018/partition.html"><img src="/mbostock/d3/wiki/ex/partition-zoom.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111018/area-gradient.html"><img src="/mbostock/d3/wiki/ex/area-gradient.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111018/calendar.html"><img src="/mbostock/d3/wiki/ex/flight-calendar.png" width="226" height="180"></a>
+<a href="http://mbostock.github.com/d3/talk/20111018/cluster.html"><img src="/mbostock/d3/wiki/ex/cluster-radial.png" width="226" height="180"></a>
+<a href="http://bost.ocks.org/mike/sankey/"><img src="/mbostock/d3/wiki/ex/sankey.png" width="226" height="180"></a>
+<a href="http://bost.ocks.org/mike/fisheye/"><img src="/mbostock/d3/wiki/ex/fisheye.png" width="226" height="180"></a>
+<a href="http://bost.ocks.org/mike/hive/"><img src="/mbostock/d3/wiki/ex/hive.png" width="226" height="180"></a>
+<a href="http://bost.ocks.org/mike/miserables/"><img src="/mbostock/d3/wiki/ex/miserables.png" width="226" height="180"></a>
+<a href="http://bost.ocks.org/mike/nations/"><img src="/mbostock/d3/wiki/ex/nations.png" width="226" height="180"></a>
+<a href="http://bost.ocks.org/mike/uberdata/"><img src="/mbostock/d3/wiki/ex/uber.png" width="226" height="180"></a>
+<a href="http://www.jasondavies.com/animated-bezier/"><img src="/mbostock/d3/wiki/ex/bezier.png" width="226" height="180"></a>
+<a href="http://www.jasondavies.com/coffee-wheel/"><img src="/mbostock/d3/wiki/ex/coffee.png" width="226" height="180"></a>
+<a href="http://www.jasondavies.com/collatz-graph/"><img src="/mbostock/d3/wiki/ex/collatz.png" width="226" height="180"></a>
+<a href="http://www.jasondavies.com/parallel-sets/"><img src="/mbostock/d3/wiki/ex/parsets.png" width="226" height="180"></a>
+<a href="http://www.jasondavies.com/wordcloud/"><img src="/mbostock/d3/wiki/ex/cloud.png" width="226" height="180"></a>
+<a href="http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html"><img src="/mbostock/d3/wiki/ex/budget.png" width="226" height="180"></a>
+<a href="http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html"><img src="/mbostock/d3/wiki/ex/facebook-ipo.png" width="226" height="180"></a>
+<a href="http://www.koalastothemax.com/"><img src="/mbostock/d3/wiki/ex/koalas.png" width="226" height="180"></a>
+<a href="http://bl.ocks.org/1062544"><img src="/mbostock/d3/wiki/ex/particles.png" width="226" height="180"></a>
+<a href="http://bl.ocks.org/1093025"><img src="/mbostock/d3/wiki/ex/indented-tree.png" width="226" height="180"></a>
+<a href="http://bl.ocks.org/1123639"><img src="/mbostock/d3/wiki/ex/ronded-rect.png" width="226" height="180"></a>
+<a href="http://bl.ocks.org/1136236"><img src="/mbostock/d3/wiki/ex/sperm.png" width="226" height="180"></a>
+<a href="http://bl.ocks.org/1256572"><img src="/mbostock/d3/wiki/ex/show-reel.png" width="226" height="180"></a>
+<a href="http://bl.ocks.org/1308257"><img src="/mbostock/d3/wiki/ex/debt.png" width="226" height="180"></a>
+<a href="http://bl.ocks.org/1377729"><img src="/mbostock/d3/wiki/ex/force-labels.png" width="226" height="180"></a>
+<a href="http://bl.ocks.org/1386444"><img src="/mbostock/d3/wiki/ex/illusion.png" width="226" height="180"></a>
+<a href="http://bl.ocks.org/1405439"><img src="/mbostock/d3/wiki/ex/voronoi-picker.png" width="226" height="180"></a>
+<a href="http://bl.ocks.org/2206590"><img src="/mbostock/d3/wiki/ex/map-zoom.png" width="226" height="180"></a>
+<a href="http://bl.ocks.org/849853"><img src="/mbostock/d3/wiki/ex/rain.png" width="226" height="180"></a>
+<a href="http://color.method.ac/"><img src="/mbostock/d3/wiki/ex/color.png" width="226" height="180"></a>
+<a href="http://exposedata.com/parallel/"><img src="/mbostock/d3/wiki/ex/nutrient.png" width="226" height="180"></a>
+<a href="http://hn.metamx.com/"><img src="/mbostock/d3/wiki/ex/hn.png" width="226" height="180"></a>
+<a href="http://projects.flowingdata.com/life-expectancy/"><img src="/mbostock/d3/wiki/ex/world.png" width="226" height="180"></a>
+<a href="http://skedasis.com/d3/slopegraph/"><img src="/mbostock/d3/wiki/ex/slope.png" width="226" height="180"></a>
+<a href="http://thepowerrank.com/visual/NCAA_Tournament_Predictions"><img src="/mbostock/d3/wiki/ex/ncaa.png" width="226" height="180"></a>
+<a href="http://square.github.com/cubism/"><img src="/mbostock/d3/wiki/ex/cubism.png" width="226" height="180"></a>
+<a href="http://square.github.com/crossfilter/"><img src="/mbostock/d3/wiki/ex/crossfilter.png" width="226" height="180"></a>
+<a href="http://windhistory.com/"><img src="/mbostock/d3/wiki/ex/windhistory.png" width="226" height="180"></a>
+<a href="http://www.christophermanning.org/projects/building-cubic-hamiltonian-graphs-from-lcf-notation/"><img src="/mbostock/d3/wiki/ex/lcf.png" width="226" height="180"></a>
+<a href="http://www.christophermanning.org/projects/voronoi-diagram-with-force-directed-nodes-and-delaunay-links/"><img src="/mbostock/d3/wiki/ex/force-voronoi.png" width="226" height="180"></a>
+<a href="http://trends.truliablog.com/2011/09/house-hunter-by-day-not-so-much-after-midnight/"><img src="/mbostock/d3/wiki/ex/house-heatmap.png" width="226" height="180"></a>
+<a href="http://trends.truliablog.com/2012/02/where-are-house-hunters-searching/"><img src="/mbostock/d3/wiki/ex/house-map.png" width="226" height="180"></a>
+<a href="http://marcinignac.com/projects/open-budget/"><img src="/mbostock/d3/wiki/ex/open-budget.png" width="226" height="180"></a>
+<a href="http://www.cs.umd.edu/~bederson/papers/index.html"><img src="/mbostock/d3/wiki/ex/bederson-pubs.png" width="226" height="180"></a>
 
 ## Examples
 * [Visualizing document similarity over time](http://www.davidmasad.com/sandbox/FirmClusters.html)
