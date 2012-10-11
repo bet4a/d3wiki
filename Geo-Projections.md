@@ -4,7 +4,7 @@
 
 The spherical Mercator projection is commonly used by tiled mapping libraries (such as [OpenLayers](http://openlayers.org/) and [Leaflet](http://leaflet.cloudmade.com/)). It is [conformal](http://en.wikipedia.org/wiki/Conformal_map); however, it introduces severe area distortion at world scale and thus is not recommended for choropleths.
 
-[![mercator](mercator.png)](http://bl.ocks.org/2869760)
+<a href="http://bl.ocks.org/2869760"><img src="/mbostock/d3/wiki/mercator.png" height="486"></a>
 
 <a name="mercator" href="#wiki-mercator">#</a> d3.geo.**mercator**()
 
@@ -30,7 +30,7 @@ Get or set the projection's translation offset. If *offset* is specified, sets t
 
 The Albers [equal-area](http://en.wikipedia.org/wiki/Map_projection#Equal-area) projection is highly recommended for [choropleths](http://mbostock.github.com/d3/ex/choropleth.html) as it preserves the relative areas of geographic features. However, you must determine appropriate parallels and origin.
 
-[![albers](albers.png)](http://bl.ocks.org/2869871)
+<a href="http://bl.ocks.org/2869871"><img src="/mbostock/d3/wiki/albers.png" height="472"></a>
 
 <a name="albers" href="#wiki-albers">#</a> d3.geo.<b>albers</b>()
 
@@ -64,7 +64,7 @@ Get or set the projection's translation offset. If *offset* is specified, sets t
 
 The Albers USA projection is a composite projection of four Albers projections, designed to display the forty-eight lower United States alongside Alaska, Hawaii and Puerto Rico. Although intended for choropleths, it distorts the area of Puerto Rico (1.5x) and Alaska (0.6x); Hawaii is shown at the same scale as the lower forty-eight.
 
-[![albersUsa](albersUsa.png)](http://bl.ocks.org/2869946)
+<a href="http://bl.ocks.org/2869946"><img src="/mbostock/d3/wiki/albersUsa.png" height="493"></a>
 
 The projection composition is implemented as:
 
@@ -103,7 +103,7 @@ Get or set the projection's translation offset. If *offset* is specified, sets t
 
 D3’s azimuthal projection implementation encompasses [orthographic](http://en.wikipedia.org/wiki/Orthographic_projection_(cartography\)), [stereographic](http://en.wikipedia.org/wiki/Stereographic_projection), [gnomonic](http://en.wikipedia.org/wiki/Gnomonic_projection), equidistant and equal-area projections.
 
-[![orthographic](orthographic.png)](http://bl.ocks.org/2870030)
+<a href="http://bl.ocks.org/2870030"><img src="/mbostock/d3/wiki/orthographic.png" height="428"></a>
 
 <a name="azimuthal" href="#wiki-azimuthal">#</a> d3.geo.<b>azimuthal</b>()
 
