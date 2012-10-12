@@ -81,7 +81,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 <a href="http://www.cs.umd.edu/~bederson/papers/index.html"><img src="/mbostock/d3/wiki/ex/bederson-pubs.png" width="226" height="180"></a>
 
 ## Examples
-* [Election 2012 Social Dashboard (interactive Twitter visualization) (http://events.current.com/social_dashboard) - Current TV
+* [Election 2012 Social Dashboard (interactive Twitter visualization)] (http://events.current.com/social_dashboard) - Current TV
 * [Visualizing document similarity over time](http://www.davidmasad.com/sandbox/FirmClusters.html)
 * [At the National Conventions, the Words They Used](http://www.nytimes.com/interactive/2012/09/06/us/politics/convention-word-counts.html)
 * [Drought Extends, Crops Wither](http://www.nytimes.com/interactive/2012/08/24/us/drought-crops.html)
