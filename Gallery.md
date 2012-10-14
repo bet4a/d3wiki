@@ -143,7 +143,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
   </tr>
   <tr height="146" valign="top">
     <td>Donut Multiples<br><a href="http://bl.ocks.org/3888852"><img src="https://raw.github.com/gist/3888852/thumbnail.png" width="202"></a></td>
-    <td></td>
+    <td>Bar Chart with Negative Values<br><a href="http://bl.ocks.org/2368837"><img src="https://raw.github.com/gist/2368837/thumbnail.png" width="202"></a></td>
     <td></td>
     <td></td>
   </tr>
