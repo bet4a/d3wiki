@@ -6,117 +6,117 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 
 <table>
   <tr height="207" valign="top">
-    <td>Box Plots<br><a href="http://mbostock.github.com/d3/ex/box.html"><img src="/mbostock/d3/wiki/ex/box.png" width="226"></a></td>
-    <td>Bubble Chart<br><a href="http://mbostock.github.com/d3/ex/bubble.html"><img src="/mbostock/d3/wiki/ex/bubble.png" width="226"></a></td>
-    <td>Bullet Charts<br><a href="http://mbostock.github.com/d3/ex/bullet.html"><img src="/mbostock/d3/wiki/ex/bullet.png" width="226"></a></td>
-    <td>Calendar View<br><a href="http://mbostock.github.com/d3/ex/calendar.html"><img src="/mbostock/d3/wiki/ex/calendar.png" width="226"></a></td>
+    <td>Box Plots<br><a href="http://mbostock.github.com/d3/ex/box.html"><img src="/mbostock/d3/wiki/ex/box.png" width="202"></a></td>
+    <td>Bubble Chart<br><a href="http://mbostock.github.com/d3/ex/bubble.html"><img src="/mbostock/d3/wiki/ex/bubble.png" width="202"></a></td>
+    <td>Bullet Charts<br><a href="http://mbostock.github.com/d3/ex/bullet.html"><img src="/mbostock/d3/wiki/ex/bullet.png" width="202"></a></td>
+    <td>Calendar View<br><a href="http://mbostock.github.com/d3/ex/calendar.html"><img src="/mbostock/d3/wiki/ex/calendar.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Non-contiguous Cartogram<br><a href="http://mbostock.github.com/d3/ex/cartogram.html"><img src="/mbostock/d3/wiki/ex/cartogram.png" width="226"></a></td>
-    <td>Chord Diagram<br><a href="http://mbostock.github.com/d3/ex/chord.html"><img src="/mbostock/d3/wiki/ex/chord.png" width="226"></a></td>
-    <td>Dendrogram<br><a href="http://mbostock.github.com/d3/ex/cluster.html"><img src="/mbostock/d3/wiki/ex/cluster.png" width="226"></a></td>
-    <td>Force-Directed Graph<br><a href="http://mbostock.github.com/d3/ex/force.html"><img src="/mbostock/d3/wiki/ex/force.png" width="226"></a></td>
+    <td>Non-contiguous Cartogram<br><a href="http://mbostock.github.com/d3/ex/cartogram.html"><img src="/mbostock/d3/wiki/ex/cartogram.png" width="202"></a></td>
+    <td>Chord Diagram<br><a href="http://mbostock.github.com/d3/ex/chord.html"><img src="/mbostock/d3/wiki/ex/chord.png" width="202"></a></td>
+    <td>Dendrogram<br><a href="http://mbostock.github.com/d3/ex/cluster.html"><img src="/mbostock/d3/wiki/ex/cluster.png" width="202"></a></td>
+    <td>Force-Directed Graph<br><a href="http://mbostock.github.com/d3/ex/force.html"><img src="/mbostock/d3/wiki/ex/force.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Circle Packing<br><a href="http://mbostock.github.com/d3/ex/pack.html"><img src="/mbostock/d3/wiki/ex/pack.png" width="226"></a></td>
-    <td>Population Pyramid<br><a href="http://mbostock.github.com/d3/ex/population.html"><img src="/mbostock/d3/wiki/ex/population.png" width="226"></a></td>
-    <td>Stacked Bars<br><a href="http://mbostock.github.com/d3/ex/stack.html"><img src="/mbostock/d3/wiki/ex/stack.png" width="226"></a></td>
-    <td>Streamgraph<br><a href="http://mbostock.github.com/d3/ex/stream.html"><img src="/mbostock/d3/wiki/ex/stream.png" width="226"></a></td>
+    <td>Circle Packing<br><a href="http://mbostock.github.com/d3/ex/pack.html"><img src="/mbostock/d3/wiki/ex/pack.png" width="202"></a></td>
+    <td>Population Pyramid<br><a href="http://mbostock.github.com/d3/ex/population.html"><img src="/mbostock/d3/wiki/ex/population.png" width="202"></a></td>
+    <td>Stacked Bars<br><a href="http://mbostock.github.com/d3/ex/stack.html"><img src="/mbostock/d3/wiki/ex/stack.png" width="202"></a></td>
+    <td>Streamgraph<br><a href="http://mbostock.github.com/d3/ex/stream.html"><img src="/mbostock/d3/wiki/ex/stream.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Sunburst<br><a href="http://mbostock.github.com/d3/ex/sunburst.html"><img src="/mbostock/d3/wiki/ex/sunburst.png" width="226"></a></td>
-    <td>Node-Link Tree<br><a href="http://mbostock.github.com/d3/ex/tree.html"><img src="/mbostock/d3/wiki/ex/tree.png" width="226"></a></td>
-    <td>Treemap<br><a href="http://mbostock.github.com/d3/ex/treemap.html"><img src="/mbostock/d3/wiki/ex/treemap.png" width="226"></a></td>
-    <td>Voronoi Diagram<br><a href="http://mbostock.github.com/d3/ex/voronoi.html"><img src="/mbostock/d3/wiki/ex/voronoi.png" width="226"></a></td>
+    <td>Sunburst<br><a href="http://mbostock.github.com/d3/ex/sunburst.html"><img src="/mbostock/d3/wiki/ex/sunburst.png" width="202"></a></td>
+    <td>Node-Link Tree<br><a href="http://mbostock.github.com/d3/ex/tree.html"><img src="/mbostock/d3/wiki/ex/tree.png" width="202"></a></td>
+    <td>Treemap<br><a href="http://mbostock.github.com/d3/ex/treemap.html"><img src="/mbostock/d3/wiki/ex/treemap.png" width="202"></a></td>
+    <td>Voronoi Diagram<br><a href="http://mbostock.github.com/d3/ex/voronoi.html"><img src="/mbostock/d3/wiki/ex/voronoi.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Hierarchical Edge Bundling<br><a href="http://mbostock.github.com/d3/talk/20111116/bundle.html"><img src="/mbostock/d3/wiki/ex/bundle.png" width="226"></a></td>
-    <td>Voronoi Diagram<br><a href="http://mbostock.github.com/d3/talk/20111116/airports-all.html"><img src="/mbostock/d3/wiki/ex/airports-all.png" width="226"></a></td>
-    <td>Symbol Map<br><a href="http://mbostock.github.com/d3/talk/20111116/airports.html"><img src="/mbostock/d3/wiki/ex/airports.png" width="226"></a></td>
-    <td>Parallel Coordinates<br><a href="http://mbostock.github.com/d3/talk/20111116/iris-parallel.html"><img src="/mbostock/d3/wiki/ex/iris-parallel.png" width="226"></a></td>
+    <td>Hierarchical Edge Bundling<br><a href="http://mbostock.github.com/d3/talk/20111116/bundle.html"><img src="/mbostock/d3/wiki/ex/bundle.png" width="202"></a></td>
+    <td>Voronoi Diagram<br><a href="http://mbostock.github.com/d3/talk/20111116/airports-all.html"><img src="/mbostock/d3/wiki/ex/airports-all.png" width="202"></a></td>
+    <td>Symbol Map<br><a href="http://mbostock.github.com/d3/talk/20111116/airports.html"><img src="/mbostock/d3/wiki/ex/airports.png" width="202"></a></td>
+    <td>Parallel Coordinates<br><a href="http://mbostock.github.com/d3/talk/20111116/iris-parallel.html"><img src="/mbostock/d3/wiki/ex/iris-parallel.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Scatterplot Matrix<br><a href="http://mbostock.github.com/d3/talk/20111116/iris-splom.html"><img src="/mbostock/d3/wiki/ex/iris-splom.png" width="226"></a></td>
-    <td>Zoomable Pack Layout<br><a href="http://mbostock.github.com/d3/talk/20111116/pack-hierarchy.html"><img src="/mbostock/d3/wiki/ex/pack-hierarchy.png" width="226"></a></td>
-    <td>Hierarchical Bars<br><a href="http://mbostock.github.com/d3/talk/20111116/bar-hierarchy.html"><img src="/mbostock/d3/wiki/ex/bar-hierarchy.png" width="226"></a></td>
-    <td>Epicyclical Gears<br><a href="http://mbostock.github.com/d3/talk/20111116/gears.html"><img src="/mbostock/d3/wiki/ex/gears.png" width="226"></a></td>
+    <td>Scatterplot Matrix<br><a href="http://mbostock.github.com/d3/talk/20111116/iris-splom.html"><img src="/mbostock/d3/wiki/ex/iris-splom.png" width="202"></a></td>
+    <td>Zoomable Pack Layout<br><a href="http://mbostock.github.com/d3/talk/20111116/pack-hierarchy.html"><img src="/mbostock/d3/wiki/ex/pack-hierarchy.png" width="202"></a></td>
+    <td>Hierarchical Bars<br><a href="http://mbostock.github.com/d3/talk/20111116/bar-hierarchy.html"><img src="/mbostock/d3/wiki/ex/bar-hierarchy.png" width="202"></a></td>
+    <td>Epicyclical Gears<br><a href="http://mbostock.github.com/d3/talk/20111116/gears.html"><img src="/mbostock/d3/wiki/ex/gears.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Collision Detection<br><a href="http://mbostock.github.com/d3/talk/20111018/collision.html"><img src="/mbostock/d3/wiki/ex/force-collision.png" width="226"></a></td>
-    <td>Collapsible Force Layout<br><a href="http://mbostock.github.com/d3/talk/20111116/force-collapsible.html"><img src="/mbostock/d3/wiki/ex/force-collapsible.png" width="226"></a></td>
-    <td>Force-Directed States<br><a href="http://mbostock.github.com/d3/talk/20111018/force-states.html"><img src="/mbostock/d3/wiki/ex/force-states.png" width="226"></a></td>
-    <td>Azimuthal Projections<br><a href="http://mbostock.github.com/d3/talk/20111018/azimuthal.html"><img src="/mbostock/d3/wiki/ex/azimuthal.png" width="226"></a></td>
+    <td>Collision Detection<br><a href="http://mbostock.github.com/d3/talk/20111018/collision.html"><img src="/mbostock/d3/wiki/ex/force-collision.png" width="202"></a></td>
+    <td>Collapsible Force Layout<br><a href="http://mbostock.github.com/d3/talk/20111116/force-collapsible.html"><img src="/mbostock/d3/wiki/ex/force-collapsible.png" width="202"></a></td>
+    <td>Force-Directed States<br><a href="http://mbostock.github.com/d3/talk/20111018/force-states.html"><img src="/mbostock/d3/wiki/ex/force-states.png" width="202"></a></td>
+    <td>Azimuthal Projections<br><a href="http://mbostock.github.com/d3/talk/20111018/azimuthal.html"><img src="/mbostock/d3/wiki/ex/azimuthal.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Choropleth<br><a href="http://mbostock.github.com/d3/talk/20111018/choropleth.html"><img src="/mbostock/d3/wiki/ex/choropleth.png" width="226"></a></td>
-    <td>Collapsible Tree Layout<br><a href="http://mbostock.github.com/d3/talk/20111018/tree.html"><img src="/mbostock/d3/wiki/ex/tree-zoom.png" width="226"></a></td>
-    <td>Zoomable Treemap<br><a href="http://mbostock.github.com/d3/talk/20111018/treemap.html"><img src="/mbostock/d3/wiki/ex/treemap-zoom.png" width="226"></a></td>
-    <td>Zoomable Partition Layout<br><a href="http://mbostock.github.com/d3/talk/20111018/partition.html"><img src="/mbostock/d3/wiki/ex/partition-zoom.png" width="226"></a></td>
+    <td>Choropleth<br><a href="http://mbostock.github.com/d3/talk/20111018/choropleth.html"><img src="/mbostock/d3/wiki/ex/choropleth.png" width="202"></a></td>
+    <td>Collapsible Tree Layout<br><a href="http://mbostock.github.com/d3/talk/20111018/tree.html"><img src="/mbostock/d3/wiki/ex/tree-zoom.png" width="202"></a></td>
+    <td>Zoomable Treemap<br><a href="http://mbostock.github.com/d3/talk/20111018/treemap.html"><img src="/mbostock/d3/wiki/ex/treemap-zoom.png" width="202"></a></td>
+    <td>Zoomable Partition Layout<br><a href="http://mbostock.github.com/d3/talk/20111018/partition.html"><img src="/mbostock/d3/wiki/ex/partition-zoom.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Zoomable Area Chart<br><a href="http://mbostock.github.com/d3/talk/20111018/area-gradient.html"><img src="/mbostock/d3/wiki/ex/area-gradient.png" width="226"></a></td>
-    <td>Calendar View<br><a href="http://mbostock.github.com/d3/talk/20111018/calendar.html"><img src="/mbostock/d3/wiki/ex/flight-calendar.png" width="226"></a></td>
-    <td>Rotating Cluster Layout<br><a href="http://mbostock.github.com/d3/talk/20111018/cluster.html"><img src="/mbostock/d3/wiki/ex/cluster-radial.png" width="226"></a></td>
-    <td>Sankey Diagram<br><a href="http://bost.ocks.org/mike/sankey/"><img src="/mbostock/d3/wiki/ex/sankey.png" width="226"></a></td>
+    <td>Zoomable Area Chart<br><a href="http://mbostock.github.com/d3/talk/20111018/area-gradient.html"><img src="/mbostock/d3/wiki/ex/area-gradient.png" width="202"></a></td>
+    <td>Calendar View<br><a href="http://mbostock.github.com/d3/talk/20111018/calendar.html"><img src="/mbostock/d3/wiki/ex/flight-calendar.png" width="202"></a></td>
+    <td>Rotating Cluster Layout<br><a href="http://mbostock.github.com/d3/talk/20111018/cluster.html"><img src="/mbostock/d3/wiki/ex/cluster-radial.png" width="202"></a></td>
+    <td>Sankey Diagram<br><a href="http://bost.ocks.org/mike/sankey/"><img src="/mbostock/d3/wiki/ex/sankey.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Fisheye Distortion<br><a href="http://bost.ocks.org/mike/fisheye/"><img src="/mbostock/d3/wiki/ex/fisheye.png" width="226"></a></td>
-    <td>Hive Plot<br><a href="http://bost.ocks.org/mike/hive/"><img src="/mbostock/d3/wiki/ex/hive.png" width="226"></a></td>
-    <td>Co-occurrence Matrix<br><a href="http://bost.ocks.org/mike/miserables/"><img src="/mbostock/d3/wiki/ex/miserables.png" width="226"></a></td>
-    <td>Motion Chart<br><a href="http://bost.ocks.org/mike/nations/"><img src="/mbostock/d3/wiki/ex/nations.png" width="226"></a></td>
+    <td>Fisheye Distortion<br><a href="http://bost.ocks.org/mike/fisheye/"><img src="/mbostock/d3/wiki/ex/fisheye.png" width="202"></a></td>
+    <td>Hive Plot<br><a href="http://bost.ocks.org/mike/hive/"><img src="/mbostock/d3/wiki/ex/hive.png" width="202"></a></td>
+    <td>Co-occurrence Matrix<br><a href="http://bost.ocks.org/mike/miserables/"><img src="/mbostock/d3/wiki/ex/miserables.png" width="202"></a></td>
+    <td>Motion Chart<br><a href="http://bost.ocks.org/mike/nations/"><img src="/mbostock/d3/wiki/ex/nations.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Chord Diagram<br><a href="http://bost.ocks.org/mike/uberdata/"><img src="/mbostock/d3/wiki/ex/uber.png" width="226"></a></td>
-    <td>Animated Béziers<br><a href="http://www.jasondavies.com/animated-bezier/"><img src="/mbostock/d3/wiki/ex/bezier.png" width="226"></a></td>
-    <td>Zoomable Sunburst<br><a href="http://www.jasondavies.com/coffee-wheel/"><img src="/mbostock/d3/wiki/ex/coffee.png" width="226"></a></td>
-    <td>Collatz Graph<br><a href="http://www.jasondavies.com/collatz-graph/"><img src="/mbostock/d3/wiki/ex/collatz.png" width="226"></a></td>
+    <td>Chord Diagram<br><a href="http://bost.ocks.org/mike/uberdata/"><img src="/mbostock/d3/wiki/ex/uber.png" width="202"></a></td>
+    <td>Animated Béziers<br><a href="http://www.jasondavies.com/animated-bezier/"><img src="/mbostock/d3/wiki/ex/bezier.png" width="202"></a></td>
+    <td>Zoomable Sunburst<br><a href="http://www.jasondavies.com/coffee-wheel/"><img src="/mbostock/d3/wiki/ex/coffee.png" width="202"></a></td>
+    <td>Collatz Graph<br><a href="http://www.jasondavies.com/collatz-graph/"><img src="/mbostock/d3/wiki/ex/collatz.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Parallel Sets<br><a href="http://www.jasondavies.com/parallel-sets/"><img src="/mbostock/d3/wiki/ex/parsets.png" width="226"></a></td>
-    <td>Word Cloud<br><a href="http://www.jasondavies.com/wordcloud/"><img src="/mbostock/d3/wiki/ex/cloud.png" width="226"></a></td>
-    <td>Obama's Budget Proposal<br><a href="http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html"><img src="/mbostock/d3/wiki/ex/budget.png" width="226"></a></td>
-    <td>Facebook IPO<br><a href="http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html"><img src="/mbostock/d3/wiki/ex/facebook-ipo.png" width="226"></a></td>
+    <td>Parallel Sets<br><a href="http://www.jasondavies.com/parallel-sets/"><img src="/mbostock/d3/wiki/ex/parsets.png" width="202"></a></td>
+    <td>Word Cloud<br><a href="http://www.jasondavies.com/wordcloud/"><img src="/mbostock/d3/wiki/ex/cloud.png" width="202"></a></td>
+    <td>Obama's Budget Proposal<br><a href="http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html"><img src="/mbostock/d3/wiki/ex/budget.png" width="202"></a></td>
+    <td>Facebook IPO<br><a href="http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html"><img src="/mbostock/d3/wiki/ex/facebook-ipo.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Koalas to the Max<br><a href="http://www.koalastothemax.com/"><img src="/mbostock/d3/wiki/ex/koalas.png" width="226"></a></td>
-    <td>Particles<br><a href="http://bl.ocks.org/1062544"><img src="/mbostock/d3/wiki/ex/particles.png" width="226"></a></td>
-    <td>Indented Tree<br><a href="http://bl.ocks.org/1093025"><img src="/mbostock/d3/wiki/ex/indented-tree.png" width="226"></a></td>
-    <td>Rounded Rect<br><a href="http://bl.ocks.org/1123639"><img src="/mbostock/d3/wiki/ex/ronded-rect.png" width="226"></a></td>
+    <td>Koalas to the Max<br><a href="http://www.koalastothemax.com/"><img src="/mbostock/d3/wiki/ex/koalas.png" width="202"></a></td>
+    <td>Particles<br><a href="http://bl.ocks.org/1062544"><img src="/mbostock/d3/wiki/ex/particles.png" width="202"></a></td>
+    <td>Indented Tree<br><a href="http://bl.ocks.org/1093025"><img src="/mbostock/d3/wiki/ex/indented-tree.png" width="202"></a></td>
+    <td>Rounded Rect<br><a href="http://bl.ocks.org/1123639"><img src="/mbostock/d3/wiki/ex/ronded-rect.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Tadpoles<br><a href="http://bl.ocks.org/1136236"><img src="/mbostock/d3/wiki/ex/sperm.png" width="226"></a></td>
-    <td>Showreel<br><a href="http://bl.ocks.org/1256572"><img src="/mbostock/d3/wiki/ex/show-reel.png" width="226"></a></td>
-    <td>Euro Debt<br><a href="http://bl.ocks.org/1308257"><img src="/mbostock/d3/wiki/ex/debt.png" width="226"></a></td>
-    <td>Labeled Force Layout<br><a href="http://bl.ocks.org/1377729"><img src="/mbostock/d3/wiki/ex/force-labels.png" width="226"></a></td>
+    <td>Tadpoles<br><a href="http://bl.ocks.org/1136236"><img src="/mbostock/d3/wiki/ex/sperm.png" width="202"></a></td>
+    <td>Showreel<br><a href="http://bl.ocks.org/1256572"><img src="/mbostock/d3/wiki/ex/show-reel.png" width="202"></a></td>
+    <td>Euro Debt<br><a href="http://bl.ocks.org/1308257"><img src="/mbostock/d3/wiki/ex/debt.png" width="202"></a></td>
+    <td>Labeled Force Layout<br><a href="http://bl.ocks.org/1377729"><img src="/mbostock/d3/wiki/ex/force-labels.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Circle-Square Illusion<br><a href="http://bl.ocks.org/1386444"><img src="/mbostock/d3/wiki/ex/illusion.png" width="226"></a></td>
-    <td>Voronoi Picking<br><a href="http://bl.ocks.org/1405439"><img src="/mbostock/d3/wiki/ex/voronoi-picker.png" width="226"></a></td>
-    <td>Zoomable Map<br><a href="http://bl.ocks.org/2206590"><img src="/mbostock/d3/wiki/ex/map-zoom.png" width="226"></a></td>
-    <td>Raindrops<br><a href="http://bl.ocks.org/849853"><img src="/mbostock/d3/wiki/ex/rain.png" width="226"></a></td>
+    <td>Circle-Square Illusion<br><a href="http://bl.ocks.org/1386444"><img src="/mbostock/d3/wiki/ex/illusion.png" width="202"></a></td>
+    <td>Voronoi Picking<br><a href="http://bl.ocks.org/1405439"><img src="/mbostock/d3/wiki/ex/voronoi-picker.png" width="202"></a></td>
+    <td>Zoomable Map<br><a href="http://bl.ocks.org/2206590"><img src="/mbostock/d3/wiki/ex/map-zoom.png" width="202"></a></td>
+    <td>Raindrops<br><a href="http://bl.ocks.org/849853"><img src="/mbostock/d3/wiki/ex/rain.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Color<br><a href="http://color.method.ac/"><img src="/mbostock/d3/wiki/ex/color.png" width="226"></a></td>
-    <td>Parallel Coordinates<br><a href="http://exposedata.com/parallel/"><img src="/mbostock/d3/wiki/ex/nutrient.png" width="226"></a></td>
-    <td>Hacker News Popularity<br><a href="http://hn.metamx.com/"><img src="/mbostock/d3/wiki/ex/hn.png" width="226"></a></td>
-    <td>Life Expectancy<br><a href="http://projects.flowingdata.com/life-expectancy/"><img src="/mbostock/d3/wiki/ex/world.png" width="226"></a></td>
+    <td>Color<br><a href="http://color.method.ac/"><img src="/mbostock/d3/wiki/ex/color.png" width="202"></a></td>
+    <td>Parallel Coordinates<br><a href="http://exposedata.com/parallel/"><img src="/mbostock/d3/wiki/ex/nutrient.png" width="202"></a></td>
+    <td>Hacker News Popularity<br><a href="http://hn.metamx.com/"><img src="/mbostock/d3/wiki/ex/hn.png" width="202"></a></td>
+    <td>Life Expectancy<br><a href="http://projects.flowingdata.com/life-expectancy/"><img src="/mbostock/d3/wiki/ex/world.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Slopegraphs<br><a href="http://skedasis.com/d3/slopegraph/"><img src="/mbostock/d3/wiki/ex/slope.png" width="226"></a></td>
-    <td>NCAA Predictions<br><a href="http://thepowerrank.com/visual/NCAA_Tournament_Predictions"><img src="/mbostock/d3/wiki/ex/ncaa.png" width="226"></a></td>
-    <td>Cubism.js<br><a href="http://square.github.com/cubism/"><img src="/mbostock/d3/wiki/ex/cubism.png" width="226"></a></td>
-    <td>Crossfilter.js<br><a href="http://square.github.com/crossfilter/"><img src="/mbostock/d3/wiki/ex/crossfilter.png" width="226"></a></td>
+    <td>Slopegraphs<br><a href="http://skedasis.com/d3/slopegraph/"><img src="/mbostock/d3/wiki/ex/slope.png" width="202"></a></td>
+    <td>NCAA Predictions<br><a href="http://thepowerrank.com/visual/NCAA_Tournament_Predictions"><img src="/mbostock/d3/wiki/ex/ncaa.png" width="202"></a></td>
+    <td>Cubism.js<br><a href="http://square.github.com/cubism/"><img src="/mbostock/d3/wiki/ex/cubism.png" width="202"></a></td>
+    <td>Crossfilter.js<br><a href="http://square.github.com/crossfilter/"><img src="/mbostock/d3/wiki/ex/crossfilter.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Wind History<br><a href="http://windhistory.com/"><img src="/mbostock/d3/wiki/ex/windhistory.png" width="226"></a></td>
-    <td>Cubic Hamiltonian Graphs<br><a href="http://www.christophermanning.org/projects/building-cubic-hamiltonian-graphs-from-lcf-notation/"><img src="/mbostock/d3/wiki/ex/lcf.png" width="226"></a></td>
-    <td>Force-Directed Voronoi<br><a href="http://www.christophermanning.org/projects/voronoi-diagram-with-force-directed-nodes-and-delaunay-links/"><img src="/mbostock/d3/wiki/ex/force-voronoi.png" width="226"></a></td>
-    <td>Trulia Trends<br><a href="http://trends.truliablog.com/2011/09/house-hunter-by-day-not-so-much-after-midnight/"><img src="/mbostock/d3/wiki/ex/house-heatmap.png" width="226"></a></td>
+    <td>Wind History<br><a href="http://windhistory.com/"><img src="/mbostock/d3/wiki/ex/windhistory.png" width="202"></a></td>
+    <td>Cubic Hamiltonian Graphs<br><a href="http://www.christophermanning.org/projects/building-cubic-hamiltonian-graphs-from-lcf-notation/"><img src="/mbostock/d3/wiki/ex/lcf.png" width="202"></a></td>
+    <td>Force-Directed Voronoi<br><a href="http://www.christophermanning.org/projects/voronoi-diagram-with-force-directed-nodes-and-delaunay-links/"><img src="/mbostock/d3/wiki/ex/force-voronoi.png" width="202"></a></td>
+    <td>Trulia Trends<br><a href="http://trends.truliablog.com/2011/09/house-hunter-by-day-not-so-much-after-midnight/"><img src="/mbostock/d3/wiki/ex/house-heatmap.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Trulia Trends<br><a href="http://trends.truliablog.com/2012/02/where-are-house-hunters-searching/"><img src="/mbostock/d3/wiki/ex/house-map.png" width="226"></a></td>
-    <td>Open Budget<br><a href="http://marcinignac.com/projects/open-budget/"><img src="/mbostock/d3/wiki/ex/open-budget.png" width="226"></a></td>
-    <td>Bederson Publications<br><a href="http://www.cs.umd.edu/~bederson/papers/index.html"><img src="/mbostock/d3/wiki/ex/bederson-pubs.png" width="226"></a></td>
+    <td>Trulia Trends<br><a href="http://trends.truliablog.com/2012/02/where-are-house-hunters-searching/"><img src="/mbostock/d3/wiki/ex/house-map.png" width="202"></a></td>
+    <td>Open Budget<br><a href="http://marcinignac.com/projects/open-budget/"><img src="/mbostock/d3/wiki/ex/open-budget.png" width="202"></a></td>
+    <td>Bederson Publications<br><a href="http://www.cs.umd.edu/~bederson/papers/index.html"><img src="/mbostock/d3/wiki/ex/bederson-pubs.png" width="202"></a></td>
   </tr>
 </table>
 
@@ -388,7 +388,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [d3 rendered with RaphaelJS for IE Compatibility](https://github.com/mhemesath/r2d3/)
 * [d34raphael](http://webmonarch.github.com/d34raphael/usage.html)
 * [D3 graphics in a Pergola SVG UI] (http://www.dotuscomus.com/pergola/pergola_1.4.0/ExamplesHTML/D3/multiD3.html)
-* [Visualising ConAir Data With Cubism.js (Arduino, TempoDB, Sinatra)](http://sammyd.github.com/blog/2012/09/16/visualising-conair-data-with-cubism-dot-js/) 
+* [Visualising ConAir Data With Cubism.js (Arduino, TempoDB, Sinatra)](http://sammyd.github.com/blog/2012/09/16/visualising-conair-data-with-cubism-dot-js/)
 * [Render Geographic Information in 3D With Three.js and D3.js](http://css.dzone.com/articles/render-geographic-information)
 
 #### Online Editors
