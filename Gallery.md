@@ -158,6 +158,12 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>van Wijk Smooth Zooming<br><a href="http://bl.ocks.org/3828981"><img src="https://raw.github.com/gist/3828981/thumbnail.png" width="202"></a></td>
     <td>Progress Events<br><a href="http://bl.ocks.org/3750941"><img src="https://raw.github.com/gist/3750941/thumbnail.png" width="202"></a></td>
   </tr>
+  <tr height="146" valign="top">
+    <td>Margin Convention<br><a href="http://bl.ocks.org/3019563"><img src="https://raw.github.com/gist/3019563/thumbnail.png" width="202"></a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
 </table>
 
 ## Examples
