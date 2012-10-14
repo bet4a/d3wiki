@@ -120,7 +120,37 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
   </tr>
 </table>
 
+## Basic Charts
+
+<table>
+  <tr height="146" valign="top">
+    <td>Area Chart<br><a href="http://bl.ocks.org/3883195"><img src="https://raw.github.com/gist/3883195/thumbnail.png" width="202"></a></td>
+    <td>Line Chart<br><a href="http://bl.ocks.org/3883245"><img src="https://raw.github.com/gist/3883245/thumbnail.png" width="202"></a></td>
+    <td>Bivariate Area Chart<br><a href="http://bl.ocks.org/3884914"><img src="https://raw.github.com/gist/3884914/thumbnail.png" width="202"></a></td>
+    <td>Multi-Series Line Chart<br><a href="http://bl.ocks.org/3884955"><img src="https://raw.github.com/gist/3884955/thumbnail.png" width="202"></a></td>
+  </tr>
+  <tr height="146" valign="top">
+    <td>Stacked Area Chart<br><a href="http://bl.ocks.org/3885211"><img src="https://raw.github.com/gist/3885211/thumbnail.png" width="202"></a></td>
+    <td>Bar Chart<br><a href="http://bl.ocks.org/3885304"><img src="https://raw.github.com/gist/3885304/thumbnail.png" width="202"></a></td>
+    <td>Sortable Bar Chart<br><a href="http://bl.ocks.org/3885705"><img src="https://raw.github.com/gist/3885705/thumbnail.png" width="202"></a></td>
+    <td>Stacked Bar Chart<br><a href="http://bl.ocks.org/3886208"><img src="https://raw.github.com/gist/3886208/thumbnail.png" width="202"></a></td>
+  </tr>
+  <tr height="146" valign="top">
+    <td>Normalized Stacked Bar Chart<br><a href="http://bl.ocks.org/3886394"><img src="https://raw.github.com/gist/3886394/thumbnail.png" width="202"></a></td>
+    <td>Grouped Bar Chart<br><a href="http://bl.ocks.org/3887051"><img src="https://raw.github.com/gist/3887051/thumbnail.png" width="202"></a></td>
+    <td>Scatterplot<br><a href="http://bl.ocks.org/3887118"><img src="https://raw.github.com/gist/3887118/thumbnail.png" width="202"></a></td>
+    <td>Donut Chart<br><a href="http://bl.ocks.org/3887193"><img src="https://raw.github.com/gist/3887193/thumbnail.png" width="202"></a></td>
+  </tr>
+  <tr height="146" valign="top">
+    <td>Pie Chart<br><a href="http://bl.ocks.org/3887235"><img src="https://raw.github.com/gist/3887235/thumbnail.png" width="202"></a></td>
+    <td>Donut Multiples<br><a href="http://bl.ocks.org/3888852"><img src="https://raw.github.com/gist/3888852/thumbnail.png" width="202"></a></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
 ## Examples
+
 * [Election 2012 Social Dashboard (interactive Twitter visualization)] (http://events.current.com/social_dashboard) - Current TV
 * [Visualizing document similarity over time](http://www.davidmasad.com/sandbox/FirmClusters.html)
 * [At the National Conventions, the Words They Used](http://www.nytimes.com/interactive/2012/09/06/us/politics/convention-word-counts.html)
