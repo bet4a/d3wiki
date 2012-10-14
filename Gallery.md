@@ -156,7 +156,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>General Update Pattern<br><a href="http://bl.ocks.org/3808218"><img src="https://raw.github.com/gist/3808218/thumbnail.png" width="202"></a></td>
     <td>Sortable Bar Chart<br><a href="http://bl.ocks.org/3885705"><img src="https://raw.github.com/gist/3885705/thumbnail.png" width="202"></a></td>
     <td>van Wijk Smooth Zooming<br><a href="http://bl.ocks.org/3828981"><img src="https://raw.github.com/gist/3828981/thumbnail.png" width="202"></a></td>
-    <td></td>
+    <td>Progress Events<br><a href="http://bl.ocks.org/3750941"><img src="https://raw.github.com/gist/3750941/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
