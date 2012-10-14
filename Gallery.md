@@ -149,7 +149,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
   </tr>
 </table>
 
-## Interaction & Animation
+## Techniques, Interaction & Animation
 
 <table>
   <tr height="146" valign="top">
