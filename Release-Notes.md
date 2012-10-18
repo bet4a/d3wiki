@@ -14,7 +14,7 @@ This is a placeholder for notes regarding the next major release of D3. If you w
 * Fix for quadratic performance of d3.timer.
 * Removed selection.map; replaced by selection.datum.
 * Removed d3.split; replaced by line.defined and area.defined.
-* Removed d3.first and d3.last.
+* Removed d3.first and d3.last; use d3.min and d3.max instead.
 * Removed d3.svg.mouse and d3.svg.touches; replaced by d3.mouse and d3.touches.
 * Removed d3.geo.azimuthal; replaced by d3.geo.orthographic et al.
 * Removed d3.geo.greatCircle; replaced by d3.geo.circle.
