@@ -2,6 +2,27 @@
 
 Patch versions always include various bug fixes; see the full compare for details. For major and minor versions, new features are listed below.
 
+## 3.0.0 - Not Yet Released
+
+This is a placeholder for notes regarding the next major release of D3. If you want to develop against the release candidate, checkout the `3.0` branch or download [d3.v3.js](http://d3js.org/d3.v3.js). However, keep in mind that the API is not finalized until the release.
+
+### Migration Guide (Backwards Incompatibilities)
+
+The next major version of D3 includes several backwards incompatibilities. Although inconvenient, these incompatibilities are necessary to remove cruft and deprecated APIs.
+
+* d3.xhr callbacks now have the signature (error, result) rather than (result). This is the Node.js error callback convention, and makes D3's callbacks compatible with asynchronous helper libraries such as [Queue.js](/mbostock/queue).
+
+* Removed selection.map; replaced by selection.datum.
+* Removed d3.split; replaced by line.defined and area.defined.
+* Removed d3.first and d3.last.
+* Removed d3.svg.mouse and d3.svg.touches; replaced by d3.mouse and d3.touches.
+* Removed d3.geo.azimuthal; replaced by d3.geo.orthographic et al.
+* Removed d3.geo.greatCircle; replaced by d3.geo.circle.
+* Moved d3.geom.contour to d3-plugins.
+* Moved d3.geo.bonne to d3-plugins.
+* Removed d3.layout.hierarchy deprecated API for inlined data; replaced by wrapped data.
+* Removed d3.geom.quadtree deprecated API for array input; replaced by x-y object input.
+
 ## 2.10.0 - August 9, 2012
 
 * Added [multi-valued map](http://bl.ocks.org/3305515) support for selection.attr and similar methods.
