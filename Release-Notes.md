@@ -6,13 +6,16 @@ Patch versions always include various bug fixes; see the full compare for detail
 
 This is a placeholder for notes regarding the next major release of D3. If you want to develop against the release candidate, checkout the `3.0` branch or download [d3.v3.js](http://d3js.org/d3.v3.js). However, keep in mind that the API is not finalized until the release. The next major version of D3 includes several **backwards incompatibilities**. Although inconvenient, these incompatibilities are necessary to remove cruft and deprecated APIs.
 
-* d3.xhr callbacks now have the signature {error, result} rather than {result} (convention; compatible with [Queue.js](/mbostock/queue) etc.).
+* Improved transitions subsystem. Supports re-selection of transitions, immediate evaluation, numerous other changes.
+* Improved geographic projection subsystem. Includes adaptive supersampling, clipping & antemeridian cutting support for d3.geo.path.
+* Improved XHR subsystem. Supports progress events, Node-style {error, result} callbacks (compatible with [Queue.js](/mbostock/queue) etc.).
 * Removed selection.map; replaced by selection.datum.
 * Removed d3.split; replaced by line.defined and area.defined.
 * Removed d3.first and d3.last.
 * Removed d3.svg.mouse and d3.svg.touches; replaced by d3.mouse and d3.touches.
 * Removed d3.geo.azimuthal; replaced by d3.geo.orthographic et al.
 * Removed d3.geo.greatCircle; replaced by d3.geo.circle.
+* Removed albers.origin; replaced by albers.rotate and albers.center.
 * Moved d3.geom.contour to d3-plugins.
 * Moved d3.geo.bonne to d3-plugins.
 * Removed d3.layout.hierarchy deprecated API for inlined data; replaced by wrapped data.
