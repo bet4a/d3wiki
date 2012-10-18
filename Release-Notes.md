@@ -8,7 +8,10 @@ This is a placeholder for notes regarding the next major release of D3. If you w
 
 * Improved transitions subsystem. Supports re-selection of transitions, immediate evaluation, numerous other changes.
 * Improved geographic projection subsystem. Includes adaptive supersampling, clipping & antemeridian cutting support for d3.geo.path.
-* Improved XHR subsystem. Supports progress events, Node-style {error, result} callbacks (compatible with [Queue.js](/mbostock/queue) etc.).
+* Improved XHR subsystem. Supports progress events, aborting requests, POST, headers, Node-style {error, result} callbacks (compatible with [Queue.js](/mbostock/queue) etc.).
+* Fix for d3.behavior.zoom to support easier programmatic zooming.
+* Fix for color interpolation.
+* Fix for quadratic performance of d3.timer.
 * Removed selection.map; replaced by selection.datum.
 * Removed d3.split; replaced by line.defined and area.defined.
 * Removed d3.first and d3.last.
@@ -16,8 +19,8 @@ This is a placeholder for notes regarding the next major release of D3. If you w
 * Removed d3.geo.azimuthal; replaced by d3.geo.orthographic et al.
 * Removed d3.geo.greatCircle; replaced by d3.geo.circle.
 * Removed albers.origin; replaced by albers.rotate and albers.center.
-* Moved d3.geom.contour to d3-plugins.
-* Moved d3.geo.bonne to d3-plugins.
+* Removed d3.geom.contour; moved to d3-plugins.
+* Removed d3.geo.bonne; moved to d3-plugins.
 * Removed d3.layout.hierarchy deprecated API for inlined data; replaced by wrapped data.
 * Removed d3.geom.quadtree deprecated API for array input; replaced by x-y object input.
 
