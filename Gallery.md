@@ -408,6 +408,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Interactive azimuthal projection simulating a 3D earth with stars] (http://marcneuwirth.com/blog/2012/06/24/creating-the-earth-with-d3-js/)
 * [Calculating quadtree bounding boxes and displaying them in leaflet](http://calvinmetcalf.github.com/k3/)
 * [Projection Transitions](http://bl.ocks.org/3711652) and [Comparing Map Projections](http://bl.ocks.org/3711245)
+* (Composite Map Projection)[http://cartography.oregonstate.edu/demos/CompositeMapProjection/]
 
 ### Tools
 
