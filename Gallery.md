@@ -274,6 +274,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Dual scale line chart](http://benjchristensen.com/2012/05/02/line-graphs-using-d3-js/)
 * [[Scatterplot and Heatmap|http://jsfiddle.net/indiemaps/gzPDU/]]
 * [[Animated Sankey Diagram (alluvial)|http://nickrabinowitz.com/projects/d3/alluvial/alluvial-dynamic.html]]
+* [Sankey diagram with cycles](http://bl.ocks.org/3921009)
 * [Parallel Coordinates](http://bl.ocks.org/1341281)
 * [Parallel coordinates with fisheye distortion](http://bl.ocks.org/3290263)
 * [Parallel Sets](http://www.jasondavies.com/parallel-sets/)
