@@ -369,7 +369,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 #### Charts using the [reusable API](http://bost.ocks.org/mike/chart/)
 
 * [Parallel Coordinates](http://syntagmatic.github.com/parallel-coordinates/) and [repository](https://github.com/syntagmatic/parallel-coordinates)
-* [Chernoff faces, Fisheye, Gepdesic grid, Hive plot, Horizon chart, Sankey diagram, ](https://github.com/d3/d3-plugins)
+* [Chernoff faces, Fisheye, Geodesic grid, Hive plot, Horizon chart, Sankey diagram, ](https://github.com/d3/d3-plugins)
 * [Parallel Sets](https://github.com/jasondavies/d3-parsets)
 * [Word Cloud](https://github.com/jasondavies/d3-cloud/blob/master/d3.layout.cloud.js)
 * [NVD3](https://github.com/novus/nvd3)
