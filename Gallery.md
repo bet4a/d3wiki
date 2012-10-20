@@ -377,6 +377,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [NVD3](https://github.com/novus/nvd3)
 * [MathJax label](http://bl.ocks.org/3391642)
 * [Simple table](http://jsfiddle.net/christopheviau/v6VMf/)
+* [Legend](http://bl.ocks.org/3918369)
 
 
 #### Useful snippets
