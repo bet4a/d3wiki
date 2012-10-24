@@ -70,11 +70,11 @@ Returns the minimum and maximum value in the given *array* using natural order. 
 
 Returns the sum of the given *array*. If the array is empty, returns 0. An optional *accessor* function may be specified, which is equivalent to calling *array.map(accessor)* before computing the sum. This method ignores invalid values such as NaN and undefined; this is useful for computing the sum of data while only considering the well-defined values.
 
-<a name="d3_mean" href="#wiki-d3_mean">#</a> d3.**mean**(*array*[, *accessor*])
+<a name="d3_mean" href="#wiki-d3_mean">#</a> d3.<b>mean</b>(<i>array</i>[, <i>accessor</i>])
 
 Returns the mean of the given *array*. If the array is empty, returns undefined. An optional *accessor* function may be specified, which is equivalent to calling *array.map(accessor)* before computing the mean. This method ignores invalid values such as NaN and undefined; this is useful for computing the mean of data while only considering the well-defined values.
 
-<a name="d3_median" href="#wiki-d3_median">#</a> d3.**median**(*array*[, *accessor*])
+<a name="d3_median" href="#wiki-d3_median">#</a> d3.<b>median</b>(<i>array</i>[, <i>accessor</i>])
 
 Returns the median of the given *array* using the [R-7](http://en.wikipedia.org/wiki/Quantile#Quantiles_of_a_population) algorithm. If the array is empty, returns undefined. An optional *accessor* function may be specified, which is equivalent to calling *array.map(accessor)* before computing the median. This method ignores invalid values such as NaN and undefined; this is useful for computing the median of data while only considering the well-defined values.
 
@@ -91,7 +91,7 @@ Locate the insertion point for *x* in *array* to maintain sorted order. The argu
 
 Similar to bisectLeft, but returns an insertion point which comes after (to the right of) any existing entries of *x* in *array*. The returned insertion point *i* partitions the *array* into two halves so that all *v* <= *x* for *v* in *array*.slice(lo, i) for the left side and all *v* > *x* for *v* in *array*.slice(i, hi) for the right side.
 
-<a name="d3_bisector" href="#wiki-d3_bisector">#</a> d3.**bisector**(<i>accessor</i>)
+<a name="d3_bisector" href="#wiki-d3_bisector">#</a> d3.<b>bisector</b>(<i>accessor</i>)
 
 Returns a bisector using the specified *accessor* function. The returned object has `left` and `right` properties which are similar to [bisectLeft](#wiki-d3_bisectLeft) and [bisectRight](#wiki-d3_bisectRight), respectively. This method can be used to bisect arrays of objects instead of being limited to simple arrays of primitives. For example, given the following array of objects:
 

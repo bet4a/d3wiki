@@ -113,7 +113,7 @@ The value accessor is invoked for each input data element, and must return a num
 
 If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1.
 
-<a name="padding" href="#wiki-padding">#</a> treemap.**padding**([*padding*])
+<a name="padding" href="#wiki-padding">#</a> treemap.<b>padding</b>([<i>padding</i>])
 
 Get or set the padding for each treemap cell, in pixels. The padding determines the amount of extra space to reserve between the parent and its children; this space can be used to indicate the hierarchy through enclosure, or to reserve space for parent labels. If no padding is used, then the leaves of the tree will completely fill the layout's size.
 

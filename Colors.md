@@ -76,52 +76,52 @@ Converts this HSL color to an RGB hexadecimal string, such as "#f7eaba".
 
 ## HCL
 
-<a name="d3_hcl" href="#wiki-d3_hcl">#</a> d3.**hcl**(*h*, *c*, *l*)
+<a name="d3_hcl" href="#wiki-d3_hcl">#</a> d3.<b>hcl</b>(<i>h</i>, <i>c</i>, <i>l</i>)
 
 …
 
-<a href="#wiki-d3_hcl">#</a> d3.**hcl**(*color*)
+<a href="#wiki-d3_hcl">#</a> d3.<b>hcl</b>(<i>color</i>)
 
 …
 
-<a name="hcl_brighter" href="#wiki-hcl_brighter">#</a> hcl.**brighter**([*k*])
+<a name="hcl_brighter" href="#wiki-hcl_brighter">#</a> hcl.<b>brighter</b>([<i>k</i>])
 
 …
 
-<a name="hcl_darker" href="#wiki-hcl_darker">#</a> hcl.**darker**([*k*])
+<a name="hcl_darker" href="#wiki-hcl_darker">#</a> hcl.<b>darker</b>([<i>k</i>])
 
 …
 
-<a name="hcl_rgb" href="#wiki-hcl_rgb">#</a> hcl.**rgb**()
+<a name="hcl_rgb" href="#wiki-hcl_rgb">#</a> hcl.<b>rgb</b>()
 
 …
 
-<a name="hcl_toString" href="#wiki-hcl_toString">#</a> hcl.**toString**()
+<a name="hcl_toString" href="#wiki-hcl_toString">#</a> hcl.<b>toString</b>()
 
 Converts this HCL color to an RGB hexadecimal string, such as "#f7eaba".
 
 ## L\*a\*b\*
 
-<a name="d3_lab" href="#wiki-d3_lab">#</a> d3.**lab**(*l*, *a*, *b*)
+<a name="d3_lab" href="#wiki-d3_lab">#</a> d3.<b>lab</b>(<i>l</i>, <i>a</i>, <i>b</i>)
 
 …
 
-<a href="#wiki-d3_lab">#</a> d3.**lab**(*color*)
+<a href="#wiki-d3_lab">#</a> d3.<b>lab</b>(<i>color</i>)
 
 …
 
-<a name="lab_brighter" href="#wiki-lab_brighter">#</a> lab.**brighter**([*k*])
+<a name="lab_brighter" href="#wiki-lab_brighter">#</a> lab.<b>brighter</b>([<i>k</i>])
 
 …
 
-<a name="lab_darker" href="#wiki-lab_darker">#</a> lab.**darker**([*k*])
+<a name="lab_darker" href="#wiki-lab_darker">#</a> lab.<b>darker</b>([<i>k</i>])
 
 …
 
-<a name="lab_rgb" href="#wiki-lab_rgb">#</a> lab.**rgb**()
+<a name="lab_rgb" href="#wiki-lab_rgb">#</a> lab.<b>rgb</b>()
 
 …
 
-<a name="lab_toString" href="#wiki-lab_toString">#</a> lab.**toString**()
+<a name="lab_toString" href="#wiki-lab_toString">#</a> lab.<b>toString</b>()
 
 Converts this L\*a\*b\* color to an RGB hexadecimal string, such as "#f7eaba".

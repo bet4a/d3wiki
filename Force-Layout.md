@@ -99,7 +99,7 @@ On start, the layout initializes various attributes on the associated nodes. The
 
 The layout also initializes the *source* and *target* attributes on the associated links: for convenience, these attributes may be specified as a numeric index rather than a direct link, such that the nodes and links can be read-in from a JSON file or other static description that may not allow circular linking. The *source* and *target* attributes on incoming links are only replaced with the corresponding entries in *nodes* if these attributes are numbers; thus, these attributes on existing links are unaffected when the layout is restarted. The link [distances](Force-Layout#wiki-linkDistance) and [strengths](Force-Layout#wiki-linkStrength) are also computed on start.
 
-<a name="alpha" href="#wiki-alpha">#</a> force.**alpha**([*value*])
+<a name="alpha" href="#wiki-alpha">#</a> force.<b>alpha</b>([<i>value</i>])
 
 Gets or sets the force layout's cooling parameter, *alpha*. If *value* is specified, sets alpha to the specified value and returns the force layout. If *value* is greater than zero, this method also restarts the force layout if it is not already running, dispatching a "start" event and enabling the tick timer. If *value* is nonpositive, and the force layout is running, this method stops the force layout on the next tick and dispatches an "end" event. If *value* is not specified, this method returns the current alpha value.
 
@@ -123,7 +123,7 @@ force.alpha(0);
 
 Terminates the simulation, setting the cooling parameter *alpha* to zero. This can be used to stop the simulation explicitly, for example, if you want to show animation or allow other interaction. If you do not stop the layout explicitly, it will still stop automatically after the layout's cooling parameter decays below some threshold.
 
-<a name="tick" href="#wiki-tick">#</a> force.**tick**()
+<a name="tick" href="#wiki-tick">#</a> force.<b>tick</b>()
 
 Runs the force layout simulation one step. This method can be used in conjunction with [start](#wiki-start) and [stop](#wiki-stop) to compute a static layout. For example:
 

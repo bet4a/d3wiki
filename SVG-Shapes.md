@@ -163,7 +163,7 @@ svg.selectAll("path")
 
 In this example (see the [live version](http://bl.ocks.org/1016220)), the tension is set before each invocation of the line generator, thus resulting in lines with the same data but different paths.
 
-<a name="line_defined" href="#wiki-line_defined">#</a> line.**defined**([*defined*])
+<a name="line_defined" href="#wiki-line_defined">#</a> line.<b>defined</b>([<i>defined</i>])
 
 Gets or sets or sets the accessor function that controls where the line is defined. If *defined* is specified, sets the new accessor function and returns the line. If *defined* is not specified, returns the current accessor which defaults to `function() { return true; }`. The defined accessor can be used to define where the line is defined and undefined, which is typically useful in conjunction with missing data; the generated path data will automatically be broken into multiple distinct subpaths, skipping undefined data. For example, if you want to ignore *y*-values that are not a number (or undefined), you can say:
 
@@ -290,7 +290,7 @@ The behavior of some of these interpolation modes may be further customized by s
 
 If *tension* is specified, sets the Cardinal spline interpolation tension to the specified number in the range [0, 1]. If *tension* is not specified, returns the current tension. The tension only affects the Cardinal interpolation modes: cardinal, cardinal-open and cardinal-closed. The default tension is 0.7. In some sense, this can be interpreted as the length of the tangent; 1 will yield all zero tangents, and 0 yields a [Catmull-Rom spline](http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull.E2.80.93Rom_spline). Note that the tension must be specified as a constant, rather than a function, as it is constant for the entirety of the area.
 
-<a name="area_defined" href="#wiki-area_defined">#</a> area.**defined**([*defined*])
+<a name="area_defined" href="#wiki-area_defined">#</a> area.<b>defined</b>([<i>defined</i>])
 
 Gets or sets or sets the accessor function that controls where the area is defined. If *defined* is specified, sets the new accessor function and returns the area. If *defined* is not specified, returns the current accessor which defaults to `function() { return true; }`. The defined accessor can be used to define where the area is defined and undefined, which is typically useful in conjunction with missing data; the generated path data will automatically be broken into multiple distinct subpaths, skipping undefined data. For example, if you want to ignore *y*-values that are not a number (or undefined), you can say:
 

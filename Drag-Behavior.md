@@ -14,7 +14,7 @@ Registers the specified *listener* to receive events of the specified *type* fro
 * "drag": fired when the element is dragged. d3.event will contain "x" and "y" properties representing the current absolute drag coordinates of the element. It will also contain "dx" and "dy" properties representing the element's coordinates relative to its position at the beginning of the gesture.
 * "dragend": fired when the drag gesture has finished.
 
-<a name="origin" href="Drag-Behavior#wiki-origin">#</a> drag.<b>origin</b>([*origin*])
+<a name="origin" href="Drag-Behavior#wiki-origin">#</a> drag.<b>origin</b>([<i>origin</i>])
 
 If *origin* is specified, sets the origin accessor to the specified function. If *origin* is not specified, returns the current origin accessor which defaults to null.
 

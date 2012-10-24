@@ -6,23 +6,23 @@ This behavior automatically creates event listeners to handle zooming and pannin
 
 Constructs a new zoom behavior.
 
-<a name="x" href="Zoom-Behavior#wiki-x">#</a> zoom.<b>x</b>([*x*])
+<a name="x" href="Zoom-Behavior#wiki-x">#</a> zoom.<b>x</b>([<i>x</i>])
 
 Specifies an x-scale whose domain should be automatically adjusted when zooming. If not specified, returns the current x-scale, which defaults to null. If the scale's domain is modified programmatically, it should be reassigned to the zoom behaviour.
 
-<a name="y" href="Zoom-Behavior#wiki-y">#</a> zoom.<b>y</b>([*y*])
+<a name="y" href="Zoom-Behavior#wiki-y">#</a> zoom.<b>y</b>([<i>y</i>])
 
 Specifies an y-scale whose domain should be automatically adjusted when zooming. If not specified, returns the current y-scale, which defaults to null. If the scale's domain is modified programmatically, it should be reassigned to the zoom behaviour.
 
-<a name="scaleExtent" href="Zoom-Behavior#wiki-scaleExtent">#</a> zoom.<b>scaleExtent</b>([*extent*])
+<a name="scaleExtent" href="Zoom-Behavior#wiki-scaleExtent">#</a> zoom.<b>scaleExtent</b>([<i>extent</i>])
 
 Specifies the zoom scale's allowed range as a two-element array, [*minimum*, *maximum*]. If not specified, returns the current scale extent, which defaults to [0, Infinity].
 
-<a name="scale" href="Zoom-Behavior#wiki-scale">#</a> zoom.<b>scale</b>([*scale*])
+<a name="scale" href="Zoom-Behavior#wiki-scale">#</a> zoom.<b>scale</b>([<i>scale</i>])
 
 Specifies the current zoom scale. If not specified, returns the current zoom scale, which defaults to 1.
 
-<a name="translate" href="Zoom-Behavior#wiki-translate">#</a> zoom.<b>translate</b>([*translate*])
+<a name="translate" href="Zoom-Behavior#wiki-translate">#</a> zoom.<b>translate</b>([<i>translate</i>])
 
 Specifies the current zoom translation vector. If not specified, returns the current translation vector, which defaults to [0, 0].
 
