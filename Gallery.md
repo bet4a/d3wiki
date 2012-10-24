@@ -249,6 +249,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Is Barack Obama the President? (Balloon charts)](http://www.isbarackobamathepresident.com/)
 * [Audio Spectrum Analyzer](http://d3-spectrum.herokuapp.com) - Ari Russo
 * [Browser usage plurality](http://thecelestialweb.com) - Ali Almossawi
+* [Places in the Game of Thrones](http://www.jeromecukier.net/projects/agot/places.html) - Jérôme Cukier
+* [A Visit From The Goon Squad - Interactive Character Map](http://www.filosophy.org/projects/goonsquad/) - Filip Zembowicz
 
 ### Concepts & Techniques
 
