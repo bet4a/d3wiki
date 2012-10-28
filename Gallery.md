@@ -370,6 +370,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Simple Dashboard Example](http://bl.ocks.org/3287802)
 * [Dataflow programming with D3 and Blockly](http://bollwyvl.github.com/blockd3/)
 * [XKCD-style plots](http://dan.iel.fm/xkcd/)
+* [Violin: Instrumenting JavaScript](http://latentflip.github.com/violin/)
 
 #### Charts using the [reusable API](http://bost.ocks.org/mike/chart/)
 
