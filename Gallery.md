@@ -162,7 +162,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>Margin Convention<br><a href="http://bl.ocks.org/3019563"><img src="https://raw.github.com/gist/3019563/thumbnail.png" width="202"></a></td>
     <td>Focus+Context via Brushing<br><a href="http://bl.ocks.org/1667367"><img src="https://raw.github.com/gist/1667367/thumbnail.png" width="202"></a></td>
     <td>Difference Chart<br><a href="http://bl.ocks.org/3894205"><img src="https://raw.github.com/gist/3894205/thumbnail.png" width="202"></a></td>
-    <td></td>
+    <td>Pie Chart Update<br><a href="http://bl.ocks.org/1346395"><img src="https://raw.github.com/gist/1346395/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
