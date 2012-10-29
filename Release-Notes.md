@@ -4,7 +4,7 @@ Patch versions always include various bug fixes; see the full compare for detail
 
 ## 3.0.0 - Not Yet Released
 
-This is a placeholder for notes regarding the next major release of D3. If you want to develop against the release candidate, checkout the `3.0` branch or download [d3.v3.js](http://d3js.org/d3.v3.js) / [d3.v3.min.js](http://d3js.org/d3.v3.min.js). However, keep in mind that the API is not finalized until the release. The next major version of D3 includes several **backwards incompatibilities**. Although inconvenient, these incompatibilities are necessary to remove cruft and deprecated APIs.
+This is a placeholder for notes regarding the next major release of D3. If you want to develop against the release candidate, checkout the `3.0` branch or download [d3.v3.js](http://d3js.org/d3.v3.js) / [d3.v3.min.js](http://d3js.org/d3.v3.min.js). However, keep in mind that the API is not finalized until the release. The next major version of D3 includes several **backwards incompatibilities**. Although inconvenient, these incompatibilities are necessary to remove deprecated APIs.
 
 * Improved transitions subsystem. Supports re-selection of transitions, immediate evaluation, numerous other changes.
 * Improved geographic projection subsystem. Includes adaptive supersampling, clipping & antemeridian cutting support for d3.geo.path.
