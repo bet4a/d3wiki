@@ -252,6 +252,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Browser usage plurality](http://thecelestialweb.com) - Ali Almossawi
 * [Places in the Game of Thrones](http://www.jeromecukier.net/projects/agot/places.html) - Jérôme Cukier
 * [A Visit From The Goon Squad - Interactive Character Map](http://www.filosophy.org/projects/goonsquad/) - Filip Zembowicz
+* [Twitter Influencer Visualization](http://www.influencermoth.com/) - Erik Driessen
 
 ### Concepts & Techniques
 
