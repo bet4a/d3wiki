@@ -23,6 +23,7 @@ Please feel free to add links to your work!
 * [Manipulating data like a boss with d3](http://www.jeromecukier.net/blog/2012/05/28/manipulating-data-like-a-boss-with-d3/) - Jerome Cukier
 * [Creating Animations and Transitions With D3](http://blog.visual.ly/creating-animations-and-transitions-with-d3-js/) - Jerome Cukier
 * [Introduction to D3](http://thecodingtutorials.blogspot.com/2012/07/introduction-to-d3.html) and [more tutorials](http://thecodingtutorials.blogspot.com/search/label/D3) - Andrew Davis
+* [d3 O'Clock: Building a Virtual Analog Clock with d3.js (Part I)](http://www.ericbullington.com/articles/2012/10/27/d3-oclock) - Eric S. Bullington
 
 ### Specific Techniques
 
