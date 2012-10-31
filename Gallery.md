@@ -447,6 +447,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [D3 graphics in a Pergola SVG UI] (http://www.dotuscomus.com/pergola/pergola_1.4.0/ExamplesHTML/D3/multiD3.html)
 * [Visualising ConAir Data With Cubism.js (Arduino, TempoDB, Sinatra)](http://sammyd.github.com/blog/2012/09/16/visualising-conair-data-with-cubism-dot-js/)
 * [Render Geographic Information in 3D With Three.js and D3.js](http://css.dzone.com/articles/render-geographic-information)
+* (D3 heatmap using Backbone.js and CoffeeScript)[http://bl.ocks.org/2759731]
 
 #### Online Editors
 
