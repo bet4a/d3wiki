@@ -242,7 +242,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Close Votes - visualizing voting similarities for the Dutch 2012 national elections](http://tulpinteractive.com/close-votes/) - Jan Willem Tulp
 * [Multiple Area charts and a brush tool](http://bl.ocks.org/3630001) - Tyler Craft
 * [Enumerating vertex induced connected subgraphs](http://students.mimuw.edu.pl/~rk292662/vertex/) - Robert Kozikowski
-* [Startup Salary & Equity Compensation](https://blog.wealthfront.com/startup-employee-equity-compensation/)
+* [Startup Salary & Equity Compensation](https://blog.wealthfront.com/startup-employee-equity-compensation/) - Jared Jacobs (wealthfront.com)
 * [Pyramid charts: demographic transition in the US](http://www.newscientist.com/embedded/us-demographics-2050)
 * [Floating bubble chart: De Maastricht au traité budgétaire : les oui et les non de 39 personnalités politiques](http://www.lemonde.fr/politique/visuel/2012/09/18/de-maastricht-au-traite-budgetaire-les-oui-et-les-non-de-39-personnalites-politiques_1760615_823448.html)
 * [Open Knowledge Festival #OkFest Hashtag Graph Visualization](http://okfestival.org/hashtag/#visualisation)
