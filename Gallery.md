@@ -168,7 +168,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 
 ## Examples
 
-* [Visualizing word density in the Bible](http://stanford.edu/~garylee/bibly)
+* [Visualizing word density in the Bible](http://stanford.edu/~garylee/bibly) - Gary Lee
 * [Election 2012 Social Dashboard (interactive Twitter visualization)] (http://events.current.com/social_dashboard) - Current TV
 * [Visualizing document similarity over time](http://www.davidmasad.com/sandbox/FirmClusters.html)
 * [At the National Conventions, the Words They Used](http://www.nytimes.com/interactive/2012/09/06/us/politics/convention-word-counts.html)
