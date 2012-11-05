@@ -270,7 +270,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [The electoral map: building path to victory](http://elections.nytimes.com/2012/electoral-map)
 * [Who Voted for Rick Santorum and Mitt Romney](http://www.nytimes.com/interactive/2012/03/07/us/politics/how-candidates-fared-with-different-demographic-groups.html)
 * [Over the Decades, How States Have Shifted](http://www.nytimes.com/interactive/2012/10/15/us/politics/swing-history.html)
-* [512 Paths to the White House](http://www.nytimes.com/interactive/2012/11/02/us/politics/paths-to-the-white-house.html)
+* [512 Paths to the White House](http://www.nytimes.com/interactive/2012/11/02/us/politics/paths-to-the-white-house.html) and [design process](http://source.mozillaopennews.org/en-US/articles/nyts-512-paths-white-house/)
 
 ### Concepts & Techniques
 
