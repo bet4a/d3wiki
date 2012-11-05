@@ -337,6 +337,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Pedigree Tree](http://bl.ocks.org/2966094)
 * [Chord layout of football passes](http://www.tips-for-excel.com/MCFC/Passes.html)
 * [SCION simulation environment](http://bit.ly/PvWgUH)
+* [Collpase/expand nodes of a tree](http://jsfiddle.net/murray_3/5q62y/8/)
 
 #### Miscellaneous visualizations
 
