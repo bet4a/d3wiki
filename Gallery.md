@@ -171,9 +171,6 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Visualizing word density in the Bible](http://stanford.edu/~garylee/bibly) - Gary Lee
 * [Election 2012 Social Dashboard (interactive Twitter visualization)] (http://events.current.com/social_dashboard) - Current TV
 * [Visualizing document similarity over time](http://www.davidmasad.com/sandbox/FirmClusters.html)
-* [At the National Conventions, the Words They Used](http://www.nytimes.com/interactive/2012/09/06/us/politics/convention-word-counts.html)
-* [Drought Extends, Crops Wither](http://www.nytimes.com/interactive/2012/08/24/us/drought-crops.html)
-* [Drought and Deluge in the Lower 48](http://www.nytimes.com/interactive/2012/08/11/sunday-review/drought-history.html)
 * [Drought during Month](http://bost.ocks.org/mike/drought/)
 * [Interactive Publication History](http://www.cs.umd.edu/~bederson/papers/index.html) - Ben Bederson
 * [Visualizing the World's Opinion (Zoomable Worldmap and Pie Chart)](http://theartofasking.com/question/wjucdg6k)
@@ -216,8 +213,6 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [NCAA 2012 March Madness Power Rankings](http://thepowerrank.com/visual/NCAA_Tournament_Predictions) - Angi Chau
 * [iTunes Music Library Artist/Genre Graph](http://cgmartin.com/itunes-library-network-graph/) - Christopher Martin
 * [Data Story] (http://data-story.org) - Decio Battaglia, Kevin Mahoney and Xiaoying Riley
-* [Four Ways to Slice Obama’s 2013 Budget Proposal](http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html) - Shan Carter
-* [The Facebook Offering: How It Compares](http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html) - Jeremy Ashkenas et al.
 * [A Race to Entitlement](http://3angular.roberryarts.com/)
 * [Visualising New Zealand's Stolen Vehicle Database Part1](http://markhansen.co.nz/stolen-vehicles-pt1/) and [Part2](http://markhansen.co.nz/stolen-vehicles-pt2/) and [source code](https://github.com/mhansen/stolen-vehicles-pt2)
 * [Visualizing San Francisco Home Price Ranges](http://trends.truliablog.com/vis/pricerange-sf/)
@@ -259,8 +254,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 
 #### The New York Times visualizations
 
-* [Four Ways to Slice Obama’s 2013 Budget Proposal] (http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html)
-* [The Facebook Offering: How It Compares](http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html)
+* [The Facebook Offering: How It Compares](http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html) - Jeremy Ashkenas et al.
+* [Four Ways to Slice Obama’s 2013 Budget Proposal] (http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html) - Shan Carter
 * [2,003 Deaths in Afghanistan](http://www.nytimes.com/interactive/2012/08/22/us/2003-deaths-in-afghanistan.html)
 * [In Some Parts of the City, a Common Police Practice](http://www.nytimes.com/interactive/2012/08/16/nyregion/new-york-police-stop-and-frisk-use-of-force-map.html)
 * [At the Democratic Convention, the Words Being Used](http://www.nytimes.com/interactive/2012/09/04/us/politics/democratic-convention-words.html)
@@ -271,6 +266,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Who Voted for Rick Santorum and Mitt Romney](http://www.nytimes.com/interactive/2012/03/07/us/politics/how-candidates-fared-with-different-demographic-groups.html)
 * [Over the Decades, How States Have Shifted](http://www.nytimes.com/interactive/2012/10/15/us/politics/swing-history.html)
 * [512 Paths to the White House](http://www.nytimes.com/interactive/2012/11/02/us/politics/paths-to-the-white-house.html) and [design process](http://source.mozillaopennews.org/en-US/articles/nyts-512-paths-white-house/)
+* [At the National Conventions, the Words They Used](http://www.nytimes.com/interactive/2012/09/06/us/politics/convention-word-counts.html)
+* [Drought Extends, Crops Wither](http://www.nytimes.com/interactive/2012/08/24/us/drought-crops.html)
 
 ### Concepts & Techniques
 
