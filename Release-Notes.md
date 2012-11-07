@@ -9,7 +9,7 @@ This is a placeholder for notes regarding the next major release of D3. If you w
 * Improved transitions subsystem. Supports re-selection of transitions, immediate evaluation, numerous other changes.
 * Improved geographic projection subsystem. Includes adaptive supersampling, clipping & antemeridian cutting support for d3.geo.path.
 * Improved XHR subsystem. Supports progress events, aborting requests, POST, headers, Node-style {error, result} callbacks, etc.
-* Improved localization for d3.format and d3.time.format. More flexible padding for d3.time.format.
+* Improved localization for d3.format and d3.time.format.
 * Fix for d3.behavior.zoom to support easier programmatic zooming.
 * Fix for color interpolation.
 * Fix for quadratic performance of d3.timer.
