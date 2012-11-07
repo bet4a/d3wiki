@@ -402,6 +402,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [MathJax label](http://bl.ocks.org/3391642)
 * [Simple table](http://jsfiddle.net/christopheviau/v6VMf/)
 * [Legend](http://bl.ocks.org/3918369)
+* [Dc.js](http://nickqizhu.github.com/dc.js/)
 
 
 #### Useful snippets
