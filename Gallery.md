@@ -6,28 +6,28 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 
 <table>
   <tr height="207" valign="top">
-    <td>Box Plots<br><a href="http://mbostock.github.com/d3/ex/box.html"><img src="http://d3js.org/ex/box.png" width="202"></a></td>
+    <td>Box Plots<br><a href="http://bl.ocks.org/4061502"><img src="http://d3js.org/ex/box.png" width="202"></a></td>
     <td>Bubble Chart<br><a href="http://mbostock.github.com/d3/ex/bubble.html"><img src="http://d3js.org/ex/bubble.png" width="202"></a></td>
-    <td>Bullet Charts<br><a href="http://mbostock.github.com/d3/ex/bullet.html"><img src="http://d3js.org/ex/bullet.png" width="202"></a></td>
+    <td>Bullet Charts<br><a href="http://bl.ocks.org/4061961"><img src="http://d3js.org/ex/bullet.png" width="202"></a></td>
     <td>Calendar View<br><a href="http://mbostock.github.com/d3/ex/calendar.html"><img src="http://d3js.org/ex/calendar.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Non-contiguous Cartogram<br><a href="http://mbostock.github.com/d3/ex/cartogram.html"><img src="http://d3js.org/ex/cartogram.png" width="202"></a></td>
-    <td>Chord Diagram<br><a href="http://mbostock.github.com/d3/ex/chord.html"><img src="http://d3js.org/ex/chord.png" width="202"></a></td>
+    <td>Non-contiguous Cartogram<br><a href="http://bl.ocks.org/4055908"><img src="http://d3js.org/ex/cartogram.png" width="202"></a></td>
+    <td>Chord Diagram<br><a href="http://bl.ocks.org/4062006"><img src="http://d3js.org/ex/chord.png" width="202"></a></td>
     <td>Dendrogram<br><a href="http://mbostock.github.com/d3/ex/cluster.html"><img src="http://d3js.org/ex/cluster.png" width="202"></a></td>
-    <td>Force-Directed Graph<br><a href="http://mbostock.github.com/d3/ex/force.html"><img src="http://d3js.org/ex/force.png" width="202"></a></td>
+    <td>Force-Directed Graph<br><a href="http://bl.ocks.org/4062045"><img src="http://d3js.org/ex/force.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
     <td>Circle Packing<br><a href="http://mbostock.github.com/d3/ex/pack.html"><img src="http://d3js.org/ex/pack.png" width="202"></a></td>
-    <td>Population Pyramid<br><a href="http://mbostock.github.com/d3/ex/population.html"><img src="http://d3js.org/ex/population.png" width="202"></a></td>
-    <td>Stacked Bars<br><a href="http://mbostock.github.com/d3/ex/stack.html"><img src="http://d3js.org/ex/stack.png" width="202"></a></td>
-    <td>Streamgraph<br><a href="http://mbostock.github.com/d3/ex/stream.html"><img src="http://d3js.org/ex/stream.png" width="202"></a></td>
+    <td>Population Pyramid<br><a href="http://bl.ocks.org/4062085"><img src="http://d3js.org/ex/population.png" width="202"></a></td>
+    <td>Stacked Bars<br><a href="http://bl.ocks.org/3943967"><img src="http://d3js.org/ex/stack.png" width="202"></a></td>
+    <td>Streamgraph<br><a href="http://bl.ocks.org/4060954"><img src="http://d3js.org/ex/stream.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
     <td>Sunburst<br><a href="http://mbostock.github.com/d3/ex/sunburst.html"><img src="http://d3js.org/ex/sunburst.png" width="202"></a></td>
     <td>Node-Link Tree<br><a href="http://mbostock.github.com/d3/ex/tree.html"><img src="http://d3js.org/ex/tree.png" width="202"></a></td>
     <td>Treemap<br><a href="http://mbostock.github.com/d3/ex/treemap.html"><img src="http://d3js.org/ex/treemap.png" width="202"></a></td>
-    <td>Voronoi Diagram<br><a href="http://mbostock.github.com/d3/ex/voronoi.html"><img src="http://d3js.org/ex/voronoi.png" width="202"></a></td>
+    <td>Voronoi Diagram<br><a href="http://bl.ocks.org/4060366"><img src="http://d3js.org/ex/voronoi.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
     <td>Hierarchical Edge Bundling<br><a href="http://mbostock.github.com/d3/talk/20111116/bundle.html"><img src="http://d3js.org/ex/bundle.png" width="202"></a></td>
@@ -48,7 +48,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>Azimuthal Projections<br><a href="http://mbostock.github.com/d3/talk/20111018/azimuthal.html"><img src="http://d3js.org/ex/azimuthal.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Choropleth<br><a href="http://mbostock.github.com/d3/talk/20111018/choropleth.html"><img src="http://d3js.org/ex/choropleth.png" width="202"></a></td>
+    <td>Choropleth<br><a href="http://bl.ocks.org/4060606"><img src="http://d3js.org/ex/choropleth.png" width="202"></a></td>
     <td>Collapsible Tree Layout<br><a href="http://mbostock.github.com/d3/talk/20111018/tree.html"><img src="http://d3js.org/ex/tree-zoom.png" width="202"></a></td>
     <td>Zoomable Treemap<br><a href="http://mbostock.github.com/d3/talk/20111018/treemap.html"><img src="http://d3js.org/ex/treemap-zoom.png" width="202"></a></td>
     <td>Zoomable Partition Layout<br><a href="http://mbostock.github.com/d3/talk/20111018/partition.html"><img src="http://d3js.org/ex/partition-zoom.png" width="202"></a></td>
