@@ -401,6 +401,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Legend](http://bl.ocks.org/3918369)
 * [Dc.js](http://nickqizhu.github.com/dc.js/)
 * [Simple Reusable Bar Chart](http://jsfiddle.net/johnwun/8hSGP/)
+* [Polygonal Lasso Selection](http://bl.ocks.org/3732612)
 
 
 #### Useful snippets
