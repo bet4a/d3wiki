@@ -400,6 +400,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Dc.js](http://nickqizhu.github.com/dc.js/)
 * [Simple Reusable Bar Chart](http://jsfiddle.net/johnwun/8hSGP/)
 * [Polygonal Lasso Selection](http://bl.ocks.org/3732612)
+* [Floor Plan Map](http://dciarletta.github.com/d3-floorplan/)
 
 
 #### Useful snippets
