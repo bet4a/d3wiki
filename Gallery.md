@@ -256,8 +256,6 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 
 * [The Facebook Offering: How It Compares](http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html) - Jeremy Ashkenas et al.
 * [Four Ways to Slice Obama’s 2013 Budget Proposal] (http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html) - Shan Carter
-* [2,003 Deaths in Afghanistan](http://www.nytimes.com/interactive/2012/08/22/us/2003-deaths-in-afghanistan.html)
-* [In Some Parts of the City, a Common Police Practice](http://www.nytimes.com/interactive/2012/08/16/nyregion/new-york-police-stop-and-frisk-use-of-force-map.html)
 * [At the Democratic Convention, the Words Being Used](http://www.nytimes.com/interactive/2012/09/04/us/politics/democratic-convention-words.html)
 * [How the Chicago Public School District Compares](http://www.nytimes.com/interactive/2012/09/14/us/how-the-chicago-public-school-district-compares.html)
 * [Drought and Deluge in the Lower 48](http://www.nytimes.com/interactive/2012/08/11/sunday-review/drought-history.html)
