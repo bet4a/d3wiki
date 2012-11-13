@@ -7,26 +7,26 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 <table>
   <tr height="207" valign="top">
     <td>Box Plots<br><a href="http://bl.ocks.org/4061502"><img src="http://d3js.org/ex/box.png" width="202"></a></td>
-    <td>Bubble Chart<br><a href="http://mbostock.github.com/d3/ex/bubble.html"><img src="http://d3js.org/ex/bubble.png" width="202"></a></td>
+    <td>Bubble Chart<br><a href="http://bl.ocks.org/4063269"><img src="http://d3js.org/ex/bubble.png" width="202"></a></td>
     <td>Bullet Charts<br><a href="http://bl.ocks.org/4061961"><img src="http://d3js.org/ex/bullet.png" width="202"></a></td>
-    <td>Calendar View<br><a href="http://mbostock.github.com/d3/ex/calendar.html"><img src="http://d3js.org/ex/calendar.png" width="202"></a></td>
+    <td>Calendar View<br><a href="http://bl.ocks.org/4063318"><img src="http://d3js.org/ex/calendar.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
     <td>Non-contiguous Cartogram<br><a href="http://bl.ocks.org/4055908"><img src="http://d3js.org/ex/cartogram.png" width="202"></a></td>
     <td>Chord Diagram<br><a href="http://bl.ocks.org/4062006"><img src="http://d3js.org/ex/chord.png" width="202"></a></td>
-    <td>Dendrogram<br><a href="http://mbostock.github.com/d3/ex/cluster.html"><img src="http://d3js.org/ex/cluster.png" width="202"></a></td>
+    <td>Dendrogram<br><a href="http://bl.ocks.org/4063570"><img src="http://d3js.org/ex/cluster.png" width="202"></a></td>
     <td>Force-Directed Graph<br><a href="http://bl.ocks.org/4062045"><img src="http://d3js.org/ex/force.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Circle Packing<br><a href="http://mbostock.github.com/d3/ex/pack.html"><img src="http://d3js.org/ex/pack.png" width="202"></a></td>
+    <td>Circle Packing<br><a href="http://bl.ocks.org/4063530"><img src="http://d3js.org/ex/pack.png" width="202"></a></td>
     <td>Population Pyramid<br><a href="http://bl.ocks.org/4062085"><img src="http://d3js.org/ex/population.png" width="202"></a></td>
     <td>Stacked Bars<br><a href="http://bl.ocks.org/3943967"><img src="http://d3js.org/ex/stack.png" width="202"></a></td>
     <td>Streamgraph<br><a href="http://bl.ocks.org/4060954"><img src="http://d3js.org/ex/stream.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Sunburst<br><a href="http://mbostock.github.com/d3/ex/sunburst.html"><img src="http://d3js.org/ex/sunburst.png" width="202"></a></td>
-    <td>Node-Link Tree<br><a href="http://mbostock.github.com/d3/ex/tree.html"><img src="http://d3js.org/ex/tree.png" width="202"></a></td>
-    <td>Treemap<br><a href="http://mbostock.github.com/d3/ex/treemap.html"><img src="http://d3js.org/ex/treemap.png" width="202"></a></td>
+    <td>Sunburst<br><a href="http://bl.ocks.org/4063423"><img src="http://d3js.org/ex/sunburst.png" width="202"></a></td>
+    <td>Node-Link Tree<br><a href="http://bl.ocks.org/4063550"><img src="http://d3js.org/ex/tree.png" width="202"></a></td>
+    <td>Treemap<br><a href="http://bl.ocks.org/4063582"><img src="http://d3js.org/ex/treemap.png" width="202"></a></td>
     <td>Voronoi Diagram<br><a href="http://bl.ocks.org/4060366"><img src="http://d3js.org/ex/voronoi.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
@@ -429,7 +429,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Choropleth classification systems](http://gabrielflor.it/)
 * [Choropleth with interactive parameters for NYC data visualization](http://code.leakingalpha.com/visionyc/), [code](https://github.com/kpeng/visionyc)
 * [Mercator](http://bl.ocks.org/1653763) and [Albers](http://bl.ocks.org/2005817) to Orthographic Projection
-* [Non-Contiguous Cartogram](http://mbostock.github.com/d3/ex/cartogram.html)
+* [Non-Contiguous Cartogram](http://bl.ocks.org/4055908)
 * [Flows of refugees between the world countries in 2008](http://bl.ocks.org/2209220)
 * [Interactive azimuthal projection simulating a 3D earth with stars] (http://marcneuwirth.com/blog/2012/06/24/creating-the-earth-with-d3-js/)
 * [Calculating quadtree bounding boxes and displaying them in leaflet](http://calvinmetcalf.github.com/k3/)
