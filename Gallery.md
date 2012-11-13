@@ -400,6 +400,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Simple table](http://jsfiddle.net/christopheviau/v6VMf/)
 * [Legend](http://bl.ocks.org/3918369)
 * [Dc.js](http://nickqizhu.github.com/dc.js/)
+* [Simple Reusable Bar Chart](http://jsfiddle.net/johnwun/8hSGP/)
 
 
 #### Useful snippets
