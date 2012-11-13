@@ -420,6 +420,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Export to SVG/PNG/PDF server-side using Perl](http://d3export.cancan.cshl.edu/)
 * [Constraint relaxation 1](http://bl.ocks.org/4053096)[and 2](http://bl.ocks.org/4054247)
 * [Custom Path and Area Generator](http://bl.ocks.org/4047002)
+* [Axis Examples](http://bl.ocks.org/3605124)
 
 #### Maps
 
