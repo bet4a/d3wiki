@@ -267,89 +267,127 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [At the National Conventions, the Words They Used](http://www.nytimes.com/interactive/2012/09/06/us/politics/convention-word-counts.html)
 * [Drought Extends, Crops Wither](http://www.nytimes.com/interactive/2012/08/24/us/drought-crops.html)
 
-### Concepts & Techniques
+### Charts and Chart Components
 
-#### Charts and Chart Components
+#### Bar Chart
 
-* [Axis Component](http://bl.ocks.org/1166403)
-* [Date Ticks](http://bl.ocks.org/1071269)
-* [Venn Diagram using Clipping](http://bl.ocks.org/1067636)
-* [Venn Diagram using Opacity](http://bl.ocks.org/1067616)
-* [Marimekko Chart](http://bl.ocks.org/1005090)
-* [Fixed-width Histogram, Irwin–Hall distribution](http://bl.ocks.org/3048450)
-* [Fixed-width Histogram of Durations, log-normal distribution](http://bl.ocks.org/3048166)
-* [Variable-width Histogram](http://bl.ocks.org/1624660)
-* [Histogram Chart](http://bl.ocks.org/1933560)
+* [Hierarchical Bar Chart](http://bl.ocks.org/1283663)
 * [Grouped Bar Chart](http://bl.ocks.org/882152) ([alternative example](http://bl.ocks.org/1351113))
 * [Stacked Bar Chart](http://bl.ocks.org/1134768)
 * [Reorderable Stacked Bar Chart](http://bl.ocks.org/1327441)
+
+#### Histogram
+
+* [Histogram Chart](http://bl.ocks.org/1933560)
+* [Fixed-width Histogram, Irwin–Hall distribution](http://bl.ocks.org/3048450)
+* [Fixed-width Histogram of Durations, log-normal distribution](http://bl.ocks.org/3048166)
+* [Variable-width Histogram](http://bl.ocks.org/1624660)
+
+#### Line and Area Chart
+
+* [Axis Component](http://bl.ocks.org/1166403)
 * [Small Multiples](http://bl.ocks.org/1157787)
+* [[Sparklines|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
+* [Interactive Line Graph](http://benjchristensen.com/2012/05/15/interactive-line-graph-using-d3-js/)
+* [Dual scale line chart](http://benjchristensen.com/2012/05/02/line-graphs-using-d3-js/)
+* [Horizon Chart](http://bl.ocks.org/1483226)
+* [Line Chart with tooltips](http://bl.ocks.org/1629644)
+* [Stacked layout with time axis](http://bl.ocks.org/1314483)
+* [Multiple Area Charts with D3.JS](http://tympanus.net/codrops/2012/08/29/multiple-area-charts-with-d3-js/)
+
+#### Pie Chart
+
 * [Pie Multiples](http://bl.ocks.org/1305111) / [Pie Multiples with Nesting](http://bl.ocks.org/1305337)
 * [Pie Chart Updating (Part 1)](http://bl.ocks.org/1346395) [(Part 2)](http://bl.ocks.org/1346410)
-* [[Sparklines|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
-* [[Interactive Line Graph|http://benjchristensen.com/2012/05/15/interactive-line-graph-using-d3-js/]]
-* [Dual scale line chart](http://benjchristensen.com/2012/05/02/line-graphs-using-d3-js/)
-* [[Scatterplot and Heatmap|http://jsfiddle.net/indiemaps/gzPDU/]]
-* [[Animated Sankey Diagram (alluvial)|http://nickrabinowitz.com/projects/d3/alluvial/alluvial-dynamic.html]]
+
+#### Scatterplot and Bubble chart
+
+* [Scatterplot for K-Means clustering visualization](http://www.ericbullington.com/articles/2012/01/31/kmeans-visualization)
+* [Animated bubble charts for school data analysis](http://slodge.com/teach/)
+* [Scatterplot and Heatmap](http://jsfiddle.net/indiemaps/gzPDU/)
+
+#### Parallel Coordinates, Parallel sets and Sankey
+
+* [Animated Sankey Diagram (alluvial)](http://nickrabinowitz.com/projects/d3/alluvial/alluvial-dynamic.html)
 * [Sankey diagram with cycles](http://bl.ocks.org/3921009)
 * [Parallel Coordinates](http://bl.ocks.org/1341281)
 * [Parallel coordinates with fisheye distortion](http://bl.ocks.org/3290263)
 * [Parallel Sets](http://www.jasondavies.com/parallel-sets/)
 * [Parallel Sets with reorderable heading](http://www.theage.com.au/national/parsets)
-* [Horizon Chart](http://bl.ocks.org/1483226)
-* [Gauge](http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html)
-* [Line Chart with tooltips](http://bl.ocks.org/1629644)
-* [Chernoff faces](http://bl.ocks.org/2011590) and [Chernoff faces example: happy planet index](http://www.larsko.org/v/hpi/)
-* [Swimlane Chart](http://bl.ocks.org/1962173)
-* [Stacked layout with time axis](http://bl.ocks.org/1314483)
-* [Animated bubble charts for school data analysis](http://slodge.com/teach/)
-* [Pictograms](http://bl.ocks.org/2280295)
-* [Scatterplot for K-Means clustering visualization](http://www.ericbullington.com/articles/2012/01/31/kmeans-visualization)
-* [Smoke charts](http://dyninc.github.com/d3-smokechart/) and [source code](https://github.com/dyninc/d3-smokechart)
-* [Multiple Area Charts with D3.JS](http://tympanus.net/codrops/2012/08/29/multiple-area-charts-with-d3-js/)
-* [Sankey Diagram with Overlap](http://bl.ocks.org/d/3779574/)
 
-#### Trees and Graphs
+#### Sunburst and Partition layout
 
-* [Dependency Chord Diagram](http://bl.ocks.org/1046712)
-* [Chord Layout Transitions](http://fleetinbeing.net/d3e/chord.html)
-* [Hierarchical Edge Bundling](http://bl.ocks.org/1044242)
-* [Hierarchical Bar Chart](http://bl.ocks.org/1283663)
-* [Partition Layout (Zoomable Icicle)](http://bl.ocks.org/1005873)
-* [Tree Layout (Animated)](http://bl.ocks.org/999346)
-* [Tree Layout (Collapsible)](http://bl.ocks.org/1061834)
-* [Tree Layout (Collapsible, with Labels)](http://bl.ocks.org/1249394)
-* [Treemap Layout in SVG](http://bl.ocks.org/972398)
 * [Sunburst Layout with Labels](http://bl.ocks.org/910126)
 * [Sunburst: Coffee Flavour Wheel](http://www.jasondavies.com/coffee-wheel/)
-* [Indented Tree (Collapsible)](http://bl.ocks.org/1093025)
-* [Force Layout with Symbols](http://bl.ocks.org/1062383)
-* [Force Layout with Custom Forces](http://bl.ocks.org/1021841)
-* [Force Layout with Multiple Foci](http://bl.ocks.org/1021953)
-* [Force Layout multi foci with Convex Hulls](http://bl.ocks.org/2920551)
-* [Force Layout with Images and Labels](http://bl.ocks.org/950642)
-* [Force Layout with drag and drop support to set nodes to fixed position when dropped](http://bl.ocks.org/2883411)
-* [Force Layout (Interactive Construction)](http://bl.ocks.org/929623)
-* [Force Layout (Collapsible Hierarchy)](http://bl.ocks.org/1062288)
-* [Force Layout from XML](http://bl.ocks.org/1080941)
-* [Force Layout from Matrix Market format](http://bl.ocks.org/2846454)
-* [Force Layout with Directed Edges (Curves and Arrow Markers)](http://bl.ocks.org/1153292)
+* [Partition Layout (Zoomable Icicle)](http://bl.ocks.org/1005873)
+
+#### Force Layout
+
+* [Symbols](http://bl.ocks.org/1062383)
+* [Custom Forces](http://bl.ocks.org/1021841)
+* [Multiple Foci](http://bl.ocks.org/1021953)
+* [Multi Foci with Convex Hulls](http://bl.ocks.org/2920551)
+* [Images and Labels](http://bl.ocks.org/950642)
+* [Drag and Drop Support to set nodes to fixed position when dropped](http://bl.ocks.org/2883411)
+* [Interactive Construction](http://bl.ocks.org/929623)
+* [Collapsible Hierarchy](http://bl.ocks.org/1062288)
+* [From XML](http://bl.ocks.org/1080941)
+* [From Matrix Market format](http://bl.ocks.org/2846454)
+* [Directed Edges (Curves and Arrow Markers)](http://bl.ocks.org/1153292)
 * [Bounded Force Layout](http://bl.ocks.org/1129492)
+* [Force-Based Label Placement](http://bl.ocks.org/1377729)
+* [Groups and Labels showing relations of football players participating in Euro 2012](http://www.torlaune.de/euro-2012/spieler-relationen/)
+* [Chicago Lobbyists](http://www.christophermanning.org/projects/chicago-lobbyists-force-directed-graph-visualization/)
+
+#### Tree
+
 * [Building a tree diagram](http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/)
 * [Reveal animation on a tree with a clip path](http://blog.pixelingene.com/2011/08/progressive-reveal-animations-in-svg-using-a-svgclippath/)
-* [Force-Based Label Placement](http://bl.ocks.org/1377729)
-* [Visualizing a network with Cypher and d3.js](http://maxdemarzi.com/2012/02/13/visualizing-a-network-with-cypher/)
+* [Collpase/expand nodes of a tree](http://jsfiddle.net/murray_3/5q62y/8/)
+* [Pedigree Tree](http://bl.ocks.org/2966094)
+* [Animated](http://bl.ocks.org/999346)
+* [Collapsible](http://bl.ocks.org/1061834)
+* [Collapsible, with Labels](http://bl.ocks.org/1249394)
+* [Indented Tree (Collapsible)](http://bl.ocks.org/1093025)
+
+#### Misc Trees and Graphs
+
 * [Connections in time](http://maxdemarzi.com/2012/03/08/connections-in-time/)
 * [Voronoi Diagram with Force Directed Nodes and Delaunay Links](http://www.christophermanning.org/projects/voronoi-diagram-with-force-directed-nodes-and-delaunay-links/)
 * [Building Cubic Hamiltonian Graphs from LCF Notation](http://www.christophermanning.org/projects/building-cubic-hamiltonian-graphs-from-lcf-notation/)
-* [Chicago Lobbyists Force-Directed Graph Visualization](http://www.christophermanning.org/projects/chicago-lobbyists-force-directed-graph-visualization/)
 * [Circular tree. Will your team win the NCAA Tournament?](http://thepowerrank.com/visual/NCAA_Tournament_Predictions)
 * [Bracket Layout](http://blockses.appspot.com/2503502)
-* [Force Layout with Groups and Labels showing relations of football players participating in Euro 2012](http://www.torlaune.de/euro-2012/spieler-relationen/)
-* [Pedigree Tree](http://bl.ocks.org/2966094)
-* [Chord layout of football passes](http://www.tips-for-excel.com/MCFC/Passes.html)
 * [SCION simulation environment](http://bit.ly/PvWgUH)
-* [Collpase/expand nodes of a tree](http://jsfiddle.net/murray_3/5q62y/8/)
+* [Treemap Layout in SVG](http://bl.ocks.org/972398)
+
+#### Chord Layout (Circular Network)
+
+* [Football passes](http://www.tips-for-excel.com/MCFC/Passes.html)
+* [Selecties EK 2012](http://www.nu.nl/files/datajournalistiek/ek/ek2012.htm#.UKJ5yuOe8ww)
+* [Remittance flows] (http://www.torre.nl/remittances/)
+* [Dependencies Between Classes](http://bl.ocks.org/1046712)
+* [Uber Rides by Neighborhood](http://bost.ocks.org/mike/uberdata/)
+* [Updating data](http://exposedata.com/tutorial/chord/latest.html)
+* [Updating data](http://fleetinbeing.net/d3e/chord.html)
+* [Fade on Hover](http://livecoding.io/3419309)
+* [Fade on Hover](http://bl.ocks.org/4062006)
+* [Fade on Hover](http://www.javainc.com/projects/dex/examples/vis/d3/presidents/presidentPartyChord.html)
+* [Static] (http://bl.ocks.org/1046712)
+* [Static] (http://bl.ocks.org/1308257)
+* [Chord Layout Transitions](http://fleetinbeing.net/d3e/chord.html)
+
+#### Misc Charts
+
+* [Venn Diagram using Clipping](http://bl.ocks.org/1067636)
+* [Venn Diagram using Opacity](http://bl.ocks.org/1067616)
+* [Marimekko Chart](http://bl.ocks.org/1005090)
+* [Gauge](http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html)
+* [Chernoff faces](http://bl.ocks.org/2011590) and [Chernoff faces example: happy planet index](http://www.larsko.org/v/hpi/)
+* [Swimlane Chart](http://bl.ocks.org/1962173)
+* [Pictograms](http://bl.ocks.org/2280295)
+* [Smoke charts](http://dyninc.github.com/d3-smokechart/) and [source code](https://github.com/dyninc/d3-smokechart)
+* [Sankey Diagram with Overlap](http://bl.ocks.org/d/3779574/)
+* [Hierarchical Edge Bundling](http://bl.ocks.org/1044242)
 
 #### Miscellaneous visualizations
 
@@ -402,9 +440,9 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Polygonal Lasso Selection](http://bl.ocks.org/3732612)
 * [Floor Plan Map](http://dciarletta.github.com/d3-floorplan/)
 
-
 #### Useful snippets
 
+* [Date Ticks](http://bl.ocks.org/1071269)
 * [Masking with external svg elements](http://bl.ocks.org/1503463)
 * [PJAX](http://bl.ocks.org/1367999)
 * [Table Sorting](http://bl.ocks.org/1226718)
@@ -470,6 +508,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Visualising ConAir Data With Cubism.js (Arduino, TempoDB, Sinatra)](http://sammyd.github.com/blog/2012/09/16/visualising-conair-data-with-cubism-dot-js/)
 * [Render Geographic Information in 3D With Three.js and D3.js](http://css.dzone.com/articles/render-geographic-information)
 * (D3 heatmap using Backbone.js and CoffeeScript)[http://bl.ocks.org/2759731]
+* [Visualizing a network with Cypher and d3.js](http://maxdemarzi.com/2012/02/13/visualizing-a-network-with-cypher/)
 
 #### Online Editors
 
