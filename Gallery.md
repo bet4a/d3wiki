@@ -431,7 +431,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Chernoff faces, Fisheye, Geodesic grid, Hive plot, Horizon chart, Sankey diagram, ](https://github.com/d3/d3-plugins)
 * [Parallel Sets](https://github.com/jasondavies/d3-parsets)
 * [Word Cloud](https://github.com/jasondavies/d3-cloud/blob/master/d3.layout.cloud.js)
-* [NVD3 (mirror)](https://github.com/biovisualize/nvd3)
+* [NVD3 (mirror)](http://nvd3.github.com/nvd3/)
 * [MathJax label](http://bl.ocks.org/3391642)
 * [Simple table](http://jsfiddle.net/christopheviau/v6VMf/)
 * [Legend](http://bl.ocks.org/3918369)
@@ -535,7 +535,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Cubism.js: Time Series Visualization](http://square.github.com/cubism/)
 * [Rickshaw: JavaScript toolkit for creating interactive real-time graphs](https://github.com/shutterstock/rickshaw)
 * [Dynamic Visualization LEGO](https://github.com/vogievetsky/DVL)
-* [NVD3: Reusable charts (mirror)](https://github.com/biovisualize/nvd3)
+* [NVD3: Reusable charts (mirror)](http://nvd3.github.com/nvd3/)
 
 ### Wish List
 
