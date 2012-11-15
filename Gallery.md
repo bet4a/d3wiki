@@ -507,7 +507,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [D3 graphics in a Pergola SVG UI] (http://www.dotuscomus.com/pergola/pergola_1.4.0/ExamplesHTML/D3/multiD3.html)
 * [Visualising ConAir Data With Cubism.js (Arduino, TempoDB, Sinatra)](http://sammyd.github.com/blog/2012/09/16/visualising-conair-data-with-cubism-dot-js/)
 * [Render Geographic Information in 3D With Three.js and D3.js](http://css.dzone.com/articles/render-geographic-information)
-* (D3 heatmap using Backbone.js and CoffeeScript)[http://bl.ocks.org/2759731]
+* [D3 heatmap using Backbone.js and CoffeeScript](http://bl.ocks.org/2759731)
 * [Visualizing a network with Cypher and d3.js](http://maxdemarzi.com/2012/02/13/visualizing-a-network-with-cypher/)
 
 #### Online Editors
@@ -523,7 +523,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Cube: Time Series Data Collection & Analysis](http://square.github.com/cube/)
 * [Fast Multidimensional Filtering for Coordinated Views](http://square.github.com/tesseract/)
 * [Polychart: A browser-based platform for exploring data and creating charts](http://polychart.com/)
-* [Plot.io: Data Visualization made Fast, Fun and Easy](http://www.plot.io/)
+* [Plot.io (swallowed by Platfora)](http://plot.io/)
 * [Chart.io: The Easiest Business Dashboard You'll Ever Use](http://chart.io/)
 * [Trisul Network Analytic](http://trisul.org/)
 * [Explore Analytics: cloud-based data analytics and visualization](http://exploreanalytics.com/)
