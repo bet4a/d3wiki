@@ -24,6 +24,7 @@ Please feel free to add links to your work!
 * [Creating Animations and Transitions With D3](http://blog.visual.ly/creating-animations-and-transitions-with-d3-js/) - Jerome Cukier
 * [Introduction to D3](http://thecodingtutorials.blogspot.com/2012/07/introduction-to-d3.html) and [more tutorials](http://thecodingtutorials.blogspot.com/search/label/D3) - Andrew Davis
 * [d3 O'Clock: Building a Virtual Analog Clock with d3.js (Part I)](http://www.ericbullington.com/articles/2012/10/27/d3-oclock) - Eric S. Bullington
+* [How to Make an Interactive Network Visualization](http://flowingdata.com/2012/08/02/how-to-make-an-interactive-network-visualization/) - Jim Vallandingham
 
 ### Specific Techniques
 
