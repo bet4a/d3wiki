@@ -541,6 +541,7 @@ http://www.jasondavies.com/
 * [Calculating quadtree bounding boxes and displaying them in leaflet](http://calvinmetcalf.github.com/k3/)
 * [Projection Transitions](http://bl.ocks.org/3711652) and [Comparing Map Projections](http://bl.ocks.org/3711245)
 * [Composite Map Projection](http://cartography.oregonstate.edu/demos/CompositeMapProjection/)
+* [World Boundaries TopoJSON](http://bl.ocks.org/4091835)
 
 ### Tools
 
