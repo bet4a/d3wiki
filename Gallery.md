@@ -423,6 +423,8 @@ http://www.jasondavies.com/
 * [Bracket Layout](http://blockses.appspot.com/2503502)
 * [SCION simulation environment](http://bit.ly/PvWgUH)
 * [Treemap Layout in SVG](http://bl.ocks.org/972398)
+* [Circular tree of d3 src using burrow() for recursive nesting](http://bl.ocks.org/4092944)
+* [Circular tree comparing the src directory for three versions of d3](http://bl.ocks.org/4092944)
 
 #### Chord Layout (Circular Network)
 
