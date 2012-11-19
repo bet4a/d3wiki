@@ -265,7 +265,7 @@ If *value* is not specified, returns the bound datum for the first non-null elem
 
 Note: this method was previously called "map". The old name is deprecated.
 
-The `datum` method is useful for accessing HTML5 [custom data attributes](http://www.w3.org/TR/html5/elements.html#custom-data-attribute) with D3. For example, given the following elements:
+The `datum` method is useful for accessing HTML5 [custom data attributes](http://www.w3.org/TR/html5/global-attributes.html#custom-data-attribute) with D3. For example, given the following elements:
 
 ```html
 <ul id="list">
@@ -274,7 +274,7 @@ The `datum` method is useful for accessing HTML5 [custom data attributes](http:/
 </ul>
 ```
 
-You can expose the custom data attributes to D3 by setting each element’s data as the built-in [dataset](http://www.w3.org/TR/html5/elements.html#dom-dataset) property:
+You can expose the custom data attributes to D3 by setting each element’s data as the built-in [dataset](http://www.w3.org/TR/html5/global-attributes.html#dom-dataset) property:
 
 ```javascript
 selection.datum(function() { return this.dataset; })
