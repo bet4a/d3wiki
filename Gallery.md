@@ -500,7 +500,7 @@ http://www.jasondavies.com/
 * [Chernoff faces, Fisheye, Geodesic grid, Hive plot, Horizon chart, Sankey diagram, ](https://github.com/d3/d3-plugins)
 * [Parallel Sets](https://github.com/jasondavies/d3-parsets)
 * [Word Cloud](https://github.com/jasondavies/d3-cloud/blob/master/d3.layout.cloud.js)
-* [NVD3 (mirror)](http://nvd3.github.com/nvd3/)
+* [NVD3 (mirror)](https://github.com/biovisualize/nvd3)
 * [MathJax label](http://bl.ocks.org/3391642)
 * [Simple table](http://jsfiddle.net/christopheviau/v6VMf/)
 * [Legend](http://bl.ocks.org/3918369)
@@ -508,6 +508,8 @@ http://www.jasondavies.com/
 * [Simple Reusable Bar Chart](http://jsfiddle.net/johnwun/8hSGP/)
 * [Polygonal Lasso Selection](http://bl.ocks.org/3732612)
 * [Floor Plan Map](http://dciarletta.github.com/d3-floorplan/)
+* [Streamgraph](http://bl.ocks.org/1935509) an [Interactive version](http://bl.ocks.org/1963983)
+* [Histogram](http://bl.ocks.org/1933560)
 
 #### Useful snippets
 
@@ -605,7 +607,6 @@ http://www.jasondavies.com/
 * [Cubism.js: Time Series Visualization](http://square.github.com/cubism/)
 * [Rickshaw: JavaScript toolkit for creating interactive real-time graphs](https://github.com/shutterstock/rickshaw)
 * [Dynamic Visualization LEGO](https://github.com/vogievetsky/DVL)
-* [NVD3: Reusable charts (mirror)](http://nvd3.github.com/nvd3/)
 
 ### Wish List
 
