@@ -249,6 +249,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Places in the Game of Thrones](http://www.jeromecukier.net/projects/agot/places.html) - Jérôme Cukier
 * [A Visit From The Goon Squad - Interactive Character Map](http://www.filosophy.org/projects/goonsquad/) - Filip Zembowicz
 * [Twitter Influencer Visualization](http://www.influencermoth.com/) - Erik Driessen
+* [Chicago Ward Remap Outlines](http://www.christophermanning.org/projects/chicago-ward-remap-outlines/) - Christopher Manning
+* [Minute: record of all of my keystrokes](http://macwright.org/minute/) - Tom MacWright
 
 ### Collections
 
@@ -454,6 +456,7 @@ http://www.jasondavies.com/
 * [Smoke charts](http://dyninc.github.com/d3-smokechart/) and [source code](https://github.com/dyninc/d3-smokechart)
 * [Sankey Diagram with Overlap](http://bl.ocks.org/d/3779574/)
 * [Hierarchical Edge Bundling](http://bl.ocks.org/1044242)
+* [Spiral for John Hunter](http://bl.ocks.org/3543186)
 
 #### Miscellaneous visualizations
 
