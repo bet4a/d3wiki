@@ -550,6 +550,7 @@ http://www.jasondavies.com/
 * [Projection Transitions](http://bl.ocks.org/3711652) and [Comparing Map Projections](http://bl.ocks.org/3711245)
 * [Composite Map Projection](http://cartography.oregonstate.edu/demos/CompositeMapProjection/)
 * [World Boundaries TopoJSON](http://bl.ocks.org/4091835)
+* [Mapbox: add vector features to your map with D3](http://mapbox.com/mapbox.js/example/vectors-with-d3/)
 
 ### Tools
 
