@@ -531,6 +531,7 @@ http://www.jasondavies.com/
 * [Custom Path and Area Generator](http://bl.ocks.org/4047002)
 * [Axis Examples](http://bl.ocks.org/3605124)
 * [Loading Adobe Photoshop ASE color palette](http://bl.ocks.org/3173233)
+* [Render sever-side using Phantomjs](http://jsfiddle.net/shawnbot/BJLe6/)
 
 #### Maps
 
@@ -583,6 +584,7 @@ http://www.jasondavies.com/
 * [Render Geographic Information in 3D With Three.js and D3.js](http://css.dzone.com/articles/render-geographic-information)
 * [D3 heatmap using Backbone.js and CoffeeScript](http://bl.ocks.org/2759731)
 * [Visualizing a network with Cypher and d3.js](http://maxdemarzi.com/2012/02/13/visualizing-a-network-with-cypher/)
+* [ggplot2 + d3 = r2d3](https://github.com/hadley/r2d3)
 
 #### Online Editors
 
