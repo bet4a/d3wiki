@@ -494,6 +494,7 @@ http://www.jasondavies.com/
 * [Dataflow programming with D3 and Blockly](http://bollwyvl.github.com/blockd3/)
 * [XKCD-style plots](http://dan.iel.fm/xkcd/)
 * [Violin: Instrumenting JavaScript](http://latentflip.github.com/violin/)
+* [Rotating hypercube in orthogonal projection and parallel coordinates](http://exposedata.com/hypercube/rotate/)
 
 #### Charts using the [reusable API](http://bost.ocks.org/mike/chart/)
 
