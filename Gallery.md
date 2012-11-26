@@ -334,6 +334,21 @@ http://www.jasondavies.com/
 * [Tübingen](http://www.jasondavies.com/tuebingen/)
 * [American Forces in Afghanistan and Iraq](http://www.jasondavies.com/american-forces-in-afghanistan-and-iraq/)
 
+#### Jim Vallandingham
+http://vallandingham.me/vis/
+* [How to Make an Interactive Network Visualization](http://flowingdata.com/2012/08/02/how-to-make-an-interactive-network-visualization/)
+* [Word Frequency Bubble Clouds](http://vallandingham.me/bubble_cloud/)
+* [Animated Bubble Chart of Gates Educational Donations](http://vallandingham.me/vis/gates/)
+* [Stowers Group Collaboration Network](http://stowers.org/stowersreport/maps)
+* [GSA-Leased Opportunity Dashboard](http://www.capitolmarkets.com/gsa-leased-investment-opportunity/)
+* [Feltronifier](http://vallandingham.me/feltronifier/)
+* [We're In The Money: How Much Do The Movies We Love Make?](http://vallandingham.me/vis/movie)
+* [Visualizing The Racial Divide](http://vallandingham.me/vis/racial_divide.html)
+* [Composition of Church Membership by State: 1890](http://vallandingham.me/vis/church_by_state.html)
+* [Proportion of Foreign Born in Large Cities: 1900](http://vallandingham.me/vis/nationality_by_city.html)
+* [http://vallandingham.me/vis/jobs_by_state.html](http://vallandingham.me/vis/jobs_by_state.html)
+* [License Usage Dashboard](http://vallandingham.me/vis/matlab_license.html)
+
 ### Charts and Chart Components
 
 #### Bar Chart
