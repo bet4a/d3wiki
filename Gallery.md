@@ -252,6 +252,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Twitter Influencer Visualization](http://www.influencermoth.com/) - Erik Driessen
 * [Chicago Ward Remap Outlines](http://www.christophermanning.org/projects/chicago-ward-remap-outlines/) - Christopher Manning
 * [Minute: record of all of my keystrokes](http://macwright.org/minute/) - Tom MacWright
+* [Olympic Medal Rivalry](http://blog.new-bamboo.co.uk/2012/06/22/olympic-medal-rivalry) - Makoto Inoue
 
 ### Collections
 
