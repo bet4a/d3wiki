@@ -444,6 +444,7 @@ http://www.jasondavies.com/
 * [Static] (http://bl.ocks.org/1046712)
 * [Static] (http://bl.ocks.org/1308257)
 * [Chord Layout Transitions](http://fleetinbeing.net/d3e/chord.html)
+* [Co-Authors Chords] (http://www.rjbaxley.com/p/publications.html)
 
 #### Misc Charts
 
