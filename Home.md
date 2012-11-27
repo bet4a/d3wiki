@@ -48,4 +48,4 @@ Next, from the root directory of this repository, install D3's dependencies:
 
 To run the tests, use:
 
-    make test
+    npm test
