@@ -168,13 +168,13 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 
 ## Examples
 
+* [Visualizing opinons around the world (zoomable world map and interactive pie chart)](http://theartofasking.com/question/wjucdg6k) - Siamac Fazli, Bastian Venthur
 * [Running Away Balloons - simple game ](http://astekfoto.blogspot.be/2012/11/running-away-ballons.html) - Astek
 * [Visualizing word density in the Bible](http://stanford.edu/~garylee/bibly) - Gary Lee
 * [Election 2012 Social Dashboard (interactive Twitter visualization)] (http://events.current.com/social_dashboard) - Current TV
 * [Visualizing document similarity over time](http://www.davidmasad.com/sandbox/FirmClusters.html)
 * [Drought during Month](http://bost.ocks.org/mike/drought/)
 * [Interactive Publication History](http://www.cs.umd.edu/~bederson/papers/index.html) - Ben Bederson
-* [Visualizing the World's Opinion (Zoomable Worldmap and Pie Chart)](http://theartofasking.com/question/wjucdg6k)
 * [Visualizing Networks with Hive Plots](http://bost.ocks.org/mike/hive/)
 * [The Wealth & Health of Nations](http://bost.ocks.org/mike/nations/)
 * [Bézier Curves](http://www.jasondavies.com/animated-bezier/), [Collatz Graph](http://www.jasondavies.com/collatz-graph/), [Word Cloud](http://www.jasondavies.com/wordcloud/) and many [Mathematical Visualisations](http://www.jasondavies.com/toys/) - Jason Davies
