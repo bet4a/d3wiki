@@ -270,6 +270,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [512 Paths to the White House](http://www.nytimes.com/interactive/2012/11/02/us/politics/paths-to-the-white-house.html) and [design process](http://source.mozillaopennews.org/en-US/articles/nyts-512-paths-white-house/)
 * [At the National Conventions, the Words They Used](http://www.nytimes.com/interactive/2012/09/06/us/politics/convention-word-counts.html)
 * [Drought Extends, Crops Wither](http://www.nytimes.com/interactive/2012/08/24/us/drought-crops.html)
+* [How Obama Won Re-election](http://www.nytimes.com/interactive/2012/11/07/us/politics/obamas-diverse-base-of-support.html)
 
 #### Jerome Cukier
 http://www.jeromecukier.net/projects/models/models.html
