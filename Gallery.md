@@ -397,6 +397,7 @@ http://vallandingham.me/vis/
 * [Parallel coordinates with fisheye distortion](http://bl.ocks.org/3290263)
 * [Parallel Sets](http://www.jasondavies.com/parallel-sets/)
 * [Parallel Sets with reorderable heading](http://www.theage.com.au/national/parsets)
+* [Pair Contribution and Selection](http://bl.ocks.org/4168921) - Jesse Heitler
 
 #### Sunburst and Partition layout
 
