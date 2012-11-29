@@ -59,7 +59,7 @@ Then, if you wanted to add a tooltip for each layer, you might say:
 svg.selectAll("path")
     .data(stack(layers))
   .enter().append("path")
-    .attr("d", area)
+    .attr("d", function(d) { return area(d.values); })
   .append("title")
     .text(function(d) { return d.name; });
 ```
