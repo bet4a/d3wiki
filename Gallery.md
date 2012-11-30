@@ -616,6 +616,7 @@ http://vallandingham.me/vis/
 
 #### Products
 
+* [Bitdeli: Custom analytics with Python and GitHub](https://bitdeli.com/)
 * [Cube: Time Series Data Collection & Analysis](http://square.github.com/cube/)
 * [Fast Multidimensional Filtering for Coordinated Views](http://square.github.com/tesseract/)
 * [Polychart: A browser-based platform for exploring data and creating charts](http://polychart.com/)
