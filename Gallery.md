@@ -605,6 +605,7 @@ http://vallandingham.me/vis/
 * [D3 heatmap using Backbone.js and CoffeeScript](http://bl.ocks.org/2759731)
 * [Visualizing a network with Cypher and d3.js](http://maxdemarzi.com/2012/02/13/visualizing-a-network-with-cypher/)
 * [ggplot2 + d3 = r2d3](https://github.com/hadley/r2d3)
+* [Using the D3.js Visualization Library with AngularJS](http://briantford.com/blog/angular-d3.html) - Brian Ford
 
 #### Online Editors
 
