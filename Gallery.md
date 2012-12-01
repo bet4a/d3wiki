@@ -521,7 +521,7 @@ http://vallandingham.me/vis/
 * [Chernoff faces, Fisheye, Geodesic grid, Hive plot, Horizon chart, Sankey diagram, ](https://github.com/d3/d3-plugins)
 * [Parallel Sets](https://github.com/jasondavies/d3-parsets)
 * [Word Cloud](https://github.com/jasondavies/d3-cloud/blob/master/d3.layout.cloud.js)
-* [NVD3 (mirror)](https://github.com/biovisualize/nvd3)
+* [NVD3](http://nvd3.org/)
 * [MathJax label](http://bl.ocks.org/3391642)
 * [Simple table](http://jsfiddle.net/christopheviau/v6VMf/)
 * [Legend](http://bl.ocks.org/3918369)
