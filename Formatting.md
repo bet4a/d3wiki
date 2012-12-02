@@ -52,7 +52,7 @@ Returns the value *x* rounded to *n* digits after the decimal point. If *n* is o
 
 <a name="d3_requote" href="Formatting#wiki-d3_requote">#</a> d3.<b>requote</b>(<i>string</i>)
 
-Returns an quoted (escaped) version of the specified *string* such that the string may be embedded in a regular expression as a string literal.
+Returns a quoted (escaped) version of the specified *string* such that the string may be embedded in a regular expression as a string literal.
 
 ## Dates
 
