@@ -362,6 +362,7 @@ http://vallandingham.me/vis/
 
 #### Histogram
 
+* [Reusable Interdependent Interactive Histograms](https://github.com/gajus/interdependent-interactive-histograms) ([demo](https://dev.anuary.com/703dff31-b9be-543f-b6c6-61ae7fb4dd32/))
 * [Histogram Chart](http://bl.ocks.org/1933560)
 * [Fixed-width Histogram, Irwin–Hall distribution](http://bl.ocks.org/3048450)
 * [Fixed-width Histogram of Durations, log-normal distribution](http://bl.ocks.org/3048166)
@@ -381,6 +382,7 @@ http://vallandingham.me/vis/
 
 #### Pie Chart
 
+* [Reusable Pie Charts](https://github.com/gajus/pie-chart) ([demo](https://dev.anuary.com/858b33b7-bd66-507b-a9f1-533e4de79ba3/))
 * [Pie Multiples](http://bl.ocks.org/1305111) / [Pie Multiples with Nesting](http://bl.ocks.org/1305337)
 * [Pie Chart Updating (Part 1)](http://bl.ocks.org/1346395) [(Part 2)](http://bl.ocks.org/1346410)
 
