@@ -587,12 +587,12 @@ http://vallandingham.me/vis/
 * [Backbone-D3](http://drsm79.github.com/Backbone-d3/index.html)
 * [Viewing OpenLearn Mindmaps Using d3.js](http://blog.ouseful.info/2012/05/11/viewing-openlearn-mindmaps-using-d3-js/)
 * [Splay Tree animation with dart, d3, and local storage](https://bitbucket.org/davidagraf/dartsplaytree/src)
-* [Sankey diagrams from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/sankey)
+* [Sankey diagrams from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/sankey) - Bruce McPherson
 * [Plotsk: A python/coffeescript/d3.js-based library for plotting data in a web browser] (https://github.com/davidcox/plotsk)
 * [Data visualization with D3.js and python](http://blog.nextgenetics.net/?e=7)
-* [d3.js force diagrams straight from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/anyforce)
+* [d3.js force diagrams straight from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/anyforce) - Bruce McPherson
 * [Instant interactive visualization with d3 + ggplot2](http://blog.echen.me/2012/03/05/instant-interactive-visualization-with-d3-and-ggplot2/)
-* [d3.js force diagrams with markers straight from Excel](http://excelramblings.blogspot.co.uk/2012/07/visualizing-system-integrations-using.html)
+* [d3.js force diagrams with markers straight from Excel](http://excelramblings.blogspot.co.uk/2012/07/visualizing-system-integrations-using.html) - Bruce McPherson
 * [Visualising a real-time DataSift feed with Node and D3.js](http://www.benh.co.uk/datasift/visualising-a-datasift-feed-with-node-and-d3/)
 * [Very limited, in-progress attempt to hook d3.js up to three.js](https://github.com/asutherland/d3-threeD)
 * [SVG to Canvas to PNG using Canvg](http://jsfiddle.net/plaliberte/HAXyd/)
@@ -608,7 +608,7 @@ http://vallandingham.me/vis/
 * [Visualizing a network with Cypher and d3.js](http://maxdemarzi.com/2012/02/13/visualizing-a-network-with-cypher/)
 * [ggplot2 + d3 = r2d3](https://github.com/hadley/r2d3)
 * [Using the D3.js Visualization Library with AngularJS](http://briantford.com/blog/angular-d3.html) - Brian Ford
-
+* [Zoomable Partition Charts directly from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/partition) - Bruce McPherson
 #### Online Editors
 
 * [Bar chart code generator and online editor](http://www.d3-generator.com/)
