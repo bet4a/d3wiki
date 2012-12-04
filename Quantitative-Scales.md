@@ -282,3 +282,27 @@ Returns the quantile thresholds. If the output range contains *n* discrete value
 <a name="quantile_copy" href="#wiki-quantile_copy">#</a> quantile.<b>copy</b>()
 
 Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
+
+## Threshold Scales
+
+Threshold scales are similar to quantize scales, except they allow you to map arbitrary subsets of the domain to discrete values in the range. The input domain is still continuous, and divided into slices based on a set of threshold values. The input domain is typically a dimension of the data that you want to visualize, such as the height of students (measured in meters) in a sample population. The output range is typically a dimension of the desired output visualization, such as a set of colors (represented as strings).
+
+<a name="threshold" href="#wiki-threshold">#</a> d3.scale.<b>threshold</b>()
+
+Constructs a new threshold scale with the default domain [.5] and the default range [0,1]. Thus, the default quantize scale is equivalent to the [[round|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/round]] function for numbers; for example threshold(0.49) returns 0, and threshold(0.51) returns 1.
+
+<a name="_threshold" href="#wiki-_threshold">#</a> <b>threshold</b>(<i>x</i>)
+
+Given a value *x* in the input domain, returns the corresponding value in the output range.
+
+<a name="threshold_domain" href="#wiki-threshold_domain">#</a> threshold.<b>domain</b>([<i>domain</i>])
+
+If *values* is specified, sets the scale's input domain to the specified array of values. The values must be in sorted ascending order, or the behavior of the scale is undefined. The values are typically numbers, but any naturally ordered values (such as strings) will work. Thus, a threshold scale can be used to encode any type that is ordered. If the number of values in the scale's range is N + 1, the number of values in the scale's domain must be N. If there are fewer than N elements in the domain, the additional values in the range are ignored. If there are more than N elements in the domain, the scale may return undefined for some inputs. If *values* is not specified, returns the scale's current input domain.
+
+<a name="threshold_range" href="#wiki-threshold_range">#</a> threshold.<b>range</b>([<i>values</i>])
+
+If *values* is specified, sets the scale's output range to the specified array of values. If the number of values in the scale's domain is N, the number of values in the scale's range must be N + 1. If there are fewer than N+1 elements in the range, the scale may return undefined for some inputs. If there are more than N + 1 elements in the range, the additional values are ignored. The elements in the given array need not be numbers; any value or type will work. If *values* is not specified, returns the scale's current output range.
+
+<a name="threshold_copy" href="#wiki-threshold_copy">#</a> threshold.<b>copy</b>()
+
+Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
