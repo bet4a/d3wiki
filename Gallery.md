@@ -117,8 +117,6 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>Trulia Trends<br><a href="http://trends.truliablog.com/2012/02/where-are-house-hunters-searching/"><img src="http://d3js.org/ex/house-map.png" width="202"></a></td>
     <td>Open Budget<br><a href="http://marcinignac.com/projects/open-budget/"><img src="http://d3js.org/ex/open-budget.png" width="202"></a></td>
     <td>Bederson Publications<br><a href="http://www.cs.umd.edu/~bederson/papers/index.html"><img src="http://d3js.org/ex/bederson-pubs.png" width="202"></a></td>
-    <td>SI Sportsman of the Year<br><a href="http://www.aragorn.org/sports_illustrated/sportsman_of_the_year/2012/explorer/"><img src="http://www.aragorn.org/sports_illustrated/sportsman_of_the_year/2012/explorer/aragorn_explorer_thumbnail.png" width="202"></a></td>
-  </tr>
 </table>
 
 ## Basic Charts
@@ -429,7 +427,6 @@ http://vallandingham.me/vis/
 * [Force-Based Label Placement](http://bl.ocks.org/1377729)
 * [Groups and Labels showing relations of football players participating in Euro 2012](http://www.torlaune.de/euro-2012/spieler-relationen/)
 * [Chicago Lobbyists](http://www.christophermanning.org/projects/chicago-lobbyists-force-directed-graph-visualization/)
-* [Sports Illustrated Sportsman of the Year Explorer](http://www.aragorn.org/sports_illustrated/sportsman_of_the_year/2012/explorer/)
 
 #### Tree
 
