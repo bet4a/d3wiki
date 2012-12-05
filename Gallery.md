@@ -610,6 +610,8 @@ http://vallandingham.me/vis/
 * [ggplot2 + d3 = r2d3](https://github.com/hadley/r2d3)
 * [Using the D3.js Visualization Library with AngularJS](http://briantford.com/blog/angular-d3.html) - Brian Ford
 * [Zoomable Partition Charts directly from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/partition) - Bruce McPherson
+* [SHEETSEE.JS: Fill up Websites with Stuff from Google Spreasheet](http://jllord.github.com/sheetsee.js/) -Jessica Lord
+
 #### Online Editors
 
 * [Bar chart code generator and online editor](http://www.d3-generator.com/)
