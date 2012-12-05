@@ -253,6 +253,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Chicago Ward Remap Outlines](http://www.christophermanning.org/projects/chicago-ward-remap-outlines/) - Christopher Manning
 * [Minute: record of all of my keystrokes](http://macwright.org/minute/) - Tom MacWright
 * [Olympic Medal Rivalry](http://blog.new-bamboo.co.uk/2012/06/22/olympic-medal-rivalry) - Makoto Inoue
+* [Visualizing U.S. Births and Deaths in Real-Time](http://nowherenearithaca.blogspot.com/2012/12/simulating-us-birthsdeaths-in-real-time.html) - Brad Flyon
 
 ### Collections
 
@@ -629,6 +630,7 @@ http://vallandingham.me/vis/
 * [Explore Analytics: cloud-based data analytics and visualization](http://exploreanalytics.com/)
 * [Meshu turns your places into beautiful objects.](http://meshu.io/)
 * [Reports for Simple](http://www.simple.com/blog/Simple/announcing-reports)
+* [Nodal is a fun way to view your GitHub network graph](http://nodal.me/login) - Jesse Vogt, Matt Stockton, and Kris Gösser
 
 #### Libraries
 
