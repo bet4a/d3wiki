@@ -427,6 +427,7 @@ http://vallandingham.me/vis/
 * [Force-Based Label Placement](http://bl.ocks.org/1377729)
 * [Groups and Labels showing relations of football players participating in Euro 2012](http://www.torlaune.de/euro-2012/spieler-relationen/)
 * [Chicago Lobbyists](http://www.christophermanning.org/projects/chicago-lobbyists-force-directed-graph-visualization/)
+* [Sports Illustrated Sportsman of the Year Explorer](http://www.aragorn.org/sports_illustrated/sportsman_of_the_year/2012/explorer/)
 
 #### Tree
 
