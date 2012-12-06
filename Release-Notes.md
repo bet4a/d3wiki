@@ -13,6 +13,7 @@ This is a placeholder for notes regarding the next major release of D3. If you w
 * Fix for d3.behavior.zoom to support easier programmatic zooming.
 * Fix for color interpolation.
 * Fix for quadratic performance of d3.timer.
+* Fix for right-hand rule with d3.geo.path and counterclockwise polygons.
 * Removed selection.map; replaced by selection.datum.
 * Removed d3.split; replaced by line.defined and area.defined.
 * Removed d3.first and d3.last; use d3.min and d3.max instead.
