@@ -4,7 +4,7 @@ Most changes to D3 are carefully designed to be backwards-compatible, which make
 
 ## Requests
 
-One of the first things you are likely to notice is that the d3.xhr callback interface has changed. In 2.x, you might have written code like this:
+One of the first things you are likely to notice is that the [d3.xhr](Requests) callback interface has changed. In 2.x, you might have written code like this:
 
 ```js
 d3.json("my-data.json", function(data) {
@@ -12,7 +12,7 @@ d3.json("my-data.json", function(data) {
 });
 ```
 
-In V3, the callback function takes an additional argument, `error`. If there is an error fetching the requested resource, then the error argument contains information that you can use to diagnose the problem or inform the user, such as whether the file is missing or the server is unavailable. The second argument contains the contents of the resource. So, the simplest fix is to change the callback signature:
+In 3.0, the callback function now takes an additional argument, `error`. If an error occurs fetching the requested resource, the error argument will contain information that you can use to diagnose the problem or inform the user, such as whether the file is missing or the server is unavailable. The second argument contains the contents of the resource, as before. So, the simplest fix is to add "error, " to your callback:
 
 ```js
 d3.json("my-data.json", function(error, data) {
@@ -20,7 +20,7 @@ d3.json("my-data.json", function(error, data) {
 });
 ```
 
-Of course, this code still ignores the error. You might prefer to handle errors gracefully:
+But this code still ignores the error, so you might prefer to handle errors gracefully:
 
 ```js
 d3.json("my-data.json", function(error, data) {
@@ -29,7 +29,7 @@ d3.json("my-data.json", function(error, data) {
 });
 ```
 
-The reason for this change is two-fold. First, it adopts the standard {error, result} asynchronous callback convention established by Node.js. This makes it familiar to many JavaScript developers, which makes the API easier to learn. Even better, it means you can use d3.xhr methods with helpers for asynchronous JavaScript, such as [Queue.js](https://github.com/mbostock/queue). For example, say you wanted to load two resources for a map visualization, a GeoJSON file "us-states.json", and a data file "us-state-populations.tsv". In 2.x, you probably would have loaded these serially by nesting callbacks:
+The reason for this change is two-fold. First, it adopts the standard {error, result} asynchronous callback convention established by Node.js. This makes it familiar to JavaScript developers. Better yet, it means you can use helpers for asynchronous JavaScript, such as [Queue.js](https://github.com/mbostock/queue). For example, say you wanted to load two resources for a map visualization, a GeoJSON file "us-states.json" and a data file "us-state-populations.tsv". In 2.x, you probably would have loaded these serially by nesting callbacks:
 
 ```js
 d3.json("us-states.json", function(states) {
@@ -39,7 +39,7 @@ d3.json("us-states.json", function(states) {
 });
 ```
 
-Loading resources serially is slow! It's better to parallelize those requests, which is now easy in 3.0:
+Loading resources serially is slow! It's better to parallelize those requests, which is now easy:
 
 ```js
 queue()
@@ -52,4 +52,10 @@ function ready(error, states, statePopulations) {
 }
 ```
 
-The other reason this change was made is to make it more obvious that these requests can fall. That first argument, error, is a nagging reminder that you might want to handle errors when loading resources by displaying a suitable notification to your users and perhaps retrying the request.
+The last reason this change was made is to make it more obvious that these requests can fall. That first argument, error, is a nagging reminder that you might want to handle errors when loading resources by displaying a suitable notification to your users or retrying the request. It also means you can now distinguish between a successfully-loaded JSON file that contains `null` and an error.
+
+## Transitions
+
+D3’s transition subsystem has been significantly overhauled for 3.0 to make it easier to construct complex sequences of transitions. In most cases, you’re not likely to notice any of these changes, despite being strictly backwards-incompatible. If you are using transitions extensively, I highly recommend reading my tutorial, [Working with Transitions](http://bost.ocks.org/mike/transition/).
+
+The first significant change is that [transition.attr](Transitions#wiki-attr), [transition.style](Transitions#wiki-style) and [transition.text](Transitions#wiki-text) now evaluate their property functions immediately. This makes them behave just like their selection equivalents. However, in 2.x, these functions were evaluated asynchronously when the transition started! While deferred evaluation is occasionally what you want, immediate evaluation is much easier to understand and debug. It also means that you can easily specify transitions that depend on external state, such as scale domains in [chained transitions of data and axes](http://bl.ocks.org/3903818).
