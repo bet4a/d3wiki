@@ -4,7 +4,7 @@ D3 3.0 is the first major release since 2.0 was released last August. Since 2.0.
 
 ## Requests
 
-One of the first things you are likely to notice is that the d3.xhr callback interface has changed. In V2, you would have written code like this:
+One of the first things you are likely to notice is that the d3.xhr callback interface has changed. In 2.x, you might have written code like this:
 
 ```js
 d3.json("my-data.json", function(data) {
