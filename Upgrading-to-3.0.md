@@ -54,7 +54,7 @@ The last reason this change was made is to make it more obvious that these reque
 
 ## Transitions
 
-D3’s transition subsystem has been significantly overhauled for 3.0 to make it easier to construct complex sequences of transitions. In most cases, you’re not likely to notice any of these changes, despite being strictly backwards-incompatible. If you are using transitions extensively, I highly recommend reading my tutorial, [Working with Transitions](http://bost.ocks.org/mike/transition/).
+D3’s transition subsystem has been significantly overhauled for 3.0 to make it easier to construct complex sequences of transitions. In most cases, you’re not likely to notice any of these changes, despite being strictly backwards-incompatible. If you _are_ using transitions extensively, I highly recommend reading [Working with Transitions](http://bost.ocks.org/mike/transition/).
 
 The first change is that **[transition.attr](Transitions#wiki-attr), [transition.style](Transitions#wiki-style) and [transition.text](Transitions#wiki-text) now evaluate their property functions immediately**. This makes them behave just like their selection equivalents. However, in 2.x, these functions were evaluated asynchronously when the transition started! While deferred evaluation is occasionally what you want, immediate evaluation is much easier to understand and debug. It also means that you can easily specify transitions that depend on external state, such as scale domains in [chained transitions of data and axes](http://bl.ocks.org/3903818).
 
