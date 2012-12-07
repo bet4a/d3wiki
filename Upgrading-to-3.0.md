@@ -27,7 +27,7 @@ d3.json("my-data.json", function(error, data) {
 });
 ```
 
-The reason for this change is two-fold. First, it adopts the standard {error, result} asynchronous callback convention established by Node.js. This makes it familiar to JavaScript developers. Better yet, it means you can use helpers for asynchronous JavaScript, such as [Queue.js](https://github.com/mbostock/queue). For example, say you wanted to load two resources for a map visualization, a GeoJSON file "us-states.json" and a data file "us-state-populations.tsv". In 2.x, you probably would have loaded these serially by nesting callbacks:
+The reason for this change is two-fold. First, it adopts the standard {error, result} asynchronous callback convention established by Node.js which makes it familiar to JavaScript developers. Better yet, it means you can use helpers for asynchronous JavaScript, such as [Queue.js](https://github.com/mbostock/queue). For example, say you wanted to load two resources for a map visualization, a GeoJSON file "us-states.json" and a data file "us-state-populations.tsv". In 2.x, you probably would have loaded these serially by nesting callbacks:
 
 ```js
 d3.json("us-states.json", function(states) {
