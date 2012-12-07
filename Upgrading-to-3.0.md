@@ -1,9 +1,5 @@
 D3 3.0 is the first major release since 2.0 was released last August. Since 2.0.0, there have been 10 minor releases and 37 patch releases. 3.0 includes significant new features and improvements, but in accordance with [semantic versioning](http://semver.org/), this major release also includes several backwards-incompatibilities. This document will guide you on how to upgrade from 2.x to 3.0.
 
-#### Why These Changes Were Made
-
-Most changes to D3 are carefully designed to be backwards-compatible, which makes it easier to upgrade. If you’ve been linking to the official [d3.v2.js](http://d3js.org/d3.v2.js), you’ve been getting bug fixes, performance improvements, and new features automatically. Unfortunately, not all changes can be made backwards-compatible; periodically, these potentially disruptive changes are needed to keep the API and the code lean by removing deprecated, broken or confusing functionality.
-
 ## Requests
 
 One of the first things you are likely to notice is that the [d3.xhr](Requests) callback interface has changed. In 2.x, you might have written code like this:
@@ -73,3 +69,7 @@ D3 3.0 includes a fantastic new geographic projection system featuring [three-ax
 There is now a wide variety of geographic projections available for D3 3.0 in the [d3.geo.projection plugin](/d3/d3-plugins/tree/master/geo/projection). Correspondingly, **the rarely-used Bonne projection has been moved from the core library to the plugin**, and **the d3.geo.azimuthal projection has also been replaced with separate projections for each mode**: d3.geo.orthographic, d3.geo.azimuthalEqualArea, d3.geo.azimuthalEquidistant, d3.geo.stereographic and d3.geo.gnomonic. **The albers.origin method has also been replaced by the generic projection.rotate and projection.center methods.**
 
 Lastly, **the alias d3.geo.greatCircle has been removed**; use d3.geo.circle instead. Also, did you know that you can now use d3.geo.circle to draw circles? This is an easy way to approximate [Tissot’s indicatrix](http://bl.ocks.org/4052873).
+
+## Why These Changes Were Made
+
+Most changes to D3 are carefully designed to be backwards-compatible, which makes it easier to upgrade. If you’ve been linking to the official [d3.v2.js](http://d3js.org/d3.v2.js), you’ve been getting bug fixes, performance improvements, and new features automatically. Unfortunately, not all changes can be made backwards-compatible; periodically, these potentially disruptive changes are needed to keep the API and the code lean by removing deprecated, broken or confusing functionality.
