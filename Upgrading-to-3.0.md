@@ -56,7 +56,18 @@ The last reason this change was made is to make it more obvious that these reque
 
 D3’s transition subsystem has been significantly overhauled for 3.0 to make it easier to construct complex sequences of transitions. In most cases, you’re not likely to notice any of these changes, despite being strictly backwards-incompatible. If you _are_ using transitions extensively, I highly recommend reading [Working with Transitions](http://bost.ocks.org/mike/transition/).
 
-The first change is that **[transition.attr](Transitions#wiki-attr), [transition.style](Transitions#wiki-style) and [transition.text](Transitions#wiki-text) now evaluate their property functions immediately**. This makes them behave just like their selection equivalents. However, in 2.x, these functions were evaluated asynchronously when the transition started! While deferred evaluation is occasionally what you want, immediate evaluation is much easier to understand and debug. It also means that you can easily specify transitions that depend on external state, such as scale domains in [chained transitions of data and axes](http://bl.ocks.org/3903818).
+The first change is that **[transition.attr](Transitions#wiki-attr), [transition.style](Transitions#wiki-style) and [transition.text](Transitions#wiki-text) now evaluate their property functions immediately**. This makes them behave just like their selection equivalents. However, in 2.x, these functions were evaluated asynchronously when the transition started! For example, consider the following code:
+
+```js
+// First transition the line to the new data.
+line.datum(newData).transition().attr("d", line);
+    
+// Then transition the y-axis.
+y.domain(newDomain);
+line.transition().delay(250).attr("d", line);
+```
+
+You might think that this code would first transition the line to the new data, and then transition to the new domain. But in 2.x, that wouldn't work because the first transition.attr would not be evaluated until *after* the y-scale’s domain changes; thus in 2.x, the second transition would be a noop. [WAT!](https://www.destroyallsoftware.com/talks/wat) While deferred evaluation is occasionally what you want, immediate evaluation is much easier to understand and debug. It also means that you can easily specify transitions that depend on external state, as in the above example showing [chained transitions of data and axes](http://bl.ocks.org/3903818).
 
 The other big change is that **[transition.select](Transitions#wiki-select) and [transition.selectAll](Transitions#wiki-selectAll) now reselect existing transitions** rather than creating new transitions. This means that you can start a transition on a set of elements—say an axis—and then reselect a subset of those elements to customize the transition. In 2.x, transition.select would create a new transition that would conflict with the existing transition. Like selections, transitions in 3.0 and now stored entirely in the DOM, and thus can be reselected.
 
