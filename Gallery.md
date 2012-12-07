@@ -557,6 +557,7 @@ http://vallandingham.me/vis/
 * [Axis Examples](http://bl.ocks.org/3605124)
 * [Loading Adobe Photoshop ASE color palette](http://bl.ocks.org/3173233)
 * [Render sever-side using Phantomjs](http://jsfiddle.net/shawnbot/BJLe6/)
+* [Reusable text rotation](http://bl.ocks.org/4236639)
 
 #### Maps
 
