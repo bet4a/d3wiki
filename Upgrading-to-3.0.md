@@ -2,7 +2,7 @@ D3 3.0 is the first major release since 2.0 was released last August. Since 2.0.
 
 ## How to Upgrade
 
-If you’re using the official hosted copy of D3, replace your existing script tag with this:
+If you’re using the official hosted copy of D3, **replace d3.v2.min.js with d3.v3.min.js** in your script tag, like this:
 
 ```html
 <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -19,7 +19,9 @@ If you’d prefer to host your own copy of D3, download the [zipball](https://gi
 
 ## Requests
 
-If you load external data via [d3.xhr](Requests), **change your callback function to take an additional `error` argument.** In 2.x, you would have written code like this:
+If you load external data via [d3.xhr](Requests), **change your callback function to take an additional `error` argument.** If an error occurs loading the resource, you can use the error argument to diagnose the problem, to retry, or to inform the user. Examples of errors include network issues (such as being offline), or missing files (404) or unavailable servers (503). This change makes it more obvious that requests can fall; the error argument is a nagging reminder that you should consider errors when loading resources. (It also means you can now distinguish between a successfully-loaded JSON file that contains `null` and an error.)
+
+In 2.x, you might have written this:
 
 ```js
 d3.json("my-data.json", function(data) {
@@ -27,7 +29,7 @@ d3.json("my-data.json", function(data) {
 });
 ```
 
-In 3.0, the equivalent code looks like this:
+The equivalent 3.0 code looks like this:
 
 ```js
 d3.json("my-data.json", function(error, data) {
@@ -43,8 +45,6 @@ d3.json("my-data.json", function(error, data) {
   console.log("there are " + data.length + " elements in my dataset");
 });
 ```
-
-If an error occurs loading the resource, you can use the error argument to diagnose the problem, to retry, or to inform the user. Examples of errors include network issues (such as being offline), or missing files (404) or unavailable servers (503).
 
 This change adopts the standard {error, result} asynchronous callback convention established by Node.js which makes it familiar to JavaScript developers. Better yet, it means you can now use helpers for asynchronous JavaScript, such as [Queue.js](https://github.com/mbostock/queue). For example, if you wanted to load multiple resources in 2.x, you probably would have loaded them serially by nesting callbacks:
 
@@ -68,8 +68,6 @@ function ready(error, states, statePopulations) {
   // display map here
 }
 ```
-
-This change also makes it more obvious that requests can fall. That first argument, error, is a nagging reminder that you might want to handle errors when loading resources. It also means you can now distinguish between a successfully-loaded JSON file that contains `null` and an error.
 
 There are a number of other (backwards-compatible) improvements to d3.xhr, such as the ability to listen for [progress events](http://bl.ocks.org/3750941) and set request headers. See the [API reference](Requests) for details.
 
