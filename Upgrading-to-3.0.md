@@ -10,7 +10,7 @@ d3.json("my-data.json", function(data) {
 });
 ```
 
-**In 3.0, the callback function now takes an additional argument, `error`.** If an error occurs fetching the requested resource, the error argument will contain information that you can use to diagnose the problem or inform the user, such as whether the file is missing or the server is unavailable. The second argument contains the contents of the resource, as before. The simplest fix is therefore to add "error, " to your callback arguments:
+**In 3.0, the callback function now takes an additional argument, `error`.** If an error occurs fetching the requested resource, the error argument will contain information that you can use to diagnose the problem or inform the user, such as whether the file is missing or the server is unavailable. The second argument contains the contents of the resource, as before. The simplest fix is therefore to add "error, ":
 
 ```js
 d3.json("my-data.json", function(error, data) {
