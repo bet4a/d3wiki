@@ -1,4 +1,4 @@
-D3 3.0 is the first major release since 2.0 was released last August. Since 2.0.0, there have been 10 minor releases and 37 patch releases. 3.0 includes significant new features and improvements, but in accordance with [semantic versioning](http://semver.org/), this major release also includes several backwards incompatibilities. This potentially disruptive release is needed to keep the API and the code lean by removing deprecated, broken or confusing functionality. This document guides you on how to upgrade from 2.x to 3.0.
+D3 3.0 is the first major release since 2.0 was released last August. Since 2.0.0, there have been 10 minor releases and 37 patch releases. 3.0 includes significant new features and improvements, but in accordance with [semantic versioning](http://semver.org/), this rare major release also includes several backwards incompatibilities. Major releases are needed to keep the API and the code lean by removing deprecated, broken or confusing functionality. This document guides you on how to upgrade from 2.x to 3.0.
 
 ## How to Upgrade
 
@@ -15,11 +15,11 @@ If you’re using the official hosted copy of D3, replace your existing script t
 <meta charset="utf-8">
 ```
 
-If you’d prefer to host your own copy of D3, I recommend downloading the [zipball](https://github.com/mbostock/d3/archive/3.0.zip) and pulling out the contained d3.js and d3.min.js. Don’t copy-and-paste the JavaScript contents from your browser; that would likely corrupt the UTF-8 characters.
+If you’d prefer to host your own copy of D3, download the [zipball](https://github.com/mbostock/d3/archive/3.0.zip) and pull out the contained d3.js and d3.min.js. Don’t copy-and-paste the JavaScript contents from your browser; that can corrupt UTF-8 characters.
 
 ## Requests
 
-If your visualization loads external data via [d3.xhr](Requests), you must change your callback function. In 2.x, you would have written code like this:
+**If you load external data via [d3.xhr](Requests), change your callback function to take an additional `error` argument.** In 2.x, you would have written code like this:
 
 ```js
 d3.json("my-data.json", function(data) {
@@ -27,7 +27,7 @@ d3.json("my-data.json", function(data) {
 });
 ```
 
-**In 3.0, the callback function now takes an additional argument, `error`.** If an error occurs fetching the requested resource, the error argument will contain information that you can use to diagnose the problem or inform the user, such as whether the file is missing or the server is unavailable. The second argument contains the contents of the resource, as before. The simplest fix is therefore to add "error, ":
+In 3.0, the equivalent code looks like this:
 
 ```js
 d3.json("my-data.json", function(error, data) {
@@ -35,7 +35,7 @@ d3.json("my-data.json", function(error, data) {
 });
 ```
 
-You might prefer to actually handle errors, too:
+You might prefer to handle errors, too:
 
 ```js
 d3.json("my-data.json", function(error, data) {
@@ -44,7 +44,9 @@ d3.json("my-data.json", function(error, data) {
 });
 ```
 
-The reason for this change is two-fold. First, it adopts the standard {error, result} asynchronous callback convention established by Node.js which makes it familiar to JavaScript developers. Better yet, it means you can use helpers for asynchronous JavaScript, such as [Queue.js](https://github.com/mbostock/queue). For example, say you wanted to load two resources for a map visualization, a GeoJSON file "us-states.json" and a data file "us-state-populations.tsv". In 2.x, you probably would have loaded these serially by nesting callbacks:
+If an error occurs loading the resource, you can use the error argument to diagnose the problem, to retry, or to inform the user. Examples of errors include network issues (such as being offline), or missing files (404) or unavailable servers (503).
+
+This change adopts the standard {error, result} asynchronous callback convention established by Node.js which makes it familiar to JavaScript developers. Better yet, it means you can now use helpers for asynchronous JavaScript, such as [Queue.js](https://github.com/mbostock/queue). For example, if you wanted to load multiple resources in 2.x, you probably would have loaded them serially by nesting callbacks:
 
 ```js
 d3.json("us-states.json", function(states) {
@@ -54,7 +56,7 @@ d3.json("us-states.json", function(states) {
 });
 ```
 
-Loading resources serially is slow! It's better to parallelize those requests, which is now easy:
+Loading resources serially is slow because it doesn’t maximize the user’s network connection. (Also, if one of the above requests fails, subsequent serialized requests will still continue because the error is ignored. This is likely wasteful.) It's better to parallelize those requests. You can do that manually in vanilla JavaScript, but it’s a pain since you need to track the number of outstanding requests to determine when all resources are available. It’s much easier to use Queue.js with 3.0:
 
 ```js
 queue()
@@ -67,9 +69,9 @@ function ready(error, states, statePopulations) {
 }
 ```
 
-The last reason this change was made is to make it more obvious that these requests can fall. That first argument, error, is a nagging reminder that you might want to handle errors when loading resources by displaying a suitable notification to your users or retrying the request. It also means you can now distinguish between a successfully-loaded JSON file that contains `null` and an error.
+This change also makes it more obvious that requests can fall. That first argument, error, is a nagging reminder that you might want to handle errors when loading resources. It also means you can now distinguish between a successfully-loaded JSON file that contains `null` and an error.
 
-There are a number of other backwards-compatible improvements to d3.xhr, such as the ability to listen for [progress events](http://bl.ocks.org/3750941) and set request headers. See the [API reference](Requests) for details.
+There are a number of other (backwards-compatible) improvements to d3.xhr, such as the ability to listen for [progress events](http://bl.ocks.org/3750941) and set request headers. See the [API reference](Requests) for details.
 
 ## Transitions
 
