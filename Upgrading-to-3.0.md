@@ -15,7 +15,7 @@ If you’re using the official hosted copy of D3, replace your existing script t
 <meta charset="utf-8">
 ```
 
-If you’d prefer to host your own copy of D3, I recommend downloading the [zipball](https://github.com/mbostock/d3/archive/3.0.zip) and pulling out the contained d3.js and d3.min.js. Don’t copy-and-paste the JavaScript contents from your browser, as you’re likely to corrupt the UTF-8 characters and give yourself a headache.
+If you’d prefer to host your own copy of D3, I recommend downloading the [zipball](https://github.com/mbostock/d3/archive/3.0.zip) and pulling out the contained d3.js and d3.min.js. Don’t copy-and-paste the JavaScript contents from your browser; that would likely corrupt the UTF-8 characters.
 
 ## Requests
 
