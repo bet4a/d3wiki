@@ -2,7 +2,7 @@ D3 3.0 is the first major release since 2.0 was released last August. Since 2.0.
 
 ## Requests
 
-If your visualization loads external data via [d3.xhr et al.](Requests), note that the callback interface has changed. In 2.x, you would have written code like this:
+If your visualization loads external data via [d3.xhr](Requests), you’ll need to change your callback function. In 2.x, you would have written code like this:
 
 ```js
 d3.json("my-data.json", function(data) {
