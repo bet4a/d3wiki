@@ -19,7 +19,7 @@ If you’d prefer to host your own copy of D3, download the [zipball](https://gi
 
 ## Requests
 
-**If you load external data via [d3.xhr](Requests), change your callback function to take an additional `error` argument.** In 2.x, you would have written code like this:
+If you load external data via [d3.xhr](Requests), **change your callback function to take an additional `error` argument.** In 2.x, you would have written code like this:
 
 ```js
 d3.json("my-data.json", function(data) {
