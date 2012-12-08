@@ -2,7 +2,7 @@ D3 3.0 is the first major release since 2.0 was released last August. Since 2.0.
 
 ## How to Upgrade
 
-If you’re using the official hosted copy of D3, **replace d3.v2.min.js with d3.v3.min.js** in your script tag, like this:
+If you’re using the official hosted copy of D3, simply **replace d3.v2.min.js with d3.v3.min.js** in your script tag, like this:
 
 ```html
 <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -15,7 +15,7 @@ If you’re using the official hosted copy of D3, **replace d3.v2.min.js with d3
 <meta charset="utf-8">
 ```
 
-If you’d prefer to host your own copy of D3, download the [zipball](https://github.com/mbostock/d3/archive/3.0.zip) and pull out the contained d3.js and d3.min.js. Don’t copy-and-paste the JavaScript contents from your browser; that can corrupt UTF-8 characters.
+If you’d prefer to host your own copy of D3, download the [zipball](https://github.com/mbostock/d3/archive/3.0.zip) or clone the repository and pull out the contained d3.js and d3.min.js. Don’t copy-and-paste the JavaScript contents from your browser; that can corrupt UTF-8 characters.
 
 ## Requests
 
@@ -73,9 +73,9 @@ There are a number of other (backwards-compatible) improvements to d3.xhr, such 
 
 ## Transitions
 
-D3’s transition subsystem has been significantly overhauled for 3.0 to make it easier to construct complex sequences of transitions. You’re not likely to notice these changes unless you’re using transitions extensively. And if you are, I highly recommend reading [Working with Transitions](http://bost.ocks.org/mike/transition/).
+D3’s transition subsystem has been significantly overhauled for 3.0 to make it easier to construct complex sequences of transitions. If you’re using transitions extensively, I also recommend reading [Working with Transitions](http://bost.ocks.org/mike/transition/).
 
-The first change is that **[transition.attr](Transitions#wiki-attr), [transition.style](Transitions#wiki-style) and [transition.text](Transitions#wiki-text) now evaluate their property functions immediately**. This makes them behave just like their selection equivalents. However, in 2.x, these functions were evaluated asynchronously when the transition started! For example, consider the following code:
+The first change is that **[transition.attr](Transitions#wiki-attr), [transition.style](Transitions#wiki-style) and [transition.text](Transitions#wiki-text) now evaluate their property functions immediately**. In 2.x, these functions were evaluated asynchronously when the transition started, which was frequently confusing! Consider the following code:
 
 ```js
 // First transition the line to the new data.
@@ -86,11 +86,29 @@ y.domain(newDomain);
 line.transition().delay(250).attr("d", line);
 ```
 
-You might expect this code to first transition the line to the new data, and then transition to the new domain. In 2.x, however, this would not work because the first transition.attr would not be evaluated until *after* the y-scale’s domain changes. ([WAT.](https://www.destroyallsoftware.com/talks/wat)) While deferred evaluation is occasionally what you want, immediate evaluation is much easier to understand and debug, so that’s what transitions do in 3.0. This means you can now easily specify transitions that depend on external state, as in the above example showing [chained transitions of data and axes](http://bl.ocks.org/3903818).
+You might expect this code to first transition the line to the new data, and then transition to the new domain. In 2.x, however, this would not work because the first transition.attr would be evaluated *after* the y-scale’s domain changes. While deferred evaluation is occasionally what you want, immediate evaluation is much easier to understand and debug, so that’s what transitions do in 3.0. (The selection.attr, selection.style, and related methods have always used immediate evaluation for this reason.) This means you can now easily specify transitions that depend on external state, as in the above example showing [chained transitions of data and axes](http://bl.ocks.org/3903818). You can also create transitions within for loops without worrying about the dreaded [closures in loops problem](http://www.mennovanslooten.nl/blog/post/62).
 
-The other big change is that **[transition.select](Transitions#wiki-select) and [transition.selectAll](Transitions#wiki-selectAll) now reselect existing transitions** rather than creating new transitions. This means that you can start a transition on a set of elements—say an axis—and then reselect a subset of those elements to customize the transition. This technique of customizing axes is called _postselection_, and in 3.0 you can use it for transitions as well as selections. In 2.x, transition.select would create a new transition that would conflict with the existing transition. Like selections, transitions in 3.0 and now stored entirely in the DOM, and thus can be reselected.
+The other big change is that **[transition.select](Transitions#wiki-select) and [transition.selectAll](Transitions#wiki-selectAll) now reselect existing transitions** rather than creating new transitions. This means that you can start a transition on a set of elements—say an axis—and then reselect a subset of those elements to customize the transition. This technique of customizing axes is called _postselection_, and in 3.0 you can use it for transitions as well as selections. For example, if you want to override the text-anchor for axis labels:
 
-Related to reselect, **[transition.transition](Transitions#wiki-transition) now creates a new transition that is scheduled to start when the originating transition ends**. This makes it very easy to create chained transitions, say from [stacked to grouped bars](http://bl.ocks.org/3943967), without the hassle of listening for "end" events.
+```js
+svg.select(".x.axis").transition()
+    .call(xAxis)
+  .selectAll("text")
+    .style("text-anchor", "start");
+```
+
+In 2.x, transition.select and transition.selectAll would create a new transition that would conflict with the existing transition. Like selections, transitions in 3.0 and now stored entirely in the DOM, and thus can be reselected. Related to this, **[transition.transition](Transitions#wiki-transition) now creates a new transition that is scheduled to start when the originating transition ends**. This makes it very easy to create chained transitions, say from [stacked to grouped bars](http://bl.ocks.org/3943967), without the hassle of listening for "end" events.
+
+```js
+rect.transition()
+    .duration(500)
+    .delay(function(d, i) { return i * 10; })
+    .attr("x", function(d, i, j) { return x(d.x) + x.rangeBand() / n * j; })
+    .attr("width", x.rangeBand() / n)
+  .transition()
+    .attr("y", function(d) { return y(d.y); })
+    .attr("height", function(d) { return height - y(d.y); });
+```
 
 The rarely-used **d3.tween method has been removed**. This previously provided a way to override the interpolator used during a transition. Use transition.attrTween, transition.styleTween or transition.tween instead.
 
