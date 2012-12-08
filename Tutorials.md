@@ -70,6 +70,7 @@ Please feel free to add links to your work!
 * [An introduction to d3.js video with synced visualisation](http://latentflip.github.com/d3/techmeetup)<br>Philip Roberts at TechMeetup Edinburgh, November 2012
 * [Slides and live code from the GAFFTA d3 intro workshop](http://enjalot.github.com/intro-d3/gaffta/#/)<br> Ian Johnson 2012
 * [Data Visualization with D3.js, slides and video]()<br>Ben Clinkinbeard, NCDevCon 2012
+* [Design process of The Electoral Map](http://shancarter.com/talk/2012/visualized/)<br>Shan Carter, Big Data Think Tank December 2012
 
 ## Meetups
 
