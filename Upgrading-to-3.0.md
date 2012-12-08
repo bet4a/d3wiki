@@ -69,7 +69,17 @@ function ready(error, states, statePopulations) {
 }
 ```
 
-There are a number of other (backwards-compatible) improvements to d3.xhr, such as the ability to listen for [progress events](http://bl.ocks.org/3750941) and set request headers. See the [API reference](Requests) for details.
+There are a number of other (backwards-compatible) improvements to d3.xhr, such as the ability to listen for [progress events](http://bl.ocks.org/3750941) and set request headers. For example:
+
+```js
+var xhr = d3.json(url)
+    .on("progress", function() { console.log("progress", d3.event.loaded); })
+    .on("load", function(json) { console.log("success!", json); })
+    .on("error", function(error) { console.log("failure!", error); })
+    .get();
+```
+
+See the [API reference](Requests) for details.
 
 ## Transitions
 
