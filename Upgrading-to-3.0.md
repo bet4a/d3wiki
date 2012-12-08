@@ -1,4 +1,4 @@
-D3 3.0 is the first major release since 2.0 was released last August. Since 2.0.0, there have been 10 minor releases and 37 patch releases. 3.0 includes significant new features and improvements, but in accordance with [semantic versioning](http://semver.org/), this major release also includes several backwards incompatibilities. This document guides you on how to upgrade from 2.x to 3.0.
+D3 3.0 is the first major release since 2.0 was released last August. Since 2.0.0, there have been 10 minor releases and 37 patch releases. 3.0 includes significant new features and improvements, but in accordance with [semantic versioning](http://semver.org/), this major release also includes several backwards incompatibilities. This potentially disruptive release is needed to keep the API and the code lean by removing deprecated, broken or confusing functionality. This document guides you on how to upgrade from 2.x to 3.0.
 
 ## Requests
 
@@ -106,7 +106,3 @@ Lastly, **the alias d3.geo.greatCircle has been removed**; use d3.geo.circle ins
 * the main library is called d3.js in the repo, but still d3.v3.js on d3js.org
 * examples are now hosted on bl.ocks.org, rather than the git repo
 * d3.js should be served with utf-8; not a new feature, but important
-
-## Why These Changes Were Made
-
-Most changes to D3 are carefully designed to be backwards-compatible, which makes it easier to upgrade. If you’ve been linking to the official [d3.v2.js](http://d3js.org/d3.v2.js), you’ve been getting bug fixes, performance improvements, and new features automatically. Unfortunately, not all changes can be made backwards-compatible; periodically, these potentially disruptive changes are needed to keep the API and the code lean by removing deprecated, broken or confusing functionality.
