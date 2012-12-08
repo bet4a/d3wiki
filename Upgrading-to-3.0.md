@@ -19,7 +19,7 @@ If you’d prefer to host your own copy of D3, I recommend downloading the [zipb
 
 ## Requests
 
-If your visualization loads external data via [d3.xhr](Requests), you’ll need to change your callback function. In 2.x, you would have written code like this:
+If your visualization loads external data via [d3.xhr](Requests), you must change your callback function. In 2.x, you would have written code like this:
 
 ```js
 d3.json("my-data.json", function(data) {
