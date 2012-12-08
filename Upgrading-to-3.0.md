@@ -1,5 +1,22 @@
 D3 3.0 is the first major release since 2.0 was released last August. Since 2.0.0, there have been 10 minor releases and 37 patch releases. 3.0 includes significant new features and improvements, but in accordance with [semantic versioning](http://semver.org/), this major release also includes several backwards incompatibilities. This potentially disruptive release is needed to keep the API and the code lean by removing deprecated, broken or confusing functionality. This document guides you on how to upgrade from 2.x to 3.0.
 
+## How to Upgrade
+
+If you’re using the official hosted copy of D3, replace your existing script tag with this:
+
+```html
+<script src="http://d3js.org/d3.v3.min.js"></script>
+```
+
+(There’s also a [d3.v3.js](http://d3js.org/d3.v3.js) for development.) Also, make sure that you have the DOCTYPE and charset set correctly; the top of your HTML page should look like this:
+
+```html
+<!DOCTYPE html>
+<meta charset="utf-8">
+```
+
+If you’d prefer to host your own copy of D3, I recommend downloading the [zipball](https://github.com/mbostock/d3/archive/3.0.zip) and pulling out the contained d3.js and d3.min.js. Don’t copy-and-paste the JavaScript contents from your browser, as you’re likely to corrupt the UTF-8 characters and give yourself a headache.
+
 ## Requests
 
 If your visualization loads external data via [d3.xhr](Requests), you’ll need to change your callback function. In 2.x, you would have written code like this:
