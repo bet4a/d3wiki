@@ -642,6 +642,7 @@ http://vallandingham.me/vis/
 * [Cubism.js: Time Series Visualization](http://square.github.com/cubism/)
 * [Rickshaw: JavaScript toolkit for creating interactive real-time graphs](https://github.com/shutterstock/rickshaw)
 * [Dynamic Visualization LEGO](https://github.com/vogievetsky/DVL)
+* [xCharts: a D3-based library for building custom charts and graphs](http://tenxer.github.com/xcharts/)
 
 ### Wish List
 
