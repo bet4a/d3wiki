@@ -22,7 +22,7 @@ You might prefer to handle errors, too:
 
 ```js
 d3.json("my-data.json", function(error, data) {
-  if (error != null) return console.log("there was an error loading the data: " + error);
+  if (error) return console.log("there was an error loading the data: " + error);
   console.log("there are " + data.length + " elements in my dataset");
 });
 ```
