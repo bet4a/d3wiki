@@ -35,7 +35,7 @@ d3.json("my-data.json", function(error, data) {
 });
 ```
 
-You might prefer to handle errors, too:
+You might prefer to actually handle errors, too:
 
 ```js
 d3.json("my-data.json", function(error, data) {
