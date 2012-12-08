@@ -1,8 +1,8 @@
-D3 3.0 is the first major release since 2.0 was released last August. Since 2.0.0, there have been 10 minor releases and 37 patch releases. 3.0 includes significant new features and improvements, but in accordance with [semantic versioning](http://semver.org/), this major release also includes several backwards-incompatibilities. This document will guide you on how to upgrade from 2.x to 3.0.
+D3 3.0 is the first major release since 2.0 was released last August. Since 2.0.0, there have been 10 minor releases and 37 patch releases. 3.0 includes significant new features and improvements, but in accordance with [semantic versioning](http://semver.org/), this major release also includes several backwards incompatibilities. This document guides you on how to upgrade from 2.x to 3.0.
 
 ## Requests
 
-One of the first things you are likely to notice is that the [d3.xhr](Requests) callback interface has changed. In 2.x, you might have written code like this:
+If your visualization loads external data via [d3.xhr et al.](Requests), note that the callback interface has changed. In 2.x, you would have written code like this:
 
 ```js
 d3.json("my-data.json", function(data) {
@@ -10,7 +10,7 @@ d3.json("my-data.json", function(data) {
 });
 ```
 
-**In 3.0, the callback function now takes an additional argument, `error`.** If an error occurs fetching the requested resource, the error argument will contain information that you can use to diagnose the problem or inform the user, such as whether the file is missing or the server is unavailable. The second argument contains the contents of the resource, as before. The simplest fix is therefore to add "error, " to your callback:
+**In 3.0, the callback function now takes an additional argument, `error`.** If an error occurs fetching the requested resource, the error argument will contain information that you can use to diagnose the problem or inform the user, such as whether the file is missing or the server is unavailable. The second argument contains the contents of the resource, as before. The simplest fix is therefore to add "error, " to your callback arguments:
 
 ```js
 d3.json("my-data.json", function(error, data) {
