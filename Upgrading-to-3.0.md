@@ -8,7 +8,7 @@ If you’re using the official hosted copy of D3, replace your existing script t
 <script src="http://d3js.org/d3.v3.min.js"></script>
 ```
 
-(There’s also a [d3.v3.js](http://d3js.org/d3.v3.js) for development.) Also, make sure that you have the DOCTYPE and charset set correctly; the top of your HTML page should look like this:
+(There’s also a [d3.v3.js](http://d3js.org/d3.v3.js) for development.) Also, check that you have the DOCTYPE and charset set correctly on your HTML page:
 
 ```html
 <!DOCTYPE html>
