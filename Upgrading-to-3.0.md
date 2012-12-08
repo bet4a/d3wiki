@@ -75,6 +75,8 @@ The other big change is that **[transition.select](Transitions#wiki-select) and 
 
 Related to reselect, **[transition.transition](Transitions#wiki-transition) now creates a new transition that is scheduled to start when the originating transition ends**. This makes it very easy to create chained transitions, say from [stacked to grouped bars](http://bl.ocks.org/3943967), without the hassle of listening for "end" events.
 
+The rarely-used **d3.tween method has been removed**. This previously provided a way to override the interpolator used during a transition. Use transition.attrTween, transition.styleTween or transition.tween instead.
+
 ## Geo
 
 D3 3.0 includes a fantastic new geographic projection system featuring [three-axis rotation](http://bl.ocks.org/3734273), [antemeridian cutting](http://bl.ocks.org/3788999) and [adaptive supersampling](http://bl.ocks.org/3795544). (And there’s also [TopoJSON](https://github.com/mbostock/topojson) for more efficient representation of geometry.) These changes are almost entirely backwards-compatible.
@@ -84,6 +86,26 @@ One gotcha you might encounter is that **d3.geo.path now observes the right-hand
 There is now a wide variety of geographic projections available for D3 3.0 in the [d3.geo.projection plugin](/d3/d3-plugins/tree/master/geo/projection). Correspondingly, **the rarely-used Bonne projection has been moved from the core library to the plugin**, and **the d3.geo.azimuthal projection has also been replaced with separate projections for each mode**: d3.geo.orthographic, d3.geo.azimuthalEqualArea, d3.geo.azimuthalEquidistant, d3.geo.stereographic and d3.geo.gnomonic. **The albers.origin method has also been replaced by the generic projection.rotate and projection.center methods.**
 
 Lastly, **the alias d3.geo.greatCircle has been removed**; use d3.geo.circle instead. Also, did you know that you can now use d3.geo.circle to draw circles? This is an easy way to approximate [Tissot’s indicatrix](http://bl.ocks.org/4052873).
+
+## Arrays
+
+* Removed d3.{first,last}.
+* Removed d3.split.
+
+## Geom
+
+* Moved d3.geom.contour to d3-plugins.
+* Removed [x, y] input support for d3.geom.quadtree; use {x: x, y: y} instead.
+
+## SVG
+
+* Removed aliases d3.svg.{mouse,touches}; use d3.{mouse,touches} instead.
+
+## Other Miscellany
+
+* the main library is called d3.js in the repo, but still d3.v3.js on d3js.org
+* examples are now hosted on bl.ocks.org, rather than the git repo
+* d3.js should be served with utf-8; not a new feature, but important
 
 ## Why These Changes Were Made
 
