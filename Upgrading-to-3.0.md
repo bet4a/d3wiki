@@ -52,6 +52,8 @@ function ready(error, states, statePopulations) {
 
 The last reason this change was made is to make it more obvious that these requests can fall. That first argument, error, is a nagging reminder that you might want to handle errors when loading resources by displaying a suitable notification to your users or retrying the request. It also means you can now distinguish between a successfully-loaded JSON file that contains `null` and an error.
 
+There are a number of other backwards-compatible improvements to d3.xhr, such as the ability to listen for [progress events](http://bl.ocks.org/3750941) and set request headers. See the [API reference](Requests) for details.
+
 ## Transitions
 
 D3’s transition subsystem has been significantly overhauled for 3.0 to make it easier to construct complex sequences of transitions. In most cases, you’re not likely to notice any of these changes, despite being strictly backwards-incompatible. If you _are_ using transitions extensively, I highly recommend reading [Working with Transitions](http://bost.ocks.org/mike/transition/).
