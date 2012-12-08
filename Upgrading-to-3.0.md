@@ -56,7 +56,7 @@ There are a number of other backwards-compatible improvements to d3.xhr, such as
 
 ## Transitions
 
-D3’s transition subsystem has been significantly overhauled for 3.0 to make it easier to construct complex sequences of transitions. In most cases, you’re not likely to notice any of these changes, despite being strictly backwards-incompatible. If you _are_ using transitions extensively, I highly recommend reading [Working with Transitions](http://bost.ocks.org/mike/transition/).
+D3’s transition subsystem has been significantly overhauled for 3.0 to make it easier to construct complex sequences of transitions. You’re not likely to notice these changes unless you’re using transitions extensively. And if you are, I highly recommend reading [Working with Transitions](http://bost.ocks.org/mike/transition/).
 
 The first change is that **[transition.attr](Transitions#wiki-attr), [transition.style](Transitions#wiki-style) and [transition.text](Transitions#wiki-text) now evaluate their property functions immediately**. This makes them behave just like their selection equivalents. However, in 2.x, these functions were evaluated asynchronously when the transition started! For example, consider the following code:
 
