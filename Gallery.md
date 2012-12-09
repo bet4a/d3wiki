@@ -558,6 +558,7 @@ http://vallandingham.me/vis/
 * [Loading Adobe Photoshop ASE color palette](http://bl.ocks.org/3173233)
 * [Render sever-side using Phantomjs](http://jsfiddle.net/shawnbot/BJLe6/)
 * [Reusable text rotation](http://bl.ocks.org/4236639)
+* [Bieber Fever Meter with HTML5′s Web Socket, d3.js and Pusher](http://ollieglass.com/2012/04/21/bieber-fever-meter-with-html5s-web-socket-d3-js-and-pusher/) - Ollie Glass
 
 #### Maps
 
