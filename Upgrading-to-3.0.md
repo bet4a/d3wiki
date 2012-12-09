@@ -83,7 +83,7 @@ See the [API reference](Requests) for details.
 
 ## Transitions
 
-D3’s transition subsystem has been significantly overhauled for 3.0 to make it easier to construct complex sequences of transitions. If you’re using transitions extensively, I also recommend reading [Working with Transitions](http://bost.ocks.org/mike/transition/).
+D3’s transition subsystem has been significantly overhauled for 3.0 to make it easier to construct complex sequences of transitions. If you’re using transitions extensively, I recommend also reading [Working with Transitions](http://bost.ocks.org/mike/transition/).
 
 The first change is that **[transition.attr](Transitions#wiki-attr), [transition.style](Transitions#wiki-style) and [transition.text](Transitions#wiki-text) now evaluate their property functions immediately**. In 2.x, these functions were evaluated asynchronously when the transition started, which was frequently confusing! Consider the following code:
 
@@ -128,14 +128,21 @@ D3 3.0 includes a fantastic new geographic projection system featuring [three-ax
 
 One gotcha is that **d3.geo.path now observes the right-hand rule for polygons**. Geographic features are defined in spherical coordinates. Thus, given a small polygon that approximates a circle, we might assume that this polygon represents an island. However, an equally valid interpretation is that this polygon represents everything *but* the island; that is, the polygon of the sea surrounding the island. (See Jason’s [geographic clipping examples](http://www.jasondavies.com/maps/clip/) for more.) In 2.x, it was not possible to represent polygons that were larger than a hemisphere. By applying the right-hand rule, sub-hemisphere polygons in 3.0 must have clockwise winding order. If your GeoJSON input has polygons in the wrong winding order, you must reverse them, say via [ST_ForceRHR](http://www.postgis.org/docs/ST_ForceRHR.html); you can also convert your GeoJSON to [TopoJSON](/mbostock/topojson), and this will happen automatically.
 
-There is now a wide variety of geographic projections available for D3 3.0 in the [d3.geo.projection plugin](/d3/d3-plugins/tree/master/geo/projection). Correspondingly, **the rarely-used Bonne projection has been moved to a plugin**, and **the modal d3.geo.azimuthal projection has been replaced with separate projections** for each mode: d3.geo.orthographic, d3.geo.azimuthalEqualArea, d3.geo.azimuthalEquidistant, d3.geo.stereographic and d3.geo.gnomonic. **The albers.origin method has also been replaced by projection.rotate and projection.center.**
+There is now a wide variety of geographic projections available for D3 3.0 in the [d3.geo.projection plugin](/d3/d3-plugins/tree/master/geo/projection). Correspondingly, **the rarely-used [Bonne projection](http://bl.ocks.org/3734313) has been moved to a plugin**, and **the modal d3.geo.azimuthal projection has been replaced with separate projections** for each mode: [d3.geo.orthographic](http://bl.ocks.org/3757125), [d3.geo.azimuthalEqualArea](http://bl.ocks.org/3757101), [d3.geo.azimuthalEquidistant](http://bl.ocks.org/3757110), [d3.geo.stereographic](http://bl.ocks.org/3757137) and [d3.geo.gnomonic](http://bl.ocks.org/3757349). **The albers.origin method has also been replaced by projection.rotate and projection.center.**
 
 Lastly, **the alias d3.geo.greatCircle has been removed**; use the identical d3.geo.circle instead. Also, did you know that you can now use d3.geo.circle to draw circles? This is an easy way to approximate [Tissot’s indicatrix](http://bl.ocks.org/4052873).
 
 ## Arrays
 
-* Removed d3.{first,last}.
-* Removed d3.split.
+The rarely-used **d3.first and d3.last methods have been removed**; in most cases you want to use [d3.min](Arrays#d3_min) or [d3.max](Arrays#d3_max). If for some reason you want the minimum element rather than the minimum value, you can simply use array.reduce:
+
+```js
+var first = objects.reduce(function(p, v) { return p.value < v.value ? p : v; });
+```
+
+If you want a [selection algorithm](http://en.wikipedia.org/wiki/Selection_algorithm) (not to be confused with a D3 selection) to select the top or bottom K of an ordered set, consider using Crossfilter’s [heapselect implementation](https://github.com/square/crossfilter/blob/master/src/heapselect.js).
+
+The **d3.split helper has been removed**, since d3.svg.line and d3.svg.area now provide a [defined](SVG-Shapes#wiki-line_defined) property for handling [missing data](http://bl.ocks.org/3035090).
 
 ## Geom
 
