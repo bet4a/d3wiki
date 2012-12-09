@@ -138,9 +138,7 @@ The rarely-used **d3.first and d3.last methods have been removed**; in most case
 var first = objects.reduce(function(p, v) { return p.value < v.value ? p : v; });
 ```
 
-If you want a [selection algorithm](http://en.wikipedia.org/wiki/Selection_algorithm) (not to be confused with a D3 selection) to select the top or bottom K of an ordered set, consider using Crossfilter’s [heapselect implementation](https://github.com/square/crossfilter/blob/master/src/heapselect.js).
-
-The **d3.split helper has been removed**, since d3.svg.line and d3.svg.area now provide a [defined](SVG-Shapes#wiki-line_defined) property for handling [missing data](http://bl.ocks.org/3035090).
+If you want a [selection algorithm](http://en.wikipedia.org/wiki/Selection_algorithm) (not to be confused with a D3 selection) to select the top or bottom K of an ordered set, consider using Crossfilter’s [heapselect implementation](https://github.com/square/crossfilter/blob/master/src/heapselect.js). The **d3.split helper has also been removed**, since d3.svg.line and d3.svg.area now provide a [defined](SVG-Shapes#wiki-line_defined) property for handling [missing data](http://bl.ocks.org/3035090).
 
 ## Geom
 
