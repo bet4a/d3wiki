@@ -2,7 +2,7 @@
 
 Patch versions always include various bug fixes; see the full compare for details. For major and minor versions, new features are listed below.
 
-## 3.0.0 - Scheduled for December, 2012
+## 3.0.0 - Not Yet Released; Scheduled for December, 2012
 
 Major release! See [[Upgrading to 3.0]] for detailed information on how to migrate from 2.x to 3.0.
 
