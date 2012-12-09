@@ -122,6 +122,10 @@ rect.transition()
 
 The rarely-used **d3.tween method has been removed**. This previously provided a way to override the interpolator used during a transition. Use transition.attrTween, transition.styleTween or transition.tween instead.
 
+## Selections
+
+The deprecated **selection.map method has been removed**; use [selection.datum](Selections#wiki-datum) instead.
+
 ## Geo
 
 D3 3.0 includes a fantastic new geographic projection system featuring [three-axis rotation](http://bl.ocks.org/3734273), [antemeridian cutting](http://bl.ocks.org/3788999) and [adaptive supersampling](http://bl.ocks.org/3795544). (And there’s also [TopoJSON](https://github.com/mbostock/topojson) for more efficient representation of geometry.) These changes are almost entirely backwards-compatible.
