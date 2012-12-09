@@ -154,7 +154,7 @@ The rarely-used **[d3.geom.contour](http://bl.ocks.org/4241134) method has been 
 
 ## SVG
 
-The aliases d3.svg.{mouse,touches} have been removed; use d3.{mouse,touches} instead.
+The aliases d3.svg.mouse and d3.svg.touches have been removed; use d3.mouse and d3.touches instead. These methods are identical, and were moved in an earlier minor release that added support for HTML as well as SVG elements.
 
 ## Other Miscellany
 
