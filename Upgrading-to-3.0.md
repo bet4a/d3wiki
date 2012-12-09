@@ -19,7 +19,7 @@ If you’d prefer to host your own copy of D3, download the [zipball](https://gi
 
 ## Requests
 
-If you load external data via [d3.xhr](Requests), **change your callback function to take an additional `error` argument.** If an error occurs loading the resource, you can use the error argument to diagnose the problem, to retry, or to inform the user. Examples of errors include network issues (such as being offline), or missing files (404) or unavailable servers (503). This change makes it more obvious that requests can fall; the error argument is a nagging reminder that you should consider errors when loading resources. (It also means you can now distinguish between a successfully-loaded JSON file that contains `null` and an error.)
+If you load external data via [d3.xhr](Requests), **change your callback to take an additional `error` argument**. If an error occurs loading the resource, you can use the error argument to diagnose the problem, to retry, or to inform the user. Examples of errors include network issues (such as being offline), or missing files (404) or unavailable servers (503). This change makes it more obvious that requests can fall; the error argument is a nagging reminder that you should consider errors when loading resources. (It also means you can now distinguish between a successfully-loaded JSON file that contains `null` and an error.)
 
 In 2.x, you might have written this:
 
