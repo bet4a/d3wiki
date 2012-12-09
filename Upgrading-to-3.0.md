@@ -128,9 +128,9 @@ D3 3.0 includes a fantastic new geographic projection system featuring [three-ax
 
 One gotcha is that **d3.geo.path now observes the right-hand rule for polygons**. Geographic features are defined in spherical coordinates. Thus, given a small polygon that approximates a circle, we might assume that this polygon represents an island. However, an equally valid interpretation is that this polygon represents everything *but* the island; that is, the polygon of the sea surrounding the island. (See Jason’s [geographic clipping examples](http://www.jasondavies.com/maps/clip/) for more.) In 2.x, it was not possible to represent polygons that were larger than a hemisphere. By applying the right-hand rule, sub-hemisphere polygons in 3.0 must have clockwise winding order. If your GeoJSON input has polygons in the wrong winding order, you must reverse them, say via [ST_ForceRHR](http://www.postgis.org/docs/ST_ForceRHR.html); you can also convert your GeoJSON to [TopoJSON](/mbostock/topojson), and this will happen automatically.
 
-There is now a wide variety of geographic projections available for D3 3.0 in the [d3.geo.projection plugin](/d3/d3-plugins/tree/master/geo/projection). Correspondingly, **the rarely-used [Bonne projection](http://bl.ocks.org/3734313) has been moved to a plugin**, and **the modal d3.geo.azimuthal projection has been replaced with separate projections** for each mode: [d3.geo.orthographic](http://bl.ocks.org/3757125), [d3.geo.azimuthalEqualArea](http://bl.ocks.org/3757101), [d3.geo.azimuthalEquidistant](http://bl.ocks.org/3757110), [d3.geo.stereographic](http://bl.ocks.org/3757137) and [d3.geo.gnomonic](http://bl.ocks.org/3757349). **The albers.origin method has also been replaced by projection.rotate and projection.center.**
+There is now a wide variety of geographic projections available for D3 3.0 in the [d3.geo.projection plugin](/d3/d3-plugins/tree/master/geo/projection). Correspondingly, the **rarely-used [Bonne projection](http://bl.ocks.org/3734313) has been moved** to a plugin, and the modal **d3.geo.azimuthal projection has been replaced** with separate projections for each mode: [d3.geo.orthographic](http://bl.ocks.org/3757125), [d3.geo.azimuthalEqualArea](http://bl.ocks.org/3757101), [d3.geo.azimuthalEquidistant](http://bl.ocks.org/3757110), [d3.geo.stereographic](http://bl.ocks.org/3757137) and [d3.geo.gnomonic](http://bl.ocks.org/3757349). The **albers.origin method has also been replaced** by projection.rotate and projection.center.
 
-Lastly, **the alias d3.geo.greatCircle has been removed**; use the identical d3.geo.circle instead. Also, did you know that you can now use d3.geo.circle to draw circles? This is an easy way to approximate [Tissot’s indicatrix](http://bl.ocks.org/4052873).
+Lastly, the alias **d3.geo.greatCircle has been removed**; use the identical d3.geo.circle instead. Also, did you know that you can now use d3.geo.circle to draw circles? This is an easy way to approximate [Tissot’s indicatrix](http://bl.ocks.org/4052873).
 
 ## Arrays
 
@@ -146,7 +146,7 @@ The **d3.split helper has been removed**, since d3.svg.line and d3.svg.area now 
 
 ## Geom
 
-The rarely-used **[d3.geom.contour](http://bl.ocks.org/4241134) method has been moved to [a plugin](https://github.com/d3/d3-plugins/tree/master/geom/contour)**. The **[d3.geom.quadtree](Quadtree-geom) method no longer supports points specified as arrays** [x, y], and instead requires that points be specified as objects {x: x, y: y}.
+The rarely-used **[d3.geom.contour](http://bl.ocks.org/4241134) method has been moved to [a plugin](https://github.com/d3/d3-plugins/tree/master/geom/contour)**. The **[d3.geom.quadtree](Quadtree-geom) method no longer supports array input**, where points are specified as [x, y]; instead, you should specify points as objects {x: x, y: y}.
 
 ## Layouts
 
@@ -154,7 +154,7 @@ The rarely-used **[d3.geom.contour](http://bl.ocks.org/4241134) method has been 
 
 ## SVG
 
-The aliases d3.svg.mouse and d3.svg.touches have been removed; use d3.mouse and d3.touches instead. These methods are identical, and were moved in an earlier minor release that added support for HTML as well as SVG elements.
+The aliases **d3.svg.mouse and d3.svg.touches have been removed**; use d3.mouse and d3.touches instead. These methods are identical, and were moved in an earlier minor release that added support for HTML as well as SVG elements.
 
 ## Other Miscellany
 
