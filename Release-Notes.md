@@ -2,18 +2,18 @@
 
 Patch versions always include various bug fixes; see the full compare for details. For major and minor versions, new features are listed below.
 
-## 3.0.0 - Not Yet Released
+## 3.0.0 - Scheduled for December, 2012
 
-This is a placeholder for notes regarding the next major release of D3. If you want to develop against the release candidate, checkout the `3.0` branch or download [d3.v3.js](http://d3js.org/d3.v3.js) / [d3.v3.min.js](http://d3js.org/d3.v3.min.js). However, keep in mind that the API is not finalized until the release. The next major version of D3 includes several **backwards incompatibilities**. Although inconvenient, these incompatibilities are necessary to remove deprecated APIs.
+Major release! See [[Upgrading to 3.0]] for detailed information on how to migrate from 2.x to 3.0.
 
 * Improved transitions subsystem. Supports re-selection of transitions, immediate evaluation, numerous other changes.
-* Improved geographic projection subsystem. Includes adaptive supersampling, clipping & antemeridian cutting support for d3.geo.path.
-* Improved XHR subsystem. Supports progress events, aborting requests, POST, headers, Node-style {error, result} callbacks, etc.
+* Improved geographic projection subsystem. Includes adaptive supersampling, clipping & antemeridian cutting, graticules, as well as rendering to both Canvas & SVG.
+* Improved XHR subsystem. Supports progress events, aborting requests, POST, headers, Node-style {error, result} callbacks, and more.
 * Improved localization for d3.format and d3.time.format.
+* Improved performance of d3.timer and d3.{csv,tsv}.
+* Added d3.shuffle.
 * Fix for d3.behavior.zoom to support easier programmatic zooming.
-* Fix for color interpolation.
-* Fix for quadratic performance of d3.timer.
-* Fix for right-hand rule with d3.geo.path and counterclockwise polygons.
+* Fix for color interpolation (via instanceof d3_Color).
 * Removed selection.map; replaced by selection.datum.
 * Removed d3.split; replaced by line.defined and area.defined.
 * Removed d3.first and d3.last; use d3.min and d3.max instead.
@@ -21,10 +21,10 @@ This is a placeholder for notes regarding the next major release of D3. If you w
 * Removed d3.geo.azimuthal; replaced by d3.geo.orthographic et al.
 * Removed d3.geo.greatCircle; replaced by d3.geo.circle.
 * Removed albers.origin; replaced by albers.rotate and albers.center.
-* Removed d3.geom.contour; moved to d3-plugins.
-* Removed d3.geo.bonne; moved to d3-plugins.
 * Removed d3.layout.hierarchy deprecated API for inlined data; replaced by wrapped data.
 * Removed d3.geom.quadtree deprecated API for array input; replaced by x-y object input.
+* Moved d3.geom.contour to d3-plugins.
+* Moved d3.geo.bonne to d3-plugins.
 
 ## 2.10.0 - August 9, 2012
 
