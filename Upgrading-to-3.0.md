@@ -98,7 +98,7 @@ line.transition().delay(250).attr("d", line);
 
 You might expect this code to first transition the line to the new data, and then transition to the new domain. In 2.x, however, this would not work because the first transition.attr would be evaluated *after* the y-scale’s domain changes. While deferred evaluation is occasionally what you want, immediate evaluation is much easier to understand and debug, so that’s what transitions do in 3.0. (The selection.attr, selection.style, and related methods have always used immediate evaluation for this reason.) This means you can now easily specify transitions that depend on external state, as in the above example showing [chained transitions of data and axes](http://bl.ocks.org/3903818). You can also create transitions within for loops without worrying about the dreaded [closures in loops problem](http://www.mennovanslooten.nl/blog/post/62).
 
-The other big change is that **[transition.select](Transitions#wiki-select) and [transition.selectAll](Transitions#wiki-selectAll) now reselect existing transitions** rather than creating new transitions. This means that you can start a transition on a set of elements—say an axis—and then reselect a subset of those elements to customize the transition. This technique of customizing axes is called _postselection_, and in 3.0 you can use it for transitions as well as selections. For example, if you want to override the text-anchor for axis labels:
+The other big change is that **[transition.select](Transitions#wiki-select) and [transition.selectAll](Transitions#wiki-selectAll) now reselect existing transitions** rather than creating new transitions. This means that you can schedule a transition on a set of elements—say an axis—and then reselect a subset of those elements to customize the transition. This technique of customizing axes is called _postselection_, and in 3.0 you can use it for transitions as well as selections. For example, if you want to override the text-anchor for axis labels:
 
 ```js
 svg.select(".x.axis").transition()
@@ -146,15 +146,16 @@ The **d3.split helper has been removed**, since d3.svg.line and d3.svg.area now 
 
 ## Geom
 
-* Moved d3.geom.contour to d3-plugins.
-* Removed [x, y] input support for d3.geom.quadtree; use {x: x, y: y} instead.
+The rarely-used **[d3.geom.contour](http://bl.ocks.org/4241134) method has been moved to [a plugin](https://github.com/d3/d3-plugins/tree/master/geom/contour)**. The **[d3.geom.quadtree](Quadtree-geom) method no longer supports points specified as arrays** [x, y], and instead requires that points be specified as objects {x: x, y: y}.
+
+## Layouts
+
+**[Hierarchy layouts](Hierarchy-Layout) no longer support wrapping input data** to create nodes. Instead, the layout assigns the computed properties value, depth, etc. on the input data directly.
 
 ## SVG
 
-* Removed aliases d3.svg.{mouse,touches}; use d3.{mouse,touches} instead.
+The aliases d3.svg.{mouse,touches} have been removed; use d3.{mouse,touches} instead.
 
 ## Other Miscellany
 
-* the main library is called d3.js in the repo, but still d3.v3.js on d3js.org
-* examples are now hosted on bl.ocks.org, rather than the git repo
-* d3.js should be served with utf-8; not a new feature, but important
+The main library is now called d3.js in the repo, but still d3.v3.js on [d3js.org](http://d3js.org/). The examples are now hosted on [bl.ocks.org](http://bl.ocks.org), rather than the git repo, so that they are easier to find and fork.
