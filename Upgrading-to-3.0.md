@@ -146,12 +146,12 @@ The rarely-used **[d3.geom.contour](http://bl.ocks.org/4241134) method has been 
 
 ## Layouts
 
-**[Hierarchy layouts](Hierarchy-Layout) no longer support wrapping input data** to create nodes. Instead, the layout assigns the computed properties value, depth, etc. on the input data directly.
+**[Hierarchy layouts](Hierarchy-Layout) no longer support wrapping input data** to create nodes. Instead, the layout assigns the computed properties value, depth, etc. on the input data directly. If you were invoking the hierarchy layout using [hierarchy.nodes](Hierarchy-Layout#wiki-nodes), rather than using the deprecated method of invoking the layout directly, then you shouldn’t be affected by this change. All of the official examples were changed to use hierarchy.nodes ages ago.
 
 ## SVG
 
-The aliases **d3.svg.mouse and d3.svg.touches have been removed**; use d3.mouse and d3.touches instead. These methods are identical, and were moved in an earlier minor release that added support for HTML as well as SVG elements.
+The aliases **d3.svg.mouse and d3.svg.touches have been removed**; use [d3.mouse](Selections#wiki-d3_mouse) and [d3.touches](Selections#wiki-d3_touches) instead. These methods are identical, and were moved in an earlier minor release that added support for HTML as well as SVG elements.
 
 ## Other Miscellany
 
-The main library is now called d3.js in the repo, but still d3.v3.js on [d3js.org](http://d3js.org/). The examples are now hosted on [bl.ocks.org](http://bl.ocks.org), rather than the git repo, so that they are easier to find and fork.
+The main library is now called `d3.js` in the repo, but still `d3.v3.js` on [d3js.org](http://d3js.org/). The examples are now hosted on [bl.ocks.org](http://bl.ocks.org), rather than the git repo, so that they are easier to find and fork.
