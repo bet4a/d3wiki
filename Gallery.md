@@ -262,7 +262,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Events in the Game of Thrones](http://jeromecukier.net/projects/agot/events.html) - Jérôme Cukier
 * [Chart Wheel Visualization ](http://anilomanwar.github.com/d3jsExperiments/ChartWheel.html) - Anil Omanwar
 * [Comparing the same surveys by different polling organizations (polish)](http://bit.ly/US45pL) and [translated in english](http://bit.ly/UUsPMf) - smarterpoland
-* (Confidence interval in poll surveys)[http://bit.ly/QHVOU0] and [translated in english](http://bit.ly/T9XKSD) - smarterpoland
+* [Confidence interval in poll surveys](http://bit.ly/QHVOU0) and [translated in english](http://bit.ly/T9XKSD) - smarterpoland
 
 ### Collections
 
