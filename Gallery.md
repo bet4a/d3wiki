@@ -263,6 +263,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Chart Wheel Visualization ](http://anilomanwar.github.com/d3jsExperiments/ChartWheel.html) - Anil Omanwar
 * [Comparing the same surveys by different polling organizations (polish)](http://bit.ly/US45pL) and [translated in english](http://bit.ly/UUsPMf) - smarterpoland
 * [Confidence interval in poll surveys](http://bit.ly/QHVOU0) and [translated in english](http://bit.ly/T9XKSD) - smarterpoland
+* [Forecast of Mexican 2012 presidential election](http://www.diegovalle.net/electometer) - Diego Valle-Jones
 
 ### Collections
 
