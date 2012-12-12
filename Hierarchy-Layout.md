@@ -81,7 +81,7 @@ In addition, most hierarchy layouts also compute *x* and *y* positions for nodes
 
 <a name="links" href="Hierarchy-Layout#wiki-links">#</a> hierarchy.<b>links</b>(<i>nodes</i>)
 
-Given the specified array of *nodes*, such as those returned [nodes](Hierarchy-Layout#wiki-nodes), returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. Each link is an object with two attributes:
+Given the specified array of *nodes*, such as those returned by [nodes](Hierarchy-Layout#wiki-nodes), returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. Each link is an object with two attributes:
 
 * source - the parent node (as described above).
 * target - the child node.
