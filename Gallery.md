@@ -634,6 +634,7 @@ http://vallandingham.me/vis/
 * [Tributary](http://enjalot.com/tributary/2165875/sinwaves.js)
 * [D3.js playground](http://phrogz.net/JS/d3-playground/#BlankDefault)
 * [A CoffeeScript console for d3.js visualization](http://fleetinbeing.net/beans/d3)
+* [CSSdeck: Repulsion example](http://cssdeck.com/labs/d3-repulsive)
 
 #### Products
 
