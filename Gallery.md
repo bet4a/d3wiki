@@ -528,6 +528,7 @@ http://vallandingham.me/vis/
 * [XKCD-style plots](http://dan.iel.fm/xkcd/)
 * [Violin: Instrumenting JavaScript](http://latentflip.github.com/violin/)
 * [Rotating hypercube in orthogonal projection and parallel coordinates](http://exposedata.com/hypercube/rotate/)
+* [Webplatform dancing logo](http://blog.lightjs.org/2012/10/welcome-to-webplatform-animation-d3js/)
 
 #### Charts using the [reusable API](http://bost.ocks.org/mike/chart/)
 
