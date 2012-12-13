@@ -479,6 +479,29 @@ http://vallandingham.me/vis/
 * [Chord Layout Transitions](http://fleetinbeing.net/d3e/chord.html)
 * [Co-Authors Chords] (http://www.rjbaxley.com/p/publications.html)
 
+#### Maps
+
+* [Click-to-Zoom with Albers Projection](http://bl.ocks.org/2206590)
+* [Google Maps](http://bl.ocks.org/899711)
+* [Polymaps](http://bl.ocks.org/899670)
+* [Polymaps with custom tiler](http://bl.ocks.org/900050)
+* [Map from GeoJSON data with zoom/pan](http://bl.ocks.org/2322933)
+* [Maps and sound](http://littleearth.ca/jsmag/)
+* [Choropleth classification systems](http://gabrielflor.it/)
+* [Choropleth with interactive parameters for NYC data visualization](http://code.leakingalpha.com/visionyc/), [code](https://github.com/kpeng/visionyc)
+* [Mercator](http://bl.ocks.org/1653763) and [Albers](http://bl.ocks.org/2005817) to Orthographic Projection
+* [Non-Contiguous Cartogram](http://bl.ocks.org/4055908)
+* [Flows of refugees between the world countries in 2008](http://bl.ocks.org/2209220)
+* [Interactive azimuthal projection simulating a 3D earth with stars] (http://marcneuwirth.com/blog/2012/06/24/creating-the-earth-with-d3-js/)
+* [Calculating quadtree bounding boxes and displaying them in leaflet](http://calvinmetcalf.github.com/k3/)
+* [Projection Transitions](http://bl.ocks.org/3711652) and [Comparing Map Projections](http://bl.ocks.org/3711245)
+* [Composite Map Projection](http://cartography.oregonstate.edu/demos/CompositeMapProjection/)
+* [World Boundaries TopoJSON](http://bl.ocks.org/4091835)
+* [Mapbox: add vector features to your map with D3](http://mapbox.com/mapbox.js/example/vectors-with-d3/)
+* [DataMaps: Interactive maps for data visualizations.](http://datamaps.github.com/) - Mark DiMarco
+* [We ♥ France: transition between the Hexagon and a heart ](http://blog.lightjs.org/2012/09/d3-js-fun-france-2/)
+* [Cartogram.js: Continuous Area Cartograms](http://prag.ma/code/d3-cartogram/) - Shawn Allen
+
 #### Misc Charts
 
 * [Venn Diagram using Clipping](http://bl.ocks.org/1067636)
@@ -571,28 +594,6 @@ http://vallandingham.me/vis/
 * [Reusable text rotation](http://bl.ocks.org/4236639)
 * [Bieber Fever Meter with HTML5′s Web Socket, d3.js and Pusher](http://ollieglass.com/2012/04/21/bieber-fever-meter-with-html5s-web-socket-d3-js-and-pusher/) - Ollie Glass
 * [Reverse Geocoding Plug-in using an offline canvas](http://bl.ocks.org/4246925)
-
-#### Maps
-
-* [Click-to-Zoom with Albers Projection](http://bl.ocks.org/2206590)
-* [Google Maps](http://bl.ocks.org/899711)
-* [Polymaps](http://bl.ocks.org/899670)
-* [Polymaps with custom tiler](http://bl.ocks.org/900050)
-* [Map from GeoJSON data with zoom/pan](http://bl.ocks.org/2322933)
-* [Maps and sound](http://littleearth.ca/jsmag/)
-* [Choropleth classification systems](http://gabrielflor.it/)
-* [Choropleth with interactive parameters for NYC data visualization](http://code.leakingalpha.com/visionyc/), [code](https://github.com/kpeng/visionyc)
-* [Mercator](http://bl.ocks.org/1653763) and [Albers](http://bl.ocks.org/2005817) to Orthographic Projection
-* [Non-Contiguous Cartogram](http://bl.ocks.org/4055908)
-* [Flows of refugees between the world countries in 2008](http://bl.ocks.org/2209220)
-* [Interactive azimuthal projection simulating a 3D earth with stars] (http://marcneuwirth.com/blog/2012/06/24/creating-the-earth-with-d3-js/)
-* [Calculating quadtree bounding boxes and displaying them in leaflet](http://calvinmetcalf.github.com/k3/)
-* [Projection Transitions](http://bl.ocks.org/3711652) and [Comparing Map Projections](http://bl.ocks.org/3711245)
-* [Composite Map Projection](http://cartography.oregonstate.edu/demos/CompositeMapProjection/)
-* [World Boundaries TopoJSON](http://bl.ocks.org/4091835)
-* [Mapbox: add vector features to your map with D3](http://mapbox.com/mapbox.js/example/vectors-with-d3/)
-* [DataMaps: Interactive maps for data visualizations.](http://datamaps.github.com/) - Mark DiMarco
-* [We ♥ France: transition between the Hexagon and a heart ](http://blog.lightjs.org/2012/09/d3-js-fun-france-2/)
 
 ### Tools
 
