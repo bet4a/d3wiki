@@ -266,6 +266,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Forecast of Mexican 2012 presidential election](http://www.diegovalle.net/electometer) - Diego Valle-Jones
 * [Romanian parliamentarian bubble chart. In Romanian](http://improve.ro/sandbox/politicians/v1.1/) - Harta Politicii
 * [Linked Jazz network graph](linkedjazz.org/network/) - Matt Miller
+* [Bibly v2: Visualizing word distribution within the KJV bible](http://stanford.edu/~garylee/bibly/) - GARY LEE & ANIRUDH VENKATESH 
 
 ### Collections
 
