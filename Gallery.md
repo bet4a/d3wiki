@@ -590,6 +590,7 @@ http://vallandingham.me/vis/
 * [World Boundaries TopoJSON](http://bl.ocks.org/4091835)
 * [Mapbox: add vector features to your map with D3](http://mapbox.com/mapbox.js/example/vectors-with-d3/)
 * [DataMaps: Interactive maps for data visualizations.](http://datamaps.github.com/) - Mark DiMarco
+* [We ♥ France: transition between the Hexagon and a heart ](http://blog.lightjs.org/2012/09/d3-js-fun-france-2/)
 
 ### Tools
 
