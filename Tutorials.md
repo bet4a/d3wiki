@@ -79,6 +79,7 @@ Please feel free to add links to your work!
 * [Bay Area d3 User Group](http://www.meetup.com/Bay-Area-d3-User-Group/)
 * [NYC D3.js](http://www.meetup.com/NYC-D3-JS/)
 * [London d3.js User Group] (http://lanyrd.com/series/london-d3-js/)
+* [Boston d3.js User Group](http://www.meetup.com/Boston-d3-js-User-Group/)
 
 ## Publications
 
