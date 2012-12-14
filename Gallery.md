@@ -634,6 +634,7 @@ http://vallandingham.me/vis/
 * [Using the D3.js Visualization Library with AngularJS](http://briantford.com/blog/angular-d3.html) - Brian Ford
 * [Zoomable Partition Charts directly from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/partition) - Bruce McPherson
 * [SHEETSEE.JS: Fill up Websites with Stuff from Google Spreasheet](http://jllord.github.com/sheetsee.js/) -Jessica Lord
+* [Web reporting with D3js and R using RStudio Shiny](http://timelyportfolio.blogspot.com/2012/12/d3-shiny-and-r-reporting-performance.html) - klr @timelyportfolio
 
 #### Online Editors
 
