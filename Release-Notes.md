@@ -7,7 +7,7 @@ Patch versions always include various bug fixes; see the full compare for detail
 Major release! See [[Upgrading to 3.0]] for detailed information on how to migrate from 2.x to 3.0.
 
 * Improved transitions subsystem. Supports re-selection of transitions, immediate evaluation, numerous other changes.
-* Improved geographic projection subsystem. Includes adaptive supersampling, clipping & antemeridian cutting, graticules, as well as rendering to both Canvas & SVG.
+* Improved geographic projection subsystem. Includes adaptive supersampling, clipping & antimeridian cutting, graticules, as well as rendering to both Canvas & SVG.
 * Improved XHR subsystem. Supports progress events, aborting requests, POST, headers, Node-style {error, result} callbacks, and more.
 * Improved localization for d3.format and d3.time.format.
 * Improved performance of d3.timer and d3.{csv,tsv}.
