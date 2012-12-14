@@ -268,6 +268,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Linked Jazz network graph](linkedjazz.org/network/) - Matt Miller
 * [Bibly v2: Visualizing word distribution within the KJV bible](http://stanford.edu/~garylee/bibly/) - GARY LEE & ANIRUDH VENKATESH 
 * [A physics model of a physics model](http://michiel.wordpress.com/2012/07/13/a-physics-model-of-a-physics-model/) - Michiel van der Blonk
+* [Testing algorithm that finds closer point from a beziér curve to another point](http://moebio.com/research/bezierdance/) - Santiago Ortiz
 
 ### Collections
 
