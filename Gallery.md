@@ -598,6 +598,7 @@ http://vallandingham.me/vis/
 * [Reusable text rotation](http://bl.ocks.org/4236639)
 * [Bieber Fever Meter with HTML5′s Web Socket, d3.js and Pusher](http://ollieglass.com/2012/04/21/bieber-fever-meter-with-html5s-web-socket-d3-js-and-pusher/) - Ollie Glass
 * [Reverse Geocoding Plug-in using an offline canvas](http://bl.ocks.org/4246925)
+* [Custom Multi Scale Time Format Axis](http://bl.ocks.org/4149176) - Mike Bostock
 
 ### Tools
 
