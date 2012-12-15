@@ -159,3 +159,5 @@ The aliases **d3.svg.mouse and d3.svg.touches have been removed**; use [d3.mouse
 ## Other Miscellany
 
 The main library is now called `d3.js` in the repo, but still `d3.v3.js` on [d3js.org](http://d3js.org/). The official examples are now hosted on [bl.ocks.org](http://bl.ocks.org), rather than the git repo, so that they are easier to find and fork.
+
+[UglifyJS2](https://github.com/mishoo/UglifyJS2) is now used for minification; run `npm install` to ensure you have the latest version.
