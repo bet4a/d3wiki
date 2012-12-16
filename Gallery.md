@@ -270,6 +270,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [A physics model of a physics model](http://michiel.wordpress.com/2012/07/13/a-physics-model-of-a-physics-model/) - Michiel van der Blonk
 * [OECD Health, Government Spending, and Obesity Rates (nvd3)](http://ameliamango.com/fatness.html) - Amelia Mango
 * [The first thing that should be shown in any Trigonometry class](http://www.humblesoftware.com/demos/trig_d3)
+* [How educated are world leaders?](http://skyrill.com/leaders/) - Ali Almossawi
 
 ### Collections
 
