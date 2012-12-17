@@ -135,6 +135,7 @@ For an example of how to specify a *y*-accessor, see the similar [x](SVG-Shapes#
 If *interpolate* is specified, sets the interpolation mode to the specified string. If *interpolate* is not specified, returns the current interpolation mode. The following modes are supported:
 
 * linear - piecewise linear segments, as in a polyline.
+* linear-closed - close the linear segments to form a polygon.
 * step-before - alternate between vertical and horizontal segments, as in a step function.
 * step-after - alternate between horizontal and vertical segments, as in a step function.
 * basis - a [B-spline](http://en.wikipedia.org/wiki/B-spline), with control point duplication on the ends.
