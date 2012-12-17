@@ -4,27 +4,14 @@ Patch versions always include various bug fixes; see the full compare for detail
 
 ## 3.0.0 - Not Yet Released; Scheduled for December, 2012
 
-Major release! See [[Upgrading to 3.0]] for detailed information on how to migrate from 2.x to 3.0.
+Major release! See the [full 3.0 release notes](3.0) for all the details!
 
-* Improved transitions subsystem. Supports re-selection of transitions, immediate evaluation, numerous other changes.
-* Improved geographic projection subsystem. Includes adaptive supersampling, clipping & antimeridian cutting, graticules, as well as rendering to both Canvas & SVG.
-* Improved XHR subsystem. Supports progress events, aborting requests, POST, headers, Node-style {error, result} callbacks, and more.
-* Improved localization for d3.format and d3.time.format.
-* Improved performance of d3.timer and d3.{csv,tsv}.
-* Added d3.shuffle.
-* Fix for d3.behavior.zoom to support easier programmatic zooming.
-* Fix for color interpolation (via instanceof d3_Color).
-* Removed selection.map; replaced by selection.datum.
-* Removed d3.split; replaced by line.defined and area.defined.
-* Removed d3.first and d3.last; use d3.min and d3.max instead.
-* Removed d3.svg.mouse and d3.svg.touches; replaced by d3.mouse and d3.touches.
-* Removed d3.geo.azimuthal; replaced by d3.geo.orthographic et al.
-* Removed d3.geo.greatCircle; replaced by d3.geo.circle.
-* Removed albers.origin; replaced by albers.rotate and albers.center.
-* Removed d3.layout.hierarchy deprecated API for inlined data; replaced by wrapped data.
-* Removed d3.geom.quadtree deprecated API for array input; replaced by x-y object input.
-* Moved d3.geom.contour to d3-plugins.
-* Moved d3.geo.bonne to d3-plugins.
+* d3.geo - better geographic projections.
+* d3.transition - easier complex transitions.
+* d3.xhr - more customizable requests.
+* Various bug fixes and performance improvements.
+
+See [[Upgrading to 3.0]] for detailed information on how to migrate from 2.x to 3.0.
 
 ## 2.10.0 - August 9, 2012
 
