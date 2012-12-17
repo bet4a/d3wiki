@@ -1,4 +1,4 @@
-# Release Notes
+> [Wiki](Home) ▸ **Release Notes**
 
 Patch versions always include various bug fixes; see the full compare for details. For major and minor versions, new features are listed below.
 
