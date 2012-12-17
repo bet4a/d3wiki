@@ -6,9 +6,9 @@ Patch versions always include various bug fixes; see the full compare for detail
 
 Major release! See the [full 3.0 release notes](3.0) for all the details!
 
-* d3.geo - better geographic projections.
-* d3.transition - easier complex transitions.
-* d3.xhr - more customizable requests.
+* d3.geo - dramatically better geographic projection system!
+* d3.transition - easier sequenced transitions and easier debugging.
+* d3.xhr - more customizable requests, including progress events and custom methods.
 * Various bug fixes and performance improvements.
 
 See [[Upgrading to 3.0]] for detailed information on how to migrate from 2.x to 3.0.
