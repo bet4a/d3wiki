@@ -117,6 +117,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>Trulia Trends<br><a href="http://trends.truliablog.com/2012/02/where-are-house-hunters-searching/"><img src="http://d3js.org/ex/house-map.png" width="202"></a></td>
     <td>Open Budget<br><a href="http://marcinignac.com/projects/open-budget/"><img src="http://d3js.org/ex/open-budget.png" width="202"></a></td>
     <td>Bederson Publications<br><a href="http://www.cs.umd.edu/~bederson/papers/index.html"><img src="http://d3js.org/ex/bederson-pubs.png" width="202"></a></td>
+    <td>Earthquakes in Chile<br><a href="http://pnavarrc.github.com/earthquake/"><img src="https://github.com/pnavarrc/earthquake/blob/master/img/thumbnail.jpg?raw=true" width="202"></a></td>
 </table>
 
 ## Basic Charts
