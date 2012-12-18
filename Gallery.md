@@ -266,7 +266,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Confidence interval in poll surveys](http://bit.ly/QHVOU0) and [translated in english](http://bit.ly/T9XKSD) - smarterpoland
 * [Forecast of Mexican 2012 presidential election](http://www.diegovalle.net/electometer) - Diego Valle-Jones
 * [Romanian parliamentarian bubble chart. In Romanian](http://improve.ro/sandbox/politicians/v1.1/) - Harta Politicii
-* [Linked Jazz network graph](linkedjazz.org/network/) - Matt Miller
+* [Linked Jazz network graph](http://linkedjazz.org/network/) - Matt Miller
 * [Bibly v2: Visualizing word distribution within the KJV bible](http://stanford.edu/~garylee/bibly/) - GARY LEE & ANIRUDH VENKATESH 
 * [A physics model of a physics model](http://michiel.wordpress.com/2012/07/13/a-physics-model-of-a-physics-model/) - Michiel van der Blonk
 * [OECD Health, Government Spending, and Obesity Rates (nvd3)](http://ameliamango.com/fatness.html) - Amelia Mango
