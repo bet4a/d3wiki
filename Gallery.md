@@ -507,6 +507,7 @@ http://vallandingham.me/vis/
 * [DataMaps: Interactive maps for data visualizations.](http://datamaps.github.com/) - Mark DiMarco
 * [We ♥ France: transition between the Hexagon and a heart ](http://blog.lightjs.org/2012/09/d3-js-fun-france-2/)
 * [Cartogram.js: Continuous Area Cartograms](http://prag.ma/code/d3-cartogram/) - Shawn Allen
+* [Earthquakes in Chile since 1900](http://pnavarrc.github.com/earthquake/) [Github](https://github.com/pnavarrc/earthquake/) - Pablo Navarro
 
 #### Misc Charts
 
