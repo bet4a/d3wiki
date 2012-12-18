@@ -561,9 +561,6 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[path.area|Geo-Paths#wiki-area]] - compute the projected area of a given feature.
 * [[path.centroid|Geo-Paths#wiki-centroid]] - compute the projected centroid of a given feature.
 * path.bounds -
-* d3.geo.area -
-* d3.geo.centroid -
-* [[d3.geo.bounds|Geo-Paths#wiki-bounds]] - compute the latitude-longitude bounding box for a given feature.
 * [[d3.geo.greatArc|Geo-Paths#wiki-greatArc]] - approximate the shortest path between two points.
 * [[greatArc|Geo-Paths#wiki-_greatArc]] - generate a GeoJSON LineString.
 * [[greatArc.distance|Geo-Paths#wiki-greatArc_distance]] - computes the great circle distance, in radians.
@@ -576,6 +573,16 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[circle.origin|Geo-Paths#wiki-circle_origin]] - specify the origin in latitude and longitude.
 * [[circle.angle|Geo-Paths#wiki-circle_angle]] - specify the angular radius in degrees.
 * [[circle.precision|Geo-Paths#wiki-circle_precision]] - specify the precision of the piecewise circle.
+* d3.geo.area -
+* [[d3.geo.bounds|Geo-Paths#wiki-bounds]] - compute the latitude-longitude bounding box for a given feature.
+* d3.geo.centroid -
+* d3.geo.stream -
+* stream.point -
+* stream.sphere -
+* stream.lineStart -
+* stream.lineEnd -
+* stream.polygonStart -
+* stream.polygonEnd -
 
 ### [[Projections|Geo-Projections]]
 
@@ -590,13 +597,6 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * projection.precision -
 * projection.stream -
 * d3.geo.projectionMutator -
-* d3.geo.stream -
-* stream.point -
-* stream.sphere -
-* stream.lineStart -
-* stream.lineEnd -
-* stream.polygonStart -
-* stream.polygonEnd -
 * [[d3.geo.mercator|Geo-Projections#wiki-mercator]] - construct a new spherical Mercator projection.
 * mercator.invert -
 * mercator.rotate -
