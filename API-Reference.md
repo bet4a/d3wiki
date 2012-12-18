@@ -1,8 +1,6 @@
 > [Wiki](Home) ▸ **API Reference**
 
-Everything in D3 is scoped under the `d3` namespace. D3 does not introduce anything else in the global namespace, with the exception of two polyfills for nonstandard browsers: [[Date.now|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/now]] and [[Object.create|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/create]].
-
-D3 uses [[semantic versioning|http://semver.org]]. You can find the current version of D3 as `d3.version`.
+Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioning|http://semver.org]]. You can find the current version of D3 as `d3.version`.
 
 ## [d3 (core)](Core)
 
@@ -57,7 +55,6 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[transition.remove|Transitions#wiki-remove]] - remove selected elements at the end of a transition.
 * [[transition.each|Transitions#wiki-each]] - add a listener for transition end events.
 * [[transition.call|Transitions#wiki-call]] - call a function passing in the current transition.
-* [[d3.tween|Transitions#wiki-d3_tween]] - customize transition interpolation.
 * [[d3.ease|Transitions#wiki-d3_ease]] - customize transition timing.
 * [[ease|Transitions#wiki-_ease]] - a parametric easing function.
 * [[d3.timer|Transitions#wiki-d3_timer]] - start a custom animation timer.
@@ -99,7 +96,6 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[d3.keys|Arrays#wiki-d3_keys]] - list the keys of an associative array.
 * [[d3.values|Arrays#wiki-d3_values]] - list the values of an associated array.
 * [[d3.entries|Arrays#wiki-d3_entries]] - list the key-value entries of an associative array.
-* [[d3.split|Arrays#wiki-d3_split]] - split an array into multiple arrays.
 * [[d3.merge|Arrays#wiki-d3_merge]] - merge multiple arrays into one array.
 * [[d3.range|Arrays#wiki-d3_range]] - generate a range of numeric values.
 * [[d3.nest|Arrays#wiki-d3_nest]] - group array elements hierarchically.
@@ -120,6 +116,14 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 ### [[Loading External Resources|Requests]]
 
 * [[d3.xhr|Requests#wiki-d3_xhr]] - request a resource using XMLHttpRequest.
+* xhr.header - set a request header.
+* xhr.mimeType - set the Accept request header and override the response MIME type.
+* xhr.response - set a response mapping function.
+* xhr.get - issue a GET request.
+* xhr.post - issue a POST request.
+* xhr.send - issue a request with the specified method and data.
+* xhr.abort - abort an outstanding request.
+* xhr.on - add an event listener for "progress", "load" or "error" events.
 * [[d3.text|Requests#wiki-d3_text]] - request a text file.
 * [[d3.json|Requests#wiki-d3_json]] - request a JSON blob.
 * [[d3.html|Requests#wiki-d3_html]] - request an HTML document fragment.
@@ -543,6 +547,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[treemap.padding|Treemap-Layout#wiki-padding]] - specify the padding between a parent and its children.
 * [[treemap.round|Treemap-Layout#wiki-round]] - enable or disable rounding to exact pixels.
 * [[treemap.sticky|Treemap-Layout#wiki-sticky]] - make the layout sticky for stable updates.
+* treemap.mode -
 
 ## [d3.geo (Geography)](Geo)
 
@@ -550,10 +555,14 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 
 * [[d3.geo.path|Geo-Paths#wiki-path]] - create a new geographic path generator.
 * [[path|Geo-Paths#wiki-_path]] - generate the path data string for a given geographic feature.
+* path.context -
 * [[path.pointRadius|Geo-Paths#wiki-pointRadius]] - get or set the radius to display point features.
 * [[path.projection|Geo-Paths#wiki-projection]] - get or set the geographic projection.
 * [[path.area|Geo-Paths#wiki-area]] - compute the projected area of a given feature.
 * [[path.centroid|Geo-Paths#wiki-centroid]] - compute the projected centroid of a given feature.
+* path.bounds -
+* d3.geo.area -
+* d3.geo.centroid -
 * [[d3.geo.bounds|Geo-Paths#wiki-bounds]] - compute the latitude-longitude bounding box for a given feature.
 * [[d3.geo.greatArc|Geo-Paths#wiki-greatArc]] - approximate the shortest path between two points.
 * [[greatArc|Geo-Paths#wiki-_greatArc]] - generate a GeoJSON LineString.
@@ -561,35 +570,113 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 * [[greatArc.source|Geo-Paths#wiki-greatArc_source]] - specify a source accessor.
 * [[greatArc.target|Geo-Paths#wiki-greatArc_target]] - specify a target accessor.
 * [[greatArc.precision|Geo-Paths#wiki-greatArc_precision]] - specify the precision of the piecewise arc.
-* [[d3.geo.greatCircle|Geo-Paths#wiki-circle]] - an alias for * [[d3.geo.circle|Geo-Paths#wiki-circle]].
+* d3.geo.interpolate
 * [[d3.geo.circle|Geo-Paths#wiki-circle]] - clip features to a circle with arbitrary radius and origin.
+* circle - 
 * [[circle.origin|Geo-Paths#wiki-circle_origin]] - specify the origin in latitude and longitude.
 * [[circle.angle|Geo-Paths#wiki-circle_angle]] - specify the angular radius in degrees.
 * [[circle.precision|Geo-Paths#wiki-circle_precision]] - specify the precision of the piecewise circle.
-* [[circle.clip|Geo-Paths#wiki-circle_clip]] - clip the given GeoJSON object.
 
 ### [[Projections|Geo-Projections]]
 
+* d3.geo.projection -
+* projection -
+* projection.invert -
+* projection.rotate -
+* projection.center -
+* projection.translate -
+* projection.scale -
+* projection.clipAngle -
+* projection.precision -
+* projection.stream -
+* d3.geo.projectionMutator -
+* d3.geo.stream -
+* stream.point -
+* stream.sphere -
+* stream.lineStart -
+* stream.lineEnd -
+* stream.polygonStart -
+* stream.polygonEnd -
 * [[d3.geo.mercator|Geo-Projections#wiki-mercator]] - construct a new spherical Mercator projection.
-* [[mercator|Geo-Projections#wiki-_mercator]] - project the specified position.
-* [[mercator.scale|Geo-Projections#wiki-mercator_scale]] - get or set the projection's scale factor.
-* [[mercator.translate|Geo-Projections#wiki-mercator_translate]] - get or set the projection's translate offset.
+* mercator.invert -
+* mercator.rotate -
+* mercator.center -
+* mercator.translate -
+* mercator.scale -
+* mercator.clipAngle -
+* mercator.precision -
+* mercator.stream -
+* mercator.raw -
 * [[d3.geo.albers|Geo-Projections#wiki-albers]] - construct a new Albers equal-area conic projection.
-* [[albers|Geo-Projections#wiki-_albers]] - project the specified position.
-* [[albers.origin|Geo-Projections#wiki-albers_origin]] - get or set the projection's origin.
+* albers.invert -
 * [[albers.parallels|Geo-Projections#wiki-albers_parallels]] - get or set the projection's two standard parallels.
-* [[albers.scale|Geo-Projections#wiki-albers_scale]] - get or set the projection's scale factor.
-* [[albers.translate|Geo-Projections#wiki-albers_translate]] - get or set the projection's translate offset.
+* albers.rotate -
+* albers.center -
+* albers.translate -
+* albers.scale -
+* albers.clipAngle -
+* albers.precision -
+* albers.stream -
+* albers.raw -
 * [[d3.geo.albersUsa|Geo-Projections#wiki-albersUsa]] - construct a new composite Albers projection for the United States.
 * [[albersUsa|Geo-Projections#wiki-_albersUsa]] - project the specified position.
 * [[albersUsa.scale|Geo-Projections#wiki-albersUsa_scale]] - get or set the projection's scale factor.
 * [[albersUsa.translate|Geo-Projections#wiki-albersUsa_translate]] - get or set the projection's translate offset.
-* [[d3.geo.azimuthal|Geo-Projections#wiki-azimuthal]] - construct a new Azimuthal (orthographic or stereographic) projection.
-* [[azimuthal|Geo-Projections#wiki-_azimuthal]] - project the specified position.
-* [[azimuthal.mode|Geo-Projections#wiki-azimuthal_mode]] - get or set the projection's mode (orthographic or stereographic).
-* [[azimuthal.origin|Geo-Projections#wiki-azimuthal_origin]] - get or set the projection's origin.
-* [[azimuthal.scale|Geo-Projections#wiki-azimuthal_scale]] - get or set the projection's scale factor.
-* [[azimuthal.translate|Geo-Projections#wiki-azimuthal_translate]] - get or set the projection's translate offset.
+* d3.geo.azimuthalEqualArea -
+* azimuthalEqualArea -
+* azimuthalEqualArea.invert -
+* azimuthalEqualArea.rotate -
+* azimuthalEqualArea.center -
+* azimuthalEqualArea.translate -
+* azimuthalEqualArea.scale -
+* azimuthalEqualArea.clipAngle -
+* azimuthalEqualArea.precision -
+* azimuthalEqualArea.stream -
+* azimuthalEqualArea.raw -
+* d3.geo.azimuthalEquidistant -
+* azimuthalEquidistant -
+* azimuthalEquidistant.invert -
+* azimuthalEquidistant.rotate -
+* azimuthalEquidistant.center -
+* azimuthalEquidistant.translate -
+* azimuthalEquidistant.scale -
+* azimuthalEquidistant.clipAngle -
+* azimuthalEquidistant.precision -
+* azimuthalEquidistant.stream -
+* azimuthalEquidistant.raw -
+* d3.geo.gnomonic -
+* gnomonic -
+* gnomonic.invert -
+* gnomonic.rotate -
+* gnomonic.center -
+* gnomonic.translate -
+* gnomonic.scale -
+* gnomonic.clipAngle -
+* gnomonic.precision -
+* gnomonic.stream -
+* gnomonic.raw -
+* d3.geo.orthographic -
+* orthographic -
+* orthographic.invert -
+* orthographic.rotate -
+* orthographic.center -
+* orthographic.translate -
+* orthographic.scale -
+* orthographic.clipAngle -
+* orthographic.precision -
+* orthographic.stream -
+* orthographic.raw -
+* d3.geo.stereographic -
+* stereographic -
+* stereographic.invert -
+* stereographic.rotate -
+* stereographic.center -
+* stereographic.translate -
+* stereographic.scale -
+* stereographic.clipAngle -
+* stereographic.precision -
+* stereographic.stream -
+* stereographic.raw -
 
 ## [d3.geom (Geometry)](Geometry)
 
@@ -614,10 +701,6 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 ### [[Hull|Hull-Geom]]
 
 * [[d3.geom.hull|Hull-Geom#wiki-hull]]
-
-### [[Contour|Contour-Geom]]
-
-* [[d3.geom.contour|Contour-Geom#wiki-contour]]
 
 ## [[d3.behavior (Behaviors)|Behaviors]]
 
