@@ -120,8 +120,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>Earthquakes in Chile<br><a href="http://pnavarrc.github.com/earthquake/"><img src="https://github.com/pnavarrc/earthquake/blob/master/img/thumbnail.jpg?raw=true" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Dynamic Bar Charts 1 by Marcello La Rocca<br><a href="http://bl.ocks.org/4339162"><img src="https://github.com/mlarocca/Dynamic-Graphs/blob/master/thumb.png?raw=true" width="202"></a></td>
-    <td>Dynamic Bar Charts 2 by Marcello La Rocca<br><a href="http://bl.ocks.org/4340039"><img src="https://github.com/mlarocca/Dynamic-Graphs/blob/master/thumb_2.png?raw=true" width="202"></a></td>
+    <td>Dynamic Bar Charts 1<br><a href="http://bl.ocks.org/4339162"><img src="https://github.com/mlarocca/Dynamic-Graphs/blob/master/thumb.png?raw=true" width="202"></a></td>
+    <td>Dynamic Bar Charts 2<br><a href="http://bl.ocks.org/4340039"><img src="https://github.com/mlarocca/Dynamic-Graphs/blob/master/thumb_2.png?raw=true" width="202"></a></td>
     <td></td>
     <td></td>
   </tr>
