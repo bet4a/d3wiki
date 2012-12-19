@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ [[Release Notes]] ▸ [[3.0]] ▸ **Upgrading to 3.0**
 
-D3 3.0, scheduled for release in December 2012, will be the first major release since 2.0 was released last August. Since 2.0.0, there have been 10 minor releases and 37 patch releases. 3.0 includes 250+ commits, significant new features and improvements. In accordance with [semantic versioning](http://semver.org/), this rare major release also includes several backwards incompatibilities. Major releases are needed to keep the API and the code lean by removing deprecated, broken or confusing functionality. This document guides you on how to upgrade from 2.x to 3.0.
+D3 3.0, scheduled for release in December 2012, will be the first major release since 2.0 was released last August. Since 2.0.0, there have been 10 minor releases and 37 patch releases. 3.0 includes almost 400 commits, significant new features and improvements. In accordance with [semantic versioning](http://semver.org/), this rare major release also includes several backwards incompatibilities. Major releases are needed to keep the API and the code lean by removing deprecated, broken or confusing functionality. This document guides you on how to upgrade from 2.x to 3.0.
 
 ## How to Upgrade
 
@@ -19,69 +19,9 @@ If you’re using the official hosted copy of D3, simply **replace d3.v2.min.js 
 
 If you’d prefer to host your own copy of D3, download the [zipball](https://github.com/mbostock/d3/archive/3.0.zip) or clone the repository and pull out the contained d3.js and d3.min.js. Don’t copy-and-paste the JavaScript contents from your browser; that can corrupt UTF-8 characters.
 
-## Requests
+## Selections
 
-If you load external data via [d3.xhr](Requests), **change your callback to take an additional `error` argument**. If an error occurs loading the resource, you can use the error argument to diagnose the problem, to retry, or to inform the user. Examples of errors include network issues (such as being offline), or missing files (404) or unavailable servers (503). This change makes it more obvious that requests can fall; the error argument is a nagging reminder that you should consider errors when loading resources. (It also means you can now distinguish between a successfully-loaded JSON file that contains `null` and an error.)
-
-In 2.x, you might have written this:
-
-```js
-d3.json("my-data.json", function(data) {
-  console.log("there are " + data.length + " elements in my dataset");
-});
-```
-
-The equivalent 3.0 code looks like this:
-
-```js
-d3.json("my-data.json", function(error, data) {
-  console.log("there are " + data.length + " elements in my dataset");
-});
-```
-
-You might prefer to handle errors, too:
-
-```js
-d3.json("my-data.json", function(error, data) {
-  if (error) return console.log("there was an error loading the data: " + error);
-  console.log("there are " + data.length + " elements in my dataset");
-});
-```
-
-This change adopts the standard {error, result} asynchronous callback convention established by Node.js which makes it familiar to JavaScript developers. Better yet, it means you can now use helpers for asynchronous JavaScript, such as [Queue.js](https://github.com/mbostock/queue). For example, if you wanted to load multiple resources in 2.x, you probably would have loaded them serially by nesting callbacks:
-
-```js
-d3.json("us-states.json", function(states) {
-  d3.tsv("us-state-populations.tsv", function(statePopulations) {
-    // display map here
-  });
-});
-```
-
-Loading resources serially is slow because it doesn’t maximize the user’s network connection. (Also, if one of the above requests fails, subsequent serialized requests will still continue because the error is ignored. This is likely wasteful.) It's better to parallelize those requests. You can do that manually in vanilla JavaScript, but it’s a pain since you need to track the number of outstanding requests to determine when all resources are available. It’s much easier to use Queue.js with 3.0:
-
-```js
-queue()
-    .defer(d3.json, "us-states.json")
-    .defer(d3.tsv, "us-state-populations.tsv")
-    .await(ready);
-
-function ready(error, states, statePopulations) {
-  // display map here
-}
-```
-
-There are a number of other (backwards-compatible) improvements to d3.xhr, such as the ability to listen for [progress events](http://bl.ocks.org/3750941) and set request headers. For example:
-
-```js
-var xhr = d3.json(url)
-    .on("progress", function() { console.log("progress", d3.event.loaded); })
-    .on("load", function(json) { console.log("success!", json); })
-    .on("error", function(error) { console.log("failure!", error); })
-    .get();
-```
-
-See the [API reference](Requests) for details.
+The deprecated **selection.map method has been removed**; use [selection.datum](Selections#wiki-datum) instead.
 
 ## Transitions
 
@@ -124,17 +64,71 @@ rect.transition()
 
 The rarely-used **d3.tween method has been removed**. This previously provided a way to override the interpolator used during a transition. Use transition.attrTween, transition.styleTween or transition.tween instead.
 
-## Selections
+## Requests
 
-The deprecated **selection.map method has been removed**; use [selection.datum](Selections#wiki-datum) instead.
+If you load external data via [d3.xhr](Requests), **consider changing your callback to take an `error` as the first argument**. While the old single-argument callback is still supported, it is now deprecated in favor of the two-argument version.
+
+If an error occurs loading the resource, you can use the error argument to diagnose the problem, to retry, or to inform the user. Examples of errors include network issues (such as being offline), or missing files (404) or unavailable servers (503). It also means you can now distinguish between a successfully-loaded JSON file that contains `null` and an error.
+
+In 2.x, you might have written this:
+
+```js
+d3.json("my-data.json", function(data) {
+  console.log("there are " + data.length + " elements in my dataset");
+});
+```
+
+While the above code still works, the recommended code in 3.0 handles errors, too:
+
+```js
+d3.json("my-data.json", function(error, data) {
+  if (error) return console.log("there was an error loading the data: " + error);
+  console.log("there are " + data.length + " elements in my dataset");
+});
+```
+
+By adopting the standard {error, result} callback convention established by Node.js, D3 can now be used with standard helpers for asynchronous JavaScript, such as [Queue.js](https://github.com/mbostock/queue). For example, if you wanted to load multiple resources in 2.x, you probably would have loaded them serially by nesting callbacks:
+
+```js
+d3.json("us-states.json", function(states) {
+  d3.tsv("us-state-populations.tsv", function(statePopulations) {
+    // display map here
+  });
+});
+```
+
+Loading resources serially is slow because it doesn’t use the user’s network connection efficiently. (Also, if one of the above requests fails, subsequent serialized requests will still continue because the error is ignored!) It’s better to parallelize those requests. You can do that manually in vanilla JavaScript, but it’s a pain since you need to track the number of outstanding requests to determine when all resources are available; it’s much easier to use Queue.js:
+
+```js
+queue()
+    .defer(d3.json, "us-states.json")
+    .defer(d3.tsv, "us-state-populations.tsv")
+    .await(ready);
+
+function ready(error, states, statePopulations) {
+  // display map here
+}
+```
+
+There are a number of other improvements to d3.xhr, such as the ability to listen for [progress events](http://bl.ocks.org/3750941) and set request headers. For example:
+
+```js
+var xhr = d3.json(url)
+    .on("progress", function() { console.log("progress", d3.event.loaded); })
+    .on("load", function(json) { console.log("success!", json); })
+    .on("error", function(error) { console.log("failure!", error); })
+    .get();
+```
+
+See the [API reference](Requests) for details.
 
 ## Geo
 
-D3 3.0 includes a fantastic new geographic projection system featuring [three-axis rotation](http://bl.ocks.org/3734273), [antemiridian cutting](http://bl.ocks.org/3788999) and [adaptive supersampling](http://bl.ocks.org/3795544). (And there’s also [TopoJSON](https://github.com/mbostock/topojson) for more efficient representation of geometry.) These changes are almost entirely backwards-compatible.
+D3 3.0 includes a powerful new geographic projection system featuring [three-axis rotation](http://bl.ocks.org/3734273), [antemiridian cutting](http://bl.ocks.org/3788999) and [adaptive resampling](http://bl.ocks.org/3795544). (And there’s also [TopoJSON](https://github.com/mbostock/topojson) for more efficient representation of geometry.) These changes are almost entirely backwards-compatible.
 
 One gotcha is that **d3.geo.path now observes the right-hand rule for polygons**. Geographic features are defined in spherical coordinates. Thus, given a small polygon that approximates a circle, we might assume that this polygon represents an island. However, an equally valid interpretation is that this polygon represents everything *but* the island; that is, the polygon of the sea surrounding the island. (See Jason’s [geographic clipping examples](http://www.jasondavies.com/maps/clip/) for more.) In 2.x, it was not possible to represent polygons that were larger than a hemisphere. By applying the right-hand rule, sub-hemisphere polygons in 3.0 must have clockwise winding order. If your GeoJSON input has polygons in the wrong winding order, you must reverse them, say via [ST_ForceRHR](http://www.postgis.org/docs/ST_ForceRHR.html); you can also convert your GeoJSON to [TopoJSON](/mbostock/topojson), and this will happen automatically.
 
-There is now a wide variety of geographic projections available in the [d3.geo.projection plugin](/d3/d3-plugins/tree/master/geo/projection). Correspondingly, the **rarely-used [Bonne projection](http://bl.ocks.org/3734313) has been moved** to a plugin, and the modal **d3.geo.azimuthal projection has been replaced** with separate projections for each mode: [d3.geo.orthographic](http://bl.ocks.org/3757125), [d3.geo.azimuthalEqualArea](http://bl.ocks.org/3757101), [d3.geo.azimuthalEquidistant](http://bl.ocks.org/3757110), [d3.geo.stereographic](http://bl.ocks.org/3757137) and [d3.geo.gnomonic](http://bl.ocks.org/3757349). The **albers.origin method has also been replaced** by projection.rotate and projection.center. Lastly, the alias **d3.geo.greatCircle has been removed**; use the identical d3.geo.circle instead. Also, did you know that you can now use d3.geo.circle to draw circles? This is an easy way to approximate [Tissot’s indicatrix](http://bl.ocks.org/4052873).
+Many new projections are available in the [d3.geo.projection plugin](/d3/d3-plugins/tree/master/geo/projection). Correspondingly, the **rarely-used [Bonne projection](http://bl.ocks.org/3734313) has been moved** to a plugin, and the modal **d3.geo.azimuthal projection has been replaced** with separate projections for each mode: [d3.geo.orthographic](http://bl.ocks.org/3757125), [d3.geo.azimuthalEqualArea](http://bl.ocks.org/3757101), [d3.geo.azimuthalEquidistant](http://bl.ocks.org/3757110), [d3.geo.stereographic](http://bl.ocks.org/3757137) and [d3.geo.gnomonic](http://bl.ocks.org/3757349). The **albers.origin method has also been replaced** by projection.rotate and projection.center. Lastly, the alias **d3.geo.greatCircle has been removed**; use the identical d3.geo.circle instead. Also, did you know that you can now use d3.geo.circle to draw circles? This is an easy way to approximate [Tissot’s indicatrix](http://bl.ocks.org/4052873).
 
 ## Arrays
 
