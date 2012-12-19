@@ -118,6 +118,14 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>Open Budget<br><a href="http://marcinignac.com/projects/open-budget/"><img src="http://d3js.org/ex/open-budget.png" width="202"></a></td>
     <td>Bederson Publications<br><a href="http://www.cs.umd.edu/~bederson/papers/index.html"><img src="http://d3js.org/ex/bederson-pubs.png" width="202"></a></td>
     <td>Earthquakes in Chile<br><a href="http://pnavarrc.github.com/earthquake/"><img src="https://github.com/pnavarrc/earthquake/blob/master/img/thumbnail.jpg?raw=true" width="202"></a></td>
+  </tr>
+  <tr height="207" valign="top">
+    <td>Dynamic Bar Charts<br><a href="http://bl.ocks.org/4339162"><img src="https://github.com/mlarocca/Dynamic-Graphs/blob/master/thumb.png?raw=true" width="202"></a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
 </table>
 
 ## Basic Charts
