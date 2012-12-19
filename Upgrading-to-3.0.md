@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ [[Release Notes]] ▸ [[3.0]] ▸ **Upgrading to 3.0**
 
-D3 3.0, scheduled for release in December 2012, will be the first major release since 2.0 was released last August. Since 2.0.0, there have been 10 minor releases and 37 patch releases. 3.0 includes almost 400 commits, significant new features and improvements. In accordance with [semantic versioning](http://semver.org/), this rare major release also includes several backwards incompatibilities. Major releases are needed to keep the API and the code lean by removing deprecated, broken or confusing functionality. This document guides you on how to upgrade from 2.x to 3.0.
+D3 3.0, scheduled for release in December 2012, will be the first major release since 2.0 was released last August. Since 2.0.0, there have been 10 minor releases and 37 patch releases. 3.0 includes more than 400 commits, significant new features and improvements. In accordance with [semantic versioning](http://semver.org/), this rare major release also includes several backwards incompatibilities. Major releases are needed to keep the API and the code lean by removing deprecated, broken or confusing functionality. This document guides you on how to upgrade from 2.x to 3.0.
 
 ## How to Upgrade
 
