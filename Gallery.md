@@ -175,6 +175,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
   <tr height="146" valign="top">
     <td>Hexagonal Binning<br><a href="http://bl.ocks.org/4248145"><img src="http://bl.ocks.org/d/4248145/thumbnail.png" width="202"></a></td>
     <td>Contour Plot<br><a href="http://bl.ocks.org/4241134"><img src="http://bl.ocks.org/d/4241134/thumbnail.png" width="202"></a></td>
+    <td>Build Your Own Graph<br><a href="http://bl.ocks.org/929623"><img src="http://bl.ocks.org/d/929623/thumbnail.png" width="202"></a></td>
+    <td>Modifying a Force Layout <br><a href="http://bl.ocks.org/1095795"><img src="http://bl.ocks.org/d/1095795/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
