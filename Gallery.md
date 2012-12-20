@@ -386,6 +386,7 @@ http://vallandingham.me/vis/
 * [Grouped Bar Chart](http://bl.ocks.org/882152) ([alternative example](http://bl.ocks.org/1351113))
 * [Stacked Bar Chart](http://bl.ocks.org/1134768)
 * [Reorderable Stacked Bar Chart](http://bl.ocks.org/1327441)
+* [Dynamic Bar Charts](https://github.com/mlarocca/Dynamic-Charts)
 
 #### Histogram
 
