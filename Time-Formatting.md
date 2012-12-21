@@ -12,7 +12,7 @@ Constructs a new local time formatter using the given *specifier*. The specifier
 * `%B` - full month name.
 * `%c` - date and time, as "%a %b %e %H:%M:%S %Y".
 * `%d` - zero-padded day of the month as a decimal number [01,31].
-* `%e` - space-padded day of the month as a decimal number [ 1,31].
+* `%e` - space-padded day of the month as a decimal number [ 1,31]; equivalent to `%_d`.
 * `%H` - hour (24-hour clock) as a decimal number [00,23].
 * `%I` - hour (12-hour clock) as a decimal number [01,12].
 * `%j` - day of the year as a decimal number [001,366].
@@ -30,7 +30,15 @@ Constructs a new local time formatter using the given *specifier*. The specifier
 * `%Z` - time zone offset, such as "-0700".
 * `%%` - a literal "%" character.
 
-For %U, all days in a new year preceding the first Sunday are considered to be in week 0. For %W, all days in a new year preceding the first Monday are considered to be in week 0. In some implementations of strftime and strptime (as in Python), a directive may include an optional field width or precision; this feature is not yet implemented in D3, but may be added in the future. Also note that the JavaScript environment does not provide a standard API for accessing locale-specific date and time formatters, so D3's implementation assumes the conventions of the English language (United States).
+For %U, all days in a new year preceding the first Sunday are considered to be in week 0. For %W, all days in a new year preceding the first Monday are considered to be in week 0. In some implementations of strftime and strptime (as in Python), a directive may include an optional field width or precision; this feature is not yet implemented in D3, but may be added in the future. Also note that the JavaScript environment does not provide a standard API for accessing locale-specific date and time formatters, so D3's implementation is fixed to a locale at compile time based on the $LOCALE environment variable.
+
+The % sign indicating a directive may be immediately followed by a padding modifier:
+
+* `0` - zero-padding
+* `_` - space-padding
+* `-` - disable padding
+
+If no padding modifier is specified, the default is `0` for all directives, except for `%e` which defaults to `_`).
 
 The returned *format* is both an object and a function. For example:
 
