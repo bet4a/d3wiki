@@ -134,3 +134,12 @@ If *round* is specified, sets whether or not the treemap layout will round to ex
 If *sticky* is specified, sets whether or not the treemap layout is "sticky": a *sticky* treemap layout will preserve the relative arrangement of nodes across transitions. The allocation of nodes into squarified horizontal and vertical rows is persisted across updates by storing a *z* attribute on the last element in each row; this allows nodes to be resized smoothly, without shuffling or occlusion that would impede perception of changing values. Note, however, that this results in a suboptimal layout for one of the two states. If *sticky* is not specified, returns whether the treemap layout is sticky.
 
 Implementation note: sticky treemaps cache the array of nodes internally; therefore, it is not possible to reuse the same layout instance on multiple datasets. To reset the cached state when switching datasets with a sticky layout, call sticky(true) again. Since version [1.25.0](https://github.com/mbostock/d3/tree/v1.25.0), hierarchy layouts no longer copy the input data by default on each invocation, so it may be possible to eliminate caching and make the layout fully stateless.
+
+<a name="mode" href="#wiki-mode">#</a> treemap.<b>mode</b>([<i>mode</i>])
+
+If *mode* is specified, sets the layout algorithm. If *mode* is not specified, returns the current layout algorithm, which defaults to "squarify". The following modes are supported:
+
+* squarify - rectangular subdivision; squareness controlled via the target [ratio](#wiki-ratio).
+* slice - horizontal subdivision.
+* dice - vertical subdivision.
+* slice-dice - alternating between horizontal and vertical subdivision.
