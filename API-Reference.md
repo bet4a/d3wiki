@@ -557,7 +557,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[treemap.padding|Treemap-Layout#wiki-padding]] - specify the padding between a parent and its children.
 * [[treemap.round|Treemap-Layout#wiki-round]] - enable or disable rounding to exact pixels.
 * [[treemap.sticky|Treemap-Layout#wiki-sticky]] - make the layout sticky for stable updates.
-* treemap.mode -
+* [treemap.mode](Treemap-Layout#wiki-mode) - change the treemap layout algorithm.
 
 ## [d3.geo (Geography)](Geo)
 
