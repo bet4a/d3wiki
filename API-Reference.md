@@ -105,6 +105,15 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[nest.rollup|Arrays#wiki-nest_rollup]] - specify a rollup function for leaf values.
 * [[nest.map|Arrays#wiki-nest_map]] - evaluate the nest operator, returning an associative array.
 * [[nest.entries|Arrays#wiki-nest_entries]] - evaluate the nest operator, returning an array of key-values tuples.
+* [d3.map](Arrays#wiki-d3_map) - a shim for ES6 maps, since objects are not hashes!
+* [map.has](Arrays#wiki-map_has) - returns true if the map contains the specified key.
+* [map.get](Arrays#wiki-map_get) - returns the value for the specified key.
+* [map.set](Arrays#wiki-map_set) - sets the value for the specified key.
+* [map.remove](Arrays#wiki-map_remove) - removes the entry for specified key.
+* [map.keys](Arrays#wiki-map_keys) - returns the map’s array of keys.
+* [map.values](Arrays#wiki-map_values) - returns the map’s array of values.
+* [map.entries](Arrays#wiki-map_entries) - returns the map’s array of entries (key-values objects).
+* [map.forEach](Arrays#wiki-map_forEach) - calls the specified function for each entry in the map.
 
 ### [[Math]]
 
