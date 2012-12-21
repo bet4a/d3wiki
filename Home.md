@@ -21,8 +21,8 @@ D3 supports so-called “modern” browsers, which generally means everything _e
 
 If you just want the latest release of D3 as a JavaScript file, you can download them here:
 
-* http://d3js.org/d3.v2.js - development
-* http://d3js.org/d3.v2.min.js - production
+* http://d3js.org/d3.v3.js - development
+* http://d3js.org/d3.v3.min.js - production
 
 To get the latest release and all the examples, you can find a tarball here:
 
