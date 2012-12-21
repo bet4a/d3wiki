@@ -53,7 +53,7 @@ Returns an exact copy of this ordinal scale. Changes to this scale will not affe
 <a name="category10" href="Ordinal-Scales#wiki-category10">#</a> d3.scale.<b>category10</b>()
 
 Constructs a new ordinal scale with a range of ten categorical colors:
-<font color="#1f77b4">#1f77b4</font>
+<b><font color="#1f77b4">#1f77b4</font>
 <font color="#ff7f0e">#ff7f0e</font>
 <font color="#2ca02c">#2ca02c</font>
 <font color="#d62728">#d62728</font>
@@ -62,12 +62,12 @@ Constructs a new ordinal scale with a range of ten categorical colors:
 <font color="#e377c2">#e377c2</font>
 <font color="#7f7f7f">#7f7f7f</font>
 <font color="#bcbd22">#bcbd22</font>
-<font color="#17becf">#17becf</font>.
+<font color="#17becf">#17becf</font></b>.
 
 <a name="category20" href="Ordinal-Scales#wiki-category20">#</a> d3.scale.<b>category20</b>()
 
 Constructs a new ordinal scale with a range of twenty categorical colors:
-<font color="#1f77b4">#1f77b4</font>
+<b><font color="#1f77b4">#1f77b4</font>
 <font color="#aec7e8">#aec7e8</font>
 <font color="#ff7f0e">#ff7f0e</font>
 <font color="#ffbb78">#ffbb78</font>
@@ -86,12 +86,12 @@ Constructs a new ordinal scale with a range of twenty categorical colors:
 <font color="#bcbd22">#bcbd22</font>
 <font color="#dbdb8d">#dbdb8d</font>
 <font color="#17becf">#17becf</font>
-<font color="#9edae5">#9edae5</font>.
+<font color="#9edae5">#9edae5</font></b>.
 
 <a name="category20b" href="Ordinal-Scales#wiki-category20b">#</a> d3.scale.<b>category20b</b>()
 
 Constructs a new ordinal scale with a range of twenty categorical colors:
-<font color="#393b79">#393b79</font>
+<b><font color="#393b79">#393b79</font>
 <font color="#5254a3">#5254a3</font>
 <font color="#6b6ecf">#6b6ecf</font>
 <font color="#9c9ede">#9c9ede</font>
@@ -110,12 +110,12 @@ Constructs a new ordinal scale with a range of twenty categorical colors:
 <font color="#7b4173">#7b4173</font>
 <font color="#a55194">#a55194</font>
 <font color="#ce6dbd">#ce6dbd</font>
-<font color="#de9ed6">#de9ed6</font>.
+<font color="#de9ed6">#de9ed6</font></b>.
 
 <a name="category20c" href="Ordinal-Scales#wiki-category20c">#</a> d3.scale.<b>category20c</b>()
 
 Constructs a new ordinal scale with a range of twenty categorical colors:
-<font color="#3182bd">#3182bd</font>
+<b><font color="#3182bd">#3182bd</font>
 <font color="#6baed6">#6baed6</font>
 <font color="#9ecae1">#9ecae1</font>
 <font color="#c6dbef">#c6dbef</font>
@@ -134,7 +134,7 @@ Constructs a new ordinal scale with a range of twenty categorical colors:
 <font color="#636363">#636363</font>
 <font color="#969696">#969696</font>
 <font color="#bdbdbd">#bdbdbd</font>
-<font color="#d9d9d9">#d9d9d9</font>.
+<font color="#d9d9d9">#d9d9d9</font></b>.
 
 ## ColorBrewer
 
