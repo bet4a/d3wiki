@@ -155,9 +155,31 @@ selection.selectAll(selector).transition()
 
 where *selection* is the current transition's underlying selection. In addition, the returned new transition inherits easing, duration and delay from the current transition. The duration and delay for each subelement is inherited from the duration and delay of the parent element in the current transition.
 
+<a name="filter" href="#wiki-filter">#</a> transition.<b>filter</b>(<i>selector</i>)
+
+Filters the transition, returning a new transition that contains only the elements for which the specified *selector* is true. The *selector* may be specified either as a function or as a selector string, such as ".foo". As with other operators, the function is passed the current datum `d` and index `i`, with the `this` context as the current DOM element. Like the built-in array [[filter|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter]] method, the returned selection *does not* preserve the index of the original selection; it returns a copy with elements removed. If you want to preserve the index, use [select](#wiki-select) instead. For example, to select every other element:
+
+```javascript
+var odds = transition.select(function(d, i) { return i & 1 ? this : null; });
+```
+
+Equivalently, using a filter function:
+
+```javascript
+var odds = transition.filter(function(d, i) { return i & 1; });
+```
+
+Or a filter selector:
+
+```javascript
+var odds = transition.filter(":nth-child(odd)");
+```
+
+Thus, you can use either select or filter to apply tweens to a subset of elements.
+
 <a name="transition" href="Transitions#wiki-transition">#</a> transition.<b>transition</b>()
 
-Creates a new transition on the same selected elements, inheriting the delay and duration. This can be used to create concurrent transitions with different easing for different properties, or overlapping but different delays and durations. It can also be used to define sequenced transitions by setting the delay of the returned transition to the end time of the current transition.
+Creates a new transition on the same selected elements that starts with this transition ends. The new transition inherits this transition’s duration and easing. This can be used to define [chained transitions](http://bl.ocks.org/4341417) without needing to listen for "end" events.
 
 ### Control
 
