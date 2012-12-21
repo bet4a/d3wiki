@@ -1,5 +1,7 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ **CSV**
 
+D3 provides built-in support for parsing [comma-separated values](http://en.wikipedia.org/wiki/Comma-separated_values) and tab-separated values. These tabular formats are popular with spreadsheet programs such as Microsoft Excel. Tabular formats are often more space-efficient than JSON, which can improve loading times for large datasets.
+
 <a name="csv" href="CSV#wiki-csv">#</a> d3.<b>csv</b>(<i>url</i>, <i>callback</i>)
 
 Issues an HTTP GET request for the comma-separated values (CSV) file at the specified *url*. The file contents are assumed to be [RFC4180-compliant](http://tools.ietf.org/html/rfc4180). The mime type of the request will be "text/csv". The request is processed asynchronously, such that this method returns immediately after opening the request. When the CSV data is available, the specified *callback* will be invoked with the [parsed rows](CSV#wiki-parse) as the argument. If an error occurs, the callback function will instead be invoked with null.
@@ -62,19 +64,20 @@ Converts the specified array of *rows* into comma-separated values format, retur
 
 ## TSV
 
+Tab-separated values are equivalent to comma-separated values, except the tab character is used as a delimiter rather than the comma.
+
 <a name="tsv" href="#wiki-tsv">#</a> d3.<b>tsv</b>(<i>url</i>, <i>callback</i>)
 
-See [d3.csv](#wiki-csv).
+Equivalent to [d3.csv](#wiki-csv), but for tab-separated values.
 
 <a name="tsv_parse" href="#wiki-tsv_parse">#</a> d3.tsv.<b>parse</b>(<i>string</i>)
 
-See [csv.parse](#wiki-parse).
+Equivalent to [csv.parse](#wiki-parse), but for tab-separated values.
 
 <a name="tsv_parseRows" href="#wiki-tsv_parseRows">#</a> d3.tsv.<b>parseRows</b>(<i>string</i>[, <i>accessor</i>])
 
-See [csv.parseRows](#wiki-parseRows).
+Equivalent to [csv.parseRows](#wiki-parseRows), but for tab-separated values.
 
 <a name="tsv_format" href="#wiki-tsv_format">#</a> d3.tsv.<b>format</b>(<i>rows</i>)
 
-See [csv.format](#wiki-format).
-
+Equivalent to [csv.format](#wiki-format), but for tab-separated values.
