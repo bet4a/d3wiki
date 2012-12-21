@@ -122,7 +122,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
   <tr height="207" valign="top">
     <td>Dynamic Bar Charts 1<br><a href="http://bl.ocks.org/4339162"><img src="https://github.com/mlarocca/Dynamic-Charts/blob/master/thumb.png?raw=true" width="202"></a></td>
     <td>Dynamic Bar Charts 2<br><a href="http://bl.ocks.org/4340039"><img src="https://github.com/mlarocca/Dynamic-Charts/blob/master/thumb_2.png?raw=true" width="202"></a></td>
-    <td></td>
+    <td>Chart Wheel <br> <a href="http://anilomanwar.github.com/d3jsExperiments/ChartWheel.html"><img src="http://anilomanwar.github.com/d3jsExperiments/images/Chartwheel1.jpg" width="202"></a></td>
     <td></td>
   </tr>
 
