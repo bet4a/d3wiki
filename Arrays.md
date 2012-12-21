@@ -112,13 +112,9 @@ var bisect = d3.bisector(function(d) { return d.date; }).right;
 
 And then applied as `bisect(data, new Date(2011, 1, 2))`, returning an index.
 
-<a name="d3_first" href="Arrays#wiki-d3_first">#</a> d3.<b>first</b>(<i>array</i>[, <i>comparator</i>])
+<a name="d3_shuffle" href="Arrays#wiki-d3_shuffle">#</a> d3.<b>shuffle</b>(<i>array</i>)
 
-Returns the lowest element in the specified *array*, as ordered by the specified *comparator*. If no comparator is specified, [d3.ascending](Arrays#wiki-d3_ascending) is used. This method is similar to [d3.min](Arrays#wiki-d3_min), except you can use an arbitrary comparator, rather than mapping array elements to a numeric value.
-
-<a name="d3_last" href="Arrays#wiki-d3_last">#</a> d3.<b>last</b>(<i>array</i>[, <i>comparator</i>])
-
-Returns the highest element in the specified *array*, as ordered by the specified *comparator*. If no comparator is specified, [d3.ascending](Arrays#wiki-d3_ascending) is used. This method is similar to [d3.max](Arrays#wiki-d3_max), except you can use an arbitrary comparator, rather than mapping array elements to a numeric value.
+Randomizes the order of the specified *array* using the [Fisher–Yates shuffle](http://bost.ocks.org/mike/shuffle/).
 
 ## Associative Arrays
 
