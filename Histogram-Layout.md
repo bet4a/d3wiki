@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Layouts]] ▸ **Histogram Layout**
 
-A **histogram layout** shows the distribution of data by grouping discrete data points into bins. See [Histogram Chart](http://bl.ocks.org/1933560) for example usage.
+A **histogram layout** shows the distribution of data by grouping discrete data points into bins. See [Histogram](http://bl.ocks.org/3048450) for example usage.
 
 <a name="histogram" href="Histogram-Layout#wiki-histogram">#</a> d3.layout.<b>histogram</b>()
 
