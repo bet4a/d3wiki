@@ -89,8 +89,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[d3.bisectRight|Arrays#wiki-d3_bisectRight]] - search for a value in a sorted array.
 * [[d3.bisectLeft|Arrays#wiki-d3_bisectLeft]] - search for a value in a sorted array.
 * [[d3.bisector|Arrays#wiki-d3_bisector]] - bisect using an accessor.
-* [[d3.first|Arrays#wiki-d3_first]] - find the lowest element in an array.
-* [[d3.last|Arrays#wiki-d3_last]] - find the highest element in an array.
+* [d3.shuffle](Arrays#wiki-d3_shuffle) - randomize the order of an array.
 * [[d3.permute|Arrays#wiki-d3_permute]] - reorder an array of elements according to an array of indexes.
 * [[d3.zip|Arrays#wiki-d3_zip]] - transpose a variable number of arrays.
 * [[d3.transpose|Arrays#wiki-d3_transpose]] - transpose an array of arrays.
