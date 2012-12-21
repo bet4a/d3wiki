@@ -156,29 +156,11 @@ Returns the day number for the given date. The first day of the year (January 1)
 
 <a name="weekOfYear" href="#wiki-weekOfYear">#</a> d3.time.<b>weekOfYear</b>(<i>date</i>)
 <br><a name="sundayOfYear" href="#wiki-sundayOfYear">#</a> d3.time.<b>sundayOfYear</b>(<i>date</i>)
+<br><a name="mondayOfYear" href="#wiki-mondayOfYear">#</a> d3.time.<b>mondayOfYear</b>(<i>date</i>)
+<br><a name="tuesdayOfYear" href="#wiki-tuesdayOfYear">#</a> d3.time.<b>tuesdayOfYear</b>(<i>date</i>)
+<br><a name="wednesdayOfYear" href="#wiki-wednesdayOfYear">#</a> d3.time.<b>wednesdayOfYear</b>(<i>date</i>)
+<br><a name="thursdayOfYear" href="#wiki-thursdayOfYear">#</a> d3.time.<b>thursdayOfYear</b>(<i>date</i>)
+<br><a name="fridayOfYear" href="#wiki-fridayOfYear">#</a> d3.time.<b>fridayOfYear</b>(<i>date</i>)
+<br><a name="saturdayOfYear" href="#wiki-saturdayOfYear">#</a> d3.time.<b>saturdayOfYear</b>(<i>date</i>)
 
-Returns the Sunday-based week number for the given date. The first day of the year (January 1) is always the 0th week. Equivalent to [d3.time.format](Time-Formatting)'s %U directive.
-
-<a name="mondayOfYear" href="#wiki-mondayOfYear">#</a> d3.time.<b>mondayOfYear</b>(<i>date</i>)
-
-Returns the Monday-based week number for the given date. The first day of the year (January 1) is always the 0th week. Equivalent to [d3.time.format](Time-Formatting)'s %W directive.
-
-<a name="tuesdayOfYear" href="#wiki-tuesdayOfYear">#</a> d3.time.<b>tuesdayOfYear</b>(<i>date</i>)
-
-Returns the Tuesday-based week number for the given date. The first day of the year (January 1) is always the 0th week.
-
-<a name="wednesdayOfYear" href="#wiki-wednesdayOfYear">#</a> d3.time.<b>wednesdayOfYear</b>(<i>date</i>)
-
-Returns the Wednesday-based week number for the given date. The first day of the year (January 1) is always the 0th week.
-
-<a name="thursdayOfYear" href="#wiki-thursdayOfYear">#</a> d3.time.<b>thursdayOfYear</b>(<i>date</i>)
-
-Returns the Thursday-based week number for the given date. The first day of the year (January 1) is always the 0th week.
-
-<a name="fridayOfYear" href="#wiki-fridayOfYear">#</a> d3.time.<b>fridayOfYear</b>(<i>date</i>)
-
-Returns the Friday-based week number for the given date. The first day of the year (January 1) is always the 0th week.
-
-<a name="saturdayOfYear" href="#wiki-saturdayOfYear">#</a> d3.time.<b>saturdayOfYear</b>(<i>date</i>)
-
-Returns the Saturday-based week number for the given date. The first day of the year (January 1) is always the 0th week.
+Returns the week number for the given date, where weeks start with the given <i>day</i>. The first day of the year (January 1) is always the 0th week. weekOfYear is an alias for sundayOfYear, which is equivalent to [d3.time.format](Time-Formatting)'s %U directive. mondayOfYear is equivalent to [d3.time.format](Time-Formatting)'s %W directive.
