@@ -148,17 +148,14 @@ Alias for d3.time.[month](#wiki-month).[range](#wiki-interval_range). Returns th
 
 Alias for d3.time.[year](#wiki-year).[range](#wiki-interval_range). Returns the year boundaries (midnight January 1st) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th year will be returned. For example, a *step* of 5 will return 2010, 2015, 2020, *etc.*
 
-## Math
+## Counting
 
 <a name="dayOfYear" href="#wiki-dayOfYear">#</a> d3.time.<b>dayOfYear</b>(<i>date</i>)
 
 Returns the day number for the given date. The first day of the year (January 1) is always the 0th day. Unlike the [d3.time.format](Time-Formatting)'s %j directive, dayOfYear is 0-based rather than 1-based.
 
 <a name="weekOfYear" href="#wiki-weekOfYear">#</a> d3.time.<b>weekOfYear</b>(<i>date</i>)
-
-Alias for [sundayOfYear](#wiki-sundayOfYear).
-
-<a name="sundayOfYear" href="#wiki-sundayOfYear">#</a> d3.time.<b>sundayOfYear</b>(<i>date</i>)
+<br><a name="sundayOfYear" href="#wiki-sundayOfYear">#</a> d3.time.<b>sundayOfYear</b>(<i>date</i>)
 
 Returns the Sunday-based week number for the given date. The first day of the year (January 1) is always the 0th week. Equivalent to [d3.time.format](Time-Formatting)'s %U directive.
 
