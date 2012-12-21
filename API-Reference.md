@@ -346,14 +346,14 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 
 ### [[Controls|SVG-Controls]]
 
-* [[d3.svg.brush|SVG-Controls#wiki-brush]]
-* [[brush|SVG-Controls#wiki-_brush]]
-* [[brush.x|SVG-Controls#wiki-brush_x]]
-* [[brush.y|SVG-Controls#wiki-brush_y]]
-* [[brush.extent|SVG-Controls#wiki-brush_extent]]
-* [[brush.clear|SVG-Controls#wiki-brush_clear]]
-* [[brush.empty|SVG-Controls#wiki-brush_empty]]
-* [[brush.on|SVG-Controls#wiki-brush_on]]
+* [[d3.svg.brush|SVG-Controls#wiki-brush]] - click and drag to select one- or two-dimensional regions.
+* [[brush|SVG-Controls#wiki-_brush]] - creates or updates a brush for the given selection or transition.
+* [[brush.x|SVG-Controls#wiki-brush_x]] - get or set the brush’s x-scale.
+* [[brush.y|SVG-Controls#wiki-brush_y]] - get or set the brush’s y-scale.
+* [[brush.extent|SVG-Controls#wiki-brush_extent]] - get or set the brush’s extent.
+* [[brush.clear|SVG-Controls#wiki-brush_clear]] - reset the brush extent.
+* [[brush.empty|SVG-Controls#wiki-brush_empty]] - returns true if the brush extent is empty.
+* [[brush.on|SVG-Controls#wiki-brush_on]] - respond to events when the brush is moved.
 
 ## [d3.time (Time)](Time)
 
