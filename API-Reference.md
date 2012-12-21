@@ -51,7 +51,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[transition.tween|Transitions#wiki-tween]] - specify a custom tween operator to run as part of the transition.
 * [[transition.select|Transitions#wiki-select]] - start a transition on a descendant element for each selected element.
 * [[transition.selectAll|Transitions#wiki-selectAll]] - start a transition on multiple descendants for each selected element.
-* [[transition.transition|Transitions#wiki-transition]] - start another transition on the same elements.
+* [[transition.transition|Transitions#wiki-transition]] - when this transition ends, start another one on the same elements.
 * [[transition.remove|Transitions#wiki-remove]] - remove selected elements at the end of a transition.
 * [[transition.each|Transitions#wiki-each]] - add a listener for transition end events.
 * [[transition.call|Transitions#wiki-call]] - call a function passing in the current transition.
