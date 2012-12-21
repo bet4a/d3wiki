@@ -1,4 +1,4 @@
-> [Wiki](Home) ▸ [[Geom]] ▸ **Quadtree Geom**
+> [Wiki](Home) ▸ [[Geometry]] ▸ **Quadtree Geom**
 
 A quadtree is a two-dimensional recursive spatial subdivision; see [bl.ock 4343214](http://bl.ocks.org/4343214) for an example.
 
