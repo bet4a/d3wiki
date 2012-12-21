@@ -315,6 +315,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[symbol|SVG-Shapes#wiki-_symbol]] - generate categorical symbols, as in a scatterplot.
 * [[symbol.type|SVG-Shapes#wiki-symbol_type]] - get or set the symbol type accessor.
 * [[symbol.size|SVG-Shapes#wiki-symbol_size]] - get or set the symbol size (in square pixels) accessor.
+* [d3.svg.symbolTypes](SVG-Shapes#wiki-symbolTypes) - the array of supported symbol types.
 * [[d3.svg.chord|SVG-Shapes#wiki-chord]] - create a new chord generator.
 * [[chord|SVG-Shapes#wiki-_chord]] - generate a quadratic Bézier connecting two arcs, as in a chord diagram.
 * [[chord.radius|SVG-Shapes#wiki-chord_radius]] - get or set the arc radius accessor.
