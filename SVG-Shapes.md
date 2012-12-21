@@ -454,6 +454,10 @@ The *type*-accessor is invoked in the same manner as other value functions in D3
 
 If *size* is specified, sets the *size*-accessor to the specified function or constant in square pixels. If *size* is not specified, returns the current *size*-accessor.  The default is 64. This accessor is invoked on the argument passed to the symbol generator. Typically, a *size*-accessor is specified as a function when you want the size of the symbol to encode a [quantitative dimension](Quantitative-Scales) of data, or a constant it you simply want to make all the dots bigger or smaller. If you want to specify a radius rather than the size, you must do so indirectly, for example using a [pow](Quantitative-Scales#wiki-pow) scale with exponent 2.
 
+<a name="symbolTypes" href="SVG-Shapes#wiki-symbolTypes">#</a> d3.svg.<b>symbolTypes</b>
+
+The array of supported [symbol types](#wiki-symbol_type).
+
 <a name="chord" href="SVG-Shapes#wiki-chord">#</a> d3.svg.<b>chord</b>()
 
 Constructs a new chord generator with the default accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). While the default accessors assume that the chord dimensions are all specified dynamically, it is very common to set one or more of the dimensions as a constant, such as the radius. The returned function generates path data for a closed shape connecting two [arcs](http://en.wikipedia.org/wiki/Arc_(geometry\)) with quadratic Bézier curves, as in a [chord diagram](http://mbostock.github.com/d3/ex/chord.html):
