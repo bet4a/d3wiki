@@ -390,6 +390,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[interval.utc|Time-Intervals#wiki-interval_utc]] - returns the UTC-equivalent time interval.
 * [[d3.time.day|Time-Intervals#wiki-day]] - every day (12:00 AM).
 * [[d3.time.days|Time-Intervals#wiki-day]] - alias for day.range.
+* [d3.time.dayOfYear](Time-Intervals#wiki-dayOfYear) - computes the day number.
 * [[d3.time.hour|Time-Intervals#wiki-hour]] - every hour (e.g., 1:00 AM).
 * [[d3.time.hours|Time-Intervals#wiki-hours]] - alias for hour.range.
 * [[d3.time.minute|Time-Intervals#wiki-minute]] - every minute (e.g., 1:02 AM).
@@ -400,20 +401,28 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[d3.time.seconds|Time-Intervals#wiki-seconds]] - alias for second.range.
 * [[d3.time.sunday|Time-Intervals#wiki-sunday]] - every Sunday (e.g., February 5, 12:00 AM).
 * [[d3.time.sundays|Time-Intervals#wiki-sundays]] - alias for sunday.range.
+* [d3.time.sundayOfYear](Time-Intervals#wiki-sundayOfYear) - computes the sunday-based week number.
 * [[d3.time.monday|Time-Intervals#wiki-monday]] - every Monday (e.g., February 5, 12:00 AM).
 * [[d3.time.mondays|Time-Intervals#wiki-mondays]] - alias for monday.range.
+* [d3.time.mondayOfYear](Time-Intervals#wiki-mondayOfYear) - computes the monday-based week number.
 * [[d3.time.tuesday|Time-Intervals#wiki-tuesday]] - every Tuesday (e.g., February 5, 12:00 AM).
 * [[d3.time.tuesdays|Time-Intervals#wiki-tuesdays]] - alias for tuesday.range.
+* [d3.time.tuesdayOfYear](Time-Intervals#wiki-tuesdayOfYear) - computes the tuesday-based week number.
 * [[d3.time.wednesday|Time-Intervals#wiki-wednesday]] - every Wednesday (e.g., February 5, 12:00 AM).
 * [[d3.time.wednesdays|Time-Intervals#wiki-wednesdays]] - alias for wednesday.range.
+* [d3.time.wednesdayOfYear](Time-Intervals#wiki-tuesdayOfYear) - computes the wednesday-based week number.
 * [[d3.time.thursday|Time-Intervals#wiki-thursday]] - every Thursday (e.g., February 5, 12:00 AM).
 * [[d3.time.thursdays|Time-Intervals#wiki-thursdays]] - alias for thursday.range.
+* [d3.time.thursdayOfYear](Time-Intervals#wiki-thursdayOfYear) - computes the thursday-based week number.
 * [[d3.time.friday|Time-Intervals#wiki-friday]] - every Friday (e.g., February 5, 12:00 AM).
 * [[d3.time.fridays|Time-Intervals#wiki-fridays]] - alias for friday.range.
+* [d3.time.fridayOfYear](Time-Intervals#wiki-fridayOfYear) - computes the friday-based week number.
 * [[d3.time.saturday|Time-Intervals#wiki-saturday]] - every Saturday (e.g., February 5, 12:00 AM).
 * [[d3.time.saturdays|Time-Intervals#wiki-saturdays]] - alias for saturday.range.
+* [d3.time.saturdayOfYear](Time-Intervals#wiki-saturdayOfYear) - computes the saturday-based week number.
 * [[d3.time.week|Time-Intervals#wiki-week]] - alias for sunday.
 * [[d3.time.weeks|Time-Intervals#wiki-weeks]] - alias for sunday.range.
+* [d3.time.weekOfYear](Time-Intervals#wiki-weekOfYear) - alias for sundayOfYear.
 * [[d3.time.year|Time-Intervals#wiki-year]] - every year (e.g., January 1, 12:00 AM).
 * [[d3.time.years|Time-Intervals#wiki-years]] - alias for year.range.
 
