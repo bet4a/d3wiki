@@ -130,15 +130,15 @@ Alias for d3.time.[hour](#wiki-hour).[range](#wiki-interval_range). Returns the 
 Alias for d3.time.[day](#wiki-day).[range](#wiki-interval_range). Returns the day boundaries (midnight) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th date will be returned, based on the day of the month. For example, a *step* of 2 will return the 1st, 3rd, 5th *etc.* of the month.
 
 <a name="weeks" href="#wiki-weeks">#</a> d3.time.<b>weeks</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
-<a name="sundays" href="#wiki-sundays">#</a> d3.time.<b>sundays</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
-<a name="mondays" href="#wiki-mondays">#</a> d3.time.<b>monday</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
-<a name="tuesdays" href="#wiki-tuesdays">#</a> d3.time.<b>tuesday</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
-<a name="wednesdays" href="#wiki-wednesdays">#</a> d3.time.<b>wednesday</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
-<a name="thursdays" href="#wiki-thursdays">#</a> d3.time.<b>thursday</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
-<a name="fridays" href="#wiki-fridays">#</a> d3.time.<b>friday</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
-<a name="saturdays" href="#wiki-saturdays">#</a> d3.time.<b>saturday</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
+<br><a name="sundays" href="#wiki-sundays">#</a> d3.time.<b>sundays</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
+<br><a name="mondays" href="#wiki-mondays">#</a> d3.time.<b>monday</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
+<br><a name="tuesdays" href="#wiki-tuesdays">#</a> d3.time.<b>tuesday</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
+<br><a name="wednesdays" href="#wiki-wednesdays">#</a> d3.time.<b>wednesday</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
+<br><a name="thursdays" href="#wiki-thursdays">#</a> d3.time.<b>thursday</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
+<br><a name="fridays" href="#wiki-fridays">#</a> d3.time.<b>friday</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
+<br><a name="saturdays" href="#wiki-saturdays">#</a> d3.time.<b>saturday</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
-Aliases for d3.time.[sunday](#wiki-sunday).[range](#wiki-interval_range) etc. Returns the week boundaries (midnight Sunday) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th week will be returned, based on the week of the year. For example, a *step* of 4 will return January 2, January 30, February 27, *etc.*
+Aliases for d3.time.<i>interval</i>.[range](#wiki-interval_range) etc. Returns the week boundaries (midnight Sunday) after or equal to *start* and before *stop*. If *step* is specified, then every *step*'th week will be returned, based on the week of the year. For example, a *step* of 4 will return January 2, January 30, February 27, *etc.*
 
 <a name="months" href="#wiki-months">#</a> d3.time.<b>months</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
