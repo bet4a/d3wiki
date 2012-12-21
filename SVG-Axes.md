@@ -4,7 +4,7 @@ D3’s [axis component](http://bl.ocks.org/1166403) displays reference lines for
 
 ## Axis
 
-The axis component is designed to work with any of D3’s [quantitative scales](Quantitative-Scales).
+The axis component is designed to work with D3’s [quantitative](Quantitative-Scales), [time](Time-Scales) and [ordinal](Ordinal-Scales) scales.
 
 <a name="axis" href="SVG-Axes#wiki-axis">#</a> d3.svg.<b>axis</b>()
 
