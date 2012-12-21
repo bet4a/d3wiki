@@ -17,7 +17,7 @@ In addition to numbers, D3 also supports formatting and parsing [[dates|Time-For
 
 ## Numbers
 
-<a name="d3_format" href="Formatting#wiki-d3_format">#</a> d3.<b>format</b>(<i>specifier</i>)
+<a name="d3_format" href="#wiki-d3_format">#</a> d3.<b>format</b>(<i>specifier</i>)
 
 Returns a new format function with the given string *specifier*. A format function takes a number as the only argument, and returns a string representing the formatted number. The format specifier is modeled after Python 3.1's built-in [[format specification mini-language|http://docs.python.org/release/3.1.3/library/string.html#formatspec]]. The general form of a specifier is [*sign*][0][*width*][,][.*precision*][*type*].
 
@@ -43,6 +43,23 @@ The available *type* values are:
 * SI-prefix ("s") - like rounded, but with a unit suffixed such as "9.5M" or "1.00µ".
 
 The type "n" is also supported as shorthand for ",g". The *precision* indicates how many digits should be displayed after the decimal point for a value formatted with types "f" and "%", or before and after the decimal point for a value formatted with types "g", "r" and "p".
+
+<a name="d3_formatPrefix" href="#wiki-d3_formatPrefix">#</a> d3.<b>formatPrefix</b>(<i>value</i>, <i>precision</i>)
+
+Returns the [SI prefix](http://en.wikipedia.org/wiki/Metric_prefix) for the specified *value* at the specified *precision*. The returned prefix object has two properties:
+
+* symbol - the prefix symbol, such as "M" for millions.
+* scale - the scale function, for converting numbers to the appropriate prefixed scale.
+
+For example:
+
+```js
+var prefix = d3.formatPrefix(1.21e9);
+console.log(prefix.symbol); // "G"
+console.log(prefix.scale(1.21e9)); // 1.21
+```
+
+This method is used by d3.format for the %s format.
 
 <a name="d3_round" href="Formatting#wiki-d3_round">#</a> d3.<b>round</b>(<i>x</i>[, <i>n</i>])
 
