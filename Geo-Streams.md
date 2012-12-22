@@ -6,6 +6,8 @@ For fast transformations of geometry without temporary copies of geometry object
 
 Streams the specified [GeoJSON](http://geojson.org) *object* to the specified stream *listener*. (Despite the name “stream”, these method calls are currently synchronous.) While both features and geometry objects are supported as input, the stream interface only describes the geometry, and thus additional feature properties are not visible to listeners.
 
+## Stream Listeners
+
 <a name="point" href="#wiki-point">#</a> listener.<b>point</b>(<i>x</i>, <i>y</i>)
 
 …
