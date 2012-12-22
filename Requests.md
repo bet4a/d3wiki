@@ -13,25 +13,31 @@ d3.json("path/to/file.json", function(json) {
 });
 ```
 
-By default, most browsers do not allow cross-domain requests. To [enable cross-domain requests](http://enable-cors.org/), have the server set the header Access-Control-Allow-Origin: *. For more details, see the W3C recommendation on [[Cross-Origin Resource Sharing|http://www.w3.org/TR/cors/]].
+By default, most browsers do not allow cross-domain requests. To [enable cross-domain requests](http://enable-cors.org/), have the server set the header Access-Control-Allow-Origin: *. For more details, see the W3C recommendation on [[Cross-Origin Resource Sharing|http://www.w3.org/TR/cors/]]. For IE9, d3.xhr uses the nonstandard XDomainRequest for cross-domain requests.
 
 ## Requests
 
-<a name="d3_xhr" href="#wiki-d3_xhr">#</a> d3.<b>xhr</b>(<i>url</i>[, <i>mime</i>][, <i>callback</i>])
+<a name="d3_xhr" href="#wiki-d3_xhr">#</a> d3.<b>xhr</b>(<i>url</i>[, <i>mimeType</i>][, <i>callback</i>])
 
-Creates a request for specified *url*. An optional *mime* type may be specified as the second argument, such as "text/plain". If a *callback* is specified, the request is immediately issued as a GET request, and the callback will be invoked asynchronously when the resource is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the XMLHttpRequest object. The response object is undefined if an error occurs. If no callback is specified, the returned request can be issued using [xhr.get](#wiki-get), [xhr.post](#wiki-post) or similar, and handled using [xhr.on](#wiki-on).
+Creates a request for specified *url*. An optional *mime type* may be specified as the second argument, such as "text/plain". If a *callback* is specified, the request is immediately issued as a GET request, and the callback will be invoked asynchronously when the resource is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the XMLHttpRequest object. The response object is undefined if an error occurs. If no callback is specified, the returned request can be issued using [xhr.get](#wiki-get), [xhr.post](#wiki-post) or similar, and handled using [xhr.on](#wiki-on).
 
 <a name="header" href="#wiki-header">#</a> xhr.<b>header</b>(<i>name</i>[, <i>value</i>])
 
-…
+If *value* is specified, sets the request header with the specified *name* to the specified value. If *value* is null, removes the request header with the specified *name*. If *value* is not specified, returns the current value of the request header with the specified *name*. Header names are case-insensitive. Request headers can only be modified before the request is [sent](#wiki-sent).
 
-<a name="mimeType" href="#wiki-mimeType">#</a> xhr.<b>mimeType</b>(<i>type</i>])
+<a name="mimeType" href="#wiki-mimeType">#</a> xhr.<b>mimeType</b>([<i>type</i>])
 
-…
+If *type* is specified, sets the request mime type to the specified value. If *type* is null, clears the current mime type, if any. If *type* is not specified, returns the current mime type, which defaults to null. The mime type is used to both set the ["Accept" request header](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html) and for [overrideMimeType](http://www.w3.org/TR/XMLHttpRequest/#the-overridemimetype%28%29-method), where supported. Request headers can only be modified before the request is [sent](#wiki-sent).
 
-<a name="response" href="#wiki-response">#</a> xhr.<b>response</b>(<i>function</i>)
+<a name="response" href="#wiki-response">#</a> xhr.<b>response</b>(<i>parser</i>)
 
-…
+If *parser* is specified, sets the response conversion function to the specified function. If *parser* is not specified, returns the current conversion function, which defaults to the identity function. The response conversion function is used to map the response XMLHttpRequest object to its associated data value. The following conversion functions are commonly used:
+
+* text - `function(request) { return request.responseText; }`
+* JSON - `function(request) { return JSON.parse(request.responseText); }`
+* XML - `function(request) { return request.responseXML; }`
+* CSV - `function(request) { return d3.csv.parse(request.responseText); }`
+* TSV - `function(request) { return d3.tsv.parse(request.responseText); }`
 
 <a name="get" href="#wiki-get">#</a> xhr.<b>get</b>([<i>callback</i>])
 
@@ -57,17 +63,17 @@ Creates a request for specified *url*. An optional *mime* type may be specified 
 
 Often, d3.xhr is not used directly. Instead, one of the type-specific methods is used instead, such as [d3.text](#wiki-d3_text) for plain text, [d3.json](#wiki-d3_json) for JSON, [d3.xml](#wiki-d3_xml) for XML, [d3.html](#wiki-d3_html) for HTML, or [d3.csv](#wiki-d3_csv) for comma-separated values.
 
-<a name="d3_text" href="Requests#wiki-d3_text">#</a> d3.<b>text</b>(<i>url</i>[, <i>mime</i>][, <i>callback</i>])
+<a name="d3_text" href="Requests#wiki-d3_text">#</a> d3.<b>text</b>(<i>url</i>[, <i>mimeType</i>][, <i>callback</i>])
 
-Creates a request for the text file at the specified *url*. An optional *mime* type may be specified as the second argument, such as "text/plain". If a *callback* is specified, the request is immediately issued as a GET request, and the callback will be invoked asynchronously when the file is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the response text. The response text is undefined if an error occurs. If no callback is specified, the returned request can be issued using xhr.get or similar, and handled using xhr.on.
+Creates a request for the text file at the specified *url*. An optional *mime type* may be specified as the second argument, such as "text/plain". If a *callback* is specified, the request is immediately issued as a GET request, and the callback will be invoked asynchronously when the file is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the response text. The response text is undefined if an error occurs. If no callback is specified, the returned request can be issued using xhr.get or similar, and handled using xhr.on.
 
 <a name="d3_json" href="Requests#wiki-d3_json">#</a> d3.<b>json</b>(<i>url</i>[, <i>callback</i>])
 
 Creates a request for the [JSON](http://json.org) file at the specified *url* with the mime type "application/json". If a *callback* is specified, the request is immediately issued as a GET request, and the callback will be invoked asynchronously when the file is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the parsed JSON. The parsed JSON is undefined if an error occurs. If no callback is specified, the returned request can be issued using xhr.get or similar, and handled using xhr.on.
 
-<a name="d3_xml" href="Requests#wiki-d3_xml">#</a> d3.<b>xml</b>(<i>url</i>[, <i>mime</i>][, <i>callback</i>])
+<a name="d3_xml" href="Requests#wiki-d3_xml">#</a> d3.<b>xml</b>(<i>url</i>[, <i>mimeType</i>][, <i>callback</i>])
 
-Creates a request for the XML file at the specified *url*. An optional *mime* type may be specified as the second argument, such as "application/xml". If a *callback* is specified, the request is immediately issued as a GET request, and the callback will be invoked asynchronously when the file is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the parsed XML as a [document](http://www.w3.org/TR/XMLHttpRequest/#the-responsexml-attribute). The parsed XML is undefined if an error occurs. If no callback is specified, the returned request can be issued using xhr.get or similar, and handled using xhr.on.
+Creates a request for the XML file at the specified *url*. An optional *mime type* may be specified as the second argument, such as "application/xml". If a *callback* is specified, the request is immediately issued as a GET request, and the callback will be invoked asynchronously when the file is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the parsed XML as a [document](http://www.w3.org/TR/XMLHttpRequest/#the-responsexml-attribute). The parsed XML is undefined if an error occurs. If no callback is specified, the returned request can be issued using xhr.get or similar, and handled using xhr.on.
 
 <a name="d3_html" href="Requests#wiki-d3_html">#</a> d3.<b>html</b>(<i>url</i>[, <i>callback</i>])
 
