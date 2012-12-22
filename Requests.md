@@ -15,7 +15,7 @@ d3.json("path/to/file.json", function(json) {
 
 By default, most browsers do not allow cross-domain requests. To [enable cross-domain requests](http://enable-cors.org/), have the server set the header Access-Control-Allow-Origin: *. For more details, see the W3C recommendation on [[Cross-Origin Resource Sharing|http://www.w3.org/TR/cors/]]. For IE9, d3.xhr uses the nonstandard XDomainRequest for cross-domain requests.
 
-## Requests
+## XHR
 
 <a name="d3_xhr" href="#wiki-d3_xhr">#</a> d3.<b>xhr</b>(<i>url</i>[, <i>mimeType</i>][, <i>callback</i>])
 
