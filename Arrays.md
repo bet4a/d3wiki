@@ -134,7 +134,7 @@ Returns an array containing the property keys and values of the specified object
 
 ### Maps
 
-While it is tempting to use bare objects as maps in JavaScript, this can lead to unexpected behavior when built-in property names are used as keys. For example, if you try to set `object["__proto__"] = 42`, it probably won't do what you expect. The same is true if you attempt to query whether a given key is defined in the map; `"hasOwnProperty" in object` returns true because your bare object inherits the hasOwnProperty method from the Object prototype. To avoid these problems, ES6 proposes [simple maps and sets](http://wiki.ecmascript.org/doku.php?id=harmony:simple_maps_and_sets); until modern browsers support these collections, you can use d3.map instead.
+While it is tempting to use bare objects as maps in JavaScript, this can lead to [unexpected behavior](http://www.devthought.com/2012/01/18/an-object-is-not-a-hash/) when built-in property names are used as keys. For example, if you try to set `object["__proto__"] = 42`, it probably won't do what you expect. The same is true if you attempt to query whether a given key is defined in the map; `"hasOwnProperty" in object` returns true because your bare object inherits the hasOwnProperty method from the Object prototype. To avoid these problems, ES6 proposes [simple maps and sets](http://wiki.ecmascript.org/doku.php?id=harmony:simple_maps_and_sets); until modern browsers support these collections, you can use d3.map instead.
 
 Note: unlike the proposed ES6 map, d3.map still uses string-coercion for keys rather than strict equality.
 
