@@ -25,26 +25,26 @@ Issues an HTTP GET request for the specified *url*. An optional *mime* type may 
 
 Often, d3.xhr is not used directly. Instead, one of the type-specific methods is used instead, such as: [text](Requests#wiki-d3_text) for plain text, [json](Requests#wiki-d3_json) for JSON, [xml](Requests#wiki-d3_xml) for XML, [html](Requests#wiki-d3_html) for HTML, and [[csv|CSV]] for comma-separated values.
 
-<a name="d3_text" href="Requests#wiki-d3_text">#</a> d3.<b>text</b>(<i>url</i>[, <i>mime</i>], <i>callback</i>)
+<a name="d3_text" href="Requests#wiki-d3_text">#</a> d3.<b>text</b>(<i>url</i>[, <i>mime</i>][, <i>callback</i>])
 
-Issues an HTTP GET request for the text file at the specified *url*. An optional *mime* type may be specified as the second argument, such as "text/plain". The request is processed asynchronously, such that this method returns immediately after opening the request. When the text is available, the specified *callback* will be invoked, being passed the text string, per the `responseText` attribute of the request. If an error occurs, the callback function will instead be invoked with null.
+Creates a request for the text file at the specified *url*. An optional *mime* type may be specified as the second argument, such as "text/plain". If a *callback* is specified, the request is immediately issued as a GET request, and the callback will be invoked asynchronously when the file is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the response text. The response text is undefined if an error occurs. If no callback is specified, the returned request can be issued using xhr.get or similar, and handled using xhr.on.
 
-<a name="d3_json" href="Requests#wiki-d3_json">#</a> d3.<b>json</b>(<i>url</i>, <i>callback</i>)
+<a name="d3_json" href="Requests#wiki-d3_json">#</a> d3.<b>json</b>(<i>url</i>[, <i>callback</i>])
 
-Issues an HTTP GET request for the JSON file at the specified *url*. The *mime* type "application/json" will be used. The request is processed asynchronously, such that this method returns immediately after opening the request. When the text is available, the specified *callback* will be invoked, being passed the JSON result (typically, an object or an array, depending on the contents of the file), parsed from the `responseText` attribute of the request. If an error occurs, the callback function will instead be invoked with null.
+Creates a request for the [JSON](http://json.org) file at the specified *url* with the mime type "application/json". If a *callback* is specified, the request is immediately issued as a GET request, and the callback will be invoked asynchronously when the file is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the parsed JSON. The parsed JSON is undefined if an error occurs. If no callback is specified, the returned request can be issued using xhr.get or similar, and handled using xhr.on.
 
-<a name="d3_xml" href="Requests#wiki-d3_xml">#</a> d3.<b>xml</b>(<i>url</i>[, <i>mime</i>], <i>callback</i>)
+<a name="d3_xml" href="Requests#wiki-d3_xml">#</a> d3.<b>xml</b>(<i>url</i>[, <i>mime</i>][, <i>callback</i>])
 
-Issues an HTTP GET request for the XML file at the specified *url*. An optional *mime* type may be specified as the second argument, such as "application/xml". The request is processed asynchronously, such that this method returns immediately after opening the request. When the XML content is available, the specified *callback* will be invoked, being passed the root (document) element of the loaded XML content, per the `responseXML` attribute of the request. If an error occurs, the callback function will instead be invoked with null.
+Creates a request for the XML file at the specified *url*. An optional *mime* type may be specified as the second argument, such as "application/xml". If a *callback* is specified, the request is immediately issued as a GET request, and the callback will be invoked asynchronously when the file is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the parsed XML as a [document](http://www.w3.org/TR/XMLHttpRequest/#the-responsexml-attribute). The parsed XML is undefined if an error occurs. If no callback is specified, the returned request can be issued using xhr.get or similar, and handled using xhr.on.
 
-<a name="d3_html" href="Requests#wiki-d3_html">#</a> d3.<b>html</b>(<i>url</i>, <i>callback</i>)
+<a name="d3_html" href="Requests#wiki-d3_html">#</a> d3.<b>html</b>(<i>url</i>[, <i>callback</i>])
 
-Issues an HTTP GET request for the HTML file at the specified *url*. The *mime* type "text/html" will be used. The request is processed asynchronously, such that this method returns immediately after opening the request. When the HTML content is available, the specified *callback* will be invoked, being passed the root (document) element of the loaded HTML content. This is generated as a document fragment from the `responseText` attribute of the request. If an error occurs, the callback function will instead be invoked with null.
+Creates a request for the HTML file at the specified *url* with the mime type "text/html". If a *callback* is specified, the request is immediately issued as a GET request, and the callback will be invoked asynchronously when the file is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the parsed HTML as a [document fragment](https://developer.mozilla.org/en-US/docs/DOM/range.createContextualFragment). The parsed HTML is undefined if an error occurs. If no callback is specified, the returned request can be issued using xhr.get or similar, and handled using xhr.on.
 
-<a name="d3_csv" href="CSV">#</a> d3.<b>csv</b>(<i>url</i>, <i>callback</i>)
+<a name="d3_csv" href="CSV">#</a> d3.<b>csv</b>(<i>url</i>[, <i>callback</i>])
 
-See [[CSV]].
+Creates a request for the [[CSV]] file at the specified *url* with the mime type "text/csv". If a *callback* is specified, the request is immediately issued as a GET request, and the callback will be invoked asynchronously when the file is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the array of [parsed rows](CSV#wiki-parse) per [RFC 4180](http://tools.ietf.org/html/rfc4180). The rows array is undefined if an error occurs. If no callback is specified, the returned request can be issued using xhr.get or similar, and handled using xhr.on.
 
-<a name="d3_tsv" href="CSV#wiki-tsv">#</a> d3.<b>tsv</b>(<i>url</i>, <i>callback</i>)
+<a name="d3_tsv" href="CSV#wiki-tsv">#</a> d3.<b>tsv</b>(<i>url</i>[, <i>callback</i>])
 
-See [TSV](CSV#wiki-tsv).
+Creates a request for the [TSV](CSV#wiki-d3_tsv) file at the specified *url* with the mime type "text/tab-separated-values". If a *callback* is specified, the request is immediately issued as a GET request, and the callback will be invoked asynchronously when the file is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the array of [parsed rows](CSV#wiki-tsv_parse) per [RFC 4180](http://tools.ietf.org/html/rfc4180). The rows array is undefined if an error occurs. If no callback is specified, the returned request can be issued using xhr.get or similar, and handled using xhr.on.
