@@ -15,13 +15,15 @@ d3.json("path/to/file.json", function(json) {
 
 By default, most browsers do not allow cross-domain requests. To [enable cross-domain requests](http://enable-cors.org/), have the server set the header Access-Control-Allow-Origin: *. For more details, see the W3C recommendation on [[Cross-Origin Resource Sharing|http://www.w3.org/TR/cors/]].
 
-## Issuing Requests
+## Requests
 
 <a name="d3_xhr" href="Requests#wiki-d3_xhr">#</a> d3.<b>xhr</b>(<i>url</i>[, <i>mime</i>], <i>callback</i>)
 
 Issues an HTTP GET request for the specified *url*. An optional *mime* type may be specified as the second argument, such as "application/json". The request is processed asynchronously, such that this method returns immediately after opening the request. When the data is available, the specified *callback* will be invoked, being passed the [[XMLHttpRequest|http://www.w3.org/TR/XMLHttpRequest/]] object. If an error occurs, the callback function will instead be invoked with null.
 
-This method is typically not used directly. Instead, one of the type-specific methods is used instead, such as: [text](Requests#wiki-d3_text) for plain text, [json](Requests#wiki-d3_json) for JSON, [xml](Requests#wiki-d3_xml) for XML, [html](Requests#wiki-d3_html) for HTML, and [[csv|CSV]] for comma-separated values.
+## Convenience Methods
+
+Often, d3.xhr is not used directly. Instead, one of the type-specific methods is used instead, such as: [text](Requests#wiki-d3_text) for plain text, [json](Requests#wiki-d3_json) for JSON, [xml](Requests#wiki-d3_xml) for XML, [html](Requests#wiki-d3_html) for HTML, and [[csv|CSV]] for comma-separated values.
 
 <a name="d3_text" href="Requests#wiki-d3_text">#</a> d3.<b>text</b>(<i>url</i>[, <i>mime</i>], <i>callback</i>)
 
