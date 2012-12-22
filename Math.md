@@ -2,9 +2,11 @@
 
 ## Pseudorandom Number Generation
 
+You can use the built-in [Math.random](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Math/random) to generate uniform distributions. For example, to generate a random integer between 0 and 99, you can say `Math.floor(Math.random() * 100)`. 
+
 <a name="d3_random_normal" href="#wiki-d3_random_normal">#</a> d3.random.<b>normal</b>([<i>mean</i>, [<i>deviation</i>]])
 
-Returns a function for generating random numbers with a normal (Gaussian) distribution. The expected value of the generated pseudorandom numbers is *mean*, with the given standard *deviation*. If *deviation* is not specified, it defaults to 1.0; if *mean* is not specified, it defaults to 0.0.
+Returns a function for generating random numbers with a [normal (Gaussian) distribution](http://en.wikipedia.org/wiki/Normal_distribution). The expected value of the generated pseudorandom numbers is *mean*, with the given standard *deviation*. If *deviation* is not specified, it defaults to 1.0; if *mean* is not specified, it defaults to 0.0.
 
 <a name="d3_random_logNormal" href="#wiki-d3_random_logNormal">#</a> d3.random.<b>logNormal</b>([<i>mean</i>, [<i>deviation</i>]])
 
