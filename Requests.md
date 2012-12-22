@@ -29,35 +29,37 @@ If *value* is specified, sets the request header with the specified *name* to th
 
 If *type* is specified, sets the request mime type to the specified value. If *type* is null, clears the current mime type, if any. If *type* is not specified, returns the current mime type, which defaults to null. The mime type is used to both set the ["Accept" request header](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html) and for [overrideMimeType](http://www.w3.org/TR/XMLHttpRequest/#the-overridemimetype%28%29-method), where supported. Request headers can only be modified before the request is [sent](#wiki-sent).
 
-<a name="response" href="#wiki-response">#</a> xhr.<b>response</b>(<i>parser</i>)
+<a name="response" href="#wiki-response">#</a> xhr.<b>response</b>(<i>value</i>)
 
-If *parser* is specified, sets the response conversion function to the specified function. If *parser* is not specified, returns the current conversion function, which defaults to the identity function. The response conversion function is used to map the response XMLHttpRequest object to its associated data value. The following conversion functions are commonly used:
-
-* text - `function(request) { return request.responseText; }`
-* JSON - `function(request) { return JSON.parse(request.responseText); }`
-* XML - `function(request) { return request.responseXML; }`
-* CSV - `function(request) { return d3.csv.parse(request.responseText); }`
-* TSV - `function(request) { return d3.tsv.parse(request.responseText); }`
+If *value* is specified, sets the response value function to the specified function. If *value* is not specified, returns the current response value function, which defaults to the identity function. The response value function is used to map the response XMLHttpRequest object to its associated data value. For example, for text requests, you might use `function(request) { return request.responseText; }`, whereas for JSON requests, you might use `function(request) { return JSON.parse(request.responseText); }`.
 
 <a name="get" href="#wiki-get">#</a> xhr.<b>get</b>([<i>callback</i>])
 
-…
+Issues this request using the GET method. If a *callback* is specified, it will be invoked asynchronously when the request is done or errors; the callback is invoked with two arguments: the error, if any, and the response value. The response value is undefined if an error occurs. If no *callback* is specified, then "load" and "error" listeners should be registered via [xhr.on](#wiki-on). This method is a convenience wrapper of [xhr.send](#wiki-send).
 
 <a name="post" href="#wiki-post">#</a> xhr.<b>post</b>([<i>data</i>][, <i>callback</i>])
 
-…
+Issues this request using the POST method, optionally posting the specified *data* in the request body. If a *callback* is specified, it will be invoked asynchronously when the request is done or errors; the callback is invoked with two arguments: the error, if any, and the response value. The response value is undefined if an error occurs. If no *callback* is specified, then "load" and "error" listeners should be registered via [xhr.on](#wiki-on). This method is a convenience wrapper of [xhr.send](#wiki-send).
 
 <a name="send" href="#wiki-send">#</a> xhr.<b>send</b>(<i>method</i>[, <i>data</i>][, <i>callback</i>])
 
-…
+Issues this request using the specified *method*, optionally posting the specified *data* in the request body. If a *callback* is specified, it will be invoked asynchronously when the request is done or errors; the callback is invoked with two arguments: the error, if any, and the response value. The response value is undefined if an error occurs. If no *callback* is specified, then "load" and "error" listeners should be registered via [xhr.on](#wiki-on).
 
 <a name="abort" href="#wiki-abort">#</a> xhr.<b>abort</b>()
 
-…
+Aborts this request, if it is currently in-flight. See [XMLHttpRequest’s abort](http://www.w3.org/TR/XMLHttpRequest/#the-abort%28%29-method).
 
 <a name="on" href="#wiki-on">#</a> xhr.<b>on</b>(<i>type</i>[, <i>listener</i>])
 
-…
+Adds or removes an event *listener* to this request for the specified *type*. The type must be one of the following:
+
+* progress - to monitor the [progress of the request](http://www.w3.org/TR/progress-events/).
+* load - when the request completes successfully.
+* error - when the request completes unsuccessfully; this includes 4xx and 5xx response codes.
+
+If an event listener was already registered for the same type, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "load.foo" and "load.bar". To remove a listener, pass null as the listener.
+
+If *listener* is not specified, returns the currently-assigned listener for the specified type, if any.
 
 ## Convenience Methods
 
