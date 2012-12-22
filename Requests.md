@@ -44,3 +44,7 @@ Issues an HTTP GET request for the HTML file at the specified *url*. The *mime* 
 <a name="d3_csv" href="CSV">#</a> d3.<b>csv</b>(<i>url</i>, <i>callback</i>)
 
 See [[CSV]].
+
+<a name="d3_tsv" href="CSV#wiki-tsv">#</a> d3.<b>tsv</b>(<i>url</i>, <i>callback</i>)
+
+See [TSV](CSV#wiki-tsv).
