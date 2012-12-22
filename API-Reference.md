@@ -596,13 +596,6 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * d3.geo.area -
 * [[d3.geo.bounds|Geo-Paths#wiki-bounds]] - compute the latitude-longitude bounding box for a given feature.
 * d3.geo.centroid -
-* d3.geo.stream -
-* stream.point -
-* stream.sphere -
-* stream.lineStart -
-* stream.lineEnd -
-* stream.polygonStart -
-* stream.polygonEnd -
 
 ### [[Projections|Geo-Projections]]
 
@@ -646,6 +639,16 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * stereographic -
 * stereographic.invert -
 * stereographic.raw -
+
+### [Streams](Geo-Streams)
+
+* [d3.geo.stream](Geo-Streams#d3_geo_stream) - convert a GeoJSON object to a geometry stream.
+* [stream.point](Geo-Streams#point) - indicate an *x*, *y* (and optionally *z*) coordinate.
+* [stream.lineStart](Geo-Streams#lineStart) - indicate the start of a line or ring.
+* [stream.lineEnd](Geo-Streams#lineEnd) - indicate the end of a line or ring.
+* [stream.polygonStart](Geo-Streams#polygonStart) - indicate the start of a polygon.
+* [stream.polygonEnd](Geo-Streams#polygonEnd) - indicate the end of a polygon.
+* [stream.sphere](Geo-Streams#sphere) - indicate a sphere.
 
 ## [d3.geom (Geometry)](Geometry)
 
