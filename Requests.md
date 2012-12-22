@@ -23,7 +23,7 @@ Issues an HTTP GET request for the specified *url*. An optional *mime* type may 
 
 ## Convenience Methods
 
-Often, d3.xhr is not used directly. Instead, one of the type-specific methods is used instead, such as: [text](Requests#wiki-d3_text) for plain text, [json](Requests#wiki-d3_json) for JSON, [xml](Requests#wiki-d3_xml) for XML, [html](Requests#wiki-d3_html) for HTML, and [[csv|CSV]] for comma-separated values.
+Often, d3.xhr is not used directly. Instead, one of the type-specific methods is used instead, such as [d3.text](#wiki-d3_text) for plain text, [d3.json](#wiki-d3_json) for JSON, [d3.xml](#wiki-d3_xml) for XML, [d3.html](#wiki-d3_html) for HTML, or [d3.csv](#wiki-d3_csv) for comma-separated values.
 
 <a name="d3_text" href="Requests#wiki-d3_text">#</a> d3.<b>text</b>(<i>url</i>[, <i>mime</i>][, <i>callback</i>])
 
