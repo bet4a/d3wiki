@@ -8,6 +8,8 @@ Streams the specified [GeoJSON](http://geojson.org) *object* to the specified st
 
 ## Stream Listeners
 
+Stream listeners must implement several methods to traverse geometry. Listeners are inherently stateful; the meaning of a [point](#wiki-point) depends on whether the point is inside of a [line](#wiki-lineStart), and likewise a line is distinguished from a ring by a [polygon](#wiki-polygonStart).
+
 <a name="point" href="#wiki-point">#</a> listener.<b>point</b>(<i>x</i>, <i>y</i>)
 
 …
@@ -25,5 +27,9 @@ Streams the specified [GeoJSON](http://geojson.org) *object* to the specified st
 …
 
 <a name="polygonEnd" href="#wiki-polygonEnd">#</a> listener.<b>polygonEnd</b>()
+
+…
+
+<a name="sphere" href="#wiki-sphere">#</a> listener.<b>sphere</b>()
 
 …
