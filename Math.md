@@ -6,6 +6,14 @@
 
 Returns a function for generating random numbers with a normal (Gaussian) distribution. The expected value of the generated pseudorandom numbers is *mean*, with the given standard *deviation*. If *deviation* is not specified, it defaults to 1.0; if *mean* is not specified, it defaults to 0.0.
 
+<a name="d3_random_logNormal" href="#wiki-d3_random_logNormal">#</a> d3.random.<b>logNormal</b>([<i>mean</i>, [<i>deviation</i>]])
+
+Returns a function for generating random numbers with a [log-normal distribution](http://en.wikipedia.org/wiki/Log-normal_distribution). The expected value of the random variable’s natural logrithm is *mean*, with the given standard *deviation*. If *deviation* is not specified, it defaults to 1.0; if *mean* is not specified, it defaults to 0.0.
+
+<a name="d3_random_irwinHall" href="#wiki-d3_random_irwinHall">#</a> d3.random.<b>irwinHall</b>(<i>count</i>)
+
+Returns a function for generating random numbers with an [Irwin–Hall distribution](http://en.wikipedia.org/wiki/Irwin–Hall_distribution). The number of independent variables is specified by *count*.
+
 ## 2D Transforms
 
 <a name="d3_transform" href="#wiki-d3_transform">#</a> d3.<b>transform</b>(<i>string</i>)
