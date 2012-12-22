@@ -19,7 +19,7 @@ By default, most browsers do not allow cross-domain requests. To [enable cross-d
 
 <a name="d3_xhr" href="#wiki-d3_xhr">#</a> d3.<b>xhr</b>(<i>url</i>[, <i>mimeType</i>][, <i>callback</i>])
 
-Creates a request for specified *url*. An optional *mime type* may be specified as the second argument, such as "text/plain". If a *callback* is specified, the request is immediately issued as a GET request, and the callback will be invoked asynchronously when the resource is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the XMLHttpRequest object. The response object is undefined if an error occurs. If no callback is specified, the returned request can be issued using [xhr.get](#wiki-get), [xhr.post](#wiki-post) or similar, and handled using [xhr.on](#wiki-on).
+Creates an asynchronous request for specified *url*. An optional *mime type* may be specified as the second argument, such as "text/plain". If a *callback* is specified, the request is immediately issued as a GET request, and the callback will be invoked asynchronously when the resource is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the XMLHttpRequest object. The response object is undefined if an error occurs. If no callback is specified, the returned request can be issued using [xhr.get](#wiki-get), [xhr.post](#wiki-post) or similar, and handled using [xhr.on](#wiki-on).
 
 <a name="header" href="#wiki-header">#</a> xhr.<b>header</b>(<i>name</i>[, <i>value</i>])
 
