@@ -10,7 +10,7 @@ Streams the specified [GeoJSON](http://geojson.org) *object* to the specified st
 
 Stream listeners must implement several methods to traverse geometry. Listeners are inherently stateful; the meaning of a [point](#wiki-point) depends on whether the point is inside of a [line](#wiki-lineStart), and likewise a line is distinguished from a ring by a [polygon](#wiki-polygonStart).
 
-<a name="point" href="#wiki-point">#</a> listener.<b>point</b>(<i>x</i>, <i>y</i>)
+<a name="point" href="#wiki-point">#</a> listener.<b>point</b>(<i>x</i>, <i>y</i>[, <i>z</i>])
 
 …
 
