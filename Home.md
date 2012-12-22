@@ -19,11 +19,17 @@ D3 supports so-called “modern” browsers, which generally means everything _e
 
 ## Installing
 
-If you just want the latest release of D3 as a JavaScript file, you can download them here:
+Download the latest version here:
 
 * <http://d3js.org/d3.v3.zip>
 
-To get the latest release and all the examples, you can find a tarball here:
+Or, to link directly to the latest release, copy this snippet:
+
+```html
+<script src="http://d3js.org/d3.v3.min.js"></script>
+```
+
+Or, if you want the full repository including tests:
 
 * <https://github.com/mbostock/d3/zipball/master>
 
