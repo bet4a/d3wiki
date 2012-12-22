@@ -619,83 +619,32 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * d3.geo.projectionMutator -
 * [[d3.geo.mercator|Geo-Projections#wiki-mercator]] - construct a new spherical Mercator projection.
 * mercator.invert -
-* mercator.rotate -
-* mercator.center -
-* mercator.translate -
-* mercator.scale -
-* mercator.clipAngle -
-* mercator.precision -
-* mercator.stream -
 * mercator.raw -
 * [[d3.geo.albers|Geo-Projections#wiki-albers]] - construct a new Albers equal-area conic projection.
 * albers.invert -
 * [[albers.parallels|Geo-Projections#wiki-albers_parallels]] - get or set the projection's two standard parallels.
-* albers.rotate -
-* albers.center -
-* albers.translate -
-* albers.scale -
-* albers.clipAngle -
-* albers.precision -
-* albers.stream -
 * albers.raw -
 * [[d3.geo.albersUsa|Geo-Projections#wiki-albersUsa]] - construct a new composite Albers projection for the United States.
 * [[albersUsa|Geo-Projections#wiki-_albersUsa]] - project the specified position.
-* [[albersUsa.scale|Geo-Projections#wiki-albersUsa_scale]] - get or set the projection's scale factor.
-* [[albersUsa.translate|Geo-Projections#wiki-albersUsa_translate]] - get or set the projection's translate offset.
 * d3.geo.azimuthalEqualArea -
 * azimuthalEqualArea -
 * azimuthalEqualArea.invert -
-* azimuthalEqualArea.rotate -
-* azimuthalEqualArea.center -
-* azimuthalEqualArea.translate -
-* azimuthalEqualArea.scale -
-* azimuthalEqualArea.clipAngle -
-* azimuthalEqualArea.precision -
-* azimuthalEqualArea.stream -
 * azimuthalEqualArea.raw -
 * d3.geo.azimuthalEquidistant -
 * azimuthalEquidistant -
 * azimuthalEquidistant.invert -
-* azimuthalEquidistant.rotate -
-* azimuthalEquidistant.center -
-* azimuthalEquidistant.translate -
-* azimuthalEquidistant.scale -
-* azimuthalEquidistant.clipAngle -
-* azimuthalEquidistant.precision -
-* azimuthalEquidistant.stream -
 * azimuthalEquidistant.raw -
 * d3.geo.gnomonic -
 * gnomonic -
 * gnomonic.invert -
-* gnomonic.rotate -
-* gnomonic.center -
-* gnomonic.translate -
-* gnomonic.scale -
-* gnomonic.clipAngle -
-* gnomonic.precision -
-* gnomonic.stream -
 * gnomonic.raw -
 * d3.geo.orthographic -
 * orthographic -
 * orthographic.invert -
-* orthographic.rotate -
-* orthographic.center -
-* orthographic.translate -
-* orthographic.scale -
-* orthographic.clipAngle -
-* orthographic.precision -
-* orthographic.stream -
 * orthographic.raw -
 * d3.geo.stereographic -
 * stereographic -
 * stereographic.invert -
-* stereographic.rotate -
-* stereographic.center -
-* stereographic.translate -
-* stereographic.scale -
-* stereographic.clipAngle -
-* stereographic.precision -
-* stereographic.stream -
 * stereographic.raw -
 
 ## [d3.geom (Geometry)](Geometry)
