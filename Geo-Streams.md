@@ -12,24 +12,46 @@ Stream listeners must implement several methods to traverse geometry. Listeners 
 
 <a name="point" href="#wiki-point">#</a> listener.<b>point</b>(<i>x</i>, <i>y</i>[, <i>z</i>])
 
-…
+Indicates a point with the specified coordinates *x* and *y* (and optionally *z*). The coordinate system is unspecified and implementation-dependent; for example, [projection streams](Geo-Projections#wiki-stream) require spherical coordinates in degrees as input. Outside the context of a polygon or line, a point indicates a point geometry object ([Point](http://www.geojson.org/geojson-spec.html#point) or [MultiPoint](http://www.geojson.org/geojson-spec.html#multipoint)). Within a line or polygon ring, the point indicates a control point.
 
 <a name="lineStart" href="#wiki-lineStart">#</a> listener.<b>lineStart</b>()
 
-…
+Indicates the start of a line or ring. Within a polygon, indicates the start of a ring. The first ring of a polygon is the exterior ring, and is typically clockwise. Any subsequent rings indicate holes in the polygon, and are typically counterclockwise.
 
 <a name="lineEnd" href="#wiki-lineEnd">#</a> listener.<b>lineEnd</b>()
 
-…
+Indicates the end of a line or ring. Within a polygon, indicates the end of a ring. Unlike GeoJSON, the redundant closing coordinate of a ring is *not* indicated via [point](#wiki-point), and instead is implied via lineEnd within a polygon. Thus, the given polygon input:
+
+```json
+{
+  "type": "Polygon",
+  "coordinates": [
+    [[0, 0], [1, 0], [1, 1], [0, 1], [0, 0]]
+  ]
+}
+```
+
+Will produce the following series of method calls on the listener:
+
+```js
+listener.polygonStart();
+listener.lineStart();
+listener.point(0, 0);
+listener.point(1, 0);
+listener.point(1, 1);
+listener.point(0, 1);
+listener.lineEnd();
+listener.polygonEnd();
+```
 
 <a name="polygonStart" href="#wiki-polygonStart">#</a> listener.<b>polygonStart</b>()
 
-…
+Indicates the start of a polygon. The first line of a polygon indicates the exterior ring, and any subsequent lines indicate interior holes.
 
 <a name="polygonEnd" href="#wiki-polygonEnd">#</a> listener.<b>polygonEnd</b>()
 
-…
+Indicates the end of a polygon.
 
 <a name="sphere" href="#wiki-sphere">#</a> listener.<b>sphere</b>()
 
-…
+Indicates the sphere (the globe; the unit sphere centered at ⟨0,0,0⟩).
