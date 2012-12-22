@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Core]] ▸ **Requests**
 
-It goes without saying that to visualize data, you'll need to access the data in the first place! There are a variety of ways to get data into the browser. For small datasets, you might get away with just hardcoding some values in your script. Another option is to load an external JavaScript file that defines your data as a variable. ([[JSONP|http://en.wikipedia.org/wiki/JSONP]] is a common example of this.) HTML5 even has a way of embedding data directly in the document using [[data attributes|http://ejohn.org/blog/html-5-data-attributes/]]. But, one of the most versatile ways of loading data into the browser is using an [[XMLHttpRequest|http://en.wikipedia.org/wiki/XMLHttpRequest]], or **XHR**. This allows data to be loaded asynchronously (so the rest of the page can display while data is loading), and is safer than JSONP. D3 has a variety of helper methods that simplify loading data from files.
+You can’t visualize data if you can’t access it! Fortunately, there are many ways to get data into the browser. For small datasets, you might hardcode the data in your script, or embed data in the DOM using [[data attributes|http://ejohn.org/blog/html-5-data-attributes/]]. For larger datasets, you could load an external script that defines your data as a global variable. ([[JSONP|http://en.wikipedia.org/wiki/JSONP]] is a common example of this.) But, the most versatile way of loading data into the browser is using an [[XMLHttpRequest|http://en.wikipedia.org/wiki/XMLHttpRequest]], or **XHR**. This allows data to be loaded _asynchronously_ (so the rest of the page can display while data is loading), and is safer than JSONP. D3’s xhr module simplifies loading and parsing data.
 
 When loading data asynchronously, code that depends on the loaded data should generally exist within the callback function. For example, see the [[calendar visualization|http://mbostock.github.com/d3/ex/calendar.html]] on the D3 website. Code that doesn't depend on data can run immediately when the page loads. Also, you may find it convenient to save loaded data to the global namespace, so that you can access it after the initial render, such as during a transition. You can do this using closures, or simply assign the loaded data to a global:
 
@@ -13,7 +13,7 @@ d3.json("path/to/file.json", function(json) {
 });
 ```
 
-By default, your browser will not allow cross-domain requests. (This is also true of the local file system, which is why the [[README|https://github.com/mbostock/d3/blob/master/README.md]] recommends using a local web server to host the examples.) While it is possible to use JSONP to workaround this security restriction, this is unsafe from a security perspective because it allows the external site to run arbitrary JavaScript. Instead, use the header Access-Control-Allow-Origin: * to allow your browser to request an external resource safely. For more details, see the W3C recommendation on [[Cross-Origin Resource Sharing|http://www.w3.org/TR/cors/]].
+By default, most browsers do not allow cross-domain requests. To [enable cross-domain requests](http://enable-cors.org/), have the server set the header Access-Control-Allow-Origin: *. For more details, see the W3C recommendation on [[Cross-Origin Resource Sharing|http://www.w3.org/TR/cors/]].
 
 ## Issuing Requests
 
