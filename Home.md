@@ -34,7 +34,7 @@ Or, from the command line:
 git clone git://github.com/mbostock/d3.git
 ```
 
-When developing locally, note that your browser may enforce strict permissions for reading files out of the local file system. **If you use [d3.xhr](./Requests) locally (including d3.json et al.), you must have a local web server.** For example, you can run Python's built-in server:
+When developing locally, note that your browser may enforce strict permissions for reading files out of the local file system. **If you use [d3.xhr](wiki/Requests) locally (including d3.json et al.), you must have a local web server.** For example, you can run Python's built-in server:
 
     python -m SimpleHTTPServer 8888 &
 
