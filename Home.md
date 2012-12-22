@@ -40,11 +40,7 @@ When developing locally, note that your browser may enforce strict permissions f
 
 Once this is running, go to <http://localhost:8888/>.
 
-The D3 repository should work out of the box if you just want to create new visualizations using D3. On the other hand, if you want to extend D3 with new features, fix bugs, or run tests, you should [fork the D3 repository](/mbostock/d3/fork_select), and install a few more things. D3's test framework uses [Vows](http://vowsjs.org), which depends on [Node.js](http://nodejs.org/) and [NPM](http://npmjs.org/). If you are developing on Mac OS X, an easy way to install Node and NPM is using [Homebrew](http://mxcl.github.com/homebrew/):
-
-    brew install node
-
-Next, from the root directory of this repository, install D3's dependencies:
+The D3 repository should work out of the box if you just want to create new visualizations using D3. On the other hand, if you want to extend D3 with new features, fix bugs, or run tests, you should [fork the D3 repository](/mbostock/d3/fork_select), and install [Node.js](http://nodejs.org/). From the root directory of this repository, you can then install D3's dependencies:
 
     npm install
 
