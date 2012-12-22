@@ -125,14 +125,14 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 ### [[Loading External Resources|Requests]]
 
 * [[d3.xhr|Requests#wiki-d3_xhr]] - request a resource using XMLHttpRequest.
-* xhr.header - set a request header.
-* xhr.mimeType - set the Accept request header and override the response MIME type.
-* xhr.response - set a response mapping function.
-* xhr.get - issue a GET request.
-* xhr.post - issue a POST request.
-* xhr.send - issue a request with the specified method and data.
-* xhr.abort - abort an outstanding request.
-* xhr.on - add an event listener for "progress", "load" or "error" events.
+* [xhr.header](Requests#wiki-header) - set a request header.
+* [xhr.mimeType](Requests#wiki-mimeType) - set the Accept request header and override the response MIME type.
+* [xhr.response](Requests#wiki-response) - set a response mapping function.
+* [xhr.get](Requests#wiki-get) - issue a GET request.
+* [xhr.post](Requests#wiki-post) - issue a POST request.
+* [xhr.send](Requests#wiki-send) - issue a request with the specified method and data.
+* [xhr.abort](Requests#wiki-abort) - abort an outstanding request.
+* [xhr.on](Requests#wiki-on) - add an event listener for "progress", "load" or "error" events.
 * [[d3.text|Requests#wiki-d3_text]] - request a text file.
 * [[d3.json|Requests#wiki-d3_json]] - request a JSON blob.
 * [[d3.html|Requests#wiki-d3_html]] - request an HTML document fragment.
