@@ -226,19 +226,19 @@ The equirectangular, or plate carrée projection, is the simplest possible geogr
 
 <a href="http://bl.ocks.org/3757349"><img src="https://raw.github.com/gist/3757349/thumbnail.png" width="202"></a>
 
-The gnomonic projection is an azimuthal projection that projects great circles as straight lines.
+The gnomonic projection is an azimuthal projection that projects great circles as straight lines. See the [interactive gnomonic](http://bl.ocks.org/3795048) for an example.
 
 <a name="mercator" href="#wiki-mercator">#</a> d3.geo.<b>mercator</b>()
 
 <a href="http://bl.ocks.org/3757132"><img src="https://raw.github.com/gist/3757132/thumbnail.png" width="202"></a>
 
-The spherical Mercator projection is commonly used by tiled mapping libraries (such as [OpenLayers](http://openlayers.org/) and [Leaflet](http://leaflet.cloudmade.com/)). For displaying raster tiles, see the [d3.geo.tile plugin](http://bl.ocks.org/4150951). It is [conformal](http://en.wikipedia.org/wiki/Map_projection#Conformal); however, it introduces severe area distortion at world scale and thus is not recommended for choropleths. The default scale is 500, appropriate for displaying the entire world in a 960×500 area.
+The spherical Mercator projection is commonly used by tiled mapping libraries (such as [OpenLayers](http://openlayers.org/) and [Leaflet](http://leaflet.cloudmade.com/)). For an example displaying raster tiles with the Mercator projection, see the [d3.geo.tile plugin](http://bl.ocks.org/4150951). It is [conformal](http://en.wikipedia.org/wiki/Map_projection#Conformal); however, it introduces severe area distortion at world scale and thus is not recommended for choropleths. The default scale is 500, appropriate for displaying the entire world in a 960×500 area.
 
 <a name="orthographic" href="#wiki-orthographic">#</a> d3.geo.<b>orthographic</b>()
 
 <a href="http://bl.ocks.org/3757125"><img src="https://raw.github.com/gist/3757125/thumbnail.png" width="202"></a>
 
-The orthographic projection is an azimuthal projection suitable for displaying a single hemisphere; the point of perspective is at infinity. See the [animated world tour](http://bl.ocks.org/4183330) for an example. For a general perspective projection, see the [satellite projection](http://bl.ocks.org/3790444).
+The orthographic projection is an azimuthal projection suitable for displaying a single hemisphere; the point of perspective is at infinity. See the [animated world tour](http://bl.ocks.org/4183330) and [interactive orthographic](http://bl.ocks.org/3795040) for examples. For a general perspective projection, see the [satellite projection](http://bl.ocks.org/3790444).
 
 <a name="stereographic" href="#wiki-stereographic">#</a> d3.geo.<b>stereographic</b>()
 
@@ -250,34 +250,34 @@ The stereographic projection is another perspective (azimuthal) projection. The 
 
 D3 exposes several raw projections, designed for reuse when implementing a composite projection (such as [Sinu–Mollweide](http://bl.ocks.org/4319903), which combines the raw sinusoidal and Mollweide projections). Raw projections are typically wrapped using d3.geo.projection. These are point functions that take spherical coordinates (in radians) as input and return a two-element array (in normalized coordinates, typically between -1 and 1) as output. Many raw projections also implement an inverse projection for mapping from normalized to spherical coordinates.
 
-<a name="albers_raw" href="#wiki-albers_raw">#</a> d3.geo.albers.<b>raw</b>(λ, φ)
+<a name="albers_raw" href="#wiki-albers_raw">#</a> d3.geo.albers.<b>raw</b>(φ0, φ1)
 
-…
+Returns a raw [Albers projection](#wiki-albers) with the specified parallels in radians.
 
-<a name="azimuthalEqualArea_raw" href="#wiki-azimuthalEqualArea_raw">#</a> d3.geo.azimuthalEqualArea.<b>raw</b>(λ, φ)
+<a name="azimuthalEqualArea_raw" href="#wiki-azimuthalEqualArea_raw">#</a> d3.geo.azimuthalEqualArea.<b>raw</b>
 
-…
+The raw [azimuthal equal-area projection](#wiki-azimuthalEqualArea).
 
-<a name="azimuthalEquidistant_raw" href="#wiki-azimuthalEquidistant_raw">#</a> d3.geo.azimuthalEquidistant.<b>raw</b>(λ, φ)
+<a name="azimuthalEquidistant_raw" href="#wiki-azimuthalEquidistant_raw">#</a> d3.geo.azimuthalEquidistant.<b>raw</b>
 
-…
+The raw [azimuthal equidistant projection](#wiki-azimuthalEquidistant).
 
-<a name="equirectangular_raw" href="#wiki-equirectangular_raw">#</a> d3.geo.equirectangular.<b>raw</b>(λ, φ)
+<a name="equirectangular_raw" href="#wiki-equirectangular_raw">#</a> d3.geo.equirectangular.<b>raw</b>
 
-…
+The raw [equirectangular projection](#wiki-equirectangular).
 
-<a name="gnomonic_raw" href="#wiki-gnomonic_raw">#</a> d3.geo.gnomonic.<b>raw</b>(λ, φ)
+<a name="gnomonic_raw" href="#wiki-gnomonic_raw">#</a> d3.geo.gnomonic.<b>raw</b>
 
-…
+The raw [gnomonic projection](#wiki-gnomonic).
 
-<a name="mercator_raw" href="#wiki-mercator_raw">#</a> d3.geo.mercator.<b>raw</b>(λ, φ)
+<a name="mercator_raw" href="#wiki-mercator_raw">#</a> d3.geo.mercator.<b>raw</b>
 
-…
+The raw [Mercator projection](#wiki-mercator).
 
-<a name="orthographic_raw" href="#wiki-orthographic_raw">#</a> d3.geo.orthographic.<b>raw</b>(λ, φ)
+<a name="orthographic_raw" href="#wiki-orthographic_raw">#</a> d3.geo.orthographic.<b>raw</b>
 
-…
+The raw [orthographic projection](#wiki-orthographic).
 
-<a name="stereographic_raw" href="#wiki-stereographic_raw">#</a> d3.geo.stereographic.<b>raw</b>(λ, φ)
+<a name="stereographic_raw" href="#wiki-stereographic_raw">#</a> d3.geo.stereographic.<b>raw</b>
 
-…
+The raw [stereographic projection](#wiki-stereographic).
