@@ -82,11 +82,55 @@ These less common projections are available in the [extended geographic projecti
 
 ## Standard Projection
 
-Most projections provided by D3 are instances of [d3.geo.projection](#wiki-projection). These projections provide a number of convenient methods for configuring the projection, such as rotating the globe, and scaling or transforming the canvas.
+Most projections provided by D3 are instances of [d3.geo.projection](#wiki-d3_geo_projection). These projections provide a number of convenient methods for configuring the projection, such as rotating the globe, and scaling or transforming the canvas.
+
+<a name="d3_geo_projection" href="#wiki-d3_geo_projection">#</a> d3.geo.<b>projection</b>(<i>raw</i>)
+
+…
+
+<a name="_projection" href="#wiki-_projection">#</a> <b>projection</b>(<i>location</i>)
+
+…
+
+<a name="invert" href="#wiki-invert">#</a> projection.<b>invert</b>(<i>point</i>)
+
+…
+
+<a name="rotate" href="#wiki-rotate">#</a> projection.<b>rotate</b>(<i>rotation</i>)
+
+…
+
+<a name="center" href="#wiki-center">#</a> projection.<b>center</b>(<i>center</i>)
+
+…
+
+<a name="translate" href="#wiki-translate">#</a> projection.<b>translate</b>(<i>translation</i>)
+
+…
+
+<a name="scale" href="#wiki-scale">#</a> projection.<b>scale</b>(<i>scale</i>)
+
+…
+
+<a name="clipAngle" href="#wiki-clipAngle">#</a> projection.<b>clipAngle</b>(<i>angle</i>)
+
+…
+
+<a name="precision" href="#wiki-precision">#</a> projection.<b>precision</b>(<i>precision</i>)
+
+…
+
+<a name="stream" href="#wiki-stream">#</a> projection.<b>stream</b>(<i>listener</i>)
+
+…
+
+<a name="d3_geo_projectionMutator" href="#wiki-d3_geo_projectionMutator">#</a> d3.geo.<b>projectionMutator</b>(<i>rawCreate</i>)
+
+…
 
 ## Raw Projections
 
-D3 exposes several raw projections, designed for reuse when implementing a composite projection (such as [Sinu–Mollweide](http://bl.ocks.org/4319903), which combines the raw sinusoidal and Mollweide projections). Raw projections are typically wrapped using d3.geo.projection. This are point functions that take radians as input and return a two-element array of normalized coordinates (typically in between -1 and 1) as output.
+D3 exposes several raw projections, designed for reuse when implementing a composite projection (such as [Sinu–Mollweide](http://bl.ocks.org/4319903), which combines the raw sinusoidal and Mollweide projections). Raw projections are typically wrapped using d3.geo.projection. This are point functions that take spherical coordinates in radians as input and return a two-element array of normalized coordinates (typically in between -1 and 1) as output. Many raw projections also implement an inverse projection for mapping from normalized to spherical coordinates.
 
 <a name="d3_geo_albers_raw" href="#wiki-d3_geo_albers_raw">#</a> d3.geo.albers.<b>raw</b>(λ, φ)
 
