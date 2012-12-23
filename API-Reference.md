@@ -627,6 +627,10 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * azimuthalEquidistant -
 * azimuthalEquidistant.invert -
 * azimuthalEquidistant.raw -
+* d3.geo.equirectangular -
+* equirectangular -
+* equirectangular.invert -
+* equirectangular.raw -
 * d3.geo.gnomonic -
 * gnomonic -
 * gnomonic.invert -
