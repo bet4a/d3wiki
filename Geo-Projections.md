@@ -238,13 +238,13 @@ The spherical Mercator projection is commonly used by tiled mapping libraries (s
 
 <a href="http://bl.ocks.org/3757125"><img src="https://raw.github.com/gist/3757125/thumbnail.png" width="202"></a>
 
-The orthographic is an azimuthal projection suitable for displaying one hemisphere; the point of perspective is at infinity. See the [animated world tour](http://bl.ocks.org/4183330) for an example. For a general perspective projection, see the [satellite projection](http://bl.ocks.org/3790444).
+The orthographic projection is an azimuthal projection suitable for displaying a single hemisphere; the point of perspective is at infinity. See the [animated world tour](http://bl.ocks.org/4183330) for an example. For a general perspective projection, see the [satellite projection](http://bl.ocks.org/3790444).
 
 <a name="stereographic" href="#wiki-stereographic">#</a> d3.geo.<b>stereographic</b>()
 
 <a href="http://bl.ocks.org/3757137"><img src="https://raw.github.com/gist/3757137/thumbnail.png" width="202"></a>
 
-…
+The stereographic projection is another perspective (azimuthal) projection. The point of perspective is on the surface of the sphere, looking in; it is thus commonly used for celestial charts. See the [interactive stereographic](http://bl.ocks.org/3763057) for an example. 
 
 ## Raw Projections
 
