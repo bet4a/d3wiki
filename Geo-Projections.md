@@ -109,7 +109,7 @@ Projects backward from Cartesian coordinates (in pixels) to spherical coordinate
 
 <a name="rotate" href="#wiki-rotate">#</a> projection.<b>rotate</b>([<i>rotation</i>])
 
-If *rotation* is specified, sets the projection’s three-axis rotation to the specified angles λ, φ and γ ([yaw, pitch and roll](http://en.wikipedia.org/wiki/Aircraft_principal_axes), or equivalently [longitude, latitude](http://en.wikipedia.org/wiki/Geographic_coordinate_system) and roll) in degrees. If *rotation* is not specified, returns the default rotation [0, 0, 0]. If the specified *rotation* has only two values, rather than three, the roll is assumed to be 0°.
+If *rotation* is specified, sets the projection’s [three-axis rotation](http://bl.ocks.org/4282586) to the specified angles λ, φ and γ ([yaw, pitch and roll](http://en.wikipedia.org/wiki/Aircraft_principal_axes), or equivalently [longitude, latitude](http://en.wikipedia.org/wiki/Geographic_coordinate_system) and roll) in degrees. If *rotation* is not specified, returns the default rotation [0, 0, 0]. If the specified *rotation* has only two values, rather than three, the roll is assumed to be 0°.
 
 <a name="center" href="#wiki-center">#</a> projection.<b>center</b>([<i>location</i>])
 
