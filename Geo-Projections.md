@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Geo]] ▸ **Geo Projections**
 
-Several common projections are included with default build of D3; these are shown highlighted green (*). Numerous less-common projections are available in the [extended geographic projections plugin](https://github.com/d3/d3-plugins/tree/master/geo/projection).
+Several common projections are included with default build of D3; these are highlighted green (*). Numerous less-common projections are available in the [extended geographic projections plugin](https://github.com/d3/d3-plugins/tree/master/geo/projection).
 
 <table class="highlight">
   <tr height="146" valign="top">
