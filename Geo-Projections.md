@@ -117,7 +117,7 @@ If *center* is specified, sets the projection’s center to the specified *locat
 
 <a name="translate" href="#wiki-translate">#</a> projection.<b>translate</b>([<i>point</i>])
 
-If *point* is specified, sets the projection’s translation offset to the specified two-element array [*x*, *y*] and returns the projection. If *point* is not specified, returns the current translation offset which defaults to [480, 250]. The translation offset determines the pixel coordinates of the origin ([0, 0] in longitude and latitude). The default value is designed to place [null island](http://www.nullisland.com/) at the center of a 960×500 area.
+If *point* is specified, sets the projection’s translation offset to the specified two-element array [<i>x</i>, <i>y</i>] and returns the projection. If *point* is not specified, returns the current translation offset which defaults to [480, 250]. The translation offset determines the pixel coordinates of the origin ([0, 0] in longitude and latitude). The default value is designed to place [null island](http://www.nullisland.com/) at the center of a 960×500 area.
 
 <a name="scale" href="#wiki-scale">#</a> projection.<b>scale</b>([<i>scale</i>])
 
