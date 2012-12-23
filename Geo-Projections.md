@@ -1,5 +1,20 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Geo]] ▸ **Geo Projections**
 
+<table>
+  <tr height="146" valign="top">
+    <td>d3.geo.albers<br><a href="http://bl.ocks.org/3734308"><img src="https://raw.github.com/gist/3734308/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.albersUsa<br><a href="http://bl.ocks.org/4090848"><img src="https://raw.github.com/gist/4090848/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.azimuthalEqualArea<br><a href="http://bl.ocks.org/3757101"><img src="https://raw.github.com/gist/3757101/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.azimuthalEquidistant<br><a href="http://bl.ocks.org/3757110"><img src="https://raw.github.com/gist/3757110/thumbnail.png" width="202"></a></td>
+  </tr>
+  <tr height="146" valign="top">
+    <td>d3.geo.gnomonic<br><a href="http://bl.ocks.org/3757349"><img src="https://raw.github.com/gist/3757349/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.mercator<br><a href="http://bl.ocks.org/3757132"><img src="https://raw.github.com/gist/3757132/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.orthographic<br><a href="http://bl.ocks.org/3757125"><img src="https://raw.github.com/gist/3757125/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.stereographic<br><a href="http://bl.ocks.org/3757137"><img src="https://raw.github.com/gist/3757137/thumbnail.png" width="202"></a></td>
+  </tr>
+</table>
+
 ## Mercator
 
 The spherical Mercator projection is commonly used by tiled mapping libraries (such as [OpenLayers](http://openlayers.org/) and [Leaflet](http://leaflet.cloudmade.com/)). It is [conformal](http://en.wikipedia.org/wiki/Conformal_map); however, it introduces severe area distortion at world scale and thus is not recommended for choropleths.
