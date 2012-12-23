@@ -610,24 +610,24 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [projection.precision](Geo-Projections#wiki-precision) - get or set the precision threshold for adaptive resampling.
 * [projection.stream](Geo-Projections#wiki-stream) - wrap the specified stream listener, projecting input geometry.
 * [d3.geo.projectionMutator](Geo-Projections#wiki-projectionMutator) - create a standard projection from a mutable raw projection.
-* [d3.geo.albers](Geo-Projections#wiki-albers) - construct a new Albers equal-area conic projection.
+* [d3.geo.albers](Geo-Projections#wiki-albers) - the Albers equal-area conic projection.
 * [albers.parallels](Geo-Projections#wiki-albers_parallels) - get or set the projection's two standard parallels.
-* [d3.geo.albersUsa](eo-Projections#wiki-albersUsa) - construct a new composite Albers projection for the United States.
-* d3.geo.azimuthalEqualArea -
-* d3.geo.azimuthalEquidistant -
-* d3.geo.equirectangular -
-* d3.geo.gnomonic -
-* d3.geo.mercator -
-* d3.geo.orthographic -
-* d3.geo.stereographic -
-* [d3.geo.albers.raw](Geo-Projections#wiki-albers_raw) -
-* d3.geo.azimuthalEqualArea.raw -
-* d3.geo.azimuthalEquidistant.raw -
-* d3.geo.equirectangular.raw -
-* d3.geo.gnomonic.raw -
-* d3.geo.mercator.raw -
-* d3.geo.orthographic.raw -
-* d3.geo.stereographic.raw -
+* [d3.geo.albersUsa](Geo-Projections#wiki-albersUsa) - a composite Albers projection for the United States.
+* [d3.geo.azimuthalEqualArea](Geo-Projections#wiki-azimuthalEqualArea) - the azimuthal equal-area projection.
+* [d3.geo.azimuthalEquidistant](Geo-Projections#wiki-azimuthalEquidistant) - the azimuthal equidistant projection.
+* [d3.geo.equirectangular](Geo-Projections#wiki-equirectangular) - the equirectangular (plate carreé) projection.
+* [d3.geo.gnomonic](Geo-Projections#wiki-gnomonic) - the gnomonic projection.
+* [d3.geo.mercator](Geo-Projections#wiki-mercator) - the spherical Mercator projection.
+* [d3.geo.orthographic](Geo-Projections#wiki-orthographic) - the azimuthal orthographic projection.
+* [d3.geo.stereographic](Geo-Projections#wiki-stereographic) - the azimuthal stereographic projection.
+* [d3.geo.albers.raw](Geo-Projections#wiki-albers_raw) - the raw Albers equal-area conic projection.
+* [d3.geo.azimuthalEqualArea.raw](Geo-Projections#wiki-azimuthalEqualArea_raw) - the raw azimuthal equal-area projection.
+* [d3.geo.azimuthalEquidistant.raw](Geo-Projections#wiki-azimuthalEquidistant_raw) - the azimuthal equidistant projection.
+* [d3.geo.equirectangular.raw](Geo-Projections#wiki-equirectangular_raw) - the raw equirectangular (plate carrée) projection.
+* [d3.geo.gnomonic.raw](Geo-Projections#wiki-gnomonic_raw) - the raw gnomonic projection.
+* [d3.geo.mercator.raw](Geo-Projections#wiki-mercator_raw) - the raw Mercator projection.
+* [d3.geo.orthographic.raw](Geo-Projections#wiki-orthographic_raw) - the raw azimuthal orthographic projection.
+* [d3.geo.stereographic.raw](Geo-Projections#wiki-stereographic_raw) - the raw azimuthal stereographic projection.
 
 ### [Streams](Geo-Streams)
 
