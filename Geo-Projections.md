@@ -109,7 +109,7 @@ Projects backward from Cartesian coordinates (in pixels) to spherical coordinate
 
 <a name="rotate" href="#wiki-rotate">#</a> projection.<b>rotate</b>([<i>rotation</i>])
 
-If *rotation* is specified, sets the projection’s [three-axis rotation](http://bl.ocks.org/4282586) to the specified angles λ, φ and γ ([yaw, pitch and roll](http://en.wikipedia.org/wiki/Aircraft_principal_axes), or equivalently [longitude, latitude](http://en.wikipedia.org/wiki/Geographic_coordinate_system) and roll) in degrees and returns the projection. If *rotation* is not specified, returns the current rotation which defaults ⟨0°,0°,0°⟩. If the specified *rotation* has only two values, rather than three, the roll is assumed to be 0°.
+If *rotation* is specified, sets the projection’s [three-axis rotation](http://bl.ocks.org/4282586) to the specified angles λ, φ and γ ([yaw, pitch and roll](http://en.wikipedia.org/wiki/Aircraft_principal_axes), or equivalently [longitude, latitude](http://en.wikipedia.org/wiki/Geographic_coordinate_system) and roll) in degrees and returns the projection. If *rotation* is not specified, returns the current rotation which defaults [0, 0, 0]. If the specified *rotation* has only two values, rather than three, the roll is assumed to be 0°.
 
 <a name="center" href="#wiki-center">#</a> projection.<b>center</b>([<i>location</i>])
 
@@ -177,7 +177,7 @@ Thus, when creating a mutable projection, the *mutate* function is never exposed
 
 <a href="http://bl.ocks.org/3734308"><img src="https://raw.github.com/gist/3734308/thumbnail.png" width="202"></a>
 
-The Albers projection, as an [equal-area](http://en.wikipedia.org/wiki/Map_projection#Equal-area) projection, is recommended for [choropleths](http://mbostock.github.com/d3/ex/choropleth.html) as it preserves the relative areas of geographic features. The default Albers equal-area conic projection has scale 1000, translate [480, 250], rotation ⟨98°,0°⟩, center ⟨0°,38°⟩ and parallels ⟨29.5°,45.5°⟩, making it suitable for displaying the United States, centered around [Hutchinson, Kansas](https://maps.google.com/maps?q=Hutchinson,+Kansas&z=5) in a 960×500 area. The default parallels are specified by the [USGS](http://www.usgs.gov/) in the 1970 [National Atlas](http://www.nationalatlas.gov/).
+The Albers projection, as an [equal-area](http://en.wikipedia.org/wiki/Map_projection#Equal-area) projection, is recommended for [choropleths](http://mbostock.github.com/d3/ex/choropleth.html) as it preserves the relative areas of geographic features. The default Albers equal-area conic projection has scale 1000, translate [480, 250], rotation [98, 0], center ⟨0°,38°⟩ and parallels [29.5, 45.5], making it suitable for displaying the United States, centered around [Hutchinson, Kansas](https://maps.google.com/maps?q=Hutchinson,+Kansas&z=5) in a 960×500 area. The default parallels are specified by the [USGS](http://www.usgs.gov/) in the 1970 [National Atlas](http://www.nationalatlas.gov/).
 
 <a name="albers_parallels" href="#wiki-albers_parallels">#</a> albers.<b>parallels</b>([<i>parallels</i>])
 
