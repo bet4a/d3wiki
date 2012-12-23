@@ -599,7 +599,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 
 ### [[Projections|Geo-Projections]]
 
-* [d3.geo.projection](Geo-Projections#wiki-d3_geo_projection) - create a standard projection from a raw projection.
+* [d3.geo.projection](Geo-Projections#wiki-projection) - create a standard projection from a raw projection.
 * [projection](Geo-Projections#wiki-_projection) - project the specified location.
 * [projection.invert](Geo-Projections#wiki-invert) - invert the projection for the specified point.
 * [projection.rotate](Geo-Projections#wiki-rotate) - get or set the projection’s three-axis rotation.
@@ -609,39 +609,24 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [projection.clipAngle](Geo-Projections#wiki-clipAngle) - get or set the radius of the projection’s clip circle.
 * [projection.precision](Geo-Projections#wiki-precision) - get or set the precision threshold for adaptive resampling.
 * [projection.stream](Geo-Projections#wiki-stream) - wrap the specified stream listener, projecting input geometry.
-* [d3.geo.projectionMutator](Geo-Projections#wiki-d3_geo_projectionMutator) - create a standard projection from a mutable raw projection.
-* [[d3.geo.albers|Geo-Projections#wiki-albers]] - construct a new Albers equal-area conic projection.
-* albers.invert -
-* [[albers.parallels|Geo-Projections#wiki-albers_parallels]] - get or set the projection's two standard parallels.
-* d3.geo.albers.raw -
-* [[d3.geo.albersUsa|Geo-Projections#wiki-albersUsa]] - construct a new composite Albers projection for the United States.
-* [[albersUsa|Geo-Projections#wiki-_albersUsa]] - project the specified position.
+* [d3.geo.projectionMutator](Geo-Projections#wiki-projectionMutator) - create a standard projection from a mutable raw projection.
+* [d3.geo.albers](Geo-Projections#wiki-albers) - construct a new Albers equal-area conic projection.
+* [albers.parallels](Geo-Projections#wiki-albers_parallels) - get or set the projection's two standard parallels.
+* [d3.geo.albersUsa](eo-Projections#wiki-albersUsa) - construct a new composite Albers projection for the United States.
 * d3.geo.azimuthalEqualArea -
-* azimuthalEqualArea -
-* azimuthalEqualArea.invert -
-* d3.geo.azimuthalEqualArea.raw -
 * d3.geo.azimuthalEquidistant -
-* azimuthalEquidistant -
-* azimuthalEquidistant.invert -
-* d3.geo.azimuthalEquidistant.raw -
 * d3.geo.equirectangular -
-* equirectangular -
-* equirectangular.invert -
-* d3.geo.equirectangular.raw -
 * d3.geo.gnomonic -
-* gnomonic -
-* gnomonic.invert -
-* d3.geo.gnomonic.raw -
-* [[d3.geo.mercator|Geo-Projections#wiki-mercator]] - construct a new spherical Mercator projection.
-* mercator.invert -
-* d3.geo.mercator.raw -
+* d3.geo.mercator -
 * d3.geo.orthographic -
-* orthographic -
-* orthographic.invert -
-* d3.geo.orthographic.raw -
 * d3.geo.stereographic -
-* stereographic -
-* stereographic.invert -
+* [d3.geo.albers.raw](Geo-Projections#wiki-albers_raw) -
+* d3.geo.azimuthalEqualArea.raw -
+* d3.geo.azimuthalEquidistant.raw -
+* d3.geo.equirectangular.raw -
+* d3.geo.gnomonic.raw -
+* d3.geo.mercator.raw -
+* d3.geo.orthographic.raw -
 * d3.geo.stereographic.raw -
 
 ### [Streams](Geo-Streams)
