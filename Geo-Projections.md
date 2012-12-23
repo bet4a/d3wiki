@@ -168,7 +168,7 @@ D3 exposes several raw projections, designed for reuse when implementing a compo
 
 <a name="albers" href="#wiki-albers">#</a> d3.geo.<b>albers</b>()
 
-The Albers projection, as an [equal-area](http://en.wikipedia.org/wiki/Map_projection#Equal-area) projection, is recommended for [choropleths](http://mbostock.github.com/d3/ex/choropleth.html) as it preserves the relative areas of geographic features. The default Albers equal-area conic projection has scale 1000, translate [480, 250], rotation [98, 0], center [0, 38] and parallels [29.5, 45.5], making it suitable for displaying the United States, centered around [Hutchinson, Kansas](https://maps.google.com/maps?q=Hutchinson,+Kansas&z=5) in a 960×500 area. The parallels of 29.5º and 45.5º were chosen by the [USGS](http://www.usgs.gov/) in their 1970 [National Atlas](http://www.nationalatlas.gov/).
+The Albers projection, as an [equal-area](http://en.wikipedia.org/wiki/Map_projection#Equal-area) projection, is recommended for [choropleths](http://mbostock.github.com/d3/ex/choropleth.html) as it preserves the relative areas of geographic features. The default Albers equal-area conic projection has scale 1000, translate [480, 250], rotation [98, 0], center [0, 38] and parallels [29.5, 45.5], making it suitable for displaying the United States, centered around [Hutchinson, Kansas](https://maps.google.com/maps?q=Hutchinson,+Kansas&z=5) in a 960×500 area. The parallels of 29.5° and 45.5° were chosen by the [USGS](http://www.usgs.gov/) in their 1970 [National Atlas](http://www.nationalatlas.gov/).
 
 <a name="albers_parallels" href="#wiki-albers_parallels">#</a> albers.<b>parallels</b>([<i>parallels</i>])
 
