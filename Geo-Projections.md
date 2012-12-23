@@ -2,6 +2,8 @@
 
 ## Standard Projections
 
+These standard projections are included with default build of D3.
+
 <table>
   <tr height="146" valign="top">
     <td>d3.geo.albers<br><a href="http://bl.ocks.org/3734308"><img src="https://raw.github.com/gist/3734308/thumbnail.png" width="202"></a></td>
@@ -21,6 +23,8 @@
 </table>
 
 ## Extended Projections
+
+These less common projections are available in the [extended geographic projections plugin](https://github.com/d3/d3-plugins/tree/master/geo/projection).
 
 <table>
   <tr height="146" valign="top">
