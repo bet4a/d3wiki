@@ -610,39 +610,39 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * projection.precision -
 * projection.stream -
 * d3.geo.projectionMutator -
-* [[d3.geo.mercator|Geo-Projections#wiki-mercator]] - construct a new spherical Mercator projection.
-* mercator.invert -
-* mercator.raw -
 * [[d3.geo.albers|Geo-Projections#wiki-albers]] - construct a new Albers equal-area conic projection.
 * albers.invert -
 * [[albers.parallels|Geo-Projections#wiki-albers_parallels]] - get or set the projection's two standard parallels.
-* albers.raw -
+* d3.geo.albers.raw -
 * [[d3.geo.albersUsa|Geo-Projections#wiki-albersUsa]] - construct a new composite Albers projection for the United States.
 * [[albersUsa|Geo-Projections#wiki-_albersUsa]] - project the specified position.
 * d3.geo.azimuthalEqualArea -
 * azimuthalEqualArea -
 * azimuthalEqualArea.invert -
-* azimuthalEqualArea.raw -
+* d3.geo.azimuthalEqualArea.raw -
 * d3.geo.azimuthalEquidistant -
 * azimuthalEquidistant -
 * azimuthalEquidistant.invert -
-* azimuthalEquidistant.raw -
+* d3.geo.azimuthalEquidistant.raw -
 * d3.geo.equirectangular -
 * equirectangular -
 * equirectangular.invert -
-* equirectangular.raw -
+* d3.geo.equirectangular.raw -
 * d3.geo.gnomonic -
 * gnomonic -
 * gnomonic.invert -
-* gnomonic.raw -
+* d3.geo.gnomonic.raw -
+* [[d3.geo.mercator|Geo-Projections#wiki-mercator]] - construct a new spherical Mercator projection.
+* mercator.invert -
+* d3.geo.mercator.raw -
 * d3.geo.orthographic -
 * orthographic -
 * orthographic.invert -
-* orthographic.raw -
+* d3.geo.orthographic.raw -
 * d3.geo.stereographic -
 * stereographic -
 * stereographic.invert -
-* stereographic.raw -
+* d3.geo.stereographic.raw -
 
 ### [Streams](Geo-Streams)
 
