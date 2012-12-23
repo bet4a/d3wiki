@@ -60,15 +60,18 @@
     <td>d3.geo.nellHammer<br><a href="http://bl.ocks.org/3734342"><img src="https://raw.github.com/gist/3734342/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
+    <td>d3.geo.peirceQuincuncial<br><a href="http://bl.ocks.org/4310087"><img src="https://raw.github.com/gist/4310087/thumbnail.png" width="202"></a></td>
     <td>d3.geo.polyconic<br><a href="http://bl.ocks.org/3734343"><img src="https://raw.github.com/gist/3734343/thumbnail.png" width="202"></a></td>
     <td>d3.geo.robinson<br><a href="http://bl.ocks.org/3710566"><img src="https://raw.github.com/gist/3710566/thumbnail.png" width="202"></a></td>
     <td>d3.geo.satellite<br><a href="http://bl.ocks.org/3790444"><img src="https://raw.github.com/gist/3790444/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.sinusoidal<br><a href="http://bl.ocks.org/3712399"><img src="https://raw.github.com/gist/3712399/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
+    <td>d3.geo.sinusoidal<br><a href="http://bl.ocks.org/3712399"><img src="https://raw.github.com/gist/3712399/thumbnail.png" width="202"></a></td>
     <td>d3.geo.sinuMollweide<br><a href="http://bl.ocks.org/4319903"><img src="https://raw.github.com/gist/4319903/thumbnail.png" width="202"></a></td>
     <td>d3.geo.vanDerGrinten<br><a href="http://bl.ocks.org/3796831"><img src="https://raw.github.com/gist/3796831/thumbnail.png" width="202"></a></td>
     <td>d3.geo.wagner6<br><a href="http://bl.ocks.org/3710148"><img src="https://raw.github.com/gist/3710148/thumbnail.png" width="202"></a></td>
+  </tr>
+  <tr height="146" valign="top">
     <td>d3.geo.winkel3<br><a href="http://bl.ocks.org/3682676"><img src="https://raw.github.com/gist/3682676/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
