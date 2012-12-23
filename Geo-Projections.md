@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Geo]] ▸ **Geo Projections**
 
-## Core Projections
+## Standard Projections
 
 These projections are included with default build of D3.
 
@@ -80,11 +80,11 @@ These less common projections are available in the [extended geographic projecti
   </tr>
 </table>
 
-## Standard Projection
+## Standard Abstract Projection
 
-Most projections provided by D3 are instances of [d3.geo.projection](#wiki-d3_geo_projection). These projections expose a number of methods for configuring the projection, such as rotating the globe, and scaling or transforming the canvas. Unless you’re defining a new projection, you won’t use d3.geo.projection directly; you’ll use one of the provided implementations.
+Most projections provided by D3 are instances of [d3.geo.projection](#wiki-projection). These projections expose a number of methods for configuring the projection, such as rotating the globe, and scaling or transforming the canvas. Unless you’re defining a new projection, you won’t use d3.geo.projection directly; you’ll use one of the provided implementations.
 
-<a name="d3_geo_projection" href="#wiki-d3_geo_projection">#</a> d3.geo.<b>projection</b>(<i>raw</i>)
+<a name="projection" href="#wiki-projection">#</a> d3.geo.<b>projection</b>(<i>raw</i>)
 
 …
 
@@ -124,7 +124,7 @@ Most projections provided by D3 are instances of [d3.geo.projection](#wiki-d3_ge
 
 …
 
-<a name="d3_geo_projectionMutator" href="#wiki-d3_geo_projectionMutator">#</a> d3.geo.<b>projectionMutator</b>(<i>rawCreate</i>)
+<a name="projectionMutator" href="#wiki-projectionMutator">#</a> d3.geo.<b>projectionMutator</b>(<i>rawCreate</i>)
 
 …
 
@@ -132,37 +132,49 @@ Most projections provided by D3 are instances of [d3.geo.projection](#wiki-d3_ge
 
 D3 exposes several raw projections, designed for reuse when implementing a composite projection (such as [Sinu–Mollweide](http://bl.ocks.org/4319903), which combines the raw sinusoidal and Mollweide projections). Raw projections are typically wrapped using d3.geo.projection. This are point functions that take spherical coordinates in radians as input and return a two-element array of normalized coordinates (typically in between -1 and 1) as output. Many raw projections also implement an inverse projection for mapping from normalized to spherical coordinates.
 
-<a name="d3_geo_albers_raw" href="#wiki-d3_geo_albers_raw">#</a> d3.geo.albers.<b>raw</b>(λ, φ)
+<a name="albers_raw" href="#wiki-albers_raw">#</a> d3.geo.albers.<b>raw</b>(λ, φ)
 
 …
 
-<a name="d3_geo_azimuthalEqualArea_raw" href="#wiki-d3_geo_azimuthalEqualArea_raw">#</a> d3.geo.azimuthalEqualArea.<b>raw</b>(λ, φ)
+<a name="azimuthalEqualArea_raw" href="#wiki-azimuthalEqualArea_raw">#</a> d3.geo.azimuthalEqualArea.<b>raw</b>(λ, φ)
 
 …
 
-<a name="d3_geo_azimuthalEquidistant_raw" href="#wiki-d3_geo_azimuthalEquidistant_raw">#</a> d3.geo.azimuthalEquidistant.<b>raw</b>(λ, φ)
+<a name="azimuthalEquidistant_raw" href="#wiki-azimuthalEquidistant_raw">#</a> d3.geo.azimuthalEquidistant.<b>raw</b>(λ, φ)
 
 …
 
-<a name="d3_geo_equirectangular_raw" href="#wiki-d3_geo_equirectangular_raw">#</a> d3.geo.equirectangular.<b>raw</b>(λ, φ)
+<a name="equirectangular_raw" href="#wiki-equirectangular_raw">#</a> d3.geo.equirectangular.<b>raw</b>(λ, φ)
 
 …
 
-<a name="d3_geo_gnomonic_raw" href="#wiki-d3_geo_gnomonic_raw">#</a> d3.geo.gnomonic.<b>raw</b>(λ, φ)
+<a name="gnomonic_raw" href="#wiki-gnomonic_raw">#</a> d3.geo.gnomonic.<b>raw</b>(λ, φ)
 
 …
 
-<a name="d3_geo_mercator_raw" href="#wiki-d3_geo_mercator_raw">#</a> d3.geo.mercator.<b>raw</b>(λ, φ)
+<a name="mercator_raw" href="#wiki-mercator_raw">#</a> d3.geo.mercator.<b>raw</b>(λ, φ)
 
 …
 
-<a name="d3_geo_orthographic_raw" href="#wiki-d3_geo_orthographic_raw">#</a> d3.geo.orthographic.<b>raw</b>(λ, φ)
+<a name="orthographic_raw" href="#wiki-orthographic_raw">#</a> d3.geo.orthographic.<b>raw</b>(λ, φ)
 
 …
 
-<a name="d3_geo_stereographic_raw" href="#wiki-d3_geo_stereographic_raw">#</a> d3.geo.stereographic.<b>raw</b>(λ, φ)
+<a name="stereographic_raw" href="#wiki-stereographic_raw">#</a> d3.geo.stereographic.<b>raw</b>(λ, φ)
 
 …
+
+## Standard Projections
+
+<a name="albers" href="#wiki-albers">#</a> d3.geo.<b>albers</b>()
+
+…
+
+<a name="albers_parallels" href="#wiki-albers_parallels">#</a> albers.<b>parallels</b>([<i>parallels</i>])
+
+…
+
+
 
 ## Mercator
 
