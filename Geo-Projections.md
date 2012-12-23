@@ -128,42 +128,6 @@ Get or set the projection’s scale factor. If *scale* is specified, sets the pr
 
 …
 
-## Raw Projections
-
-D3 exposes several raw projections, designed for reuse when implementing a composite projection (such as [Sinu–Mollweide](http://bl.ocks.org/4319903), which combines the raw sinusoidal and Mollweide projections). Raw projections are typically wrapped using d3.geo.projection. These are point functions that take spherical coordinates (in radians) as input and return a two-element array (in normalized coordinates, typically between -1 and 1) as output. Many raw projections also implement an inverse projection for mapping from normalized to spherical coordinates.
-
-<a name="albers_raw" href="#wiki-albers_raw">#</a> d3.geo.albers.<b>raw</b>(λ, φ)
-
-…
-
-<a name="azimuthalEqualArea_raw" href="#wiki-azimuthalEqualArea_raw">#</a> d3.geo.azimuthalEqualArea.<b>raw</b>(λ, φ)
-
-…
-
-<a name="azimuthalEquidistant_raw" href="#wiki-azimuthalEquidistant_raw">#</a> d3.geo.azimuthalEquidistant.<b>raw</b>(λ, φ)
-
-…
-
-<a name="equirectangular_raw" href="#wiki-equirectangular_raw">#</a> d3.geo.equirectangular.<b>raw</b>(λ, φ)
-
-…
-
-<a name="gnomonic_raw" href="#wiki-gnomonic_raw">#</a> d3.geo.gnomonic.<b>raw</b>(λ, φ)
-
-…
-
-<a name="mercator_raw" href="#wiki-mercator_raw">#</a> d3.geo.mercator.<b>raw</b>(λ, φ)
-
-…
-
-<a name="orthographic_raw" href="#wiki-orthographic_raw">#</a> d3.geo.orthographic.<b>raw</b>(λ, φ)
-
-…
-
-<a name="stereographic_raw" href="#wiki-stereographic_raw">#</a> d3.geo.stereographic.<b>raw</b>(λ, φ)
-
-…
-
 ## Standard Projections
 
 <a name="albers" href="#wiki-albers">#</a> d3.geo.<b>albers</b>()
@@ -218,5 +182,41 @@ The spherical Mercator projection is commonly used by tiled mapping libraries (s
 …
 
 <a name="stereographic" href="#wiki-stereographic">#</a> d3.geo.<b>stereographic</b>()
+
+…
+
+## Raw Projections
+
+D3 exposes several raw projections, designed for reuse when implementing a composite projection (such as [Sinu–Mollweide](http://bl.ocks.org/4319903), which combines the raw sinusoidal and Mollweide projections). Raw projections are typically wrapped using d3.geo.projection. These are point functions that take spherical coordinates (in radians) as input and return a two-element array (in normalized coordinates, typically between -1 and 1) as output. Many raw projections also implement an inverse projection for mapping from normalized to spherical coordinates.
+
+<a name="albers_raw" href="#wiki-albers_raw">#</a> d3.geo.albers.<b>raw</b>(λ, φ)
+
+…
+
+<a name="azimuthalEqualArea_raw" href="#wiki-azimuthalEqualArea_raw">#</a> d3.geo.azimuthalEqualArea.<b>raw</b>(λ, φ)
+
+…
+
+<a name="azimuthalEquidistant_raw" href="#wiki-azimuthalEquidistant_raw">#</a> d3.geo.azimuthalEquidistant.<b>raw</b>(λ, φ)
+
+…
+
+<a name="equirectangular_raw" href="#wiki-equirectangular_raw">#</a> d3.geo.equirectangular.<b>raw</b>(λ, φ)
+
+…
+
+<a name="gnomonic_raw" href="#wiki-gnomonic_raw">#</a> d3.geo.gnomonic.<b>raw</b>(λ, φ)
+
+…
+
+<a name="mercator_raw" href="#wiki-mercator_raw">#</a> d3.geo.mercator.<b>raw</b>(λ, φ)
+
+…
+
+<a name="orthographic_raw" href="#wiki-orthographic_raw">#</a> d3.geo.orthographic.<b>raw</b>(λ, φ)
+
+…
+
+<a name="stereographic_raw" href="#wiki-stereographic_raw">#</a> d3.geo.stereographic.<b>raw</b>(λ, φ)
 
 …
