@@ -12,13 +12,13 @@ Several common projections are included with default build of D3.
     <td>d3.geo.azimuthalEquidistant<br><a href="http://bl.ocks.org/3757110"><img src="https://raw.github.com/gist/3757110/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
+    <td>d3.geo.equirectangular<br><a href="http://bl.ocks.org/3757119"><img src="https://raw.github.com/gist/3757119/thumbnail.png" width="202"></a></td>
     <td>d3.geo.gnomonic<br><a href="http://bl.ocks.org/3757349"><img src="https://raw.github.com/gist/3757349/thumbnail.png" width="202"></a></td>
     <td>d3.geo.mercator<br><a href="http://bl.ocks.org/3757132"><img src="https://raw.github.com/gist/3757132/thumbnail.png" width="202"></a></td>
     <td>d3.geo.orthographic<br><a href="http://bl.ocks.org/3757125"><img src="https://raw.github.com/gist/3757125/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.stereographic<br><a href="http://bl.ocks.org/3757137"><img src="https://raw.github.com/gist/3757137/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
-    <td>d3.geo.equirectangular<br><a href="http://bl.ocks.org/3757119"><img src="https://raw.github.com/gist/3757119/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.stereographic<br><a href="http://bl.ocks.org/3757137"><img src="https://raw.github.com/gist/3757137/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
@@ -175,13 +175,17 @@ Thus, when creating a mutable projection, the *mutate* function is never exposed
 
 <a name="albers" href="#wiki-albers">#</a> d3.geo.<b>albers</b>()
 
+<a href="http://bl.ocks.org/3734308"><img src="https://raw.github.com/gist/3734308/thumbnail.png" width="202"></a>
+
 The Albers projection, as an [equal-area](http://en.wikipedia.org/wiki/Map_projection#Equal-area) projection, is recommended for [choropleths](http://mbostock.github.com/d3/ex/choropleth.html) as it preserves the relative areas of geographic features. The default Albers equal-area conic projection has scale 1000, translate [480, 250], rotation [98, 0], center [0, 38] and parallels [29.5, 45.5], making it suitable for displaying the United States, centered around [Hutchinson, Kansas](https://maps.google.com/maps?q=Hutchinson,+Kansas&z=5) in a 960×500 area. The parallels of 29.5° and 45.5° were chosen by the [USGS](http://www.usgs.gov/) in their 1970 [National Atlas](http://www.nationalatlas.gov/).
 
 <a name="albers_parallels" href="#wiki-albers_parallels">#</a> albers.<b>parallels</b>([<i>parallels</i>])
 
-… To minimize the distortion of parallel lines, the origin should be chosen to be near the center of the region of interest.
+If *parallels* is specified, sets the Albers projection’s standard parallels to the specified two-element array of latitudes (in degrees). If *parallels* is not specified, returns the current parallels, which default to 29.5°N and 45.5°N. To minimize distortion, the parallels should be chosen to surround the projection’s [center](#wiki-center).
 
 <a name="albersUsa" href="#wiki-albersUsa">#</a> d3.geo.<b>albersUsa</b>()
+
+<a href="http://bl.ocks.org/4090848"><img src="https://raw.github.com/gist/4090848/thumbnail.png" width="202"></a>
 
 The Albers USA projection is a composite projection of four Albers projections designed to display the forty-eight lower United States alongside Alaska, Hawaii and Puerto Rico. Although intended for choropleths, it distorts the area of Puerto Rico by a factor of 1.5x and Alaska by a factor of 0.6x; Hawaii is shown at the same scale as the lower forty-eight.
 
@@ -202,29 +206,43 @@ The Albers USA projection does not support inversion, rotation, or centering.
 
 <a name="azimuthalEqualArea" href="#wiki-azimuthalEqualArea">#</a> d3.geo.<b>azimuthalEqualArea</b>()
 
-…
+<a href="http://bl.ocks.org/3757101"><img src="https://raw.github.com/gist/3757101/thumbnail.png" width="202"></a>
+
+The azimuthal equal-projection is also suitable for choropleths. A [polar aspect](http://bl.ocks.org/4364903) of this projection is used for the United Nations logo.
 
 <a name="azimuthalEquidistant" href="#wiki-azimuthalEquidistant">#</a> d3.geo.<b>azimuthalEquidistant</b>()
 
-…
+<a href="http://bl.ocks.org/3757110"><img src="https://raw.github.com/gist/3757110/thumbnail.png" width="202"></a>
+
+The azimuthal equidistant projection preserves distances: distances along the great arc between two points on the sphere are proportional to the distance between the projected points on the Cartesian plane. 
 
 <a name="equirectangular" href="#wiki-equirectangular">#</a> d3.geo.<b>equirectangular</b>()
 
-…
+<a href="http://bl.ocks.org/3757119"><img src="https://raw.github.com/gist/3757119/thumbnail.png" width="202"></a>
+
+The equirectangular, or plate carrée projection, is the simplest possible geographic projection: the identity function. It is neither equal-area nor conformal, but is sometimes used for raster data. See [raster reprojection](http://bl.ocks.org/4329423) for an example; the source image uses the equirectangular projection.
 
 <a name="gnomonic" href="#wiki-gnomonic">#</a> d3.geo.<b>gnomonic</b>()
 
-…
+<a href="http://bl.ocks.org/3757349"><img src="https://raw.github.com/gist/3757349/thumbnail.png" width="202"></a>
+
+The gnomonic projection is an azimuthal projection that projects great circles as straight lines.
 
 <a name="mercator" href="#wiki-mercator">#</a> d3.geo.<b>mercator</b>()
 
-The spherical Mercator projection is commonly used by tiled mapping libraries (such as [OpenLayers](http://openlayers.org/) and [Leaflet](http://leaflet.cloudmade.com/)). It is [conformal](http://en.wikipedia.org/wiki/Conformal_map); however, it introduces severe area distortion at world scale and thus is not recommended for choropleths. The default scale is 500, appropriate for displaying the entire world in a 960×500 area.
+<a href="http://bl.ocks.org/3757132"><img src="https://raw.github.com/gist/3757132/thumbnail.png" width="202"></a>
+
+The spherical Mercator projection is commonly used by tiled mapping libraries (such as [OpenLayers](http://openlayers.org/) and [Leaflet](http://leaflet.cloudmade.com/)). For displaying raster tiles, see the [d3.geo.tile plugin](http://bl.ocks.org/4150951). It is [conformal](http://en.wikipedia.org/wiki/Conformal_map); however, it introduces severe area distortion at world scale and thus is not recommended for choropleths. The default scale is 500, appropriate for displaying the entire world in a 960×500 area.
 
 <a name="orthographic" href="#wiki-orthographic">#</a> d3.geo.<b>orthographic</b>()
+
+<a href="http://bl.ocks.org/3757125"><img src="https://raw.github.com/gist/3757125/thumbnail.png" width="202"></a>
 
 …
 
 <a name="stereographic" href="#wiki-stereographic">#</a> d3.geo.<b>stereographic</b>()
+
+<a href="http://bl.ocks.org/3757137"><img src="https://raw.github.com/gist/3757137/thumbnail.png" width="202"></a>
 
 …
 
