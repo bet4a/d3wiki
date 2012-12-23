@@ -82,11 +82,22 @@ Numerous less-common projections are available in the [extended geographic proje
 
 ## Standard Abstract Projection
 
-Most projections provided by D3 are instances of [d3.geo.projection](#wiki-projection). These projections expose a number of methods for configuring the projection, such as rotating the globe, and scaling or transforming the canvas. Unless you’re defining a new projection, you won’t use d3.geo.projection directly; you’ll use one of the provided implementations.
+Most projections provided by D3 are instances of [d3.geo.projection](#wiki-projection). These projections expose are configurable: you can rotating the globe, scale or transform the canvas, etc. Unless you’re defining a new projection, you won’t use d3.geo.projection directly; you’ll use one of the provided implementations.
 
 <a name="projection" href="#wiki-projection">#</a> d3.geo.<b>projection</b>(<i>raw</i>)
 
-…
+Constructs a new projection from the specified *raw* point projection function. For example, a Mercator projection can be implemented as:
+
+```js
+var mercator = d3.geo.projection(function(λ, φ) {
+  return [
+    λ / (2 * π),
+    Math.max(-.5, Math.min(+.5, Math.log(Math.tan(π / 4 + φ / 2)) / (2 * π)))
+  ];
+});
+```
+
+(See [src/geo/mercator.js](/mbostock/d3/blob/master/src/geo/mercator.js) for the full implementation.) If the raw function supports an *invert* method, then the returned projection will expose a corresponding [invert](#wiki-invert) method.
 
 <a name="_projection" href="#wiki-_projection">#</a> <b>projection</b>(<i>location</i>)
 
