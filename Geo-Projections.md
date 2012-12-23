@@ -133,11 +133,43 @@ If *precision* is specified, sets the threshold for the projection’s adaptive 
 
 <a name="stream" href="#wiki-stream">#</a> projection.<b>stream</b>(<i>listener</i>)
 
-…
+Returns a projecting [stream](Geo-Streams) wrapper for the specified *listener*. Any geometry streamed to the wrapper is projected before being streamed to the wrapped listener. A typical projection involves several stream transformations: the input geometry is first converted to radians, rotated on three axes, clipped to the small circle or cut along the antimeridian, and lastly projected to the Cartesian plane with adaptive resampling, scale and translation.
 
-<a name="projectionMutator" href="#wiki-projectionMutator">#</a> d3.geo.<b>projectionMutator</b>(<i>rawCreate</i>)
+<a name="projectionMutator" href="#wiki-projectionMutator">#</a> d3.geo.<b>projectionMutator</b>(<i>rawFactory</i>)
 
-…
+Constructs a new projection from the specified *raw* point projection function *factory*. This function does not return the projection directly, but instead returns a *mutate* method that you can call whenever the raw projection function changes. For example, say you’re implementing the Albers equal-area conic projection, which requires configuring the projections two parallels. Using closures, you can implement the raw projection as follows:
+
+```js
+// φ0 and φ1 are the two parallels
+function albersRaw(φ0, φ1) {
+  return function(λ, φ) {
+    return [
+      /* compute x here */,
+      /* compute y here */
+    ];
+  };
+}
+```
+
+Using d3.geo.projectionMutator, you can implement a standard projection that allows the parallels to be changed, reassigning the raw projection used internally by d3.geo.projection:
+
+```js
+function albers() {
+  var φ0 = 29.5,
+      φ1 = 45.5,
+      mutate = d3.geo.projectionMutator(albersRaw),
+      projection = mutate(φ0, φ1);
+
+  projection.parallels = function(_) {
+    if (!arguments.length) return [φ0, φ1];
+    return mutate(φ0 = +_[0], φ1 = +_[1]);
+  };
+
+  return projection;
+}
+```
+
+Thus, when creating a mutable projection, the *mutate* function is never exposed, but can be used to recreate the underlying raw projection easily. For the full implementation, see [src/geo/albers.js](/mbostock/d3/blob/master/src/geo/albers.js).
 
 ## Standard Projections
 
