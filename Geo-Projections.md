@@ -109,27 +109,27 @@ Projects backward from Cartesian coordinates (in pixels) to spherical coordinate
 
 <a name="rotate" href="#wiki-rotate">#</a> projection.<b>rotate</b>([<i>rotation</i>])
 
-…
+If *rotation* is specified, sets the projection’s three-axis rotation to the specified angles λ, φ and γ ([yaw, pitch and roll](http://en.wikipedia.org/wiki/Aircraft_principal_axes), or equivalently [longitude, latitude](http://en.wikipedia.org/wiki/Geographic_coordinate_system) and roll) in degrees. If *rotation* is not specified, returns the default rotation [0, 0, 0]. If the specified *rotation* has only two values, rather than three, the roll is assumed to be 0°.
 
 <a name="center" href="#wiki-center">#</a> projection.<b>center</b>([<i>location</i>])
 
-…
+If *center* is specified, sets the projection’s center to the specified *location*, a two-element array of longitude and latitude in degrees. If *center* is not specified, returns the default center [0, 0].
 
 <a name="translate" href="#wiki-translate">#</a> projection.<b>translate</b>([<i>point</i>])
 
-Get or set the projection's translation offset. If *point* is specified, sets the projection’s translation offset to the specified two-element array [*x*, *y*] and returns the projection. If *point* is not specified, returns the current translation offset which defaults to [480, 250]. The translation offset determines the pixel coordinates of the origin ([0, 0] in longitude and latitude). The default value is designed to place [null island](http://www.nullisland.com/) at the center of a 960×500 area.
+If *point* is specified, sets the projection’s translation offset to the specified two-element array [*x*, *y*] and returns the projection. If *point* is not specified, returns the current translation offset which defaults to [480, 250]. The translation offset determines the pixel coordinates of the origin ([0, 0] in longitude and latitude). The default value is designed to place [null island](http://www.nullisland.com/) at the center of a 960×500 area.
 
 <a name="scale" href="#wiki-scale">#</a> projection.<b>scale</b>([<i>scale</i>])
 
-Get or set the projection’s scale factor. If *scale* is specified, sets the projection’s scale factor to the specified value and returns the projection. If *scale* is not specified, returns the current scale factor which defaults to 150. The scale factor corresponds linearly to the distance between projected points. However, scale factors are not consistent across projections.
+If *scale* is specified, sets the projection’s scale factor to the specified value and returns the projection. If *scale* is not specified, returns the current scale factor which defaults to 150. The scale factor corresponds linearly to the distance between projected points. However, scale factors are not consistent across projections.
 
 <a name="clipAngle" href="#wiki-clipAngle">#</a> projection.<b>clipAngle</b>(<i>angle</i>)
 
-…
+If *angle* is specified, sets the projection’s clipping circle radius to the specified angle in degrees. If *angle* is null, switches to [antimeridian cutting](http://bl.ocks.org/3788999) rather than small-circle clipping. If *angle* is not specified, returns the default clip angle, which is null.
 
 <a name="precision" href="#wiki-precision">#</a> projection.<b>precision</b>(<i>precision</i>)
 
-…
+If *precision* is specified, sets the threshold for the projection’s adaptive resampling to the specified value in pixels. This value corresponds to the [Douglas–Peucker](http://en.wikipedia.org/wiki/Ramer–Douglas–Peucker_algorithm) distance. If *precision* is not specified, returns the projection’s current resampling precision, which defaults to `Math.SQRT1_2`.
 
 <a name="stream" href="#wiki-stream">#</a> projection.<b>stream</b>(<i>listener</i>)
 
