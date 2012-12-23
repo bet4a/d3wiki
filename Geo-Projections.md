@@ -101,11 +101,11 @@ var mercator = d3.geo.projection(function(λ, φ) {
 
 <a name="_projection" href="#wiki-_projection">#</a> <b>projection</b>(<i>location</i>)
 
-Projects forward from spherical coordinates (in degrees) to Cartesian coordinates (in pixels). Returns a two-element array [<i>x</i>, <i>y</i>] given the input [<i>longitude</i>, <i>latitude</i>].
+Projects forward from spherical coordinates (in degrees) to Cartesian coordinates (in pixels). Returns an array [<i>x</i>, <i>y</i>] given the input array [<i>longitude</i>, <i>latitude</i>].
 
 <a name="invert" href="#wiki-invert">#</a> projection.<b>invert</b>(<i>point</i>)
 
-Projects backward from Cartesian coordinates (in pixels) to spherical coordinates (in degrees). Returns a two-element array [<i>longitude</i>, <i>latitude</i>] given the input [<i>x</i>, <i>y</i>]. Not all projections implement *invert*; for noninvertible projections, this method is undefined.
+Projects backward from Cartesian coordinates (in pixels) to spherical coordinates (in degrees). Returns an array [<i>longitude</i>, <i>latitude</i>] given the input array [<i>x</i>, <i>y</i>]. Not all projections implement *invert*; for noninvertible projections, this method is undefined.
 
 <a name="rotate" href="#wiki-rotate">#</a> projection.<b>rotate</b>([<i>rotation</i>])
 
