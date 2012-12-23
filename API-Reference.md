@@ -599,17 +599,17 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 
 ### [[Projections|Geo-Projections]]
 
-* d3.geo.projection -
-* projection -
-* projection.invert -
-* projection.rotate -
-* projection.center -
-* projection.translate -
-* projection.scale -
-* projection.clipAngle -
-* projection.precision -
-* projection.stream -
-* d3.geo.projectionMutator -
+* [d3.geo.projection](Geo-Projections#wiki-d3_geo_projection) - create a standard projection from a raw projection.
+* [projection](Geo-Projections#wiki-_projection) - project the specified location.
+* [projection.invert](Geo-Projections#wiki-invert) - invert the projection for the specified point.
+* [projection.rotate](Geo-Projections#wiki-rotate) - get or set the projection’s three-axis rotation.
+* [projection.center](Geo-Projection#wiki-center) - get or set the projection’s center location.
+* [projection.translate](Geo-Projections#wiki-translate) - get or set the projection’s translation position.
+* [projection.scale](Geo-Projections#wiki-scale) - get or set the projection’s scale factor.
+* [projection.clipAngle](Geo-Projections#wiki-clipAngle) - get or set the radius of the projection’s clip circle.
+* [projection.precision](Geo-Projections#wiki-precision) - get or set the precision threshold for adaptive resampling.
+* [projection.stream](Geo-Projections#wiki-stream) - wrap the specified stream listener, projecting input geometry.
+* [d3.geo.projectionMutator](Geo-Projections#wiki-d3_geo_projectionMutator) - create a standard projection from a mutable raw projection.
 * [[d3.geo.albers|Geo-Projections#wiki-albers]] - construct a new Albers equal-area conic projection.
 * albers.invert -
 * [[albers.parallels|Geo-Projections#wiki-albers_parallels]] - get or set the projection's two standard parallels.
