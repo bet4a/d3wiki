@@ -82,7 +82,7 @@ Numerous less-common projections are available in the [extended geographic proje
 
 ## Standard Abstract Projection
 
-Most projections provided by D3 are instances of [d3.geo.projection](#wiki-projection). These are configurable projections: you can rotate the globe, scale or transform the canvas, etc. Unless you’re defining a new projection, you won’t use d3.geo.projection directly; you’ll use one of the provided implementations.
+Most projections provided by D3 are instances of [d3.geo.projection](#wiki-projection), and are configurable: you can rotate the globe, scale or transform the canvas, etc. Unless you’re defining a new projection, you won’t use d3.geo.projection directly; you’ll use one of the provided implementations.
 
 <a name="projection" href="#wiki-projection">#</a> d3.geo.<b>projection</b>(<i>raw</i>)
 
