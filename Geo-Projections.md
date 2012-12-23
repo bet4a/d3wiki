@@ -232,7 +232,7 @@ The gnomonic projection is an azimuthal projection that projects great circles a
 
 <a href="http://bl.ocks.org/3757132"><img src="https://raw.github.com/gist/3757132/thumbnail.png" width="202"></a>
 
-The spherical Mercator projection is commonly used by tiled mapping libraries (such as [OpenLayers](http://openlayers.org/) and [Leaflet](http://leaflet.cloudmade.com/)). For displaying raster tiles, see the [d3.geo.tile plugin](http://bl.ocks.org/4150951). It is [conformal](http://en.wikipedia.org/wiki/Conformal_map); however, it introduces severe area distortion at world scale and thus is not recommended for choropleths. The default scale is 500, appropriate for displaying the entire world in a 960×500 area.
+The spherical Mercator projection is commonly used by tiled mapping libraries (such as [OpenLayers](http://openlayers.org/) and [Leaflet](http://leaflet.cloudmade.com/)). For displaying raster tiles, see the [d3.geo.tile plugin](http://bl.ocks.org/4150951). It is [conformal](http://en.wikipedia.org/wiki/Map_projection#Conformal); however, it introduces severe area distortion at world scale and thus is not recommended for choropleths. The default scale is 500, appropriate for displaying the entire world in a 960×500 area.
 
 <a name="orthographic" href="#wiki-orthographic">#</a> d3.geo.<b>orthographic</b>()
 
