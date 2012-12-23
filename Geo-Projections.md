@@ -1,5 +1,7 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Geo]] ▸ **Geo Projections**
 
+## Standard Projections
+
 <table>
   <tr height="146" valign="top">
     <td>d3.geo.albers<br><a href="http://bl.ocks.org/3734308"><img src="https://raw.github.com/gist/3734308/thumbnail.png" width="202"></a></td>
@@ -13,7 +15,13 @@
     <td>d3.geo.orthographic<br><a href="http://bl.ocks.org/3757125"><img src="https://raw.github.com/gist/3757125/thumbnail.png" width="202"></a></td>
     <td>d3.geo.stereographic<br><a href="http://bl.ocks.org/3757137"><img src="https://raw.github.com/gist/3757137/thumbnail.png" width="202"></a></td>
   </tr>
+  <tr height="146" valign="top">
+    <td>d3.geo.equirectangular<br><a href="http://bl.ocks.org/3757119"><img src="https://raw.github.com/gist/3757119/thumbnail.png" width="202"></a></td>
+  </tr>
 </table>
+
+## Extended Projections
+
 
 ## Mercator
 
