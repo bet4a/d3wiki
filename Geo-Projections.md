@@ -2,7 +2,7 @@
 
 ## Standard Projections
 
-These projections are included with default build of D3.
+Several common projections are included with default build of D3.
 
 <table>
   <tr height="146" valign="top">
@@ -24,7 +24,7 @@ These projections are included with default build of D3.
 
 ## Extended Projections
 
-These less common projections are available in the [extended geographic projections plugin](https://github.com/d3/d3-plugins/tree/master/geo/projection).
+Numerous less-common projections are available in the [extended geographic projections plugin](https://github.com/d3/d3-plugins/tree/master/geo/projection).
 
 <table>
   <tr height="146" valign="top">
