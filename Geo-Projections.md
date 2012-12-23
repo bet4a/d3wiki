@@ -214,7 +214,7 @@ The azimuthal equal-projection is also suitable for choropleths. A [polar aspect
 
 <a href="http://bl.ocks.org/3757110"><img src="https://raw.github.com/gist/3757110/thumbnail.png" width="202"></a>
 
-The azimuthal equidistant projection preserves distances: distances along the great arc between two points on the sphere are proportional to the distance between the projected points on the Cartesian plane. 
+The azimuthal equidistant projection preserves distances from the projection’s center: circles around the projection’s center are projected to circles on the Cartesian plane. This can be useful for visualizing distances relative to a point of reference. 
 
 <a name="equirectangular" href="#wiki-equirectangular">#</a> d3.geo.<b>equirectangular</b>()
 
