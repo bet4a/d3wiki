@@ -82,7 +82,7 @@ These less common projections are available in the [extended geographic projecti
 
 ## Standard Projection
 
-Most projections provided by D3 are instances of [d3.geo.projection](#wiki-d3_geo_projection). These projections provide a number of convenient methods for configuring the projection, such as rotating the globe, and scaling or transforming the canvas.
+Most projections provided by D3 are instances of [d3.geo.projection](#wiki-d3_geo_projection). These projections expose a number of methods for configuring the projection, such as rotating the globe, and scaling or transforming the canvas.
 
 <a name="d3_geo_projection" href="#wiki-d3_geo_projection">#</a> d3.geo.<b>projection</b>(<i>raw</i>)
 
