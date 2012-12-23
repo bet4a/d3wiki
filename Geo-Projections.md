@@ -1,8 +1,8 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Geo]] ▸ **Geo Projections**
 
-## Standard Projections
+## Core Projections
 
-These standard projections are included with default build of D3.
+These projections are included with default build of D3.
 
 <table>
   <tr height="146" valign="top">
@@ -79,6 +79,46 @@ These less common projections are available in the [extended geographic projecti
     <td>d3.geo.winkel3<br><a href="http://bl.ocks.org/3682676"><img src="https://raw.github.com/gist/3682676/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
+
+## Standard Projection
+
+Most projections provided by D3 are instances of [d3.geo.projection](#wiki-projection). These projections provide a number of convenient methods for configuring the projection, such as rotating the globe, and scaling or transforming the canvas.
+
+## Raw Projections
+
+D3 exposes several raw projections, designed for reuse when implementing a composite projection (such as [Sinu–Mollweide](http://bl.ocks.org/4319903), which combines the raw sinusoidal and Mollweide projections). Raw projections are typically wrapped using d3.geo.projection. This are point functions that take radians as input and return a two-element array of normalized coordinates (typically in between -1 and 1) as output.
+
+<a name="d3_geo_albers_raw" href="#wiki-d3_geo_albers_raw">#</a> d3.geo.albers.<b>raw</b>(λ, φ)
+
+…
+
+<a name="d3_geo_azimuthalEqualArea_raw" href="#wiki-d3_geo_azimuthalEqualArea_raw">#</a> d3.geo.azimuthalEqualArea.<b>raw</b>(λ, φ)
+
+…
+
+<a name="d3_geo_azimuthalEquidistant_raw" href="#wiki-d3_geo_azimuthalEquidistant_raw">#</a> d3.geo.azimuthalEquidistant.<b>raw</b>(λ, φ)
+
+…
+
+<a name="d3_geo_equirectangular_raw" href="#wiki-d3_geo_equirectangular_raw">#</a> d3.geo.equirectangular.<b>raw</b>(λ, φ)
+
+…
+
+<a name="d3_geo_gnomonic_raw" href="#wiki-d3_geo_gnomonic_raw">#</a> d3.geo.gnomonic.<b>raw</b>(λ, φ)
+
+…
+
+<a name="d3_geo_mercator_raw" href="#wiki-d3_geo_mercator_raw">#</a> d3.geo.mercator.<b>raw</b>(λ, φ)
+
+…
+
+<a name="d3_geo_orthographic_raw" href="#wiki-d3_geo_orthographic_raw">#</a> d3.geo.orthographic.<b>raw</b>(λ, φ)
+
+…
+
+<a name="d3_geo_stereographic_raw" href="#wiki-d3_geo_stereographic_raw">#</a> d3.geo.stereographic.<b>raw</b>(λ, φ)
+
+…
 
 ## Mercator
 
