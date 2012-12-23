@@ -238,7 +238,7 @@ The spherical Mercator projection is commonly used by tiled mapping libraries (s
 
 <a href="http://bl.ocks.org/3757125"><img src="https://raw.github.com/gist/3757125/thumbnail.png" width="202"></a>
 
-…
+The orthographic is an azimuthal projection suitable for displaying one hemisphere; the point of perspective is at infinity. See the [animated world tour](http://bl.ocks.org/4183330) for an example. For a general perspective projection, see the [satellite projection](http://bl.ocks.org/3790444).
 
 <a name="stereographic" href="#wiki-stereographic">#</a> d3.geo.<b>stereographic</b>()
 
