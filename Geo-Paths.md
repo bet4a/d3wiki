@@ -1,17 +1,17 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Geo]] ▸ **Geo Paths**
 
-For cartographic visualizations, D3 supports a handful of utilities for displaying and manipulating **geographic data**. These utilities are based on the [GeoJSON format](http://geojson.org/geojson-spec.html)—a standard way of representing geographic features in JavaScript. For example, [GDAL](http://www.gdal.org/) includes the ogr2ogr tool which can convert binary shapefiles into GeoJSON; the shapefile is another common representation for geographic data, frequently used by the [U.S. Census Bureau](http://www.census.gov/).
+For cartographic visualizations, D3 supports a handful of components for displaying and manipulating **geographic data**. These components use the [GeoJSON format](http://geojson.org/geojson-spec.html)—a standard way of representing geographic features in JavaScript. (See also the [TopoJSON format](/mbostock/topojson), an extension of GeoJSON that is significantly more compact.) To convert shapefiles to GeoJSON, use ogr2ogr, part of the [GDAL package](http://www.gdal.org/).
 
-![choropleth](choropleth.png)
+<a href="http://bl.ocks.org/4060606"><img src="https://raw.github.com/gist/4060606/thumbnail.png" height="120"></a>
 
 Some other tools you may be interested in:
 
+* [TopoJSON](/mbostock/topojson) - shapefile simplification, topology construction and GeoJSON compression.
 * [Shapely](http://trac.gispython.org/lab/wiki/Shapely) - manipulation of planar geometry objects.
-* [MapShaper](http://mapshaper.org/) and [Bloch](https://github.com/migurski/Bloch/) - shapefile simplification.
 * [ColorBrewer](http://colorbrewer2.org) - color scales for maps.
 * [PostGIS](http://postgis.refractions.net/) - a geospatial database.
 
-The primary mechanism for displaying geographic data is [d3.geo.path](Geo-Paths#wiki-path). In many ways, this class is similar to [d3.svg.line](SVG-Shapes#wiki-line) and the other SVG shape generators: given a geometry or feature object, it generates the path data string suitable for the "d" attribute of an SVG path element.
+The primary mechanism for displaying geographic data is [d3.geo.path](#wiki-path). This class is similar to [d3.svg.line](SVG-Shapes#wiki-line) and the other SVG shape generators: given a geometry or feature object, it generates the path data string suitable for the "d" attribute of an SVG path element. The d3.geo.path class can [render directly to Canvas](http://bl.ocks.org/3783604), which may offer better performance when animating the projection.
 
 <a name="path" href="Geo-Paths#wiki-path">#</a> d3.geo.<b>path</b>()
 
