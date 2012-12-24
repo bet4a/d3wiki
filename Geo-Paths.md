@@ -31,10 +31,18 @@ Returns the path data string for the given *feature*, which may be any GeoJSON f
 * Feature - a feature containing one of the above geometry objects.
 * FeatureCollection - an array of feature objects.
 
-To display multiple features, you can either place them in a single feature collection and a single path element, or create multiple distinct path elements:
+To display multiple features, you can place them in a single feature collection and a single path element:
 
 ```javascript
-vis.selectAll("path")
+svg.append("path")
+    .datum({type: "FeatureCollection", features: features})
+    .attr("d", d3.geo.path());
+```
+
+Alternatively, you can create multiple distinct path elements, although this typically has worse performance:
+
+```javascript
+svg.selectAll("path")
     .data(features)
   .enter().append("path")
     .attr("d", d3.geo.path());
