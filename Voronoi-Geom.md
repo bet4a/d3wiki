@@ -4,8 +4,12 @@ This implementation does not clip the returned polygons, so if you want to clip 
 
 <a name="voronoi" href="Voronoi-Geom#wiki-voronoi">#</a> d3.geom.<b>voronoi</b>([<i>vertices</i>])
 
+<a href="http://bl.ocks.org/4060366"><img src="https://raw.github.com/gist/4060366/thumbnail.png" width="202"></a>
+
 Returns an array of polygons, one for each input *vertex*.
 
 <a name="delaunay" href="Voronoi-Geom#wiki-delaunay">#</a> d3.geom.<b>delaunay</b>([<i>vertices</i>])
+
+<a href="http://bl.ocks.org/4341156"><img src="https://raw.github.com/gist/4341156/thumbnail.png" width="202"></a>
 
 Returns an array of triangles.
