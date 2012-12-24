@@ -240,7 +240,7 @@ The stereographic projection is another perspective (azimuthal) projection. The 
 
 D3 exposes several raw projections, designed for reuse when implementing a composite projection (such as [Sinu–Mollweide](http://bl.ocks.org/4319903), which combines the raw sinusoidal and Mollweide projections). Raw projections are typically wrapped using [d3.geo.projection](#wiki-projection) before use. These are point functions that take spherical coordinates λ and φ (in radians) as input and return a two-element array (in normalized coordinates, typically between -1 and 1) as output. Many raw projections also implement an inverse projection for mapping from normalized to spherical coordinates.
 
-<a name="albers_raw" href="#wiki-albers_raw">#</a> d3.geo.albers.<b>raw</b>(φ0, φ1)
+<a name="albers_raw" href="#wiki-albers_raw">#</a> d3.geo.albers.<b>raw</b>(φ<sub>0</sub>, φ<sub>1</sub>)
 
 Returns a raw [Albers projection](#wiki-albers) with the specified parallels in radians.
 
