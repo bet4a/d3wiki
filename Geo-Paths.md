@@ -89,18 +89,6 @@ Computes the projected bounding box (in pixels) for the specified *feature*. Thi
 
 If *radius* is specified, sets the radius used to display Point and MultiPoint features to the specified number. If *radius* is not specified, returns the current radius. While the radius is commonly specified as a number constant, it may also be specified as a function which is computed per feature, being passed the *feature* and *index* arguments from the [path](Geo-Paths#wiki-_path) function. For example, if your GeoJSON data has additional properties, you might access those properties inside the radius function to vary the point size; alternatively, you could [d3.svg.symbol](SVG-Shapes#wiki-symbol) and a [projection](Geo-Projections) for more control over the display.
 
-<a name="d3_geo_area" href="#wiki-d3_geo_area">#</a> d3.geo.<b>area</b>(<i>feature</i>)
-
-…
-
-<a name="d3_geo_centroid" href="#wiki-d3_geo_centroid">#</a> d3.geo.<b>centroid</b>(<i>feature</i>)
-
-…
-
-<a name="d3_geo_bounds" href="#wiki-d3_geo_bounds">#</a> d3.geo.<b>bounds</b>(<i>feature</i>)
-
-Given a GeoJSON *feature*, returns the corresponding bounding box. The bounding box is represented by a two-dimensional array: [​[*left*, *bottom*], [*right*, *top*]​], where *left* is the minimum longitude, *bottom* is the minimum latitude, *right* is maximum longitude, and *top* is the maximum latitude.
-
 <a name="d3_geo_greatArc" href="#wiki-d3_geo_greatArc">#</a> d3.geo.<b>greatArc</b>()
 
 Constructs a new interpolator to approximate the shortest path between two geographic points, using a segment of a <a href="http://en.wikipedia.org/wiki/Great_circle">great circle</a>.
@@ -145,7 +133,19 @@ If *angle* is specified, sets the angular radius of the circle in degrees.  If *
 
 If *precision* is specified, sets the precision of the interpolated circle segments in degrees.  These interpolated segments are inserted when a feature is clipped by the circle. If *precision* is not specified, returns the current precision, which defaults to 6°.
 
-## Interpolation
+## Math
+
+<a name="d3_geo_area" href="#wiki-d3_geo_area">#</a> d3.geo.<b>area</b>(<i>feature</i>)
+
+…
+
+<a name="d3_geo_centroid" href="#wiki-d3_geo_centroid">#</a> d3.geo.<b>centroid</b>(<i>feature</i>)
+
+…
+
+<a name="d3_geo_bounds" href="#wiki-d3_geo_bounds">#</a> d3.geo.<b>bounds</b>(<i>feature</i>)
+
+Given a GeoJSON *feature*, returns the corresponding bounding box. The bounding box is represented by a two-dimensional array: [​[*left*, *bottom*], [*right*, *top*]​], where *left* is the minimum longitude, *bottom* is the minimum latitude, *right* is maximum longitude, and *top* is the maximum latitude.
 
 <a name="d3_geo_interpolate" href="#wiki-d3_geo_interpolate">#</a> d3.geo.<b>interpolate</b>(<i>a</i>, <i>b</i>)
 
