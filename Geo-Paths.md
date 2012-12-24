@@ -125,10 +125,6 @@ If *target* is specified, sets the *target*-accessor to the specified function o
 
 If *precision* is specified, sets the maximum segment length of the interpolated path in degrees. If *precision* is not specified, returns the current precision, which defaults to 6°.
 
-<a name="d3_geo_interpolate" href="#wiki-d3_geo_interpolate">#</a> d3.geo.<b>interpolate</b>(<i>a</i>, <i>b</i>)
-
-…
-
 <a name="d3_geo_circle" href="#wiki-d3_geo_circle">#</a> d3.geo.<b>circle</b>
 
 Represents a geographic circle with arbitrary radius and origin, which can be used to clip geographic features.  This is particularly useful for azimuthal projections.
@@ -148,3 +144,9 @@ If *angle* is specified, sets the angular radius of the circle in degrees.  If *
 <a name="circle_precision" href="#wiki-circle_precision">#</a> circle.<b>precision</b>([<i>precision</i>])
 
 If *precision* is specified, sets the precision of the interpolated circle segments in degrees.  These interpolated segments are inserted when a feature is clipped by the circle. If *precision* is not specified, returns the current precision, which defaults to 6°.
+
+## Interpolation
+
+<a name="d3_geo_interpolate" href="#wiki-d3_geo_interpolate">#</a> d3.geo.<b>interpolate</b>(<i>a</i>, <i>b</i>)
+
+…
