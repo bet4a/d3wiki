@@ -39,7 +39,7 @@ svg.append("path")
     .attr("d", d3.geo.path());
 ```
 
-Alternatively, you can create multiple distinct path elements, although this typically has worse performance:
+Alternatively, you can create multiple distinct path elements:
 
 ```javascript
 svg.selectAll("path")
@@ -48,7 +48,7 @@ svg.selectAll("path")
     .attr("d", d3.geo.path());
 ```
 
-An optional *index* may be specified, which is passed along to the [pointRadius](Geo-Paths#wiki-pointRadius) accessor.
+Using distinct path elements is typically slower than a single path element for a collection. However, distinct path elements are preferred if you want interact with features separately (e.g., using CSS :hover or click events). An optional *index* may be specified, which is passed along to the [pointRadius](Geo-Paths#wiki-pointRadius) accessor.
 
 <a name="path_projection" href="Geo-Paths#wiki-path_projection">#</a> path.<b>projection</b>([<i>projection</i>])
 
