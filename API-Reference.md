@@ -574,7 +574,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 ### [Paths](Geo-Paths)
 
 * [d3.geo.path](Geo-Paths#wiki-path) - create a new geographic path generator.
-* [path](Geo-Paths#wiki-_path) - render a given geographic feature.
+* [path](Geo-Paths#wiki-_path) - project the specified feature and render it to the context.
 * [path.projection](Geo-Paths#wiki-projection) - get or set the geographic projection.
 * [path.context](Geo-Paths#wiki-context) - get or set the render context.
 * [path.pointRadius](Geo-Paths#wiki-pointRadius) - get or set the radius to display point features.
