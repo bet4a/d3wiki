@@ -67,7 +67,7 @@ function mercator(coordinates) {
 
 Internally, this point projection function is wrapped with a fallback [stream transformation](Geo-Streams) that performs [adaptive resampling](http://bl.ocks.org/3795544). However, the fallback stream does not perform any clipping or cutting. For more control over the stream transformation, the *projection* may be specified as an object that implements the *stream* method. The stream method takes a stream listener as input, and returns a wrapped stream listener that projects the input geometry; in other words, it implements [projection.stream](Geo-Projection#wiki-stream).
 
-If *projection* is null, the path uses the identity transformation, where the input geometry is not projected and is instead rendered directly in raw coordinates. This can be useful for fast rendering of already-projected geometry, and also for fast rendering of the equirectangular projection.
+If *projection* is null, the path uses the identity transformation, where the input geometry is not projected and is instead rendered directly in raw coordinates. This can be useful for fast rendering of already-projected geometry, or for fast rendering of the equirectangular projection.
 
 <a name="path_area" href="Geo-Paths#wiki-path_area">#</a> path.<b>area</b>(<i>feature</i>)
 
