@@ -89,6 +89,8 @@ Computes the projected bounding box (in pixels) for the specified *feature*. Thi
 
 If *radius* is specified, sets the radius used to display Point and MultiPoint features to the specified number. If *radius* is not specified, returns the current radius. While the radius is commonly specified as a number constant, it may also be specified as a function which is computed per feature, being passed the *feature* and *index* arguments from the [path](Geo-Paths#wiki-_path) function. For example, if your GeoJSON data has additional properties, you might access those properties inside the radius function to vary the point size; alternatively, you could [d3.svg.symbol](SVG-Shapes#wiki-symbol) and a [projection](Geo-Projections) for more control over the display.
 
+## Shape Generators
+
 <a name="greatArc" href="#wiki-greatArc">#</a> d3.geo.<b>greatArc</b>()
 
 Constructs a feature generator for creating the great arc between two geographic points, using a segment of a <a href="http://en.wikipedia.org/wiki/Great_circle">great circle</a>. The great arc represents the shortest path between the two points on the surface of the sphere.
