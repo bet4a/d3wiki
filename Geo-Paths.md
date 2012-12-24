@@ -13,7 +13,7 @@ Some other tools you may be interested in:
 
 The primary mechanism for displaying geographic data is [d3.geo.path](#wiki-path). This class is similar to [d3.svg.line](SVG-Shapes#wiki-line) and the other SVG shape generators: given a geometry or feature object, it generates the path data string suitable for the "d" attribute of an SVG path element. The d3.geo.path class can [render directly to Canvas](http://bl.ocks.org/3783604), which may offer better performance when animating the projection.
 
-<a name="d3_geo_path" href="#wiki-d3_geo_path">#</a> d3.geo.<b>path</b>()
+<a name="path" href="#wiki-path">#</a> d3.geo.<b>path</b>()
 
 Creates a new geographic path generator with the default settings: the [albersUsa](Geo-Projections#wiki-albersUsa) projection and a point radius of 4.5 pixels.
 
@@ -89,7 +89,7 @@ Computes the projected bounding box (in pixels) for the specified *feature*. Thi
 
 If *radius* is specified, sets the radius used to display Point and MultiPoint features to the specified number. If *radius* is not specified, returns the current radius. While the radius is commonly specified as a number constant, it may also be specified as a function which is computed per feature, being passed the *feature* and *index* arguments from the [path](Geo-Paths#wiki-_path) function. For example, if your GeoJSON data has additional properties, you might access those properties inside the radius function to vary the point size; alternatively, you could [d3.svg.symbol](SVG-Shapes#wiki-symbol) and a [projection](Geo-Projections) for more control over the display.
 
-<a name="d3_geo_greatArc" href="#wiki-d3_geo_greatArc">#</a> d3.geo.<b>greatArc</b>()
+<a name="greatArc" href="#wiki-greatArc">#</a> d3.geo.<b>greatArc</b>()
 
 Constructs a new interpolator to approximate the shortest path between two geographic points, using a segment of a <a href="http://en.wikipedia.org/wiki/Great_circle">great circle</a>.
 
@@ -113,7 +113,7 @@ If *target* is specified, sets the *target*-accessor to the specified function o
 
 If *precision* is specified, sets the maximum segment length of the interpolated path in degrees. If *precision* is not specified, returns the current precision, which defaults to 6°.
 
-<a name="d3_geo_circle" href="#wiki-d3_geo_circle">#</a> d3.geo.<b>circle</b>
+<a name="circle" href="#wiki-circle">#</a> d3.geo.<b>circle</b>
 
 Represents a geographic circle with arbitrary radius and origin, which can be used to clip geographic features.  This is particularly useful for azimuthal projections.
 
