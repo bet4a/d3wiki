@@ -31,6 +31,8 @@ Returns the path data string for the given *feature*, which may be any GeoJSON f
 * Feature - a feature containing one of the above geometry objects.
 * FeatureCollection - an array of feature objects.
 
+An optional *index* may be specified, which is passed along to the [pointRadius](Geo-Paths#wiki-pointRadius) accessor. (The *index* is passed automatically when the path generator is invoked by [selection.attr](Selections#wiki-attr).)
+
 To display multiple features, you can place them in a single feature collection and a single path element:
 
 ```javascript
@@ -48,7 +50,7 @@ svg.selectAll("path")
     .attr("d", d3.geo.path());
 ```
 
-Using distinct path elements is typically slower than a single path element for a collection. However, distinct path elements are preferred if you want interact with features separately (e.g., using CSS :hover or click events). An optional *index* may be specified, which is passed along to the [pointRadius](Geo-Paths#wiki-pointRadius) accessor.
+Using distinct path elements is typically slower than a single path element for a collection. However, distinct path elements are preferred if you want interact with features separately (e.g., using CSS :hover or click events).
 
 <a name="path_projection" href="Geo-Paths#wiki-path_projection">#</a> path.<b>projection</b>([<i>projection</i>])
 
