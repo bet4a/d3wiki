@@ -54,7 +54,7 @@ Using distinct path elements is typically slower than a single path element for 
 
 <a name="path_projection" href="Geo-Paths#wiki-path_projection">#</a> path.<b>projection</b>([<i>projection</i>])
 
-If *projection* is specified, sets the projection used by the path generator to the specified projection function. If *projection* is not specified, returns the current projection, which defaults to [albersUsa](Geo-Projections#wiki-albersUsa). Typically, the projection is one of D3's built-in [projections](Geo-Projections); however, any function can be used. The function takes a two-element array of numbers representing the coordinates of a single position, [*longitude*, *latitude*], and returns a similar two-element array of numbers representing the projected pixel position [*x*, *y*]. For example, a rudimentary spherical Mercator projection:
+If *projection* is specified, sets the projection used by the path generator to the specified projection function. If *projection* is not specified, returns the current projection, which defaults to [albersUsa](Geo-Projections#wiki-albersUsa). The projection is typically one of D3's built-in [geographic projections](Geo-Projections); however, any function can be used. A projection function takes a two-element array of numbers representing the coordinates of a location, [<i>longitude</i>, <i>latitude</i>], and returns a similar two-element array of numbers representing the projected pixel position [<i>x</i>, <i>y</i>]. For example, a rudimentary spherical Mercator projection:
 
 ```javascript
 function mercator(coordinates) {
@@ -65,19 +65,33 @@ function mercator(coordinates) {
 }
 ```
 
-If you want to use a projection that D3 does not already support, you might be able to adapt [Proj4js](http://trac.osgeo.org/proj4js/).
+Internally, this point projection function is wrapped with a fallback [stream transformation](Geo-Streams) that performs [adaptive resampling](http://bl.ocks.org/3795544). However, the fallback stream does not perform any clipping or cutting. For more control over the stream transformation, the *projection* may be specified as an object that implements the *stream* method. The stream method takes a stream listener as input, and returns a wrapped stream listener that projects the input geometry; in other words, it implements [projection.stream](Geo-Projection#wiki-stream).
+
+If *projection* is null, the path uses the identity transformation, where the input geometry is not projected and is instead rendered directly in raw coordinates. This can be useful for fast rendering of already-projected geometry, and also for fast rendering of the equirectangular projection.
 
 <a name="path_area" href="Geo-Paths#wiki-path_area">#</a> path.<b>area</b>(<i>feature</i>)
 
-Computes the projected area (in square pixels) for the specified *feature*. Point, MultiPoint, LineString and MultiLineString features are ignored, returning zero. For Polygon and MultiPolygon features, this method first computes the area of the exterior ring, and then subtracts the area of any interior holes.
+Computes the projected area (in square pixels) for the specified *feature*. Point, MultiPoint, LineString and MultiLineString features have zero area. For Polygon and MultiPolygon features, this method first computes the area of the exterior ring, and then subtracts the area of any interior holes. This method observes any clipping and resampling performed by the projection stream.
 
-<a name="path_centroid" href="Geo-Paths#wiki-path_area">#</a> path.<b>centroid</b>(<i>feature</i>)
+<a name="path_centroid" href="#wiki-path_centroid">#</a> path.<b>centroid</b>(<i>feature</i>)
 
-Computes the projected centroid (in pixels) for the specified *feature*. This method is currently only supported for Polygon and MultiPolygon features. This is handy for, say, labeling state or county boundaries, or displaying a symbol map. The [noncontiguous cartogram](http://mbostock.github.com/d3/ex/cartogram.html) example scales each state around its centroid.
+Computes the projected centroid (in pixels) for the specified *feature*. This is handy for, say, labeling state or county boundaries, or displaying a symbol map. The [noncontiguous cartogram](http://mbostock.github.com/d3/ex/cartogram.html) example scales each state around its centroid. This method observes any clipping and resampling performed by the projection stream.
+
+<a name="path_bounds" href="#wiki-path_bounds">#</a> path.<b>bounds</b>(<i>feature</i>)
+
+Computes the projected bounding box (in pixels) for the specified *feature*. This is handy for, say, zooming in to a particular feature. This method observes any clipping and resampling performed by the projection stream.
 
 <a name="path_pointRadius" href="Geo-Paths#wiki-path_pointRadius">#</a> path.<b>pointRadius</b>([<i>radius</i>])
 
 If *radius* is specified, sets the radius used to display Point and MultiPoint features to the specified number. If *radius* is not specified, returns the current radius. While the radius is commonly specified as a number constant, it may also be specified as a function which is computed per feature, being passed the *feature* and *index* arguments from the [path](Geo-Paths#wiki-_path) function. For example, if your GeoJSON data has additional properties, you might access those properties inside the radius function to vary the point size; alternatively, you could [d3.svg.symbol](SVG-Shapes#wiki-symbol) and a [projection](Geo-Projections) for more control over the display.
+
+<a name="area" href="Geo-Paths#wiki-area">#</a> d3.geo.<b>area</b>(<i>feature</i>)
+
+…
+
+<a name="centroid" href="Geo-Paths#wiki-centroid">#</a> d3.geo.<b>centroid</b>(<i>feature</i>)
+
+…
 
 <a name="bounds" href="Geo-Paths#wiki-bounds">#</a> d3.geo.<b>bounds</b>(<i>feature</i>)
 
