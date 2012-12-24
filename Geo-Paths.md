@@ -91,23 +91,23 @@ If *radius* is specified, sets the radius used to display Point and MultiPoint f
 
 <a name="greatArc" href="#wiki-greatArc">#</a> d3.geo.<b>greatArc</b>()
 
-Constructs a new interpolator to approximate the shortest path between two geographic points, using a segment of a <a href="http://en.wikipedia.org/wiki/Great_circle">great circle</a>.
+Constructs a feature generator for creating the great arc between two geographic points, using a segment of a <a href="http://en.wikipedia.org/wiki/Great_circle">great circle</a>. The great arc represents the shortest path between the two points on the surface of the sphere.
 
-<a name="_greatArc" href="#wiki-_greatArc">#</a> <b>greatArc</b>([<i>…</i>])
+<a name="_greatArc" href="#wiki-_greatArc">#</a> <b>greatArc</b>(<i>arguments…</i>)
 
-Returns a GeoJSON LineString approximating a great circle segment.  If source and target accessors are in use, they will retrieve the source and target points from the given arguments.  By default, they expect `{source: …, target: …}`.
+Returns a GeoJSON LineString approximating a great circle segment. The source and target accessors specify how to determine the source and target points for the given *arguments*; the default accessors expect a single argument with source and target properties: `{source: …, target: …}`.
 
-<a name="greatArc_distance" href="#wiki-greatArc_distance">#</a> greatArc.<b>distance</b>([<i>…</i>])
+<a name="greatArc_distance" href="#wiki-greatArc_distance">#</a> greatArc.<b>distance</b>(<i>arguments…</i>)
 
-Returns the great circle distance along this great circle segment, in radians.  If source and target accessors are in use, they will retrieve the source and target points from the given arguments.  By default, they expect `{source: …, target: …}`.  To convert the angular distance to a linear one, simply multiply by the radius of the sphere, which is around *6,371km* on average for Earth.
+Returns the length of the great arc between the two points represented by *arguments* in radians. To convert the angular distance to a linear one, simply multiply by the radius of the sphere, which is around *6,371km* on average for Earth. The source and target accessors specify how to determine the source and target points for the given *arguments*; the default accessors expect a single argument with source and target properties: `{source: …, target: …}`.
 
 <a name="greatArc_source" href="#wiki-greatArc_source">#</a> greatArc.<b>source</b>([<i>source</i>])
 
-If *source* is specified, sets the *source*-accessor to the specified function or constant point, [*longitude*, *latitude*]. If *source* is not specified, returns the current *source*-accessor.  This accessor is invoked every time the interpolator is called.  The default is `function(d) { return d.source; }`.
+If *source* is specified, sets the *source*-accessor to the specified function or constant point, [<i>longitude</i>, <i>latitude</i>]. If *source* is not specified, returns the current *source*-accessor.  This accessor is invoked every time the interpolator is called.  The default is `function(d) { return d.source; }`.
 
 <a name="greatArc_target" href="#wiki-greatArc_target">#</a> greatArc.<b>target</b>([<i>target</i>])
 
-If *target* is specified, sets the *target*-accessor to the specified function or constant point, [*longitude*, *latitude*]. If *source* is not specified, returns the current *target*-accessor.  This accessor is invoked every time the interpolator is called.  The default is `function(d) { return d.target; }`.
+If *target* is specified, sets the *target*-accessor to the specified function or constant point, [<i>longitude</i>, <i>latitude</i>]. If *source* is not specified, returns the current *target*-accessor.  This accessor is invoked every time the interpolator is called.  The default is `function(d) { return d.target; }`.
 
 <a name="greatArc_precision" href="#wiki-greatArc_precision">#</a> greatArc.<b>precision</b>([<i>precision</i>])
 
@@ -115,19 +115,19 @@ If *precision* is specified, sets the maximum segment length of the interpolated
 
 <a name="circle" href="#wiki-circle">#</a> d3.geo.<b>circle</b>
 
-Represents a geographic circle with arbitrary radius and origin, which can be used to clip geographic features.  This is particularly useful for azimuthal projections.
+Constructs a feature generator for creating circles centered at a given geographic location with a given radius in degrees.
 
-<a name="_circle" href="#wiki-_circle">#</a> <b>circle</b>()
+<a name="_circle" href="#wiki-_circle">#</a> <b>circle</b>(<i>arguments…</i>)
 
-…
+Returns a GeoJSON Polygon approximating a circle. The origin accessor specifies how to determine the origin for the given *arguments*; the default accessor uses the constant ⟨0°,0°⟩.
 
 <a name="circle_origin" href="#wiki-circle_origin">#</a> circle.<b>origin</b>([<i>origin</i>])
 
-If *origin* is specified, sets the circle origin.  A two-element coordinate array should be specified, or an accessor function.  If *origin* is not specified, returns the current origin, which defaults to `[0, 0]`.
+If *origin* is specified, sets the circle origin.  A two-element coordinate array should be specified, or an accessor function.  If *origin* is not specified, returns the current origin, which defaults to ⟨0°,0°⟩.
 
 <a name="circle_angle" href="#wiki-circle_angle">#</a> circle.<b>angle</b>([<i>angle</i>])
 
-If *angle* is specified, sets the angular radius of the circle in degrees.  If *angle* is not specified, returns the current radius, which defaults to 89.9°.
+If *angle* is specified, sets the angular radius of the circle in degrees.  If *angle* is not specified, returns the current radius, which defaults to 90°.
 
 <a name="circle_precision" href="#wiki-circle_precision">#</a> circle.<b>precision</b>([<i>precision</i>])
 
