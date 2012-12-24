@@ -582,13 +582,13 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [path.centroid](Geo-Paths#wiki-centroid) - compute the projected centroid of a given feature.
 * [path.bounds](Geo-Paths#wiki-bounds) - compute the projected bounds of a given feature.
 * [d3.geo.greatArc](Geo-Paths#wiki-greatArc) - create a great arc path generator.
-* [greatArc](Geo-Paths#wiki-_greatArc) - compute the great arc between two points.
+* [greatArc](Geo-Paths#wiki-_greatArc) - generate a piecewise great arc between two points as a LineString.
 * [greatArc.distance](Geo-Paths#wiki-greatArc_distance) - computes the length of a great arc in radians.
 * [greatArc.source](Geo-Paths#wiki-greatArc_source) - specify a source accessor.
 * [greatArc.target](Geo-Paths#wiki-greatArc_target) - specify a target accessor.
 * [greatArc.precision](Geo-Paths#wiki-greatArc_precision) - specify the precision of the piecewise arc.
-* [d3.geo.circle](Geo-Paths#wiki-circle) - create a small or great circle generator.
-* [circle](Geo-Paths#wiki-_circle) - render a circle. 
+* [d3.geo.circle](Geo-Paths#wiki-circle) - create a circle generator.
+* [circle](Geo-Paths#wiki-_circle) - generate a piecewise circle as a Polygon. 
 * [circle.origin](Geo-Paths#wiki-circle_origin) - specify the origin in latitude and longitude.
 * [circle.angle](Geo-Paths#wiki-circle_angle) - specify the angular radius in degrees.
 * [circle.precision](Geo-Paths#wiki-circle_precision) - specify the precision of the piecewise circle.
