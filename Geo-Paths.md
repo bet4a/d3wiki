@@ -143,7 +143,7 @@ If *angle* is specified, sets the angular radius of the circle in degrees.  If *
 
 If *precision* is specified, sets the precision of the interpolated circle segments in degrees.  These interpolated segments are inserted when a feature is clipped by the circle. If *precision* is not specified, returns the current precision, which defaults to 6°.
 
-## Math
+## Spherical Math
 
 <a name="d3_geo_area" href="#wiki-d3_geo_area">#</a> d3.geo.<b>area</b>(<i>feature</i>)
 
