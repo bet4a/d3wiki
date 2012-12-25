@@ -31,7 +31,7 @@ Returns the path data string for the given *feature*, which may be any GeoJSON f
 * Feature - a feature containing one of the above geometry objects.
 * FeatureCollection - an array of feature objects.
 
-An optional *index* may be specified, which is passed along to the [pointRadius](Geo-Paths#wiki-pointRadius) accessor. (The *index* is passed automatically when the path generator is invoked by [selection.attr](Selections#wiki-attr).)
+The type "Sphere" is also supported, which is useful for rendering the outline of the globe. A sphere has no coordinates. An optional *index* may be specified, which is passed along to the [pointRadius](Geo-Paths#wiki-pointRadius) accessor; the *index* is passed automatically when the path generator is invoked by [selection.attr](Selections#wiki-attr).
 
 To display multiple features, you can place them in a single feature collection and a single path element:
 
@@ -71,7 +71,15 @@ If *projection* is null, the path uses the identity transformation, where the in
 
 <a name="context" href="#wiki-context">#</a> path.<b>context</b>([<i>context</i>])
 
-…
+If *context* is specified, sets the render context and returns the path generator. If the context is null, then the path generator will return an SVG path string when [invoked](#wiki-_path) on a given feature. If the context is non-null, the path generator will instead call methods on the specified context to render geometry. The context must implement the following methods:
+
+* beginPath()
+* moveTo(x, y)
+* lineTo(x, y)
+* arc(x, y, radius, startAngle, endAngle)
+* closePath()
+
+Note that this is a subset of the canvas element’s [2D rendering context](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#2dcontext), and thus a canvas context can be passed to the path generator, in which case geometry will be rendered [directly to the canvas](http://bl.ocks.org/3783604). If *context* is not specified, returns the current render context, which defaults to null.
 
 <a name="area" href="#wiki-area">#</a> path.<b>area</b>(<i>feature</i>)
 
