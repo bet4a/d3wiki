@@ -147,16 +147,16 @@ If *precision* is specified, sets the precision of the interpolated circle segme
 
 <a name="d3_geo_area" href="#wiki-d3_geo_area">#</a> d3.geo.<b>area</b>(<i>feature</i>)
 
-…
+Returns the spherical area of the specified *feature* in [steradians](http://mathworld.wolfram.com/Steradian.html). See also [path.area](#wiki-area), which computes the projected area on the Cartesian plane.
 
 <a name="d3_geo_centroid" href="#wiki-d3_geo_centroid">#</a> d3.geo.<b>centroid</b>(<i>feature</i>)
 
-…
+Returns the spherical centroid of the specified *feature*. See also [path.centroid](#wiki-centroid), which computes the projected centroid on the Cartesian plane.
 
 <a name="d3_geo_bounds" href="#wiki-d3_geo_bounds">#</a> d3.geo.<b>bounds</b>(<i>feature</i>)
 
-Given a GeoJSON *feature*, returns the corresponding bounding box. The bounding box is represented by a two-dimensional array: [​[*left*, *bottom*], [*right*, *top*]​], where *left* is the minimum longitude, *bottom* is the minimum latitude, *right* is maximum longitude, and *top* is the maximum latitude.
+Returns the spherical bounding box for the specified *feature*. The bounding box is represented by a two-dimensional array: [​[<i>left</i>, <i>bottom</i>], [<i>right</i>, <i>top</i>]​], where *left* is the minimum longitude, *bottom* is the minimum latitude, *right* is maximum longitude, and *top* is the maximum latitude. See also [path.bounds](#wiki-bounds), which computes the projected bounding box on the Cartesian plane.
 
 <a name="d3_geo_interpolate" href="#wiki-d3_geo_interpolate">#</a> d3.geo.<b>interpolate</b>(<i>a</i>, <i>b</i>)
 
-…
+Returns an interpolation for the two locations *a* and *b*. Each location must be represented as a two-element array of [<i>longitude</i>, <i>latitude</i>]. The returned interpolator is a function which takes a single parameter *t* as input, where *t* ranges from 0 to 1. A value of 0 returns the location *a*, while a value of 1 returns the location *b*. Intermediate values interpolate from *a* to *b* along the spanning great arc.
