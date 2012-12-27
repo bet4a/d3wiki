@@ -152,7 +152,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
   <tr height="146" valign="top">
     <td>Donut Multiples<br><a href="http://bl.ocks.org/3888852"><img src="https://raw.github.com/gist/3888852/thumbnail.png" width="202"></a></td>
     <td>Bar Chart with Negative Values<br><a href="http://bl.ocks.org/2368837"><img src="https://raw.github.com/gist/2368837/thumbnail.png" width="202"></a></td>
-    <td></td>
+    <td>Redial Line Chart<br><a href="http://anilomanwar.github.com/RedialLine/Redial%20Line.html"><img src="http://anilomanwar.github.com/RedialLine/images/rchart.jpg" width="202"></a></td>
     <td></td>
   </tr>
 </table>
