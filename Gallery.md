@@ -117,15 +117,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>Trulia Trends<br><a href="http://trends.truliablog.com/2012/02/where-are-house-hunters-searching/"><img src="http://d3js.org/ex/house-map.png" width="202"></a></td>
     <td>Open Budget<br><a href="http://marcinignac.com/projects/open-budget/"><img src="http://d3js.org/ex/open-budget.png" width="202"></a></td>
     <td>Bederson Publications<br><a href="http://www.cs.umd.edu/~bederson/papers/index.html"><img src="http://d3js.org/ex/bederson-pubs.png" width="202"></a></td>
-    <td>Earthquakes in Chile<br><a href="http://pnavarrc.github.com/earthquake/"><img src="https://github.com/pnavarrc/earthquake/blob/master/img/thumbnail.jpg?raw=true" width="202"></a></td>
+    <td>Force Layout Editor<br><a href="http://bl.ocks.org/4370043"><img src="https://raw.github.com/gist/4362310/thumbnail.png" width="202"></a></td>
   </tr>
-  <tr height="207" valign="top">
-    <td>Dynamic Bar Charts 1<br><a href="http://bl.ocks.org/4339162"><img src="https://github.com/mlarocca/Dynamic-Charts/blob/master/thumbs/thumb.png?raw=true" width="202"></a></td>
-    <td>Dynamic Bar Charts 2<br><a href="http://bl.ocks.org/4340039"><img src="https://github.com/mlarocca/Dynamic-Charts/blob/master/thumbs/thumb_2.png?raw=true" width="202"></a></td>
-    <td>Chart Wheel <br> <a href="http://anilomanwar.github.com/d3jsExperiments/ChartWheel.html"><img src="http://anilomanwar.github.com/d3jsExperiments/images/Chartwheel1.jpg" width="202"></a></td>
-    <td></td>
-  </tr>
-
 </table>
 
 ## Basic Charts
@@ -152,7 +145,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
   <tr height="146" valign="top">
     <td>Donut Multiples<br><a href="http://bl.ocks.org/3888852"><img src="https://raw.github.com/gist/3888852/thumbnail.png" width="202"></a></td>
     <td>Bar Chart with Negative Values<br><a href="http://bl.ocks.org/2368837"><img src="https://raw.github.com/gist/2368837/thumbnail.png" width="202"></a></td>
-    <td>Redial Line Chart<br><a href="http://anilomanwar.github.com/RedialLine/Redial%20Line.html"><img src="http://anilomanwar.github.com/RedialLine/images/rchart.jpg" width="202"></a></td>
+    <td></td>
     <td></td>
   </tr>
 </table>
@@ -177,12 +170,6 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>Contour Plot<br><a href="http://bl.ocks.org/4241134"><img src="https://raw.github.com/gist/4241134/thumbnail.png" width="202"></a></td>
     <td>Build Your Own Graph<br><a href="http://bl.ocks.org/929623"><img src="https://raw.github.com/gist/929623/thumbnail.png" width="202"></a></td>
     <td>Modifying a Force Layout <br><a href="http://bl.ocks.org/1095795"><img src="https://raw.github.com/gist/1095795/thumbnail.png" width="202"></a></td>
-  </tr>
-  <tr height="146" valign="top">
-    <td>Force Layout Editor<br><a href="http://bl.ocks.org/4370043"><img src="https://raw.github.com/gist/4362310/thumbnail.png" width="202"></a></td>
-    <td></td>
-    <td></td>
-    <td></td>
   </tr>
 </table>
 
@@ -288,6 +275,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [OECD Health, Government Spending, and Obesity Rates (nvd3)](http://ameliamango.com/fatness.html) - Amelia Mango
 * [The first thing that should be shown in any Trigonometry class](http://www.humblesoftware.com/demos/trig_d3)
 * [How educated are world leaders?](http://skyrill.com/leaders/) - Ali Almossawi
+* [Dynamic charts](http://bl.ocks.org/4340039) and [dynamically populated charts](http://bl.ocks.org/4339162) - Marcello La Rocca
+* [Radial Line Chart](http://anilomanwar.github.com/RedialLine/Redial%20Line.html) and [Chart Wheel](http://anilomanwar.github.com/d3jsExperiments/ChartWheel.html) - Anil Omanwar
 
 ### Collections
 
