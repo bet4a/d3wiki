@@ -18,7 +18,7 @@ Please feel free to add links to your work!
 * [Introduction to D3](http://dealloc.me/2011/06/24/d3-is-not-a-graphing-library.html) - Justin Palmer
 * [D3.js experiments in the console](http://www.ultrasaurus.com/sarahblog/2012/03/d3-js-experiments-in-the-console/) - Sarah Allen
 * [Creating Basic Charts using d3.js](http://www.verisi.com/resources/d3-tutorial-basic-charts.htm) - Ben Lorica
-* [Get dirty with data using d3.js](http://www.12devsofxmas.co.uk/2012/01/data-visualisation/) - Clinton Montague
+* [Get dirty with data using d3.js](http://2011.12devsofxmas.co.uk/2012/01/data-visualisation/) - Clinton Montague
 * [For Protovis Users](http://mbostock.github.com/d3/tutorial/protovis.html)
 * [Manipulating data like a boss with d3](http://www.jeromecukier.net/blog/2012/05/28/manipulating-data-like-a-boss-with-d3/) - Jerome Cukier
 * [Creating Animations and Transitions With D3](http://blog.visual.ly/creating-animations-and-transitions-with-d3-js/) - Jerome Cukier
