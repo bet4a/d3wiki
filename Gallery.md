@@ -561,7 +561,6 @@ http://vallandingham.me/vis/
 * [Collider - a d3.js game](http://blog.latentflip.com/post/18195267992/d3-collider)
 * [alpha-shapes aka concave hulls](http://bl.ocks.org/1552725)
 * [Conway's Game of life as a scrolling background](http://rhokaustin.org/)
-* [appplot.com - various charts] (http://appplot.com)
 * [Simple Dashboard Example](http://bl.ocks.org/3287802)
 * [Dataflow programming with D3 and Blockly](http://bollwyvl.github.com/blockd3/)
 * [XKCD-style plots](http://dan.iel.fm/xkcd/)
