@@ -10,7 +10,6 @@ Please feel free to add links to your work!
 * [General Update Pattern, Parts I](http://bl.ocks.org/3808218), [II](http://bl.ocks.org/3808221) & [III](http://bl.ocks.org/3808234)
 * [Nested Selections](http://bost.ocks.org/mike/nest/)
 * [Object Constancy](http://bost.ocks.org/mike/constancy/)
-* [Let’s Make a Map](http://bost.ocks.org/mike/map/)
 * [A Bar Chart, Part 1](http://mbostock.github.com/d3/tutorial/bar-1.html)
 * [A Bar Chart, Part 2](http://mbostock.github.com/d3/tutorial/bar-2.html)
 * [D3 Tutorials](http://alignedleft.com/tutorials/d3/) - Scott Murray
@@ -36,6 +35,7 @@ Please feel free to add links to your work!
 ### Specific Techniques
 
 * [Path and Transform Transitions](http://bost.ocks.org/mike/path/)
+* [Let’s Make a Map](http://bost.ocks.org/mike/map/)
 * [Towards Reusable Charts](http://bost.ocks.org/mike/chart/)
 * [Using Inkscape with d3](http://christopheviau.com/d3_tutorial/d3_inkscape/) - Christophe Viau
 * [Pie Chart Updating with Text](http://blog.stephenboak.com/2011/08/07/easy-as-a-pie.html) - Stephen Boak
