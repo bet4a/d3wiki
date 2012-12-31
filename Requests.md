@@ -7,7 +7,8 @@ When loading data asynchronously, code that depends on the loaded data should ge
 ```javascript
 var data; // a global
 
-d3.json("path/to/file.json", function(json) {
+d3.json("path/to/file.json", function(error, json) {
+  if (error) return console.warn(error);
   data = json;
   visualizeit();
 });
