@@ -49,6 +49,7 @@ Please feel free to add links to your work!
 * [Integrating D3 with a CouchDB database 1](https://github.com/mbostock/d3/wiki/Integrating-D3-with-a-CouchDB-database-1) - Reinhard Engel
 * [Integrating D3 with a CouchDB database 2](https://github.com/mbostock/d3/wiki/Integrating-D3-with-a-CouchDB-database-2) - Reinhard Engel
 * [Integrating D3 with a CouchDB database 3](https://github.com/mbostock/d3/wiki/Integrating-D3-with-a-CouchDB-database-3) - Reinhard Engel
+* [Integrating D3 with a CouchDB database 4](https://github.com/mbostock/d3/wiki/Integrating-D3-with-a-CouchDB-database-4) - Simon Metson
 
 ## Blogs
 
