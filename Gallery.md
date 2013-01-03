@@ -646,7 +646,7 @@ http://vallandingham.me/vis/
 * [Zoomable Partition Charts directly from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/partition) - Bruce McPherson
 * [SHEETSEE.JS: Fill up Websites with Stuff from Google Spreasheet](http://jllord.github.com/sheetsee.js/) -Jessica Lord
 * [Web reporting with D3js and R using RStudio Shiny](http://timelyportfolio.blogspot.com/2012/12/d3-shiny-and-r-reporting-performance.html) - klr @timelyportfolio
-* [Dex the Data Explorer](https://dexvis.com) - Patrick Martin
+* [Dex the Data Explorer](http://dexvis.com) - Patrick Martin
 
 #### Online Editors
 
