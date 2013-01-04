@@ -172,7 +172,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>Modifying a Force Layout <br><a href="http://bl.ocks.org/1095795"><img src="https://raw.github.com/gist/1095795/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
-    <td>Dysplaying real-time data<br><a href="http://bl.ocks.org/4339162"><img src="https://raw.github.com/mlarocca/Dynamic-Charts/master/thumbs/thumb.png" width="202"></a></td>
+    <td>Displaying real-time data<br><a href="http://bl.ocks.org/4339162"><img src="https://raw.github.com/mlarocca/Dynamic-Charts/master/thumbs/thumb.png" width="202"></a></td>
     <td></td>
     <td></td>
     <td></td>
