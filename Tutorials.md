@@ -30,7 +30,6 @@ Please feel free to add links to your work!
 * [http://nowherenearithaca.blogspot.com/2012/06/annotating-d3-example-with-docco.html](http://nowherenearithaca.github.com/empires/empires.html) - Brad Flyon
 * [D3, Conceptually](http://code.hazzens.com/d3tut/) - Mikey Levine
 * [D3.js Tips and Tricks](http://www.d3noob.org/) and [pdf version](https://dl.dropbox.com/u/101577503/D3-Tips-and-Tricks-v0_1_c-Published.pdf) - D3noob
-* [D3js: Rappresentazione di dati e infografiche dinamiche con JavaScript](http://www.html.it/articoli/d3js-rappresentazione-di-dati-e-infografiche-dinamiche-con-javascript/) - Andrea Chiarelli
 
 ### Specific Techniques
 
