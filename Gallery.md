@@ -412,6 +412,7 @@ http://vallandingham.me/vis/
 * [Line Chart with tooltips](http://bl.ocks.org/1629644)
 * [Stacked layout with time axis](http://bl.ocks.org/1314483)
 * [Multiple Area Charts with D3.JS](http://tympanus.net/codrops/2012/08/29/multiple-area-charts-with-d3-js/)
+* [Multiple time-series with object constancy](http://bl.ocks.org/4175202) - Nikhil Sonnad
 
 #### Pie Chart
 
@@ -424,6 +425,7 @@ http://vallandingham.me/vis/
 * [Scatterplot for K-Means clustering visualization](http://www.ericbullington.com/articles/2012/01/31/kmeans-visualization)
 * [Animated bubble charts for school data analysis](http://slodge.com/teach/)
 * [Scatterplot and Heatmap](http://jsfiddle.net/indiemaps/gzPDU/)
+* [Scatterplot: Social trust vs ease of doing business](http://bl.ocks.org/4481531) - Nikhil Sonnad
 
 #### Parallel Coordinates, Parallel sets and Sankey
 
