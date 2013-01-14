@@ -119,6 +119,12 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>Bederson Publications<br><a href="http://www.cs.umd.edu/~bederson/papers/index.html"><img src="http://d3js.org/ex/bederson-pubs.png" width="202"></a></td>
     <td>Force Layout Editor<br><a href="http://bl.ocks.org/4370043"><img src="https://raw.github.com/gist/4362310/thumbnail.png" width="202"></a></td>
   </tr>
+  <tr height="207" valign="top">
+    <td>Open Knowledge Festival<br><a href="http://okfestival.org/hashtag/#visualisation"><img src="http://www.floapps.com/assets/Uploads/ok.png" width="202"></a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
 </table>
 
 ## Basic Charts
@@ -257,7 +263,6 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Startup Salary & Equity Compensation](https://blog.wealthfront.com/startup-employee-equity-compensation/) - Jared Jacobs (wealthfront.com)
 * [Pyramid charts: demographic transition in the US](http://www.newscientist.com/embedded/us-demographics-2050)
 * [Floating bubble chart: De Maastricht au traité budgétaire : les oui et les non de 39 personnalités politiques](http://www.lemonde.fr/politique/visuel/2012/09/18/de-maastricht-au-traite-budgetaire-les-oui-et-les-non-de-39-personnalites-politiques_1760615_823448.html)
-* [Open Knowledge Festival #OkFest Hashtag Graph Visualization](http://okfestival.org/hashtag/#visualisation)
 * [Exploring d3.js with data from my runs to plot my heart rate](http://blog.freshteapot.net/post/31938798971/using-d3-js-to-visualise-my-heart-rate)
 * [Is Barack Obama the President? (Balloon charts)](http://www.isbarackobamathepresident.com/)
 * [Audio Spectrum Analyzer](http://d3-spectrum.herokuapp.com) - Ari Russo
