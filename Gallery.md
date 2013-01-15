@@ -290,6 +290,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Dynamic charts](http://bl.ocks.org/4340039) and [dynamically populated charts](http://bl.ocks.org/4339162) - Marcello La Rocca
 * [Radial Line Chart](http://anilomanwar.github.com/RedialLine/Redial%20Line.html) and [Chart Wheel](http://anilomanwar.github.com/d3jsExperiments/ChartWheel.html) - Anil Omanwar
 * [Indo-European concepts, cognates, and etymologies](http://joenoodles.com/2013/01/the-last-slice-of-pie/) - Joseph Nudell
+* [Remix of the Century](http://www.remixofthecentury.com/) - Henrik Pettersson, David Vella, and Tom Hannen
 
 ### Collections
 
