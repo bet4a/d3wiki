@@ -397,6 +397,7 @@ http://vallandingham.me/vis/
 * [Stacked Bar Chart](http://bl.ocks.org/1134768)
 * [Reorderable Stacked Bar Chart](http://bl.ocks.org/1327441)
 * [Dynamic Bar Charts](https://github.com/mlarocca/Dynamic-Charts)
+* [Sortable bars: Foreign aid, corruption and internet use](http://theoldbeggar.com/aid/) - Nikhil Sonnad
 
 #### Histogram
 
