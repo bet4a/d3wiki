@@ -178,9 +178,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>Modifying a Force Layout <br><a href="http://bl.ocks.org/1095795"><img src="https://raw.github.com/gist/1095795/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Spline Interpolation<br><a href="http://bl.ocks.org/4342190"><img src="https://raw.github.com/gist/4342190/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
