@@ -178,7 +178,6 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>Modifying a Force Layout <br><a href="http://bl.ocks.org/1095795"><img src="https://raw.github.com/gist/1095795/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
-    <td>Displaying real-time data<br><a href="http://bl.ocks.org/4339162"><img src="https://raw.github.com/mlarocca/Dynamic-Charts/master/thumbs/thumb.png" width="202"></a></td>
     <td></td>
     <td></td>
     <td></td>
@@ -291,6 +290,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Radial Line Chart](http://anilomanwar.github.com/RedialLine/Redial%20Line.html) and [Chart Wheel](http://anilomanwar.github.com/d3jsExperiments/ChartWheel.html) - Anil Omanwar
 * [Indo-European concepts, cognates, and etymologies](http://joenoodles.com/2013/01/the-last-slice-of-pie/) - Joseph Nudell
 * [Remix of the Century](http://www.remixofthecentury.com/) - Henrik Pettersson, David Vella, and Tom Hannen
+* [Displaying real-time data](http://bl.ocks.org/4339162) - Marcello La Rocca
+
 
 ### Collections
 
