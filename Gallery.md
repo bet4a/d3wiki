@@ -184,6 +184,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 
 ## Examples
 
+* [Photography Stats Analysis (bottom of the page)](http://remiescola.fr/about/index2.html) - Remi Escola
 * [StockTwits Social Heatmap](http://stocktwits.com/signals/heatmap) - StockTwits
 * [Social web use in 2009](http://n79.org/infographics/asg1/) - Nikhil Bobb
 * [Visualizing opinons around the world (zoomable world map and interactive pie chart)](http://theartofasking.com/question/wjucdg6k) - Siamac Fazli, Bastian Venthur
