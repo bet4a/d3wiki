@@ -603,7 +603,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [projection](Geo-Projections#wiki-_projection) - project the specified location.
 * [projection.invert](Geo-Projections#wiki-invert) - invert the projection for the specified point.
 * [projection.rotate](Geo-Projections#wiki-rotate) - get or set the projection’s three-axis rotation.
-* [projection.center](Geo-Projection#wiki-center) - get or set the projection’s center location.
+* [projection.center](Geo-Projections#wiki-center) - get or set the projection’s center location.
 * [projection.translate](Geo-Projections#wiki-translate) - get or set the projection’s translation position.
 * [projection.scale](Geo-Projections#wiki-scale) - get or set the projection’s scale factor.
 * [projection.clipAngle](Geo-Projections#wiki-clipAngle) - get or set the radius of the projection’s clip circle.
