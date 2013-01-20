@@ -121,7 +121,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
   </tr>
   <tr height="207" valign="top">
     <td>Open Knowledge Festival<br><a href="http://okfestival.org/hashtag/#visualisation"><img src="http://www.floapps.com/assets/Uploads/ok.png" width="202"></a></td>
-    <td></td>
+    <td>Visual Hacker News<br><a href="http://fanfarefantastique.com/vishna/"><img src="http://fanfarefantastique.com/images/vhnthumb.png" width="202"></a></td>
     <td></td>
     <td></td>
   </tr>
