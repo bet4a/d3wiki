@@ -690,7 +690,7 @@ http://vallandingham.me/vis/
 * [Meshu turns your places into beautiful objects.](http://meshu.io/)
 * [Reports for Simple](http://www.simple.com/blog/Simple/announcing-reports)
 * [Nodal is a fun way to view your GitHub network graph](http://nodal.me/login) - Jesse Vogt, Matt Stockton, and Kris Gösser
-
+* [InfoCaptor Dashboards with D3 and canvas](http://www.infocaptor.com)
 #### Libraries
 
 * [Cubism.js: Time Series Visualization](http://square.github.com/cubism/)
