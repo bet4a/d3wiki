@@ -535,6 +535,7 @@ http://vallandingham.me/vis/
 * [Cartogram.js: Continuous Area Cartograms](http://prag.ma/code/d3-cartogram/) - Shawn Allen
 * [Earthquakes in Chile since 1900](http://pnavarrc.github.com/earthquake/) ([Github](https://github.com/pnavarrc/earthquake/)) - Pablo Navarro
 * [Choropleth of White House Petition Signers](http://roadtolarissa.com/whitehouse/) - Adam Pearce
+* [Interactive choropleth of life excpectancy](http://data.karmi.cz/d3/life-expectancy-map/) – Karel Minarik
 
 #### Misc Charts
 
