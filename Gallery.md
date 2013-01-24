@@ -536,6 +536,7 @@ http://vallandingham.me/vis/
 * [Earthquakes in Chile since 1900](http://pnavarrc.github.com/earthquake/) ([Github](https://github.com/pnavarrc/earthquake/)) - Pablo Navarro
 * [Choropleth of White House Petition Signers](http://roadtolarissa.com/whitehouse/) - Adam Pearce
 * [Interactive choropleth of life excpectancy](http://bl.ocks.org/d/2366285/) – Karel Minarik
+* [India population](http://bl.ocks.org/4526201) - Liji Jinaraj
 
 #### Misc Charts
 
