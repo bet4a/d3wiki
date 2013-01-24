@@ -535,7 +535,7 @@ http://vallandingham.me/vis/
 * [Cartogram.js: Continuous Area Cartograms](http://prag.ma/code/d3-cartogram/) - Shawn Allen
 * [Earthquakes in Chile since 1900](http://pnavarrc.github.com/earthquake/) ([Github](https://github.com/pnavarrc/earthquake/)) - Pablo Navarro
 * [Choropleth of White House Petition Signers](http://roadtolarissa.com/whitehouse/) - Adam Pearce
-* [Interactive choropleth of life excpectancy](http://data.karmi.cz/d3/life-expectancy-map/) – Karel Minarik
+* [Interactive choropleth of life excpectancy](http://bl.ocks.org/d/2366285/) – Karel Minarik
 
 #### Misc Charts
 
@@ -588,7 +588,7 @@ http://vallandingham.me/vis/
 * [Rotating hypercube in orthogonal projection and parallel coordinates](http://exposedata.com/hypercube/rotate/)
 * [Webplatform dancing logo](http://blog.lightjs.org/2012/10/welcome-to-webplatform-animation-d3js/)
 * [Metro Maps of the News](http://metro.ezyang.com/)
-* [Life expectancy: small multiples](http://data.karmi.cz/d3/life-expectancy-panel-chart/)
+* [Life expectancy: small multiples](http://bl.ocks.org/d/2361485/)
 
 #### Charts using the [reusable API](http://bost.ocks.org/mike/chart/)
 
