@@ -290,7 +290,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Indo-European concepts, cognates, and etymologies](http://joenoodles.com/2013/01/the-last-slice-of-pie/) - Joseph Nudell
 * [Remix of the Century](http://www.remixofthecentury.com/) - Henrik Pettersson, David Vella, and Tom Hannen
 * [Displaying real-time data](http://bl.ocks.org/4339162) - Marcello La Rocca
-
+* [“Decide the Czech 2013 Presidential Election” interactive visualization](http://prezidenti.databoutique.cz/index.en.html) - Vojtech Hyza, Karel Minarik, Josef Slerka ([about](http://ephemera.karmi.cz/post/41370777074/decide-the-election-interactive-visualization), [source](http://bl.ocks.org/4626240))
 
 ### Collections
 
