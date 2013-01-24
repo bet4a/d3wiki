@@ -588,6 +588,7 @@ http://vallandingham.me/vis/
 * [Rotating hypercube in orthogonal projection and parallel coordinates](http://exposedata.com/hypercube/rotate/)
 * [Webplatform dancing logo](http://blog.lightjs.org/2012/10/welcome-to-webplatform-animation-d3js/)
 * [Metro Maps of the News](http://metro.ezyang.com/)
+* [Life expectancy: small multiples](http://data.karmi.cz/d3/life-expectancy-panel-chart/)
 
 #### Charts using the [reusable API](http://bost.ocks.org/mike/chart/)
 
