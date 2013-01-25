@@ -51,4 +51,5 @@ The D3 repository should work out of the box if you just want to create new visu
 
 To run the tests, use:
 
+    make test
     npm test
