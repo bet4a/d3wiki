@@ -220,7 +220,7 @@ Returns an array of arrays, where the ith array contains the ith element from ea
 
 <a name="d3_transpose" href="#wiki-d3_transpose">#</a> d3.<b>transpose</b>(<i>matrix</i>)
 
-Equivalent to `d3.zip.apply(matrix)`; uses the zip operator as a two-dimensional [[matrix transpose|http://en.wikipedia.org/wiki/Transpose]].
+Equivalent to `d3.zip.apply(null, matrix)`; uses the zip operator as a two-dimensional [[matrix transpose|http://en.wikipedia.org/wiki/Transpose]].
 
 ### <a name="_nest"></a> Nest
 
