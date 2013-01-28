@@ -29,7 +29,7 @@ Please feel free to add links to your work!
 * [Introduction to d3.js and data-driven visualizations](http://www.skillshare.com/Introduction-to-d3js-and-data-driven-visualizations/1912580409) - Kenny Peng
 * [http://nowherenearithaca.blogspot.com/2012/06/annotating-d3-example-with-docco.html](http://nowherenearithaca.github.com/empires/empires.html) - Brad Flyon
 * [D3, Conceptually](http://code.hazzens.com/d3tut/) - Mikey Levine
-* [D3.js Tips and Tricks](http://www.d3noob.org/) and [pdf version](https://dl.dropbox.com/u/101577503/D3-Tips-and-Tricks-v0_1_c-Published.pdf) - D3noob
+* [D3.js Tips and Tricks](http://www.d3noob.org/) and [pdf version](https://leanpub.com/D3-Tips-and-Tricks) - D3noob
 
 ### Specific Techniques
 
