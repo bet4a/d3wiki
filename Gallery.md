@@ -591,6 +591,7 @@ http://vallandingham.me/vis/
 * [Webplatform dancing logo](http://blog.lightjs.org/2012/10/welcome-to-webplatform-animation-d3js/)
 * [Metro Maps of the News](http://metro.ezyang.com/)
 * [Life expectancy: small multiples](http://bl.ocks.org/d/2361485/)
+* [Semi-manual force layout of cablegate reference graphs](http://bl.ocks.org/4589092)
 
 #### Charts using the [reusable API](http://bost.ocks.org/mike/chart/)
 
