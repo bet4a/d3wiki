@@ -471,6 +471,7 @@ http://vallandingham.me/vis/
 * [Groups and Labels showing relations of football players participating in Euro 2012](http://www.torlaune.de/euro-2012/spieler-relationen/)
 * [Chicago Lobbyists](http://www.christophermanning.org/projects/chicago-lobbyists-force-directed-graph-visualization/)
 * [Hacker News Visualisation](http://fanfarefantastique.com/vishna/)
+* [Web performance](http://www.inmovi.net/howto/knowbase/internet/visualizing-web-performance/)
 
 #### Tree
 
