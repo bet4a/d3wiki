@@ -297,6 +297,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Displaying real-time data](http://bl.ocks.org/4339162) - Marcello La Rocca
 * [“Decide the Czech 2013 Presidential Election” interactive visualization](http://prezidenti.databoutique.cz/index.en.html) - Vojtech Hyza, Karel Minarik, Josef Slerka ([about](http://ephemera.karmi.cz/post/41370777074/decide-the-election-interactive-visualization), [source](http://bl.ocks.org/4626240))
 * [Mass Gun shootings in USA](http://massshootings.nandayadav.com/) - Nanda Yadav
+* [Clock visualization Dashboard][https://my.infocaptor.com/dash/mt.php?pa=world_clocks_using_d3_510da17d83b20)
 
 ### Collections
 
