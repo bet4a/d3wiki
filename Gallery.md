@@ -617,6 +617,7 @@ http://vallandingham.me/vis/
 * [Floor Plan Map](http://dciarletta.github.com/d3-floorplan/)
 * [Streamgraph](http://bl.ocks.org/1935509) an [Interactive version](http://bl.ocks.org/1963983)
 * [Histogram](http://bl.ocks.org/1933560)
+* [Circular heat chart](http://prcweb.co.uk/lab/circularheat/)
 
 #### Useful snippets
 
