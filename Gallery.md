@@ -188,7 +188,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 
 ## Examples
 
-* [Visualization of the Flask Source Code] (http://bl.ocks.org/4710330/94a7c0aeb6f09d681dbfdd0e5150578e4935c6ae) - [Andreas Dewes](http://www.andreas-dewes.de/code_is_beautiful)
+* [Visualization of the Flask Source Code] (http://www.andreas-dewes.de/code_is_beautiful) - Andreas Dewes
 * [Violence in Nepal] (http://nepal.icbl.org/data-ncbl-main) - Shirish Pandey
 * [Photography Stats Analysis (bottom of the page)](http://remiescola.fr/about/index2.html) - Remi Escola
 * [StockTwits Social Heatmap](http://stocktwits.com/signals/heatmap) - StockTwits
@@ -435,6 +435,7 @@ http://vallandingham.me/vis/
 * [Reusable Pie Charts](https://github.com/gajus/pie-chart) ([demo](https://dev.anuary.com/858b33b7-bd66-507b-a9f1-533e4de79ba3/))
 * [Pie Multiples](http://bl.ocks.org/1305111) / [Pie Multiples with Nesting](http://bl.ocks.org/1305337)
 * [Pie Chart Updating (Part 1)](http://bl.ocks.org/1346395) [(Part 2)](http://bl.ocks.org/1346410)
+* [Hierarchical Pie Chart] (http://bl.ocks.org/4710330/94a7c0aeb6f09d681dbfdd0e5150578e4935c6ae) - [Andreas Dewes](http://www.andreas-dewes.de/code_is_beautiful)
 
 #### Scatterplot and Bubble chart
 
