@@ -43,6 +43,7 @@ Please feel free to add links to your work!
 * [Creating Animated Bubble Charts in D3](http://vallandingham.me/bubble_charts_in_d3.html) - Jim Vallandingham
 * [Multiple area charts with d3.js](http://tympanus.net/codrops/2012/08/29/multiple-area-charts-with-d3-js/)
 * [Creating a Polar Area Diagram](http://kreese.net/blog/2012/08/26/d3-js-creating-a-polar-area-diagram-radial-bar-chart/)
+* [Building a lightweight, flexible d3.js dashboard (3-part series)](http://ufert.se/user-acquisition/mobile-game-monetization/building-a-lightweight-flexible-d3-js-dashboard-part-1-of-2/)
 
 ### Database Integration
 * [Integrating D3 with a CouchDB database 1](https://github.com/mbostock/d3/wiki/Integrating-D3-with-a-CouchDB-database-1) - Reinhard Engel
