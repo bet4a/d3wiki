@@ -676,7 +676,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[d3.behavior.zoom|Zoom-Behavior#wiki-zoom]]
 * [[zoom.on|Zoom-Behavior#wiki-on]]
 * [[zoom.scale|Zoom-Behavior#wiki-scale]]
-* [[zoom.transform|Zoom-Behavior#wiki-transform]]
+* [[zoom.translate|Zoom-Behavior#wiki-translate]]
 * [[zoom.scaleExtent|Zoom-Behavior#wiki-scaleExtent]]
 * [[zoom.x|Zoom-Behavior#wiki-x]]
 * [[zoom.y|Zoom-Behavior#wiki-y]]
