@@ -480,6 +480,7 @@ http://vallandingham.me/vis/
 * [Chicago Lobbyists](http://www.christophermanning.org/projects/chicago-lobbyists-force-directed-graph-visualization/)
 * [Hacker News Visualisation](http://fanfarefantastique.com/vishna/)
 * [Web performance](http://www.inmovi.net/howto/knowbase/internet/visualizing-web-performance/)
+* [Insights: Interactive Force Graph Component](https://github.com/ignacioola/insights)
 
 #### Tree
 
