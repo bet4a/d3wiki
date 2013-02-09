@@ -22,7 +22,7 @@ Setting the domain on an ordinal scale is optional. If no domain is set, each un
 
 If *values* is specified, sets the output range of the ordinal scale to the specified array of values. The first element in the domain will be mapped to the first element in *values*, the second domain value to the second range value, and so on. If there are fewer elements in the range than in the domain, the scale will recycle values from the start of the range. If *values* is not specified, this method returns the current output range.
 
-This method is intended for when the set of discrete output values is computed explicitly, such as a set of categorical colors. In other cases, such as determining the layout of an ordinal scatterplot or bar chart, you may find the [rangePoints](Ordinal-Scales#wiki-rangePoints) or [rangeBands](Ordinal-Scales#wiki-rangeBands) operators more convenient.
+This method is intended for when the set of discrete output values is computed explicitly, such as a set of categorical colors. In other cases, such as determining the layout of an ordinal scatterplot or bar chart, you may find the [rangePoints](Ordinal-Scales#wiki-ordinal_rangePoints) or [rangeBands](Ordinal-Scales#wiki-ordinal_rangeBands) operators more convenient.
 
 <a name="ordinal_rangePoints" href="Ordinal-Scales#wiki-ordinal_rangePoints">#</a> ordinal.<b>rangePoints</b>(<i>interval</i>[, <i>padding</i>])
 
@@ -34,7 +34,7 @@ Sets the output range from the specified continuous *interval*. The array *inter
 
 <a name="ordinal_rangeRoundBands" href="Ordinal-Scales#wiki-ordinal_rangeRoundBands">#</a> ordinal.<b>rangeRoundBands</b>(<i>interval</i>[, <i>padding</i>])
 
-Like [rangeBands](Ordinal-Scales#wiki-rangeBands), except guarantees that the band width and offset is a integer value, so as to avoid antialiasing artifacts.
+Like [rangeBands](Ordinal-Scales#wiki-ordinal_rangeBands), except guarantees that the band width and offset is a integer value, so as to avoid antialiasing artifacts.
 
 <a name="ordinal_rangeBand" href="Ordinal-Scales#wiki-ordinal_rangeBand">#</a> ordinal.<b>rangeBand</b>()
 
