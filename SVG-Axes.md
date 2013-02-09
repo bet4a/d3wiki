@@ -30,7 +30,7 @@ Get or set the associated scale. If *scale* is specified, sets the scale and ret
 
 <a name="orient" href="#wiki-orient">#</a> axis.<b>orient</b>([<i>orientation</i>])
 
-Get or set the axis orientation. If *orientation* is specified, sets the axis *orientation* and returns the axis. If *orientation* is not specified, returns the current orientation, which defaults to "bottom". Valid values are "top", "bottom", "left" and "right". For a vertical axis, specify "left" or "right"; for a horizontal axis, specify "top" or "bottom".
+Get or set the position of the ticks and their labels in relation to the axis path. If instead you want to determine the position of the axis with respect to the plot, use the [[transform|http://www.w3.org/TR/SVG/coords.html#TransformAttribute]] attribute. If *orientation* is specified, sets the axis *orientation* and returns the axis. If *orientation* is not specified, returns the current orientation, which defaults to "bottom". Valid values are "top", "bottom", "left" and "right". For a vertical axis, specify "left" or "right"; for a horizontal axis, specify "top" or "bottom".
 
 <a name="ticks" href="#wiki-ticks">#</a> axis.<b>ticks</b>([<i>arguments…</i>])
 
