@@ -19,15 +19,27 @@ In addition to numbers, D3 also supports formatting and parsing [[dates|Time-For
 
 <a name="d3_format" href="#wiki-d3_format">#</a> d3.<b>format</b>(<i>specifier</i>)
 
-Returns a new format function with the given string *specifier*. A format function takes a number as the only argument, and returns a string representing the formatted number. The format specifier is modeled after Python 3.1's built-in [[format specification mini-language|http://docs.python.org/release/3.1.3/library/string.html#formatspec]]. The general form of a specifier is [*sign*][0][*width*][,][.*precision*][*type*].
+Returns a new format function with the given string *specifier*. A format function takes a number as the only argument, and returns a string representing the formatted number. The format specifier is modeled after Python 3.1's built-in [[format specification mini-language|http://docs.python.org/release/3.1.3/library/string.html#formatspec]]. The general form of a specifier is [[*fill*]*align*][*sign*][#][0][*width*][,][.*precision*][*type*].
 
-The *sign* can be one of the following:
+The *fill* can be any character other than "{" or "}". The presence of a fill character is signaled by the character following it, which must be one of the *align* options.
+
+The *align* can be:
+
+* ("<") Forces the field to be left-aligned within the available space. 
+* (">") Forces the field to be right-aligned within the available space. (This is the default).
+* ("^") Forces the field to be centered within the available space.
+
+The *sign* can be:
 
 * plus ("+") - a sign should be used for both positive and negative numbers.
 * minus ("-") - a sign should be used only for negative numbers. (This is the default.)
 * space (" ") - a leading space should be used on positive numbers, and a minus sign on negative numbers.
 
-The *width* defines the minimum field width. If not specified, then the width will be determined by the content. If *width* is preceded by a zero ("0"), zero-padding is enabled.
+The "#" option is only valid for binary, octal, or hexadecimal output. If present, it specifies that the output will be prefixed by "0b", "0o", or "0x", respectively.
+
+The "0" option enables zero-padding.
+
+The *width* defines the minimum field width. If not specified, then the width will be determined by the content.
 
 The *comma* (",") option enables the use of a comma for a thousands separator.
 
@@ -42,7 +54,12 @@ The available *type* values are:
 * rounded ("r") - like fixed, but round to *precision* significant digits.
 * percentage ("%") - like fixed, but multiply by 100 and suffix with "%".
 * rounded percentage ("p") - like rounded, but multiply by 100 and suffix with "%".
-* SI-prefix ("s") - like rounded, but with a unit suffixed such as "9.5M" or "1.00µ".
+* binary ("b") - outputs the number in base 2.
+* octal ("o") - outputs the number in base 8.
+* hexadecimal ("x") - outputs the number in base 16, using lower-case letters for the digits above 9.
+* hexadecimal ("X") - outputs the number in base 16, using upper-case letters for the digits above 9.
+* character ("c") - converts the integer to the corresponding unicode character before printing.
+* SI-prefix ("s") - like rounded, but with a unit suffixed such as "9.5M" for mega, or "1.00µ" for micro.
 
 The type "n" is also supported as shorthand for ",g". 
 
