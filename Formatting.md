@@ -27,9 +27,11 @@ The *sign* can be one of the following:
 * minus ("-") - a sign should be used only for negative numbers. (This is the default.)
 * space (" ") - a leading space should be used on positive numbers, and a minus sign on negative numbers.
 
+The *width* defines the minimum field width. If not specified, then the width will be determined by the content. If *width* is preceded by a zero ("0"), zero-padding is enabled.
+
 The *comma* (",") option enables the use of a comma for a thousands separator.
 
-The *width* defines the minimum field width. If not specified, then the width will be determined by the content. If *width* is preceded by a zero ("0"), zero-padding is enabled.
+The *precision* indicates how many digits should be displayed after the decimal point for a value formatted with types "f" and "%", or before and after the decimal point for a value formatted with types "g", "r" and "p".
 
 The available *type* values are:
 
@@ -42,7 +44,7 @@ The available *type* values are:
 * rounded percentage ("p") - like rounded, but multiply by 100 and suffix with "%".
 * SI-prefix ("s") - like rounded, but with a unit suffixed such as "9.5M" or "1.00µ".
 
-The type "n" is also supported as shorthand for ",g". The *precision* indicates how many digits should be displayed after the decimal point for a value formatted with types "f" and "%", or before and after the decimal point for a value formatted with types "g", "r" and "p".
+The type "n" is also supported as shorthand for ",g". 
 
 <a name="d3_formatPrefix" href="#wiki-d3_formatPrefix">#</a> d3.<b>formatPrefix</b>(<i>value</i>, <i>precision</i>)
 
