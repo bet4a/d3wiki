@@ -76,6 +76,7 @@ Please feel free to add links to your work!
 * [Data Visualization with D3.js, slides and video](http://benclinkinbeard.com/talks/2012/NCDevCon/#/)<br>Ben Clinkinbeard, NCDevCon 2012
 * [Design process of The Electoral Map](http://shancarter.com/talk/2012/visualized/)<br>Shan Carter, Big Data Think Tank December 2012
 * [D3.js - Data Visualisation in the Browser](http://prcweb.co.uk/slides/d3/)<br>Peter Cook, Async Brighton, January 2013
+* [An Intro to D3.js - Data-Driven Delight](http://anna.ps/talks/fel/)<br>Anna Powell-Smith, Front-End London, January 2013
 
 ## Meetups
 
