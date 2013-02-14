@@ -550,6 +550,7 @@ http://vallandingham.me/vis/
 * [Choropleth of White House Petition Signers](http://roadtolarissa.com/whitehouse/) - Adam Pearce
 * [Interactive choropleth of life excpectancy](http://bl.ocks.org/d/2366285/) – Karel Minarik
 * [India population](http://bl.ocks.org/4526201) - Liji Jinaraj
+* [Hexbins in Leaflet](http://bl.ocks.org/4955504)
 
 #### Misc Charts
 
