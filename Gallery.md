@@ -188,6 +188,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 
 ## Examples
 
+* [Commuting Scales, Lausanne Campus commuters] (http://choros.ch/cs/) - Boris Beaude and Luc Guillemot
 * [Visualization of the Flask Source Code] (http://www.andreas-dewes.de/code_is_beautiful) - Andreas Dewes
 * [Violence in Nepal] (http://nepal.icbl.org/data-ncbl-main) - Shirish Pandey
 * [Photography Stats Analysis (bottom of the page)](http://remiescola.fr/about/index2.html) - Remi Escola
@@ -273,6 +274,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Browser usage plurality](http://thecelestialweb.com) - Ali Almossawi
 * [Places in the Game of Thrones](http://www.jeromecukier.net/projects/agot/places.html) - Jérôme Cukier
 * [A Visit From The Goon Squad - Interactive Character Map](http://www.filosophy.org/projects/goonsquad/) - Filip Zembowicz
+***
+
 * [Twitter Influencer Visualization](http://www.influencermoth.com/) - Erik Driessen
 * [Chicago Ward Remap Outlines](http://www.christophermanning.org/projects/chicago-ward-remap-outlines/) - Christopher Manning
 * [Minute: record of all of my keystrokes](http://macwright.org/minute/) - Tom MacWright
