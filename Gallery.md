@@ -713,12 +713,14 @@ http://vallandingham.me/vis/
 * [Reports for Simple](http://www.simple.com/blog/Simple/announcing-reports)
 * [Nodal is a fun way to view your GitHub network graph](http://nodal.me/login) - Jesse Vogt, Matt Stockton, and Kris Gösser
 * [InfoCaptor Dashboards with D3 and canvas](http://www.infocaptor.com)
+
 #### Libraries
 
 * [Cubism.js: Time Series Visualization](http://square.github.com/cubism/)
 * [Rickshaw: JavaScript toolkit for creating interactive real-time graphs](https://github.com/shutterstock/rickshaw)
 * [Dynamic Visualization LEGO](https://github.com/vogievetsky/DVL)
 * [xCharts: a D3-based library for building custom charts and graphs](http://tenxer.github.com/xcharts/)
+* [VisualSedimentation.js: visualizing streaming data, inspired by the process of physical sedimentation](http://www.visualsedimentation.org/)
 
 ### Wish List
 
