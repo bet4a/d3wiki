@@ -6,7 +6,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 
 ### [[Selections]]
 
-* [[d3.select|Selections#wiki-d3_select]] - select an element from the current document.(从当前文档中,选择一个元素)
+* [[d3.select|Selections#wiki-d3_select]] - select an element from the current document.(从,当前文档中,选择一个元素)
 * [[d3.selectAll|Selections#wiki-d3_selectAll]] - select multiple elements from the current document.
 * [[selection.attr|Selections#wiki-attr]] - get or set attribute values.
 * [[selection.classed|Selections#wiki-classed]] - add or remove CSS classes.
