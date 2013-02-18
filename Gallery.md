@@ -484,7 +484,6 @@ http://vallandingham.me/vis/
 * [Chicago Lobbyists](http://www.christophermanning.org/projects/chicago-lobbyists-force-directed-graph-visualization/)
 * [Hacker News Visualisation](http://fanfarefantastique.com/vishna/)
 * [Web performance](http://www.inmovi.net/howto/knowbase/internet/visualizing-web-performance/)
-* [Insights: Interactive Force Graph Component](https://github.com/ignacioola/insights)
 
 #### Tree
 
@@ -721,6 +720,7 @@ http://vallandingham.me/vis/
 * [Dynamic Visualization LEGO](https://github.com/vogievetsky/DVL)
 * [xCharts: a D3-based library for building custom charts and graphs](http://tenxer.github.com/xcharts/)
 * [VisualSedimentation.js: visualizing streaming data, inspired by the process of physical sedimentation](http://www.visualsedimentation.org/)
+* [Insights: Interactive Force Graph Component](https://github.com/ignacioola/insights)
 
 ### Wish List
 
