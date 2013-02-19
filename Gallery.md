@@ -553,6 +553,7 @@ http://vallandingham.me/vis/
 * [Interactive choropleth of life excpectancy](http://bl.ocks.org/d/2366285/) – Karel Minarik
 * [India population](http://bl.ocks.org/4526201) - Liji Jinaraj
 * [Hexbins in Leaflet](http://bl.ocks.org/4955504)
+* [Interactive svg map using D3 circles and transitions] (http://www.incont.ro/infografice/judet-bogat-judet-sarac-unde-se-castiga-cei-mai-multi-bani-in-romania-si-in-ce-domeniu.html) - Vlad Moldoveanu
 
 #### Misc Charts
 
