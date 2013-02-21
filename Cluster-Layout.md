@@ -12,15 +12,15 @@ Creates a new cluster layout with the default settings: the default sort order i
 
 <a name="sort" href="Cluster-Layout#wiki-sort">#</a> cluster.<b>sort</b>([<i>comparator</i>])
 
-If *comparator* is specified, sets the sort order of sibling nodes for the layout using the specified comparator function.  If *comparator* is not specified, returns the current group sort order, which defaults to null for no sorting. The comparator function is invoked for pairs of nodes, being passed the input data for each node. The default comparator is null, which disables sorting and uses tree traversal order. For example, to sort sibling nodes in descending order by the associated input data's numeric value attribute, say:
+If *comparator* is specified, sets the sort order of sibling nodes for the layout using the specified comparator function.  If *comparator* is not specified, returns the current group sort order, which defaults to null for no sorting. The comparator function is invoked for pairs of nodes, being passed the input data for each node. The default comparator is null, which disables sorting and uses tree traversal order. For example, to sort sibling nodes in descending order by the associated input data's string name attribute, say:
 
 ```javascript
 function comparator(a, b) {
-  return b.value - a.value;
+  return d3.ascending(a.name, b.name);
 }
 ```
 
-Sorting by the node's name or key is also common. This can be done easily using [d3.ascending](Arrays#wiki-d3_ascending) or [d3.descending](Arrays#wiki-d3_descending).
+See [d3.ascending](Arrays#wiki-d3_ascending) or [d3.descending](Arrays#wiki-d3_descending) for details.
 
 <a name="children" href="Cluster-Layout#wiki-children">#</a> cluster.<b>children</b>([<i>children</i>])
 
@@ -94,15 +94,7 @@ svg.selectAll("path")
 
 <a name="value" href="Cluster-Layout#wiki-value">#</a> cluster.<b>value</b>([<i>value</i>])
 
-If *value* is specified, sets the value accessor to the specified function. If *value* is not specified, returns the current value accessor. The default accessor assumes that the input data is an object with a numeric value attribute:
-
-```javascript
-function value(d) {
-  return d.value;
-}
-```
-
-The value accessor is invoked for each input data element, and must return a number representing the numeric value of the node. This value is used to set the area of each node proportionally to the value.
+If *value* is specified, sets the value accessor to the specified function. If *value* is not specified, returns the current value accessor which defaults to null, meaning that the value attribute is not computed. If specified, the value accessor is invoked for each input data element, and must return a number representing the numeric value of the node. This value has no effect on the cluster layout, but is generic functionality provided by hierarchy layouts.
 
 <a name="separation" href="Cluster-Layout#wiki-separation">#</a> cluster.<b>separation</b>([<i>separation</i>])
 
