@@ -19,7 +19,7 @@ In addition to numbers, D3 also supports formatting and parsing [[dates|Time-For
 
 <a name="d3_format" href="#wiki-d3_format">#</a> d3.<b>format</b>(<i>specifier</i>)
 
-Returns a new format function with the given string *specifier*. A format function takes a number as the only argument, and returns a string representing the formatted number. The format specifier is modeled after Python 3.1's built-in [[format specification mini-language|http://docs.python.org/release/3.1.3/library/string.html#formatspec]]. The general form of a specifier is [ [fill]align][sign][#][0][width][,][.precision][type].
+Returns a new format function with the given string *specifier*. A format function takes a number as the only argument, and returns a string representing the formatted number. The format specifier is modeled after Python 3.1's built-in [[format specification mini-language|http://docs.python.org/release/3.1.3/library/string.html#formatspec]]. The general form of a specifier is [​[fill]align][sign][#][0][width][,][.precision][type].
 
 The *fill* can be any character other than "{" or "}". The presence of a fill character is signaled by the character following it, which must be one of the *align* options.
 
