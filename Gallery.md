@@ -128,7 +128,14 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>d3 Analog Clock Dashboard<br><a href="http://www.infocaptor.com/dashboard/d3-javascript-visualization-to-build-world-analog-clocks"><img src="http://www.infocaptor.com/dashboard/wp-content/uploads/2013/02/image-217-small.jpg" width="202"></a></td>
     <td>Concept network browser<br/><a href="http://www.findtheconversation.com/concept-map"><img src="http://www.findtheconversation.com/concept-map-d3-wiki.png" width="202"></a></td>
     <td>Circular heat chart<br><a href="http://prcweb.co.uk/lab/circularheat"><img src="http://prcweb.co.uk/img/ext/circularheat.jpg" width="202"></a></td>
-    <td>Convert any page into bubbles<br><a href="http://www.infocaptor.com/bubble-my-page"><img src="http://www.infocaptor.com/wikipedia_visualization.png" width="202"></a></td>  </tr>
+    <td>Convert any page into bubbles<br><a href="http://www.infocaptor.com/bubble-my-page"><img src="http://www.infocaptor.com/wikipedia_visualization.png" width="202"></a></td>
+  </tr>
+  <tr height="207" valign="top">
+    <td>Force Layout Editor<br><a href="http://bl.ocks.org/5001347"><img src="https://raw.github.com/gist/5001347/thumbnail.png" width="202"></a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
 </table>
 
 ## Basic Charts
@@ -183,6 +190,9 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
   </tr>
   <tr height="146" valign="top">
     <td>Spline Interpolation<br><a href="http://bl.ocks.org/4342190"><img src="https://raw.github.com/gist/4342190/thumbnail.png" width="202"></a></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
 
@@ -274,8 +284,6 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Browser usage plurality](http://thecelestialweb.com) - Ali Almossawi
 * [Places in the Game of Thrones](http://www.jeromecukier.net/projects/agot/places.html) - Jérôme Cukier
 * [A Visit From The Goon Squad - Interactive Character Map](http://www.filosophy.org/projects/goonsquad/) - Filip Zembowicz
-***
-
 * [Twitter Influencer Visualization](http://www.influencermoth.com/) - Erik Driessen
 * [Chicago Ward Remap Outlines](http://www.christophermanning.org/projects/chicago-ward-remap-outlines/) - Christopher Manning
 * [Minute: record of all of my keystrokes](http://macwright.org/minute/) - Tom MacWright
@@ -303,6 +311,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Mass Gun shootings in USA](http://massshootings.nandayadav.com/) - Nanda Yadav
 * [Clock visualization Dashboard](https://my.infocaptor.com/dash/mt.php?pa=world_clocks_using_d3_510da17d83b20)
 * [UK Rainfall 1910-2012](http://prcweb.co.uk/lab/rainfall) - Peter Cook
+* [Modal Logic Playground](http://rkirsling.github.com/modallogic/) - Ross Kirsling
 
 ### Collections
 
