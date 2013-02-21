@@ -10,18 +10,6 @@ Like other classes in D3, layouts follow the method chaining pattern where sette
 
 Creates a new cluster layout with the default settings: the default sort order is null; the default children accessor assumes each input data is an object with a children array; the default separation function uses one node width for siblings, and two node widths for non-siblings; the default size is 1×1.
 
-<a name="sort" href="Cluster-Layout#wiki-sort">#</a> cluster.<b>sort</b>([<i>comparator</i>])
-
-If *comparator* is specified, sets the sort order of sibling nodes for the layout using the specified comparator function.  If *comparator* is not specified, returns the current group sort order, which defaults to null for no sorting. The comparator function is invoked for pairs of nodes, being passed the input data for each node. The default comparator is null, which disables sorting and uses tree traversal order. For example, to sort sibling nodes in descending order by the associated input data's string name attribute, say:
-
-```javascript
-function comparator(a, b) {
-  return d3.ascending(a.name, b.name);
-}
-```
-
-See [d3.ascending](Arrays#wiki-d3_ascending) or [d3.descending](Arrays#wiki-d3_descending) for details.
-
 <a name="children" href="Cluster-Layout#wiki-children">#</a> cluster.<b>children</b>([<i>children</i>])
 
 If *children* is specified, sets the specified children accessor function. If *children* is not specified, returns the current children accessor function, which by default assumes that the input data is an object with a children array:
@@ -92,9 +80,17 @@ svg.selectAll("path")
     .attr("d", d3.svg.diagonal());
 ```
 
-<a name="value" href="Cluster-Layout#wiki-value">#</a> cluster.<b>value</b>([<i>value</i>])
+<a name="sort" href="Cluster-Layout#wiki-sort">#</a> cluster.<b>sort</b>([<i>comparator</i>])
 
-If *value* is specified, sets the value accessor to the specified function. If *value* is not specified, returns the current value accessor which defaults to null, meaning that the value attribute is not computed. If specified, the value accessor is invoked for each input data element, and must return a number representing the numeric value of the node. This value has no effect on the cluster layout, but is generic functionality provided by hierarchy layouts.
+If *comparator* is specified, sets the sort order of sibling nodes for the layout using the specified comparator function.  If *comparator* is not specified, returns the current group sort order, which defaults to null for no sorting. The comparator function is invoked for pairs of nodes, being passed the input data for each node. The default comparator is null, which disables sorting and uses tree traversal order. For example, to sort sibling nodes in descending order by the associated input data's string name attribute, say:
+
+```javascript
+function comparator(a, b) {
+  return d3.ascending(a.name, b.name);
+}
+```
+
+See [d3.ascending](Arrays#wiki-d3_ascending) or [d3.descending](Arrays#wiki-d3_descending) for details.
 
 <a name="separation" href="Cluster-Layout#wiki-separation">#</a> cluster.<b>separation</b>([<i>separation</i>])
 
@@ -119,3 +115,7 @@ The separation function is passed two neighboring nodes *a* and *b*, and must re
 <a name="size" href="Cluster-Layout#wiki-size">#</a> cluster.<b>size</b>([<i>size</i>])
 
 If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1. Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system. For example, to produce a radial layout where the tree breadth (*x*) in measured in degrees, and the tree depth (*y*) is a radius *r* in pixels, say [360, *r*].
+
+<a name="value" href="Cluster-Layout#wiki-value">#</a> cluster.<b>value</b>([<i>value</i>])
+
+If *value* is specified, sets the value accessor to the specified function. If *value* is not specified, returns the current value accessor which defaults to null, meaning that the value attribute is not computed. If specified, the value accessor is invoked for each input data element, and must return a number representing the numeric value of the node. This value has no effect on the cluster layout, but is generic functionality provided by hierarchy layouts.
