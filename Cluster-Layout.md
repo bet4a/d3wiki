@@ -92,6 +92,18 @@ svg.selectAll("path")
     .attr("d", d3.svg.diagonal());
 ```
 
+<a name="value" href="Cluster-Layout#wiki-value">#</a> cluster.<b>value</b>([<i>value</i>])
+
+If *value* is specified, sets the value accessor to the specified function. If *value* is not specified, returns the current value accessor. The default accessor assumes that the input data is an object with a numeric value attribute:
+
+```javascript
+function value(d) {
+  return d.value;
+}
+```
+
+The value accessor is invoked for each input data element, and must return a number representing the numeric value of the node. This value is used to set the area of each node proportionally to the value.
+
 <a name="separation" href="Cluster-Layout#wiki-separation">#</a> cluster.<b>separation</b>([<i>separation</i>])
 
 If *separation* is specified, uses the specified function to compute separation between neighboring nodes. If *separation* is not specified, returns the current separation function, which defaults to:
