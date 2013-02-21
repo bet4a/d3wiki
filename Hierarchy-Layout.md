@@ -105,7 +105,7 @@ function value(d) {
 }
 ```
 
-The value accessor is invoked for each input data element, and must return a number representing the numeric value of the node. This value is used to set the area of each node proportionally to the value.
+The value accessor is invoked for each input data element, and must return a number representing the numeric value of the node. For area-proportional layouts such as treemaps, this value is used to set the area of each node proportionally to the value; for other hierarchical layouts, the value has no effect on the layout.
 
 <a name="revalue" href="Hierarchy-Layout#wiki-revalue">#</a> hierarchy.<b>revalue</b>(<i>root</i>)
 
