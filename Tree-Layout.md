@@ -91,17 +91,6 @@ svg.selectAll("path")
   .enter().append("path")
     .attr("d", d3.svg.diagonal());
 ```
-<a name="value" href="Tree-Layout#wiki-value">#</a> tree.<b>value</b>([<i>value</i>])
-
-If *value* is specified, sets the value accessor to the specified function. If *value* is not specified, returns the current value accessor. The default accessor assumes that the input data is an object with a numeric value attribute:
-
-```javascript
-function value(d) {
-  return d.value;
-}
-```
-
-The value accessor is invoked for each input data element, and must return a number representing the numeric value of the node. This value is used to set the area of each node proportionally to the value.
 
 <a name="separation" href="Tree-Layout#wiki-separation">#</a> tree.<b>separation</b>([<i>separation</i>])
 
@@ -126,3 +115,19 @@ The separation function is passed two neighboring nodes *a* and *b*, and must re
 <a name="size" href="Tree-Layout#wiki-size">#</a> tree.<b>size</b>([<i>size</i>])
 
 If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1. Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system. For example, to produce a radial layout where the tree breadth (*x*) is measured in degrees, and the tree depth (*y*) is a radius *r* in pixels, say [360, *r*].
+
+<a name="sort" href="#wiki-sort">#</a> tree.<b>sort</b>([<i>comparator</i>])
+
+If *comparator* is specified, sets the sort order of sibling nodes for the layout using the specified comparator function.  If *comparator* is not specified, returns the current group sort order, which defaults to null for no sorting. The comparator function is invoked for pairs of nodes, being passed the input data for each node. The default comparator is null, which disables sorting and uses tree traversal order. For example, to sort sibling nodes in descending order by the associated input data's string name attribute, say:
+
+```javascript
+function comparator(a, b) {
+  return d3.ascending(a.name, b.name);
+}
+```
+
+See [d3.ascending](Arrays#wiki-d3_ascending) or [d3.descending](Arrays#wiki-d3_descending) for details.
+
+<a name="value" href="#wiki-value">#</a> tree.<b>value</b>([<i>value</i>])
+
+If *value* is specified, sets the value accessor to the specified function. If *value* is not specified, returns the current value accessor which defaults to null, meaning that the value attribute is not computed. If specified, the value accessor is invoked for each input data element, and must return a number representing the numeric value of the node. This value has no effect on the tree layout, but is generic functionality provided by hierarchy layouts.
