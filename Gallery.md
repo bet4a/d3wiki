@@ -563,6 +563,7 @@ http://vallandingham.me/vis/
 * [India population](http://bl.ocks.org/4526201) - Liji Jinaraj
 * [Hexbins in Leaflet](http://bl.ocks.org/4955504)
 * [Interactive svg map using D3 circles and transitions] (http://www.incont.ro/infografice/judet-bogat-judet-sarac-unde-se-castiga-cei-mai-multi-bani-in-romania-si-in-ce-domeniu.html) - Vlad Moldoveanu
+* [ZipDecode](http://www.somebits.com/zipdecode-js/) - Nelson Minar (after Ben Fry)
 
 #### Misc Charts
 
