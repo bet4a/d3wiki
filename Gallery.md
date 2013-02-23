@@ -127,7 +127,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
   <tr height="207" valign="top">
     <td>d3 Analog Clock Dashboard<br><a href="http://www.infocaptor.com/dashboard/d3-javascript-visualization-to-build-world-analog-clocks"><img src="http://www.infocaptor.com/dashboard/wp-content/uploads/2013/02/image-217-small.jpg" width="202"></a></td>
     <td>Concept network browser<br/><a href="http://www.findtheconversation.com/concept-map"><img src="http://www.findtheconversation.com/concept-map-d3-wiki.png" width="202"></a></td>
-    <td>Circular heat chart<br><a href="http://prcweb.co.uk/lab/circularheat"><img src="http://prcweb.co.uk/img/ext/circularheat.jpg" width="202"></a></td>
+    <td>Circular heat chart<br><a href="http://prcweb.co.uk/circularheatchart"><img src="http://prcweb.co.uk/img/ext/circularheat.jpg" width="202"></a></td>
     <td>Convert any page into bubbles<br><a href="http://www.infocaptor.com/bubble-my-page"><img src="http://www.infocaptor.com/wikipedia_visualization.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
