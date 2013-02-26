@@ -261,7 +261,7 @@ Quantile scales map an input domain to a discrete range. Although the input doma
 
 <a name="quantile" href="Quantitative-Scales#wiki-quantile">#</a> d3.scale.<b>quantile</b>()
 
-Constructs a new quantile scale with an empty domain and an empty range. The quantile scale is invalid until both a domain and range is specified.
+Constructs a new quantile scale with an empty domain and an empty range. The quantile scale is invalid until both a domain and range are specified.
 
 <a name="_quantile" href="Quantitative-Scales#wiki-_quantile">#</a> <b>quantile</b>(<i>x</i>)
 
