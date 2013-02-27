@@ -197,6 +197,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 </table>
 
 ## Examples
+* [Visualization of Contribution in Wikipedia](http://wikiranking.org) - H. Jung
 * [Simple linked list visualization](http://tejens.com) - Tejen Shrestha
 * [Commuting Scales, Lausanne Campus commuters] (http://choros.ch/cs/) - Boris Beaude and Luc Guillemot
 * [Visualization of the Flask Source Code] (http://www.andreas-dewes.de/code_is_beautiful) - Andreas Dewes
