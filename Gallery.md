@@ -638,6 +638,7 @@ http://vallandingham.me/vis/
 * [Streamgraph](http://bl.ocks.org/1935509) an [Interactive version](http://bl.ocks.org/1963983)
 * [Histogram](http://bl.ocks.org/1933560)
 * [Circular heat chart](http://prcweb.co.uk/lab/circularheat/)
+* [Word Tree](http://www.chrisbarrett.fr/fingerprint/)
 
 #### Useful snippets
 
