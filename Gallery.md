@@ -314,6 +314,9 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [UK Rainfall 1910-2012](http://prcweb.co.uk/lab/rainfall) - Peter Cook
 * [Modal Logic Playground](http://rkirsling.github.com/modallogic/) - Ross Kirsling
 * [Slopegraph - 1 static & 1 with d3] (http://www.streamlinedataworks.com/example6.html) - Anna Mehrotra
+* [Collection of 9 dynamical systems examples] (http://sigsystext.com) - interactive examples found under educational material - Sean Summers
+* [Expected university tuition growth 2030] (http://rumachine.com/tuition/expectedgrowth.html) - Sean Summers
+
 
 ### Collections
 
