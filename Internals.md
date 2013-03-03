@@ -10,7 +10,7 @@ If the specified *value* is a function, returns the specified value. Otherwise, 
 
 <a name="rebind" href="Internals#wiki-rebind">#</a> d3.<b>rebind</b>(<i>target</i>, <i>source</i>, <i>names…</i>)
 
-Copies the methods with the specified *names* from *source* to *target*, and returns *target*. If a method is called with no arguments, it is invoked and its return value is returned (“getter” mode). If the method is called with arguments, it is invoked and *target* is returned (“setter” mode). The rebind operator allows inherited methods (mix-ins) to be rebound to a subclass on a different object.
+Copies the methods with the specified *names* from *source* to *target*, and returns *target*. Calling one of the named methods on the target object invokes the same-named method on the source object, passing any arguments passed to the target method, and using the source object as the `this` context. If the source method returns the source objected, the target method returns the target object (“setter” method); otherwise, the target method returns the return value of the source method (“getter” mode). The rebind operator allows inherited methods (mix-ins) to be rebound to a subclass on a different object.
 
 ## Events
 
