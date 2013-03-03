@@ -5,8 +5,8 @@
 ## Resources
 
 * [Introduction](http://mbostock.github.com/d3/)
-* [Examples Gallery](http://github.com/mbostock/d3/wiki/Gallery)
-* [Tutorials and Talks](http://github.com/mbostock/d3/wiki/Tutorials)
+* [[Examples Gallery|Gallery]]
+* [[Tutorials and Talks|Tutorials]]
 * [[API Reference]]
 * [[Release Notes]]
 * [Plugins](/d3/d3-plugins)
