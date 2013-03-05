@@ -592,6 +592,7 @@ http://vallandingham.me/vis/
 * [Line Tension](http://bl.ocks.org/1016220)
 * [Segmented Lines and Slope Coloring](http://bl.ocks.org/1117287)
 * [Raindrops](http://bl.ocks.org/849853)
+* [weeknd3](http://weeknd3.herokuapp.com/)
 * [Linear Gradients](http://bl.ocks.org/1086421)
 * [Force Directed States of America](http://bl.ocks.org/1073373)
 * [Rounded Rectangles](http://bl.ocks.org/1123639)
