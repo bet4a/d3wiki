@@ -197,7 +197,6 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 </table>
 
 ## Examples
-* [Mortgage Calculator](http://mortgagebloom.com) - MortgageBloom
 * [Visualization of Contribution in Wikipedia](http://wikiranking.org) - H. Jung
 * [Popularity of Reddits with tooltips + zooming.](http://tejens.com/reddits) - Tejen Shrestha
 * [Commuting Scales, Lausanne Campus commuters] (http://choros.ch/cs/) - Boris Beaude and Luc Guillemot
@@ -212,6 +211,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Election 2012 Social Dashboard (interactive Twitter visualization)] (http://events.current.com/social_dashboard) - Current TV
 * [Visualizing document similarity over time](http://www.davidmasad.com/sandbox/FirmClusters.html)
 * [Drought during Month](http://bost.ocks.org/mike/drought/)
+* [Mortgage Calculator](http://mortgagebloom.com) - MortgageBloom
 * [Interactive Publication History](http://www.cs.umd.edu/~bederson/papers/index.html) - Ben Bederson
 * [Visualizing Networks with Hive Plots](http://bost.ocks.org/mike/hive/)
 * [The Wealth & Health of Nations](http://bost.ocks.org/mike/nations/)
