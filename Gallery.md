@@ -416,6 +416,22 @@ http://vallandingham.me/vis/
 * [http://vallandingham.me/vis/jobs_by_state.html](http://vallandingham.me/vis/jobs_by_state.html)
 * [License Usage Dashboard](http://vallandingham.me/vis/matlab_license.html)
 
+#### Institute for Health Metrics and Evaluation
+http://www.healthmetricsandevaluation.org/tools/data-visualizations
+* [GBD Compare](http://viz.healthmetricsandevaluation.org/gbd-compare/)
+* [Mortality Visualization](http://viz.healthmetricsandevaluation.org/mortality/)
+* [COD Visualization](http://viz.healthmetricsandevaluation.org/cod/)
+* [GBD Heatmap](http://www.healthmetricsandevaluation.org/gbd/visualizations/gbd-heatmap)
+* [GBD Arrow Diagram](http://www.healthmetricsandevaluation.org/gbd/visualizations/gbd-arrow-diagram)
+* [GBD Uncertainty Visualization](http://www.healthmetricsandevaluation.org/gbd/visualizations/gbd-uncertainty-visualization)
+* [GBD Cause Patterns](http://www.healthmetricsandevaluation.org/gbd/visualizations/gbd-cause-patterns)
+* [GBD 2010 healthy years lost vs life expectancy](http://www.healthmetricsandevaluation.org/gbd/visualizations/gbd-2010-healthy-years-lost-vs-life-expectancy)
+* [Life expectancy by county and sex (US) with country comparison](http://www.healthmetricsandevaluation.org/tools/data-visualization/life-expectancy-county-and-sex-us-country-comparison-global-1989-1999-2009)
+* [Life expectancy by county and sex (US)](http://www.healthmetricsandevaluation.org/tools/data-visualization/life-expectancy-county-and-sex-us-1989-2009)
+* [Development assistance for health by health focus area](http://www.healthmetricsandevaluation.org/tools/data-visualization/development-assistance-health-health-focus-area-global-1990-2009-interactiv)
+* [Development assistance for health by channel of assistance](http://www.healthmetricsandevaluation.org/tools/data-visualization/development-assistance-health-channel-assistance-global-1990-2011-interacti)
+
+
 ### Charts and Chart Components
 
 #### Bar Chart
