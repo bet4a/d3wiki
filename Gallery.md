@@ -735,6 +735,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 
 #### Products
 
+* [DropTask: Visual task management application using D3 for visuals](https://www.droptask.com)
 * [Bitdeli: Custom analytics with Python and GitHub](https://bitdeli.com/)
 * [Cube: Time Series Data Collection & Analysis](http://square.github.com/cube/)
 * [Fast Multidimensional Filtering for Coordinated Views](http://square.github.com/tesseract/)
