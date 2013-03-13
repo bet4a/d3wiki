@@ -310,11 +310,11 @@ The `d3.event` object is a [[DOM event|https://developer.mozilla.org/en-US/docs/
 
 <a name="d3_mouse" href="#wiki-d3_mouse">#</a> d3.<b>mouse</b>(<i>container</i>)
 
-Returns the *x* and *y* coordinates of the current [d3.event](#wiki-d3_event), relative to the specified *container*. The container may be an HTML or SVG container element, such as an [[svg:g|http://www.w3.org/TR/SVG/struct.html#Groups]] or [[svg:svg|http://www.w3.org/TR/SVG/struct.html#SVGElement]]. The coordinates are returned as a two-element array [*x*, *y*].
+Returns the *x* and *y* coordinates of the current [d3.event](#wiki-d3_event), relative to the specified *container*. The container may be an HTML or SVG container element, such as an [[svg:g|http://www.w3.org/TR/SVG/struct.html#Groups]] or [[svg:svg|http://www.w3.org/TR/SVG/struct.html#SVGElement]]. The coordinates are returned as a two-element array [ *x*, *y*].
 
 <a name="d3_touches" href="#wiki-d3_touches">#</a> d3.<b>touches</b>(<i>container</i>)
 
-Returns the *x* and *y* coordinates of each touch associated with the current [d3.event](#wiki-d3_event), based on the [[touches|http://developer.apple.com/library/safari/documentation/UserExperience/Reference/TouchEventClassReference/TouchEvent/TouchEvent.html#//apple_ref/javascript/instp/TouchEvent/touches]] attribute, relative to the specified *container*. The container may be an HTML or SVG container element, such as an svg:g or svg:svg. The coordinates are returned as an array of two-element arrays [ [*x1*, *y1*], [*x2*, *y2*], … ].
+Returns the *x* and *y* coordinates of each touch associated with the current [d3.event](#wiki-d3_event), based on the [[touches|http://developer.apple.com/library/safari/documentation/UserExperience/Reference/TouchEventClassReference/TouchEvent/TouchEvent.html#//apple_ref/javascript/instp/TouchEvent/touches]] attribute, relative to the specified *container*. The container may be an HTML or SVG container element, such as an svg:g or svg:svg. The coordinates are returned as an array of two-element arrays [ [ *x1*, *y1*], [ *x2*, *y2*], … ].
 
 <a name="transition" href="Selections#wiki-transition">#</a> selection.<b>transition</b>()
 
