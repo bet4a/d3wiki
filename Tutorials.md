@@ -30,6 +30,7 @@ Please feel free to add links to your work!
 * [http://nowherenearithaca.blogspot.com/2012/06/annotating-d3-example-with-docco.html](http://nowherenearithaca.github.com/empires/empires.html) - Brad Flyon
 * [D3, Conceptually](http://code.hazzens.com/d3tut/) - Mikey Levine
 * [D3.js Tips and Tricks](http://www.d3noob.org/) and [pdf version](https://leanpub.com/D3-Tips-and-Tricks) - D3noob
+* [Introduction to D3.js Geo](http://hashbang.co.nz/blog/2013/2/25/d3_js_geo_fun) - Graham Jenson
 
 ### Specific Techniques
 
