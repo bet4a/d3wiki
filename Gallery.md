@@ -318,6 +318,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
 * [Collection of 9 dynamical systems examples] (http://sigsystext.com) - interactive examples found under educational material - Sean Summers
 * [Expected university tuition growth 2030] (http://rumachine.com/tuition/expectedgrowth.html) - Sean Summers
 * [Standings Slopegraph - Slopegraph of weekly NHL standings for 2012-13 season](http://standings.laserdeathstehr.com/), ([Github](https://github.com/nstehr/NHL-Slopegraph)) - Nathan Stehr
+* [Amsterdam Economic Performance 1995-2011] (http://www.iconomical.com/customers/Amsterdam-EZ/release/) - Iconomical
 
 ### Collections
 
