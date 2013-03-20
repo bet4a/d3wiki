@@ -136,7 +136,10 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>Explosions<br><a href="http://gruiz17.github.com/explosions/"><img src="http://puu.sh/2fO3P" width="202" height="146"></a></td>
     <td>CodeFlowers<br><a href="http://redotheweb.com/CodeFlower/"><img src="http://redotheweb.com/images/codeflower/codeflower.png" width="202" height="146"></a></td>
   </tr>
-</table>
+  <tr height="207" valign="top">
+   <td>Animated wind chart<br><a href="http://prcweb.co.uk/lab/ukwind"><img src="http://prcweb.co.uk/img/ext/d3-ukwind.jpg" width="202"></a></td>
+  </tr>
+ </table>
 
 ## Basic Charts
 
