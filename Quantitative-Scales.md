@@ -38,7 +38,7 @@ The resulting value of color(-.5) is "#ff8080", and the value of color(.5) is "#
 
 <a name="linear_range" href="Quantitative-Scales#wiki-linear_range">#</a> linear.<b>range</b>([<i>values</i>])
 
-If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](Quantitative-Scales#wiki-linear_interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
+If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain, otherwise the longer of the two is truncated to match the other. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](Quantitative-Scales#wiki-linear_interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
 
 <a name="linear_rangeRound" href="Quantitative-Scales#wiki-linear_rangeRound">#</a> linear.<b>rangeRound</b>(<i>values</i>)
 
@@ -134,7 +134,7 @@ As with linear scales (see [linear.domain](Quantitative-Scales#wiki-linear_domai
 
 <a name="pow_range" href="Quantitative-Scales#wiki-pow_range">#</a> pow.<b>range</b>([<i>values</i>])
 
-If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](Quantitative-Scales#wiki-pow_interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
+If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain, otherwise the longer of the two is truncated to match the other. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](Quantitative-Scales#wiki-pow_interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
 
 <a name="pow_rangeRound" href="Quantitative-Scales#wiki-pow_rangeRound">#</a> pow.<b>rangeRound</b>(<i>values</i>)
 
@@ -194,7 +194,7 @@ As with linear scales (see [linear.domain](Quantitative-Scales#wiki-linear_domai
 
 <a name="log_range" href="Quantitative-Scales#wiki-log_range">#</a> log.<b>range</b>([<i>values</i>])
 
-If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](Quantitative-Scales#wiki-log_interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
+If *values* is specified, sets the scale's output range to the specified array of values. The array must contain two or more values, to match the cardinality of the input domain, otherwise the longer of the two is truncated to match the other. The elements in the given array need not be numbers; any value that is supported by the underlying [interpolator](Quantitative-Scales#wiki-log_interpolate) will work. However, numeric ranges are required for the invert operator. If *values* is not specified, returns the scale's current output range.
 
 <a name="log_rangeRound" href="Quantitative-Scales#wiki-log_rangeRound">#</a> log.<b>rangeRound</b>(<i>values</i>)
 
