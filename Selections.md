@@ -44,6 +44,8 @@ If *value* is not specified, returns the value of the specified attribute for th
 
 The specified *name* may have a namespace prefix, such as `xlink:href`, to specify an "href" attribute in the XLink namespace. By default, D3 supports svg, xhtml, xlink, xml, and xmlns namespaces. Additional namespaces can be registered by adding to [d3.ns.prefix](Namespaces#wiki-prefix).
 
+*name* can also be an Object of *name* and *value* attributes.
+
 <a name="classed" href="Selections#wiki-classed">#</a> selection.<b>classed</b>(<i>name</i>[, <i>value</i>])
 
 This operator is a convenience routine for setting the "class" attribute; it understands that the "class" attribute is a set of tokens separated by spaces. Under the hood, it will use the [[classList|https://developer.mozilla.org/en/DOM/element.classList]] if available, for convenient adding, removing and toggling of CSS classes.
