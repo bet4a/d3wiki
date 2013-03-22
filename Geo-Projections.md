@@ -150,7 +150,11 @@ If *scale* is specified, sets the projection’s scale factor to the specified v
 
 <a name="clipAngle" href="#wiki-clipAngle">#</a> projection.<b>clipAngle</b>(<i>angle</i>)
 
-If *angle* is specified, sets the projection’s clipping circle radius to the specified angle in degrees and returns the projection. If *angle* is null, switches to [antimeridian cutting](http://bl.ocks.org/3788999) rather than small-circle clipping. If *angle* is not specified, returns the current clip angle which defaults to null.
+If *angle* is specified, sets the projection’s clipping circle radius to the specified angle in degrees and returns the projection. If *angle* is null, switches to [antimeridian cutting](http://bl.ocks.org/3788999) rather than small-circle clipping. If *angle* is not specified, returns the current clip angle which defaults to null. Small-circle clipping is independent of viewport clipping via [clipExtent](#wiki-clipExtent).
+
+<a name="clipExtent" href="#wiki-clipExtent">#</a> projection.<b>clipExtent</b>(<i>extent</i>)
+
+If *extent* is specified, sets the projection’s viewport clip extent to the specified bounds in pixels and returns the projection. The *extent* bounds are specified as an array [​[<i>x0</i>, <i>y0</i>], [<i>x1</i>, <i>y1</i>]​], where <i>x0</i> is the left-side of the viewport, <i>y0</i> is the top, <i>x1</i> is the right and <i>y1</i> is the bottom. If *extent* is null, no viewport clipping is performed. If *extent* is not specified, returns the current viewport clip extent which defaults to null. Viewport clipping is independent of small-circle clipping via [clipAngle](#wiki-clipAngle).
 
 <a name="precision" href="#wiki-precision">#</a> projection.<b>precision</b>(<i>precision</i>)
 
