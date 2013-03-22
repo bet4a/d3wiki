@@ -581,21 +581,17 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [path.area](Geo-Paths#wiki-area) - compute the projected area of a given feature.
 * [path.centroid](Geo-Paths#wiki-centroid) - compute the projected centroid of a given feature.
 * [path.bounds](Geo-Paths#wiki-bounds) - compute the projected bounds of a given feature.
-* [d3.geo.greatArc](Geo-Paths#wiki-greatArc) - create a great arc path generator.
-* [greatArc](Geo-Paths#wiki-_greatArc) - generate a piecewise great arc between two points as a LineString.
-* [greatArc.distance](Geo-Paths#wiki-greatArc_distance) - computes the length of a great arc in radians.
-* [greatArc.source](Geo-Paths#wiki-greatArc_source) - specify a source accessor.
-* [greatArc.target](Geo-Paths#wiki-greatArc_target) - specify a target accessor.
-* [greatArc.precision](Geo-Paths#wiki-greatArc_precision) - specify the precision of the piecewise arc.
 * [d3.geo.circle](Geo-Paths#wiki-circle) - create a circle generator.
 * [circle](Geo-Paths#wiki-_circle) - generate a piecewise circle as a Polygon. 
 * [circle.origin](Geo-Paths#wiki-circle_origin) - specify the origin in latitude and longitude.
 * [circle.angle](Geo-Paths#wiki-circle_angle) - specify the angular radius in degrees.
 * [circle.precision](Geo-Paths#wiki-circle_precision) - specify the precision of the piecewise circle.
 * [d3.geo.area](Geo-Paths#wiki-d3_geo_area) - compute the spherical area of a given feature.
-* [d3.geo.centroid](Geo-Paths#wiki-d3_geo_centroid) - compute the spherical centroid of a given feature.
 * [d3.geo.bounds](Geo-Paths#wiki-d3_geo_bounds) - compute the latitude-longitude bounding box for a given feature.
+* [d3.geo.centroid](Geo-Paths#wiki-d3_geo_centroid) - compute the spherical centroid of a given feature.
+* [d3.geo.distance](Geo-Paths#wiki-d3_geo_distance) - compute the great-arc distance between two points.
 * [d3.geo.interpolate](Geo-Paths#wiki-d3_geo_interpolate) - interpolate between two points along a great arc.
+* [d3.geo.length](Geo-Paths#wiki-d3_geo_length) - compute the length of a line string or the circumference of a polygon.
 
 ### [[Projections|Geo-Projections]]
 
@@ -607,6 +603,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [projection.translate](Geo-Projections#wiki-translate) - get or set the projection’s translation position.
 * [projection.scale](Geo-Projections#wiki-scale) - get or set the projection’s scale factor.
 * [projection.clipAngle](Geo-Projections#wiki-clipAngle) - get or set the radius of the projection’s clip circle.
+* [projection.clipExtent](Geo-Projections#wiki-clipExtent) - get or set the projection’s viewport clip extent, in pixels.
 * [projection.precision](Geo-Projections#wiki-precision) - get or set the precision threshold for adaptive resampling.
 * [projection.stream](Geo-Projections#wiki-stream) - wrap the specified stream listener, projecting input geometry.
 * [d3.geo.projectionMutator](Geo-Projections#wiki-projectionMutator) - create a standard projection from a mutable raw projection.
@@ -615,19 +612,25 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [d3.geo.albersUsa](Geo-Projections#wiki-albersUsa) - a composite Albers projection for the United States.
 * [d3.geo.azimuthalEqualArea](Geo-Projections#wiki-azimuthalEqualArea) - the azimuthal equal-area projection.
 * [d3.geo.azimuthalEquidistant](Geo-Projections#wiki-azimuthalEquidistant) - the azimuthal equidistant projection.
+* [d3.geo.conicConformal](Geo-Projections#wiki-conicConformal) - the conic conformal projection.
+* [d3.geo.conicEquidistant](Geo-Projections#wiki-conicEquidistant) - the conic equidistant projection.
+* [d3.geo.conicEqualArea](Geo-Projections#wiki-conicEqualArea) the conic equal-area (a.k.a. Albers) projection.
 * [d3.geo.equirectangular](Geo-Projections#wiki-equirectangular) - the equirectangular (plate carreé) projection.
 * [d3.geo.gnomonic](Geo-Projections#wiki-gnomonic) - the gnomonic projection.
 * [d3.geo.mercator](Geo-Projections#wiki-mercator) - the spherical Mercator projection.
 * [d3.geo.orthographic](Geo-Projections#wiki-orthographic) - the azimuthal orthographic projection.
 * [d3.geo.stereographic](Geo-Projections#wiki-stereographic) - the azimuthal stereographic projection.
-* [d3.geo.albers.raw](Geo-Projections#wiki-albers_raw) - the raw Albers equal-area conic projection.
 * [d3.geo.azimuthalEqualArea.raw](Geo-Projections#wiki-azimuthalEqualArea_raw) - the raw azimuthal equal-area projection.
 * [d3.geo.azimuthalEquidistant.raw](Geo-Projections#wiki-azimuthalEquidistant_raw) - the azimuthal equidistant projection.
+* [d3.geo.conicConformal.raw](Geo-Projections#wiki-conicConformal_raw) - the raw conic conformal projection.
+* [d3.geo.conicEquidistant.raw](Geo-Projections#wiki-conicEquidistant_raw) - the raw conic equidistant projection.
+* [d3.geo.conicEqualArea.raw](Geo-Projections#wiki-conicEqualArea_raw) the raw conic equal-area (a.k.a. Albers) projection.
 * [d3.geo.equirectangular.raw](Geo-Projections#wiki-equirectangular_raw) - the raw equirectangular (plate carrée) projection.
 * [d3.geo.gnomonic.raw](Geo-Projections#wiki-gnomonic_raw) - the raw gnomonic projection.
 * [d3.geo.mercator.raw](Geo-Projections#wiki-mercator_raw) - the raw Mercator projection.
 * [d3.geo.orthographic.raw](Geo-Projections#wiki-orthographic_raw) - the raw azimuthal orthographic projection.
 * [d3.geo.stereographic.raw](Geo-Projections#wiki-stereographic_raw) - the raw azimuthal stereographic projection.
+* [d3.geo.transverseMercator.raw](Geo-Projections#wiki-transverseMercator_raw) - the raw transverse Mercator projection.
 
 ### [Streams](Geo-Streams)
 
