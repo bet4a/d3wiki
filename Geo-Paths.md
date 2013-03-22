@@ -99,29 +99,7 @@ If *radius* is specified, sets the radius used to display Point and MultiPoint f
 
 ## Shape Generators
 
-<a name="greatArc" href="#wiki-greatArc">#</a> d3.geo.<b>greatArc</b>()
-
-Constructs a feature generator for creating the great arc between two geographic points, using a segment of a <a href="http://en.wikipedia.org/wiki/Great_circle">great circle</a>. The great arc represents the shortest path between the two points on the surface of the sphere.
-
-<a name="_greatArc" href="#wiki-_greatArc">#</a> <b>greatArc</b>(<i>arguments…</i>)
-
-Returns a GeoJSON LineString approximating a great circle segment. The source and target accessors specify how to determine the source and target points for the given *arguments*; the default accessors expect a single argument with source and target properties: `{source: …, target: …}`.
-
-<a name="greatArc_distance" href="#wiki-greatArc_distance">#</a> greatArc.<b>distance</b>(<i>arguments…</i>)
-
-Returns the length of the great arc between the two points represented by *arguments* in radians. To convert the angular distance to a linear one, simply multiply by the radius of the sphere, which is around *6,371km* on average for Earth. The source and target accessors specify how to determine the source and target points for the given *arguments*; the default accessors expect a single argument with source and target properties: `{source: …, target: …}`.
-
-<a name="greatArc_source" href="#wiki-greatArc_source">#</a> greatArc.<b>source</b>([<i>source</i>])
-
-If *source* is specified, sets the *source*-accessor to the specified function or constant point, [<i>longitude</i>, <i>latitude</i>]. If *source* is not specified, returns the current *source*-accessor.  This accessor is invoked every time the interpolator is called.  The default is `function(d) { return d.source; }`.
-
-<a name="greatArc_target" href="#wiki-greatArc_target">#</a> greatArc.<b>target</b>([<i>target</i>])
-
-If *target* is specified, sets the *target*-accessor to the specified function or constant point, [<i>longitude</i>, <i>latitude</i>]. If *source* is not specified, returns the current *target*-accessor.  This accessor is invoked every time the interpolator is called.  The default is `function(d) { return d.target; }`.
-
-<a name="greatArc_precision" href="#wiki-greatArc_precision">#</a> greatArc.<b>precision</b>([<i>precision</i>])
-
-If *precision* is specified, sets the maximum segment length of the interpolated path in degrees. If *precision* is not specified, returns the current precision, which defaults to 6°.
+Note: to generate a great arc in D3, simply pass a LineString-type geometry object to d3.geo.path. D3’s projections use great-arc interpolation for intermediate points (with [adaptive resampling](http://bl.ocks.org/mbostock/3795544)), so there’s no need to use a shape generate to create great arcs.
 
 <a name="circle" href="#wiki-circle">#</a> d3.geo.<b>circle</b>
 
@@ -156,6 +134,14 @@ Returns the spherical centroid of the specified *feature*. See also [path.centro
 <a name="d3_geo_bounds" href="#wiki-d3_geo_bounds">#</a> d3.geo.<b>bounds</b>(<i>feature</i>)
 
 Returns the spherical bounding box for the specified *feature*. The bounding box is represented by a two-dimensional array: [​[<i>left</i>, <i>bottom</i>], [<i>right</i>, <i>top</i>]​], where *left* is the minimum longitude, *bottom* is the minimum latitude, *right* is maximum longitude, and *top* is the maximum latitude. See also [path.bounds](#wiki-bounds), which computes the projected bounding box on the Cartesian plane.
+
+<a name="d3_geo_distance" href="#wiki-d3_geo_distance">#</a> d3.geo.<b>distance</b>(<i>a</i>, <i>b</i>)
+
+Returns the great-arc distance in radians between the two points <i>a</i> and <i>b</i>. Each point is specified as an array [<i>longitude</i>, <i>latitude</i>], with coordinates expressed in degrees.
+
+<a name="d3_geo_length" href="#wiki-d3_geo_length">#</a> d3.geo.<b>length</b>(<i>feature</i>)
+
+Returns the great-arc length of the specified *feature* in [radians](http://mathworld.wolfram.com/Radian.html). For polygons, returns the circumference of the exterior ring plus any interior rings.
 
 <a name="d3_geo_interpolate" href="#wiki-d3_geo_interpolate">#</a> d3.geo.<b>interpolate</b>(<i>a</i>, <i>b</i>)
 
