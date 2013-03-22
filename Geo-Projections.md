@@ -23,8 +23,8 @@ Several common projections are included with default build of D3; these are high
   </tr>
   <tr height="146" valign="top">
     <td>d3.geo.collignon<br><a href="http://bl.ocks.org/3734316"><img src="https://raw.github.com/gist/3734316/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.conicConformal<br><a href="http://bl.ocks.org/3734321"><img src="https://raw.github.com/gist/3734321/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.conicEquidistant<br><a href="http://bl.ocks.org/3734317"><img src="https://raw.github.com/gist/3734317/thumbnail.png" width="202"></a></td>
+    <td class="gi">d3.geo.conicConformal *<br><a href="http://bl.ocks.org/3734321"><img src="https://raw.github.com/gist/3734321/thumbnail.png" width="202"></a></td>
+    <td class="gi">d3.geo.conicEquidistant *<br><a href="http://bl.ocks.org/3734317"><img src="https://raw.github.com/gist/3734317/thumbnail.png" width="202"></a></td>
     <td>d3.geo.craig<br><a href="http://bl.ocks.org/4459466"><img src="https://raw.github.com/gist/4459466/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
