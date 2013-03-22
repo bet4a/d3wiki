@@ -114,6 +114,12 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [map.values](Arrays#wiki-map_values) - returns the map’s array of values.
 * [map.entries](Arrays#wiki-map_entries) - returns the map’s array of entries (key-values objects).
 * [map.forEach](Arrays#wiki-map_forEach) - calls the specified function for each entry in the map.
+* [d3.set](Arrays#wiki-d3_set) - a shim for ES6 sets, since objects are not hashes!
+* [set.has](Arrays#wiki-set_has) - returns true if the set contains the specified value.
+* [set.add](Arrays#wiki-set_add) - adds the specified value.
+* [set.remove](Arrays#wiki-set_remove) - removes the specified value.
+* [set.values](Arrays#wiki-set_values) - returns the set’s array of values.
+* [set.forEach](Arrays#wiki-set_forEach) - calls the specified function for each value in the set.
 
 ### [[Math]]
 
@@ -152,11 +158,13 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[d3.csv|CSV#wiki-csv]] - request a comma-separated values (CSV) file.
 * [[d3.csv.parse|CSV#wiki-parse]] - parse a CSV string into objects using the header row.
 * [[d3.csv.parseRows|CSV#wiki-parseRows]] - parse a CSV string into tuples, ignoring the header row.
-* [[d3.csv.format|CSV#wiki-format]] - format an array of tuples into a CSV string.
+* [[d3.csv.format|CSV#wiki-format]] - format an array of objects into a CSV string.
+* [[d3.csv.formatRows|CSV#wiki-formatRows]] - format an array of tuples into a CSV string.
 * [[d3.tsv|CSV#wiki-tsv]] - request a tab-separated values (TSV) file.
 * [[d3.tsv.parse|CSV#wiki-tsv_parse]] - parse a TSV string into objects using the header row.
 * [[d3.tsv.parseRows|CSV#wiki-tsv_parseRows]] - parse a TSV string into tuples, ignoring the header row.
-* [[d3.tsv.format|CSV#wiki-tsv_format]] - format an array of tuples into a TSV string.
+* [[d3.tsv.format|CSV#wiki-tsv_format]] - format an array of objects into a TSV string.
+* [[d3.tsv.formatRows|CSV#wiki-tsv_formatRows]] - format an array of tuples into a TSV string.
 
 ### [[Colors]]
 
