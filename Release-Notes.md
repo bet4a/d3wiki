@@ -2,6 +2,18 @@
 
 Patch versions always include various bug fixes; see the full compare for details. For major and minor versions, new features are listed below.
 
+## 3.1.0 - March 21, 2012
+
+See the [full 3.1 release notes](3.1) for details.
+
+* Custom builds of D3 using SMASH.
+* Various d3.geo improvements, including a viewport clipping and a better graticule.
+* Polyfills for "mouseenter" and "mouseleave" events.
+* Easier formatting and type conversion for d3.csv and d3.tsv.
+* Configurable base on log scales.
+* New d3.set class (ES6 shim).
+* Refactored d3.geom to be more like d3.layout.
+
 ## 3.0.0 - December 21, 2012
 
 Major release! See the [full 3.0 release notes](3.0) for all the details!
