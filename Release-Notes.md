@@ -6,13 +6,13 @@ Patch versions always include various bug fixes; see the full compare for detail
 
 See the [full 3.1 release notes](3.1) for details.
 
-* Custom builds of D3 using SMASH.
-* Various d3.geo improvements, including a viewport clipping and a better graticule.
+* Custom builds of D3 using [SMASH](https://github.com/mbostock/smash).
+* Various [d3.geo](https://github.com/mbostock/d3/wiki/Geo) improvements, including viewport clipping and a better graticule.
 * Polyfills for "mouseenter" and "mouseleave" events.
-* Easier formatting and type conversion for d3.csv and d3.tsv.
-* Configurable base on log scales.
+* Easier formatting and type conversion for [d3.csv](https://github.com/mbostock/d3/wiki/CSV#wiki-csv) and [d3.tsv](https://github.com/mbostock/d3/wiki/CSV#wiki-tsv).
+* Configurable base on [log scales](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-log).
 * New d3.set class (ES6 shim).
-* Refactored d3.geom to be more like d3.layout.
+* Refactored [d3.geom](https://github.com/mbostock/d3/wiki/Geometry) to be more like [d3.layout](https://github.com/mbostock/d3/wiki/Layouts).
 
 ## 3.0.0 - December 21, 2012
 
