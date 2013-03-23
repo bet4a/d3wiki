@@ -275,7 +275,13 @@ The orthographic projection is an azimuthal projection suitable for displaying a
 
 <a href="http://bl.ocks.org/3757137"><img src="https://raw.github.com/gist/3757137/thumbnail.png" width="202"></a>
 
-The stereographic projection is another perspective (azimuthal) projection. The point of perspective is on the surface of the sphere, looking in; it is thus commonly used for celestial charts. See the [interactive stereographic](http://bl.ocks.org/3763057) for an example. 
+The stereographic projection is another perspective (azimuthal) projection. The point of perspective is on the surface of the sphere, looking in; it is thus commonly used for celestial charts. See the [interactive stereographic](http://bl.ocks.org/3763057) for an example.
+
+<a name="transverseMercator" href="#wiki-transverseMercator">#</a> d3.geo.<b>transverseMercator</b>()
+
+<a href="http://bl.ocks.org/mbostock/5126418"><img src="https://raw.github.com/gist/5126418/thumbnail.png" width="202"></a>
+
+The transverse Mercator projection.
 
 ## Raw Projections
 
