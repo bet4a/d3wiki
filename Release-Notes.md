@@ -11,7 +11,7 @@ See the [full 3.1 release notes](3.1) for details.
 * Polyfills for "mouseenter" and "mouseleave" events.
 * Easier formatting and type conversion for [d3.csv](https://github.com/mbostock/d3/wiki/CSV#wiki-csv) and [d3.tsv](https://github.com/mbostock/d3/wiki/CSV#wiki-tsv).
 * Configurable base on [log scales](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-log).
-* New d3.set class (ES6 shim).
+* New [d3.set](https://github.com/mbostock/d3/wiki/Arrays#wiki-d3_set) class (ES6 shim).
 * Refactored [d3.geom](https://github.com/mbostock/d3/wiki/Geometry) to be more like [d3.layout](https://github.com/mbostock/d3/wiki/Layouts).
 
 ## 3.0.0 - December 21, 2012
