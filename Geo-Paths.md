@@ -141,7 +141,7 @@ Returns the great-arc distance in radians between the two points <i>a</i> and <i
 
 <a name="d3_geo_length" href="#wiki-d3_geo_length">#</a> d3.geo.<b>length</b>(<i>feature</i>)
 
-Returns the great-arc length of the specified *feature* in [radians](http://mathworld.wolfram.com/Radian.html). For polygons, returns the circumference of the exterior ring plus any interior rings.
+Returns the great-arc length of the specified *feature* in [radians](http://mathworld.wolfram.com/Radian.html). For polygons, returns the perimeter of the exterior ring plus that of any interior rings.
 
 <a name="d3_geo_interpolate" href="#wiki-d3_geo_interpolate">#</a> d3.geo.<b>interpolate</b>(<i>a</i>, <i>b</i>)
 
