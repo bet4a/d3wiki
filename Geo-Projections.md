@@ -206,13 +206,7 @@ Thus, when creating a mutable projection, the *mutate* function is never exposed
 
 <a name="albers" href="#wiki-albers">#</a> d3.geo.<b>albers</b>()
 
-<a href="http://bl.ocks.org/3734308"><img src="https://raw.github.com/gist/3734308/thumbnail.png" width="202"></a>
-
-The Albers projection, as an [equal-area](http://en.wikipedia.org/wiki/Map_projection#Equal-area) projection, is recommended for [choropleths](http://mbostock.github.com/d3/ex/choropleth.html) as it preserves the relative areas of geographic features. The default Albers equal-area conic projection has scale 1000, translate [480, 250], rotation [98, 0], center ⟨0°,38°⟩ and parallels [29.5, 45.5], making it suitable for displaying the United States, centered around [Hutchinson, Kansas](https://maps.google.com/maps?q=Hutchinson,+Kansas&z=5) in a 960×500 area. The default parallels are specified by the [USGS](http://www.usgs.gov/) in the 1970 [National Atlas](http://www.nationalatlas.gov/).
-
-<a name="albers_parallels" href="#wiki-albers_parallels">#</a> albers.<b>parallels</b>([<i>parallels</i>])
-
-If *parallels* is specified, sets the Albers projection’s standard parallels to the specified two-element array of latitudes (in degrees) and returns the projection. If *parallels* is not specified, returns the current parallels, which default to 29.5°N and 45.5°N. To minimize distortion, the parallels should be chosen to surround the projection’s [center](#wiki-center).
+An alias for [d3.geo.conicEqualArea](#wiki-conicEqualArea).
 
 <a name="albersUsa" href="#wiki-albersUsa">#</a> d3.geo.<b>albersUsa</b>()
 
@@ -255,9 +249,13 @@ Lambert’s conformal conic projection projects the globe conformally onto a con
 
 <a name="conicEqualArea" href="#wiki-conicEqualArea">#</a> d3.geo.<b>conicEqualArea</b>()
 
-An alias for [d3.geo.albers](#wiki-albers).
+<a href="http://bl.ocks.org/3734308"><img src="https://raw.github.com/gist/3734308/thumbnail.png" width="202"></a>
 
-<a href="http://bl.ocks.org/mbostock/3734308"><img src="https://raw.github.com/gist/3734308/thumbnail.png" width="202"></a>
+The Albers projection, as an [equal-area](http://en.wikipedia.org/wiki/Map_projection#Equal-area) projection, is recommended for [choropleths](http://mbostock.github.com/d3/ex/choropleth.html) as it preserves the relative areas of geographic features. The default Albers equal-area conic projection has scale 1000, translate [480, 250], rotation [98, 0], center ⟨0°,38°⟩ and parallels [29.5, 45.5], making it suitable for displaying the United States, centered around [Hutchinson, Kansas](https://maps.google.com/maps?q=Hutchinson,+Kansas&z=5) in a 960×500 area. The default parallels are specified by the [USGS](http://www.usgs.gov/) in the 1970 [National Atlas](http://www.nationalatlas.gov/).
+
+<a name="conicEqualArea_parallels" href="#wiki-conicEqualArea_parallels">#</a> conicEqualArea.<b>parallels</b>([<i>parallels</i>])
+
+If *parallels* is specified, sets the Albers projection’s standard parallels to the specified two-element array of latitudes (in degrees) and returns the projection. If *parallels* is not specified, returns the current parallels, which default to 29.5°N and 45.5°N. To minimize distortion, the parallels should be chosen to surround the projection’s [center](#wiki-center).
 
 <a name="conicEquidistant" href="#wiki-conicEquidistant">#</a> d3.geo.<b>conicEquidistant</b>()
 
