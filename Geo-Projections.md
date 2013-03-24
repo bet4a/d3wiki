@@ -70,7 +70,7 @@ Several common projections are included with default build of D3; these are high
     <td>d3.geo.miller<br><a href="http://bl.ocks.org/3734333"><img src="https://raw.github.com/gist/3734333/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
-    <td>d3.geo.modifiedStereographic<br><a href="http://www.jasondavies.com/maps/modified-stereographic/"><img src="http://www.jasondavies.com/maps/modified-stereographic/gs50/thumb.png" width="202"></a></td>
+    <td>d3.geo.modifiedStereographic<br><a href="http://www.jasondavies.com/maps/modified-stereographic/"><img src="http://www.jasondavies.com/maps/modified-stereographic/gs50/thumb.d3.png" width="202"></a></td>
     <td>d3.geo.mollweide<br><a href="http://bl.ocks.org/3734336"><img src="https://raw.github.com/gist/3734336/thumbnail.png" width="202"></a></td>
     <td>d3.geo.mtFlatPolarParabolic<br><a href="http://bl.ocks.org/4465130"><img src="https://raw.github.com/gist/4465130/thumbnail.png" width="202"></a></td>
     <td>d3.geo.mtFlatPolarQuartic<br><a href="http://bl.ocks.org/4465137"><img src="https://raw.github.com/gist/4465137/thumbnail.png" width="202"></a></td>
@@ -97,10 +97,10 @@ Several common projections are included with default build of D3; these are high
     <td>d3.geo.sinusoidal<br><a href="http://bl.ocks.org/3712399"><img src="https://raw.github.com/gist/3712399/thumbnail.png" width="202"></a></td>
     <td class="gi">d3.geo.stereographic *<br><a href="http://bl.ocks.org/3757137"><img src="https://raw.github.com/gist/3757137/thumbnail.png" width="202"></a></td>
     <td>d3.geo.times<br><a href="http://bl.ocks.org/5230564"><img src="https://raw.github.com/gist/5230564/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.twoPointAzimuthal<br><a href="http://www.jasondavies.com/maps/two-point-azimuthal/"><img src="http://www.jasondavies.com/maps/two-point-azimuthal/thumb.png" width="202"></a></td>
+    <td>d3.geo.twoPointAzimuthal<br><a href="http://www.jasondavies.com/maps/two-point-azimuthal/"><img src="http://www.jasondavies.com/maps/two-point-azimuthal/thumb.d3.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
-    <td>d3.geo.twoPointEquidistant<br><a href="http://www.jasondavies.com/maps/two-point-equidistant/"><img src="http://www.jasondavies.com/maps/two-point-equidistant/thumb.png" width="202"></a></td>
+    <td>d3.geo.twoPointEquidistant<br><a href="http://www.jasondavies.com/maps/two-point-equidistant/"><img src="http://www.jasondavies.com/maps/two-point-equidistant/thumb.d3.png" width="202"></a></td>
     <td class="gi">d3.geo.transverseMercator *<br><a href="http://bl.ocks.org/5126418"><img src="https://raw.github.com/gist/5126418/thumbnail.png" width="202"></a></td>
     <td>d3.geo.vanDerGrinten<br><a href="http://bl.ocks.org/3796831"><img src="https://raw.github.com/gist/3796831/thumbnail.png" width="202"></a></td>
     <td>d3.geo.vanDerGrinten2<br><a href="http://bl.ocks.org/5230571"><img src="https://raw.github.com/gist/5230571/thumbnail.png" width="202"></a></td>
