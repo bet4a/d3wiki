@@ -64,7 +64,8 @@ Returns approximately *count* representative values from the scale's input domai
 
 Returns a [[number format|Formatting#wiki-d3_format]] function suitable for displaying a tick value. The specified *count* should have the same value as the count that is used to generate the tick values. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate precision based on the fixed interval between tick values.
 
-The optional *format* allows a format specifier.
+The optional *format* argument allows a [[format specifier|Formatting#wiki-d3_format]] to be specified. If the format specifier doesn’t have a defined precision, the precision will be set automatically by the scale, returning the appropriate format. This provides a convenient, declarative way of specifying a format whose
+precision will be automatically set by the scale.
 
 <a name="linear_copy" href="#wiki-linear_copy">#</a> linear.<b>copy</b>()
 
@@ -96,7 +97,8 @@ Returns approximately *count* representative values from the scale's input domai
 
 Returns a [number format](Formatting#wiki-d3_format) function suitable for displaying a tick value. The specified *count* should have the same value as the count that is used to generate the tick values. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate precision based on the fixed interval between tick values.
 
-The optional *format* allows a format specifier.
+The optional *format* argument allows a [[format specifier|Formatting#wiki-d3_format]] to be specified. If the format specifier doesn’t have a defined precision, the precision will be set automatically by the scale, returning the appropriate format. This provides a convenient, declarative way of specifying a format whose
+precision will be automatically set by the scale.
 
 <a name="identity_copy" href="#wiki-identity_copy">#</a> identity.<b>copy</b>()
 
@@ -168,7 +170,8 @@ Returns approximately *count* representative values from the scale's input domai
 
 Returns a [[number format|Formatting#wiki-d3_format]] function suitable for displaying a tick value. The specified *count* should have the same value as the count that is used to generate the tick values. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate precision based on the fixed interval between tick values.
 
-The optional *format* allows a format specifier.
+The optional *format* argument allows a [[format specifier|Formatting#wiki-d3_format]] to be specified. If the format specifier doesn’t have a defined precision, the precision will be set automatically by the scale, returning the appropriate format. This provides a convenient, declarative way of specifying a format whose
+precision will be automatically set by the scale.
 
 <a name="pow_copy" href="#wiki-pow_copy">#</a> pow.<b>copy</b>()
 
