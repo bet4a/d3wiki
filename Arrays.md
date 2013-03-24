@@ -178,7 +178,7 @@ Calls the specified *function* for each entry in this map, passing the entry's k
 
 <a name="d3_set" href="#wiki-d3_set">#</a> d3.<b>set</b>([<i>array</i>])
 
-Constructs a new set. If *array* is specified, copies all elements from the *array* into this set.
+Constructs a new set. If *array* is specified, copies all values from the *array* into this set.
 
 <a name="set_has" href="#wiki-set_has">#</a> set.<b>has</b>(<i>value</i>)
 
@@ -194,7 +194,7 @@ If the set contains the specified *value*, removes it and returns true. Otherwis
 
 <a name="set_values" href="#wiki-set_values">#</a> set.<b>values</b>()
 
-Returns an array the values in this set. The order of the returned values is arbitrary.
+Returns an array of the values in this set. The order of the returned values is arbitrary.
 
 <a name="set_forEach" href="#wiki-set_forEach">#</a> set.<b>forEach</b>(<i>function</i>)
 
