@@ -314,7 +314,7 @@ The transverse Mercator projection.
 
 ## Raw Projections
 
-D3 exposes several raw projections, designed for reuse when implementing a composite projection (such as [Sinu–Mollweide](http://bl.ocks.org/4319903), which combines the raw sinusoidal and Mollweide projections). Raw projections are typically wrapped using [d3.geo.projection](#wiki-projection) before use. These are point functions that take spherical coordinates λ and φ (in radians) as input and return a two-element array (in normalized coordinates, typically between -1 and 1) as output. Many raw projections also implement an inverse projection for mapping from normalized to spherical coordinates.
+D3 exposes several raw projections, designed for reuse when implementing a composite projection (such as [Sinu–Mollweide](http://bl.ocks.org/4319903), which combines the raw [sinusoidal](http://bl.ocks.org/mbostock/3712399) and [Mollweide](http://bl.ocks.org/mbostock/3734336) projections). Raw projections are typically wrapped using [d3.geo.projection](#wiki-projection) before use. These are point functions that take spherical coordinates λ and φ (in radians) as input and return a two-element array (also in radians) as output. Many raw projections also implement an inverse projection for mapping from planar to spherical coordinates.
 
 <a name="albers_raw" href="#wiki-albers_raw">#</a> d3.geo.albers.<b>raw</b>(φ<sub>0</sub>, φ<sub>1</sub>)
 
