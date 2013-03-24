@@ -99,7 +99,7 @@ If *radius* is specified, sets the radius used to display Point and MultiPoint f
 
 ## Shape Generators
 
-Note: to generate a great arc in D3, simply pass a LineString-type geometry object to d3.geo.path. D3’s projections use great-arc interpolation for intermediate points (with [adaptive resampling](http://bl.ocks.org/mbostock/3795544)), so there’s no need to use a shape generate to create great arcs.
+Note: to generate a great arc in D3, simply pass a LineString-type geometry object to d3.geo.path. D3’s projections use great-arc interpolation for intermediate points (with [adaptive resampling](http://bl.ocks.org/mbostock/3795544)), so there’s no need to use a shape generator to create great arcs.
 
 <a name="circle" href="#wiki-circle">#</a> d3.geo.<b>circle</b>
 
