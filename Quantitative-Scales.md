@@ -92,9 +92,11 @@ If *numbers* is specified, sets the scale's input domain and output range to the
 
 Returns approximately *count* representative values from the scale's input domain (or equivalently, output range). The returned tick values are uniformly spaced, have human-readable values (such as multiples of powers of 10), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain.
 
-<a name="identity_tickFormat" href="#wiki-identity_tickFormat">#</a> identity.<b>tickFormat</b>(<i>count</i>)
+<a name="identity_tickFormat" href="#wiki-identity_tickFormat">#</a> identity.<b>tickFormat</b>(<i>count</i>, [<i>format</i>])
 
 Returns a [number format](Formatting#wiki-d3_format) function suitable for displaying a tick value. The specified *count* should have the same value as the count that is used to generate the tick values. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate precision based on the fixed interval between tick values.
+
+The optional *format* allows a format specifier.
 
 <a name="identity_copy" href="#wiki-identity_copy">#</a> identity.<b>copy</b>()
 
@@ -162,9 +164,11 @@ Extends the domain so that it starts and ends on nice round values. This method 
 
 Returns approximately *count* representative values from the scale's input domain. The returned tick values are uniformly spaced, have human-readable values (such as multiples of powers of 10), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain.
 
-<a name="pow_tickFormat" href="Quantitative-Scales#wiki-pow_tickFormat">#</a> pow.<b>tickFormat</b>([<i>count</i>])
+<a name="pow_tickFormat" href="Quantitative-Scales#wiki-pow_tickFormat">#</a> pow.<b>tickFormat</b>([<i>count</i>, [<i>format</i>]])
 
 Returns a [[number format|Formatting#wiki-d3_format]] function suitable for displaying a tick value. The specified *count* should have the same value as the count that is used to generate the tick values. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate precision based on the fixed interval between tick values.
+
+The optional *format* allows a format specifier.
 
 <a name="pow_copy" href="#wiki-pow_copy">#</a> pow.<b>copy</b>()
 
