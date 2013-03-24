@@ -13,3 +13,19 @@ Returns an array of polygons, one for each input *vertex*.
 <a href="http://bl.ocks.org/4341156"><img src="https://raw.github.com/gist/4341156/thumbnail.png" width="202"></a>
 
 Returns an array of triangles.
+
+<a name="x" href="#wiki-x">#</a> voronoi.<b>x</b>([<i>x</i>])
+
+If *x* is specified, sets the x-coordinate accessor. If *x* is not specified, returns the current x-coordinate accessor, which defaults to:
+
+```js
+function(d) { return d[0]; }
+```
+
+<a name="y" href="#wiki-y">#</a> voronoi.<b>y</b>([<i>y</i>])
+
+If *y* is specified, sets the y-coordinate accessor. If *y* is not specified, returns the current y-coordinate accessor, which defaults to:
+
+```js
+function(d) { return d[0]; }
+```
