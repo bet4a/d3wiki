@@ -322,7 +322,7 @@ D3 exposes several raw projections, designed for reuse when implementing a compo
 
 <a name="albers_raw" href="#wiki-albers_raw">#</a> d3.geo.albers.<b>raw</b>(φ<sub>0</sub>, φ<sub>1</sub>)
 
-Returns a raw [Albers projection](#wiki-albers) with the specified parallels in radians.
+An alias for [d3.geo.conicEqualArea.raw](#wiki-conicEqualArea_raw).
 
 <a name="azimuthalEqualArea_raw" href="#wiki-azimuthalEqualArea_raw">#</a> d3.geo.azimuthalEqualArea.<b>raw</b>
 
@@ -331,6 +331,18 @@ The raw [azimuthal equal-area projection](#wiki-azimuthalEqualArea).
 <a name="azimuthalEquidistant_raw" href="#wiki-azimuthalEquidistant_raw">#</a> d3.geo.azimuthalEquidistant.<b>raw</b>
 
 The raw [azimuthal equidistant projection](#wiki-azimuthalEquidistant).
+
+<a name="conicConformal_raw" href="#wiki-conicConformal_raw">#</a> d3.geo.conicConformal.<b>raw</b>(φ<sub>0</sub>, φ<sub>1</sub>)
+
+Returns a raw [conformal conic projection](#wiki-conicConformal) with the specified parallels in radians.
+
+<a name="conicEqualArea_raw" href="#wiki-conicEqualArea_raw">#</a> d3.geo.conicEqualArea.<b>raw</b>(φ<sub>0</sub>, φ<sub>1</sub>)
+
+Returns a raw [Albers projection](#wiki-conicEqualArea) with the specified parallels in radians.
+
+<a name="conicEquidistant_raw" href="#wiki-conicEquidistant_raw">#</a> d3.geo.conicEquidistant.<b>raw</b>(φ<sub>0</sub>, φ<sub>1</sub>)
+
+Returns a raw [equidistant projection](#wiki-conicEquidistant) with the specified parallels in radians.
 
 <a name="equirectangular_raw" href="#wiki-equirectangular_raw">#</a> d3.geo.equirectangular.<b>raw</b>
 
