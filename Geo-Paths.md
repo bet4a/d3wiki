@@ -151,10 +151,10 @@ Returns an interpolator given the two locations *a* and *b*. Each location must 
 
 Specifies a rotation in the form of an array, [λ, φ, γ]. The elements of the array are angles in degrees, and specify a rotation in the following order: longitudinal, latitudinal and about the origin. If the last element of the array, γ, is omitted, this defaults to 0.  Returns a function, which rotates a given location as described below.
 
-<a name="d3_geo_rotation_" href="#wiki-d3_geo_rotation_">#</a> rotation(<i>location</i>)
+<a name="d3_geo_rotation_" href="#wiki-d3_geo_rotation_">#</a> <b>rotation</b>(<i>location</i>)
 
 Rotates a given location according to the angles specified for this rotation, in the order described above.  A location is specified as an array [<i>longitude</i>, <i>latitude</i>], with coordinates expressed in degrees.  Returns a new array representing the rotated location.
 
-<a name="d3_geo_rotation_invert" href="#wiki-d3_geo_rotation_invert">#</a> rotation.invert(<i>location</i>)
+<a name="d3_geo_rotation_invert" href="#wiki-d3_geo_rotation_invert">#</a> rotation.<b>invert</b>(<i>location</i>)
 
 Rotates a given location according to the angles specified for this rotation, but with the order described above reversed.  A location is specified as an array [<i>longitude</i>, <i>latitude</i>], with coordinates expressed in degrees.  Returns a new array representing the rotated location.
