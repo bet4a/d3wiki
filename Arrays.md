@@ -174,6 +174,32 @@ Returns an array of key-value objects for each entry in this map. The order of t
 
 Calls the specified *function* for each entry in this map, passing the entry's key and value as two arguments. The `this` context of the *function* is this map. Returns undefined. The iteration order is arbitrary.
 
+### Sets
+
+<a name="d3_set" href="#wiki-d3_set">#</a> d3.<b>set</b>([<i>array</i>])
+
+Constructs a new set. If *array* is specified, copies all elements from the *array* into this set.
+
+<a name="set_has" href="#wiki-set_has">#</a> set.<b>has</b>(<i>value</i>)
+
+Returns true if and only if this set has an entry for the specified *value*.
+
+<a name="set_add" href="#wiki-set_add">#</a> set.<b>add</b>(<i>value</i>)
+
+Adds the specified *value* to this set.
+
+<a name="set_remove" href="#wiki-set_remove">#</a> set.<b>remove</b>(<i>value</i>)
+
+If the set contains the specified *value*, removes it and returns true. Otherwise, this method does nothing and returns false.
+
+<a name="set_values" href="#wiki-set_values">#</a> set.<b>values</b>()
+
+Returns an array the values in this set. The order of the returned values is arbitrary.
+
+<a name="set_forEach" href="#wiki-set_forEach">#</a> set.<b>forEach</b>(<i>function</i>)
+
+Calls the specified *function* for each value in this set, passing the value as an argument. The `this` context of the *function* is this set. Returns undefined. The iteration order is arbitrary.
+
 ## Array Operators
 
 <a name="d3_split" href="Arrays#wiki-d3_split">#</a> d3.<b>split</b>(<i>array</i>[, <i>function</i>])
