@@ -146,3 +146,15 @@ Returns the great-arc length of the specified *feature* in [radians](http://math
 <a name="d3_geo_interpolate" href="#wiki-d3_geo_interpolate">#</a> d3.geo.<b>interpolate</b>(<i>a</i>, <i>b</i>)
 
 Returns an interpolator given the two locations *a* and *b*. Each location must be represented as a two-element array of [<i>longitude</i>, <i>latitude</i>]. The returned interpolator is a function which takes a single parameter *t* as input, where *t* ranges from 0 to 1. A value of 0 returns the location *a*, while a value of 1 returns the location *b*. Intermediate values interpolate from *a* to *b* along the spanning great arc.
+
+<a name="d3_geo_rotation" href="#wiki-d3_geo_rotation">#</a> d3.geo.<b>rotation</b>(<i>rotate</i>)
+
+Specifies a rotation in the form of an array, [λ, φ, γ]. The elements of the array are angles in degrees, and specify a rotation in the following order: longitudinal, latitudinal and about the origin. If the last element of the array, γ, is omitted, this defaults to 0.  Returns a function, which rotates a given location as described below.
+
+<a name="d3_geo_rotation_" href="#wiki-d3_geo_rotation_">#</a> rotation(<i>location</i>)
+
+Rotates a given location according to the angles specified for this rotation, in the order described above.  A location is specified as an array [<i>longitude</i>, <i>latitude</i>], with coordinates expressed in degrees.  Returns a new array representing the rotated location.
+
+<a name="d3_geo_rotation_invert" href="#wiki-d3_geo_rotation_invert">#</a> rotation.invert(<i>location</i>)
+
+Rotates a given location according to the angles specified for this rotation, but with the order described above reversed.  A location is specified as an array [<i>longitude</i>, <i>latitude</i>], with coordinates expressed in degrees.  Returns a new array representing the rotated location.
