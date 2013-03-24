@@ -6,7 +6,7 @@ A quadtree is a two-dimensional recursive spatial subdivision. This implementati
 
 <a href="http://bl.ocks.org/4343214"><img src="https://raw.github.com/gist/4343214/thumbnail.png" width="202"></a>
 
-**Deprecated:** If *points* is specified, constructs a new quadtree for the specified array of points. Bounds are optional and can be specified explicitly as *x1*, *y1*, *x2*, *y2*, or as *width*, *height*, which is equivalent to *0*, *width*, *0*, *height*.
+**Deprecated:** If *points* is specified, constructs a new quadtree for the specified array of points. Bounds are optional and can be specified explicitly as *x1*, *y1*, *x2*, *y2*, or as *width*, *height*, which is equivalent to *0*, *width*, *0*, *height*. Points are assumed to be of the form `{x: …, y: …}`.
 
 <a name="_quadtree" href="Quadtree-Geom#wiki-_quadtree">#</a> <b>quadtree</b>(<i>points</i>)
 
