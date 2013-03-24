@@ -247,6 +247,22 @@ The azimuthal equal-area projection is also suitable for choropleths. A [polar a
 
 The azimuthal equidistant projection preserves distances from the projection’s center: the distance from any projected point to the projection’s center is proportional to the great arc distance. Thus, circles around the projection’s center are projected to circles on the Cartesian plane. This can be useful for visualizing distances relative to a point of reference, such as commute distances. 
 
+<a name="conicConformal" href="#wiki-conicConformal">#</a> d3.geo.<b>conicConformal</b>()
+
+<a href="http://bl.ocks.org/mbostock/3734321"><img src="https://raw.github.com/gist/3734321/thumbnail.png" width="202"></a>
+
+Lambert’s conformal conic projection projects the globe conformally onto a cone.
+
+<a name="conicEqualArea" href="#wiki-conicEqualArea">#</a> d3.geo.<b>conicEqualArea</b>()
+
+An alias for [d3.geo.albers](#wiki-albers).
+
+<a href="http://bl.ocks.org/mbostock/3734308"><img src="https://raw.github.com/gist/3734308/thumbnail.png" width="202"></a>
+
+<a name="conicEquidistant" href="#wiki-conicEquidistant">#</a> d3.geo.<b>conicEquidistant</b>()
+
+<a href="http://bl.ocks.org/mbostock/3734317"><img src="https://raw.github.com/gist/3734317/thumbnail.png" width="202"></a>
+
 <a name="equirectangular" href="#wiki-equirectangular">#</a> d3.geo.<b>equirectangular</b>()
 
 <a href="http://bl.ocks.org/3757119"><img src="https://raw.github.com/gist/3757119/thumbnail.png" width="202"></a>
