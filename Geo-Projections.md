@@ -342,7 +342,7 @@ Returns a raw [Albers projection](#wiki-conicEqualArea) with the specified paral
 
 <a name="conicEquidistant_raw" href="#wiki-conicEquidistant_raw">#</a> d3.geo.conicEquidistant.<b>raw</b>(φ<sub>0</sub>, φ<sub>1</sub>)
 
-Returns a raw [equidistant projection](#wiki-conicEquidistant) with the specified parallels in radians.
+Returns a raw [equidistant conic projection](#wiki-conicEquidistant) with the specified parallels in radians.
 
 <a name="equirectangular_raw" href="#wiki-equirectangular_raw">#</a> d3.geo.equirectangular.<b>raw</b>
 
