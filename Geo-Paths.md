@@ -101,6 +101,50 @@ If *radius* is specified, sets the radius used to display Point and MultiPoint f
 
 Note: to generate a great arc in D3, simply pass a LineString-type geometry object to d3.geo.path. D3’s projections use great-arc interpolation for intermediate points (with [adaptive resampling](http://bl.ocks.org/mbostock/3795544)), so there’s no need to use a shape generator to create great arcs.
 
+<a name="graticule" href="#wiki-graticule">#</a> d3.geo.<b>graticule</b>
+
+Constructs a feature generator for creating graticules.
+
+<a name="_graticule" href="#wiki-_graticule">#</a> <b>graticule</b>()
+
+Returns a MultiLineString geometry object representing all meridians and parallels for this graticule.
+
+<a name="graticule_lines" href="#wiki-graticule_lines">#</a> graticule.<b>lines</b>()
+
+Returns an array of LineString geometry objects, one for each meridian or parallel for this graticule.
+
+<a name="graticule_outline" href="#wiki-graticule_outline">#</a> graticule.<b>outline</b>()
+
+Returns a Polygon geometry object representing the outline of this graticule, i.e. along the meridians and parallels defining its extent.
+
+<a name="graticule_extent" href="#wiki-graticule_extent">#</a> graticule.<b>extent</b>(<i>extent</i>)
+
+If *extent* is specified, sets the major and minor extents of this graticule.  If *extent* is not specified, returns the current minor extent, which defaults to [[-180°, -80° - ε], [180°, 80° + ε]].
+
+<a name="graticule_majorExtent" href="#wiki-graticule_majorExtent">#</a> graticule.<b>majorExtent</b>(<i>extent</i>)
+
+If *extent* is specified, sets the major extent of this graticule.  If *extent* is not specified, returns the current major extent, which defaults to [[-180°, -90° + ε], [180°, 90° - ε]].
+
+<a name="graticule_minorExtent" href="#wiki-graticule_minorExtent">#</a> graticule.<b>minorExtent</b>(<i>extent</i>)
+
+If *extent* is specified, sets the minor extent of this graticule.  If *extent* is not specified, returns the current minor extent, which defaults to [[-180°, -80° + ε], [180°, 80° - ε]].
+
+<a name="graticule_step" href="#wiki-graticule_step">#</a> graticule.<b>step</b>(<i>step</i>)
+
+If *step* is specified, sets the major and minor step for this graticule.  If *step* is not specified, returns the current minor step, which defaults to [10°, 10°].
+
+<a name="graticule_majorStep" href="#wiki-graticule_majorStep">#</a> graticule.<b>majorStep</b>(<i>step</i>)
+
+If *step* is specified, sets the major step for this graticule.  If *step* is not specified, returns the current major step, which defaults to [90°, 360°].
+
+<a name="graticule_minorStep" href="#wiki-graticule_minorStep">#</a> graticule.<b>minorStep</b>(<i>step</i>)
+
+If *step* is specified, sets the minor step for this graticule.  If *step* is not specified, returns the current minor step, which defaults to [10°, 10°].
+
+<a name="graticule_precision" href="#wiki-graticule_precision">#</a> graticule.<b>precision</b>(<i>precision</i>)
+
+If *precision* is specified, sets the precision for this graticule, in degrees.  If *precision* is not specified, returns the current precision, which defaults to 2.5°.
+
 <a name="circle" href="#wiki-circle">#</a> d3.geo.<b>circle</b>
 
 Constructs a feature generator for creating circles centered at a given geographic location with a given radius in degrees.
