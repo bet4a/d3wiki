@@ -258,6 +258,10 @@ The azimuthal equidistant projection preserves distances from the projection’s
 
 Lambert’s conformal conic projection projects the globe conformally onto a cone.
 
+<a name="conicConformal_parallels" href="#wiki-conicConformal_parallels">#</a> conicConformal.<b>parallels</b>([<i>parallels</i>])
+
+If *parallels* is specified, sets the projection’s standard parallels to the specified two-element array of latitudes (in degrees) and returns the projection. If *parallels* is not specified, returns the current parallels.
+
 <a name="conicEqualArea" href="#wiki-conicEqualArea">#</a> d3.geo.<b>conicEqualArea</b>()
 
 <a href="http://bl.ocks.org/3734308"><img src="https://raw.github.com/gist/3734308/thumbnail.png" width="202"></a>
@@ -274,7 +278,7 @@ If *parallels* is specified, sets the Albers projection’s standard parallels t
 
 <a name="conicEquidistant_parallels" href="#wiki-conicEquidistant_parallels">#</a> conicEquidistant.<b>parallels</b>([<i>parallels</i>])
 
-If *parallels* is specified, sets the projection’s standard parallels to the specified two-element array of latitudes (in degrees) and returns the projection. If *parallels* is not specified, returns the current parallels. To minimize distortion, the parallels should be chosen to surround the projection’s [center](#wiki-center).
+If *parallels* is specified, sets the projection’s standard parallels to the specified two-element array of latitudes (in degrees) and returns the projection. If *parallels* is not specified, returns the current parallels.
 
 <a name="equirectangular" href="#wiki-equirectangular">#</a> d3.geo.<b>equirectangular</b>()
 
