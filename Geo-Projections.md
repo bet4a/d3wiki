@@ -233,13 +233,13 @@ function albersUsa(location) {
 }
 ```
 
-The Albers USA projection does not support inversion, rotation, or centering.
+The Albers USA projection does not support rotation or centering.
 
 <a name="azimuthalEqualArea" href="#wiki-azimuthalEqualArea">#</a> d3.geo.<b>azimuthalEqualArea</b>()
 
 <a href="http://bl.ocks.org/3757101"><img src="https://raw.github.com/gist/3757101/thumbnail.png" width="202"></a>
 
-The azimuthal equal-projection is also suitable for choropleths. A [polar aspect](http://bl.ocks.org/4364903) of this projection is used for the United Nations logo.
+The azimuthal equal-area projection is also suitable for choropleths. A [polar aspect](http://bl.ocks.org/4364903) of this projection is used for the United Nations logo.
 
 <a name="azimuthalEquidistant" href="#wiki-azimuthalEquidistant">#</a> d3.geo.<b>azimuthalEquidistant</b>()
 
