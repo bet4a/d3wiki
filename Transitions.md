@@ -368,4 +368,4 @@ d3.interpolators.push(function(a, b) {
 });
 ```
 
-Then, d3.interpolate("$20", "$10")(1/3) returns $16.67.
+Then, `d3.interpolate("$20", "$10")(1/3)` returns `$16.67`.
