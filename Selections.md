@@ -298,7 +298,9 @@ Re-inserts elements into the document such that the document order matches the s
 
 Adds or removes an event *listener* to each element in the current selection, for the specified *type*. The *type* is a string event type name, such as "click", "mouseover", or "submit".  The specified *listener* is invoked in the same manner as other operator functions, being passed the current datum `d` and index `i`, with the `this` context as the current DOM element. To access the current event within a listener, use the global [d3.event](Selections#wiki-d3_event). The return value of the event listener is ignored. 
 
-If an event listener was already registered for the same type on the selected element, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "click.foo" and "click.bar". To remove a listener, pass null as the *listener*.
+If an event listener was already registered for the same type on the selected element, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "click.foo" and "click.bar".
+
+To remove a listener, pass null as the *listener*. To remove all listeners for a particular event type, pass null as the *listener*, and `.type` as the *type*, e.g. `selection.on(".foo", null)`.
 
 An optional *capture* flag may be specified, which corresponds to the W3C [useCapture flag](http://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-registration): "After initiating capture, all events of the specified type will be dispatched to the registered EventListener before being dispatched to any EventTargets beneath them in the tree. Events which are bubbling upward through the tree will not trigger an EventListener designated to use capture."
 
