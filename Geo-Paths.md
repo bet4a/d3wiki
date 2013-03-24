@@ -119,27 +119,27 @@ Returns a Polygon geometry object representing the outline of this graticule, i.
 
 <a name="graticule_extent" href="#wiki-graticule_extent">#</a> graticule.<b>extent</b>(<i>extent</i>)
 
-If *extent* is specified, sets the major and minor extents of this graticule.  If *extent* is not specified, returns the current minor extent, which defaults to `[[-180°, -80° - ε], [180°, 80° + ε]]`.
+If *extent* is specified, sets the major and minor extents of this graticule.  If *extent* is not specified, returns the current minor extent, which defaults to ⟨⟨-180°, -80° - ε⟩, ⟨180°, 80° + ε⟩⟩.
 
 <a name="graticule_majorExtent" href="#wiki-graticule_majorExtent">#</a> graticule.<b>majorExtent</b>(<i>extent</i>)
 
-If *extent* is specified, sets the major extent of this graticule.  If *extent* is not specified, returns the current major extent, which defaults to `[[-180°, -90° + ε], [180°, 90° - ε]]`.
+If *extent* is specified, sets the major extent of this graticule.  If *extent* is not specified, returns the current major extent, which defaults to ⟨⟨-180°, -90° + ε⟩, ⟨180°, 90° - ε⟩⟩.
 
 <a name="graticule_minorExtent" href="#wiki-graticule_minorExtent">#</a> graticule.<b>minorExtent</b>(<i>extent</i>)
 
-If *extent* is specified, sets the minor extent of this graticule.  If *extent* is not specified, returns the current minor extent, which defaults to `[[-180°, -80° + ε], [180°, 80° - ε]]`.
+If *extent* is specified, sets the minor extent of this graticule.  If *extent* is not specified, returns the current minor extent, which defaults to ⟨⟨-180°, -80° + ε⟩, ⟨180°, 80° - ε⟩⟩.
 
 <a name="graticule_step" href="#wiki-graticule_step">#</a> graticule.<b>step</b>(<i>step</i>)
 
-If *step* is specified, sets the major and minor step for this graticule.  If *step* is not specified, returns the current minor step, which defaults to `[10°, 10°]`.
+If *step* is specified, sets the major and minor step for this graticule.  If *step* is not specified, returns the current minor step, which defaults to ⟨10°, 10°⟩.
 
 <a name="graticule_majorStep" href="#wiki-graticule_majorStep">#</a> graticule.<b>majorStep</b>(<i>step</i>)
 
-If *step* is specified, sets the major step for this graticule.  If *step* is not specified, returns the current major step, which defaults to `[90°, 360°]`.
+If *step* is specified, sets the major step for this graticule.  If *step* is not specified, returns the current major step, which defaults to ⟨90°, 360°⟩.
 
 <a name="graticule_minorStep" href="#wiki-graticule_minorStep">#</a> graticule.<b>minorStep</b>(<i>step</i>)
 
-If *step* is specified, sets the minor step for this graticule.  If *step* is not specified, returns the current minor step, which defaults to `[10°, 10°]`.
+If *step* is specified, sets the minor step for this graticule.  If *step* is not specified, returns the current minor step, which defaults to ⟨10°, 10°⟩.
 
 <a name="graticule_precision" href="#wiki-graticule_precision">#</a> graticule.<b>precision</b>(<i>precision</i>)
 
