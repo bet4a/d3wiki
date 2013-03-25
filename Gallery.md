@@ -140,7 +140,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
    <td>Animated wind chart<br><a href="http://prcweb.co.uk/lab/ukwind"><img src="http://prcweb.co.uk/img/ext/d3-ukwind.jpg" width="202"></a></td>
    <td>What makes us happy?<br><a href="http://prcweb.co.uk/lab/what-makes-us-happy"><img src="http://prcweb.co.uk/img/ext/what-makes-us-happy2.jpg" width="202"></a></td>
   </tr>
- </table>
+</table>
 
 ## Basic Charts
 
