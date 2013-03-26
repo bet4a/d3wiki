@@ -2,7 +2,7 @@
 
 Patch versions always include various bug fixes; see the full compare for details. For major and minor versions, new features are listed below.
 
-## 3.1.0 - March 21, 2012
+## 3.1.0 - March 21, 2013
 
 See the [full 3.1 release notes](3.1) for details.
 
