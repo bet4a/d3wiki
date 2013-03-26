@@ -305,9 +305,20 @@ Sorts leaf elements using the specified *comparator*, such as [d3.descending](Ar
 
 Specifies a rollup *function* to be applied on each group of leaf elements. The return value of the rollup function will replace the array of leaf values in either the associative array returned by the map operator, or the values attribute of each entry returned by the entries operator.
 
-<a name="nest_map" href="Arrays#wiki-nest_map">#</a> nest.<b>map</b>(<i>array</i>)
+<a name="nest_map" href="Arrays#wiki-nest_map">#</a> nest.<b>map</b>(<i>array</i>[, <i>mapType</i>])
 
 Applies the nest operator to the specified *array*, returning an associative array. Each entry in the returned associative array corresponds to a distinct key value returned by the first key function. The entry value depends on the number of registered key functions: if there is an additional key, the value is another nested associative array; otherwise, the value is the array of elements filtered from the input *array* that have the given key value.
+
+If a *mapType* is specified, the specified function is used to construct a map rather than returning a simple JavaScript object. It is recommended that you use [d3.map](#wiki-d3_map) for this purpose. For example:
+
+```js
+var yieldsByYearAndVariety = d3.nest()
+    .key(function(d) { return d.year; })
+    .key(function(d) { return d.variety; })
+    .map(yields, d3.map);
+```
+
+Using d3.map rather than an object offers conveniences (e.g., the returned map has [keys](#wiki-map_keys) and [values](#wiki-map_values) functions), and protects against unusual key names that conflict with built-in JavaScript properties, such as "__proto__".
 
 <a name="nest_entries" href="Arrays#wiki-nest_entries">#</a> nest.<b>entries</b>(<i>array</i>)
 
