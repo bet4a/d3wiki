@@ -139,6 +139,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
   <tr height="207" valign="top">
    <td>Animated wind chart<br><a href="http://prcweb.co.uk/lab/ukwind"><img src="http://prcweb.co.uk/img/ext/d3-ukwind.jpg" width="202"></a></td>
    <td>What makes us happy?<br><a href="http://prcweb.co.uk/lab/what-makes-us-happy"><img src="http://prcweb.co.uk/img/ext/what-makes-us-happy2.jpg" width="202"></a></td>
+   <td>Simple SOM Animation<br><a href="http://bl.ocks.org/e-/5244131"><img
+src="https://gist.github.com/e-/5244131/raw/2b721ed08e2361731b4d45370c9c8ddec63304e0/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
@@ -166,8 +168,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
   <tr height="146" valign="top">
     <td>Donut Multiples<br><a href="http://bl.ocks.org/3888852"><img src="https://raw.github.com/gist/3888852/thumbnail.png" width="202"></a></td>
     <td>Bar Chart with Negative Values<br><a href="http://bl.ocks.org/2368837"><img src="https://raw.github.com/gist/2368837/thumbnail.png" width="202"></a></td>
-    <td>Simple SOM Animation<br><a href="http://bl.ocks.org/e-/5244131"><img
-src="https://gist.github.com/e-/5244131/raw/2b721ed08e2361731b4d45370c9c8ddec63304e0/thumbnail.png" width="202"></a></td>
+    <td></td>
     <td></td>
   </tr>
 </table>
