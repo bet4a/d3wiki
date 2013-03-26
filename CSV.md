@@ -2,11 +2,17 @@
 
 D3 provides built-in support for parsing [comma-separated values](http://en.wikipedia.org/wiki/Comma-separated_values) and tab-separated values. These tabular formats are popular with spreadsheet programs such as Microsoft Excel. Tabular formats are often more space-efficient than JSON, which can improve loading times for large datasets.
 
-<a name="csv" href="CSV#wiki-csv">#</a> d3.<b>csv</b>(<i>url</i>, <i>callback</i>)
+<a name="csv" href="#wiki-csv">#</a> d3.<b>csv</b>(<i>url</i>[, <i>accessor</i>], <i>callback</i>)
 
-Issues an HTTP GET request for the comma-separated values (CSV) file at the specified *url*. The file contents are assumed to be [RFC4180-compliant](http://tools.ietf.org/html/rfc4180). The mime type of the request will be "text/csv". The request is processed asynchronously, such that this method returns immediately after opening the request. When the CSV data is available, the specified *callback* will be invoked with the [parsed rows](CSV#wiki-parse) as the argument. If an error occurs, the callback function will instead be invoked with null.
+Issues an HTTP GET request for the comma-separated values (CSV) file at the specified *url*. The file contents are assumed to be [RFC4180-compliant](http://tools.ietf.org/html/rfc4180). The mime type of the request will be "text/csv". The request is processed asynchronously, such that this method returns immediately after opening the request. When the CSV data is available, the specified *callback* will be invoked with the [parsed rows](CSV#wiki-parse) as the argument. If an error occurs, the callback function will instead be invoked with null. An optional <i>accessor</i> function may be specified, which is then passed to [d3.csv.parse](#wiki-parse); the <i>accessor</i> may also be specified by using the return request object’s row function. For example:
 
-<a name="parse" href="CSV#wiki-parse">#</a> d3.csv.<b>parse</b>(<i>string</i>)
+```js
+d3.csv("path/to/file.csv")
+    .row(function(d) { return {key: d.key, value: +d.value}; })
+    .get(function(error, rows) { console.log(rows); });
+```
+
+<a name="parse" href="#wiki-parse">#</a> d3.csv.<b>parse</b>(<i>string</i>[, <i>accessor</i>])
 
 Parses the specified *string*, which is the contents of a CSV file, returning an array of objects representing the parsed rows. The string is assumed to be [RFC4180-compliant](http://tools.ietf.org/html/rfc4180). Unlike the [parseRows](CSV#wiki-parseRows) method, this method requires that the first line of the CSV file contain a comma-separated list of column names; these column names become the attributes on the returned objects. For example, consider the following CSV file:
 
@@ -25,12 +31,18 @@ The resulting JavaScript array is:
 ]
 ```
 
-Note that the values themselves are always strings; they will not be automatically converted to numbers. JavaScript may coerce strings to numbers for you automatically (for example, using the + operator). Alternatively, you can convert the strings to numbers by iterating over the returned objects:
+Note that the values themselves are always strings; they will not be automatically converted to numbers. JavaScript may coerce strings to numbers for you automatically (for example, using the + operator). By specifying an <i>accessor</i> function, you can convert the strings to numbers or other specific types, such as dates:
 
 ```javascript
-rows.forEach(function(o) {
-  o.Year = parseInt(o.Year);
-  o.Length = parseFloat(o.Length);
+d3.csv("example.csv", function(d) {
+  return {
+    year: new Date(+d.Year, 0, 1), // convert "Year" column to Date
+    make: d.Make,
+    model: d.Model,
+    length: +d.length // convert "Length" column to number
+  };
+}, function(error, rows) {
+  console.log(rows);
 });
 ```
 
