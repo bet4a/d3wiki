@@ -38,15 +38,18 @@ git clone git://github.com/mbostock/d3.git
 当你本地开发时，注意有的浏览器或许强制限制读取本地文件系统之外的文件。如果你在本地使用[d3.xhr](wiki/Requests)，其中包括（d3.json et al.），你必须有一个本地的Web服务器。比如，有可以运行Python内置的服务器：
     
 python -m SimpleHTTPServer 8888 &
-如果是Python 3+
 
-    
+如果是Python 3+
+   
 python -m http.server 8888 &
 
 一旦服务器运行起来，访问 <http://localhost:8888/>.
 
 如果你使用的D3去开发一下新的虚拟化展现，D3的资源库可以立即使用，另外，如果你想扩展D3的功能，修改bug或者运行测试，你应该创建自己的[D3资源库分支](/mbostock/d3/fork_select)，同时安装[Node.js](http://nodejs.org/)。从资源库的根目录，可以安装D3的依赖库：
+
     npm install
+
 接着运行测试, 使用命令:
+
     make test
 
