@@ -26,32 +26,25 @@ D3支持所谓的主流浏览器除了IE8及以前的版本.D3测试了火狐，
 <script src="http://d3js.org/d3.v3.min.js"></script>
 ```
 
-或者, 如果你想获得包括测试在内的所有资源，如下连接：
+如果你想获得包括测试在内的所有资源，如下连接：
 
 * <https://github.com/mbostock/d3/zipball/master>
 
-Or,从命令行获取:
+从git命令行获取:
 
 ```bash
 git clone git://github.com/mbostock/d3.git
 ```
-
-When developing locally, note that your browser may enforce strict permissions for reading files out of the local file system. **If you use [d3.xhr](wiki/Requests) locally (including d3.json et al.), you must have a local web server.** For example, you can run Python's built-in server:
-
+当你本地开发时，注意有的浏览器或许强制限制读取本地文件系统之外的文件。如果你在本地使用[d3.xhr](wiki/Requests)，其中包括（d3.json et al.），你必须有一个本地的Web服务器。比如，有可以运行Python内置的服务器：
     python -m SimpleHTTPServer 8888 &
-
-or for Python 3+
+如果是Python 3+
 
     python -m http.server 8888 &
 
-Once this is running, go to <http://localhost:8888/>.
+一旦服务器运行起来，访问 <http://localhost:8888/>.
 
-The D3 repository should work out of the box if you just want to create new visualizations using D3. On the other hand, if you want to extend D3 with new features, fix bugs, or run tests, you should [fork the D3 repository](/mbostock/d3/fork_select), and install [Node.js](http://nodejs.org/). From the root directory of this repository, you can then install D3's dependencies:
-
+如果你使用的D3去开发一下新的虚拟化展现，D3的资源库可以立即使用，另外，如果你想扩展D3的功能，修改bug或者运行测试，你应该创建自己的[D3资源库分支](/mbostock/d3/fork_select)，同时安装[Node.js](http://nodejs.org/)。从资源库的根目录，可以安装D3的依赖库：
     npm install
-
-To run the tests, use:
-
+接着运行测试, 使用命令:
     make test
-
 
