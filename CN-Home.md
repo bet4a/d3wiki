@@ -13,7 +13,7 @@ D3js是基于数据操作DOM的JavaScript库。D3帮助你使用HTML，SVG和CSS
 * [日本語](/mbostock/d3/wiki/JP-Home)
 
 ## 浏览器支持
-D3支持所谓的主流浏览器除了IE8及以前的版本.D3测试了火狐，Chrome、Safari。Opera和IE9.D3的大部分组件可以在旧的浏览器运行，D3核心库的最低运行要求：支持JavaScript和W3C DOM API.对于IE8，建议使用兼容性库Aight.D3使用的是Selectors API的第一级标准，但你考虑兼容性可以预加载Sizzle库。你需要使用一个主流的浏览器以便可以支持SVG和CSS3的转场特效。D3不是一个兼容的层，所以如果你的浏览器不支持这些标准，那你很不幸运，很遗憾。
+D3支持所谓的主流浏览器除了IE8及以前的版本.D3测试了火狐，Chrome、Safari。Opera和IE9.D3的大部分组件可以在旧的浏览器运行，D3核心库的最低运行要求：支持JavaScript和[W3C DOM](http://www.w3.org/DOM/) API.对于IE8，建议使用兼容性库[Aight](https://github.com/shawnbot/aight)库.D3采用的是Selectors API的第一级标准，你要是考虑兼容性可以预加载[Sizzle](http://sizzlejs.com/)库。你得使用主流的浏览器以便可以支持SVG和CSS3的转场特效。D3不是一个兼容的层，所以如果你的浏览器不支持这些标准，那你很不幸运，很遗憾。
 
 ## 安装
 
