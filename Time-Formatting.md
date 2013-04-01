@@ -23,7 +23,7 @@ Constructs a new local time formatter using the given *specifier*. The specifier
 * `%U` - week number of the year (Sunday as the first day of the week) as a decimal number [00,53].
 * `%w` - weekday as a decimal number [0(Sunday),6].
 * `%W` - week number of the year (Monday as the first day of the week) as a decimal number [00,53].
-* `%x` - date, as "%m/%d/%y".
+* `%x` - date, as "%m/%d/%Y".
 * `%X` - time, as "%H:%M:%S".
 * `%y` - year without century as a decimal number [00,99].
 * `%Y` - year with century as a decimal number.
