@@ -26,7 +26,7 @@ D3支持所谓的主流浏览器除了IE8及以前的版本.D3测试了火狐，
 <script src="http://d3js.org/d3.v3.min.js"></script>
 ```
 
-或者, 如果你想获得所有的代码和资源包括测试：
+或者, 如果你想获得包括测试在内的所有资源，如下连接：
 
 * <https://github.com/mbostock/d3/zipball/master>
 
@@ -53,6 +53,5 @@ The D3 repository should work out of the box if you just want to create new visu
 To run the tests, use:
 
     make test
-
 
 
