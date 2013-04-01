@@ -36,10 +36,12 @@ D3支持所谓的主流浏览器除了IE8及以前的版本.D3测试了火狐，
 git clone git://github.com/mbostock/d3.git
 ```
 当你本地开发时，注意有的浏览器或许强制限制读取本地文件系统之外的文件。如果你在本地使用[d3.xhr](wiki/Requests)，其中包括（d3.json et al.），你必须有一个本地的Web服务器。比如，有可以运行Python内置的服务器：
-    python -m SimpleHTTPServer 8888 &
+    
+python -m SimpleHTTPServer 8888 &
 如果是Python 3+
 
-    python -m http.server 8888 &
+    
+python -m http.server 8888 &
 
 一旦服务器运行起来，访问 <http://localhost:8888/>.
 
