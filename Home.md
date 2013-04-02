@@ -13,6 +13,7 @@
 * [d3.js on Stack Overflow](http://stackoverflow.com/questions/tagged/d3.js)
 * [d3-js Google Group](http://groups.google.com/group/d3-js)
 * [日本語](/mbostock/d3/wiki/JP-Home)
+* [中文]{/mbostock/d3/wiki/CN-Home}
 
 ## Browser Support
 
