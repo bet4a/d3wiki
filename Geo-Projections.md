@@ -47,74 +47,83 @@ Several common projections are included with default build of D3; these are high
   </tr>
   <tr height="146" valign="top">
     <td>d3.geo.gallStereographic<br><a href="http://bl.ocks.org/5234763"><img src="https://raw.github.com/gist/5234763/thumbnail.png" width="202"></a></td>
-    <td class="gi">d3.geo.gnomonic *<br><a href="http://bl.ocks.org/3757349"><img src="https://raw.github.com/gist/3757349/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.gringorten<br><a href="http://bl.ocks.org/4362031"><img src="https://raw.github.com/gist/4362031/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.guyou<br><a href="http://bl.ocks.org/3763867"><img src="https://raw.github.com/gist/3763867/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.ginzburg4<br><a href="http://bl.ocks.org/5288565"><img src="https://raw.github.com/gist/5288565/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.ginzburg5<br><a href="http://bl.ocks.org/5288571"><img src="https://raw.github.com/gist/5288571/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.ginzburg6<br><a href="http://bl.ocks.org/5288577"><img src="https://raw.github.com/gist/5288577/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
+    <td>d3.geo.ginzburg8<br><a href="http://bl.ocks.org/5288583"><img src="https://raw.github.com/gist/5288583/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.ginzburg9<br><a href="http://bl.ocks.org/5288590"><img src="https://raw.github.com/gist/5288590/thumbnail.png" width="202"></a></td>
+    <td class="gi">d3.geo.gnomonic *<br><a href="http://bl.ocks.org/3757349"><img src="https://raw.github.com/gist/3757349/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.gringorten<br><a href="http://bl.ocks.org/4362031"><img src="https://raw.github.com/gist/4362031/thumbnail.png" width="202"></a></td>
+  </tr>
+  <tr height="146" valign="top">
+    <td>d3.geo.guyou<br><a href="http://bl.ocks.org/3763867"><img src="https://raw.github.com/gist/3763867/thumbnail.png" width="202"></a></td>
     <td>d3.geo.hammer<br><a href="http://bl.ocks.org/3712397"><img src="https://raw.github.com/gist/3712397/thumbnail.png" width="202"></a></td>
     <td>d3.geo.hammerRetroazimuthal<br><a href="http://bl.ocks.org/4459130"><img src="https://raw.github.com/gist/4459130/thumbnail.png" width="202"></a></td>
     <td>d3.geo.healpix<br><a href="http://bl.ocks.org/4463237"><img src="https://raw.github.com/gist/4463237/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.hill<br><a href="http://bl.ocks.org/4479513"><img src="https://raw.github.com/gist/4479513/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
+    <td>d3.geo.hill<br><a href="http://bl.ocks.org/4479513"><img src="https://raw.github.com/gist/4479513/thumbnail.png" width="202"></a></td>
     <td>d3.geo.homolosine<br><a href="http://bl.ocks.org/3734330"><img src="https://raw.github.com/gist/3734330/thumbnail.png" width="202"></a></td>
     <td>d3.geo.kavrayskiy7<br><a href="http://bl.ocks.org/3710082"><img src="https://raw.github.com/gist/3710082/thumbnail.png" width="202"></a></td>
     <td>d3.geo.lagrange<br><a href="http://bl.ocks.org/3797591"><img src="https://raw.github.com/gist/3797591/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.larrivee<br><a href="http://bl.ocks.org/3719042"><img src="https://raw.github.com/gist/3719042/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
+    <td>d3.geo.larrivee<br><a href="http://bl.ocks.org/3719042"><img src="https://raw.github.com/gist/3719042/thumbnail.png" width="202"></a></td>
     <td>d3.geo.laskowski<br><a href="http://bl.ocks.org/4489342"><img src="https://raw.github.com/gist/4489342/thumbnail.png" width="202"></a></td>
     <td>d3.geo.littrow<br><a href="http://bl.ocks.org/4459071"><img src="https://raw.github.com/gist/4459071/thumbnail.png" width="202"></a></td>
     <td>d3.geo.loximuthal<br><a href="http://bl.ocks.org/3867220"><img src="https://raw.github.com/gist/3867220/thumbnail.png" width="202"></a></td>
-    <td class="gi">d3.geo.mercator *<br><a href="http://bl.ocks.org/3757132"><img src="https://raw.github.com/gist/3757132/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
+    <td class="gi">d3.geo.mercator *<br><a href="http://bl.ocks.org/3757132"><img src="https://raw.github.com/gist/3757132/thumbnail.png" width="202"></a></td>
     <td>d3.geo.miller<br><a href="http://bl.ocks.org/3734333"><img src="https://raw.github.com/gist/3734333/thumbnail.png" width="202"></a></td>
     <td>d3.geo.modifiedStereographic<br><a href="http://www.jasondavies.com/maps/modified-stereographic/"><img src="http://www.jasondavies.com/maps/modified-stereographic/gs50/thumb.d3.png" width="202"></a></td>
     <td>d3.geo.mollweide<br><a href="http://bl.ocks.org/3734336"><img src="https://raw.github.com/gist/3734336/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.mtFlatPolarParabolic<br><a href="http://bl.ocks.org/4465130"><img src="https://raw.github.com/gist/4465130/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
+    <td>d3.geo.mtFlatPolarParabolic<br><a href="http://bl.ocks.org/4465130"><img src="https://raw.github.com/gist/4465130/thumbnail.png" width="202"></a></td>
     <td>d3.geo.mtFlatPolarQuartic<br><a href="http://bl.ocks.org/4465137"><img src="https://raw.github.com/gist/4465137/thumbnail.png" width="202"></a></td>
     <td>d3.geo.mtFlatPolarSinusoidal<br><a href="http://bl.ocks.org/4465140"><img src="https://raw.github.com/gist/4465140/thumbnail.png" width="202"></a></td>
     <td>d3.geo.naturalEarth<br><a href="http://bl.ocks.org/4479477"><img src="https://raw.github.com/gist/4479477/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.nellHammer<br><a href="http://bl.ocks.org/3734342"><img src="https://raw.github.com/gist/3734342/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
+    <td>d3.geo.nellHammer<br><a href="http://bl.ocks.org/3734342"><img src="https://raw.github.com/gist/3734342/thumbnail.png" width="202"></a></td>
     <td class="gi">d3.geo.orthographic *<br><a href="http://bl.ocks.org/3757125"><img src="https://raw.github.com/gist/3757125/thumbnail.png" width="202"></a></td>
     <td>d3.geo.peirceQuincuncial<br><a href="http://bl.ocks.org/4310087"><img src="https://raw.github.com/gist/4310087/thumbnail.png" width="202"></a></td>
     <td>d3.geo.polyconic<br><a href="http://bl.ocks.org/3734343"><img src="https://raw.github.com/gist/3734343/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.polyhedron.butterfly<br><a href="http://bl.ocks.org/4458680"><img src="https://raw.github.com/gist/4458680/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
+    <td>d3.geo.polyhedron.butterfly<br><a href="http://bl.ocks.org/4458680"><img src="https://raw.github.com/gist/4458680/thumbnail.png" width="202"></a></td>
     <td>d3.geo.polyhedron.waterman<br><a href="http://bl.ocks.org/4458497"><img src="https://raw.github.com/gist/4458497/thumbnail.png" width="202"></a></td>
     <td>d3.geo.rectangularPolyconic<br><a href="http://bl.ocks.org/5230202"><img src="https://raw.github.com/gist/5230202/thumbnail.png" width="202"></a></td>
     <td>d3.geo.robinson<br><a href="http://bl.ocks.org/3710566"><img src="https://raw.github.com/gist/3710566/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.satellite<br><a href="http://bl.ocks.org/3790444"><img src="https://raw.github.com/gist/3790444/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
+    <td>d3.geo.satellite<br><a href="http://bl.ocks.org/3790444"><img src="https://raw.github.com/gist/3790444/thumbnail.png" width="202"></a></td>
     <td>d3.geo.sinuMollweide<br><a href="http://bl.ocks.org/4319903"><img src="https://raw.github.com/gist/4319903/thumbnail.png" width="202"></a></td>
     <td>d3.geo.sinusoidal<br><a href="http://bl.ocks.org/3712399"><img src="https://raw.github.com/gist/3712399/thumbnail.png" width="202"></a></td>
     <td class="gi">d3.geo.stereographic *<br><a href="http://bl.ocks.org/3757137"><img src="https://raw.github.com/gist/3757137/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.times<br><a href="http://bl.ocks.org/5230564"><img src="https://raw.github.com/gist/5230564/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
+    <td>d3.geo.times<br><a href="http://bl.ocks.org/5230564"><img src="https://raw.github.com/gist/5230564/thumbnail.png" width="202"></a></td>
     <td>d3.geo.twoPointAzimuthal<br><a href="http://www.jasondavies.com/maps/two-point-azimuthal/"><img src="http://www.jasondavies.com/maps/two-point-azimuthal/thumb.d3.png" width="202"></a></td>
     <td>d3.geo.twoPointEquidistant<br><a href="http://www.jasondavies.com/maps/two-point-equidistant/"><img src="http://www.jasondavies.com/maps/two-point-equidistant/thumb.d3.png" width="202"></a></td>
     <td class="gi">d3.geo.transverseMercator *<br><a href="http://bl.ocks.org/5126418"><img src="https://raw.github.com/gist/5126418/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.vanDerGrinten<br><a href="http://bl.ocks.org/3796831"><img src="https://raw.github.com/gist/3796831/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
+    <td>d3.geo.vanDerGrinten<br><a href="http://bl.ocks.org/3796831"><img src="https://raw.github.com/gist/3796831/thumbnail.png" width="202"></a></td>
     <td>d3.geo.vanDerGrinten2<br><a href="http://bl.ocks.org/5230571"><img src="https://raw.github.com/gist/5230571/thumbnail.png" width="202"></a></td>
     <td>d3.geo.vanDerGrinten3<br><a href="http://bl.ocks.org/5230580"><img src="https://raw.github.com/gist/5230580/thumbnail.png" width="202"></a></td>
     <td>d3.geo.vanDerGrinten4<br><a href="http://bl.ocks.org/4489365"><img src="https://raw.github.com/gist/4489365/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.wagner4<br><a href="http://bl.ocks.org/4487674"><img src="https://raw.github.com/gist/4487674/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
+    <td>d3.geo.wagner4<br><a href="http://bl.ocks.org/4487674"><img src="https://raw.github.com/gist/4487674/thumbnail.png" width="202"></a></td>
     <td>d3.geo.wagner6<br><a href="http://bl.ocks.org/3710148"><img src="https://raw.github.com/gist/3710148/thumbnail.png" width="202"></a></td>
     <td>d3.geo.wagner7<br><a href="http://bl.ocks.org/4465109"><img src="https://raw.github.com/gist/4465109/thumbnail.png" width="202"></a></td>
     <td>d3.geo.wiechel<br><a href="http://bl.ocks.org/4463155"><img src="https://raw.github.com/gist/4463155/thumbnail.png" width="202"></a></td>
+  </tr>
+  <tr height="146" valign="top">
     <td>d3.geo.winkel3<br><a href="http://bl.ocks.org/3682676"><img src="https://raw.github.com/gist/3682676/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
