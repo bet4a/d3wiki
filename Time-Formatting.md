@@ -18,6 +18,7 @@ Constructs a new local time formatter using the given *specifier*. The specifier
 * `%j` - day of the year as a decimal number [001,366].
 * `%m` - month as a decimal number [01,12].
 * `%M` - minute as a decimal number [00,59].
+* `%L` - milliseconds as a decimal number [000, 999].
 * `%p` - either AM or PM.
 * `%S` - second as a decimal number [00,61].
 * `%U` - week number of the year (Sunday as the first day of the week) as a decimal number [00,53].
