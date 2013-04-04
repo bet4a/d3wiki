@@ -213,6 +213,7 @@ src="https://gist.github.com/e-/5244131/raw/2b721ed08e2361731b4d45370c9c8ddec633
 * [Social web use in 2009](http://n79.org/infographics/asg1/) - Nikhil Bobb
 * [Visualizing opinons around the world (zoomable world map and interactive pie chart)](http://theartofasking.com/question/wjucdg6k) - Siamac Fazli, Bastian Venthur
 * [Running Away Balloons - simple game ](http://astekfoto.blogspot.be/2012/11/running-away-ballons.html) - Astek
+* [A Photographer's infographic](https://googledrive.com/host/0ByMecxlAS3YxQ3hoU21tdUNnc1E/photos.html) - Najeem Muhammed
 * [Visualizing word density in the Bible](http://stanford.edu/~garylee/bibly) - Gary Lee
 * [Election 2012 Social Dashboard (interactive Twitter visualization)] (http://events.current.com/social_dashboard) - Current TV
 * [Visualizing document similarity over time](http://www.davidmasad.com/sandbox/FirmClusters.html)
