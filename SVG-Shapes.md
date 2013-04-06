@@ -68,7 +68,7 @@ var line = d3.svg.line()
 Then later on, you can use this function to set the *d* attribute:
 
 ```javascript
-g.append("svg:path")
+g.append("path")
     .attr("d", line);
 ```
 
@@ -85,7 +85,7 @@ Constructs a new line generator with the default *x*- and *y*-accessor functions
 By changing the interpolation, you can also generate splines and step functions. Also, don't be afraid to tack on additional path commands at the end. For example, if you want to generate a closed path, append a closepath (Z) command:
 
 ```javascript
-g.append("svg:path")
+g.append("path")
     .attr("d", function(d) { return line(d) + "Z"; });
 ```
 
@@ -158,7 +158,7 @@ Note that the tension must be specified as a constant, rather than a function, a
 ```javascript
 svg.selectAll("path")
     .data([0, 0.2, 0.4, 0.6, 0.8, 1])
-  .enter().append("svg:path")
+  .enter().append("path")
     .attr("d", function(d) { return line.tension(d)(data); });
 ```
 
@@ -404,7 +404,7 @@ The *endAngle*-accessor is invoked in the same manner as other value functions i
 Computes the centroid of the arc that would be generated from the specified input *arguments*; typically, the arguments are the current datum (d), and optionally the current index (i). The centroid is defined as the midpoint in polar coordinates of the inner and outer radius, and the start and end angle. This provides a convenient location for arc labels. For example:
 
 ```javascript
-arcs.append("svg:text")
+arcs.append("text")
     .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
     .attr("dy", ".35em")
     .attr("text-anchor", "middle")
@@ -424,7 +424,7 @@ Note that the symbol does not include accessors for *x* and *y*. Instead, you ca
 ```javascript
 vis.selectAll("path")
     .data(data)
-  .enter().append("svg:path")
+  .enter().append("path")
     .attr("transform", function(d) { return "translate(" + x(d.x) + "," + y(d.y) + ")"; })
     .attr("d", d3.svg.symbol());
 ```
