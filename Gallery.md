@@ -205,7 +205,6 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 </table>
 
 ## Examples
-* [Visualization of Contribution in Wikipedia](http://wikiranking.org) - H. Jung
 * [Popularity of Reddits with tooltips + zooming.](http://tejens.com/reddits) - Tejen Shrestha
 * [Commuting Scales, Lausanne Campus commuters] (http://choros.ch/cs/) - Boris Beaude and Luc Guillemot
 * [Visualization of the Flask Source Code] (http://www.andreas-dewes.de/code_is_beautiful) - Andreas Dewes
