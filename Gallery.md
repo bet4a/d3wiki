@@ -144,6 +144,12 @@ src="https://gist.github.com/e-/5244131/raw/2b721ed08e2361731b4d45370c9c8ddec633
    <td>A mower demo<br><a href="http://htmlpreview.github.io/?https://github.com/BertrandDechoux/d3js-sandbox/blob/master/d3js-mower-demo.html"><img
 src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.png" width="202"></a></td>
   </tr>
+  <tr height="207" valign="top">
+   <td>Map and context with brushing<br><a href="rbspd3.herokuapp.com"><img src="https://raw.github.com/sdelarquier/rbspd3/master/snapshot.png" width="202"></a></td>
+   <td></td>
+   <td></td>
+   <td></td>
+  </tr>
 </table>
 
 ## Basic Charts
