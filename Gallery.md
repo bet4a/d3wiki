@@ -146,7 +146,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
   </tr>
   <tr height="207" valign="top">
    <td>Map and context with brushing<br><a href="http://rbspd3.herokuapp.com"><img src="https://raw.github.com/sdelarquier/rbspd3/master/snapshot.png" width="202"></a></td>
-   <td></td>
+   <td>Binary tree with transitions<br><a href="http://prcweb.co.uk/lab/d3-tree"><img src="http://prcweb.co.uk/img/ext/tree.jpg" width="202"></a></td>
    <td></td>
    <td></td>
   </tr>
