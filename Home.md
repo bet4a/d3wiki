@@ -30,7 +30,7 @@ Download the latest version here:
 Or, to link directly to the latest release, copy this snippet:
 
 ```html
-<script charset="utf-8" src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 ```
 
 Or, if you want the full repository including tests:
