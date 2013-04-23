@@ -27,5 +27,5 @@ function(d) { return d[0]; }
 If *y* is specified, sets the y-coordinate accessor. If *y* is not specified, returns the current y-coordinate accessor, which defaults to:
 
 ```js
-function(d) { return d[0]; }
+function(d) { return d[1]; }
 ```
