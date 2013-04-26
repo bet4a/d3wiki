@@ -8,6 +8,8 @@ Please feel free to add links to your work!
 * [Three Little Circles](http://mbostock.github.com/d3/tutorial/circle.html)
 * [Thinking with Joins](http://bost.ocks.org/mike/join/)
 * [General Update Pattern, Parts I](http://bl.ocks.org/3808218), [II](http://bl.ocks.org/3808221) & [III](http://bl.ocks.org/3808234)
+* [How Selections Work](http://bost.ocks.org/mike/selection/)
+* [Working with Transitions](http://bost.ocks.org/mike/transition/)
 * [Nested Selections](http://bost.ocks.org/mike/nest/)
 * [Object Constancy](http://bost.ocks.org/mike/constancy/)
 * [A Bar Chart, Part 1](http://mbostock.github.com/d3/tutorial/bar-1.html)
