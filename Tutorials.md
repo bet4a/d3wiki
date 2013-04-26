@@ -7,11 +7,11 @@ Please feel free to add links to your work!
 * [Introduction](http://mbostock.github.com/d3/)
 * [Three Little Circles](http://mbostock.github.com/d3/tutorial/circle.html)
 * [Thinking with Joins](http://bost.ocks.org/mike/join/)
-* [General Update Pattern, Parts I](http://bl.ocks.org/3808218), [II](http://bl.ocks.org/3808221) & [III](http://bl.ocks.org/3808234)
 * [How Selections Work](http://bost.ocks.org/mike/selection/)
-* [Working with Transitions](http://bost.ocks.org/mike/transition/)
+* [General Update Pattern, Parts I](http://bl.ocks.org/3808218), [II](http://bl.ocks.org/3808221) & [III](http://bl.ocks.org/3808234)
 * [Nested Selections](http://bost.ocks.org/mike/nest/)
 * [Object Constancy](http://bost.ocks.org/mike/constancy/)
+* [Working with Transitions](http://bost.ocks.org/mike/transition/)
 * [D3 Tutorials](http://alignedleft.com/tutorials/d3/) - Scott Murray
 * [Try D3 Now](http://christopheviau.com/d3_tutorial/) - Christophe Viau
 * [D3 for Mere Mortals](http://www.recursion.org/d3-for-mere-mortals/) - Luke Francl
