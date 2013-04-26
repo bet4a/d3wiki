@@ -333,6 +333,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 * [Expected university tuition growth 2030] (http://rumachine.com/tuition/expectedgrowth.html) - Sean Summers
 * [Standings Slopegraph - Slopegraph of weekly NHL standings for 2012-13 season](http://standings.laserdeathstehr.com/), ([Github](https://github.com/nstehr/NHL-Slopegraph)) - Nathan Stehr
 * [Amsterdam Economic Performance 1995-2011] (http://www.iconomical.com/customers/Amsterdam-EZ/release/) - Iconomical
+* [Examination Results in Karnataka, India](http://sslc.klp.org.in) | Dashboard with maps - [Sajjad Anwar](http://twitter.com/geohacker)
 
 ### Collections
 
