@@ -148,7 +148,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
    <td>Map and context with brushing<br><a href="http://rbspd3.herokuapp.com"><img src="https://raw.github.com/sdelarquier/rbspd3/master/snapshot.png" width="202"></a></td>
    <td>Binary tree with transitions<br><a href="http://prcweb.co.uk/lab/d3-tree"><img src="http://prcweb.co.uk/img/ext/tree.jpg" width="202"></a></td>
    <td>d3+ColorBrewer<br><a href="http://adilapapaya.com/code/colors/d3colorbrewer.html"><img src="http://adilapapaya.com/code/colors/d3colorbrewer.png" width="202"></a></td>
-   <td></td>
+    <td>D3 JezzBall<br><a href="http://bl.ocks.org/ericcitaire/5408146"><img src="https://raw.github.com/gist/5408146/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
