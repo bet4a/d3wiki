@@ -747,6 +747,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 #### Online Editors
 
 * [Bar chart code generator and online editor](http://www.d3-generator.com/)
+* [D3 bar chart online editor-Chinese](http://www.bangongyun.com/chart)
 * [Live coding based on Bret Victor's Inventing on Principle talk](http://livecoding.gabrielflor.it)
 * [Tributary](http://enjalot.com/tributary/2165875/sinwaves.js)
 * [D3.js playground](http://phrogz.net/JS/d3-playground/#BlankDefault)
