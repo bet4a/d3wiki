@@ -394,7 +394,7 @@ Returns the first non-null element in the current selection. If the selection is
 
 <a name="d3_selection" href="#wiki-d3_selection">#</a> d3.<b>selection</b>()
 
-Returns the root selection, equivalent to `d3.select(document)`. This function can also be used to check if an object is a selection: `o instanceof d3.selection`. You can also add new methods to the selection prototype. For example, to add a convenience method for setting the "checked" property of checkboxes, you might say:
+Returns the root selection, equivalent to `d3.select(document.documentElement)`. This function can also be used to check if an object is a selection: `o instanceof d3.selection`. You can also add new methods to the selection prototype. For example, to add a convenience method for setting the "checked" property of checkboxes, you might say:
 
 ```js
 d3.selection.prototype.checked = function(value) {
