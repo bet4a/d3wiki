@@ -33,6 +33,8 @@ Returns the path data string for the given *feature*, which may be any GeoJSON f
 
 The type "Sphere" is also supported, which is useful for rendering the outline of the globe. A sphere has no coordinates. An optional *index* may be specified, which is passed along to the [pointRadius](Geo-Paths#wiki-pointRadius) accessor; the *index* is passed automatically when the path generator is invoked by [selection.attr](Selections#wiki-attr).
 
+**Important:** the *inside* of a polygon is all points that the polygon winds around in a clockwise order. If your GeoJSON input has polygons in the wrong winding order, you must reverse them, say via [ST_ForceRHR](http://www.postgis.org/docs/ST_ForceRHR.html); you can also convert your GeoJSON to [TopoJSON](https://github.com/mbostock/topojson), and this will happen automatically.
+
 To display multiple features, you can place them in a single feature collection and a single path element:
 
 ```javascript
