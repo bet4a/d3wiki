@@ -335,6 +335,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 * [Amsterdam Economic Performance 1995-2011] (http://www.iconomical.com/customers/Amsterdam-EZ/release/) - Iconomical
 * [Examination Results in Karnataka, India](http://sslc.klp.org.in) | Dashboard with maps - [Sajjad Anwar](http://twitter.com/geohacker)
 * [2002-2011 International Phone Call Traffic bar chart with time series](http://fcc.github.io/calltraffic/trafficbyyear.html)
+* [Influence Map: Women &amp; Leadership](http://traackr.com/women-leadership/)
 
 ### Collections
 
