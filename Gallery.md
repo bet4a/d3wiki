@@ -151,7 +151,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
     <td>D3 JezzBall<br><a href="http://bl.ocks.org/ericcitaire/5408146"><img src="https://raw.github.com/gist/5408146/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-   <td>Tetris<br><a href="http://d3tetris.herokuapp.com/"><img src="http://imageshack.us/a/img841/8619/tetrisn.png" height="171px" style="margin-left:25px"></a></td>
+   <td>Tetris<br><a href="http://d3tetris.herokuapp.com/"><img src="http://imageshack.us/a/img841/8619/tetrisn.png" width="200px"></a></td>
   </tr>
 </table>
 
