@@ -387,7 +387,7 @@ The *startAngle*-accessor is invoked in the same manner as other value functions
 
 <a name="arc_endAngle" href="SVG-Shapes#wiki-arc_endAngle">#</a> arc.<b>endAngle</b>([<i>angle</i>])
 
-If *angle* is specified, sets the *endAngle*-accessor to the specified function or constant. If *angle* is not specified, returns the current *startAngle*-accessor. Angles are specified in [radians](http://en.wikipedia.org/wiki/Radian), even though SVG typically uses degrees. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+If *angle* is specified, sets the *endAngle*-accessor to the specified function or constant. If *angle* is not specified, returns the current *endAngle*-accessor. Angles are specified in [radians](http://en.wikipedia.org/wiki/Radian), even though SVG typically uses degrees. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
 
 ```javascript
 function endAngle(d) {
