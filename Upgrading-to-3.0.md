@@ -7,7 +7,7 @@ D3 3.0, released December 2012, is the first major release since 2.0 was release
 If you’re using the official hosted copy of D3, simply **replace d3.v2.min.js with d3.v3.min.js** in your script tag, like this:
 
 ```html
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 ```
 
 (There’s also a [d3.v3.js](http://d3js.org/d3.v3.js) for development.) Also, check that you have the DOCTYPE and charset set correctly on your HTML page:
