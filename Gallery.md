@@ -245,7 +245,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 * [UN Global Pulse 2010 Visualization](http://www.visualizing.org/visualizations/un-global-pulse-visualization) - Eduardo Graells & Ruth Garcia
 * [U.S. Population Pyramid](http://vis.stanford.edu/jheer/d3/pyramid/shift.html) - Jeff Heer
 * WindHistory.com: [maps](http://windhistory.com/map.html#9.00/37.8931/-121.7366) and [charts](http://windhistory.com/station.html?KSAF) - Nelson Minar
-* [Students' seating habits](http://www.skyrill.com/seatinghabits/) - Skyrill.com
+* [Students' seating habits](http://www.skyrill.com/seatinghabits/) - Ali Almossawi
 * [World Wide Women's Rights](http://www.wimdows.nl/datavis/lib/D3/ciripleth-area-exp.html) - Wimdows.nl
 * [Old Visualizations Made New Again](http://vallandingham.me/vis/) - Jim Vallandingham
 * [Scatterize](http://webtasks.keck.waisman.wisc.edu/scatterize/d/Acdck0qHJo#h=2&m=OLS&x=1&y=6) - Nate Vack
@@ -340,6 +340,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 * [Examination Results in Karnataka, India](http://sslc.klp.org.in) | Dashboard with maps - [Sajjad Anwar](http://twitter.com/geohacker)
 * [2002-2011 International Phone Call Traffic bar chart with time series](http://fcc.github.io/calltraffic/trafficbyyear.html)
 * [Influence Map: Women &amp; Leadership](http://traackr.com/women-leadership/) - Dane Lyons
+* [The State of Do Not Track](https://dnt-dashboard.mozilla.org/) - Mozilla
 
 ### Collections
 
