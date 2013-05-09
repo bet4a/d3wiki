@@ -39,7 +39,7 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
     <td>Scatterplot Matrix<br><a href="http://mbostock.github.com/d3/talk/20111116/iris-splom.html"><img src="http://d3js.org/ex/iris-splom.png" width="202"></a></td>
     <td>Zoomable Pack Layout<br><a href="http://mbostock.github.com/d3/talk/20111116/pack-hierarchy.html"><img src="http://d3js.org/ex/pack-hierarchy.png" width="202"></a></td>
     <td>Hierarchical Bars<br><a href="http://mbostock.github.com/d3/talk/20111116/bar-hierarchy.html"><img src="http://d3js.org/ex/bar-hierarchy.png" width="202"></a></td>
-    <td>Epicyclical Gears<br><a href="http://mbostock.github.com/d3/talk/20111116/gears.html"><img src="http://d3js.org/ex/gears.png" width="202"></a></td>
+    <td>Epicyclical Gears<br><a href="http://bl.ocks.org/mbostock/1353700"><img src="http://d3js.org/ex/gears.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
     <td>Collision Detection<br><a href="http://mbostock.github.com/d3/talk/20111018/collision.html"><img src="http://d3js.org/ex/force-collision.png" width="202"></a></td>
