@@ -132,8 +132,8 @@ Welcome to the **D3 gallery**. Feel free to add links to your work! More example
   </tr>
   <tr height="207" valign="top">
     <td>Directed Graph Editor<br><a href="http://bl.ocks.org/5001347"><img src="https://raw.github.com/gist/5001347/thumbnail.png" width="202"></a></td>
-    <td>Weeknd3<br><a href="http://weeknd3.herokuapp.com/"><img src="http://puu.sh/2bWtl" width="202" height="146"></a></td>
-    <td>Explosions<br><a href="http://gruiz17.github.com/explosions/"><img src="http://puu.sh/2fO3P" width="202" height="146"></a></td>
+    <td>Weeknd3<br><a href="http://ggruiz.me/weeknd3/"><img src="http://puu.sh/2bWtl" width="202" height="146"></a></td>
+    <td>Explosions<br><a href="http://ggruiz.me/explosions/"><img src="http://puu.sh/2fO3P" width="202" height="146"></a></td>
     <td>CodeFlowers<br><a href="http://redotheweb.com/CodeFlower/"><img src="http://redotheweb.com/images/codeflower/codeflower.png" width="202" height="146"></a></td>
   </tr>
   <tr height="207" valign="top">
@@ -634,8 +634,8 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Line Tension](http://bl.ocks.org/1016220)
 * [Segmented Lines and Slope Coloring](http://bl.ocks.org/1117287)
 * [Raindrops](http://bl.ocks.org/849853)
-* [Weeknd3](http://weeknd3.herokuapp.com/)
-* [Explosions](http://gruiz17.github.com/explosions/)
+* [Weeknd3](http://ggruiz.me/weeknd3/)
+* [Explosions](http://ggruiz.me/explosions/)
 * [Linear Gradients](http://bl.ocks.org/1086421)
 * [Force Directed States of America](http://bl.ocks.org/1073373)
 * [Rounded Rectangles](http://bl.ocks.org/1123639)
