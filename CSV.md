@@ -16,7 +16,7 @@ See the [unemployment choropleth](http://bl.ocks.org/mbostock/4060606) for an ex
 
 <a name="parse" href="#wiki-parse">#</a> d3.csv.<b>parse</b>(<i>string</i>[, <i>accessor</i>])
 
-Parses the specified *string*, which is the contents of a CSV file, returning an array of objects representing the parsed rows. The string is assumed to be [RFC4180-compliant](http://tools.ietf.org/html/rfc4180). Unlike the [parseRows](CSV#wiki-parseRows) method, this method requires that the first line of the CSV file contain a comma-separated list of column names; these column names become the attributes on the returned objects. For example, consider the following CSV file:
+Parses the specified *string*, which is the contents of a CSV file, returning an array of objects representing the parsed rows. The string is assumed to be [RFC4180-compliant](http://tools.ietf.org/html/rfc4180). Unlike the [parseRows](CSV#wiki-parseRows) method, this method requires that the first line of the CSV file contains a comma-separated list of column names; these column names become the attributes on the returned objects. For example, consider the following CSV file:
 
 ```
 Year,Make,Model,Length
