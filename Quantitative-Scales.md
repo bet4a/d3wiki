@@ -310,7 +310,7 @@ Given a value *x* in the input domain, returns the corresponding value in the ou
 
 <a name="threshold_domain" href="#wiki-threshold_domain">#</a> threshold.<b>domain</b>([<i>domain</i>])
 
-If *values* is specified, sets the scale's input domain to the specified array of values. The values must be in sorted ascending order, or the behavior of the scale is undefined. The values are typically numbers, but any naturally ordered values (such as strings) will work. Thus, a threshold scale can be used to encode any type that is ordered. If the number of values in the scale's range is N + 1, the number of values in the scale's domain must be N. If there are fewer than N elements in the domain, the additional values in the range are ignored. If there are more than N elements in the domain, the scale may return undefined for some inputs. If *values* is not specified, returns the scale's current input domain.
+If *domain* is specified, sets the scale's input domain to the specified array of values. The values must be in sorted ascending order, or the behavior of the scale is undefined. The values are typically numbers, but any naturally ordered values (such as strings) will work. Thus, a threshold scale can be used to encode any type that is ordered. If the number of values in the scale's range is N + 1, the number of values in the scale's domain must be N. If there are fewer than N elements in the domain, the additional values in the range are ignored. If there are more than N elements in the domain, the scale may return undefined for some inputs. If *domain* is not specified, returns the scale's current input domain.
 
 <a name="threshold_range" href="#wiki-threshold_range">#</a> threshold.<b>range</b>([<i>values</i>])
 
