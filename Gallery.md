@@ -752,7 +752,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [SHEETSEE.JS: Fill up Websites with Stuff from Google Spreasheet](http://jllord.github.com/sheetsee.js/) -Jessica Lord
 * [Web reporting with D3js and R using RStudio Shiny](http://timelyportfolio.blogspot.com/2012/12/d3-shiny-and-r-reporting-performance.html) - klr @timelyportfolio
 * [Dex the Data Explorer](http://dexvis.com) - Patrick Martin
-
+* [d3.js partition chart serving data from parse.com](http://ramblings.mcpher.com/Home/excelquirks/parse/d3parse) - Bruce McPherson
 #### Online Editors
 
 * [Bar chart code generator and online editor](http://www.d3-generator.com/)
