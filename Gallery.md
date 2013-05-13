@@ -157,7 +157,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
    <td></td>
   </tr>
  <tr height="207" valign="top">
-   <td>Partition chart + parse.com<br><a href="http://xliberation.com/parse/colortable/parsed3.html><img src="http://xliberation.com/googlecharts/1715.png" width="200px"></a></td>
+   <td>Partition chart + parse.com<br><a href="http://xliberation.com/parse/colortable/parsed3.html><img src="http://xliberation.com/googlecharts/1716.png" width="200"></a></td>
 
   </tr>
 
