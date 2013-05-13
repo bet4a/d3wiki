@@ -157,7 +157,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
    <td></td>
   </tr>
  <tr height="207" valign="top">
-   <td>Color schemer partition chart + parse.com<br><a href="http://xliberation.com/parse/colortable/parsed3.html"><img src="https://d475f4b7-a-150f6fab-s-sites.googlegroups.com/a/mcpher.com/share/Home/excelquirks/parse/d3parse/1715.png?attachauth=ANoY7cqGYn_8xv81zMw53GcbH6Sevk41x-W8FnYvLn6SILgseWVN0hzuPTBgU4GUESJ1bUYxfwSYJZLx4aGimnFStUNHnRJw-HIh4zVjti4eex176jpibq-ePDrApnZAO3aWlyKTAz47_73xv7b90ypMSa2bZkQ8SAYdUqdI_z0N9_o9vXD7QpGRfXNmK8azqoJ6-f5t1jW0dXS2Rjqey04BhMqFQnH6jxZBluZVuBjH281AdpoXZSQSy2L2ivW2fO1ypNvlVcpq" width="200px"></a></td>
+   <td>Partition chart + parse.com<br><a href="http://xliberation.com/parse/colortable/parsed3.html><img src="http://xliberation.com/googlecharts/1715.png" width="200px"></a></td>
 
   </tr>
 
