@@ -156,6 +156,12 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
    <td>Day/Hour Heatmap<br><a href="http://bl.ocks.org/tjdecke/5558084"><img src="https://raw.github.com/gist/5558084/thumbnail2.png" width="200px"></a></td>
    <td></td>
   </tr>
+ <tr height="207" valign="top">
+   <td>Color schemer partition chart + parse.com<br><a href="http://xliberation.com/parse/colortable/parsed3.html"><img src="https://d475f4b7-a-150f6fab-s-sites.googlegroups.com/a/mcpher.com/share/Home/excelquirks/parse/d3parse/1715.png?attachauth=ANoY7cqGYn_8xv81zMw53GcbH6Sevk41x-W8FnYvLn6SILgseWVN0hzuPTBgU4GUESJ1bUYxfwSYJZLx4aGimnFStUNHnRJw-HIh4zVjti4eex176jpibq-ePDrApnZAO3aWlyKTAz47_73xv7b90ypMSa2bZkQ8SAYdUqdI_z0N9_o9vXD7QpGRfXNmK8azqoJ6-f5t1jW0dXS2Rjqey04BhMqFQnH6jxZBluZVuBjH281AdpoXZSQSy2L2ivW2fO1ypNvlVcpq" width="200px"></a></td>
+
+  </tr>
+
+
 </table>
 
 ## Basic Charts
@@ -753,6 +759,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Web reporting with D3js and R using RStudio Shiny](http://timelyportfolio.blogspot.com/2012/12/d3-shiny-and-r-reporting-performance.html) - klr @timelyportfolio
 * [Dex the Data Explorer](http://dexvis.com) - Patrick Martin
 * [d3.js partition chart serving data from parse.com](http://ramblings.mcpher.com/Home/excelquirks/parse/d3parse) - Bruce McPherson
+
 #### Online Editors
 
 * [Bar chart code generator and online editor](http://www.d3-generator.com/)
