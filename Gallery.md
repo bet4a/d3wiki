@@ -342,6 +342,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 * [2002-2011 International Phone Call Traffic bar chart with time series](http://fcc.github.io/calltraffic/trafficbyyear.html)
 * [Influence Map: Women &amp; Leadership](http://traackr.com/women-leadership/) - Dane Lyons
 * [The State of Do Not Track](https://dnt-dashboard.mozilla.org/) - Mozilla
+* [Personal texting trends demo (using dc.js)](http://joenoodles.com/widgets/attlog/) - Joseph Nudell
 
 ### Collections
 
