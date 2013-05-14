@@ -41,7 +41,7 @@ d3.csv("example.csv", function(d) {
     year: new Date(+d.Year, 0, 1), // convert "Year" column to Date
     make: d.Make,
     model: d.Model,
-    length: +d.length // convert "Length" column to number
+    length: +d.Length // convert "Length" column to number
   };
 }, function(error, rows) {
   console.log(rows);
