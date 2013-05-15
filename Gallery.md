@@ -159,6 +159,12 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
   </tr>
 
 
+  <tr height="207" valign="top">
+   <td>Worldwide remittance flows<br><a href="http://remittances.herokuapp.com/?en"><img src="https://raw.github.com/ilyabo/remittances/master/design/screenshots/explore-en-200px.png" width="200"></a></td>
+
+  </tr>
+
+
 </table>
 
 ## Basic Charts
