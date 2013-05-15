@@ -78,7 +78,7 @@ If *extent* is specified, sets the projection’s viewport clip extent to the sp
 
 If *precision* is specified, sets the threshold for the projection’s adaptive resampling to the specified value in pixels and returns the projection. This value corresponds to the [Douglas–Peucker](http://en.wikipedia.org/wiki/Ramer–Douglas–Peucker_algorithm) distance. If *precision* is not specified, returns the projection’s current resampling precision which defaults to `Math.SQRT1_2`.
 
-A *precision* of `0` turns off resampling.
+A *precision* of `0` disables adaptive resampling.
 
 <a name="stream" href="#wiki-stream">#</a> projection.<b>stream</b>(<i>listener</i>)
 
