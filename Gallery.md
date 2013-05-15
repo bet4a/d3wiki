@@ -160,7 +160,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 
 
   <tr height="207" valign="top">
-   <td>Worldwide remittance flows<br><a href="http://remittances.herokuapp.com/?en"><img src="https://raw.github.com/ilyabo/remittances/master/design/screenshots/explore-en-200px.png" width="200"></a></td>
+   <td>Worldwide remittance flows<br><a href="http://remittances.herokuapp.com/?en"><img src="https://raw.github.com/ilyabo/remittances/master/design/screenshots/explore-en-square-200px.png" width="200"></a></td>
 
   </tr>
 
