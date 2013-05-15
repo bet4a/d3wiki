@@ -78,6 +78,8 @@ If *extent* is specified, sets the projection’s viewport clip extent to the sp
 
 If *precision* is specified, sets the threshold for the projection’s adaptive resampling to the specified value in pixels and returns the projection. This value corresponds to the [Douglas–Peucker](http://en.wikipedia.org/wiki/Ramer–Douglas–Peucker_algorithm) distance. If *precision* is not specified, returns the projection’s current resampling precision which defaults to `Math.SQRT1_2`.
 
+A *precision* of `0` turns off resampling.
+
 <a name="stream" href="#wiki-stream">#</a> projection.<b>stream</b>(<i>listener</i>)
 
 Returns a projecting [stream](Geo-Streams) wrapper for the specified *listener*. Any geometry streamed to the wrapper is projected before being streamed to the wrapped listener. A typical projection involves several stream transformations: the input geometry is first converted to radians, rotated on three axes, clipped to the small circle or cut along the antimeridian, and lastly projected to the Cartesian plane with adaptive resampling, scale and translation.
