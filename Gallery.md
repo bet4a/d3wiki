@@ -353,6 +353,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 * [The State of Do Not Track](https://dnt-dashboard.mozilla.org/) - Mozilla
 * [Personal texting trends demo (using dc.js)](http://joenoodles.com/widgets/attlog/) - Joseph Nudell
 * [Worldwide remittance flows](http://remittances.herokuapp.com/?en) - David Bauer, Ilya Boyandin und René Stalder
+* [Evolution of the Firefox Codebase](http://almossawi.com/firefox) - Ali Almossawi
 
 ### Collections
 
