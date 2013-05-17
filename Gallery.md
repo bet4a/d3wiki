@@ -531,6 +531,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Sunburst Layout with Labels](http://bl.ocks.org/910126)
 * [Sunburst: Coffee Flavour Wheel](http://www.jasondavies.com/coffee-wheel/)
 * [Partition Layout (Zoomable Icicle)](http://bl.ocks.org/1005873)
+* [Sunburst: Color schemer with parse.com integration](http://xliberation.com/parse/colortable/parsed3.html)
 
 #### Force Layout
 
