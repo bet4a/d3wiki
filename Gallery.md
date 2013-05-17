@@ -161,6 +161,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 
   <tr height="207" valign="top">
    <td>Worldwide remittance flows<br><a href="http://remittances.herokuapp.com/?en"><img src="https://raw.github.com/ilyabo/remittances/master/design/screenshots/explore-en-square-200px.png" width="200"></a></td>
+   <td>Language Network<br><a href="http://www.cotrino.com/2012/11/language-network/"><img src="https://raw.github.com/cotrino/experimentos/master/langnet.png" width="200"></a></td>
 
   </tr>
 
@@ -354,6 +355,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 * [Personal texting trends demo (using dc.js)](http://joenoodles.com/widgets/attlog/) - Joseph Nudell
 * [Worldwide remittance flows](http://remittances.herokuapp.com/?en) - David Bauer, Ilya Boyandin und René Stalder
 * [Evolution of the Firefox Codebase](http://almossawi.com/firefox) - Ali Almossawi
+* [Language Network](http://www.cotrino.com/2012/11/language-network/) - José Cotrino
 
 ### Collections
 
