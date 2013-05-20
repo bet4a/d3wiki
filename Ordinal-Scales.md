@@ -28,9 +28,13 @@ This method is intended for when the set of discrete output values is computed e
 
 Sets the output range from the specified continuous *interval*. The array *interval* contains two elements representing the minimum and maximum numeric value. This interval is subdivided into *n* evenly-spaced **points**, where *n* is the number of (unique) values in the input domain. The first and last point may be offset from the edge of the interval according to the specified *padding*, which defaults to zero. The *padding* is expressed as a multiple of the spacing between points. A reasonable value is 1.0, such that the first and last point will be offset from the minimum and maximum value by half the distance between points.
 
+![rangepoints](https://f.cloud.github.com/assets/230541/538689/46d87118-c193-11e2-83ab-2008df7c36aa.png)
+
 <a name="ordinal_rangeBands" href="Ordinal-Scales#wiki-ordinal_rangeBands">#</a> ordinal.<b>rangeBands</b>(<i>interval</i>[, <i>padding</i>[, <i>outerPadding</i>]])
 
 Sets the output range from the specified continuous *interval*. The array *interval* contains two elements representing the minimum and maximum numeric value. This interval is subdivided into *n* evenly-spaced **bands**, where *n* is the number of (unique) values in the input domain. The bands may be offset from the edge of the interval and other bands according to the specified *padding*, which defaults to zero. The padding is typically in the range [0,1] and corresponds to the amount of space in the range interval to allocate to padding. A value of 0.5 means that the band width will be equal to the padding width. The *outerpadding* argument is for the entire group of bands; a value of 0 means there will be padding only between rangeBands.
+
+![rangebands](https://f.cloud.github.com/assets/230541/538688/46c298c0-c193-11e2-9a7e-15d9abcfab9b.png)
 
 <a name="ordinal_rangeRoundBands" href="Ordinal-Scales#wiki-ordinal_rangeRoundBands">#</a> ordinal.<b>rangeRoundBands</b>(<i>interval</i>[, <i>padding</i>])
 
@@ -38,7 +42,7 @@ Like [rangeBands](Ordinal-Scales#wiki-ordinal_rangeBands), except guarantees tha
 
 <a name="ordinal_rangeBand" href="Ordinal-Scales#wiki-ordinal_rangeBand">#</a> ordinal.<b>rangeBand</b>()
 
-Returns the band width. This method is used in conjunction with rangeBands or rangeRoundBands.
+Returns the band width. When the scale’s range is configured with rangeBands or rangeRoundBands, the scale returns the lower value for the given input. The upper value can then be computed by offsetting by the band width. If the scale’s range is set using range or rangePoints, the band width is zero.
 
 <a name="ordinal_rangeExtent" href="Ordinal-Scales#wiki-ordinal_rangeExtent">#</a> ordinal.<b>rangeExtent</b>()
 
