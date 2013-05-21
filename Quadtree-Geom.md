@@ -18,7 +18,7 @@ Adds a new point to the quadtree.
 
 <a name="visit" href="#wiki-visit">#</a> quadtree.<b>visit</b>(<i>callback</i>)
 
-The specified *callback* is invoked with the arguments (*node*, *x1*, *y1*, *x2*, *y2*) for each quadtree node pre-order, provided the *callback* returns false. If *callback* returns true for a node, then the children of that node are not visited.
+The specified *callback* is invoked with the arguments (<i>node</i>, *x1*, *y1*, *x2*, *y2*) for each quadtree node pre-order, provided the *callback* returns false. If *callback* returns true for a node, then the children of that node are not visited.
 
 <a name="x" href="#wiki-x">#</a> quadtree.<b>x</b>([<i>x</i>])
 
