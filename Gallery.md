@@ -356,6 +356,8 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 * [Worldwide remittance flows](http://remittances.herokuapp.com/?en) - David Bauer, Ilya Boyandin und René Stalder
 * [Evolution of the Firefox Codebase](http://almossawi.com/firefox) - Ali Almossawi
 * [Language Network](http://www.cotrino.com/2012/11/language-network/) - José Cotrino
+* [Superposed areas for comparing 2 values](https://www.googledrive.com/host/0BwcmXsFAhzhocERSRHc0c0hxaTQ/echr.html) - Etienne Ramstein
+* [Object constancy through many types of buble charts](https://www.googledrive.com/host/0BwcmXsFAhzhoRWh5SjNyV2hLNlE/dashboard.html) - Etienne Ramstein
 
 ### Collections
 
