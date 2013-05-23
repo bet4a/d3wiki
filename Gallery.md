@@ -676,7 +676,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Elastic collisions](http://bl.ocks.org/1706523)(http://bl.ocks.org/1706849)
 * [Collider - a d3.js game](http://blog.latentflip.com/post/18195267992/d3-collider)
 * [alpha-shapes aka concave hulls](http://bl.ocks.org/1552725)
-* [Conway's Game of life as a scrolling background](http://rhokaustin.org/)
+* [Conway's Game of life as a scrolling background](http://markmarkoh.com/rhok)
 * [Simple Dashboard Example](http://bl.ocks.org/3287802)
 * [Dataflow programming with D3 and Blockly](http://bollwyvl.github.com/blockd3/)
 * [XKCD-style plots](http://dan.iel.fm/xkcd/)
