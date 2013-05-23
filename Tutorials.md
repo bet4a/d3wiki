@@ -35,7 +35,7 @@ Please feel free to add links to your work!
 * [Introduction to D3.js Geo](http://hashbang.co.nz/blog/2013/2/25/d3_js_geo_fun) - Graham Jenson
 * [learning D3.js(2)(Chinese)](http://www.civn.cn/p/12402.html) - jtyjty99999
 * [learning D3.js(1)(Chinese)](http://www.civn.cn/p/12311.html) - jtyjty99999
-
+* [First glance on D3.js (codecademy course)](http://www.codecademy.com/courses/web-beginner-en-kcP9b) -Jiecheng
 ### Specific Techniques
 
 * [Path and Transform Transitions](http://bost.ocks.org/mike/path/)
