@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Geometry]] ▸ **Voronoi Geom**
 
-If any vertices are coincident or have NaN positions, *the behavior of this method is undefined*: most likely, invalid polygons will be returned! You should filter invalid vertices, and consolidate coincident vertices, before computing the tessellation.
+Voronoi layouts are particularly useful for invisible interactive regions, as demonstrated in Nate Vack’s [Voronoi picking](http://bl.ocks.org/njvack/1405439) example.
 
 <a name="voronoi" href="#wiki-voronoi">#</a> d3.geom.<b>voronoi</b>()
 
@@ -10,7 +10,7 @@ Creates a Voronoi layout with default accessors.
 
 <a name="_voronoi" href="#wiki-_voronoi">#</a> <b>voronoi</b>(<i>data</i>)
 
-Returns an array of polygons, one for each input vertex in the specified *data* array.
+Returns an array of polygons, one for each input vertex in the specified *data* array. If any vertices are coincident or have NaN positions, *the behavior of this method is undefined*: most likely, invalid polygons will be returned! You should filter invalid vertices, and consolidate coincident vertices, before computing the tessellation.
 
 <a name="x" href="#wiki-x">#</a> voronoi.<b>x</b>([<i>x</i>])
 
