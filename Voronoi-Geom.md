@@ -8,7 +8,7 @@ This implementation does not clip the returned polygons, so if you want to clip 
 
 Creates a Voronoi layout with default accessors.
 
-<a name="_voronoi" href="#wiki-_voronoi"> <b>voronoi</b>(<i>data</i>)
+<a name="_voronoi" href="#wiki-_voronoi">#</a> <b>voronoi</b>(<i>data</i>)
 
 Returns an array of polygons, one for each input vertex in the specified *data* array.
 
