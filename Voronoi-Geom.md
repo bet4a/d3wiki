@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Geometry]] ▸ **Voronoi Geom**
 
-This implementation does not clip the returned polygons, so if you want to clip them to a particular shape you will need to do that either in SVG or by post-processing with [polygon.clip](Polygon-Geom#wiki-clip), as in [this example](http://bl.ocks.org/4237768). If any vertices are coincident or have NaN positions, *the behavior of this method is undefined*: most likely, invalid polygons will be returned! You should filter invalid vertices, and consolidate coincident vertices, before computing the tessellation.
+If any vertices are coincident or have NaN positions, *the behavior of this method is undefined*: most likely, invalid polygons will be returned! You should filter invalid vertices, and consolidate coincident vertices, before computing the tessellation.
 
 <a name="voronoi" href="#wiki-voronoi">#</a> d3.geom.<b>voronoi</b>()
 
@@ -30,7 +30,7 @@ function(d) { return d[1]; }
 
 <a name="size" href="#wiki-size">#</a> voronoi.<b>size</b>([<i>size</i>])
 
-Get or set the clip size of the Voronoi layout.
+Get or set the clip size of the Voronoi layout. This implementation does not clip the returned polygons by default, but will clip them to a rectangle of the given size if specified. This is strongly recommended, as unclipped polygons may have large coordinates which do not display correctly. You can also employ custom clipping without specifying a size, either in SVG or by post-processing with [polygon.clip](Polygon-Geom#wiki-clip), as in [this example](http://bl.ocks.org/4237768). 
 
 <a name="links" href="#wiki-links">#</a> voronoi.<b>links</b>(<i>data</i>)
 
