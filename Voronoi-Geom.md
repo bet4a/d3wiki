@@ -2,17 +2,15 @@
 
 This implementation does not clip the returned polygons, so if you want to clip them to a particular shape you will need to do that either in SVG or by post-processing with [polygon.clip](Polygon-Geom#wiki-clip), as in [this example](http://bl.ocks.org/4237768). If any vertices are coincident or have NaN positions, *the behavior of this method is undefined*: most likely, invalid polygons will be returned! You should filter invalid vertices, and consolidate coincident vertices, before computing the tessellation.
 
-<a name="voronoi" href="Voronoi-Geom#wiki-voronoi">#</a> d3.geom.<b>voronoi</b>([<i>vertices</i>])
+<a name="voronoi" href="#wiki-voronoi">#</a> d3.geom.<b>voronoi</b>()
 
 <a href="http://bl.ocks.org/4060366"><img src="https://raw.github.com/gist/4060366/thumbnail.png" width="202"></a>
 
-Returns an array of polygons, one for each input *vertex*.
+Creates a Voronoi layout with default accessors.
 
-<a name="delaunay" href="Voronoi-Geom#wiki-delaunay">#</a> d3.geom.<b>delaunay</b>([<i>vertices</i>])
+<a name="_voronoi" href="#wiki-_voronoi"> <b>voronoi</b>(<i>data</i>)
 
-<a href="http://bl.ocks.org/4341156"><img src="https://raw.github.com/gist/4341156/thumbnail.png" width="202"></a>
-
-Returns an array of triangles.
+Returns an array of polygons, one for each input vertex in the specified *data* array.
 
 <a name="x" href="#wiki-x">#</a> voronoi.<b>x</b>([<i>x</i>])
 
@@ -29,3 +27,17 @@ If *y* is specified, sets the y-coordinate accessor. If *y* is not specified, re
 ```js
 function(d) { return d[1]; }
 ```
+
+<a name="size" href="#wiki-size">#</a> voronoi.<b>size</b>([<i>size</i>])
+
+Get or set the clip size of the Voronoi layout.
+
+<a name="links" href="#wiki-links">#</a> voronoi.<b>links</b>(<i>data</i>)
+
+…
+
+<a name="triangles" href="#wiki-triangles">#</a> voronoi.<b>triangles</b>(<i>data</i>)
+
+<a href="http://bl.ocks.org/4341156"><img src="https://raw.github.com/gist/4341156/thumbnail.png" width="202"></a>
+
+Returns an array of triangles.
