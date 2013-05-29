@@ -44,4 +44,4 @@ Gets or sets the *listener* for the specified event *type*. Brushes support thre
 * brush - on mousemove, if the brush extent has changed
 * brushend - on mouseup
 
-Note that when clicking on the background, a mousedown also triggers a brushmove, since the brush extent is immediately cleared to start a new extent.
+Note that when clicking on the background, a mousedown also triggers a "brush" event, since the brush extent is immediately cleared to start a new extent.
