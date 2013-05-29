@@ -627,7 +627,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Choropleth of White House Petition Signers](http://roadtolarissa.com/whitehouse/) - Adam Pearce
 * [Interactive choropleth of life excpectancy](http://bl.ocks.org/d/2366285/) – Karel Minarik
 * [India population](http://bl.ocks.org/4526201) - Liji Jinaraj
-* [Hexbins in Leaflet](http://bl.ocks.org/4955504)
+* [Hexbins in Leaflet](http://bl.ocks.org/5669650)
 * [Interactive svg map using D3 circles and transitions] (http://www.incont.ro/infografice/judet-bogat-judet-sarac-unde-se-castiga-cei-mai-multi-bani-in-romania-si-in-ce-domeniu.html) - Vlad Moldoveanu
 * [ZipDecode](http://www.somebits.com/zipdecode-js/) - Nelson Minar (after Ben Fry)
 * [Interactive choropleth: San Francisco voter turnout and the 1989 earthquake](http://www.polsci.ucsb.edu/faculty/glasgow/research/d3/sfintmap.html) - Garrett Glasgow
