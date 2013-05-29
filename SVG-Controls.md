@@ -8,7 +8,7 @@ Constructs a new brush with no default *x*- and *y*-scale, and an empty extent.
 
 <a name="_brush" href="#wiki-_brush">#</a> <b>brush</b>(<i>selection</i>)
 
-Draws or redraws this brush into the specified *selection* of elements. The brush may be drawn into multiple elements simultaneously, but not that these brushes would share the same backing extent; typically, a brush is drawn into only one element at a time.
+Draws or redraws this brush into the specified *selection* of elements. The brush may be drawn into multiple elements simultaneously, but note that these brushes would share the same backing extent; typically, a brush is drawn into only one element at a time.
 
 The *selection* can also be a [transition](Transitions); however, the brush does not yet support automatic transitions, so the redraw will happen instantaneously. In a subsequent release, the brush will smoothly transition to the new extent when redrawn after the [extent](#wiki-brush_extent) is set.
 
