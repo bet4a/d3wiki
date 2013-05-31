@@ -709,6 +709,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 
 #### Useful snippets
 
+* [Correct zoom for layout](http://gist.github.com/plandem/5683951)
 * [Date Ticks](http://bl.ocks.org/1071269)
 * [Masking with external svg elements](http://bl.ocks.org/1503463)
 * [PJAX](http://bl.ocks.org/1367999)
