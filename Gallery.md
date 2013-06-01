@@ -281,7 +281,6 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 * [Color: a color matching game](http://color.method.ac/) - Maria Munuera and Mark MacKay
 * [NCAA 2012 March Madness Power Rankings](http://thepowerrank.com/visual/NCAA_Tournament_Predictions) - Angi Chau
 * [iTunes Music Library Artist/Genre Graph](http://cgmartin.com/itunes-library-network-graph/) - Christopher Martin
-* [Data Story] (http://data-story.org) - Decio Battaglia, Kevin Mahoney and Xiaoying Riley
 * [A Race to Entitlement](http://3angular.roberryarts.com/)
 * [Visualising New Zealand's Stolen Vehicle Database Part1](http://markhansen.co.nz/stolen-vehicles-pt1/) and [Part2](http://markhansen.co.nz/stolen-vehicles-pt2/) and [source code](https://github.com/mhansen/stolen-vehicles-pt2)
 * [Visualizing San Francisco Home Price Ranges](http://trends.truliablog.com/vis/pricerange-sf/)
