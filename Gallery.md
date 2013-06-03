@@ -771,7 +771,8 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Web reporting with D3js and R using RStudio Shiny](http://timelyportfolio.blogspot.com/2012/12/d3-shiny-and-r-reporting-performance.html) - klr @timelyportfolio
 * [Dex the Data Explorer](http://dexvis.com) - Patrick Martin
 * [d3.js partition chart serving data from parse.com](http://ramblings.mcpher.com/Home/excelquirks/parse/d3parse) - Bruce McPherson
-* [Force directed node focus chart generated from Excel](http://ramblings.mcpher.com/Home/excelquirks/gassites/d3nodefocus) - Bruce McPherson
+* [Force directed node focus generated from Excel](http://ramblings.mcpher.com/Home/excelquirks/gassites/d3nodefocus) - Bruce McPherson
+
 #### Online Editors
 
 * [Bar chart code generator and online editor](http://www.d3-generator.com/)
