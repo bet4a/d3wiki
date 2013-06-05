@@ -193,7 +193,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
   <tr height="146" valign="top">
     <td>Donut Multiples<br><a href="http://bl.ocks.org/3888852"><img src="https://raw.github.com/gist/3888852/thumbnail.png" width="202"></a></td>
     <td>Bar Chart with Negative Values<br><a href="http://bl.ocks.org/2368837"><img src="https://raw.github.com/gist/2368837/thumbnail.png" width="202"></a></td>
-    <td></td>
+    <td>Gauge<br><a href="http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html"><img src="https://raw.github.com/gist/1499279/thumbnail.png" width="202"></a></td>
     <td></td>
   </tr>
 </table>
