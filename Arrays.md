@@ -202,20 +202,6 @@ Calls the specified *function* for each value in this set, passing the value as 
 
 ## Array Operators
 
-<a name="d3_split" href="Arrays#wiki-d3_split">#</a> d3.<b>split</b>(<i>array</i>[, <i>function</i>])
-
-Splits the specified *array* into multiple arrays at breakpoints identified by the specified *function*. If no breakpoint function is specified, the array will be split at any null or undefined values, equivalent to the following function:
-
-```js
-function breakpoint(d) {
-  return d == null;
-}
-```
-
-Elements that are identified as breakpoints, as by the function returning a truthy value, will *not* be included in the returned arrays. (In the future, a more general API might use a breakpoint function that takes two arguments and decides whether to split them, and also gives some indication as to whether to include those two values in the split arrays…)
-
-This method is often used in conjunction with the [[line|SVG-Shapes#wiki-line]] shape, such that missing data points are elided; each contiguous slice of the array where the data *is* defined is rendered as a line segment.
-
 <a name="d3_merge" href="Arrays#wiki-d3_merge">#</a> d3.<b>merge</b>(<i>arrays</i>)
 
 Merges the specified *arrays* into a single array. This method is similar to the built-in array concat method; the only difference is that it is more convenient when you have an array of arrays.
