@@ -36,7 +36,7 @@ Please feel free to add links to your work!
 * [learning D3.js(2)(Chinese)](http://www.civn.cn/p/12402.html) - jtyjty99999
 * [learning D3.js(1)(Chinese)](http://www.civn.cn/p/12311.html) - jtyjty99999
 * [First glance on D3.js (codecademy course)](http://www.codecademy.com/courses/web-beginner-en-kcP9b) - Jiecheng
-* [Creating Interactive Chars with D3.js](http://blog.ilukwe.com/post/52094586400/creating-interactive-charts-with-d3-js) - Anthony Ilukwe
+* [Creating Interactive Charts with D3.js](http://blog.ilukwe.com/post/52094586400/creating-interactive-charts-with-d3-js) - Anthony Ilukwe
 
 ### Specific Techniques
 
