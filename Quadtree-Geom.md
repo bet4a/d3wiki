@@ -41,3 +41,9 @@ function(d) { return d[1]; }
 If the specified *size* is null, this causes the quadtree size to be automatically computed for the initial array of points.  If the specified *size* is a two-element array, [width, height], this sets the quadtree's size.
 
 If *size* is not specified, returns the current size, which defaults to null.
+
+<a name="extent" href="#wiki-extent">#</a> quadtree.<b>extent</b>([<i>extent</i>])
+
+If the specified *extent* is null, this causes the quadtree extent to be automatically computed for the initial array of points.  If the specified *extent* is a two-dimensional array [‍[ *x0*, *y0* ], [ *x1*, *y1* ]], where *x0* and *y0* are the lower bounds of the extent, and *x1* and *y1* are the upper bounds of the extent, this sets the quadtree's extent.
+
+If *extent* is not specified, returns the current extent, which defaults to null.
