@@ -2,6 +2,32 @@
 
 Patch versions always include various bug fixes; see the full compare for details. For major and minor versions, new features are listed below.
 
+## 3.2.0 - June 13, 2013
+
+* Added d3.dsv to support generic delimiter-separated values (e.g., "|") beyond TSV & CSV.
+* Added selection.size to count the number of selected elements.
+* Added d3.xhr responseType.
+* Added d3.geom.quadtree extent (deprecates size).
+* Added d3.geom.voronoi clipExtent (deprecates size).
+* Added d3.layout.{tree,cluster} nodeSize for fixed-size nodes.
+* Added d3.layout.pack radius for explicit control of circle radius.
+* Added *m* argument to d3.scale.{pow,linear} nice; controls nicing precision.
+* Added d3.scale.{threshold,quantize} invertExtent function.
+* Added "step" interpolation to d3.svg.line and d3.svg.area.
+* Added d3.svg.brush clamp to control extent clamping.
+* d3.xhr now uses XMLHttpRequest rather than XDomainRequest in IE10 for cross-origin requests.
+* More accurate d3.geo.area implementation.
+* Improved d3.geo.centroid implementation; now supports zero-extent features.
+* Improved accuracy of geographic clipping and detection of polygon winding order.
+* Fixed bug with missing selection.call on enter selections.
+* Fixed bug with d3.mouse when default stylesheets apply padding, margin or borders.
+* Fixed bug with d3.behavior.zoom and d3.behavior.drag in regards to canceling mousedown.
+* Fixed bug with d3.geom.voronoi and custom accessors.
+* Fixed bug with d3.layout.pack with small-radius circles.
+* Fixed bug with d3.scale.log tickFormat; now accepts string as *format* argument.
+* Fixed bug with time intervals in Firefox when using British Summer Time.
+* Added support for parsing day-of-year, week-of-year, etc.
+
 ## 3.1.0 - March 21, 2013
 
 See the [full 3.1 release notes](3.1) for details.
