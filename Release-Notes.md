@@ -15,6 +15,7 @@ Patch versions always include various bug fixes; see the full compare for detail
 * Added d3.scale.{threshold,quantize} invertExtent function.
 * Added "step" interpolation to d3.svg.line and d3.svg.area.
 * Added d3.svg.brush clamp to control extent clamping.
+* Added support for parsing day-of-year, week-of-year, etc. in d3.time.format.
 * d3.xhr now uses XMLHttpRequest rather than XDomainRequest in IE10 for cross-origin requests.
 * More accurate d3.geo.area implementation.
 * Improved d3.geo.centroid implementation; now supports zero-extent features.
@@ -26,7 +27,6 @@ Patch versions always include various bug fixes; see the full compare for detail
 * Fixed bug with d3.layout.pack with small-radius circles.
 * Fixed bug with d3.scale.log tickFormat; now accepts string as *format* argument.
 * Fixed bug with time intervals in Firefox when using British Summer Time.
-* Added support for parsing day-of-year, week-of-year, etc.
 
 ## 3.1.0 - March 21, 2013
 
