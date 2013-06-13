@@ -76,6 +76,20 @@ An optional *accessor* function may be specified as the second argument. This fu
 
 Converts the specified array of *rows* into comma-separated values format, returning a string. This operation is the reverse of [parseRows](CSV#wiki-parseRows). Each row will be separated by a newline (\n), and each column within each row will be separated by a comma (,). Values that contain either commas, double-quotes (") or newlines will be escaped using double-quotes.
 
+When passing an array of objects all properties will be output.  These can be seen by calling `Object.keys(<object-instance>)`. To prevent a property from being output set the enumerable flag to `false`.  For example:
+
+```javascript
+function myObject(a,b) {
+  this.A = a;
+  this.B = b;
+  //The value of this property for all objects will be "function() {this.B++;}"
+  this.incrementB = function() {this.B++;}
+  //Hide the incrementB property in for each loops
+  Object.defineProperty(this, 'incrementB', {enumerable:false});
+}
+```
+
+
 ## TSV
 
 Tab-separated values are equivalent to comma-separated values, except the tab character is used as a delimiter rather than the comma.
