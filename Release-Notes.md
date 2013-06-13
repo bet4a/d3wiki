@@ -20,7 +20,7 @@ Patch versions always include various bug fixes; see the full compare for detail
 * More accurate d3.geo.area implementation.
 * Improved d3.geo.centroid implementation; now supports zero-extent features.
 * Improved accuracy of geographic clipping and detection of polygon winding order.
-* Fixed bug with missing selection.call on enter selections.
+* Fixed bug with missing selection.[call](https://github.com/mbostock/d3/wiki/Selections#wiki-enter) on enter selections.
 * Fixed bug with d3.mouse when default stylesheets apply padding, margin or borders.
 * Fixed bug with d3.behavior.zoom and d3.behavior.drag in regards to canceling mousedown.
 * Fixed bug with d3.geom.voronoi and custom accessors.
