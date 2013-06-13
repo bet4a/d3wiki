@@ -38,6 +38,8 @@ function(d) { return d[1]; }
 
 <a name="size" href="#wiki-size">#</a> quadtree.<b>size</b>([<i>size</i>])
 
+**Deprecated**: [extent](Quadtree-Geom#extent) is preferred.
+
 If the specified *size* is null, this causes the quadtree size to be automatically computed for the initial array of points.  If the specified *size* is a two-element array, [width, height], this sets the quadtree's size.
 
 If *size* is not specified, returns the current size, which defaults to null.
