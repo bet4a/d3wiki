@@ -15,18 +15,18 @@ Patch versions always include various bug fixes; see the full compare for detail
 * Added d3.scale.{threshold,quantize} invertExtent function.
 * Added "step" interpolation to d3.svg.line and d3.svg.area.
 * Added d3.svg.brush [clamp](https://github.com/mbostock/d3/wiki/SVG-Controls#wiki-brush_clamp) to control extent clamping.
-* Added support for parsing day-of-year, week-of-year, etc. in d3.time.format.
+* Added support for parsing day-of-year, week-of-year, etc. in [d3.time.format](https://github.com/mbostock/d3/wiki/Time-Formatting).
 * d3.xhr now uses XMLHttpRequest rather than XDomainRequest in IE10 for cross-origin requests.
-* More accurate d3.geo.area implementation.
-* Improved d3.geo.centroid implementation; now supports zero-extent features.
+* More accurate [d3.geo.area](https://github.com/mbostock/d3/wiki/Geo-Paths#wiki-d3_geo_area) implementation.
+* Improved [d3.geo.centroid](https://github.com/mbostock/d3/wiki/Geo-Paths#wiki-d3_geo_centroid) implementation; now supports zero-extent features.
 * Improved accuracy of geographic clipping and detection of polygon winding order.
 * Fixed bug with missing selection.[call](https://github.com/mbostock/d3/wiki/Selections#wiki-enter) on enter selections.
-* Fixed bug with d3.mouse when default stylesheets apply padding, margin or borders.
-* Fixed bug with d3.behavior.zoom and d3.behavior.drag in regards to canceling mousedown.
-* Fixed bug with d3.geom.voronoi and custom accessors.
-* Fixed bug with d3.layout.pack with small-radius circles.
+* Fixed bug with [d3.mouse](https://github.com/mbostock/d3/wiki/Selections#wiki-d3_mouse) when default stylesheets apply padding, margin or borders.
+* Fixed bug with [d3.behavior.zoom](https://github.com/mbostock/d3/wiki/Zoom-Behavior) and [d3.behavior.drag](https://github.com/mbostock/d3/wiki/Drag-Behavior) in regards to canceling mousedown.
+* Fixed bug with [d3.geom.voronoi](https://github.com/mbostock/d3/wiki/Voronoi-Geom) and custom accessors.
+* Fixed bug with [d3.layout.pack](https://github.com/mbostock/d3/wiki/Pack-Layout) with small-radius circles.
 * Fixed bug with d3.scale.log tickFormat; now accepts string as *format* argument.
-* Fixed bug with time intervals in Firefox when using British Summer Time.
+* Fixed bug with [time intervals](https://github.com/mbostock/d3/wiki/Time-Intervals) in Firefox when using British Summer Time.
 
 ## 3.1.0 - March 21, 2013
 
