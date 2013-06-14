@@ -5,7 +5,7 @@ Patch versions always include various bug fixes; see the full compare for detail
 ## 3.2.0 - June 13, 2013
 
 * Added d3.dsv to support generic delimiter-separated values (e.g., "|") beyond TSV & CSV.
-* Added selection.size to count the number of selected elements.
+* Added [selection.size](https://github.com/mbostock/d3/wiki/Selections#wiki-size) to count the number of selected elements.
 * Added d3.xhr [responseType](https://github.com/mbostock/d3/wiki/Requests#wiki-responseType).
 * Added d3.geom.quadtree [extent](https://github.com/mbostock/d3/wiki/Quadtree-Geom#wiki-extent) (deprecates size).
 * Added d3.geom.voronoi [clipExtent](https://github.com/mbostock/d3/wiki/Voronoi-Geom#wiki-clipExtent) (deprecates size).

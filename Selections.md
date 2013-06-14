@@ -390,6 +390,10 @@ Returns true if the current selection is empty; a selection is empty if it conta
 
 Returns the first non-null element in the current selection. If the selection is empty, returns null.
 
+<a name="size" href="Selections#wiki-size">#</a> selection.<b>size</b>()
+
+Returns the total number of elements in the current selection.
+
 ### Extension
 
 <a name="d3_selection" href="#wiki-d3_selection">#</a> d3.<b>selection</b>()
