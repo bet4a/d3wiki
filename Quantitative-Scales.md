@@ -244,6 +244,8 @@ var formatNumber = d3.format(",.0f"), // for formatting integers
 scale.ticks(20, formatCurrency);
 ```
 
+The optional *format* argument may also be a [[format specifier|Formatting#wiki-d3_format]] string. If the format specifier doesn’t have a defined precision, the precision will be set automatically by the scale, returning the appropriate format. This provides a convenient, declarative way of specifying a format whose precision will be automatically set by the scale.
+
 <a name="log_copy" href="#wiki-log_copy">#</a> log.<b>copy</b>()
 
 Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.

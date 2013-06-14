@@ -25,7 +25,7 @@ Patch versions always include various bug fixes; see the full compare for detail
 * Fixed bug with [d3.behavior.zoom](https://github.com/mbostock/d3/wiki/Zoom-Behavior) and [d3.behavior.drag](https://github.com/mbostock/d3/wiki/Drag-Behavior) in regards to canceling mousedown.
 * Fixed bug with [d3.geom.voronoi](https://github.com/mbostock/d3/wiki/Voronoi-Geom) and custom accessors.
 * Fixed bug with [d3.layout.pack](https://github.com/mbostock/d3/wiki/Pack-Layout) with small-radius circles.
-* Fixed bug with d3.scale.log tickFormat; now accepts string as *format* argument.
+* Fixed bug with d3.scale.log [tickFormat](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-log_tickFormat); now accepts a string as the *format* argument.
 * Fixed bug with [time intervals](https://github.com/mbostock/d3/wiki/Time-Intervals) in Firefox when using British Summer Time.
 
 ## 3.1.0 - March 21, 2013
