@@ -8,7 +8,7 @@ Patch versions always include various bug fixes; see the full compare for detail
 * Added selection.size to count the number of selected elements.
 * Added d3.xhr [responseType](https://github.com/mbostock/d3/wiki/Requests#wiki-responseType).
 * Added d3.geom.quadtree [extent](https://github.com/mbostock/d3/wiki/Quadtree-Geom#wiki-extent) (deprecates size).
-* Added d3.geom.voronoi clipExtent (deprecates size).
+* Added d3.geom.voronoi [clipExtent](https://github.com/mbostock/d3/wiki/Voronoi-Geom#wiki-clipExtent) (deprecates size).
 * Added d3.layout.{tree,cluster} nodeSize for fixed-size nodes.
 * Added d3.layout.pack radius for explicit control of circle radius.
 * Added *m* argument to d3.scale.{[pow](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-pow),[linear](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-linear)} [nice](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-linear_nice); controls nicing precision.
