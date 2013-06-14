@@ -2,7 +2,7 @@
 
 D3 provides built-in support for parsing [comma-separated values](http://en.wikipedia.org/wiki/Comma-separated_values), tab-separated values and arbitrary delimiter-separated values. These tabular formats are popular with spreadsheet programs such as Microsoft Excel. Tabular formats are often more space-efficient than JSON, which can improve loading times for large datasets.
 
-<a name="csv" href="#wiki-csv">#</a> d3.<b>csv</b>(<i>url</i>[, <i>accessor</i>], <i>callback</i>)
+<a name="csv" href="#wiki-csv">#</a> d3.<b>csv</b>(<i>url</i>[, <i>accessor</i>][, <i>callback</i>])
 
 Issues an HTTP GET request for the comma-separated values (CSV) file at the specified *url*. The file contents are assumed to be [RFC4180-compliant](http://tools.ietf.org/html/rfc4180). The mime type of the request will be "text/csv". The request is processed asynchronously, such that this method returns immediately after opening the request. When the CSV data is available, the specified *callback* will be invoked with the [parsed rows](CSV#wiki-parse) as the argument. If an error occurs, the callback function will instead be invoked with null. An optional <i>accessor</i> function may be specified, which is then passed to [d3.csv.parse](#wiki-parse); the <i>accessor</i> may also be specified by using the return request object’s row function. For example:
 
@@ -86,7 +86,7 @@ Converts the specified array of *rows* into comma-separated values format, retur
 
 Tab-separated values are equivalent to comma-separated values, except the tab character is used as a delimiter rather than the comma.
 
-<a name="tsv" href="#wiki-tsv">#</a> d3.<b>tsv</b>(<i>url</i>, <i>callback</i>)
+<a name="tsv" href="#wiki-tsv">#</a> d3.<b>tsv</b>(<i>url</i>[, <i>accessor</i>][, <i>callback</i>])
 
 Equivalent to [d3.csv](#wiki-csv), but for tab-separated values.
 
@@ -106,22 +106,24 @@ Equivalent to [csv.format](#wiki-format), but for tab-separated values.
 
 <a name="dsv" href="#wiki-dsv">#</a> d3.<b>dsv</b>(<i>delimiter</i>, <i>mimeType</i>)
 
-Constructs a new parser for the given delimiter and mime type. For example, to parse values separated by "|", use:
+Constructs a new parser for the given delimiter and mime type. For example, to parse values separated by "|", the vertical bar character, use:
 
 ```js
 var dsv = d3.dsv("|", "text/plain");
 ```
 
-<a name="_dsv" href="#wiki-_dsv">#</a> <b>dsv</b>(<i>url</i>, <i>callback</i>)
+<a name="_dsv" href="#wiki-_dsv">#</a> <b>dsv</b>(<i>url</i>[, <i>accessor</i>][, <i>callback</i>])
 
 Equivalent to [d3.csv](#wiki-csv), but for delimiter-separated values.
 
-<a name="dsv_parse" href="#wiki-dsv_parse">#</a> d3.dsv.<b>parse</b>(<i>string</i>)
+<a name="dsv_parse" href="#wiki-dsv_parse">#</a> dsv.<b>parse</b>(<i>string</i>)
 
 Equivalent to [csv.parse](#wiki-parse), but for delimiter-separated values.
 
-<a name="dsv_parseRows" href="#wiki-dsv_parseRows">#</a> d3.dsv.<b>parseRows</b>(<i>string</i>[, <i>accessor</i>])
+<a name="dsv_parseRows" href="#wiki-dsv_parseRows">#</a> dsv.<b>parseRows</b>(<i>string</i>[, <i>accessor</i>])
 
 Equivalent to [csv.parseRows](#wiki-parseRows), but for delimiter-separated values.
 
-<a name="dsv_format" href="#wiki-dsv_format">#</a> d3.dsv.<b>format</b>(<i>rows</i>)
+<a name="dsv_format" href="#wiki-dsv_format">#</a> dsv.<b>format</b>(<i>rows</i>)
+
+Equivalent to [csv.format](#wiki-format), but for delimiter-separated values.
