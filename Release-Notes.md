@@ -18,8 +18,9 @@ Patch versions always include various bug fixes; see the full compare for detail
 * Added support for parsing day-of-year, week-of-year, etc. in [d3.time.format](https://github.com/mbostock/d3/wiki/Time-Formatting).
 * d3.xhr now uses XMLHttpRequest rather than XDomainRequest in IE10 for cross-origin requests.
 * More accurate [d3.geo.area](https://github.com/mbostock/d3/wiki/Geo-Paths#wiki-d3_geo_area) implementation.
-* Improved [d3.geo.centroid](https://github.com/mbostock/d3/wiki/Geo-Paths#wiki-d3_geo_centroid) implementation; now supports zero-extent features.
+* Improved [d3.geo.centroid](https://github.com/mbostock/d3/wiki/Geo-Paths#wiki-d3_geo_centroid) implementation; now supports area-weighted polygon centroids and zero-extent features.
 * Improved accuracy of geographic clipping and detection of polygon winding order.
+* Improved accuracy of geographic resampling.
 * Fixed bug with missing selection.[call](https://github.com/mbostock/d3/wiki/Selections#wiki-enter) on enter selections.
 * Fixed bug with [d3.mouse](https://github.com/mbostock/d3/wiki/Selections#wiki-d3_mouse) when default stylesheets apply padding, margin or borders.
 * Fixed bug with [d3.behavior.zoom](https://github.com/mbostock/d3/wiki/Zoom-Behavior) and [d3.behavior.drag](https://github.com/mbostock/d3/wiki/Drag-Behavior) in regards to canceling mousedown.
