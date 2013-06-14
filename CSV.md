@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ **CSV**
 
-D3 provides built-in support for parsing [comma-separated values](http://en.wikipedia.org/wiki/Comma-separated_values) and tab-separated values. These tabular formats are popular with spreadsheet programs such as Microsoft Excel. Tabular formats are often more space-efficient than JSON, which can improve loading times for large datasets.
+D3 provides built-in support for parsing [comma-separated values](http://en.wikipedia.org/wiki/Comma-separated_values), tab-separated values and arbitrary delimiter-separated values. These tabular formats are popular with spreadsheet programs such as Microsoft Excel. Tabular formats are often more space-efficient than JSON, which can improve loading times for large datasets.
 
 <a name="csv" href="#wiki-csv">#</a> d3.<b>csv</b>(<i>url</i>[, <i>accessor</i>], <i>callback</i>)
 
@@ -74,21 +74,13 @@ An optional *accessor* function may be specified as the second argument. This fu
 
 <a name="format" href="CSV#wiki-format">#</a> d3.csv.<b>format</b>(<i>rows</i>)
 
+Converts the specified array of *rows* into comma-separated values format, returning a string. This operation is the reverse of [parse](CSV#wiki-parse). Each row will be separated by a newline (\n), and each column within each row will be separated by a comma (,). Values that contain either commas, double-quotes (") or newlines will be escaped using double-quotes.
+
+Each row should be an object, and all object properties will be converted into fields.  For greater control over which properties are converted, use [formatRows](CSV#wiki-formatRows).
+
+<a name="formatRows" href="CSV#wiki-formatRows">#</a> d3.csv.<b>formatRows</b>(<i>rows</i>)
+
 Converts the specified array of *rows* into comma-separated values format, returning a string. This operation is the reverse of [parseRows](CSV#wiki-parseRows). Each row will be separated by a newline (\n), and each column within each row will be separated by a comma (,). Values that contain either commas, double-quotes (") or newlines will be escaped using double-quotes.
-
-When passing an array of objects all properties will be output.  These can be seen by calling `Object.keys(<object-instance>)`. To prevent a property from being output set the enumerable flag to `false`.  For example:
-
-```javascript
-function myObject(a,b) {
-  this.A = a;
-  this.B = b;
-  //The value of this property for all objects will be "function() {this.B++;}"
-  this.incrementB = function() {this.B++;}
-  //Hide the incrementB property in for each loops
-  Object.defineProperty(this, 'incrementB', {enumerable:false});
-}
-```
-
 
 ## TSV
 
@@ -109,3 +101,27 @@ Equivalent to [csv.parseRows](#wiki-parseRows), but for tab-separated values.
 <a name="tsv_format" href="#wiki-tsv_format">#</a> d3.tsv.<b>format</b>(<i>rows</i>)
 
 Equivalent to [csv.format](#wiki-format), but for tab-separated values.
+
+## Arbitrary Delimiters
+
+<a name="dsv" href="#wiki-dsv">#</a> d3.<b>dsv</b>(<i>delimiter</i>, <i>mimeType</i>)
+
+Constructs a new parser for the given delimiter and mime type. For example, to parse values separated by "|", use:
+
+```js
+var dsv = d3.dsv("|", "text/plain");
+```
+
+<a name="_dsv" href="#wiki-_dsv">#</a> <b>dsv</b>(<i>url</i>, <i>callback</i>)
+
+Equivalent to [d3.csv](#wiki-csv), but for delimiter-separated values.
+
+<a name="dsv_parse" href="#wiki-dsv_parse">#</a> d3.dsv.<b>parse</b>(<i>string</i>)
+
+Equivalent to [csv.parse](#wiki-parse), but for delimiter-separated values.
+
+<a name="dsv_parseRows" href="#wiki-dsv_parseRows">#</a> d3.dsv.<b>parseRows</b>(<i>string</i>[, <i>accessor</i>])
+
+Equivalent to [csv.parseRows](#wiki-parseRows), but for delimiter-separated values.
+
+<a name="dsv_format" href="#wiki-dsv_format">#</a> d3.dsv.<b>format</b>(<i>rows</i>)
