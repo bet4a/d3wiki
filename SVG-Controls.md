@@ -28,6 +28,10 @@ When the extent is set to *values*, the resulting extent is preserved exactly. H
 
 Note that this does not automatically redraw the brush or dispatch any events to listeners. To redraw the brush, call [brush](#wiki-_brush) on a selection or transition.
 
+<a name="brush_clamp" href="#wiki-brush_clamp">#</a> brush.<b>clamp</b>([<i>clamp</i>])
+
+Gets or sets the current clamping behavior. If *clamp* is specified, sets the clamping behavior and returns the brush; if *clamp* is not specified, returns the current clamping behavior. The clamping behavior definition depends on the associated scales. If both an *x*- and *y*-scale are available, then the clamping behavior is an array [*x*, *y*]], where *x* and *y* are booleans that determine whether the each dimension of the two-dimensional extent should be clamped to its respective *x*- and *y*-scale. If only one of the *x*-scale and *y*-scale are available, then the clamping behavior is a boolean referring to whether the one-dimensional extent should be clamped to that scale.
+
 <a name="brush_clear" href="#wiki-brush_clear">#</a> brush.<b>clear</b>()
 
 Clears the extent, making the brush extent [empty](#wiki-brush_empty).

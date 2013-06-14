@@ -14,7 +14,7 @@ Patch versions always include various bug fixes; see the full compare for detail
 * Added *m* argument to d3.scale.{pow,linear} nice; controls nicing precision.
 * Added d3.scale.{threshold,quantize} invertExtent function.
 * Added "step" interpolation to d3.svg.line and d3.svg.area.
-* Added d3.svg.brush clamp to control extent clamping.
+* Added d3.svg.brush [clamp](https://github.com/mbostock/d3/wiki/SVG-Controls#wiki-brush_clamp) to control extent clamping.
 * Added support for parsing day-of-year, week-of-year, etc. in d3.time.format.
 * d3.xhr now uses XMLHttpRequest rather than XDomainRequest in IE10 for cross-origin requests.
 * More accurate d3.geo.area implementation.
