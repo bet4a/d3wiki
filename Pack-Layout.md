@@ -112,6 +112,10 @@ The value accessor is invoked for each input data element, and must return a num
 
 If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1.
 
+<a name="radius" href="Pack-Layout#wiki-radius">#</a> pack.<b>radius</b>([<i>radius</i>])
+
+If *radius* is specified, sets the radius function for computing the radius of each node, or if *radius* is null, enables automatic scaling. If *radius* is not specified, returns the current radius function, which defaults to null.
+
 <a name="padding" href="Pack-Layout#wiki-padding">#</a> pack.<b>padding</b>([<i>padding</i>])
 
 If *padding* is specified, sets the approximate padding between adjacent circles, in pixels. If *padding* is not specified, returns the current padding, which defaults to zero.

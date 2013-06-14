@@ -10,7 +10,7 @@ Patch versions always include various bug fixes; see the full compare for detail
 * Added d3.geom.quadtree [extent](https://github.com/mbostock/d3/wiki/Quadtree-Geom#wiki-extent) (deprecates size).
 * Added d3.geom.voronoi [clipExtent](https://github.com/mbostock/d3/wiki/Voronoi-Geom#wiki-clipExtent) (deprecates size).
 * Added d3.layout.{[tree](https://github.com/mbostock/d3/wiki/Tree-Layout#wiki-nodeSize),[cluster](https://github.com/mbostock/d3/wiki/Cluster-Layout#wiki-nodeSize)} [nodeSize](https://github.com/mbostock/d3/wiki/Tree-Layout#wiki-nodeSize) for fixed-size nodes.
-* Added d3.layout.pack radius for explicit control of circle radius.
+* Added d3.layout.pack [radius](https://github.com/mbostock/d3/wiki/Pack-Layout#wiki-radius) for explicit control of circle radius.
 * Added *m* argument to d3.scale.{[pow](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-pow),[linear](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-linear)} [nice](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-linear_nice); controls nicing precision.
 * Added d3.scale.{[threshold](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-threshold_invertExtent),[quantize](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-quantize_invertExtent)} [invertExtent](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-threshold_invertExtent) function.
 * Added "step" interpolation to [d3.svg.line](https://github.com/mbostock/d3/wiki/SVG-Shapes#wiki-line_interpolate) and [d3.svg.area](https://github.com/mbostock/d3/wiki/SVG-Shapes#wiki-area_interpolate).
