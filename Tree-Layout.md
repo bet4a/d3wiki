@@ -116,6 +116,10 @@ The separation function is passed two neighboring nodes *a* and *b*, and must re
 
 If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1. Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system. For example, to produce a radial layout where the tree breadth (*x*) is measured in degrees, and the tree depth (*y*) is a radius *r* in pixels, say [360, *r*].
 
+<a name="nodeSize" href="#wiki-nodeSize">#</a> cluster.<b>nodeSize</b>([<i>size</i>])
+
+If *size* is specified, sets a fixed size for each node as a two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current node size, which defaults to null, meaning that the layout has an overall fixed <a href="#wiki-size">size</a>.
+
 <a name="sort" href="#wiki-sort">#</a> tree.<b>sort</b>([<i>comparator</i>])
 
 If *comparator* is specified, sets the sort order of sibling nodes for the layout using the specified comparator function.  If *comparator* is not specified, returns the current group sort order, which defaults to null for no sorting. The comparator function is invoked for pairs of nodes, being passed the input data for each node. The default comparator is null, which disables sorting and uses tree traversal order. For example, to sort sibling nodes in descending order by the associated input data's string name attribute, say:
