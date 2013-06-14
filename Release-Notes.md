@@ -12,7 +12,7 @@ Patch versions always include various bug fixes; see the full compare for detail
 * Added d3.layout.{tree,cluster} nodeSize for fixed-size nodes.
 * Added d3.layout.pack radius for explicit control of circle radius.
 * Added *m* argument to d3.scale.{[pow](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-pow),[linear](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-linear)} [nice](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-linear_nice); controls nicing precision.
-* Added d3.scale.{threshold,quantize} invertExtent function.
+* Added d3.scale.{[threshold](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-threshold_invertExtent),[quantize](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-quantize_invertExtent)} [invertExtent](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-threshold_invertExtent) function.
 * Added "step" interpolation to [d3.svg.line](https://github.com/mbostock/d3/wiki/SVG-Shapes#wiki-line_interpolate) and [d3.svg.area](https://github.com/mbostock/d3/wiki/SVG-Shapes#wiki-area_interpolate).
 * Added d3.svg.brush [clamp](https://github.com/mbostock/d3/wiki/SVG-Controls#wiki-brush_clamp) to control extent clamping.
 * Added support for parsing day-of-year, week-of-year, etc. in [d3.time.format](https://github.com/mbostock/d3/wiki/Time-Formatting).
