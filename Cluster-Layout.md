@@ -54,7 +54,7 @@ The children accessor is first invoked for root node in the hierarchy. If the ac
 
 <a name="nodes" href="Cluster-Layout#wiki-nodes">#</a> cluster.<b>nodes</b>(<i>root</i>)
 
-Runs the cluster layout, returning the array of nodes associated with the specified *root* node. The cluster layout is part of D3's family of [[hierarchical|Hierarchical-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the *root* node of the hierarchy, and the output return value is an array representing the computed positions of all nodes. Several attributes are populated on each node:
+Runs the cluster layout, returning the array of nodes associated with the specified *root* node. The cluster layout is part of D3's family of [[Hierarchical|Hierarchical-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the *root* node of the hierarchy, and the output return value is an array representing the computed positions of all nodes. Several attributes are populated on each node:
 
 * parent - the parent node, or null for the root.
 * children - the array of child nodes, or null for leaf nodes.
