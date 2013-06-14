@@ -52,9 +52,11 @@ If *factory* is specified, sets the scale's output interpolator using the specif
 
 If *boolean* is specified, enables or disables clamping accordingly. By default, clamping is disabled, such that if a value outside the input domain is passed to the scale, the scale may return a value outside the output range through linear extrapolation. For example, with the default domain and range of [0,1], an input value of 2 will return an output value of 2. If clamping is enabled, the normalized domain parameter *t* is clamped to the range [0,1], such that the return value of the scale is always within the scale's output range. If *boolean* is not specified, returns whether or not the scale currently clamps values to within the output range.
 
-<a name="linear_nice" href="Quantitative-Scales#wiki-linear_nice">#</a> linear.<b>nice</b>()
+<a name="linear_nice" href="Quantitative-Scales#wiki-linear_nice">#</a> linear.<b>nice</b>([<i>m</i>])
 
 Extends the domain so that it starts and ends on nice round values. This method typically modifies the scale's domain, and may only extend the bounds to the nearest round value. The precision of the round value is dependent on the extent of the domain *dx* according to the following formula: exp(round(log(*dx*)) - 1). Nicing is useful if the domain is computed from data and may be irregular. For example, for a domain of [0.20147987687960267, 0.996679553296417], the nice domain is [0.2, 1]. If the domain has more than two values, nicing the domain only affects the first and last value.
+
+The optional *m* argument allows a tick count to be specified to control the step size used prior to extending the bounds.
 
 <a name="linear_ticks" href="Quantitative-Scales#wiki-linear_ticks">#</a> linear.<b>ticks</b>(<i>count</i>)
 
@@ -158,9 +160,11 @@ If *factory* is specified, sets the scale's output interpolator using the specif
 
 If *boolean* is specified, enables or disables clamping accordingly. By default, clamping is disabled, such that if a value outside the input domain is passed to the scale, the scale may return a value outside the output range through linear extrapolation. For example, with the default domain and range of [0,1], an input value of 2 will return an output value of 2. If clamping is enabled, the normalized domain parameter *t* is clamped to the range [0,1], such that the return value of the scale is always within the scale's output range. If *boolean* is not specified, returns whether or not the scale currently clamps values to within the output range.
 
-<a name="pow_nice" href="Quantitative-Scales#wiki-pow_nice">#</a> pow.<b>nice</b>()
+<a name="pow_nice" href="Quantitative-Scales#wiki-pow_nice">#</a> pow.<b>nice</b>([<i>m</i>])
 
 Extends the domain so that it starts and ends on nice round values. This method typically modifies the scale's domain, and may only extend the bounds to the nearest round value. The precision of the round value is dependent on the extent of the domain *dx* according to the following formula: exp(round(log(*dx*)) - 1). Nicing is useful if the domain is computed from data and may be irregular. For example, for a domain of [0.20147987687960267, 0.996679553296417], the nice domain is [0.2, 1]. If the domain has more than two values, nicing the domain only affects the first and last value.
+
+The optional *m* argument allows a tick count to be specified to control the step size used prior to extending the bounds.
 
 <a name="pow_ticks" href="Quantitative-Scales#wiki-pow_ticks">#</a> pow.<b>ticks</b>([<i>count</i>])
 

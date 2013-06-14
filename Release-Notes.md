@@ -11,7 +11,7 @@ Patch versions always include various bug fixes; see the full compare for detail
 * Added d3.geom.voronoi clipExtent (deprecates size).
 * Added d3.layout.{tree,cluster} nodeSize for fixed-size nodes.
 * Added d3.layout.pack radius for explicit control of circle radius.
-* Added *m* argument to d3.scale.{pow,linear} nice; controls nicing precision.
+* Added *m* argument to d3.scale.{[pow](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-pow),[linear](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-linear)} [nice](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-linear_nice); controls nicing precision.
 * Added d3.scale.{threshold,quantize} invertExtent function.
 * Added "step" interpolation to d3.svg.line and d3.svg.area.
 * Added d3.svg.brush [clamp](https://github.com/mbostock/d3/wiki/SVG-Controls#wiki-brush_clamp) to control extent clamping.
