@@ -102,6 +102,10 @@ Equivalent to [csv.parseRows](#wiki-parseRows), but for tab-separated values.
 
 Equivalent to [csv.format](#wiki-format), but for tab-separated values.
 
+<a name="tsv_formatRows" href="#wiki-tsv_formatRows">#</a> d3.tsv.<b>formatRows</b>(<i>rows</i>)
+
+Equivalent to [csv.formatRows](#wiki-formatRows), but for tab-separated values.
+
 ## Arbitrary Delimiters
 
 <a name="dsv" href="#wiki-dsv">#</a> d3.<b>dsv</b>(<i>delimiter</i>, <i>mimeType</i>)
@@ -127,3 +131,7 @@ Equivalent to [csv.parseRows](#wiki-parseRows), but for delimiter-separated valu
 <a name="dsv_format" href="#wiki-dsv_format">#</a> dsv.<b>format</b>(<i>rows</i>)
 
 Equivalent to [csv.format](#wiki-format), but for delimiter-separated values.
+
+<a name="dsv_formatRows" href="#wiki-dsv_formatRows">#</a> dsv.<b>formatRows</b>(<i>rows</i>)
+
+Equivalent to [csv.formatRows](#wiki-formatRows), but for delimiter-separated values.
