@@ -24,7 +24,7 @@ Patch versions always include various bug fixes; see the full compare for detail
 * Improved performance of d3.geo.path by caching projection streams.
 * Fixed bug with missing selection.[call](https://github.com/mbostock/d3/wiki/Selections#wiki-enter) on enter selections.
 * Fixed bug with [d3.mouse](https://github.com/mbostock/d3/wiki/Selections#wiki-d3_mouse) when default stylesheets apply padding, margin or borders.
-* Fixed bug with [d3.behavior.zoom](https://github.com/mbostock/d3/wiki/Zoom-Behavior) and [d3.behavior.drag](https://github.com/mbostock/d3/wiki/Drag-Behavior) in regards to canceling mousedown.
+* Fixed bug with [d3.behavior.zoom](https://github.com/mbostock/d3/wiki/Zoom-Behavior) and [d3.behavior.drag](https://github.com/mbostock/d3/wiki/Drag-Behavior) in regards to canceling mousedown. Zooming and dragging now play nicely with iframes on [bl.ocks.org](http://bl.ocks.org)!
 * Fixed bug with [d3.geom.voronoi](https://github.com/mbostock/d3/wiki/Voronoi-Geom) and custom accessors.
 * Fixed bug with [d3.layout.pack](https://github.com/mbostock/d3/wiki/Pack-Layout) with small-radius circles.
 * Fixed bug with d3.scale.log [tickFormat](https://github.com/mbostock/d3/wiki/Quantitative-Scales#wiki-log_tickFormat); now accepts a string as the *format* argument.
