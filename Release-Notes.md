@@ -6,7 +6,7 @@ Patch versions always include various bug fixes; see the full compare for detail
 
 * Added d3.dsv to support generic delimiter-separated values (e.g., "|") beyond TSV & CSV.
 * Added selection.size to count the number of selected elements.
-* Added d3.xhr responseType.
+* Added d3.xhr [responseType](https://github.com/mbostock/d3/wiki/Requests#wiki-responseType).
 * Added d3.geom.quadtree [extent](https://github.com/mbostock/d3/wiki/Quadtree-Geom#wiki-extent) (deprecates size).
 * Added d3.geom.voronoi clipExtent (deprecates size).
 * Added d3.layout.{tree,cluster} nodeSize for fixed-size nodes.

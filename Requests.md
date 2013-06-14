@@ -30,6 +30,10 @@ If *value* is specified, sets the request header with the specified *name* to th
 
 If *type* is specified, sets the request mime type to the specified value. If *type* is null, clears the current mime type, if any. If *type* is not specified, returns the current mime type, which defaults to null. The mime type is used to both set the ["Accept" request header](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html) and for [overrideMimeType](http://www.w3.org/TR/XMLHttpRequest/#the-overridemimetype%28%29-method), where supported. Request headers can only be modified before the request is [sent](#wiki-sent).
 
+<a name="responseType" href="#wiki-responseType">#</a> xhr.<b>responseType</b>(<i>type</i>)
+
+If *type* is specified, sets the [response type](http://www.w3.org/TR/XMLHttpRequest/#the-responsetype-attribute), e.g. "", "arraybuffer", "blob", "document", or "text". If *type* is not specified, returns the current response type, which defaults to "".
+
 <a name="response" href="#wiki-response">#</a> xhr.<b>response</b>(<i>value</i>)
 
 If *value* is specified, sets the response value function to the specified function. If *value* is not specified, returns the current response value function, which defaults to the identity function. The response value function is used to map the response XMLHttpRequest object to its associated data value. For example, for text requests, you might use `function(request) { return request.responseText; }`, whereas for JSON requests, you might use `function(request) { return JSON.parse(request.responseText); }`.
