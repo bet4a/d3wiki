@@ -232,7 +232,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 ## Examples
 * [Commuting Scales, Lausanne Campus commuters] (http://choros.ch/cs/) - Boris Beaude and Luc Guillemot
 * [Disk Space Visualization] (http://wheresmydiskspace.com/) - Lou Montulli
-* [Visualization of the Flask Source Code] (http://www.andreas-dewes.de/code_is_beautiful) - Andreas Dewes
+* [Visualization of the Flask Source Code] (http://www.andreas-dewes.de/code_is_beautiful) - Andreas Dewes ([bl.ocks.org] (http://bl.ocks.org/adewes/4710330))
 * [Violence in Nepal] (http://nepal.icbl.org/data-ncbl-main) - Shirish Pandey
 * [Photography Stats Analysis (bottom of the page)](http://remiescola.fr/about/index2.html) - Remi Escola
 * [StockTwits Social Heatmap](http://stocktwits.com/signals/heatmap) - StockTwits
