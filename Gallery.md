@@ -168,7 +168,9 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
   <tr>
     <td>Bus transit data<br/><a href="http://busrac.es"><img src="https://raw.github.com/bjuhn/UrbanDataChallenge/master/data/busraces.png" width="200"></a></td>
   </tr>
-
+  <tr>
+    <td>Airline data from Fusion Tables<br/><a href="http://xliberation.com/googlecharts/d3flights.html"><img src="http://xliberation.com/googlecharts/1746.png" width="200"></a></td>
+  </tr>
 </table>
 
 ## Basic Charts
@@ -777,6 +779,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Dex the Data Explorer](http://dexvis.com) - Patrick Martin
 * [d3.js partition chart serving data from parse.com](http://ramblings.mcpher.com/Home/excelquirks/parse/d3parse) - Bruce McPherson
 * [Force directed node focus generated from Excel](http://ramblings.mcpher.com/Home/excelquirks/gassites/d3nodefocus) - Bruce McPherson
+* [US Airline performance bigdata direct from Google Fusion](http://ramblings.mcpher.com/Home/excelquirks/d3/flights) - Bruce McPherson
 
 #### Online Editors
 
