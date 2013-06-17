@@ -167,8 +167,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
   </tr>
   <tr>
     <td>Bus transit data<br/><a href="http://busrac.es"><img src="https://raw.github.com/bjuhn/UrbanDataChallenge/master/data/busraces.png" width="200"></a></td>
-  </tr>
-  <tr>
+
     <td>Airline data from Fusion Tables<br/><a href="http://xliberation.com/googlecharts/d3flights.html"><img src="http://xliberation.com/googlecharts/1746.png" width="200"></a></td>
   </tr>
 </table>
