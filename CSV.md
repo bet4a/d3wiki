@@ -76,7 +76,7 @@ An optional *accessor* function may be specified as the second argument. This fu
 
 Converts the specified array of *rows* into comma-separated values format, returning a string. This operation is the reverse of [parse](CSV#wiki-parse). Each row will be separated by a newline (\n), and each column within each row will be separated by a comma (,). Values that contain either commas, double-quotes (") or newlines will be escaped using double-quotes.
 
-Each row should be an object, and all object properties will be converted into fields.  For greater control over which properties are converted, use [formatRows](CSV#wiki-formatRows).
+Each row should be an object, and all object properties will be converted into fields.  For greater control over which properties are converted, convert the rows into arrays containing only the properties that should be converted and use [formatRows](CSV#wiki-formatRows).
 
 <a name="formatRows" href="CSV#wiki-formatRows">#</a> d3.csv.<b>formatRows</b>(<i>rows</i>)
 
