@@ -121,7 +121,7 @@ If *padding* is specified, sets the new padding and returns the treemap layout; 
 
 * A null value disables padding; null is equivalent to zero.
 * A number indicates uniform padding, in pixels, on all four sides.
-* An array of numbers indicates the top, right, left and bottom padding values.
+* An array of numbers indicates the top, right, bottom and left padding values.
 
 The padding may also be specified as a function which returns one of the three above values. This function is evaluated for each internal (non-leaf) node, and can be used to compute padding dynamically.
 
