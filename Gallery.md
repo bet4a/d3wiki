@@ -638,6 +638,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Interactive choropleth: San Francisco voter turnout and the 1989 earthquake](http://www.polsci.ucsb.edu/faculty/glasgow/research/d3/sfintmap.html) - Garrett Glasgow
 * [Visualizing transit data](http://busrac.es)
 * [Asia's Deadliest Conflicts (interactive map with timeline)](http://conflictstudy.asiafoundation.org/)
+* [All 2012 US flights from Google Fusion](http://xliberation.com/googlecharts/d3flights.html)
 
 #### Misc Charts
 
