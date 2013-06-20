@@ -37,6 +37,7 @@ Please feel free to add links to your work!
 * [learning D3.js(1)(Chinese)](http://www.civn.cn/p/12311.html) - jtyjty99999
 * [First glance on D3.js (codecademy course)](http://www.codecademy.com/courses/web-beginner-en-kcP9b) - Jiecheng
 * [Creating Interactive Charts with D3.js](http://blog.ilukwe.com/post/52094586400/creating-interactive-charts-with-d3-js) - Anthony Ilukwe
+* [A simple walkthrough of D3's enter-update-exit Data Pattern with Google Maps](http://informatics.unep-wcmc.org/blog/blog/2013/06/18/a-simple-walkthrough-of-d3-s-enter-update-exit-data-pattern-with-google-maps/) - Decio Battaglia
 
 ### Specific Techniques
 
