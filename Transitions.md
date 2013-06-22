@@ -185,9 +185,37 @@ Creates a new transition on the same selected elements that starts with this tra
 
 <a name="each" href="Transitions#wiki-each">#</a> transition.<b>each</b>([<i>type</i>, ]<i>listener</i>)
 
-If <i>type</i> is specified, adds a listener for transition events, supporting both "start" and "end" events. The listener will be invoked for each individual element in the transition, even if the transition has a constant delay and duration. The start event can be used to trigger an instantaneous change as each element starts to transition. The end event can be used to initiate multi-stage transitions by selecting the current element, `this`, and deriving a new transition. Any transitions created during the end event will inherit the current transition ID, and thus will not override a newer transition that was previously scheduled.
+If <i>type</i> is specified, adds a listener for transition events, supporting both "start" and "end" events. The listener will be invoked for each individual element in the transition.
 
-If <i>type</i> is not specified, behaves the same as [selection.each](Selections#wiki-each).
+The *start* event is invoked during the first asynchronous callback (tick) of the transition, before any tweens are invoked. For transitions with zero delay, this is typically about 17ms after the transition is scheduled. State events are useful for triggering instantaneous changes to each element, such as changing attributes that cannot be interpolated.
+
+The *end* event is invoked during the last asynchronous callback (tick) after the transition duration and delay expires, after all tweens are invoked with t=1. Note that if the transition is superseded by a later-scheduled transition on a given element, no end event will be dispatched for that element; interrupted transitions do not trigger end events. For example, [transition.remove](#wiki-remove) schedules each element to be removed when the transition ends, but if the transition is interrupted, the element will not be removed. End events can also be used to initiate multi-stage transitions by selecting the current element, `this`, and deriving a new transition.
+
+If <i>type</i> is not specified, behaves similarly to [selection.each](Selections#wiki-each): immediately invokes the specified *function* for each element in the current transition, passing in the current datum `d` and index `i`, with the `this` context of the current DOM element. **Any transitions created during the end event will inherit the current transition parameters**, including ID, time, easing, delay and duration. Thus, new transitions created within a parent transition.each will not the parent transition, similar to subtransitions.
+
+The transition.each method can be used to chain transitions and apply shared timing across a set of transitions. For example:
+
+```js
+var transition = d3.transition()
+    .duration(750)
+    .ease("linear");
+
+transition.each(function() {
+  d3.selectAll(".foo").transition()
+      .style("opacity", 0)
+      .remove();
+});
+
+transition.transition().each(function() {
+  d3.selectAll(".bar").transition()
+      .style("opacity", 0)
+      .remove();
+});
+```
+
+By using `d3.select(this)` within transition.each, you can even inherit staggered delay across a set of selected elements. This technique is used by the [Axis component](SVG-Axes) to support [automatic transitions](http://bl.ocks.org/mbostock/1166403).
+
+See also the [Exit, Update, Enter](http://bl.ocks.org/mbostock/5779690) example.
 
 <a name="call" href="Transitions#wiki-call">#</a> transition.<b>call</b>(<i>function</i>[, <i>arguments…</i>])
 
