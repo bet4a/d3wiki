@@ -194,7 +194,11 @@ If the set contains the specified *value*, removes it and returns true. Otherwis
 
 <a name="set_values" href="#wiki-set_values">#</a> set.<b>values</b>()
 
-Returns an array of the values in this set. The order of the returned values is arbitrary.
+Returns an array of the values in this set. The order of the returned values is arbitrary. Can be used as a convenient way of computing the unique values for an array of strings. For example:
+
+```js
+d3.set(["foo", "bar", "foo", "baz"]).values(); // "foo", "bar", "baz"
+```
 
 <a name="set_forEach" href="#wiki-set_forEach">#</a> set.<b>forEach</b>(<i>function</i>)
 
