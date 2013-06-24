@@ -169,7 +169,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
     <td>Bus transit data<br/><a href="http://busrac.es"><img src="https://raw.github.com/bjuhn/UrbanDataChallenge/master/data/busraces.png" width="200"></a></td>
 
     <td>Airline data from Fusion Tables<br/><a href="http://xliberation.com/googlecharts/d3flights.html"><img src="http://xliberation.com/googlecharts/1746.png" width="200"></a></td>
-    <td>Geographical hexbins<br/><a href="http://ssz.fr/places?fr#ac$"><img src="http://ssz.fr/brdl/ac.png" width="200"></a></td>
+    <td>Geographical hexbins<br/><a href="http://ssz.fr/places?fr#ac$"><img src="https://ssz.fr/brdl/ac.png" width="200"></a></td>
 
     <td>xkcd-style Comic Narrative Charts<br/>
       <a href="http://csclub.uwaterloo.ca/~n2iskand/?page_id=13"><img src="http://csclub.uwaterloo.ca/~n2iskand/wp-content/uploads/2013/06/Screen-Shot-2013-06-08-at-12.04.47-PM-300x200.png" width="250"></a>
