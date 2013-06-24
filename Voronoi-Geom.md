@@ -28,15 +28,11 @@ If *y* is specified, sets the y-coordinate accessor. If *y* is not specified, re
 function(d) { return d[1]; }
 ```
 
-<a name="size" href="#wiki-size">#</a> voronoi.<b>size</b>([<i>size</i>])
-
-**Deprecated**: <a href="#wiki-clipExtent">clipExtent</a> is preferred.
-
-Gets or sets the clip size of the Voronoi layout. This implementation does not clip the returned polygons by default, but will clip them to a rectangle of the given size if specified. This is strongly recommended, as unclipped polygons may have large coordinates which do not display correctly. You can also employ custom clipping without specifying a size, either in SVG or by post-processing with [polygon.clip](Polygon-Geom#wiki-clip), as in [this example](http://bl.ocks.org/4237768). 
-
 <a name="clipExtent" href="#wiki-clipExtent">#</a> voronoi.<b>clipExtent</b>([<i>extent</i>])
 
-Gets or sets the clip extent of the Voronoi layout. This implementation does not clip the returned polygons by default, but will clip them to a given rectangle if specified. This is strongly recommended, as unclipped polygons may have large coordinates which do not display correctly. You can also employ custom clipping without specifying a size, either in SVG or by post-processing with [polygon.clip](Polygon-Geom#wiki-clip), as in [this example](http://bl.ocks.org/4237768). 
+Gets or sets the clip extent of the Voronoi layout; see [this example](http://bl.ocks.org/4237768). This implementation does not clip the returned polygons by default, but will clip them to a given rectangle if specified; this is strongly recommended, as unclipped polygons may have large coordinates which do not display correctly.
+
+Alternatively, you can also employ custom clipping without specifying a size, either in SVG or by post-processing with [polygon.clip](Polygon-Geom#wiki-clip).
 
 <a name="links" href="#wiki-links">#</a> voronoi.<b>links</b>(<i>data</i>)
 
