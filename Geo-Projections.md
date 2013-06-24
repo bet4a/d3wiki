@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Geo]] ▸ **Geo Projections**
 
-Several common projections are included with default build of D3; these are shown below. Numerous less-common projections are available in the [extended geographic projections plugin](https://github.com/d3/d3-plugins/blob/master/geo/projection/README.md) and the [polyhedral projection plugin](https://github.com/d3/d3-plugins/tree/master/geo/polyhedron).
+Several common projections are included with default build of D3; these are shown below. Numerous less-common projections are available in the [extended geographic projections plugin](https://github.com/d3/d3-geo-projection/) and the [polyhedral projection plugin](https://github.com/d3/d3-plugins/tree/master/geo/polyhedron).
 
 <table class="highlight">
   <tr height="146" valign="top">
