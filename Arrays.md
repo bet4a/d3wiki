@@ -144,19 +144,19 @@ Constructs a new map. If *object* is specified, copies all enumerable properties
 
 <a name="map_has" href="#wiki-map_has">#</a> map.<b>has</b>(<i>key</i>)
 
-Returns true if and only if this map has an entry for the specified *key*. Note: the value may be null or undefined.
+Returns true if and only if this map has an entry for the specified *key* string. Note: the value may be null or undefined.
 
 <a name="map_get" href="#wiki-map_get">#</a> map.<b>get</b>(<i>key</i>)
 
-Returns the value for the specified *key*. If the map does not have an entry for the specified *key*, returns undefined.
+Returns the value for the specified *key* string. If the map does not have an entry for the specified *key*, returns undefined.
 
 <a name="map_set" href="#wiki-map_set">#</a> map.<b>set</b>(<i>key</i>, <i>value</i>)
 
-Sets the *value* for the specified *key*; returns the new *value*. If the map previously had an entry for the same *key*, the old entry is replaced with the new value.
+Sets the *value* for the specified *key* string; returns the new *value*. If the map previously had an entry for the same *key* string, the old entry is replaced with the new value.
 
 <a name="map_remove" href="#wiki-map_remove">#</a> map.<b>remove</b>(<i>key</i>)
 
-If the map has an entry for the specified *key*, removes the entry and returns true. Otherwise, this method does nothing and returns false.
+If the map has an entry for the specified *key* string, removes the entry and returns true. Otherwise, this method does nothing and returns false.
 
 <a name="map_keys" href="#wiki-map_keys">#</a> map.<b>keys</b>()
 
@@ -168,7 +168,7 @@ Returns an array of values for every entry in this map. The order of the returne
 
 <a name="map_entries" href="#wiki-map_entries">#</a> map.<b>entries</b>()
 
-Returns an array of key-value objects for each entry in this map. The order of the returned entries is arbitrary.
+Returns an array of key-value objects for each entry in this map. The order of the returned entries is arbitrary. Each entry’s key is a string, but the value has arbitrary type.
 
 <a name="map_forEach" href="#wiki-map_forEach">#</a> map.<b>forEach</b>(<i>function</i>)
 
@@ -178,23 +178,23 @@ Calls the specified *function* for each entry in this map, passing the entry's k
 
 <a name="d3_set" href="#wiki-d3_set">#</a> d3.<b>set</b>([<i>array</i>])
 
-Constructs a new set. If *array* is specified, copies all values from the *array* into this set.
+Constructs a new set. If *array* is specified, adds the given the *array* of string values to the returned set.
 
 <a name="set_has" href="#wiki-set_has">#</a> set.<b>has</b>(<i>value</i>)
 
-Returns true if and only if this set has an entry for the specified *value*.
+Returns true if and only if this set has an entry for the specified *value* string.
 
 <a name="set_add" href="#wiki-set_add">#</a> set.<b>add</b>(<i>value</i>)
 
-Adds the specified *value* to this set.
+Adds the specified *value* string to this set.
 
 <a name="set_remove" href="#wiki-set_remove">#</a> set.<b>remove</b>(<i>value</i>)
 
-If the set contains the specified *value*, removes it and returns true. Otherwise, this method does nothing and returns false.
+If the set contains the specified *value* string, removes it and returns true. Otherwise, this method does nothing and returns false.
 
 <a name="set_values" href="#wiki-set_values">#</a> set.<b>values</b>()
 
-Returns an array of the values in this set. The order of the returned values is arbitrary. Can be used as a convenient way of computing the unique values for an array of strings. For example:
+Returns an array of the string values in this set. The order of the returned values is arbitrary. Can be used as a convenient way of computing the unique values for a set of strings. For example:
 
 ```js
 d3.set(["foo", "bar", "foo", "baz"]).values(); // "foo", "bar", "baz"
