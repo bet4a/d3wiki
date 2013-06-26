@@ -389,6 +389,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[scale|Time-Scales#wiki-_scale]] - get the range value corresponding to a given domain value.
 * [[scale.invert|Time-Scales#wiki-invert]] - get the domain value corresponding to a given range value.
 * [[scale.domain|Time-Scales#wiki-domain]] - get or set the scale's input domain.
+* [[scale.nice|Time-Scales#wiki-nice]] - extend the scale domain to nice round numbers.
 * [[scale.range|Time-Scales#wiki-range]] - get or set the scale's output range.
 * [[scale.rangeRound|Time-Scales#wiki-rangeRound]] - set the scale's output range, and enable rounding.
 * [[scale.interpolate|Time-Scales#wiki-interpolate]] - get or set the scale's output interpolator.
