@@ -50,7 +50,8 @@ Please feel free to add links to your work!
 * [Converting dynamic SVG to PNG with node.js, d3 and Imagemagick](http://eng.wealthfront.com/2011/12/converting-dynamic-svg-to-png-with.html) - Wealthfront
 * [Creating Animated Bubble Charts in D3](http://vallandingham.me/bubble_charts_in_d3.html) - Jim Vallandingham
 * [Multiple area charts with d3.js](http://tympanus.net/codrops/2012/08/29/multiple-area-charts-with-d3-js/)
-* [Creating a Polar Area Diagram](http://kreese.net/blog/2012/08/26/d3-js-creating-a-polar-area-diagram-radial-bar-chart/)
+* [Creating a Polar Area Diagram](http://kreese.net/blog/2012/08/26/d3-js-creating-a-polar-area-diagram-radial-bar-chart/) - Kristopher Reese
+* [Smooth Transitioning of Polar Area Diagrams](http://kreese.net/blog/2013/06/26/d3-js-smooth-transitioning-of-polar-area-diagram/) - Kristopher Reese
 * [Building a lightweight, flexible d3.js dashboard (3-part series)](http://ufert.se/user-acquisition/mobile-game-monetization/building-a-lightweight-flexible-d3-js-dashboard-part-1-of-2/) - Eric Seufert
 
 ### Database Integration
