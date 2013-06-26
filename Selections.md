@@ -100,7 +100,7 @@ The element's tag *name* may have a namespace prefix, such as "svg:text" to crea
 
 <a name="remove" href="Selections#wiki-remove">#</a> selection.<b>remove</b>()
 
-Removes the elements in the current selection from the current document. Generally speaking, you should stop using selections once you've removed them, because there's not currently a way to add them back to the document. (See the append and insert operators above for details.)
+Removes the elements in the current selection from the current document. Returns the current selection (the same elements that were removed) which are now “off-screen”, detached from the DOM. Note that there is not currently a dedicated API to add removed elements back to the document; however, you can pass a function to selection.each or selection.select to re-add elements.
 
 ### Data
 
