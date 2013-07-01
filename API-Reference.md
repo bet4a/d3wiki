@@ -655,8 +655,13 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 
 ### [[Voronoi|Voronoi-Geom]]
 
-* [[d3.geom.voronoi|Voronoi-Geom#wiki-voronoi]] - compute the Voronoi diagram for the specified points.
-* [[d3.geom.delaunay|Voronoi-Geom#wiki-delaunay]] - compute the Delaunay triangulation for the specified points.
+* [d3.geom.voronoi](Voronoi-Geom#wiki-voronoi) - create a Voronoi layout with default accessors.
+* [voronoi](Voronoi-Geom#wiki-_voronoi) - compute the Voronoi tessellation for the specified points.
+* [voronoi.x](Voronoi-Geom#wiki-x) - get or set the x-coordinate accessor for each point.
+* [voronoi.y](Voronoi-Geom#wiki-y) - get or set the y-coordinate accessor for each point.
+* [voronoi.clipExent](Voronoi-Geom#wiki-clipExtent) - get or set the clip extent for the tesselation.
+* [voronoi.links](Voronoi-Geom#wiki-links) - compute the Delaunay mesh as a network of links.
+* [voronoi.triangles](Voronoi-Geom#wiki-triangles) - compute the Delaunay mesh as a triangular tessellation.
 
 ### [[Quadtree|Quadtree-Geom]]
 
