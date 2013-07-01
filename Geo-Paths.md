@@ -54,7 +54,7 @@ svg.selectAll("path")
 
 Using distinct path elements is typically slower than a single path element for a collection. However, distinct path elements are preferred if you want interact with features separately (e.g., using CSS :hover or click events).
 
-<a name="projection" href="#wiki-projection">#</a> path.<b>projection</b>([<i>projection</i>])
+<a name="path_projection" href="#wiki-path_projection">#</a> path.<b>projection</b>([<i>projection</i>])
 
 If *projection* is specified, sets the projection used by the path generator to the specified projection function. If *projection* is not specified, returns the current projection, which defaults to [albersUsa](Geo-Projections#wiki-albersUsa). The projection is typically one of D3's built-in [geographic projections](Geo-Projections); however, any function can be used. A projection function takes a two-element array of numbers representing the coordinates of a location, [<i>longitude</i>, <i>latitude</i>], and returns a similar two-element array of numbers representing the projected pixel position [<i>x</i>, <i>y</i>]. For example, a rudimentary spherical Mercator projection:
 
@@ -73,7 +73,7 @@ For more control over the stream transformation, the *projection* may be specifi
 
 If *projection* is null, the path uses the identity transformation, where the input geometry is not projected and is instead rendered directly in raw coordinates. This can be useful for fast rendering of already-projected geometry, or for fast rendering of the equirectangular projection.
 
-<a name="context" href="#wiki-context">#</a> path.<b>context</b>([<i>context</i>])
+<a name="path_context" href="#wiki-path_context">#</a> path.<b>context</b>([<i>context</i>])
 
 If *context* is specified, sets the render context and returns the path generator. If the context is null, then the path generator will return an SVG path string when [invoked](#wiki-_path) on a given feature. If the context is non-null, the path generator will instead call methods on the specified context to render geometry. The context must implement the following methods:
 
@@ -85,19 +85,19 @@ If *context* is specified, sets the render context and returns the path generato
 
 Note that this is a subset of the canvas element’s [2D rendering context](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#2dcontext), and thus a canvas context can be passed to the path generator, in which case geometry will be rendered [directly to the canvas](http://bl.ocks.org/3783604). If *context* is not specified, returns the current render context, which defaults to null.
 
-<a name="area" href="#wiki-area">#</a> path.<b>area</b>(<i>feature</i>)
+<a name="path_area" href="#wiki-path_area">#</a> path.<b>area</b>(<i>feature</i>)
 
 Computes the projected area (in square pixels) for the specified *feature*. Point, MultiPoint, LineString and MultiLineString features have zero area. For Polygon and MultiPolygon features, this method first computes the area of the exterior ring, and then subtracts the area of any interior holes. This method observes any clipping and resampling performed by the projection stream.
 
-<a name="centroid" href="#wiki-centroid">#</a> path.<b>centroid</b>(<i>feature</i>)
+<a name="path_centroid" href="#wiki-path_centroid">#</a> path.<b>centroid</b>(<i>feature</i>)
 
 Computes the projected centroid (in pixels) for the specified *feature*. This is handy for, say, labeling state or county boundaries, or displaying a symbol map. The [noncontiguous cartogram](http://mbostock.github.com/d3/ex/cartogram.html) example scales each state around its centroid. This method observes any clipping and resampling performed by the projection stream.
 
-<a name="bounds" href="#wiki-bounds">#</a> path.<b>bounds</b>(<i>feature</i>)
+<a name="path_bounds" href="#wiki-path_bounds">#</a> path.<b>bounds</b>(<i>feature</i>)
 
 Computes the projected bounding box (in pixels) for the specified *feature*. This is handy for, say, zooming in to a particular feature. This method observes any clipping and resampling performed by the projection stream.
 
-<a name="pointRadius" href="#wiki-pointRadius">#</a> path.<b>pointRadius</b>([<i>radius</i>])
+<a name="path_pointRadius" href="#wiki-path_pointRadius">#</a> path.<b>pointRadius</b>([<i>radius</i>])
 
 If *radius* is specified, sets the radius used to display Point and MultiPoint features to the specified number. If *radius* is not specified, returns the current radius. While the radius is commonly specified as a number constant, it may also be specified as a function which is computed per feature, being passed the *feature* and *index* arguments from the [path](Geo-Paths#wiki-_path) function. For example, if your GeoJSON data has additional properties, you might access those properties inside the radius function to vary the point size; alternatively, you could [d3.svg.symbol](SVG-Shapes#wiki-symbol) and a [projection](Geo-Projections) for more control over the display.
 
