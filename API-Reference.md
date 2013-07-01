@@ -587,23 +587,26 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 
 * [d3.geo.path](Geo-Paths#wiki-path) - create a new geographic path generator.
 * [path](Geo-Paths#wiki-_path) - project the specified feature and render it to the context.
-* [path.projection](Geo-Paths#wiki-projection) - get or set the geographic projection.
-* [path.context](Geo-Paths#wiki-context) - get or set the render context.
-* [path.pointRadius](Geo-Paths#wiki-pointRadius) - get or set the radius to display point features.
-* [path.area](Geo-Paths#wiki-area) - compute the projected area of a given feature.
-* [path.centroid](Geo-Paths#wiki-centroid) - compute the projected centroid of a given feature.
-* [path.bounds](Geo-Paths#wiki-bounds) - compute the projected bounds of a given feature.
+* [path.projection](Geo-Paths#wiki-path_projection) - get or set the geographic projection.
+* [path.context](Geo-Paths#wiki-path_context) - get or set the render context.
+* [path.pointRadius](Geo-Paths#wiki-path_pointRadius) - get or set the radius to display point features.
+* [path.area](Geo-Paths#wiki-path_area) - compute the projected area of a given feature.
+* [path.centroid](Geo-Paths#wiki-path_centroid) - compute the projected centroid of a given feature.
+* [path.bounds](Geo-Paths#wiki-path_bounds) - compute the projected bounds of a given feature.
 * [d3.geo.circle](Geo-Paths#wiki-circle) - create a circle generator.
 * [circle](Geo-Paths#wiki-_circle) - generate a piecewise circle as a Polygon. 
 * [circle.origin](Geo-Paths#wiki-circle_origin) - specify the origin in latitude and longitude.
 * [circle.angle](Geo-Paths#wiki-circle_angle) - specify the angular radius in degrees.
 * [circle.precision](Geo-Paths#wiki-circle_precision) - specify the precision of the piecewise circle.
-* [d3.geo.area](Geo-Paths#wiki-d3_geo_area) - compute the spherical area of a given feature.
-* [d3.geo.bounds](Geo-Paths#wiki-d3_geo_bounds) - compute the latitude-longitude bounding box for a given feature.
-* [d3.geo.centroid](Geo-Paths#wiki-d3_geo_centroid) - compute the spherical centroid of a given feature.
-* [d3.geo.distance](Geo-Paths#wiki-d3_geo_distance) - compute the great-arc distance between two points.
-* [d3.geo.interpolate](Geo-Paths#wiki-d3_geo_interpolate) - interpolate between two points along a great arc.
-* [d3.geo.length](Geo-Paths#wiki-d3_geo_length) - compute the length of a line string or the circumference of a polygon.
+* [d3.geo.area](Geo-Paths#wiki-area) - compute the spherical area of a given feature.
+* [d3.geo.bounds](Geo-Paths#wiki-bounds) - compute the latitude-longitude bounding box for a given feature.
+* [d3.geo.centroid](Geo-Paths#wiki-centroid) - compute the spherical centroid of a given feature.
+* [d3.geo.distance](Geo-Paths#wiki-distance) - compute the great-arc distance between two points.
+* [d3.geo.interpolate](Geo-Paths#wiki-interpolate) - interpolate between two points along a great arc.
+* [d3.geo.length](Geo-Paths#wiki-length) - compute the length of a line string or the circumference of a polygon.
+* [d3.geo.rotation](Geo-Paths#wiki-rotation) - create a rotation function for the specified angles [λ, φ, γ].
+* [rotation](Geo-Paths#wiki-_rotation) - rotate the given location around the sphere.
+* [rotation.invert](Geo-Paths#wiki-rotation_invert) - inverse-rotate the given location around the sphere.
 
 ### [[Projections|Geo-Projections]]
 
