@@ -247,15 +247,15 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[log.copy|Quantitative-Scales#wiki-log_copy]] - create a new scale from an existing scale.
 * [[d3.scale.quantize|Quantitative-Scales#wiki-quantize]] - construct a linear quantitative scale with a discrete output range.
 * [[quantize|Quantitative-Scales#wiki-_quantize]] - get the range value corresponding to a given domain value.
+* [quantize.invertExtent](Quantitative-Scales#wiki-quantize_invertExtent) - get the domain values for the specified range value.
 * [[quantize.domain|Quantitative-Scales#wiki-quantize_domain]] - get or set the scale's input domain.
 * [[quantize.range|Quantitative-Scales#wiki-quantize_range]] - get or set the scale's output range (as discrete values).
-* [quantize.invertExtent](Quantitative-Scales#wiki-quantize_invertExtent) - get the domain values for the specified range value.
 * [[quantize.copy|Quantitative-Scales#wiki-quantize_copy]] - create a new scale from an existing scale.
 * [[d3.scale.threshold|Quantitative-Scales#wiki-threshold]] - construct a threshold scale with a discrete output range.
 * [[threshold|Quantitative-Scales#wiki-_threshold]] - get the range value corresponding to a given domain value.
+* [threshold.invertExtent](Quantitative-Scales#wiki-threshold_invertExtent) - get the domain values for the specified range value.
 * [[threshold.domain|Quantitative-Scales#wiki-threshold_domain]] - get or set the scale's input domain.
 * [[threshold.range|Quantitative-Scales#wiki-threshold_range]] - get or set the scale's output range (as discrete values).
-* [threshold.invertExtent](Quantitative-Scales#wiki-threshold_invertExtent) - get the domain values for the specified range value.
 * [[threshold.copy|Quantitative-Scales#wiki-threshold_copy]] - create a new scale from an existing scale.
 * [[d3.scale.quantile|Quantitative-Scales#wiki-quantile]] - construct a quantitative scale mapping to quantiles.
 * [[quantile|Quantitative-Scales#wiki-_quantile]] - get the range value corresponding to a given domain value.
