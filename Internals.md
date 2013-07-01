@@ -14,6 +14,8 @@ Copies the methods with the specified *names* from *source* to *target*, and ret
 
 ## Events
 
+[![dispatching events](http://bl.ocks.org/mbostock/raw/5872848/thumbnail.png)](http://bl.ocks.org/mbostock/5872848)
+
 D3 uses a dispatcher to handle custom events.
 
 <a name="d3_dispatch" href="Internals#wiki-d3_dispatch">#</a> d3.<b>dispatch</b>(<i>types…</i>)
