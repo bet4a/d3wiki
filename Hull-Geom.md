@@ -1,16 +1,14 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Geometry]] ▸ **Hull Geom**
 
-<a name="hull" href="Hull-Geom#wiki-hull">#</a> d3.geom.<b>hull</b>([<i>vertices</i>])
+<a name="hull" href="Hull-Geom#wiki-hull">#</a> d3.geom.<b>hull</b>()
 
 <a href="http://bl.ocks.org/4341699"><img src="https://raw.github.com/gist/4341699/thumbnail.png" width="202"></a>
 
-If *vertices* is not specified, creates a new hull layout with the default settings.
-
-**Deprecated:**  If *vertices* is specified, returns their convex hull, using the default x- and y-coordinate accessors.
+Create a new hull layout with the default *x*- and *y*-accessors.
 
 <a name="_hull" href="Hull-Geom#wiki-_hull">#</a> <b>hull</b>(<i>vertices</i>)
 
-Returns the convex hull for the specified *vertices* array, using the current x- and y-coordinate accessors. The convex hull is represented by an array containing a subset of the input vertices, arranged in clockwise order.
+Returns the convex hull for the specified *vertices* array, using the current x- and y-coordinate accessors. The returned convex hull is represented as an array containing a subset of the input vertices, arranged in clockwise order.
 
 <a name="x" href="Hull-Geom#wiki-x">#</a> hull.<b>x</b>([<i>x</i>])
 
