@@ -171,38 +171,38 @@ If *precision* is specified, sets the precision of the interpolated circle segme
 
 ## Spherical Math
 
-<a name="d3_geo_area" href="#wiki-d3_geo_area">#</a> d3.geo.<b>area</b>(<i>feature</i>)
+<a name="area" href="#wiki-area">#</a> d3.geo.<b>area</b>(<i>feature</i>)
 
 Returns the spherical area of the specified *feature* in [steradians](http://mathworld.wolfram.com/Steradian.html). See also [path.area](#wiki-area), which computes the projected area on the Cartesian plane.
 
-<a name="d3_geo_centroid" href="#wiki-d3_geo_centroid">#</a> d3.geo.<b>centroid</b>(<i>feature</i>)
+<a name="centroid" href="#wiki-centroid">#</a> d3.geo.<b>centroid</b>(<i>feature</i>)
 
 Returns the spherical centroid of the specified *feature*. See also [path.centroid](#wiki-centroid), which computes the projected centroid on the Cartesian plane.
 
-<a name="d3_geo_bounds" href="#wiki-d3_geo_bounds">#</a> d3.geo.<b>bounds</b>(<i>feature</i>)
+<a name="bounds" href="#wiki-bounds">#</a> d3.geo.<b>bounds</b>(<i>feature</i>)
 
 Returns the spherical bounding box for the specified *feature*. The bounding box is represented by a two-dimensional array: [​[<i>left</i>, <i>bottom</i>], [<i>right</i>, <i>top</i>]​], where *left* is the minimum longitude, *bottom* is the minimum latitude, *right* is maximum longitude, and *top* is the maximum latitude. See also [path.bounds](#wiki-bounds), which computes the projected bounding box on the Cartesian plane.
 
-<a name="d3_geo_distance" href="#wiki-d3_geo_distance">#</a> d3.geo.<b>distance</b>(<i>a</i>, <i>b</i>)
+<a name="distance" href="#wiki-distance">#</a> d3.geo.<b>distance</b>(<i>a</i>, <i>b</i>)
 
 Returns the great-arc distance in radians between the two points <i>a</i> and <i>b</i>. Each point is specified as an array [<i>longitude</i>, <i>latitude</i>], with coordinates expressed in degrees.
 
-<a name="d3_geo_length" href="#wiki-d3_geo_length">#</a> d3.geo.<b>length</b>(<i>feature</i>)
+<a name="length" href="#wiki-length">#</a> d3.geo.<b>length</b>(<i>feature</i>)
 
 Returns the great-arc length of the specified *feature* in [radians](http://mathworld.wolfram.com/Radian.html). For polygons, returns the perimeter of the exterior ring plus that of any interior rings.
 
-<a name="d3_geo_interpolate" href="#wiki-d3_geo_interpolate">#</a> d3.geo.<b>interpolate</b>(<i>a</i>, <i>b</i>)
+<a name="interpolate" href="#wiki-interpolate">#</a> d3.geo.<b>interpolate</b>(<i>a</i>, <i>b</i>)
 
 Returns an interpolator given the two locations *a* and *b*. Each location must be represented as a two-element array of [<i>longitude</i>, <i>latitude</i>]. The returned interpolator is a function which takes a single parameter *t* as input, where *t* ranges from 0 to 1. A value of 0 returns the location *a*, while a value of 1 returns the location *b*. Intermediate values interpolate from *a* to *b* along the spanning great arc.
 
-<a name="d3_geo_rotation" href="#wiki-d3_geo_rotation">#</a> d3.geo.<b>rotation</b>(<i>rotate</i>)
+<a name="rotation" href="#wiki-rotation">#</a> d3.geo.<b>rotation</b>(<i>rotate</i>)
 
 Specifies a rotation in the form of an array, [λ, φ, γ]. The elements of the array are angles in degrees, and specify a rotation in the following order: longitudinal, latitudinal and about the origin. If the last element of the array, γ, is omitted, this defaults to 0.  Returns a function, which rotates a given location as described below.
 
-<a name="d3_geo_rotation_" href="#wiki-d3_geo_rotation_">#</a> <b>rotation</b>(<i>location</i>)
+<a name="_rotation" href="#wiki-_rotation">#</a> <b>rotation</b>(<i>location</i>)
 
 Rotates a given location according to the angles specified for this rotation, in the order described above.  A location is specified as an array [<i>longitude</i>, <i>latitude</i>], with coordinates expressed in degrees.  Returns a new array representing the rotated location.
 
-<a name="d3_geo_rotation_invert" href="#wiki-d3_geo_rotation_invert">#</a> rotation.<b>invert</b>(<i>location</i>)
+<a name="rotation_invert" href="#wiki-rotation_invert">#</a> rotation.<b>invert</b>(<i>location</i>)
 
 Rotates a given location according to the angles specified for this rotation, but with the order described above reversed.  A location is specified as an array [<i>longitude</i>, <i>latitude</i>], with coordinates expressed in degrees.  Returns a new array representing the rotated location.
