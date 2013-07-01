@@ -165,6 +165,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[d3.tsv.parseRows|CSV#wiki-tsv_parseRows]] - parse a TSV string into tuples, ignoring the header row.
 * [[d3.tsv.format|CSV#wiki-tsv_format]] - format an array of objects into a TSV string.
 * [[d3.tsv.formatRows|CSV#wiki-tsv_formatRows]] - format an array of tuples into a TSV string.
+* [d3.dsv](CSV#wiki-dsv) - create a parser/formatter for the specified delimiter and mime type.
 
 ### [[Colors]]
 
