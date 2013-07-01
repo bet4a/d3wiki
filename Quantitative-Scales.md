@@ -262,6 +262,10 @@ Constructs a new quantize scale with the default domain [0,1] and the default ra
 
 Given a value *x* in the input domain, returns the corresponding value in the output range.
 
+<a name="quantize_invert" href="#wiki-quantize_invert">#</a> quantize.<b>invertExtent</b>(<i>y</i>)
+
+Returns the extent of values in the input domain [<i>x0</i>, <i>x1</i>] for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. This method is useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
+
 <a name="quantize_domain" href="Quantitative-Scales#wiki-quantize_domain">#</a> quantize.<b>domain</b>([<i>numbers</i>])
 
 If *numbers* is specified, sets the scale's input domain to the specified two-element array of numbers. If the array contains more than two numbers, only the first and last number are used. If the elements in the given array are not numbers, they will be coerced to numbers; this coercion happens similarly when the scale is called. Thus, a quantize scale can be used to encode any type that can be converted to numbers. If *numbers* is not specified, returns the scale's current input domain.
@@ -317,6 +321,10 @@ Constructs a new threshold scale with the default domain [.5] and the default ra
 <a name="_threshold" href="#wiki-_threshold">#</a> <b>threshold</b>(<i>x</i>)
 
 Given a value *x* in the input domain, returns the corresponding value in the output range.
+
+<a name="threshold_invert" href="#wiki-threshold_invert">#</a> threshold.<b>invertExtent</b>(<i>y</i>)
+
+Returns the extent of values in the input domain [<i>x0</i>, <i>x1</i>] for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. This method is useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
 
 <a name="threshold_domain" href="#wiki-threshold_domain">#</a> threshold.<b>domain</b>([<i>domain</i>])
 
