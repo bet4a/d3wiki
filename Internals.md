@@ -14,9 +14,11 @@ Copies the methods with the specified *names* from *source* to *target*, and ret
 
 ## Events
 
+D3’s behaviors and higher level components, such as the [brush](SVG-Brush), use d3.dispatch to broadcast custom events.
+
 [![dispatching events](http://bl.ocks.org/mbostock/raw/5872848/thumbnail.png)](http://bl.ocks.org/mbostock/5872848)
 
-D3 uses a dispatcher to handle custom events.
+For visualizations with coordinated views, d3.dispatch provides a convenient lightweight mechanism for loosely-coupled components. Organizing your code with d3.dispatch can assist with separation of concerns and make your code easier to maintain.
 
 <a name="d3_dispatch" href="Internals#wiki-d3_dispatch">#</a> d3.<b>dispatch</b>(<i>types…</i>)
 
