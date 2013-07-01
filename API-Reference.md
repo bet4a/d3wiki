@@ -199,9 +199,9 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 
 * [[d3.functor|Internals#wiki-functor]] - create a function that returns a constant.
 * [[d3.rebind|Internals#wiki-rebind]] - rebind an inherited getter/setter method to a subclass.
-* [[d3.dispatch|Internals#wiki-d3_dispatch]] - create custom event dispatchers.
-* [[dispatch.on|Internals#wiki-dispatch_on]] - register an event listener.
-* [[dispatch|Internals#wiki-_dispatch]] - dispatch an event to registered listeners.
+* [[d3.dispatch|Internals#wiki-d3_dispatch]] - create a custom event dispatcher.
+* [[dispatch.on|Internals#wiki-dispatch_on]] - register or unregister an event listener.
+* [[dispatch.type|Internals#wiki-_dispatch]] - dispatch an event to registered listeners.
 
 ## [d3.scale (Scales)](Scales)
 
