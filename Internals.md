@@ -14,7 +14,7 @@ Copies the methods with the specified *names* from *source* to *target*, and ret
 
 ## Events
 
-D3’s behaviors and higher level components, such as the [brush](SVG-Brush), use d3.dispatch to broadcast custom events.
+D3’s behaviors and higher level components, such as the [brush](SVG-Controls#wiki-brush), use d3.dispatch to broadcast custom events.
 
 [![dispatching events](http://bl.ocks.org/mbostock/raw/5872848/thumbnail.png)](http://bl.ocks.org/mbostock/5872848)
 
