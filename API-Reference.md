@@ -671,14 +671,17 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 
 ### [[Polygon|Polygon-Geom]]
 
-* [[d3.geom.polygon|Polygon-Geom#wiki-polygon]]
-* [[polygon.area|Polygon-Geom#wiki-area]]
-* [[polygon.centroid|Polygon-Geom#wiki-centroid]]
-* [[polygon.clip|Polygon-Geom#wiki-clip]]
+* [[d3.geom.polygon|Polygon-Geom#wiki-polygon]] - create a polygon from the specified array of points.
+* [[polygon.area|Polygon-Geom#wiki-area]] - compute the counterclockwise area of this polygon.
+* [[polygon.centroid|Polygon-Geom#wiki-centroid]] - compute the area centroid of this polygon.
+* [[polygon.clip|Polygon-Geom#wiki-clip]] - clip the specified polygon to this polygon.
 
 ### [[Hull|Hull-Geom]]
 
-* [[d3.geom.hull|Hull-Geom#wiki-hull]]
+* [d3.geom.hull](Hull-Geom#wiki-hull) - create a convex hull layout with default accessors.
+* [hull](Hull-Geom#wiki-_hull) - compute the convex hull for the given array of points.
+* [hull.x](Hull-Geom#wiki-x) - get or set the *x*-coordinate accessor.
+* [hull.y](Hull-Geom#wiki-y) - get or set the *y*-coordinate accessor.
 
 ## [[d3.behavior (Behaviors)|Behaviors]]
 
