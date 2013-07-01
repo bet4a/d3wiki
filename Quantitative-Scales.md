@@ -262,7 +262,7 @@ Constructs a new quantize scale with the default domain [0,1] and the default ra
 
 Given a value *x* in the input domain, returns the corresponding value in the output range.
 
-<a name="quantize_invert" href="#wiki-quantize_invert">#</a> quantize.<b>invertExtent</b>(<i>y</i>)
+<a name="quantize_invertExtent" href="#wiki-quantize_invertExtent">#</a> quantize.<b>invertExtent</b>(<i>y</i>)
 
 Returns the extent of values in the input domain [<i>x0</i>, <i>x1</i>] for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. This method is useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
 
@@ -322,7 +322,7 @@ Constructs a new threshold scale with the default domain [.5] and the default ra
 
 Given a value *x* in the input domain, returns the corresponding value in the output range.
 
-<a name="threshold_invert" href="#wiki-threshold_invert">#</a> threshold.<b>invertExtent</b>(<i>y</i>)
+<a name="threshold_invertExtent" href="#wiki-threshold_invertExtent">#</a> threshold.<b>invertExtent</b>(<i>y</i>)
 
 Returns the extent of values in the input domain [<i>x0</i>, <i>x1</i>] for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. This method is useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
 
