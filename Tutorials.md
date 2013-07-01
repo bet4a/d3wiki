@@ -69,6 +69,8 @@ Please feel free to add links to your work!
 * [Jim Vallandingham](http://vallandingham.me/)
 * [Bharat Bhole](http://knowledgestockpile.blogspot.com/search/label/D3)
 
+Also checkout [D3.js on Hacker Notes](http://www.thehackernotes.com/mbostock/d3)
+
 ## Talks and Videos
 
 * [Visualizing Data with Web Standards](http://cdn-smooth.ms-studiosmedia.com/events/W3C/Day2/Web_Standards.mp4) [(Slides)](http://mbostock.github.com/d3/talk/20111116/) <br>W3Conf, November 2011.
