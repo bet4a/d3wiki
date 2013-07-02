@@ -177,6 +177,9 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
   </tr>
   <tr>
     <td>GitHub Visualizer<br/><a href="http://artzub.com/ghv/#repo=d3&climit=100&user=mbostock&run"><img src="https://raw.github.com/artzub/GitHubCodeSwarm/master/ss_d3.png" width="200"></a></td>
+    <td>WorldBank Contract Awards<br/><a href="http://artzub.com/d3/wbca/"><img src="http://img442.imageshack.us/img442/4673/g1k.png" width="200"></a></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
 
@@ -239,6 +242,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 </table>
 
 ## Examples
+* [Distribution of Grant Awards in Fiscal Year 2013](http://www.visualizing.org/sprint/launch/50407), ([github](https://github.com/artzub/wbgds/tree/v23)), [global-development-sprint version 23](http://www.visualizing.org/sprint/global-development-sprint) - [Artem Zubkov] (https://github.com/artzub)
 * [Commuting Scales, Lausanne Campus commuters] (http://choros.ch/cs/) - Boris Beaude and Luc Guillemot
 * [Disk Space Visualization] (http://wheresmydiskspace.com/) - Lou Montulli
 * [Visualization of the Flask Source Code] (http://www.andreas-dewes.de/code_is_beautiful) - Andreas Dewes ([bl.ocks.org] (http://bl.ocks.org/adewes/4710330))
