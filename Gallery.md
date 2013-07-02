@@ -175,6 +175,9 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
       <a href="http://csclub.uwaterloo.ca/~n2iskand/?page_id=13"><img src="http://csclub.uwaterloo.ca/~n2iskand/wp-content/uploads/2013/06/Screen-Shot-2013-06-08-at-12.04.47-PM-300x200.png" width="250"></a>
     </td>
   </tr>
+  <tr>
+    <td>GitHub Visualizer<br/><a href="http://artzub.com/ghv/#repo=d3&climit=100&user=mbostock&run"><img src="https://raw.github.com/artzub/GitHubCodeSwarm/master/ss_d3.png" width="200"></a></td>
+  </tr>
 </table>
 
 ## Basic Charts
