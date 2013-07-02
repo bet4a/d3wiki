@@ -229,7 +229,7 @@ If you want the document traversal order to match the selection data order, you 
 
 <a name="filter" href="Selections#wiki-filter">#</a> selection.<b>filter</b>(<i>selector</i>)
 
-Filters the selection, returning a new selection that contains only the elements for which the specified *selector* is true. The *selector* may be specified either as a function or as a selector string, such as ".foo". As with other operators, the function is passed the current datum `d` and index `i`, with the `this` context as the current DOM element. Like the built-in array [[filter|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter]] method, the returned selection *does not* preserve the index of the original selection; it returns a copy with elements removed. If you want to preserve the index, use [select](Selections#wiki-select) instead. For example, to select every other element:
+Filters the selection, returning a new selection that contains only the elements for which the specified *selector* is true. The *selector* may be specified either as a function or as a selector string, such as ".foo". As with other operators, the function is passed the current datum `d` and index `i`, with the `this` context as the current DOM element. Like the built-in array [[filter|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter]] method, the returned selection *does not* preserve the index of the original selection; it returns a copy with elements removed. If you want to preserve the index, use [select](Selections#wiki-select) instead. For example, to select every odd element (relative to the zero-based index):
 
 ```javascript
 var odds = selection.select(function(d, i) { return i & 1 ? this : null; });
@@ -241,10 +241,10 @@ Equivalently, using a filter function:
 var odds = selection.filter(function(d, i) { return i & 1; });
 ```
 
-Or a filter selector:
+Or a filter selector (noting that the :nth-child pseudo-class is a one-based index rather than a zero-based index):
 
 ```javascript
-var odds = selection.filter(":nth-child(odd)");
+var odds = selection.filter(":nth-child(even)");
 ```
 
 Thus, you can use either select or filter to apply operators to a subset of elements.
