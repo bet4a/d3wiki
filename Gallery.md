@@ -374,6 +374,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 * [Superposed areas for comparing 2 values](https://www.googledrive.com/host/0BwcmXsFAhzhocERSRHc0c0hxaTQ/echr.html) - Etienne Ramstein
 * [Object constancy through many types of buble charts](https://www.googledrive.com/host/0BwcmXsFAhzhoRWh5SjNyV2hLNlE/dashboard.html) - Etienne Ramstein
 * [The Fundamental Theorem of Arithmetic](http://freelanceastrophysicist.com/PrimeTheorem/FToA.html), [source](https://gist.github.com/freelanceastro/5686772) - [Adam Becker](http://freelanceastro.com)
+* [Global Oil Production & Consumption since 1965](http://labs.wnstnsmth.net/worldoil) - [Timo Grossenbacher](http://wnstnsmth.net)
 
 ### Collections
 
@@ -651,6 +652,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Asia's Deadliest Conflicts (interactive map with timeline)](http://conflictstudy.asiafoundation.org/)
 * [All 2012 US flights from Google Fusion](http://xliberation.com/googlecharts/d3flights.html)
 * [San Francisco Contours](http://bl.ocks.org/karmadude/5820393) - Liji Jinaraj
+* [Global Oil Production & Consumption since 1965](http://labs.wnstnsmth.net/worldoil) - [Timo Grossenbacher](http://wnstnsmth.net)
 
 #### Misc Charts
 
