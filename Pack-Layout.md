@@ -114,7 +114,7 @@ If *size* is specified, sets the available layout size to the specified two-elem
 
 <a name="radius" href="Pack-Layout#wiki-radius">#</a> pack.<b>radius</b>([<i>radius</i>])
 
-If *radius* is specified, sets the radius function for computing the radius of each node, or if *radius* is null, enables automatic scaling. If *radius* is not specified, returns the current radius function, which defaults to null.
+If *radius* is specified, sets the radius function for computing the radius of each node. If *radius* is null,  as it is by default, the radius is determined automatically from the node value, scaled to fit the layout size. If *radius* is not specified, returns the current radius function, which defaults to null. The *radius* can also be specified as a constant number for uniform circle size.
 
 <a name="padding" href="Pack-Layout#wiki-padding">#</a> pack.<b>padding</b>([<i>padding</i>])
 
