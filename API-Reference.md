@@ -29,7 +29,8 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[selection.each|Selections#wiki-each]] - call a function for each selected element.
 * [[selection.call|Selections#wiki-call]] - call a function passing in the current selection.
 * [[selection.empty|Selections#wiki-empty]] - returns true if the selection is empty.
-* [[selection.node|Selections#wiki-node]] - access the first node in a selection.
+* [[selection.node|Selections#wiki-node]] - returns the first node in the selection.
+* [selection.size](Selections#wiki-size) - returns the number of elements in the selection.
 * [[selection.select|Selections#wiki-select]] - subselect a descendant element for each selected element.
 * [[selection.selectAll|Selections#wiki-selectAll]] - subselect multiple descendants for each selected element.
 * [[d3.selection|Selections#wiki-d3_selection]] - augment the selection prototype, or test instance types.
@@ -54,6 +55,8 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[transition.filter|Transitions#wiki-filter]] - filter a transition based on data.
 * [[transition.transition|Transitions#wiki-transition]] - when this transition ends, start another one on the same elements.
 * [[transition.remove|Transitions#wiki-remove]] - remove selected elements at the end of a transition.
+* [transition.node](Transitions#wiki-node) - returns the first node in the transition.
+* [transition.size](Transitions#wiki-size) - returns the number of elements in the selection.
 * [[transition.each|Transitions#wiki-each]] - add a listener for transition end events.
 * [[transition.call|Transitions#wiki-call]] - call a function passing in the current transition.
 * [[d3.ease|Transitions#wiki-d3_ease]] - customize transition timing.
