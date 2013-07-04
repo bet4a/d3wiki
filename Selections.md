@@ -86,17 +86,17 @@ If *value* is not specified, returns the inner HTML content for the first non-nu
 
 <a name="append" href="Selections#wiki-append">#</a> selection.<b>append</b>(<i>name</i>)
 
-Appends a new element with the specified *name* as the last child of each element in the current selection. Returns a new selection containing the appended elements. Each new element inherits the data of the current elements, if any, in the same manner as [select](Selections#wiki-select) for subselections. The name must be specified as a constant, though in the future we might allow appending of existing elements or a function to generate the name dynamically.
+Appends a new element with the specified *name* as the last child of each element in the current selection, returning a new selection containing the appended elements. Each new element inherits the data of the current elements, if any, in the same manner as [select](Selections#wiki-select) for subselections.
 
-The element's tag *name* may have a namespace prefix, such as "svg:text" to create a "text" element in the SVG namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to [d3.ns.prefix](Namespaces#wiki-prefix).
+The *name* may be specified either as a constant string or as a function that returns the DOM element to append. When the *name* is specified as a string, it may have a namespace prefix of the form "namespace:tag". For example, "svg:text" will create a "text" element in the SVG namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to [d3.ns.prefix](Namespaces#wiki-prefix).
 
 <a name="insert" href="Selections#wiki-insert">#</a> selection.<b>insert</b>(<i>name</i>, <i>before</i>)
 
-Inserts a new element with the specified *name* before the element matching the specified *before* selector, for each element in the current selection. Returns a new selection containing the inserted elements. If the before selector does not match any elements, then the new element will be the last child as with [append](Selections#wiki-append). Each new element inherits the data of the current elements (if any), in the same manner as [select](Selections#wiki-select) for subselections. The name and before selector must be specified as constants, though in the future we might allow inserting of existing elements or a function to generate the name or selector dynamically.
+Inserts a new element with the specified *name* before the element matching the specified *before* selector, for each element in the current selection, returning a new selection containing the inserted elements. If the before selector does not match any elements, then the new element will be the last child as with [append](Selections#wiki-append). Each new element inherits the data of the current elements (if any), in the same manner as [select](Selections#wiki-select) for subselections.
 
-For instance, `insert("div", ":first-child")` will prepend child div nodes to the current selection.
+The *name* may be specified either as a constant string or as a function that returns the DOM element to append. When the *name* is specified as a string, it may have a namespace prefix of the form "namespace:tag". For example, "svg:text" will create a "text" element in the SVG namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to [d3.ns.prefix](Namespaces#wiki-prefix).
 
-The element's tag *name* may have a namespace prefix, such as "svg:text" to create a "text" element in the SVG namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to [d3.ns.prefix](Namespaces#wiki-prefix).
+Likewise, the *before* selector may be specified as a selector string or a function which returns a DOM element. For instance, `insert("div", ":first-child")` will prepend child div nodes to the current selection.
 
 <a name="remove" href="Selections#wiki-remove">#</a> selection.<b>remove</b>()
 
