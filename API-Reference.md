@@ -55,6 +55,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[transition.filter|Transitions#wiki-filter]] - filter a transition based on data.
 * [[transition.transition|Transitions#wiki-transition]] - when this transition ends, start another one on the same elements.
 * [[transition.remove|Transitions#wiki-remove]] - remove selected elements at the end of a transition.
+* [transition.empty](Transitions#wiki-empty) - returns true if the transition is empty.
 * [transition.node](Transitions#wiki-node) - returns the first node in the transition.
 * [transition.size](Transitions#wiki-size) - returns the number of elements in the selection.
 * [[transition.each|Transitions#wiki-each]] - add a listener for transition end events.
