@@ -243,6 +243,18 @@ d3.selectAll("div").transition().call(foo);
 
 In many cases, it is possible to call the same function *foo* on both transitions and selections, due to identical methods on both selections and transitions! The `this` context of the called function is also the current transition. This is slightly redundant with the first argument, which we might fix in the future.
 
+<a name="empty" href="Transitions#wiki-empty">#</a> transition.<b>empty</b>()
+
+Returns true if the current transition is empty; a transition is empty if it contains no non-null elements.
+
+<a name="node" href="Transitions#wiki-node">#</a> transition.<b>node</b>()
+
+Returns the first non-null element in the current transition. If the transition is empty, returns null.
+
+<a name="size" href="Transitions#wiki-size">#</a> transition.<b>size</b>()
+
+Returns the total number of elements in the current transition.
+
 ## Easing
 
 <a name="d3_ease" href="Transitions#wiki-d3_ease">#</a> d3.<b>ease</b>(<i>type</i>[, <i>arguments…</i>])
