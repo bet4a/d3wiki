@@ -516,16 +516,17 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[histogram.bins|Histogram-Layout#wiki-bins]] - specify how values are organized into bins.
 * [[histogram.frequency|Histogram-Layout#wiki-frequency]] - compute the distribution as counts or probabilities.
 
-### [[Pack|Pack-Layout]]
+### [Pack](Pack-Layout)
 
-* [[d3.layout.pack|Pack-Layout#wiki-pack]] - produce a hierarchical layout using recursive circle-packing.
-* [[pack.sort|Pack-Layout#wiki-sort]] - control the order in which sibling nodes are traversed.
-* [[pack.children|Pack-Layout#wiki-children]] - get or set the children accessor function.
-* [[pack.nodes|Pack-Layout#wiki-nodes]] - compute the pack layout and return the array of nodes.
-* [[pack.links|Pack-Layout#wiki-links]] - compute the parent-child links between tree nodes.
-* [[pack.value|Pack-Layout#wiki-value]] - get or set the value accessor used to size circles.
-* [[pack.size|Pack-Layout#wiki-size]] - specify the layout size in *x* and *y*.
-* [[pack.padding|Pack-Layout#wiki-padding]] - specify the layout padding in (approximate) pixels.
+* [d3.layout.pack](Pack-Layout#wiki-pack) - produce a hierarchical layout using recursive circle-packing.
+* [pack.sort](Pack-Layout#wiki-sort) - control the order in which sibling nodes are traversed.
+* [pack.children](Pack-Layout#wiki-children) - get or set the children accessor function.
+* [pack.nodes](Pack-Layout#wiki-nodes) - compute the pack layout and return the array of nodes.
+* [pack.links](Pack-Layout#wiki-links) - compute the parent-child links between tree nodes.
+* [pack.value](Pack-Layout#wiki-value) - get or set the value accessor used to size circles.
+* [pack.size](Pack-Layout#wiki-size) - specify the layout size in *x* and *y*.
+* [pack.radius](Pack-Layout#wiki-radius) - specify the node radius, rather than deriving it from value.
+* [pack.padding](Pack-Layout#wiki-padding) - specify the layout padding in (approximate) pixels.
 
 ### [[Partition|Partition-Layout]]
 
