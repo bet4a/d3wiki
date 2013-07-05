@@ -264,7 +264,7 @@ Given a value *x* in the input domain, returns the corresponding value in the ou
 
 <a name="quantize_invertExtent" href="#wiki-quantize_invertExtent">#</a> quantize.<b>invertExtent</b>(<i>y</i>)
 
-Returns the extent of values in the input domain [<i>x0</i>, <i>x1</i>] for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. This method is useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
+Returns the extent of values in the input domain [<i>x0</i>, <i>x1</i>] for the corresponding value in the output range *y*, representing the inverse mapping from range to domain. This method is useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
 
 <a name="quantize_domain" href="Quantitative-Scales#wiki-quantize_domain">#</a> quantize.<b>domain</b>([<i>numbers</i>])
 
@@ -273,10 +273,6 @@ If *numbers* is specified, sets the scale's input domain to the specified two-el
 <a name="quantize_range" href="Quantitative-Scales#wiki-quantize_range">#</a> quantize.<b>range</b>([<i>values</i>])
 
 If *values* is specified, sets the scale's output range to the specified array of values. The array may contain any number of discrete values. The elements in the given array need not be numbers; any value or type will work. If *values* is not specified, returns the scale's current output range.
-
-<a name="quantize_invertExtent" href="#wiki-quantize_invertExtent">#</a> quantize.<b>invertExtent</b>(<i>y</i>)
-
-Returns a two-element array representing the interval in the input domain that corresponds to the value in the output range *y*. This represents the inverse mapping from range to domain, such that any value inside the interval will map to the output value *y*.
 
 <a name="quantize_copy" href="#wiki-quantize_copy">#</a> quantize.<b>copy</b>()
 
@@ -324,7 +320,7 @@ Given a value *x* in the input domain, returns the corresponding value in the ou
 
 <a name="threshold_invertExtent" href="#wiki-threshold_invertExtent">#</a> threshold.<b>invertExtent</b>(<i>y</i>)
 
-Returns the extent of values in the input domain [<i>x0</i>, <i>x1</i>] for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. This method is useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
+Returns the extent of values in the input domain [<i>x0</i>, <i>x1</i>] for the corresponding value in the output range *y*, representing the inverse mapping from range to domain. This method is useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
 
 <a name="threshold_domain" href="#wiki-threshold_domain">#</a> threshold.<b>domain</b>([<i>domain</i>])
 
@@ -333,10 +329,6 @@ If *domain* is specified, sets the scale's input domain to the specified array o
 <a name="threshold_range" href="#wiki-threshold_range">#</a> threshold.<b>range</b>([<i>values</i>])
 
 If *values* is specified, sets the scale's output range to the specified array of values. If the number of values in the scale's domain is N, the number of values in the scale's range must be N + 1. If there are fewer than N+1 elements in the range, the scale may return undefined for some inputs. If there are more than N + 1 elements in the range, the additional values are ignored. The elements in the given array need not be numbers; any value or type will work. If *values* is not specified, returns the scale's current output range.
-
-<a name="threshold_invertExtent" href="#wiki-threshold_invertExtent">#</a> threshold.<b>invertExtent</b>(<i>y</i>)
-
-Returns a two-element array representing the interval in the input domain that corresponds to the value in the output range *y*. This represents the inverse mapping from range to domain, such that any value inside the interval will map to the output value *y*.
 
 <a name="threshold_copy" href="#wiki-threshold_copy">#</a> threshold.<b>copy</b>()
 
