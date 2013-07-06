@@ -263,6 +263,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[threshold.copy|Quantitative-Scales#wiki-threshold_copy]] - create a new scale from an existing scale.
 * [[d3.scale.quantile|Quantitative-Scales#wiki-quantile]] - construct a quantitative scale mapping to quantiles.
 * [[quantile|Quantitative-Scales#wiki-_quantile]] - get the range value corresponding to a given domain value.
+* [quantile.invertExtent](Quantitative-Scales#wiki-quantile_invertExtent) - get the domain values for the specified range value.
 * [[quantile.domain|Quantitative-Scales#wiki-quantile_domain]] - get or set the scale's input domain (as discrete values).
 * [[quantile.range|Quantitative-Scales#wiki-quantile_range]] - get or set the scale's output range (as discrete values).
 * [[quantile.quantiles|Quantitative-Scales#wiki-quantile_quantiles]] - get the scale's quantile bin thresholds.
