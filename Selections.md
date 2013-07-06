@@ -90,13 +90,15 @@ Appends a new element with the specified *name* as the last child of each elemen
 
 The *name* may be specified either as a constant string or as a function that returns the DOM element to append. When the *name* is specified as a string, it may have a namespace prefix of the form "namespace:tag". For example, "svg:text" will create a "text" element in the SVG namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to [d3.ns.prefix](Namespaces#wiki-prefix).
 
-<a name="insert" href="Selections#wiki-insert">#</a> selection.<b>insert</b>(<i>name</i>, <i>before</i>)
+<a name="insert" href="Selections#wiki-insert">#</a> selection.<b>insert</b>(<i>name</i>[, <i>before</i>])
 
 Inserts a new element with the specified *name* before the element matching the specified *before* selector, for each element in the current selection, returning a new selection containing the inserted elements. If the before selector does not match any elements, then the new element will be the last child as with [append](Selections#wiki-append). Each new element inherits the data of the current elements (if any), in the same manner as [select](Selections#wiki-select) for subselections.
 
 The *name* may be specified either as a constant string or as a function that returns the DOM element to append. When the *name* is specified as a string, it may have a namespace prefix of the form "namespace:tag". For example, "svg:text" will create a "text" element in the SVG namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to [d3.ns.prefix](Namespaces#wiki-prefix).
 
 Likewise, the *before* selector may be specified as a selector string or a function which returns a DOM element. For instance, `insert("div", ":first-child")` will prepend child div nodes to the current selection.
+
+For [enter selections](Selections#wiki-enter), the *before* selector may be omitted, in which case entering elements will be inserted immediately before the next following sibling in the update selection, if any. This allows you to insert elements into the DOM in an order consistent with bound data. Note, however, the slower [selection.order](Selections#wiki-order) may still be required if updating elements change order.
 
 <a name="remove" href="Selections#wiki-remove">#</a> selection.<b>remove</b>()
 
