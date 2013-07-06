@@ -34,7 +34,7 @@ var color = d3.scale.linear()
     .range(["red", "white", "green"]);
 ```
 
-The resulting value of color(-.5) is "#ff8080", and the value of color(.5) is "#80c080". Internally, polylinear scales perform a binary search for the output interpolator corresponding to the given domain value. By repeating values in both the domain and range, you can also force a chunk of the input domain to map to a constant in the output range.
+The resulting value of color(-.5) is rgb(255, 128, 128), and the value of color(.5) is rgb(128, 192, 128). Internally, polylinear scales perform a binary search for the output interpolator corresponding to the given domain value. By repeating values in both the domain and range, you can also force a chunk of the input domain to map to a constant in the output range.
 
 <a name="linear_range" href="Quantitative-Scales#wiki-linear_range">#</a> linear.<b>range</b>([<i>values</i>])
 
