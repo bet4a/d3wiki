@@ -290,6 +290,10 @@ Constructs a new quantile scale with an empty domain and an empty range. The qua
 
 Given a value *x* in the input domain, returns the corresponding value in the output range.
 
+<a name="quantile_invertExtent" href="#wiki-quantile_invertExtent">#</a> quantile.<b>invertExtent</b>(<i>y</i>)
+
+Returns the extent of values in the input domain [<i>x0</i>, <i>x1</i>] for the corresponding value in the output range *y*, representing the inverse mapping from range to domain. This method is useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
+
 <a name="quantile_domain" href="Quantitative-Scales#wiki-quantile_domain">#</a> quantile.<b>domain</b>([<i>numbers</i>])
 
 If *numbers* is specified, sets the input domain of the quantile scale to the specified set of discrete numeric values. The array must not be empty, and must contain at least one numeric value; NaN, null and undefined values are ignored and not considered part of the sample population. If the elements in the given array are not numbers, they will be coerced to numbers; this coercion happens similarly when the scale is called. A copy of the input array is sorted and stored internally. Thus, a quantile scale can be used to encode any type that can be converted to numbers. If *numbers* is not specified, returns the scale's current input domain.
