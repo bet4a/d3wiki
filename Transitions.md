@@ -313,7 +313,17 @@ D3 has many built-in interpolators to simplify the transitioning of arbitrary va
 
 <a name="d3_interpolate" href="Transitions#wiki-d3_interpolate">#</a> d3.<b>interpolate</b>(<i>a</i>, <i>b</i>)
 
-Returns the default interpolator between the two values *a* and *b*. The type of interpolator is based on the type of the end value *b*. If *b* is a number, *a* is coerced to a number and [interpolateNumber](Transitions#wiki-d3_interpolateNumber) is used. If *b* is a string, a check is performed to see if *b* represents a color of the form `/^(#|rgb\(|hsl\()/`, or one of the [[CSS named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]]; if *b* is a color, *a* is coerced to an RGB color and [interpolateRgb](Transitions#wiki-d3_interpolateRgb) is used. Otherwise, [interpolateString](Transitions#wiki-d3_interpolateString) is used, which interpolates numbers embedded within strings. The behavior of this default interpolator may be extended to support additional types by pushing custom interpolators onto the [d3.interpolators](Transitions#wiki-d3_interpolators) array.
+Returns the default interpolator between the two values *a* and *b*. The type of interpolator is based on the type of the end value *b*, using the following algorithm:
+
+1. If *b* is a color, interpolateRgb is used.
+2. If *b* is a string, interpolateString is used.
+3. If *b* is an array, interpolateArray is used.
+4. If *b* is an object, interpolateObject is used.
+5. Otherwise, interpolateNumber is used.
+
+Based on the chosen interpolator, *a* is coerced to a suitable corresponding type. The color check applies to both instances of [d3.rgb](Colors#wiki-d3_rgb) and other color spaces as well as color strings of the form `/^(#|rgb\(|hsl\()/` or a [[CSS named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]].
+
+The behavior of this default interpolator may be extended to support additional types by pushing custom interpolators onto the [d3.interpolators](Transitions#wiki-d3_interpolators) array.
 
 <a name="_interpolate" href="Transitions#wiki-_interpolate">#</a> <b>interpolate</b>(<i>t</i>)
 
@@ -347,19 +357,27 @@ For each number embedded in *b*, the interpolator will attempt to find a corresp
 
 <a name="d3_interpolateRgb" href="Transitions#wiki-d3_interpolateRgb">#</a> d3.<b>interpolateRgb</b>(<i>a</i>, <i>b</i>)
 
-Returns an RGB color space interpolator between the two colors *a* and *b*. The colors *a* and *b* need not be in RGB, but they will be converted to RGB using [[d3.rgb|Colors#wiki-d3_rgb]]. The red, green and blue channels are interpolated linearly in a manner equivalent to [interpolateRound](Transitions#wiki-d3_interpolateRound), as fractional channel values are not allowed. The return value of the interpolator is always a string representing the RGB color, such as "rgb(255,0,0)" for red.
+Returns an RGB color space interpolator between the two colors *a* and *b*. The colors *a* and *b* need not be in RGB, but they will be converted to RGB using [d3.rgb](Colors#wiki-d3_rgb). The red, green and blue channels are interpolated linearly in a manner equivalent to [interpolateRound](Transitions#wiki-d3_interpolateRound), as fractional channel values are not allowed. The return value of the interpolator is a [d3.rgb](Colors#wiki-d3_rgb) instance.
+
+Note: in most cases, the color instance will be coerced to a string as necessary, such as setting an attribute or style. However, when using canvas, you must explicitly coerce the color to a string (e.g., `color + ""`) when setting the context’s [fillStyle or strokeStyle](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#fill-and-stroke-styles) ([for example](http://bl.ocks.org/mbostock/5385402)). Also note that the interpolator modifies the returned color instance, and thus a copy must be made if you wish to avoid modification.
 
 <a name="d3_interpolateHsl" href="Transitions#wiki-d3_interpolateHsl">#</a> d3.<b>interpolateHsl</b>(<i>a</i>, <i>b</i>)
 
-Returns an HSL color space interpolator between the two colors *a* and *b*. The colors *a* and *b* need not be in HSL, but they will be converted to HSL using [[d3.hsl|Colors#wiki-d3_hsl]]. The hue, saturation and lightness are interpolated linearly in a manner equivalent to [interpolateNumber](Transitions#wiki-d3_interpolateNumber). (The shortest path between the start and end hue is used.) The return value of the interpolator is always a string representing the RGB color, such as "#ff0000" for red; an RGB color string is returned for browser compatibility, as not all browsers support HSL colors in CSS.
+Returns an HSL color space interpolator between the two colors *a* and *b*. The colors *a* and *b* need not be in HSL, but they will be converted to HSL using [[d3.hsl|Colors#wiki-d3_hsl]]. The hue, saturation and lightness are interpolated linearly in a manner equivalent to [interpolateNumber](Transitions#wiki-d3_interpolateNumber). (The shortest path between the start and end hue is used.) The return value of the interpolator is a [d3.hsl](Colors#wiki-d3_hsl) instance.
+
+Note: in most cases, the color instance will be coerced to a string as necessary, such as setting an attribute or style. However, when using canvas, you must explicitly coerce the color to a string (e.g., `color + ""`) when setting the context’s [fillStyle or strokeStyle](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#fill-and-stroke-styles) ([for example](http://bl.ocks.org/mbostock/5385402)). Also note that the interpolator modifies the returned color instance, and thus a copy must be made if you wish to avoid modification.
 
 <a name="d3_interpolateLab" href="#wiki-d3_interpolateLab">#</a> d3.<b>interpolateLab</b>(<i>a</i>, <i>b</i>)
 
-Returns a L\*a\*b\* color space interpolator between the two colors *a* and *b*. The colors *a* and *b* will be converted to L\*a\*\b* if necessary using [[d3.lab|Colors#wiki-d3_lab]]. The color channels are then interpolated linearly in a manner equivalent to [interpolateNumber](Transitions#wiki-d3_interpolateNumber). The return value of the interpolator is always a string representing the RGB color, such as "#ff0000" for red.
+Returns a L\*a\*b\* color space interpolator between the two colors *a* and *b*. The colors *a* and *b* will be converted to L\*a\*\b* if necessary using [[d3.lab|Colors#wiki-d3_lab]]. The color channels are then interpolated linearly in a manner equivalent to [interpolateNumber](Transitions#wiki-d3_interpolateNumber). The return value of the interpolator is a [d3.lab](Colors#wiki-d3_lab) instance.
+
+Note: in most cases, the color instance will be coerced to a string as necessary, such as setting an attribute or style. However, when using canvas, you must explicitly coerce the color to a string (e.g., `color + ""`) when setting the context’s [fillStyle or strokeStyle](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#fill-and-stroke-styles) ([for example](http://bl.ocks.org/mbostock/5385402)). Also note that the interpolator modifies the returned color instance, and thus a copy must be made if you wish to avoid modification.
 
 <a name="d3_interpolateHcl" href="#wiki-d3_interpolateHcl">#</a> d3.<b>interpolateHcl</b>(<i>a</i>, <i>b</i>)
 
-Returns an HCL color space interpolator between the two colors *a* and *b*. The colors *a* and *b* will be converted to HCL if necessary using [[d3.hcl|Colors#wiki-d3_hcl]]. The color channels are then interpolated linearly in a manner equivalent to [interpolateNumber](Transitions#wiki-d3_interpolateNumber). (The shortest path between the start and end hue is used.) The return value of the interpolator is always a string representing the RGB color, such as "#ff0000" for red.
+Returns an HCL color space interpolator between the two colors *a* and *b*. The colors *a* and *b* will be converted to HCL if necessary using [[d3.hcl|Colors#wiki-d3_hcl]]. The color channels are then interpolated linearly in a manner equivalent to [interpolateNumber](Transitions#wiki-d3_interpolateNumber). (The shortest path between the start and end hue is used.) The return value of the interpolator is a [d3.hcl](Colors#wiki-d3_hcl) instance.
+
+Note: in most cases, the color instance will be coerced to a string as necessary, such as setting an attribute or style. However, when using canvas, you must explicitly coerce the color to a string (e.g., `color + ""`) when setting the context’s [fillStyle or strokeStyle](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#fill-and-stroke-styles) ([for example](http://bl.ocks.org/mbostock/5385402)). Also note that the interpolator modifies the returned color instance, and thus a copy must be made if you wish to avoid modification.
 
 <a name="d3_interpolateArray" href="Transitions#wiki-d3_interpolateArray">#</a> d3.<b>interpolateArray</b>(<i>a</i>, <i>b</i>)
 
@@ -385,13 +403,7 @@ See [d3.geo.interpolate](Geo-Paths#wiki-d3_geo_interpolate).
 
 <a name="d3_interpolators" href="Transitions#wiki-d3_interpolators">#</a> d3.<b>interpolators</b>
 
-The array of built-in interpolator factories, as used by [d3.interpolate](Transitions#wiki-d3_interpolate). Additional interpolator factories may be pushed onto the end of this array. Each factory may return an interpolator, if it supports interpolating the two specified input values; otherwise, the factory should return a falsey value and other interpolators will be tried. The initial value of this array, in the order of evaluation, is:
-
-* interpolateNumber - if the type is number.
-* interpolateRgb - if the type is a color.
-* interpolateString - if the type is a string.
-* interpolateArray - if the type is an array.
-* interpolateObject - as a last resort.
+The array of built-in interpolator factories, as used by [d3.interpolate](Transitions#wiki-d3_interpolate). Additional interpolator factories may be pushed onto the end of this array. Each factory may return an interpolator, if it supports interpolating the two specified input values; otherwise, the factory should return a falsey value and other interpolators will be tried.
 
 For example, to register a custom interpolator that formats dollars and cents, you might say:
 
