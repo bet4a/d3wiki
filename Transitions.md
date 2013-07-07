@@ -305,7 +305,7 @@ d3.timer(flash_appointments_due, -4 * 3600 * 1000, appointment);
 
 <a name="d3_timer_flush" href="Transitions#wiki-d3_timer_flush">#</a> d3.timer.<b>flush</b>()
 
-Immediately execute any zero-delay timers. Normally, zero-delay transitions are executed after an instantaneous delay (<10ms). This can cause a brief flicker if the browser renders the page twice: once at the end of the first event loop, then again immediately on the first timer callback. By flushing the timer queue at the end of the first event loop, you can run any zero-delay transitions immediately and avoid the flicker.
+Immediately execute (invoke once) any active timers. Normally, zero-delay transitions are executed after an instantaneous delay (<10ms). This can cause a brief flicker if the browser renders the page twice: once at the end of the first event loop, then again immediately on the first timer callback. By flushing the timer queue at the end of the first event loop, you can run any zero-delay transitions immediately and avoid the flicker.
 
 ## Interpolation
 
