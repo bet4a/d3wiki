@@ -116,7 +116,7 @@ The separation function is passed two neighboring nodes *a* and *b*, and must re
 
 If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1. Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system. For example, to produce a radial layout where the tree breadth (*x*) is measured in degrees, and the tree depth (*y*) is a radius *r* in pixels, say [360, *r*].
 
-<a name="nodeSize" href="#wiki-nodeSize">#</a> cluster.<b>nodeSize</b>([<i>nodeSize</i>])
+<a name="nodeSize" href="#wiki-nodeSize">#</a> tree.<b>nodeSize</b>([<i>nodeSize</i>])
 
 If *nodeSize* is specified, sets a fixed size for each node as a two-element array of numbers representing *x* and *y*. If *nodeSize* is not specified, returns the current node size, which defaults to null, meaning that the layout has an overall fixed size, which can be retrieved using <a href="#wiki-size">size</a>.
 
