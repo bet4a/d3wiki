@@ -655,13 +655,13 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 
 ### [Streams](Geo-Streams)
 
-* [d3.geo.stream](Geo-Streams#d3_geo_stream) - convert a GeoJSON object to a geometry stream.
-* [stream.point](Geo-Streams#point) - indicate an *x*, *y* (and optionally *z*) coordinate.
-* [stream.lineStart](Geo-Streams#lineStart) - indicate the start of a line or ring.
-* [stream.lineEnd](Geo-Streams#lineEnd) - indicate the end of a line or ring.
-* [stream.polygonStart](Geo-Streams#polygonStart) - indicate the start of a polygon.
-* [stream.polygonEnd](Geo-Streams#polygonEnd) - indicate the end of a polygon.
-* [stream.sphere](Geo-Streams#sphere) - indicate a sphere.
+* [d3.geo.stream](Geo-Streams#wiki-stream) - convert a GeoJSON object to a geometry stream.
+* [stream.point](Geo-Streams#wiki-stream_point) - indicate an *x*, *y* (and optionally *z*) coordinate.
+* [stream.lineStart](Geo-Streams#wiki-stream_lineStart) - indicate the start of a line or ring.
+* [stream.lineEnd](Geo-Streams#wiki-stream_lineEnd) - indicate the end of a line or ring.
+* [stream.polygonStart](Geo-Streams#wiki-stream_polygonStart) - indicate the start of a polygon.
+* [stream.polygonEnd](Geo-Streams#wiki-stream_polygonEnd) - indicate the end of a polygon.
+* [stream.sphere](Geo-Streams#wiki-stream_sphere) - indicate a sphere.
 
 ## [d3.geom (Geometry)](Geometry)
 
