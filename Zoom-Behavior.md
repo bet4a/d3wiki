@@ -2,7 +2,7 @@
 
 [![Pan+Zoom](http://bl.ocks.org/mbostock/raw/3892919/thumbnail.png)](http://bl.ocks.org/mbostock/3892919)
 
-This behavior automatically creates event listeners to handle zooming and panning gestures on a container element. Both mouse and touch events are supported.
+This behavior automatically creates event listeners to handle [zooming and panning](http://bl.ocks.org/mbostock/3892919) gestures on a container element. Both mouse and touch events are supported.
 
 <a name="zoom" href="Zoom-Behavior#wiki-zoom">#</a> d3.behavior.<b>zoom</b>()
 
