@@ -397,9 +397,9 @@ Note: no defensive copy of the template object is created; modifications of the 
 
 Returns an interpolator between the two 2D affine [transforms](Math#wiki-transform) represented by *a* and *b*. Each transform is decomposed to a standard representation of translate, rotate, *x*-skew and scale; these component transformations are then interpolated. This behavior is standardized by CSS: see [matrix decomposition for animation](http://www.w3.org/TR/css3-2d-transforms/#matrix-decomposition).
 
-<a href="Geo-Paths#wiki-d3_geo_interpolate">#</a> d3.geo.<b>interpolate</b>(<i>a</i>, <i>b</i>)
+<a href="Geo-Paths#wiki-interpolate">#</a> d3.geo.<b>interpolate</b>(<i>a</i>, <i>b</i>)
 
-See [d3.geo.interpolate](Geo-Paths#wiki-d3_geo_interpolate).
+See [d3.geo.interpolate](Geo-Paths#wiki-interpolate).
 
 <a name="d3_interpolators" href="Transitions#wiki-d3_interpolators">#</a> d3.<b>interpolators</b>
 
