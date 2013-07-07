@@ -100,7 +100,7 @@ Likewise, the *before* selector may be specified as a selector string or a funct
 
 <a name="remove" href="Selections#wiki-remove">#</a> selection.<b>remove</b>()
 
-Removes the elements in the current selection from the current document. Returns the current selection (the same elements that were removed) which are now “off-screen”, detached from the DOM. Note that there is not currently a dedicated API to add removed elements back to the document; however, you can pass a function to selection.each or selection.select to re-add elements.
+Removes the elements in the current selection from the current document. Returns the current selection (the same elements that were removed) which are now “off-screen”, detached from the DOM. Note that there is not currently a dedicated API to add removed elements back to the document; however, you can pass a function to selection.append or selection.insert to re-add elements.
 
 ### Data
 
