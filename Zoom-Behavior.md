@@ -1,8 +1,13 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Behaviors]] ▸ **Zoom Behavior**
 
 [![Pan+Zoom](http://bl.ocks.org/mbostock/raw/3892919/thumbnail.png)](http://bl.ocks.org/mbostock/3892919)
+[![Zoomable Geography](http://bl.ocks.org/mbostock/raw/2374239/thumbnail.png)](http://bl.ocks.org/mbostock/2374239)
+[![Zoomable Area](http://bl.ocks.org/mbostock/raw/4015254/thumbnail.png)](http://bl.ocks.org/mbostock/4015254)
+[![d3.geo.tile](http://bl.ocks.org/mbostock/raw/4132797/thumbnail.png)](http://bl.ocks.org/mbostock/4132797)
+[![Geometric Zooming](http://bl.ocks.org/mbostock/raw/3680999/thumbnail.png)](http://bl.ocks.org/mbostock/3680999)
+[![Raster & Vector Zoom](http://bl.ocks.org/mbostock/raw/5914438/thumbnail.png)](http://bl.ocks.org/mbostock/5914438)
 
-This behavior automatically creates event listeners to handle [zooming and panning](http://bl.ocks.org/mbostock/3892919) gestures on a container element. Both mouse and touch events are supported.
+This behavior automatically creates event listeners to handle zooming and panning gestures on a container element. Both mouse and touch events are supported.
 
 <a name="zoom" href="Zoom-Behavior#wiki-zoom">#</a> d3.behavior.<b>zoom</b>()
 
