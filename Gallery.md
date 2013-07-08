@@ -179,6 +179,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
     <td>GitHub Visualizer<br/><a href="http://artzub.com/ghv/#repo=d3&climit=100&user=mbostock&run"><img src="https://raw.github.com/artzub/GitHubCodeSwarm/master/ss_d3.png" width="200"></a></td>
     <td>WorldBank Contract Awards<br/><a href="http://artzub.com/d3/wbca/"><img src="http://img442.imageshack.us/img442/4673/g1k.png" width="200"></a></td>
     <td>Site or blog concept browser<br/><a href="http://xliberation.com/googlecharts/d3concept.html"><img src="http://xliberation.com/googlecharts/1774.png" width="200"></a></td>
+    <td>Global power structure<br/><a href="http://WhoDoTheyServe.com"><img src="http://WhoDoTheyServe.com/asset/d3-thumb-200x200.png" width="200"></a></td>
     <td></td>
   </tr>
 </table>
