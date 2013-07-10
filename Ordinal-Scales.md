@@ -38,7 +38,7 @@ Sets the output range from the specified continuous *interval*. The array *inter
 
 <a name="ordinal_rangeRoundBands" href="Ordinal-Scales#wiki-ordinal_rangeRoundBands">#</a> ordinal.<b>rangeRoundBands</b>(<i>interval</i>[, <i>padding</i>])
 
-Like [rangeBands](Ordinal-Scales#wiki-ordinal_rangeBands), except guarantees that the band width and offset is a integer value, so as to avoid antialiasing artifacts.
+Like [rangeBands](Ordinal-Scales#wiki-ordinal_rangeBands), except guarantees that the band width and offset are integer values, so as to avoid antialiasing artifacts.
 
 <a name="ordinal_rangeBand" href="Ordinal-Scales#wiki-ordinal_rangeBand">#</a> ordinal.<b>rangeBand</b>()
 
