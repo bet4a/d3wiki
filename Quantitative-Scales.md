@@ -235,16 +235,13 @@ Returns representative values from the scale's input domain. The returned tick v
 
 <a name="log_tickFormat" href="Quantitative-Scales#wiki-log_tickFormat">#</a> log.<b>tickFormat</b>([<i>count</i>, [<i>format</i>]])
 
-Returns a [[number format|Formatting#wiki-d3_format]] function suitable for displaying a tick value. The returned tick format is implemented as `d.toPrecision(1)`. If a *count* is specified, then some of the tick labels may not be displayed; this is useful if there is not enough room to fit all of the tick labels. However, note that the tick marks will still be displayed (so that the log scale distortion remains visible). When specifying a count, you may also override the *format* function. For example, to display 20 ticks of a currency:
+Returns a [[number format|Formatting#wiki-d3_format]] function suitable for displaying a tick value. The returned tick format is implemented as `d.toPrecision(1)`. If a *count* is specified, then some of the tick labels may not be displayed; this is useful if there is not enough room to fit all of the tick labels. However, note that the tick marks will still be displayed (so that the log scale distortion remains visible). When specifying a count, you may also override the *format* function; you can also specify a format specifier as a string, and it will automatically be wrapped with [d3.format](Formatting). For example, to get a tick formatter that will display 20 ticks of a currency:
 
 ```js
-var formatNumber = d3.format(",.0f"), // for formatting integers
-    formatCurrency = function(d) { return "$" + formatNumber(d); };
-
-scale.ticks(20, formatCurrency);
+scale.tickFormat(20, "$,.2f");
 ```
 
-The optional *format* argument may also be a [[format specifier|Formatting#wiki-d3_format]] string. If the format specifier doesn’t have a defined precision, the precision will be set automatically by the scale, returning the appropriate format. This provides a convenient, declarative way of specifying a format whose precision will be automatically set by the scale.
+If the format specifier doesn’t have a defined precision, the precision will be set automatically by the scale, returning the appropriate format. This provides a convenient, declarative way of specifying a format whose precision will be automatically set by the scale.
 
 <a name="log_copy" href="#wiki-log_copy">#</a> log.<b>copy</b>()
 
