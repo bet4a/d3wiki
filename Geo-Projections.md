@@ -124,26 +124,13 @@ Thus, when creating a mutable projection, the *mutate* function is never exposed
 
 <a name="albers" href="#wiki-albers">#</a> d3.geo.<b>albers</b>()
 
-An alias for [d3.geo.conicEqualArea](#wiki-conicEqualArea), with USA-centric defaults: scale 1000, translate [480, 250], rotation [98°, 0°], center ⟨0°, 38°⟩ and parallels [29.5°, 45.5°], making it suitable for displaying the United States, centered around [Hutchinson, Kansas](https://maps.google.com/maps?q=Hutchinson,+Kansas&z=5) in a 960×500 area. The default parallels are specified by the [USGS](http://www.usgs.gov/) in the 1970 [National Atlas](http://www.nationalatlas.gov/).
+An alias for [d3.geo.conicEqualArea](#wiki-conicEqualArea), with USA-centric defaults: scale 1000, translate [480, 250], rotation [96°, 0°], center ⟨-0.6°, 38.7°⟩ and parallels [29.5°, 45.5°], making it suitable for displaying the United States, centered around [Hutchinson, Kansas](https://maps.google.com/maps?q=Hutchinson,+Kansas&z=5) in a 960×500 area. The central meridian and parallels are specified by the [USGS](http://www.usgs.gov/) in the 1970 [National Atlas](http://www.nationalatlas.gov/).
 
 <a name="albersUsa" href="#wiki-albersUsa">#</a> d3.geo.<b>albersUsa</b>()
 
 <a href="http://bl.ocks.org/4090848"><img src="https://raw.github.com/gist/4090848/thumbnail.png" width="202"></a>
 
-The Albers USA projection is a composite projection of four Albers projections designed to display the forty-eight lower United States alongside Alaska, Hawaii and Puerto Rico. Although intended for choropleths, it distorts the area of Puerto Rico by a factor of 1.5x and Alaska by a factor of 0.6x; Hawaii is shown at the same scale as the lower forty-eight.
-
-The projection composition is implemented as:
-
-```js
-function albersUsa(location) {
-  var longitude = location[0],
-      latitude = location[1];
-  return (latitude > 50 ? alaska
-      : longitude < -140 ? hawaii
-      : latitude < 21 ? puertoRico
-      : lower48)(coordinates);
-}
-```
+The Albers USA projection is a composite projection of four Albers projections designed to display the forty-eight lower United States alongside Alaska and Hawaii. Although intended for choropleths, it scales the area of Alaska by a factor of 0.35x (a <i>lie factor</i> of 3); Hawaii is shown at the same scale as the lower forty-eight.
 
 The Albers USA projection does not support rotation or centering.
 
