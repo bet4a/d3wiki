@@ -8,7 +8,7 @@ Create a new hull layout with the default *x*- and *y*-accessors.
 
 <a name="_hull" href="Hull-Geom#wiki-_hull">#</a> <b>hull</b>(<i>vertices</i>)
 
-Returns the convex hull for the specified *vertices* array, using the current x- and y-coordinate accessors. The returned convex hull is represented as an array containing a subset of the input vertices, arranged in clockwise order.
+Returns the convex hull for the specified *vertices* array, using the current x- and y-coordinate accessors. The returned convex hull is represented as an array containing a subset of the input vertices, arranged in counterclockwise order.
 
 <a name="x" href="Hull-Geom#wiki-x">#</a> hull.<b>x</b>([<i>x</i>])
 
