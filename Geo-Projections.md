@@ -44,7 +44,7 @@ var mercator = d3.geo.projection(function(λ, φ) {
 
 <a name="_projection" href="#wiki-_projection">#</a> <b>projection</b>(<i>location</i>)
 
-Projects forward from spherical coordinates (in degrees) to Cartesian coordinates (in pixels). Returns an array [<i>x</i>, <i>y</i>] given the input array [<i>longitude</i>, <i>latitude</i>].
+Projects forward from spherical coordinates (in degrees) to Cartesian coordinates (in pixels). Returns an array [<i>x</i>, <i>y</i>] given the input array [<i>longitude</i>, <i>latitude</i>]. May return null if the specified *location* has no defined projected position, such as when the location is outside the clipping bounds of the projection.
 
 <a name="invert" href="#wiki-invert">#</a> projection.<b>invert</b>(<i>point</i>)
 
