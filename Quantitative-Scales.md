@@ -20,7 +20,7 @@ Note: based on the scale’s [interpolator](#wiki-linear_interpolate), the scale
 
 <a name="linear_invert" href="Quantitative-Scales#wiki-linear_invert">#</a> linear.<b>invert</b>(<i>y</i>)
 
-Returns the value in the input domain *x* for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. For a valid value *y* in the output range, linear(linear.invert(*y*)) equals *y*; similarly, for a valid value *x* in the input domain, linear.invert(linear(*x*)) equals *x*. Equivalently, you can construct the invert operator by building a new scale while swapping the domain and range. The invert operator is particularly useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
+Returns the value in the input domain *x* for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. For a valid value *y* in the output range, linear(linear.invert(<i>y</i>)) equals *y*; similarly, for a valid value *x* in the input domain, linear.invert(linear(<i>x</i>)) equals *x*. Equivalently, you can construct the invert operator by building a new scale while swapping the domain and range. The invert operator is particularly useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
 
 Note: the invert operator is only supported if the output range is numeric! D3 allows the output range to be any type; under the hood, [[d3.interpolate|Transitions#wiki-d3_interpolate]] or a custom interpolator of your choice is used to map the normalized parameter *t* to a value in the output range. Thus, the output range may be colors, strings, or even arbitrary objects. As there is no facility to "uninterpolate" arbitrary types, the invert operator is currently supported only on numeric ranges.
 
@@ -58,7 +58,7 @@ If *boolean* is specified, enables or disables clamping accordingly. By default,
 
 <a name="linear_nice" href="Quantitative-Scales#wiki-linear_nice">#</a> linear.<b>nice</b>([<i>count</i>])
 
-Extends the domain so that it starts and ends on nice round values. This method typically modifies the scale's domain, and may only extend the bounds to the nearest round value. The precision of the round value is dependent on the extent of the domain *dx* according to the following formula: exp(round(log(*dx*)) - 1). Nicing is useful if the domain is computed from data and may be irregular. For example, for a domain of [0.20147987687960267, 0.996679553296417], the nice domain is [0.2, 1]. If the domain has more than two values, nicing the domain only affects the first and last value.
+Extends the domain so that it starts and ends on nice round values. This method typically modifies the scale's domain, and may only extend the bounds to the nearest round value. The precision of the round value is dependent on the extent of the domain *dx* according to the following formula: exp(round(log(<i>dx</i>)) - 1). Nicing is useful if the domain is computed from data and may be irregular. For example, for a domain of [0.20147987687960267, 0.996679553296417], the nice domain is [0.2, 1]. If the domain has more than two values, nicing the domain only affects the first and last value.
 
 The optional tick *count* argument allows greater control over the step size used to extend the bounds, guaranteeing that the returned [ticks](#wiki-linear_ticks) will exactly cover the domain.
 
@@ -136,7 +136,7 @@ Note: based on the scale’s [interpolator](#wiki-pow_interpolate), the scale ma
 
 <a name="pow_invert" href="Quantitative-Scales#wiki-pow_invert">#</a> pow.<b>invert</b>(<i>y</i>)
 
-Returns the value in the input domain *x* for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. For a valid value *y* in the output range, pow(pow.invert(*y*)) equals *y*; similarly, for a valid value *x* in the input domain, pow.invert(pow(*x*)) equals *x*. Equivalently, you can construct the invert operator by building a new scale while swapping the domain and range. The invert operator is particularly useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
+Returns the value in the input domain *x* for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. For a valid value *y* in the output range, pow(pow.invert(<i>y</i>)) equals *y*; similarly, for a valid value *x* in the input domain, pow.invert(pow(<i>x</i>)) equals *x*. Equivalently, you can construct the invert operator by building a new scale while swapping the domain and range. The invert operator is particularly useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
 
 Note: the invert operator is only supported if the output range is numeric! D3 allows the output range to be any type; under the hood, [[d3.interpolate|Transitions#wiki-d3_interpolate]] or a custom interpolator of your choice is used to map the normalized parameter *t* to a value in the output range. Thus, the output range may be colors, strings, or even arbitrary objects. As there is no facility to "uninterpolate" arbitrary types, the invert operator is currently supported only on numeric ranges.
 
@@ -168,7 +168,7 @@ If *boolean* is specified, enables or disables clamping accordingly. By default,
 
 <a name="pow_nice" href="Quantitative-Scales#wiki-pow_nice">#</a> pow.<b>nice</b>([<i>m</i>])
 
-Extends the domain so that it starts and ends on nice round values. This method typically modifies the scale's domain, and may only extend the bounds to the nearest round value. The precision of the round value is dependent on the extent of the domain *dx* according to the following formula: exp(round(log(*dx*)) - 1). Nicing is useful if the domain is computed from data and may be irregular. For example, for a domain of [0.20147987687960267, 0.996679553296417], the nice domain is [0.2, 1]. If the domain has more than two values, nicing the domain only affects the first and last value.
+Extends the domain so that it starts and ends on nice round values. This method typically modifies the scale's domain, and may only extend the bounds to the nearest round value. The precision of the round value is dependent on the extent of the domain *dx* according to the following formula: exp(round(log(<i>dx</i>)) - 1). Nicing is useful if the domain is computed from data and may be irregular. For example, for a domain of [0.20147987687960267, 0.996679553296417], the nice domain is [0.2, 1]. If the domain has more than two values, nicing the domain only affects the first and last value.
 
 The optional *m* argument allows a tick count to be specified to control the step size used prior to extending the bounds.
 
@@ -189,7 +189,7 @@ Returns an exact copy of this scale. Changes to this scale will not affect the r
 
 ## Log Scales
 
-Log scales are similar to linear scales, except there's a logarithmic transform that is applied to the input domain value before the output range value is computed. The mapping to the output range value *y* can be expressed as a function of the input domain value *x*: *y* = *m* log(*x*) + *b*. Log scales also support negative values, in which case the input value is multiplied by -1, and the resulting output value is also multiplied by -1. However, note that the domain of a log scale should never contain zero, as log(0) is negative infinity.
+Log scales are similar to linear scales, except there's a logarithmic transform that is applied to the input domain value before the output range value is computed. The mapping to the output range value *y* can be expressed as a function of the input domain value *x*: *y* = *m* log(<i>x</i>) + *b*. Log scales also support negative values, in which case the input value is multiplied by -1, and the resulting output value is also multiplied by -1. However, note that the domain of a log scale should never contain zero, as log(0) is negative infinity.
 
 <a name="log" href="Quantitative-Scales#wiki-log">#</a> d3.scale.<b>log</b>()
 
@@ -203,7 +203,7 @@ Note: based on the scale’s [interpolator](#wiki-log_interpolate), the scale ma
 
 <a name="log_invert" href="Quantitative-Scales#wiki-log_invert">#</a> log.<b>invert</b>(<i>y</i>)
 
-Returns the value in the input domain *x* for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. For a valid value *y* in the output range, log(log.invert(*y*)) equals *y*; similarly, for a valid value *x* in the input domain, log.invert(log(*x*)) equals *x*. Equivalently, you can construct the invert operator by building a new scale while swapping the domain and range. The invert operator is particularly useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
+Returns the value in the input domain *x* for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. For a valid value *y* in the output range, log(log.invert(<i>y</i>)) equals *y*; similarly, for a valid value *x* in the input domain, log.invert(log(<i>x</i>)) equals *x*. Equivalently, you can construct the invert operator by building a new scale while swapping the domain and range. The invert operator is particularly useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
 
 Note: the invert operator is only supported if the output range is numeric! D3 allows the output range to be any type; under the hood, [[d3.interpolate|Transitions#wiki-d3_interpolate]] or a custom interpolator of your choice is used to map the normalized parameter *t* to a value in the output range. Thus, the output range may be colors, strings, or even arbitrary objects. As there is no facility to "uninterpolate" arbitrary types, the invert operator is currently supported only on numeric ranges.
 
