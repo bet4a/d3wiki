@@ -16,6 +16,8 @@ Constructs a new linear scale with the default domain [0,1] and the default rang
 
 Given a value *x* in the input domain, returns the corresponding value in the output range.
 
+Note: based on the scale’s [interpolator](#wiki-linear_interpolate), the scale may **reuse return values**. For example, if the domain is specified as color strings, then [d3.interpolateRgb](Transitions#wiki-d3_interpolateRgb) is automatically applied and the scale reuses a [d3.rgb](Colors#wiki-d3_rgb) instance. Often, the return value of a scale is immediately used to set an [attribute](Selections#wiki-attr) or [style](Selections#wiki-style), and you don’t have to worry about this; however, if you need to store the scale’s return value, use string coercion or the d3.rgb constructor to create a copy.
+
 <a name="linear_invert" href="Quantitative-Scales#wiki-linear_invert">#</a> linear.<b>invert</b>(<i>y</i>)
 
 Returns the value in the input domain *x* for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. For a valid value *y* in the output range, linear(linear.invert(*y*)) equals *y*; similarly, for a valid value *x* in the input domain, linear.invert(linear(*x*)) equals *x*. Equivalently, you can construct the invert operator by building a new scale while swapping the domain and range. The invert operator is particularly useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
@@ -47,6 +49,8 @@ Sets the scale's output range to the specified array of values, while also setti
 <a name="linear_interpolate" href="Quantitative-Scales#wiki-linear_interpolate">#</a> linear.<b>interpolate</b>([<i>factory</i>])
 
 If *factory* is specified, sets the scale's output interpolator using the specified *factory*. The interpolator factory defaults to [[d3.interpolate|Transitions#wiki-d3_interpolate]], and is used to map the normalized domain parameter *t* in [0,1] to the corresponding value in the output range. The interpolator factory will be used to construct interpolators for each adjacent pair of values from the output range. If *factory* is not specified, returns the scale's interpolator factory.
+
+Note: some interpolators, such as [d3.interpolateRgb](Transitions#wiki-d3_interpolateRgb), reuse return values.
 
 <a name="linear_clamp" href="Quantitative-Scales#wiki-linear_clamp">#</a> linear.<b>clamp</b>([<i>boolean</i>])
 
@@ -128,6 +132,8 @@ Constructs a new power scale with the default domain [0,1], the default range [0
 
 Given a value *x* in the input domain, returns the corresponding value in the output range.
 
+Note: based on the scale’s [interpolator](#wiki-pow_interpolate), the scale may **reuse return values**. For example, if the domain is specified as color strings, then [d3.interpolateRgb](Transitions#wiki-d3_interpolateRgb) is automatically applied and the scale reuses a [d3.rgb](Colors#wiki-d3_rgb) instance. Often, the return value of a scale is immediately used to set an [attribute](Selections#wiki-attr) or [style](Selections#wiki-style), and you don’t have to worry about this; however, if you need to store the scale’s return value, use string coercion or the d3.rgb constructor to create a copy.
+
 <a name="pow_invert" href="Quantitative-Scales#wiki-pow_invert">#</a> pow.<b>invert</b>(<i>y</i>)
 
 Returns the value in the input domain *x* for the corresponding value in the output range *y*. This represents the inverse mapping from range to domain. For a valid value *y* in the output range, pow(pow.invert(*y*)) equals *y*; similarly, for a valid value *x* in the input domain, pow.invert(pow(*x*)) equals *x*. Equivalently, you can construct the invert operator by building a new scale while swapping the domain and range. The invert operator is particularly useful for interaction, say to determine the value in the input domain that corresponds to the pixel location under the mouse.
@@ -192,6 +198,8 @@ Constructs a new log scale with the default domain [1,10], the default range [0,
 <a name="_log" href="Quantitative-Scales#wiki-_log">#</a> <b>log</b>(<i>x</i>)
 
 Given a value *x* in the input domain, returns the corresponding value in the output range.
+
+Note: based on the scale’s [interpolator](#wiki-log_interpolate), the scale may **reuse return values**. For example, if the domain is specified as color strings, then [d3.interpolateRgb](Transitions#wiki-d3_interpolateRgb) is automatically applied and the scale reuses a [d3.rgb](Colors#wiki-d3_rgb) instance. Often, the return value of a scale is immediately used to set an [attribute](Selections#wiki-attr) or [style](Selections#wiki-style), and you don’t have to worry about this; however, if you need to store the scale’s return value, use string coercion or the d3.rgb constructor to create a copy.
 
 <a name="log_invert" href="Quantitative-Scales#wiki-log_invert">#</a> log.<b>invert</b>(<i>y</i>)
 
