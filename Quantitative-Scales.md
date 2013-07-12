@@ -235,7 +235,7 @@ If *boolean* is specified, enables or disables clamping accordingly. By default,
 
 <a name="log_nice" href="Quantitative-Scales#wiki-log_nice">#</a> log.<b>nice</b>()
 
-Extends the domain so that it starts and ends on nice round values. This method typically modifies the scale's domain, and may only extend the bounds to the nearest round value. The nearest round value is based on the nearest power of ten. Nicing is useful if the domain is computed from data and may be irregular. For example, for a domain of [0.20147987687960267, 0.996679553296417], the nice domain is [0.1, 1]. If the domain has more than two values, nicing the domain only affects the first and last value.
+Extends the domain so that it starts and ends on nice round values. This method typically modifies the scale's domain, and may only extend the bounds to the nearest round value. The nearest round value is based on the nearest power of the scale’s [base](#wiki-log_base), which defaults to 10. Nicing is useful if the domain is computed from data and may be irregular. For example, for a domain of [0.20147987687960267, 0.996679553296417], the nice domain is [0.1, 1]. If the domain has more than two values, nicing the domain only affects the first and last value.
 
 <a name="log_ticks" href="Quantitative-Scales#wiki-log_ticks">#</a> log.<b>ticks</b>()
 
