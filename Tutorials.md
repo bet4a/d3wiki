@@ -39,6 +39,7 @@ Please feel free to add links to your work!
 * [Creating Interactive Charts with D3.js](http://blog.ilukwe.com/post/52094586400/creating-interactive-charts-with-d3-js) - Anthony Ilukwe
 * [A simple walkthrough of D3's enter-update-exit Data Pattern with Google Maps](http://informatics.unep-wcmc.org/blog/blog/2013/06/18/a-simple-walkthrough-of-d3-s-enter-update-exit-data-pattern-with-google-maps/) - Decio Battaglia
 * [Understanding Selections](http://prcweb.co.uk/lab/selection/) - Peter Cook
+* [Visualize with d3js](http://hsilomedus.me/wp-content/uploads/javadayd3/index.html) - Pance Cavkovski
 
 ### Specific Techniques
 
