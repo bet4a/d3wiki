@@ -376,6 +376,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 * [Object constancy through many types of buble charts](https://www.googledrive.com/host/0BwcmXsFAhzhoRWh5SjNyV2hLNlE/dashboard.html) - Etienne Ramstein
 * [The Fundamental Theorem of Arithmetic](http://freelanceastrophysicist.com/PrimeTheorem/FToA.html), [source](https://gist.github.com/freelanceastro/5686772) - [Adam Becker](http://freelanceastro.com)
 * [Global Oil Production & Consumption since 1965](http://labs.wnstnsmth.net/worldoil) - [Timo Grossenbacher](http://wnstnsmth.net)
+* [Electrical field lines and Equipotential surfaces simulation](http://hsilomedus.me/wp-content/uploads/d3electricField/electricField.html) - Pance Cavkovski
 
 ### Collections
 
