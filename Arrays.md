@@ -56,7 +56,7 @@ Note that if no comparator function is specified to the built-in sort method, th
 
 <a name="d3_min" href="Arrays#wiki-d3_min">#</a> d3.<b>min</b>(<i>array</i>[, <i>accessor</i>])
 
-Returns the minimum value in the given *array* using natural order. If the array is empty, returns undefined. An optional *accessor* function may be specified, which is equivalent to calling *array.map(accessor)* before computing the minimum value. Unlike the built-in [Math.min](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/min), this method ignores undefined values; this is useful for computing the domain of a [[scale|Scales]] while only considering the defined region of the data. In addition, elements are compared using natural order rather than numeric order. For example, the minimum of ["20", "3"] is "20", while the minimum of [20, 3] is 3.
+Returns the minimum value in the given *array* using natural order. If the array is empty, returns undefined. An optional *accessor* function may be specified, which is equivalent to calling *array.map(accessor)* before computing the minimum value. Unlike the built-in [Math.min](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/min), this method ignores undefined values; this is useful for computing the domain of a [[scale|Scales]] while only considering the defined region of the data. In addition, elements are compared using natural order rather than numeric order. For example, the maximum of ["20", "3"] is "20", while the minimum of [20, 3] is 3.
 
 <a name="d3_max" href="Arrays#wiki-d3_max">#</a> d3.<b>max</b>(<i>array</i>[, <i>accessor</i>])
 
