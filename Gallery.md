@@ -184,7 +184,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
   <tr>
     <td>Choropleth on canvas<br><a href="http://ssz.fr/parite"><img src="https://ssz.fr/brdl/parite.png" width="202"></a></td>
     <td>Google calendar like visualization<br><a href="http://bl.ocks.org/6007521"><img src="https://raw.github.com/gist/6007521/thumbnail.png" width="202"></a></td>
-    <td>Real-time Word Cloud<br><a href="https://live.zoomdata.com/zoomdata/visualization?streamSourceId=51dc2cc3e4b048929db35251&visId=51dc81bbe4b01ebca5d6b198&__target=embedded&user=user"><img src="https://dl.dropboxusercontent.com/u/56332995/sss.png" width="202" height="180"></a></td>
+    <td>Real-time Interactive Word Cloud<br><a href="https://live.zoomdata.com/zoomdata/visualization?streamSourceId=51dc2cc3e4b048929db35251&visId=51dc81bbe4b01ebca5d6b198&__target=embedded&user=user"><img src="https://dl.dropboxusercontent.com/u/56332995/sss.png" width="202" height="180"></a></td>
     <td></td>
   </tr>
 </table>
