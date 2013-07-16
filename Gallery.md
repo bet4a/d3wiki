@@ -717,6 +717,8 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Metro Maps of the News](http://metro.ezyang.com/)
 * [Life expectancy: small multiples](http://bl.ocks.org/d/2361485/)
 * [Semi-manual force layout of cablegate reference graphs](http://bl.ocks.org/4589092)
+* [Digital Clock By Virtual Force](http://jklabz.com/d3/digital_clock)
+
 
 #### Charts using the [reusable API](http://bost.ocks.org/mike/chart/)
 
