@@ -183,7 +183,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
   </tr>
   <tr>
     <td>Choropleth on canvas<br><a href="http://ssz.fr/parite"><img src="https://ssz.fr/brdl/parite.png" width="202"></a></td>
-    <td></td>
+    <td>Google calendar like visualization<br><a href="http://bl.ocks.org/6007521"><img src="https://raw.github.com/gist/6007521/thumbnail.png" width="202"></a></td>
     <td></td>
     <td></td>
   </tr>
