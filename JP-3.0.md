@@ -1,8 +1,8 @@
-> [Wiki](Home) ▸ [[Release Notes]] ▸ **3.0**
-
-[ [English] ](https://github.com/mbostock/d3/wiki/3.0)
+> [Wiki](Home) ▸ [Release Notes](/mbostock/d3/releases) ▸ **3.0**
 
 このページでは D3.js 3.0 の新機能について解説します。2.x から 3.0 への移行方法については[3.0へのアップグレード](https://github.com/mbostock/d3/wiki/Upgrading-to-3.0) をご覧ください。
+
+* [English](/mbostock/d3/releases/v3.0.0)
 
 参考：[地図投影法の一覧 - Wikipedia](http://ja.wikipedia.org/wiki/%E5%9C%B0%E5%9B%B3%E6%8A%95%E5%BD%B1%E6%B3%95%E3%81%AE%E4%B8%80%E8%A6%A7)
 
