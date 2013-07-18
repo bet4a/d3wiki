@@ -295,7 +295,7 @@ If *tension* is specified, sets the Cardinal spline interpolation tension to the
 
 <a name="area_defined" href="#wiki-area_defined">#</a> area.<b>defined</b>([<i>defined</i>])
 
-Gets or sets or sets the accessor function that controls where the area is defined. If *defined* is specified, sets the new accessor function and returns the area. If *defined* is not specified, returns the current accessor which defaults to `function() { return true; }`. The defined accessor can be used to define where the area is defined and undefined, which is typically useful in conjunction with missing data; the generated path data will automatically be broken into multiple distinct subpaths, skipping undefined data. For example, if you want to ignore *y*-values that are not a number (or undefined), you can say:
+Gets or sets the accessor function that controls where the area is defined. If *defined* is specified, sets the new accessor function and returns the area. If *defined* is not specified, returns the current accessor which defaults to `function() { return true; }`. The defined accessor can be used to define where the area is defined and undefined, which is typically useful in conjunction with missing data; the generated path data will automatically be broken into multiple distinct subpaths, skipping undefined data. For example, if you want to ignore *y*-values that are not a number (or undefined), you can say:
 
 ```js
 area.defined(function(d) { return !isNaN(d[1]); });
