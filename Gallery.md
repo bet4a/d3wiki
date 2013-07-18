@@ -382,6 +382,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 * [The Fundamental Theorem of Arithmetic](http://freelanceastrophysicist.com/PrimeTheorem/FToA.html), [source](https://gist.github.com/freelanceastro/5686772) - [Adam Becker](http://freelanceastro.com)
 * [Global Oil Production & Consumption since 1965](http://labs.wnstnsmth.net/worldoil) - [Timo Grossenbacher](http://wnstnsmth.net)
 * [Electrical field lines and Equipotential surfaces simulation](http://hsilomedus.me/wp-content/uploads/d3electricField/electricField.html) - Pance Cavkovski
+* [Artefacts of the Collective Unconscious](artefactsofthecollectiveunconscious.net) - [Noah Pedrini](http://looklisten.net) and [David Patman](http://www.createassociate.com.au/)
 
 ### Collections
 
