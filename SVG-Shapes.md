@@ -167,7 +167,7 @@ In this example (see the [live version](http://bl.ocks.org/1016220)), the tensio
 
 <a name="line_defined" href="#wiki-line_defined">#</a> line.<b>defined</b>([<i>defined</i>])
 
-Gets or sets or sets the accessor function that controls where the line is defined. If *defined* is specified, sets the new accessor function and returns the line. If *defined* is not specified, returns the current accessor which defaults to `function() { return true; }`. The defined accessor can be used to define where the line is defined and undefined, which is typically useful in conjunction with missing data; the generated path data will automatically be broken into multiple distinct subpaths, skipping undefined data. For example, if you want to ignore *y*-values that are not a number (or undefined), you can say:
+Gets or sets the accessor function that controls where the line is defined. If *defined* is specified, sets the new accessor function and returns the line. If *defined* is not specified, returns the current accessor which defaults to `function() { return true; }`. The defined accessor can be used to define where the line is defined and undefined, which is typically useful in conjunction with missing data; the generated path data will automatically be broken into multiple distinct subpaths, skipping undefined data. For example, if you want to ignore *y*-values that are not a number (or undefined), you can say:
 
 ```js
 line.defined(function(d) { return !isNaN(d[1]); });
