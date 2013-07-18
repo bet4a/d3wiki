@@ -845,6 +845,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [xCharts: a D3-based library for building custom charts and graphs](http://tenxer.github.com/xcharts/)
 * [VisualSedimentation.js: visualizing streaming data, inspired by the process of physical sedimentation](http://www.visualsedimentation.org/)
 * [Insights: Interactive Force Graph Component](https://github.com/ignacioola/insights)
+* [Lepracursor](http://sepans.com/sp/postes/lepracursor/), a d3.js based library which adds a virtual pointer to the page that grows in number with every click 
 
 ### Wish List
 
