@@ -16,7 +16,7 @@ Constructs a new linear scale with the default domain [0,1] and the default rang
 
 Given a value *x* in the input domain, returns the corresponding value in the output range.
 
-Note: based on the scale’s [interpolator](#wiki-linear_interpolate), the scale may **reuse return values**. For example, if the domain values are arbitrary objects, then [d3.interpolateObject](Transitions#wiki-d3_interpolateObject) is automatically applied and the scale reuses the returned object. Often, the return value of a scale is immediately used to set an [attribute](Selections#wiki-attr) or [style](Selections#wiki-style), and you don’t have to worry about this; however, if you need to store the scale’s return value, use string coercion or create a copy as appropriate.
+Note: some [interpolators](#wiki-linear_interpolate) **reuse return values**. For example, if the domain values are arbitrary objects, then [d3.interpolateObject](Transitions#wiki-d3_interpolateObject) is automatically applied and the scale reuses the returned object. Often, the return value of a scale is immediately used to set an [attribute](Selections#wiki-attr) or [style](Selections#wiki-style), and you don’t have to worry about this; however, if you need to store the scale’s return value, use string coercion or create a copy as appropriate.
 
 <a name="linear_invert" href="Quantitative-Scales#wiki-linear_invert">#</a> linear.<b>invert</b>(<i>y</i>)
 
@@ -49,8 +49,6 @@ Sets the scale's output range to the specified array of values, while also setti
 <a name="linear_interpolate" href="Quantitative-Scales#wiki-linear_interpolate">#</a> linear.<b>interpolate</b>([<i>factory</i>])
 
 If *factory* is specified, sets the scale's output interpolator using the specified *factory*. The interpolator factory defaults to [[d3.interpolate|Transitions#wiki-d3_interpolate]], and is used to map the normalized domain parameter *t* in [0,1] to the corresponding value in the output range. The interpolator factory will be used to construct interpolators for each adjacent pair of values from the output range. If *factory* is not specified, returns the scale's interpolator factory.
-
-Note: some interpolators, such as [d3.interpolateObject](Transitions#wiki-d3_interpolateObject), reuse return values.
 
 <a name="linear_clamp" href="Quantitative-Scales#wiki-linear_clamp">#</a> linear.<b>clamp</b>([<i>boolean</i>])
 
@@ -132,7 +130,7 @@ Constructs a new power scale with the default domain [0,1], the default range [0
 
 Given a value *x* in the input domain, returns the corresponding value in the output range.
 
-Note: based on the scale’s [interpolator](#wiki-pow_interpolate), the scale may **reuse return values**. For example, if the domain values are arbitrary objects, then [d3.interpolateObject](Transitions#wiki-d3_interpolateObject) is automatically applied and the scale reuses the returned object. Often, the return value of a scale is immediately used to set an [attribute](Selections#wiki-attr) or [style](Selections#wiki-style), and you don’t have to worry about this; however, if you need to store the scale’s return value, use string coercion or create a copy as appropriate.
+Note: some [interpolators](#wiki-pow_interpolate) **reuse return values**. For example, if the domain values are arbitrary objects, then [d3.interpolateObject](Transitions#wiki-d3_interpolateObject) is automatically applied and the scale reuses the returned object. Often, the return value of a scale is immediately used to set an [attribute](Selections#wiki-attr) or [style](Selections#wiki-style), and you don’t have to worry about this; however, if you need to store the scale’s return value, use string coercion or create a copy as appropriate.
 
 <a name="pow_invert" href="Quantitative-Scales#wiki-pow_invert">#</a> pow.<b>invert</b>(<i>y</i>)
 
@@ -199,7 +197,7 @@ Constructs a new log scale with the default domain [1,10], the default range [0,
 
 Given a value *x* in the input domain, returns the corresponding value in the output range.
 
-Note: based on the scale’s [interpolator](#wiki-log_interpolate), the scale may **reuse return values**. For example, if the domain values are arbitrary objects, then [d3.interpolateObject](Transitions#wiki-d3_interpolateObject) is automatically applied and the scale reuses the returned object. Often, the return value of a scale is immediately used to set an [attribute](Selections#wiki-attr) or [style](Selections#wiki-style), and you don’t have to worry about this; however, if you need to store the scale’s return value, use string coercion or create a copy as appropriate.
+Note: some [interpolators](#wiki-log_interpolate) **reuse return values**. For example, if the domain values are arbitrary objects, then [d3.interpolateObject](Transitions#wiki-d3_interpolateObject) is automatically applied and the scale reuses the returned object. Often, the return value of a scale is immediately used to set an [attribute](Selections#wiki-attr) or [style](Selections#wiki-style), and you don’t have to worry about this; however, if you need to store the scale’s return value, use string coercion or create a copy as appropriate.
 
 <a name="log_invert" href="Quantitative-Scales#wiki-log_invert">#</a> log.<b>invert</b>(<i>y</i>)
 
