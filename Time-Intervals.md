@@ -83,9 +83,9 @@ Sunday-based weeks (e.g., February 5, 2012 at 12:00 AM).
 
 Monday-based weeks (e.g., February 6, 2012 at 12:00 AM).
 
-<a name="tueday" href="#wiki-tueday">#</a> d3.time.<b>tueday</b>
+<a name="tuesday" href="#wiki-tuesday">#</a> d3.time.<b>tuesday</b>
 
-Tueday-based weeks (e.g., February 7, 2012 at 12:00 AM).
+Tuesday-based weeks (e.g., February 7, 2012 at 12:00 AM).
 
 <a name="wednesday" href="#wiki-wednesday">#</a> d3.time.<b>wednesday</b>
 
