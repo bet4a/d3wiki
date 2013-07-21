@@ -146,7 +146,7 @@ If you do not initialize the positions manually, the force layout will initializ
 
 <a name="on" href="Force-Layout#wiki-on">#</a> force.<b>on</b>(<i>type</i>, <i>listener</i>)
 
-Registers the specified *listener* to receive events of the specified *type* from the force layout. Currently, only "tick" events are supported, which are dispatched for each tick of the simulation. Listen to tick events to update the displayed positions of nodes and links. For example, if you initially display the nodes and links like so:
+Registers the specified *listener* to receive events of the specified *type* from the force layout. Currently, only "start", "tick", and "end" events are supported. "tick" events are dispatched for each tick of the simulation. Listen to tick events to update the displayed positions of nodes and links. For example, if you initially display the nodes and links like so:
 
 ```javascript
 var link = vis.selectAll("line")
@@ -174,6 +174,8 @@ force.on("tick", function() {
 ```
 
 In this case, we've stored the selections `node` and `link` on initialization, so that we don't need to reselect the nodes on every tick. If you prefer, you can display nodes and links differently; for example, you might use [symbols](SVG-Shapes#wiki-symbol) rather than circles.
+
+The "end" event is dispatched when the simulations internal alpha cooling parameter reaches zero.
 
 <a name="drag" href="Force-Layout#wiki-drag">#</a> force.<b>drag</b>()
 
