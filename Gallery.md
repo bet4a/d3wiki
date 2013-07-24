@@ -185,7 +185,9 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
     <td>Choropleth on canvas<br><a href="http://ssz.fr/parite"><img src="https://ssz.fr/brdl/parite.png" width="202"></a></td>
     <td>Google calendar like visualization<br><a href="http://bl.ocks.org/6007521"><img src="https://raw.github.com/gist/6007521/thumbnail.png" width="202"></a></td>
     <td>Real-time Interactive Cloud<br><a href="https://live.zoomdata.com/zoomdata/visualization?streamSourceId=51dc2cc3e4b048929db35251&visId=51dc81bbe4b01ebca5d6b198&__target=embedded&user=user"><img src="https://dl.dropboxusercontent.com/u/56332995/sss.png" width="202" height="180"></a></td>
-    <td></td>
+    <td>Interactive Sales Data Pie Chart<br><ahref="
+https://live.zoomdata.com/zoomdata/visualization?streamSourceId=51db7ad4e4b04caf9ab346db&visId=51db7ad4e4b04caf9ab346d6&user=user&__target=embedded "><img src="https://www.dropbox.com/s/a38r3s2bewn9xn6/sales%20interactive%20pie%20d3js.png" width="202" height="180"></a></td>
+
   </tr>
 </table>
 
