@@ -188,6 +188,9 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
     <td>Interactive Sales Data Pie Chart<br><a href="https://live.zoomdata.com/zoomdata/visualization?streamSourceId=51db7ad4e4b04caf9ab346db&visId=51db7ad4e4b04caf9ab346d6&user=user&__target=embedded"><img src="https://dl.dropboxusercontent.com/u/56332995/sales%20interactive%20pie%20d3js.png" width="202"></a></td>
 
   </tr>
+ <tr>
+    <td>Wikistalker - Wikipedia Visualization<br><a href="http://sepans.com/wikistalker"><img src="http://sepans.com/sp/wp-content/uploads/2013/07/wikistalker_history.png" width="202"></a></td>
+ </tr>
 </table>
 
 ## Basic Charts
