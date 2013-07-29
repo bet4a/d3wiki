@@ -40,6 +40,7 @@ Please feel free to add links to your work!
 * [A simple walkthrough of D3's enter-update-exit Data Pattern with Google Maps](http://informatics.unep-wcmc.org/blog/blog/2013/06/18/a-simple-walkthrough-of-d3-s-enter-update-exit-data-pattern-with-google-maps/) - Decio Battaglia
 * [Understanding Selections](http://prcweb.co.uk/lab/selection/) - Peter Cook
 * [Visualize with d3js](http://hsilomedus.me/wp-content/uploads/javadayd3/index.html) - Pance Cavkovski
+* [Drawing a many-to-many relationship with a simple blog-post-tag example](http://vijayrc.com/vectorclocks/vrc/post/d3) - Vijay Chakravarthy
 
 ### Specific Techniques
 
