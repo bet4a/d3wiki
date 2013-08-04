@@ -13,6 +13,7 @@ Some fun examples:
 * [force-directed symbols](http://bl.ocks.org/1062383)
 * [force-directed images and labels](http://bl.ocks.org/950642)
 * [force-directed states](http://bl.ocks.org/1073373)
+* [sticky force layout](http://bl.ocks.org/mbostock/3750558)
 
 Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement. Unlike some of the other layout implementations which are stateless, the force layout keeps a reference to the associated nodes and links internally; thus, a given force layout instance can only be used with a single dataset.
 
@@ -179,6 +180,6 @@ The "end" event is dispatched when the simulations internal alpha cooling parame
 
 <a name="drag" href="Force-Layout#wiki-drag">#</a> force.<b>drag</b>()
 
-Bind a behavior to nodes to allow interactive dragging. Use this in conjunction with the [call](Selections#wiki-call) operator on the nodes; for example, say `node.call(force.drag)` on initialization. The drag event sets the *fixed* attribute of nodes on mouseover, such that as soon as the mouse is over a node, it stops moving. Fixing on mouseover, rather than on mousedown, makes it easier to catch moving nodes. When a mousedown event is received, and on each subsequent mousemove until mouseup, the node center is set to the current mouse position. In addition, each mousemove triggers a [resume](Force-Layout#wiki-resume) of the force layout, reheating the simulation. This behavior also supports touch events for iOS.
+Bind a behavior to nodes to allow interactive dragging, either using the mouse or touch. Use this in conjunction with the [call](Selections#wiki-call) operator on the nodes; for example, say `node.call(force.drag)` on initialization. The drag event sets the *fixed* attribute of nodes on mouseover, such that as soon as the mouse is over a node, it stops moving. Fixing on mouseover, rather than on mousedown, makes it easier to catch moving nodes. When a mousedown event is received, and on each subsequent mousemove until mouseup, the node center is set to the current mouse position. In addition, each mousemove triggers a [resume](Force-Layout#wiki-resume) of the force layout, reheating the simulation. If you want dragged nodes to remain fixed after dragging, set the *fixed* attribute to true on _dragstart_, as in the [sticky force layout](http://bl.ocks.org/mbostock/3750558) example.
 
 Implementation note: the mousemove and mouseup event listeners are registered on the current window, such that when the user starts dragging a node, they can continue to drag the node even if the mouse leaves the window. Each event listener uses the "force" namespace, so as to avoid collision with other event listeners you may wish to bind to nodes or to the window. If a node is moved by the drag behavior, the subsequent click event that would be triggered by the final mouseup is captured and stopped from propagating. This allows you to register click event handlers on nodes that will only be triggered if nodes are clicked *without* dragging. 
