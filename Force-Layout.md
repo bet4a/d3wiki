@@ -191,4 +191,4 @@ selection.on("click", function(d) {
 });
 ```
 
-See the [collapsible force layout](http://bl.ocks.org/mbostock/1093130) for an example.
+See the [collapsible force layout](http://bl.ocks.org/mbostock/1093130) and [divergent forces](http://bl.ocks.org/mbostock/1021841) for examples.
