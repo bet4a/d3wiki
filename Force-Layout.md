@@ -186,7 +186,7 @@ Implementation note: the mousemove and mouseup event listeners are registered on
 
 ```js
 selection.on("click", function(d) {
-  if (d3.event.defaultPrevented) return; // ignore
+  if (d3.event.defaultPrevented) return; // ignore drag
   otherwiseDoAwesomeThing();
 });
 ```
