@@ -182,4 +182,13 @@ The "end" event is dispatched when the simulations internal alpha cooling parame
 
 Bind a behavior to nodes to allow interactive dragging, either using the mouse or touch. Use this in conjunction with the [call](Selections#wiki-call) operator on the nodes; for example, say `node.call(force.drag)` on initialization. The drag event sets the *fixed* attribute of nodes on mouseover, such that as soon as the mouse is over a node, it stops moving. Fixing on mouseover, rather than on mousedown, makes it easier to catch moving nodes. When a mousedown event is received, and on each subsequent mousemove until mouseup, the node center is set to the current mouse position. In addition, each mousemove triggers a [resume](Force-Layout#wiki-resume) of the force layout, reheating the simulation. If you want dragged nodes to remain fixed after dragging, set the *fixed* attribute to true on _dragstart_, as in the [sticky force layout](http://bl.ocks.org/mbostock/3750558) example.
 
-Implementation note: the mousemove and mouseup event listeners are registered on the current window, such that when the user starts dragging a node, they can continue to drag the node even if the mouse leaves the window. Each event listener uses the "force" namespace, so as to avoid collision with other event listeners you may wish to bind to nodes or to the window. If a node is moved by the drag behavior, the subsequent click event that would be triggered by the final mouseup is captured and stopped from propagating. This allows you to register click event handlers on nodes that will only be triggered if nodes are clicked *without* dragging. 
+Implementation note: the mousemove and mouseup event listeners are registered on the current window, such that when the user starts dragging a node, they can continue to drag the node even if the mouse leaves the window. Each event listener uses the "force" namespace, so as to avoid collision with other event listeners you may wish to bind to nodes or to the window. If a node is moved by the drag behavior, the subsequent click event that would be triggered by the final mouseup is captured and the default behavior prevented. If you register a click event listener, you can ignore these clicks on drag by seeing if the default behavior was prevented:
+
+```js
+selection.on("click", function(d) {
+  if (d3.event.defaultPrevented) return; // ignore
+  otherwiseDoAwesomeThing();
+});
+```
+
+See the [collapsible force layout](http://bl.ocks.org/mbostock/1093130) for an example.
