@@ -72,10 +72,10 @@ The optional *format* argument allows a [[format specifier|Formatting#wiki-d3_fo
 
 ```js
 var x = d3.scale.linear().domain([-1, 1]);
-console.log(x.ticks(5).map(x.tickFormat(5, "+%")));
+console.log(x.ticks(5).map(x.tickFormat(5, "+%"))); // ["-100%", "-50%", "+0%", "+50%", "+100%"]
 ```
 
-This outputs `["-100%", "-50%", "+0%", "+50%", "+100%"]`. If the *format* already specifies a precision, this method is equivalent to [d3.format](Formatting#wiki-d3_format).
+If the *format* already specifies a precision, this method is equivalent to [d3.format](Formatting#wiki-d3_format).
 
 <a name="linear_copy" href="#wiki-linear_copy">#</a> linear.<b>copy</b>()
 
