@@ -68,8 +68,14 @@ Returns approximately *count* representative values from the scale's input domai
 
 Returns a [[number format|Formatting#wiki-d3_format]] function suitable for displaying a tick value. The specified *count* should have the same value as the count that is used to generate the tick values. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate precision based on the fixed interval between tick values.
 
-The optional *format* argument allows a [[format specifier|Formatting#wiki-d3_format]] to be specified. If the format specifier doesn’t have a defined precision, the precision will be set automatically by the scale, returning the appropriate format. This provides a convenient, declarative way of specifying a format whose
-precision will be automatically set by the scale.
+The optional *format* argument allows a [[format specifier|Formatting#wiki-d3_format]] to be specified, where the precision of the format is automatically substituted by the scale to be appropriate for the tick interval. For example, to format percentage change, you might say:
+
+```js
+var x = d3.scale.linear().domain([-1, 1]);
+console.log(x.ticks(5).map(x.tickFormat(5, "+%")));
+```
+
+This outputs `["-100%", "-50%", "+0%", "+50%", "+100%"]`. If the *format* already specifies a precision, this method is equivalent to [d3.format](Formatting#wiki-d3_format).
 
 <a name="linear_copy" href="#wiki-linear_copy">#</a> linear.<b>copy</b>()
 
