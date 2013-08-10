@@ -56,13 +56,16 @@ Get or set the tick subdivision count. If *count* is specified, sets the number 
 
 <a name="tickSize" href="#wiki-tickSize">#</a> axis.<b>tickSize</b>([<i>major</i>[​[, <i>minor</i>], <i>end</i>]])
 
-Get or set the size of major, minor and end ticks. The end ticks are determined by the associated scale's domain extent, and are part of the generated path domain rather than a tick line. Note that the end ticks may be close or even overlapping with the first or last tick. An end tick size of 0 suppresses end ticks. For example:
+If *major* is specified, sets the major tick size and returns the axis. If *major* and *end* are specified, sets the major and minor tick sizes to *major*, the end tick size to *end*, and returns the axis. If *major*, *minor* and *end* are specified, sets the respective tick sizes and returns the axis. If no arguments are specified, returns the current major tick size, which defaults to 6. For example:
 
 ```js
+axis.tickSize(); // returns the current major tick size
 axis.tickSize(6); // sets the major, minor and end to 6
 axis.tickSize(6, 0); // sets major and minor to 6, end to 0
 axis.tickSize(6, 3, 0); // sets major to 6, minor to 3, and end to 0
 ```
+
+Note that the end ticks are actually part of the domain path rather than discrete tick elements; their position is determined by the associated scale's domain extent rather than the scale’s tick generator (or the axis’s tick values if specified explicitly). Thus, end ticks may overlap with the first or last tick. An end tick size of 0 suppresses end ticks, producing a straight line for the domain path.
 
 <a name="tickPadding" href="#wiki-tickPadding">#</a> axis.<b>tickPadding</b>([<i>padding</i>])
 
