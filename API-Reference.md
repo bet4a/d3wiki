@@ -599,6 +599,17 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [path.area](Geo-Paths#wiki-path_area) - compute the projected area of a given feature.
 * [path.centroid](Geo-Paths#wiki-path_centroid) - compute the projected centroid of a given feature.
 * [path.bounds](Geo-Paths#wiki-path_bounds) - compute the projected bounds of a given feature.
+* [d3.geo.graticule](Geo-Paths#wiki-graticule) - create a graticule generator.
+* [graticule](Geo-Paths#wiki-_graticule) - generate a MultiLineString of meridians and parallels.
+* [graticule.lines](Geo-Paths#wiki-graticule_lines) - generate an array of LineStrings of meridians and parallels.
+* [graticule.outline](Geo-Paths#wiki-graticule_outline) - generate a Polygon of the graticule’s extent.
+* [graticule.extent](Geo-Paths#wiki-graticule_extent) - get or set the major & minor extents.
+* [graticule.majorExtent](Geo-Paths#wiki-graticule_majorExtent) - get or set the major extent.
+* [graticule.minorExtent](Geo-Paths#wiki-graticule_minorExtent) - get or set the minor extent.
+* [graticule.step](Geo-Paths#wiki-graticule_step) - get or set the major & minor step intervals.
+* [graticule.majorStep](Geo-Paths#wiki-graticule_majorStep) - get or set the major step intervals.
+* [graticule.minorStep](Geo-Paths#wiki-graticule_minorStep) - get or set the minor step intervals.
+* [graticule.precision](Geo-Paths#wiki-graticule_precision) - get or set the latitudinal precision.
 * [d3.geo.circle](Geo-Paths#wiki-circle) - create a circle generator.
 * [circle](Geo-Paths#wiki-_circle) - generate a piecewise circle as a Polygon. 
 * [circle.origin](Geo-Paths#wiki-circle_origin) - specify the origin in latitude and longitude.
