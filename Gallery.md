@@ -192,11 +192,12 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
     <td>Wikistalker - Wikipedia Visualization<br><a href="http://sepans.com/wikistalker"><img src="http://sepans.com/sp/wp-content/uploads/2013/07/wikistalker_history.png" width="202"></a></td>
     <td>D3 Cesium - Health and Wealth of Nations<br><a href="http://cesium.agi.com/demos/d3.html"><img src="http://cesium.agi.com/demos/images/d3.png" width="202"></a></td>
    <td>Starpaths<br><a href="http://www.cotrino.com/2013/05/starpaths/"><img src="https://raw.github.com/cotrino/experimentos/master/starpaths.png" width="200"></a></td>
- </tr>
-
-   <tr>
     <td>BT Hotspots mapped <br><a href="http://www.mapsnapps.com/storage/bt_hotspots/Index.html"><img src="http://giscope.squarespace.com/storage/bt_hotspots/Screenshot%20from%202013-08-12%20003543.png" width="200"></a></td>
  </tr>
+
+  
+
+ 
 </table>
 
 ## Basic Charts
