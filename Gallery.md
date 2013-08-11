@@ -195,7 +195,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
  </tr>
 
    <tr>
-    <td>BT Hotspots mapped <br><a href="http://www.mapsnapps.com/storage/bt_hotspots/Index.html"><img src="http://giscope.squarespace.com/storage/bt_hotspots/Screenshot%20from%202013-08-12%20003543.png" width="202"></a></td>
+    <td>BT Hotspots mapped <br><a href="http://www.mapsnapps.com/storage/bt_hotspots/Index.html"><img src="http://giscope.squarespace.com/storage/bt_hotspots/Screenshot%20from%202013-08-12%20003543.png" width="200"></a></td>
  </tr>
 </table>
 
