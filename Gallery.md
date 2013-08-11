@@ -190,8 +190,8 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
   </tr>
  <tr>
     <td>Wikistalker - Wikipedia Visualization<br><a href="http://sepans.com/wikistalker"><img src="http://sepans.com/sp/wp-content/uploads/2013/07/wikistalker_history.png" width="202"></a></td>
-
     <td>D3 Cesium - Health and Wealth of Nations<br><a href="http://cesium.agi.com/demos/d3.html"><img src="http://cesium.agi.com/demos/images/d3.png" width="202"></a></td>
+   <td>Starpaths<br><a href="http://www.cotrino.com/2013/05/starpaths/"><img src="https://raw.github.com/cotrino/experimentos/master/starpaths.png" width="200"></a></td>
  </tr>
 </table>
 
@@ -390,6 +390,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
 * [Global Oil Production & Consumption since 1965](http://labs.wnstnsmth.net/worldoil) - [Timo Grossenbacher](http://wnstnsmth.net)
 * [Electrical field lines and Equipotential surfaces simulation](http://hsilomedus.me/wp-content/uploads/d3electricField/electricField.html) - Pance Cavkovski
 * [Artefacts of the Collective Unconscious](http://artefactsofthecollectiveunconscious.net) - [Noah Pedrini](http://looklisten.net) and [David Patman](http://www.createassociate.com.au/)
+* [Starpaths](http://www.cotrino.com/2013/05/starpaths/) - José Cotrino
 
 ### Collections
 
