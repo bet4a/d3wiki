@@ -536,6 +536,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Small Multiples](http://bl.ocks.org/1157787)
 * [[Sparklines|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
 * [Interactive Line Graph](http://benjchristensen.com/2012/05/15/interactive-line-graph-using-d3-js/)
+* [Comprehensive Line Graph] (http://mpf.vis.ywng.cloudbees.net/)
 * [Dual scale line chart](http://benjchristensen.com/2012/05/02/line-graphs-using-d3-js/)
 * [Horizon Chart](http://bl.ocks.org/1483226)
 * [Line Chart with tooltips](http://bl.ocks.org/1629644)
