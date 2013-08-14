@@ -225,7 +225,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/master/d3js-mower-demo.
     <td>Donut Multiples<br><a href="http://bl.ocks.org/3888852"><img src="https://raw.github.com/gist/3888852/thumbnail.png" width="202"></a></td>
     <td>Bar Chart with Negative Values<br><a href="http://bl.ocks.org/2368837"><img src="https://raw.github.com/gist/2368837/thumbnail.png" width="202"></a></td>
     <td>Gauge<br><a href="http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html"><img src="https://raw.github.com/gist/1499279/thumbnail.png" width="202"></a></td>
-    <td>BulleT (a variant of mbostock's Bullet Charts) vertical or horizontal<br><a href="http://bl.ocks.org/joeyhun/6112167"><img src="https://gist.github.com/joeyhun/6112167/raw/bbd3c9b608ff8123c6664d1bf9a850dcc9ca1065/thumbnail.png" width="202"></a></td>
+    <td>BulleT (a variant of mbostock's Bullet Charts) vertical or horizontal<br><a href="http://bl.ocks.org/CodeXmonk/6112167"><img src="https://gist.github.com/CodeXmonk/6112167/raw/bbd3c9b608ff8123c6664d1bf9a850dcc9ca1065/thumbnail.png" width="202"></a></td>
     <td></td>
   </tr>
 </table>
