@@ -481,6 +481,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[cluster.links|Cluster-Layout#wiki-links]] - compute the parent-child links between tree nodes.
 * [[cluster.separation|Cluster-Layout#wiki-separation]] - get or set the spacing function between neighboring nodes.
 * [[cluster.size|Cluster-Layout#wiki-size]] - get or set the layout size in *x* and *y*.
+* [[cluster.nodeSize|Cluster-Layout#wiki-nodeSize]] - specify a fixed size for each node.
 
 ### [[Force|Force-Layout]]
 
