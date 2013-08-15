@@ -572,6 +572,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[tree.links|Tree-Layout#wiki-links]] - compute the parent-child links between tree nodes.
 * [[tree.separation|Tree-Layout#wiki-separation]] - get or set the spacing function between neighboring nodes.
 * [[tree.size|Tree-Layout#wiki-size]] - specify the layout size in *x* and *y*.
+* [[tree.nodeSize|Tree-Layout#wiki-nodeSize]] - specify a fixed size for each node.
 
 ### [[Treemap|Treemap-Layout]]
 
