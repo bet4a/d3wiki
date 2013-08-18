@@ -12,7 +12,15 @@ Creates a new quadtree layout with the default *x*-accessor and *y*-accessor (th
 
 <a name="_quadtree" href="Quadtree-Geom#wiki-_quadtree">#</a> <b>quadtree</b>(<i>points</i>)
 
-Constructs a new quadtree for the specified array of points. Returns the root of the quadtree.
+Constructs a new quadtree for the specified array of points. Returns the root of the quadtree. Each node in the quadtree has several properties:
+
+* _nodes_ - a sparse array of the four child nodes in order: top-left, top-right, bottom-left, bottom-right
+* _leaf_ - a boolean indicating whether this is a internal or leaf node
+* _point_ - the point associated with this node, if any (may apply to either internal or leaf nodes)
+* _x_ - the _x_-coordinate of the associated point, if any
+* _y_ - the _y_-coordinate of the associated point, if any
+
+In addition, the returned *root* node defines [add](#wiki-add) and [visit](#wiki-visit) methods.
 
 <a name="add" href="#wiki-add">#</a> root.<b>add</b>(<i>point</i>)
 
