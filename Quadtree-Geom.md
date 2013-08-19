@@ -34,7 +34,7 @@ Visits each node in the quadtree, invoking the specified *callback* with argumen
 
 <a name="x" href="#wiki-x">#</a> quadtree.<b>x</b>([<i>x</i>])
 
-If *x* is specified, sets the x-coordinate accessor. If *x* is not specified, returns the current _x_-coordinate accessor, which defaults to:
+If *x* is specified, sets the x-coordinate accessor and returns this quadtree factory. If *x* is not specified, returns the current _x_-coordinate accessor, which defaults to:
 
 ```js
 function(d) { return d[0]; }
@@ -42,7 +42,7 @@ function(d) { return d[0]; }
 
 <a name="y" href="#wiki-y">#</a> quadtree.<b>y</b>([<i>y</i>])
 
-If *y* is specified, sets the y-coordinate accessor. If *y* is not specified, returns the current _y_-coordinate accessor, which defaults to:
+If *y* is specified, sets the y-coordinate accessor and returns this quadtree factory. If *y* is not specified, returns the current _y_-coordinate accessor, which defaults to:
 
 ```js
 function(d) { return d[1]; }
@@ -50,4 +50,4 @@ function(d) { return d[1]; }
 
 <a name="extent" href="#wiki-extent">#</a> quadtree.<b>extent</b>([<i>extent</i>])
 
-If *extent* is specified, sets the current extent and returns the quadtree factory. If *extent* is not specified, returns the current extent, which defaults to null. When the extent is null, an extent will be computed automatically by scanning the array of input points passed to the [quadtree constructor](#wiki-_quadtree). Otherwise, the *extent* must be specified as a two-dimensional array [​[<i>x0</i>, <i>y0</i>], [​<i>x1</i>, <i>y1</i>]​], where *x0* and *y0* are the lower bounds of the extent, and *x1* and *y1* are the upper bounds of the extent. Setting an extent is required when constructing a quadtree lazily from an initially-empty set of nodes.
+If *extent* is specified, sets the current extent and returns this quadtree factory. If *extent* is not specified, returns the current extent, which defaults to null. When the extent is null, an extent will be computed automatically by scanning the array of input points passed to the [quadtree constructor](#wiki-_quadtree). Otherwise, the *extent* must be specified as a two-dimensional array [​[<i>x0</i>, <i>y0</i>], [​<i>x1</i>, <i>y1</i>]​], where *x0* and *y0* are the lower bounds of the extent, and *x1* and *y1* are the upper bounds of the extent. Setting an extent is required when constructing a quadtree lazily from an initially-empty set of nodes.
