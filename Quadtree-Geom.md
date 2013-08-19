@@ -26,7 +26,7 @@ The returned root node also defines [add](#wiki-add) and [visit](#wiki-visit) me
 
 <a name="add" href="#wiki-add">#</a> root.<b>add</b>(<i>point</i>)
 
-Adds a new point to the previously-computed quadtree.
+Adds the specified new _point_ to the quadtree.
 
 <a name="visit" href="#wiki-visit">#</a> root.<b>visit</b>(<i>callback</i>)
 
