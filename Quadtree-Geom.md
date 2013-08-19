@@ -8,11 +8,13 @@ A **quadtree** is a two-dimensional recursive spatial subdivision. This implemen
 
 <a name="quadtree" href="#wiki-quadtree">#</a> d3.geom.<b>quadtree</b>()
 
-Creates a new quadtree layout with the default *x*-accessor and *y*-accessor (that assume the input data is a two-element array of numbers; see below for details). The default extent is null, such that it will be computed automatically from the input points.
+Creates a new quadtree factory with the default [_x_-accessor](#wiki-x), [_y_-accessor](#wiki-y) and [extent](#wiki-extent). The [returned function](#wiki-_quadtree) can be used to create any number of quadtrees from data with the factory’s configuration.
 
 <a name="_quadtree" href="Quadtree-Geom#wiki-_quadtree">#</a> <b>quadtree</b>(<i>points</i>)
 
-Constructs a new quadtree for the specified array of points, returning the root of the new quadtree. Each node in the quadtree has several properties:
+Constructs a new quadtree for the specified array of data _points_, returning the root node of a new quadtree. The _x_- and _y_-coordinates of each point are determined using the current [_x_-](#wiki-x) and [_y_-](#wiki-y) accessor functions. To build a quadtree by adding points incrementally, the specified _points_ array can be empty, and then points can be later [added](#wiki-add) to the returned root node; in this case, you must also specify the [extent](#wiki-extent) of the quadtree.
+
+Each node in the quadtree has several properties:
 
 * _nodes_ - a sparse array of the four child nodes in order: top-left, top-right, bottom-left, bottom-right
 * _leaf_ - a boolean indicating whether this is a internal or leaf node
@@ -20,7 +22,7 @@ Constructs a new quadtree for the specified array of points, returning the root 
 * _x_ - the _x_-coordinate of the associated point, if any
 * _y_ - the _y_-coordinate of the associated point, if any
 
-In addition, the returned *root* node defines [add](#wiki-add) and [visit](#wiki-visit) methods.
+The returned root node also defines [add](#wiki-add) and [visit](#wiki-visit) methods.
 
 <a name="add" href="#wiki-add">#</a> root.<b>add</b>(<i>point</i>)
 
@@ -28,11 +30,11 @@ Adds a new point to the previously-computed quadtree.
 
 <a name="visit" href="#wiki-visit">#</a> root.<b>visit</b>(<i>callback</i>)
 
-The specified *callback* is invoked with the arguments (<i>node</i>, *x1*, *y1*, *x2*, *y2*) for each quadtree node pre-order, provided the *callback* returns false. If *callback* returns true for a node, then the children of that node are not visited.
+Visits each node in the quadtree, invoking the specified *callback* with arguments {<i>node</i>, *x1*, *y1*, *x2*, *y2*} for each node. Nodes are traversed in pre-order. If the *callback* returns true for a the given node, then the children of that node are not visited; otherwise, all child nodes are visited.
 
 <a name="x" href="#wiki-x">#</a> quadtree.<b>x</b>([<i>x</i>])
 
-If *x* is specified, sets the x-coordinate accessor. If *x* is not specified, returns the current x-coordinate accessor, which defaults to:
+If *x* is specified, sets the x-coordinate accessor. If *x* is not specified, returns the current _x_-coordinate accessor, which defaults to:
 
 ```js
 function(d) { return d[0]; }
@@ -40,7 +42,7 @@ function(d) { return d[0]; }
 
 <a name="y" href="#wiki-y">#</a> quadtree.<b>y</b>([<i>y</i>])
 
-If *y* is specified, sets the y-coordinate accessor. If *y* is not specified, returns the current y-coordinate accessor, which defaults to:
+If *y* is specified, sets the y-coordinate accessor. If *y* is not specified, returns the current _y_-coordinate accessor, which defaults to:
 
 ```js
 function(d) { return d[1]; }
@@ -48,6 +50,4 @@ function(d) { return d[1]; }
 
 <a name="extent" href="#wiki-extent">#</a> quadtree.<b>extent</b>([<i>extent</i>])
 
-If the specified *extent* is null, this causes the quadtree extent to be automatically computed for the initial array of points.  If the specified *extent* is a two-dimensional array [‍[ *x0*, *y0* ], [ *x1*, *y1* ]], where *x0* and *y0* are the lower bounds of the extent, and *x1* and *y1* are the upper bounds of the extent, this sets the quadtree's extent.
-
-If *extent* is not specified, returns the current extent, which defaults to null.
+If the specified *extent* is null, the quadtree extent will be computed automatically by scanning the array of input points passed to the [quadtree constructor](#wiki-_quadtree). Otherwise, the *extent* is set to the specified two-dimensional array [‍​[*x0*, *y0*], [*x1*, *y1*]​], where *x0* and *y0* are the lower bounds of the extent, and *x1* and *y1* are the upper bounds of the extent, and the quadtree factory is returned. If *extent* is not specified, returns the current extent, which defaults to null. Setting an extent is required when constructing a quadtree lazily from an initially-empty set of nodes.
