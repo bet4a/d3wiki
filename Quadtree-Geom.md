@@ -40,6 +40,8 @@ If *x* is specified, sets the x-coordinate accessor and returns this quadtree fa
 function(d) { return d[0]; }
 ```
 
+For each point added to the quadtree, either during [initial construction](#wiki-_quadtree) or lazily [added](#wiki-add), the _x_-accessor is invoked with the arguments {<i>d</i>, <i>i</i>}, where _d_ is the current point and _i_ is its index in the array of all points. The _x_-accessor must then return a numeric value indicating the _x_-coordinate of the given point. The _x_-accessor may also be defined as a constant number rather than a function, if desired.
+
 <a name="y" href="#wiki-y">#</a> quadtree.<b>y</b>([<i>y</i>])
 
 If *y* is specified, sets the y-coordinate accessor and returns this quadtree factory. If *y* is not specified, returns the current _y_-coordinate accessor, which defaults to:
@@ -47,6 +49,8 @@ If *y* is specified, sets the y-coordinate accessor and returns this quadtree fa
 ```js
 function(d) { return d[1]; }
 ```
+
+For each point added to the quadtree, either during [initial construction](#wiki-_quadtree) or lazily [added](#wiki-add), the _y_-accessor is invoked with the arguments {<i>d</i>, <i>i</i>}, where _d_ is the current point and _i_ is its index in the array of all points. The _y_-accessor must then return a numeric value indicating the _y_-coordinate of the given point. The _y_-accessor may also be defined as a constant number rather than a function, if desired.
 
 <a name="extent" href="#wiki-extent">#</a> quadtree.<b>extent</b>([<i>extent</i>])
 
