@@ -238,6 +238,16 @@ Returns an array of arrays, where the ith array contains the ith element from ea
 
 Equivalent to `d3.zip.apply(null, matrix)`; uses the zip operator as a two-dimensional [[matrix transpose|http://en.wikipedia.org/wiki/Transpose]].
 
+<a name="d3_pairs" href="#wiki-d3_pairs">#</a> d3.<b>pairs</b>(<i>array</i>)
+
+For each adjacent pair of elements in the specified *array*, returns a new array of tuples of element *i* and element *i* - 1. For example:
+
+```js
+d3.pairs([1, 2, 3, 4]); // returns [[1, 2], [2, 3], [3, 4]]
+```
+
+If the specified array has fewer than two elements, returns the empty array.
+
 ### <a name="_nest"></a> Nest
 
 Nesting allows elements in an array to be grouped into a hierarchical tree structure; think of it like the GROUP BY operator in SQL, except you can have multiple levels of grouping, and the resulting output is a tree rather than a flat table. The levels in the tree are specified by key functions. The leaf nodes of the tree can be sorted by value, while the internal nodes can be sorted by key. An optional rollup function will collapse the elements in each leaf node using a summary function. The nest operator (the object returned by [d3.nest](Arrays#wiki-d3_nest)) is reusable, and does not retain any references to the data that is nested.
