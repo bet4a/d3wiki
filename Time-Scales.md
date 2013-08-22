@@ -52,7 +52,7 @@ If *boolean* is specified, enables or disables clamping accordingly. By default,
 
 Returns representative dates from the scale's input domain. The returned tick dates are uniformly spaced (modulo irregular time intervals, such as months and leap years), have human-readable values (such as midnights), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data.
 
-If *count* is a number, then approximately *count* ticks will be returned. If *count* is not specified, it defaults to 10. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain. If a [time *interval*](Time-Intervals) is specified, then the time interval’s [range function](Time-Intervals#wiki-range) will be used to generate ticks, being passed the optional *step* argument, if any. For example, to create ten default ticks, say:
+If *count* is a number, then approximately *count* ticks will be returned. If *count* is not specified, it defaults to 10. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain. If a [time *interval*](Time-Intervals) is specified, then the time interval’s [range function](Time-Intervals#wiki-interval_range) will be used to generate ticks, being passed the optional *step* argument, if any. For example, to create ten default ticks, say:
 
 ```javascript
 scale.ticks(10);
