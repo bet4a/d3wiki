@@ -27,15 +27,15 @@ Specifies the current zoom scale. If not specified, returns the current zoom sca
 
 <a name="scaleExtent" href="#wiki-scaleExtent">#</a> zoom.<b>scaleExtent</b>([<i>extent</i>])
 
-Specifies the zoom scale's allowed range as a two-element array, [*minimum*, *maximum*]. If not specified, returns the current scale extent, which defaults to [0, Infinity].
+Specifies the zoom scale's allowed range as a two-element array, [<i>minimum</i>, <i>maximum</i>]. If not specified, returns the current scale extent, which defaults to [0, Infinity].
 
 <a name="center" href="#wiki-center">#</a> zoom.<b>center</b>([<i>center</i>])
 
-If *center* is specified, sets the [focal point](http://bl.ocks.org/mbostock/6226534) [*x*, *y*] for mousewheel zooming and returns this zoom behavior. If *center* is not specified, returns the current focal point, which defaults to null. A null center indicates that mousewheel zooming should zoom in and out around the current mouse location.
+If *center* is specified, sets the [focal point](http://bl.ocks.org/mbostock/6226534) [<i>x</i>, <i>y</i>] for mousewheel zooming and returns this zoom behavior. If *center* is not specified, returns the current focal point, which defaults to null. A null center indicates that mousewheel zooming should zoom in and out around the current mouse location.
 
 <a name="size" href="#wiki-size">#</a> zoom.<b>size</b>([<i>size</i>])
 
-If *size* is specified, sets the viewport size to the specified dimensions [*width*, *height*] and returns this zoom behavior. If *size* is not specified, returns the current viewport size which defaults to [960, 500]. A *size* is needed to support [smooth zooming](Transitions#wiki-d3_interpolateZoom) during transitions.
+If *size* is specified, sets the viewport size to the specified dimensions [<i>width</i>, <i>height</i>] and returns this zoom behavior. If *size* is not specified, returns the current viewport size which defaults to [960, 500]. A *size* is needed to support [smooth zooming](Transitions#wiki-d3_interpolateZoom) during transitions.
 
 <a name="x" href="#wiki-x">#</a> zoom.<b>x</b>([<i>x</i>])
 
