@@ -55,3 +55,39 @@ Indicates the end of a polygon.
 <a name="stream_sphere" href="#wiki-stream_sphere">#</a> listener.<b>sphere</b>()
 
 Indicates the sphere (the globe; the unit sphere centered at ⟨0,0,0⟩).
+
+## Stream Transforms
+
+A stream transform wraps a stream listener, transforming the geometry before passing it along to the wrapped listener. A [geographic projection](Geo-Projections) is one example of a stream transform. The [d3.geo.transform](#wiki-transform) class provides an easy way of implementing a custom stream transform.
+
+<a name="transform" href="#wiki-transform">#</a> d3.geo.<b>transform</b>(<i>methods</i>)
+
+Creates a new stream transform using the specified hash of methods. The hash may contain implementations of any of the standard stream listener methods:
+
+* _point_
+* _sphere_
+* _lineStart_
+* _lineEnd_
+* _polygonStart_
+* _polygonEnd_
+
+Any method that is not present in the specified hash will be implemented a pass-through directly to the wrapped stream. To access the wrapped stream within a method, use `this.stream`. For example, to implement a simple [2D matrix transform](http://bl.ocks.org/mbostock/5663666):
+
+```js
+function matrix(a, b, c, d, tx, ty) {
+  return d3.geo.transform({
+    point: function(x, y) { this.stream.point(a * x + b * y + tx, c * x + d * y + ty); },
+  });
+}
+```
+
+This transform can then be used in conjunction with [d3.geo.path](Geo-Paths). For example, to implement a 2D affine transform that flips the <i>y</i>-axis:
+
+```js
+var path = d3.geo.path()
+    .projection(matrix(1, 0, 0, -1, 0, height));
+```
+
+<a name="transform_stream" href="#wiki-transform_stream">#</a> transform.<b>stream</b>(<i>listener</i>)
+
+Given the specified stream *listener*, returns a wrapped stream listener that applies this transform to any input geometry before streaming it to the wrapped listener.
