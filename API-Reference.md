@@ -64,7 +64,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [d3.ease](Transitions#wiki-d3_ease) - customize transition timing.
 * [ease](Transitions#wiki-_ease) - a parametric easing function.
 * [d3.timer](Transitions#wiki-d3_timer) - start a custom animation timer.
-* [d3.timer](flush|Transitions#wiki)3_timer_flush]] - immediately execute any zero-delay timers.
+* [d3.timer.flush](Transitions#wiki-d3_timer_flush) - immediately execute any zero-delay timers.
 * [d3.interpolate](Transitions#wiki-d3_interpolate) - interpolate two values.
 * [interpolate](Transitions#wiki-_interpolate) - a parametric interpolation function.
 * [d3.interpolateNumber](Transitions#wiki-d3_interpolateNumber) - interpolate two numbers.
