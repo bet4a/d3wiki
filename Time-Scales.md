@@ -47,7 +47,7 @@ If *factory* is specified, sets the scale's output interpolator using the specif
 
 If *boolean* is specified, enables or disables clamping accordingly. By default, clamping is disabled, such that if a value outside the input domain is passed to the scale, the scale may return a value outside the output range through linear extrapolation. For example, with the default domain and range of [0,1], an input value of 2 will return an output value of 2. If clamping is enabled, the normalized domain parameter *t* is clamped to the range [0,1], such that the return value of the scale is always within the scale's output range. If *boolean* is not specified, returns whether or not the scale currently clamps values to within the output range.
 
-<a name="ticks" href="Time-Scales#wiki-ticks">#</a> scale.<b>ticks</b>([<i>interval</i>[, <i>step</i>]])
+<a name="ticks" href="Time-Scales#wiki-ticks">#</a> scale.<b>ticks</b>([<i>interval</i>[, <i>skip</i>]])
 <br><a name="ticks" href="Time-Scales#wiki-ticks">#</a> scale.<b>ticks</b>([<i>count</i>])
 
 Returns representative dates from the scale's input domain. The returned tick dates are uniformly spaced (modulo irregular time intervals, such as months and leap years), have human-readable values (such as midnights), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data.
