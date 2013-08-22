@@ -24,10 +24,10 @@ Returns the date in the input domain *x* for the corresponding value in the outp
 
 If *dates* is specified, sets the scale's input domain to the specified array of dates. The array must contain two or more dates. If the elements in the given array are not dates, they will be coerced to dates; this coercion happens similarly when the scale is called. If *dates* is not specified, returns the scale's current input domain. Although time scales typically have just two dates in their domain, you can specify more than two dates for a *polylinear* scale. In this case, there must be an equivalent number of values in the output range.
 
-<a name="nice" href="#wiki-nice">#</a> scale.<b>nice</b>([<i>interval</i>[, <i>skip</i>]])
+<a name="nice" href="#wiki-nice">#</a> scale.<b>nice</b>([<i>interval</i>[, <i>step</i>]])
 <br><a name="nice" href="#wiki-nice">#</a> scale.<b>nice</b>([<i>count</i>])
 
-Extends the domain so that it starts and ends on nice round values as determined by the specified [time *interval*](Time-Intervals) and optional *skip* count. As an alternative to specifying an explicit time interval, a numeric *count* can be specified, and a time interval will be chosen automatically to be consistent with [scale.ticks](#wiki-ticks). If *count* is not specified, it defaults to 10.
+Extends the domain so that it starts and ends on nice round values as determined by the specified [time *interval*](Time-Intervals) and optional *step* count. As an alternative to specifying an explicit time interval, a numeric *count* can be specified, and a time interval will be chosen automatically to be consistent with [scale.ticks](#wiki-ticks). If *count* is not specified, it defaults to 10.
 
 This method typically extends the scale's domain, and may only extend the bounds to the nearest round value. Nicing is useful if the domain is computed from data and may be irregular. For example, for a domain of [2009-07-13T00:02, 2009-07-13T23:48], the nice domain is [2009-07-13, 2009-07-14]. If the domain has more than two values, nicing the domain only affects the first and last value.
 
@@ -47,12 +47,12 @@ If *factory* is specified, sets the scale's output interpolator using the specif
 
 If *boolean* is specified, enables or disables clamping accordingly. By default, clamping is disabled, such that if a value outside the input domain is passed to the scale, the scale may return a value outside the output range through linear extrapolation. For example, with the default domain and range of [0,1], an input value of 2 will return an output value of 2. If clamping is enabled, the normalized domain parameter *t* is clamped to the range [0,1], such that the return value of the scale is always within the scale's output range. If *boolean* is not specified, returns whether or not the scale currently clamps values to within the output range.
 
-<a name="ticks" href="Time-Scales#wiki-ticks">#</a> scale.<b>ticks</b>([<i>interval</i>[, <i>skip</i>]])
+<a name="ticks" href="Time-Scales#wiki-ticks">#</a> scale.<b>ticks</b>([<i>interval</i>[, <i>step</i>]])
 <br><a name="ticks" href="Time-Scales#wiki-ticks">#</a> scale.<b>ticks</b>([<i>count</i>])
 
 Returns representative dates from the scale's input domain. The returned tick dates are uniformly spaced (modulo irregular time intervals, such as months and leap years), have human-readable values (such as midnights), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data.
 
-If *count* is a number, then approximately *count* ticks will be returned. If *count* is not specified, it defaults to 10. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain. If a [time *interval*](Time-Intervals) is specified, then the time interval’s range function will be used to generate ticks, being passed the optional *skip* argument, if any. For example, to create ten default ticks, say:
+If *count* is a number, then approximately *count* ticks will be returned. If *count* is not specified, it defaults to 10. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain. If a [time *interval*](Time-Intervals) is specified, then the time interval’s [range function](Time-Intervals#wiki-range) will be used to generate ticks, being passed the optional *step* argument, if any. For example, to create ten default ticks, say:
 
 ```javascript
 scale.ticks(10);
