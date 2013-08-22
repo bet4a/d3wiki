@@ -8,9 +8,7 @@ Constructs a new brush with no default *x*- and *y*-scale, and an empty extent.
 
 <a name="_brush" href="#wiki-_brush">#</a> <b>brush</b>(<i>selection</i>)
 
-Draws or redraws this brush into the specified *selection* of elements. The brush may be drawn into multiple elements simultaneously, but note that these brushes would share the same backing extent; typically, a brush is drawn into only one element at a time.
-
-The *selection* can also be a [transition](Transitions); however, the brush does not yet support automatic transitions, so the redraw will happen instantaneously. In a subsequent release, the brush will smoothly transition to the new extent when redrawn after the [extent](#wiki-brush_extent) is set.
+Draws or redraws this brush into the specified *selection* of elements. The brush may be drawn into multiple elements simultaneously, but note that these brushes would share the same backing extent; typically, a brush is drawn into only one element at a time. The *selection* can also be a [transition](Transitions), in which case the brush will perform an [automatic transition](http://bl.ocks.org/mbostock/6216724). Use [brush.event](#wiki-brush_event) to dispatch brush events during the transition for animated brushing.
 
 <a name="brush_x" href="#wiki-brush_x">#</a> brush.<b>x</b>([<i>scale</i>])
 
@@ -44,8 +42,12 @@ Returns true if and only if the brush extent is empty. When a brush is created, 
 
 Gets or sets the *listener* for the specified event *type*. Brushes support three types of events:
 
-* brushstart - on mousedown
-* brush - on mousemove, if the brush extent has changed
-* brushend - on mouseup
+* _brushstart_ - on mousedown
+* _brush_ - on mousemove, if the brush extent has changed
+* _brushend_ - on mouseup
 
 Note that when clicking on the background, a mousedown also triggers a "brush" event, since the brush extent is immediately cleared to start a new extent.
+
+<a name="brush_event" href="#wiki-brush_event">#</a> brush.<b>event</b>(<i>selection</i>)
+
+If *selection* is a selection, immediately dispatches a brush gesture to registered listeners, as the three event sequence _brushstart_, _brush_ and _brushend_. This can be useful in triggering listeners after setting the [brush extent](#wiki-brush_extent) programatically. If *selection* is a transition, registers the appropriate tweens so that the brush dispatches events over the course of the transition: a _brushstart_ event when the transition starts from the previously-set extent, _brush_ events for each tick of the transition, and finally a _brushend_ event when the transition ends. Note that the transition will be [interrupted](Selections#wiki-interrupt) if the user starts brushing before the transition ends.
