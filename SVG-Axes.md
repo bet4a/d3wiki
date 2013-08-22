@@ -2,6 +2,22 @@
 
 D3’s [axis component](http://bl.ocks.org/1166403) displays reference lines for scales automatically. This lets you focus on displaying the data, while the axis component takes care of the tedious task of drawing axes and labeled ticks.
 
+[![Axis Component](http://bl.ocks.org/mbostock/raw/1166403/thumbnail.png)](http://bl.ocks.org/mbostock/1166403)
+[![6186172](http://bl.ocks.org/mbostock/raw/6186172/thumbnail.png)](http://bl.ocks.org/mbostock/6186172)
+[![5537697](http://bl.ocks.org/mbostock/raw/5537697/thumbnail.png)](http://bl.ocks.org/mbostock/5537697)
+[![4573883](http://bl.ocks.org/mbostock/raw/4573883/thumbnail.png)](http://bl.ocks.org/mbostock/4573883)
+[![4403522](http://bl.ocks.org/mbostock/raw/4403522/thumbnail.png)](http://bl.ocks.org/mbostock/4403522)
+[![4349486](http://bl.ocks.org/mbostock/raw/4349486/thumbnail.png)](http://bl.ocks.org/mbostock/4349486)
+[![3892919](http://bl.ocks.org/mbostock/raw/3892919/thumbnail.png)](http://bl.ocks.org/mbostock/3892919)
+[![3371592](http://bl.ocks.org/mbostock/raw/3371592/thumbnail.png)](http://bl.ocks.org/mbostock/3371592)
+[![3259783](http://bl.ocks.org/mbostock/raw/3259783/thumbnail.png)](http://bl.ocks.org/mbostock/3259783)
+[![3212294](http://bl.ocks.org/mbostock/raw/3212294/thumbnail.png)](http://bl.ocks.org/mbostock/3212294)
+[![2983699](http://bl.ocks.org/mbostock/raw/2983699/thumbnail.png)](http://bl.ocks.org/mbostock/2983699)
+[![2996766](http://bl.ocks.org/mbostock/raw/2996766/thumbnail.png)](http://bl.ocks.org/mbostock/2996766)
+[![2996785](http://bl.ocks.org/mbostock/raw/2996785/thumbnail.png)](http://bl.ocks.org/mbostock/2996785)
+[![1849162](http://bl.ocks.org/mbostock/raw/1849162/thumbnail.png)](http://bl.ocks.org/mbostock/1849162)
+[![4323929](http://bl.ocks.org/mbostock/raw/4323929/thumbnail.png)](http://bl.ocks.org/mbostock/4323929)
+
 ## Axis
 
 The axis component is designed to work with D3’s [quantitative](Quantitative-Scales), [time](Time-Scales) and [ordinal](Ordinal-Scales) scales.
@@ -56,10 +72,6 @@ var xAxis = d3.svg.axis()
 ```
 
 The explicit tick values take precedent over the tick arguments set by [axis.ticks](#wiki-ticks). However, any  tick arguments will still be passed to the scale's [tickFormat](Quantitative-Scales#wiki-linear_tickFormat) function if a tick format is not also set; thus, it may be valid to set both axis.ticks and axis.tickValues.
-
-<a name="tickSubdivide" href="#wiki-tickSubdivide">#</a> axis.<b>tickSubdivide</b>([<i>count</i>])
-
-If *count* is specified, sets the number minor ticks to insert between major ticks and returns the axis. If *count* is not specified, returns the current subdivision count, which defaults to zero. For example, `axis.tickSubdivide(true)` produces one minor tick per major tick, thus cutting the space between each major tick in two. As another example, decimal subdivision is specified as `axis.tickSubdivide(9)`.
 
 <a name="tickSize" href="#wiki-tickSize">#</a> axis.<b>tickSize</b>([<i>size</i>])
 
