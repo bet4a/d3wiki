@@ -61,18 +61,17 @@ The explicit tick values take precedent over the tick arguments set by [axis.tic
 
 If *count* is specified, sets the number minor ticks to insert between major ticks and returns the axis. If *count* is not specified, returns the current subdivision count, which defaults to zero. For example, `axis.tickSubdivide(true)` produces one minor tick per major tick, thus cutting the space between each major tick in two. As another example, decimal subdivision is specified as `axis.tickSubdivide(9)`.
 
-<a name="tickSize" href="#wiki-tickSize">#</a> axis.<b>tickSize</b>([<i>major</i>[​[, <i>minor</i>], <i>end</i>]])
+<a name="tickSize" href="#wiki-tickSize">#</a> axis.<b>tickSize</b>([<i>size</i>])
 
-If *major* is specified, sets the major tick size and returns the axis. If *major* and *end* are specified, sets the major and minor tick sizes to *major*, the end tick size to *end*, and returns the axis. If *major*, *minor* and *end* are specified, sets the respective tick sizes and returns the axis. If no arguments are specified, returns the current major tick size, which defaults to 6. For example:
+If *size* is specified, sets the [inner](#wiki-innerTickSize) and [outer](#wiki-outerTickSize) tick sizes to the specified value and returns the axis. If *size* is not specified, returns the current inner tick size, which defaults to 6.
 
-```js
-axis.tickSize(); // returns the current major tick size
-axis.tickSize(6); // sets the major, minor and end to 6
-axis.tickSize(6, 0); // sets major and minor to 6, end to 0
-axis.tickSize(6, 3, 0); // sets major to 6, minor to 3, and end to 0
-```
+<a name="innerTickSize" href="#wiki-innerTickSize">#</a> axis.<b>innerTickSize</b>([<i>size</i>])
 
-Note that the end ticks are actually part of the domain path rather than discrete tick elements; their position is determined by the associated scale's domain extent rather than the scale’s tick generator (or the axis’s tick values if specified explicitly). Thus, end ticks may overlap with the first or last tick. An end tick size of 0 suppresses end ticks, producing a straight line for the domain path.
+If *size* is specified, sets the inner tick size to the specified value and returns the axis. If *size* is not specified, returns the current inner tick size, which defaults to 6. The inner tick size controls the length of the tick lines, offset from the native position of the axis.
+
+<a name="outerTickSize" href="#wiki-outerTickSize">#</a> axis.<b>outerTickSize</b>([<i>size</i>])
+
+If *size* is specified, sets the outer tick size to the specified value and returns the axis. If *size* is not specified, returns the current outer tick size, which defaults to 6. The outer tick size controls the length of the square ends of the domain path, offset from the native position of the axis. Thus, the “outer ticks” are not actually ticks but part of the domain path, and their position is determined by the associated scale's domain extent. Thus, outer ticks may overlap with the first or last inner tick. An outer tick size of 0 suppresses the square ends of the domain path, instead producing a straight line.
 
 <a name="tickPadding" href="#wiki-tickPadding">#</a> axis.<b>tickPadding</b>([<i>padding</i>])
 
