@@ -722,10 +722,12 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 
 * [d3.behavior.zoom](Zoom-Behavior#wiki-zoom) - create a zoom behavior.
 * [zoom](Zoom-Behavior#wiki-_zoom) - apply the zoom behavior to the selected elements.
-* [zoom.scale](Zoom-Behavior#wiki-scale) - set or get the current scale.
-* [zoom.translate](Zoom-Behavior#wiki-translate) - set or get the current translate.
-* [zoom.scaleExtent](Zoom-Behavior#wiki-scaleExtent) - limit the scale to the specified extent.
-* [zoom.x](Zoom-Behavior#wiki-x) - update a quantitative scale’s domain automatically during zoom.
-* [zoom.y](Zoom-Behavior#wiki-y) - update a quantitative scale’s domain automatically during zoom.
-* [zoom.on](Zoom-Behavior#wiki-on) - listen for zoom events when the scale or translate changes.
+* [zoom.scale](Zoom-Behavior#wiki-scale) - the current scale factor.
+* [zoom.translate](Zoom-Behavior#wiki-translate) - the current translate offset.
+* [zoom.scaleExtent](Zoom-Behavior#wiki-scaleExtent) - optional limits on the scale factor.
+* [zoom.center](Zoom-Behavior#wiki-center) - an optional focal point for mousewheel zooming.
+* [zoom.size](Zoom-Behavior#wiki-size) - the dimensions of the viewport.
+* [zoom.x](Zoom-Behavior#wiki-x) - an optional scale whose domain is bound to the _x_ extent of the viewport.
+* [zoom.y](Zoom-Behavior#wiki-y) - an optional scale whose domain is bound to the _y_ extent of the viewport.
+* [zoom.on](Zoom-Behavior#wiki-on) - listeners for when the scale or translate changes.
 * [zoom.event](Zoom-Behavior#wiki-event) - dispatch zoom events after setting the scale or translate.
