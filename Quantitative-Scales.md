@@ -60,9 +60,9 @@ Extends the domain so that it starts and ends on nice round values. This method 
 
 The optional tick *count* argument allows greater control over the step size used to extend the bounds, guaranteeing that the returned [ticks](#wiki-linear_ticks) will exactly cover the domain.
 
-<a name="linear_ticks" href="Quantitative-Scales#wiki-linear_ticks">#</a> linear.<b>ticks</b>(<i>count</i>)
+<a name="linear_ticks" href="Quantitative-Scales#wiki-linear_ticks">#</a> linear.<b>ticks</b>([<i>count</i>])
 
-Returns approximately *count* representative values from the scale's input domain. The returned tick values are uniformly spaced, have human-readable values (such as multiples of powers of 10), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain.
+Returns approximately *count* representative values from the scale's input domain. If *count* is not specified, it defaults to 10. The returned tick values are uniformly spaced, have human-readable values (such as multiples of powers of 10), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain.
 
 <a name="linear_tickFormat" href="Quantitative-Scales#wiki-linear_tickFormat">#</a> linear.<b>tickFormat</b>(<i>count</i>, [<i>format</i>])
 
@@ -99,9 +99,9 @@ Returns the given value *x*.
 
 If *numbers* is specified, sets the scale's input domain and output range to the specified array of numbers. The array must contain two or more numbers. If the elements in the given array are not numbers, they will be coerced to numbers; this coercion happens similarly when the scale is called. If numbers is not specified, returns the scale's current input domain (or equivalently, output range).
 
-<a name="identity_ticks" href="#wiki-identity_ticks">#</a> identity.<b>ticks</b>(<i>count</i>)
+<a name="identity_ticks" href="#wiki-identity_ticks">#</a> identity.<b>ticks</b>([<i>count</i>])
 
-Returns approximately *count* representative values from the scale's input domain (or equivalently, output range). The returned tick values are uniformly spaced, have human-readable values (such as multiples of powers of 10), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain.
+Returns approximately *count* representative values from the scale's input domain (or equivalently, output range). If *count* is not specified, it defaults to 10. The returned tick values are uniformly spaced, have human-readable values (such as multiples of powers of 10), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain.
 
 <a name="identity_tickFormat" href="#wiki-identity_tickFormat">#</a> identity.<b>tickFormat</b>(<i>count</i>, [<i>format</i>])
 
@@ -178,7 +178,7 @@ The optional *m* argument allows a tick count to be specified to control the ste
 
 <a name="pow_ticks" href="Quantitative-Scales#wiki-pow_ticks">#</a> pow.<b>ticks</b>([<i>count</i>])
 
-Returns approximately *count* representative values from the scale's input domain. The returned tick values are uniformly spaced, have human-readable values (such as multiples of powers of 10), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain.
+Returns approximately *count* representative values from the scale's input domain. If *count* is not specified, it defaults to 10. The returned tick values are uniformly spaced, have human-readable values (such as multiples of powers of 10), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain.
 
 <a name="pow_tickFormat" href="Quantitative-Scales#wiki-pow_tickFormat">#</a> pow.<b>tickFormat</b>([<i>count</i>, [<i>format</i>]])
 
