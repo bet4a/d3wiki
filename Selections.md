@@ -324,6 +324,16 @@ Returns the *x* and *y* coordinates of each touch associated with the current [d
 
 Starts a [[transition|Transitions]] for the current selection. Transitions behave much like selections, except operators animate smoothly over time rather than applying instantaneously.
 
+<a name="interrupt" href="#wiki-interrupt">#</a> selection.<b>interrupt</b>()
+
+Immediately interrupts the current [transition](Transitions), if any. Does not cancel any scheduled transitions that have not yet started. To cancel scheduled transitions as well, simply create a new zero-delay transition after interrupting the current transition:
+
+```js
+selection
+    .interrupt() // cancel the current transition
+    .transition(); // preempt any scheduled transitions
+```
+
 ### Subselections
 
 Whereas the top-level select methods query the entire document, a selection's [select](Selections#wiki-select) and [selectAll](Selections#wiki-selectAll) operators restrict queries to descendants of each selected element; we call this "subselection". For example, `d3.selectAll("p").select("b")` returns the first bold ("b") elements in every paragraph ("p") element. Subselecting via selectAll groups elements by ancestor. Thus, `d3.selectAll("p").selectAll("b")` groups by paragraph, while `d3.selectAll("p b")` returns a flat selection. Subselecting via select is similar, but preserves groups and propagates data. Grouping plays an important role in the data join, and functional operators may depend on the numeric index of the current element within its group.
