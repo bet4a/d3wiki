@@ -26,6 +26,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[selection.order|Selections#wiki-order]] - reorders elements in the document to match the selection.
 * [[selection.on|Selections#wiki-on]] - add or remove event listeners for interaction.
 * [[selection.transition|Selections#wiki-transition]] - start a transition on the selected elements.
+* [selection.interrupt](Selections#wiki-interrupt) - immediately interrupt the current transition, if any.
 * [[selection.each|Selections#wiki-each]] - call a function for each selected element.
 * [[selection.call|Selections#wiki-call]] - call a function passing in the current selection.
 * [[selection.empty|Selections#wiki-empty]] - returns true if the selection is empty.
@@ -380,6 +381,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[brush.clear|SVG-Controls#wiki-brush_clear]] - reset the brush extent.
 * [[brush.empty|SVG-Controls#wiki-brush_empty]] - returns true if the brush extent is empty.
 * [[brush.on|SVG-Controls#wiki-brush_on]] - respond to events when the brush is moved.
+* [brush.event](SVG-Controls#wiki-brush_event) - dispatch brush events after setting the extent.
 
 ## [d3.time (Time)](Time)
 
@@ -716,12 +718,14 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[drag.origin|Drag-Behavior#wiki-origin]]
 * [[drag.on|Drag-Behavior#wiki-on]]
 
-### [[Zoom|Zoom-Behavior]]
+### [Zoom](Zoom-Behavior)
 
-* [[d3.behavior.zoom|Zoom-Behavior#wiki-zoom]]
-* [[zoom.on|Zoom-Behavior#wiki-on]]
-* [[zoom.scale|Zoom-Behavior#wiki-scale]]
-* [[zoom.translate|Zoom-Behavior#wiki-translate]]
-* [[zoom.scaleExtent|Zoom-Behavior#wiki-scaleExtent]]
-* [[zoom.x|Zoom-Behavior#wiki-x]]
-* [[zoom.y|Zoom-Behavior#wiki-y]]
+* [d3.behavior.zoom](Zoom-Behavior#wiki-zoom) - create a zoom behavior.
+* [zoom](Zoom-Behavior#wiki-_zoom) - apply the zoom behavior to the selected elements.
+* [zoom.scale](Zoom-Behavior#wiki-scale) - set or get the current scale.
+* [zoom.translate](Zoom-Behavior#wiki-translate) - set or get the current translate.
+* [zoom.scaleExtent](Zoom-Behavior#wiki-scaleExtent) - limit the scale to the specified extent.
+* [zoom.x](Zoom-Behavior#wiki-x) - update a quantitative scale’s domain automatically during zoom.
+* [zoom.y](Zoom-Behavior#wiki-y) - update a quantitative scale’s domain automatically during zoom.
+* [zoom.on](Zoom-Behavior#wiki-on) - listen for zoom events when the scale or translate changes.
+* [zoom.event](Zoom-Behavior#wiki-event) - dispatch zoom events after setting the scale or translate.
