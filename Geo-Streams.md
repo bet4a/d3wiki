@@ -82,3 +82,11 @@ var path = d3.geo.path()
 <a name="transform_stream" href="#wiki-transform_stream">#</a> transform.<b>stream</b>(<i>listener</i>)
 
 Given the specified stream *listener*, returns a wrapped stream listener that applies this transform to any input geometry before streaming it to the wrapped listener.
+
+<a name="clipExtent" href="#wiki-clipExtent">#</a> d3.geo.<b>clipExtent</b>()
+
+Create a new stream [transform](#wiki-transform) that implements axis-aligned bounding box clipping. This is typically used to clip geometry to the viewport after [projecting](Geo-Projections).
+
+<a name="clipExtent_extent" href="#wiki-clipExtent_extent">#</a> clipExtent.<b>extent</b>([<i>extent</i>])
+
+If *extent* is specified, sets the clip extent to the specified rectangle [​[<i>x0</i>, <i>y0</i>], [<i>x1</i>, <i>y1</i>]​] and returns this transform. If *extent* is not specified, returns the current clip extent, which defaults to [​[0, 0], [960, 500]​].
