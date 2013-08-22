@@ -62,16 +62,7 @@ A stream transform wraps a stream listener, transforming the geometry before pas
 
 <a name="transform" href="#wiki-transform">#</a> d3.geo.<b>transform</b>(<i>methods</i>)
 
-Creates a new stream transform using the specified hash of methods. The hash may contain implementations of any of the standard stream listener methods:
-
-* _point_
-* _sphere_
-* _lineStart_
-* _lineEnd_
-* _polygonStart_
-* _polygonEnd_
-
-Any method that is not present in the specified hash will be implemented a pass-through directly to the wrapped stream. To access the wrapped stream within a method, use `this.stream`. For example, to implement a simple [2D matrix transform](http://bl.ocks.org/mbostock/5663666):
+Creates a new stream transform using the specified hash of methods. The hash may contain implementations of any of the standard stream listener methods: [sphere](#wiki-stream_sphere), [point](#wiki-stream_point), [lineStart](#wiki-stream_lineStart), [lineEnd](#wiki-stream_lineEnd), [polygonStart](#wiki-stream_polygonStart) and [polygonEnd](#wiki-stream_polygonEnd). Any method that is _not_ present in the specified hash will be implemented a pass-through directly to the wrapped stream. To access the wrapped stream within a method, use `this.stream`. For example, to implement a simple [2D matrix transform](http://bl.ocks.org/mbostock/5663666):
 
 ```js
 function matrix(a, b, c, d, tx, ty) {
