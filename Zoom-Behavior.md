@@ -41,7 +41,9 @@ Registers the specified *listener* to receive events of the specified *type* fro
 * _zoom_ - when the view changes (e.g., touchmove).
 * _zoomend_ - at the end of the current zoom gesture (e.g., touchend).
 
-In the case of mousewheel events, which happen discretely with no explicit start and end reported by the browser, events that occur within 50 milliseconds or less of each other are grouped into a single zoom gesture. If you want more robust interpretation of these gestures, please petition your browser vendor of choice for better touch event support.
+If an event listener was already registered for the same type, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "zoom.foo" and "zoom.bar". To remove a listener, pass null as the listener.
+
+For mousewheel events, which happen discretely with no explicit start and end reported by the browser, events that occur within 50 milliseconds of each other are grouped into a single zoom gesture. If you want more robust interpretation of these gestures, please petition your browser vendor of choice for better touch event support.
 
 When fired, the d3.event object will contain the following properties:
 
