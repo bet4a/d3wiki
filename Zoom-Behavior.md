@@ -9,29 +9,41 @@
 
 This behavior automatically creates event listeners to handle zooming and panning gestures on a container element. Both mouse and touch events are supported.
 
-<a name="zoom" href="Zoom-Behavior#wiki-zoom">#</a> d3.behavior.<b>zoom</b>()
+<a name="zoom" href="#wiki-zoom">#</a> d3.behavior.<b>zoom</b>()
 
 Constructs a new zoom behavior.
 
-<a name="x" href="Zoom-Behavior#wiki-x">#</a> zoom.<b>x</b>([<i>x</i>])
+<a name="_zoom" href="#wiki-_zoom">#</a> <b>zoom</b>(<i>selection</i>)
 
-Specifies an x-scale whose domain should be automatically adjusted when zooming. If not specified, returns the current x-scale, which defaults to null. If the scale's domain or range is modified programmatically, this function should be called again.
+Applies the zoom behavior to the specified *selection*, registering the necessary event listeners to support panning and zooming.
 
-<a name="y" href="Zoom-Behavior#wiki-y">#</a> zoom.<b>y</b>([<i>y</i>])
+<a name="translate" href="#wiki-translate">#</a> zoom.<b>translate</b>([<i>translate</i>])
 
-Specifies an y-scale whose domain should be automatically adjusted when zooming. If not specified, returns the current y-scale, which defaults to null. If the scale's domain or range is modified programmatically, this function should be called again.
+Specifies the current zoom translation vector. If not specified, returns the current translation vector, which defaults to [0, 0].
 
-<a name="scaleExtent" href="Zoom-Behavior#wiki-scaleExtent">#</a> zoom.<b>scaleExtent</b>([<i>extent</i>])
-
-Specifies the zoom scale's allowed range as a two-element array, [*minimum*, *maximum*]. If not specified, returns the current scale extent, which defaults to [0, Infinity].
-
-<a name="scale" href="Zoom-Behavior#wiki-scale">#</a> zoom.<b>scale</b>([<i>scale</i>])
+<a name="scale" href="#wiki-scale">#</a> zoom.<b>scale</b>([<i>scale</i>])
 
 Specifies the current zoom scale. If not specified, returns the current zoom scale, which defaults to 1.
 
-<a name="translate" href="Zoom-Behavior#wiki-translate">#</a> zoom.<b>translate</b>([<i>translate</i>])
+<a name="scaleExtent" href="#wiki-scaleExtent">#</a> zoom.<b>scaleExtent</b>([<i>extent</i>])
 
-Specifies the current zoom translation vector. If not specified, returns the current translation vector, which defaults to [0, 0].
+Specifies the zoom scale's allowed range as a two-element array, [*minimum*, *maximum*]. If not specified, returns the current scale extent, which defaults to [0, Infinity].
+
+<a name="center" href="#wiki-center">#</a> zoom.<b>center</b>([<i>center</i>])
+
+If *center* is specified, sets the [focal point](http://bl.ocks.org/mbostock/6226534) [*x*, *y*] for mousewheel zooming and returns this zoom behavior. If *center* is not specified, returns the current focal point, which defaults to null. A null center indicates that mousewheel zooming should zoom in and out around the current mouse location.
+
+<a name="size" href="#wiki-size">#</a> zoom.<b>size</b>([<i>size</i>])
+
+If *size* is specified, sets the viewport size to the specified dimensions [*width*, *height*] and returns this zoom behavior. If *size* is not specified, returns the current viewport size which defaults to [960, 500]. A *size* is needed to support [smooth zooming](Transitions#wiki-d3_interpolateZoom) during transitions.
+
+<a name="x" href="#wiki-x">#</a> zoom.<b>x</b>([<i>x</i>])
+
+Specifies an _x_-scale whose domain should be automatically adjusted when zooming. If not specified, returns the current _x_-scale, which defaults to null. If the scale's domain or range is modified programmatically, this function should be called again. Setting the _x_-scale also resets the scale to 1 and the translate to [0, 0].
+
+<a name="y" href="#wiki-y">#</a> zoom.<b>y</b>([<i>y</i>])
+
+Specifies an _y_-scale whose domain should be automatically adjusted when zooming. If not specified, returns the current _y_-scale, which defaults to null. If the scale's domain or range is modified programmatically, this function should be called again. Setting the _y_-scale also resets the scale to 1 and the translate to [0, 0].
 
 <a name="on" href="Zoom-Behavior#wiki-on">#</a> zoom.<b>on</b>(<i>type</i>, <i>listener</i>)
 
@@ -49,3 +61,5 @@ When fired, the d3.event object will contain the following properties:
 
 * _scale_ - a number; the current scale.
 * _translate_ - a two-element array representing the current translation vector.
+
+<a name="event" href="#wiki-event">#</a> zoom.<b>event</b>(<i>selection</i>)
