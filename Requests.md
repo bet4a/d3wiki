@@ -58,9 +58,10 @@ Aborts this request, if it is currently in-flight. See [XMLHttpRequest’s abort
 
 Adds or removes an event *listener* to this request for the specified *type*. The type must be one of the following:
 
-* progress - to monitor the [progress of the request](http://www.w3.org/TR/progress-events/).
-* load - when the request completes successfully.
-* error - when the request completes unsuccessfully; this includes 4xx and 5xx response codes.
+* _beforestart_ - before the request is sent, to allow custom headers and the like to be set.
+* _progress_ - to monitor the [progress of the request](http://www.w3.org/TR/progress-events/).
+* _load_ - when the request completes successfully.
+* _error_ - when the request completes unsuccessfully; this includes 4xx and 5xx response codes.
 
 If an event listener was already registered for the same type, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "load.foo" and "load.bar". To remove a listener, pass null as the listener.
 
