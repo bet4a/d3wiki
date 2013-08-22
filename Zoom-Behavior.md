@@ -35,7 +35,15 @@ Specifies the current zoom translation vector. If not specified, returns the cur
 
 <a name="on" href="Zoom-Behavior#wiki-on">#</a> zoom.<b>on</b>(<i>type</i>, <i>listener</i>)
 
-Registers the specified *listener* to receive events of the specified *type* from the zoom behavior. Currently, only the "zoom" event is supported. When fired, the d3.event object will contain the following properties:
+Registers the specified *listener* to receive events of the specified *type* from the zoom behavior. The following types are supported:
 
-* "scale": a number; the current scale.
-* "translate": a two-element array representing the current translation vector.
+* zoomstart - at the start of a zoom gesture (e.g., touchstart).
+* zoom - when the view changes (e.g., touchmove)
+* zoomend - at the end of the current zoom gesture (e.g., touchend).
+
+In the case of mousewheel events, which happen discretely with no explicit start and end reported by the browser, events that occur within 50 milliseconds or less of each other are grouped into a single zoom gesture. If you want more robust interpretation of these gestures, please petition your browser vendor of choice for better touch event support.
+
+When fired, the d3.event object will contain the following properties:
+
+* _scale_ - a number; the current scale.
+* _translate_ - a two-element array representing the current translation vector.
