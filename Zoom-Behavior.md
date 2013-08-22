@@ -37,9 +37,9 @@ Specifies the current zoom translation vector. If not specified, returns the cur
 
 Registers the specified *listener* to receive events of the specified *type* from the zoom behavior. The following types are supported:
 
-* zoomstart - at the start of a zoom gesture (e.g., touchstart).
-* zoom - when the view changes (e.g., touchmove)
-* zoomend - at the end of the current zoom gesture (e.g., touchend).
+* _zoomstart_ - at the start of a zoom gesture (e.g., touchstart).
+* _zoom_ - when the view changes (e.g., touchmove).
+* _zoomend_ - at the end of the current zoom gesture (e.g., touchend).
 
 In the case of mousewheel events, which happen discretely with no explicit start and end reported by the browser, events that occur within 50 milliseconds or less of each other are grouped into a single zoom gesture. If you want more robust interpretation of these gestures, please petition your browser vendor of choice for better touch event support.
 
