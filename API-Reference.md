@@ -371,16 +371,16 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[axis.tickPadding|SVG-Axes#wiki-tickPadding]] - specify padding between ticks and tick labels.
 * [[axis.tickFormat|SVG-Axes#wiki-tickFormat]] - override the tick formatting for labels.
 
-### [[Controls|SVG-Controls]]
+### [Controls](SVG-Controls)
 
-* [[d3.svg.brush|SVG-Controls#wiki-brush]] - click and drag to select one- or two-dimensional regions.
-* [[brush|SVG-Controls#wiki-_brush]] - creates or updates a brush for the given selection or transition.
-* [[brush.x|SVG-Controls#wiki-brush_x]] - get or set the brush’s x-scale.
-* [[brush.y|SVG-Controls#wiki-brush_y]] - get or set the brush’s y-scale.
-* [[brush.extent|SVG-Controls#wiki-brush_extent]] - get or set the brush’s extent.
-* [[brush.clear|SVG-Controls#wiki-brush_clear]] - reset the brush extent.
-* [[brush.empty|SVG-Controls#wiki-brush_empty]] - returns true if the brush extent is empty.
-* [[brush.on|SVG-Controls#wiki-brush_on]] - respond to events when the brush is moved.
+* [d3.svg.brush](SVG-Controls#wiki-brush) - click and drag to select one- or two-dimensional regions.
+* [brush](SVG-Controls#wiki-_brush) - apply a brush to the given selection or transition.
+* [brush.x](SVG-Controls#wiki-brush_x) - the brush’s <i>x</i>-scale, for horizontal brushing.
+* [brush.y](SVG-Controls#wiki-brush_y) - the brush’s <i>y</i>-scale, for vertical brushing.
+* [brush.extent](SVG-Controls#wiki-brush_extent) - the brush’s extent in zero, one or two dimensions.
+* [brush.clear](SVG-Controls#wiki-brush_clear) - reset the brush extent.
+* [brush.empty](SVG-Controls#wiki-brush_empty) - whether or not the brush extent is empty.
+* [brush.on](SVG-Controls#wiki-brush_on) - listeners for when the brush is moved.
 * [brush.event](SVG-Controls#wiki-brush_event) - dispatch brush events after setting the extent.
 
 ## [d3.time (Time)](Time)
