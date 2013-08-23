@@ -370,6 +370,8 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[axis.tickValues|SVG-Axes#wiki-tickValues]] - specify tick values explicitly.
 * [[axis.tickSubdivide|SVG-Axes#wiki-tickSubdivide]] - optionally subdivide ticks uniformly.
 * [[axis.tickSize|SVG-Axes#wiki-tickSize]] - specify the size of major, minor and end ticks.
+* [[axis.innerTickSize|SVG-Axes#wiki-innerTickSize]] - specify the size of inner ticks.
+* [[axis.outerTickSize|SVG-Axes#wiki-outerTickSize]] - specify the size of outer ticks.
 * [[axis.tickPadding|SVG-Axes#wiki-tickPadding]] - specify padding between ticks and tick labels.
 * [[axis.tickFormat|SVG-Axes#wiki-tickFormat]] - override the tick formatting for labels.
 
