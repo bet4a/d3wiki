@@ -368,7 +368,6 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[axis.orient|SVG-Axes#wiki-orient]] - get or set the axis orientation.
 * [[axis.ticks|SVG-Axes#wiki-ticks]] - control how ticks are generated for the axis.
 * [[axis.tickValues|SVG-Axes#wiki-tickValues]] - specify tick values explicitly.
-* [[axis.tickSubdivide|SVG-Axes#wiki-tickSubdivide]] - optionally subdivide ticks uniformly.
 * [[axis.tickSize|SVG-Axes#wiki-tickSize]] - specify the size of major, minor and end ticks.
 * [[axis.innerTickSize|SVG-Axes#wiki-innerTickSize]] - specify the size of inner ticks.
 * [[axis.outerTickSize|SVG-Axes#wiki-outerTickSize]] - specify the size of outer ticks.
