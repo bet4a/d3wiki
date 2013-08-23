@@ -679,6 +679,10 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [stream.polygonStart](Geo-Streams#wiki-stream_polygonStart) - indicate the start of a polygon.
 * [stream.polygonEnd](Geo-Streams#wiki-stream_polygonEnd) - indicate the end of a polygon.
 * [stream.sphere](Geo-Streams#wiki-stream_sphere) - indicate a sphere.
+* [d3.geo.transform](Geo-Streams#wiki-transform) - transform streaming geometries.
+* [transform.stream](Geo-Streams#wiki-transform_stream) - wraps a given stream.
+* [d3.geo.clipExtent](Geo-Streams#wiki-clipExtent) - a stream transform that clips geometries to a given axis-aligned rectangle.
+* [clipExtent.extent](Geo-Streams#wiki-clipExtent_extent) - sets the clip extent.
 
 ## [d3.geom (Geometry)](Geometry)
 

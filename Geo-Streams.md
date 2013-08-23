@@ -85,7 +85,7 @@ Given the specified stream *listener*, returns a wrapped stream listener that ap
 
 <a name="clipExtent" href="#wiki-clipExtent">#</a> d3.geo.<b>clipExtent</b>()
 
-Create a new stream [transform](#wiki-transform) that implements axis-aligned bounding box clipping. This is typically used to clip geometry to the viewport after [projecting](Geo-Projections).
+Create a new stream [transform](#wiki-transform) that implements axis-aligned rectangle clipping. This is typically used to clip geometry to the viewport after [projecting](Geo-Projections).
 
 <a name="clipExtent_extent" href="#wiki-clipExtent_extent">#</a> clipExtent.<b>extent</b>([<i>extent</i>])
 
