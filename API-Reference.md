@@ -99,6 +99,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[d3.permute|Arrays#wiki-d3_permute]] - reorder an array of elements according to an array of indexes.
 * [[d3.zip|Arrays#wiki-d3_zip]] - transpose a variable number of arrays.
 * [[d3.transpose|Arrays#wiki-d3_transpose]] - transpose an array of arrays.
+* [[d3.pairs|Arrays#wiki-d3_pairs]] - returns an array of adjacent pairs of elements.
 * [[d3.keys|Arrays#wiki-d3_keys]] - list the keys of an associative array.
 * [[d3.values|Arrays#wiki-d3_values]] - list the values of an associated array.
 * [[d3.entries|Arrays#wiki-d3_entries]] - list the key-value entries of an associative array.
