@@ -10,9 +10,9 @@ Constructs a new histogram function with the default value accessor, range funct
 
 Evaluates the histogram function on the specified array of *values*. An optional *index* may be specified, which is passed along to the range and bin function. The return value is an array of arrays: each element in the outer array represents a bin, and each bin contains the associated elements from the input *values*. In addition, each bin has three attributes:
 
-* x - the lower bound of the bin (inclusive).
-* dx - the width of the bin; x + dx is the upper bound (exclusive).
-* y - the count (if [frequency](Histogram-Layout#wiki-frequency) is true), or the probability (if frequency is false).
+* *x* - the lower bound of the bin (inclusive).
+* *dx* - the width of the bin; x + dx is the upper bound (exclusive).
+* *y* - the count (if [frequency](Histogram-Layout#wiki-frequency) is true), or the probability (if frequency is false).
 
 Note that the y attribute is the same as the length attribute, in frequency mode.
 
@@ -31,7 +31,7 @@ Specifies the range of the histogram. Values outside the specified range will be
 
 Specifies how to bin values in the histogram. If no argument is specified, the current binning function is returned, which defaults to an implementation of [Sturges' formula](http://en.wikipedia.org/wiki/Histogram) that divides values into bins using uniformly-spaced values. If a *count* is specified, the value [range](#wiki-range) is divided evenly into the specified number of bins. 
 
-If an array of *thresholds* is specified, it defines the value thresholds used to bin, starting with the leftmost (lowest) value and ending with rightmost (highest) value. Thus, the *n* + 1 *thresholds* specify *n* bins. Any values less than <i>bins[1]</i> will be placed in the first bin; likewise any values greater than or equal to <i>bins[bins.length - 2]</i> will be placed in the last bin.
+If an array of *thresholds* is specified, it defines the value thresholds used to bin, starting with the leftmost (lowest) value and ending with rightmost (highest) value. Thus, the *n* + 1 *thresholds* specify *n* bins. Any values less than <i>bins[1]</i> will be placed in the first bin; likewise any values greater than or equal to <i>bins[bins.length - 2]</i> will be placed in the last bin. Although the first and last threshold are not used to assign values to bins, they are still used to define the *x* property of the first bin and the *dx* property of the last bin, respectively.
 
 Lastly, if a binning *function* is specified, it is invoked when the layout is passed data, being passed the current [range](Histogram-Layout#wiki-range), the array of values and the current index passed to [histogram](Histogram-Layout#wiki-_histogram). This function must then return an array of *thresholds* as described in the previous paragraph. 
 
