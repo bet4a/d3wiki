@@ -24,9 +24,16 @@ Specifies how to extract a value from the associated data; *accessor* is a funct
 
 Specifies the range of the histogram. Values outside the specified range will be ignored. The *range* may be specified either as a two-element array representing the minimum and maximum value of the range, or as a function that returns the range given the array of *values* and the current *index* passed to [histogram](Histogram-Layout#wiki-_histogram). The default range is the extent ([minimum](Arrays#wiki-d3_min) and [maximum](Arrays#wiki-d3_max)) of the values. If *range* is not specified, returns the current range function.
 
-<a name="bins" href="Histogram-Layout#wiki-bins">#</a> histogram.<b>bins</b>([<i>bins</i>])
+<a name="bins" href="Histogram-Layout#wiki-bins">#</a> histogram.<b>bins</b>()
+<br><a name="bins" href="Histogram-Layout#wiki-bins">#</a> histogram.<b>bins</b>(<i>count</i>)
+<br><a name="bins" href="Histogram-Layout#wiki-bins">#</a> histogram.<b>bins</b>(<i>thresholds</i>)
+<br><a name="bins" href="Histogram-Layout#wiki-bins">#</a> histogram.<b>bins</b>(<i>function</i>)
 
-Specifies how to bin values in the histogram. The *bins* may be specified as a number, in which case the range of values will be split uniformly into the given number of bins. Or, *bins* may be an array of threshold values, defining the bins; the specified array must contain the rightmost (upper) value, thus specifying *n* + 1 values for *n* bins. Or, *bins* may be a function which is evaluated, being passed the [range](Histogram-Layout#wiki-range), the array of *values* and the current *index* passed to [histogram](Histogram-Layout#wiki-_histogram), returning an array of thresholds. The default bin function will divide the values into uniform bins using [Sturges' formula](http://en.wikipedia.org/wiki/Histogram).
+Specifies how to bin values in the histogram. If no argument is specified, the current binning function is returned, which defaults to an implementation of [Sturges' formula](http://en.wikipedia.org/wiki/Histogram) that divides values into bins using uniformly-spaced values. If a *count* is specified, the value [range](#wiki-range) is divided evenly into the specified number of bins. 
+
+If an array of *thresholds* is specified, it defines the value thresholds used to bin, starting with the leftmost (lowest) value and ending with rightmost (highest) value. Thus, the *n* + 1 *thresholds* specify *n* bins. Any values less than <i>bins[1]</i> will be placed in the first bin; likewise any values greater than or equal to <i>bins[bins.length - 2]</i> will be placed in the last bin.
+
+Lastly, if a binning *function* is specified, it is invoked when the layout is passed data, being passed the current [range](Histogram-Layout#wiki-range), the array of values and the current index passed to [histogram](Histogram-Layout#wiki-_histogram). This function must then return an array of *thresholds* as described in the previous paragraph. 
 
 <a name="frequency" href="Histogram-Layout#wiki-frequency">#</a> histogram.<b>frequency</b>([<i>frequency</i>])
 
