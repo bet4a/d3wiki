@@ -100,6 +100,7 @@ Also checkout [D3.js on Hacker Notes](http://www.thehackernotes.com/mbostock/d3)
 * [NYC D3.js](http://www.meetup.com/NYC-D3-JS/)
 * [London d3.js User Group] (http://lanyrd.com/series/london-d3-js/)
 * [Boston d3.js User Group](http://www.meetup.com/Boston-d3-js-User-Group/)
+* [Berlin Visualization Group](http://www.meetup.com/Data-Visualization-Berlin/)
 
 ## Publications
 
