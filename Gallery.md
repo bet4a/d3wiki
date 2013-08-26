@@ -370,7 +370,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/gh-pages/mower-demo/scr
 * [How educated are world leaders?](http://skyrill.com/leaders/) - Ali Almossawi
 * [Dynamic charts](http://bl.ocks.org/4340039) and [dynamically populated charts](http://bl.ocks.org/4339162) - Marcello La Rocca
 * [Radial Line Chart](http://anilomanwar.github.com/RedialLine/Redial%20Line.html) and [Chart Wheel](http://anilomanwar.github.com/d3jsExperiments/ChartWheel.html) - Anil Omanwar
-* [Indo-European concepts, cognates, and etymologies](http://joenoodles.com/2013/01/the-last-slice-of-pie/) - Joseph Nudell
+* [Indo-European concepts, cognates, and etymologies](http://joenoodles.com/2013/01/the-last-slice-of-pie/) - [Joseph Nudell](http://joenoodles.com/)
 * [Remix of the Century](http://www.remixofthecentury.com/) - Henrik Pettersson, David Vella, and Tom Hannen
 * [Displaying real-time data](http://bl.ocks.org/4339162) - Marcello La Rocca
 * [“Decide the Czech 2013 Presidential Election” interactive visualization](http://prezidenti.databoutique.cz/index.en.html) - Vojtech Hyza, Karel Minarik, Josef Slerka ([about](http://ephemera.karmi.cz/post/41370777074/decide-the-election-interactive-visualization), [source](http://bl.ocks.org/4626240))
@@ -387,7 +387,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/gh-pages/mower-demo/scr
 * [2002-2011 International Phone Call Traffic bar chart with time series](http://fcc.github.io/calltraffic/trafficbyyear.html)
 * [Influence Map: Women &amp; Leadership](http://traackr.com/women-leadership/) - Dane Lyons
 * [The State of Do Not Track](https://dnt-dashboard.mozilla.org/) - Mozilla
-* [Personal texting trends demo (using dc.js)](http://joenoodles.com/widgets/attlog/) - Joseph Nudell
+* [Personal texting trends demo (using dc.js)](http://joenoodles.com/widgets/attlog/) - [Joseph Nudell](http://joenoodles.com/)
 * [Worldwide remittance flows](http://remittances.herokuapp.com/?en) - David Bauer, Ilya Boyandin und René Stalder
 * [Evolution of the Firefox Codebase](http://almossawi.com/firefox) - Ali Almossawi
 * [Language Network](http://www.cotrino.com/2012/11/language-network/) - José Cotrino
@@ -399,6 +399,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/gh-pages/mower-demo/scr
 * [Artefacts of the Collective Unconscious](http://artefactsofthecollectiveunconscious.net) - [Noah Pedrini](http://looklisten.net) and [David Patman](http://www.createassociate.com.au/)
 * [Starpaths](http://www.cotrino.com/2013/05/starpaths/) - José Cotrino
 * [Most common birthdays](http://www.tageswoche.ch/de/2013_33/leben/569747/mit-wie-vielen-anderen-in-der-schweiz-teilen-sie-den-geburtstag.htm) - David Bauer
+* [Premier League Transfers, 1992-2013](http://sauce.joenoodles.com/pltransfers/) - [Joseph Nudell](http://joenoodles.com/)
 
 ### Collections
 
