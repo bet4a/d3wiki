@@ -228,6 +228,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/gh-pages/mower-demo/scr
     <td>Bar Chart with Negative Values<br><a href="http://bl.ocks.org/2368837"><img src="https://raw.github.com/gist/2368837/thumbnail.png" width="202"></a></td>
     <td>Gauge<br><a href="http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html"><img src="https://raw.github.com/gist/1499279/thumbnail.png" width="202"></a></td>
     <td>BulleT (a variant of mbostock's Bullet Charts) vertical or horizontal<br><a href="http://bl.ocks.org/CodeXmonk/6112167"><img src="https://gist.github.com/CodeXmonk/6112167/raw/bbd3c9b608ff8123c6664d1bf9a850dcc9ca1065/thumbnail.png" width="202"></a></td>
+    <td>Arc Axis<br><a href="http://bl.ocks.org/metormote/6392996"><img src="https://raw.github.com/gist/6392996/thumbnail.png" width="202"></a></td>
     <td></td>
   </tr>
 </table>
@@ -866,6 +867,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [VisualSedimentation.js: visualizing streaming data, inspired by the process of physical sedimentation](http://www.visualsedimentation.org/)
 * [Insights: Interactive Force Graph Component](https://github.com/ignacioola/insights)
 * [Lepracursor](http://sepans.com/sp/postes/lepracursor/), a d3.js based library which adds a virtual pointer to the page that grows in number with every click 
+* [iopctrl.js: User interface controls and gauges](http://iop.io/iopctrl)
 
 ### Wish List
 
