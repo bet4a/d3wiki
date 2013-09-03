@@ -259,7 +259,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/gh-pages/mower-demo/scr
   <tr height="146" valign="top">
     <td>Spline Interpolation<br><a href="http://bl.ocks.org/4342190"><img src="https://raw.github.com/gist/4342190/thumbnail.png" width="202"></a></td>
     <td>Dispatching Events<br><a href="http://bl.ocks.org/5872848"><img src="https://raw.github.com/gist/5872848/thumbnail.png" width="202"></a></td>
-    <td>Better force layout Voronoi selection<br><a href="http://bl.ocks.org/6420534"><img src="https://gist.github.com/couchand/6420534/raw/1b3234b13de39754be44e2f59b41c8d734d2ab2a/thumbnail.png" width="200"></a></td>
+    <td>Better force layout selection<br><a href="http://bl.ocks.org/6420534"><img src="https://gist.github.com/couchand/6420534/raw/84a16303101dbe8adc0ecc298471d95ebac4356e/thumbnail.png" width="200"></a></td>
     <td></td>
   </tr>
 </table>
