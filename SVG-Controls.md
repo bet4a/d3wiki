@@ -2,6 +2,17 @@
 
 ## Brush
 
+[![6452972](http://bl.ocks.org/mbostock/raw/6452972/thumbnail.png)](http://bl.ocks.org/mbostock/6452972)
+[![4063663](http://bl.ocks.org/mbostock/raw/4063663/thumbnail.png)](http://bl.ocks.org/mbostock/4063663)
+[![6232620](http://bl.ocks.org/mbostock/raw/6232620/thumbnail.png)](http://bl.ocks.org/mbostock/6232620)
+[![6232537](http://bl.ocks.org/mbostock/raw/6232537/thumbnail.png)](http://bl.ocks.org/mbostock/6232537)
+[![6216724](http://bl.ocks.org/mbostock/raw/6216724/thumbnail.png)](http://bl.ocks.org/mbostock/6216724)
+[![4560481](http://bl.ocks.org/mbostock/raw/4560481/thumbnail.png)](http://bl.ocks.org/mbostock/4560481)
+[![4565798](http://bl.ocks.org/mbostock/raw/4565798/thumbnail.png)](http://bl.ocks.org/mbostock/4565798)
+[![4349545](http://bl.ocks.org/mbostock/raw/4349545/thumbnail.png)](http://bl.ocks.org/mbostock/4349545)
+[![4349509](http://bl.ocks.org/mbostock/raw/4349509/thumbnail.png)](http://bl.ocks.org/mbostock/4349509)
+[![4343214](http://bl.ocks.org/mbostock/raw/4343214/thumbnail.png)](http://bl.ocks.org/mbostock/4343214)
+
 <a name="brush" href="#wiki-brush">#</a> d3.svg.<b>brush</b>()
 
 Constructs a new brush with no default *x*- and *y*-scale, and an empty extent.
