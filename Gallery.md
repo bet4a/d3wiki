@@ -201,6 +201,13 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/gh-pages/mower-demo/scr
     <td>Another state budget visualization with open api<br><a href="http://budzet.aws.af.cm"><img src="http://www.demodems.org/gtt/otvoreni-budzet-d3.png" width="202"></a></td>
 <td>Real-time Interactive Zoomable Map running 4B records<br><a href="https://demo.zoomdata.com/zoomdata/visualization?__target=embedded&key=5227b672dd325c5f60cef034#5228a52de4b077266da50eea-5227af98e4b077266d98076b"><img src="https://www.dropbox.com/s/loala85c1dwfla4/map.png" width="202" height="180"></a></td>
   </tr>
+  <tr>
+    <td>
+      Interactive Bible contradictions & bar charts [<a href="https://github.com/danielgtaylor/bibviz">source</a>]
+      <br/>
+      <a href="http://bibviz.com/"><img src="http://bibviz.com/img/square.png"/></a>
+    </td>
+  </tr>
  
 </table>
 
