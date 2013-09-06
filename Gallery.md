@@ -685,6 +685,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [All 2012 US flights from Google Fusion](http://xliberation.com/googlecharts/d3flights.html)
 * [San Francisco Contours](http://bl.ocks.org/karmadude/5820393) - Liji Jinaraj
 * [Global Oil Production & Consumption since 1965](http://labs.wnstnsmth.net/worldoil) - [Timo Grossenbacher](http://wnstnsmth.net)
+* [Nielsen Media Markets](http://bl.ocks.org/simzou/6459889) - Simon Zou
 
 #### Misc Charts
 
