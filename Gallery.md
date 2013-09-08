@@ -240,7 +240,10 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/gh-pages/mower-demo/scr
     </tr>
     <tr height="146" valign="top">
     <td>Arc Axis<br><a href="http://bl.ocks.org/metormote/6392996"><img src="https://raw.github.com/gist/6392996/thumbnail.png" width="202"></a></td>
-    <td></td>
+    <td>
+      Bar chart with tooltips<br/>
+      <a href="http://bl.ocks.org/Caged/6476579"><img src="http://bl.ocks.org/Caged/raw/6476579/thumbnail.png" width="202" /></a>
+    </td>
   </tr>
 </table>
 
