@@ -207,6 +207,13 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/gh-pages/mower-demo/scr
       <br/>
       <a href="http://bibviz.com/"><img src="http://bibviz.com/img/square.png"/></a>
     </td>
+    
+    <td>Force Edge Bundling For Graphs <br>
+       <a href="http://bl.ocks.org/upphiminn/6515478">
+       <img src="https://raw.github.com/upphiminn/d3.ForceBundle/master/readme_img/thumbnail.png"></a>
+       [<a href="https://github.com/upphiminn/d3.ForceBundle">Source & Docs</a>]
+    </td>
+
   </tr>
  
 </table>
@@ -272,7 +279,7 @@ src="https://raw.github.com/BertrandDechoux/d3js-sandbox/gh-pages/mower-demo/scr
     <td>Spline Interpolation<br><a href="http://bl.ocks.org/4342190"><img src="https://raw.github.com/gist/4342190/thumbnail.png" width="202"></a></td>
     <td>Dispatching Events<br><a href="http://bl.ocks.org/5872848"><img src="https://raw.github.com/gist/5872848/thumbnail.png" width="202"></a></td>
     <td>Better force layout selection<br><a href="http://bl.ocks.org/6420534"><img src="https://gist.github.com/couchand/6420534/raw/84a16303101dbe8adc0ecc298471d95ebac4356e/thumbnail.png" width="200"></a></td>
-    <td>Force Edge Bundling For Graphs<a href="http://bl.ocks.org/upphiminn/6515478"><img src="https://raw.github.com/upphiminn/d3.ForceBundle/master/readme_img/thumbnail.png" width="202"></a></td>
+<td></td>
   </tr>
 </table>
 
