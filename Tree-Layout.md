@@ -10,7 +10,8 @@ Like most other layouts, the object returned by d3.layout.tree is both an object
 
 Creates a new tree layout with the default settings: the default sort order is null; the default children accessor assumes each input data is an object with a children array; the default separation function uses one node width for siblings, and two node widths for non-siblings; the default size is 1×1.
 
-<a name="nodes" href="#wiki-nodes">#</a> tree.<b>nodes</b>(<i>root</i>)
+<a name="_tree" href="#wiki-_tree">#</a> <b>tree</b>(<i>root</i>)
+<br><a name="nodes" href="#wiki-nodes">#</a> tree.<b>nodes</b>(<i>root</i>)
 
 Runs the tree layout, returning the array of nodes associated with the specified *root* node. The tree layout is part of D3's family of [[hierarchical|Hierarchy-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes. Several attributes are populated on each node:
 
