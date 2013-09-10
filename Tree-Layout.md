@@ -10,17 +10,33 @@ Like most other layouts, the object returned by d3.layout.tree is both an object
 
 Creates a new tree layout with the default settings: the default sort order is null; the default children accessor assumes each input data is an object with a children array; the default separation function uses one node width for siblings, and two node widths for non-siblings; the default size is 1×1.
 
-<a name="sort" href="Tree-Layout#wiki-sort">#</a> tree.<b>sort</b>([<i>comparator</i>])
+<a name="nodes" href="Tree-Layout#wiki-nodes">#</a> tree.<b>nodes</b>(<i>root</i>)
 
-If *comparator* is specified, sets the sort order of sibling nodes for the layout using the specified comparator function.  If *comparator* is not specified, returns the current group sort order, which defaults to null for no sorting. The comparator function is invoked for pairs of nodes, being passed the input data for each node. The default comparator is null, which disables sorting and uses tree traversal order. For example, to sort sibling nodes in descending order by the associated input data's numeric value attribute, say:
+Runs the tree layout, returning the array of nodes associated with the specified *root* node. The tree layout is part of D3's family of [[hierarchical|Hierarchy-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes. Several attributes are populated on each node:
+
+* parent - the parent node, or null for the root.
+* children - the array of child nodes, or null for leaf nodes.
+* depth - the depth of the node, starting at 0 for the root.
+* x - the computed *x*-coordinate of the node position.
+* y - the computed *y*-coordinate of the node position.
+
+Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system; for example, you can treat *x* as a radius and *y* as an angle to produce a radial rather than Cartesian layout.
+
+<a name="links" href="Tree-Layout#wiki-links">#</a> tree.<b>links</b>(<i>nodes</i>)
+
+Given the specified array of *nodes*, such as those returned by [nodes](Tree-Layout#wiki-nodes), returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. Each link is an object with two attributes:
+
+* source - the parent node (as described above).
+* target - the child node.
+
+This method is useful for retrieving a set of link descriptions suitable for display, often in conjunction with the [diagonal](SVG-Shapes#wiki-diagonal) shape generator. For example:
 
 ```javascript
-function comparator(a, b) {
-  return b.value - a.value;
-}
+svg.selectAll("path")
+    .data(tree.links(nodes))
+  .enter().append("path")
+    .attr("d", d3.svg.diagonal());
 ```
-
-Sorting by the node's name or key is also common. This can be done easily using [d3.ascending](Arrays#wiki-d3_ascending) or [d3.descending](Arrays#wiki-d3_descending).
 
 <a name="children" href="Tree-Layout#wiki-children">#</a> tree.<b>children</b>([<i>children</i>])
 
@@ -64,34 +80,6 @@ Often, it is convenient to load the node hierarchy using [d3.json](Requests#wiki
 
 The children accessor is first invoked for root node in the hierarchy. If the accessor returns null, then the node is assumed to be a leaf node at the layout traversal terminates. Otherwise, the accessor should return an array of data elements representing the child nodes.
 
-<a name="nodes" href="Tree-Layout#wiki-nodes">#</a> tree.<b>nodes</b>(<i>root</i>)
-
-Runs the tree layout, returning the array of nodes associated with the specified *root* node. The tree layout is part of D3's family of [[hierarchical|Hierarchy-Layout]] layouts. These layouts follow the same basic structure: the input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes. Several attributes are populated on each node:
-
-* parent - the parent node, or null for the root.
-* children - the array of child nodes, or null for leaf nodes.
-* depth - the depth of the node, starting at 0 for the root.
-* x - the computed *x*-coordinate of the node position.
-* y - the computed *y*-coordinate of the node position.
-
-Although the layout has a size in *x* and *y*, this represents an arbitrary coordinate system; for example, you can treat *x* as a radius and *y* as an angle to produce a radial rather than Cartesian layout.
-
-<a name="links" href="Tree-Layout#wiki-links">#</a> tree.<b>links</b>(<i>nodes</i>)
-
-Given the specified array of *nodes*, such as those returned by [nodes](Tree-Layout#wiki-nodes), returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. Each link is an object with two attributes:
-
-* source - the parent node (as described above).
-* target - the child node.
-
-This method is useful for retrieving a set of link descriptions suitable for display, often in conjunction with the [diagonal](SVG-Shapes#wiki-diagonal) shape generator. For example:
-
-```javascript
-svg.selectAll("path")
-    .data(tree.links(nodes))
-  .enter().append("path")
-    .attr("d", d3.svg.diagonal());
-```
-
 <a name="separation" href="Tree-Layout#wiki-separation">#</a> tree.<b>separation</b>([<i>separation</i>])
 
 If *separation* is specified, uses the specified function to compute separation between neighboring nodes. If *separation* is not specified, returns the current separation function, which defaults to:
@@ -122,15 +110,15 @@ If *nodeSize* is specified, sets a fixed size for each node as a two-element arr
 
 <a name="sort" href="#wiki-sort">#</a> tree.<b>sort</b>([<i>comparator</i>])
 
-If *comparator* is specified, sets the sort order of sibling nodes for the layout using the specified comparator function.  If *comparator* is not specified, returns the current group sort order, which defaults to null for no sorting. The comparator function is invoked for pairs of nodes, being passed the input data for each node. The default comparator is null, which disables sorting and uses tree traversal order. For example, to sort sibling nodes in descending order by the associated input data's string name attribute, say:
+If *comparator* is specified, sets the sort order of sibling nodes for the layout using the specified comparator function.  If *comparator* is not specified, returns the current group sort order, which defaults to null for no sorting. The comparator function is invoked for pairs of nodes, being passed the input data for each node. The default comparator is null, which disables sorting and uses tree traversal order. For example, to sort sibling nodes in descending order by the associated input data's numeric value attribute, say:
 
 ```javascript
 function comparator(a, b) {
-  return d3.ascending(a.name, b.name);
+  return b.value - a.value;
 }
 ```
 
-See [d3.ascending](Arrays#wiki-d3_ascending) or [d3.descending](Arrays#wiki-d3_descending) for details.
+Sorting by the node's name or key is also common. This can be done easily using [d3.ascending](Arrays#wiki-d3_ascending) or [d3.descending](Arrays#wiki-d3_descending).
 
 <a name="value" href="#wiki-value">#</a> tree.<b>value</b>([<i>value</i>])
 
