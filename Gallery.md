@@ -711,7 +711,6 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Hierarchical Edge Bundling](http://bl.ocks.org/1044242)
 * [Spiral for John Hunter](http://bl.ocks.org/3543186)
 * [Hexagonal Heatmaps for e.g. Self Organizing Maps](http://nbremer.blogspot.com/2013/07/self-organizing-maps-adding-boundaries.html) and [code](http://bl.ocks.org/nbremer/6052681)
-* [Radar Chart / Spider Chart](http://nbremer.blogspot.nl/2013/09/making-d3-radar-chart-look-bit-better.html) and [code](http://bl.ocks.org/nbremer/6506614)
 
 #### Miscellaneous visualizations
 
