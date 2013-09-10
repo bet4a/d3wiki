@@ -477,16 +477,17 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[chord.chords|Chord-Layout#wiki-chords]] - retrieve the computed chord angles.
 * [[chord.groups|Chord-Layout#wiki-groups]] - retrieve the computed group angles.
 
-### [[Cluster|Cluster-Layout]]
+### [Cluster](Cluster-Layout)
 
-* [[d3.layout.cluster|Cluster-Layout#wiki-cluster]] - cluster entities into a dendrogram.
-* [[cluster.sort|Cluster-Layout#wiki-sort]] - get or set the comparator function for sibling nodes.
-* [[cluster.children|Cluster-Layout#wiki-children]] - get or set the accessor function for child nodes.
-* [[cluster.nodes|Cluster-Layout#wiki-nodes]] - compute the cluster layout and return the array of nodes.
-* [[cluster.links|Cluster-Layout#wiki-links]] - compute the parent-child links between tree nodes.
-* [[cluster.separation|Cluster-Layout#wiki-separation]] - get or set the spacing function between neighboring nodes.
-* [[cluster.size|Cluster-Layout#wiki-size]] - get or set the layout size in *x* and *y*.
-* [[cluster.nodeSize|Cluster-Layout#wiki-nodeSize]] - specify a fixed size for each node.
+* [d3.layout.cluster](Cluster-Layout#wiki-cluster) - cluster entities into a dendrogram.
+* [cluster](Cluster-Layout#wiki-_cluster) - alias for cluster.nodes.
+* [cluster.nodes](Cluster-Layout#wiki-nodes) - compute the cluster layout and return the array of nodes.
+* [cluster.links](Cluster-Layout#wiki-links) - compute the parent-child links between tree nodes.
+* [cluster.children](Cluster-Layout#wiki-children) - get or set the accessor function for child nodes.
+* [cluster.sort](Cluster-Layout#wiki-sort) - get or set the comparator function for sibling nodes.
+* [cluster.separation](Cluster-Layout#wiki-separation) - get or set the spacing function between neighboring nodes.
+* [cluster.size](Cluster-Layout#wiki-size) - get or set the layout size in *x* and *y*.
+* [cluster.nodeSize](Cluster-Layout#wiki-nodeSize) - specify a fixed size for each node.
 
 ### [[Force|Force-Layout]]
 
@@ -508,15 +509,16 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[force.tick|Force-Layout#wiki-tick]] - run the layout simulation one step.
 * [[force.drag|Force-Layout#wiki-drag]] - bind a behavior to nodes to allow interactive dragging.
 
-### [[Hierarchy|Hierarchy-Layout]]
+### [Hierarchy](Hierarchy-Layout)
 
-* [[d3.layout.hierarchy|Hierarchy-Layout#wiki-hierarchy]] - derive a custom hierarchical layout implementation.
-* [[hierarchy.sort|Hierarchy-Layout#wiki-sort]] - get or set the comparator function for sibling nodes.
-* [[hierarchy.children|Hierarchy-Layout#wiki-children]] - get or set the accessor function for child nodes.
-* [[hierarchy.nodes|Hierarchy-Layout#wiki-nodes]] - compute the layout and return the array of nodes.
-* [[hierarchy.links|Hierarchy-Layout#wiki-links]] - compute the parent-child links between tree nodes.
-* [[hierarchy.value|Hierarchy-Layout#wiki-value]] - get or set the value accessor function.
-* [[hierarchy.revalue|Hierarchy-Layout#wiki-revalue]] - recompute the hierarchy values.
+* [d3.layout.hierarchy](Hierarchy-Layout#wiki-hierarchy) - derive a custom hierarchical layout implementation.
+* [hierarchy](Hierarchy-Layout#wiki-_hierarchy) - alias for hierarchy.nodes.
+* [hierarchy.nodes](Hierarchy-Layout#wiki-nodes) - compute the layout and return the array of nodes.
+* [hierarchy.links](Hierarchy-Layout#wiki-links) - compute the parent-child links between tree nodes.
+* [hierarchy.children](Hierarchy-Layout#wiki-children) - get or set the accessor function for child nodes.
+* [hierarchy.sort](Hierarchy-Layout#wiki-sort) - get or set the comparator function for sibling nodes.
+* [hierarchy.value](Hierarchy-Layout#wiki-value) - get or set the value accessor function.
+* [hierarchy.revalue](Hierarchy-Layout#wiki-revalue) - recompute the hierarchy values.
 
 ### [[Histogram|Histogram-Layout]]
 
@@ -530,24 +532,26 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 ### [Pack](Pack-Layout)
 
 * [d3.layout.pack](Pack-Layout#wiki-pack) - produce a hierarchical layout using recursive circle-packing.
-* [pack.sort](Pack-Layout#wiki-sort) - control the order in which sibling nodes are traversed.
-* [pack.children](Pack-Layout#wiki-children) - get or set the children accessor function.
+* [pack](Pack-Layout#wiki-_pack) - alias for pack.nodes.
 * [pack.nodes](Pack-Layout#wiki-nodes) - compute the pack layout and return the array of nodes.
 * [pack.links](Pack-Layout#wiki-links) - compute the parent-child links between tree nodes.
+* [pack.children](Pack-Layout#wiki-children) - get or set the children accessor function.
+* [pack.sort](Pack-Layout#wiki-sort) - control the order in which sibling nodes are traversed.
 * [pack.value](Pack-Layout#wiki-value) - get or set the value accessor used to size circles.
 * [pack.size](Pack-Layout#wiki-size) - specify the layout size in *x* and *y*.
 * [pack.radius](Pack-Layout#wiki-radius) - specify the node radius, rather than deriving it from value.
 * [pack.padding](Pack-Layout#wiki-padding) - specify the layout padding in (approximate) pixels.
 
-### [[Partition|Partition-Layout]]
+### [Partition](Partition-Layout)
 
-* [[d3.layout.partition|Partition-Layout#wiki-partition]] - recursively partition a node tree into a sunburst or icicle.
-* [[partition.sort|Partition-Layout#wiki-sort]] - control the order in which sibling nodes are traversed.
-* [[partition.children|Partition-Layout#wiki-children]] - get or set the children accessor function.
-* [[partition.nodes|Partition-Layout#wiki-nodes]] - compute the partition layout and return the array of nodes.
-* [[partition.links|Partition-Layout#wiki-links]] - compute the parent-child links between tree nodes.
-* [[partition.value|Partition-Layout#wiki-value]] - get or set the value accessor used to size circles.
-* [[partition.size|Partition-Layout#wiki-size]] - specify the layout size in *x* and *y*.
+* [d3.layout.partition](Partition-Layout#wiki-partition) - recursively partition a node tree into a sunburst or icicle.
+* [partition](Partition-Layout#wiki-_partition) - alias for partition.nodes.
+* [partition.nodes](Partition-Layout#wiki-nodes) - compute the partition layout and return the array of nodes.
+* [partition.links](Partition-Layout#wiki-links) - compute the parent-child links between tree nodes.
+* [partition.children](Partition-Layout#wiki-children) - get or set the children accessor function.
+* [partition.sort](Partition-Layout#wiki-sort) - control the order in which sibling nodes are traversed.
+* [partition.value](Partition-Layout#wiki-value) - get or set the value accessor used to size circles.
+* [partition.size](Partition-Layout#wiki-size) - specify the layout size in *x* and *y*.
 
 ### [[Pie|Pie-Layout]]
 
@@ -569,29 +573,31 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[stack.y|Stack-Layout#wiki-y]] - get or set the *y*-dimension accessor function.
 * [[stack.out|Stack-Layout#wiki-out]] - get or set the output function for storing the baseline.
 
-### [[Tree|Tree-Layout]]
+### [Tree](Tree-Layout)
 
-* [[d3.layout.tree|Tree-Layout#wiki-tree]] - position a tree of nodes tidily.
-* [[tree.sort|Tree-Layout#wiki-sort]] - control the order in which sibling nodes are traversed.
-* [[tree.children|Tree-Layout#wiki-children]] - get or set the children accessor function.
-* [[tree.nodes|Tree-Layout#wiki-nodes]] - compute the tree layout and return the array of nodes.
-* [[tree.links|Tree-Layout#wiki-links]] - compute the parent-child links between tree nodes.
-* [[tree.separation|Tree-Layout#wiki-separation]] - get or set the spacing function between neighboring nodes.
-* [[tree.size|Tree-Layout#wiki-size]] - specify the layout size in *x* and *y*.
-* [[tree.nodeSize|Tree-Layout#wiki-nodeSize]] - specify a fixed size for each node.
+* [d3.layout.tree](Tree-Layout#wiki-tree) - position a tree of nodes tidily.
+* [tree](Tree-Layout#wiki-_tree) - alias for tree.nodes.
+* [tree.nodes](Tree-Layout#wiki-nodes) - compute the tree layout and return the array of nodes.
+* [tree.links](Tree-Layout#wiki-links) - compute the parent-child links between tree nodes.
+* [tree.children](Tree-Layout#wiki-children) - get or set the children accessor function.
+* [tree.sort](Tree-Layout#wiki-sort) - control the order in which sibling nodes are traversed.
+* [tree.separation](Tree-Layout#wiki-separation) - get or set the spacing function between neighboring nodes.
+* [tree.size](Tree-Layout#wiki-size) - specify the layout size in *x* and *y*.
+* [tree.nodeSize](Tree-Layout#wiki-nodeSize) - specify a fixed size for each node.
 
-### [[Treemap|Treemap-Layout]]
+### [Treemap](Treemap-Layout)
 
-* [[d3.layout.treemap|Treemap-Layout#wiki-treemap]] - use recursive spatial subdivision to display a tree of nodes.
-* [[treemap.sort|Treemap-Layout#wiki-sort]] - control the order in which sibling nodes are traversed.
-* [[treemap.children|Treemap-Layout#wiki-children]] - get or set the children accessor function.
-* [[treemap.nodes|Treemap-Layout#wiki-nodes]] - compute the treemap layout and return the array of nodes.
-* [[treemap.links|Treemap-Layout#wiki-links]] - compute the parent-child links between tree nodes.
-* [[treemap.value|Treemap-Layout#wiki-value]] - get or set the value accessor used to size treemap cells.
-* [[treemap.size|Treemap-Layout#wiki-size]] - specify the layout size in *x* and *y*.
-* [[treemap.padding|Treemap-Layout#wiki-padding]] - specify the padding between a parent and its children.
-* [[treemap.round|Treemap-Layout#wiki-round]] - enable or disable rounding to exact pixels.
-* [[treemap.sticky|Treemap-Layout#wiki-sticky]] - make the layout sticky for stable updates.
+* [d3.layout.treemap](Treemap-Layout#wiki-treemap) - use recursive spatial subdivision to display a tree of nodes.
+* [treemap](Treemap-Layout#wiki-_treemap) - alias for treemap.nodes.
+* [treemap.nodes](Treemap-Layout#wiki-nodes) - compute the treemap layout and return the array of nodes.
+* [treemap.links](Treemap-Layout#wiki-links) - compute the parent-child links between tree nodes.
+* [treemap.children](Treemap-Layout#wiki-children) - get or set the children accessor function.
+* [treemap.sort](Treemap-Layout#wiki-sort) - control the order in which sibling nodes are traversed.
+* [treemap.value](Treemap-Layout#wiki-value) - get or set the value accessor used to size treemap cells.
+* [treemap.size](Treemap-Layout#wiki-size) - specify the layout size in *x* and *y*.
+* [treemap.padding](Treemap-Layout#wiki-padding) - specify the padding between a parent and its children.
+* [treemap.round](Treemap-Layout#wiki-round) - enable or disable rounding to exact pixels.
+* [treemap.sticky](Treemap-Layout#wiki-sticky) - make the layout sticky for stable updates.
 * [treemap.mode](Treemap-Layout#wiki-mode) - change the treemap layout algorithm.
 
 ## [d3.geo (Geography)](Geo)
