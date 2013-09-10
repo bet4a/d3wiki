@@ -13,7 +13,7 @@ Creates a new treemap layout with the default settings: the default sort order i
 <a name="_treemap" href="#wiki-_treemap">#</a> <b>treemap</b>(<i>root</i>)
 <br><a name="nodes" href="#wiki-nodes">#</a> treemap.<b>nodes</b>(<i>root</i>)
 
-Runs the treemap layout, returning the array of nodes associated with the specified *root* node. The treemap layout is part of D3's family of [hierarchical layouts](Hierarchy-Layouts). These layouts follow the same basic structure: the input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes. Several attributes are populated on each node:
+Runs the treemap layout, returning the array of nodes associated with the specified *root* node. The treemap layout is part of D3's family of [hierarchical layouts](Hierarchy-Layout). These layouts follow the same basic structure: the input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes. Several attributes are populated on each node:
 
 * parent - the parent node, or null for the root.
 * children - the array of child nodes, or null for leaf nodes.
