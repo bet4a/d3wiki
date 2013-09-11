@@ -90,7 +90,7 @@ Tab-separated values are equivalent to comma-separated values, except the tab ch
 
 Equivalent to [d3.csv](#wiki-csv), but for tab-separated values.
 
-<a name="tsv_parse" href="#wiki-tsv_parse">#</a> d3.tsv.<b>parse</b>(<i>string</i>)
+<a name="tsv_parse" href="#wiki-tsv_parse">#</a> d3.tsv.<b>parse</b>(<i>string</i>[, <i>accessor</i>])
 
 Equivalent to [csv.parse](#wiki-parse), but for tab-separated values.
 
@@ -120,7 +120,7 @@ var dsv = d3.dsv("|", "text/plain");
 
 Equivalent to [d3.csv](#wiki-csv), but for delimiter-separated values.
 
-<a name="dsv_parse" href="#wiki-dsv_parse">#</a> dsv.<b>parse</b>(<i>string</i>)
+<a name="dsv_parse" href="#wiki-dsv_parse">#</a> dsv.<b>parse</b>(<i>string</i>[, <i>accessor</i>])
 
 Equivalent to [csv.parse](#wiki-parse), but for delimiter-separated values.
 
