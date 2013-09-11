@@ -761,6 +761,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Life expectancy: small multiples](http://bl.ocks.org/d/2361485/)
 * [Semi-manual force layout of cablegate reference graphs](http://bl.ocks.org/4589092)
 * [Digital Clock By Virtual Force](http://jklabz.com/d3/digital_clock/digital_clock.html)
+* [Radar Chart or Spider Chart](http://bl.ocks.org/nbremer/raw/6506614/)
 
 
 #### Charts using the [reusable API](http://bost.ocks.org/mike/chart/)
