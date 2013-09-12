@@ -84,6 +84,8 @@ If *value* is specified, sets the inner HTML content to the specified value on a
 
 If *value* is not specified, returns the inner HTML content for the first non-null element in the selection. This is generally useful only if you know the selection contains exactly one element.
 
+Note: as its name suggests, selection.html is only supported on HTML elements. SVG elements and other non-HTML elements do not support the innerHTML property, and thus are incompatible with selection.html. Consider using [XMLSerializer](https://developer.mozilla.org/en-US/docs/XMLSerializer) to convert a DOM subtree to text. See also the [innersvg polyfill](https://code.google.com/p/innersvg/), which provides a shim to support the innerHTML property on SVG elements.
+
 <a name="append" href="Selections#wiki-append">#</a> selection.<b>append</b>(<i>name</i>)
 
 Appends a new element with the specified *name* as the last child of each element in the current selection, returning a new selection containing the appended elements. Each new element inherits the data of the current elements, if any, in the same manner as [select](Selections#wiki-select) for subselections.
