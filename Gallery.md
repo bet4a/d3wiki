@@ -664,6 +664,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Static] (http://bl.ocks.org/1308257)
 * [Chord Layout Transitions](http://fleetinbeing.net/d3e/chord.html)
 * [Co-Authors Chords] (http://www.rjbaxley.com/p/publications.html)
+* [Visualizing Overlapping Sets] (http://radialsets.org) - [Bernd Landauer] (http://syrenio.com/)
 
 #### Maps
 
