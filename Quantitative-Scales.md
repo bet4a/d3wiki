@@ -211,7 +211,7 @@ Returns the value in the input domain *x* for the corresponding value in the out
 
 Note: the invert operator is only supported if the output range is numeric! D3 allows the output range to be any type; under the hood, [[d3.interpolate|Transitions#wiki-d3_interpolate]] or a custom interpolator of your choice is used to map the normalized parameter *t* to a value in the output range. Thus, the output range may be colors, strings, or even arbitrary objects. As there is no facility to "uninterpolate" arbitrary types, the invert operator is currently supported only on numeric ranges.
 
-<a name="log_domain" href="Quantitative-Scales#wiki-log_domain">#</a> log.<b>domain</b>([<i>values</i>])
+<a name="log_domain" href="Quantitative-Scales#wiki-log_domain">#</a> log.<b>domain</b>([<i>numbers</i>])
 
 If *numbers* is specified, sets the scale's input domain to the specified array of numbers. The array must contain two or more numbers. If the elements in the given array are not numbers, they will be coerced to numbers; this coercion happens similarly when the scale is called. Thus, a log scale can be used to encode any type that can be converted to numbers. If *numbers* is not specified, returns the scale's current input domain.
 
