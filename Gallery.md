@@ -164,7 +164,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   <tr>
     <td>Bus transit data<br/><a href="http://busrac.es"><img src="https://raw.github.com/bjuhn/UrbanDataChallenge/master/data/busraces.png" width="200"></a></td>
     <td>Airline data from Fusion Tables<br/><a href="http://xliberation.com/googlecharts/d3flights.html"><img src="http://xliberation.com/googlecharts/1746.png" width="200"></a></td>
-    <td>Geographical hexbins<br/><a href="http://ssz.fr/places?fr#ac$"><img src="https://ssz.fr/brdl/ac.png" width="200"></a></td>
+    <td>Geographical hexbins<br/><a href="http://ssz.fr/places?fr#ac$"><img src="http://ssz.fr/brdl/ac.png" width="200"></a></td>
     <td>xkcd-style Comic Narrative Charts<br/><a href="http://csclub.uwaterloo.ca/~n2iskand/?page_id=13"><img src="http://csclub.uwaterloo.ca/~n2iskand/wp-content/uploads/2013/06/Screen-Shot-2013-06-08-at-12.04.47-PM-300x200.png" width="250"></a>
     </td>
   </tr>
@@ -175,24 +175,20 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Global power structure<br/><a href="http://WhoDoTheyServe.com"><img src="http://dizzib.github.io/wdts/asset/d3-thumb-200x200.png" width="200"></a></td>
   </tr>
   <tr>
-    <td>Choropleth on canvas<br><a href="http://ssz.fr/parite"><img src="https://ssz.fr/brdl/parite.png" width="202"></a></td>
+    <td>Choropleth on canvas<br><a href="http://ssz.fr/parite"><img src="http://ssz.fr/brdl/parite.png" width="202"></a></td>
     <td>Google calendar like visualization<br><a href="http://bl.ocks.org/chaitanyagurrapu/6007521"><img src="https://gist.github.com/chaitanyagurrapu/6007521/raw/thumbnail.png" width="202"></a></td>
-    <td>Real-time Interactive Cloud<br><a href="https://live.zoomdata.com/zoomdata/visualization?__target=embedded&key=52265abb6abdbcaa8c217789#51dc2cc3e4b048929db35251-51db7ad4e4b04caf9ab346d3"><img src="https://dl.dropboxusercontent.com/u/56332995/sss.png" width="202" height="180"></a></td>
     <td>Interactive Sales Data Pie Chart<br><a href="https://live.zoomdata.com/zoomdata/visualization?__target=embedded&key=52265abb6abdbcaa8c217789#51db7ad4e4b04caf9ab346db-51db7ad4e4b04caf9ab346d5"><img src="https://dl.dropboxusercontent.com/u/56332995/sales%20interactive%20pie%20d3js.png" width="202"></a></td>
-  </tr>
- <tr>
     <td>Wikistalker - Wikipedia Visualization<br><a href="http://sepans.com/wikistalker"><img src="http://sepans.com/sp/wp-content/uploads/2013/07/wikistalker_history.png" width="202"></a></td>
+  </tr>
+  <tr>
     <td>D3 Cesium - Health and Wealth of Nations<br><a href="http://cesium.agi.com/demos/d3.html"><img src="http://cesium.agi.com/demos/images/d3.png" width="202"></a></td>
     <td>Starpaths<br><a href="http://www.cotrino.com/2013/05/starpaths/"><img src="https://raw.github.com/cotrino/experimentos/master/starpaths.png" width="200"></a></td>
     <td>BT Hotspots mapped <br><a href="http://www.mapsnapps.com/storage/bt_hotspots/Index.html"><img src="http://giscope.squarespace.com/storage/bt_hotspots/Screenshot%20from%202013-08-12%20003543.png" width="200"></a></td>
- </tr>
-  <tr>
     <td>CoreNLP Sentence Parse Tree<br><a href="http://nlpviz.bpodgursky.com/home"><img src="http://bpodgursky.files.wordpress.com/2013/08/nlp-screenshot-cropped.png" width="202"></a></td>
-    <td>Publications in journals over time<br><a href="http://neuralengr.com/asifr/journals"><img src="http://neuralengr.com/asifr/journals/journals.png" width="202"></a></td>
-    <td>Another state budget visualization with open api<br><a href="http://budzet.aws.af.cm"><img src="http://www.demodems.org/gtt/otvoreni-budzet-d3.png" width="202"></a></td>
-    <td>Real-time Interactive Zoomable Map running 4B records<br><a href="https://demo.zoomdata.com/zoomdata/visualization?__target=embedded&key=5227b672dd325c5f60cef034#5228a52de4b077266da50eea-5227af98e4b077266d98076b"><img src="https://www.dropbox.com/s/loala85c1dwfla4/map.png" width="202" height="180"></a></td>
   </tr>
   <tr>
+    <td>Publications in journals over time<br><a href="http://neuralengr.com/asifr/journals"><img src="http://neuralengr.com/asifr/journals/journals.png" width="202"></a></td>
+    <td>Another state budget visualization with open api<br><a href="http://budzet.aws.af.cm"><img src="http://www.demodems.org/gtt/otvoreni-budzet-d3.png" width="202"></a></td>
     <td>Interactive Bible contradictions & bar charts [<a href="https://github.com/danielgtaylor/bibviz">source</a>]<br/><a href="http://bibviz.com/"><img src="http://bibviz.com/img/square.png"/></a></td>
     <td>Force Edge Bundling For Graphs<br><a href="http://bl.ocks.org/upphiminn/6515478"><img src="https://raw.github.com/upphiminn/d3.ForceBundle/master/readme_img/thumbnail.png"></a> [<a href="https://github.com/upphiminn/d3.ForceBundle">Source & Docs</a>]</td>
   </tr>
