@@ -10,21 +10,21 @@
 
 <table>
   <tr height="146" valign="top">
-    <td>逆子午線切断<br><a target="_blank" href="http://bl.ocks.org/3788999"><img src="https://gist.github.com/mbostock/3788999/raw/thumbnail.png" width="202"></a></td>
-    <td>三軸回転<br><a target="_blank" href="http://bl.ocks.org/4282586"><img src="https://gist.github.com/mbostock/4282586/raw/thumbnail.png" width="202"></a></td>
-    <td>ヴィンケル図法の回転<br><a target="_blank" href="http://bl.ocks.org/3790085"><img src="https://gist.github.com/mbostock/3790085/raw/thumbnail.png" width="202"></a></td>
-    <td>正距円筒図法の回転<br><a target="_blank" href="http://bl.ocks.org/3734273"><img src="https://gist.github.com/mbostock/3734273/raw/thumbnail.png" width="202"></a></td>
+    <td>逆子午線切断<br><a target="_blank" href="http://bl.ocks.org/3788999"><img src="http://bl.ocks.org/mbostock/raw/3788999/thumbnail.png" width="202"></a></td>
+    <td>三軸回転<br><a target="_blank" href="http://bl.ocks.org/4282586"><img src="http://bl.ocks.org/mbostock/raw/4282586/thumbnail.png" width="202"></a></td>
+    <td>ヴィンケル図法の回転<br><a target="_blank" href="http://bl.ocks.org/3790085"><img src="http://bl.ocks.org/mbostock/raw/3790085/thumbnail.png" width="202"></a></td>
+    <td>正距円筒図法の回転<br><a target="_blank" href="http://bl.ocks.org/3734273"><img src="http://bl.ocks.org/mbostock/raw/3734273/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="bottom">
     <td>クリッピング<br><a target="_blank" href="http://www.jasondavies.com/maps/clip/"><img src="http://d3js.org/ex/geo-clip.png" width="202"></a></td>
-    <td>可変型リサンプリング<br><a target="_blank" href="http://bl.ocks.org/3795544"><img src="https://gist.github.com/mbostock/3795544/raw/thumbnail.png" width="202"></a></td>
-    <td>カンバス・レンダリング<br><a target="_blank" href="http://bl.ocks.org/4183330"><img src="https://gist.github.com/mbostock/4183330/raw/thumbnail.png" width="202"></a></td>
-    <td>衛星と経緯度線図<br><a target="_blank" href="http://bl.ocks.org/3790444"><img src="https://gist.github.com/mbostock/3790444/raw/thumbnail.png" width="202"></a></td>
+    <td>可変型リサンプリング<br><a target="_blank" href="http://bl.ocks.org/3795544"><img src="http://bl.ocks.org/mbostock/raw/3795544/thumbnail.png" width="202"></a></td>
+    <td>カンバス・レンダリング<br><a target="_blank" href="http://bl.ocks.org/4183330"><img src="http://bl.ocks.org/mbostock/raw/4183330/thumbnail.png" width="202"></a></td>
+    <td>衛星と経緯度線図<br><a target="_blank" href="http://bl.ocks.org/3790444"><img src="http://bl.ocks.org/mbostock/raw/3790444/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="bottom">
-    <td>投影法変化（へんげ）<br><a target="_blank" href="http://bl.ocks.org/3711652"><img src="https://gist.github.com/mbostock/3711652/raw/thumbnail.png" width="202"></a></td>
-    <td>統計地図<br><a target="_blank" href="http://bl.ocks.org/4060606"><img src="https://gist.github.com/mbostock/4060606/raw/thumbnail.png" width="202"></a></td>
-    <td>ラスター再投影<br><a target="_blank" href="http://bl.ocks.org/4329423"><img src="https://gist.github.com/mbostock/4329423/raw/thumbnail.png" width="202"></a></td>
+    <td>投影法変化（へんげ）<br><a target="_blank" href="http://bl.ocks.org/3711652"><img src="http://bl.ocks.org/mbostock/raw/3711652/thumbnail.png" width="202"></a></td>
+    <td>統計地図<br><a target="_blank" href="http://bl.ocks.org/4060606"><img src="http://bl.ocks.org/mbostock/raw/4060606/thumbnail.png" width="202"></a></td>
+    <td>ラスター再投影<br><a target="_blank" href="http://bl.ocks.org/4329423"><img src="http://bl.ocks.org/mbostock/raw/4329423/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
@@ -40,22 +40,22 @@ d3.geo パッケージには便利なコンポーネントが多数追加され�
 
 <table>
   <tr height="146" valign="top">
-    <td> ペイルス・クインカンシャル図法<br><a target="_blank" href="http://bl.ocks.org/4310087"><img src="https://gist.github.com/mbostock/4310087/raw/thumbnail.png" width="202"></a></td>
-    <td>ワグナー第6図法<br><a target="_blank" href="http://bl.ocks.org/3710148"><img src="https://gist.github.com/mbostock/3710148/raw/thumbnail.png" width="202"></a></td>
-    <td>正距円錐図法<br><a target="_blank" href="http://bl.ocks.org/3734317"><img src="https://gist.github.com/mbostock/3734317/raw/thumbnail.png" width="202"></a></td>
-    <td>モルワイデ図法<br><a target="_blank" href="http://bl.ocks.org/3734336"><img src="https://gist.github.com/mbostock/3734336/raw/thumbnail.png" width="202"></a></td>
+    <td> ペイルス・クインカンシャル図法<br><a target="_blank" href="http://bl.ocks.org/4310087"><img src="http://bl.ocks.org/mbostock/raw/4310087/thumbnail.png" width="202"></a></td>
+    <td>ワグナー第6図法<br><a target="_blank" href="http://bl.ocks.org/3710148"><img src="http://bl.ocks.org/mbostock/raw/3710148/thumbnail.png" width="202"></a></td>
+    <td>正距円錐図法<br><a target="_blank" href="http://bl.ocks.org/3734317"><img src="http://bl.ocks.org/mbostock/raw/3734317/thumbnail.png" width="202"></a></td>
+    <td>モルワイデ図法<br><a target="_blank" href="http://bl.ocks.org/3734336"><img src="http://bl.ocks.org/mbostock/raw/3734336/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="bottom">
-    <td>Sinu・モルワイデ図法<br><a target="_blank" href="http://bl.ocks.org/4319903"><img src="https://gist.github.com/mbostock/4319903/raw/thumbnail.png" width="202"></a></td>
+    <td>Sinu・モルワイデ図法<br><a target="_blank" href="http://bl.ocks.org/4319903"><img src="http://bl.ocks.org/mbostock/raw/4319903/thumbnail.png" width="202"></a></td>
     <td>グード図法<br><a target="_blank" href="http://bl.ocks.org/3739752"><img src="http://d3js.org/ex/goode-homolosine.png" width="202"></a></td>
-    <td>ヴァン・デル・グリテン図法<br><a target="_blank" href="http://bl.ocks.org/3796831"><img src="https://gist.github.com/mbostock/3796831/raw/thumbnail.png" width="202"></a></td>
-    <td>d3.hexbin<br><a target="_blank" href="http://bl.ocks.org/4330486"><img src="https://gist.github.com/mbostock/4330486/raw/thumbnail.png" width="202"></a></td>
+    <td>ヴァン・デル・グリテン図法<br><a target="_blank" href="http://bl.ocks.org/3796831"><img src="http://bl.ocks.org/mbostock/raw/3796831/thumbnail.png" width="202"></a></td>
+    <td>d3.hexbin<br><a target="_blank" href="http://bl.ocks.org/4330486"><img src="http://bl.ocks.org/mbostock/raw/4330486/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="bottom">
-    <td>d3.geo.tile<br><a target="_blank" href="http://bl.ocks.org/4150951"><img src="https://gist.github.com/mbostock/4150951/raw/thumbnail.png" width="202"></a></td>
-    <td>TopoJSON<br><a target="_blank" href="http://bl.ocks.org/4108203"><img src="https://gist.github.com/mbostock/4108203/raw/thumbnail.png" width="202"></a></td>
-    <td>地図配色<br><a target="_blank" href="http://bl.ocks.org/4180634"><img src="https://gist.github.com/mbostock/4180634/raw/thumbnail.png" width="202"></a></td>
-    <td>スムーズ・ズーミング<br><a target="_blank" href="http://bl.ocks.org/3828981"><img src="https://gist.github.com/mbostock/3828981/raw/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.tile<br><a target="_blank" href="http://bl.ocks.org/4150951"><img src="http://bl.ocks.org/mbostock/raw/4150951/thumbnail.png" width="202"></a></td>
+    <td>TopoJSON<br><a target="_blank" href="http://bl.ocks.org/4108203"><img src="http://bl.ocks.org/mbostock/raw/4108203/thumbnail.png" width="202"></a></td>
+    <td>地図配色<br><a target="_blank" href="http://bl.ocks.org/4180634"><img src="http://bl.ocks.org/mbostock/raw/4180634/thumbnail.png" width="202"></a></td>
+    <td>スムーズ・ズーミング<br><a target="_blank" href="http://bl.ocks.org/3828981"><img src="http://bl.ocks.org/mbostock/raw/3828981/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
@@ -70,14 +70,14 @@ d3.behavior.zoom と組み合わせれば[滑らかに動く地図](http://bl.oc
 
 <table>
   <tr height="146" valign="top">
-    <td>チェインしたトランジション、I<br><a target="_blank" href="http://bl.ocks.org/3903818"><img src="https://gist.github.com/mbostock/3903818/raw/thumbnail.png" width="202"></a></td>
-    <td>チェインしたトランジション、II<br><a target="_blank" href="http://bl.ocks.org/3943967"><img src="https://gist.github.com/mbostock/3943967/raw/thumbnail.png" width="202"></a></td>
-    <td>チェインしたトランジション、III<br><a target="_blank" href="http://bl.ocks.org/4341417"><img src="https://gist.github.com/mbostock/4341417/raw/thumbnail.png" width="202"></a></td>
-    <td>チェインしたトランジション、IV<br><a target="_blank" href="http://bl.ocks.org/4341574"><img src="https://gist.github.com/mbostock/4341574/raw/thumbnail.png" width="202"></a></td>
+    <td>チェインしたトランジション、I<br><a target="_blank" href="http://bl.ocks.org/3903818"><img src="http://bl.ocks.org/mbostock/raw/3903818/thumbnail.png" width="202"></a></td>
+    <td>チェインしたトランジション、II<br><a target="_blank" href="http://bl.ocks.org/3943967"><img src="http://bl.ocks.org/mbostock/raw/3943967/thumbnail.png" width="202"></a></td>
+    <td>チェインしたトランジション、III<br><a target="_blank" href="http://bl.ocks.org/4341417"><img src="http://bl.ocks.org/mbostock/raw/4341417/thumbnail.png" width="202"></a></td>
+    <td>チェインしたトランジション、IV<br><a target="_blank" href="http://bl.ocks.org/4341574"><img src="http://bl.ocks.org/mbostock/raw/4341574/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
-    <td>トランジションの再選択、I<br><a target="_blank" href="http://bl.ocks.org/4323929"><img src="https://gist.github.com/mbostock/4323929/raw/thumbnail.png" width="202"></a></td>
-    <td>トランジションの再選択、II<br><a target="_blank" href="http://bl.ocks.org/3885705"><img src="https://gist.github.com/mbostock/3885705/raw/thumbnail.png" width="202"></a></td>
+    <td>トランジションの再選択、I<br><a target="_blank" href="http://bl.ocks.org/4323929"><img src="http://bl.ocks.org/mbostock/raw/4323929/thumbnail.png" width="202"></a></td>
+    <td>トランジションの再選択、II<br><a target="_blank" href="http://bl.ocks.org/3885705"><img src="http://bl.ocks.org/mbostock/raw/3885705/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
@@ -91,8 +91,8 @@ D3 におけるトランジションの詳しい仕組みについてはチュ�
 
 <table>
   <tr height="146" valign="bottom">
-    <td>プログレスイベント<br><a target="_blank" href="http://bl.ocks.org/3750941"><img src="https://gist.github.com/mbostock/3750941/raw/thumbnail.png" width="202"></a></td>
-    <td>d3.xhr + Queue.js<br><a target="_blank" href="http://bl.ocks.org/4060606"><img src="https://gist.github.com/mbostock/4060606/raw/thumbnail.png" width="202"></a></td>
+    <td>プログレスイベント<br><a target="_blank" href="http://bl.ocks.org/3750941"><img src="http://bl.ocks.org/mbostock/raw/3750941/thumbnail.png" width="202"></a></td>
+    <td>d3.xhr + Queue.js<br><a target="_blank" href="http://bl.ocks.org/4060606"><img src="http://bl.ocks.org/mbostock/raw/4060606/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 

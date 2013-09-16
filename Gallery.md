@@ -117,7 +117,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Trulia Trends<br><a href="http://trends.truliablog.com/2012/02/where-are-house-hunters-searching/"><img src="http://d3js.org/ex/house-map.png" width="202"></a></td>
     <td>Open Budget<br><a href="http://marcinignac.com/projects/open-budget/"><img src="http://d3js.org/ex/open-budget.png" width="202"></a></td>
     <td>Bederson Publications<br><a href="http://www.cs.umd.edu/~bederson/papers/index.html"><img src="http://d3js.org/ex/bederson-pubs.png" width="202"></a></td>
-    <td>Force Layout Editor<br><a href="http://bl.ocks.org/benzguo/4370043"><img src="https://gist.github.com/benzguo/4362310/raw/thumbnail.png" width="202"></a></td>
+    <td>Force Layout Editor<br><a href="http://bl.ocks.org/benzguo/4370043"><img src="http://bl.ocks.org/benzguo/raw/4362310/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
     <td>Open Knowledge Festival<br><a href="http://okfestival.org/hashtag/#visualisation"><img src="http://floapps.com/lab/misc/oklogo/ok.png" width="202"></a></td>
@@ -132,7 +132,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Convert any page into bubbles<br><a href="http://www.infocaptor.com/bubble-my-page"><img src="http://www.infocaptor.com/wikipedia_visualization.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Directed Graph Editor<br><a href="http://bl.ocks.org/rkirsling/5001347"><img src="https://gist.github.com/rkirsling/5001347/raw/thumbnail.png" width="202"></a></td>
+    <td>Directed Graph Editor<br><a href="http://bl.ocks.org/rkirsling/5001347"><img src="http://bl.ocks.org/rkirsling/raw/5001347/thumbnail.png" width="202"></a></td>
     <td>Weeknd3<br><a href="http://ggruiz.me/weeknd3/"><img src="http://puu.sh/2bWtl" width="202" height="146"></a></td>
     <td>Explosions<br><a href="http://ggruiz.me/explosions/"><img src="http://puu.sh/2fO3P" width="202" height="146"></a></td>
     <td>CodeFlowers<br><a href="http://redotheweb.com/CodeFlower/"><img src="http://redotheweb.com/images/codeflower/codeflower.png" width="202" height="146"></a></td>
@@ -147,7 +147,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Map and context with brushing<br><a href="http://rbspd3.herokuapp.com"><img src="https://raw.github.com/sdelarquier/rbspd3/master/snapshot.png" width="202"></a></td>
     <td>Binary tree with transitions<br><a href="http://prcweb.co.uk/lab/d3-tree"><img src="http://prcweb.co.uk/img/ext/tree.jpg" width="202"></a></td>
     <td>d3+ColorBrewer<br><a href="http://adilapapaya.com/code/colors/d3colorbrewer.html"><img src="http://adilapapaya.com/code/colors/d3colorbrewer.png" width="202"></a></td>
-    <td>D3 JezzBall<br><a href="http://bl.ocks.org/ericcitaire/5408146"><img src="https://gist.github.com/ericcitaire/5408146/raw/thumbnail.png" width="202"></a></td>
+    <td>D3 JezzBall<br><a href="http://bl.ocks.org/ericcitaire/5408146"><img src="http://bl.ocks.org/ericcitaire/raw/5408146/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
     <td>Tetris<br><a href="http://d3tetris.herokuapp.com/"><img src="http://imageshack.us/a/img841/8619/tetrisn.png" width="200px"></a></td>
@@ -176,7 +176,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   </tr>
   <tr>
     <td>Choropleth on canvas<br><a href="http://ssz.fr/parite"><img src="http://ssz.fr/brdl/parite.png" width="202"></a></td>
-    <td>Google calendar like visualization<br><a href="http://bl.ocks.org/chaitanyagurrapu/6007521"><img src="https://gist.github.com/chaitanyagurrapu/6007521/raw/thumbnail.png" width="202"></a></td>
+    <td>Google calendar like visualization<br><a href="http://bl.ocks.org/chaitanyagurrapu/6007521"><img src="http://bl.ocks.org/chaitanyagurrapu/raw/6007521/thumbnail.png" width="202"></a></td>
     <td>Interactive Sales Data Pie Chart<br><a href="https://live.zoomdata.com/zoomdata/visualization?__target=embedded&key=52265abb6abdbcaa8c217789#51db7ad4e4b04caf9ab346db-51db7ad4e4b04caf9ab346d5"><img src="https://dl.dropboxusercontent.com/u/56332995/sales%20interactive%20pie%20d3js.png" width="202"></a></td>
     <td>Wikistalker - Wikipedia Visualization<br><a href="http://sepans.com/wikistalker"><img src="http://sepans.com/sp/wp-content/uploads/2013/07/wikistalker_history.png" width="202"></a></td>
   </tr>
@@ -193,9 +193,9 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Force Edge Bundling For Graphs<br><a href="http://bl.ocks.org/upphiminn/6515478"><img src="https://raw.github.com/upphiminn/d3.ForceBundle/master/readme_img/thumbnail.png"></a> [<a href="https://github.com/upphiminn/d3.ForceBundle">Source & Docs</a>]</td>
   </tr>
   <tr>
-    <td>Gauge<br><a href="http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html"><img src="https://gist.github.com/tomerd/1499279/raw/thumbnail.png" width="202"></a></td>
+    <td>Gauge<br><a href="http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html"><img src="http://bl.ocks.org/tomerd/raw/1499279/thumbnail.png" width="202"></a></td>
     <td>Bullet Charts<br><a href="http://bl.ocks.org/CodeXmonk/6112167"><img src="https://gist.github.com/CodeXmonk/6112167/raw/bbd3c9b608ff8123c6664d1bf9a850dcc9ca1065/thumbnail.png" width="202"></a></td>
-    <td>Arc Axis<br><a href="http://bl.ocks.org/metormote/6392996"><img src="https://gist.github.com/metormote/6392996/raw/thumbnail.png" width="202"></a></td>
+    <td>Arc Axis<br><a href="http://bl.ocks.org/metormote/6392996"><img src="http://bl.ocks.org/metormote/raw/6392996/thumbnail.png" width="202"></a></td>
     <td>Bar chart with tooltips<br><a href="http://bl.ocks.org/Caged/6476579"><img src="http://bl.ocks.org/Caged/raw/6476579/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
@@ -204,26 +204,26 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 
 <table>
   <tr height="146" valign="top">
-    <td>Area Chart<br><a href="http://bl.ocks.org/3883195"><img src="https://gist.github.com/mbostock/3883195/raw/thumbnail.png" width="202"></a></td>
-    <td>Line Chart<br><a href="http://bl.ocks.org/3883245"><img src="https://gist.github.com/mbostock/3883245/raw/thumbnail.png" width="202"></a></td>
-    <td>Bivariate Area Chart<br><a href="http://bl.ocks.org/3884914"><img src="https://gist.github.com/mbostock/3884914/raw/thumbnail.png" width="202"></a></td>
-    <td>Multi-Series Line Chart<br><a href="http://bl.ocks.org/3884955"><img src="https://gist.github.com/mbostock/3884955/raw/thumbnail.png" width="202"></a></td>
+    <td>Area Chart<br><a href="http://bl.ocks.org/3883195"><img src="http://bl.ocks.org/mbostock/raw/3883195/thumbnail.png" width="202"></a></td>
+    <td>Line Chart<br><a href="http://bl.ocks.org/3883245"><img src="http://bl.ocks.org/mbostock/raw/3883245/thumbnail.png" width="202"></a></td>
+    <td>Bivariate Area Chart<br><a href="http://bl.ocks.org/3884914"><img src="http://bl.ocks.org/mbostock/raw/3884914/thumbnail.png" width="202"></a></td>
+    <td>Multi-Series Line Chart<br><a href="http://bl.ocks.org/3884955"><img src="http://bl.ocks.org/mbostock/raw/3884955/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
-    <td>Stacked Area Chart<br><a href="http://bl.ocks.org/3885211"><img src="https://gist.github.com/mbostock/3885211/raw/thumbnail.png" width="202"></a></td>
-    <td>Bar Chart<br><a href="http://bl.ocks.org/3885304"><img src="https://gist.github.com/mbostock/3885304/raw/thumbnail.png" width="202"></a></td>
-    <td>Stacked Bar Chart<br><a href="http://bl.ocks.org/3886208"><img src="https://gist.github.com/mbostock/3886208/raw/thumbnail.png" width="202"></a></td>
-    <td>Normalized Stacked Bar Chart<br><a href="http://bl.ocks.org/3886394"><img src="https://gist.github.com/mbostock/3886394/raw/thumbnail.png" width="202"></a></td>
+    <td>Stacked Area Chart<br><a href="http://bl.ocks.org/3885211"><img src="http://bl.ocks.org/mbostock/raw/3885211/thumbnail.png" width="202"></a></td>
+    <td>Bar Chart<br><a href="http://bl.ocks.org/3885304"><img src="http://bl.ocks.org/mbostock/raw/3885304/thumbnail.png" width="202"></a></td>
+    <td>Stacked Bar Chart<br><a href="http://bl.ocks.org/3886208"><img src="http://bl.ocks.org/mbostock/raw/3886208/thumbnail.png" width="202"></a></td>
+    <td>Normalized Stacked Bar Chart<br><a href="http://bl.ocks.org/3886394"><img src="http://bl.ocks.org/mbostock/raw/3886394/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
-    <td>Grouped Bar Chart<br><a href="http://bl.ocks.org/3887051"><img src="https://gist.github.com/mbostock/3887051/raw/thumbnail.png" width="202"></a></td>
-    <td>Scatterplot<br><a href="http://bl.ocks.org/3887118"><img src="https://gist.github.com/mbostock/3887118/raw/thumbnail.png" width="202"></a></td>
-    <td>Donut Chart<br><a href="http://bl.ocks.org/3887193"><img src="https://gist.github.com/mbostock/3887193/raw/thumbnail.png" width="202"></a></td>
-    <td>Pie Chart<br><a href="http://bl.ocks.org/3887235"><img src="https://gist.github.com/mbostock/3887235/raw/thumbnail.png" width="202"></a></td>
+    <td>Grouped Bar Chart<br><a href="http://bl.ocks.org/3887051"><img src="http://bl.ocks.org/mbostock/raw/3887051/thumbnail.png" width="202"></a></td>
+    <td>Scatterplot<br><a href="http://bl.ocks.org/3887118"><img src="http://bl.ocks.org/mbostock/raw/3887118/thumbnail.png" width="202"></a></td>
+    <td>Donut Chart<br><a href="http://bl.ocks.org/3887193"><img src="http://bl.ocks.org/mbostock/raw/3887193/thumbnail.png" width="202"></a></td>
+    <td>Pie Chart<br><a href="http://bl.ocks.org/3887235"><img src="http://bl.ocks.org/mbostock/raw/3887235/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
-    <td>Donut Multiples<br><a href="http://bl.ocks.org/3888852"><img src="https://gist.github.com/mbostock/3888852/raw/thumbnail.png" width="202"></a></td>
-    <td>Bar Chart with Negative Values<br><a href="http://bl.ocks.org/2368837"><img src="https://gist.github.com/mbostock/2368837/raw/thumbnail.png" width="202"></a></td>
+    <td>Donut Multiples<br><a href="http://bl.ocks.org/3888852"><img src="http://bl.ocks.org/mbostock/raw/3888852/thumbnail.png" width="202"></a></td>
+    <td>Bar Chart with Negative Values<br><a href="http://bl.ocks.org/2368837"><img src="http://bl.ocks.org/mbostock/raw/2368837/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
@@ -231,26 +231,26 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 
 <table>
   <tr height="146" valign="top">
-    <td>General Update Pattern<br><a href="http://bl.ocks.org/3808218"><img src="https://gist.github.com/mbostock/3808218/raw/thumbnail.png" width="202"></a></td>
-    <td>Sortable Bar Chart<br><a href="http://bl.ocks.org/3885705"><img src="https://gist.github.com/mbostock/3885705/raw/thumbnail.png" width="202"></a></td>
-    <td>van Wijk Smooth Zooming<br><a href="http://bl.ocks.org/3828981"><img src="https://gist.github.com/mbostock/3828981/raw/thumbnail.png" width="202"></a></td>
-    <td>Progress Events<br><a href="http://bl.ocks.org/3750941"><img src="https://gist.github.com/mbostock/3750941/raw/thumbnail.png" width="202"></a></td>
+    <td>General Update Pattern<br><a href="http://bl.ocks.org/3808218"><img src="http://bl.ocks.org/mbostock/raw/3808218/thumbnail.png" width="202"></a></td>
+    <td>Sortable Bar Chart<br><a href="http://bl.ocks.org/3885705"><img src="http://bl.ocks.org/mbostock/raw/3885705/thumbnail.png" width="202"></a></td>
+    <td>van Wijk Smooth Zooming<br><a href="http://bl.ocks.org/3828981"><img src="http://bl.ocks.org/mbostock/raw/3828981/thumbnail.png" width="202"></a></td>
+    <td>Progress Events<br><a href="http://bl.ocks.org/3750941"><img src="http://bl.ocks.org/mbostock/raw/3750941/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
-    <td>Margin Convention<br><a href="http://bl.ocks.org/3019563"><img src="https://gist.github.com/mbostock/3019563/raw/thumbnail.png" width="202"></a></td>
-    <td>Focus+Context via Brushing<br><a href="http://bl.ocks.org/1667367"><img src="https://gist.github.com/mbostock/1667367/raw/thumbnail.png" width="202"></a></td>
-    <td>Difference Chart<br><a href="http://bl.ocks.org/3894205"><img src="https://gist.github.com/mbostock/3894205/raw/thumbnail.png" width="202"></a></td>
-    <td>Pie Chart Update<br><a href="http://bl.ocks.org/1346395"><img src="https://gist.github.com/mbostock/1346395/raw/thumbnail.png" width="202"></a></td>
+    <td>Margin Convention<br><a href="http://bl.ocks.org/3019563"><img src="http://bl.ocks.org/mbostock/raw/3019563/thumbnail.png" width="202"></a></td>
+    <td>Focus+Context via Brushing<br><a href="http://bl.ocks.org/1667367"><img src="http://bl.ocks.org/mbostock/raw/1667367/thumbnail.png" width="202"></a></td>
+    <td>Difference Chart<br><a href="http://bl.ocks.org/3894205"><img src="http://bl.ocks.org/mbostock/raw/3894205/thumbnail.png" width="202"></a></td>
+    <td>Pie Chart Update<br><a href="http://bl.ocks.org/1346395"><img src="http://bl.ocks.org/mbostock/raw/1346395/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
-    <td>Hexagonal Binning<br><a href="http://bl.ocks.org/4248145"><img src="https://gist.github.com/mbostock/4248145/raw/thumbnail.png" width="202"></a></td>
-    <td>Contour Plot<br><a href="http://bl.ocks.org/4241134"><img src="https://gist.github.com/mbostock/4241134/raw/thumbnail.png" width="202"></a></td>
-    <td>Build Your Own Graph<br><a href="http://bl.ocks.org/929623"><img src="https://gist.github.com/mbostock/929623/raw/thumbnail.png" width="202"></a></td>
-    <td>Modifying a Force Layout <br><a href="http://bl.ocks.org/1095795"><img src="https://gist.github.com/mbostock/1095795/raw/thumbnail.png" width="202"></a></td>
+    <td>Hexagonal Binning<br><a href="http://bl.ocks.org/4248145"><img src="http://bl.ocks.org/mbostock/raw/4248145/thumbnail.png" width="202"></a></td>
+    <td>Contour Plot<br><a href="http://bl.ocks.org/4241134"><img src="http://bl.ocks.org/mbostock/raw/4241134/thumbnail.png" width="202"></a></td>
+    <td>Build Your Own Graph<br><a href="http://bl.ocks.org/929623"><img src="http://bl.ocks.org/mbostock/raw/929623/thumbnail.png" width="202"></a></td>
+    <td>Modifying a Force Layout <br><a href="http://bl.ocks.org/1095795"><img src="http://bl.ocks.org/mbostock/raw/1095795/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
-    <td>Spline Interpolation<br><a href="http://bl.ocks.org/4342190"><img src="https://gist.github.com/mbostock/4342190/raw/thumbnail.png" width="202"></a></td>
-    <td>Dispatching Events<br><a href="http://bl.ocks.org/5872848"><img src="https://gist.github.com/mbostock/5872848/raw/thumbnail.png" width="202"></a></td>
+    <td>Spline Interpolation<br><a href="http://bl.ocks.org/4342190"><img src="http://bl.ocks.org/mbostock/raw/4342190/thumbnail.png" width="202"></a></td>
+    <td>Dispatching Events<br><a href="http://bl.ocks.org/5872848"><img src="http://bl.ocks.org/mbostock/raw/5872848/thumbnail.png" width="202"></a></td>
     <td>Better force layout selection<br><a href="http://bl.ocks.org/6420534"><img src="https://gist.github.com/couchand/6420534/raw/84a16303101dbe8adc0ecc298471d95ebac4356e/thumbnail.png" width="200"></a></td>
 <td></td>
   </tr>
@@ -359,7 +359,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [Forecast of Mexican 2012 presidential election](http://www.diegovalle.net/electometer) - Diego Valle-Jones
 * [Romanian parliamentarian bubble chart. In Romanian](http://improve.ro/sandbox/politicians/v1.1/) - Harta Politicii
 * [Linked Jazz network graph](http://linkedjazz.org/network/) - Matt Miller
-* [Bibly v2: Visualizing word distribution within the KJV bible](http://stanford.edu/~garylee/bibly/) - GARY LEE & ANIRUDH VENKATESH 
+* [Bibly v2: Visualizing word distribution within the KJV bible](http://stanford.edu/~garylee/bibly/) - GARY LEE & ANIRUDH VENKATESH
 * [A physics model of a physics model](http://michiel.wordpress.com/2012/07/13/a-physics-model-of-a-physics-model/) - Michiel van der Blonk
 * [OECD Health, Government Spending, and Obesity Rates (nvd3)](http://ameliamango.com/fatness.html) - Amelia Mango
 * [The first thing that should be shown in any Trigonometry class](http://www.humblesoftware.com/demos/trig_d3)
@@ -864,7 +864,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [xCharts: a D3-based library for building custom charts and graphs](http://tenxer.github.com/xcharts/)
 * [VisualSedimentation.js: visualizing streaming data, inspired by the process of physical sedimentation](http://www.visualsedimentation.org/)
 * [Insights: Interactive Force Graph Component](https://github.com/ignacioola/insights)
-* [Lepracursor](http://sepans.com/sp/postes/lepracursor/), a d3.js based library which adds a virtual pointer to the page that grows in number with every click 
+* [Lepracursor](http://sepans.com/sp/postes/lepracursor/), a d3.js based library which adds a virtual pointer to the page that grows in number with every click
 * [iopctrl.js: User interface controls and gauges](http://iop.io/iopctrl)
 
 ### Wish List
