@@ -4,7 +4,7 @@ Implements Danny Holten's [hierarchical edge bundling](http://www.win.tue.nl/~dh
 
 ![bundle](bundle.png)
 
-For example, consider this visualization of [software dependencies](http://bl.ocks.org/1044242).
+For example, consider this visualization of [software dependencies](http://bl.ocks.org/mbostock/1044242).
 
 <a name="bundle" href="Bundle-Layout#wiki-bundle">#</a> d3.layout.<b>bundle</b>()
 

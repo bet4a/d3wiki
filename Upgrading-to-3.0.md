@@ -32,13 +32,13 @@ The first change is that **[transition.attr](Transitions#wiki-attr), [transition
 ```js
 // First transition the line to the new data.
 line.datum(newData).transition().attr("d", line);
-    
+
 // Then transition the y-axis.
 y.domain(newDomain);
 line.transition().delay(250).attr("d", line);
 ```
 
-You might expect this code to first transition the line to the new data, and then transition to the new domain. In 2.x, however, this would not work because the first transition.attr would be evaluated *after* the y-scale’s domain changes. While deferred evaluation is occasionally what you want, immediate evaluation is much easier to understand and debug, so that’s what transitions do in 3.0. (The selection.attr, selection.style, and related methods have always used immediate evaluation for this reason.) This means you can now easily specify transitions that depend on external state, as in the above example showing [chained transitions of data and axes](http://bl.ocks.org/3903818). You can also create transitions within for loops without worrying about the dreaded [closures in loops problem](http://www.mennovanslooten.nl/blog/post/62).
+You might expect this code to first transition the line to the new data, and then transition to the new domain. In 2.x, however, this would not work because the first transition.attr would be evaluated *after* the y-scale’s domain changes. While deferred evaluation is occasionally what you want, immediate evaluation is much easier to understand and debug, so that’s what transitions do in 3.0. (The selection.attr, selection.style, and related methods have always used immediate evaluation for this reason.) This means you can now easily specify transitions that depend on external state, as in the above example showing [chained transitions of data and axes](http://bl.ocks.org/mbostock/3903818). You can also create transitions within for loops without worrying about the dreaded [closures in loops problem](http://www.mennovanslooten.nl/blog/post/62).
 
 The other big change is that **[transition.select](Transitions#wiki-select) and [transition.selectAll](Transitions#wiki-selectAll) now reselect existing transitions** rather than creating new transitions. This means that you can schedule a transition on a set of elements—say an axis—and then reselect a subset of those elements to customize the transition. This technique of customizing axes is called _postselection_, and in 3.0 you can use it for transitions as well as selections. For example, if you want to override the text-anchor for axis labels:
 
@@ -49,7 +49,7 @@ svg.select(".x.axis").transition()
     .style("text-anchor", "start");
 ```
 
-In 2.x, transition.select and transition.selectAll would create a new transition that would conflict with the existing transition. Like selections, transitions in 3.0 and now stored entirely in the DOM, and thus can be reselected. Related to this, **[transition.transition](Transitions#wiki-transition) now creates a new transition that is scheduled to start when the originating transition ends**. This makes it very easy to create chained transitions, say from [stacked to grouped bars](http://bl.ocks.org/3943967), without the hassle of listening for "end" events.
+In 2.x, transition.select and transition.selectAll would create a new transition that would conflict with the existing transition. Like selections, transitions in 3.0 and now stored entirely in the DOM, and thus can be reselected. Related to this, **[transition.transition](Transitions#wiki-transition) now creates a new transition that is scheduled to start when the originating transition ends**. This makes it very easy to create chained transitions, say from [stacked to grouped bars](http://bl.ocks.org/mbostock/3943967), without the hassle of listening for "end" events.
 
 ```js
 rect.transition()
@@ -110,7 +110,7 @@ function ready(error, states, statePopulations) {
 }
 ```
 
-There are a number of other improvements to d3.xhr, such as the ability to listen for [progress events](http://bl.ocks.org/3750941) and set request headers. For example:
+There are a number of other improvements to d3.xhr, such as the ability to listen for [progress events](http://bl.ocks.org/mbostock/3750941) and set request headers. For example:
 
 ```js
 var xhr = d3.json(url)
@@ -124,11 +124,11 @@ See the [API reference](Requests) for details.
 
 ## Geo
 
-D3 3.0 includes a powerful new geographic projection system featuring [three-axis rotation](http://bl.ocks.org/3734273), [antimeridian cutting](http://bl.ocks.org/3788999) and [adaptive resampling](http://bl.ocks.org/3795544). (And there’s also [TopoJSON](https://github.com/mbostock/topojson) for more efficient representation of geometry.) These changes are almost entirely backwards-compatible.
+D3 3.0 includes a powerful new geographic projection system featuring [three-axis rotation](http://bl.ocks.org/mbostock/3734273), [antimeridian cutting](http://bl.ocks.org/mbostock/3788999) and [adaptive resampling](http://bl.ocks.org/mbostock/3795544). (And there’s also [TopoJSON](https://github.com/mbostock/topojson) for more efficient representation of geometry.) These changes are almost entirely backwards-compatible.
 
 One gotcha is that **d3.geo.path now observes the right-hand rule for polygons**. Geographic features are defined in spherical coordinates. Thus, given a small polygon that approximates a circle, we might assume that this polygon represents an island. However, an equally valid interpretation is that this polygon represents everything *but* the island; that is, the polygon of the sea surrounding the island. (See Jason’s [geographic clipping examples](http://www.jasondavies.com/maps/clip/) for more.) In 2.x, it was not possible to represent polygons that were larger than a hemisphere. By applying the right-hand rule, sub-hemisphere polygons in 3.0 must have clockwise winding order. If your GeoJSON input has polygons in the wrong winding order, you must reverse them, say via [ST_ForceRHR](http://www.postgis.org/docs/ST_ForceRHR.html); you can also convert your GeoJSON to [TopoJSON](/mbostock/topojson), and this will happen automatically.
 
-Many new projections are available in the [d3.geo.projection plugin](https://github.com/d3/d3-geo-projection/). Correspondingly, the **rarely-used [Bonne projection](http://bl.ocks.org/3734313) has been moved** to a plugin, and the modal **d3.geo.azimuthal projection has been replaced** with separate projections for each mode: [d3.geo.orthographic](http://bl.ocks.org/3757125), [d3.geo.azimuthalEqualArea](http://bl.ocks.org/3757101), [d3.geo.azimuthalEquidistant](http://bl.ocks.org/3757110), [d3.geo.stereographic](http://bl.ocks.org/3757137) and [d3.geo.gnomonic](http://bl.ocks.org/3757349). The **albers.origin method has also been replaced** by projection.rotate and projection.center. Lastly, the alias **d3.geo.greatCircle has been removed**; use the identical d3.geo.circle instead. Also, did you know that you can now use d3.geo.circle to draw circles? This is an easy way to approximate [Tissot’s indicatrix](http://bl.ocks.org/4052873).
+Many new projections are available in the [d3.geo.projection plugin](https://github.com/d3/d3-geo-projection/). Correspondingly, the **rarely-used [Bonne projection](http://bl.ocks.org/mbostock/3734313) has been moved** to a plugin, and the modal **d3.geo.azimuthal projection has been replaced** with separate projections for each mode: [d3.geo.orthographic](http://bl.ocks.org/mbostock/3757125), [d3.geo.azimuthalEqualArea](http://bl.ocks.org/mbostock/3757101), [d3.geo.azimuthalEquidistant](http://bl.ocks.org/mbostock/3757110), [d3.geo.stereographic](http://bl.ocks.org/mbostock/3757137) and [d3.geo.gnomonic](http://bl.ocks.org/mbostock/3757349). The **albers.origin method has also been replaced** by projection.rotate and projection.center. Lastly, the alias **d3.geo.greatCircle has been removed**; use the identical d3.geo.circle instead. Also, did you know that you can now use d3.geo.circle to draw circles? This is an easy way to approximate [Tissot’s indicatrix](http://bl.ocks.org/mbostock/4052873).
 
 ## Arrays
 
@@ -138,11 +138,11 @@ The rarely-used **d3.first and d3.last methods have been removed**; in most case
 var first = objects.reduce(function(p, v) { return p.value < v.value ? p : v; });
 ```
 
-If you want a [selection algorithm](http://en.wikipedia.org/wiki/Selection_algorithm) (not to be confused with a D3 selection) to select the top or bottom K of an ordered set, consider using Crossfilter’s [heapselect implementation](https://github.com/square/crossfilter/blob/master/src/heapselect.js). The **d3.split helper has also been removed**, since d3.svg.line and d3.svg.area now provide a [defined](SVG-Shapes#wiki-line_defined) property for handling [missing data](http://bl.ocks.org/3035090).
+If you want a [selection algorithm](http://en.wikipedia.org/wiki/Selection_algorithm) (not to be confused with a D3 selection) to select the top or bottom K of an ordered set, consider using Crossfilter’s [heapselect implementation](https://github.com/square/crossfilter/blob/master/src/heapselect.js). The **d3.split helper has also been removed**, since d3.svg.line and d3.svg.area now provide a [defined](SVG-Shapes#wiki-line_defined) property for handling [missing data](http://bl.ocks.org/mbostock/3035090).
 
 ## Geom
 
-The rarely-used **[d3.geom.contour](http://bl.ocks.org/4241134) method has been moved to [a plugin](https://github.com/d3/d3-plugins/tree/master/geom/contour)**. The **[d3.geom.quadtree](Quadtree-geom) method no longer supports array input**, where points are specified as [x, y]; instead, you should specify points as objects {x: x, y: y}.
+The rarely-used **[d3.geom.contour](http://bl.ocks.org/mbostock/4241134) method has been moved to [a plugin](https://github.com/d3/d3-plugins/tree/master/geom/contour)**. The **[d3.geom.quadtree](Quadtree-geom) method no longer supports array input**, where points are specified as [x, y]; instead, you should specify points as objects {x: x, y: y}.
 
 ## Layouts
 

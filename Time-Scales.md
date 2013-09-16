@@ -93,7 +93,7 @@ The following time formats are considered:
 * :%S - for second boundaries, such as ":45".
 * .%L - milliseconds for all other times, such as ".012".
 
-By using multi-scale time formats, the default tick format provides both local and global context for each time interval. For example, by showing the sequence [11 PM, Mon 07, 01 AM], the tick formatter reveals information about hours, dates, and day simultaneously—rather than just the hours. If you'd prefer single-scale time formatting, you can always use your own [d3.time.format](Time-Formatting). You can also roll your own [custom multi-scale time format](http://bl.ocks.org/4149176).
+By using multi-scale time formats, the default tick format provides both local and global context for each time interval. For example, by showing the sequence [11 PM, Mon 07, 01 AM], the tick formatter reveals information about hours, dates, and day simultaneously—rather than just the hours. If you'd prefer single-scale time formatting, you can always use your own [d3.time.format](Time-Formatting). You can also roll your own [custom multi-scale time format](http://bl.ocks.org/mbostock/4149176).
 
 <a name="copy" href="#wiki-copy">#</a> scale.<b>copy</b>()
 

@@ -6,13 +6,13 @@ A flexible force-directed graph layout implementation using position [Verlet int
 
 Some fun examples:
 
-* [divergent forces](http://bl.ocks.org/1021841)
-* [multiple foci](http://bl.ocks.org/1021953)
-* [graph constructor](http://bl.ocks.org/929623)
-* [force-directed tree](http://bl.ocks.org/1062288)
-* [force-directed symbols](http://bl.ocks.org/1062383)
-* [force-directed images and labels](http://bl.ocks.org/950642)
-* [force-directed states](http://bl.ocks.org/1073373)
+* [divergent forces](http://bl.ocks.org/mbostock/1021841)
+* [multiple foci](http://bl.ocks.org/mbostock/1021953)
+* [graph constructor](http://bl.ocks.org/mbostock/929623)
+* [force-directed tree](http://bl.ocks.org/mbostock/1062288)
+* [force-directed symbols](http://bl.ocks.org/mbostock/1062383)
+* [force-directed images and labels](http://bl.ocks.org/mbostock/950642)
+* [force-directed states](http://bl.ocks.org/mbostock/1073373)
 * [sticky force layout](http://bl.ocks.org/mbostock/3750558)
 
 Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement. Unlike some of the other layout implementations which are stateless, the force layout keeps a reference to the associated nodes and links internally; thus, a given force layout instance can only be used with a single dataset.
@@ -31,7 +31,7 @@ var force = d3.layout.force()
     .start();
 ```
 
-Note that, like D3's other layouts, the force-directed layout doesn't mandate a particular visual representation. Most commonly, nodes are mapped to SVG circle elements, and links are mapped to SVG line elements. But you might also display nodes as [symbols](http://bl.ocks.org/1062383) or [images](http://bl.ocks.org/950642).
+Note that, like D3's other layouts, the force-directed layout doesn't mandate a particular visual representation. Most commonly, nodes are mapped to SVG circle elements, and links are mapped to SVG line elements. But you might also display nodes as [symbols](http://bl.ocks.org/mbostock/1062383) or [images](http://bl.ocks.org/mbostock/950642).
 
 <a name="size" href="Force-Layout#wiki-size">#</a> force.<b>size</b>([<i>size</i>])
 

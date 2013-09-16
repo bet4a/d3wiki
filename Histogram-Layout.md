@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Layouts]] ▸ **Histogram Layout**
 
-A **histogram layout** shows the distribution of data by grouping discrete data points into bins. See [bl.ock 3048450](http://bl.ocks.org/3048450) for example usage.
+A **histogram layout** shows the distribution of data by grouping discrete data points into bins. See [bl.ock 3048450](http://bl.ocks.org/mbostock/3048450) for example usage.
 
 <a name="histogram" href="Histogram-Layout#wiki-histogram">#</a> d3.layout.<b>histogram</b>()
 
@@ -29,11 +29,11 @@ Specifies the range of the histogram. Values outside the specified range will be
 <br><a name="bins" href="Histogram-Layout#wiki-bins">#</a> histogram.<b>bins</b>(<i>thresholds</i>)
 <br><a name="bins" href="Histogram-Layout#wiki-bins">#</a> histogram.<b>bins</b>(<i>function</i>)
 
-Specifies how to bin values in the histogram. If no argument is specified, the current binning function is returned, which defaults to an implementation of [Sturges' formula](http://en.wikipedia.org/wiki/Histogram) that divides values into bins using uniformly-spaced values. If a *count* is specified, the value [range](#wiki-range) is divided evenly into the specified number of bins. 
+Specifies how to bin values in the histogram. If no argument is specified, the current binning function is returned, which defaults to an implementation of [Sturges' formula](http://en.wikipedia.org/wiki/Histogram) that divides values into bins using uniformly-spaced values. If a *count* is specified, the value [range](#wiki-range) is divided evenly into the specified number of bins.
 
 If an array of *thresholds* is specified, it defines the value thresholds used to bin, starting with the leftmost (lowest) value and ending with rightmost (highest) value. The *n* + 1 *thresholds* specify *n* bins. Any values less than <i>thresholds[1]</i> will be placed in the first bin; likewise any values greater than or equal to <i>thresholds[thresholds.length - 2]</i> will be placed in the last bin. Thus, although the first and last threshold are not used to assign values to bins, they are still necessary to define the *x* property of the first bin and the *dx* property of the last bin, respectively.
 
-Lastly, if a binning *function* is specified, it is invoked when the layout is passed data, being passed the current [range](Histogram-Layout#wiki-range), the array of values and the current index passed to [histogram](Histogram-Layout#wiki-_histogram). This function must then return an array of *thresholds* as described in the previous paragraph. 
+Lastly, if a binning *function* is specified, it is invoked when the layout is passed data, being passed the current [range](Histogram-Layout#wiki-range), the array of values and the current index passed to [histogram](Histogram-Layout#wiki-_histogram). This function must then return an array of *thresholds* as described in the previous paragraph.
 
 <a name="frequency" href="Histogram-Layout#wiki-frequency">#</a> histogram.<b>frequency</b>([<i>frequency</i>])
 

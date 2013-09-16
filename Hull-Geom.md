@@ -2,7 +2,7 @@
 
 <a name="hull" href="Hull-Geom#wiki-hull">#</a> d3.geom.<b>hull</b>()
 
-<a href="http://bl.ocks.org/4341699"><img src="http://bl.ocks.org/mbostock/raw/4341699/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/mbostock/4341699"><img src="http://bl.ocks.org/mbostock/raw/4341699/thumbnail.png" width="202"></a>
 
 Create a new hull layout with the default *x*- and *y*-accessors.
 

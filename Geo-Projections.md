@@ -4,22 +4,22 @@ Several common projections are included with default build of D3; these are show
 
 <table class="highlight">
   <tr height="146" valign="top">
-    <td>d3.geo.albersUsa<br><a href="http://bl.ocks.org/4090848"><img src="http://bl.ocks.org/mbostock/raw/4090848/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.azimuthalEqualArea<br><a href="http://bl.ocks.org/3757101"><img src="http://bl.ocks.org/mbostock/raw/3757101/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.azimuthalEquidistant<br><a href="http://bl.ocks.org/3757110"><img src="http://bl.ocks.org/mbostock/raw/3757110/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.conicEqualArea<br><a href="http://bl.ocks.org/3734308"><img src="http://bl.ocks.org/mbostock/raw/3734308/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.albersUsa<br><a href="http://bl.ocks.org/mbostock/4090848"><img src="http://bl.ocks.org/mbostock/raw/4090848/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.azimuthalEqualArea<br><a href="http://bl.ocks.org/mbostock/3757101"><img src="http://bl.ocks.org/mbostock/raw/3757101/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.azimuthalEquidistant<br><a href="http://bl.ocks.org/mbostock/3757110"><img src="http://bl.ocks.org/mbostock/raw/3757110/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.conicEqualArea<br><a href="http://bl.ocks.org/mbostock/3734308"><img src="http://bl.ocks.org/mbostock/raw/3734308/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
-    <td>d3.geo.conicConformal<br><a href="http://bl.ocks.org/3734321"><img src="http://bl.ocks.org/mbostock/raw/3734321/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.conicEquidistant<br><a href="http://bl.ocks.org/3734317"><img src="http://bl.ocks.org/mbostock/raw/3734317/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.equirectangular<br><a href="http://bl.ocks.org/3757119"><img src="http://bl.ocks.org/mbostock/raw/3757119/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.gnomonic<br><a href="http://bl.ocks.org/3757349"><img src="http://bl.ocks.org/mbostock/raw/3757349/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.conicConformal<br><a href="http://bl.ocks.org/mbostock/3734321"><img src="http://bl.ocks.org/mbostock/raw/3734321/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.conicEquidistant<br><a href="http://bl.ocks.org/mbostock/3734317"><img src="http://bl.ocks.org/mbostock/raw/3734317/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.equirectangular<br><a href="http://bl.ocks.org/mbostock/3757119"><img src="http://bl.ocks.org/mbostock/raw/3757119/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.gnomonic<br><a href="http://bl.ocks.org/mbostock/3757349"><img src="http://bl.ocks.org/mbostock/raw/3757349/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="146" valign="top">
-    <td>d3.geo.mercator<br><a href="http://bl.ocks.org/3757132"><img src="http://bl.ocks.org/mbostock/raw/3757132/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.orthographic<br><a href="http://bl.ocks.org/3757125"><img src="http://bl.ocks.org/mbostock/raw/3757125/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.stereographic<br><a href="http://bl.ocks.org/3757137"><img src="http://bl.ocks.org/mbostock/raw/3757137/thumbnail.png" width="202"></a></td>
-    <td>d3.geo.transverseMercator<br><a href="http://bl.ocks.org/5126418"><img src="http://bl.ocks.org/mbostock/raw/5126418/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.mercator<br><a href="http://bl.ocks.org/mbostock/3757132"><img src="http://bl.ocks.org/mbostock/raw/3757132/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.orthographic<br><a href="http://bl.ocks.org/mbostock/3757125"><img src="http://bl.ocks.org/mbostock/raw/3757125/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.stereographic<br><a href="http://bl.ocks.org/mbostock/3757137"><img src="http://bl.ocks.org/mbostock/raw/3757137/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.transverseMercator<br><a href="http://bl.ocks.org/mbostock/5126418"><img src="http://bl.ocks.org/mbostock/raw/5126418/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
@@ -52,7 +52,7 @@ Projects backward from Cartesian coordinates (in pixels) to spherical coordinate
 
 <a name="rotate" href="#wiki-rotate">#</a> projection.<b>rotate</b>([<i>rotation</i>])
 
-If *rotation* is specified, sets the projection’s [three-axis rotation](http://bl.ocks.org/4282586) to the specified angles λ, φ and γ ([yaw, pitch and roll](http://en.wikipedia.org/wiki/Aircraft_principal_axes), or equivalently [longitude, latitude](http://en.wikipedia.org/wiki/Geographic_coordinate_system) and roll) in degrees and returns the projection. If *rotation* is not specified, returns the current rotation which defaults [0, 0, 0]. If the specified *rotation* has only two values, rather than three, the roll is assumed to be 0°.
+If *rotation* is specified, sets the projection’s [three-axis rotation](http://bl.ocks.org/mbostock/4282586) to the specified angles λ, φ and γ ([yaw, pitch and roll](http://en.wikipedia.org/wiki/Aircraft_principal_axes), or equivalently [longitude, latitude](http://en.wikipedia.org/wiki/Geographic_coordinate_system) and roll) in degrees and returns the projection. If *rotation* is not specified, returns the current rotation which defaults [0, 0, 0]. If the specified *rotation* has only two values, rather than three, the roll is assumed to be 0°.
 
 <a name="center" href="#wiki-center">#</a> projection.<b>center</b>([<i>location</i>])
 
@@ -68,7 +68,7 @@ If *scale* is specified, sets the projection’s scale factor to the specified v
 
 <a name="clipAngle" href="#wiki-clipAngle">#</a> projection.<b>clipAngle</b>(<i>angle</i>)
 
-If *angle* is specified, sets the projection’s clipping circle radius to the specified angle in degrees and returns the projection. If *angle* is null, switches to [antimeridian cutting](http://bl.ocks.org/3788999) rather than small-circle clipping. If *angle* is not specified, returns the current clip angle which defaults to null. Small-circle clipping is independent of viewport clipping via [clipExtent](#wiki-clipExtent).
+If *angle* is specified, sets the projection’s clipping circle radius to the specified angle in degrees and returns the projection. If *angle* is null, switches to [antimeridian cutting](http://bl.ocks.org/mbostock/3788999) rather than small-circle clipping. If *angle* is not specified, returns the current clip angle which defaults to null. Small-circle clipping is independent of viewport clipping via [clipExtent](#wiki-clipExtent).
 
 <a name="clipExtent" href="#wiki-clipExtent">#</a> projection.<b>clipExtent</b>(<i>extent</i>)
 
@@ -128,7 +128,7 @@ An alias for [d3.geo.conicEqualArea](#wiki-conicEqualArea), with USA-centric def
 
 <a name="albersUsa" href="#wiki-albersUsa">#</a> d3.geo.<b>albersUsa</b>()
 
-<a href="http://bl.ocks.org/4090848"><img src="http://bl.ocks.org/mbostock/raw/4090848/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/mbostock/4090848"><img src="http://bl.ocks.org/mbostock/raw/4090848/thumbnail.png" width="202"></a>
 
 The Albers USA projection is a composite projection of four Albers projections designed to display the forty-eight lower United States alongside Alaska and Hawaii. Although intended for choropleths, it scales the area of Alaska by a factor of 0.35x (a <i>lie factor</i> of 3); Hawaii is shown at the same scale as the lower forty-eight.
 
@@ -136,13 +136,13 @@ The Albers USA projection does not support rotation or centering.
 
 <a name="azimuthalEqualArea" href="#wiki-azimuthalEqualArea">#</a> d3.geo.<b>azimuthalEqualArea</b>()
 
-<a href="http://bl.ocks.org/3757101"><img src="http://bl.ocks.org/mbostock/raw/3757101/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/mbostock/3757101"><img src="http://bl.ocks.org/mbostock/raw/3757101/thumbnail.png" width="202"></a>
 
-The azimuthal equal-area projection is also suitable for choropleths. A [polar aspect](http://bl.ocks.org/4364903) of this projection is used for the United Nations logo.
+The azimuthal equal-area projection is also suitable for choropleths. A [polar aspect](http://bl.ocks.org/mbostock/4364903) of this projection is used for the United Nations logo.
 
 <a name="azimuthalEquidistant" href="#wiki-azimuthalEquidistant">#</a> d3.geo.<b>azimuthalEquidistant</b>()
 
-<a href="http://bl.ocks.org/3757110"><img src="http://bl.ocks.org/mbostock/raw/3757110/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/mbostock/3757110"><img src="http://bl.ocks.org/mbostock/raw/3757110/thumbnail.png" width="202"></a>
 
 The azimuthal equidistant projection preserves distances from the projection’s center: the distance from any projected point to the projection’s center is proportional to the great arc distance. Thus, circles around the projection’s center are projected to circles on the Cartesian plane. This can be useful for visualizing distances relative to a point of reference, such as commute distances.
 
@@ -158,7 +158,7 @@ If *parallels* is specified, sets the projection’s standard parallels to the s
 
 <a name="conicEqualArea" href="#wiki-conicEqualArea">#</a> d3.geo.<b>conicEqualArea</b>()
 
-<a href="http://bl.ocks.org/3734308"><img src="http://bl.ocks.org/mbostock/raw/3734308/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/mbostock/3734308"><img src="http://bl.ocks.org/mbostock/raw/3734308/thumbnail.png" width="202"></a>
 
 The Albers projection, as an [equal-area](http://en.wikipedia.org/wiki/Map_projection#Equal-area) projection, is recommended for [choropleths](http://mbostock.github.com/d3/ex/choropleth.html) as it preserves the relative areas of geographic features.
 
@@ -176,33 +176,33 @@ If *parallels* is specified, sets the projection’s standard parallels to the s
 
 <a name="equirectangular" href="#wiki-equirectangular">#</a> d3.geo.<b>equirectangular</b>()
 
-<a href="http://bl.ocks.org/3757119"><img src="http://bl.ocks.org/mbostock/raw/3757119/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/mbostock/3757119"><img src="http://bl.ocks.org/mbostock/raw/3757119/thumbnail.png" width="202"></a>
 
-The equirectangular, or plate carrée projection, is the simplest possible geographic projection: the identity function. It is neither equal-area nor conformal, but is sometimes used for raster data. See [raster reprojection](http://bl.ocks.org/4329423) for an example; the source image uses the equirectangular projection.
+The equirectangular, or plate carrée projection, is the simplest possible geographic projection: the identity function. It is neither equal-area nor conformal, but is sometimes used for raster data. See [raster reprojection](http://bl.ocks.org/mbostock/4329423) for an example; the source image uses the equirectangular projection.
 
 <a name="gnomonic" href="#wiki-gnomonic">#</a> d3.geo.<b>gnomonic</b>()
 
-<a href="http://bl.ocks.org/3757349"><img src="http://bl.ocks.org/mbostock/raw/3757349/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/mbostock/3757349"><img src="http://bl.ocks.org/mbostock/raw/3757349/thumbnail.png" width="202"></a>
 
-The gnomonic projection is an azimuthal projection that projects great circles as straight lines. See the [interactive gnomonic](http://bl.ocks.org/3795048) for an example.
+The gnomonic projection is an azimuthal projection that projects great circles as straight lines. See the [interactive gnomonic](http://bl.ocks.org/mbostock/3795048) for an example.
 
 <a name="mercator" href="#wiki-mercator">#</a> d3.geo.<b>mercator</b>()
 
-<a href="http://bl.ocks.org/3757132"><img src="http://bl.ocks.org/mbostock/raw/3757132/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/mbostock/3757132"><img src="http://bl.ocks.org/mbostock/raw/3757132/thumbnail.png" width="202"></a>
 
-The spherical Mercator projection is commonly used by tiled mapping libraries (such as [OpenLayers](http://openlayers.org/) and [Leaflet](http://leaflet.cloudmade.com/)). For an example displaying raster tiles with the Mercator projection, see the [d3.geo.tile plugin](http://bl.ocks.org/4150951). It is [conformal](http://en.wikipedia.org/wiki/Map_projection#Conformal); however, it introduces severe area distortion at world scale and thus is not recommended for choropleths.
+The spherical Mercator projection is commonly used by tiled mapping libraries (such as [OpenLayers](http://openlayers.org/) and [Leaflet](http://leaflet.cloudmade.com/)). For an example displaying raster tiles with the Mercator projection, see the [d3.geo.tile plugin](http://bl.ocks.org/mbostock/4150951). It is [conformal](http://en.wikipedia.org/wiki/Map_projection#Conformal); however, it introduces severe area distortion at world scale and thus is not recommended for choropleths.
 
 <a name="orthographic" href="#wiki-orthographic">#</a> d3.geo.<b>orthographic</b>()
 
-<a href="http://bl.ocks.org/3757125"><img src="http://bl.ocks.org/mbostock/raw/3757125/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/mbostock/3757125"><img src="http://bl.ocks.org/mbostock/raw/3757125/thumbnail.png" width="202"></a>
 
-The orthographic projection is an azimuthal projection suitable for displaying a single hemisphere; the point of perspective is at infinity. See the [animated world tour](http://bl.ocks.org/4183330) and [interactive orthographic](http://bl.ocks.org/3795040) for examples. For a general perspective projection, see the [satellite projection](http://bl.ocks.org/3790444).
+The orthographic projection is an azimuthal projection suitable for displaying a single hemisphere; the point of perspective is at infinity. See the [animated world tour](http://bl.ocks.org/mbostock/4183330) and [interactive orthographic](http://bl.ocks.org/mbostock/3795040) for examples. For a general perspective projection, see the [satellite projection](http://bl.ocks.org/mbostock/3790444).
 
 <a name="stereographic" href="#wiki-stereographic">#</a> d3.geo.<b>stereographic</b>()
 
-<a href="http://bl.ocks.org/3757137"><img src="http://bl.ocks.org/mbostock/raw/3757137/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/mbostock/3757137"><img src="http://bl.ocks.org/mbostock/raw/3757137/thumbnail.png" width="202"></a>
 
-The stereographic projection is another perspective (azimuthal) projection. The point of perspective is on the surface of the sphere, looking in; it is thus commonly used for celestial charts. See the [interactive stereographic](http://bl.ocks.org/3763057) for an example.
+The stereographic projection is another perspective (azimuthal) projection. The point of perspective is on the surface of the sphere, looking in; it is thus commonly used for celestial charts. See the [interactive stereographic](http://bl.ocks.org/mbostock/3763057) for an example.
 
 <a name="transverseMercator" href="#wiki-transverseMercator">#</a> d3.geo.<b>transverseMercator</b>()
 
@@ -213,7 +213,7 @@ The transverse Mercator projection. Note: this transverse Mercator projection do
 
 ## Raw Projections
 
-D3 exposes several raw projections, designed for reuse when implementing a composite projection (such as [Sinu–Mollweide](http://bl.ocks.org/4319903), which combines the raw [sinusoidal](http://bl.ocks.org/mbostock/3712399) and [Mollweide](http://bl.ocks.org/mbostock/3734336) projections). Raw projections are typically wrapped using [d3.geo.projection](#wiki-projection) before use. These are point functions that take spherical coordinates λ and φ (in radians) as input and return a two-element array (also in radians) as output. Many raw projections also implement an inverse projection for mapping from planar to spherical coordinates.
+D3 exposes several raw projections, designed for reuse when implementing a composite projection (such as [Sinu–Mollweide](http://bl.ocks.org/mbostock/4319903), which combines the raw [sinusoidal](http://bl.ocks.org/mbostock/3712399) and [Mollweide](http://bl.ocks.org/mbostock/3734336) projections). Raw projections are typically wrapped using [d3.geo.projection](#wiki-projection) before use. These are point functions that take spherical coordinates λ and φ (in radians) as input and return a two-element array (also in radians) as output. Many raw projections also implement an inverse projection for mapping from planar to spherical coordinates.
 
 <a name="albers_raw" href="#wiki-albers_raw">#</a> d3.geo.albers.<b>raw</b>(φ<sub>0</sub>, φ<sub>1</sub>)
 

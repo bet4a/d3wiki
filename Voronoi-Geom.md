@@ -4,7 +4,7 @@ Voronoi layouts are particularly useful for invisible interactive regions, as de
 
 <a name="voronoi" href="#wiki-voronoi">#</a> d3.geom.<b>voronoi</b>()
 
-<a href="http://bl.ocks.org/4060366"><img src="http://bl.ocks.org/mbostock/raw/4060366/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/mbostock/4060366"><img src="http://bl.ocks.org/mbostock/raw/4060366/thumbnail.png" width="202"></a>
 
 Creates a Voronoi layout with default accessors.
 
@@ -30,7 +30,7 @@ function(d) { return d[1]; }
 
 <a name="clipExtent" href="#wiki-clipExtent">#</a> voronoi.<b>clipExtent</b>([<i>extent</i>])
 
-Gets or sets the clip extent of the Voronoi layout; see [this example](http://bl.ocks.org/4237768). This implementation does not clip the returned polygons by default, but will clip them to a given rectangle if specified; this is strongly recommended, as unclipped polygons may have large coordinates which do not display correctly.
+Gets or sets the clip extent of the Voronoi layout; see [this example](http://bl.ocks.org/mbostock/4237768). This implementation does not clip the returned polygons by default, but will clip them to a given rectangle if specified; this is strongly recommended, as unclipped polygons may have large coordinates which do not display correctly.
 
 Alternatively, you can also employ custom clipping without specifying a size, either in SVG or by post-processing with [polygon.clip](Polygon-Geom#wiki-clip).
 
@@ -40,6 +40,6 @@ Alternatively, you can also employ custom clipping without specifying a size, ei
 
 <a name="triangles" href="#wiki-triangles">#</a> voronoi.<b>triangles</b>(<i>data</i>)
 
-<a href="http://bl.ocks.org/4341156"><img src="http://bl.ocks.org/mbostock/raw/4341156/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/mbostock/4341156"><img src="http://bl.ocks.org/mbostock/raw/4341156/thumbnail.png" width="202"></a>
 
 Returns an array of triangles.

@@ -179,7 +179,7 @@ Thus, you can use either select or filter to apply tweens to a subset of element
 
 <a name="transition" href="Transitions#wiki-transition">#</a> transition.<b>transition</b>()
 
-Creates a new transition on the same selected elements that starts with this transition ends. The new transition inherits this transition’s duration and easing. This can be used to define [chained transitions](http://bl.ocks.org/4341417) without needing to listen for "end" events.
+Creates a new transition on the same selected elements that starts with this transition ends. The new transition inherits this transition’s duration and easing. This can be used to define [chained transitions](http://bl.ocks.org/mbostock/4341417) without needing to listen for "end" events.
 
 ### Control
 

@@ -2,7 +2,7 @@
 
 For cartographic visualizations, D3 supports a handful of components for displaying and manipulating **geographic data**. These components use the [GeoJSON format](http://geojson.org/geojson-spec.html)—a standard way of representing geographic features in JavaScript. (See also the [TopoJSON format](/mbostock/topojson), an extension of GeoJSON that is significantly more compact.) To convert shapefiles to GeoJSON, use ogr2ogr, part of the [GDAL package](http://www.gdal.org/).
 
-<a href="http://bl.ocks.org/4060606"><img src="http://bl.ocks.org/mbostock/raw/4060606/thumbnail.png" height="120"></a>
+<a href="http://bl.ocks.org/mbostock/4060606"><img src="http://bl.ocks.org/mbostock/raw/4060606/thumbnail.png" height="120"></a>
 
 Some other tools you may be interested in:
 
@@ -11,7 +11,7 @@ Some other tools you may be interested in:
 * [ColorBrewer](http://colorbrewer2.org) - color scales for maps.
 * [PostGIS](http://postgis.refractions.net/) - a geospatial database.
 
-The primary mechanism for displaying geographic data is [d3.geo.path](#wiki-path). This class is similar to [d3.svg.line](SVG-Shapes#wiki-line) and the other SVG shape generators: given a geometry or feature object, it generates the path data string suitable for the "d" attribute of an SVG path element. The d3.geo.path class can [render directly to Canvas](http://bl.ocks.org/3783604), which may offer better performance when animating the projection.
+The primary mechanism for displaying geographic data is [d3.geo.path](#wiki-path). This class is similar to [d3.svg.line](SVG-Shapes#wiki-line) and the other SVG shape generators: given a geometry or feature object, it generates the path data string suitable for the "d" attribute of an SVG path element. The d3.geo.path class can [render directly to Canvas](http://bl.ocks.org/mbostock/3783604), which may offer better performance when animating the projection.
 
 <a name="path" href="#wiki-path">#</a> d3.geo.<b>path</b>()
 
@@ -67,7 +67,7 @@ function mercator(coordinates) {
 }
 ```
 
-Internally, this point projection function is wrapped with a fallback [stream transformation](Geo-Streams) that performs [adaptive resampling](http://bl.ocks.org/3795544). However, the fallback stream does not perform any clipping or cutting.
+Internally, this point projection function is wrapped with a fallback [stream transformation](Geo-Streams) that performs [adaptive resampling](http://bl.ocks.org/mbostock/3795544). However, the fallback stream does not perform any clipping or cutting.
 
 For more control over the stream transformation, the *projection* may be specified as an object that implements the *stream* method. ([See example.](http://bl.ocks.org/mbostock/5663666)) The stream method takes an output stream as input, and returns a wrapped stream that projects the input geometry; in other words, it implements [projection.stream](Geo-Projections#wiki-stream).
 
@@ -83,7 +83,7 @@ If *context* is specified, sets the render context and returns the path generato
 * arc(x, y, radius, startAngle, endAngle)
 * closePath()
 
-Note that this is a subset of the canvas element’s [2D rendering context](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#2dcontext), and thus a canvas context can be passed to the path generator, in which case geometry will be rendered [directly to the canvas](http://bl.ocks.org/3783604). If *context* is not specified, returns the current render context, which defaults to null.
+Note that this is a subset of the canvas element’s [2D rendering context](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#2dcontext), and thus a canvas context can be passed to the path generator, in which case geometry will be rendered [directly to the canvas](http://bl.ocks.org/mbostock/3783604). If *context* is not specified, returns the current render context, which defaults to null.
 
 <a name="path_area" href="#wiki-path_area">#</a> path.<b>area</b>(<i>feature</i>)
 

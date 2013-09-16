@@ -163,7 +163,7 @@ svg.selectAll("path")
     .attr("d", function(d) { return line.tension(d)(data); });
 ```
 
-In this example (see the [live version](http://bl.ocks.org/1016220)), the tension is set before each invocation of the line generator, thus resulting in lines with the same data but different paths.
+In this example (see the [live version](http://bl.ocks.org/mbostock/1016220)), the tension is set before each invocation of the line generator, thus resulting in lines with the same data but different paths.
 
 <a name="line_defined" href="#wiki-line_defined">#</a> line.<b>defined</b>([<i>defined</i>])
 
