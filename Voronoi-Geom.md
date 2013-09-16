@@ -4,7 +4,7 @@ Voronoi layouts are particularly useful for invisible interactive regions, as de
 
 <a name="voronoi" href="#wiki-voronoi">#</a> d3.geom.<b>voronoi</b>()
 
-<a href="http://bl.ocks.org/4060366"><img src="https://raw.github.com/gist/4060366/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/4060366"><img src="https://gist.github.com/mbostock/4060366/raw/thumbnail.png" width="202"></a>
 
 Creates a Voronoi layout with default accessors.
 
@@ -40,6 +40,6 @@ Alternatively, you can also employ custom clipping without specifying a size, ei
 
 <a name="triangles" href="#wiki-triangles">#</a> voronoi.<b>triangles</b>(<i>data</i>)
 
-<a href="http://bl.ocks.org/4341156"><img src="https://raw.github.com/gist/4341156/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/4341156"><img src="https://gist.github.com/mbostock/4341156/raw/thumbnail.png" width="202"></a>
 
 Returns an array of triangles.

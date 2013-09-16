@@ -2,9 +2,9 @@
 
 A **quadtree** is a two-dimensional recursive spatial subdivision. This implementation uses square partitions, dividing each square into four equally-sized squares. Each point exists in a unique node; if multiple points are in the same position, some points may be stored on internal nodes rather than leaf nodes. Quadtrees can be used to accelerate various spatial operations, such as the Barnes-Hut approximation for computing n-body forces, or collision detection.
 
-<a href="http://bl.ocks.org/4343214"><img src="https://raw.github.com/gist/4343214/thumbnail.png" width="202"></a>
-<a href="http://bl.ocks.org/6216724"><img src="https://raw.github.com/gist/6216724/thumbnail.png" width="202"></a>
-<a href="http://bl.ocks.org/6224050"><img src="https://raw.github.com/gist/6224050/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/4343214"><img src="https://gist.github.com/mbostock/4343214/raw/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/6216724"><img src="https://gist.github.com/mbostock/6216724/raw/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/6224050"><img src="https://gist.github.com/mbostock/6224050/raw/thumbnail.png" width="202"></a>
 
 <a name="quadtree" href="#wiki-quadtree">#</a> d3.geom.<b>quadtree</b>()
 

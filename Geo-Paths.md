@@ -2,7 +2,7 @@
 
 For cartographic visualizations, D3 supports a handful of components for displaying and manipulating **geographic data**. These components use the [GeoJSON format](http://geojson.org/geojson-spec.html)—a standard way of representing geographic features in JavaScript. (See also the [TopoJSON format](/mbostock/topojson), an extension of GeoJSON that is significantly more compact.) To convert shapefiles to GeoJSON, use ogr2ogr, part of the [GDAL package](http://www.gdal.org/).
 
-<a href="http://bl.ocks.org/4060606"><img src="https://raw.github.com/gist/4060606/thumbnail.png" height="120"></a>
+<a href="http://bl.ocks.org/4060606"><img src="https://gist.github.com/mbostock/4060606/raw/thumbnail.png" height="120"></a>
 
 Some other tools you may be interested in:
 
