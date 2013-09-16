@@ -192,6 +192,12 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Interactive Bible contradictions & bar charts [<a href="https://github.com/danielgtaylor/bibviz">source</a>]<br/><a href="http://bibviz.com/"><img src="http://bibviz.com/img/square.png"/></a></td>
     <td>Force Edge Bundling For Graphs<br><a href="http://bl.ocks.org/upphiminn/6515478"><img src="https://raw.github.com/upphiminn/d3.ForceBundle/master/readme_img/thumbnail.png"></a> [<a href="https://github.com/upphiminn/d3.ForceBundle">Source & Docs</a>]</td>
   </tr>
+  <tr>
+    <td>Gauge<br><a href="http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html"><img src="https://gist.github.com/tomerd/1499279/raw/thumbnail.png" width="202"></a></td>
+    <td>BulleT (a variant of mbostock's Bullet Charts) vertical or horizontal<br><a href="http://bl.ocks.org/CodeXmonk/6112167"><img src="https://gist.github.com/CodeXmonk/6112167/raw/bbd3c9b608ff8123c6664d1bf9a850dcc9ca1065/thumbnail.png" width="202"></a></td>
+    <td>Arc Axis<br><a href="http://bl.ocks.org/metormote/6392996"><img src="https://gist.github.com/metormote/6392996/raw/thumbnail.png" width="202"></a></td>
+    <td>Bar chart with tooltips<br><a href="http://bl.ocks.org/Caged/6476579"><img src="http://bl.ocks.org/Caged/raw/6476579/thumbnail.png" width="202"></a></td>
+  </tr>
 </table>
 
 ## Basic Charts
@@ -218,12 +224,6 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   <tr height="146" valign="top">
     <td>Donut Multiples<br><a href="http://bl.ocks.org/3888852"><img src="https://gist.github.com/mbostock/3888852/raw/thumbnail.png" width="202"></a></td>
     <td>Bar Chart with Negative Values<br><a href="http://bl.ocks.org/2368837"><img src="https://gist.github.com/mbostock/2368837/raw/thumbnail.png" width="202"></a></td>
-    <td>Gauge<br><a href="http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html"><img src="https://gist.github.com/mbostock/1499279/raw/thumbnail.png" width="202"></a></td>
-    <td>BulleT (a variant of mbostock's Bullet Charts) vertical or horizontal<br><a href="http://bl.ocks.org/CodeXmonk/6112167"><img src="https://gist.github.com/CodeXmonk/6112167/raw/bbd3c9b608ff8123c6664d1bf9a850dcc9ca1065/thumbnail.png" width="202"></a></td>
-    </tr>
-    <tr height="146" valign="top">
-    <td>Arc Axis<br><a href="http://bl.ocks.org/metormote/6392996"><img src="https://gist.github.com/mbostock/6392996/raw/thumbnail.png" width="202"></a></td>
-    <td>Bar chart with tooltips<br><a href="http://bl.ocks.org/Caged/6476579"><img src="http://bl.ocks.org/Caged/raw/6476579/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
