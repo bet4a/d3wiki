@@ -117,13 +117,14 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Trulia Trends<br><a href="http://trends.truliablog.com/2012/02/where-are-house-hunters-searching/"><img src="http://d3js.org/ex/house-map.png" width="202"></a></td>
     <td>Open Budget<br><a href="http://marcinignac.com/projects/open-budget/"><img src="http://d3js.org/ex/open-budget.png" width="202"></a></td>
     <td>Bederson Publications<br><a href="http://www.cs.umd.edu/~bederson/papers/index.html"><img src="http://d3js.org/ex/bederson-pubs.png" width="202"></a></td>
-    <td>Force Layout Editor<br><a href="http://bl.ocks.org/4370043"><img src="https://gist.github.com/mbostock/4362310/raw/thumbnail.png" width="202"></a></td>
+    <td>Force Layout Editor<br><a href="http://bl.ocks.org/benzguo/4370043"><img src="https://gist.github.com/benzguo/4362310/raw/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
     <td>Open Knowledge Festival<br><a href="http://okfestival.org/hashtag/#visualisation"><img src="http://floapps.com/lab/misc/oklogo/ok.png" width="202"></a></td>
     <td>Visual Hacker News<br><a href="http://fanfarefantastique.com/vishna/"><img src="http://fanfarefantastique.com/images/vhnthumb.png" width="202"></a></td>
     <td>Hierarchical Classification Tree<br><a href="http://www.bitjuice.com.au/research/#hierarchicalclassificationexample"><img src="http://www.bitjuice.com.au/wp-content/uploads/2013/08/hierarchical_visualisation_example.png" width="202"></a></td>
-    <td>Gene Expression<br><a href="http://sulab.org/2013/02/data-chart-plugin-beta/"><img src=http://sulab.org/wordpress/wp-content/uploads/2013/02/data_chart_icon_2.jpg" width="202"></a></td>  </tr>
+    <td>Gene Expression<br><a href="http://sulab.org/2013/02/data-chart-plugin-beta/"><img src="http://sulab.org/wordpress/wp-content/uploads/2013/02/data_chart_icon_2.jpg" width="202"></a></td>
+  </tr>
   <tr height="207" valign="top">
     <td>d3 Analog Clock Dashboard<br><a href="http://www.infocaptor.com/dashboard/d3-javascript-visualization-to-build-world-analog-clocks"><img src="http://www.infocaptor.com/dashboard/wp-content/uploads/2013/02/image-217-small.jpg" width="202"></a></td>
     <td>Concept network browser<br/><a href="http://www.findtheconversation.com/concept-map"><img src="http://www.findtheconversation.com/concept-map-d3-wiki.png" width="202"></a></td>
@@ -131,7 +132,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Convert any page into bubbles<br><a href="http://www.infocaptor.com/bubble-my-page"><img src="http://www.infocaptor.com/wikipedia_visualization.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
-    <td>Directed Graph Editor<br><a href="http://bl.ocks.org/5001347"><img src="https://gist.github.com/mbostock/5001347/raw/thumbnail.png" width="202"></a></td>
+    <td>Directed Graph Editor<br><a href="http://bl.ocks.org/rkirsling/5001347"><img src="https://gist.github.com/rkirsling/5001347/raw/thumbnail.png" width="202"></a></td>
     <td>Weeknd3<br><a href="http://ggruiz.me/weeknd3/"><img src="http://puu.sh/2bWtl" width="202" height="146"></a></td>
     <td>Explosions<br><a href="http://ggruiz.me/explosions/"><img src="http://puu.sh/2fO3P" width="202" height="146"></a></td>
     <td>CodeFlowers<br><a href="http://redotheweb.com/CodeFlower/"><img src="http://redotheweb.com/images/codeflower/codeflower.png" width="202" height="146"></a></td>
@@ -146,12 +147,12 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Map and context with brushing<br><a href="http://rbspd3.herokuapp.com"><img src="https://raw.github.com/sdelarquier/rbspd3/master/snapshot.png" width="202"></a></td>
     <td>Binary tree with transitions<br><a href="http://prcweb.co.uk/lab/d3-tree"><img src="http://prcweb.co.uk/img/ext/tree.jpg" width="202"></a></td>
     <td>d3+ColorBrewer<br><a href="http://adilapapaya.com/code/colors/d3colorbrewer.html"><img src="http://adilapapaya.com/code/colors/d3colorbrewer.png" width="202"></a></td>
-    <td>D3 JezzBall<br><a href="http://bl.ocks.org/ericcitaire/5408146"><img src="https://gist.github.com/mbostock/5408146/raw/thumbnail.png" width="202"></a></td>
+    <td>D3 JezzBall<br><a href="http://bl.ocks.org/ericcitaire/5408146"><img src="https://gist.github.com/ericcitaire/5408146/raw/thumbnail.png" width="202"></a></td>
   </tr>
   <tr height="207" valign="top">
     <td>Tetris<br><a href="http://d3tetris.herokuapp.com/"><img src="http://imageshack.us/a/img841/8619/tetrisn.png" width="200px"></a></td>
     <td>Gantt Chart<br><a href="http://bl.ocks.org/dk8996/5538271/"><img src="https://raw.github.com/dk8996/Gantt-Chart/master/examples/screenshot2.png" width="200px"></a></td>
-    <td>Day/Hour Heatmap<br><a href="http://bl.ocks.org/tjdecke/5558084"><img src="https://gist.github.com/mbostock/5558084/raw/thumbnail2.png" width="200px"></a></td>
+    <td>Day/Hour Heatmap<br><a href="http://bl.ocks.org/tjdecke/5558084"><img src="https://gist.github.com/tjdecke/5558084/raw/thumbnail2.png" width="200px"></a></td>
     <td>Sunburst and parse.com<br><a href="http://xliberation.com/parse/colortable/parsed3.html"><img src="http://xliberation.com/googlecharts/1716.png" width="200px"></a></td>
   </tr>
   <tr height="207" valign="top">
@@ -175,7 +176,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   </tr>
   <tr>
     <td>Choropleth on canvas<br><a href="http://ssz.fr/parite"><img src="https://ssz.fr/brdl/parite.png" width="202"></a></td>
-    <td>Google calendar like visualization<br><a href="http://bl.ocks.org/6007521"><img src="https://gist.github.com/mbostock/6007521/raw/thumbnail.png" width="202"></a></td>
+    <td>Google calendar like visualization<br><a href="http://bl.ocks.org/chaitanyagurrapu/6007521"><img src="https://gist.github.com/chaitanyagurrapu/6007521/raw/thumbnail.png" width="202"></a></td>
     <td>Real-time Interactive Cloud<br><a href="https://live.zoomdata.com/zoomdata/visualization?__target=embedded&key=52265abb6abdbcaa8c217789#51dc2cc3e4b048929db35251-51db7ad4e4b04caf9ab346d3"><img src="https://dl.dropboxusercontent.com/u/56332995/sss.png" width="202" height="180"></a></td>
     <td>Interactive Sales Data Pie Chart<br><a href="https://live.zoomdata.com/zoomdata/visualization?__target=embedded&key=52265abb6abdbcaa8c217789#51db7ad4e4b04caf9ab346db-51db7ad4e4b04caf9ab346d5"><img src="https://dl.dropboxusercontent.com/u/56332995/sales%20interactive%20pie%20d3js.png" width="202"></a></td>
   </tr>
