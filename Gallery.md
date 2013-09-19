@@ -671,7 +671,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Hexbins in Leaflet](http://bl.ocks.org/mbostock/5669650)
 * [Interactive svg map using D3 circles and transitions] (http://www.incont.ro/infografice/judet-bogat-judet-sarac-unde-se-castiga-cei-mai-multi-bani-in-romania-si-in-ce-domeniu.html) - Vlad Moldoveanu
 * [ZipDecode](http://www.somebits.com/zipdecode-js/) - Nelson Minar (after Ben Fry)
-* [Interactive choropleth: San Francisco voter turnout and the 1989 earthquake](http://www.polsci.ucsb.edu/faculty/glasgow/research/d3/sfintmap.html) - Garrett Glasgow
+* [Interactive choropleth: San Francisco voter turnout and the 1989 earthquake](http://www.polsci.ucsb.edu/faculty/glasgow/research/d3/sfturnout.html) - Garrett Glasgow
 * [Visualizing transit data](http://busrac.es)
 * [Asia's Deadliest Conflicts (interactive map with timeline)](http://conflictstudy.asiafoundation.org/)
 * [All 2012 US flights from Google Fusion](http://xliberation.com/googlecharts/d3flights.html)
