@@ -370,28 +370,6 @@ For advanced usage, D3 has a few additional operators for custom control flow.
 
 Invokes the specified *function* for each element in the current selection, passing in the current datum `d` and index `i`, with the `this` context of the current DOM element. This operator is used internally by nearly every other operator, and can be used to invoke arbitrary code for each selected element. The each operator can be used to process selections recursively, by using `d3.select(this)` within the callback function.
 
-If you want to add two spans into each div
-```javascript
-d3.selectAll("div")
-  .each(function(d){
-    d3.select(this).append("span").attr("class","first");
-    d3.select(this).append("span").attr("class","second");
-  });
-
-
-function foo(selection) {
-  selection
-      .attr("name1", "value1")
-      .attr("name2", "value2");
-}
-```
-
-Now, we can say this:
-
-```javascript
-foo(d3.selectAll("div"))
-
-
 <a name="call" href="Selections#wiki-call">#</a> selection.<b>call</b>(<i>function</i>[, <i>arguments…</i>])
 
 Invokes the specified *function* once, passing in the current selection along with any optional *arguments*. The call operator always returns the current selection, regardless of the return value of the specified function. The call operator is identical to invoking a function by hand; but it makes it easier to use method chaining. For example, say we want to set a number of attributes the same way in a number of different places. So we take the code and wrap it in a reusable function:
