@@ -58,6 +58,8 @@ If *value* is not specified, returns true if and only if the first non-null elem
 
 If *value* is specified, sets the CSS style property with the specified name to the specified value on all selected elements. If *value* is a constant, then all elements are given the same style value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's style property. A null value will remove the style property. An optional *priority* may also be specified, either as null or the string "important" (without the exclamation point).
 
+If you want to set several style properties at once, use an object literal like so: `selection.style({'stroke': 'black', 'stroke-width': 2})`
+
 If *value* is not specified, returns the current *computed* value of the specified style property for the first non-null element in the selection. This is generally useful only if you know the selection contains exactly one element. Note that the computed value may be *different* than the value that was previously set, particularly if the style property was set using a shorthand property (such as the "font" style, which is shorthand for "font-size", "font-face", etc.).
 
 <a name="property" href="Selections#wiki-property">#</a> selection.<b>property</b>(<i>name</i>[, <i>value</i>])
