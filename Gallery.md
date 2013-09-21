@@ -257,6 +257,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 </table>
 
 ## Examples
+* [50 Years of Change (map, matrix, and block bar chart)] (http://50yearsofchange.com/) - Erin Hamilton, Rashauna Mead, and Vanessa Knoppke-Wetzel, UW-Madison
 * [Hurricane #Sandy Twitter DataViz] (http://geo-odyssey.com/links/sandy/) - Chris Cantey, Caroline Rose, Morgan Jarocki, UW-Madison
 * [Distribution of Grant Awards in Fiscal Year 2013](http://www.visualizing.org/sprint/launch/50407), ([github](https://github.com/artzub/wbgds/tree/v23)), [global-development-sprint version 23](http://www.visualizing.org/sprint/global-development-sprint) - [Artem Zubkov] (https://github.com/artzub)
 * [Commuting Scales, Lausanne Campus commuters] (http://choros.ch/cs/) - Boris Beaude and Luc Guillemot
