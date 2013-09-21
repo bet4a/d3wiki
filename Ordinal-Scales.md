@@ -12,11 +12,13 @@ Constructs a new ordinal scale with an empty domain and an empty range. The ordi
 
 Given a value *x* in the input domain, returns the corresponding value in the output range.
 
+If the range was specified explicitly (as by [range](#wiki-ordinal_range), but not [rangeBands](#wiki-ordinal_rangeBands), [rangeRoundBands](#wiki-ordinal_rangeRoundBands) or [rangePoints](#wiki-ordinal_rangePoints)), _and_ the given value *x* is not in the scale’s [domain](#wiki-ordinal_domain), then *x* is implicitly added to the domain; subsequent invocations of the scale given the same value *x* will return the same value *y* from the range.
+
 <a name="ordinal_domain" href="Ordinal-Scales#wiki-ordinal_domain">#</a> ordinal.<b>domain</b>([<i>values</i>])
 
 If *values* is specified, sets the input domain of the ordinal scale to the specified array of values. The first element in *values* will be mapped to the first element in the output range, the second domain value to the second range value, and so on. Domain values are stored internally in an associative array as a mapping from value to index; the resulting index is then used to retrieve a value from the output range. Thus, an ordinal scale's values must be coercible to a string, and the stringified version of the domain value uniquely identifies the corresponding range value. If *values* is not specified, this method returns the current domain.
 
-Setting the domain on an ordinal scale is optional. If no domain is set, each unique value that is passed to the scale function will be assigned a new value from the output range; in other words, the domain will be inferred implicitly from usage. However, it is a good idea to assign the ordinal scale's domain to ensure deterministic behavior, as inferring the domain from usage will be dependent on ordering. If the domain is set explicitly, values passed to the scale that were not explicitly part of the domain will be added. The return value of the domain method when called with no arguments will contain both explicitly-added and implicitly-added domain values.
+Setting the domain on an ordinal scale is optional. If no domain is set, a [range](#wiki-ordinal_range) must be set explicitly. Then, each unique value that is passed to the scale function will be assigned a new value from the output range; in other words, the domain will be inferred implicitly from usage. Although domains may thus be constructed implicitly, it is still a good idea to assign the ordinal scale's domain explicitly to ensure deterministic behavior, as inferring the domain from usage will be dependent on ordering.
 
 <a name="ordinal_range" href="Ordinal-Scales#wiki-ordinal_range">#</a> ordinal.<b>range</b>([<i>values</i>])
 
