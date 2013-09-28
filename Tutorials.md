@@ -15,6 +15,7 @@ Please feel free to add links to your work!
 * [D3 Tutorials](http://alignedleft.com/tutorials/d3/) - Scott Murray
 * [Try D3 Now](http://christopheviau.com/d3_tutorial/) - Christophe Viau
 * [D3 for Mere Mortals](http://www.recursion.org/d3-for-mere-mortals/) - Luke Francl
+* [D3, Conceptually](http://code.hazzens.com/d3tut/) - Mikey Levine
 * [Introduction to D3](http://dealloc.me/2011/06/24/d3-is-not-a-graphing-library.html) - Justin Palmer
 * [D3.js experiments in the console](http://www.ultrasaurus.com/sarahblog/2012/03/d3-js-experiments-in-the-console/) - Sarah Allen
 * [Creating Basic Charts using d3.js](http://www.verisi.com/resources/d3-tutorial-basic-charts.htm) - Ben Lorica
@@ -30,7 +31,6 @@ Please feel free to add links to your work!
 * [Learn how to make Data Visualizations with D3.js](http://www.dashingd3js.com/) - Dashingd3js
 * [Introduction to d3.js and data-driven visualizations](http://www.skillshare.com/Introduction-to-d3js-and-data-driven-visualizations/1912580409) - Kenny Peng
 * [http://nowherenearithaca.blogspot.com/2012/06/annotating-d3-example-with-docco.html](http://nowherenearithaca.github.com/empires/empires.html) - Brad Flyon
-* [D3, Conceptually](http://code.hazzens.com/d3tut/) - Mikey Levine
 * [D3.js Tips and Tricks Blog](http://www.d3noob.org/) and [pdf book version](https://leanpub.com/D3-Tips-and-Tricks) and [read full text online](https://leanpub.com/D3-Tips-and-Tricks/read) - D3noob
 * [Introduction to D3.js Geo](http://hashbang.co.nz/blog/2013/2/25/d3_js_geo_fun) - Graham Jenson
 * [learning D3.js(2)(Chinese)](http://www.civn.cn/p/12402.html) - jtyjty99999
