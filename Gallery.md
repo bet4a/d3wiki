@@ -198,6 +198,9 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Arc Axis<br><a href="http://bl.ocks.org/metormote/6392996"><img src="http://bl.ocks.org/metormote/raw/6392996/thumbnail.png" width="202"></a></td>
     <td>Bar chart with tooltips<br><a href="http://bl.ocks.org/Caged/6476579"><img src="http://bl.ocks.org/Caged/raw/6476579/thumbnail.png" width="202"></a></td>
   </tr>
+  <tr>
+    <td>Tokyo Wind Map<br><a href="http://air.nullschool.net"><img src="https://raw.github.com/wiki/cambecc/air/tokyowind.png" width="202"></a></td>
+  </tr>
 </table>
 
 ## Basic Charts
