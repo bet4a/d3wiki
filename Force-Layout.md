@@ -35,7 +35,7 @@ Note that, like D3's other layouts, the force-directed layout doesn't mandate a 
 
 <a name="size" href="Force-Layout#wiki-size">#</a> force.<b>size</b>([<i>size</i>])
 
-If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1. The size affects two aspects of the force-directed layout: the gravitational center, and the initial random position. The center of gravity is simply [_x_ / 2, *y* / 2]. When nodes are added to the force layout, if they do not have *x* and *y* attributes already set, then these attributes are initialized using a uniform random distribution in the range [0, *x*] and [0, *y*], respectively.
+If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1. The size affects two aspects of the force-directed layout: the gravitational center, and the initial random position. The center of gravity is simply [ *x* / 2, *y* / 2 ]. When nodes are added to the force layout, if they do not have *x* and *y* attributes already set, then these attributes are initialized using a uniform random distribution in the range [0, *x*] and [0, *y*], respectively.
 
 <a name="linkDistance" href="Force-Layout#wiki-linkDistance">#</a> force.<b>linkDistance</b>([<i>distance</i>])
 
