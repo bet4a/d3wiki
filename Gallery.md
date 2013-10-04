@@ -749,11 +749,9 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Chernoff faces, Fisheye, Geodesic grid, Hive plot, Horizon chart, Sankey diagram, ](https://github.com/d3/d3-plugins)
 * [Parallel Sets](https://github.com/jasondavies/d3-parsets)
 * [Word Cloud](https://github.com/jasondavies/d3-cloud/blob/master/d3.layout.cloud.js)
-* [NVD3](http://nvd3.org/)
 * [MathJax label](http://bl.ocks.org/mbostock/3391642)
 * [Simple table](http://jsfiddle.net/christopheviau/v6VMf/)
 * [Legend](http://bl.ocks.org/mbostock/3918369)
-* [Dc.js](http://nickqizhu.github.com/dc.js/)
 * [Simple Reusable Bar Chart](http://jsfiddle.net/johnwun/8hSGP/)
 * [Polygonal Lasso Selection](http://bl.ocks.org/mbostock/3732612)
 * [Floor Plan Map](http://dciarletta.github.com/d3-floorplan/)
@@ -863,7 +861,11 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 
 #### Libraries
 
+* [Dc.js](http://nickqizhu.github.com/dc.js/)
+* [NVD3](http://nvd3.org/)
+* [Dimple](http://dimplejs.org/)
 * [Cubism.js: Time Series Visualization](http://square.github.com/cubism/)
+* [Crossfilter](http://square.github.com/crossfilter/)
 * [Rickshaw: JavaScript toolkit for creating interactive real-time graphs](https://github.com/shutterstock/rickshaw)
 * [Dynamic Visualization LEGO](https://github.com/vogievetsky/DVL)
 * [xCharts: a D3-based library for building custom charts and graphs](http://tenxer.github.com/xcharts/)
