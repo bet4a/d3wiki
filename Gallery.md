@@ -200,6 +200,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   </tr>
   <tr>
     <td>Tokyo Wind Map<br><a href="http://air.nullschool.net"><img src="https://raw.github.com/wiki/cambecc/air/tokyowind.png" width="202"></a></td>
+    <td>Dependency Wheel<br><a href="http://redotheweb.com/DependencyWheel/"><img src="http://redotheweb.com/DependencyWheel/img/dependency_chord.gif" width="202"></a></td>
   </tr>
 </table>
 
@@ -643,6 +644,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Chord Layout Transitions](http://fleetinbeing.net/d3e/chord.html)
 * [Co-Authors Chords] (http://www.rjbaxley.com/p/publications.html)
 * [Visualizing Overlapping Sets] (http://radialsets.org) - [Bernd Landauer] (http://syrenio.com/)
+* [Visualizing Package Dependencies](http://redotheweb.com/DependencyWheel/)
 
 #### Maps
 
