@@ -202,6 +202,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Tokyo Wind Map<br><a href="http://air.nullschool.net"><img src="https://raw.github.com/wiki/cambecc/air/tokyowind.png" width="202"></a></td>
     <td>Dependency Wheel<br><a href="http://redotheweb.com/DependencyWheel/"><img src="http://redotheweb.com/DependencyWheel/img/dependency_chord.gif" width="202"></a></td>
     <td>60 years of french first names<br><a href="http://dataaddict.fr/prenoms/"><img src="http://dataaddict.fr/wp-content/uploads/2013/06/prenom_img_home.png" width="202"></a></td>
+    <td>Sequences sunburst<br><a href="http://bl.ocks.org/kerryrodden/7090426"><img src="https://gist.github.com/kerryrodden/7090426/raw/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
@@ -581,6 +582,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Sunburst: Coffee Flavour Wheel](http://www.jasondavies.com/coffee-wheel/)
 * [Partition Layout (Zoomable Icicle)](http://bl.ocks.org/mbostock/1005873)
 * [Sunburst: Color schemer with parse.com integration](http://xliberation.com/parse/colortable/parsed3.html)
+* [Using a sunburst to analyze sequences of events](http://bl.ocks.org/kerryrodden/7090426)
 
 #### Force Layout
 
