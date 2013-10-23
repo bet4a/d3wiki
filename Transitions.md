@@ -38,7 +38,7 @@ Specifies per-element *duration* in milliseconds. If *duration* is a constant, t
 
 <a name="ease" href="Transitions#wiki-ease">#</a> transition.<b>ease</b>(<i>value</i>[, <i>arguments</i>])
 
-Specifies the transition [[easing function|http://www.robertpenner.com/easing/]]. If *value* is a function, it is used to ease the current parametric timing value *t* in the range [0,1]; otherwise, *value* is assumed to be a string and the arguments are passed to the [d3.ease](Transitions#wiki-d3_ease) method to generate an easing function. The default easing function is "cubic-in-out". Note that it is not possible to customize the easing function per-element or per-attribute; however, if you use the "linear" easing function, you can apply custom easing inside your interpolator using [attrTween](Transitions#wiki-attrTween) or [styleTween](Transitions#wiki-styleTween).
+Specifies the transition [[easing function|http://www.robertpenner.com/easing/]]. If *value* is a function, it is used to ease the current parametric timing value *t*, which is typically in the range [0,1]. (At the end of a transition, *t* may be slightly greater than 1.) Otherwise, *value* is assumed to be a string and the arguments are passed to the [d3.ease](Transitions#wiki-d3_ease) method to generate an easing function. The default easing function is "cubic-in-out". Note that it is not possible to customize the easing function per-element or per-attribute; however, if you use the "linear" easing function, you can apply custom easing inside your interpolator using [attrTween](Transitions#wiki-attrTween) or [styleTween](Transitions#wiki-styleTween).
 
 ## Operating on Transitions
 
@@ -283,7 +283,7 @@ The default easing function is "cubic-in-out" which provides suitable [[slow-in 
 
 <a name="_ease" href="Transitions#wiki-_ease">#</a> <b>ease</b>(<i>t</i>)
 
-Given a parametric time *t* in the range [0,1], returns the eased time. The returned value is typically in the range [0,1] as well, but may extend slightly beyond this range for certain easing functions, such as "elastic".
+Given a parametric time *t*, typically in the range [0,1], returns the eased time. The returned value is typically in the range [0,1] as well, but may extend slightly beyond this range for certain easing functions, such as "elastic".
 
 ## Timers
 
@@ -325,7 +325,7 @@ The behavior of this default interpolator may be extended to support additional 
 
 <a name="_interpolate" href="Transitions#wiki-_interpolate">#</a> <b>interpolate</b>(<i>t</i>)
 
-Given a parameter *t* in the range [0,1], returns the associated interpolation value. Interpolators are commonly used in conjunction with scales to map an input domain (such as a quantitative dimension) to an output range (such as a range of colors or pixel positions).
+Given a parameter *t* typically in the range [0,1], returns the associated interpolation value. Interpolators are commonly used in conjunction with scales to map an input domain (such as a quantitative dimension) to an output range (such as a range of colors or pixel positions).
 
 <a name="d3_interpolateNumber" href="Transitions#wiki-d3_interpolateNumber">#</a> d3.<b>interpolateNumber</b>(<i>a</i>, <i>b</i>)
 
