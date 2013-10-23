@@ -528,6 +528,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Dynamic Bar Charts](https://github.com/mlarocca/Dynamic-Charts)
 * [Sortable bars: Foreign aid, corruption and internet use](http://theoldbeggar.com/aid/) - Nikhil Sonnad
 * [Grouped and Stacked Bar Chart](https://github.com/gencay/stackedGroupedChart)
+* [Waterfall Chart](http://bl.ocks.org/rsloan/7123450)
 
 #### Histogram
 
