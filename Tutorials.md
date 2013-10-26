@@ -108,3 +108,4 @@ Also checkout [D3.js on Hacker Notes](http://www.thehackernotes.com/mbostock/d3)
 * [[D3: Data-Driven Documents|http://vis.stanford.edu/papers/d3]]<br>Michael Bostock, Vadim Ogievetsky, Jeffrey Heer<br>*IEEE Trans. Visualization & Comp. Graphics (Proc. InfoVis)*, 2011
 * [Getting Started with D3](http://shop.oreilly.com/product/0636920025429.do)<br>Mike Dewar, O'Reilly Media, June 2012
 * [Interactive Data Visualization for the Web](http://ofps.oreilly.com/titles/9781449339739/)<br>Scott Murray, O'Reilly Media, November 2012
+* [Data Visualization with d3.js](http://www.packtpub.com/data-visualization-with-d3js/book)<br>Swizec Teller, Packt Publishing, October 2013
