@@ -12,6 +12,7 @@
 [![4349545](http://bl.ocks.org/mbostock/raw/4349545/thumbnail.png)](http://bl.ocks.org/mbostock/4349545)
 [![4349509](http://bl.ocks.org/mbostock/raw/4349509/thumbnail.png)](http://bl.ocks.org/mbostock/4349509)
 [![4343214](http://bl.ocks.org/mbostock/raw/4343214/thumbnail.png)](http://bl.ocks.org/mbostock/4343214)
+[![1667367](http://bl.ocks.org/mbostock/raw/1667367/thumbnail.png)](http://bl.ocks.org/mbostock/1667367)
 
 <a name="brush" href="#wiki-brush">#</a> d3.svg.<b>brush</b>()
 
