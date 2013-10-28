@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Layouts]] ▸ **Force Layout**
 
-一种基于力学原理的伸缩弹性图表布局，通过[韦尔来积分法Verlet integration](http://en.wikipedia.org/wiki/Verlet_integration)进行位置计算来实现[简单的牵制、约束效果](http://www.csse.monash.edu.au/~tdwyer/Dwyer2009FastConstraints.pdf).。了解更多物理模拟相关内容，可参考[Thomas Jakobsen](http://www.gamasutra.com/resource_guide/20030121/jacobson_pfv.htm)。This implementation uses a [quadtree](Quadtree-Geom) to accelerate charge interaction using the [Barnes–Hut approximation](http://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation).当连接为固定长度的几何条件时，电荷斥力、伪重力被用以保证节点在可视区域的中心位置，同时避免了expulsion of disconnected subgraphs。此外，自定义的力和条件限制也可以被应用于“tick”事件，方法很简单，改变节点的*x*和*y*属性即可。
+A flexible force-directed graph layout implementation using position Verlet integration to allow simple constraints. For more on physical simulations, see Thomas Jakobsen. This implementation uses a quadtree to accelerate charge interaction using the Barnes–Hut approximation. In addition to the repulsive charge force, a pseudo-gravity force keeps nodes centered in the visible area and avoids expulsion of disconnected subgraphs, while links are fixed-distance geometric constraints. Additional custom forces and constraints may be applied on the "tick" event, simply by updating the x and y attributes of nodes.
 
 ![force](force.png)
 
