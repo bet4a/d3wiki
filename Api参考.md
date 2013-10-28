@@ -41,10 +41,10 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[d3.mouse|Selections#wiki-d3_mouse]] - 获取鼠标的相对某元素的坐标。
 * [[d3.touches|Selections#wiki-d3_touches]] - 获取相对某元素的触控点坐标。
 
-### [Transitions](Transitions)
+### [过渡效果](Transitions)
 
-* [d3.transition](Transitions#wiki-d3_transition) - start an animated transition.
-* [transition.delay](Transitions#wiki-delay) - specify per-element delay in milliseconds.
+* [d3.transition](Transitions#wiki-d3_transition) - 开始一个动态过渡。
+* [transition.delay](Transitions#wiki-delay) - 指定每个单位延迟时间（单位：毫秒ms）。
 * [transition.duration](Transitions#wiki-duration) - specify per-element duration in milliseconds.
 * [transition.ease](Transitions#wiki-ease) - specify transition easing function.
 * [transition.attr](Transitions#wiki-attr) - smoothly transition to the new attribute value.
@@ -461,7 +461,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[d3.time.year|Time-Intervals#wiki-year]] - every year (e.g., January 1, 12:00 AM).
 * [[d3.time.years|Time-Intervals#wiki-years]] - alias for year.range.
 
-## [d3.layout (Layouts)](Layouts)
+## [d3.layout (构图、设计样式)](Layouts)
 
 ### [[Bundle|Bundle-Layout]]
 
@@ -490,12 +490,12 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[cluster.size|Cluster-Layout#wiki-size]] - get or set the layout size in *x* and *y*.
 * [[cluster.nodeSize|Cluster-Layout#wiki-nodeSize]] - specify a fixed size for each node.
 
-### [[Force|Force-Layout]]
+### [[Force（力学）|Force-Layout]]
 
-* [[d3.layout.force|Force-Layout#wiki-force]] - position linked nodes using physical simulation.
-* [[force.on|Force-Layout#wiki-on]] - listen to updates in the computed layout positions.
-* [[force.nodes|Force-Layout#wiki-nodes]] - get or set the array of nodes to layout.
-* [[force.links|Force-Layout#wiki-links]] - get or set the array of links between nodes.
+* [[d3.layout.force|Force-Layout#wiki-force]] -节点（node）基于物理模拟的位置连接。
+* [[force.on|Force-Layout#wiki-on]] - 监听布局位置的变化。
+* [[force.nodes|Force-Layout#wiki-nodes]] - 获得或设置布局中的节点（node）阵列组。
+* [[force.links|Force-Layout#wiki-links]] - 获得或设置布局中节点间的连接（Link）阵列组。.
 * [[force.size|Force-Layout#wiki-size]] - get or set the layout size in *x* and *y*.
 * [[force.linkDistance|Force-Layout#wiki-linkDistance]] - get or set the link distance.
 * [[force.linkStrength|Force-Layout#wiki-linkStrength]] - get or set the link strength.
