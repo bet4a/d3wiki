@@ -204,6 +204,9 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>60 years of french first names<br><a href="http://dataaddict.fr/prenoms/"><img src="http://dataaddict.fr/wp-content/uploads/2013/06/prenom_img_home.png" width="202"></a></td>
     <td>Sequences sunburst<br><a href="http://bl.ocks.org/kerryrodden/7090426"><img src="https://gist.github.com/kerryrodden/7090426/raw/thumbnail.png" width="202"></a></td>
   </tr>
+  <tr>
+    <td>Hip Replacement by State<br><a href="http://vida.io/discussion/s5qo5Gwrct5HNxAD2"><img src="https://s3.amazonaws.com/vida-production/thumbnails/s5qo5Gwrct5HNxAD2" width="202"></a></td>
+  </tr>
 </table>
 
 ## Basic Charts
