@@ -42,6 +42,7 @@ Please feel free to add links to your work!
 * [Understanding Selections](http://prcweb.co.uk/lab/selection/) - Peter Cook
 * [Visualize with d3js](http://hsilomedus.me/wp-content/uploads/javadayd3/index.html) - Pance Cavkovski
 * [Drawing a many-to-many relationship with a simple blog-post-tag example](http://vijayrc.com/vectorclocks/vrc/post/d3) - Vijay Chakravarthy
+* [Rapid D3.js Tutorials](http://www.youtube.com/watch?v=xMSykYiq3SY&list=PLRJOPJMJE3OTcg5TNV6ZdbIDbFITu2OXu) - Phuoc Do of [vida.io](http://vida.io)
 
 ### Specific Techniques
 
