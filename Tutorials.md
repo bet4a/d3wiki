@@ -5,6 +5,7 @@ Please feel free to add links to your work!
 ### Introductions & Core Concepts
 
 * [Introduction](http://mbostock.github.com/d3/)
+* [Let’s Make a Bar Chart](http://bost.ocks.org/mike/bar/)
 * [Three Little Circles](http://mbostock.github.com/d3/tutorial/circle.html)
 * [Thinking with Joins](http://bost.ocks.org/mike/join/)
 * [How Selections Work](http://bost.ocks.org/mike/selection/)
@@ -20,8 +21,6 @@ Please feel free to add links to your work!
 * [D3.js experiments in the console](http://www.ultrasaurus.com/sarahblog/2012/03/d3-js-experiments-in-the-console/) - Sarah Allen
 * [Creating Basic Charts using d3.js](http://www.verisi.com/resources/d3-tutorial-basic-charts.htm) - Ben Lorica
 * [Get dirty with data using d3.js](http://2011.12devsofxmas.co.uk/2012/01/data-visualisation/) - Clinton Montague
-* [A Bar Chart, Part 1](http://mbostock.github.com/d3/tutorial/bar-1.html)
-* [A Bar Chart, Part 2](http://mbostock.github.com/d3/tutorial/bar-2.html)
 * [For Protovis Users](http://mbostock.github.com/d3/tutorial/protovis.html)
 * [Manipulating data like a boss with d3](http://www.jeromecukier.net/blog/2012/05/28/manipulating-data-like-a-boss-with-d3/) - Jerome Cukier
 * [Creating Animations and Transitions With D3](http://blog.visual.ly/creating-animations-and-transitions-with-d3-js/) - Jerome Cukier
