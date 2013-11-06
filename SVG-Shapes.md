@@ -369,7 +369,7 @@ function outerRadius(d) {
 }
 ```
 
-Typically, a *outerRadius*-accessor is specified because the input data is in a different format, because you want to apply a [[scale|Quantitative Scales]], or because you want to specify a constant inner radius for a donut chart.
+Typically, a *outerRadius*-accessor is specified because the input data is in a different format, because you want to apply a [[scale|Quantitative Scales]], or because you want to specify a constant outer radius for a donut chart.
 
 The *outerRadius*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *outerRadius*-accessor as a constant rather than a function.
 
