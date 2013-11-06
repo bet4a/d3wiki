@@ -31,15 +31,15 @@ Alias for *interval*.floor(*date*). For example, `d3.time.day(new Date())` retur
 
 <a name="interval_floor" href="#wiki-interval_floor">#</a> <i>interval</i>.<b>floor</b>(<i>date</i>)
 
-Returns the latest time interval before or equal to the specified *date*. For example, `d3.time.day.floor(new Date())` returns midnight (12:00 AM) on the current day, in local time.
+Rounds down the specified *date*, returning the latest time interval before or equal to *date*. For example, `d3.time.day.floor(new Date())` returns midnight (12:00 AM) on the current day, in local time.
 
 <a name="interval_round" href="#wiki-interval_round">#</a> <i>interval</i>.<b>round</b>(<i>date</i>)
 
-Returns the closest time interval to the specified *date*. For example, `d3.time.day.round(new Date())` returns midnight (12:00 AM) on the current day if it is on or before noon, and midnight of the following day if it is after noon.
+Rounds up or down the specified *date*, returning the closest time interval to *date*. For example, `d3.time.day.round(new Date())` returns midnight (12:00 AM) on the current day if it is on or before noon, and midnight of the following day if it is after noon.
 
 <a name="interval_ceil" href="#wiki-interval_ceil">#</a> <i>interval</i>.<b>ceil</b>(<i>date</i>)
 
-Returns the earliest time interval after the specified *date*. For example, `d3.time.day.ceil(new Date())` returns midnight (12:00 AM) on the following day, in local time.
+Rounds up the specified *date*, returning the earliest time interval after or equal to *date*. For example, `d3.time.day.ceil(new Date())` returns midnight (12:00 AM) on the following day, in local time (unless you happen to run this code at exactly midnight, in which case it returns the current time).
 
 <a name="interval_range" href="#wiki-interval_range">#</a> <i>interval</i>.<b>range</b>(<i>start</i>, <i>stop</i>[, <i>step</i>])
 
