@@ -267,6 +267,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 </table>
 
 ## Examples
+* [Are global CO2 emissions still rising?] (http://infographics.pbl.nl/website/globalco2/) - Allard Warrink and Jeroen Dolmans
 * [BLOSUM Substitution Matrices as a Dynamic Network (force layout)] (http://ahmetrasit.com/blosum/) - Ahmet R. Ozturk, Ankara
 * [50 Years of Change (map, matrix, and block bar chart)] (http://50yearsofchange.com/) - Erin Hamilton, Rashauna Mead, and Vanessa Knoppke-Wetzel, UW-Madison
 * [Hurricane #Sandy Twitter DataViz] (http://geo-odyssey.com/links/sandy/) - Chris Cantey, Caroline Rose, Morgan Jarocki, UW-Madison
