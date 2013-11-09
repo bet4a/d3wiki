@@ -51,9 +51,9 @@ python -m http.server 8888 &
 
 一旦服务器运行起来，访问 <http://localhost:8888/>.
 
-如果你使用的D3去开发一下新的可视化展现，D3的资源库可以立即使用，另外，如果你想扩展D3的功能，修改bug或者运行测试，你应该创建自己的[D3资源库分支](/mbostock/d3/fork_select)，同时安装[Node.js](http://nodejs.org/)。从资源库的根目录，可以安装D3的依赖库：
+如果你使用的D3去开发一下新的可视化展现，D3的资源库可以立即使用，另外，如果你想扩展D3的功能，修改bug或者运行测试，你应该创建自己的[D3资源库分支](https://github.com/mbostock/d3)，同时安装[Node.js](http://nodejs.org/)。从资源库的根目录，可以安装D3的依赖库：
 
-    npm install
+    npm install d3
 
 接着运行测试, 使用命令:
 
