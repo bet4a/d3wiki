@@ -234,6 +234,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   <tr height="146" valign="top">
     <td>Donut Multiples<br><a href="http://bl.ocks.org/mbostock/3888852"><img src="http://bl.ocks.org/mbostock/raw/3888852/thumbnail.png" width="202"></a></td>
     <td>Bar Chart with Negative Values<br><a href="http://bl.ocks.org/mbostock/2368837"><img src="http://bl.ocks.org/mbostock/raw/2368837/thumbnail.png" width="202"></a></td>
+    <td>Dual-scaled Bar Charts<br><a href="https://gist.github.com/liufly/7431511"><img src="https://raw.github.com/liufly/Dual-scaled-D3-Bar-Charts/master/preview/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
