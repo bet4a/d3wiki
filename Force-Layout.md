@@ -112,7 +112,7 @@ Equivalent to:
 force.alpha(.1);
 ```
 
-Sets the cooling parameter *alpha* to 0.1. This method sets the internal *alpha* parameter to 0.1, and then restarts the [timer](Transitions#wiki-d3_timer). Typically, you don't need to call this method directly; it is called automatically by [start](Force-Layout#wiki-start). It is also called automatically by [drag](Force-Layout#wiki-drag) on mouseover.
+Sets the cooling parameter *alpha* to 0.1. This method sets the internal *alpha* parameter to 0.1, and then restarts the [timer](Transitions#wiki-d3_timer). Typically, you don't need to call this method directly; it is called automatically by [start](Force-Layout#wiki-start). It is also called automatically by [drag](Force-Layout#wiki-drag) during a drag gesture.
 
 <a name="stop" href="Force-Layout#wiki-stop">#</a> force.<b>stop</b>()
 
