@@ -2,11 +2,11 @@
 
 Enclosure diagrams use containment (nesting) to represent the hierarchy. The size of each leaf node’s circle reveals a quantitative dimension of each data point. The enclosing circles show the approximate cumulative size of each subtree, but note that because of wasted space there is some distortion between levels; only the leaf nodes can be compared accurately. Although [circle packing](http://en.wikipedia.org/wiki/Circle_packing) does not use space as efficiently as a [[treemap|Treemap-Layout]], the “wasted” space more prominently reveals the hierarchy.
 
-[![pack](pack.png)](http://mbostock.github.com/d3/ex/pack.html)
+[![pack](pack.png)](http://bl.ocks.org/mbostock/4063530)
 
 By flattening the hierarchy, the **pack layout** can also be used to create [bubble charts](http://www-958.ibm.com/software/data/cognos/manyeyes/page/Bubble_Chart.html):
 
-[![bubble](bubble.png)](http://mbostock.github.com/d3/ex/bubble.html)
+[![bubble](bubble.png)](http://bl.ocks.org/mbostock/4063269)
 
 Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
 
