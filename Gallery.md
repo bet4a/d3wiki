@@ -207,7 +207,8 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   <tr>
     <td>Hip Replacement by State<br><a href="http://vida.io/discussion/s5qo5Gwrct5HNxAD2"><img src="https://s3.amazonaws.com/vida-production/thumbnails/s5qo5Gwrct5HNxAD2" width="202"></a></td>
     <td>Compare time series with irregular interval<br><a href="http://bl.ocks.org/marufbd/7191340"><img src="https://gist.github.com/marufbd/7191340/raw/ab057eef9227e5498431c030c6ad5048cb326a3a/thumbnail.png" width="202"></a></td>
-    <td>Table with Embedded Line Chart<br><a href="http://bl.ocks.org/llimllib/841dd138e429bb0545df"><img src="https://gist.github.com/llimllib/841dd138e429bb0545df/raw/a63c01b974e8e6e3be9a06eb1f67567cd7b4c322/table.jpg"></a></td>
+    <td>Table with Embedded Line Chart<br><a href="http://bl.ocks.org/llimllib/841dd138e429bb0545df"><img src="https://gist.github.com/llimllib/841dd138e429bb0545df/raw/a63c01b974e8e6e3be9a06eb1f67567cd7b4c322/table.jpg" width="202"></a></td>
+    <td>Dual-scale Bar Chart<br><a href="https://github.com/liufly/Dual-scale-D3-Bar-Chart"><img src="https://raw.github.com/liufly/Dual-scale-D3-Bar-Chart/master/preview/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
@@ -537,7 +538,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Sortable bars: Foreign aid, corruption and internet use](http://theoldbeggar.com/aid/) - Nikhil Sonnad
 * [Grouped and Stacked Bar Chart](https://github.com/gencay/stackedGroupedChart)
 * [Waterfall Chart](http://bl.ocks.org/rsloan/7123450)
-* [Dual-scaled Bar Chart](https://gist.github.com/liufly/7431511)
+* [Dual-scale Bar Chart](https://github.com/liufly/Dual-scale-D3-Bar-Chart)
 
 #### Histogram
 
