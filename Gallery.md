@@ -613,7 +613,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Groups and Labels showing relations of football players participating in Euro 2012](http://www.torlaune.de/euro-2012/spieler-relationen/)
 * [Chicago Lobbyists](http://www.christophermanning.org/projects/chicago-lobbyists-force-directed-graph-visualization/)
 * [Hacker News Visualisation](http://fanfarefantastique.com/vishna/)
-* [Web performance](http://www.noslow.net/blog/performance/visualizing-web-performance/)
+* [Web performance](http://pmsangal.tumblr.com/post/65499782255/visualizing-web-performance-1)
 * [2011 International Phone Traffic](http://fcc.github.io/calltraffic/traffic2011.html)
 * [Gravity by Disqus](http://disqus.com/gravity)
 * [Navigate site by tags focus](http://xliberation.com/googlecharts/d3nodefocustagsite.html)
