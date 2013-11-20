@@ -58,7 +58,7 @@ Aborts this request, if it is currently in-flight. See [XMLHttpRequest’s abort
 
 Adds or removes an event *listener* to this request for the specified *type*. The type must be one of the following:
 
-* _beforestart_ - before the request is sent, to allow custom headers and the like to be set.
+* _beforesend_ - before the request is sent, to allow custom headers and the like to be set.
 * _progress_ - to monitor the [progress of the request](http://www.w3.org/TR/progress-events/).
 * _load_ - when the request completes successfully.
 * _error_ - when the request completes unsuccessfully; this includes 4xx and 5xx response codes.
