@@ -18,12 +18,6 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Force-Directed Graph<br><a href="http://bl.ocks.org/mbostock/4062045"><img src="http://d3js.org/ex/force.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
-    <td>Political Influence<br><a href="http://www.brightpointinc.com/interactive/political_influence/"><img src="http://www.brightpointinc.com/interactive/images/influence.jpg" width="202"></a></td>
-    <td>Federal Budget<br><a href="http://www.brightpointinc.com/interactive/budget/"><img src="http://www.brightpointinc.com/interactive/images/budget.jpg" width="202"></a></td>
-    <td>US Trade Deficit<br><a href="http://www.brightpointinc.com/interactive/ustrade/"><img src="http://www.brightpointinc.com/interactive/images/ustrade.jpg" width="202"></a></td>
-    <td>Sequences sunburst<br><a href="http://bl.ocks.org/kerryrodden/7090426"><img src="https://gist.github.com/kerryrodden/7090426/raw/thumbnail.png" width="202"></a></td>
-</tr>
-<tr height="207" valign="top">
     <td>Circle Packing<br><a href="http://bl.ocks.org/mbostock/4063530"><img src="http://d3js.org/ex/pack.png" width="202"></a></td>
     <td>Population Pyramid<br><a href="http://bl.ocks.org/mbostock/4062085"><img src="http://d3js.org/ex/population.png" width="202"></a></td>
     <td>Stacked Bars<br><a href="http://bl.ocks.org/mbostock/3943967"><img src="http://d3js.org/ex/stack.png" width="202"></a></td>
@@ -82,6 +76,12 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Word Cloud<br><a href="http://www.jasondavies.com/wordcloud/"><img src="http://d3js.org/ex/cloud.png" width="202"></a></td>
     <td>Obama's Budget Proposal<br><a href="http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html"><img src="http://d3js.org/ex/budget.png" width="202"></a></td>
     <td>Facebook IPO<br><a href="http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html"><img src="http://d3js.org/ex/facebook-ipo.png" width="202"></a></td>
+</tr>
+<tr height="207" valign="top">
+    <td>Political Influence<br><a href="http://www.brightpointinc.com/interactive/political_influence/"><img src="http://www.brightpointinc.com/interactive/images/influence.jpg" width="202"></a></td>
+    <td>Federal Budget<br><a href="http://www.brightpointinc.com/interactive/budget/"><img src="http://www.brightpointinc.com/interactive/images/budget.jpg" width="202"></a></td>
+    <td>US Trade Deficit<br><a href="http://www.brightpointinc.com/interactive/ustrade/"><img src="http://www.brightpointinc.com/interactive/images/ustrade.jpg" width="202"></a></td>
+    <td>Sequences sunburst<br><a href="http://bl.ocks.org/kerryrodden/7090426"><img src="https://gist.github.com/kerryrodden/7090426/raw/thumbnail.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
     <td>Koalas to the Max<br><a href="http://www.koalastothemax.com/"><img src="http://d3js.org/ex/koalas.png" width="202"></a></td>
