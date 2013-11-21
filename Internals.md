@@ -28,7 +28,7 @@ Creates a new dispatcher object for the specified *types*. Each argument is a st
 var dispatch = d3.dispatch("start", "end");
 ```
 
-Then, you can access the dispatchers for the different event types as `event.start` and `event.end`. For example, you might add an event listener:
+Then, you can access the dispatchers for the different event types as `dispatch.start` and `dispatch.end`. For example, you might add an event listener:
 
 ```javascript
 dispatch.on("start", listener);
