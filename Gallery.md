@@ -55,7 +55,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 </tr>
 <tr height="207" valign="top">
     <td>Zoomable Area Chart<br><a href="http://mbostock.github.com/d3/talk/20111018/area-gradient.html"><img src="http://d3js.org/ex/area-gradient.png" width="202"></a></td>
-    <td>Calendar View<br><a href="http://mbostock.github.com/d3/talk/20111018/calendar.html"><img src="http://d3js.org/ex/flight-calendar.png" width="202"></a></td>
+    <td></td>
     <td>Rotating Cluster Layout<br><a href="http://mbostock.github.com/d3/talk/20111018/cluster.html"><img src="http://d3js.org/ex/cluster-radial.png" width="202"></a></td>
     <td>Sankey Diagram<br><a href="http://bost.ocks.org/mike/sankey/"><img src="http://d3js.org/ex/sankey.png" width="202"></a></td>
 </tr>
