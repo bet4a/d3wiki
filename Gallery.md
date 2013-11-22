@@ -87,7 +87,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Koalas to the Max<br><a href="http://www.koalastothemax.com/"><img src="http://d3js.org/ex/koalas.png" width="202"></a></td>
     <td>Particles<br><a href="http://bl.ocks.org/mbostock/1062544"><img src="http://d3js.org/ex/particles.png" width="202"></a></td>
     <td>Indented Tree<br><a href="http://bl.ocks.org/mbostock/1093025"><img src="http://d3js.org/ex/indented-tree.png" width="202"></a></td>
-    <td>Rounded Rect<br><a href="http://bl.ocks.org/mbostock/1123639"><img src="http://d3js.org/ex/ronded-rect.png" width="202"></a></td>
+    <td>Rounded Rect<br><a href="http://bl.ocks.org/mbostock/1123639"><img src="http://d3js.org/ex/rounded-rect.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
     <td>Tadpoles<br><a href="http://bl.ocks.org/mbostock/1136236"><img src="http://d3js.org/ex/sperm.png" width="202"></a></td>
