@@ -1,7 +1,7 @@
 > [Wiki](Home) ▸ **Gallery**
 
 Welcome to the **D3 gallery**! Feel free to add links to your work! More examples are available on [bl.ocks.org/mbostock](http://bl.ocks.org/mbostock). If you want to share an example and don't have your own hosting, consider using [Gist](http://gist.github.com) and [bl.ocks.org](http://bl.ocks.org).
-
+dua
 ## Visual Index
 
 <table>
@@ -214,7 +214,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Compare time series with irregular interval<br><a href="http://bl.ocks.org/marufbd/7191340"><img src="https://gist.github.com/marufbd/7191340/raw/ab057eef9227e5498431c030c6ad5048cb326a3a/thumbnail.png" width="202"></a></td>
     <td>Table with Embedded Line Chart<br><a href="http://bl.ocks.org/llimllib/841dd138e429bb0545df"><img src="https://gist.github.com/llimllib/841dd138e429bb0545df/raw/a63c01b974e8e6e3be9a06eb1f67567cd7b4c322/table.jpg" width="202"></a></td>
     <td>Dual-scale Bar Chart<br><a href="https://github.com/liufly/Dual-scale-D3-Bar-Chart"><img src="https://raw.github.com/liufly/Dual-scale-D3-Bar-Chart/master/preview/thumbnail.png" width="202"></a></td>
-    <td></td>
+    <td>Animated Pie and Line Chart<br><a href="http://codepen.io/stefanjudis/full/gkHwJ"><img src="http://stefanjudis.de/share/animatedPieAndLineChart.jpg" width="202"></a></td>
 </tr>
 </table>
 
