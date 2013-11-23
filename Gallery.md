@@ -704,6 +704,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [San Francisco Contours](http://bl.ocks.org/karmadude/5820393) - Liji Jinaraj
 * [Global Oil Production & Consumption since 1965](http://labs.wnstnsmth.net/worldoil) - [Timo Grossenbacher](http://wnstnsmth.net)
 * [Nielsen Media Markets](http://bl.ocks.org/simzou/6459889) - Simon Zou
+* [d3.micromaps](https://github.com/jazzido/d3micromaps) — An implementation of [Linked Micromaps Plots](http://mason.gmu.edu/~dcarr/lib/v9n1.pdf) (D. Carr et al.) by [Manuel Aristarán](http://jazzido.com)
 
 #### Misc Charts
 
