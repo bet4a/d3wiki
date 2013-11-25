@@ -216,6 +216,9 @@ dua
     <td>Dual-scale Bar Chart<br><a href="https://github.com/liufly/Dual-scale-D3-Bar-Chart"><img src="https://raw.github.com/liufly/Dual-scale-D3-Bar-Chart/master/preview/thumbnail.png" width="202"></a></td>
     <td>Animated Pie and Line Chart<br><a href="http://codepen.io/stefanjudis/full/gkHwJ"><img src="http://stefanjudis.de/share/animatedPieAndLineChart.jpg" width="202"></a></td>
 </tr>
+<tr>
+    <td>Matrix Data Visualization<br><a href="http://benjiec.github.io/scatter-matrix/demo/demo.html"><img src="http://d3js.org/ex/iris-splom.png" width="202"></a></td>
+</tr>
 </table>
 
 ## Basic Charts
