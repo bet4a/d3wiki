@@ -730,6 +730,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 
 * [Superformula Explorer](http://bl.ocks.org/mbostock/1021103)
 * [Superformula Tweening](http://bl.ocks.org/mbostock/1020902)
+* [LTE Protocol visualization](http://mohdaslam.com/lte-rrc-rlc-mac-visualization-using-bubble-pack-layout/ )
 * [OMG Particles!](http://bl.ocks.org/mbostock/1062544)
 * [Line Tension](http://bl.ocks.org/mbostock/1016220)
 * [Segmented Lines and Slope Coloring](http://bl.ocks.org/mbostock/1117287)
