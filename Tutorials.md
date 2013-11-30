@@ -5,7 +5,7 @@ Please feel free to add links to your work!
 ### Introductions & Core Concepts
 
 * [Introduction](http://mbostock.github.com/d3/)
-* [Let’s Make a Bar Chart, Parts I](http://bost.ocks.org/mike/bar/) & [II](http://bost.ocks.org/mike/bar/2/)
+* [Let’s Make a Bar Chart, Parts I](http://bost.ocks.org/mike/bar/), [II](http://bost.ocks.org/mike/bar/2/) & [III](http://bost.ocks.org/mike/bar/3/)
 * [Three Little Circles](http://mbostock.github.com/d3/tutorial/circle.html)
 * [Thinking with Joins](http://bost.ocks.org/mike/join/)
 * [How Selections Work](http://bost.ocks.org/mike/selection/)
