@@ -126,7 +126,7 @@ dua
     <td>Force Layout Editor<br><a href="http://bl.ocks.org/benzguo/4370043"><img src="http://bl.ocks.org/benzguo/raw/4362310/thumbnail.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
-    <td>Open Knowledge Festival<br><a href="http://okfestival.org/hashtag/#visualisation"><img src="http://floapps.com/lab/misc/oklogo/ok.png" width="202"></a></td>
+    <td>Open Knowledge Festival<br><a href="http://www.floapps.com/cases/open-knowledge-festival/"><img src="http://floapps.com/lab/misc/oklogo/ok.png" width="202"></a></td>
     <td>Visual Hacker News<br><a href="http://fanfarefantastique.com/vishna/"><img src="http://fanfarefantastique.com/images/vhnthumb.png" width="202"></a></td>
     <td>Hierarchical Classification Tree<br><a href="http://www.bitjuice.com.au/research/#hierarchicalclassificationexample"><img src="http://www.bitjuice.com.au/wp-content/uploads/2013/08/hierarchical_visualisation_example.png" width="202"></a></td>
     <td>Gene Expression<br><a href="http://sulab.org/2013/02/data-chart-plugin-beta/"><img src="http://sulab.org/wordpress/wp-content/uploads/2013/02/data_chart_icon_2.jpg" width="202"></a></td>
