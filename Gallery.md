@@ -227,7 +227,8 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Hurricane Forecast Path Evolution<br><a href="http://www.weather.com/news/weather-hurricanes/sandy-path-evolution-20121026"><img src="http://i.imwx.com/web/multimedia/images/sandy-cones-thumbnail.png" width="200"></a></td>
     <td>Sandy's Storm Surge<br><a href="http://www.weather.com/news/weather-hurricanes/sandy-surge-interactive-20121105"><img src="http://i.imwx.com/web/multimedia/images/sandy-surge-thumbnail.png" width="200"></a></td>
     <td>Monthly NCDC Climate Summary<br><a href="http://www.weather.com/news/april-ncdc-report-20130515"><img src="http://i.imwx.com/web/multimedia/images/ncdc-april-thumbnail.png" width="200"></a></td>
-    <td></td>
+
+     <td>Epidemic Game <a href="http://vax.herokuapp.com"><img src="http://imgur.com/h3anuVg.gif" width="202"></a></td>
 </tr>
 
 </table>
