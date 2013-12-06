@@ -23,7 +23,7 @@ The elements are returned in the original order, matching *values*, even if a [s
 
 <a name="value" href="Pie-Layout#wiki-value">#</a> pie.<b>value</b>([<i>accessor</i>])
 
-Specifies how to extract a value from the associated data; *accessor* is a function which is invoked on each input value passed to [pie](Pie-Layout#wiki-_pie), equivalent to calling *values.map(accessor)* before computing the pie layout. The default value function is the built-in [Number](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number), which is similar to the identity function. If *accessor* is not specified, returns the current value accessor.
+Specifies how to extract a value from the associated data (e.g. sets the accessor function for the pie layout to use); *accessor* is a function which is invoked on each input value passed to [pie](Pie-Layout#wiki-_pie), equivalent to calling *values.map(accessor)* before computing the pie layout. The function is passed two arguments: the current datum and the current index. The default value function is the built-in [Number](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number), which is similar to the identity function. If *accessor* is not specified, returns the current value accessor.
 
 <a name="sort" href="Pie-Layout#wiki-sort">#</a> pie.<b>sort</b>([<i>comparator</i>])
 
