@@ -230,6 +230,9 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 
      <td>Epidemic Game <a href="http://vax.herokuapp.com"><img src="http://imgur.com/h3anuVg.gif" width="202"></a></td>
 </tr>
+<tr height="207" valign="top">
+    <td>UK Temperature Graphs<br><a href="http://charts.animateddata.co.uk/uktemperaturelines"><img src="http://animateddata.co.uk/img/d3-gallery/uktemperaturelines3.jpg" width="202"></a></td>
+</tr>
 
 </table>
 
