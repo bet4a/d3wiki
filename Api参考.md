@@ -132,10 +132,10 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 
 ### [[Math]]
 
-* [[d3.random.normal|Math#wiki-random_normal]] - generate a random number with a normal distribution.
-* [[d3.random.logNormal|Math#wiki-random_logNormal]] - generate a random number with a log-normal distribution.
-* [[d3.random.irwinHall|Math#wiki-random_irwinHall]] - generate a random number with an Irwin–Hall distribution.
-* [[d3.transform|Math#wiki-transform]] - compute the standard form of a 2D matrix transform.
+* [[d3.random.normal|Math#wiki-random_normal]] - 利用正态分布产生一个随机数.
+* [[d3.random.logNormal|Math#wiki-random_logNormal]] - 利用对数正态分布产生一个随机数.
+* [[d3.random.irwinHall|Math#wiki-random_irwinHall]] - 利用Irwin–Hall分布（简单可行并且容易编程的正态分布实现方法）产生一个随机数.
+* [[d3.transform|Math#wiki-transform]] - 将svg的tranform格式转化为标准的2D转换矩阵字符串格式.
 
 ### [[Loading External Resources|Requests]]
 
