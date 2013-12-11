@@ -94,6 +94,7 @@ Also checkout [D3.js on Hacker Notes](http://www.thehackernotes.com/mbostock/d3)
 * [Design process of The Electoral Map](http://shancarter.com/talk/2012/visualized/)<br>Shan Carter, Big Data Think Tank December 2012
 * [D3.js - Data Visualisation in the Browser](http://prcweb.co.uk/slides/d3/)<br>Peter Cook, Async Brighton, January 2013
 * [An Intro to D3.js - Data-Driven Delight](http://anna.ps/talks/fel/)<br>Anna Powell-Smith, Front-End London, January 2013
+* [Building apps with D3.js](http://www.youtube.com/watch?v=hhSlX_r7GZA)<br>Nathan Vander Wilt, CascadiaJS, November 2013
 
 ## Meetups
 
