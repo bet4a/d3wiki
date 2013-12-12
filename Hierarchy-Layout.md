@@ -15,7 +15,6 @@ Although not a hierarchy layout, the [bundle layout](Bundle-Layout) is also desi
 Creates a new hierarchy layout with the default settings: the default sort order is by descending value; the default value accessor assumes each input data is an object with a numeric value attribute; and the default children accessor assumes each input data is an object with a children array.
 
 <a name="_hierarchy" href="#wiki-_hierarchy">#</a> <b>hierarchy</b>(<i>root</i>)
-<br><a name="nodes" href="#wiki-nodes">#</a> hierarchy.<b>nodes</b>(<i>root</i>)
 
 Runs the hierarchy layout, returning the array of nodes associated with the specified *root* node. The input argument to the layout is the root node of the hierarchy, and the output return value is an array representing the computed positions of all nodes. Several attributes are populated on each node:
 
@@ -28,7 +27,7 @@ In addition, most hierarchy layouts also compute *x* and *y* positions for nodes
 
 <a name="links" href="#wiki-links">#</a> hierarchy.<b>links</b>(<i>nodes</i>)
 
-Given the specified array of *nodes*, such as those returned by [nodes](Hierarchy-Layout#wiki-nodes), returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. Each link is an object with two attributes:
+Given the specified array of *nodes* returns an array of objects representing the links from parent to child for each node. Leaf nodes will not have any links. Each link is an object with two attributes:
 
 * source - the parent node (as described above).
 * target - the child node.
