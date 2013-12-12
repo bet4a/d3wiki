@@ -280,7 +280,7 @@ The `datum` method is useful for accessing HTML5 [custom data attributes](http:/
 </ul>
 ```
 
-You can expose the custom data attributes to D3 by setting each element’s data as the built-in [dataset](http://www.w3.org/TR/html5/global-attributes.html#dom-dataset) property:
+You can expose the custom data attributes to D3 by setting each element’s data as the built-in [dataset](http://www.w3.org/TR/html5/dom.html#dom-dataset) property:
 
 ```javascript
 selection.datum(function() { return this.dataset; })
