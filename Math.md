@@ -12,6 +12,10 @@ Returns a function for generating random numbers with a [normal (Gaussian) distr
 
 Returns a function for generating random numbers with a [log-normal distribution](http://en.wikipedia.org/wiki/Log-normal_distribution). The expected value of the random variable’s natural logrithm is *mean*, with the given standard *deviation*. If *deviation* is not specified, it defaults to 1.0; if *mean* is not specified, it defaults to 0.0.
 
+<a name="d3_random_bates" href="#wiki-d3_random_bates">#</a> d3.random.<b>bates</b>(<i>count</i>)
+
+Returns a function for generating random numbers with a [Bates distribution](http://en.wikipedia.org/wiki/Bates_distribution). The number of independent variables is specified by *count*.
+
 <a name="d3_random_irwinHall" href="#wiki-d3_random_irwinHall">#</a> d3.random.<b>irwinHall</b>(<i>count</i>)
 
 Returns a function for generating random numbers with an [Irwin–Hall distribution](http://en.wikipedia.org/wiki/Irwin–Hall_distribution). The number of independent variables is specified by *count*.
