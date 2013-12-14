@@ -132,6 +132,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 
 * [[d3.random.normal|Math#wiki-random_normal]] - generate a random number with a normal distribution.
 * [[d3.random.logNormal|Math#wiki-random_logNormal]] - generate a random number with a log-normal distribution.
+* [[d3.random.bates|Math#wiki-random_bates]] - generate a random number with a Bates distribution.
 * [[d3.random.irwinHall|Math#wiki-random_irwinHall]] - generate a random number with an Irwin–Hall distribution.
 * [[d3.transform|Math#wiki-transform]] - compute the standard form of a 2D matrix transform.
 
