@@ -217,10 +217,10 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Animated Pie and Line Chart<br><a href="http://codepen.io/stefanjudis/full/gkHwJ"><img src="http://stefanjudis.de/share/animatedPieAndLineChart.jpg" width="202"></a></td>
 </tr>
 <tr>
-    <td>Matrix Data Visualization with Scatterplots<br><a href="http://benjiec.github.io/scatter-matrix/demo/demo.html"><img src="http://d3js.org/ex/iris-splom.png" width="202"></a></td>
-		<td>Live Power Outages In Maine<br><a href="http://rud.is/outage/"><img src="http://rud.is/outage/thumb.png" width="202"></a></td>
-<td>Relative Size Of The Planets<br><a href="http://www.ununpentium.co.uk/pages/planets.jsp"><img src="http://i39.tinypic.com/ngsoj8.png" width="202"></a></td>
-<td>Bitcoin Price Trends<br><a href="http://bitcointrends.herokuapp.com/"><img src="https://s3.amazonaws.com/bitcointrends/graphcaptured.PNG" width="202" height="202"></a></td>
+    <td>Multivariate Data Exploration with Scatterplots<br><a href="http://benjiec.github.io/scatter-matrix/demo/demo.html"><img src="http://benjiec.github.io/scatter-matrix/demo/demo.png" width="202"></a></td>
+    <td>Live Power Outages In Maine<br><a href="http://rud.is/outage/"><img src="http://rud.is/outage/thumb.png" width="202"></a></td>
+    <td>Relative Size Of The Planets<br><a href="http://www.ununpentium.co.uk/pages/planets.jsp"><img src="http://i39.tinypic.com/ngsoj8.png" width="202"></a></td>
+    <td>Bitcoin Price Trends<br><a href="http://bitcointrends.herokuapp.com/"><img src="https://s3.amazonaws.com/bitcointrends/graphcaptured.PNG" width="202" height="202"></a></td>
 
 </tr>
 <tr height="207" valign="top">
