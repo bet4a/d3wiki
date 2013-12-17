@@ -101,19 +101,19 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[d3.permute|Arrays#wiki-d3_permute]] - 以指定顺序排列数组中的元素.
 * [[d3.zip|Arrays#wiki-d3_zip]] - 将多个数组合并成一个数组的数组，新数组的的第i个元素是原来各个数组中第i个元素组成的数组.
 * [[d3.transpose|Arrays#wiki-d3_transpose]] - 矩阵转置，通过d3.zip实现.
-* [[d3.pairs|Arrays#wiki-d3_pairs]] - 返回临近元素对的数组，d3.pairs([1, 2, 3, 4]); // returns [[1, 2], [2, 3], [3, 4]].
+* [[d3.pairs|Arrays#wiki-d3_pairs]] - 返回临近元素对的数组，d3.pairs([1, 2, 3, 4]); // returns [ [1, 2], [2, 3], [3, 4] ].
 * [[d3.keys|Arrays#wiki-d3_keys]] - 返回关联数组(哈希表、json、object对象)的key组成的数组.
-* [[d3.values|Arrays#wiki-d3_values]] - 返回关联数组(哈希表、json、object对象)的value组成的数组.
-* [[d3.entries|Arrays#wiki-d3_entries]] - 返回关联数组(哈希表、json、object对象)的key-value实体组成的数组. d3.entries({ foo: 42 }); // returns [{key: "foo", value: 42}].
-* [[d3.merge|Arrays#wiki-d3_merge]] - merge multiple arrays into one array.
-* [[d3.range|Arrays#wiki-d3_range]] - generate a range of numeric values.
-* [[d3.nest|Arrays#wiki-d3_nest]] - group array elements hierarchically.
-* [[nest.key|Arrays#wiki-nest_key]] - add a level to the nest hierarchy.
-* [[nest.sortKeys|Arrays#wiki-nest_sortKeys]] - sort the current nest level by key.
-* [[nest.sortValues|Arrays#wiki-nest_sortValues]] - sort the leaf nest level by value.
-* [[nest.rollup|Arrays#wiki-nest_rollup]] - specify a rollup function for leaf values.
-* [[nest.map|Arrays#wiki-nest_map]] - evaluate the nest operator, returning an associative array.
-* [[nest.entries|Arrays#wiki-nest_entries]] - evaluate the nest operator, returning an array of key-values tuples.
+* [[d3.values|Arrays#wiki-d3_values]] - 返回关联数组的value组成的数组.
+* [[d3.entries|Arrays#wiki-d3_entries]] - 返回关联数组的key-value实体组成的数组, d3.entries({ foo: 42 }); // returns [{key: "foo", value: 42}].
+* [[d3.merge|Arrays#wiki-d3_merge]] - 将多个数组连成一个，类似于原生方法concat. d3.merge([ [1], [2, 3] ]); // returns [1, 2, 3].
+* [[d3.range|Arrays#wiki-d3_range]] - 获得一个数列. d3.range([start, ]stop[, step])
+* [[d3.nest|Arrays#wiki-d3_nest]] - 获得一个nest对象，将数组组织成层级结构.
+* [[nest.key|Arrays#wiki-nest_key]] - 为nest层级结构增加一个层级.
+* [[nest.sortKeys|Arrays#wiki-nest_sortKeys]] - 将当前的nest层级结构按key排序.
+* [[nest.sortValues|Arrays#wiki-nest_sortValues]] - 将叶nest层级按value排序.
+* [[nest.rollup|Arrays#wiki-nest_rollup]] - 设置修改叶节点值的函数.
+* [[nest.map|Arrays#wiki-nest_map]] - 执行nest操作, 返回一个关联数组(json).
+* [[nest.entries|Arrays#wiki-nest_entries]] - 执行nest操作, 返回一个key-value数组. 如果nest.map返回的结果类似于{ foo: 42 }, 则nest.entries返回的结果类似于[{key: "foo", value: 42}].
 * [d3.map](Arrays#wiki-d3_map) - a shim for ES6 maps, since objects are not hashes!
 * [map.has](Arrays#wiki-map_has) - returns true if the map contains the specified key.
 * [map.get](Arrays#wiki-map_get) - returns the value for the specified key.
