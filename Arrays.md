@@ -234,6 +234,10 @@ tbody.selectAll('tr').data(yields)
 
 Returns an array of arrays, where the ith array contains the ith element from each of the argument *arrays*. The returned array is truncated in length to the shortest array in *arrays*. If *arrays* contains only a single array, the returned array contains one-element arrays. With no arguments, the returned array is empty.
 
+```js
+d3.zip([1, 2], [3, 4]); // returns [[1, 3], [2, 4]]
+```
+
 <a name="d3_transpose" href="#wiki-d3_transpose">#</a> d3.<b>transpose</b>(<i>matrix</i>)
 
 Equivalent to `d3.zip.apply(null, matrix)`; uses the zip operator as a two-dimensional [[matrix transpose|http://en.wikipedia.org/wiki/Transpose]].
