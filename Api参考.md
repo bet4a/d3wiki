@@ -84,16 +84,16 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 
 ### [[Working with Arrays|Arrays]]
 
-* [[d3.ascending|Arrays#wiki-d3_ascending]] - compare two values for sorting.
-* [[d3.descending|Arrays#wiki-d3_descending]] - compare two values for sorting.
-* [[d3.min|Arrays#wiki-d3_min]] - find the minimum value in an array.
-* [[d3.max|Arrays#wiki-d3_max]] - find the maximum value in an array.
-* [[d3.extent|Arrays#wiki-d3_extent]] - find the minimum and maximum value in an array.
-* [[d3.sum|Arrays#wiki-d3_sum]] - compute the sum of an array of numbers.
-* [[d3.mean|Arrays#wiki-d3_mean]] - compute the arithmetic mean of an array of numbers.
-* [[d3.median|Arrays#wiki-d3_median]] - compute the median of an array of numbers (the 0.5-quantile).
-* [[d3.quantile|Arrays#wiki-d3_quantile]] - compute a quantile for a sorted array of numbers.
-* [[d3.bisect|Arrays#wiki-d3_bisect]] - search for a value in a sorted array.
+* [[d3.ascending|Arrays#wiki-d3_ascending]] - 升序排序函数.
+* [[d3.descending|Arrays#wiki-d3_descending]] - 降序排序函数.
+* [[d3.min|Arrays#wiki-d3_min]] - 得到数组中的最小值.
+* [[d3.max|Arrays#wiki-d3_max]] - 得到数组中的最大值.
+* [[d3.extent|Arrays#wiki-d3_extent]] - 得到数组的范围(最小值和最大值).
+* [[d3.sum|Arrays#wiki-d3_sum]] - 得到数组中数字之和.
+* [[d3.mean|Arrays#wiki-d3_mean]] -得到数组中数字的算术平均值.
+* [[d3.median|Arrays#wiki-d3_median]] - 得到数组中数字的中位数 (相当于 0.5-quantile的值).
+* [[d3.quantile|Arrays#wiki-d3_quantile]] - 得到排好序的数组的一个分位数(quantile).
+* [[d3.bisect|Arrays#wiki-d3_bisect]] - 获取某个数在排好序的数组中的插入位置（同d3.bisectRight）.
 * [[d3.bisectRight|Arrays#wiki-d3_bisectRight]] - search for a value in a sorted array.
 * [[d3.bisectLeft|Arrays#wiki-d3_bisectLeft]] - search for a value in a sorted array.
 * [[d3.bisector|Arrays#wiki-d3_bisector]] - bisect using an accessor.
