@@ -107,28 +107,28 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[d3.entries|Arrays#wiki-d3_entries]] - 返回关联数组的key-value实体组成的数组, d3.entries({ foo: 42 }); // returns [{key: "foo", value: 42}].
 * [[d3.merge|Arrays#wiki-d3_merge]] - 将多个数组连成一个，类似于原生方法concat. d3.merge([ [1], [2, 3] ]); // returns [1, 2, 3].
 * [[d3.range|Arrays#wiki-d3_range]] - 获得一个数列. d3.range([start, ]stop[, step])
-* [[d3.nest|Arrays#wiki-d3_nest]] - 获得一个nest对象，将数组组织成层级结构.
+* [[d3.nest|Arrays#wiki-d3_nest]] - 获得一个nest对象，将数组组织成层级结构. 示例： [http://bl.ocks.org/phoebebright/raw/3176159/](http://bl.ocks.org/phoebebright/raw/3176159/)
 * [[nest.key|Arrays#wiki-nest_key]] - 为nest层级结构增加一个层级.
 * [[nest.sortKeys|Arrays#wiki-nest_sortKeys]] - 将当前的nest层级结构按key排序.
 * [[nest.sortValues|Arrays#wiki-nest_sortValues]] - 将叶nest层级按value排序.
 * [[nest.rollup|Arrays#wiki-nest_rollup]] - 设置修改叶节点值的函数.
 * [[nest.map|Arrays#wiki-nest_map]] - 执行nest操作, 返回一个关联数组(json).
 * [[nest.entries|Arrays#wiki-nest_entries]] - 执行nest操作, 返回一个key-value数组. 如果nest.map返回的结果类似于{ foo: 42 }, 则nest.entries返回的结果类似于[{key: "foo", value: 42}].
-* [d3.map](Arrays#wiki-d3_map) - a shim for ES6 maps, since objects are not hashes!
-* [map.has](Arrays#wiki-map_has) - returns true if the map contains the specified key.
-* [map.get](Arrays#wiki-map_get) - returns the value for the specified key.
-* [map.set](Arrays#wiki-map_set) - sets the value for the specified key.
-* [map.remove](Arrays#wiki-map_remove) - removes the entry for specified key.
-* [map.keys](Arrays#wiki-map_keys) - returns the map’s array of keys.
-* [map.values](Arrays#wiki-map_values) - returns the map’s array of values.
-* [map.entries](Arrays#wiki-map_entries) - returns the map’s array of entries (key-values objects).
-* [map.forEach](Arrays#wiki-map_forEach) - calls the specified function for each entry in the map.
-* [d3.set](Arrays#wiki-d3_set) - a shim for ES6 sets, since objects are not hashes!
-* [set.has](Arrays#wiki-set_has) - returns true if the set contains the specified value.
-* [set.add](Arrays#wiki-set_add) - adds the specified value.
-* [set.remove](Arrays#wiki-set_remove) - removes the specified value.
-* [set.values](Arrays#wiki-set_values) - returns the set’s array of values.
-* [set.forEach](Arrays#wiki-set_forEach) - calls the specified function for each value in the set.
+* [d3.map](Arrays#wiki-d3_map) - 将javascript的object转化为hash,屏蔽了object的原型链功能导致的与hash不一致的问题。
+* [map.has](Arrays#wiki-map_has) - map有某个key就返回true.
+* [map.get](Arrays#wiki-map_get) - 返回map中某个key对应的value.
+* [map.set](Arrays#wiki-map_set) - 设置map中某个key对应的value.
+* [map.remove](Arrays#wiki-map_remove) - 删除map中的某个key. 
+* [map.keys](Arrays#wiki-map_keys) - 返回map中所有key组成的数组.
+* [map.values](Arrays#wiki-map_values) - 返回map中所有value组成的数组.
+* [map.entries](Arrays#wiki-map_entries) - 返回map中所有entry（key-value键值对）组成的数组.类似于{ foo: 42 }转化成[{key: "foo", value: 42}]
+* [map.forEach](Arrays#wiki-map_forEach) - 对map中每一个entry执行某个函数.
+* [d3.set](Arrays#wiki-d3_set) - 将javascript的array转化为set,屏蔽了array的object原型链功能导致的与set不一致的问题。set中的value是array中每个值转换成字符串的结果。set中的value是去重过的。
+* [set.has](Arrays#wiki-set_has) - 返回set中是否含有某个value.
+* [set.add](Arrays#wiki-set_add) - 添加某个value.
+* [set.remove](Arrays#wiki-set_remove) - 删除某个value.
+* [set.values](Arrays#wiki-set_values) - 返回set中的值组成的数组.set中的value是去重过的.
+* [set.forEach](Arrays#wiki-set_forEach) - 对set中每一个value执行某个函数.
 
 ### [[Math]]
 
