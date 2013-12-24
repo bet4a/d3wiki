@@ -32,8 +32,8 @@ Please feel free to add links to your work!
 * [http://nowherenearithaca.blogspot.com/2012/06/annotating-d3-example-with-docco.html](http://nowherenearithaca.github.com/empires/empires.html) - Brad Flyon
 * [D3.js Tips and Tricks Blog](http://www.d3noob.org/) and [pdf book version](https://leanpub.com/D3-Tips-and-Tricks) and [read full text online](https://leanpub.com/D3-Tips-and-Tricks/read) - D3noob
 * [Introduction to D3.js Geo](http://hashbang.co.nz/blog/2013/2/25/d3_js_geo_fun) - Graham Jenson
-* [learning D3.js(2)(Chinese)](http://www.civn.cn/p/12402.html) - jtyjty99999
-* [learning D3.js(1)(Chinese)](http://www.civn.cn/p/12311.html) - jtyjty99999
+* [learning D3.js(2)(Chinese)](http://www.d3js.cn/?p=24) - jtyjty99999
+* [learning D3.js(1)(Chinese)](http://www.d3js.cn/?p=41) - jtyjty99999
 * [First glance on D3.js (codecademy course)](http://www.codecademy.com/courses/web-beginner-en-kcP9b) - Jiecheng
 * [Creating Interactive Charts with D3.js](http://blog.ilukwe.com/post/52094586400/creating-interactive-charts-with-d3-js) - Anthony Ilukwe
 * [A simple walkthrough of D3's enter-update-exit Data Pattern with Google Maps](http://informatics.unep-wcmc.org/blog/blog/2013/06/18/a-simple-walkthrough-of-d3-s-enter-update-exit-data-pattern-with-google-maps/) - Decio Battaglia
