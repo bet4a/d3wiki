@@ -1,20 +1,19 @@
-> [Wiki](Home) ▸ **API Reference**
-
-Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioning|http://semver.org]]. You can find the current version of D3 as `d3.version`.
+> [Wiki](Home) ▸ **API リファレンス**
+D3の全てはD3のネームスコープの下に[スコープ](//ja.wikipedia.org/wiki/%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97)されています。D3は[セマンティックバージョニング](//semver.org/)を使用しています。d3.バージョンで、D3の現在のバージョンをわかります。
 
 ## [d3 (core)](Core)
 
 ### [[Selections]]
 
-* [[d3.select|Selections#wiki-d3_select]] - select an element from the current document.
-* [[d3.selectAll|Selections#wiki-d3_selectAll]] - select multiple elements from the current document.
-* [[selection.attr|Selections#wiki-attr]] - get or set attribute values.
-* [[selection.classed|Selections#wiki-classed]] - add or remove CSS classes.
-* [[selection.style|Selections#wiki-style]] - get or set style properties.
+* [[d3.select|Selections#wiki-d3_select]] - 現在のドキュメントから1つの要素を選択する
+* [[d3.selectAll|Selections#wiki-d3_selectAll]] - 現在のドキュメントから複数の要素を選択する
+* [[selection.attr|Selections#wiki-attr]] - 属性の値を取得、または設定する
+* [[selection.classed|Selections#wiki-classed]] - CSSクラスを追加、または削除する
+* [[selection.style|Selections#wiki-style]] - スタイルプロパティを取得、または設定する
 * [[selection.property|Selections#wiki-property]] - get or set raw properties.
-* [[selection.text|Selections#wiki-text]] - get or set text content.
-* [[selection.html|Selections#wiki-html]] - get or set inner HTML content.
-* [[selection.append|Selections#wiki-append]] - create and append new elements.
+* [[selection.text|Selections#wiki-text]] - 要素内のテキストを取得、または設定する
+* [[selection.html|Selections#wiki-html]] - 要素内のHTMLを取得、または設定する
+* [[selection.append|Selections#wiki-append]] - 新しい要素を末尾に追加する
 * [[selection.insert|Selections#wiki-insert]] - create and insert new elements before existing elements.
 * [[selection.remove|Selections#wiki-remove]] - remove elements from the document.
 * [[selection.data|Selections#wiki-data]] - get or set data for a group of elements, while computing a relational join.
