@@ -14,8 +14,8 @@ D3の全てはD3のネームスコープの下に[スコープ](//ja.wikipedia.o
 * [[selection.text|Selections#wiki-text]] - 要素内のテキストを取得、または設定する
 * [[selection.html|Selections#wiki-html]] - 要素内のHTMLを取得、または設定する
 * [[selection.append|Selections#wiki-append]] - 新しい要素を末尾に追加する
-* [[selection.insert|Selections#wiki-insert]] - create and insert new elements before existing elements.
-* [[selection.remove|Selections#wiki-remove]] - remove elements from the document.
+* [[selection.insert|Selections#wiki-insert]] - 新しい要素を指定した要素の前に挿入する
+* [[selection.remove|Selections#wiki-remove]] - 要素を削除する
 * [[selection.data|Selections#wiki-data]] - get or set data for a group of elements, while computing a relational join.
 * [[selection.enter|Selections#wiki-enter]] - returns placeholders for missing elements.
 * [[selection.exit|Selections#wiki-exit]] - returns elements that are no longer needed.
