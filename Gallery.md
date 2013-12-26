@@ -218,7 +218,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 </tr>
 <tr>
     <td>Multivariate Data Exploration with Scatterplots<br><a href="http://benjiec.github.io/scatter-matrix/demo/demo.html"><img src="http://benjiec.github.io/scatter-matrix/demo/demo.png" width="202"></a></td>
-    <td>Live Power Outages In Maine<br><a href="http://rud.is/outage/"><img src="http://rud.is/outage/thumb.png" width="202"></a></td>
+    <td>Live Power Outages In Maine<br><a href="http://rud.is/outage/"><img src="http://rud.is/outage/thumb2.png" width="202"></a></td>
     <td>Relative Size Of The Planets<br><a href="http://www.ununpentium.co.uk/pages/planets.jsp"><img src="http://i39.tinypic.com/ngsoj8.png" width="202"></a></td>
     <td>Bitcoin Price Trends<br><a href="http://bitcointrends.herokuapp.com/"><img src="https://s3.amazonaws.com/bitcointrends/graphcaptured.PNG" width="202" height="202"></a></td>
 
