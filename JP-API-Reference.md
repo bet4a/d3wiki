@@ -17,11 +17,11 @@ D3の全てはD3のネームスコープの下に[スコープ](//ja.wikipedia.o
 * [[selection.append|Selections#wiki-append]] - 新しい要素を末尾に追加する
 * [[selection.insert|Selections#wiki-insert]] - 新しい要素を指定した要素の前に挿入する
 * [[selection.remove|Selections#wiki-remove]] - 要素を削除する
-* [[selection.data|Selections#wiki-data]] - get or set data for a group of elements, while computing a relational join.
-* [[selection.enter|Selections#wiki-enter]] - returns placeholders for missing elements.
-* [[selection.exit|Selections#wiki-exit]] - returns elements that are no longer needed.
-* [[selection.datum|Selections#wiki-datum]] - get or set data for individual elements, without computing a join.
-* [[selection.filter|Selections#wiki-filter]] - filter a selection based on data.
+* [[selection.data|Selections#wiki-data]] - 要素集合のためのデータを取得、または設定する（未訳　while computing a relational join.）
+* [[selection.enter|Selections#wiki-enter]] - 要素が足りない場合、プレースホルダを返す
+* [[selection.exit|Selections#wiki-exit]] - 不要になった要素を返す
+* [[selection.filter|Selections#wiki-filter]] - データに基づいてSelectionを絞り込む
+* [[selection.datum|Selections#wiki-datum]] - 個々の要素のためのデータを取得、または設定する（未訳　without computing a join.）
 * [[selection.sort|Selections#wiki-sort]] - sort elements in the document based on data.
 * [[selection.order|Selections#wiki-order]] - reorders elements in the document to match the selection.
 * [[selection.on|Selections#wiki-on]] - add or remove event listeners for interaction.
@@ -31,7 +31,7 @@ D3の全てはD3のネームスコープの下に[スコープ](//ja.wikipedia.o
 * [[selection.call|Selections#wiki-call]] - call a function passing in the current selection.
 * [[selection.empty|Selections#wiki-empty]] - returns true if the selection is empty.
 * [[selection.node|Selections#wiki-node]] - returns the first node in the selection.
-* [selection.size](Selections#wiki-size) - returns the number of elements in the selection.
+* [selection.size](Selections#wiki-size) - Selectionの中の要素の数を返す
 * [[selection.select|Selections#wiki-select]] - subselect a descendant element for each selected element.
 * [[selection.selectAll|Selections#wiki-selectAll]] - subselect multiple descendants for each selected element.
 * [[d3.selection|Selections#wiki-d3_selection]] - augment the selection prototype, or test instance types.
