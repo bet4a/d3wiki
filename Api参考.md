@@ -12,7 +12,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[d3.selectAll|Selections#wiki-d3_selectAll]] - 从当前文档中选择多项元素。
 * [[selection.attr|Selections#wiki-attr]] - 设置或获取指定属性。
 * [[selection.classed|Selections#wiki-classed]] - 添加或删除选定元素的 CSS 类（CSS class）。
-* [[selection.style|Selections#wiki-style]] - 设置或删除 CSS 属性。
+* [[selection.style|Selections#wiki-style]] - 设置或删除 CSS 属性。style优先级高于attr。
 * [[selection.property|Selections#wiki-property]] - 设置或获原生的属性值（raw property）。
 * [[selection.text|Selections#wiki-text]] - 设置或获取选定元素的标签体文本内容。
 * [[selection.html|Selections#wiki-html]] - 设置或获取选定元素的 HTML 内容（类似 innerHTML ）
@@ -34,7 +34,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[selection.empty|Selections#wiki-empty]] - 测试选择集是否为空。
 * [[selection.node|Selections#wiki-node]] - 返回选择集中的第一个元素。
 * [selection.size](Selections#wiki-size) - 返回选择集中的元素个数。
-* [[selection.select|Selections#wiki-select]] - 选择所选的元素中的子元素组成新的选择集。
+* [[selection.select|Selections#wiki-select]] - 选择所选的元素中的第一个子元素组成新的选择集。
 * [[selection.selectAll|Selections#wiki-selectAll]] - 选择所选的元素中的多个子元素组成新的选择集。
 * [[d3.selection|Selections#wiki-d3_selection]] - 选择集对象原型（可通过 `d3.selection.prototype` 为选择集增强功能）。
 * [[d3.event|Selections#wiki-d3_event]] - 获取当前交互的用户事件。
