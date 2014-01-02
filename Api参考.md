@@ -21,7 +21,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[selection.remove|Selections#wiki-remove]] - 从当前文档对象中删除选定的元素。
 * [[selection.data|Selections#wiki-data]] - 设置或获取一组元素的绑定数据（get or set data for a group of elements, while computing a relational join.）
 * [[selection.enter|Selections#wiki-enter]] - 返回缺失元素的占位对象（placeholder），指向绑定的数据中比选定元素集多出的一部分元素。
-* [[selection.exit|Selections#wiki-exit]] - 返回多余元素的元素集，即选择元素中比绑定数据多出的一部分。
+* [[selection.exit|Selections#wiki-exit]] - 返回多余元素的元素集，即选择元素中比绑定数据多出的一部分。(关于data, enter, exit原理的[示例1](http://bost.ocks.org/mike/join/)， [示例2](http://bl.ocks.org/mbostock/3808218))
 * [[selection.datum|Selections#wiki-datum]] - 设置或获取单独元素的数据，不进行关联。（get or set data for individual elements, without computing a join.）
 * [[selection.filter|Selections#wiki-filter]] - 根据绑定的数据过滤选择集。
 * [[selection.sort|Selections#wiki-sort]] - 根据绑定的数据对选择的元素进行排序。
