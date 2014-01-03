@@ -87,10 +87,10 @@ Creates a request for the XML file at the specified *url*. An optional *mime typ
 
 Creates a request for the HTML file at the specified *url* with the mime type "text/html". If a *callback* is specified, the request is immediately issued with the GET method, and the callback will be invoked asynchronously when the file is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the parsed HTML as a [document fragment](https://developer.mozilla.org/en-US/docs/DOM/range.createContextualFragment). The parsed HTML is undefined if an error occurs. If no callback is specified, the returned request can be issued using xhr.get or similar, and handled using xhr.on.
 
-<a name="d3_csv" href="CSV">#</a> d3.<b>csv</b>(<i>url</i>[, <i>callback</i>])
+<a name="d3_csv" href="CSV">#</a> d3.<b>csv</b>(<i>url</i>[, <i>accessor</i>][, <i>callback</i>])
 
 Creates a request for the [[CSV]] file at the specified *url* with the mime type "text/csv". If a *callback* is specified, the request is immediately issued with the GET method, and the callback will be invoked asynchronously when the file is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the array of [parsed rows](CSV#wiki-parse) per [RFC 4180](http://tools.ietf.org/html/rfc4180). The rows array is undefined if an error occurs. If no callback is specified, the returned request can be issued using xhr.get or similar, and handled using xhr.on.
 
-<a name="d3_tsv" href="CSV#wiki-tsv">#</a> d3.<b>tsv</b>(<i>url</i>[, <i>callback</i>])
+<a name="d3_tsv" href="CSV#wiki-tsv">#</a> d3.<b>tsv</b>(<i>url</i>[, <i>accessor</i>][, <i>callback</i>])
 
 Creates a request for the [TSV](CSV#wiki-d3_tsv) file at the specified *url* with the mime type "text/tab-separated-values". If a *callback* is specified, the request is immediately issued with the GET method, and the callback will be invoked asynchronously when the file is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the array of [parsed rows](CSV#wiki-tsv_parse) per [RFC 4180](http://tools.ietf.org/html/rfc4180). The rows array is undefined if an error occurs. If no callback is specified, the returned request can be issued using xhr.get or similar, and handled using xhr.on.
