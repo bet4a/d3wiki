@@ -73,9 +73,9 @@ var xAxis = d3.svg.axis()
 
 The explicit tick values take precedent over the tick arguments set by [axis.ticks](#wiki-ticks). However, any  tick arguments will still be passed to the scale's [tickFormat](Quantitative-Scales#wiki-linear_tickFormat) function if a tick format is not also set; thus, it may be valid to set both axis.ticks and axis.tickValues.
 
-<a name="tickSize" href="#wiki-tickSize">#</a> axis.<b>tickSize</b>([<i>size</i>])
+<a name="tickSize" href="#wiki-tickSize">#</a> axis.<b>tickSize</b>([<i>inner, outer</i>])
 
-If *size* is specified, sets the [inner](#wiki-innerTickSize) and [outer](#wiki-outerTickSize) tick sizes to the specified value and returns the axis. If *size* is not specified, returns the current inner tick size, which defaults to 6.
+If *inner, outer* are specified, sets the [inner](#wiki-innerTickSize) and [outer](#wiki-outerTickSize) tick sizes to the specified value and returns the axis. If *inner, outer* are not specified, returns the current inner tick size, which defaults to 6.
 
 <a name="innerTickSize" href="#wiki-innerTickSize">#</a> axis.<b>innerTickSize</b>([<i>size</i>])
 
