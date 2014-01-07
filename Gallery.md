@@ -442,6 +442,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [Relative Size Of The Planets](http://www.ununpentium.co.uk/pages/planets.jsp) - Keith Watson (best in Safari, where I can get the drop shadow to work)
 * [Most Expensive Football Transfers: How the Money Flows](http://transfers.torlaune.de/) - Ramiro Gómez
 * [User-Specific LinkedIn Social Network Visualization and Analysis](http://socilab.com/) - Craig Tutterow
+* [Interactive Stacked Bar Chart of US Population](http://bl.ocks.org/yuuniverse4444/8b0e53f29e24e2bdb265) - Zhou Yu
 
 ### Collections
 
