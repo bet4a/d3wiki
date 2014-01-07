@@ -350,6 +350,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [AFL Brownlow Medalists](http://www.vislives.com/2011/09/brownlow-medal-winners-visualization.html), [Summer Olympics Home Ground Advantage](http://www.vislives.com/2012/10/summer-olympics-home-ground-advantage.html), [Formula 1 Lap Chart](http://www.vislives.com/2012/05/d3js-transitions-zoom-zoom.html), [When is Easter?](http://www.vislives.com/2012/04/when-is-easter-sunday.html) and [David Foster Wallace's "Infinite Jest"](http://www.vislives.com/2011/12/infinite-jest-visualization.html), and [more...](http://www.vislives.com/search/label/d3.js) - Chris Pudney (VisLives!)
 * [Uber Rides by Neighborhood](http://bost.ocks.org/mike/uberdata/)
 * [Les Misérables Co-occurrence](http://bost.ocks.org/mike/miserables/)
+* [Les Misérables 'Gap Heat Map' Co-occurrence](http://joshua-gould.github.io/public/examples/miserables/)
 * [US Elections 2012 / Twitter](http://hotspots.io/election)
 * [Major League Baseball Home Runs, 1995-2010](http://visual-baseball.com/d3/baseball/Drillable_Bar_Charts/HR.html) - Ken Cherven (Visual-Baseball.com)
 * [Color: a color matching game](http://color.method.ac/) - Maria Munuera and Mark MacKay
