@@ -35,6 +35,20 @@ Or, to link directly to the latest release, copy this snippet:
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 ```
 
+If you are using [RequireJS](http://requirejs.org/), you may instead load D3 as follows:
+
+```js
+require.config({
+  paths: {
+    d3: "http://d3js.org/d3.v3.min"
+  }
+});
+
+require(["d3"], function(d3) {
+  console.log(d3.version);
+});
+```
+
 Or, if you want the full repository including tests:
 
 * <https://github.com/mbostock/d3/zipball/master>
