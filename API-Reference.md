@@ -121,12 +121,16 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [map.values](Arrays#wiki-map_values) - returns the map’s array of values.
 * [map.entries](Arrays#wiki-map_entries) - returns the map’s array of entries (key-values objects).
 * [map.forEach](Arrays#wiki-map_forEach) - calls the specified function for each entry in the map.
+* [map.empty](Arrays#wiki-map_empty) - returns true if the map has at least one entry.
+* [map.size](Arrays#wiki-map_size) - returns the number of entries in the map.
 * [d3.set](Arrays#wiki-d3_set) - a shim for ES6 sets, since objects are not hashes!
 * [set.has](Arrays#wiki-set_has) - returns true if the set contains the specified value.
 * [set.add](Arrays#wiki-set_add) - adds the specified value.
 * [set.remove](Arrays#wiki-set_remove) - removes the specified value.
 * [set.values](Arrays#wiki-set_values) - returns the set’s array of values.
 * [set.forEach](Arrays#wiki-set_forEach) - calls the specified function for each value in the set.
+* [set.empty](Arrays#wiki-set_empty) - returns true if the set has at least one value.
+* [set.size](Arrays#wiki-set_size) - returns the number of values in the set.
 
 ### [[Math]]
 
@@ -174,6 +178,12 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[d3.tsv.format|CSV#wiki-tsv_format]] - format an array of objects into a TSV string.
 * [[d3.tsv.formatRows|CSV#wiki-tsv_formatRows]] - format an array of tuples into a TSV string.
 * [d3.dsv](CSV#wiki-dsv) - create a parser/formatter for the specified delimiter and mime type.
+
+### [[Localization]]
+
+* [d3.locale](Localization#wiki-d3_locale) - create a new locale using the specified strings.
+* [locale.numberFormat](Localization#wiki-locale_numberFormat) - create a new number formatter.
+* [locale.timeFormat](Localization#wiki-locale_timeFormat) - create a new time formatter / parser.
 
 ### [[Colors]]
 
@@ -394,6 +404,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[d3.time.format|Time-Formatting#wiki-format]] - create a new local time formatter for a given specifier.
 * [[format|Time-Formatting#wiki-_format]] - format a date into a string.
 * [[format.parse|Time-Formatting#wiki-parse]] - parse a string into a date.
+* [d3.time.format.multi](Time-Formatting#wiki-multi) - create a new local multi-resolution time formatter.
 * [[d3.time.format.utc|Time-Formatting#wiki-format_utc]] - create a new UTC time formatter for a given specifier.
 * [[d3.time.format.iso|Time-Formatting#wiki-format_iso]] - the ISO 8601 UTC time formatter.
 
@@ -501,6 +512,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[force.linkStrength|Force-Layout#wiki-linkStrength]] - get or set the link strength.
 * [[force.friction|Force-Layout#wiki-friction]] - get or set the friction coefficient.
 * [[force.charge|Force-Layout#wiki-charge]] - get or set the charge strength.
+* [force.chargeDistance](Force-Layout#wiki-chargeDistance) - get or set the maximum charge distance.
 * [[force.gravity|Force-Layout#wiki-gravity]] - get or set the gravity strength.
 * [[force.theta|Force-Layout#wiki-theta]] - get or set the accuracy of the charge interaction.
 * [[force.start|Force-Layout#wiki-start]] - start or restart the simulation when the nodes change.
