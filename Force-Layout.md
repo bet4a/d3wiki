@@ -17,7 +17,6 @@ Some fun examples:
 
 Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement. Unlike some of the other layout implementations which are stateless, the force layout keeps a reference to the associated nodes and links internally; thus, a given force layout instance can only be used with a single dataset.
 
-
 <a name="force" href="Force-Layout#wiki-force">#</a> d3.layout.<b>force</b>()
 
 Constructs a new force-directed layout with the default settings: size 1×1, link strength 1, friction 0.9, distance 20, charge strength -30, gravity strength 0.1, and theta parameter 0.8. The default nodes and links are the empty array, and when the layout is started, the internal alpha cooling parameter is set to 0.1. The general pattern for constructing force-directed layouts is to set all the configuration properties, and then call [start](Force-Layout#wiki-start):
@@ -55,6 +54,10 @@ If *friction* is specified, sets the friction coefficient to the specified value
 If *charge* is specified, sets the charge strength to the specified value. If *charge* is not specified, returns the current charge strength, which defaults to -30. If *charge* is a constant, then all nodes have the same charge. Otherwise, if *charge* is a function, then the function is evaluated for each node (in order), being passed the node and its index, with the `this` context as the force layout; the function's return value is then used to set each node's charge. The function is evaluated whenever the layout [starts](Force-Layout#wiki-start).
 
 A negative value results in node repulsion, while a positive value results in node attraction. For graph layout, negative values should be used; for [*n*-body simulation](http://mbostock.github.com/protovis/ex/nbody.html), positive values can be used. All nodes are assumed to be infinitesimal points with equal charge and mass. Charge forces are implemented efficiently via the [Barnes–Hut algorithm](http://arborjs.org/docs/barnes-hut), computing a [quadtree](Quadtree-Geom) for each tick. Setting the charge force to zero disables computation of the quadtree, which can noticeably improve performance if you do not need n-body forces.
+
+<a name="chargeDistance" href="#wiki-chargeDistance">#</a> force.<b>chargeDistance</b>([<i>distance</i>])
+
+If *distance* is specified, sets the maximum distance over which charge forces are applied. If *distance* is not specified, returns the current maximum charge distance, which defaults to infinity. Specifying a finite charge distance improves the performance of the force layout and produces a more localized layout; distance-limited charge forces are especially useful in conjunction with custom gravity. For an example, see [“Constellations of Directors and their Stars”](http://www.nytimes.com/newsgraphics/2013/09/07/director-star-chart/) (_The New York Times_).
 
 <a name="theta" href="Force-Layout#wiki-theta">#</a> force.<b>theta</b>([<i>theta</i>])
 
