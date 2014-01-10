@@ -404,7 +404,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [[d3.time.format|Time-Formatting#wiki-format]] - create a new local time formatter for a given specifier.
 * [[format|Time-Formatting#wiki-_format]] - format a date into a string.
 * [[format.parse|Time-Formatting#wiki-parse]] - parse a string into a date.
-* [d3.time.format.multi](Time-Formatting#wiki-multi) - create a new local multi-resolution time formatter.
+* [d3.time.format.multi](Time-Formatting#wiki-format_multi) - create a new local multi-resolution time formatter.
 * [[d3.time.format.utc|Time-Formatting#wiki-format_utc]] - create a new UTC time formatter for a given specifier.
 * [[d3.time.format.iso|Time-Formatting#wiki-format_iso]] - the ISO 8601 UTC time formatter.
 
