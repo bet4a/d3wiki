@@ -61,3 +61,15 @@ A locale for Russian (ru_RU) might be defined as:
   "shortMonths": ["янв", "фев", "мар", "апр", "май", "июн", "июл", "авг", "сен", "окт", "ноя", "дек"]
 }
 ```
+
+<a name="locale_numberFormat" href="#wiki-locale_numberFormat">#</a> locale.<b>numberFormat</b>(<i>specifier</i>)
+
+The locale’s equivalent of [d3.format](Formatting#wiki-d3_format).
+
+<a name="locale_timeFormat" href="#wiki-locale_timeFormat">#</a> locale.<b>timeFormat</b>(<i>specifier</i>)
+
+The locale’s equivalent of [d3.time.format](Time-Formatting#wiki-format).
+
+<a name="locale_timeFormat_utc" href="#wiki-locale_timeFormat_utc">#</a> locale.timeFormat.<b>utc</b>(<i>specifier</i>)
+
+The locale’s equivalent of [d3.time.format.utc](Time-Formatting#wiki-format_utc).
