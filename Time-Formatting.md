@@ -66,6 +66,21 @@ Parses the specified *string*, returning the corresponding date object. If the p
 
 The `%d` and `%e` format specifiers are considered equivalent for parsing.
 
+<a name="format_multi" href="#wiki-format_multi">#</a> d3.time.format.<b>multi</b>(<i>formats</i>)
+
+```js
+var format = d3.time.format.multi([
+  [".%L", function(d) { return d.getMilliseconds(); }],
+  [":%S", function(d) { return d.getSeconds(); }],
+  ["%I:%M", function(d) { return d.getMinutes(); }],
+  ["%I %p", function(d) { return d.getHours(); }],
+  ["%a %d", function(d) { return d.getDay() && d.getDate() != 1; }],
+  ["%b %d", function(d) { return d.getDate() != 1; }],
+  ["%B", function(d) { return d.getMonth(); }],
+  ["%Y", function() { return true; }]
+]);
+```
+
 <a name="format_utc" href="Time-Formatting#wiki-format_utc">#</a> d3.time.format.<b>utc</b>(<i>specifier</i>)
 
 Constructs a new UTC time formatter using the given *specifier*. The specifier may contain the same directives as the local time [format](Time-Formatting#wiki-format). Internally, this time formatter is implemented using the UTC methods on the Date object, such as [getUTCDate](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getUTCDate) and [setUTCDate](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/setUTCDate) in place of [getDate](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getDate) and [setDate](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/setDate).
