@@ -7,6 +7,7 @@ See one of:
 * [[Arrays]] - manipulate arrays and objects with ease.
 * [[Requests]] - load external data.
 * [[Formatting]] - convert numbers, dates and other objects to strings.
+* [[Localization]] - control locale-specific behavior, such as number formatting.
 * [[Colors]] - parse and manipulate colors; work with color spaces.
 * [[Namespaces]] - extend D3's support for XML namespaces.
 * [[Math]] - miscellaneous mathematical functions.
