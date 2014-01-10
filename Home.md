@@ -35,7 +35,21 @@ Or, to link directly to the latest release, copy this snippet:
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 ```
 
-If you are using [RequireJS](http://requirejs.org/), you may instead load D3 as follows:
+Or, if you want the full repository including tests:
+
+* <https://github.com/mbostock/d3/zipball/master>
+
+When developing locally, note that your browser may enforce strict permissions for reading files out of the local file system. **If you use [d3.xhr](wiki/Requests) locally (including d3.json et al.), you must have a local web server.** For example, you can run Python's built-in server:
+
+    python -m SimpleHTTPServer 8888 &
+
+or for Python 3+
+
+    python -m http.server 8888 &
+
+Once this is running, go to <http://localhost:8888/>.
+
+Advanced users may prefer [RequireJS](http://requirejs.org/) or similar, instead loading D3 as follows:
 
 ```js
 require.config({
@@ -49,25 +63,13 @@ require(["d3"], function(d3) {
 });
 ```
 
-Or, if you want the full repository including tests:
+## Modifying
 
-* <https://github.com/mbostock/d3/zipball/master>
-
-Or, from the command line:
+If you want to modify how D3 is implemented, click the "Fork" button in the top-right corner of this page, and then clone your fork from the command line by replacing *username* with your GitHub username:
 
 ```bash
-git clone git://github.com/mbostock/d3.git
+git clone git://github.com/username/d3.git
 ```
-
-When developing locally, note that your browser may enforce strict permissions for reading files out of the local file system. **If you use [d3.xhr](wiki/Requests) locally (including d3.json et al.), you must have a local web server.** For example, you can run Python's built-in server:
-
-    python -m SimpleHTTPServer 8888 &
-
-or for Python 3+
-
-    python -m http.server 8888 &
-
-Once this is running, go to <http://localhost:8888/>.
 
 The D3 repository should work out of the box if you just want to create new visualizations using D3. On the other hand, if you want to extend D3 with new features, fix bugs, or run tests, you should [fork the D3 repository](/mbostock/d3), and install [Node.js](http://nodejs.org/) (version 0.10.x or higher). From the root directory of this repository, you can then install D3's dependencies:
 
