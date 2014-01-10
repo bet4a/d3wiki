@@ -68,6 +68,8 @@ The `%d` and `%e` format specifiers are considered equivalent for parsing.
 
 <a name="format_multi" href="#wiki-format_multi">#</a> d3.time.format.<b>multi</b>(<i>formats</i>)
 
+Returns a new multi-resolution time format given the specified array of predicated *formats*. Each format is a two-element array consisting of a format specifier string (such as that passed to the [d3.time.format](#wiki-format) constructor) and a predicate function. For any date that is passed to the returned time format, the first predicate function that returns true will determine how the specified date is formatted. For example, the default time format used by [d3.time.scale](Time-Scales) is implemented as:
+
 ```js
 var format = d3.time.format.multi([
   [".%L", function(d) { return d.getMilliseconds(); }],
@@ -80,6 +82,10 @@ var format = d3.time.format.multi([
   ["%Y", function() { return true; }]
 ]);
 ```
+
+Thus, if the specified date is not a round second, the milliseconds format (`".%L"`) is used; otherwise, if the specified date is not a round minute, the seconds format (`":%S"`) is used, and so on.
+
+The **multi** method is available on any d3.time.format constructor. For example, [d3.time.format.utc](#wiki-format_utc).multi returns a multi-resolution UTC time format, and [locale.timeFormat](Localization#wiki-timeFormat).multi returns a multi-resolution time format for the specified locale.
 
 <a name="format_utc" href="Time-Formatting#wiki-format_utc">#</a> d3.time.format.<b>utc</b>(<i>specifier</i>)
 
