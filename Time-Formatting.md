@@ -4,7 +4,7 @@ D3 includes a helper module for parsing and formatting dates modeled after the v
 
 <a name="format" href="Time-Formatting#wiki-format">#</a> d3.time.<b>format</b>(<i>specifier</i>)
 
-(Equivalent to [locale.timeFormat](Localization#wiki-locale_timeFormat) for the default U.S. English locale.) Constructs a new local time formatter using the given *specifier*. The specifier string may contain the following directives.
+Constructs a new local time formatter using the given *specifier*. (Equivalent to [locale.timeFormat](Localization#wiki-locale_timeFormat) for the default U.S. English locale.) The specifier string may contain the following directives.
 
 * `%a` - abbreviated weekday name.
 * `%A` - full weekday name.
