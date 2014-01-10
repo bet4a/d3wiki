@@ -83,7 +83,7 @@ var format = d3.time.format.multi([
 ]);
 ```
 
-Thus, if the specified date is not a round second, the milliseconds format (`".%L"`) is used; otherwise, if the specified date is not a round minute, the seconds format (`":%S"`) is used, and so on.
+Thus, if the specified date is not a round second, the milliseconds format (`".%L"`) is used; otherwise, if the specified date is not a round minute, the seconds format (`":%S"`) is used, and so on. See [bl.ocks.org/4149176](http://bl.ocks.org/mbostock/4149176) for an example.
 
 The **multi** method is available on any d3.time.format constructor. For example, [d3.time.format.utc](#wiki-format_utc).multi returns a multi-resolution UTC time format, and [locale.timeFormat](Localization#wiki-timeFormat).multi returns a multi-resolution time format for the specified locale.
 
