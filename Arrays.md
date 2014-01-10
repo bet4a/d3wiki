@@ -178,6 +178,14 @@ Returns an array of key-value objects for each entry in this map. The order of t
 
 Calls the specified *function* for each entry in this map, passing the entry's key and value as two arguments. The `this` context of the *function* is this map. Returns undefined. The iteration order is arbitrary.
 
+<a name="map_empty" href="#wiki-map_empty">#</a> map.<b>empty</b>()
+
+Returns true if and only if this map has zero entries.
+
+<a name="map_size" href="#wiki-map_size">#</a> map.<b>size</b>()
+
+Returns the number of entries in this map.
+
 ### Sets
 
 <a name="d3_set" href="#wiki-d3_set">#</a> d3.<b>set</b>([<i>array</i>])
@@ -207,6 +215,14 @@ d3.set(["foo", "bar", "foo", "baz"]).values(); // "foo", "bar", "baz"
 <a name="set_forEach" href="#wiki-set_forEach">#</a> set.<b>forEach</b>(<i>function</i>)
 
 Calls the specified *function* for each value in this set, passing the value as an argument. The `this` context of the *function* is this set. Returns undefined. The iteration order is arbitrary.
+
+<a name="set_empty" href="#wiki-set_empty">#</a> set.<b>empty</b>()
+
+Returns true if and only if this set has zero values.
+
+<a name="set_size" href="#wiki-set_size">#</a> set.<b>size</b>()
+
+Returns the number of values in this set.
 
 ## Array Operators
 
