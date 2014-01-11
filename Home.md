@@ -63,6 +63,14 @@ require(["d3"], function(d3) {
 });
 ```
 
+Or equivalently using [curl.js](https://github.com/cujojs/curl):
+
+```js
+curl({paths: {d3: "http://d3js.org/d3.v3.min"}}, ["d3"], function(d3) {
+  console.log(d3.version);
+});
+```
+
 ## Modifying
 
 If you want to modify how D3 is implemented, click the "Fork" button in the top-right corner of this page, and then clone your fork from the command line by replacing *username* with your GitHub username:
