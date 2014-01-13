@@ -926,6 +926,8 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Insights: Interactive Force Graph Component](https://github.com/ignacioola/insights)
 * [Lepracursor](http://sepans.com/sp/postes/lepracursor/), a d3.js based library which adds a virtual pointer to the page that grows in number with every click
 * [iopctrl.js: User interface controls and gauges](http://iop.io/iopctrl)
+* [Interactive visualization that shows changes in the internal node tree of a quadtree as points are added](http://jimkang.com/quadtreevis/)
+
 
 ### Wish List
 
