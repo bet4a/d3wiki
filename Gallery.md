@@ -208,7 +208,8 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Tokyo Wind Map<br><a href="http://air.nullschool.net"><img src="https://raw.github.com/wiki/cambecc/air/tokyowind.png" width="202"></a></td>
     <td>Dependency Wheel<br><a href="http://redotheweb.com/DependencyWheel/"><img src="http://redotheweb.com/DependencyWheel/img/dependency_chord.gif" width="202"></a></td>
     <td>60 years of french first names<br><a href="http://dataaddict.fr/prenoms/"><img src="http://dataaddict.fr/wp-content/uploads/2013/06/prenom_img_home.png" width="202"></a></td>
-    <td>Hip Replacement by State<br><a href="http://vida.io/discussion/s5qo5Gwrct5HNxAD2"><img src="https://s3.amazonaws.com/vida-production/thumbnails/s5qo5Gwrct5HNxAD2" width="202"></a></td>
+    <td>Hip Replacement by State<br><a href="https://vida.io/discussion/s5qo5Gwrct5HNxAD2"><img 
+src="https://s3.amazonaws.com/vida-production/thumbnails/s5qo5Gwrct5HNxAD2" width="202"></a></td>
 </tr>
 <tr>
     <td>Compare time series with irregular interval<br><a href="http://bl.ocks.org/marufbd/7191340"><img src="https://gist.github.com/marufbd/7191340/raw/ab057eef9227e5498431c030c6ad5048cb326a3a/thumbnail.png" width="202"></a></td>
@@ -234,7 +235,8 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>UK Temperature Graphs<br><a href="http://charts.animateddata.co.uk/uktemperaturelines"><img src="http://animateddata.co.uk/img/d3-gallery/uktemperaturelines3.jpg" width="202"></a></td>
     <td>Data Heatmap with Sorting Functions<br><a href="http://bl.ocks.org/ianyfchang/8119685"><img src="http://bl.ocks.org/ianyfchang/raw/8119685/thumbnail.png" width="202"></a></td>
     <td>Node-Link Tree Showing Branches of Government<br><a href="http://greencracker.net/wp-content/uploads/2013/11/final-cafe-press-dimensions-1106.jpg"><img src="http://greencracker.net/wp-content/uploads/2013/12/tree_thumb.jpg" width="202"></a></td>
-
+    <td>3D Force Layout<br><a href="https://vida.io/documents/N4jSip7n68yQ48DXp"><img 
+src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" width="202"></a></td>
 </tr>
 
 </table>
