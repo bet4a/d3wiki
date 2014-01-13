@@ -43,15 +43,15 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 
 ### [过渡效果](Transitions)
 
-* [d3.transition](Transitions#wiki-d3_transition) - 开始一个动态过渡。
-* [transition.delay](Transitions#wiki-delay) - 指定每个单位延迟时间（单位：毫秒ms）。
-* [transition.duration](Transitions#wiki-duration) - specify per-element duration in milliseconds.
-* [transition.ease](Transitions#wiki-ease) - specify transition easing function.
-* [transition.attr](Transitions#wiki-attr) - smoothly transition to the new attribute value.
-* [transition.attrTween](Transitions#wiki-attrTween) - smoothly transition between two attribute values.
-* [transition.style](Transitions#wiki-style) - smoothly transition to the new style property value.
-* [transition.styleTween](Transitions#wiki-styleTween) - smoothly transition between two style property values.
-* [transition.text](Transitions#wiki-text) - set the text content when the transition starts.
+* [d3.transition](Transitions#wiki-d3_transition) - 开始一个动态过渡。[简单教程](http://bost.ocks.org/mike/transition/)
+* [transition.delay](Transitions#wiki-delay) - 指定每个元素过渡的延迟时间（单位：毫秒ms）。
+* [transition.duration](Transitions#wiki-duration) - 指定每个元素过渡的持续时间（单位：毫秒ms）。
+* [transition.ease](Transitions#wiki-ease) - 指定过渡的缓冲函数。
+* [transition.attr](Transitions#wiki-attr) - 平滑过渡到新的attr属性值（起始属性值为当前属性）。
+* [transition.attrTween](Transitions#wiki-attrTween) - 在不同attr属性值之间平滑过渡（起始属性值可在过渡函数中设置）。
+* [transition.style](Transitions#wiki-style) - 平滑过渡到新的style属性值。
+* [transition.styleTween](Transitions#wiki-styleTween) - 在不同style属性值之间平滑过渡。
+* [transition.text](Transitions#wiki-text) - 在过渡开始时设置文本内容。
 * [transition.tween](Transitions#wiki-tween) - specify a custom tween operator to run as part of the transition.
 * [transition.select](Transitions#wiki-select) - start a transition on a descendant element for each selected element.
 * [transition.selectAll](Transitions#wiki-selectAll) - start a transition on multiple descendants for each selected element.
