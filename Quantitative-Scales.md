@@ -193,7 +193,9 @@ Returns an exact copy of this scale. Changes to this scale will not affect the r
 
 ## Log Scales
 
-Log scales are similar to linear scales, except there's a logarithmic transform that is applied to the input domain value before the output range value is computed. The mapping to the output range value *y* can be expressed as a function of the input domain value *x*: *y* = *m* log(<i>x</i>) + *b*. Log scales also support negative values, in which case the input value is multiplied by -1, and the resulting output value is also multiplied by -1. However, note that the domain of a log scale should never contain zero, as log(0) is negative infinity.
+Log scales are similar to linear scales, except there's a logarithmic transform that is applied to the input domain value before the output range value is computed. The mapping to the output range value *y* can be expressed as a function of the input domain value *x*: *y* = *m* log(<i>x</i>) + *b*.
+
+As log(0) is negative infinity, a log scale must have either an exclusively-positive or exclusively-negative domain; the domain must not include or cross zero. A log scale with a positive domain has a well-defined behavior for positive values, and a log scale with a negative domain has a well-defined behavior for negative values (the input value is multiplied by -1, and the resulting output value is also multiplied by -1). The behavior of the scale is undefined if you pass a negative value to a log scale with a positive domain or vice versa.
 
 <a name="log" href="Quantitative-Scales#wiki-log">#</a> d3.scale.<b>log</b>()
 
