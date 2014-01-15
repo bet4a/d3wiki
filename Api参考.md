@@ -82,7 +82,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [d3.interpolateZoom](Transitions#wiki-d3_interpolateZoom) - 在两个点之间平滑地缩放平移。[示例](http://bl.ocks.org/mbostock/3828981)
 * [d3.interpolators](Transitions#wiki-d3_interpolators) - 添加一个自定义的插值函数.
 
-### [[Working with Arrays|Arrays]]
+### [[数据操作(Working with Arrays)|Arrays]]
 
 * [[d3.ascending|Arrays#wiki-d3_ascending]] - 升序排序函数.
 * [[d3.descending|Arrays#wiki-d3_descending]] - 降序排序函数.
@@ -137,23 +137,23 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[d3.random.irwinHall|Math#wiki-random_irwinHall]] - 利用Irwin–Hall分布（简单可行并且容易编程的正态分布实现方法）产生一个随机数.
 * [[d3.transform|Math#wiki-transform]] - 将svg的tranform格式转化为标准的2D转换矩阵字符串格式.
 
-### [[Loading External Resources|Requests]]
+### [[载入外部资源(Loading External Resources)|Requests]]
 
-* [[d3.xhr|Requests#wiki-d3_xhr]] - request a resource using XMLHttpRequest.
-* [xhr.header](Requests#wiki-header) - set a request header.
-* [xhr.mimeType](Requests#wiki-mimeType) - set the Accept request header and override the response MIME type.
-* [xhr.response](Requests#wiki-response) - set a response mapping function.
-* [xhr.get](Requests#wiki-get) - issue a GET request.
-* [xhr.post](Requests#wiki-post) - issue a POST request.
-* [xhr.send](Requests#wiki-send) - issue a request with the specified method and data.
-* [xhr.abort](Requests#wiki-abort) - abort an outstanding request.
-* [xhr.on](Requests#wiki-on) - add an event listener for "progress", "load" or "error" events.
-* [[d3.text|Requests#wiki-d3_text]] - request a text file.
-* [[d3.json|Requests#wiki-d3_json]] - request a JSON blob.
-* [[d3.html|Requests#wiki-d3_html]] - request an HTML document fragment.
-* [[d3.xml|Requests#wiki-d3_xml]] - request an XML document fragment.
-* [[d3.csv|CSV]] - request a comma-separated values (CSV) file.
-* [[d3.tsv|CSV#wiki-tsv]] - request a tab-separated values (TSV) file.
+* [[d3.xhr|Requests#wiki-d3_xhr]] - 发起XMLHttpRequest请求获取资源。
+* [xhr.header](Requests#wiki-header) - 设置 request header。
+* [xhr.mimeType](Requests#wiki-mimeType) - 设置 Accept request header，并重写 response MIME type。
+* [xhr.response](Requests#wiki-response) - 设置response返回值转化函数。如 function(request) { return JSON.parse(request.responseText); }
+* [xhr.get](Requests#wiki-get) - 发起GET请求。
+* [xhr.post](Requests#wiki-post) - 发起POST请求。
+* [xhr.send](Requests#wiki-send) - 以指定的方法和数据发起请求。
+* [xhr.abort](Requests#wiki-abort) - 终止当前请求。
+* [xhr.on](Requests#wiki-on) - 为请求添加"beforesend", "progress", "load" 或 "error" 等事件监听器。
+* [[d3.text|Requests#wiki-d3_text]] - 请求一个text文件。
+* [[d3.json|Requests#wiki-d3_json]] - 请求一个JSON。
+* [[d3.html|Requests#wiki-d3_html]] - 请求一个html文本片段。
+* [[d3.xml|Requests#wiki-d3_xml]] - 请求一个XML文本片段。
+* [[d3.csv|CSV]] - 请求一个CSV(comma-separated values, 逗号分割值)文件。
+* [[d3.tsv|CSV#wiki-tsv]] - 请求一个TSV(tab-separated values, tab分割值)文件。
 
 ### [[String Formatting|Formatting]]
 
