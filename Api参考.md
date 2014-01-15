@@ -21,7 +21,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[selection.remove|Selections#wiki-remove]] - 从当前文档对象中删除选定的元素。
 * [[selection.data|Selections#wiki-data]] - 设置或获取一组元素的绑定数据（get or set data for a group of elements, while computing a relational join.）
 * [[selection.enter|Selections#wiki-enter]] - 返回缺失元素的占位对象（placeholder），指向绑定的数据中比选定元素集多出的一部分元素。
-* [[selection.exit|Selections#wiki-exit]] - 返回多余元素的元素集，即选择元素中比绑定数据多出的一部分。(关于data, enter, exit原理的[示例1](http://bost.ocks.org/mike/join/)， [示例2](http://bl.ocks.org/mbostock/3808218))
+* [[selection.exit|Selections#wiki-exit]] - 返回多余元素的元素集，即选择元素中比绑定数据多出的一部分。(关于data, enter, exit原理的[示例1](http://bost.ocks.org/mike/join/), [示例2](http://bl.ocks.org/mbostock/3808218), [示例3](http://bl.ocks.org/mbostock/5779690))
 * [[selection.datum|Selections#wiki-datum]] - 设置或获取单独元素的数据，不进行关联。（get or set data for individual elements, without computing a join.）
 * [[selection.filter|Selections#wiki-filter]] - 根据绑定的数据过滤选择集。
 * [[selection.sort|Selections#wiki-sort]] - 根据绑定的数据对选择的元素进行排序。
@@ -43,26 +43,26 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 
 ### [过渡效果](Transitions)
 
-* [d3.transition](Transitions#wiki-d3_transition) - 开始一个动态过渡。[简单教程](http://bost.ocks.org/mike/transition/)
+* [d3.transition](Transitions#wiki-d3_transition) - 开始一个动画过渡。[简单教程](http://bost.ocks.org/mike/transition/)
 * [transition.delay](Transitions#wiki-delay) - 指定每个元素过渡的延迟时间（单位：毫秒ms）。
 * [transition.duration](Transitions#wiki-duration) - 指定每个元素过渡的持续时间（单位：毫秒ms）。
 * [transition.ease](Transitions#wiki-ease) - 指定过渡的缓冲函数。
 * [transition.attr](Transitions#wiki-attr) - 平滑过渡到新的attr属性值（起始属性值为当前属性）。
-* [transition.attrTween](Transitions#wiki-attrTween) - 在不同attr属性值之间平滑过渡（起始属性值可在过渡函数中设置）。
+* [transition.attrTween](Transitions#wiki-attrTween) - 在不同attr属性值之间平滑过渡（起始属性值可在过渡函数中设置,甚至整个过渡函数都可以自定义）。
 * [transition.style](Transitions#wiki-style) - 平滑过渡到新的style属性值。
 * [transition.styleTween](Transitions#wiki-styleTween) - 在不同style属性值之间平滑过渡。
 * [transition.text](Transitions#wiki-text) - 在过渡开始时设置文本内容。
-* [transition.tween](Transitions#wiki-tween) - specify a custom tween operator to run as part of the transition.
-* [transition.select](Transitions#wiki-select) - start a transition on a descendant element for each selected element.
-* [transition.selectAll](Transitions#wiki-selectAll) - start a transition on multiple descendants for each selected element.
-* [transition.filter](Transitions#wiki-filter) - filter a transition based on data.
-* [transition.transition](Transitions#wiki-transition) - when this transition ends, start another one on the same elements.
-* [transition.remove](Transitions#wiki-remove) - remove selected elements at the end of a transition.
-* [transition.empty](Transitions#wiki-empty) - returns true if the transition is empty.
-* [transition.node](Transitions#wiki-node) - returns the first node in the transition.
-* [transition.size](Transitions#wiki-size) - returns the number of elements in the selection.
-* [transition.each](Transitions#wiki-each) - add a listener for transition end events.
-* [transition.call](Transitions#wiki-call) - call a function passing in the current transition.
+* [transition.tween](Transitions#wiki-tween) - 使某个属性过渡到一个新的属性值，该属性可以是非attr或非style属性，比如text。
+* [transition.select](Transitions#wiki-select) - 选择每个当前元素的某个子元素进行过渡。
+* [transition.selectAll](Transitions#wiki-selectAll) - 选择每个当前元素的多个子元素进行过渡。
+* [transition.filter](Transitions#wiki-filter) - 通过数据筛选出当前元素中的部分元素进行过渡。
+* [transition.transition](Transitions#wiki-transition) - 当前过渡结束后开始新的过渡。
+* [transition.remove](Transitions#wiki-remove) - 过渡结束后移除当前元素。
+* [transition.empty](Transitions#wiki-empty) - 如果过渡为空就返回true。如果当前元素中没有非null元素，则此过渡为空。
+* [transition.node](Transitions#wiki-node) - 返回过渡中的第一个元素。
+* [transition.size](Transitions#wiki-size) - 返回过渡中当前元素的数量。
+* [transition.each](Transitions#wiki-each) - 遍历每个元素执行操作。不指定触发类型时，立即执行操作。当指定触发类型为'start'或'end'时,会在过渡开始或结束时执行操作。
+* [transition.call](Transitions#wiki-call) - 以当前过渡为this执行某个函数。
 * [d3.ease](Transitions#wiki-d3_ease) - customize transition timing.
 * [ease](Transitions#wiki-_ease) - a parametric easing function.
 * [d3.timer](Transitions#wiki-d3_timer) - start a custom animation timer.
