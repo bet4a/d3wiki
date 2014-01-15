@@ -132,7 +132,7 @@ For an example of how to specify a *y*-accessor, see the similar [x](SVG-Shapes#
 
 <a name="line_interpolate" href="SVG-Shapes#wiki-line_interpolate">#</a> line.<b>interpolate</b>([<i>interpolate</i>])
 
-If *interpolate* is specified, sets the interpolation mode to the specified string. If *interpolate* is not specified, returns the current interpolation mode. The following modes are supported:
+If *interpolate* is specified, sets the interpolation mode to the specified string or function. If *interpolate* is not specified, returns the current interpolation mode. The following named interpolation modes are supported:
 
 * linear - piecewise linear segments, as in a polyline.
 * linear-closed - close the linear segments to form a polygon.
@@ -148,7 +148,28 @@ If *interpolate* is specified, sets the interpolation mode to the specified stri
 * cardinal-closed - a closed Cardinal spline, as in a loop.
 * monotone - [cubic interpolation](http://en.wikipedia.org/wiki/Monotone_cubic_interpolation) that preserves monotonicity in *y*.
 
-The behavior of some of these interpolation modes may be further customized by specifying a [tension](SVG-Shapes#wiki-line_tension).
+The behavior of some of these interpolation modes may be further customized by specifying a [tension](SVG-Shapes#wiki-line_tension). If *interpolate* is a function, then this function will be invoked to convert an array of points of the form [​[x0, y0], [x1, y1], …], returning an [SVG path data string](http://www.w3.org/TR/SVG/paths.html#PathData) that will be used to display the line. For example, linear interpolation is implemented as:
+
+```js
+function interpolateLinear(points) {
+  return points.join("L");
+}
+```
+
+This is equivalent to (and more efficient than):
+
+```js
+function interpolateLinear(points) {
+  var path = "";
+  for (var i = 0; i < points.length; i++) {
+    if (i) path += "L";
+    path += points[i][0] + "," + points[i][1];
+  }
+  return path;
+}
+```
+
+See [bl.ocks.org/3310323](http://bl.ocks.org/mbostock/3310323) for another example of custom line interpolation.
 
 <a name="line_tension" href="SVG-Shapes#wiki-line_tension">#</a> line.<b>tension</b>([<i>tension</i>])
 
