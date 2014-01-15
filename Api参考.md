@@ -63,24 +63,24 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [transition.size](Transitions#wiki-size) - 返回过渡中当前元素的数量。
 * [transition.each](Transitions#wiki-each) - 遍历每个元素执行操作。不指定触发类型时，立即执行操作。当指定触发类型为'start'或'end'时,会在过渡开始或结束时执行操作。
 * [transition.call](Transitions#wiki-call) - 以当前过渡为this执行某个函数。
-* [d3.ease](Transitions#wiki-d3_ease) - customize transition timing.
-* [ease](Transitions#wiki-_ease) - a parametric easing function.
-* [d3.timer](Transitions#wiki-d3_timer) - start a custom animation timer.
-* [d3.timer.flush](Transitions#wiki-d3_timer_flush) - immediately execute any zero-delay timers.
-* [d3.interpolate](Transitions#wiki-d3_interpolate) - interpolate two values.
-* [interpolate](Transitions#wiki-_interpolate) - a parametric interpolation function.
-* [d3.interpolateNumber](Transitions#wiki-d3_interpolateNumber) - interpolate two numbers.
-* [d3.interpolateRound](Transitions#wiki-d3_interpolateRound) - interpolate two integers.
-* [d3.interpolateString](Transitions#wiki-d3_interpolateString) - interpolate two strings.
-* [d3.interpolateRgb](Transitions#wiki-d3_interpolateRgb) - interpolate two RGB colors.
-* [d3.interpolateHsl](Transitions#wiki-d3_interpolateHsl) - interpolate two HSL colors.
-* [d3.interpolateLab](Transitions#wiki-d3_interpolateLab) - interpolate two L\*a\*b\* colors.
-* [d3.interpolateHcl](Transitions#wiki-d3_interpolateHcl) - interpolate two HCL colors.
-* [d3.interpolateArray](Transitions#wiki-d3_interpolateArray) - interpolate two arrays of values.
-* [d3.interpolateObject](Transitions#wiki-d3_interpolateObject) - interpolate two arbitrary objects.
-* [d3.interpolateTransform](Transitions#wiki-d3_interpolateTransform) - interpolate two 2D matrix transforms.
-* [d3.interpolateZoom](Transitions#wiki-d3_interpolateZoom) - zoom and pan between two points smoothly.
-* [d3.interpolators](Transitions#wiki-d3_interpolators) - register a custom interpolator.
+* [d3.ease](Transitions#wiki-d3_ease) - 定制过渡的缓冲函数。
+* [ease](Transitions#wiki-_ease) - 缓冲函数。缓冲函数可让动画效果更自然，比如elastic缓冲函数可用以模拟弹性物体的运动。
+* [d3.timer](Transitions#wiki-d3_timer) - 开始一个定制的动画计时。功能类似于setTimeout，但内部用requestAnimationFrame实现，更高效。 
+* [d3.timer.flush](Transitions#wiki-d3_timer_flush) - 立刻执行当前没有延迟的计时。可用于处理闪屏问题。
+* [d3.interpolate](Transitions#wiki-d3_interpolate) - 生成一个插值函数，在两个参数间插值。差值函数的类型会根据输入参数的类型（数字、字符串、颜色等）而自动选择。
+* [interpolate](Transitions#wiki-_interpolate) - 插值函数。输入参数在[0, 1]之间。
+* [d3.interpolateNumber](Transitions#wiki-d3_interpolateNumber) - 在两个数字间插值。
+* [d3.interpolateRound](Transitions#wiki-d3_interpolateRound) - 在两个数字间插值，返回值会四舍五入取整。
+* [d3.interpolateString](Transitions#wiki-d3_interpolateString) - 在两个字符串间插值。解析字符串中的数字，对应的数字会插值。
+* [d3.interpolateRgb](Transitions#wiki-d3_interpolateRgb) - 在两个RGB颜色间插值。
+* [d3.interpolateHsl](Transitions#wiki-d3_interpolateHsl) - 在两个HSL颜色间插值。
+* [d3.interpolateLab](Transitions#wiki-d3_interpolateLab) - 在两个L\*a\*b\*颜色间插值。
+* [d3.interpolateHcl](Transitions#wiki-d3_interpolateHcl) - 在两个HCL颜色间插值。
+* [d3.interpolateArray](Transitions#wiki-d3_interpolateArray) - 在两个数列间插值。d3.interpolateArray( [0, 1],  [1, 10, 100] )(0.5);  // returns [0.5, 5.5, 100]
+* [d3.interpolateObject](Transitions#wiki-d3_interpolateObject) - 在两个object间插值。d3.interpolateArray( {x: 0, y: 1}, {x: 1, y: 10, z: 100} )(0.5);  // returns {x: 0.5, y: 5.5, z: 100}
+* [d3.interpolateTransform](Transitions#wiki-d3_interpolateTransform) - 在两个2D仿射变换间插值。
+* [d3.interpolateZoom](Transitions#wiki-d3_interpolateZoom) - 在两个点之间平滑地缩放平移。[示例](http://bl.ocks.org/mbostock/3828981)
+* [d3.interpolators](Transitions#wiki-d3_interpolators) - 添加一个自定义的插值函数.
 
 ### [[Working with Arrays|Arrays]]
 
