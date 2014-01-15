@@ -148,7 +148,9 @@ If *interpolate* is specified, sets the interpolation mode to the specified stri
 * cardinal-closed - a closed Cardinal spline, as in a loop.
 * monotone - [cubic interpolation](http://en.wikipedia.org/wiki/Monotone_cubic_interpolation) that preserves monotonicity in *y*.
 
-The behavior of some of these interpolation modes may be further customized by specifying a [tension](SVG-Shapes#wiki-line_tension). If *interpolate* is a function, then this function will be invoked to convert an array of points of the form [​[x0, y0], [x1, y1], …], returning an [SVG path data string](http://www.w3.org/TR/SVG/paths.html#PathData) that will be used to display the line. For example, linear interpolation is implemented as:
+The behavior of some of these interpolation modes may be further customized by specifying a [tension](SVG-Shapes#wiki-line_tension).
+
+If *interpolate* is a function, then this function will be invoked to convert an array of points of the form [​[x0, y0], [x1, y1], …], returning an [SVG path data string](http://www.w3.org/TR/SVG/paths.html#PathData) that will be used to display the line. The "M" at the start of the string is implied and should not be returned. For example, linear interpolation is implemented as:
 
 ```js
 function interpolateLinear(points) {
@@ -296,7 +298,7 @@ For an example of how to specify a *y1*-accessor, see the similar [x](SVG-Shapes
 
 <a name="area_interpolate" href="SVG-Shapes#wiki-area_interpolate">#</a> area.<b>interpolate</b>([<i>interpolate</i>])
 
-If *interpolate* is specified, sets the interpolation mode to the specified string. If *interpolate* is not specified, returns the current interpolation mode. The following modes are supported:
+If *interpolate* is specified, sets the interpolation mode to the specified string or function. If *interpolate* is not specified, returns the current interpolation mode. The following named modes are supported:
 
 * linear - piecewise linear segments, as in a polyline.
 * step - alternate between horizontal and vertical segments, as in a step function.
@@ -309,6 +311,29 @@ If *interpolate* is specified, sets the interpolation mode to the specified stri
 * monotone - [cubic interpolation](http://en.wikipedia.org/wiki/Monotone_cubic_interpolation) that preserves monotonicity in *y*.
 
 The behavior of some of these interpolation modes may be further customized by specifying a [tension](SVG-Shapes#wiki-area_tension). Technically, the basis-closed and cardinal-closed interpolation modes are also supported, but these make more sense in the context of a line rather than an area.
+
+If *interpolate* is a function, then this function will be invoked to convert an array of points of the form [​[x0, y0], [x1, y1], …], returning an [SVG path data string](http://www.w3.org/TR/SVG/paths.html#PathData) that will be used to display the area. The "M" at the start of the string is implied and should not be returned. For example, linear interpolation is implemented as:
+
+```js
+function interpolateLinear(points) {
+  return points.join("L");
+}
+```
+
+This is equivalent to (and more efficient than):
+
+```js
+function interpolateLinear(points) {
+  var path = "";
+  for (var i = 0; i < points.length; i++) {
+    if (i) path += "L";
+    path += points[i][0] + "," + points[i][1];
+  }
+  return path;
+}
+```
+
+See [bl.ocks.org/3310323](http://bl.ocks.org/mbostock/3310323) for another example of custom interpolation.
 
 <a name="area_tension" href="SVG-Shapes#wiki-area_tension">#</a> area.<b>tension</b>([<i>tension</i>])
 
