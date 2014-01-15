@@ -64,7 +64,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [transition.each](Transitions#wiki-each) - 遍历每个元素执行操作。不指定触发类型时，立即执行操作。当指定触发类型为'start'或'end'时,会在过渡开始或结束时执行操作。
 * [transition.call](Transitions#wiki-call) - 以当前过渡为this执行某个函数。
 * [d3.ease](Transitions#wiki-d3_ease) - 定制过渡的缓冲函数。
-* [ease](Transitions#wiki-_ease) - 缓冲函数。缓冲函数可让动画效果更自然，比如elastic缓冲函数可用以模拟弹性物体的运动。
+* [ease](Transitions#wiki-_ease) - 缓冲函数。缓冲函数可让动画效果更自然，比如elastic缓冲函数可用以模拟弹性物体的运动。是一种插值函数的特例。
 * [d3.timer](Transitions#wiki-d3_timer) - 开始一个定制的动画计时。功能类似于setTimeout，但内部用requestAnimationFrame实现，更高效。 
 * [d3.timer.flush](Transitions#wiki-d3_timer_flush) - 立刻执行当前没有延迟的计时。可用于处理闪屏问题。
 * [d3.interpolate](Transitions#wiki-d3_interpolate) - 生成一个插值函数，在两个参数间插值。差值函数的类型会根据输入参数的类型（数字、字符串、颜色等）而自动选择。
@@ -155,12 +155,12 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[d3.csv|CSV]] - 请求一个CSV(comma-separated values, 逗号分割值)文件。
 * [[d3.tsv|CSV#wiki-tsv]] - 请求一个TSV(tab-separated values, tab分割值)文件。
 
-### [[String Formatting|Formatting]]
+### [[字符串格式化(String Formatting)|Formatting]]
 
-* [[d3.format|Formatting#wiki-d3_format]] - format a number as a string.
-* [d3.formatPrefix](Formatting#wiki-d3_formatPrefix) - returns the [SI prefix] for the specified value and precision.
-* [[d3.requote|Formatting#wiki-d3_requote]] - quote a string for use in a regular expression.
-* [[d3.round|Formatting#wiki-d3_round]] - rounds a value to some digits after the decimal point.
+* [[d3.format|Formatting#wiki-d3_format]] - 将数字转化成指定格式的字符串。转化的格式非常丰富，且非常智能。
+* [d3.formatPrefix](Formatting#wiki-d3_formatPrefix) - 以指定的值和精度获得一个[SI prefix]对象。这个函数可用来自动判断数据的量级， 如K(千)，M(百万)等等。示例:  var prefix = d3.formatPrefix(1.21e9); console.log(prefix.symbol); // "G"; console.log(prefix.scale(1.21e9)); // 1.21
+* [[d3.requote|Formatting#wiki-d3_requote]] - 将字符串转义成可在正则表达式中使用的格式。如 d3.requote('$'); // return "\$"
+* [[d3.round|Formatting#wiki-d3_round]] - 设置某个数按小数点后多少位取整。与toFixed()类似，但返回格式为number。 如 d3.round(1.23); // return 1; d3.round(1.23, 1); // return 1.2; d3.round(1.25, 1); // return 1.3
 
 ### [[CSV Formatting (d3.csv)|CSV]]
 
