@@ -199,10 +199,10 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[hcl.rgb|Colors#wiki-hcl_rgb]] - 将HCL颜色对象转化成RGB颜色对象。
 * [[hcl.toString|Colors#wiki-hcl_toString]] - HCL颜色转化为字符串格式。
 
-### [[Namespaces]]
+### [[命名空间|Namespaces]]
 
-* [[d3.ns.prefix|Namespaces#wiki-prefix]] - access or extend known XML namespaces.
-* [[d3.ns.qualify|Namespaces#wiki-qualify]] - qualify a prefixed name, such as "xlink:href".
+* [[d3.ns.prefix|Namespaces#wiki-prefix]] - 获取或扩展已知的XML命名空间。
+* [[d3.ns.qualify|Namespaces#wiki-qualify]] - 验证命名空间前缀是否存在, 如"xlink:href"中xlink是已知的命名空间。
 
 ### [[Internals]]
 
