@@ -178,26 +178,26 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 
 ### [[Colors]]
 
-* [[d3.rgb|Colors#wiki-d3_rgb]] - specify a color in RGB space.
-* [[rgb.brighter|Colors#wiki-rgb_brighter]] - increase RGB channels by some exponential factor (gamma).
-* [[rgb.darker|Colors#wiki-rgb_darker]] - decrease RGB channels by some exponential factor (gamma).
-* [[rgb.hsl|Colors#wiki-rgb_hsl]] - convert from RGB to HSL.
-* [[rgb.toString|Colors#wiki-rgb_toString]] - convert an RGB color to a string.
-* [[d3.hsl|Colors#wiki-d3_hsl]] - specify a color in HSL space.
-* [[hsl.brighter|Colors#wiki-hsl_brighter]] - increase lightness by some exponential factor (gamma).
-* [[hsl.darker|Colors#wiki-hsl_darker]] - decrease lightness by some exponential factor (gamma).
-* [[hsl.rgb|Colors#wiki-hsl_rgb]] - convert from HSL to RGB.
-* [[hsl.toString|Colors#wiki-hsl_toString]] - convert an HSL color to a string.
-* [[d3.lab|Colors#wiki-d3_lab]] - specify a color in L\*a\*b\* space.
-* [[lab.brighter|Colors#wiki-lab_brighter]] - increase lightness by some exponential factor (gamma).
-* [[lab.darker|Colors#wiki-lab_darker]] - decrease lightness by some exponential factor (gamma).
-* [[lab.rgb|Colors#wiki-lab_rgb]] - convert from L\*a\*b\* to RGB.
-* [[lab.toString|Colors#wiki-lab_toString]] - convert a L\*a\*b\* color to a string.
-* [[d3.hcl|Colors#wiki-d3_hcl]] - specify a color in HCL space.
-* [[hcl.brighter|Colors#wiki-hcl_brighter]] - increase lightness by some exponential factor (gamma).
-* [[hcl.darker|Colors#wiki-hcl_darker]] - decrease lightness by some exponential factor (gamma).
-* [[hcl.rgb|Colors#wiki-hcl_rgb]] - convert from HCL to RGB.
-* [[hcl.toString|Colors#wiki-hcl_toString]] - convert an HCL color to a string.
+* [[d3.rgb|Colors#wiki-d3_rgb]] - 指定一种颜色，创建一个RGB颜色对象。支持多种颜色格式的输入。
+* [[rgb.brighter|Colors#wiki-rgb_brighter]] - 增强颜色的亮度，变化幅度由参数决定。
+* [[rgb.darker|Colors#wiki-rgb_darker]] - 减弱颜色的亮度，变化幅度由参数决定。
+* [[rgb.hsl|Colors#wiki-rgb_hsl]] - 将RGB颜色对象转化成HSL颜色对象。
+* [[rgb.toString|Colors#wiki-rgb_toString]] - RGB颜色转化为字符串格式。
+* [[d3.hsl|Colors#wiki-d3_hsl]] - 创建一个HSL颜色对象。支持多种颜色格式的输入。
+* [[hsl.brighter|Colors#wiki-hsl_brighter]] - 增强颜色的亮度，变化幅度由参数决定。
+* [[hsl.darker|Colors#wiki-hsl_darker]] - 减弱颜色的亮度，变化幅度由参数决定。
+* [[hsl.rgb|Colors#wiki-hsl_rgb]] - 将HSL颜色对象转化成RGB颜色对象。
+* [[hsl.toString|Colors#wiki-hsl_toString]] - HSL颜色转化为字符串格式。
+* [[d3.lab|Colors#wiki-d3_lab]] - 创建一个Lab颜色对象。支持多种颜色格式的输入。
+* [[lab.brighter|Colors#wiki-lab_brighter]] - 增强颜色的亮度，变化幅度由参数决定。
+* [[lab.darker|Colors#wiki-lab_darker]] - 减弱颜色的亮度，变化幅度由参数决定。
+* [[lab.rgb|Colors#wiki-lab_rgb]] - 将Lab颜色对象转化成RGB颜色对象。
+* [[lab.toString|Colors#wiki-lab_toString]] - Lab颜色转化为字符串格式。
+* [[d3.hcl|Colors#wiki-d3_hcl]] - 创建一个HCL颜色对象。支持多种颜色格式的输入。
+* [[hcl.brighter|Colors#wiki-hcl_brighter]] - 增强颜色的亮度，变化幅度由参数决定。
+* [[hcl.darker|Colors#wiki-hcl_darker]] - 减弱颜色的亮度，变化幅度由参数决定。
+* [[hcl.rgb|Colors#wiki-hcl_rgb]] - 将HCL颜色对象转化成RGB颜色对象。
+* [[hcl.toString|Colors#wiki-hcl_toString]] - HCL颜色转化为字符串格式。
 
 ### [[Namespaces]]
 
