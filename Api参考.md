@@ -152,8 +152,8 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[d3.json|Requests#wiki-d3_json]] - 请求一个JSON。
 * [[d3.html|Requests#wiki-d3_html]] - 请求一个html文本片段。
 * [[d3.xml|Requests#wiki-d3_xml]] - 请求一个XML文本片段。
-* [[d3.csv|CSV]] - 请求一个CSV(comma-separated values, 逗号分割值)文件。
-* [[d3.tsv|CSV#wiki-tsv]] - 请求一个TSV(tab-separated values, tab分割值)文件。
+* [[d3.csv|CSV]] - 请求一个CSV(comma-separated values, 逗号分隔值)文件。
+* [[d3.tsv|CSV#wiki-tsv]] - 请求一个TSV(tab-separated values, tab分隔值)文件。
 
 ### [[字符串格式化(String Formatting)|Formatting]]
 
@@ -162,19 +162,19 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[d3.requote|Formatting#wiki-d3_requote]] - 将字符串转义成可在正则表达式中使用的格式。如 d3.requote('$'); // return "\$"
 * [[d3.round|Formatting#wiki-d3_round]] - 设置某个数按小数点后多少位取整。与toFixed()类似，但返回格式为number。 如 d3.round(1.23); // return 1; d3.round(1.23, 1); // return 1.2; d3.round(1.25, 1); // return 1.3
 
-### [[CSV Formatting (d3.csv)|CSV]]
+### [[CSV 格式化 (d3.csv)|CSV]]
 
-* [[d3.csv|CSV#wiki-csv]] - request a comma-separated values (CSV) file.
-* [[d3.csv.parse|CSV#wiki-parse]] - parse a CSV string into objects using the header row.
-* [[d3.csv.parseRows|CSV#wiki-parseRows]] - parse a CSV string into tuples, ignoring the header row.
-* [[d3.csv.format|CSV#wiki-format]] - format an array of objects into a CSV string.
-* [[d3.csv.formatRows|CSV#wiki-formatRows]] - format an array of tuples into a CSV string.
-* [[d3.tsv|CSV#wiki-tsv]] - request a tab-separated values (TSV) file.
-* [[d3.tsv.parse|CSV#wiki-tsv_parse]] - parse a TSV string into objects using the header row.
-* [[d3.tsv.parseRows|CSV#wiki-tsv_parseRows]] - parse a TSV string into tuples, ignoring the header row.
-* [[d3.tsv.format|CSV#wiki-tsv_format]] - format an array of objects into a TSV string.
-* [[d3.tsv.formatRows|CSV#wiki-tsv_formatRows]] - format an array of tuples into a TSV string.
-* [d3.dsv](CSV#wiki-dsv) - create a parser/formatter for the specified delimiter and mime type.
+* [[d3.csv|CSV#wiki-csv]] - 获取一个CSV (comma-separated values, 冒号分隔值)文件。
+* [[d3.csv.parse|CSV#wiki-parse]] - 将CSV文件字符串转化成object的数组，object的key由第一行决定。如： [{"Year": "1997", "Length": "2.34"}, {"Year": "2000", "Length": "2.38"}]
+* [[d3.csv.parseRows|CSV#wiki-parseRows]] - 将CSV文件字符串转化成数组的数组。如： [ ["year", "length"],["1997", "2.34"],["2000", "2.38"] ]
+* [[d3.csv.format|CSV#wiki-format]] - 将object的数组转化成CSV文件字符串，是d3.csv.parse的逆操作。
+* [[d3.csv.formatRows|CSV#wiki-formatRows]] - 将数组的数组转化成CSV文件字符串，是d3.csv.parseRows的逆操作。
+* [[d3.tsv|CSV#wiki-tsv]] - 获取一个TSV (tab-separated values, tab分隔值)文件。
+* [[d3.tsv.parse|CSV#wiki-tsv_parse]] - 类似于d3.csv.parse。
+* [[d3.tsv.parseRows|CSV#wiki-tsv_parseRows]] - 类似于d3.csv.parseRows。
+* [[d3.tsv.format|CSV#wiki-tsv_format]] - 类似于d3.csv.format。
+* [[d3.tsv.formatRows|CSV#wiki-tsv_formatRows]] - 类似于d3.csv.formatRows。
+* [d3.dsv](CSV#wiki-dsv) - 创建一个类似于d3.csv的文件处理对象，可以自定义分隔符和mime type。如：var dsv = d3.dsv("|", "text/plain");
 
 ### [[Colors]]
 
