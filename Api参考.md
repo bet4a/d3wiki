@@ -204,13 +204,13 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[d3.ns.prefix|Namespaces#wiki-prefix]] - 获取或扩展已知的XML命名空间。
 * [[d3.ns.qualify|Namespaces#wiki-qualify]] - 验证命名空间前缀是否存在, 如"xlink:href"中xlink是已知的命名空间。
 
-### [[Internals]]
+### [[内部方法（Internals）|Internals]]
 
-* [[d3.functor|Internals#wiki-functor]] - create a function that returns a constant.
-* [[d3.rebind|Internals#wiki-rebind]] - rebind an inherited getter/setter method to a subclass.
-* [[d3.dispatch|Internals#wiki-d3_dispatch]] - create a custom event dispatcher.
-* [[dispatch.on|Internals#wiki-dispatch_on]] - register or unregister an event listener.
-* [[dispatch.type|Internals#wiki-_dispatch]] - dispatch an event to registered listeners.
+* [[d3.functor|Internals#wiki-functor]] - 函数化。将非函数变量转化为只返回该变量值的函数。输入函数，则返回原函数；输入值，则返回一个函数，该函数只返回原值。
+* [[d3.rebind|Internals#wiki-rebind]] - 将一个对象的方法绑定到另一个对象上。
+* [[d3.dispatch|Internals#wiki-d3_dispatch]] - 创建一个定制的事件。
+* [[dispatch.on|Internals#wiki-dispatch_on]] - 添加或移除一个事件监听器。对一个事件可添加多个监听器。
+* [[dispatch.type|Internals#wiki-_dispatch]] - 触发事件。其中‘type’为要触发的事件的名称。
 
 ## [d3.scale (Scales)](Scales)
 
