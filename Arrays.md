@@ -190,7 +190,7 @@ Returns the number of entries in this map.
 
 <a name="d3_set" href="#wiki-d3_set">#</a> d3.<b>set</b>([<i>array</i>])
 
-Constructs a new set. If *array* is specified, adds the given the *array* of string values to the returned set.
+Constructs a new set. If *array* is specified, adds the given *array* of string values to the returned set.
 
 <a name="set_has" href="#wiki-set_has">#</a> set.<b>has</b>(<i>value</i>)
 
