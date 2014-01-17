@@ -166,7 +166,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 
 * [[d3.csv|CSV#wiki-csv]] - 获取一个CSV (comma-separated values, 冒号分隔值)文件。
 * [[d3.csv.parse|CSV#wiki-parse]] - 将CSV文件字符串转化成object的数组，object的key由第一行决定。如： [{"Year": "1997", "Length": "2.34"}, {"Year": "2000", "Length": "2.38"}]
-* [[d3.csv.parseRows|CSV#wiki-parseRows]] - 将CSV文件字符串转化成数组的数组。如： [ ["year", "length"],["1997", "2.34"],["2000", "2.38"] ]
+* [[d3.csv.parseRows|CSV#wiki-parseRows]] - 将CSV文件字符串转化成数组的数组。如： [ ["Year", "Length"],["1997", "2.34"],["2000", "2.38"] ]
 * [[d3.csv.format|CSV#wiki-format]] - 将object的数组转化成CSV文件字符串，是d3.csv.parse的逆操作。
 * [[d3.csv.formatRows|CSV#wiki-formatRows]] - 将数组的数组转化成CSV文件字符串，是d3.csv.parseRows的逆操作。
 * [[d3.tsv|CSV#wiki-tsv]] - 获取一个TSV (tab-separated values, tab分隔值)文件。
