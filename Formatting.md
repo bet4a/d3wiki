@@ -85,13 +85,17 @@ This method is used by d3.format for the %s format.
 
 <a name="d3_round" href="Formatting#wiki-d3_round">#</a> d3.<b>round</b>(<i>x</i>[, <i>n</i>])
 
-Returns the value *x* rounded to *n* digits after the decimal point. If *n* is omitted, it defaults to zero. The result is a number. Values are rounded to the closest multiple of 10 to the power minus *n*; if two multiples are equally close, the value is rounded up in accordance with the built-in [[round|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/round]] function. Note that the resulting number when converted to a string may be imprecise due to IEEE floating point precision; to format a number to a string with a fixed number of decimal points, use [d3.format](Formatting#wiki-d3_format) instead.
+Returns the value *x* rounded to *n* digits after the decimal point. If *n* is omitted, it defaults to zero. The result is a number. Values are rounded to the closest multiple of 10 to the power minus *n*; if two multiples are equally close, the value is rounded up in accordance with the built-in [[round|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/round]] function. For example:
 
 ```js
-d3.round(1.23); // return 1
-d3.round(1.23, 1); // return 1.2
-d3.round(1.25, 1); // return 1.3
+d3.round(1.23); // 1
+d3.round(1.23, 1); // 1.2
+d3.round(1.25, 1); // 1.3
+d3.round(12.5, 0); // 13
+d3.round(12, -1); // 10
 ```
+
+Note that the resulting number when converted to a string may be imprecise due to IEEE floating point precision; to format a number to a string with a fixed number of decimal points, use [d3.format](Formatting#wiki-d3_format) instead.
 
 ## Strings
 
