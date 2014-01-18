@@ -104,7 +104,7 @@ Note that the resulting number when converted to a string may be imprecise due t
 Returns a quoted (escaped) version of the specified *string* such that the string may be embedded in a regular expression as a string literal.
 
 ```js
-d3.requote('[]'); // return '\[\]'
+d3.requote("[]"); // "\[\]"
 ```
 
 ## Dates
