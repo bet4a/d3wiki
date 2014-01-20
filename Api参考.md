@@ -212,22 +212,22 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[dispatch.on|Internals#wiki-dispatch_on]] - 添加或移除一个事件监听器。对一个事件可添加多个监听器。
 * [[dispatch.type|Internals#wiki-_dispatch]] - 触发事件。其中‘type’为要触发的事件的名称。
 
-## [d3.scale (Scales)](Scales)
+## [d3.scale(Scales)](Scales)
 
-### [[Quantitative|Quantitative-Scales#wiki-quantitative]]
+### [[定量变换(Quantitative)|Quantitative-Scales#wiki-quantitative]]
 
-* [[d3.scale.linear|Quantitative-Scales#wiki-linear]] - construct a linear quantitative scale.
-* [[linear|Quantitative-Scales#wiki-_linear]] - get the range value corresponding to a given domain value.
-* [[linear.invert|Quantitative-Scales#wiki-linear_invert]] - get the domain value corresponding to a given range value.
-* [[linear.domain|Quantitative-Scales#wiki-linear_domain]] - get or set the scale's input domain.
-* [[linear.range|Quantitative-Scales#wiki-linear_range]] - get or set the scale's output range.
-* [[linear.rangeRound|Quantitative-Scales#wiki-linear_rangeRound]] - set the scale's output range, and enable rounding.
-* [[linear.interpolate|Quantitative-Scales#wiki-linear_interpolate]] - get or set the scale's output interpolator.
-* [[linear.clamp|Quantitative-Scales#wiki-linear_clamp]] - enable or disable clamping of the output range.
-* [[linear.nice|Quantitative-Scales#wiki-linear_nice]] - extend the scale domain to nice round numbers.
-* [[linear.ticks|Quantitative-Scales#wiki-linear_ticks]] - get representative values from the input domain.
-* [[linear.tickFormat|Quantitative-Scales#wiki-linear_tickFormat]] - get a formatter for displaying tick values.
-* [[linear.copy|Quantitative-Scales#wiki-linear_copy]] - create a new scale from an existing scale.
+* [[d3.scale.linear|Quantitative-Scales#wiki-linear]] - 创建一个线性定量变换。（建议参考源码以深入理解各种变换。）
+* [[linear|Quantitative-Scales#wiki-_linear]] - 输入一个定义域的值，返回一个值域的值。
+* [[linear.invert|Quantitative-Scales#wiki-linear_invert]] - 反变换，输入值域值返回定义域值。
+* [[linear.domain|Quantitative-Scales#wiki-linear_domain]] - get或set定义域。
+* [[linear.range|Quantitative-Scales#wiki-linear_range]] - get或set值域。
+* [[linear.rangeRound|Quantitative-Scales#wiki-linear_rangeRound]] - 设置值域，并使结果取整。
+* [[linear.interpolate|Quantitative-Scales#wiki-linear_interpolate]] - get或set变换的插值函数，如将默认的线性插值函数替换成取整的线性插值函数d3_interpolateRound。
+* [[linear.clamp|Quantitative-Scales#wiki-linear_clamp]] - 设置值域是否闭合，默认不闭合。当值域闭合时，如果插值结果在值域之外，会取值域的边界值。如值域为[1, 2],插值函数的计算结果为3，如果不闭合，最终结果为3；如果闭合，最终结果为2。
+* [[linear.nice|Quantitative-Scales#wiki-linear_nice]] - 扩展定义域范围使定义域更规整。如[0.20147987687960267, 0.996679553296417] 变成 [0.2, 1]。
+* [[linear.ticks|Quantitative-Scales#wiki-linear_ticks]] - 从定义域中取出有代表性的值。通常用于坐标轴刻度的选取。
+* [[linear.tickFormat|Quantitative-Scales#wiki-linear_tickFormat]] - 获取格式转化函数，通常用于坐标轴刻度的格式转化。如：var x = d3.scale.linear().domain([-1, 1]);   console.log(x.ticks(5).map(x.tickFormat(5, "+%"))); // ["-100%", "-50%", "+0%", "+50%", "+100%"]
+* [[linear.copy|Quantitative-Scales#wiki-linear_copy]] - 从已有的变换中复制出一个变换。
 * [[d3.scale.sqrt|Quantitative-Scales#wiki-sqrt]] - construct a quantitative scale with a square root transform.
 * [[d3.scale.pow|Quantitative-Scales#wiki-pow]] - construct a quantitative scale with an exponential transform.
 * [[pow|Quantitative-Scales#wiki-_pow]] - get the range value corresponding to a given domain value.
