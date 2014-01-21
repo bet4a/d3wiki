@@ -52,6 +52,8 @@ This operator is a convenience routine for setting the "class" attribute; it und
 
 If *value* is specified, sets whether or not the specified class is associated with the selected elements. If *value* is a constant and truthy, then all elements are assigned the specified class, if not already assigned; if falsey, then the class is removed from all selected elements, if assigned. If *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to assign or unassign the specified class on each element.
 
+If you want to set several classes at once, use an object literal like so: `selection.classed({'foo': true, 'bar': false})`.
+
 If *value* is not specified, returns true if and only if the first non-null element in this selection has the specified class. This is generally useful only if you know the selection contains exactly one element.
 
 <a name="style" href="Selections#wiki-style">#</a> selection.<b>style</b>(<i>name</i>[, <i>value</i>[, <i>priority</i>]])
@@ -67,6 +69,8 @@ If *value* is not specified, returns the current *computed* value of the specifi
 Some HTML elements have special properties that are not addressable using standard attributes or styles. For example, form text fields have a `value` string property, and checkboxes have a `checked` boolean property. You can use the `property` operator to get or set these properties, or any other addressable field on the underlying element, such as `className`.
 
 If *value* is specified, sets the property with the specified name to the specified value on all selected elements. If *value* is a constant, then all elements are given the same property value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's property. A null value will delete the specified attribute.
+
+If you want to set several properties at once, use an object literal like so: `selection.properties({'foo': 'bar', 'baz': 'qux'})`.
 
 If *value* is not specified, returns the value of the specified property for the first non-null element in the selection. This is generally useful only if you know the selection contains exactly one element.
 
