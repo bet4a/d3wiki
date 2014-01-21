@@ -299,6 +299,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 </table>
 
 ## Examples
+* [UNESCO World Inequality Database on Education] (http://www.education-inequalities.org/) 
 * [Are global CO2 emissions still rising?] (http://infographics.pbl.nl/website/globalco2/) - Allard Warrink and Jeroen Dolmans
 * [BLOSUM Substitution Matrices as a Dynamic Network (force layout)] (http://ahmetrasit.com/blosum/) - Ahmet R. Ozturk, Ankara
 * [50 Years of Change (map, matrix, and block bar chart)] (http://50yearsofchange.com/) - Erin Hamilton, Rashauna Mead, and Vanessa Knoppke-Wetzel, UW-Madison
