@@ -91,9 +91,9 @@ g.append("path")
 
 The line generator is designed to work in conjunction with the [area](SVG-Shapes#wiki-area) generator. For example, when producing an area chart, you might use an area generator with a fill style, and a line generator with a stroke style to emphasize the top edge of the area. Since the line generator is only used to set the *d* attribute, you can control the appearance of the line using standard SVG styles and attributes, such as *fill*, *stroke* and *stroke-width*.
 
-<a name="_line" href="SVG-Shapes#wiki-_line">#</a> <b>line</b>(<i>data</i>[, <i>index</i>])
+<a name="_line" href="SVG-Shapes#wiki-_line">#</a> <b>line</b>(<i>data</i>)
 
-Returns the path data string for the specified array of *data* elements. An optional *index* may be specified, which is passed through to the line's accessor functions.
+Returns the path data string for the specified array of *data* elements.
 
 <a name="line_x" href="SVG-Shapes#wiki-line_x">#</a> line.<b>x</b>([<i>x</i>])
 
