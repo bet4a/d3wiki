@@ -4,18 +4,18 @@
 
 ## Storing the D3 library in the CouchDB
 
-This one is easy. First, make a copy of your complete **d3apps1** folder and store it in your workspace using the name **d3apps2**. Then just move a copy of **d3.v2.min.js** into the **_attachments** folder. Then it should look as follows:
+This one is easy. First, make a copy of your complete **d3apps1** folder and store it in your workspace using the name **d3apps2**. Then just move a copy of **d3.v3.min.js** into the **_attachments** folder. Then it should look as follows:
 
 ```
 d3apps2
     _attachments
-        d3.v2.min.js
+        d3.v3.min.js
         index.html
         sp500.csv
     .couchapprc
 ```
 
-Delete the references to the external d3 library files and insert a reference to the local **d3.v2.min.js** file. The beginning of your **index.html** file should look as follows (with or without the out-commented lines):
+Delete the references to the external d3 library files and insert a reference to the local **d3.v3.min.js** file. The beginning of your **index.html** file should look as follows (with or without the out-commented lines):
 
 ```
 <!DOCTYPE html>
@@ -25,7 +25,7 @@ Delete the references to the external d3 library files and insert a reference to
 <script src="http://mbostock.github.com/d3/d3.csv.js?2.7.2"></script>
 <script src="http://mbostock.github.com/d3/d3.time.js?2.7.2"></script>
 -->
-<script src="d3.v2.min.js"></script>
+<script src="d3.v3.min.js"></script>
 ```
 
 From within your **d3apps2** folder, push your code into the CouchDB:
@@ -47,7 +47,7 @@ Then add the following code to **import.html**:
 <head>
     <script src="/_utils/script/jquery.js"></script>
     <script src="/_utils/script/jquery.couch.js"></script>
-    <script src="d3.v2.min.js"></script>
+    <script src="d3.v3.min.js"></script>
 </head>
 
 <body>
