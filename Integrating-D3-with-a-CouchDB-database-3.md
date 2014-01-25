@@ -8,7 +8,7 @@ First, make a copy of your complete **d3apps2** folder and store it in your work
 ```
 d3apps3
     _attachments
-        d3.v2.min.js
+        d3.v3.min.js
         import.html
         index.html
         sp500.csv
@@ -24,7 +24,7 @@ To access the data in your **d3apps3** CouchDB, you need to change your **index.
 <script src="/_utils/script/jquery.js"></script>
 <script src="/_utils/script/jquery.couch.js"></script>
 
-<script src="d3.v2.min.js"></script>
+<script src="d3.v3.min.js"></script>
 
 <style>
 ```
@@ -48,7 +48,7 @@ completely by following code:
             var data = doc.data;
 
             data.forEach(function(d) {
-                d.date = formatDate.parse(d.date);
+                d.date = parseDate(d.date);
                 d.price = +d.price;
             });
 
