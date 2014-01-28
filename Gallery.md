@@ -449,6 +449,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [Interactive Stacked Bar Chart of US Population](http://bl.ocks.org/yuuniverse4444/8b0e53f29e24e2bdb265) - Zhou Yu
 * [Arapahoe Basin Ski Slopes Vizualized](http://davidwilson.me/viz/abasin.html) - David Wilson
 * [D3-dateline](https://github.com/pbinkley/D3-dateline) - horizontal timeline, force-directed - Peter Binkley
+* [Visualizing K-Means Clustering](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/) - Naftali Harris
 
 ### Collections
 
