@@ -450,6 +450,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [Arapahoe Basin Ski Slopes Vizualized](http://davidwilson.me/viz/abasin.html) - David Wilson
 * [D3-dateline](https://github.com/pbinkley/D3-dateline) - horizontal timeline, force-directed - Peter Binkley
 * [Visualizing K-Means Clustering](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/) - Naftali Harris
+* [Australian Election Preferences](http://peterneish.github.io/preferences/) - Peter Neish
 
 ### Collections
 
