@@ -810,6 +810,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Chernoff faces, Fisheye, Geodesic grid, Hive plot, Horizon chart, Sankey diagram, ](https://github.com/d3/d3-plugins)
 * [Parallel Sets](https://github.com/jasondavies/d3-parsets)
 * [Word Cloud](https://github.com/jasondavies/d3-cloud/blob/master/d3.layout.cloud.js)
+* [Progressive Word Cloud visualising Bloomberg financial news](http://mktinsight.ywng.cloudbees.net/)
 * [MathJax label](http://bl.ocks.org/mbostock/3391642)
 * [Simple table](http://jsfiddle.net/christopheviau/v6VMf/)
 * [Legend](http://bl.ocks.org/mbostock/3918369)
