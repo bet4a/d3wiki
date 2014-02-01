@@ -854,6 +854,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 
 * [IPython-Notebook with d3.js](http://blogs.infoecho.net/echo/2012/02/05/ipython-notebook-d3-js-mashup/)
 * [Plotting library for python based on d3](https://github.com/mikedewar/d3py)
+* [mpld3: d3 visualizations of matplotlib (python) plots](http://github.com/jakevdp/mpld3)
 * [Visualizing NetworkX graphs in the browser using D3](http://www.drewconway.com/zia/?p=2765)
 * [Pushing d3 commands to the browser from iPython](https://github.com/hhuuggoo/pushd3)
 * [Dance.js: D3 with Backbone and Data.js](http://quasipartikel.at/2012/04/25/dancing-with-data/)
