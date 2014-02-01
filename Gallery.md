@@ -600,6 +600,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Stacked layout with time axis](http://bl.ocks.org/mbostock/1314483)
 * [Multiple Area Charts with D3.JS](http://tympanus.net/codrops/2012/08/29/multiple-area-charts-with-d3-js/)
 * [Multiple time-series with object constancy](http://bl.ocks.org/mbostock/4175202) - Nikhil Sonnad
+* [Overlapped distribution Area chart] (http://bl.ocks.org/nswamy14/083a1e3181c81428f817)
 
 #### Pie Chart
 
