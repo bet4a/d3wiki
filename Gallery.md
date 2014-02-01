@@ -240,6 +240,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 </tr>
 <tr height="207" valign="top">
     <td>Rotating Arcs<br><a href="http://vyacheslavryabinin.com/datavis/absind"><img src="http://vyacheslavryabinin.com/datavis/absind/absind.png" width="202"></a></td>
+    <td>Lifespan<br><a href="http://www.cotrino.com/2014/02/lifespan-longevidad-animal/"><img src="https://raw.github.com/cotrino/experimentos/master/lifespan.png" width="200"></a></td>
 </tr>
 
 </table>
@@ -454,6 +455,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [D3-dateline](https://github.com/pbinkley/D3-dateline) - horizontal timeline, force-directed - Peter Binkley
 * [Visualizing K-Means Clustering](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/) - Naftali Harris
 * [Australian Election Preferences](http://peterneish.github.io/preferences/) - Peter Neish
+* [Lifespan](http://www.cotrino.com/2014/02/lifespan-longevidad-animal/) - José Cotrino
 
 ### Collections
 
