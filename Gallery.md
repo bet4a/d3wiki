@@ -456,6 +456,9 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [Visualizing K-Means Clustering](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/) - Naftali Harris
 * [Australian Election Preferences](http://peterneish.github.io/preferences/) - Peter Neish
 * [Lifespan](http://www.cotrino.com/2014/02/lifespan-longevidad-animal/) - José Cotrino
+* [Millennium Development Goals and Economic Growth](http://helenjacksonanalytic.co.uk/MDG.html) - Helen Jackson
+* [Weather and UK agricultural yields regression results](http://helenjacksonanalytic.co.uk/agri.html) - Helen Jackson
+* [Simple Schelling Model of urban segregation](http://helenjacksonanalytic.co.uk/schelling.html) - Helen Jackson
 
 ### Collections
 
