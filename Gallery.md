@@ -624,6 +624,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Scatterplot and Heatmap](http://jsfiddle.net/indiemaps/gzPDU/)
 * [Scatterplot: Social trust vs ease of doing business](http://bl.ocks.org/mbostock/4481531) - Nikhil Sonnad
 * [Explore Matrix Data with Scatterplots](http://benjiec.github.io/scatter-matrix/demo/demo.html)
+* [k-Nearest-Neighbor Search with Quadtree](http://bl.ocks.org/llb4ll/8709363)
 
 #### Parallel Coordinates, Parallel sets and Sankey
 
