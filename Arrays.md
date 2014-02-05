@@ -247,7 +247,7 @@ returns ["b", "c", "a"]. It is acceptable for the array of indexes to be a diffe
 
 This method can also be used to extract the values from an object into an array with a stable order. (Array indexes in JavaScript are simply properties which have a special relationship to `.length`.) Extracting keyed values in order can be useful for generating data arrays in nested selections. For example, we could display some of the Minnesota barley yield data above in table form:
 
-```
+```js
 var cols = ["site", "variety", "yield"];
 thead.selectAll('th').data(cols)
     .enter().append('th').text(function (d) { return d.toUpperCase(); });
