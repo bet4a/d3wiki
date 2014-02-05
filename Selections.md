@@ -354,7 +354,7 @@ The *selector* may also be specified as a function that returns an element, or n
 
 <a name="selectAll" href="Selections#wiki-selectAll">#</a> selection.<b>selectAll</b>(<i>selector</i>)
 
-For each element in the current selection, selects descendant elements that match the specified *selector* string. The returned selection is grouped by the ancestor node in the current selection. If no element matches the specified selector for the current element, the group at the current index will be empty in the returned selection. The subselection does not inherit data from the current selection; however, if the [data](Selections#wiki-data) value is specified as a function, this function will be based the data `d` of the ancestor node and the group index `i`.
+For each element in the current selection, selects descendant elements that match the specified *selector* string. The returned selection is grouped by the ancestor node in the current selection. If no element matches the specified selector for the current element, the group at the current index will be empty in the returned selection. The subselection does not inherit data from the current selection; however, if the [data](Selections#wiki-data) value is specified as a function, this function will be called with the data `d` of the ancestor node and the group index `i` to determine the data bindings for the subselection.
 
 Grouping by selectAll also affects subsequent entering placeholder nodes. Thus, to specify the parent node when appending entering nodes, use select followed by selectAll:
 
