@@ -4,7 +4,7 @@
 
 ## Resources
 
-* [Introduction](http://mbostock.github.com/d3/)
+* [Introduction](http://d3js.org/)
 * [[Examples Gallery|Gallery]]
 * [[Tutorials and Talks|Tutorials]]
 * [[API Reference]]
