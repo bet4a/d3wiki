@@ -15,6 +15,7 @@ Please feel free to add links to your work!
 * [Working with Transitions](http://bost.ocks.org/mike/transition/)
 * [D3 Tutorials](http://alignedleft.com/tutorials/d3/) - Scott Murray
 * [Try D3 Now](http://christopheviau.com/d3_tutorial/) - Christophe Viau
+* [Getting Started with D3 Graphs](http://thinkingonthinking.com/Getting-Started-With-D3/) - Patrick Mulder
 * [D3 for Mere Mortals](http://www.recursion.org/d3-for-mere-mortals/) - Luke Francl
 * [D3, Conceptually](http://code.hazzens.com/d3tut/) - Mikey Levine
 * [Introduction to D3](http://dealloc.me/2011/06/24/d3-is-not-a-graphing-library.html) - Justin Palmer
