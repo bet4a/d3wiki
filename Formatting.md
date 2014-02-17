@@ -66,9 +66,9 @@ The available *type* values are:
 
 The type "n" is also supported as shorthand for ",g". 
 
-<a name="d3_formatPrefix" href="#wiki-d3_formatPrefix">#</a> d3.<b>formatPrefix</b>(<i>value</i>, <i>precision</i>)
+<a name="d3_formatPrefix" href="#wiki-d3_formatPrefix">#</a> d3.<b>formatPrefix</b>(<i>value</i>[, <i>precision</i>])
 
-Returns the [SI prefix](http://en.wikipedia.org/wiki/Metric_prefix) for the specified *value* at the specified *precision*. The returned prefix object has two properties:
+Returns the [SI prefix](http://en.wikipedia.org/wiki/Metric_prefix) for the specified *value*. If an optional *precision* is specified, the *value* is rounded accordingly before computing the prefix. The returned prefix object has two properties:
 
 * symbol - the prefix symbol, such as "M" for millions.
 * scale - the scale function, for converting numbers to the appropriate prefixed scale.
