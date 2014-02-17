@@ -96,6 +96,7 @@ Also checkout [D3.js on Hacker Notes](http://www.thehackernotes.com/mbostock/d3)
 * [D3.js - Data Visualisation in the Browser](http://prcweb.co.uk/slides/d3/)<br>Peter Cook, Async Brighton, January 2013
 * [An Intro to D3.js - Data-Driven Delight](http://anna.ps/talks/fel/)<br>Anna Powell-Smith, Front-End London, January 2013
 * [Building apps with D3.js](http://www.youtube.com/watch?v=hhSlX_r7GZA)<br>Nathan Vander Wilt, CascadiaJS, November 2013
+* [Data visualization for the web with D3.js (English slides)](http://ptamarit.com/slides-data-viz-web-d3/en/)<br>[Visualisation de données pour le web avec D3.js (French video)](http://www.infoq.com/fr/presentations/visualisation-donnees-web-d3js) [(French slides)](http://ptamarit.com/slides-data-viz-web-d3/fr/)<br>Pablo Tamarit, Soft-Shake conference, October 2013
 
 ## Meetups
 
