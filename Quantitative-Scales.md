@@ -77,6 +77,8 @@ console.log(x.ticks(5).map(x.tickFormat(5, "+%"))); // ["-100%", "-50%", "+0%", 
 
 If the *format* already specifies a precision, this method is equivalent to [d3.format](Formatting#wiki-d3_format).
 
+Note that when using a log scale in conjunction with an axis, you typically want to use [axis.ticks](SVG-Axes#wiki-ticks) rather than [axis.tickFormat](SVG-Axes#wiki-tickFormat) to take advantage of the log scale’s custom tick format, as in [bl.ocks.org/5537697](http://bl.ocks.org/mbostock/5537697).
+
 <a name="linear_copy" href="#wiki-linear_copy">#</a> linear.<b>copy</b>()
 
 Returns an exact copy of this linear scale. Changes to this scale will not affect the returned scale, and vice versa.
