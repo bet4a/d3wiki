@@ -462,6 +462,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [New Years Resolutions and Search Trends] (http://www.bytemuse.com/post/resolutions-and-search-trends/) - Chris Polis
 * [Geometric Proof of the Pythagorean theorem] (http://www.bytemuse.com/post/geometric-proof-of-the-pythagorean-theorem-in-d3-js/) - Chris Polis
 * [NHL Cap Hits] (http://caphits.com) - Joe Meissler
+* [Top words and the words they frequently appear with in American Hip-Hop] (http://hiphop.laserdeathstehr.com/) - Nathan Stehr
 
 ### Collections
 
