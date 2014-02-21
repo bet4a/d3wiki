@@ -490,7 +490,7 @@ If *type* is specified, sets the *type*-accessor to the specified function or co
 * circle - a [circle](http://en.wikipedia.org/wiki/Circle).
 * cross - a [Greek cross](http://en.wikipedia.org/wiki/Cross) or plus sign.
 * diamond - a [rhombus](http://en.wikipedia.org/wiki/Rhombus).
-* square - an axis-aligned [square](http://en.wikipedia.org/wiki/Square_(geometry\)).
+* square - an axis-aligned [square](http://en.wikipedia.org/wiki/Square_(geometry)).
 * triangle-down - a downward-pointing [equilateral triangle](http://en.wikipedia.org/wiki/Equilateral_triangle).
 * triangle-up - an upward-pointing equilateral triangle.
 
