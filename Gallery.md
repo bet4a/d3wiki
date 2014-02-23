@@ -242,6 +242,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
     <td>Rotating Arcs<br><a href="http://vyacheslavryabinin.com/datavis/absind"><img src="http://vyacheslavryabinin.com/datavis/absind/absind.png" width="202"></a></td>
     <td>Lifespan<br><a href="http://www.cotrino.com/2014/02/lifespan-longevidad-animal/"><img src="https://raw.github.com/cotrino/experimentos/master/lifespan.png" width="200"></a></td>
     <td>spacetime<br><a href="http://bl.ocks.org/clayzermk1/9142407"><img src="https://gist.githubusercontent.com/clayzermk1/9142407/raw/thumbnail.png"></a></td>
+    <td>AWS EC2 Price Comparison Chart<br><a href="http://kenlin.com/x/aws-price-comparison-chart/"><img src="https://raw2.github.com/kenklin/aws-price-comparison-chart/master/aws-price-comparison-chart-small.png" width="202"></a></td>
 </tr>
 
 </table>
