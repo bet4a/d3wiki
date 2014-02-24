@@ -465,6 +465,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [Geometric Proof of the Pythagorean theorem] (http://www.bytemuse.com/post/geometric-proof-of-the-pythagorean-theorem-in-d3-js/) - Chris Polis
 * [NHL Cap Hits] (http://caphits.com) - Joe Meissler
 * [Top words and the words they frequently appear with in American Hip-Hop] (http://hiphop.laserdeathstehr.com/) - Nathan Stehr
+* [Sochi Winter Olympics Medals by Country and Sport] (http://www.bytemuse.com/post/sochi-winter-olympics-medals-by-country-sport/) - Chris Polis
 
 ### Collections
 
