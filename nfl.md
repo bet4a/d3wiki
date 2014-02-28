@@ -1,1 +1,0 @@
-[https://github.com/bernie73/NHL-schedule.git](https://github.com/bernie73/NHL-schedule.git)
