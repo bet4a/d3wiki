@@ -93,7 +93,7 @@ The line generator is designed to work in conjunction with the [area](SVG-Shapes
 
 <a name="_line" href="SVG-Shapes#wiki-_line">#</a> <b>line</b>(<i>data</i>)
 
-Returns the path data string for the specified array of *data* elements.
+Returns the path data string for the specified array of *data* elements, or null if the path is empty.
 
 <a name="line_x" href="SVG-Shapes#wiki-line_x">#</a> line.<b>x</b>([<i>x</i>])
 
@@ -242,7 +242,7 @@ To create [streamgraphs](http://mbostock.github.com/d3/ex/stream.html) (stacked 
 
 <a name="_area" href="SVG-Shapes#wiki-_area">#</a> <b>area</b>(<i>data</i>[, <i>index</i>])
 
-Returns the path data string for the specified array of *data* elements. An optional *index* may be specified, which is passed through to the area's accessor functions.
+Returns the path data string for the specified array of *data* elements, or null if the path is empty. An optional *index* may be specified, which is passed through to the area's accessor functions.
 
 <a name="area_x" href="SVG-Shapes#wiki-area_x">#</a> area.<b>x</b>([<i>x</i>])
 
