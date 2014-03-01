@@ -161,7 +161,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 ### [[String Formatting|Formatting]]
 
 * [[d3.format|Formatting#wiki-d3_format]] - format a number as a string.
-* [d3.formatPrefix](Formatting#wiki-d3_formatPrefix) - returns the [SI prefix] for the specified value and precision.
+* [d3.formatPrefix](Formatting#wiki-d3_formatPrefix) - returns the [SI prefix](http://en.wikipedia.org/wiki/Metric_prefix) for the specified value and precision.
 * [[d3.requote|Formatting#wiki-d3_requote]] - quote a string for use in a regular expression.
 * [[d3.round|Formatting#wiki-d3_round]] - rounds a value to some digits after the decimal point.
 
