@@ -76,7 +76,7 @@ If *extent* is specified, sets the projection’s viewport clip extent to the sp
 
 <a name="precision" href="#wiki-precision">#</a> projection.<b>precision</b>(<i>precision</i>)
 
-If *precision* is specified, sets the threshold for the projection’s [adaptive resampling](http://bl.ocks.org/mbostock/3795544) to the specified value in pixels and returns the projection. This value corresponds to the [Douglas–Peucker](http://en.wikipedia.org/wiki/Ramer–Douglas–Peucker_algorithm) distance. If *precision* is not specified, returns the projection’s current resampling precision which defaults to `Math.SQRT1_2`.
+If *precision* is specified, sets the threshold for the projection’s [adaptive resampling](http://bl.ocks.org/mbostock/3795544) to the specified value in pixels and returns the projection. This value corresponds to the [Douglas–Peucker](http://en.wikipedia.org/wiki/Ramer–Douglas–Peucker_algorithm) distance. If *precision* is not specified, returns the projection’s current resampling precision which defaults to `Math.SQRT(1/2)`.
 
 A *precision* of `0` disables adaptive resampling.
 
