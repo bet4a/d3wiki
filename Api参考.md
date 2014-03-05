@@ -470,14 +470,14 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 
 ### [[Chord|Chord-Layout]]
 
-* [[d3.layout.chord|Chord-Layout#wiki-chord]] - produce a chord diagram from a matrix of relationships.
-* [[chord.matrix|Chord-Layout#wiki-matrix]] - get or set the matrix data backing the layout.
-* [[chord.padding|Chord-Layout#wiki-padding]] - get or set the angular padding between chord segments.
-* [[chord.sortGroups|Chord-Layout#wiki-sortGroups]] - get or set the comparator function for groups.
-* [[chord.sortSubgroups|Chord-Layout#wiki-sortSubgroups]] - get or set the comparator function for subgroups.
-* [[chord.sortChords|Chord-Layout#wiki-sortChords]] - get or set the comparator function for chords (z-order).
-* [[chord.chords|Chord-Layout#wiki-chords]] - retrieve the computed chord angles.
-* [[chord.groups|Chord-Layout#wiki-groups]] - retrieve the computed group angles.
+* [[d3.layout.chord|Chord-Layout#wiki-chord]] - 初始化一个弦图对象, 返回一个 Chord 实例
+* [[chord.matrix|Chord-Layout#wiki-matrix]] - 设置或者获取弦图实例对应的矩阵数据
+* [[chord.padding|Chord-Layout#wiki-padding]] - 设置或获取弦图各段圆弧之间的间隔角度
+* [[chord.sortGroups|Chord-Layout#wiki-sortGroups]] - 设置或获取矩阵分组的排序函数
+* [[chord.sortSubgroups|Chord-Layout#wiki-sortSubgroups]] - 设置或获取矩阵二级分组的排序函数
+* [[chord.sortChords|Chord-Layout#wiki-sortChords]] - 设置或获取弦图在z序上的排序函数(决定哪一组显示在最上层)
+* [[chord.chords|Chord-Layout#wiki-chords]] - 该函数会将参数处理成对 chord 更友好的格式并返回, 若没有提供参数, 会调用matrix()来获取数据
+* [[chord.groups|Chord-Layout#wiki-groups]] - 该函数参数处理成更易于理解的分组信息, 若没有提供参数, 会调用matrix()来获取数据
 
 ### [[Cluster|Cluster-Layout]]
 
