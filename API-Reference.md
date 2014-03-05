@@ -121,7 +121,7 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 * [map.values](Arrays#wiki-map_values) - returns the map’s array of values.
 * [map.entries](Arrays#wiki-map_entries) - returns the map’s array of entries (key-values objects).
 * [map.forEach](Arrays#wiki-map_forEach) - calls the specified function for each entry in the map.
-* [map.empty](Arrays#wiki-map_empty) - returns true if the map has at least one entry.
+* [map.empty](Arrays#wiki-map_empty) - returns false if the map has at least one entry.
 * [map.size](Arrays#wiki-map_size) - returns the number of entries in the map.
 * [d3.set](Arrays#wiki-d3_set) - a shim for ES6 sets, since objects are not hashes!
 * [set.has](Arrays#wiki-set_has) - returns true if the set contains the specified value.
