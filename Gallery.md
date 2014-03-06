@@ -127,9 +127,9 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 </tr>
 <tr height="207" valign="top">
     <td>Open Knowledge Festival<br><a href="http://www.floapps.com/cases/open-knowledge-festival/"><img src="http://floapps.com/lab/misc/oklogo/ok.png" width="202"></a></td>
-    <td>Visual Hacker News<br><a href="http://fanfarefantastique.com/vishna/"><img src="http://fanfarefantastique.com/images/vhnthumb.png" width="202"></a></td>
     <td>Hierarchical Classification Tree<br><a href="http://www.bitjuice.com.au/research/#hierarchicalclassificationexample"><img src="http://www.bitjuice.com.au/wp-content/uploads/2013/08/hierarchical_visualisation_example.png" width="202"></a></td>
     <td>Gene Expression<br><a href="http://sulab.org/2013/02/data-chart-plugin-beta/"><img src="http://sulab.org/wordpress/wp-content/uploads/2013/02/data_chart_icon_2.jpg" width="202"></a></td>
+    <td>spacetime<br><a href="http://bl.ocks.org/clayzermk1/9142407"><img src="https://gist.githubusercontent.com/clayzermk1/9142407/raw/thumbnail.png"></a></td>
 </tr>
 <tr height="207" valign="top">
     <td>d3 Analog Clock Dashboard<br><a href="http://www.infocaptor.com/dashboard/d3-javascript-visualization-to-build-world-analog-clocks"><img src="http://www.infocaptor.com/dashboard/wp-content/uploads/2013/02/image-217-small.jpg" width="202"></a></td>
@@ -171,8 +171,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Bus transit data<br/><a href="http://busrac.es"><img src="https://raw.github.com/bjuhn/UrbanDataChallenge/master/data/busraces.png" width="200"></a></td>
     <td>Airline data from Fusion Tables<br/><a href="http://xliberation.com/googlecharts/d3flights.html"><img src="http://xliberation.com/googlecharts/1746.png" width="200"></a></td>
     <td>Geographical hexbins<br/><a href="http://ssz.fr/places?fr#ac$"><img src="http://ssz.fr/brdl/ac.png" width="200"></a></td>
-    <td>xkcd-style Comic Narrative Charts<br/><a href="http://csclub.uwaterloo.ca/~n2iskand/?page_id=13"><img src="http://csclub.uwaterloo.ca/~n2iskand/wp-content/uploads/2013/06/Screen-Shot-2013-06-08-at-12.04.47-PM-300x200.png" width="250"></a>
-    </td>
+    <td>xkcd-style Comic Narrative Charts<br/><a href="http://csclub.uwaterloo.ca/~n2iskand/?page_id=13"><img src="http://csclub.uwaterloo.ca/~n2iskand/wp-content/uploads/2013/06/Screen-Shot-2013-06-08-at-12.04.47-PM-300x200.png" width="250"></a></td>
 </tr>
 <tr>
     <td>GitHub Visualizer<br/><a href="http://artzub.com/ghv/#repo=d3&climit=100&user=mbostock&run"><img src="https://f.cloud.github.com/assets/134249/1274358/39cb552a-2d96-11e3-9936-c892a2f81bb6.gif" width="200"></a></td>
@@ -221,14 +220,12 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/s5qo5Gwrct5HNxAD2" widt
     <td>Multivariate Data Exploration with Scatterplots<br><a href="http://benjiec.github.io/scatter-matrix/demo/demo.html"><img src="http://benjiec.github.io/scatter-matrix/demo/demo.png" width="202"></a></td>
     <td>Live Power Outages In Maine<br><a href="http://rud.is/outage/"><img src="http://rud.is/outage/thumb2.png" width="202"></a></td>
     <td>Relative Size Of The Planets<br><a href="http://www.ununpentium.co.uk/pages/planets.jsp"><img src="http://i39.tinypic.com/ngsoj8.png" width="202"></a></td>
-    <td>Bitcoin Price Trends<br><a href="http://bitcointrends.herokuapp.com/"><img src="https://s3.amazonaws.com/bitcointrends/graphcaptured.PNG" width="202" height="202"></a></td>
-
+    <td>AWS EC2 Price Comparison Chart<br><a href="http://kenlin.com/x/aws-price-comparison-chart/"><img src="https://raw2.github.com/kenklin/aws-price-comparison-chart/master/aws-price-comparison-chart-small.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
     <td>Hurricane Forecast Path Evolution<br><a href="http://www.weather.com/news/weather-hurricanes/sandy-path-evolution-20121026"><img src="http://i.imwx.com/web/multimedia/images/sandy-cones-thumbnail.png" width="200"></a></td>
     <td>Sandy's Storm Surge<br><a href="http://www.weather.com/news/weather-hurricanes/sandy-surge-interactive-20121105"><img src="http://i.imwx.com/web/multimedia/images/sandy-surge-thumbnail.png" width="200"></a></td>
     <td>Monthly NCDC Climate Summary<br><a href="http://www.weather.com/news/april-ncdc-report-20130515"><img src="http://i.imwx.com/web/multimedia/images/ncdc-april-thumbnail.png" width="200"></a></td>
-
      <td>Epidemic Game <a href="http://vax.herokuapp.com"><img src="http://imgur.com/h3anuVg.gif" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
@@ -241,8 +238,8 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 <tr height="207" valign="top">
     <td>Rotating Arcs<br><a href="http://vyacheslavryabinin.com/datavis/absind"><img src="http://vyacheslavryabinin.com/datavis/absind/absind.png" width="202"></a></td>
     <td>Lifespan<br><a href="http://www.cotrino.com/2014/02/lifespan-longevidad-animal/"><img src="https://raw.github.com/cotrino/experimentos/master/lifespan.png" width="200"></a></td>
-    <td>spacetime<br><a href="http://bl.ocks.org/clayzermk1/9142407"><img src="https://gist.githubusercontent.com/clayzermk1/9142407/raw/thumbnail.png"></a></td>
-    <td>AWS EC2 Price Comparison Chart<br><a href="http://kenlin.com/x/aws-price-comparison-chart/"><img src="https://raw2.github.com/kenklin/aws-price-comparison-chart/master/aws-price-comparison-chart-small.png" width="202"></a></td>
+    <td></td>
+    <td></td>
 </tr>
 
 </table>
