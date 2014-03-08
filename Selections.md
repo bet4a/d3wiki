@@ -322,7 +322,7 @@ The `d3.event` object is a [[DOM event|https://developer.mozilla.org/en-US/docs/
 
 <a name="d3_mouse" href="#wiki-d3_mouse">#</a> d3.<b>mouse</b>(<i>container</i>)
 
-Returns the *x* and *y* coordinates of the current [d3.event](#wiki-d3_event), relative to the specified *container*. The container may be an HTML or SVG container element, such as an [[svg:g|http://www.w3.org/TR/SVG/struct.html#Groups]] or [[svg:svg|http://www.w3.org/TR/SVG/struct.html#SVGElement]]. The coordinates are returned as a two-element array [ *x*, *y*].
+Returns the *x* and *y* coordinates of the current [d3.event](#wiki-d3_event), relative to the specified *container*. The container may be an HTML or SVG container element, such as an [[svg:g|http://www.w3.org/TR/SVG/struct.html#Groups]] or [[svg:svg|http://www.w3.org/TR/SVG/struct.html#SVGElement]]. The coordinates are returned as a two-element array [*x*, *y*].
 
 <a name="d3_touches" href="#wiki-d3_touches">#</a> d3.<b>touches</b>(<i>container</i>[, <i>touches</i>])
 
