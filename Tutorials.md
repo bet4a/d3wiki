@@ -68,8 +68,6 @@ Please feel free to add links to your work!
 * [Jim Vallandingham](http://vallandingham.me/)
 * [Bharat Bhole](http://knowledgestockpile.blogspot.com/search/label/D3)
 
-Also checkout [D3.js on Hacker Notes](http://www.thehackernotes.com/mbostock/d3)
-
 ## Talks and Videos
 
 * [For Example](https://vimeo.com/channels/544709/69448223) [(Write-up)](http://bost.ocks.org/mike/example/) <br>Eyeo Festival, June 2013.
