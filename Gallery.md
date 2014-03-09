@@ -300,6 +300,9 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
     <td>Better force layout selection<br><a href="http://bl.ocks.org/couchand/6420534"><img src="https://gist.github.com/couchand/6420534/raw/84a16303101dbe8adc0ecc298471d95ebac4356e/thumbnail.png" width="200"></a></td>
 <td>v45 web theme using SVG<br><a href="http://twistedhardware.github.io/theme-v45"><img src="http://twistedhardware.github.io/theme-v45/images/v45_snap_small.jpg" width="200"></a></td>
   </tr>
+  <tr>
+    <td>Interactive force layout<br><a href="https://github.com/nylen/d3-process-map"><img src="http://i.imgur.com/LFM3KV5.png"></a></td>
+  </tr>
 </table>
 
 ## Examples
@@ -464,6 +467,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [NHL Cap Hits] (http://caphits.com) - Joe Meissler
 * [Top words and the words they frequently appear with in American Hip-Hop] (http://hiphop.laserdeathstehr.com/) - Nathan Stehr
 * [Sochi Winter Olympics Medals by Country and Sport] (http://www.bytemuse.com/post/sochi-winter-olympics-medals-by-country-sport/) - Chris Polis
+* [Process map and documentation using an interactive force layout](https://github.com/nylen/d3-process-map) - James Nylen
 
 ### Collections
 
@@ -672,6 +676,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [2011 International Phone Traffic](http://fcc.github.io/calltraffic/traffic2011.html)
 * [Gravity by Disqus](http://disqus.com/gravity)
 * [Navigate site by tags focus](http://xliberation.com/googlecharts/d3nodefocustagsite.html)
+* [Interactive process map and documentation](https://github.com/nylen/d3-process-map)
 
 #### Tree
 
