@@ -221,39 +221,39 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[linear.invert|Quantitative-Scales#wiki-linear_invert]] - 反变换，输入值域值返回定义域值。
 * [[linear.domain|Quantitative-Scales#wiki-linear_domain]] - get或set定义域。
 * [[linear.range|Quantitative-Scales#wiki-linear_range]] - get或set值域。
-* [[linear.rangeRound|Quantitative-Scales#wiki-linear_rangeRound]] - 设置值域，并使结果取整。
+* [[linear.rangeRound|Quantitative-Scales#wiki-linear_rangeRound]] - 设置值域，并对结果取整。
 * [[linear.interpolate|Quantitative-Scales#wiki-linear_interpolate]] - get或set变换的插值函数，如将默认的线性插值函数替换成取整的线性插值函数d3_interpolateRound。
 * [[linear.clamp|Quantitative-Scales#wiki-linear_clamp]] - 设置值域是否闭合，默认不闭合。当值域闭合时，如果插值结果在值域之外，会取值域的边界值。如值域为[1, 2],插值函数的计算结果为3，如果不闭合，最终结果为3；如果闭合，最终结果为2。
 * [[linear.nice|Quantitative-Scales#wiki-linear_nice]] - 扩展定义域范围使定义域更规整。如[0.20147987687960267, 0.996679553296417] 变成 [0.2, 1]。
 * [[linear.ticks|Quantitative-Scales#wiki-linear_ticks]] - 从定义域中取出有代表性的值。通常用于坐标轴刻度的选取。
 * [[linear.tickFormat|Quantitative-Scales#wiki-linear_tickFormat]] - 获取格式转化函数，通常用于坐标轴刻度的格式转化。如：var x = d3.scale.linear().domain([-1, 1]);   console.log(x.ticks(5).map(x.tickFormat(5, "+%"))); // ["-100%", "-50%", "+0%", "+50%", "+100%"]
 * [[linear.copy|Quantitative-Scales#wiki-linear_copy]] - 从已有的变换中复制出一个变换。
-* [[d3.scale.sqrt|Quantitative-Scales#wiki-sqrt]] - construct a quantitative scale with a square root transform.
-* [[d3.scale.pow|Quantitative-Scales#wiki-pow]] - construct a quantitative scale with an exponential transform.
-* [[pow|Quantitative-Scales#wiki-_pow]] - get the range value corresponding to a given domain value.
-* [[pow.invert|Quantitative-Scales#wiki-pow_invert]] - get the domain value corresponding to a given range value.
-* [[pow.domain|Quantitative-Scales#wiki-pow_domain]] - get or set the scale's input domain.
-* [[pow.range|Quantitative-Scales#wiki-pow_range]] - get or set the scale's output range.
-* [[pow.rangeRound|Quantitative-Scales#wiki-pow_rangeRound]] - set the scale's output range, and enable rounding.
-* [[pow.interpolate|Quantitative-Scales#wiki-pow_interpolate]] - get or set the scale's output interpolator.
-* [[pow.clamp|Quantitative-Scales#wiki-pow_clamp]] - enable or disable clamping of the output range.
-* [[pow.nice|Quantitative-Scales#wiki-pow_nice]] - extend the scale domain to nice round numbers.
-* [[pow.ticks|Quantitative-Scales#wiki-pow_ticks]] - get representative values from the input domain.
-* [[pow.tickFormat|Quantitative-Scales#wiki-pow_tickFormat]] - get a formatter for displaying tick values.
-* [[pow.exponent|Quantitative-Scales#wiki-pow_exponent]] - get or set the exponent power.
-* [[pow.copy|Quantitative-Scales#wiki-pow_copy]] - create a new scale from an existing scale.
-* [[d3.scale.log|Quantitative-Scales#wiki-log]] - construct a quantitative scale with an logarithmic transform.
-* [[log|Quantitative-Scales#wiki-_log]] - get the range value corresponding to a given domain value.
-* [[log.invert|Quantitative-Scales#wiki-log_invert]] - get the domain value corresponding to a given range value.
-* [[log.domain|Quantitative-Scales#wiki-log_domain]] - get or set the scale's input domain.
-* [[log.range|Quantitative-Scales#wiki-log_range]] - get or set the scale's output range.
-* [[log.rangeRound|Quantitative-Scales#wiki-log_rangeRound]] - set the scale's output range, and enable rounding.
-* [[log.interpolate|Quantitative-Scales#wiki-log_interpolate]] - get or set the scale's output interpolator.
-* [[log.clamp|Quantitative-Scales#wiki-log_clamp]] - enable or disable clamping of the output range.
-* [[log.nice|Quantitative-Scales#wiki-log_nice]] - extend the scale domain to nice powers of ten.
-* [[log.ticks|Quantitative-Scales#wiki-log_ticks]] - get representative values from the input domain.
-* [[log.tickFormat|Quantitative-Scales#wiki-log_tickFormat]] - get a formatter for displaying tick values.
-* [[log.copy|Quantitative-Scales#wiki-log_copy]] - create a new scale from an existing scale.
+* [[d3.scale.sqrt|Quantitative-Scales#wiki-sqrt]] - 创建一个求平方根的定量转换。
+* [[d3.scale.pow|Quantitative-Scales#wiki-pow]] - 创建一个指数变换。（可参考linear的对应翻译）
+* [[pow|Quantitative-Scales#wiki-_pow]] - 输入一个定义域的值，返回一个值域的值。
+* [[pow.invert|Quantitative-Scales#wiki-pow_invert]] - 反变换，输入值域值返回定义域值。
+* [[pow.domain|Quantitative-Scales#wiki-pow_domain]] - get或set定义域。
+* [[pow.range|Quantitative-Scales#wiki-pow_range]] - get或set值域。
+* [[pow.rangeRound|Quantitative-Scales#wiki-pow_rangeRound]] - 设置值域，并对结果取整。
+* [[pow.interpolate|Quantitative-Scales#wiki-pow_interpolate]] - get或set变换的插值函数。
+* [[pow.clamp|Quantitative-Scales#wiki-pow_clamp]] -  设置值域是否闭合，默认不闭合。
+* [[pow.nice|Quantitative-Scales#wiki-pow_nice]] - 扩展定义域范围使定义域更规整。
+* [[pow.ticks|Quantitative-Scales#wiki-pow_ticks]] - 从定义域中取出有代表性的值。通常用于坐标轴刻度的选取。
+* [[pow.tickFormat|Quantitative-Scales#wiki-pow_tickFormat]] - 获取格式转化函数，通常用于坐标轴刻度的格式转化。
+* [[pow.exponent|Quantitative-Scales#wiki-pow_exponent]] - get或set指数的幂次。默认为1次幂。
+* [[pow.copy|Quantitative-Scales#wiki-pow_copy]] - 从已有的变换中复制出一个变换。
+* [[d3.scale.log|Quantitative-Scales#wiki-log]] - 创建一个对数变换。（可参考linear的对应翻译）
+* [[log|Quantitative-Scales#wiki-_log]] - 输入一个定义域的值，返回一个值域的值。
+* [[log.invert|Quantitative-Scales#wiki-log_invert]] - 反变换，输入值域值返回定义域值。
+* [[log.domain|Quantitative-Scales#wiki-log_domain]] - get或set定义域。
+* [[log.range|Quantitative-Scales#wiki-log_range]] - get或set值域。
+* [[log.rangeRound|Quantitative-Scales#wiki-log_rangeRound]] - 设置值域，并对结果取整。
+* [[log.interpolate|Quantitative-Scales#wiki-log_interpolate]] - get或set变换的插值函数。
+* [[log.clamp|Quantitative-Scales#wiki-log_clamp]] - 设置值域是否闭合，默认不闭合。
+* [[log.nice|Quantitative-Scales#wiki-log_nice]] - 扩展定义域范围使定义域更规整。
+* [[log.ticks|Quantitative-Scales#wiki-log_ticks]] - 从定义域中取出有代表性的值。通常用于坐标轴刻度的选取。
+* [[log.tickFormat|Quantitative-Scales#wiki-log_tickFormat]] - 获取格式转化函数，通常用于坐标轴刻度的格式转化。
+* [[log.copy|Quantitative-Scales#wiki-log_copy]] - 从已有的变换中复制出一个变换。
 * [[d3.scale.quantize|Quantitative-Scales#wiki-quantize]] - construct a linear quantitative scale with a discrete output range.
 * [[quantize|Quantitative-Scales#wiki-_quantize]] - get the range value corresponding to a given domain value.
 * [quantize.invertExtent](Quantitative-Scales#wiki-quantize_invertExtent) - get the domain values for the specified range value.
