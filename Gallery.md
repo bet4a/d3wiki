@@ -469,6 +469,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [Sochi Winter Olympics Medals by Country and Sport] (http://www.bytemuse.com/post/sochi-winter-olympics-medals-by-country-sport/) - Chris Polis
 * [Process map and documentation using an interactive force layout](https://github.com/nylen/d3-process-map) - James Nylen
 * [Beijing Air Pollution Visualization](http://scottcheng.github.io/bj-air-vis/) - Scott Cheng
+* [China Historical Films Timeline](http://lcreation.fr/artnum/china_films_timeline.html) - Laurent C.
 
 ### Collections
 
