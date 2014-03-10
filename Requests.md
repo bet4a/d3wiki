@@ -56,6 +56,26 @@ Issues this request using the GET method. If a *callback* is specified, it will 
 
 Issues this request using the POST method, optionally posting the specified *data* in the request body. If a *callback* is specified, it will be invoked asynchronously when the request is done or errors; the callback is invoked with two arguments: the error, if any, and the response value. The response value is undefined if an error occurs. If no *callback* is specified, then "load" and "error" listeners should be registered via [xhr.on](#wiki-on). This method is a convenience wrapper of [xhr.send](#wiki-send).
 
+An example using URL encoding:
+
+```js
+d3.csv("/path/to/file.csv")
+    .header("Content-Type", "application/x-www-form-url-encoded")
+    .post("a=2&b=3", function(error, data) {
+      // callback
+    });
+```
+
+An example using JSON encoding:
+
+```js
+d3.csv("/path/to/file.csv")
+    .header("Content-Type", "application/json")
+    .post(JSON.stringify({a: 2, b: 3}), function(error, data) {
+      // callback
+    });
+```
+
 <a name="send" href="#wiki-send">#</a> xhr.<b>send</b>(<i>method</i>[, <i>data</i>][, <i>callback</i>])
 
 Issues this request using the specified *method*, optionally posting the specified *data* in the request body. If a *callback* is specified, it will be invoked asynchronously when the request is done or errors; the callback is invoked with two arguments: the error, if any, and the response value. The response value is undefined if an error occurs. If no *callback* is specified, then "load" and "error" listeners should be registered via [xhr.on](#wiki-on).
