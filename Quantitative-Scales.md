@@ -273,7 +273,7 @@ Constructs a new quantize scale with the default domain [0,1] and the default ra
 
 ```javascript
  var q = d3.scale.quantize().domain([0, 1]).range(['a', 'b', 'c']);
- //q(0.3) === 'a', q(0.4) === 'b', q(0.6) === 'b', q(0.7) ==='c;
+ //q(0.3) === 'a', q(0.4) === 'b', q(0.6) === 'b', q(0.7) ==='c';
  //q.invertExtent('a') returns [0, 0.3333333333333333]
 ```
 
