@@ -229,7 +229,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[linear.tickFormat|Quantitative-Scales#wiki-linear_tickFormat]] - 获取格式转化函数，通常用于坐标轴刻度的格式转化。如：var x = d3.scale.linear().domain([-1, 1]);   console.log(x.ticks(5).map(x.tickFormat(5, "+%"))); // ["-100%", "-50%", "+0%", "+50%", "+100%"]
 * [[linear.copy|Quantitative-Scales#wiki-linear_copy]] - 从已有的变换中复制出一个变换。
 * [[d3.scale.sqrt|Quantitative-Scales#wiki-sqrt]] - 创建一个求平方根的定量转换。
-* [[d3.scale.pow|Quantitative-Scales#wiki-pow]] - 创建一个指数变换。（可参考linear的对应翻译）
+* [[d3.scale.pow|Quantitative-Scales#wiki-pow]] - 创建一个指数变换。（可参考linear对应函数的注释）
 * [[pow|Quantitative-Scales#wiki-_pow]] - 输入一个定义域的值，返回一个值域的值。
 * [[pow.invert|Quantitative-Scales#wiki-pow_invert]] - 反变换，输入值域值返回定义域值。
 * [[pow.domain|Quantitative-Scales#wiki-pow_domain]] - get或set定义域。
@@ -242,7 +242,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[pow.tickFormat|Quantitative-Scales#wiki-pow_tickFormat]] - 获取格式转化函数，通常用于坐标轴刻度的格式转化。
 * [[pow.exponent|Quantitative-Scales#wiki-pow_exponent]] - get或set指数的幂次。默认为1次幂。
 * [[pow.copy|Quantitative-Scales#wiki-pow_copy]] - 从已有的变换中复制出一个变换。
-* [[d3.scale.log|Quantitative-Scales#wiki-log]] - 创建一个对数变换。（可参考linear的对应翻译）
+* [[d3.scale.log|Quantitative-Scales#wiki-log]] - 创建一个对数变换。（可参考linear对应函数的注释）
 * [[log|Quantitative-Scales#wiki-_log]] - 输入一个定义域的值，返回一个值域的值。
 * [[log.invert|Quantitative-Scales#wiki-log_invert]] - 反变换，输入值域值返回定义域值。
 * [[log.domain|Quantitative-Scales#wiki-log_domain]] - get或set定义域。
@@ -254,12 +254,12 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[log.ticks|Quantitative-Scales#wiki-log_ticks]] - 从定义域中取出有代表性的值。通常用于坐标轴刻度的选取。
 * [[log.tickFormat|Quantitative-Scales#wiki-log_tickFormat]] - 获取格式转化函数，通常用于坐标轴刻度的格式转化。
 * [[log.copy|Quantitative-Scales#wiki-log_copy]] - 从已有的变换中复制出一个变换。
-* [[d3.scale.quantize|Quantitative-Scales#wiki-quantize]] - construct a linear quantitative scale with a discrete output range.
-* [[quantize|Quantitative-Scales#wiki-_quantize]] - get the range value corresponding to a given domain value.
-* [quantize.invertExtent](Quantitative-Scales#wiki-quantize_invertExtent) - get the domain values for the specified range value.
-* [[quantize.domain|Quantitative-Scales#wiki-quantize_domain]] - get or set the scale's input domain.
-* [[quantize.range|Quantitative-Scales#wiki-quantize_range]] - get or set the scale's output range (as discrete values).
-* [[quantize.copy|Quantitative-Scales#wiki-quantize_copy]] - create a new scale from an existing scale.
+* [[d3.scale.quantize|Quantitative-Scales#wiki-quantize]] - 创建一个quantize线性变换,定义域为一个数值区间，值域为几个离散值。
+* [[quantize|Quantitative-Scales#wiki-_quantize]] - quantize线性变换对象。如： var q = d3.scale.quantize().domain([0, 1]).range(['a', 'b', 'c']); //q(0.3) === 'a', q(0.4) === 'b', q(0.6) === 'b', q(0.7) ==='c;
+* [quantize.invertExtent](Quantitative-Scales#wiki-quantize_invertExtent) - 返回得到某个离散值的值域范围。 // q.invertExtent('a') 的结果为 [0, 0.3333333333333333]
+* [[quantize.domain|Quantitative-Scales#wiki-quantize_domain]] - get或set变换的定义域。
+* [[quantize.range|Quantitative-Scales#wiki-quantize_range]] - get或set变换的值域。
+* [[quantize.copy|Quantitative-Scales#wiki-quantize_copy]] - 从已有的变换中复制出一个变换。
 * [[d3.scale.threshold|Quantitative-Scales#wiki-threshold]] - construct a threshold scale with a discrete output range.
 * [[threshold|Quantitative-Scales#wiki-_threshold]] - get the range value corresponding to a given domain value.
 * [threshold.invertExtent](Quantitative-Scales#wiki-threshold_invertExtent) - get the domain values for the specified range value.
