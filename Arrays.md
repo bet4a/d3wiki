@@ -84,6 +84,16 @@ Returns the median of the given *array* using the [R-7](http://en.wikipedia.org/
 
 Returns the *p*-quantile of the given sorted array of *numbers*, where *p* is a number in the range [0,1]. For example, the median can be computed using *p* = 0.5, the first quartile at *p* = 0.25, and the third quartile at *p* = 0.75. This particular implementation uses the [R-7](http://en.wikipedia.org/wiki/Quantile#Quantiles_of_a_population) algorithm, which is the default for the R programming language and Excel. This method requires that *numbers* contains numeric elements and is already sorted in ascending order, such as by [d3.ascending](Arrays#wiki-d3_ascending).
 
+```javascript
+var a = [0, 1, 3];
+d3.quantile(a, 0); // return 0
+d3.quantile(a, 0.5); // return 1
+d3.quantile(a, 1); // return 3
+d3.quantile(a, 0.25); // return 0.5
+d3.quantile(a, 0.75); // return 2
+d3.quantile(a, 0.1); // return 0.19999999999999996 
+```
+
 <a name="d3_bisectLeft" href="Arrays#wiki-d3_bisectLeft">#</a> d3.<b>bisectLeft</b>(<i>array</i>, <i>x</i>[, <i>lo</i>[, <i>hi</i>]])
 
 Locate the insertion point for *x* in *array* to maintain sorted order. The arguments *lo* and *hi* may be used to specify a subset of the array which should be considered; by default the entire array is used. If *x* is already present in *array*, the insertion point will be before (to the left of) any existing entries. The return value is suitable for use as the first argument to [[splice|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/splice]] assuming that *array* is already sorted. The returned insertion point *i* partitions the *array* into two halves so that all *v* < *x* for *v* in *array*.slice(lo, i) for the left side and all v >= x for v in *array*.slice(i, hi) for the right side.
