@@ -270,6 +270,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
     <td>Bar Chart with Negative Values<br><a href="http://bl.ocks.org/mbostock/2368837"><img src="http://bl.ocks.org/mbostock/raw/2368837/thumbnail.png" width="202"></a></td>
     </td>
     <td>Animated Donut Chart with Labels<br><a href="http://bl.ocks.org/dbuezas/9306799"><img src="https://gist.githubusercontent.com/dbuezas/9306799/raw/ceb4d5cdaeebe4acd83d7cb1b1fe9cccb624ab5a/thumbnail.gif" width="202"></a></td>
+<td>Stacked Bar Charts on time scale<br><a href="http://bl.ocks.org/anupsavvy/9513382"><img src="http://bl.ocks.org/anupsavvy/raw/9513382/thumbnail.png" width="202"></a></td>
   </tr>
 </table>
 
