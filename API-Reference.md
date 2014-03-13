@@ -2,6 +2,25 @@
 
 Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioning|http://semver.org]]. You can find the current version of D3 as `d3.version`.
 
+## Table of Contents
+
+* [d3 (core)](#wiki-d3-core):  
+  [Selections](#wiki-selections), [Transitions](#wiki-transitions), [Working with Arrays](#wiki-working-with-arrays), [Math](#wiki-math), [Loading External Resources](#wiki-loading-external-resources), [String Formatting](#wiki-string-formatting), [CSV Formatting (d3.csv)](#wiki-csv-formatting-d3csv), [Localization](#wiki-localization), [Colors](#wiki-colors), [Namespaces](#wiki-namespaces), [Internals](#wiki-internals)
+* [d3.scale (Scales)](#wiki-d3scale-scales):  
+  [Quantitative](#wiki-quantitative), [Ordinal](#wiki-ordinal)
+* [d3.svg (SVG)](#wiki-d3svg-svg):  
+  [Shapes](#wiki-shapes), [Axes](#wiki-axes), [Controls](#wiki-controls)
+* [d3.time (Time)](#wiki-d3time-time):  
+  [Time Formatting](#wiki-time-formatting), [Time Scales](#wiki-time-scales), [Time Intervals](#wiki-time-intervals)
+* [d3.layout (Layouts)](#wiki-d3layout-layouts):  
+  [Bundle](#wiki-bundle), [Chord](#wiki-chord), [Cluster](#wiki-cluster), [Force](#wiki-force), [Hierarchy](#wiki-hierarchy), [Histogram](#wiki-histogram), [Pack](#wiki-pack), [Partition](#wiki-partition), [Pie](#wiki-pie), [Stack](#wiki-stack), [Tree](#wiki-tree), [Treemap](#wiki-treemap)
+* [d3.geo (Geography)](#wiki-d3geo-geography):  
+  [Paths](#wiki-paths), [Projections](#wiki-projections), [Streams](#wiki-streams)
+* [d3.geom (Geometry)](#wiki-d3geom-geometry):  
+  [Voronoi](#wiki-voronoi), [Quadtree](#wiki-quadtree), [Polygon](#wiki-polygon), [Hull](#wiki-hull)
+* [d3.behavior (Behaviors)](#wiki-d3behavior-behaviors):  
+  [Drag](#wiki-drag), [Zoom](#wiki-zoom)
+
 ## [d3 (core)](Core)
 
 ### [[Selections]]
