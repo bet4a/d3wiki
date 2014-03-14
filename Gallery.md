@@ -826,6 +826,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Semi-manual force layout of cablegate reference graphs](http://bl.ocks.org/mbostock/4589092)
 * [Digital Clock By Virtual Force](http://jklabz.com/d3/digital_clock/digital_clock.html)
 * [Radar Chart or Spider Chart](http://bl.ocks.org/nbremer/raw/6506614/)
+* [Battle Statistics from the MMO game World of Tanks] (http://www.polsci.ucsb.edu/faculty/glasgow/research/d3/WoTkillratio.html)
 
 
 #### Charts using the [reusable API](http://bost.ocks.org/mike/chart/)
