@@ -4,22 +4,22 @@ Everything in D3 is scoped under the `d3` namespace. D3 uses [[semantic versioni
 
 ## Table of Contents
 
-* [d3 (core)](#wiki-d3-core):  
-  [Selections](#wiki-selections), [Transitions](#wiki-transitions), [Working with Arrays](#wiki-working-with-arrays), [Math](#wiki-math), [Loading External Resources](#wiki-loading-external-resources), [String Formatting](#wiki-string-formatting), [CSV Formatting (d3.csv)](#wiki-csv-formatting-d3csv), [Localization](#wiki-localization), [Colors](#wiki-colors), [Namespaces](#wiki-namespaces), [Internals](#wiki-internals)
-* [d3.scale (Scales)](#wiki-d3scale-scales):  
-  [Quantitative](#wiki-quantitative), [Ordinal](#wiki-ordinal)
-* [d3.svg (SVG)](#wiki-d3svg-svg):  
-  [Shapes](#wiki-shapes), [Axes](#wiki-axes), [Controls](#wiki-controls)
-* [d3.time (Time)](#wiki-d3time-time):  
-  [Time Formatting](#wiki-time-formatting), [Time Scales](#wiki-time-scales), [Time Intervals](#wiki-time-intervals)
-* [d3.layout (Layouts)](#wiki-d3layout-layouts):  
-  [Bundle](#wiki-bundle), [Chord](#wiki-chord), [Cluster](#wiki-cluster), [Force](#wiki-force), [Hierarchy](#wiki-hierarchy), [Histogram](#wiki-histogram), [Pack](#wiki-pack), [Partition](#wiki-partition), [Pie](#wiki-pie), [Stack](#wiki-stack), [Tree](#wiki-tree), [Treemap](#wiki-treemap)
-* [d3.geo (Geography)](#wiki-d3geo-geography):  
-  [Paths](#wiki-paths), [Projections](#wiki-projections), [Streams](#wiki-streams)
-* [d3.geom (Geometry)](#wiki-d3geom-geometry):  
-  [Voronoi](#wiki-voronoi), [Quadtree](#wiki-quadtree), [Polygon](#wiki-polygon), [Hull](#wiki-hull)
-* [d3.behavior (Behaviors)](#wiki-d3behavior-behaviors):  
-  [Drag](#wiki-drag), [Zoom](#wiki-zoom)
+* [d3 (core)](#d3-core):  
+  [Selections](#selections), [Transitions](#transitions), [Working with Arrays](#working-with-arrays), [Math](#math), [Loading External Resources](#loading-external-resources), [String Formatting](#string-formatting), [CSV Formatting (d3.csv)](#csv-formatting-d3csv), [Localization](#localization), [Colors](#colors), [Namespaces](#namespaces), [Internals](#internals)
+* [d3.scale (Scales)](#d3scale-scales):  
+  [Quantitative](#quantitative), [Ordinal](#ordinal)
+* [d3.svg (SVG)](#d3svg-svg):  
+  [Shapes](#shapes), [Axes](#axes), [Controls](#controls)
+* [d3.time (Time)](#d3time-time):  
+  [Time Formatting](#time-formatting), [Time Scales](#time-scales), [Time Intervals](#time-intervals)
+* [d3.layout (Layouts)](#d3layout-layouts):  
+  [Bundle](#bundle), [Chord](#chord), [Cluster](#cluster), [Force](#force), [Hierarchy](#hierarchy), [Histogram](#histogram), [Pack](#pack), [Partition](#partition), [Pie](#pie), [Stack](#stack), [Tree](#tree), [Treemap](#treemap)
+* [d3.geo (Geography)](#d3geo-geography):  
+  [Paths](#paths), [Projections](#projections), [Streams](#streams)
+* [d3.geom (Geometry)](#d3geom-geometry):  
+  [Voronoi](#voronoi), [Quadtree](#quadtree), [Polygon](#polygon), [Hull](#hull)
+* [d3.behavior (Behaviors)](#d3behavior-behaviors):  
+  [Drag](#drag), [Zoom](#zoom)
 
 ## [d3 (core)](Core)
 
