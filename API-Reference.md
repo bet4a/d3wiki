@@ -4,16 +4,16 @@ Everything in D3 is scoped under the `d3` namespace.
 
 D3 uses [[semantic versioning|http://semver.org]]. You can find the current version of D3 as `d3.version`.
 
-**Table of Contents**
+See one of:
 
-* [d3 (core)](#d3-core): [Selections](#selections), [Transitions](#transitions), [Working with Arrays](#working-with-arrays), [Math](#math), [Loading External Resources](#loading-external-resources), [String Formatting](#string-formatting), [CSV Formatting (d3.csv)](#csv-formatting-d3csv), [Localization](#localization), [Colors](#colors), [Namespaces](#namespaces), [Internals](#internals)
-* [d3.scale (Scales)](#d3scale-scales): [Quantitative](#quantitative), [Ordinal](#ordinal)
-* [d3.svg (SVG)](#d3svg-svg): [Shapes](#shapes), [Axes](#axes), [Controls](#controls)
-* [d3.time (Time)](#d3time-time): [Time Formatting](#time-formatting), [Time Scales](#time-scales), [Time Intervals](#time-intervals)
-* [d3.layout (Layouts)](#d3layout-layouts): [Bundle](#bundle), [Chord](#chord), [Cluster](#cluster), [Force](#force), [Hierarchy](#hierarchy), [Histogram](#histogram), [Pack](#pack), [Partition](#partition), [Pie](#pie), [Stack](#stack), [Tree](#tree), [Treemap](#treemap)
-* [d3.geo (Geography)](#d3geo-geography): [Paths](#paths), [Projections](#projections), [Streams](#streams)
-* [d3.geom (Geometry)](#d3geom-geometry): [Voronoi](#voronoi), [Quadtree](#quadtree), [Polygon](#polygon), [Hull](#hull)
-* [d3.behavior (Behaviors)](#d3behavior-behaviors): [Drag](#drag), [Zoom](#zoom)
+* [Core](#d3-core) - selections, transitions, data, localization, colors, etc.
+* [Scales](#d3scale-scales) - convert back and forth between data and visual encodings
+* [SVG](#d3svg-svg) - utilities for creating Scalable Vector Graphics
+* [Time](#d3time-time) - parse or format times, compute calendar intervals, etc.
+* [Layouts](#d3layout-layouts) - derive secondary data for positioning elements
+* [Geography](#d3geo-geography) - project spherical coordinates, latitude & longitude math
+* [Geometry](#d3geom-geometry) - utilities for 2D geometry, such as Voronoi diagrams and quadtrees
+* [Behaviors](#d3behavior-behaviors) - reusable interaction behaviors
 
 ## [d3 (core)](Core)
 
