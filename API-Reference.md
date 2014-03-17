@@ -7,7 +7,7 @@ D3 uses [[semantic versioning|http://semver.org]]. You can find the current vers
 See one of:
 
 * [Core](#d3-core) - selections, transitions, data, localization, colors, etc.
-* [Scales](#d3scale-scales) - convert back and forth between data and visual encodings
+* [Scales](#d3scale-scales) - convert between data and visual encodings
 * [SVG](#d3svg-svg) - utilities for creating Scalable Vector Graphics
 * [Time](#d3time-time) - parse or format times, compute calendar intervals, etc.
 * [Layouts](#d3layout-layouts) - derive secondary data for positioning elements
