@@ -303,13 +303,13 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 
 ### [[Shapes|SVG-Shapes]]
 
-* [[d3.svg.line|SVG-Shapes#wiki-line]] - create a new line generator.
-* [[line|SVG-Shapes#wiki-_line]] - generate a piecewise linear curve, as in a line chart.
-* [[line.x|SVG-Shapes#wiki-line_x]] - get or set the *x*-coordinate accessor.
-* [[line.y|SVG-Shapes#wiki-line_y]] - get or set the *y*-coordinate accessor.
-* [[line.interpolate|SVG-Shapes#wiki-line_interpolate]] - get or set the interpolation mode.
-* [[line.tension|SVG-Shapes#wiki-line_tension]] - get or set the cardinal spline tension.
-* [line.defined](SVG-Shapes#wiki-line_defined) - control whether the line is defined at a given point.
+* [[d3.svg.line|SVG-Shapes#wiki-line]] - 创建一个线段生成器.
+* [[line|SVG-Shapes#wiki-_line]] - 在折线图里生成一段折线.
+* [[line.x|SVG-Shapes#wiki-line_x]] - 设置或获取*x*轴访问器.
+* [[line.y|SVG-Shapes#wiki-line_y]] - 设置或获取*y*轴访问器
+* [[line.interpolate|SVG-Shapes#wiki-line_interpolate]] - 设置或获取插值模式.
+* [[line.tension|SVG-Shapes#wiki-line_tension]] - get or set the cardinal spline tension. 
+* [line.defined](SVG-Shapes#wiki-line_defined) - 定义线条在某一点是否存在.
 * [[d3.svg.line.radial|SVG-Shapes#wiki-line_radial]] - create a new radial line generator.
 * [[line|SVG-Shapes#wiki-_line_radial]] - generate a piecewise linear curve, as in a polar line chart.
 * [[line.radius|SVG-Shapes#wiki-line_radial_radius]] - get or set the *radius* accessor.
