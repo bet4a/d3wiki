@@ -461,8 +461,9 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [Australian Election Preferences](http://peterneish.github.io/preferences/) - Peter Neish
 * [Lifespan](http://www.cotrino.com/2014/02/lifespan-longevidad-animal/) - José Cotrino
 * [Millennium Development Goals and Economic Growth](http://helenjacksonanalytic.co.uk/MDG.html) - Helen Jackson
-* [Weather and UK agricultural yields regression results](http://helenjacksonanalytic.co.uk/agri.html) - Helen Jackson
-* [Simple Schelling Model of urban segregation](http://helenjacksonanalytic.co.uk/schelling.html) - Helen Jackson
+* [Weather and UK Agricultural Yields Regression Results](http://helenjacksonanalytic.co.uk/agri.html) - Helen Jackson
+* [Simple Schelling Model of Urban Segregation](http://helenjacksonanalytic.co.uk/schelling.html) - Helen Jackson
+* [Sensitivity Analysis of Renewable Technology Costs](http://helenjacksonanalytic.co.uk/sens_analysis.html) - Helen Jackson
 * [New Years Resolutions and Search Trends] (http://www.bytemuse.com/post/resolutions-and-search-trends/) - Chris Polis
 * [Geometric Proof of the Pythagorean theorem] (http://www.bytemuse.com/post/geometric-proof-of-the-pythagorean-theorem-in-d3-js/) - Chris Polis
 * [NHL Cap Hits] (http://caphits.com) - Joe Meissler
