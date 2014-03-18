@@ -402,7 +402,7 @@ The `this` context of the called function is also the current selection. This is
 
 <a name="empty" href="Selections#wiki-empty">#</a> selection.<b>empty</b>()
 
-Returns true if the current selection is empty; a selection is empty if it contains no non-null elements.
+Returns true if the current selection is empty; a selection is empty if it contains no elements or only null elements.
 
 <a name="node" href="Selections#wiki-node">#</a> selection.<b>node</b>()
 
