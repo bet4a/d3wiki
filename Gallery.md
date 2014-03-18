@@ -78,9 +78,9 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Facebook IPO<br><a href="http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html"><img src="http://d3js.org/ex/facebook-ipo.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
-    <td>Political Influence<br><a href="http://www.brightpointinc.com/interactive/political_influence/index.html?source=d3js"><img src="http://www.brightpointinc.com/interactive/images/influence.jpg" width="202"></a></td>
-    <td>Federal Budget<br><a href="http://www.brightpointinc.com/interactive/budget/index.html?source=d3js"><img src="http://www.brightpointinc.com/interactive/images/budget.jpg" width="202"></a></td>
-    <td>US Trade Deficit<br><a href="http://www.brightpointinc.com/interactive/ustrade/index.html?source=d3js"><img src="http://www.brightpointinc.com/interactive/images/ustrade.jpg" width="202"></a></td>
+    <td>Political Influence<br><a href="http://www.brightpointinc.com/interactive/political_influence/index.html?source=d3js" title="political influence d3.js"><img src="http://www.brightpointinc.com/interactive/images/PoliticalInfluence_202px.png" width="202"></a></td>
+    <td>Federal Budget<br><a href="http://www.brightpointinc.com/interactive/budget/index.html?source=d3js" title="federal budget d3.js"><img src="http://www.brightpointinc.com/interactive/images/Budget_202px.png" width="202"></a></td>
+    <td>US Trade Deficit<br><a href="http://www.brightpointinc.com/interactive/ustrade/index.html?source=d3js" title="US Trade Deficit d3.js"><img src="http://www.brightpointinc.com/interactive/images/Deficit_202px.png" width="202"></a></td>
     <td>Sequences sunburst<br><a href="http://bl.ocks.org/kerryrodden/7090426"><img src="https://gist.github.com/kerryrodden/7090426/raw/thumbnail.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
