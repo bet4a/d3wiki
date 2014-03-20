@@ -177,7 +177,7 @@ Returns the spherical area of the specified *feature* in [steradians](http://mat
 
 <a name="centroid" href="#wiki-centroid">#</a> d3.geo.<b>centroid</b>(<i>feature</i>)
 
-Returns the spherical centroid of the specified *feature*. See also [path.centroid](#wiki-centroid), which computes the projected centroid on the Cartesian plane.
+Returns the spherical centroid of the specified *feature*. See also [path.centroid](#wiki-path_centroid), which computes the projected centroid on the Cartesian plane.
 
 <a name="bounds" href="#wiki-bounds">#</a> d3.geo.<b>bounds</b>(<i>feature</i>)
 
