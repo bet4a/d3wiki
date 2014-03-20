@@ -173,7 +173,7 @@ If *precision* is specified, sets the precision of the interpolated circle segme
 
 <a name="area" href="#wiki-area">#</a> d3.geo.<b>area</b>(<i>feature</i>)
 
-Returns the spherical area of the specified *feature* in [steradians](http://mathworld.wolfram.com/Steradian.html). See also [path.area](#wiki-area), which computes the projected area on the Cartesian plane.
+Returns the spherical area of the specified *feature* in [steradians](http://mathworld.wolfram.com/Steradian.html). See also [path.area](#wiki-path_area), which computes the projected area on the Cartesian plane.
 
 <a name="centroid" href="#wiki-centroid">#</a> d3.geo.<b>centroid</b>(<i>feature</i>)
 
@@ -181,7 +181,7 @@ Returns the spherical centroid of the specified *feature*. See also [path.centro
 
 <a name="bounds" href="#wiki-bounds">#</a> d3.geo.<b>bounds</b>(<i>feature</i>)
 
-Returns the spherical bounding box for the specified *feature*. The bounding box is represented by a two-dimensional array: [​[<i>left</i>, <i>bottom</i>], [<i>right</i>, <i>top</i>]​], where *left* is the minimum longitude, *bottom* is the minimum latitude, *right* is maximum longitude, and *top* is the maximum latitude. See also [path.bounds](#wiki-bounds), which computes the projected bounding box on the Cartesian plane.
+Returns the spherical bounding box for the specified *feature*. The bounding box is represented by a two-dimensional array: [​[<i>left</i>, <i>bottom</i>], [<i>right</i>, <i>top</i>]​], where *left* is the minimum longitude, *bottom* is the minimum latitude, *right* is maximum longitude, and *top* is the maximum latitude. See also [path.bounds](#wiki-path_bounds), which computes the projected bounding box on the Cartesian plane.
 
 <a name="distance" href="#wiki-distance">#</a> d3.geo.<b>distance</b>(<i>a</i>, <i>b</i>)
 
