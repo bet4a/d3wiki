@@ -27,7 +27,7 @@ D3 works in Node.js as well. See <https://groups.google.com/forum/#!msg/d3-js/Jy
 
 Download the latest version here:
 
-* <http://d3js.org/d3.v3.zip>
+* <https://github.com/mbostock/d3/releases>
 
 Or, to link directly to the latest release, copy this snippet:
 
