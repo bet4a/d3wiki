@@ -659,7 +659,7 @@ See one of:
 * [d3.geo.centroid](Geo-Paths#wiki-centroid) - compute the spherical centroid of a given feature.
 * [d3.geo.distance](Geo-Paths#wiki-distance) - compute the great-arc distance between two points.
 * [d3.geo.interpolate](Geo-Paths#wiki-interpolate) - interpolate between two points along a great arc.
-* [d3.geo.length](Geo-Paths#wiki-length) - compute the length of a line string or the circumference of a polygon.
+* [d3.geo.length](Geo-Paths#wiki-length) - compute the length of a line string or the perimeter of a polygon.
 * [d3.geo.rotation](Geo-Paths#wiki-rotation) - create a rotation function for the specified angles [λ, φ, γ].
 * [rotation](Geo-Paths#wiki-_rotation) - rotate the given location around the sphere.
 * [rotation.invert](Geo-Paths#wiki-rotation_invert) - inverse-rotate the given location around the sphere.
