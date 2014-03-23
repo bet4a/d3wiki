@@ -664,6 +664,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Custom Forces](http://bl.ocks.org/mbostock/1021841)
 * [Multiple Foci](http://bl.ocks.org/mbostock/1021953)
 * [Multi Foci with Convex Hulls](http://bl.ocks.org/mbostock/2920551)
+* [Nodes snapping to four colored clusters](http://bl.ocks.org/gmamaladze/9320969)
 * [Images and Labels](http://bl.ocks.org/mbostock/950642)
 * [Drag and Drop Support to set nodes to fixed position when dropped](http://bl.ocks.org/mbostock/2883411)
 * [Interactive Construction](http://bl.ocks.org/mbostock/929623)
