@@ -847,6 +847,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Histogram](http://bl.ocks.org/mbostock/1933560)
 * [Circular heat chart](http://prcweb.co.uk/lab/circularheat/)
 * [Word Tree](http://www.chrisbarrett.fr/fingerprint/)
+* [Simple XY Line Chart](http://bl.ocks.org/crayzeewulf/9719255)
 
 #### Useful snippets
 
