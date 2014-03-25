@@ -255,17 +255,17 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[log.tickFormat|Quantitative-Scales#wiki-log_tickFormat]] - 获取格式转化函数，通常用于坐标轴刻度的格式转化。
 * [[log.copy|Quantitative-Scales#wiki-log_copy]] - 从已有的变换中复制出一个变换。
 * [[d3.scale.quantize|Quantitative-Scales#wiki-quantize]] - 创建一个quantize线性变换,定义域为一个数值区间，值域为几个离散值。
-* [[quantize|Quantitative-Scales#wiki-_quantize]] - quantize线性变换对象。如： var q = d3.scale.quantize().domain([0, 1]).range(['a', 'b', 'c']); //q(0.3) === 'a', q(0.4) === 'b', q(0.6) === 'b', q(0.7) ==='c;
+* [[quantize|Quantitative-Scales#wiki-_quantize]] - 输入数值，返回离散值。如： var q = d3.scale.quantize().domain([0, 1]).range(['a', 'b', 'c']); //q(0.3) === 'a', q(0.4) === 'b', q(0.6) === 'b', q(0.7) ==='c;
 * [quantize.invertExtent](Quantitative-Scales#wiki-quantize_invertExtent) - 返回得到某个离散值的值域范围。 // q.invertExtent('a') 的结果为 [0, 0.3333333333333333]
 * [[quantize.domain|Quantitative-Scales#wiki-quantize_domain]] - get或set变换的定义域。
 * [[quantize.range|Quantitative-Scales#wiki-quantize_range]] - get或set变换的值域。
 * [[quantize.copy|Quantitative-Scales#wiki-quantize_copy]] - 从已有的变换中复制出一个变换。
-* [[d3.scale.threshold|Quantitative-Scales#wiki-threshold]] - construct a threshold scale with a discrete output range.
-* [[threshold|Quantitative-Scales#wiki-_threshold]] - get the range value corresponding to a given domain value.
-* [threshold.invertExtent](Quantitative-Scales#wiki-threshold_invertExtent) - get the domain values for the specified range value.
-* [[threshold.domain|Quantitative-Scales#wiki-threshold_domain]] - get or set the scale's input domain.
-* [[threshold.range|Quantitative-Scales#wiki-threshold_range]] - get or set the scale's output range (as discrete values).
-* [[threshold.copy|Quantitative-Scales#wiki-threshold_copy]] - create a new scale from an existing scale.
+* [[d3.scale.threshold|Quantitative-Scales#wiki-threshold]] - 构建一个threshold(阈值)线性变换。定义域为分隔值数值序列，值域为离散值。它与quantize的区别是quantize指定的值域为一个区间，然后均分这个区间为多个小区间，以对应各离散值。threshold则指定各小区间的边界分隔值。示例: var t = d3.scale.threshold().domain([0, 1]).range(['a', 'b', 'c']);  t(-1) === 'a';  t(0) === 'b';  t(0.5) === 'b';  t(1) === 'c';  t(1000) === 'c'; t.invertExtent('a'); //returns [undefined, 0]  t.invertExtent('b'); //returns [0, 1]   t.invertExtent('c'); //returns [1, undefined]
+* [[threshold|Quantitative-Scales#wiki-_threshold]] - 输入数值，返回离散值。
+* [threshold.invertExtent](Quantitative-Scales#wiki-threshold_invertExtent) - 输入离散值，返回数值。
+* [[threshold.domain|Quantitative-Scales#wiki-threshold_domain]] - get或set变换的定义域。
+* [[threshold.range|Quantitative-Scales#wiki-threshold_range]] - get或set变换的值域。
+* [[threshold.copy|Quantitative-Scales#wiki-threshold_copy]] - 从已有的变换中复制出一个变换。
 * [[d3.scale.quantile|Quantitative-Scales#wiki-quantile]] - construct a quantitative scale mapping to quantiles.
 * [[quantile|Quantitative-Scales#wiki-_quantile]] - get the range value corresponding to a given domain value.
 * [quantile.invertExtent](Quantitative-Scales#wiki-quantile_invertExtent) - get the domain values for the specified range value.
