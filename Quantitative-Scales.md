@@ -337,6 +337,15 @@ Threshold scales are similar to quantize scales, except they allow you to map ar
 
 Constructs a new threshold scale with the default domain [.5] and the default range [0,1]. Thus, the default quantize scale is equivalent to the [[round|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/round]] function for numbers; for example threshold(0.49) returns 0, and threshold(0.51) returns 1.
 
+```javascript
+var t = d3.scale.threshold().domain([0, 1]).range(['a', 'b', 'c']); 
+t(-1) === 'a';
+t(0) === 'b';
+t(0.5) === 'b';
+t(1) === 'c';
+t(1000) === 'c';
+```
+
 <a name="_threshold" href="#wiki-_threshold">#</a> <b>threshold</b>(<i>x</i>)
 
 Given a value *x* in the input domain, returns the corresponding value in the output range.
