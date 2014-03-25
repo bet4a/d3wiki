@@ -149,6 +149,7 @@ The azimuthal equidistant projection preserves distances from the projection’s
 <a name="conicConformal" href="#wiki-conicConformal">#</a> d3.geo.<b>conicConformal</b>()
 
 <a href="http://bl.ocks.org/mbostock/3734321"><img src="http://bl.ocks.org/mbostock/raw/3734321/thumbnail.png" width="202"></a>
+<a href="http://bl.ocks.org/mbostock/9764521"><img src="http://bl.ocks.org/mbostock/raw/9764521/thumbnail.png" width="202"></a>
 
 Lambert’s conformal conic projection projects the globe conformally onto a cone.
 
