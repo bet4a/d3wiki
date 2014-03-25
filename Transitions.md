@@ -316,7 +316,7 @@ Returns the default interpolator between the two values *a* and *b*. The type of
 1. If *b* is a color, interpolateRgb is used.
 2. If *b* is a string, interpolateString is used.
 3. If *b* is an array, interpolateArray is used.
-4. If *b* is an object, interpolateObject is used.
+4. If *b* is an object and not coercible to a number, interpolateObject is used.
 5. Otherwise, interpolateNumber is used.
 
 Based on the chosen interpolator, *a* is coerced to a suitable corresponding type. The color check applies to both instances of [d3.rgb](Colors#wiki-d3_rgb) and other color spaces as well as color strings of the form `/^(#|rgb\(|hsl\()/` or a [[CSS named colors|http://www.w3.org/TR/SVG/types.html#ColorKeywords]].
