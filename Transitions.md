@@ -20,9 +20,9 @@ Create an animated transition. This is equivalent to `d3.select(document).transi
 
 When called with an optional *selection*, this method typically returns the specified selection; i.e., it is a no-op. However, within the context of [transition.each](#wiki-each), this method will create a new transition for the specified selection that inherits the delay, duration and other properties of the parent transition. This is useful for implementing [reusable components](http://bost.ocks.org/mike/chart/) that can be called either on selections or on transitions, in the latter case supporting deriving concurrent transitions. An example of this is D3’s [axis component](SVG-Axes).
 
-<a name="delay" href="Transitions#wiki-delay">#</a> transition.<b>delay</b>(<i>delay</i>)
+<a name="delay" href="Transitions#wiki-delay">#</a> transition.<b>delay</b>([<i>delay</i>])
 
-Specifies the transition *delay* in milliseconds. If *delay* is a constant, then all elements are given the same delay; otherwise, if *delay* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's delay. The default delay is 0.
+Specifies the transition *delay* in milliseconds. If *delay* is a constant, then all elements are given the same delay; otherwise, if *delay* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's delay. The default delay is 0. If *delay* is not specified, returns the delay bound to the first non-null element in the transition.
 
 Setting the delay to be a multiple of the index `i` is a convenient way to stagger transitions for elements. For example, if you used a fixed duration of *duration*, and have *n* elements in the current selection, you can stagger the transition over 2 \* *duration* by saying:
 
@@ -32,13 +32,13 @@ Setting the delay to be a multiple of the index `i` is a convenient way to stagg
 
 You may also compute the delay as a function of the data, thereby creating a data-driven animation.
 
-<a name="duration" href="Transitions#wiki-duration">#</a> transition.<b>duration</b>(<i>duration</i>)
+<a name="duration" href="Transitions#wiki-duration">#</a> transition.<b>duration</b>([<i>duration</i>])
 
-Specifies per-element *duration* in milliseconds. If *duration* is a constant, then all elements are given the same duration; otherwise, if *duration* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's duration. The default duration is 250ms.
+Specifies per-element *duration* in milliseconds. If *duration* is a constant, then all elements are given the same duration; otherwise, if *duration* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's duration. The default duration is 250ms. If *duration* is not specified, returns the duration bound to the first non-null element in the transition.
 
-<a name="ease" href="Transitions#wiki-ease">#</a> transition.<b>ease</b>(<i>value</i>[, <i>arguments</i>])
+<a name="ease" href="Transitions#wiki-ease">#</a> transition.<b>ease</b>([<i>value</i>[, <i>arguments</i>]])
 
-Specifies the transition [[easing function|http://www.robertpenner.com/easing/]]. If *value* is a function, it is used to ease the current parametric timing value *t*, which is typically in the range [0,1]. (At the end of a transition, *t* may be slightly greater than 1.) Otherwise, *value* is assumed to be a string and the arguments are passed to the [d3.ease](Transitions#wiki-d3_ease) method to generate an easing function. The default easing function is "cubic-in-out". Note that it is not possible to customize the easing function per-element or per-attribute; however, if you use the "linear" easing function, you can apply custom easing inside your interpolator using [attrTween](Transitions#wiki-attrTween) or [styleTween](Transitions#wiki-styleTween).
+Specifies the transition [[easing function|http://www.robertpenner.com/easing/]]. If *value* is a function, it is used to ease the current parametric timing value *t*, which is typically in the range [0,1]. (At the end of a transition, *t* may be slightly greater than 1.) Otherwise, *value* is assumed to be a string and the arguments are passed to the [d3.ease](Transitions#wiki-d3_ease) method to generate an easing function. The default easing function is "cubic-in-out". Note that it is not possible to customize the easing function per-element or per-attribute; however, if you use the "linear" easing function, you can apply custom easing inside your interpolator using [attrTween](Transitions#wiki-attrTween) or [styleTween](Transitions#wiki-styleTween). If *ease* is not specified, returns the easing function bound to the first non-null element in the transition.
 
 ## Operating on Transitions
 
