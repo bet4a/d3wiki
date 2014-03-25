@@ -104,8 +104,9 @@ Locate the insertion point for *x* in *array* to maintain sorted order. The argu
 Similar to bisectLeft, but returns an insertion point which comes after (to the right of) any existing entries of *x* in *array*. The returned insertion point *i* partitions the *array* into two halves so that all *v* <= *x* for *v* in *array*.slice(lo, i) for the left side and all *v* > *x* for *v* in *array*.slice(i, hi) for the right side.
 
 <a name="d3_bisector" href="#wiki-d3_bisector">#</a> d3.<b>bisector</b>(<i>accessor</i>)
+<br><a name="d3_bisector" href="#wiki-d3_bisector">#</a> d3.<b>bisector</b>(<i>comparator</i>)
 
-Returns a bisector using the specified *accessor* function. The returned object has `left` and `right` properties which are similar to [bisectLeft](#wiki-d3_bisectLeft) and [bisectRight](#wiki-d3_bisectRight), respectively. This method can be used to bisect arrays of objects instead of being limited to simple arrays of primitives. For example, given the following array of objects:
+Returns a bisector using the specified *accessor* or *comparator* function. The returned object has `left` and `right` properties which are similar to [bisectLeft](#wiki-d3_bisectLeft) and [bisectRight](#wiki-d3_bisectRight), respectively. This method can be used to bisect arrays of objects instead of being limited to simple arrays of primitives. For example, given the following array of objects:
 
 ```js
 var data = [
@@ -122,7 +123,13 @@ A suitable bisect function could be constructed as:
 var bisect = d3.bisector(function(d) { return d.date; }).right;
 ```
 
-And then applied as `bisect(data, new Date(2011, 1, 2))`, returning an index.
+This is equivalent to specifying a comparator:
+
+```js
+var bisect = d3.bisector(function(a, b) { return a.date - b.date; }).right;
+```
+
+And then applied as `bisect(data, new Date(2011, 1, 2))`, returning an index. Use a comparator rather than an accessor if you want values to be sorted in an order different than natural order, such as in descending rather than ascending order.
 
 <a name="d3_shuffle" href="Arrays#wiki-d3_shuffle">#</a> d3.<b>shuffle</b>(<i>array</i>)
 
