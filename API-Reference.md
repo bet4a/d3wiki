@@ -50,6 +50,7 @@ See one of:
 * [[d3.selection|Selections#wiki-d3_selection]] - augment the selection prototype, or test instance types.
 * [[d3.event|Selections#wiki-d3_event]] - access the current user event for interaction.
 * [[d3.mouse|Selections#wiki-d3_mouse]] - gets the mouse position relative to a specified container.
+* [[d3.touch|Selections#wiki-d3_touch]] - gets a touch position relative to a specified container.
 * [[d3.touches|Selections#wiki-d3_touches]] - gets the touch positions relative to a specified container.
 
 ### [Transitions](Transitions)
