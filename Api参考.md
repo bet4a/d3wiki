@@ -273,14 +273,14 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[quantile.range|Quantitative-Scales#wiki-quantile_range]] - get或set变换的值域。
 * [[quantile.quantiles|Quantitative-Scales#wiki-quantile_quantiles]] - 获得quantile变换的分隔值。示例： var q = d3.scale.quantile().domain([0, 1]).range(['a', 'b', 'c']); q.quantiles() returns [0.33333333333333326, 0.6666666666666665]
 * [[quantile.copy|Quantitative-Scales#wiki-quantile_copy]] - 从已有的变换中复制出一个变换。
-* [[d3.scale.identity|Quantitative-Scales#wiki-identity]] - construct a linear identity scale.
-* [[identity|Quantitative-Scales#wiki-_identity]] - the identity function.
-* [[identity.invert|Quantitative-Scales#wiki-_identity]] - equivalent to identity; the identity function.
-* [[identity.domain|Quantitative-Scales#wiki-identity_domain]] - get or set the scale's domain and range.
-* [[identity.range|Quantitative-Scales#wiki-identity_domain]] - equivalent to identity.domain.
-* [[identity.ticks|Quantitative-Scales#wiki-identity_ticks]] - get representative values from the domain.
-* [[identity.tickFormat|Quantitative-Scales#wiki-identity_tickFormat]] - get a formatter for displaying tick values.
-* [[identity.copy|Quantitative-Scales#wiki-identity_copy]] - create a new scale from an existing scale.
+* [[d3.scale.identity|Quantitative-Scales#wiki-identity]] - 构建一个identity线性变换。特殊的linear线性变换，此变换定义域和值域相同，只在一些d3内部的axis或brush模块中用到。
+* [[identity|Quantitative-Scales#wiki-_identity]] - identity线性变换函数。返回输入值。
+* [[identity.invert|Quantitative-Scales#wiki-_identity]] - 和identity函数相同，返回输入值。
+* [[identity.domain|Quantitative-Scales#wiki-identity_domain]] - get或set变换的定义域。
+* [[identity.range|Quantitative-Scales#wiki-identity_domain]] - get或set变换的值域。
+* [[identity.ticks|Quantitative-Scales#wiki-identity_ticks]] - 从定义域中取出有代表性的值。通常用于坐标轴刻度的选取。
+* [[identity.tickFormat|Quantitative-Scales#wiki-identity_tickFormat]] - 获取格式转化函数，通常用于坐标轴刻度的格式转化。
+* [[identity.copy|Quantitative-Scales#wiki-identity_copy]] - 从已有的变换中复制出一个变换。
 
 ### [[Ordinal|Ordinal-Scales#wiki-ordinal]]
 
