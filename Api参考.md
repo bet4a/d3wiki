@@ -266,13 +266,13 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[threshold.domain|Quantitative-Scales#wiki-threshold_domain]] - get或set变换的定义域。
 * [[threshold.range|Quantitative-Scales#wiki-threshold_range]] - get或set变换的值域。
 * [[threshold.copy|Quantitative-Scales#wiki-threshold_copy]] - 从已有的变换中复制出一个变换。
-* [[d3.scale.quantile|Quantitative-Scales#wiki-quantile]] - construct a quantitative scale mapping to quantiles.
-* [[quantile|Quantitative-Scales#wiki-_quantile]] - get the range value corresponding to a given domain value.
-* [quantile.invertExtent](Quantitative-Scales#wiki-quantile_invertExtent) - get the domain values for the specified range value.
-* [[quantile.domain|Quantitative-Scales#wiki-quantile_domain]] - get or set the scale's input domain (as discrete values).
-* [[quantile.range|Quantitative-Scales#wiki-quantile_range]] - get or set the scale's output range (as discrete values).
-* [[quantile.quantiles|Quantitative-Scales#wiki-quantile_quantiles]] - get the scale's quantile bin thresholds.
-* [[quantile.copy|Quantitative-Scales#wiki-quantile_copy]] - create a new scale from an existing scale.
+* [[d3.scale.quantile|Quantitative-Scales#wiki-quantile]] - 构建一个quantile线性变换。使用方法与quantize完全类似，区别是quantile根据中位数来分隔区间，quantize根据算数平均值来分隔区间。[example](http://stackoverflow.com/questions/19258996/what-is-the-difference-between-d3-scale-quantize-and-d3-scale-quantile)
+* [[quantile|Quantitative-Scales#wiki-_quantile]] - 输入数值，返回离散值。
+* [quantile.invertExtent](Quantitative-Scales#wiki-quantile_invertExtent) - 输入离散值，返回数值。
+* [[quantile.domain|Quantitative-Scales#wiki-quantile_domain]] - get或set变换的定义域。
+* [[quantile.range|Quantitative-Scales#wiki-quantile_range]] - get或set变换的值域。
+* [[quantile.quantiles|Quantitative-Scales#wiki-quantile_quantiles]] - 获得quantile变换的分隔值。示例： var q = d3.scale.quantile().domain([0, 1]).range(['a', 'b', 'c']); q.quantiles() returns [0.33333333333333326, 0.6666666666666665]
+* [[quantile.copy|Quantitative-Scales#wiki-quantile_copy]] - 从已有的变换中复制出一个变换。
 * [[d3.scale.identity|Quantitative-Scales#wiki-identity]] - construct a linear identity scale.
 * [[identity|Quantitative-Scales#wiki-_identity]] - the identity function.
 * [[identity.invert|Quantitative-Scales#wiki-_identity]] - equivalent to identity; the identity function.
