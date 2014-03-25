@@ -75,7 +75,7 @@ var x = d3.scale.linear().domain([-1, 1]);
 console.log(x.ticks(5).map(x.tickFormat(5, "+%"))); // ["-100%", "-50%", "+0%", "+50%", "+100%"]
 ```
 
-If the *format* already specifies a precision, this method is equivalent to [d3.format](Formatting#wiki-d3_format).
+Likewise, if *format* uses the format type `s`, the scale will compute a SI-prefix based on the largest value in the domain, and use that SI-prefix for [all tick values](http://bl.ocks.org/mbostock/9764126). If the *format* already specifies a precision, this method is equivalent to [d3.format](Formatting#wiki-d3_format).
 
 Note that when using a log scale in conjunction with an axis, you typically want to use [axis.ticks](SVG-Axes#wiki-ticks) rather than [axis.tickFormat](SVG-Axes#wiki-tickFormat) to take advantage of the log scale’s custom tick format, as in [bl.ocks.org/5537697](http://bl.ocks.org/mbostock/5537697).
 
