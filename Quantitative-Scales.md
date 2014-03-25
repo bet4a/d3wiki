@@ -344,6 +344,9 @@ t(0) === 'b';
 t(0.5) === 'b';
 t(1) === 'c';
 t(1000) === 'c';
+t.invertExtent('a'); //returns [undefined, 0]
+t.invertExtent('b'); //returns [0, 1]
+t.invertExtent('c'); //returns [1, undefined]
 ```
 
 <a name="_threshold" href="#wiki-_threshold">#</a> <b>threshold</b>(<i>x</i>)
