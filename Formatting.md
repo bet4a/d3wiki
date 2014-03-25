@@ -81,7 +81,7 @@ console.log(prefix.symbol); // "G"
 console.log(prefix.scale(1.21e9)); // 1.21
 ```
 
-This method is used by d3.format for the %s format.
+This method is used by d3.format for the `s` format.
 
 <a name="d3_round" href="Formatting#wiki-d3_round">#</a> d3.<b>round</b>(<i>x</i>[, <i>n</i>])
 
