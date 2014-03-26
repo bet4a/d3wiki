@@ -282,22 +282,22 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[identity.tickFormat|Quantitative-Scales#wiki-identity_tickFormat]] - 获取格式转化函数，通常用于坐标轴刻度的格式转化。
 * [[identity.copy|Quantitative-Scales#wiki-identity_copy]] - 从已有的变换中复制出一个变换。
 
-### [[Ordinal|Ordinal-Scales#wiki-ordinal]]
+### [[序数变换（Ordinal）|Ordinal-Scales#wiki-ordinal]]
 
-* [[d3.scale.ordinal|Ordinal-Scales#wiki-ordinal]] - construct an ordinal scale.
-* [[ordinal|Ordinal-Scales#wiki-_ordinal]] - get the range value corresponding to a given domain value.
-* [[ordinal.domain|Ordinal-Scales#wiki-ordinal_domain]] - get or set the scale's input domain.
-* [[ordinal.range|Ordinal-Scales#wiki-ordinal_range]] - get or set the scale's output range.
-* [[ordinal.rangePoints|Ordinal-Scales#wiki-ordinal_rangePoints]] - divide a continuous output range for discrete points.
-* [[ordinal.rangeBands|Ordinal-Scales#wiki-ordinal_rangeBands]] - divide a continuous output range for discrete bands.
-* [[ordinal.rangeRoundBands|Ordinal-Scales#wiki-ordinal_rangeRoundBands]] - divide a continuous output range for discrete bands.
-* [[ordinal.rangeBand|Ordinal-Scales#wiki-ordinal_rangeBand]] - get the discrete range band width.
-* [[ordinal.rangeExtent|Ordinal-Scales#wiki-ordinal_rangeExtent]] - get the minimum and maximum values of the output range.
-* [[ordinal.copy|Ordinal-Scales#wiki-ordinal_copy]] - create a new scale from an existing scale.
-* [[d3.scale.category10|Ordinal-Scales#wiki-category10]] - construct an ordinal scale with ten categorical colors.
-* [[d3.scale.category20|Ordinal-Scales#wiki-category20]] - construct an ordinal scale with twenty categorical colors.
-* [[d3.scale.category20b|Ordinal-Scales#wiki-category20b]] - construct an ordinal scale with twenty categorical colors.
-* [[d3.scale.category20c|Ordinal-Scales#wiki-category20c]] - construct an ordinal scale with twenty categorical colors.
+* [[d3.scale.ordinal|Ordinal-Scales#wiki-ordinal]] - 构建一个ordinal变换对象。ordinal变换的输入定义域和输出值域都是离散的。而quantitative变换的输入定义域是离散的，这是两者最大的不同。
+* [[ordinal|Ordinal-Scales#wiki-_ordinal]] - 输入一个离散值，返回一个离散值。不在当前定义域中的输入值会自动加入定义域。
+* [[ordinal.domain|Ordinal-Scales#wiki-ordinal_domain]] - get或set变换的定义域。
+* [[ordinal.range|Ordinal-Scales#wiki-ordinal_range]] - get或set变换的值域。
+* [[ordinal.rangePoints|Ordinal-Scales#wiki-ordinal_rangePoints]] - 用几个离散点来分割一个连续的区间。详情请看链接中的图例。
+* [[ordinal.rangeBands|Ordinal-Scales#wiki-ordinal_rangeBands]] - 用几个离散区间来分割一个连续的区间。详情请看链接中的图例。
+* [[ordinal.rangeRoundBands|Ordinal-Scales#wiki-ordinal_rangeRoundBands]] - 用几个离散区间来分割一个连续的区间，区间边界和宽度会取整。详情请看链接中的图例。
+* [[ordinal.rangeBand|Ordinal-Scales#wiki-ordinal_rangeBand]] - 获取离散区间的宽度。
+* [[ordinal.rangeExtent|Ordinal-Scales#wiki-ordinal_rangeExtent]] - 获取输出域的最小最大值。
+* [[ordinal.copy|Ordinal-Scales#wiki-ordinal_copy]] - 从已有的变换中复制出一个变换。
+* [[d3.scale.category10|Ordinal-Scales#wiki-category10]] - 用10种颜色构建一个ordinal变换。
+* [[d3.scale.category20|Ordinal-Scales#wiki-category20]] - 用20种颜色构建一个ordinal变换。
+* [[d3.scale.category20b|Ordinal-Scales#wiki-category20b]] - 用另外20种颜色构建一个ordinal变换。
+* [[d3.scale.category20c|Ordinal-Scales#wiki-category20c]] - 用另外20种颜色构建一个ordinal变换。
 
 ## [d3.svg (SVG)](SVG)
 
