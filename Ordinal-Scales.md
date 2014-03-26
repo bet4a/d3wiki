@@ -32,15 +32,36 @@ Sets the output range from the specified continuous *interval*. The array *inter
 
 ![rangepoints](https://f.cloud.github.com/assets/230541/538689/46d87118-c193-11e2-83ab-2008df7c36aa.png)
 
+```javascript
+d3.scale.ordinal().domain([1, 2, 3, 4]).rangePoints([0, 100], 0).range();
+// returns [0, 33.333333333333336, 66.66666666666667, 100]
+```
+
 <a name="ordinal_rangeBands" href="Ordinal-Scales#wiki-ordinal_rangeBands">#</a> ordinal.<b>rangeBands</b>(<i>interval</i>[, <i>padding</i>[, <i>outerPadding</i>]])
 
 Sets the output range from the specified continuous *interval*. The array *interval* contains two elements representing the minimum and maximum numeric value. This interval is subdivided into *n* evenly-spaced **bands**, where *n* is the number of (unique) values in the input domain. The bands may be offset from the edge of the interval and other bands according to the specified *padding*, which defaults to zero. The padding is typically in the range [0,1] and corresponds to the amount of space in the range interval to allocate to padding. A value of 0.5 means that the band width will be equal to the padding width. The *outerPadding* argument is for the entire group of bands; a value of 0 means there will be padding only between rangeBands.
 
 ![rangebands](https://f.cloud.github.com/assets/230541/538688/46c298c0-c193-11e2-9a7e-15d9abcfab9b.png)
 
+```javascript
+var o = d3.scale.ordinal().domain([1, 2, 3, 4]).rangeBands([0, 100]);
+o.rangeBand(); // returns 25
+o.range(); // returns [0, 25, 50, 75]
+o.rangeExtent(); // returns [0, 100]
+```
+
 <a name="ordinal_rangeRoundBands" href="Ordinal-Scales#wiki-ordinal_rangeRoundBands">#</a> ordinal.<b>rangeRoundBands</b>(<i>interval</i>[, <i>padding</i>[, <i>outerPadding</i>]])
 
 Like [rangeBands](Ordinal-Scales#wiki-ordinal_rangeBands), except guarantees that the band width and offset are integer values, so as to avoid antialiasing artifacts.
+
+```javascript
+var o1 = d3.scale.ordinal().domain([1, 2, 3]).rangeBands([0, 100], 0, 0);
+o1.range(); //returns [0, 33.333333333333336, 66.66666666666667]
+o1.rangeBand(); //returns 33.333333333333336
+var o2 = d3.scale.ordinal().domain([1, 2, 3]).rangeRoundBands([0, 100], 0, 0);
+o2.range(); //returns [1, 34, 67]
+o2.rangeBand(); //returns 33
+```
 
 <a name="ordinal_rangeBand" href="Ordinal-Scales#wiki-ordinal_rangeBand">#</a> ordinal.<b>rangeBand</b>()
 
