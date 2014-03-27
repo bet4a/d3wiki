@@ -240,6 +240,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
     <td>Lifespan<br><a href="http://www.cotrino.com/2014/02/lifespan-longevidad-animal/"><img src="https://raw.github.com/cotrino/experimentos/master/lifespan.png" width="200"></a></td>
     <td>The Movie Network<br><a href="http://bl.ocks.org/paulovn/9686202"><img src="http://bl.ocks.org/paulovn/raw/9686202/thumbnail-s.png" width="202"></a></td>
     <td>Bowls with Liquid<br><a href="http://invision-web.net/ticket-status/"><img src="http://invision-web.net/ticket-status/preview.png" /></a></td>
+<td>BiPartite Visualization<br><a href="http://bl.ocks.org/NPashaP/BiPartite"><img src="http://bl.ocks.org/NPashaP/BiPartite/thumbnail.png" width="202"></a></td>
 </tr>
 
 </table>
