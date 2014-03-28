@@ -43,6 +43,7 @@ Please feel free to add links to your work!
 * [Visualize with d3js](http://hsilomedus.me/wp-content/uploads/javadayd3/index.html) - Pance Cavkovski
 * [Drawing a many-to-many relationship with a simple blog-post-tag example](http://vijayrc.com/vectorclocks/vrc/post/d3) - Vijay Chakravarthy
 * [Rapid D3.js Tutorials](http://www.youtube.com/watch?v=xMSykYiq3SY&list=PLRJOPJMJE3OTcg5TNV6ZdbIDbFITu2OXu) - Phuoc Do of [vida.io](http://vida.io)
+* [Introduction to D3, with applications to big data](http://www.samselikoff.com/tutorials/intro-to-d3-big-data.html) - Sam Selikoff
 
 ### Specific Techniques
 
