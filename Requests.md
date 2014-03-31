@@ -60,7 +60,7 @@ An example using URL encoding:
 
 ```js
 d3.csv("/path/to/file.csv")
-    .header("Content-Type", "application/x-www-form-url-encoded")
+    .header("Content-Type", "application/x-www-form-urlencoded")
     .post("a=2&b=3", function(error, data) {
       // callback
     });
