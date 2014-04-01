@@ -733,6 +733,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Visualizing Overlapping Sets] (http://radialsets.org) - [Bernd Landauer] (http://syrenio.com/)
 * [Visualizing Package Dependencies](http://redotheweb.com/DependencyWheel/)
 * [Switching behavior between phone brands of the Dutch ](http://nbremer.blogspot.nl/2014/02/switching-behavior-between-phone-brands.html) and [Code](http://bl.ocks.org/nbremer/raw/6540350/)
+* [BeerViz - Visualizing Beers and their relations](http://seekshreyas.com/beerviz/)
 
 #### Maps
 
