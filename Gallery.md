@@ -243,6 +243,8 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 </tr>
 <tr height="207" valign="top">
 <td>BiPartite Visualization<br><a href="http://bl.ocks.org/NPashaP/9796212"><img src="http://bl.ocks.org/NPashaP/9796212/thumbnail.png" width="202"></a></td>
+
+<td>BeerViz<br><a href="http://seekshreyas.com/beerviz/"><img src="https://dl.dropboxusercontent.com/u/2670838/Markdown/img/beerviz.png" width="202"></a></td>
 </tr>
 
 </table>
