@@ -247,6 +247,8 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 <td>BeerViz<br><a href="http://seekshreyas.com/beerviz/"><img src="https://dl.dropboxusercontent.com/u/2670838/Markdown/img/beerviz.png" width="202"></a></td>
 
 <td>3D Donut<br><a href="http://bl.ocks.org/NPashaP/9994181"><img src="http://bl.ocks.org/NPashaP/raw/9994181/thumbnail.png"  width="201"></a></td>
+
+<td>Graceful Tree Conjecture<br><a href="http://bl.ocks.org/NPashaP/7683252"><img src="http://bl.ocks.org/NPashaP/raw/7683252/thumbnail.png"  width="200"></a></td>
 </tr>
 
 </table>
