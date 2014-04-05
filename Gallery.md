@@ -242,7 +242,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
     <td>Bowls with Liquid<br><a href="http://invision-web.net/ticket-status/"><img src="http://invision-web.net/ticket-status/preview.png" /></a></td>
 </tr>
 <tr height="207" valign="top">
-<td>BiPartite Visualization<br><a href="http://bl.ocks.org/NPashaP/9796212"><img src="http://bl.ocks.org/NPashaP/raw/9796212/thumbnailsmall.png"></a></td>
+<td>BiPartite Visualization<br><a href="http://bl.ocks.org/NPashaP/9796212"><img src="http://bl.ocks.org/NPashaP/raw/9da08bff5d06cd63d34a2a1bdab1d3280970dc0be/thumbnailsmall.png"></a></td>
 
 <td>BeerViz<br><a href="http://seekshreyas.com/beerviz/"><img src="https://dl.dropboxusercontent.com/u/2670838/Markdown/img/beerviz.png" width="202"></a></td>
 </tr>
