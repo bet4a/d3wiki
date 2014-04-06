@@ -251,6 +251,10 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 <td>Graceful Tree Conjecture<br><a href="http://bl.ocks.org/NPashaP/7683252"><img src="http://bl.ocks.org/NPashaP/raw/7683252/thumbnail.png"  width="200"></a></td>
 </tr>
 
+<tr>
+<td>Gradient Pie<br><a href="http://bl.ocks.org/NPashaP/9999786"><img src="http://bl.ocks.org/NPashaP/raw/9999786/thumbnail.png"  width="197"></a></td>
+</tr>
+
 </table>
 
 ## Basic Charts
