@@ -489,7 +489,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [Process map and documentation using an interactive force layout](https://github.com/nylen/d3-process-map) - James Nylen
 * [Beijing Air Pollution Visualization](http://scottcheng.github.io/bj-air-vis/) - Scott Cheng
 * [China Historical Films Timeline](http://lcreation.fr/artnum/china_films_timeline.html) - Laurent C.
-
+* [Top Scorers in 2013/14 Champions League - Breakdown analysis](http://sunburst-demo.herokuapp.com/) - Marcello La Rocca
 ### Collections
 
 #### The New York Times visualizations
