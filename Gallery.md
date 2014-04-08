@@ -253,6 +253,8 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 
 <tr>
 <td>Gradient Pie<br><a href="http://bl.ocks.org/NPashaP/9999786"><img src="http://bl.ocks.org/NPashaP/raw/9999786/thumbnail.png"  width="197"></a></td>
+<td>Top Scorers in 2013/14 Champions League - Breakdown analysis<br><a href="http://sunburst-demo.herokuapp.com/"><img src="https://scontent-b-fra.xx.fbcdn.net/hphotos-prn2/t1.0-9/1545571_10201953206206939_9214887947131857383_n.jpg"  width="197"></a></td>
+
 </tr>
 
 </table>
@@ -489,7 +491,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [Process map and documentation using an interactive force layout](https://github.com/nylen/d3-process-map) - James Nylen
 * [Beijing Air Pollution Visualization](http://scottcheng.github.io/bj-air-vis/) - Scott Cheng
 * [China Historical Films Timeline](http://lcreation.fr/artnum/china_films_timeline.html) - Laurent C.
-* [Top Scorers in 2013/14 Champions League - Breakdown analysis](http://sunburst-demo.herokuapp.com/) - Marcello La Rocca
+
 ### Collections
 
 #### The New York Times visualizations
