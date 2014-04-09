@@ -365,7 +365,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 ### [[坐标轴(Axes)|SVG-Axes]]
 
 * [[d3.svg.axis|SVG-Axes#wiki-axis]] - 创建一个axis生成器。
-* [[axis|SVG-Axes#wiki-_axis]] - 执行函数，正式在页面中生成axis。
+* [[axis|SVG-Axes#wiki-_axis]] - 正式在页面中生成axis。
 * [[axis.scale|SVG-Axes#wiki-scale]] - get或set坐标轴的scale尺度变换，该尺度变换设定了数值和像素位置的转换规则。
 * [[axis.orient|SVG-Axes#wiki-orient]] - get或set坐标轴刻度方向。
 * [[axis.ticks|SVG-Axes#wiki-ticks]] - 控制坐标轴刻度的产生方式。
@@ -378,15 +378,15 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 
 ### [Controls](SVG-Controls)
 
-* [d3.svg.brush](SVG-Controls#wiki-brush) - click and drag to select one- or two-dimensional regions.
-* [brush](SVG-Controls#wiki-_brush) - apply a brush to the given selection or transition.
-* [brush.x](SVG-Controls#wiki-brush_x) - the brush’s <i>x</i>-scale, for horizontal brushing.
-* [brush.y](SVG-Controls#wiki-brush_y) - the brush’s <i>y</i>-scale, for vertical brushing.
-* [brush.extent](SVG-Controls#wiki-brush_extent) - the brush’s extent in zero, one or two dimensions.
-* [brush.clear](SVG-Controls#wiki-brush_clear) - reset the brush extent.
-* [brush.empty](SVG-Controls#wiki-brush_empty) - whether or not the brush extent is empty.
-* [brush.on](SVG-Controls#wiki-brush_on) - listeners for when the brush is moved.
-* [brush.event](SVG-Controls#wiki-brush_event) - dispatch brush events after setting the extent.
+* [d3.svg.brush](SVG-Controls#wiki-brush) - 点击拖拽选择一个二维区域。
+* [brush](SVG-Controls#wiki-_brush) - 在页面中某个区域中正式绑定一个brush。
+* [brush.x](SVG-Controls#wiki-brush_x) - get或set brush的x变换,用于水平方向的拖拽。
+* [brush.y](SVG-Controls#wiki-brush_y) - get或set brush的y变换,用于垂直方向的拖拽。
+* [brush.extent](SVG-Controls#wiki-brush_extent) - get或set brush的选取范围（extent）。
+* [brush.clear](SVG-Controls#wiki-brush_clear) - 设置brush的选取范围（extent）为空。
+* [brush.empty](SVG-Controls#wiki-brush_empty) - 判断brush的选取范围（extent）是否为空。
+* [brush.on](SVG-Controls#wiki-brush_on) - get或set brush的事件监听器。可监听3种事件：brushstart, brush, brushend。
+* [brush.event](SVG-Controls#wiki-brush_event) - 通过程序触发监听事件，在通过程序设置extent后使用。
 
 ## [d3.time (Time)](Time)
 
