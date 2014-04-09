@@ -63,5 +63,3 @@ When fired, the d3.event object will contain the following properties:
 * _translate_ - a two-element array representing the current translation vector.
 
 <a name="event" href="#wiki-event">#</a> zoom.<b>event</b>(<i>selection</i>)
-
-If *selection* is a selection, immediately dispatches a zoom gesture to registered listeners, as the three event sequence _zoomstart_, _zoom_ and _zoomend_. This can be useful in triggering listeners after setting the [translate](#wiki-translate) or [scale](#wiki-scale) programatically. If *selection* is a transition, registers the appropriate tweens so that the zoom behavior dispatches events over the course of the transition: a _zoomstart_ event when the transition starts from the previously-set view, _zoom_ events for each tick of the transition, and finally a _zoomend_ event when the transition ends. Note that the transition will be [interrupted](Selections#wiki-interrupt) if the user starts zooming before the transition ends.
