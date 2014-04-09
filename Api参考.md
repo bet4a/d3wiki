@@ -362,19 +362,19 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[d3.svg.diagonal.radial|SVG-Shapes#wiki-diagonal_radial]] - create a new diagonal generator.
 * [[diagonal|SVG-Shapes#wiki-_diagonal_radial]] - generate a two-dimensional Bézier connector, as in a node-link diagram.
 
-### [[Axes|SVG-Axes]]
+### [[坐标轴(Axes)|SVG-Axes]]
 
-* [[d3.svg.axis|SVG-Axes#wiki-axis]] - create a new axis generator.
-* [[axis|SVG-Axes#wiki-_axis]] - creates or updates an axis for the given selection or transition.
-* [[axis.scale|SVG-Axes#wiki-scale]] - get or set the axis scale.
-* [[axis.orient|SVG-Axes#wiki-orient]] - get or set the axis orientation.
-* [[axis.ticks|SVG-Axes#wiki-ticks]] - control how ticks are generated for the axis.
-* [[axis.tickValues|SVG-Axes#wiki-tickValues]] - specify tick values explicitly.
-* [[axis.tickSize|SVG-Axes#wiki-tickSize]] - specify the size of major, minor and end ticks.
-* [[axis.innerTickSize|SVG-Axes#wiki-innerTickSize]] - specify the size of inner ticks.
-* [[axis.outerTickSize|SVG-Axes#wiki-outerTickSize]] - specify the size of outer ticks.
-* [[axis.tickPadding|SVG-Axes#wiki-tickPadding]] - specify padding between ticks and tick labels.
-* [[axis.tickFormat|SVG-Axes#wiki-tickFormat]] - override the tick formatting for labels.
+* [[d3.svg.axis|SVG-Axes#wiki-axis]] - 创建一个axis生成器。
+* [[axis|SVG-Axes#wiki-_axis]] - 执行函数，正式在页面中生成axis。
+* [[axis.scale|SVG-Axes#wiki-scale]] - get或set坐标轴的scale尺度变换，该尺度变换设定了数值和像素位置的转换规则。
+* [[axis.orient|SVG-Axes#wiki-orient]] - get或set坐标轴刻度方向。
+* [[axis.ticks|SVG-Axes#wiki-ticks]] - 控制坐标轴刻度的产生方式。
+* [[axis.tickValues|SVG-Axes#wiki-tickValues]] - 设置特定的坐标轴的值。
+* [[axis.tickSize|SVG-Axes#wiki-tickSize]] - 指定坐标轴上刻度线的像素长度。
+* [[axis.innerTickSize|SVG-Axes#wiki-innerTickSize]] - get或set坐标轴小刻度线的像素长度。
+* [[axis.outerTickSize|SVG-Axes#wiki-outerTickSize]] - get或set坐标轴大刻度线的像素长度。
+* [[axis.tickPadding|SVG-Axes#wiki-tickPadding]] - 指定坐标轴刻度和刻度文字之间的像素距离。
+* [[axis.tickFormat|SVG-Axes#wiki-tickFormat]] - 设置刻度文字的格式。
 
 ### [Controls](SVG-Controls)
 
