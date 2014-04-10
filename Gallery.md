@@ -468,7 +468,8 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [Superposed areas for comparing 2 values](https://www.googledrive.com/host/0BwcmXsFAhzhocERSRHc0c0hxaTQ/echr.html) - Etienne Ramstein
 * [Object constancy through many types of buble charts](https://www.googledrive.com/host/0BwcmXsFAhzhoRWh5SjNyV2hLNlE/dashboard.html) - Etienne Ramstein
 * [The Fundamental Theorem of Arithmetic](http://freelanceastrophysicist.com/PrimeTheorem/FToA.html), [source](https://gist.github.com/freelanceastro/5686772) - [Adam Becker](http://freelanceastro.com)
-* [Global Oil Production & Consumption since 1965](http://labs.wnstnsmth.net/worldoil) - [Timo Grossenbacher](http://wnstnsmth.net)
+* [Global Oil Production & Consumption since 1965](http://labs.timogrossenbacher.ch/worldoil) - [Timo Grossenbacher](http://timogrossenbacher.ch)
+* [Swiss Votes Explorer](http://labs.timogrossenbacher.ch/swissvotesexplorer) - [Timo Grossenbacher](http://timogrossenbacher.ch)
 * [Electrical field lines and Equipotential surfaces simulation](http://hsilomedus.me/wp-content/uploads/d3electricField/electricField.html) - Pance Cavkovski
 * [Artefacts of the Collective Unconscious](http://artefactsofthecollectiveunconscious.net) - [Noah Pedrini](http://looklisten.net) and [David Patman](http://www.createassociate.com.au/)
 * [Starpaths](http://www.cotrino.com/2013/05/starpaths/) - José Cotrino
