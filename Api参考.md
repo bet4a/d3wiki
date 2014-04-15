@@ -493,22 +493,22 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 ### [[Force（力学）|Force-Layout]]
 
 * [[d3.layout.force|Force-Layout#wiki-force]] -节点（node）基于物理模拟的位置连接。
-* [[force.on|Force-Layout#wiki-on]] - 监听布局位置的变化。
+* [[force.on|Force-Layout#wiki-on]] - 监听布局位置的变化。(仅支持"start","step","end"三种事件)
 * [[force.nodes|Force-Layout#wiki-nodes]] - 获得或设置布局中的节点（node）阵列组。
 * [[force.links|Force-Layout#wiki-links]] - 获得或设置布局中节点间的连接（Link）阵列组。.
-* [[force.size|Force-Layout#wiki-size]] - get or set the layout size in *x* and *y*.
-* [[force.linkDistance|Force-Layout#wiki-linkDistance]] - get or set the link distance.
-* [[force.linkStrength|Force-Layout#wiki-linkStrength]] - get or set the link strength.
-* [[force.friction|Force-Layout#wiki-friction]] - get or set the friction coefficient.
-* [[force.charge|Force-Layout#wiki-charge]] - get or set the charge strength.
-* [[force.gravity|Force-Layout#wiki-gravity]] - get or set the gravity strength.
-* [[force.theta|Force-Layout#wiki-theta]] - get or set the accuracy of the charge interaction.
-* [[force.start|Force-Layout#wiki-start]] - start or restart the simulation when the nodes change.
-* [[force.resume|Force-Layout#wiki-resume]] - reheat the cooling parameter and restart simulation.
-* [[force.stop|Force-Layout#wiki-stop]] - immediately terminate the simulation.
-* [[force.alpha|Force-Layout#wiki-alpha]] - get or set the layout's cooling parameter.
-* [[force.tick|Force-Layout#wiki-tick]] - run the layout simulation one step.
-* [[force.drag|Force-Layout#wiki-drag]] - bind a behavior to nodes to allow interactive dragging.
+* [[force.size|Force-Layout#wiki-size]] - 获取或设置布局的 *宽* 和 *高* 的大小.
+* [[force.linkDistance|Force-Layout#wiki-linkDistance]] - 获取或设置节点间的连接线距离.
+* [[force.linkStrength|Force-Layout#wiki-linkStrength]] - 获取或设置节点间的连接强度.
+* [[force.friction|Force-Layout#wiki-friction]] - 获取或设置摩擦系数.
+* [[force.charge|Force-Layout#wiki-charge]] - 获取或设置节点的电荷数.(电荷数决定结点是互相排斥还是吸引)
+* [[force.gravity|Force-Layout#wiki-gravity]] - 获取或设置节点的引力强度.
+* [[force.theta|Force-Layout#wiki-theta]] - 获取或设置电荷间互相作用的强度.
+* [[force.start|Force-Layout#wiki-start]] - 开启或恢复结点间的位置影响.
+* [[force.resume|Force-Layout#wiki-resume]] - 设置冷却系数为0.1,并重新调用start()函数.
+* [[force.stop|Force-Layout#wiki-stop]] - 立刻终止结点间的位置影响.(等同于将*冷却系数*设置为0)
+* [[force.alpha|Force-Layout#wiki-alpha]] - 获取或设置布局的冷却系数.(冷却系数为0时,节点间不再互相影响)
+* [[force.tick|Force-Layout#wiki-tick]] - 让布局运行到下一步.
+* [[force.drag|Force-Layout#wiki-drag]] - 获取当前布局的拖拽对象实例以便进一步绑定处理函数.
 
 ### [[Hierarchy|Hierarchy-Layout]]
 
