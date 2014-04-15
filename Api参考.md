@@ -511,15 +511,15 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[force.tick|Force-Layout#wiki-tick]] - 让布局运行到下一步.
 * [[force.drag|Force-Layout#wiki-drag]] - 获取当前布局的拖拽对象实例以便进一步绑定处理函数.
 
-### [[Hierarchy|Hierarchy-Layout]]
+### [[层级布局(Hierarchy)|Hierarchy-Layout]]
 
-* [[d3.layout.hierarchy|Hierarchy-Layout#wiki-hierarchy]] - derive a custom hierarchical layout implementation.
-* [[hierarchy.sort|Hierarchy-Layout#wiki-sort]] - get or set the comparator function for sibling nodes.
-* [[hierarchy.children|Hierarchy-Layout#wiki-children]] - get or set the accessor function for child nodes.
-* [[hierarchy.nodes|Hierarchy-Layout#wiki-nodes]] - compute the layout and return the array of nodes.
-* [[hierarchy.links|Hierarchy-Layout#wiki-links]] - compute the parent-child links between tree nodes.
-* [[hierarchy.value|Hierarchy-Layout#wiki-value]] - get or set the value accessor function.
-* [[hierarchy.revalue|Hierarchy-Layout#wiki-revalue]] - recompute the hierarchy values.
+* [[d3.layout.hierarchy|Hierarchy-Layout#wiki-hierarchy]] - 获得一个自定义的层级布局的实现.
+* [[hierarchy.sort|Hierarchy-Layout#wiki-sort]] - 获取或设置一个函数, 用来给兄弟节点(同一父结点的子结点)的排序.
+* [[hierarchy.children|Hierarchy-Layout#wiki-children]] - 获取或设置子结点的访问器.
+* [[hierarchy.nodes|Hierarchy-Layout#wiki-nodes]] - 计算并返回指定结点的子结点信息.
+* [[hierarchy.links|Hierarchy-Layout#wiki-links]] - 指定一个子结点数组(通常是**nodes**函数返回值), 计算它们与父结点的连接信息.
+* [[hierarchy.value|Hierarchy-Layout#wiki-value]] - 获取或设置结点的**值**访问器.
+* [[hierarchy.revalue|Hierarchy-Layout#wiki-revalue]] - 重新计算层级布局.
 
 ### [[Histogram|Histogram-Layout]]
 
