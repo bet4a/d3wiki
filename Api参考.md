@@ -542,15 +542,15 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [pack.radius](Pack-Layout#wiki-radius) - 如果不想结点半径与结点的值相同, 可以传入一个函数用来计算结点半径.
 * [pack.padding](Pack-Layout#wiki-padding) - 指定相邻结点之点的间距(近似值).
 
-### [[Partition|Partition-Layout]]
+### [分区(Partition)](Partition-Layout)
 
-* [[d3.layout.partition|Partition-Layout#wiki-partition]] - recursively partition a node tree into a sunburst or icicle.
-* [[partition.sort|Partition-Layout#wiki-sort]] - control the order in which sibling nodes are traversed.
-* [[partition.children|Partition-Layout#wiki-children]] - get or set the children accessor function.
-* [[partition.nodes|Partition-Layout#wiki-nodes]] - compute the partition layout and return the array of nodes.
-* [[partition.links|Partition-Layout#wiki-links]] - compute the parent-child links between tree nodes.
-* [[partition.value|Partition-Layout#wiki-value]] - get or set the value accessor used to size circles.
-* [[partition.size|Partition-Layout#wiki-size]] - specify the layout size in *x* and *y*.
+* [d3.layout.partition](Partition-Layout#wiki-partition) - 将一棵树递归的分区.
+* [partition.sort](Partition-Layout#wiki-sort) - 获取或设置一个函数, 用来给兄弟节点(同一父结点的子结点)排序.
+* [partition.children](Partition-Layout#wiki-children) - 获取或设置子结点的访问器.
+* [partition.nodes](Partition-Layout#wiki-nodes) - 计算并返回指定结点的子结点信息.
+* [partition.links](Partition-Layout#wiki-links) - 指定一个子结点数组(通常是**nodes**函数返回值), 计算它们与父结点的连接信息.
+* [partition.value](Partition-Layout#wiki-value) - 设置一个函数来来计算分区的值.
+* [partition.size](Partition-Layout#wiki-size) - 设置整个布局画布的 *宽* and *高*.
 
 ### [[Pie|Pie-Layout]]
 
