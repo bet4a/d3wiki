@@ -479,16 +479,17 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[chord.chords|Chord-Layout#wiki-chords]] - 该函数会将参数处理成对 chord 更友好的格式并返回, 若没有提供参数, 会调用matrix()来获取数据
 * [[chord.groups|Chord-Layout#wiki-groups]] - 该函数参数处理成更易于理解的分组信息, 若没有提供参数, 会调用matrix()来获取数据
 
-### [[Cluster|Cluster-Layout]]
+### [[集群(Cluster)|Cluster-Layout]]
 
-* [[d3.layout.cluster|Cluster-Layout#wiki-cluster]] - cluster entities into a dendrogram.
-* [[cluster.sort|Cluster-Layout#wiki-sort]] - get or set the comparator function for sibling nodes.
-* [[cluster.children|Cluster-Layout#wiki-children]] - get or set the accessor function for child nodes.
-* [[cluster.nodes|Cluster-Layout#wiki-nodes]] - compute the cluster layout and return the array of nodes.
-* [[cluster.links|Cluster-Layout#wiki-links]] - compute the parent-child links between tree nodes.
-* [[cluster.separation|Cluster-Layout#wiki-separation]] - get or set the spacing function between neighboring nodes.
-* [[cluster.size|Cluster-Layout#wiki-size]] - get or set the layout size in *x* and *y*.
-* [[cluster.nodeSize|Cluster-Layout#wiki-nodeSize]] - specify a fixed size for each node.
+* [[d3.layout.cluster|Cluster-Layout#wiki-cluster]] - 用默认设置生成一个集群布局对象.
+* [[cluster.sort|Cluster-Layout#wiki-sort]] - 获取或设置一个函数, 用来给兄弟节点(同一父结点的子结点)的排序.
+* [[cluster.children|Cluster-Layout#wiki-children]] - 获取或设置子结点的访问器.
+* [[cluster.nodes|Cluster-Layout#wiki-nodes]] - 计算并返回指定结点的子结点在集群中的信息(坐标,深度等).
+* [[cluster.links|Cluster-Layout#wiki-links]] - 指定一个子结点数组(通常是**nodes**函数返回值), 计算它们与父结点的连接信息.
+* [[cluster.separation|Cluster-Layout#wiki-separation]] - 获取或设置相邻结点间的间隔(不仅限于兄弟结点).
+* [[cluster.size|Cluster-Layout#wiki-size]] - 获取或设置布局的 *宽* 和 *高* 的大小.
+* [[cluster.nodeSize|Cluster-Layout#wiki-nodeSize]] - 为结点指定大小.
+
 
 ### [[力学(Force)|Force-Layout]]
 
