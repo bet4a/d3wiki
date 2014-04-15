@@ -461,14 +461,14 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[d3.time.year|Time-Intervals#wiki-year]] - every year (e.g., January 1, 12:00 AM).
 * [[d3.time.years|Time-Intervals#wiki-years]] - alias for year.range.
 
-## [d3.layout (构图、设计样式)](Layouts)
+## [构图(d3.layout)](Layouts)
 
 ### [[Bundle|Bundle-Layout]]
 
 * [[d3.layout.bundle|Bundle-Layout#wiki-bundle]] - construct a new default bundle layout.
 * [[bundle|Bundle-Layout#wiki-_bundle]] - apply Holten's *hierarchical bundling* algorithm to edges.
 
-### [[Chord|Chord-Layout]]
+### [[弦图(Chord)|Chord-Layout]]
 
 * [[d3.layout.chord|Chord-Layout#wiki-chord]] - 初始化一个弦图对象, 返回一个 Chord 实例
 * [[chord.matrix|Chord-Layout#wiki-matrix]] - 设置或者获取弦图实例对应的矩阵数据
@@ -490,7 +490,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[cluster.size|Cluster-Layout#wiki-size]] - get or set the layout size in *x* and *y*.
 * [[cluster.nodeSize|Cluster-Layout#wiki-nodeSize]] - specify a fixed size for each node.
 
-### [[Force（力学）|Force-Layout]]
+### [[力学(Force)|Force-Layout]]
 
 * [[d3.layout.force|Force-Layout#wiki-force]] -节点（node）基于物理模拟的位置连接。
 * [[force.on|Force-Layout#wiki-on]] - 监听布局位置的变化。(仅支持"start","step","end"三种事件)
