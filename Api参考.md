@@ -523,24 +523,24 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 
 ### [[直方图(Histogram)|Histogram-Layout]]
 
-* [[d3.layout.histogram|Histogram-Layout#wiki-histogram]] - 构建一个默认直方图(用来表示一组离散数字的分布).
+* [[d3.layout.histogram|Histogram-Layout#wiki-histogram]] - 构建一个默认直方图(用来表示一组离散数字的分布,横轴表示区间,纵轴表示区间内样本数量或样本百分比).
 * [[histogram.value|Histogram-Layout#wiki-value]] - 获取或设置值访问器.
 * [[histogram.range|Histogram-Layout#wiki-range]] - 获取或设置合法值范围.
 * [[histogram.bins|Histogram-Layout#wiki-bins]] - 指定如何将数据分组到不同的区间(bin)里, 返回一个[[构造函数|Histogram-Layout#wiki-_histogram]] .
 * [[histogram|Histogram-Layout#wiki-_histogram]] - 根据已设置的区间将数据分组,返回已分组的二维数组(compute the distribution of data using quantized bins).
-* [[histogram.frequency|Histogram-Layout#wiki-frequency]] - 设置直方图Y轴值是容器内数据的总量还是百分比(compute the distribution as counts or probabilities).
+* [[histogram.frequency|Histogram-Layout#wiki-frequency]] - 设置直方图Y轴值是区间内数据的总量还是百分比(compute the distribution as counts or probabilities).
 
-### [Pack](Pack-Layout)
+### [层包(Pack)](Pack-Layout)
 
-* [d3.layout.pack](Pack-Layout#wiki-pack) - produce a hierarchical layout using recursive circle-packing.
-* [pack.sort](Pack-Layout#wiki-sort) - control the order in which sibling nodes are traversed.
-* [pack.children](Pack-Layout#wiki-children) - get or set the children accessor function.
-* [pack.nodes](Pack-Layout#wiki-nodes) - compute the pack layout and return the array of nodes.
-* [pack.links](Pack-Layout#wiki-links) - compute the parent-child links between tree nodes.
-* [pack.value](Pack-Layout#wiki-value) - get or set the value accessor used to size circles.
-* [pack.size](Pack-Layout#wiki-size) - specify the layout size in *x* and *y*.
-* [pack.radius](Pack-Layout#wiki-radius) - specify the node radius, rather than deriving it from value.
-* [pack.padding](Pack-Layout#wiki-padding) - specify the layout padding in (approximate) pixels.
+* [d3.layout.pack](Pack-Layout#wiki-pack) - 用递归的圆环表现一个多层级布局.
+* [pack.sort](Pack-Layout#wiki-sort) - 获取或设置一个函数, 用来给兄弟节点(同一父结点的子结点)排序.
+* [pack.children](Pack-Layout#wiki-children) - 获取或设置子结点的访问器.
+* [pack.nodes](Pack-Layout#wiki-nodes) - 计算并返回指定结点的子结点信息.
+* [pack.links](Pack-Layout#wiki-links) - 指定一个子结点数组(通常是**nodes**函数返回值), 计算它们与父结点的连接信息.
+* [pack.value](Pack-Layout#wiki-value) - 获取或设置一个函数, 用来计算圆环的大小(近似值).
+* [pack.size](Pack-Layout#wiki-size) - 设置整个布局画布的 *宽* and *高*.
+* [pack.radius](Pack-Layout#wiki-radius) - 如果不想结点半径与结点的值相同, 可以传入一个函数用来计算结点半径.
+* [pack.padding](Pack-Layout#wiki-padding) - 指定相邻结点之点的间距(近似值).
 
 ### [[Partition|Partition-Layout]]
 
