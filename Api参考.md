@@ -524,10 +524,10 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 ### [[直方图(Histogram)|Histogram-Layout]]
 
 * [[d3.layout.histogram|Histogram-Layout#wiki-histogram]] - 构建一个默认直方图(用来表示一组离散数字的分布).
-* [[histogram|Histogram-Layout#wiki-_histogram]] - 根据已设置的区间将数据的分组(compute the distribution of data using quantized bins).
 * [[histogram.value|Histogram-Layout#wiki-value]] - 获取或设置值访问器.
 * [[histogram.range|Histogram-Layout#wiki-range]] - 获取或设置合法值范围.
-* [[histogram.bins|Histogram-Layout#wiki-bins]] - 指定如何将数据分组到不同的区间(bin)里, 返回一个[构造函数|Histogram-Layout#wiki-_histogram] .
+* [[histogram.bins|Histogram-Layout#wiki-bins]] - 指定如何将数据分组到不同的区间(bin)里, 返回一个[[构造函数|Histogram-Layout#wiki-_histogram]] .
+* [[histogram|Histogram-Layout#wiki-_histogram]] - 根据已设置的区间将数据分组,返回已分组的二维数组(compute the distribution of data using quantized bins).
 * [[histogram.frequency|Histogram-Layout#wiki-frequency]] - 设置直方图Y轴值是容器内数据的总量还是百分比(compute the distribution as counts or probabilities).
 
 ### [Pack](Pack-Layout)
