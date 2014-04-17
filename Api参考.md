@@ -390,13 +390,13 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 
 ## [d3.time (Time)](Time)
 
-### [[Time Formatting]]
+### [[时间格式转换(Time Formatting) | Time Formatting]]
 
-* [[d3.time.format|Time-Formatting#wiki-format]] - create a new local time formatter for a given specifier.
-* [[format|Time-Formatting#wiki-_format]] - format a date into a string.
-* [[format.parse|Time-Formatting#wiki-parse]] - parse a string into a date.
-* [[d3.time.format.utc|Time-Formatting#wiki-format_utc]] - create a new UTC time formatter for a given specifier.
-* [[d3.time.format.iso|Time-Formatting#wiki-format_iso]] - the ISO 8601 UTC time formatter.
+* [[d3.time.format|Time-Formatting#wiki-format]] - 创建基于某种时间格式的本地时间格式转换器。
+* [[format|Time-Formatting#wiki-_format]] - 将一个date对象转换成特定时间格式的字符串。
+* [[format.parse|Time-Formatting#wiki-parse]] - 将特定时间格式的字符串转换成date对象。
+* [[d3.time.format.utc|Time-Formatting#wiki-format_utc]] - 创建基于某种时间格式的世界标准时间（UTC）格式转换器。
+* [[d3.time.format.iso|Time-Formatting#wiki-format_iso]] - 创建基于某种时间格式的ISO世界标准时间（ISO 8601 UTC）格式转换器。
 
 ### [[Time Scales]]
 
