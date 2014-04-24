@@ -293,6 +293,8 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
   </tr>
   <tr height="146" valign="top">
     <td>Bar Chart Multiples<br><a href="https://vida.io/documents/ZCzewTza4ZSzMWSBG"><img src="https://s3.amazonaws.com/vida-production/thumbnails/ZCzewTza4ZSzMWSBG" width="100"></a></td>
+    <td>d3pie - pie chart generator and lib
+<a href="http://d3pie.org"><img src="http://d3pie.org/website/images/d3pie-screenshot.png" width="200" /></a></td>
   </tr>
 </table>
 
