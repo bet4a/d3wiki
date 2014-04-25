@@ -19,17 +19,17 @@ D3 состоит из:
 
 ### [[Selections (Выборки)|Selections_russian]]
 
-* [[d3.select|Selections_russian#wiki-d3_select]] - select an element from the current document.
-* [[d3.selectAll|Selections#wiki-d3_selectAll]] - select multiple elements from the current document.
-* [[selection.attr|Selections#wiki-attr]] - get or set attribute values.
-* [[selection.classed|Selections#wiki-classed]] - add or remove CSS classes.
-* [[selection.style|Selections#wiki-style]] - get or set style properties.
+* [[d3.select|Selections_russian#wiki-d3_select]] - выборка элемента из текущего документа.
+* [[d3.selectAll|Selections_russian#wiki-d3_selectAll]] - выборка набора элементов из текущего документа.
+* [[selection.attr|Selections_russian#wiki-attr]] - получить или установить значение аттрибута.
+* [[selection.classed|Selections#wiki-classed]] - добавить или удалить CSS класс.
+* [[selection.style|Selections#wiki-style]] - получить или установить параметры стилей.
 * [[selection.property|Selections#wiki-property]] - get or set raw properties.
-* [[selection.text|Selections#wiki-text]] - get or set text content.
-* [[selection.html|Selections#wiki-html]] - get or set inner HTML content.
-* [[selection.append|Selections#wiki-append]] - create and append new elements.
-* [[selection.insert|Selections#wiki-insert]] - create and insert new elements before existing elements.
-* [[selection.remove|Selections#wiki-remove]] - remove elements from the document.
+* [[selection.text|Selections#wiki-text]] - получить или установить текстовое содержание.
+* [[selection.html|Selections#wiki-html]] - получить или установить HTML-содержание.
+* [[selection.append|Selections#wiki-append]] - создать или добавить новый элемент.
+* [[selection.insert|Selections#wiki-insert]] - создать или вставить новый элемент перед существующим.
+* [[selection.remove|Selections#wiki-remove]] - удалить элемент из документа.
 * [[selection.data|Selections#wiki-data]] - get or set data for a group of elements, while computing a relational join.
 * [[selection.enter|Selections#wiki-enter]] - returns placeholders for missing elements.
 * [[selection.exit|Selections#wiki-exit]] - returns elements that are no longer needed.
