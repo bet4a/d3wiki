@@ -1,4 +1,4 @@
-> [Wiki](Home) ▸ **API Reference (русскоязычная версия)**
+> [Wiki](Home) ▸ **API Reference**
 
 Everything in D3 is scoped under the `d3` namespace.
 
