@@ -1,7 +1,5 @@
 > [Wiki](Home) ▸ **API Reference (русскоязычная версия)**
 
-!!Страница находится в стадии перевода!!
-
 Everything in D3 is scoped under the `d3` namespace.
 
 D3 uses [[semantic versioning|http://semver.org]]. You can find the current version of D3 as `d3.version`.
