@@ -19,7 +19,7 @@ D3 состоит из:
 
 ### [[Selections (Выборки)]]
 
-* [[d3.select|Selections#wiki-d3_select]] - select an element from the current document.
+* [[d3.select|Selections#wiki-d3_select_russian]] - select an element from the current document.
 * [[d3.selectAll|Selections#wiki-d3_selectAll]] - select multiple elements from the current document.
 * [[selection.attr|Selections#wiki-attr]] - get or set attribute values.
 * [[selection.classed|Selections#wiki-classed]] - add or remove CSS classes.
