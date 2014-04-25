@@ -2,20 +2,18 @@
 
 !!Страница находится в стадии перевода!!
 
-Everything in D3 is scoped under the `d3` namespace.
+D3 использует [[семантическое версионирование|http://semver.org]]. Вы можете узнать текущую версию D3 в `d3.version`.
 
-D3 uses [[semantic versioning|http://semver.org]]. You can find the current version of D3 as `d3.version`.
+D3 состоит из:
 
-See one of:
-
-* [Core](#d3-core) - selections, transitions, data, localization, colors, etc.
-* [Scales](#d3scale-scales) - convert between data and visual encodings
-* [SVG](#d3svg-svg) - utilities for creating Scalable Vector Graphics
-* [Time](#d3time-time) - parse or format times, compute calendar intervals, etc.
-* [Layouts](#d3layout-layouts) - derive secondary data for positioning elements
-* [Geography](#d3geo-geography) - project spherical coordinates, latitude & longitude math
-* [Geometry](#d3geom-geometry) - utilities for 2D geometry, such as Voronoi diagrams and quadtrees
-* [Behaviors](#d3behavior-behaviors) - reusable interaction behaviors
+* [Core](#d3-core) - выборки, переходы, данные локализации, цвета и т.д 
+* [Scales](#d3scale-scales) - масштабирования данных и цветовых кодировок 
+* [SVG](#d3svg-svg) - инструменты для создания масштабируемой векторной графики 
+* [Time](#d3time-time) - парсинг временных форматов, вычисление календарных интервалов и т.п 
+* [Layouts](#d3layout-layouts) - получение вторичных данных для позиционирования элементов 
+* [Geography](#d3geo-geography) - проектно-специфичные координаты, вычисления над широтой и долготой 
+* [Geometry](#d3geom-geometry) - утилиты для 2D-геометрии 
+* [Behaviors](#d3behavior-behaviors) - формы поведения взаимодействия
 
 ## [d3 (core)](Core)
 
