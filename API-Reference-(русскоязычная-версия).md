@@ -22,14 +22,14 @@ D3 состоит из:
 * [[d3.select|Selections_russian#wiki-d3_select]] - выборка элемента из текущего документа.
 * [[d3.selectAll|Selections_russian#wiki-d3_selectAll]] - выборка набора элементов из текущего документа.
 * [[selection.attr|Selections_russian#wiki-attr]] - получить или установить значение аттрибута.
-* [[selection.classed|Selections#wiki-classed]] - добавить или удалить CSS класс.
-* [[selection.style|Selections#wiki-style]] - получить или установить параметры стилей.
+* [[selection.classed|Selection_russians#wiki-classed]] - добавить или удалить CSS класс.
+* [[selection.style|Selections_russian#wiki-style]] - получить или установить параметры стилей.
 * [[selection.property|Selections#wiki-property]] - get or set raw properties.
-* [[selection.text|Selections#wiki-text]] - получить или установить текстовое содержание.
-* [[selection.html|Selections#wiki-html]] - получить или установить HTML-содержание.
-* [[selection.append|Selections#wiki-append]] - создать или добавить новый элемент.
-* [[selection.insert|Selections#wiki-insert]] - создать или вставить новый элемент перед существующим.
-* [[selection.remove|Selections#wiki-remove]] - удалить элемент из документа.
+* [[selection.text|Selections_russian#wiki-text]] - получить или установить текстовое содержание.
+* [[selection.html|Selections_russian#wiki-html]] - получить или установить HTML-содержание.
+* [[selection.append|Selections_russian#wiki-append]] - создать или добавить новый элемент.
+* [[selection.insert|Selections_russian#wiki-insert]] - создать или вставить новый элемент перед существующим.
+* [[selection.remove|Selections_russian#wiki-remove]] - удалить элемент из документа.
 * [[selection.data|Selections#wiki-data]] - get or set data for a group of elements, while computing a relational join.
 * [[selection.enter|Selections#wiki-enter]] - returns placeholders for missing elements.
 * [[selection.exit|Selections#wiki-exit]] - returns elements that are no longer needed.
