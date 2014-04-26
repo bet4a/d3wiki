@@ -110,7 +110,7 @@ Set the text content to the specified value on all selected elements when the tr
 
 <a name="tween" href="Transitions#wiki-tween">#</a> transition.<b>tween</b>(<i>name</i>, <i>factory</i>)
 
-Registers a custom tween for the specified *name*. When the transition starts, the specified *factory* function will be invoked for each selected element in the transition, so as to compute the tween function. If the factory returns null, then the tween is not run on the selected element. This method is used internally by the [attr](#wiki-attr) and [style](#wiki-style) tweens, and can be used to interpolate other document content. For example, to interpolate text content:
+Registers a custom tween for the specified *name*. When the transition starts, the specified *factory* function will be invoked for each selected element in the transition with that element's `data` and `index` as arguments, so as to compute the tween function. If the factory returns null, then the tween is not run on the selected element. This method is used internally by the [attr](#wiki-attr) and [style](#wiki-style) tweens, and can be used to interpolate other document content. For example, to interpolate text content:
 
 ```javascript
 selection.transition().tween("text", function() {
