@@ -121,7 +121,7 @@ selection.transition().tween("text", function() {
 });
 ```
 
-Tweens are typically written as reusable functions (say, closures) rather than the above example which hard-codes the transition to "yellow". See D3's source for inspiration.
+Tweens are typically written as reusable functions (say, closures) rather than the above example which hard-codes the transition to "yellow". However, the factory and tween do not have access to anything besides the element, `data`, and `iterator`. See D3's source for inspiration.
 
 <a name="remove" href="Transitions#wiki-remove">#</a> transition.<b>remove</b>()
 
