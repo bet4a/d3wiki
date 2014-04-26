@@ -2,16 +2,6 @@
 
 Welcome to the **D3 gallery**! Feel free to add links to your work! More examples are available on [bl.ocks.org/mbostock](http://bl.ocks.org/mbostock). If you want to share an example and don't have your own hosting, consider using [Gist](http://gist.github.com) and [bl.ocks.org](http://bl.ocks.org).
 
-
-## Game
-
-<table>
-<tr height="207" valign="top">
-
-<td>A game based on d3<br><a href="http://wenchaojiang.github.io/d3game/"><img src="http://wenchaojiang.github.io/d3game/ScreenShot.png" width="202"></a></td>
-
-</tr>
-</table>
 ## Visual Index
 
 <table>
@@ -270,6 +260,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 <a href="http://greencracker.net/?p=1685">
 <img src="http://greencracker.net/wp-content/uploads/2013/12/sankey-experiment-one-updated.png" width="197"></a></td>
 
+<td>A game based on d3<br><a href="http://wenchaojiang.github.io/d3game/"><img src="http://wenchaojiang.github.io/d3game/ScreenShot.png" width="202"></a></td>
 </tr>
 
 </table>
