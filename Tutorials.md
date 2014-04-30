@@ -37,7 +37,6 @@ Please feel free to add links to your work!
 * [learning D3.js(1)(Chinese)](http://www.d3js.cn/?p=24) - jtyjty99999
 * [First glance on D3.js (codecademy course)](http://www.codecademy.com/courses/web-beginner-en-kcP9b) - Jiecheng
 * [Creating Interactive Charts with D3.js](http://blog.ilukwe.com/post/52094586400/creating-interactive-charts-with-d3-js) - Anthony Ilukwe
-* [A simple walkthrough of D3's enter-update-exit Data Pattern with Google Maps](http://informatics.unep-wcmc.org/blog/blog/2013/06/18/a-simple-walkthrough-of-d3-s-enter-update-exit-data-pattern-with-google-maps/) - Decio Battaglia
 * [How to handle dynamic JSON Data (enter/exit)](http://pothibo.com/2013/09/d3-js-how-to-handle-dynamic-json-data/) - Pier-Olivier Thibault
 * [Understanding Selections](http://prcweb.co.uk/lab/selection/) - Peter Cook
 * [Visualize with d3js](http://hsilomedus.me/wp-content/uploads/javadayd3/index.html) - Pance Cavkovski
