@@ -44,6 +44,7 @@ Please feel free to add links to your work!
 * [Rapid D3.js Tutorials](http://www.youtube.com/watch?v=xMSykYiq3SY&list=PLRJOPJMJE3OTcg5TNV6ZdbIDbFITu2OXu) - Phuoc Do of [vida.io](http://vida.io)
 * [Introduction to D3, with applications to big data](http://www.samselikoff.com/tutorials/intro-to-d3-big-data.html) - Sam Selikoff
 * [D3 Dynamic Tables with Nested Data](http://bl.ocks.org/LeeMendelowitz/11383724) - Lee Mendelowitz
+* [Getting started with D3.js](http://eyalarubas.com/getting-started-with-d3js.html) - Eyal Arubas
 
 ### Specific Techniques
 
