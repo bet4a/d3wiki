@@ -193,26 +193,25 @@ The *start* event is invoked during the first asynchronous callback (tick) of th
 
 The *end* event is invoked during the last asynchronous callback (tick) after the transition duration and delay expires, after all tweens are invoked with t=1. Note that if the transition is superseded by a later-scheduled transition on a given element, no end event will be dispatched for that element; interrupted transitions do not trigger end events. For example, [transition.remove](#wiki-remove) schedules each element to be removed when the transition ends, but if the transition is interrupted, the element will not be removed. End events can be used as an alternative to [transition.transition](#wiki-transition) to create chained transitions by selecting the current element, `this`, and deriving a new transition.
 
-If <i>type</i> is not specified, behaves similarly to [selection.each](Selections#wiki-each): immediately invokes the specified *function* for each element in the current transition, passing in the current datum `d` and index `i`, with the `this` context of the current DOM element. **Any transitions created during the end event will inherit the current transition parameters**, including ID, time, easing, delay and duration. Thus, new transitions created within a parent transition.each will not the parent transition, similar to subtransitions.
+If <i>type</i> is not specified, behaves similarly to [selection.each](Selections#wiki-each): immediately invokes the specified *function* for each element in the current transition, passing in the current datum `d` and index `i`, with the `this` context of the current DOM element. Any transitions created within the scope of transition.each will inherit transition parameters from the parent transition, including id, delay, duration and easing. Thus, transitions created within a transition.each will not interrupt the parent transition, similar to [subtransitions](#transition).
 
 The transition.each method can be used to chain transitions and apply shared timing across a set of transitions. For example:
 
 ```js
-var transition = d3.transition()
+d3.transition()
     .duration(750)
-    .ease("linear");
-
-transition.each(function() {
-  d3.selectAll(".foo").transition()
-      .style("opacity", 0)
-      .remove();
-});
-
-transition.transition().each(function() {
-  d3.selectAll(".bar").transition()
-      .style("opacity", 0)
-      .remove();
-});
+    .ease("linear")
+    .each(function() {
+      d3.selectAll(".foo").transition()
+          .style("opacity", 0)
+         .remove();
+    })
+  .transition()
+    .each(function() {
+      d3.selectAll(".bar").transition()
+        .style("opacity", 0)
+        .remove();
+    });
 ```
 
 By using `d3.select(this)` within transition.each, you can even inherit staggered delay across a set of selected elements. This technique is used by the [Axis component](SVG-Axes) to support [automatic transitions](http://bl.ocks.org/mbostock/1166403).
