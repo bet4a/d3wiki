@@ -110,18 +110,20 @@ Set the text content to the specified value on all selected elements when the tr
 
 <a name="tween" href="Transitions#wiki-tween">#</a> transition.<b>tween</b>(<i>name</i>, <i>factory</i>)
 
-Registers a custom tween for the specified *name*. When the transition starts, the specified *factory* function will be invoked for each selected element in the transition with that element's `data` and `index` as arguments, so as to compute the tween function. If the factory returns null, then the tween is not run on the selected element. This method is used internally by the [attr](#wiki-attr) and [style](#wiki-style) tweens, and can be used to interpolate other document content. For example, to interpolate text content:
+Registers a custom tween for the specified *name*. When the transition starts, the specified *factory* function will be invoked for each selected element in the transition, being passed that element's data (*d*) and index (*i*) as arguments, with the element as the context (`this`). The factory should return the tween function to be called over the course of the transition. The tween function is then called repeatedly, being passed the current normalized time *t* in [0, 1]. If the factory returns null, then the tween is not run on the selected element.
+
+The tween method is used internally to implement [attr](#wiki-attr) and [style](#wiki-style) tweens, and can be used to interpolate other document content. For example, to interpolate text content from 0 to 100:
 
 ```javascript
 selection.transition().tween("text", function() {
-  var i = d3.interpolate(this.textContent, "yellow");
+  var i = d3.interpolateRound(0, 100);
   return function(t) {
     this.textContent = i(t);
   };
 });
 ```
 
-Tweens are typically written as reusable functions (say, closures) rather than the above example which hard-codes the transition to "yellow". However, the factory and tween do not have access to anything besides the element, `data`, and `iterator`. See D3's source for inspiration.
+Tweens are often written using closures to capture state created when the transition starts. In the example above, the interpolator `i` is initialized when the transition starts, and then used subsequently over the course of the transition. (Though note that in the above example, the starting value of the transition is hard-coded to zero, whereas more commonly the starting value of the transition is based on the current state in the DOM.)
 
 <a name="remove" href="Transitions#wiki-remove">#</a> transition.<b>remove</b>()
 
