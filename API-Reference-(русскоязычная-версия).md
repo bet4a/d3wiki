@@ -30,7 +30,8 @@ D3 состоит из:
 * [[selection.append|Selections_russian#wiki-append]] - создать или добавить новый элемент.
 * [[selection.insert|Selections_russian#wiki-insert]] - создать или вставить новый элемент перед существующим.
 * [[selection.remove|Selections_russian#wiki-remove]] - удалить элемент из документа.
-* [[selection.data|Selections#wiki-data]] - получить или установить данные для группы элементов при вычислениях реляционного соединения. [[selection.enter|Selections#wiki-enter]] - получить заполнители для недостающих элементов.
+* [[selection.data|Selections#wiki-data]] - получить или установить данные для группы элементов при вычислениях реляционного соединения. 
+*[[selection.enter|Selections#wiki-enter]] - получить заполнители для недостающих элементов.
 * [[selection.exit|Selections#wiki-exit]] - получить элементы, которые больше не нужны.
 * [[selection.datum|Selections#wiki-datum]] - получить или установить данные для отдельных элементов, не вычисляя соединение.
 * [[selection.filter|Selections#wiki-filter]] - фильтровать выбор на основе данных.
