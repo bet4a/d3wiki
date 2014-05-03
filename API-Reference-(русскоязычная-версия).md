@@ -24,18 +24,17 @@ D3 состоит из:
 * [[selection.attr|Selections_russian#wiki-attr]] - получить или установить значение аттрибута.
 * [[selection.classed|Selection_russians#wiki-classed]] - добавить или удалить CSS класс.
 * [[selection.style|Selections_russian#wiki-style]] - получить или установить параметры стилей.
-* [[selection.property|Selections#wiki-property]] - get or set raw properties.
+* [[selection.property|Selections#wiki-property]] - получить или установить необработанные свойства.
 * [[selection.text|Selections_russian#wiki-text]] - получить или установить текстовое содержание.
 * [[selection.html|Selections_russian#wiki-html]] - получить или установить HTML-содержание.
 * [[selection.append|Selections_russian#wiki-append]] - создать или добавить новый элемент.
 * [[selection.insert|Selections_russian#wiki-insert]] - создать или вставить новый элемент перед существующим.
 * [[selection.remove|Selections_russian#wiki-remove]] - удалить элемент из документа.
-* [[selection.data|Selections#wiki-data]] - get or set data for a group of elements, while computing a relational join.
-* [[selection.enter|Selections#wiki-enter]] - returns placeholders for missing elements.
-* [[selection.exit|Selections#wiki-exit]] - returns elements that are no longer needed.
-* [[selection.datum|Selections#wiki-datum]] - get or set data for individual elements, without computing a join.
-* [[selection.filter|Selections#wiki-filter]] - filter a selection based on data.
-* [[selection.sort|Selections#wiki-sort]] - sort elements in the document based on data.
+* [[selection.data|Selections#wiki-data]] - получить или установить данные для группы элементов при вычислениях реляционного соединения. [[selection.enter|Selections#wiki-enter]] - получить заполнители для недостающих элементов.
+* [[selection.exit|Selections#wiki-exit]] - получить элементы, которые больше не нужны.
+* [[selection.datum|Selections#wiki-datum]] - получить или установить данные для отдельных элементов, не вычисляя соединение.
+* [[selection.filter|Selections#wiki-filter]] - фильтровать выбор на основе данных.
+* [[selection.sort|Selections#wiki-sort]] - сортировать элементы в документе на основе данных.
 * [[selection.order|Selections#wiki-order]] - reorders elements in the document to match the selection.
 * [[selection.on|Selections#wiki-on]] - add or remove event listeners for interaction.
 * [[selection.transition|Selections#wiki-transition]] - start a transition on the selected elements.
