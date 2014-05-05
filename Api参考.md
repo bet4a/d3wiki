@@ -552,14 +552,14 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [partition.value](Partition-Layout#wiki-value) - 设置一个函数来来计算分区的值.
 * [partition.size](Partition-Layout#wiki-size) - 设置整个布局画布的 *宽* and *高*.
 
-### [[Pie|Pie-Layout]]
+### [饼图(Pie)](Pie-Layout)
 
-* [[d3.layout.pie|Pie-Layout#wiki-pie]] - construct a new default pie layout.
-* [[pie|Pie-Layout#wiki-_pie]] - compute the start and end angles for arcs in a pie or donut chart.
-* [[pie.value|Pie-Layout#wiki-value]] - get or set the value accessor function.
-* [[pie.sort|Pie-Layout#wiki-sort]] - control the clockwise order of pie slices.
-* [[pie.startAngle|Pie-Layout#wiki-startAngle]] - get or set the overall start angle of the pie.
-* [[pie.endAngle|Pie-Layout#wiki-endAngle]] - get or set the overall end angle of the pie.
+* [d3.layout.pie](Pie-Layout#wiki-pie) - 构建一个默认的饼图.
+* [pie](Pie-Layout#wiki-_pie) - 该函数将传入的原始参数转换成可用于饼图或者环形图的数据结构.
+* [pie.value](Pie-Layout#wiki-value) - 获取或设置值访问器.
+* [pie.sort](Pie-Layout#wiki-sort) - 设置饼图顺时针方向的排序方法.
+* [pie.startAngle](Pie-Layout#wiki-startAngle) - 设置或获取整个饼图的起始角度.
+* [pie.endAngle](Pie-Layout#wiki-endAngle) - 设置或获取整个饼图的终止角度.
 
 ### [[Stack|Stack-Layout]]
 
