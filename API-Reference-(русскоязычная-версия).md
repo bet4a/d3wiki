@@ -9,7 +9,7 @@ D3 состоит из:
 * [Core](#d3-core) - выборки, переходы, данные, локализации, цвета и т.д
 * [Scales](#d3scale-scales) - масштабирование данных и цветовых кодировок
 * [SVG](#d3svg-svg) - инструменты для создания масштабируемой векторной графики
-* [Time](#d3time-time) - парсинг временных форматов, вычисление календарных интервалов и т.п
+* [Time](#d3time-time) - парсинг временнЫх форматов, вычисление календарных интервалов и т.п
 * [Layouts](#d3layout-layouts) - получение вторичных данных для позиционирования элементов
 * [Geography](#d3geo-geography) - проектно-специфичные координаты, вычисления над широтой и долготой
 * [Geometry](#d3geom-geometry) - утилиты для 2D-геометрии
@@ -32,19 +32,19 @@ D3 состоит из:
 * [[selection.remove|Selections_russian#wiki-remove]] - удалить элемент из документа.
 * [[selection.data|Selections#wiki-data]] - получить или установить данные для группы элементов при вычислениях реляционного соединения. 
 * [[selection.enter|Selections#wiki-enter]] - получить заполнители для недостающих элементов.
-* [[selection.exit|Selections#wiki-exit]] - получить элементы, которые больше не нужны.
+* [[selection.exit|Selections#wiki-exit]] - получить элементы, которые больше не нужны. (прим. элементы, которые не были изменены. Читать про использование data, enter и exit.)
 * [[selection.datum|Selections#wiki-datum]] - получить или установить данные для отдельных элементов, не вычисляя соединение.
 * [[selection.filter|Selections#wiki-filter]] - фильтровать выбор на основе данных.
 * [[selection.sort|Selections#wiki-sort]] - сортировать элементы в документе на основе данных.
 * [[selection.order|Selections#wiki-order]] - reorders elements in the document to match the selection.
-* [[selection.on|Selections#wiki-on]] - add or remove event listeners for interaction.
+* [[selection.on|Selections#wiki-on]] - добавление или удаление обработчиков событий (event listeners). 
 * [[selection.transition|Selections#wiki-transition]] - start a transition on the selected elements.
 * [selection.interrupt](Selections#wiki-interrupt) - immediately interrupt the current transition, if any.
-* [[selection.each|Selections#wiki-each]] - вызывает указанную функцию для каждого выбранного элемента.
+* [[selection.each|Selections#wiki-each]] - вызывает указанную функцию для каждого элемента из выборки.
 * [[selection.call|Selections#wiki-call]] - call a function passing in the current selection.
-* [[selection.empty|Selections#wiki-empty]] - returns true if the selection is empty.
-* [[selection.node|Selections#wiki-node]] - returns the first node in the selection.
-* [selection.size](Selections#wiki-size) - returns the number of elements in the selection.
+* [[selection.empty|Selections#wiki-empty]] - возвращает true, если выборка пуста.
+* [[selection.node|Selections#wiki-node]] - возвращает первый элемент из выборки.
+* [selection.size](Selections#wiki-size) - возвращает количество элементов в выборке.
 * [[selection.select|Selections#wiki-select]] - subselect a descendant element for each selected element.
 * [[selection.selectAll|Selections#wiki-selectAll]] - subselect multiple descendants for each selected element.
 * [[d3.selection|Selections#wiki-d3_selection]] - augment the selection prototype, or test instance types.
@@ -98,24 +98,24 @@ D3 состоит из:
 
 * [[d3.ascending|Arrays#wiki-d3_ascending]] - compare two values for sorting.
 * [[d3.descending|Arrays#wiki-d3_descending]] - compare two values for sorting.
-* [[d3.min|Arrays#wiki-d3_min]] - find the minimum value in an array.
-* [[d3.max|Arrays#wiki-d3_max]] - find the maximum value in an array.
-* [[d3.extent|Arrays#wiki-d3_extent]] - find the minimum and maximum value in an array.
-* [[d3.sum|Arrays#wiki-d3_sum]] - compute the sum of an array of numbers.
-* [[d3.mean|Arrays#wiki-d3_mean]] - compute the arithmetic mean of an array of numbers.
-* [[d3.median|Arrays#wiki-d3_median]] - compute the median of an array of numbers (the 0.5-quantile).
-* [[d3.quantile|Arrays#wiki-d3_quantile]] - compute a quantile for a sorted array of numbers.
-* [[d3.bisect|Arrays#wiki-d3_bisect]] - search for a value in a sorted array.
-* [[d3.bisectRight|Arrays#wiki-d3_bisectRight]] - search for a value in a sorted array.
-* [[d3.bisectLeft|Arrays#wiki-d3_bisectLeft]] - search for a value in a sorted array.
+* [[d3.min|Arrays#wiki-d3_min]] - поиск минимального значения в массиве.
+* [[d3.max|Arrays#wiki-d3_max]] - поиск максимального значения в массиве.
+* [[d3.extent|Arrays#wiki-d3_extent]] - поиск минимального и максимального элементов в массиве.
+* [[d3.sum|Arrays#wiki-d3_sum]] - суммирование всех элементов массива, состоящего из чисел.
+* [[d3.mean|Arrays#wiki-d3_mean]] - арифмитическое среднее элементов массива, состоящего из чисел.
+* [[d3.median|Arrays#wiki-d3_median]] - медиана (квантиль уровня 0.5) массива, состоящего из чисел.
+* [[d3.quantile|Arrays#wiki-d3_quantile]] - поиск квантили для упорядоченного массива, состоящего из чисел.
+* [[d3.bisect|Arrays#wiki-d3_bisect]] - поиск значения в упорядоченном массиве.
+* [[d3.bisectRight|Arrays#wiki-d3_bisectRight]] - поиск значения в упорядоченном массиве.
+* [[d3.bisectLeft|Arrays#wiki-d3_bisectLeft]] - поиск значения в упорядоченном массиве.
 * [[d3.bisector|Arrays#wiki-d3_bisector]] - bisect using an accessor or comparator.
-* [d3.shuffle](Arrays#wiki-d3_shuffle) - randomize the order of an array.
+* [d3.shuffle](Arrays#wiki-d3_shuffle) - перемешать элементы массива случайным образом.
 * [[d3.permute|Arrays#wiki-d3_permute]] - reorder an array of elements according to an array of indexes.
 * [[d3.zip|Arrays#wiki-d3_zip]] - transpose a variable number of arrays.
 * [[d3.transpose|Arrays#wiki-d3_transpose]] - transpose an array of arrays.
 * [[d3.pairs|Arrays#wiki-d3_pairs]] - returns an array of adjacent pairs of elements.
-* [[d3.keys|Arrays#wiki-d3_keys]] - list the keys of an associative array.
-* [[d3.values|Arrays#wiki-d3_values]] - list the values of an associated array.
+* [[d3.keys|Arrays#wiki-d3_keys]] - список ключей ассоциативного массива.
+* [[d3.values|Arrays#wiki-d3_values]] - список значений ассоциативного массива.
 * [[d3.entries|Arrays#wiki-d3_entries]] - list the key-value entries of an associative array.
 * [[d3.merge|Arrays#wiki-d3_merge]] - merge multiple arrays into one array.
 * [[d3.range|Arrays#wiki-d3_range]] - generate a range of numeric values.
@@ -148,8 +148,8 @@ D3 состоит из:
 
 ### [[Math]]
 
-* [[d3.random.normal|Math#wiki-random_normal]] - generate a random number with a normal distribution.
-* [[d3.random.logNormal|Math#wiki-random_logNormal]] - generate a random number with a log-normal distribution.
+* [[d3.random.normal|Math#wiki-random_normal]] - генерация случайного значения с нормальным распределением.
+* [[d3.random.logNormal|Math#wiki-random_logNormal]] - генерация случайного значения с логнормальным распределением.
 * [[d3.random.bates|Math#wiki-random_bates]] - generate a random number with a Bates distribution.
 * [[d3.random.irwinHall|Math#wiki-random_irwinHall]] - generate a random number with an Irwin–Hall distribution.
 * [[d3.transform|Math#wiki-transform]] - compute the standard form of a 2D matrix transform.
@@ -517,10 +517,10 @@ D3 состоит из:
 
 ### [[Force|Force-Layout]]
 
-* [[d3.layout.force|Force-Layout#wiki-force]] - position linked nodes using physical simulation.
+* [[d3.layout.force|Force-Layout#wiki-force]] - позиционирование связанных вершин методом физического моделирования.
 * [[force.on|Force-Layout#wiki-on]] - listen to updates in the computed layout positions.
-* [[force.nodes|Force-Layout#wiki-nodes]] - get or set the array of nodes to layout.
-* [[force.links|Force-Layout#wiki-links]] - get or set the array of links between nodes.
+* [[force.nodes|Force-Layout#wiki-nodes]] - получение или установка массива вершин, участвующих в симуляции.
+* [[force.links|Force-Layout#wiki-links]] - получение или установка массива связей между вершинами.
 * [[force.size|Force-Layout#wiki-size]] - get or set the layout size in *x* and *y*.
 * [[force.linkDistance|Force-Layout#wiki-linkDistance]] - get or set the link distance.
 * [[force.linkStrength|Force-Layout#wiki-linkStrength]] - get or set the link strength.
@@ -531,10 +531,10 @@ D3 состоит из:
 * [[force.theta|Force-Layout#wiki-theta]] - get or set the accuracy of the charge interaction.
 * [[force.start|Force-Layout#wiki-start]] - start or restart the simulation when the nodes change.
 * [[force.resume|Force-Layout#wiki-resume]] - reheat the cooling parameter and restart simulation.
-* [[force.stop|Force-Layout#wiki-stop]] - immediately terminate the simulation.
+* [[force.stop|Force-Layout#wiki-stop]] - немедленное прерывание симуляции.
 * [[force.alpha|Force-Layout#wiki-alpha]] - get or set the layout's cooling parameter.
-* [[force.tick|Force-Layout#wiki-tick]] - run the layout simulation one step.
-* [[force.drag|Force-Layout#wiki-drag]] - bind a behavior to nodes to allow interactive dragging.
+* [[force.tick|Force-Layout#wiki-tick]] - запуск одного шага симуляции.
+* [[force.drag|Force-Layout#wiki-drag]] - добавление обработчика прикосновения к вершинам. Может использоваться для перетаскивания объектов.
 
 ### [Hierarchy](Hierarchy-Layout)
 
