@@ -561,16 +561,16 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [pie.startAngle](Pie-Layout#wiki-startAngle) - 设置或获取整个饼图的起始角度.
 * [pie.endAngle](Pie-Layout#wiki-endAngle) - 设置或获取整个饼图的终止角度.
 
-### [[Stack|Stack-Layout]]
+### [堆叠图(Stack)](Stack-Layout)
 
-* [[d3.layout.stack|Stack-Layout#wiki-stack]] - construct a new default stack layout.
-* [[stack|Stack-Layout#wiki-_stack]] - compute the baseline for each series in a stacked bar or area chart.
-* [[stack.values|Stack-Layout#wiki-values]] - get or set the values accessor function per series.
-* [[stack.order|Stack-Layout#wiki-order]] - control the order in which series are stacked.
-* [[stack.offset|Stack-Layout#wiki-offset]] - specify the overall baseline algorithm.
-* [[stack.x|Stack-Layout#wiki-x]] - get or set the *x*-dimension accessor function.
-* [[stack.y|Stack-Layout#wiki-y]] - get or set the *y*-dimension accessor function.
-* [[stack.out|Stack-Layout#wiki-out]] - get or set the output function for storing the baseline.
+* [d3.layout.stack](Stack-Layout#wiki-stack) - 构建一个默认的堆叠图(用来展示一系列x轴相同的面积图或者立方图).
+* [stack](Stack-Layout#wiki-_stack) - 计算每一层的基线.
+* [stack.values](Stack-Layout#wiki-values) - 设置或者获取每层的值访问器.
+* [stack.order](Stack-Layout#wiki-order) - 设置每层的排序.
+* [stack.offset](Stack-Layout#wiki-offset) - 指定总的基线算法.
+* [stack.x](Stack-Layout#wiki-x) - 设置或获取每层的x轴访问器.
+* [stack.y](Stack-Layout#wiki-y) - 设置或获取每层的y轴访问器.
+* [stack.out](Stack-Layout#wiki-out) - 设置或获取用来储存基线的输出函数.
 
 ### [[Tree|Tree-Layout]]
 
