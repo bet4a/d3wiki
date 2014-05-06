@@ -583,19 +583,20 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [tree.size](Tree-Layout#wiki-size) - 指定整个布局的宽和高.
 * [tree.nodeSize](Tree-Layout#wiki-nodeSize) - 给全部结点指定一个固定的大小(会导致[tree.size](Tree-Layout#wiki-size)失效).
 
-### [[Treemap|Treemap-Layout]]
+### [矩阵树(Treemap)](Treemap-Layout)
 
-* [[d3.layout.treemap|Treemap-Layout#wiki-treemap]] - use recursive spatial subdivision to display a tree of nodes.
-* [[treemap.sort|Treemap-Layout#wiki-sort]] - control the order in which sibling nodes are traversed.
-* [[treemap.children|Treemap-Layout#wiki-children]] - get or set the children accessor function.
-* [[treemap.nodes|Treemap-Layout#wiki-nodes]] - compute the treemap layout and return the array of nodes.
-* [[treemap.links|Treemap-Layout#wiki-links]] - compute the parent-child links between tree nodes.
-* [[treemap.value|Treemap-Layout#wiki-value]] - get or set the value accessor used to size treemap cells.
-* [[treemap.size|Treemap-Layout#wiki-size]] - specify the layout size in *x* and *y*.
-* [[treemap.padding|Treemap-Layout#wiki-padding]] - specify the padding between a parent and its children.
-* [[treemap.round|Treemap-Layout#wiki-round]] - enable or disable rounding to exact pixels.
-* [[treemap.sticky|Treemap-Layout#wiki-sticky]] - make the layout sticky for stable updates.
-* [treemap.mode](Treemap-Layout#wiki-mode) - change the treemap layout algorithm.
+* [d3.layout.treemap](Treemap-Layout#wiki-treemap) - 返回一个矩阵树对象(用矩阵来展示一颗树).
+* [treemap.sort](Treemap-Layout#wiki-sort) - 设置或获取一个函数, 用来给兄弟节点(同一父结点的子结点)排序.
+* [treemap.children](Treemap-Layout#wiki-children) - 设置或获取子结点的访问器.
+* [treemap.nodes](Treemap-Layout#wiki-nodes) - 计算并返回指定结点的子结点信息.
+* [treemap.links](Treemap-Layout#wiki-links) - 指定一个子结点数组(通常是**nodes**函数返回值), 计算它们与父结点的连接信息.
+* [treemap.value](Treemap-Layout#wiki-value) - 设置或获取一个用来计算单元格大小的值访问器.
+* [treemap.size](Treemap-Layout#wiki-size) - 指定整个布局的宽和高.
+* [treemap.padding](Treemap-Layout#wiki-padding) - 指定父结点和子结点的间距.
+* [treemap.round](Treemap-Layout#wiki-round) - 禁用或启用边界补偿.
+* [treemap.sticky](Treemap-Layout#wiki-sticky) - 让布局更"粘"以保证在更新数据时有平滑的动画效果.
+* [treemap.mode](Treemap-Layout#wiki-mode) - 更改矩阵树的布局算法.
+
 
 ## [d3.geo (Geography)](Geo)
 
