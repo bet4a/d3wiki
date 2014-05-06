@@ -40,7 +40,7 @@ D3 состоит из:
 * [[selection.on|Selections#wiki-on]] - add or remove event listeners for interaction.
 * [[selection.transition|Selections#wiki-transition]] - start a transition on the selected elements.
 * [selection.interrupt](Selections#wiki-interrupt) - immediately interrupt the current transition, if any.
-* [[selection.each|Selections#wiki-each]] - call a function for each selected element.
+* [[selection.each|Selections#wiki-each]] - вызывает указанную функцию для каждого выбранного элемента.
 * [[selection.call|Selections#wiki-call]] - call a function passing in the current selection.
 * [[selection.empty|Selections#wiki-empty]] - returns true if the selection is empty.
 * [[selection.node|Selections#wiki-node]] - returns the first node in the selection.
