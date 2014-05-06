@@ -572,16 +572,16 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [stack.y](Stack-Layout#wiki-y) - 设置或获取每层的y轴访问器.
 * [stack.out](Stack-Layout#wiki-out) - 设置或获取用来储存基线的输出函数.
 
-### [[Tree|Tree-Layout]]
+### [树(Tree)](Tree-Layout)
 
-* [[d3.layout.tree|Tree-Layout#wiki-tree]] - position a tree of nodes tidily.
-* [[tree.sort|Tree-Layout#wiki-sort]] - control the order in which sibling nodes are traversed.
-* [[tree.children|Tree-Layout#wiki-children]] - get or set the children accessor function.
-* [[tree.nodes|Tree-Layout#wiki-nodes]] - compute the tree layout and return the array of nodes.
-* [[tree.links|Tree-Layout#wiki-links]] - compute the parent-child links between tree nodes.
-* [[tree.separation|Tree-Layout#wiki-separation]] - get or set the spacing function between neighboring nodes.
-* [[tree.size|Tree-Layout#wiki-size]] - specify the layout size in *x* and *y*.
-* [[tree.nodeSize|Tree-Layout#wiki-nodeSize]] - specify a fixed size for each node.
+* [d3.layout.tree](Tree-Layout#wiki-tree) - position a tree of nodes tidily.
+* [tree.sort](Tree-Layout#wiki-sort) - 设置或获取一个函数, 用来给兄弟节点(同一父结点的子结点)排序.
+* [tree.children](Tree-Layout#wiki-children) - 设置或获取子结点的访问器.
+* [tree.nodes](Tree-Layout#wiki-nodes) - 计算并返回指定结点的子结点信息.
+* [tree.links](Tree-Layout#wiki-links) - 指定一个子结点数组(通常是**nodes**函数返回值), 计算它们与父结点的连接信息.
+* [tree.separation](Tree-Layout#wiki-separation) - 设置或获取相隔结点之间的间隔计算函数.
+* [tree.size](Tree-Layout#wiki-size) - 指定整个布局的宽和高.
+* [tree.nodeSize](Tree-Layout#wiki-nodeSize) - 给全部结点指定一个固定的大小(会导致[tree.size](Tree-Layout#wiki-size)失效).
 
 ### [[Treemap|Treemap-Layout]]
 
