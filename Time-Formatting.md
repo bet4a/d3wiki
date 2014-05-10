@@ -51,7 +51,16 @@ format(new Date(2011, 0, 1)); // returns a string
 
 <a name="_format" href="Time-Formatting#wiki-_format">#</a> <b>format</b>(<i>date</i>)
 
-Formats the specified *date*, returning the corresponding string. The *date* must be a JavaScript [Date](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date) object. Note that when dates are used in conjunction with [quantitative scales](Quantitative-Scales), the dates are implicitly coerced to numbers representing the number of milliseconds since [UNIX epoch](http://en.wikipedia.org/wiki/Unix_time). To convert between numbers and dates, you can use the following code:
+Formats the specified *date*, returning the corresponding string. The *date* must be a JavaScript [Date](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date) object. 
+
+```javascript
+var monthNameFormat = d3.time.format("%B");
+var dayNameFormat = d3.time.format("%A");
+monthNameFormat(new Date(2014, 4, 1));  //returns string "May" (remember javascript months are zero-indexed, thus 4 = May)
+dayNameFormat(new Date(2014, 4, 1));  //returns string "Thursday"
+```
+
+Note that when dates are used in conjunction with [quantitative scales](Quantitative-Scales), the dates are implicitly coerced to numbers representing the number of milliseconds since [UNIX epoch](http://en.wikipedia.org/wiki/Unix_time). To convert between numbers and dates, you can use the following code:
 
 ```javascript
 time = +date; // convert a Date object to time in milliseconds
