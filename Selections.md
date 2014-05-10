@@ -70,7 +70,7 @@ Some HTML elements have special properties that are not addressable using standa
 
 If *value* is specified, sets the property with the specified name to the specified value on all selected elements. If *value* is a constant, then all elements are given the same property value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's property. A null value will delete the specified attribute.
 
-If you want to set several properties at once, use an object literal like so: `selection.properties({'foo': 'bar', 'baz': 'qux'})`.
+If you want to set several properties at once, use an object literal like so: `selection.property({'foo': 'bar', 'baz': 'qux'})`.
 
 If *value* is not specified, returns the value of the specified property for the first non-null element in the selection. This is generally useful only if you know the selection contains exactly one element.
 
