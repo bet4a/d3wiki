@@ -110,3 +110,4 @@ Please feel free to add links to your work!
 * [Interactive Data Visualization for the Web](http://ofps.oreilly.com/titles/9781449339739/)<br>Scott Murray, O'Reilly Media, November 2012
 * [Data Visualization with d3.js](http://www.packtpub.com/data-visualization-with-d3js/book)<br>Swizec Teller, Packt Publishing, October 2013
 * [Data Visualization with D3.js Cookbook](http://www.packtpub.com/data-visualization-with-d3-js-cookbook/book)<br>Nick Qi Zhu, Packt Publishing, October 2013
+* [D3.js in Action](http://www.manning.com/meeks/)<br>Elijah Meeks, Manning Publications, 2014
