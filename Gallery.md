@@ -986,6 +986,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [InfoCaptor Dashboards with D3 and canvas](http://www.infocaptor.com)
 * [Mohiomap: A Visual Memory for Evernote](https://www.moh.io/)
 * [MortgageBloom Calculator](http://mortgagebloom.com)
+* [Datacopia.com: Automated data visualization, Charts, and Analysis](http://www.datacopia.com)
 
 #### Store Apps
 * [Presentation Next: A Windows 8 HTML5/SVG Presentation Builder](http://apps.microsoft.com/windows/en-us/app/presentation-next/57c55802-1bdd-48c9-bf8b-e9e3c24cf051)
