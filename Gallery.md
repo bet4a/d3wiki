@@ -970,23 +970,23 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [CSSdeck: Repulsion example](http://cssdeck.com/labs/d3-repulsive)
 
 #### Products
-* [Ubiq Analytics: MySQL Analytics & Reporting made easy](http://www.ubiq.co)
-* [DropTask: Visual task management application using D3 for visuals](https://www.droptask.com)
 * [Bitdeli: Custom analytics with Python and GitHub](https://bitdeli.com/)
-* [Cube: Time Series Data Collection & Analysis](http://square.github.com/cube/)
-* [Fast Multidimensional Filtering for Coordinated Views](http://square.github.com/tesseract/)
-* [Polychart: A browser-based platform for exploring data and creating charts](http://polychart.com/)
-* [Plot.io (swallowed by Platfora)](http://plot.io/)
 * [Chart.io: The Easiest Business Dashboard You'll Ever Use](http://chart.io/)
-* [Trisul Network Analytic](http://trisul.org/)
+* [Cube: Time Series Data Collection & Analysis](http://square.github.com/cube/)
+* [Datacopia.com: Automated data visualization, Charts, and Analysis](http://www.datacopia.com)
+* [DropTask: Visual task management application using D3 for visuals](https://www.droptask.com)
 * [Explore Analytics: cloud-based data analytics and visualization](http://exploreanalytics.com/)
-* [Meshu turns your places into beautiful objects.](http://meshu.io/)
-* [Reports for Simple](http://www.simple.com/blog/Simple/announcing-reports)
-* [Nodal is a fun way to view your GitHub network graph](http://nodal.me/login) - Jesse Vogt, Matt Stockton, and Kris Gösser
+* [Fast Multidimensional Filtering for Coordinated Views](http://square.github.com/tesseract/)
 * [InfoCaptor Dashboards with D3 and canvas](http://www.infocaptor.com)
+* [Meshu turns your places into beautiful objects.](http://meshu.io/)
 * [Mohiomap: A Visual Memory for Evernote](https://www.moh.io/)
 * [MortgageBloom Calculator](http://mortgagebloom.com)
-* [Datacopia.com: Automated data visualization, Charts, and Analysis](http://www.datacopia.com)
+* [Nodal is a fun way to view your GitHub network graph](http://nodal.me/login) - Jesse Vogt, Matt Stockton, and Kris Gösser
+* [Plot.io (swallowed by Platfora)](http://plot.io/)
+* [Polychart: A browser-based platform for exploring data and creating charts](http://polychart.com/)
+* [Reports for Simple](http://www.simple.com/blog/Simple/announcing-reports)
+* [Trisul Network Analytic](http://trisul.org/)
+* [Ubiq Analytics: MySQL Analytics & Reporting made easy](http://www.ubiq.co)
 
 #### Store Apps
 * [Presentation Next: A Windows 8 HTML5/SVG Presentation Builder](http://apps.microsoft.com/windows/en-us/app/presentation-next/57c55802-1bdd-48c9-bf8b-e9e3c24cf051)
