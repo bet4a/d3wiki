@@ -521,15 +521,15 @@ D3 состоит из:
 * [[force.on|Force-Layout#wiki-on]] - listen to updates in the computed layout positions.
 * [[force.nodes|Force-Layout#wiki-nodes]] - получение или установка массива вершин, участвующих в симуляции.
 * [[force.links|Force-Layout#wiki-links]] - получение или установка массива связей между вершинами.
-* [[force.size|Force-Layout#wiki-size]] - get or set the layout size in *x* and *y*.
-* [[force.linkDistance|Force-Layout#wiki-linkDistance]] - get or set the link distance.
-* [[force.linkStrength|Force-Layout#wiki-linkStrength]] - get or set the link strength.
-* [[force.friction|Force-Layout#wiki-friction]] - get or set the friction coefficient.
-* [[force.charge|Force-Layout#wiki-charge]] - get or set the charge strength.
-* [force.chargeDistance](Force-Layout#wiki-chargeDistance) - get or set the maximum charge distance.
-* [[force.gravity|Force-Layout#wiki-gravity]] - get or set the gravity strength.
+* [[force.size|Force-Layout#wiki-size]] - получить или установить размер макета в "х" и "у" координатах.
+* [[force.linkDistance|Force-Layout#wiki-linkDistance]] - получить или установить расстояние связи.
+* [[force.linkStrength|Force-Layout#wiki-linkStrength]] - получить или установить силу связи.
+* [[force.friction|Force-Layout#wiki-friction]] - получить или установить коэффициент трения.
+* [[force.charge|Force-Layout#wiki-charge]] - получить или установить силу заряда.
+* [force.chargeDistance](Force-Layout#wiki-chargeDistance) - получить или установить максимальное расстояние заряда.
+* [[force.gravity|Force-Layout#wiki-gravity]] - получить или установить силу тяжести.
 * [[force.theta|Force-Layout#wiki-theta]] - get or set the accuracy of the charge interaction.
-* [[force.start|Force-Layout#wiki-start]] - start or restart the simulation when the nodes change.
+* [[force.start|Force-Layout#wiki-start]] - запустить или перезапустить моделирование, когда узлы изменены.
 * [[force.resume|Force-Layout#wiki-resume]] - reheat the cooling parameter and restart simulation.
 * [[force.stop|Force-Layout#wiki-stop]] - немедленное прерывание симуляции.
 * [[force.alpha|Force-Layout#wiki-alpha]] - get or set the layout's cooling parameter.
