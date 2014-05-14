@@ -45,7 +45,7 @@ Please feel free to add links to your work!
 * [Introduction to D3, with applications to big data](http://www.samselikoff.com/tutorials/intro-to-d3-big-data.html) - Sam Selikoff
 * [D3 Dynamic Tables with Nested Data](http://bl.ocks.org/LeeMendelowitz/11383724) - Lee Mendelowitz
 * [Getting started with D3.js](http://eyalarubas.com/getting-started-with-d3js.html) - Eyal Arubas
-
+* [Visualizing Data with D3.js](http://uwdata.github.io/d3-tutorials/#/) - Tutorials for [Data Visualization Course](http://cse.uw.edu/512) at University of Washington (compiled by Kanit "Ham" Wongsuphasawat)
 ### Specific Techniques
 
 * [Path and Transform Transitions](http://bost.ocks.org/mike/path/)
