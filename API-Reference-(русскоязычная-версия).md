@@ -760,13 +760,13 @@ D3 состоит из:
 
 ### [Zoom](Zoom-Behavior)
 
-* [d3.behavior.zoom](Zoom-Behavior#wiki-zoom) - create a zoom behavior.
-* [zoom](Zoom-Behavior#wiki-_zoom) - apply the zoom behavior to the selected elements.
-* [zoom.scale](Zoom-Behavior#wiki-scale) - the current scale factor.
+* [d3.behavior.zoom](Zoom-Behavior#wiki-zoom) - создать поведение изменения масштаба.
+* [zoom](Zoom-Behavior#wiki-_zoom) - применяет поведение изменения масштаба к выбранным элементам.
+* [zoom.scale](Zoom-Behavior#wiki-scale) - текущий масштабный коэффициент.
 * [zoom.translate](Zoom-Behavior#wiki-translate) - the current translate offset.
-* [zoom.scaleExtent](Zoom-Behavior#wiki-scaleExtent) - optional limits on the scale factor.
+* [zoom.scaleExtent](Zoom-Behavior#wiki-scaleExtent) - дополнительные ограничения на коэффициент масштабирования.
 * [zoom.center](Zoom-Behavior#wiki-center) - an optional focal point for mousewheel zooming.
-* [zoom.size](Zoom-Behavior#wiki-size) - the dimensions of the viewport.
+* [zoom.size](Zoom-Behavior#wiki-size) - размеры окна просмотра.
 * [zoom.x](Zoom-Behavior#wiki-x) - an optional scale whose domain is bound to the _x_ extent of the viewport.
 * [zoom.y](Zoom-Behavior#wiki-y) - an optional scale whose domain is bound to the _y_ extent of the viewport.
 * [zoom.on](Zoom-Behavior#wiki-on) - listeners for when the scale or translate changes.
