@@ -55,43 +55,43 @@ D3 состоит из:
 
 ### [Transitions](Transitions)
 
-* [d3.transition](Transitions#wiki-d3_transition) - start an animated transition.
+* [d3.transition](Transitions#wiki-d3_transition) - начать анимированный переход.
 * [transition.delay](Transitions#wiki-delay) - specify per-element delay in milliseconds.
 * [transition.duration](Transitions#wiki-duration) - specify per-element duration in milliseconds.
-* [transition.ease](Transitions#wiki-ease) - specify transition easing function.
-* [transition.attr](Transitions#wiki-attr) - smoothly transition to the new attribute value.
-* [transition.attrTween](Transitions#wiki-attrTween) - smoothly transition between two attribute values.
-* [transition.style](Transitions#wiki-style) - smoothly transition to the new style property value.
-* [transition.styleTween](Transitions#wiki-styleTween) - smoothly transition between two style property values.
-* [transition.text](Transitions#wiki-text) - set the text content when the transition starts.
+* [transition.ease](Transitions#wiki-ease) - определить функцию ослабления перехода.
+* [transition.attr](Transitions#wiki-attr) - плавно перейти на новое значение атрибута.
+* [transition.attrTween](Transitions#wiki-attrTween) - плавный переход между двумя значениями атрибутов.
+* [transition.style](Transitions#wiki-style) - плавный переход к модернизированному значению свойства.
+* [transition.styleTween](Transitions#wiki-styleTween) - плавный переход между двумя значениями свойств стиля.
+* [transition.text](Transitions#wiki-text) - установить текстовое содержимое при запуске перехода.
 * [transition.tween](Transitions#wiki-tween) - specify a custom tween operator to run as part of the transition.
-* [transition.select](Transitions#wiki-select) - start a transition on a descendant element for each selected element.
-* [transition.selectAll](Transitions#wiki-selectAll) - start a transition on multiple descendants for each selected element.
+* [transition.select](Transitions#wiki-select) - начать переход на порожденном элементе для каждого выбранного элемента.
+* [transition.selectAll](Transitions#wiki-selectAll) - начать переход на нескольких элементах для каждого выбранного элемента.
 * [transition.filter](Transitions#wiki-filter) - filter a transition based on data.
-* [transition.transition](Transitions#wiki-transition) - when this transition ends, start another one on the same elements.
-* [transition.remove](Transitions#wiki-remove) - remove selected elements at the end of a transition.
-* [transition.empty](Transitions#wiki-empty) - returns true if the transition is empty.
-* [transition.node](Transitions#wiki-node) - returns the first node in the transition.
-* [transition.size](Transitions#wiki-size) - returns the number of elements in the selection.
+* [transition.transition](Transitions#wiki-transition) - когда этот переход закончится, запустите другой на тех же элементах.
+* [transition.remove](Transitions#wiki-remove) - удалить выбранные элементы в конце перехода.
+* [transition.empty](Transitions#wiki-empty) - возвращает истину (true), если переход пуст.
+* [transition.node](Transitions#wiki-node) - возвращает первый узел в переходе.
+* [transition.size](Transitions#wiki-size) - возвращает количество элементов в выборке.
 * [transition.each](Transitions#wiki-each) - add a listener for transition end events.
-* [transition.call](Transitions#wiki-call) - call a function passing in the current transition.
-* [d3.ease](Transitions#wiki-d3_ease) - customize transition timing.
-* [ease](Transitions#wiki-_ease) - a parametric easing function.
-* [d3.timer](Transitions#wiki-d3_timer) - start a custom animation timer.
+* [transition.call](Transitions#wiki-call) - вызвать функцию, передающуюся в текущем переходе.
+* [d3.ease](Transitions#wiki-d3_ease) - настроить время перехода.
+* [ease](Transitions#wiki-_ease) - параметрическая функция упрощения.
+* [d3.timer](Transitions#wiki-d3_timer) - начать пользовательский таймер анимации.
 * [d3.timer.flush](Transitions#wiki-d3_timer_flush) - immediately execute any zero-delay timers.
 * [d3.interpolate](Transitions#wiki-d3_interpolate) - interpolate two values.
-* [interpolate](Transitions#wiki-_interpolate) - a parametric interpolation function.
-* [d3.interpolateNumber](Transitions#wiki-d3_interpolateNumber) - interpolate two numbers.
-* [d3.interpolateRound](Transitions#wiki-d3_interpolateRound) - interpolate two integers.
-* [d3.interpolateString](Transitions#wiki-d3_interpolateString) - interpolate two strings.
-* [d3.interpolateRgb](Transitions#wiki-d3_interpolateRgb) - interpolate two RGB colors.
-* [d3.interpolateHsl](Transitions#wiki-d3_interpolateHsl) - interpolate two HSL colors.
-* [d3.interpolateLab](Transitions#wiki-d3_interpolateLab) - interpolate two L\*a\*b\* colors.
-* [d3.interpolateHcl](Transitions#wiki-d3_interpolateHcl) - interpolate two HCL colors.
-* [d3.interpolateArray](Transitions#wiki-d3_interpolateArray) - interpolate two arrays of values.
-* [d3.interpolateObject](Transitions#wiki-d3_interpolateObject) - interpolate two arbitrary objects.
+* [interpolate](Transitions#wiki-_interpolate) - параметрическая функция интерполяции.
+* [d3.interpolateNumber](Transitions#wiki-d3_interpolateNumber) -  интерполировать два числа.
+* [d3.interpolateRound](Transitions#wiki-d3_interpolateRound) - интерполировать два целых числа.
+* [d3.interpolateString](Transitions#wiki-d3_interpolateString) - интерполировать две строки.
+* [d3.interpolateRgb](Transitions#wiki-d3_interpolateRgb) - интерполировать два цвета RGB.
+* [d3.interpolateHsl](Transitions#wiki-d3_interpolateHsl) - интерполировать два цвета HSL.
+* [d3.interpolateLab](Transitions#wiki-d3_interpolateLab) - интерполировать два L* A* B* цвета.
+* [d3.interpolateHcl](Transitions#wiki-d3_interpolateHcl) - интерполировать два цвета HCL.
+* [d3.interpolateArray](Transitions#wiki-d3_interpolateArray) - интерполировать два массива значений.
+* [d3.interpolateObject](Transitions#wiki-d3_interpolateObject) - интерполировать два произвольных объекта.
 * [d3.interpolateTransform](Transitions#wiki-d3_interpolateTransform) - interpolate two 2D matrix transforms.
-* [d3.interpolateZoom](Transitions#wiki-d3_interpolateZoom) - zoom and pan between two points smoothly.
+* [d3.interpolateZoom](Transitions#wiki-d3_interpolateZoom) - плавное изменение масштаба и панорамирование между двумя точками.
 * [d3.interpolators](Transitions#wiki-d3_interpolators) - register a custom interpolator.
 
 ### [[Working with Arrays|Arrays]]
