@@ -511,6 +511,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [What the SA job scene looks like for developers](http://ventureburn.com/2014/04/what-the-sa-job-scene-looks-like-for-developers-infographic/) - Eshaam Rabaney
 * [Can we have a Pie  chart like this?](http://bl.ocks.org/anwargm/11145882) - Anwarhusen Malgave
 * [And like this? A Pie  chart with dofferent angle](http://bl.ocks.org/anwargm/11152574) - Anwarhusen Malgave
+* [Tracking Flu Outbreaks with Wikipedia](http://www.additiveanalytics.com/solutions/flu_tracker) - Laura Hamilton
 
 ### Collections
 
