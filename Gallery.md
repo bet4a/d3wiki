@@ -512,6 +512,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [Can we have a Pie  chart like this?](http://bl.ocks.org/anwargm/11145882) - Anwarhusen Malgave
 * [And like this? A Pie  chart with dofferent angle](http://bl.ocks.org/anwargm/11152574) - Anwarhusen Malgave
 * [Tracking Flu Outbreaks with Wikipedia](http://www.additiveanalytics.com/solutions/flu_tracker) - Laura Hamilton
+* [Surgery Prices by State](http://www.additiveanalytics.com/solutions/nationwide_price_compare) - Laura Hamilton
 
 ### Collections
 
