@@ -30,7 +30,9 @@ function(d) { return d[1]; }
 
 <a name="clipExtent" href="#wiki-clipExtent">#</a> voronoi.<b>clipExtent</b>([<i>extent</i>])
 
-Gets or sets the clip extent of the Voronoi layout; see [this example](http://bl.ocks.org/mbostock/4237768). This implementation does not clip the returned polygons by default, but will clip them to a given rectangle if specified; this is strongly recommended, as unclipped polygons may have large coordinates which do not display correctly.
+If *extent* is specified, sets the clip extent of the Voronoi layout to the specified bounds and returns the layout. The *extent* bounds are specified as an array [​[<i>x0</i>, <i>y0</i>], [<i>x1</i>, <i>y1</i>]​], where <i>x0</i> is the left side of the extent, <i>y0</i> is the top, <i>x1</i> is the right and <i>y1</i> is the bottom. If *extent* is null, no clipping is performed. If *extent* is not specified, returns the current clip extent which defaults to null.
+
+See [this example](http://bl.ocks.org/mbostock/4237768). Use of a clip extent is strongly recommended, as unclipped polygons may have large coordinates which do not display correctly.
 
 Alternatively, you can also employ custom clipping without specifying a size, either in SVG or by post-processing with [polygon.clip](Polygon-Geom#wiki-clip).
 
