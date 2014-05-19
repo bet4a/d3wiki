@@ -49,7 +49,7 @@ svg.selectAll("path")
 If *children* is specified, sets the specified children accessor function. If *children* is not specified, returns the current children accessor function, which by default assumes that the input data is an object with a children array:
 
 ```javascript
-function children(d) {
+function children(d, depth) {
   return d.children;
 }
 ```
