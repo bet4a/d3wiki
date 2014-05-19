@@ -46,7 +46,7 @@ For details on how to pass arguments to listeners, see [dispatch](#wiki-dispatch
 
 Adds or removes an event *listener* for the specified *type*. The *type* is a string event type name, such as "start" or "end".  The specified *listener* is invoked with the context and arguments determined by the caller; see [dispatch](#wiki-dispatch). 
 
-If an event listener was already registered for the same type, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "click.foo" and "click.bar".
+If an event listener was already registered for the same type, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "click.foo" and "click.bar". Likewise, you can remove all registered listeners for a given namespace by saying `dispatch.on(".foo", null)`.
 
 If *listener* is not specified, returns the currently-assigned listener for the specified *type*, if any.
 
