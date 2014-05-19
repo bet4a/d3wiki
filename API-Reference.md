@@ -152,7 +152,7 @@ See one of:
 * [[d3.random.logNormal|Math#wiki-random_logNormal]] - generate a random number with a log-normal distribution.
 * [[d3.random.bates|Math#wiki-random_bates]] - generate a random number with a Bates distribution.
 * [[d3.random.irwinHall|Math#wiki-random_irwinHall]] - generate a random number with an Irwin–Hall distribution.
-* [[d3.transform|Math#wiki-transform]] - compute the standard form of a 2D matrix transform.
+* [[d3.transform|Math#d3_transform]] - compute the standard form of a 2D matrix transform.
 
 ### [[Loading External Resources|Requests]]
 
