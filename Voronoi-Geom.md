@@ -36,10 +36,15 @@ Alternatively, you can also employ custom clipping without specifying a size, ei
 
 <a name="links" href="#wiki-links">#</a> voronoi.<b>links</b>(<i>data</i>)
 
-…
+Returns the Delaunay triangulation of the specified *data* array as an array of links. Each link has the following attributes:
+
+* source - the source node (an element in *data*).
+* target - the target node (an element in *data*).
+
+The <a href="http://bl.ocks.org/mbostock/1073373">Force-Directed States of America</a> uses an array of such links to create a force-directed graph.
 
 <a name="triangles" href="#wiki-triangles">#</a> voronoi.<b>triangles</b>(<i>data</i>)
 
 <a href="http://bl.ocks.org/mbostock/4341156"><img src="http://bl.ocks.org/mbostock/raw/4341156/thumbnail.png" width="202"></a>
 
-Returns an array of triangles.
+Returns the <a href="https://en.wikipedia.org/wiki/Delaunay_triangulation">Delaunay triangulation</a> of the specified *data* array as an array of triangles.  Each triangle is a three-element array containing elements from *data*.
