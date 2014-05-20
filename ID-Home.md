@@ -13,6 +13,11 @@
 * [Pertanyaan mengenai d3.js di Stack Overflow](http://stackoverflow.com/questions/tagged/d3.js)
 * [Milis d3-js di Google Group](http://groups.google.com/group/d3-js)
 * [English](/mbostock/d3/wiki)
+* [한국어](https://github.com/zziuni/d3/wiki)
+* [日本語](/mbostock/d3/wiki/JP-Home)
+* [中文](/mbostock/d3/wiki/CN-Home)
+* [[API Reference (русскоязычная версия)]]
+* [API Kaynak - Türkçe](https://github.com/ahmetkurnaz/d3/wiki)
 
 
 ## Browser Support
