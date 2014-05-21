@@ -46,6 +46,7 @@ Please feel free to add links to your work!
 * [D3 Dynamic Tables with Nested Data](http://bl.ocks.org/LeeMendelowitz/11383724) - Lee Mendelowitz
 * [Getting started with D3.js](http://eyalarubas.com/getting-started-with-d3js.html) - Eyal Arubas
 * [Visualizing Data with D3.js](http://uwdata.github.io/d3-tutorials/#/) - Tutorials for [Data Visualization Course](http://cse.uw.edu/512) at University of Washington (compiled by Kanit "Ham" Wongsuphasawat)
+* [http://ag.svbtle.com/on-d3-components](On D3 Components) by Pedram Emrouznejad
 
 ### Specific Techniques
 
