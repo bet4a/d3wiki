@@ -344,6 +344,13 @@ Registers a new key *function*. The key function will be invoked for each elemen
 
 Sorts key values for the current key using the specified *comparator*, such as [d3.descending](Arrays#wiki-d3_descending). If no comparator is specified for the current key, the order in which keys will be returned is undefined. Note that this only affects the result of the entries operator; the order of keys returned by the map operator is always undefined, regardless of comparator.
 
+```javascript
+var nest = d3.nest()
+    .key(function(d) { return d.year; })
+    .sortKeys(d3.ascending)
+    .entries(yields);
+```
+
 <a name="nest_sortValues" href="Arrays#wiki-nest_sortValues">#</a> nest.<b>sortValues</b>(<i>comparator</i>)
 
 Sorts leaf elements using the specified *comparator*, such as [d3.descending](Arrays#wiki-d3_descending). This is roughly equivalent to sorting the input array before applying the nest operator; however it is typically more efficient as the size of each group is smaller. If no value comparator is specified, elements will be returned in the order they appeared in the input array. This applies to both the map and entries operators.
