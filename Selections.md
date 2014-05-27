@@ -404,6 +404,24 @@ d3.selectAll("div").call(foo);
 
 The `this` context of the called function is also the current selection. This is slightly redundant with the first argument, which we might fix in the future.
 
+If you use an objects method in selection.call and need *this* to point to that object you can *bind* the object to the method before calling.
+
+```
+function Foo(text) {
+    this.text = text;
+}
+
+Foo.prototype.setText = function(selection) {
+    selection.text(this.text);
+}
+
+var bar = new Foo("Bar");
+
+d3.selectAll("span").call(bar.setText.bind(bar));
+// Or
+d3.selectAll("span").call(Foo.prototype.setText.bind(bar));
+```
+
 <a name="empty" href="Selections#wiki-empty">#</a> selection.<b>empty</b>()
 
 Returns true if the current selection is empty; a selection is empty if it contains no elements or only null elements.
