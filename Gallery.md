@@ -517,7 +517,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [Surgery Prices by State](http://www.additiveanalytics.com/solutions/nationwide_price_compare) - Laura Hamilton
 * [Eurovision song contest voting oddities] (http://xliberation.com/e/d3euro.html) - Bruce McPherson
 * [DogeOS/SmartOS SMF browser] (http://www.dogeos.net/smfgraph/) - LI, Yu
-
+* [Members of the Lower House of the Parliament of India] (http://www.datafootprints.com/loksabha/) - Raj Verma
 ### Collections
 
 #### The New York Times visualizations
