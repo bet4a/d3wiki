@@ -516,6 +516,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [Tracking Flu Outbreaks with Wikipedia](http://www.additiveanalytics.com/solutions/flu_tracker) - Laura Hamilton
 * [Surgery Prices by State](http://www.additiveanalytics.com/solutions/nationwide_price_compare) - Laura Hamilton
 * [Eurovision song contest voting oddities] (http://xliberation.com/e/d3euro.html) - Bruce McPherson
+* [DogeOS/SmartOS SMF browser] (http://www.dogeos.net/smfgraph/) - LI, Yu
 
 ### Collections
 
