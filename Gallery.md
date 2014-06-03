@@ -271,7 +271,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 <td>SizeViewer<br/><a href="https://d3.artzub.com/sv/"><img src="http://artzub.com/d3/sv/images/sv.gif" width="200"></a></td>
 </tr>
 <tr>
-<td> OrgoShmorgo - Organic Molecule Visualizer <br><a href="http://orgo.stolarsky.com/"><img src="http://orgo.stolarsky.com/orgoShmorgo.png" width="200"></a></td>
+<td> OrgoShmorgo<br><a href="http://orgo.stolarsky.com/"><img src="http://orgo.stolarsky.com/orgoShmorgo.png" width="200"></a></td>
 </tr>
 
 
