@@ -47,6 +47,7 @@ Please feel free to add links to your work!
 * [Getting started with D3.js](http://eyalarubas.com/getting-started-with-d3js.html) - Eyal Arubas
 * [Visualizing Data with D3.js](http://uwdata.github.io/d3-tutorials/#/) - Tutorials for [Data Visualization Course](http://cse.uw.edu/512) at University of Washington (compiled by Kanit "Ham" Wongsuphasawat)
 * [On D3 Components](http://ag.svbtle.com/on-d3-components) by Pedram Emrouznejad
+* [Notes on my D3 Visualizations Development Workflow](https://thoughtstreams.io/paltman/developing-d3-visualizations/) by Patrick Altman
 
 ### Specific Techniques
 
