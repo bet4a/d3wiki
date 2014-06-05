@@ -732,7 +732,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Gravity by Disqus](http://disqus.com/gravity)
 * [Navigate site by tags focus](http://xliberation.com/googlecharts/d3nodefocustagsite.html)
 * [Interactive process map and documentation](https://github.com/nylen/d3-process-map)
-* [Scatterplot with CSS Sprites and Interaction](https://www.comparacaodefundos.com/blog/como-ganhar-a-copa/)
+* [Scatterplot with CSS Sprites and Interaction](https://www.comparacaodefundos.com/blog/como-ganhar-a-copa/#x-axis-menu)
 
 #### Tree
 
