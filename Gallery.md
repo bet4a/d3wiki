@@ -270,8 +270,10 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
     <td>Eurovision song contest voting oddities<br><a href="http://xliberation.com/e/d3euro.html"><img src="http://ramblings.mcpher.com/Home/excelquirks/d3/dceuro/5015.png" width="202"></a></td>
 <td>SizeViewer<br/><a href="https://d3.artzub.com/sv/"><img src="http://artzub.com/d3/sv/images/sv.gif" width="200"></a></td>
 </tr>
+
 <tr>
 <td> OrgoShmorgo<br><a href="http://orgo.stolarsky.com/"><img src="http://orgo.stolarsky.com/orgo.png" width="200"></a></td>
+<td> Fund Visualization<br><a href="http://fundvis-ywng.rhcloud.com/JPMProvident.html"><img src="https://raw.githubusercontent.com/ywng/fundvis/master/scr_shot.png" width="200"></a></td>
 </tr>
 
 
