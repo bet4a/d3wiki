@@ -524,6 +524,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [DogeOS/SmartOS SMF browser] (http://www.dogeos.net/smfgraph/) - LI, Yu
 * [Members of the Lower House of the Parliament of India] (http://www.datafootprints.com/loksabha/) - Raj Verma
 * [Archive of polling data for Austria] (http://www.strategieanalysen.at/umfragen/) - Flooh Perlot
+* [Visualizing MBTA Data] (http://mbtaviz.github.io/) - Michael Barry and Brian Card
 
 ### Collections
 
