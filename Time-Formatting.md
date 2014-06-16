@@ -31,7 +31,9 @@ Constructs a new local time formatter using the given *specifier*. (Equivalent t
 * `%Z` - time zone offset, such as "-0700".
 * `%%` - a literal "%" character.
 
-For %U, all days in a new year preceding the first Sunday are considered to be in week 0. For %W, all days in a new year preceding the first Monday are considered to be in week 0. In some implementations of strftime and strptime (as in Python), a directive may include an optional field width or precision; this feature is not yet implemented in D3, but may be added in the future. Also note that the JavaScript environment does not provide a standard API for accessing locale-specific date and time formatters, so D3's implementation is fixed to a locale at compile time based on the $LOCALE environment variable.
+For %U, all days in a new year preceding the first Sunday are considered to be in week 0. For %W, all days in a new year preceding the first Monday are considered to be in week 0. In some implementations of strftime and strptime (as in Python), a directive may include an optional field width or precision; this feature is not yet implemented in D3, but may be added in the future.
+
+For locale-specific date and time formatters, see [locale.timeFormat](Localization#wiki-locale_timeFormat).
 
 The % sign indicating a directive may be immediately followed by a padding modifier:
 
