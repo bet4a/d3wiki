@@ -347,6 +347,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 </table>
 
 ## Examples
+* [Interactive World Cup Visualization](http://rasenball.com/) - Mondula
 * [Government Sequester 2013](http://labs.enigma.io/shutdown2013/) - Enigma
 * [World Inequality Database on Education] (http://www.education-inequalities.org/) - UNESCO
 * [Are global CO2 emissions still rising?] (http://infographics.pbl.nl/website/globalco2/) - Allard Warrink and Jeroen Dolmans
