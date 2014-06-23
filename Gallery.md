@@ -347,6 +347,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 </table>
 
 ## Examples
+* [Visualization of the distribution of Russian budget 2013](http://clearspending.artzub.com/) — ArtZub
 * [Interactive World Cup Visualization](http://rasenball.com/) - Mondula
 * [Government Sequester 2013](http://labs.enigma.io/shutdown2013/) - Enigma
 * [World Inequality Database on Education] (http://www.education-inequalities.org/) - UNESCO
