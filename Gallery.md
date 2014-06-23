@@ -266,7 +266,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 <tr>
 <td>Viroscope - virus taxonomy viewer<br><a href="http://viroscope.info/"><img src="http://jon.es/other/viroscope.png" width="202"></a></td>
 
-<td>Twitter & Reddit topics during week one of MH-370's disappearance<br><a href="http://decisive-ui.github.io/Hierarchie"><img src="http://decisive-ui.github.io/Hierarchie/app/img/layer.png" width="202"></a></td>
+<td>Twitter & Reddit topics during week one of MH-370's disappearance<br><a href="http://decisive-ui.github.io/Hierarchie"><img src="http://mlvl.github.io/Hierarchie/app/img/layer.png" width="202"></a></td>
     <td>Eurovision song contest voting oddities<br><a href="http://xliberation.com/e/d3euro.html"><img src="http://ramblings.mcpher.com/Home/excelquirks/d3/dceuro/5015.png" width="202"></a></td>
 <td>SizeViewer<br/><a href="https://d3.artzub.com/sv/"><img src="http://artzub.com/d3/sv/images/sv.gif" width="200"></a></td>
 </tr>
