@@ -189,7 +189,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 <tr>
     <td>D3 Cesium - Health and Wealth of Nations<br><a href="http://cesium.agi.com/demos/d3.html"><img src="http://cesium.agi.com/demos/images/d3.png" width="202"></a></td>
     <td>Starpaths<br><a href="http://www.cotrino.com/2013/05/starpaths/"><img src="https://raw.github.com/cotrino/experimentos/master/starpaths.png" width="200"></a></td>
-    <td>BT Hotspots mapped <br><a href="http://www.mapsnapps.com/storage/bt_hotspots/Index.html"><img src="http://giscope.squarespace.com/storage/bt_hotspots/Screenshot%20from%202013-08-12%20003543.png" width="200"></a></td>
+    <td>BT Hotspots mapped <br><a href="http://mapsnapps.github.io/Bt_Hotspots/Index.html"><img src="http://mapsnapps.github.io/Bt_Hotspots/Bt_Hotspots.png" width="200"></a></td>
     <td>CoreNLP Sentence Parse Tree<br><a href="http://nlpviz.bpodgursky.com/home"><img src="http://bpodgursky.files.wordpress.com/2013/08/nlp-screenshot-cropped.png" width="202"></a></td>
 </tr>
 <tr>
