@@ -4,18 +4,6 @@ Constructing visualizations often involves working with colors. Even though your
 
 Note: while you can work with colors directly, you might also want to take a look at D3's built-in color interpolation, such as [interpolateRgb](Transitions#d3_interpolateRgb), [interpolateHsl](Transitions#d3_interpolateHsl) and [scales](Scales). If you are looking for **color palettes**, see the [ordinal scales](Ordinal-Scales) reference.
 
-<a name="d3_color" href="#d3_color">#</a> d3.<b>color</b>()
-
-The base constructor for all colors. This function is used to enable automatic RGB interpolation by [d3.interpolate](Transitions#d3_interpolate) if `value instanceof d3.color` returns true. Use this class to extend D3 with additional color spaces.
-
-<a name="rgb" href="#rgb">#</a> color.<b>rgb</b>()
-
-Returns the [RGB equivalent](#d3_rgb) of this color. Must be implemented by all color spaces.
-
-<a name="toString" href="#toString">#</a> color.<b>toString</b>()
-
-Converts an RGB hexadecimal string representing this color, such as "#f7eaba".
-
 ## RGB
 
 <a name="d3_rgb" href="#d3_rgb">#</a> d3.<b>rgb</b>(<i>r</i>, <i>g</i>, <i>b</i>)
@@ -135,3 +123,19 @@ Converts this HCL color to an RGB hexadecimal string, such as "#f7eaba".
 <a name="lab_toString" href="#lab_toString">#</a> lab.<b>toString</b>()
 
 Converts this L\*a\*b\* color to an RGB hexadecimal string, such as "#f7eaba".
+
+## Color
+
+A d3.color base type is provided if you want to extend D3 with additional color spaces. This type enables automatic RGB interpolation by [d3.interpolate](Transitions#d3_interpolate) (detected via `instanceof d3.color`).
+
+<a name="d3_color" href="#d3_color">#</a> d3.<b>color</b>()
+
+The base constructor for color types.
+
+<a name="rgb" href="#rgb">#</a> color.<b>rgb</b>()
+
+Returns the [RGB equivalent](#d3_rgb) of this color. Must be implemented by all color spaces.
+
+<a name="toString" href="#toString">#</a> color.<b>toString</b>()
+
+Converts an RGB hexadecimal string representing this color, such as "#f7eaba".
