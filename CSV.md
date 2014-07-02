@@ -138,7 +138,7 @@ Equivalent to [csv.formatRows](#wiki-formatRows), but for delimiter-separated va
 
 ### Content Security Policy
 
-If a [content security policy](http://www.w3.org/TR/CSP/) is in place, note that [csv.parse](#wiki-csv_parse), [tsv.parse](#wiki-tsv_parse) and [dsv.parse](#wiki-dsv_parse) require the `unsafe-eval` in the `script-src` directive, due to their (safe) use of dynamic code generation for fast parsing.
+If a [content security policy](http://www.w3.org/TR/CSP/) is in place, note that [csv.parse](#wiki-csv_parse), [tsv.parse](#wiki-tsv_parse) and [dsv.parse](#wiki-dsv_parse) require `unsafe-eval` in the `script-src` directive, due to their (safe) use of dynamic code generation for fast parsing.
 This also applies to the default constructors [d3.csv](#csv), [d3.tsv](#tsv) and [dsv](#_dsv), which issue an HTTP GET request for the resource and then parse the response to objects using [csv.parse](#wiki-csv_parse), [tsv.parse](#wiki-tsv_parse) or [dsv.parse](#wiki-dsv_parse).
 
 If `unsafe-eval` cannot be used, then [csv.parseRows](#wiki-csv_parseRows), [tsv.parseRows](#wiki-tsv_parseRows) or [dsv.parseRows](#wiki-dsv_parseRows) can be used as a workaround, in combination with [d3.text](Requests#d3_text) to retrieve the resource if necessary.
