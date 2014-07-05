@@ -21,9 +21,11 @@
 * [Русский](/mbostock/d3/wiki/API-Reference-\(русскоязычная-версия\))
 * [Türkçe](/ahmetkurnaz/d3/wiki)
 
-## Browser Support
+## Browser / Platform Support
 
 D3 supports so-called “modern” browsers, which generally means everything _except_ IE8 and below. D3 is tested against Firefox, Chrome (Chromium), Safari (WebKit), Opera and IE9. Parts of D3 may work in older browsers, as the core D3 library has minimal requirements: JavaScript and the [W3C DOM](http://www.w3.org/DOM/) API. For IE8, the compatibility library [Aight](https://github.com/shawnbot/aight) is recommended. D3 uses the [Selectors API](http://www.w3.org/TR/selectors-api/) Level 1, but you can preload [Sizzle](http://sizzlejs.com/) for compatibility. You'll need a modern browser to use [SVG](http://www.w3.org/TR/SVG/) and [CSS3 Transitions](http://www.w3.org/TR/css3-transitions/). D3 is not a compatibility layer, so if your browser doesn't support standards, you're out of luck. Sorry!
+
+D3 also runs on [Node.js](http://nodejs.org/). Use `npm install d3` to install, and `require("d3")` to load. On Node, limited DOM support is provided by [JSDOM](https://github.com/tmpvar/jsdom). D3 can also run within a [WebWorker](http://www.whatwg.org/specs/web-apps/current-work/multipage/workers.html) by creating a [custom build](/mbostock/smash/wiki) containing only the desired (non-DOM) features.
 
 ## Installing
 
@@ -41,7 +43,7 @@ Or, if you want the full repository including tests:
 
 * <https://github.com/mbostock/d3/zipball/master>
 
-D3 is also available via numerous package managers, including: [NPM](https://npmjs.org/package/d3) (Node.js), [Bower](http://bower.io/search/?q=d3), [Browserify](http://browserify.org/), [Component](http://component.io/), [Jam](http://jamjs.org/packages/#/details/d3), [Composer / Packagist](https://packagist.org/packages/mbostock/d3) (PHP), [SPM](https://spmjs.org/gallery/d3/), [JSPM](http://jspm.io/), and [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md) (e.g., [RequireJS](http://requirejs.org/)). The official releases of D3 are on [NPM](https://npmjs.org/package/d3) and [GitHub](/mbostock/d3) only; support for other package managers is unofficial and maintained on a community basis.
+D3 is also available via numerous package managers, including: [NPM](https://npmjs.org/package/d3) (Node.js), [Bower](http://bower.io/search/?q=d3), [Browserify](http://browserify.org/), [Component](http://component.io/), [Jam](http://jamjs.org/packages/#/details/d3), [Composer / Packagist](https://packagist.org/packages/mbostock/d3) (PHP), [SPM](https://spmjs.org/gallery/d3/), [JSPM](http://jspm.io/), and [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md) (e.g., [RequireJS](http://requirejs.org/)). The official releases of D3 are on [NPM](https://npmjs.org/package/d3) and [GitHub](/mbostock/d3) only; support for other package managers is unofficial and maintained by contributors.
 
 ## Using
 
