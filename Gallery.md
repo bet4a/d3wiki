@@ -527,6 +527,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 * [Members of the Lower House of the Parliament of India] (http://www.datafootprints.com/loksabha/) - Raj Verma
 * [Archive of polling data for Austria] (http://www.strategieanalysen.at/umfragen/) - Flooh Perlot
 * [Visualizing MBTA Data] (http://mbtaviz.github.io/) - Michael Barry and Brian Card
+* [Visualizing Joyce's 'Ulysses': "Sirens" as a Graphic Score] (http://y-li.me/x/sirens) - Emily Fuhrman
 
 ### Collections
 
