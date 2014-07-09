@@ -284,7 +284,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 
 ### [[序数变换（Ordinal）|Ordinal-Scales#wiki-ordinal]]
 
-* [[d3.scale.ordinal|Ordinal-Scales#wiki-ordinal]] - 构建一个ordinal变换对象。ordinal变换的输入定义域和输出值域都是离散的。而quantitative变换的输入定义域是离散的，这是两者最大的不同。
+* [[d3.scale.ordinal|Ordinal-Scales#wiki-ordinal]] - 构建一个ordinal变换对象。ordinal变换的输入定义域和输出值域都是离散的。而quantitative变换的输入定义域是连续的，这是两者最大的不同。
 * [[ordinal|Ordinal-Scales#wiki-_ordinal]] - 输入一个离散值，返回一个离散值。不在当前定义域中的输入值会自动加入定义域。
 * [[ordinal.domain|Ordinal-Scales#wiki-ordinal_domain]] - get或set变换的定义域。
 * [[ordinal.range|Ordinal-Scales#wiki-ordinal_range]] - get或set变换的值域。
