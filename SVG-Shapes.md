@@ -508,7 +508,7 @@ The array of supported [symbol types](#wiki-symbol_type).
 
 <a name="chord" href="SVG-Shapes#wiki-chord">#</a> d3.svg.<b>chord</b>()
 
-Constructs a new chord generator with the default accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). While the default accessors assume that the chord dimensions are all specified dynamically, it is very common to set one or more of the dimensions as a constant, such as the radius. The returned function generates path data for a closed shape connecting two [arcs](http://en.wikipedia.org/wiki/Arc_(geometry\)) with quadratic Bézier curves, as in a [chord diagram](http://mbostock.github.com/d3/ex/chord.html):
+Constructs a new chord generator with the default accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). While the default accessors assume that the chord dimensions are all specified dynamically, it is very common to set one or more of the dimensions as a constant, such as the radius. The returned function generates path data for a closed shape connecting two [arcs](http://en.wikipedia.org/wiki/Arc_(geometry)) with quadratic Bézier curves, as in a [chord diagram](http://mbostock.github.com/d3/ex/chord.html):
 
 ![chord](chord.png)
 
