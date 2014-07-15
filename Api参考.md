@@ -398,20 +398,20 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[d3.time.format.utc|Time-Formatting#wiki-format_utc]] - 创建基于某种时间格式的世界标准时间（UTC）格式转换器。
 * [[d3.time.format.iso|Time-Formatting#wiki-format_iso]] - 创建基于某种时间格式的ISO世界标准时间（ISO 8601 UTC）格式转换器。
 
-### [[Time Scales]]
+### [时间变换(Time Scales)](Time Scales)
 
-* [[d3.time.scale|Time-Scales#wiki-scale]] - construct a linear time scale.
-* [[scale|Time-Scales#wiki-_scale]] - get the range value corresponding to a given domain value.
-* [[scale.invert|Time-Scales#wiki-invert]] - get the domain value corresponding to a given range value.
-* [[scale.domain|Time-Scales#wiki-domain]] - get or set the scale's input domain.
-* [[scale.nice|Time-Scales#wiki-nice]] - extend the scale domain to nice round numbers.
-* [[scale.range|Time-Scales#wiki-range]] - get or set the scale's output range.
-* [[scale.rangeRound|Time-Scales#wiki-rangeRound]] - set the scale's output range, and enable rounding.
-* [[scale.interpolate|Time-Scales#wiki-interpolate]] - get or set the scale's output interpolator.
-* [[scale.clamp|Time-Scales#wiki-clamp]] - enable or disable clamping of the output range.
-* [[scale.ticks|Time-Scales#wiki-ticks]] - get representative values from the input domain.
-* [[scale.tickFormat|Time-Scales#wiki-tickFormat]] - get a formatter for displaying tick values.
-* [[scale.copy|Time-Scales#wiki-copy]] - create a new scale from an existing scale.
+* [[d3.time.scale|Time-Scales#wiki-scale]] - 创建一个线性时间变换，定义域为数值区间，值域为时间区间。常用于时间坐标轴的创建。详情可参考d3.scale.linear。
+* [[scale|Time-Scales#wiki-_scale]] - 输入为一个数值，返回为一个时间。
+* [[scale.invert|Time-Scales#wiki-invert]] - 反变换，输入时间返回数值。
+* [[scale.domain|Time-Scales#wiki-domain]] - get或set变换的定义域。
+* [[scale.nice|Time-Scales#wiki-nice]] - 扩展定义域范围使定义域更规整。
+* [[scale.range|Time-Scales#wiki-range]] - get或set变换的值域。
+* [[scale.rangeRound|Time-Scales#wiki-rangeRound]] - 设置值域，并对结果取整。
+* [[scale.interpolate|Time-Scales#wiki-interpolate]] - get或set变换的插值函数，如将默认的线性插值函数替换成指数插值函数。
+* [[scale.clamp|Time-Scales#wiki-clamp]] - 设置值域是否闭合，默认不闭合。当值域闭合时，如果插值结果在值域之外，会取值域的边界值。详情参考linear.clamp。
+* [[scale.ticks|Time-Scales#wiki-ticks]] - 从定义域中取出有代表性的值。通常用于坐标轴刻度的选取。
+* [[scale.tickFormat|Time-Scales#wiki-tickFormat]] - 获取格式转化函数，通常用于坐标轴刻度的格式转化。
+* [[scale.copy|Time-Scales#wiki-copy]] - 从已有的时间变换中复制出一个变换。
 
 ### [[Time Intervals]]
 
