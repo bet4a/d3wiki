@@ -82,7 +82,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Political Influence<br><a href="http://www.brightpointinc.com/interactive/political_influence/index.html?source=d3js" title="political influence d3.js"><img src="http://www.brightpointinc.com/interactive/images/PoliticalInfluence_202px.png" width="202"></a></td>
     <td>Federal Budget<br><a href="http://www.brightpointinc.com/interactive/budget/index.html?source=d3js" title="federal budget d3.js"><img src="http://www.brightpointinc.com/interactive/images/Budget_202px.png" width="202"></a></td>
     <td>US Trade Deficit<br><a href="http://www.brightpointinc.com/interactive/ustrade/index.html?source=d3js" title="US Trade Deficit d3.js"><img src="http://www.brightpointinc.com/interactive/images/Deficit_202px.png" width="202"></a></td>
-    <td>Sequences sunburst<br><a href="http://bl.ocks.org/kerryrodden/7090426"><img src="https://gist.github.com/kerryrodden/7090426/raw/thumbnail.png" width="202"></a></td>
+    <td>Sequences sunburst<br><a href="http://bl.ocks.org/kerryrodden/7090426"><img src="https://gist.githubusercontent.com/kerryrodden/7090426/raw/66e9ce05ea907b3cb6b753cacc61aba45a78e21f/thumbnail.gif" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
     <td>Koalas to the Max<br><a href="http://www.koalastothemax.com/"><img src="http://d3js.org/ex/koalas.png" width="202"></a></td>
