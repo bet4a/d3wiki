@@ -210,7 +210,7 @@ The stereographic projection is another perspective (azimuthal) projection. The 
 <a href="http://bl.ocks.org/mbostock/5126418"><img src="http://bl.ocks.org/mbostock/raw/5126418/thumbnail.png" width="202"></a>
 <a href="http://bl.ocks.org/mbostock/4695821"><img src="http://bl.ocks.org/mbostock/raw/4695821/thumbnail.png" width="202"></a>
 
-The transverse Mercator projection. Note: this transverse Mercator projection does not currently support antimeridian cutting and is only intended for small areas, such as state-level maps; for whole-Earth maps using the transverse Mercator projection, use a [rotated Mercator projection](http://bl.ocks.org/mbostock/4695821) instead.
+The transverse Mercator projection.
 
 ## Raw Projections
 
