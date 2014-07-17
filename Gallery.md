@@ -130,7 +130,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Open Knowledge Festival<br><a href="http://www.floapps.com/cases/open-knowledge-festival/"><img src="http://floapps.com/lab/misc/oklogo/ok.png" width="202"></a></td>
     <td>Hierarchical Classification Tree<br><a href="http://www.bitjuice.com.au/research/#hierarchicalclassificationexample"><img src="http://www.bitjuice.com.au/wp-content/uploads/2013/08/hierarchical_visualisation_example.png" width="202"></a></td>
     <td>Gene Expression<br><a href="http://sulab.org/2013/02/data-chart-plugin-beta/"><img src="http://sulab.org/wordpress/wp-content/uploads/2013/02/data_chart_icon_2.jpg" width="202"></a></td>
-    <td>spacetime<br><a href="http://bl.ocks.org/clayzermk1/9142407"><img src="https://gist.githubusercontent.com/clayzermk1/9142407/raw/thumbnail.png"></a></td>
+    <td>spacetime<br><a href="http://bl.ocks.org/clayzermk1/9142407"><img src="https://gist.githubusercontent.com/clayzermk1/9142407/raw/thumbnail.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
     <td>d3 Analog Clock Dashboard<br><a href="http://www.infocaptor.com/dashboard/d3-javascript-visualization-to-build-world-analog-clocks"><img src="http://www.infocaptor.com/dashboard/wp-content/uploads/2013/02/image-217-small.jpg" width="202"></a></td>
@@ -157,28 +157,28 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>D3 JezzBall<br><a href="http://bl.ocks.org/ericcitaire/5408146"><img src="http://bl.ocks.org/ericcitaire/raw/5408146/thumbnail.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
-    <td>Tetris<br><a href="http://d3tetris.herokuapp.com/"><img src="http://imageshack.us/a/img841/8619/tetrisn.png" width="200px"></a></td>
-    <td>Gantt Chart<br><a href="http://bl.ocks.org/dk8996/5538271/"><img src="https://raw.github.com/dk8996/Gantt-Chart/master/examples/screenshot2.png" width="200px"></a></td>
-    <td>Day/Hour Heatmap<br><a href="http://bl.ocks.org/tjdecke/5558084"><img src="https://gist.github.com/tjdecke/5558084/raw/thumbnail2.png" width="200px"></a></td>
-    <td>Sunburst and parse.com<br><a href="http://xliberation.com/parse/colortable/parsed3.html"><img src="http://xliberation.com/googlecharts/1716.png" width="200px"></a></td>
+    <td>Tetris<br><a href="http://d3tetris.herokuapp.com/"><img src="http://imageshack.us/a/img841/8619/tetrisn.png" width="202"></a></td>
+    <td>Gantt Chart<br><a href="http://bl.ocks.org/dk8996/5538271/"><img src="https://raw.github.com/dk8996/Gantt-Chart/master/examples/screenshot2.png" width="202"></a></td>
+    <td>Day/Hour Heatmap<br><a href="http://bl.ocks.org/tjdecke/5558084"><img src="https://gist.github.com/tjdecke/5558084/raw/thumbnail2.png" width="202"></a></td>
+    <td>Sunburst and parse.com<br><a href="http://xliberation.com/parse/colortable/parsed3.html"><img src="http://xliberation.com/googlecharts/1716.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
-    <td>Worldwide remittance flows<br><a href="http://remittances.herokuapp.com/?en"><img src="https://raw.github.com/ilyabo/remittances/master/design/screenshots/explore-en-square-200px.png" width="200"></a></td>
-    <td>Language Network<br><a href="http://www.cotrino.com/2012/11/language-network/"><img src="https://raw.github.com/cotrino/experimentos/master/langnet.png" width="200"></a></td>
+    <td>Worldwide remittance flows<br><a href="http://remittances.herokuapp.com/?en"><img src="https://raw.github.com/ilyabo/remittances/master/design/screenshots/explore-en-square-200px.png" width="202"></a></td>
+    <td>Language Network<br><a href="http://www.cotrino.com/2012/11/language-network/"><img src="https://raw.github.com/cotrino/experimentos/master/langnet.png" width="202"></a></td>
     <td>Wimbledon 2012<br><a href="http://wimbledon.prcweb.co.uk/"><img src="http://prcweb.co.uk/img/ext/w2012-match-tree.jpg" width="202"></a></td>
     <td>Force directed tag/site explorer<br><a href="http://ramblings.mcpher.com/Home/excelquirks/gassites/d3nodefocus"><img src="http://xliberation.com/googlecharts/1731.png" width="200"></a></td>
 </tr>
 <tr>
-    <td>Bus transit data<br/><a href="http://busrac.es"><img src="https://raw.github.com/bjuhn/UrbanDataChallenge/master/data/busraces.png" width="200"></a></td>
-    <td>Airline data from Fusion Tables<br/><a href="http://xliberation.com/googlecharts/d3flights.html"><img src="http://xliberation.com/googlecharts/1746.png" width="200"></a></td>
-    <td>Geographical hexbins<br/><a href="http://ssz.fr/places?fr#ac$"><img src="http://ssz.fr/brdl/ac.png" width="200"></a></td>
-    <td>xkcd-style Comic Narrative Charts<br/><a href="http://csclub.uwaterloo.ca/~n2iskand/?page_id=13"><img src="http://csclub.uwaterloo.ca/~n2iskand/wp-content/uploads/2013/06/Screen-Shot-2013-06-08-at-12.04.47-PM-300x200.png" width="250"></a></td>
+    <td>Bus transit data<br/><a href="http://busrac.es"><img src="https://raw.github.com/bjuhn/UrbanDataChallenge/master/data/busraces.png" width="202"></a></td>
+    <td>Airline data from Fusion Tables<br/><a href="http://xliberation.com/googlecharts/d3flights.html"><img src="http://xliberation.com/googlecharts/1746.png" width="202"></a></td>
+    <td>Geographical hexbins<br/><a href="http://ssz.fr/places?fr#ac$"><img src="http://ssz.fr/brdl/ac.png" width="202"></a></td>
+    <td>xkcd-style Comic Narrative Charts<br/><a href="http://csclub.uwaterloo.ca/~n2iskand/?page_id=13"><img src="http://csclub.uwaterloo.ca/~n2iskand/wp-content/uploads/2013/06/Screen-Shot-2013-06-08-at-12.04.47-PM-300x200.png" width="202"></a></td>
 </tr>
 <tr>
-    <td>GitHub Visualizer<br/><a href="http://ghv.artzub.com/#repo=d3&climit=100&user=mbostock&run"><img src="https://f.cloud.github.com/assets/134249/1274358/39cb552a-2d96-11e3-9936-c892a2f81bb6.gif" width="200"></a></td>
-    <td>WorldBank Contract Awards<br/><a href="http://d3.artzub.com/wbca/"><img src="http://img442.imageshack.us/img442/4673/g1k.png" width="200"></a></td>
-    <td>Site or blog concept browser<br/><a href="http://xliberation.com/googlecharts/d3concept.html"><img src="http://xliberation.com/googlecharts/1774.png" width="200"></a></td>
-    <td>Global power structure<br/><a href="http://WhoDoTheyServe.com"><img src="http://dizzib.github.io/wdts/asset/d3-thumb-200x200.png" width="200"></a></td>
+    <td>GitHub Visualizer<br/><a href="http://ghv.artzub.com/#repo=d3&climit=100&user=mbostock&run"><img src="https://f.cloud.github.com/assets/134249/1274358/39cb552a-2d96-11e3-9936-c892a2f81bb6.gif" width="202"></a></td>
+    <td>WorldBank Contract Awards<br/><a href="http://d3.artzub.com/wbca/"><img src="http://img442.imageshack.us/img442/4673/g1k.png" width="202"></a></td>
+    <td>Site or blog concept browser<br/><a href="http://xliberation.com/googlecharts/d3concept.html"><img src="http://xliberation.com/googlecharts/1774.png" width="202"></a></td>
+    <td>Global power structure<br/><a href="http://WhoDoTheyServe.com"><img src="http://dizzib.github.io/wdts/asset/d3-thumb-200x200.png" width="202"></a></td>
 </tr>
 <tr>
     <td>Choropleth on canvas<br><a href="http://ssz.fr/parite"><img src="http://ssz.fr/brdl/parite.png" width="202"></a></td>
@@ -188,15 +188,15 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 </tr>
 <tr>
     <td>D3 Cesium - Health and Wealth of Nations<br><a href="http://cesium.agi.com/demos/d3.html"><img src="http://cesium.agi.com/demos/images/d3.png" width="202"></a></td>
-    <td>Starpaths<br><a href="http://www.cotrino.com/2013/05/starpaths/"><img src="https://raw.github.com/cotrino/experimentos/master/starpaths.png" width="200"></a></td>
-    <td>BT Hotspots mapped <br><a href="http://mapsnapps.github.io/Bt_Hotspots/Index.html"><img src="http://mapsnapps.github.io/Bt_Hotspots/Bt_Hotspots.png" width="200"></a></td>
+    <td>Starpaths<br><a href="http://www.cotrino.com/2013/05/starpaths/"><img src="https://raw.github.com/cotrino/experimentos/master/starpaths.png" width="202"></a></td>
+    <td>BT Hotspots mapped <br><a href="http://mapsnapps.github.io/Bt_Hotspots/Index.html"><img src="http://mapsnapps.github.io/Bt_Hotspots/Bt_Hotspots.png" width="202"></a></td>
     <td>CoreNLP Sentence Parse Tree<br><a href="http://nlpviz.bpodgursky.com/home"><img src="http://bpodgursky.files.wordpress.com/2013/08/nlp-screenshot-cropped.png" width="202"></a></td>
 </tr>
 <tr>
     <td>Publications in journals over time<br><a href="http://neuralengr.com/asifr/journals"><img src="http://neuralengr.com/asifr/journals/journals.png" width="202"></a></td>
     <td>Another state budget visualization with open api<br><a href="http://budzet.aws.af.cm"><img src="http://www.demodems.org/gtt/otvoreni-budzet-d3.png" width="202"></a></td>
-    <td>Interactive Bible contradictions & bar charts [<a href="https://github.com/danielgtaylor/bibviz">source</a>]<br/><a href="http://bibviz.com/"><img src="http://bibviz.com/img/square.png"/></a></td>
-    <td>Force Edge Bundling For Graphs<br><a href="http://bl.ocks.org/upphiminn/6515478"><img src="https://raw.github.com/upphiminn/d3.ForceBundle/master/readme_img/thumbnail.png"></a> [<a href="https://github.com/upphiminn/d3.ForceBundle">Source & Docs</a>]</td>
+    <td>Interactive Bible contradictions & bar charts [<a href="https://github.com/danielgtaylor/bibviz">source</a>]<br/><a href="http://bibviz.com/"><img src="http://bibviz.com/img/square.png" width="202"/></a></td>
+    <td>Force Edge Bundling For Graphs<br><a href="http://bl.ocks.org/upphiminn/6515478"><img src="https://raw.github.com/upphiminn/d3.ForceBundle/master/readme_img/thumbnail.png" width="202"></a> [<a href="https://github.com/upphiminn/d3.ForceBundle">Source & Docs</a>]</td>
 </tr>
 <tr>
     <td>Gauge<br><a href="http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html"><img src="http://bl.ocks.org/tomerd/raw/1499279/thumbnail.png" width="202"></a></td>
@@ -224,9 +224,9 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/s5qo5Gwrct5HNxAD2" widt
     <td>AWS EC2 Price Comparison Chart<br><a href="http://kenlin.com/x/aws-price-comparison-chart/"><img src="https://raw2.github.com/kenklin/aws-price-comparison-chart/master/aws-price-comparison-chart-small.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
-    <td>Hurricane Forecast Path Evolution<br><a href="http://www.weather.com/news/weather-hurricanes/sandy-path-evolution-20121026"><img src="http://i.imwx.com/web/multimedia/images/sandy-cones-thumbnail.png" width="200"></a></td>
-    <td>Sandy's Storm Surge<br><a href="http://www.weather.com/news/weather-hurricanes/sandy-surge-interactive-20121105"><img src="http://i.imwx.com/web/multimedia/images/sandy-surge-thumbnail.png" width="200"></a></td>
-    <td>Monthly NCDC Climate Summary<br><a href="http://www.weather.com/news/april-ncdc-report-20130515"><img src="http://i.imwx.com/web/multimedia/images/ncdc-april-thumbnail.png" width="200"></a></td>
+    <td>Hurricane Forecast Path Evolution<br><a href="http://www.weather.com/news/weather-hurricanes/sandy-path-evolution-20121026"><img src="http://i.imwx.com/web/multimedia/images/sandy-cones-thumbnail.png" width="202"></a></td>
+    <td>Sandy's Storm Surge<br><a href="http://www.weather.com/news/weather-hurricanes/sandy-surge-interactive-20121105"><img src="http://i.imwx.com/web/multimedia/images/sandy-surge-thumbnail.png" width="202"></a></td>
+    <td>Monthly NCDC Climate Summary<br><a href="http://www.weather.com/news/april-ncdc-report-20130515"><img src="http://i.imwx.com/web/multimedia/images/ncdc-april-thumbnail.png" width="202"></a></td>
      <td>Epidemic Game <a href="http://vax.herokuapp.com"><img src="http://imgur.com/h3anuVg.gif" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
@@ -238,27 +238,27 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 </tr>
 <tr height="207" valign="top">
     <td>Rotating Arcs<br><a href="http://vyacheslavryabinin.com/datavis/absind"><img src="http://vyacheslavryabinin.com/datavis/absind/absind.png" width="202"></a></td>
-    <td>Lifespan<br><a href="http://www.cotrino.com/2014/02/lifespan-longevidad-animal/"><img src="https://raw.github.com/cotrino/experimentos/master/lifespan.png" width="200"></a></td>
+    <td>Lifespan<br><a href="http://www.cotrino.com/2014/02/lifespan-longevidad-animal/"><img src="https://raw.github.com/cotrino/experimentos/master/lifespan.png" width="202"></a></td>
     <td>The Movie Network<br><a href="http://bl.ocks.org/paulovn/9686202"><img src="http://bl.ocks.org/paulovn/raw/9686202/thumbnail-s.png" width="202"></a></td>
     <td>Bowls with Liquid<br><a href="http://invision-web.net/ticket-status/"><img src="http://invision-web.net/ticket-status/preview.png" /></a></td>
 </tr>
 <tr height="207" valign="top">
-<td>BiPartite Visualization<br><a href="http://bl.ocks.org/NPashaP/9796212"><img src="http://bl.ocks.org/NPashaP/raw/9796212/thumbnail.png"  width="200"></a></td>
+<td>BiPartite Visualization<br><a href="http://bl.ocks.org/NPashaP/9796212"><img src="http://bl.ocks.org/NPashaP/raw/9796212/thumbnail.png"  width="202"></a></td>
 
 <td>BeerViz<br><a href="http://seekshreyas.com/beerviz/"><img src="https://dl.dropboxusercontent.com/u/2670838/Markdown/img/beerviz.png" width="202"></a></td>
 
-<td>3D Donut<br><a href="http://bl.ocks.org/NPashaP/9994181"><img src="http://bl.ocks.org/NPashaP/raw/9994181/thumbnail.png"  width="201"></a></td>
+<td>3D Donut<br><a href="http://bl.ocks.org/NPashaP/9994181"><img src="http://bl.ocks.org/NPashaP/raw/9994181/thumbnail.png"  width="202"></a></td>
 
-<td>Graceful Tree Conjecture<br><a href="http://bl.ocks.org/NPashaP/7683252"><img src="http://bl.ocks.org/NPashaP/raw/7683252/thumbnail.png"  width="200"></a></td>
+<td>Graceful Tree Conjecture<br><a href="http://bl.ocks.org/NPashaP/7683252"><img src="http://bl.ocks.org/NPashaP/raw/7683252/thumbnail.png"  width="202"></a></td>
 </tr>
 
 <tr>
-<td>Gradient Pie<br><a href="http://bl.ocks.org/NPashaP/9999786"><img src="http://bl.ocks.org/NPashaP/raw/9999786/thumbnail.png"  width="197"></a></td>
-<td>Top Scorers in 2013/14 Champions League - Breakdown analysis<br><a href="http://sunburst-demo.herokuapp.com/"><img src="https://scontent-b-fra.xx.fbcdn.net/hphotos-prn2/t1.0-9/1545571_10201953206206939_9214887947131857383_n.jpg"  width="197"></a></td>
+<td>Gradient Pie<br><a href="http://bl.ocks.org/NPashaP/9999786"><img src="http://bl.ocks.org/NPashaP/raw/9999786/thumbnail.png"  width="202"></a></td>
+<td>Top Scorers in 2013/14 Champions League - Breakdown analysis<br><a href="http://sunburst-demo.herokuapp.com/"><img src="https://scontent-b-fra.xx.fbcdn.net/hphotos-prn2/t1.0-9/1545571_10201953206206939_9214887947131857383_n.jpg"  width="202"></a></td>
 
 <td>Sankey: How a Georgia bill becomes law<br>
 <a href="http://greencracker.net/?p=1685">
-<img src="http://greencracker.net/wp-content/uploads/2013/12/sankey-experiment-one-updated.png" width="197"></a></td>
+<img src="http://greencracker.net/wp-content/uploads/2013/12/sankey-experiment-one-updated.png" width="202"></a></td>
 
 <td>A game based on d3<br><a href="http://wenchaojiang.github.io/d3game/"><img src="http://wenchaojiang.github.io/d3game/ScreenShot.png" width="202"></a></td>
 </tr>
@@ -268,12 +268,13 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 
 <td>Twitter & Reddit topics during week one of MH-370's disappearance<br><a href="http://mlvl.github.io/Hierarchie"><img src="http://mlvl.github.io/Hierarchie/app/img/layer.png" width="202"></a></td>
     <td>Eurovision song contest voting oddities<br><a href="http://xliberation.com/e/d3euro.html"><img src="http://ramblings.mcpher.com/Home/excelquirks/d3/dceuro/5015.png" width="202"></a></td>
-<td>SizeViewer<br/><a href="https://d3.artzub.com/sv/"><img src="http://artzub.com/d3/sv/images/sv.gif" width="200"></a></td>
+<td>SizeViewer<br/><a href="https://d3.artzub.com/sv/"><img src="http://artzub.com/d3/sv/images/sv.gif" width="202"></a></td>
 </tr>
 
 <tr>
-<td> OrgoShmorgo<br><a href="http://orgo.stolarsky.com/"><img src="http://orgo.stolarsky.com/orgo.png" width="200"></a></td>
-<td> Fund Visualization<br><a href="http://fundvis-ywng.rhcloud.com/JPMProvident.html"><img src="https://raw.githubusercontent.com/ywng/fundvis/master/scr_shot.png" width="200"></a></td>
+<td> OrgoShmorgo<br><a href="http://orgo.stolarsky.com/"><img src="http://orgo.stolarsky.com/orgo.png" width="202"></a></td>
+<td> Fund Visualization<br><a href="http://fundvis-ywng.rhcloud.com/JPMProvident.html"><img src="https://raw.githubusercontent.com/ywng/fundvis/master/scr_shot.png" width="202"></a></td>
+<td>Zoomable sunburst with updating data<br><a href="http://bl.ocks.org/kerryrodden/477c1bfb081b783f80ad"><img src="https://gist.githubusercontent.com/kerryrodden/477c1bfb081b783f80ad/raw/thumbnail.gif" width="202"></a></td>
 </tr>
 
 
