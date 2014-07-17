@@ -715,6 +715,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Partition Layout (Zoomable Icicle)](http://bl.ocks.org/mbostock/1005873)
 * [Sunburst: Color schemer with parse.com integration](http://xliberation.com/parse/colortable/parsed3.html)
 * [Using a sunburst to analyze sequences of events](http://bl.ocks.org/kerryrodden/7090426)
+* [Zoomable sunburst with updating data](http://bl.ocks.org/kerryrodden/477c1bfb081b783f80ad)
 
 #### Force Layout
 
