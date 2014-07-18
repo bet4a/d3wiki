@@ -145,26 +145,27 @@ Constructs a new ordinal scale with a range of twenty categorical colors:
 <a name="category20c" href="Ordinal-Scales#wiki-category20c">#</a> d3.scale.<b>category20c</b>()
 
 Constructs a new ordinal scale with a range of twenty categorical colors:
-<b><font color="#3182bd">#3182bd</font>
-<font color="#6baed6">#6baed6</font>
-<font color="#9ecae1">#9ecae1</font>
-<font color="#c6dbef">#c6dbef</font>
-<font color="#e6550d">#e6550d</font>
-<font color="#fd8d3c">#fd8d3c</font>
-<font color="#fdae6b">#fdae6b</font>
-<font color="#fdd0a2">#fdd0a2</font>
-<font color="#31a354">#31a354</font>
-<font color="#74c476">#74c476</font>
-<font color="#a1d99b">#a1d99b</font>
-<font color="#c7e9c0">#c7e9c0</font>
-<font color="#756bb1">#756bb1</font>
-<font color="#9e9ac8">#9e9ac8</font>
-<font color="#bcbddc">#bcbddc</font>
-<font color="#dadaeb">#dadaeb</font>
-<font color="#636363">#636363</font>
-<font color="#969696">#969696</font>
-<font color="#bdbdbd">#bdbdbd</font>
-<font color="#d9d9d9">#d9d9d9</font></b>.
+
+![3182bd](3182bd.png) #3182bd<br>
+![6baed6](6baed6.png) #6baed6<br>
+![9ecae1](9ecae1.png) #9ecae1<br>
+![c6dbef](c6dbef.png) #c6dbef<br>
+![e6550d](e6550d.png) #e6550d<br>
+![fd8d3c](fd8d3c.png) #fd8d3c<br>
+![fdae6b](fdae6b.png) #fdae6b<br>
+![fdd0a2](fdd0a2.png) #fdd0a2<br>
+![31a354](31a354.png) #31a354<br>
+![74c476](74c476.png) #74c476<br>
+![a1d99b](a1d99b.png) #a1d99b<br>
+![c7e9c0](c7e9c0.png) #c7e9c0<br>
+![756bb1](756bb1.png) #756bb1<br>
+![9e9ac8](9e9ac8.png) #9e9ac8<br>
+![bcbddc](bcbddc.png) #bcbddc<br>
+![dadaeb](dadaeb.png) #dadaeb<br>
+![636363](636363.png) #636363<br>
+![969696](969696.png) #969696<br>
+![bdbdbd](bdbdbd.png) #bdbdbd<br>
+![d9d9d9](d9d9d9.png) #d9d9d9<br>
 
 ## ColorBrewer
 
