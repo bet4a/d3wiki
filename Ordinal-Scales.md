@@ -120,26 +120,27 @@ Constructs a new ordinal scale with a range of twenty categorical colors:
 <a name="category20b" href="Ordinal-Scales#wiki-category20b">#</a> d3.scale.<b>category20b</b>()
 
 Constructs a new ordinal scale with a range of twenty categorical colors:
-<b><font color="#393b79">#393b79</font>
-<font color="#5254a3">#5254a3</font>
-<font color="#6b6ecf">#6b6ecf</font>
-<font color="#9c9ede">#9c9ede</font>
-<font color="#637939">#637939</font>
-<font color="#8ca252">#8ca252</font>
-<font color="#b5cf6b">#b5cf6b</font>
-<font color="#cedb9c">#cedb9c</font>
-<font color="#8c6d31">#8c6d31</font>
-<font color="#bd9e39">#bd9e39</font>
-<font color="#e7ba52">#e7ba52</font>
-<font color="#e7cb94">#e7cb94</font>
-<font color="#843c39">#843c39</font>
-<font color="#ad494a">#ad494a</font>
-<font color="#d6616b">#d6616b</font>
-<font color="#e7969c">#e7969c</font>
-<font color="#7b4173">#7b4173</font>
-<font color="#a55194">#a55194</font>
-<font color="#ce6dbd">#ce6dbd</font>
-<font color="#de9ed6">#de9ed6</font></b>.
+
+![393b79](393b79.png) #393b79<br>
+![5254a3](5254a3.png) #5254a3<br>
+![6b6ecf](6b6ecf.png) #6b6ecf<br>
+![9c9ede](9c9ede.png) #9c9ede<br>
+![637939](637939.png) #637939<br>
+![8ca252](8ca252.png) #8ca252<br>
+![b5cf6b](b5cf6b.png) #b5cf6b<br>
+![cedb9c](cedb9c.png) #cedb9c<br>
+![8c6d31](8c6d31.png) #8c6d31<br>
+![bd9e39](bd9e39.png) #bd9e39<br>
+![e7ba52](e7ba52.png) #e7ba52<br>
+![e7cb94](e7cb94.png) #e7cb94<br>
+![843c39](843c39.png) #843c39<br>
+![ad494a](ad494a.png) #ad494a<br>
+![d6616b](d6616b.png) #d6616b<br>
+![e7969c](e7969c.png) #e7969c<br>
+![7b4173](7b4173.png) #7b4173<br>
+![a55194](a55194.png) #a55194<br>
+![ce6dbd](ce6dbd.png) #ce6dbd<br>
+![de9ed6](de9ed6.png) #de9ed6<br>
 
 <a name="category20c" href="Ordinal-Scales#wiki-category20c">#</a> d3.scale.<b>category20c</b>()
 
