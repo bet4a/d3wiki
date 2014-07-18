@@ -80,16 +80,17 @@ Returns an exact copy of this ordinal scale. Changes to this scale will not affe
 <a name="category10" href="Ordinal-Scales#wiki-category10">#</a> d3.scale.<b>category10</b>()
 
 Constructs a new ordinal scale with a range of ten categorical colors:
-<b><font color="#1f77b4">#1f77b4</font>
-<font color="#ff7f0e">#ff7f0e</font>
-<font color="#2ca02c">#2ca02c</font>
-<font color="#d62728">#d62728</font>
-<font color="#9467bd">#9467bd</font>
-<font color="#8c564b">#8c564b</font>
-<font color="#e377c2">#e377c2</font>
-<font color="#7f7f7f">#7f7f7f</font>
-<font color="#bcbd22">#bcbd22</font>
-<font color="#17becf">#17becf</font></b>.
+
+![1f77b4](1f77b4.png) #1f77b4<br>
+![ff7f0e](ff7f0e.png) #ff7f0e<br>
+![2ca02c](2ca02c.png) #2ca02c<br>
+![d62728](d62728.png) #d62728<br>
+![9467bd](9467bd.png) #9467bd<br>
+![8c564b](8c564b.png) #8c564b<br>
+![e377c2](e377c2.png) #e377c2<br>
+![7f7f7f](7f7f7f.png) #7f7f7f<br>
+![bcbd22](bcbd22.png) #bcbd22<br>
+![17becf](17becf.png) #17becf<br>
 
 <a name="category20" href="Ordinal-Scales#wiki-category20">#</a> d3.scale.<b>category20</b>()
 
