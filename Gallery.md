@@ -275,6 +275,12 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 
 <td>US State Map<br><a href="http://bl.ocks.org/NPashaP/a74faf20b492ad377312"><img src="http://bl.ocks.org/NPashaP/raw/a74faf20b492ad377312/thumbnail.png"  width="202"></a></td>
 
+<td>Simple Dashboard<br><a href="http://bl.ocks.org/NPashaP/96447623ef4d342ee09b"><img src="http://bl.ocks.org/NPashaP/raw/96447623ef4d342ee09b/thumbnail.png"  width="202"></a></td>
+
+<td>Density and Quantile Graphs<br><a href="http://bl.ocks.org/NPashaP/113f7fea0751fa1513e1"><img src="http://bl.ocks.org/NPashaP/raw/113f7fea0751fa1513e1/thumbnail.png"  width="202"></a></td>
+
+<td>Molecular Dynamics<br><a href="http://bl.ocks.org/NPashaP/58e667763e0bf19e7d11"><img src="http://bl.ocks.org/NPashaP/raw/58e667763e0bf19e7d11/thumbnail.png"  width="202"></a></td>
+
 </table>
 
 ## Basic Charts
