@@ -247,13 +247,10 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 
 <td>BeerViz<br><a href="http://seekshreyas.com/beerviz/"><img src="https://dl.dropboxusercontent.com/u/2670838/Markdown/img/beerviz.png" width="202"></a></td>
 
-<td>3D Donut<br><a href="http://bl.ocks.org/NPashaP/9994181"><img src="http://bl.ocks.org/NPashaP/raw/9994181/thumbnail.png"  width="202"></a></td>
-
 <td>Graceful Tree Conjecture<br><a href="http://bl.ocks.org/NPashaP/7683252"><img src="http://bl.ocks.org/NPashaP/raw/7683252/thumbnail.png"  width="202"></a></td>
 </tr>
 
 <tr>
-<td>Gradient Pie<br><a href="http://bl.ocks.org/NPashaP/9999786"><img src="http://bl.ocks.org/NPashaP/raw/9999786/thumbnail.png"  width="202"></a></td>
 <td>Top Scorers in 2013/14 Champions League - Breakdown analysis<br><a href="http://sunburst-demo.herokuapp.com/"><img src="https://scontent-b-fra.xx.fbcdn.net/hphotos-prn2/t1.0-9/1545571_10201953206206939_9214887947131857383_n.jpg"  width="202"></a></td>
 
 <td>Sankey: How a Georgia bill becomes law<br>
@@ -312,6 +309,9 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
     <td>Bar Chart Multiples<br><a href="https://vida.io/documents/ZCzewTza4ZSzMWSBG"><img src="https://s3.amazonaws.com/vida-production/thumbnails/ZCzewTza4ZSzMWSBG" width="100"></a></td>
     <td>d3pie - pie chart generator and lib
 <a href="http://d3pie.org"><img src="http://d3pie.org/website/images/d3pie-screenshot.png" width="200" /></a></td>
+<td>3D Donut<br><a href="http://bl.ocks.org/NPashaP/9994181"><img src="http://bl.ocks.org/NPashaP/raw/9994181/thumbnail.png"  width="202"></a></td>
+
+<td>Gradient Pie<br><a href="http://bl.ocks.org/NPashaP/9999786"><img src="http://bl.ocks.org/NPashaP/raw/9999786/thumbnail.png"  width="202"></a></td>
   </tr>
 </table>
 
