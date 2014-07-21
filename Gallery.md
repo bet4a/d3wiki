@@ -273,6 +273,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 </tr>
 <td>Zoomable sunburst with updating data<br><a href="http://bl.ocks.org/kerryrodden/477c1bfb081b783f80ad"><img src="https://gist.githubusercontent.com/kerryrodden/477c1bfb081b783f80ad/raw/thumbnail.gif" width="202"></a></td>
 
+<td>US State Map<br><a href="http://bl.ocks.org/NPashaP/a74faf20b492ad377312"><img src="http://bl.ocks.org/NPashaP/raw/a74faf20b492ad377312/thumbnail.png"  width="202"></a></td>
 
 </table>
 
