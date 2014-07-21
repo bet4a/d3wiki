@@ -271,6 +271,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 <td> OrgoShmorgo<br><a href="http://orgo.stolarsky.com/"><img src="http://orgo.stolarsky.com/orgo.png" width="202"></a></td>
 <td> Fund Visualization<br><a href="http://fundvis-ywng.rhcloud.com/JPMProvident.html"><img src="https://raw.githubusercontent.com/ywng/fundvis/master/scr_shot.png" width="202"></a></td>
 </tr>
+<tr>
 <td>Zoomable sunburst with updating data<br><a href="http://bl.ocks.org/kerryrodden/477c1bfb081b783f80ad"><img src="https://gist.githubusercontent.com/kerryrodden/477c1bfb081b783f80ad/raw/thumbnail.gif" width="202"></a></td>
 
 <td>US State Map<br><a href="http://bl.ocks.org/NPashaP/a74faf20b492ad377312"><img src="http://bl.ocks.org/NPashaP/raw/a74faf20b492ad377312/thumbnail.png"  width="202"></a></td>
@@ -278,8 +279,11 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 <td>Simple Dashboard<br><a href="http://bl.ocks.org/NPashaP/96447623ef4d342ee09b"><img src="http://bl.ocks.org/NPashaP/raw/96447623ef4d342ee09b/thumbnail.png"  width="202"></a></td>
 
 <td>Density and Quantile Graphs<br><a href="http://bl.ocks.org/NPashaP/113f7fea0751fa1513e1"><img src="http://bl.ocks.org/NPashaP/raw/113f7fea0751fa1513e1/thumbnail.png"  width="202"></a></td>
-
+</tr>
+<tr>
 <td>Molecular Dynamics<br><a href="http://bl.ocks.org/NPashaP/58e667763e0bf19e7d11"><img src="http://bl.ocks.org/NPashaP/raw/58e667763e0bf19e7d11/thumbnail.png"  width="202"></a></td>
+
+</tr>
 
 </table>
 
