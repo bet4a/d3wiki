@@ -52,7 +52,7 @@ This operator is a convenience routine for setting the "class" attribute; it und
 
 If *value* is specified, sets whether or not the specified class is associated with the selected elements. If *value* is a constant and truthy, then all elements are assigned the specified class, if not already assigned; if falsey, then the class is removed from all selected elements, if assigned. If *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to assign or unassign the specified class on each element.
 
-If you want to set several classes at once, use an object literal like so: `selection.classed({'foo': true, 'bar': false})`.
+If you want to set several classes at once, use an object literal like so: `selection.classed({'foo': true, 'bar': false})`, or use a space-separated list of class names like so: `selection.classed('foo bar', true)`. 
 
 If *value* is not specified, returns true if and only if the first non-null element in this selection has the specified class. This is generally useful only if you know the selection contains exactly one element.
 
