@@ -282,7 +282,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 </tr>
 <tr>
 <td>Molecular Dynamics<br><a href="http://bl.ocks.org/NPashaP/58e667763e0bf19e7d11"><img src="http://bl.ocks.org/NPashaP/raw/58e667763e0bf19e7d11/thumbnail.png"  width="202"></a></td>
-
+<td>Visualizing MBTA Data<br><a href="http://mbtaviz.github.io"><img src="http://mbtaviz.github.io/media/preview.png"  width="202"></a></td>
 </tr>
 
 </table>
