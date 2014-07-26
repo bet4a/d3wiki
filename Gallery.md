@@ -283,6 +283,10 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 <tr>
 <td>Molecular Dynamics<br><a href="http://bl.ocks.org/NPashaP/58e667763e0bf19e7d11"><img src="http://bl.ocks.org/NPashaP/raw/58e667763e0bf19e7d11/thumbnail.png"  width="202"></a></td>
 <td>Visualizing MBTA Data<br><a href="http://mbtaviz.github.io"><img src="http://mbtaviz.github.io/media/preview.png"  width="202"></a></td>
+
+    <td>Animated Historical Weather Maps<br><a href="http://kyrandale.com/viz/uk-weather-stations.html"><img src="http://kyrandale.com/static/images/viz/uk-weather-stations.png"  width="202"></a></td>
+    <td>Visualizing Walking with Smartphone Accelerometers<br><a href="http://kyrandale.com/viz/d3-smartphone-walking.html"><img src="http://kyrandale.com/static/images/viz/d3-smartphone-walking.png"  width="202"></a></td>
+
 </tr>
 
 </table>
@@ -323,6 +327,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 
 <td>Gradient Pie<br><a href="http://bl.ocks.org/NPashaP/9999786"><img src="http://bl.ocks.org/NPashaP/raw/9999786/thumbnail.png"  width="202"></a></td>
   </tr>
+    
 </table>
 
 ## Techniques, Interaction & Animation
