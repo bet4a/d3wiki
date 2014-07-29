@@ -327,6 +327,7 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 <a href="http://d3pie.org"><img src="http://d3pie.org/website/images/d3pie-screenshot.png" width="200" /></a></td>
 
 <td>3D Donut<br><a href="http://bl.ocks.org/NPashaP/9994181"><img src="http://bl.ocks.org/NPashaP/raw/9994181/thumbnail.png"  width="202"></a></td>
+<td>Gradient Pie<br><a href="http://bl.ocks.org/NPashaP/9999786"><img src="http://bl.ocks.org/NPashaP/raw/9999786/thumbnail.png"  width="202"></a></td>
   </tr>
     
 </table>
