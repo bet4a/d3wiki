@@ -286,7 +286,9 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
 
     <td>Animated Historical Weather Maps<br><a href="http://kyrandale.com/viz/uk-weather-stations.html"><img src="http://kyrandale.com/static/images/viz/uk-weather-stations.png"  width="202"></a></td>
     <td>Visualizing Walking with Smartphone Accelerometers<br><a href="http://kyrandale.com/viz/d3-smartphone-walking.html"><img src="http://kyrandale.com/static/images/viz/d3-smartphone-walking.png"  width="202"></a></td>
-
+</tr>
+<tr>
+<td>Cycloid Optical Illusion<br><a href="http://bl.ocks.org/peterlozano/480f90947c6e08be6b95"><img src="http://bl.ocks.org/peterlozano/raw/480f90947c6e08be6b95/thumbnail.png"  width="202"></a></td>
 </tr>
 
 </table>
@@ -323,9 +325,8 @@ src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" widt
     <td>Bar Chart Multiples<br><a href="https://vida.io/documents/ZCzewTza4ZSzMWSBG"><img src="https://s3.amazonaws.com/vida-production/thumbnails/ZCzewTza4ZSzMWSBG" width="100"></a></td>
     <td>d3pie - pie chart generator and lib
 <a href="http://d3pie.org"><img src="http://d3pie.org/website/images/d3pie-screenshot.png" width="200" /></a></td>
-<td>3D Donut<br><a href="http://bl.ocks.org/NPashaP/9994181"><img src="http://bl.ocks.org/NPashaP/raw/9994181/thumbnail.png"  width="202"></a></td>
 
-<td>Gradient Pie<br><a href="http://bl.ocks.org/NPashaP/9999786"><img src="http://bl.ocks.org/NPashaP/raw/9999786/thumbnail.png"  width="202"></a></td>
+<td>3D Donut<br><a href="http://bl.ocks.org/NPashaP/9994181"><img src="http://bl.ocks.org/NPashaP/raw/9994181/thumbnail.png"  width="202"></a></td>
   </tr>
     
 </table>
