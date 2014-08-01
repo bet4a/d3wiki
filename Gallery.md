@@ -4,7 +4,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 
 ## Visual Index
 
-<table width="900">
+<table>
 <tr height="207" valign="top">
     
     <td width="207">Box Plots<br><a href="http://bl.ocks.org/mbostock/4061502"><img src="http://d3js.org/ex/box.png" width="202"></a></td>
