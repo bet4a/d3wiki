@@ -7,10 +7,10 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 <table>
 <tr height="207" valign="top">
     
-    <td>Box Plots<br><a href="http://bl.ocks.org/mbostock/4061502"><img src="http://d3js.org/ex/box.png" width="202"></a></td>
-    <td>Bubble Chart<br><a href="http://bl.ocks.org/mbostock/4063269"><img src="http://d3js.org/ex/bubble.png" width="202"></a></td>
-    <td>Bullet Charts<br><a href="http://bl.ocks.org/mbostock/4061961"><img src="http://d3js.org/ex/bullet.png" width="202"></a></td>
-    <td>Calendar View<br><a href="http://bl.ocks.org/mbostock/4063318"><img src="http://d3js.org/ex/calendar.png" width="202"></a></td>
+    <td width="202">Box Plots<br><a href="http://bl.ocks.org/mbostock/4061502"><img src="http://d3js.org/ex/box.png" width="202"></a></td>
+    <td width="202">Bubble Chart<br><a href="http://bl.ocks.org/mbostock/4063269"><img src="http://d3js.org/ex/bubble.png" width="202"></a></td>
+    <td width="202">Bullet Charts<br><a href="http://bl.ocks.org/mbostock/4061961"><img src="http://d3js.org/ex/bullet.png" width="202"></a></td>
+    <td width="202">Calendar View<br><a href="http://bl.ocks.org/mbostock/4063318"><img src="http://d3js.org/ex/calendar.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
     <td>Non-contiguous Cartogram<br><a href="http://bl.ocks.org/mbostock/4055908"><img src="http://d3js.org/ex/cartogram.png" width="202"></a></td>
