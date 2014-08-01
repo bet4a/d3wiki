@@ -86,7 +86,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 </tr>
 <tr height="207" valign="top">
     <td>Autocomplete Component<br><a href="http://www.brightpointinc.com/clients/brightpointinc.com/library/autocomplete/index.html?source=d3js" title="autocomplete component d3.js"><img src="http://www.brightpointinc.com/clients/brightpointinc.com/library/autocomplete/image.gif" width="202"></a></td>
-    <td>Radial Progress Component<br><a href="http://www.brightpointinc.com/clients/brightpointinc.com/library/radialProgress/index.html?source=d3js" title="radial progress component d3.js"><img src="http://www.brightpointinc.com/clients/brightpointinc.com/library/radialProgress/image.png" width="202"></a></td>
+    <td>Radial Progress Component<br><a href="http://www.brightpointinc.com/clients/brightpointinc.com/library/radialProgress/index.html?source=d3js" title="radial progress component d3.js"><img src="http://www.brightpointinc.com/clients/brightpointinc.com/library/radialProgress/image.gif" width="202"></a></td>
     <td>Koalas to the Max<br><a href="http://www.koalastothemax.com/"><img src="http://d3js.org/ex/koalas.png" width="202"></a></td>
     <td>Particles<br><a href="http://bl.ocks.org/mbostock/1062544"><img src="http://d3js.org/ex/particles.png" width="202"></a></td>
 </tr>
