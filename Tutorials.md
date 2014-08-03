@@ -106,6 +106,10 @@ Please feel free to add links to your work!
 * [Boston d3.js User Group](http://www.meetup.com/Boston-d3-js-User-Group/)
 * [Berlin Visualization Group](http://www.meetup.com/Data-Visualization-Berlin/)
 * [Belo Horizonte d3.js User Group](http://www.meetup.com/d3js-BH/)
+* [Twin Cities D3.js Meetup Group](http://www.meetup.com/Twin-Cities-D3js/)
+* [Boulder/Denver D3.js and Data Visualization](http://www.meetup.com/Boulder-Denver-D3-and-Data-Visualization/)
+* [Austin d3.js Meetup](http://www.meetup.com/Austin-d3-js-Meetup/)
+* [Auckland d3-js](http://www.meetup.com/Auckland-d3-js/)
 
 ## Publications
 
