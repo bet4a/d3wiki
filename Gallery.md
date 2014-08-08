@@ -189,7 +189,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 <tr>
     <td>Interactive Sales Data Pie Chart<br><a href="https://live.zoomdata.com/zoomdata/visualization?__target=embedded&key=52265abb6abdbcaa8c217789#51db7ad4e4b04caf9ab346db-51db7ad4e4b04caf9ab346d5"><img src="https://dl.dropboxusercontent.com/u/56332995/sales%20interactive%20pie%20d3js.png" width="202"></a></td>
     <td>Wikistalker - Wikipedia Visualization<br><a href="http://sepans.com/wikistalker"><img src="http://sepans.com/sp/wp-content/uploads/2013/07/wikistalker_history.png" width="202"></a></td>
-    <td>D3 Cesium - Health and Wealth of Nations<br><a href="http://cesium.agi.com/demos/d3.html"><img src="http://cesium.agi.com/demos/images/d3.png" width="202"></a></td>
+    <td>D3 Cesium - Health and Wealth of Nations<br><a href="http://cesiumjs.org/d3cesium"><img src="http://cesiumjs.org/demos/images/d3.png" width="202"></a></td>
     <td>Starpaths<br><a href="http://www.cotrino.com/2013/05/starpaths/"><img src="https://raw.github.com/cotrino/experimentos/master/starpaths.png" width="202"></a></td>
 </tr>
 <tr>
