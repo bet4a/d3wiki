@@ -43,7 +43,7 @@ Or, if you want the full repository including tests:
 
 * <https://github.com/mbostock/d3/zipball/master>
 
-D3 is also available via numerous package managers, including: [NPM](https://npmjs.org/package/d3) (Node.js), [Bower](http://bower.io/search/?q=d3), [Browserify](http://browserify.org/), [Component](http://component.io/), [Jam](http://jamjs.org/packages/#/details/d3), [Composer / Packagist](https://packagist.org/packages/mbostock/d3) (PHP), [SPM](https://spmjs.org/gallery/d3/), [JSPM](http://jspm.io/), and [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md) (e.g., [RequireJS](http://requirejs.org/)). The official releases of D3 are on [NPM](https://npmjs.org/package/d3) and [GitHub](/mbostock/d3) only; support for other package managers is unofficial and maintained by contributors.
+D3 is also available via numerous package managers, including: [NPM](https://npmjs.org/package/d3) (Node.js), [Bower](http://bower.io/search/?q=d3), [Browserify](http://browserify.org/), [Component](http://component.io/), [Jam](http://jamjs.org/packages/#/details/d3), [Composer / Packagist](https://packagist.org/packages/mbostock/d3) (PHP), [SPM](https://spmjs.org/gallery/d3/), [JSPM](http://jspm.io/), [NuGet](https://www.nuget.org/packages/d3/) (.Net), and [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md) (e.g., [RequireJS](http://requirejs.org/)). The official releases of D3 are on [NPM](https://npmjs.org/package/d3) and [GitHub](/mbostock/d3) only; support for other package managers is unofficial and maintained by contributors.
 
 ## Using
 
@@ -82,4 +82,3 @@ The D3 repository should work out of the box if you just want to create new visu
 To run the tests, use:
 
     make test
-
