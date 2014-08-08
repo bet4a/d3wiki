@@ -217,7 +217,7 @@ Returns true if and only if this set has an entry for the specified *value* stri
 
 <a name="set_add" href="#wiki-set_add">#</a> set.<b>add</b>(<i>value</i>)
 
-Adds the specified *value* string to this set.
+Adds the specified *value* string to this set. Returns *value*.
 
 <a name="set_remove" href="#wiki-set_remove">#</a> set.<b>remove</b>(<i>value</i>)
 
