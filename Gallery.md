@@ -1033,6 +1033,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Insights: Interactive Force Graph Component](https://github.com/ignacioola/insights)
 * [Lepracursor](http://sepans.com/sp/postes/lepracursor/), a d3.js based library which adds a virtual pointer to the page that grows in number with every click
 * [iopctrl.js: User interface controls and gauges](http://iop.io/iopctrl)
+* [MetricsGraphics.js: A library optimized for visualizing and laying out time-series data](http://metricsgraphicsjs.org/)
 
 ### Wish List
 
