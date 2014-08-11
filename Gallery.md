@@ -318,6 +318,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   </tr>
   <tr height="146" valign="top">
     <td>Waterfall Chart<br><a href="http://bl.ocks.org/chucklam/f3c7b3e3709a0afd5d57"><img src="http://bl.ocks.org/chucklam/raw/f3c7b3e3709a0afd5d57/thumbnail.png" width="200"></a></td>
+    <td>US Choropleth Plus Bar Chart<br><a href="https://vida.io/documents/4vZ9mRGyepoyQxFcK"><img src="https://s3.amazonaws.com/vida-production/thumbnails/4vZ9mRGyepoyQxFcK" width="200"></a></td>
   </tr>
     
 </table>
