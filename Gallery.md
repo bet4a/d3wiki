@@ -276,6 +276,8 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Visualizing Walking with Smartphone Accelerometers<br><a href="http://kyrandale.com/viz/d3-smartphone-walking.html"><img src="http://kyrandale.com/static/images/viz/d3-smartphone-walking.png"  width="202"></a></td>
     <td>Cycloid Optical Illusion<br><a href="http://bl.ocks.org/peterlozano/480f90947c6e08be6b95"><img src="http://bl.ocks.org/peterlozano/raw/480f90947c6e08be6b95/thumbnail.png"  width="202"></a></td>
     <td>Alternative Calendar View<br><a href="http://bl.ocks.org/KathyZ/c2d4694c953419e0509b"><img src="https://raw.githubusercontent.com/KathyZ/d3-calendar/master/thumbnail.png"  width="202"></a></td>
+</tr>
+<tr>
     <td>US Choropleth Plus Bar Chart<br><a href="https://vida.io/documents/4vZ9mRGyepoyQxFcK"><img src="https://s3.amazonaws.com/vida-production/thumbnails/4vZ9mRGyepoyQxFcK" width="200"></a></td>
 </tr>
 
