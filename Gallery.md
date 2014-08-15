@@ -193,7 +193,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Starpaths<br><a href="http://www.cotrino.com/2013/05/starpaths/"><img src="https://raw.github.com/cotrino/experimentos/master/starpaths.png" width="202"></a></td>
 </tr>
 <tr>
-    <td>BT Hotspots mapped <br><a href="http://mapsnapps.github.io/Bt_Hotspots/Index.html"><img src="http://mapsnapps.github.io/Bt_Hotspots/Bt_Hotspots.png" width="202"></a></td>
+    <td>Kent + Sussex river levels mapped<br><a href="http://maps-n-apps.github.io/Rivers_Viz/"><img src="http://mapsnapps.com/public/themes/portfolio-monstra-theme/assets/blogimages/d3map.png" width="202"></a></td>
     <td>CoreNLP Sentence Parse Tree<br><a href="http://nlpviz.bpodgursky.com/home"><img src="http://bpodgursky.files.wordpress.com/2013/08/nlp-screenshot-cropped.png" width="202"></a></td>
     <td>Publications in journals over time<br><a href="http://neuralengr.com/asifr/journals"><img src="http://neuralengr.com/asifr/journals/journals.png" width="202"></a></td>
     <td>Another state budget visualization with open api<br><a href="http://budzet.aws.af.cm"><img src="http://www.demodems.org/gtt/otvoreni-budzet-d3.png" width="202"></a></td>
