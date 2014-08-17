@@ -237,7 +237,9 @@ If you want the document traversal order to match the selection data order, you 
 
 <a name="filter" href="Selections#wiki-filter">#</a> selection.<b>filter</b>(<i>selector</i>)
 
-Filters the selection, returning a new selection that contains only the elements for which the specified *selector* is true. The *selector* may be specified either as a function or as a selector string, such as ".foo". As with other operators, the function is passed the current datum `d` and index `i`, with the `this` context as the current DOM element. Like the built-in array [[filter|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter]] method, the returned selection *does not* preserve the index of the original selection; it returns a copy with elements removed. If you want to preserve the index, use [select](Selections#wiki-select) instead. For example, to select every odd element (relative to the zero-based index):
+Filters the selection, returning a new selection that contains only the elements for which the specified *selector* is true. The *selector* may be specified either as a function or as a selector string, such as ".foo". As with other operators, the function is passed the current datum `d` and index `i`, with the `this` context as the current DOM element. Filter should only be called on selections with DOM elements bound, e.g. from [append](Selections#wiki-append) or [insert](Selections#wiki-insert). To bind elements to only a subset of the data, call the built-in array [[filter|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter]] on the argument to [data](Selections#wiki-data). Like the built-in function, D3's filter *does not* preserve the index of the original selection in the returned selection; it returns a copy with elements removed. If you want to preserve the index, use [select](Selections#wiki-select) instead. 
+
+For example, to select every element with an odd index (relative to the zero-based index):
 
 ```javascript
 var odds = selection.select(function(d, i) { return i & 1 ? this : null; });
