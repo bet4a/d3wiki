@@ -19,7 +19,7 @@ Constructs a new quadtree for the specified array of data _points_, returning th
 Each node in the quadtree has several properties:
 
 * _nodes_ - a sparse array of the four child nodes in order: top-left, top-right, bottom-left, bottom-right
-* _leaf_ - a boolean indicating whether this is a internal or leaf node
+* _leaf_ - a boolean indicating whether this is an internal node or a leaf node
 * _point_ - the point associated with this node, if any (may apply to either internal or leaf nodes)
 * _x_ - the _x_-coordinate of the associated point, if any
 * _y_ - the _y_-coordinate of the associated point, if any
