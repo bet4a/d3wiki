@@ -185,7 +185,7 @@ Returns the spherical bounding box for the specified *feature*. The bounding box
 
 <a name="distance" href="#wiki-distance">#</a> d3.geo.<b>distance</b>(<i>a</i>, <i>b</i>)
 
-Returns the great-arc distance in radians between the two points <i>a</i> and <i>b</i>. Each point is specified as an array [<i>longitude</i>, <i>latitude</i>], with coordinates expressed in degrees.
+Returns the great-arc distance in radians between the two points <i>a</i> and <i>b</i>. Each point is specified as an array [<i>longitude</i>, <i>latitude</i>], with coordinates expressed in decimal degrees.
 
 <a name="length" href="#wiki-length">#</a> d3.geo.<b>length</b>(<i>feature</i>)
 
