@@ -42,7 +42,7 @@ Converts this RGB color to a hexadecimal string, such as "#f7eaba".
 
 <a name="d3_hsl" href="#d3_hsl">#</a> d3.<b>hsl</b>(<i>h</i>, <i>s</i>, <i>l</i>)
 
-Constructs a new HSL color with the specified hue *h*, saturation *s* and lightness *l*. The hue must be a number in the range [0,360]. The saturation and lightness must be in the range [0,1] (not percentages). These values are available as the `h`, `s` and `l` attributes of the returned object.
+Constructs a new HSL color with the specified hue *h*, saturation *s* and lightness *l*. The hue must be a number in the range [0,360]. The saturation and lightness must be in the range [0,1] <span>(not percentages)</span>. These values are available as the `h`, `s` and `l` attributes of the returned object.
 
 <a href="#d3_hsl">#</a> d3.<b>hsl</b>(<i>color</i>)
 
