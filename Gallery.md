@@ -1038,12 +1038,12 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [iopctrl.js: User interface controls and gauges](http://iop.io/iopctrl)
 * [MetricsGraphics.js: A library optimized for visualizing and laying out time-series data](http://metricsgraphicsjs.org/) - Ali Almossawi and Hamilton Ulmer
 * [matta](http://github.com/carnby/matta): d3.js charts in the IPython notebook.
+* [TechanJS](http://techanjs.org/): Financial charting and technical analysis - [candlestick](http://bl.ocks.org/andredumas/27c4a333b0e0813e093d), [ohlc](http://bl.ocks.org/andredumas/06ad3573c0053d0e1fc7) and [other technical analysis tools](http://bl.ocks.org/andredumas/edf630690c10b89be390)
 
 ### Wish List
 
 * arc diagram
 * gantt, other timelines and timing diagram
-* candlestick or ohlc
 * fibonacci scale
 * data table (maybe the airline table at the bottom of [the crossfilter example](http://square.github.com/crossfilter/)?)
 * hypergraph
