@@ -67,8 +67,8 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [ease](Transitions#wiki-_ease) - 缓冲函数。缓冲函数可让动画效果更自然，比如elastic缓冲函数可用以模拟弹性物体的运动。是一种插值函数的特例。
 * [d3.timer](Transitions#wiki-d3_timer) - 开始一个定制的动画计时。功能类似于setTimeout，但内部用requestAnimationFrame实现，更高效。 
 * [d3.timer.flush](Transitions#wiki-d3_timer_flush) - 立刻执行当前没有延迟的计时。可用于处理闪屏问题。
-* [d3.interpolate](Transitions#wiki-d3_interpolate) - 生成一个插值函数，在两个参数间插值。差值函数的类型会根据输入参数的类型（数字、字符串、颜色等）而自动选择。
-* [interpolate](Transitions#wiki-_interpolate) - 插值函数。输入参数在[0, 1]之间。
+* [d3.](Transitions#wiki-d3_) - 生成一个插值函数，在两个参数间插值。差值函数的类型会根据输入参数的类型（数字、字符串、颜色等）而自动选择。
+* [](Transitions#wiki-_) - 插值函数。输入参数在[0, 1]之间。
 * [d3.interpolateNumber](Transitions#wiki-d3_interpolateNumber) - 在两个数字间插值。
 * [d3.interpolateRound](Transitions#wiki-d3_interpolateRound) - 在两个数字间插值，返回值会四舍五入取整。
 * [d3.interpolateString](Transitions#wiki-d3_interpolateString) - 在两个字符串间插值。解析字符串中的数字，对应的数字会插值。
@@ -80,7 +80,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [d3.interpolateObject](Transitions#wiki-d3_interpolateObject) - 在两个object间插值。d3.interpolateArray( {x: 0, y: 1}, {x: 1, y: 10, z: 100} )(0.5);  // returns {x: 0.5, y: 5.5, z: 100}
 * [d3.interpolateTransform](Transitions#wiki-d3_interpolateTransform) - 在两个2D仿射变换间插值。
 * [d3.interpolateZoom](Transitions#wiki-d3_interpolateZoom) - 在两个点之间平滑地缩放平移。[示例](http://bl.ocks.org/mbostock/3828981)
-* [d3.interpolators](Transitions#wiki-d3_interpolators) - 添加一个自定义的插值函数.
+* [d3.](Transitions#wiki-d3_) - 添加一个自定义的插值函数.
 
 ### [[数据操作(Working with Arrays)|Arrays]]
 
@@ -142,7 +142,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[d3.xhr|Requests#wiki-d3_xhr]] - 发起XMLHttpRequest请求获取资源。
 * [xhr.header](Requests#wiki-header) - 设置 request header。
 * [xhr.mimeType](Requests#wiki-mimeType) - 设置 Accept request header，并重写 response MIME type。
-* [xhr.response](Requests#wiki-response) - 设置response返回值转化函数。如 function(request) { return JSON.parse(request.responseText); }
+* [xhr.response](Requests#wiki-response) - 设置response返回值转化函数。如 (request) { return JSON.parse(request.responseText); }
 * [xhr.get](Requests#wiki-get) - 发起GET请求。
 * [xhr.post](Requests#wiki-post) - 发起POST请求。
 * [xhr.send](Requests#wiki-send) - 以指定的方法和数据发起请求。
@@ -222,7 +222,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[linear.domain|Quantitative-Scales#wiki-linear_domain]] - get或set定义域。
 * [[linear.range|Quantitative-Scales#wiki-linear_range]] - get或set值域。
 * [[linear.rangeRound|Quantitative-Scales#wiki-linear_rangeRound]] - 设置值域，并对结果取整。
-* [[linear.interpolate|Quantitative-Scales#wiki-linear_interpolate]] - get或set变换的插值函数，如将默认的线性插值函数替换成取整的线性插值函数d3_interpolateRound。
+* [[linear.|Quantitative-Scales#wiki-linear_]] - get或set变换的插值函数，如将默认的线性插值函数替换成取整的线性插值函数d3_interpolateRound。
 * [[linear.clamp|Quantitative-Scales#wiki-linear_clamp]] - 设置值域是否闭合，默认不闭合。当值域闭合时，如果插值结果在值域之外，会取值域的边界值。如值域为[1, 2],插值函数的计算结果为3，如果不闭合，最终结果为3；如果闭合，最终结果为2。
 * [[linear.nice|Quantitative-Scales#wiki-linear_nice]] - 扩展定义域范围使定义域更规整。如[0.20147987687960267, 0.996679553296417] 变成 [0.2, 1]。
 * [[linear.ticks|Quantitative-Scales#wiki-linear_ticks]] - 从定义域中取出有代表性的值。通常用于坐标轴刻度的选取。
@@ -235,7 +235,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[pow.domain|Quantitative-Scales#wiki-pow_domain]] - get或set定义域。
 * [[pow.range|Quantitative-Scales#wiki-pow_range]] - get或set值域。
 * [[pow.rangeRound|Quantitative-Scales#wiki-pow_rangeRound]] - 设置值域，并对结果取整。
-* [[pow.interpolate|Quantitative-Scales#wiki-pow_interpolate]] - get或set变换的插值函数。
+* [[pow.|Quantitative-Scales#wiki-pow_]] - get或set变换的插值函数。
 * [[pow.clamp|Quantitative-Scales#wiki-pow_clamp]] -  设置值域是否闭合，默认不闭合。
 * [[pow.nice|Quantitative-Scales#wiki-pow_nice]] - 扩展定义域范围使定义域更规整。
 * [[pow.ticks|Quantitative-Scales#wiki-pow_ticks]] - 从定义域中取出有代表性的值。通常用于坐标轴刻度的选取。
@@ -248,7 +248,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[log.domain|Quantitative-Scales#wiki-log_domain]] - get或set定义域。
 * [[log.range|Quantitative-Scales#wiki-log_range]] - get或set值域。
 * [[log.rangeRound|Quantitative-Scales#wiki-log_rangeRound]] - 设置值域，并对结果取整。
-* [[log.interpolate|Quantitative-Scales#wiki-log_interpolate]] - get或set变换的插值函数。
+* [[log.|Quantitative-Scales#wiki-log_]] - get或set变换的插值函数。
 * [[log.clamp|Quantitative-Scales#wiki-log_clamp]] - 设置值域是否闭合，默认不闭合。
 * [[log.nice|Quantitative-Scales#wiki-log_nice]] - 扩展定义域范围使定义域更规整。
 * [[log.ticks|Quantitative-Scales#wiki-log_ticks]] - 从定义域中取出有代表性的值。通常用于坐标轴刻度的选取。
@@ -307,27 +307,27 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[line|SVG-Shapes#wiki-_line]] - 在折线图里生成一段折线.
 * [[line.x|SVG-Shapes#wiki-line_x]] - 设置或获取*x*轴访问器.
 * [[line.y|SVG-Shapes#wiki-line_y]] - 设置或获取*y*轴访问器
-* [[line.interpolate|SVG-Shapes#wiki-line_interpolate]] - 设置或获取插值模式.
+* [[line.|SVG-Shapes#wiki-line_]] - 设置或获取插值模式.
 * [[line.tension|SVG-Shapes#wiki-line_tension]] - get or set the cardinal spline tension. 
 * [line.defined](SVG-Shapes#wiki-line_defined) - 定义线条在某一点是否存在.
 * [[d3.svg.line.radial|SVG-Shapes#wiki-line_radial]] - create a new radial line generator.
-* [[line|SVG-Shapes#wiki-_line_radial]] - generate a piecewise linear curve, as in a polar line chart.
+* [[line|SVG-Shapes#wiki-_line_radial]] - generate a piecewise linear curve, as in a polar line .
 * [[line.radius|SVG-Shapes#wiki-line_radial_radius]] - get or set the *radius* accessor.
 * [[line.angle|SVG-Shapes#wiki-line_radial_angle]] - get or set the *angle* accessor.
 * [line.defined](SVG-Shapes#wiki-line_radial_defined) - control whether the line is defined at a given point.
 * [[d3.svg.area|SVG-Shapes#wiki-area]] - create a new area generator.
-* [[area|SVG-Shapes#wiki-_area]] - generate a piecewise linear area, as in an area chart.
+* [[area|SVG-Shapes#wiki-_area]] - generate a piecewise linear area, as in an area .
 * [[area.x|SVG-Shapes#wiki-area_x]] - get or set the *x*-coordinate accessors.
 * [[area.x0|SVG-Shapes#wiki-area_x0]] - get or set the *x0*-coordinate (baseline) accessor.
 * [[area.x1|SVG-Shapes#wiki-area_x1]] - get or set the *x1*-coordinate (topline) accessor.
 * [[area.y|SVG-Shapes#wiki-area_y]] - get or set the *y*-coordinate accessors.
 * [[area.y0|SVG-Shapes#wiki-area_y0]] - get or set the *y0*-coordinate (baseline) accessor.
 * [[area.y1|SVG-Shapes#wiki-area_y1]] - get or set the *y1*-coordinate (topline) accessor.
-* [[area.interpolate|SVG-Shapes#wiki-area_interpolate]] - get or set the interpolation mode.
+* [[area.|SVG-Shapes#wiki-area_]] - get or set the  mode.
 * [[area.tension|SVG-Shapes#wiki-area_tension]] - get or set the cardinal spline tension.
 * [area.defined](SVG-Shapes#wiki-area_defined) - control whether the area is defined at a given point.
 * [[d3.svg.area.radial|SVG-Shapes#wiki-area_radial]] - create a new area generator.
-* [[area|SVG-Shapes#wiki-_area_radial]] - generate a piecewise linear area, as in a polar area chart.
+* [[area|SVG-Shapes#wiki-_area_radial]] - generate a piecewise linear area, as in a polar area .
 * [[area.radius|SVG-Shapes#wiki-area_radial_radius]] - get or set the *radius* accessors.
 * [[area.innerRadius|SVG-Shapes#wiki-area_radial_innerRadius]] - get or set the inner *radius* (baseline) accessor.
 * [[area.outerRadius|SVG-Shapes#wiki-area_radial_outerRadius]] - get or set the outer *radius* (topline) accessor.
@@ -336,7 +336,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[area.endAngle|SVG-Shapes#wiki-area_radial_endAngle]] - get or set the *angle* (topline) accessor.
 * [area.defined](SVG-Shapes#wiki-area_radial_defined) - control whether the area is defined at a given point.
 * [[d3.svg.arc|SVG-Shapes#wiki-arc]] - create a new arc generator.
-* [[arc|SVG-Shapes#wiki-_arc]] - generate a solid arc, as in a pie or donut chart.
+* [[arc|SVG-Shapes#wiki-_arc]] - generate a solid arc, as in a pie or donut .
 * [[arc.innerRadius|SVG-Shapes#wiki-arc_innerRadius]] - get or set the inner radius accessor.
 * [[arc.outerRadius|SVG-Shapes#wiki-arc_outerRadius]] - get or set the outer radius accessor.
 * [[arc.startAngle|SVG-Shapes#wiki-arc_startAngle]] - get or set the start angle accessor.
@@ -407,7 +407,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[scale.nice|Time-Scales#wiki-nice]] - 扩展定义域范围使定义域更规整。
 * [[scale.range|Time-Scales#wiki-range]] - get或set变换的值域。
 * [[scale.rangeRound|Time-Scales#wiki-rangeRound]] - 设置值域，并对结果取整。
-* [[scale.interpolate|Time-Scales#wiki-interpolate]] - get或set变换的插值函数，如将默认的线性插值函数替换成指数插值函数。
+* [[scale.|Time-Scales#wiki-]] - get或set变换的插值函数，如将默认的线性插值函数替换成指数插值函数。
 * [[scale.clamp|Time-Scales#wiki-clamp]] - 设置值域是否闭合，默认不闭合。当值域闭合时，如果插值结果在值域之外，会取值域的边界值。详情参考linear.clamp。
 * [[scale.ticks|Time-Scales#wiki-ticks]] - 从定义域中取出有代表性的值。通常用于坐标轴刻度的选取。
 * [[scale.tickFormat|Time-Scales#wiki-tickFormat]] - 获取格式转化函数，通常用于坐标轴刻度的格式转化。
@@ -602,10 +602,10 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 
 ### [Paths](Geo-Paths)
 
-* [d3.geo.path](Geo-Paths#wiki-path) - create a new geographic path generator.
-* [path](Geo-Paths#wiki-_path) - project the specified feature and render it to the context.
-* [path.projection](Geo-Paths#wiki-path_projection) - get or set the geographic projection.
-* [path.context](Geo-Paths#wiki-path_context) - get or set the render context.
+* [d3.geo.path](Geo-Paths#wiki-path) - 创建一个地理路径生成器实例.
+* [path](Geo-Paths#wiki-_path) - 投射特定的特性并且渲染到上下文.
+* [path.projection](Geo-Paths#wiki-path_projection) - 获取或者设置地理投影.
+* [path.context](Geo-Paths#wiki-path_context) - 获取或设置渲染上下文.
 * [path.pointRadius](Geo-Paths#wiki-path_pointRadius) - get or set the radius to display point features.
 * [path.area](Geo-Paths#wiki-path_area) - compute the projected area of a given feature.
 * [path.centroid](Geo-Paths#wiki-path_centroid) - compute the projected centroid of a given feature.
@@ -630,9 +630,9 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [d3.geo.bounds](Geo-Paths#wiki-bounds) - compute the latitude-longitude bounding box for a given feature.
 * [d3.geo.centroid](Geo-Paths#wiki-centroid) - compute the spherical centroid of a given feature.
 * [d3.geo.distance](Geo-Paths#wiki-distance) - compute the great-arc distance between two points.
-* [d3.geo.interpolate](Geo-Paths#wiki-interpolate) - interpolate between two points along a great arc.
+* [d3.geo.](Geo-Paths#wiki-) -  between two points along a great arc.
 * [d3.geo.length](Geo-Paths#wiki-length) - compute the length of a line string or the circumference of a polygon.
-* [d3.geo.rotation](Geo-Paths#wiki-rotation) - create a rotation function for the specified angles [λ, φ, γ].
+* [d3.geo.rotation](Geo-Paths#wiki-rotation) - create a rotation  for the specified angles [λ, φ, γ].
 * [rotation](Geo-Paths#wiki-_rotation) - rotate the given location around the sphere.
 * [rotation.invert](Geo-Paths#wiki-rotation_invert) - inverse-rotate the given location around the sphere.
 
