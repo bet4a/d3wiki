@@ -307,16 +307,16 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[line|SVG-Shapes#wiki-_line]] - 在折线图里生成一段折线.
 * [[line.x|SVG-Shapes#wiki-line_x]] - 设置或获取*x*轴访问器.
 * [[line.y|SVG-Shapes#wiki-line_y]] - 设置或获取*y*轴访问器
-* [[line.|SVG-Shapes#wiki-line_]] - 设置或获取插值模式.
-* [[line.tension|SVG-Shapes#wiki-line_tension]] - get or set the  spline tension. 
+* [[line.interpolate|SVG-Shapes#wiki-line_interpolate]] - 设置或获取插值模式.
+* [[line.tension|SVG-Shapes#wiki-line_tension]] - get or set the cardinal spline tension. 
 * [line.defined](SVG-Shapes#wiki-line_defined) - 定义线条在某一点是否存在.
-* [[d3.svg.line.radial|SVG-Shapes#wiki-line_radial]] - 创建新的放射线生成器.
-* [[line|SVG-Shapes#wiki-_line_radial]] - 生成分段的线性曲线, 作为经纬度/雷达线.
-* [[line.radius|SVG-Shapes#wiki-line_radial_radius]] - 获取或设置*radius*访问器.
-* [[line.angle|SVG-Shapes#wiki-line_radial_angle]] - 获取或设置*angle*访问器.
-* [line.defined](SVG-Shapes#wiki-line_radial_defined) - 控制是否control whether the line is defined at a given point.
-* [[d3.svg.area|SVG-Shapes#wiki-area]] - create a new area generator.
-* [[area|SVG-Shapes#wiki-_area]] - generate a piecewise linear area, as in an area .
+* [[d3.svg.line.|SVG-Shapes#wiki-line_line]] - 创建新的放射线生成器.
+* [[line|SVG-Shapes#wiki-_line_]] - 生成分段的线性曲线, 作为经纬度/雷达线.
+* [[line.radius|SVG-Shapes#wiki-line__radius]] - 获取或设置*radius*访问器.
+* [[line.angle|SVG-Shapes#wiki-line__angle]] - 获取或设置*angle*访问器.
+* [line.defined](SVG-Shapes#wiki-line__defined) - 判断和控制是否线在给定的方式下定义了.
+* [[d3.svg.area|SVG-Shapes#wiki-area]] - 创建新的区域生成器.
+* [[area|SVG-Shapes#wiki-_area]] - 生产一个分段的线性区域.
 * [[area.x|SVG-Shapes#wiki-area_x]] - get or set the *x*-coordinate accessors.
 * [[area.x0|SVG-Shapes#wiki-area_x0]] - get or set the *x0*-coordinate (baseline) accessor.
 * [[area.x1|SVG-Shapes#wiki-area_x1]] - get or set the *x1*-coordinate (topline) accessor.
@@ -324,17 +324,17 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[area.y0|SVG-Shapes#wiki-area_y0]] - get or set the *y0*-coordinate (baseline) accessor.
 * [[area.y1|SVG-Shapes#wiki-area_y1]] - get or set the *y1*-coordinate (topline) accessor.
 * [[area.|SVG-Shapes#wiki-area_]] - get or set the  mode.
-* [[area.tension|SVG-Shapes#wiki-area_tension]] - get or set the  spline tension.
-* [area.defined](SVG-Shapes#wiki-area_defined) - control whether the area is defined at a given point.
-* [[d3.svg.area.radial|SVG-Shapes#wiki-area_radial]] - create a new area generator.
-* [[area|SVG-Shapes#wiki-_area_radial]] - generate a piecewise linear area, as in a polar area .
-* [[area.radius|SVG-Shapes#wiki-area_radial_radius]] - get or set the *radius* accessors.
-* [[area.innerRadius|SVG-Shapes#wiki-area_radial_innerRadius]] - get or set the inner *radius* (baseline) accessor.
-* [[area.outerRadius|SVG-Shapes#wiki-area_radial_outerRadius]] - get or set the outer *radius* (topline) accessor.
-* [[area.angle|SVG-Shapes#wiki-area_radial_angle]] - get or set the *angle* accessors.
-* [[area.startAngle|SVG-Shapes#wiki-area_radial_startAngle]] - get or set the *angle* (baseline) accessor.
-* [[area.endAngle|SVG-Shapes#wiki-area_radial_endAngle]] - get or set the *angle* (topline) accessor.
-* [area.defined](SVG-Shapes#wiki-area_radial_defined) - control whether the area is defined at a given point.
+* [[area.|SVG-Shapes#wiki-area_]] - get or set the   .
+* [area.defined](SVG-Shapes#wiki-area_defined) -  whether the area is defined at a given point.
+* [[d3.svg.area.|SVG-Shapes#wiki-area_]] - create a new area generator.
+* [[area|SVG-Shapes#wiki-_area_]] - generate a piecewise linear area, as in a  area .
+* [[area.radius|SVG-Shapes#wiki-area__radius]] - get or set the *radius* accessors.
+* [[area.innerRadius|SVG-Shapes#wiki-area__innerRadius]] - get or set the inner *radius* (baseline) accessor.
+* [[area.outerRadius|SVG-Shapes#wiki-area__outerRadius]] - get or set the outer *radius* (topline) accessor.
+* [[area.angle|SVG-Shapes#wiki-area__angle]] - get or set the *angle* accessors.
+* [[area.startAngle|SVG-Shapes#wiki-area__startAngle]] - get or set the *angle* (baseline) accessor.
+* [[area.endAngle|SVG-Shapes#wiki-area__endAngle]] - get or set the *angle* (topline) accessor.
+* [area.defined](SVG-Shapes#wiki-area__defined) -  whether the area is defined at a given point.
 * [[d3.svg.arc|SVG-Shapes#wiki-arc]] - create a new arc generator.
 * [[arc|SVG-Shapes#wiki-_arc]] - generate a solid arc, as in a pie or donut .
 * [[arc.innerRadius|SVG-Shapes#wiki-arc_innerRadius]] - get or set the inner radius accessor.
@@ -359,8 +359,8 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[diagonal.source|SVG-Shapes#wiki-diagonal_source]] - get or set the source point accessor.
 * [[diagonal.target|SVG-Shapes#wiki-diagonal_target]] - get or set the target point accessor.
 * [[diagonal.projection|SVG-Shapes#wiki-diagonal_projection]] - get or set an optional point transform.
-* [[d3.svg.diagonal.radial|SVG-Shapes#wiki-diagonal_radial]] - create a new diagonal generator.
-* [[diagonal|SVG-Shapes#wiki-_diagonal_radial]] - generate a two-dimensional Bézier connector, as in a node-link diagram.
+* [[d3.svg.diagonal.|SVG-Shapes#wiki-diagonal_]] - create a new diagonal generator.
+* [[diagonal|SVG-Shapes#wiki-_diagonal_]] - generate a two-dimensional Bézier connector, as in a node-link diagram.
 
 ### [[坐标轴(Axes)|SVG-Axes]]
 
@@ -376,17 +376,17 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[axis.tickPadding|SVG-Axes#wiki-tickPadding]] - 指定坐标轴刻度和刻度文字之间的像素距离。
 * [[axis.tickFormat|SVG-Axes#wiki-tickFormat]] - 设置刻度文字的格式。
 
-### [Controls](SVG-Controls)
+### [](SVG-)
 
-* [d3.svg.brush](SVG-Controls#wiki-brush) - 点击拖拽选择一个二维区域。
-* [brush](SVG-Controls#wiki-_brush) - 在页面中某个区域中正式绑定一个brush。
-* [brush.x](SVG-Controls#wiki-brush_x) - get或set brush的x变换,用于水平方向的拖拽。
-* [brush.y](SVG-Controls#wiki-brush_y) - get或set brush的y变换,用于垂直方向的拖拽。
-* [brush.extent](SVG-Controls#wiki-brush_extent) - get或set brush的选取范围（extent）。
-* [brush.clear](SVG-Controls#wiki-brush_clear) - 设置brush的选取范围（extent）为空。
-* [brush.empty](SVG-Controls#wiki-brush_empty) - 判断brush的选取范围（extent）是否为空。
-* [brush.on](SVG-Controls#wiki-brush_on) - get或set brush的事件监听器。可监听3种事件：brushstart, brush, brushend。
-* [brush.event](SVG-Controls#wiki-brush_event) - 通过程序触发监听事件，在通过程序设置extent后使用。
+* [d3.svg.brush](SVG-#wiki-brush) - 点击拖拽选择一个二维区域。
+* [brush](SVG-#wiki-_brush) - 在页面中某个区域中正式绑定一个brush。
+* [brush.x](SVG-#wiki-brush_x) - get或set brush的x变换,用于水平方向的拖拽。
+* [brush.y](SVG-#wiki-brush_y) - get或set brush的y变换,用于垂直方向的拖拽。
+* [brush.extent](SVG-#wiki-brush_extent) - get或set brush的选取范围（extent）。
+* [brush.clear](SVG-#wiki-brush_clear) - 设置brush的选取范围（extent）为空。
+* [brush.empty](SVG-#wiki-brush_empty) - 判断brush的选取范围（extent）是否为空。
+* [brush.on](SVG-#wiki-brush_on) - get或set brush的事件监听器。可监听3种事件：brushstart, brush, brushend。
+* [brush.event](SVG-#wiki-brush_event) - 通过程序触发监听事件，在通过程序设置extent后使用。
 
 ## [d3.time (Time)](Time)
 
