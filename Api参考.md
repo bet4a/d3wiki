@@ -308,13 +308,13 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[line.x|SVG-Shapes#wiki-line_x]] - 设置或获取*x*轴访问器.
 * [[line.y|SVG-Shapes#wiki-line_y]] - 设置或获取*y*轴访问器
 * [[line.interpolate|SVG-Shapes#wiki-line_interpolate]] - 设置或获取插值模式.
-* [[line.tension|SVG-Shapes#wiki-line_tension]] - get or set the cardinal spline tension. 
+* [[line.tension|SVG-Shapes#wiki-line_tension]] - 获取或设置曲线张力访问器(cardinal spline tension). 
 * [line.defined](SVG-Shapes#wiki-line_defined) - 定义线条在某一点是否存在.
-* [[d3.svg.line.radial|SVG-Shapes#wiki-line_radial]] - create a new radial line generator.
-* [[line|SVG-Shapes#wiki-_line_radial]] - generate a piecewise linear curve, as in a polar line chart.
-* [[line.radius|SVG-Shapes#wiki-line_radial_radius]] - get or set the *radius* accessor.
-* [[line.angle|SVG-Shapes#wiki-line_radial_angle]] - get or set the *angle* accessor.
-* [line.defined](SVG-Shapes#wiki-line_radial_defined) - control whether the line is defined at a given point.
+* [[d3.svg.line.radial|SVG-Shapes#wiki-line_radial]] - 创建辐射线生成器.
+* [[line|SVG-Shapes#wiki-_line_radial]] - 生成分段的线性曲线，用于纬度线／雷达线图表.
+* [[line.radius|SVG-Shapes#wiki-line_radial_radius]] - 获取或设置*radius*访问器.
+* [[line.angle|SVG-Shapes#wiki-line_radial_angle]] - 获取或设置*angle*访问器.
+* [line.defined](SVG-Shapes#wiki-line_radial_defined) - 设置或获取线条定义存取器.
 * [[d3.svg.area|SVG-Shapes#wiki-area]] - create a new area generator.
 * [[area|SVG-Shapes#wiki-_area]] - generate a piecewise linear area, as in an area chart.
 * [[area.x|SVG-Shapes#wiki-area_x]] - get or set the *x*-coordinate accessors.
