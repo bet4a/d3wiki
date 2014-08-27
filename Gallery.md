@@ -752,6 +752,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Navigate site by tags focus](http://xliberation.com/googlecharts/d3nodefocustagsite.html)
 * [Interactive process map and documentation](https://github.com/nylen/d3-process-map)
 * [Scatterplot with CSS Sprites and Interaction](https://www.comparacaodefundos.com/blog/como-ganhar-a-copa/#x-axis-menu)
+* [Clustering a Force layout with a Quadtree](http://bl.ocks.org/4ndr01d3/2686646672a92aa89a0e)
 
 #### Tree
 
@@ -777,6 +778,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Circular tree of d3 src using burrow() for recursive nesting](http://bl.ocks.org/mbostock/4092944)
 * [Circular tree comparing the src directory for three versions of d3](http://bl.ocks.org/mbostock/4092944)
 * [Interactive visualization that shows changes in the internal node tree of a quadtree as points are added](http://jimkang.com/quadtreevis/)
+* [How a quadtree is created](http://bl.ocks.org/4ndr01d3/727175afbdc58c3626b8)
 
 #### Chord Layout (Circular Network)
 
