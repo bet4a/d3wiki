@@ -308,13 +308,13 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[line.x|SVG-Shapes#wiki-line_x]] - 设置或获取*x*轴访问器.
 * [[line.y|SVG-Shapes#wiki-line_y]] - 设置或获取*y*轴访问器
 * [[line.|SVG-Shapes#wiki-line_]] - 设置或获取插值模式.
-* [[line.tension|SVG-Shapes#wiki-line_tension]] - get or set the cardinal spline tension. 
+* [[line.tension|SVG-Shapes#wiki-line_tension]] - get or set the  spline tension. 
 * [line.defined](SVG-Shapes#wiki-line_defined) - 定义线条在某一点是否存在.
-* [[d3.svg.line.radial|SVG-Shapes#wiki-line_radial]] - create a new radial line generator.
-* [[line|SVG-Shapes#wiki-_line_radial]] - generate a piecewise linear curve, as in a polar line .
-* [[line.radius|SVG-Shapes#wiki-line_radial_radius]] - get or set the *radius* accessor.
-* [[line.angle|SVG-Shapes#wiki-line_radial_angle]] - get or set the *angle* accessor.
-* [line.defined](SVG-Shapes#wiki-line_radial_defined) - control whether the line is defined at a given point.
+* [[d3.svg.line.radial|SVG-Shapes#wiki-line_radial]] - 创建新的放射线生成器.
+* [[line|SVG-Shapes#wiki-_line_radial]] - 生成分段的线性曲线, 作为经纬度/雷达线.
+* [[line.radius|SVG-Shapes#wiki-line_radial_radius]] - 获取或设置*radius*访问器.
+* [[line.angle|SVG-Shapes#wiki-line_radial_angle]] - 获取或设置*angle*访问器.
+* [line.defined](SVG-Shapes#wiki-line_radial_defined) - 控制是否control whether the line is defined at a given point.
 * [[d3.svg.area|SVG-Shapes#wiki-area]] - create a new area generator.
 * [[area|SVG-Shapes#wiki-_area]] - generate a piecewise linear area, as in an area .
 * [[area.x|SVG-Shapes#wiki-area_x]] - get or set the *x*-coordinate accessors.
@@ -324,7 +324,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[area.y0|SVG-Shapes#wiki-area_y0]] - get or set the *y0*-coordinate (baseline) accessor.
 * [[area.y1|SVG-Shapes#wiki-area_y1]] - get or set the *y1*-coordinate (topline) accessor.
 * [[area.|SVG-Shapes#wiki-area_]] - get or set the  mode.
-* [[area.tension|SVG-Shapes#wiki-area_tension]] - get or set the cardinal spline tension.
+* [[area.tension|SVG-Shapes#wiki-area_tension]] - get or set the  spline tension.
 * [area.defined](SVG-Shapes#wiki-area_defined) - control whether the area is defined at a given point.
 * [[d3.svg.area.radial|SVG-Shapes#wiki-area_radial]] - create a new area generator.
 * [[area|SVG-Shapes#wiki-_area_radial]] - generate a piecewise linear area, as in a polar area .
