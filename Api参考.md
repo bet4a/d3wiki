@@ -415,14 +415,14 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 
 ### [[Time Intervals]]
 
-* [[d3.time.interval|Time-Intervals#wiki-interval]] - a time interval in local time.
-* [[interval|Time-Intervals#wiki-_interval]] - alias for interval.floor.
-* [[interval.range|Time-Intervals#wiki-interval_range]] - returns dates within the specified range.
-* [[interval.floor|Time-Intervals#wiki-interval_floor]] - rounds down to the nearest interval.
-* [[interval.round|Time-Intervals#wiki-interval_round]] - rounds up or down to the nearest interval.
-* [[interval.ceil|Time-Intervals#wiki-interval_ceil]] - rounds up to the nearest interval.
-* [[interval.offset|Time-Intervals#wiki-interval_offset]] - returns a date offset by some interval.
-* [[interval.utc|Time-Intervals#wiki-interval_utc]] - returns the UTC-equivalent time interval.
+* [[d3.time.interval|Time-Intervals#wiki-interval]] - 返回一个对于本地时间时间间隔器.
+* [[interval|Time-Intervals#wiki-_interval]] - 效果同interval.floor方法.
+* [[interval.range|Time-Intervals#wiki-interval_range]] - 返回指定区间内日期.
+* [[interval.floor|Time-Intervals#wiki-interval_floor]] - 下舍入到最近的间隔值.
+* [[interval.round|Time-Intervals#wiki-interval_round]] - 上舍入或下舍入到最近的间隔值.
+* [[interval.ceil|Time-Intervals#wiki-interval_ceil]] - 上舍入到最近的间隔值.
+* [[interval.offset|Time-Intervals#wiki-interval_offset]] - 返回指定时间间隔的日期偏移量.
+* [[interval.utc|Time-Intervals#wiki-interval_utc]] - 返回对应的UTC时间间隔.
 * [[d3.time.day|Time-Intervals#wiki-day]] - every day (12:00 AM).
 * [[d3.time.days|Time-Intervals#wiki-day]] - alias for day.range.
 * [d3.time.dayOfYear](Time-Intervals#wiki-dayOfYear) - computes the day number.
