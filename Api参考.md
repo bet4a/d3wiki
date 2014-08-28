@@ -341,7 +341,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[arc.outerRadius|SVG-Shapes#wiki-arc_outerRadius]] -  获取或设置外部的半径访问器.
 * [[arc.startAngle|SVG-Shapes#wiki-arc_startAngle]] -  获取或设置起始角度访问器.
 * [[arc.endAngle|SVG-Shapes#wiki-arc_endAngle]] - 获取或设置结束角度访问器.
-* [[arc.centroid|SVG-Shapes#wiki-arc_centroid]] - 计算弧度的圆心点.
+* [[arc.centroid|SVG-Shapes#wiki-arc_centroid]] - 计算弧的重心点.
 * [[d3.svg.symbol|SVG-Shapes#wiki-symbol]] - 创建符号生成器.
 * [[symbol|SVG-Shapes#wiki-_symbol]] - 生成指定的符号,用于散列图.
 * [[symbol.type|SVG-Shapes#wiki-symbol_type]] - 获取或设置符号类型访问器.
