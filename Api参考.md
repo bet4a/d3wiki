@@ -315,52 +315,52 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[line.radius|SVG-Shapes#wiki-line_radial_radius]] - 获取或设置*radius*访问器.
 * [[line.angle|SVG-Shapes#wiki-line_radial_angle]] - 获取或设置*angle*访问器.
 * [line.defined](SVG-Shapes#wiki-line_radial_defined) - 设置或获取线条定义存取器.
-* [[d3.svg.area|SVG-Shapes#wiki-area]] - create a new area generator.
-* [[area|SVG-Shapes#wiki-_area]] - generate a piecewise linear area, as in an area chart.
-* [[area.x|SVG-Shapes#wiki-area_x]] - get or set the *x*-coordinate accessors.
-* [[area.x0|SVG-Shapes#wiki-area_x0]] - get or set the *x0*-coordinate (baseline) accessor.
-* [[area.x1|SVG-Shapes#wiki-area_x1]] - get or set the *x1*-coordinate (topline) accessor.
-* [[area.y|SVG-Shapes#wiki-area_y]] - get or set the *y*-coordinate accessors.
-* [[area.y0|SVG-Shapes#wiki-area_y0]] - get or set the *y0*-coordinate (baseline) accessor.
-* [[area.y1|SVG-Shapes#wiki-area_y1]] - get or set the *y1*-coordinate (topline) accessor.
-* [[area.interpolate|SVG-Shapes#wiki-area_interpolate]] - get or set the interpolation mode.
-* [[area.tension|SVG-Shapes#wiki-area_tension]] - get or set the cardinal spline tension.
-* [area.defined](SVG-Shapes#wiki-area_defined) - control whether the area is defined at a given point.
-* [[d3.svg.area.radial|SVG-Shapes#wiki-area_radial]] - create a new area generator.
-* [[area|SVG-Shapes#wiki-_area_radial]] - generate a piecewise linear area, as in a polar area chart.
-* [[area.radius|SVG-Shapes#wiki-area_radial_radius]] - get or set the *radius* accessors.
-* [[area.innerRadius|SVG-Shapes#wiki-area_radial_innerRadius]] - get or set the inner *radius* (baseline) accessor.
-* [[area.outerRadius|SVG-Shapes#wiki-area_radial_outerRadius]] - get or set the outer *radius* (topline) accessor.
-* [[area.angle|SVG-Shapes#wiki-area_radial_angle]] - get or set the *angle* accessors.
-* [[area.startAngle|SVG-Shapes#wiki-area_radial_startAngle]] - get or set the *angle* (baseline) accessor.
-* [[area.endAngle|SVG-Shapes#wiki-area_radial_endAngle]] - get or set the *angle* (topline) accessor.
-* [area.defined](SVG-Shapes#wiki-area_radial_defined) - control whether the area is defined at a given point.
-* [[d3.svg.arc|SVG-Shapes#wiki-arc]] - create a new arc generator.
-* [[arc|SVG-Shapes#wiki-_arc]] - generate a solid arc, as in a pie or donut chart.
-* [[arc.innerRadius|SVG-Shapes#wiki-arc_innerRadius]] - get or set the inner radius accessor.
-* [[arc.outerRadius|SVG-Shapes#wiki-arc_outerRadius]] - get or set the outer radius accessor.
-* [[arc.startAngle|SVG-Shapes#wiki-arc_startAngle]] - get or set the start angle accessor.
-* [[arc.endAngle|SVG-Shapes#wiki-arc_endAngle]] - get or set the end angle accessor.
-* [[arc.centroid|SVG-Shapes#wiki-arc_centroid]] - compute the arc centroid.
-* [[d3.svg.symbol|SVG-Shapes#wiki-symbol]] - create a new symbol generator.
-* [[symbol|SVG-Shapes#wiki-_symbol]] - generate categorical symbols, as in a scatterplot.
-* [[symbol.type|SVG-Shapes#wiki-symbol_type]] - get or set the symbol type accessor.
-* [[symbol.size|SVG-Shapes#wiki-symbol_size]] - get or set the symbol size (in square pixels) accessor.
-* [d3.svg.symbolTypes](SVG-Shapes#wiki-symbolTypes) - the array of supported symbol types.
-* [[d3.svg.chord|SVG-Shapes#wiki-chord]] - create a new chord generator.
-* [[chord|SVG-Shapes#wiki-_chord]] - generate a quadratic Bézier connecting two arcs, as in a chord diagram.
-* [[chord.radius|SVG-Shapes#wiki-chord_radius]] - get or set the arc radius accessor.
-* [[chord.startAngle|SVG-Shapes#wiki-chord_startAngle]] - get or set the arc start angle accessor.
-* [[chord.endAngle|SVG-Shapes#wiki-chord_endAngle]] - get or set the arc end angle accessor.
-* [[chord.source|SVG-Shapes#wiki-chord_source]] - get or set the source arc accessor.
-* [[chord.target|SVG-Shapes#wiki-chord_target]] - get or set the target arc accessor.
-* [[d3.svg.diagonal|SVG-Shapes#wiki-diagonal]] - create a new diagonal generator.
-* [[diagonal|SVG-Shapes#wiki-_diagonal]] - generate a two-dimensional Bézier connector, as in a node-link diagram.
-* [[diagonal.source|SVG-Shapes#wiki-diagonal_source]] - get or set the source point accessor.
-* [[diagonal.target|SVG-Shapes#wiki-diagonal_target]] - get or set the target point accessor.
-* [[diagonal.projection|SVG-Shapes#wiki-diagonal_projection]] - get or set an optional point transform.
-* [[d3.svg.diagonal.radial|SVG-Shapes#wiki-diagonal_radial]] - create a new diagonal generator.
-* [[diagonal|SVG-Shapes#wiki-_diagonal_radial]] - generate a two-dimensional Bézier connector, as in a node-link diagram.
+* [[d3.svg.area|SVG-Shapes#wiki-area]] - 创建一个新的区域生成器.
+* [[area|SVG-Shapes#wiki-_area]] - 生成一个线性的区域,用于区域图表.
+* [[area.x|SVG-Shapes#wiki-area_x]] - 获取或设置*x*坐标的访问器.
+* [[area.x0|SVG-Shapes#wiki-area_x0]] - 获取或设置*x0*坐标(基线)的访问器.
+* [[area.x1|SVG-Shapes#wiki-area_x1]] - 获取或设置*x1*坐标(背线)的访问器.
+* [[area.y|SVG-Shapes#wiki-area_y]] - 获取或设置*y*坐标的访问器.
+* [[area.y0|SVG-Shapes#wiki-area_y0]] - 获取或设置*y0*坐标(基线)的访问器.
+* [[area.y1|SVG-Shapes#wiki-area_y1]] - 获取或设置*y1*坐标(背线)的访问器.
+* [[area.interpolate|SVG-Shapes#wiki-area_interpolate]] - 获取或设置插值模式.
+* [[area.tension|SVG-Shapes#wiki-area_tension]] - 获取或设置张力访问器(the cardinal spline tension).
+* [area.defined](SVG-Shapes#wiki-area_defined) - 判断获取或定义区域定义存取器.
+* [[d3.svg.area.radial|SVG-Shapes#wiki-area_radial]] - 创建新的区域生成器.
+* [[area|SVG-Shapes#wiki-_area_radial]] - 生成分段的线性区域,用于纬度/雷达图表.
+* [[area.radius|SVG-Shapes#wiki-area_radial_radius]] - 获取或设置*radius*访问器.
+* [[area.innerRadius|SVG-Shapes#wiki-area_radial_innerRadius]] - 获取或设置内部的*radius*(基线)访问器.
+* [[area.outerRadius|SVG-Shapes#wiki-area_radial_outerRadius]] - 获取或设置外部的*radius*(背线)访问器.
+* [[area.angle|SVG-Shapes#wiki-area_radial_angle]] - 获取或设置*angle*访问器.
+* [[area.startAngle|SVG-Shapes#wiki-area_radial_startAngle]] - 获取或设置内部的*angle*(基线)访问器.
+* [[area.endAngle|SVG-Shapes#wiki-area_radial_endAngle]] -  获取或设置外部的*angle*(背线)访问器.
+* [area.defined](SVG-Shapes#wiki-area_radial_defined) - 判断获取或定义区域定义存取器.
+* [[d3.svg.arc|SVG-Shapes#wiki-arc]] - 创建弧度生成器.
+* [[arc|SVG-Shapes#wiki-_arc]] - 生成一个线性弧度,用于饼图或甜甜圈图.
+* [[arc.innerRadius|SVG-Shapes#wiki-arc_innerRadius]] - 获取或设置内部的半径访问器.
+* [[arc.outerRadius|SVG-Shapes#wiki-arc_outerRadius]] -  获取或设置外部的半径访问器.
+* [[arc.startAngle|SVG-Shapes#wiki-arc_startAngle]] -  获取或设置起始角度访问器.
+* [[arc.endAngle|SVG-Shapes#wiki-arc_endAngle]] - 获取或设置结束角度访问器.
+* [[arc.centroid|SVG-Shapes#wiki-arc_centroid]] - 计算弧度的圆心点.
+* [[d3.svg.symbol|SVG-Shapes#wiki-symbol]] - 创建符号生成器.
+* [[symbol|SVG-Shapes#wiki-_symbol]] - 生成指定的符号,用于散列图.
+* [[symbol.type|SVG-Shapes#wiki-symbol_type]] - 获取或设置符号类型访问器.
+* [[symbol.size|SVG-Shapes#wiki-symbol_size]] - 获取或设置符号尺寸(in square pixels) 访问器.
+* [d3.svg.symbolTypes](SVG-Shapes#wiki-symbolTypes) - 被支持的符号类型数组.
+* [[d3.svg.chord|SVG-Shapes#wiki-chord]] - 创建新的弦生成器.
+* [[chord|SVG-Shapes#wiki-_chord]] - 生成一个二次贝塞尔曲线连接两个弧, 用于弦图.
+* [[chord.radius|SVG-Shapes#wiki-chord_radius]] - 获取或设置弧半径访问器.
+* [[chord.startAngle|SVG-Shapes#wiki-chord_startAngle]] - 获取或设置弧起始角度访问器.
+* [[chord.endAngle|SVG-Shapes#wiki-chord_endAngle]] - 获取或设置弧结束角度访问器.
+* [[chord.source|SVG-Shapes#wiki-chord_source]] - 获取或设置源弧度访问器.
+* [[chord.target|SVG-Shapes#wiki-chord_target]] - 获取或设置目标弧度访问器.
+* [[d3.svg.diagonal|SVG-Shapes#wiki-diagonal]] - 创建新的斜线生成器.
+* [[diagonal|SVG-Shapes#wiki-_diagonal]] - 生成一个二维贝塞尔连接器, 用于节点连接图.
+* [[diagonal.source|SVG-Shapes#wiki-diagonal_source]] - 获取或设置源点访问器.
+* [[diagonal.target|SVG-Shapes#wiki-diagonal_target]] - 获取或设置目标点访问器.
+* [[diagonal.projection|SVG-Shapes#wiki-diagonal_projection]] - 获取或设置一个可选的点变换器.
+* [[d3.svg.diagonal.radial|SVG-Shapes#wiki-diagonal_radial]] - 创建一个新的斜线生成器.
+* [[diagonal|SVG-Shapes#wiki-_diagonal_radial]] - 创建一个二维贝塞尔连接器,用于节点连接图.
 
 ### [[坐标轴(Axes)|SVG-Axes]]
 
