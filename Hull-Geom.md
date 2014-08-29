@@ -10,6 +10,8 @@ Create a new hull layout with the default *x*- and *y*-accessors.
 
 Returns the convex hull for the specified *vertices* array, using the current x- and y-coordinate accessors. The returned convex hull is represented as an array containing a subset of the input vertices, arranged in counterclockwise order (for consistency with [polygon.clip](Polygon-Geom#wiki-clip)).
 
+Assumes the *vertices* array is greater than three in length. If *vertices* is of length <= 3, returns [].
+
 <a name="x" href="Hull-Geom#wiki-x">#</a> hull.<b>x</b>([<i>x</i>])
 
 If *x* is specified, sets the x-coordinate accessor. If *x* is not specified, returns the current x-coordinate accessor, which defaults to:
