@@ -145,6 +145,6 @@ If *mode* is specified, sets the layout algorithm. If *mode* is not specified, r
 * dice - vertical subdivision.
 * slice-dice - alternating between horizontal and vertical subdivision.
 
-<a name="ratio" href="#wiki-ratio">#</a> <b>ratio</b>([<i>ratio</i>])
+<a name="ratio" href="#wiki-ratio">#</a> treemap.<b>ratio</b>([<i>ratio</i>])
 
 If *ratio* is specified, sets the layout ratio. If *ratio* is not specified, returns the current layout ratio, which defaults to `.5 * (1 + Math.sqrt(5))`
