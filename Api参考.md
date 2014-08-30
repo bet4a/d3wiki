@@ -423,20 +423,20 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[interval.ceil|Time-Intervals#wiki-interval_ceil]] - 上舍入到最近的间隔值.
 * [[interval.offset|Time-Intervals#wiki-interval_offset]] - 返回指定时间间隔的日期偏移量.
 * [[interval.utc|Time-Intervals#wiki-interval_utc]] - 返回对应的UTC时间间隔.
-* [[d3.time.day|Time-Intervals#wiki-day]] - every day (12:00 AM).
-* [[d3.time.days|Time-Intervals#wiki-day]] - alias for day.range.
-* [d3.time.dayOfYear](Time-Intervals#wiki-dayOfYear) - computes the day number.
-* [[d3.time.hour|Time-Intervals#wiki-hour]] - every hour (e.g., 1:00 AM).
-* [[d3.time.hours|Time-Intervals#wiki-hours]] - alias for hour.range.
-* [[d3.time.minute|Time-Intervals#wiki-minute]] - every minute (e.g., 1:02 AM).
-* [[d3.time.minutes|Time-Intervals#wiki-minutes]] - alias for minute.range.
-* [[d3.time.month|Time-Intervals#wiki-month]] - every month (e.g., February 1, 12:00 AM).
-* [[d3.time.months|Time-Intervals#wiki-months]] - alias for month.range.
-* [[d3.time.second|Time-Intervals#wiki-second]] - every second (e.g., 1:02:03 AM).
-* [[d3.time.seconds|Time-Intervals#wiki-seconds]] - alias for second.range.
-* [[d3.time.sunday|Time-Intervals#wiki-sunday]] - every Sunday (e.g., February 5, 12:00 AM).
-* [[d3.time.sundays|Time-Intervals#wiki-sundays]] - alias for sunday.range.
-* [d3.time.sundayOfYear](Time-Intervals#wiki-sundayOfYear) - computes the sunday-based week number.
+* [[d3.time.day|Time-Intervals#wiki-day]] - 返回指定时间基于天起始的时间(默认起始是12:00am).
+* [[d3.time.days|Time-Intervals#wiki-day]] - 返回指定时间区间和间隔条件的基于天的所有时间,效果同day.range.
+* [d3.time.dayOfYear](Time-Intervals#wiki-dayOfYear) - 计算指定时间在年中的天数.
+* [[d3.time.hour|Time-Intervals#wiki-hour]] - 返回指定时间基于小时起始的时间(e.g., 1:00 AM).
+* [[d3.time.hours|Time-Intervals#wiki-hours]] - 返回指定时间区间和间隔条件的基于小时的所有时间, 效果同hour.range.
+* [[d3.time.minute|Time-Intervals#wiki-minute]] - 返回指定时间基于分钟起始的时间 (e.g., 1:02 AM).
+* [[d3.time.minutes|Time-Intervals#wiki-minutes]] - 返回指定时间区间和间隔条件的基于分钟的所有时间,效果同minute.range.
+* [[d3.time.month|Time-Intervals#wiki-month]] - 返回指定时间基于月起始的时间(e.g., February 1, 12:00 AM).
+* [[d3.time.months|Time-Intervals#wiki-months]] - 返回指定时间区间和间隔条件的基于月的所有时间,效果同month.range.
+* [[d3.time.second|Time-Intervals#wiki-second]] - 返回指定时间基于秒起始的时间(e.g., 1:02:03 AM).
+* [[d3.time.seconds|Time-Intervals#wiki-seconds]] - 返回指定时间区间和间隔条件的基于秒的所有时间,效果同second.range.
+* [[d3.time.sunday|Time-Intervals#wiki-sunday]] - 返回指定时间基于Sunday起始的时间(e.g., February 5, 12:00 AM).
+* [[d3.time.sundays|Time-Intervals#wiki-sundays]] - 返回指定时间区间和间隔条件的基于sunday的所有时间, 效果同sunday.range.
+* [d3.time.sundayOfYear](Time-Intervals#wiki-sundayOfYear) - 计算以sunday为基点的指定时间在一年中的周数.
 * [[d3.time.monday|Time-Intervals#wiki-monday]] - every Monday (e.g., February 5, 12:00 AM).
 * [[d3.time.mondays|Time-Intervals#wiki-mondays]] - alias for monday.range.
 * [d3.time.mondayOfYear](Time-Intervals#wiki-mondayOfYear) - computes the monday-based week number.
@@ -458,8 +458,8 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[d3.time.week|Time-Intervals#wiki-week]] - alias for sunday.
 * [[d3.time.weeks|Time-Intervals#wiki-weeks]] - alias for sunday.range.
 * [d3.time.weekOfYear](Time-Intervals#wiki-weekOfYear) - alias for sundayOfYear.
-* [[d3.time.year|Time-Intervals#wiki-year]] - every year (e.g., January 1, 12:00 AM).
-* [[d3.time.years|Time-Intervals#wiki-years]] - alias for year.range.
+* [[d3.time.year|Time-Intervals#wiki-year]] - 返回指定时间基于年起始的时间(e.g., January 1, 12:00 AM).
+* [[d3.time.years|Time-Intervals#wiki-years]] - 返回指定时间区间和间隔条件的所有时间,效果同year.range.
 
 ## [构图(d3.layout)](Layouts)
 
