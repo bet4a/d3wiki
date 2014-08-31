@@ -28,7 +28,7 @@ Create a new default axis.
 
 <a name="_axis" href="SVG-Axes#wiki-_axis">#</a> <b>axis</b>(<i>selection</i>)
 
-Apply the axis to a [selection](Selections) or [transition](Transitions). The selection must contain an SVG or G element. For example:
+Apply the axis to a [selection](Selections) or [transition](Transitions). The selection must contain an `svg` or `g` element. For example:
 
 ```js
 d3.select("body").append("svg")
