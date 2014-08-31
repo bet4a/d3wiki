@@ -48,10 +48,10 @@ If *scale* is specified, sets the scale and returns the axis. If *scale* is not 
 
 If *orientation* is specified, sets the orientation and returns the axis. If *orientation* is not specified, returns the current orientation with defaults to “bottom”. The following orientations are supported:
 
-* top - horizontal axis with ticks above the domain path
-* bottom - horizontal axis with ticks below the domain path
-* left - vertical axis with ticks to the left of the domain path
-* right - vertical axis with ticks to the right of the domain path
+* `"top"` - horizontal axis with ticks above the domain path
+* `"bottom"` - horizontal axis with ticks below the domain path
+* `"left"` - vertical axis with ticks to the left of the domain path
+* `"right"` - vertical axis with ticks to the right of the domain path
 
 If the specified *orientation* is not one of the supported values, the axis reverts to the default orientation. Changing the orientation affects the position of the ticks and their labels in relation to the axis path, but does not change the position of the axis itself; to change the position of the axis with respect to the plot, specify a [[transform|http://www.w3.org/TR/SVG/coords.html#TransformAttribute]] attribute on the containing `g` element.
 
