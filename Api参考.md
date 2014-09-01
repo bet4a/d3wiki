@@ -602,19 +602,19 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 
 ### [Paths](Geo-Paths)
 
-* [d3.geo.path](Geo-Paths#wiki-path) - create a new geographic path generator.
-* [path](Geo-Paths#wiki-_path) - project the specified feature and render it to the context.
-* [path.projection](Geo-Paths#wiki-path_projection) - get or set the geographic projection.
-* [path.context](Geo-Paths#wiki-path_context) - get or set the render context.
-* [path.pointRadius](Geo-Paths#wiki-path_pointRadius) - get or set the radius to display point features.
-* [path.area](Geo-Paths#wiki-path_area) - compute the projected area of a given feature.
-* [path.centroid](Geo-Paths#wiki-path_centroid) - compute the projected centroid of a given feature.
-* [path.bounds](Geo-Paths#wiki-path_bounds) - compute the projected bounds of a given feature.
-* [d3.geo.graticule](Geo-Paths#wiki-graticule) - create a graticule generator.
-* [graticule](Geo-Paths#wiki-_graticule) - generate a MultiLineString of meridians and parallels.
-* [graticule.lines](Geo-Paths#wiki-graticule_lines) - generate an array of LineStrings of meridians and parallels.
-* [graticule.outline](Geo-Paths#wiki-graticule_outline) - generate a Polygon of the graticule’s extent.
-* [graticule.extent](Geo-Paths#wiki-graticule_extent) - get or set the major & minor extents.
+* [d3.geo.path](Geo-Paths#wiki-path) - 创建一个新的地理路径生成器.
+* [path](Geo-Paths#wiki-_path) - 投射指定的特性并且渲染到上下文.
+* [path.projection](Geo-Paths#wiki-path_projection) - 获取活设置地理投影.
+* [path.context](Geo-Paths#wiki-path_context) - 获取活设置渲染上下文.
+* [path.pointRadius](Geo-Paths#wiki-path_pointRadius) -获取或设置半径去现实点的特性.
+* [path.area](Geo-Paths#wiki-path_area) - 计算指定特性的投射区域.
+* [path.centroid](Geo-Paths#wiki-path_centroid) - 计算指定特性的投射重心点.
+* [path.bounds](Geo-Paths#wiki-path_bounds) - 计算指定特性的投射边界.
+* [d3.geo.graticule](Geo-Paths#wiki-graticule) - 创建地理坐标网生成器.
+* [graticule](Geo-Paths#wiki-_graticule) - 生产一个子午线或平行线的MultiLineStrings.
+* [graticule.lines](Geo-Paths#wiki-graticule_lines) - 生成一个子午线和平行线的LineString的数组.
+* [graticule.outline](Geo-Paths#wiki-graticule_outline) - 生成一个表示该坐标网的外框多边形.
+* [graticule.extent](Geo-Paths#wiki-graticule_extent) - 获取或设置主要的和次要的范围.
 * [graticule.majorExtent](Geo-Paths#wiki-graticule_majorExtent) - get or set the major extent.
 * [graticule.minorExtent](Geo-Paths#wiki-graticule_minorExtent) - get or set the minor extent.
 * [graticule.step](Geo-Paths#wiki-graticule_step) - get or set the major & minor step intervals.
