@@ -88,7 +88,7 @@ Returns a projecting [stream](Geo-Streams) wrapper for the specified *listener*.
 
 <a name="projectionMutator" href="#wiki-projectionMutator">#</a> d3.geo.<b>projectionMutator</b>(<i>rawFactory</i>)
 
-Constructs a new projection from the specified *raw* point projection function *factory*. This function does not return the projection directly, but instead returns a *mutate* method that you can call whenever the raw projection function changes. For example, say you’re implementing the Albers equal-area conic projection, which requires configuring the projections two parallels. Using closures, you can implement the raw projection as follows:
+Constructs a new projection from the specified *raw* point projection function *factory*. This function does not return the projection directly, but instead returns a *mutate* method that you can call whenever the raw projection function changes. For example, say you’re implementing the Albers equal-area conic projection, which requires configuring the projection's two parallels. Using closures, you can implement the raw projection as follows:
 
 ```js
 // φ0 and φ1 are the two parallels
