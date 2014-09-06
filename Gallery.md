@@ -153,25 +153,25 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 <tr height="207" valign="top">
     <td>Simple SOM Animation<br><a href="http://bl.ocks.org/e-/5244131"><img src="https://gist.github.com/e-/5244131/raw/2b721ed08e2361731b4d45370c9c8ddec63304e0/thumbnail.png" width="202"></a></td>
     <td>A mower demo<br><a href="http://bertranddechoux.github.io/d3js-sandbox/mower-demo/index.html"><img src="https://raw.github.com/BertrandDechoux/d3js-sandbox/gh-pages/mower-demo/screenshot.png" width="202"></a></td>
-    <td>Map and context with brushing<br><a href="http://rbspd3.herokuapp.com"><img src="https://raw.github.com/sdelarquier/rbspd3/master/snapshot.png" width="202"></a></td>
+    <td>Map and context with brushing<br><a href="http://rbspd3.herokuapp.com"><img src="https://raw.github.com/sdelarquier/rbspd3/mr/snapshot.png" width="202"></a></td>
     <td>Binary tree with transitions<br><a href="http://prcweb.co.uk/lab/d3-tree"><img src="http://prcweb.co.uk/img/ext/tree.jpg" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
     <td>d3+ColorBrewer<br><a href="http://adilapapaya.com/color/"><img src="http://adilapapaya.com/color/d3colorbrewer.png" width="202"></a></td>
     <td>D3 JezzBall<br><a href="http://bl.ocks.org/ericcitaire/5408146"><img src="http://bl.ocks.org/ericcitaire/raw/5408146/thumbnail.png" width="202"></a></td>
     <td>Tetris<br><a href="http://d3tetris.herokuapp.com/"><img src="http://imageshack.us/a/img841/8619/tetrisn.png" width="202"></a></td>
-    <td>Gantt Chart<br><a href="http://bl.ocks.org/dk8996/5538271/"><img src="https://raw.github.com/dk8996/Gantt-Chart/master/examples/screenshot2.png" width="202"></a></td>
+    <td>Gantt Chart<br><a href="http://bl.ocks.org/dk8996/5538271/"><img src="https://raw.github.com/dk8996/Gantt-Chart/mr/examples/screenshot2.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
     <td>Day/Hour Heatmap<br><a href="http://bl.ocks.org/tjdecke/5558084"><img src="https://gist.github.com/tjdecke/5558084/raw/thumbnail2.png" width="202"></a></td>
     <td>Sunburst and parse.com<br><a href="http://xliberation.com/parse/colortable/parsed3.html"><img src="http://xliberation.com/googlecharts/1716.png" width="202"></a></td>
-    <td>Worldwide remittance flows<br><a href="http://remittances.herokuapp.com/?en"><img src="https://raw.github.com/ilyabo/remittances/master/design/screenshots/explore-en-square-200px.png" width="202"></a></td>
-    <td>Language Network<br><a href="http://www.cotrino.com/2012/11/language-network/"><img src="https://raw.github.com/cotrino/experimentos/master/langnet.png" width="202"></a></td>
+    <td>Worldwide remittance flows<br><a href="http://remittances.herokuapp.com/?en"><img src="https://raw.github.com/ilyabo/remittances/mr/design/screenshots/explore-en-square-200px.png" width="202"></a></td>
+    <td>Language Network<br><a href="http://www.cotrino.com/2012/11/language-network/"><img src="https://raw.github.com/cotrino/experimentos/mr/langnet.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
     <td>Wimbledon 2012<br><a href="http://wimbledon.prcweb.co.uk/"><img src="http://prcweb.co.uk/img/ext/w2012-match-tree.jpg" width="202"></a></td>
     <td>Force directed tag/site explorer<br><a href="http://ramblings.mcpher.com/Home/excelquirks/gassites/d3nodefocus"><img src="http://xliberation.com/googlecharts/1731.png" width="200"></a></td>
-    <td>Bus transit data<br/><a href="http://busrac.es"><img src="https://raw.github.com/bjuhn/UrbanDataChallenge/master/data/busraces.png" width="202"></a></td>
+    <td>Bus transit data<br/><a href="http://busrac.es"><img src="https://raw.github.com/bjuhn/UrbanDataChallenge/mr/data/busraces.png" width="202"></a></td>
     <td>Airline data from Fusion Tables<br/><a href="http://xliberation.com/googlecharts/d3flights.html"><img src="http://xliberation.com/googlecharts/1746.png" width="202"></a></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Interactive Sales Data Pie Chart<br><a href="https://live.zoomdata.com/zoomdata/visualization?__target=embedded&key=52265abb6abdbcaa8c217789#51db7ad4e4b04caf9ab346db-51db7ad4e4b04caf9ab346d5"><img src="https://dl.dropboxusercontent.com/u/56332995/sales%20interactive%20pie%20d3js.png" width="202"></a></td>
     <td>Wikistalker - Wikipedia Visualization<br><a href="http://sepans.com/wikistalker"><img src="http://sepans.com/sp/wp-content/uploads/2013/07/wikistalker_history.png" width="202"></a></td>
     <td>D3 Cesium - Health and Wealth of Nations<br><a href="http://cesiumjs.org/demos/d3.html"><img src="http://cesiumjs.org/demos/images/d3.png" width="202"></a></td>
-    <td>Starpaths<br><a href="http://www.cotrino.com/2013/05/starpaths/"><img src="https://raw.github.com/cotrino/experimentos/master/starpaths.png" width="202"></a></td>
+    <td>Starpaths<br><a href="http://www.cotrino.com/2013/05/starpaths/"><img src="https://raw.github.com/cotrino/experimentos/mr/starpaths.png" width="202"></a></td>
 </tr>
 <tr>
     <td>Kent + Sussex river levels mapped<br><a href="http://maps-n-apps.github.io/Rivers_Viz/"><img src="http://mapsnapps.com/public/themes/portfolio-monstra-theme/assets/blogimages/d3map.png" width="202"></a></td>
@@ -200,7 +200,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 </tr>
 <tr>
     <td>Interactive Bible contradictions & bar charts [<a href="https://github.com/danielgtaylor/bibviz">source</a>]<br/><a href="http://bibviz.com/"><img src="http://bibviz.com/img/square.png" width="202"/></a></td>
-    <td>Force Edge Bundling For Graphs<br><a href="http://bl.ocks.org/upphiminn/6515478"><img src="https://raw.github.com/upphiminn/d3.ForceBundle/master/readme_img/thumbnail.png" width="202"></a> [<a href="https://github.com/upphiminn/d3.ForceBundle">Source & Docs</a>]</td>
+    <td>Force Edge Bundling For Graphs<br><a href="http://bl.ocks.org/upphiminn/6515478"><img src="https://raw.github.com/upphiminn/d3.ForceBundle/mr/readme_img/thumbnail.png" width="202"></a> [<a href="https://github.com/upphiminn/d3.ForceBundle">Source & Docs</a>]</td>
     <td>Gauge<br><a href="http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html"><img src="http://bl.ocks.org/tomerd/raw/1499279/thumbnail.png" width="202"></a></td>
     <td>Bullet Charts<br><a href="http://bl.ocks.org/CodeXmonk/6112167"><img src="https://gist.github.com/CodeXmonk/6112167/raw/bbd3c9b608ff8123c6664d1bf9a850dcc9ca1065/thumbnail.png" width="202"></a></td>
 </tr>
@@ -217,14 +217,14 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Table with Embedded Line Chart<br><a href="http://bl.ocks.org/llimllib/841dd138e429bb0545df"><img src="https://gist.github.com/llimllib/841dd138e429bb0545df/raw/a63c01b974e8e6e3be9a06eb1f67567cd7b4c322/table.jpg" width="202"></a></td>
 </tr>
 <tr>
-    <td>Dual-scale Bar Chart<br><a href="https://github.com/liufly/Dual-scale-D3-Bar-Chart"><img src="https://raw.github.com/liufly/Dual-scale-D3-Bar-Chart/master/preview/thumbnail.png" width="202"></a></td>
+    <td>Dual-scale Bar Chart<br><a href="https://github.com/liufly/Dual-scale-D3-Bar-Chart"><img src="https://raw.github.com/liufly/Dual-scale-D3-Bar-Chart/mr/preview/thumbnail.png" width="202"></a></td>
     <td>Animated Pie and Line Chart<br><a href="http://codepen.io/stefanjudis/full/gkHwJ"><img src="http://stefanjudis.de/share/animatedChart.jpg" width="202"></a></td>
     <td>Multivariate Data Exploration with Scatterplots<br><a href="http://benjiec.github.io/scatter-matrix/demo/demo.html"><img src="http://benjiec.github.io/scatter-matrix/demo/demo.png" width="202"></a></td>
     <td>Live Power Outages In Maine<br><a href="http://rud.is/outage/"><img src="http://rud.is/outage/thumb2.png" width="202"></a></td>
 </tr>
 <tr>
     <td>Relative Size Of The Planets<br><a href="http://www.ununpentium.co.uk/pages/planets.jsp"><img src="http://i39.tinypic.com/ngsoj8.png" width="202"></a></td>
-    <td>AWS EC2 Price Comparison Chart<br><a href="http://kenlin.com/x/aws-price-comparison-chart/"><img src="https://raw2.github.com/kenklin/aws-price-comparison-chart/master/aws-price-comparison-chart-small.png" width="202"></a></td>
+    <td>AWS EC2 Price Comparison Chart<br><a href="http://kenlin.com/x/aws-price-comparison-chart/"><img src="https://raw2.github.com/kenklin/aws-price-comparison-chart/mr/aws-price-comparison-chart-small.png" width="202"></a></td>
     <td>Hurricane Forecast Path Evolution<br><a href="http://www.weather.com/news/weather-hurricanes/sandy-path-evolution-20121026"><img src="http://i.imwx.com/web/multimedia/images/sandy-cones-thumbnail.png" width="202"></a></td>
     <td>Sandy's Storm Surge<br><a href="http://www.weather.com/news/weather-hurricanes/sandy-surge-interactive-20121105"><img src="http://i.imwx.com/web/multimedia/images/sandy-surge-thumbnail.png" width="202"></a></td>
 </tr>
@@ -238,7 +238,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Node-Link Tree Showing Branches of Government<br><a href="http://greencracker.net/wp-content/uploads/2013/11/final-cafe-press-dimensions-1106.jpg"><img src="http://greencracker.net/wp-content/uploads/2013/12/tree_thumb.jpg" width="202"></a></td>
     <td>3D Force Layout<br><a href="https://vida.io/documents/N4jSip7n68yQ48DXp"><img src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp" width="202"></a></td>
     <td>Rotating Arcs<br><a href="http://vyacheslavryabinin.com/datavis/absind"><img src="http://vyacheslavryabinin.com/datavis/absind/absind.png" width="202"></a></td>
-    <td>Lifespan<br><a href="http://www.cotrino.com/2014/02/lifespan-longevidad-animal/"><img src="https://raw.github.com/cotrino/experimentos/master/lifespan.png" width="202"></a></td>
+    <td>Lifespan<br><a href="http://www.cotrino.com/2014/02/lifespan-longevidad-animal/"><img src="https://raw.github.com/cotrino/experimentos/mr/lifespan.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
     <td>The Movie Network<br><a href="http://bl.ocks.org/paulovn/9686202"><img src="http://bl.ocks.org/paulovn/raw/9686202/thumbnail-s.png" width="202"></a></td>
@@ -260,7 +260,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 </tr>
 <tr>
     <td> OrgoShmorgo<br><a href="http://orgo.stolarsky.com/"><img src="http://orgo.stolarsky.com/orgo.png" width="202"></a></td>
-    <td> Fund Visualization<br><a href="http://fundvis-ywng.rhcloud.com/JPMProvident.html"><img src="https://raw.githubusercontent.com/ywng/fundvis/master/scr_shot.png" width="202"></a></td>
+    <td> Fund Visualization<br><a href="http://fundvis-ywng.rhcloud.com/JPMProvident.html"><img src="https://raw.githubusercontent.com/ywng/fundvis/mr/scr_shot.png" width="202"></a></td>
     <td>Zoomable sunburst with updating data<br><a href="http://bl.ocks.org/kerryrodden/477c1bfb081b783f80ad"><img src="https://gist.githubusercontent.com/kerryrodden/477c1bfb081b783f80ad/raw/thumbnail.gif" width="202"></a></td>
     <td>US State Map<br><a href="http://bl.ocks.org/NPashaP/a74faf20b492ad377312"><img src="http://bl.ocks.org/NPashaP/raw/a74faf20b492ad377312/thumbnail.png"  width="202"></a></td>
 </tr>
@@ -275,8 +275,9 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Animated Historical Weather Maps<br><a href="http://kyrandale.com/viz/uk-weather-stations.html"><img src="http://kyrandale.com/static/images/viz/uk-weather-stations.png"  width="202"></a></td>
     <td>Visualizing Walking with Smartphone Accelerometers<br><a href="http://kyrandale.com/viz/d3-smartphone-walking.html"><img src="http://kyrandale.com/static/images/viz/d3-smartphone-walking.png"  width="202"></a></td>
     <td>Cycloid Optical Illusion<br><a href="http://bl.ocks.org/peterlozano/480f90947c6e08be6b95"><img src="http://bl.ocks.org/peterlozano/raw/480f90947c6e08be6b95/thumbnail.png"  width="202"></a></td>
-    <td>Alternative Calendar View<br><a href="http://bl.ocks.org/KathyZ/c2d4694c953419e0509b"><img src="https://raw.githubusercontent.com/KathyZ/d3-calendar/master/thumbnail.png"  width="202"></a></td>
-</tr>
+    <td>Alternative Calendar View<br><a href="http://bl.ocks.org/KathyZ/c2d4694c953419e0509b"><img src="https://raw.githubusercontent.com/KathyZ/d3-calendar/mr/thumbnail.png"  width="202"></a></td>
+<td>Aster Plot<br><a href="http://bl.ocks.org/bbest/2de0e25d4840c68f2db1"><img src="http://bl.ocks.org/bbest/raw/2de0e25d4840c68f2db1/thumbnail.png" width="202"></a></td>
+  </tr>
 <tr>
     <td>US Choropleth Plus Bar Chart<br><a href="https://vida.io/documents/4vZ9mRGyepoyQxFcK"><img src="https://s3.amazonaws.com/vida-production/thumbnails/4vZ9mRGyepoyQxFcK" width="200"></a></td>
 </tr>
@@ -354,8 +355,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   </tr>
   <tr>
     <td>Interactive force layout<br><a href="https://github.com/nylen/d3-process-map"><img src="http://i.imgur.com/LFM3KV5.png"></a></td>
-    <td>Aster Plot<br><a href="http://bl.ocks.org/bbest/2de0e25d4840c68f2db1"><img src="http://bl.ocks.org/bbest/raw/2de0e25d4840c68f2db1/thumbnail.png" width="202"></a></td>
-  </tr>
+    </tr>
 </table>
 
 ## Examples
@@ -376,7 +376,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [StockTwits Social Heatmap](http://stocktwits.com/signals/heatmap) - StockTwits
 * [Social web use in 2009](http://n79.org/infographics/asg1/) - Nikhil Bobb
 * [Visualizing opinons around the world (zoomable world map and interactive pie chart)](http://theartofasking.com/question/wjucdg6k) - Siamac Fazli, Bastian Venthur
-* [Running Away Balloons - simple game ](http://astekfoto.blogspot.be/2012/11/running-away-ballons.html) - Astek
+* [Running Away Balloons - simple game ](http://kfoto.blogspot.be/2012/11/running-away-ballons.html) - k
 * [A Photographer's infographic](https://googledrive.com/host/0ByMecxlAS3YxQ3hoU21tdUNnc1E/photos.html) - Najeem Muhammed
 * [Visualizing word density in the Bible](http://stanford.edu/~garylee/bibly) - Gary Lee
 * [Election 2012 Social Dashboard (interactive Twitter visualization)] (http://events.current.com/social_dashboard) - Current TV
@@ -413,7 +413,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [Inequality in America](http://visual.ly/vizbox/inequality-in-america/) - EJ Fox for Visual.ly
 * [Current Article Popularity Trends on Hacker News](http://hn.metamx.com/) -  Vadim Ogievetsky
 * [Hacker News statistics using PhantomJS](http://labs.im/hnstat/)
-* [AFL Brownlow Medalists](http://www.vislives.com/2011/09/brownlow-medal-winners-visualization.html), [Summer Olympics Home Ground Advantage](http://www.vislives.com/2012/10/summer-olympics-home-ground-advantage.html), [Formula 1 Lap Chart](http://www.vislives.com/2012/05/d3js-transitions-zoom-zoom.html), [When is Easter?](http://www.vislives.com/2012/04/when-is-easter-sunday.html) and [David Foster Wallace's "Infinite Jest"](http://www.vislives.com/2011/12/infinite-jest-visualization.html), and [more...](http://www.vislives.com/search/label/d3.js) - Chris Pudney (VisLives!)
+* [AFL Brownlow Medalists](http://www.vislives.com/2011/09/brownlow-medal-winners-visualization.html), [Summer Olympics Home Ground Advantage](http://www.vislives.com/2012/10/summer-olympics-home-ground-advantage.html), [Formula 1 Lap Chart](http://www.vislives.com/2012/05/d3js-transitions-zoom-zoom.html), [When is Er?](http://www.vislives.com/2012/04/when-is-er-sunday.html) and [David Foster Wallace's "Infinite Jest"](http://www.vislives.com/2011/12/infinite-jest-visualization.html), and [more...](http://www.vislives.com/search/label/d3.js) - Chris Pudney (VisLives!)
 * [Uber Rides by Neighborhood](http://bost.ocks.org/mike/uberdata/)
 * [Les Misérables Co-occurrence](http://bost.ocks.org/mike/miserables/)
 * [Les Misérables 'Gap Heat Map' Co-occurrence](http://joshua-gould.github.io/public/examples/miserables/)
@@ -910,7 +910,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Parallel Coordinates](http://syntagmatic.github.com/parallel-coordinates/) and [repository](https://github.com/syntagmatic/parallel-coordinates)
 * [Chernoff faces, Fisheye, Geodesic grid, Hive plot, Horizon chart, Sankey diagram, ](https://github.com/d3/d3-plugins)
 * [Parallel Sets](https://github.com/jasondavies/d3-parsets)
-* [Word Cloud](https://github.com/jasondavies/d3-cloud/blob/master/d3.layout.cloud.js)
+* [Word Cloud](https://github.com/jasondavies/d3-cloud/blob/mr/d3.layout.cloud.js)
 * [Progressive Word Cloud visualising Bloomberg financial news](http://mktinsight.ywng.cloudbees.net/)
 * [MathJax label](http://bl.ocks.org/mbostock/3391642)
 * [Simple table](http://jsfiddle.net/christopheviau/v6VMf/)
