@@ -299,7 +299,7 @@ An optional numeric *delay* in milliseconds may be specified when the given *fun
 You may use *delay* and *time* to specify relative and absolute moments in time when the *function* should start being invoked. For example, a calendar notification might be coded as:
 
 ```js
-d3.timer(notify, -4 * 1000 * 60 * 60, +new Date(2012, 09, 29)); // four hours before midnight September 29
+d3.timer(notify, -4 * 1000 * 60 * 60, +new Date(2012, 09, 29)); // four hours before midnight October 29 (months are zero-based)
 ```
 
 <a name="d3_timer_flush" href="Transitions#wiki-d3_timer_flush">#</a> d3.timer.<b>flush</b>()
