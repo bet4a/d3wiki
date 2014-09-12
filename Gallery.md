@@ -212,7 +212,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 </tr>
 <tr>
     <td>60 years of french first names<br><a href="http://dataaddict.fr/prenoms/"><img src="http://dataaddict.fr/wp-content/uploads/2013/06/prenom_img_home.png" width="202"></a></td>
-    <td>Hip Replacement by State<br><a href="https://vida.io/discussion/s5qo5Gwrct5HNxAD2"><img src="https://s3.amazonaws.com/vida-production/thumbnails/s5qo5Gwrct5HNxAD2" width="202"></a></td>
+    <td>Hip Replacement by State<br><a href="https://vida.io/documents/s5qo5Gwrct5HNxAD2"><img src="https://s3.amazonaws.com/vida-production/thumbnails/s5qo5Gwrct5HNxAD2" width="202"></a></td>
     <td>Compare time series with irregular interval<br><a href="http://bl.ocks.org/marufbd/7191340"><img src="https://gist.github.com/marufbd/7191340/raw/ab057eef9227e5498431c030c6ad5048cb326a3a/thumbnail.png" width="202"></a></td>
     <td>Table with Embedded Line Chart<br><a href="http://bl.ocks.org/llimllib/841dd138e429bb0545df"><img src="https://gist.github.com/llimllib/841dd138e429bb0545df/raw/a63c01b974e8e6e3be9a06eb1f67567cd7b4c322/table.jpg" width="202"></a></td>
 </tr>
