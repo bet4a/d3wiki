@@ -290,7 +290,7 @@ Given a parametric time *t*, typically in the range [0,1], returns the eased tim
 
 D3 internally maintains an efficient timer queue so that thousands of timers can be processed concurrently with minimal overhead; in addition, this timer queue guarantees consistent timing of animations when concurrent or staged transitions are scheduled. If your browser supports it, the timer queue will use [[requestAnimationFrame|http://paulirish.com/2011/requestanimationframe-for-smart-animating/]] for fluid and efficient animation. The timer queue is also smart about using setTimeout when there is a long delay before the next scheduled event.
 
-<a name="d3_timer" href="Transitions#wiki-d3_timer">#</a> d3.<b>timer</b>(<i>function</i>, [<i>delay</i>, [<i>time</i>]])
+<a name="d3_timer" href="Transitions#wiki-d3_timer">#</a> d3.<b>timer</b>(<i>function</i>[, <i>delay</i>[, <i>time</i>]])
 
 Start a custom animation timer, invoking the specified *function* repeatedly until it returns true. There is no way to cancel the timer after it starts, so make sure your timer function returns true when done!
 
@@ -299,7 +299,7 @@ An optional numeric *delay* in milliseconds may be specified when the given *fun
 You may use *delay* and *time* to specify relative and absolute moments in time when the *function* should start being invoked. For example, a calendar notification might be coded as:
 
 ```js
-d3.timer(notify, -4 * 1000 * 60 * 60, +new Date(2012, 09, 29)); // four hours before midnight Oct. 29
+d3.timer(notify, -4 * 1000 * 60 * 60, +new Date(2012, 09, 29)); // four hours before midnight September 29
 ```
 
 <a name="d3_timer_flush" href="Transitions#wiki-d3_timer_flush">#</a> d3.timer.<b>flush</b>()
