@@ -260,7 +260,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 </tr>
 <tr>
     <td> OrgoShmorgo<br><a href="http://orgo.stolarsky.com/"><img src="http://orgo.stolarsky.com/orgo.png" width="202"></a></td>
-    <td> Fund Visualization<br><a href="http://fundvis-ywng.rhcloud.com/JPMProvident.html"><img src="https://raw.githubusercontent.com/ywng/fundvis/mr/scr_shot.png" width="202"></a></td>
+    <td> Fund Visualization<br><a href="http://fundvis-ywng.rhcloud.com/JPMProvident.html"><img src="https://camo.githubusercontent.com/24eefda4cbf1f88d278ab0b25a2d4989b48558ff/68747470733a2f2f7261772e6769746875622e636f6d2f79776e672f66756e647669732f6d61737465722f7363725f73686f742e706e67" width="202"></a></td>
     <td>Zoomable sunburst with updating data<br><a href="http://bl.ocks.org/kerryrodden/477c1bfb081b783f80ad"><img src="https://gist.githubusercontent.com/kerryrodden/477c1bfb081b783f80ad/raw/thumbnail.gif" width="202"></a></td>
     <td>US State Map<br><a href="http://bl.ocks.org/NPashaP/a74faf20b492ad377312"><img src="http://bl.ocks.org/NPashaP/raw/a74faf20b492ad377312/thumbnail.png"  width="202"></a></td>
 </tr>
