@@ -71,7 +71,7 @@ var xAxis = d3.svg.axis()
     .tickValues([1, 2, 3, 5, 8, 13, 21]);
 ```
 
-The explicit tick values take precedent over the tick arguments set by [axis.ticks](#wiki-ticks). However, any  tick arguments will still be passed to the scale's [tickFormat](Quantitative-Scales#wiki-linear_tickFormat) function if a tick format is not also set; thus, it may be valid to set both axis.ticks and axis.tickValues.
+The explicit tick values take precedent over the tick arguments set by [axis.ticks](#wiki-ticks). However, any  tick arguments will still be passed to the scale's [tickFormat](#wiki-tickFormat) function if a tick format is not also set; thus, it may be valid to set both axis.ticks and axis.tickValues.
 
 <a name="tickSize" href="#wiki-tickSize">#</a> axis.<b>tickSize</b>([<i>inner, outer</i>])
 
