@@ -541,6 +541,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [Visualizing MBTA Data] (http://mbtaviz.github.io/) - Michael Barry and Brian Card
 * [Visualizing Joyce's 'Ulysses': "Sirens" as a Graphic Score] (http://y-li.me/x/sirens) - Emily Fuhrman
 * [Visualizing film dialogue - 255 fuck in Pulp Fiction](http://graphoverflow.com/graphs/pulp-fiction.html) - Sarath Saleem
+* [Drug adverse events](http://googledrive.com/host/0BwcmXsFAhzhoOTdydHhoRktlOUU/app/#/) - Etienne Ramstein
 
 ### Collections
 
