@@ -962,6 +962,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Pushing d3 commands to the browser from iPython](https://github.com/hhuuggoo/pushd3)
 * [Dance.js: D3 with Backbone and Data.js](http://quasipartikel.at/2012/04/25/dancing-with-data/)
 * [Backbone-D3](http://drsm79.github.com/Backbone-d3/index.html)
+* Pandas integration via [Django REST Pandas](https://github.com/wq/django-rest-pandas) and [wq/pandas.js](http://wq.io/docs/pandas-js)
 * [Viewing OpenLearn Mindmaps Using d3.js](http://blog.ouseful.info/2012/05/11/viewing-openlearn-mindmaps-using-d3-js/)
 * [Splay Tree animation with dart, d3, and local storage](https://bitbucket.org/davidagraf/dartsplaytree/src)
 * [Sankey diagrams from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/sankey) - Bruce McPherson
@@ -1034,6 +1035,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Cubism.js: Time Series Visualization](http://square.github.com/cubism/)
 * [Crossfilter](http://square.github.com/crossfilter/)
 * [Rickshaw: JavaScript toolkit for creating interactive real-time graphs](https://github.com/shutterstock/rickshaw)
+* [wq/chart.js: Simple reusable time series charts and boxplots](http://wq.io/docs/chart-js)
 * [Dynamic Visualization LEGO](https://github.com/vogievetsky/DVL)
 * [xCharts: a D3-based library for building custom charts and graphs](http://tenxer.github.com/xcharts/)
 * [VisualSedimentation.js: visualizing streaming data, inspired by the process of physical sedimentation](http://www.visualsedimentation.org/)
