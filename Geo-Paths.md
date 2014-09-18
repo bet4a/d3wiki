@@ -131,7 +131,7 @@ If *extent* is specified, sets the major extent of this graticule.  If *extent* 
 
 <a name="graticule_minorExtent" href="#wiki-graticule_minorExtent">#</a> graticule.<b>minorExtent</b>(<i>extent</i>)
 
-If *extent* is specified, sets the minor extent of this graticule.  If *extent* is not specified, returns the current minor extent, which defaults to ⟨⟨-180°, -80° + ε⟩, ⟨180°, 80° - ε⟩⟩.
+If *extent* is specified, sets the minor extent of this graticule.  If *extent* is not specified, returns the current minor extent, which defaults to ⟨⟨-180°, -80° - ε⟩, ⟨180°, 80° + ε⟩⟩.
 
 <a name="graticule_step" href="#wiki-graticule_step">#</a> graticule.<b>step</b>(<i>step</i>)
 
