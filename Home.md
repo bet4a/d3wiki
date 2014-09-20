@@ -53,6 +53,10 @@ or for Python 3+
 
     python -m http.server 8888 &
 
+If you have got PHP installed you could try
+
+    php -S localhost:8888
+
 Once this is running, go to <http://localhost:8888/>.
 
 D3 supports the asynchronous module definition (AMD) API. For example, if you use [RequireJS](http://requirejs.org/), you may load as follows:
