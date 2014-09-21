@@ -281,6 +281,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>US Choropleth Plus Bar Chart<br><a href="https://vida.io/documents/4vZ9mRGyepoyQxFcK"><img src="https://s3.amazonaws.com/vida-production/thumbnails/4vZ9mRGyepoyQxFcK" width="200"></a></td>
     <td>Aster Plot<br><a href="http://bl.ocks.org/bbest/2de0e25d4840c68f2db1"><img src="http://bl.ocks.org/bbest/raw/2de0e25d4840c68f2db1/thumbnail.png" width="202"></a></td>
     <td>Smallest Convex Polygon<br><a href="http://bl.ocks.org/NPashaP/2ad2fcceadb8a6907098"><img src="http://bl.ocks.org/NPashaP/raw/2ad2fcceadb8a6907098/thumbnail.png"  width="400"></a></td>
+    <td>Shooter<br><a href="http://d3shooter.herokuapp.com"><img src="http://d3shooter.herokuapp.com/images/screenshot.png"  width="400"></a></td>
 </tr>
 
 </table>
