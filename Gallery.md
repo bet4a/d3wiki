@@ -283,6 +283,9 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Smallest Convex Polygon<br><a href="http://bl.ocks.org/NPashaP/2ad2fcceadb8a6907098"><img src="http://bl.ocks.org/NPashaP/raw/2ad2fcceadb8a6907098/thumbnail.png"  width="400"></a></td>
     <td>Shooter<br><a href="http://d3shooter.herokuapp.com"><img src="http://d3shooter.herokuapp.com/images/screenshot.png"  width="400"></a></td>
 </tr>
+<tr>
+    <td>Sunburst for your skill map<br><a href="http://bl.ocks.org/wizicer/f662a0b04425fc0f7489"><img src="https://gist.githubusercontent.com/wizicer/f662a0b04425fc0f7489/raw/ae5c0c2f03daf72798a0711aaccfb868adf464cc/thumbnail.png" width="200"></a></td>
+</tr>
 
 </table>
 
@@ -730,6 +733,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Sunburst: Color schemer with parse.com integration](http://xliberation.com/parse/colortable/parsed3.html)
 * [Using a sunburst to analyze sequences of events](http://bl.ocks.org/kerryrodden/7090426)
 * [Zoomable sunburst with updating data](http://bl.ocks.org/kerryrodden/477c1bfb081b783f80ad)
+* [Sunburst for your skill map](http://bl.ocks.org/wizicer/f662a0b04425fc0f7489)
 
 #### Force Layout
 
