@@ -285,7 +285,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 </tr>
 <tr>
     <td>Sunburst for your skill map<br><a href="http://bl.ocks.org/wizicer/f662a0b04425fc0f7489"><img src="https://gist.githubusercontent.com/wizicer/f662a0b04425fc0f7489/raw/ae5c0c2f03daf72798a0711aaccfb868adf464cc/thumbnail.png" width="200"></a></td>
-<td>Network of soccer passes<br><a href="http://bl.ocks.org/fhernand/9a9f93f2a6b0e83a9294"><img src="http://bl.ocks.org/fhernand/9a9f93f2a6b0e83a9294/thumbnail.png" width="202"></a></td>
+<td>Network of soccer passes<br><a href="http://bl.ocks.org/fhernand/9a9f93f2a6b0e83a9294"><img src="http://bl.ocks.org/fhernand/raw/9a9f93f2a6b0e83a9294/thumbnail.png" width="202"></a></td>
 </tr>
 
 </table>
