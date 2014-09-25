@@ -56,7 +56,7 @@ The available *type* values are:
 * general ("g") - use [[Number.toPrecision|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toPrecision]].
 * fixed ("f") - use [[Number.toFixed|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toFixed]].
 * integer ("d") - use [[Number.toString|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toString]], but ignore any non-integer values.
-* rounded ("r") - like fixed, but round to *precision* significant digits. If no *precision* is specified, falls back to general notation.
+* rounded ("r") - round to *precision* significant digits, padding with zeroes where necessary in similar fashion to fixed ("f"). If no *precision* is specified, falls back to general notation.
 * percentage ("%") - like fixed, but multiply by 100 and suffix with "%".
 * rounded percentage ("p") - like rounded, but multiply by 100 and suffix with "%".
 * binary ("b") - outputs the number in base 2.
