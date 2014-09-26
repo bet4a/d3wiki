@@ -851,6 +851,9 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Nielsen Media Markets](http://bl.ocks.org/simzou/6459889) - Simon Zou
 * [d3.micromaps](https://github.com/jazzido/d3micromaps) — An implementation of [Linked Micromaps Plots](http://mason.gmu.edu/~dcarr/lib/v9n1.pdf) (D. Carr et al.) by [Manuel Aristarán](http://jazzido.com)
 * [Visualization of the Persecution of the Baha'i community in Iran using d3.js, leaflet and Crossfilter](http://threatwiki.thesentinelproject.org/iranvisualization) - Jérôme Gagnon-Voyer 
+* [Visualization of the Persecution of the Baha'i community in Iran using d3.js, leaflet and Crossfilter](http://threatwiki.thesentinelproject.org/iranvisualization) - Jérôme Gagnon-Voyer 
+* [Live Intel Map for EVE Online]
+(https://github.com/jeremieroy/EVELiveIntel) - Jérémie Roy
 
 #### Misc Charts
 
