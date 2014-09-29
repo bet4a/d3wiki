@@ -268,7 +268,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Simple Dashboard<br><a href="http://bl.ocks.org/NPashaP/96447623ef4d342ee09b"><img src="http://bl.ocks.org/NPashaP/raw/96447623ef4d342ee09b/thumbnail.png"  width="202"></a></td>
     <td>Density and Quantile Graphs<br><a href="http://bl.ocks.org/NPashaP/113f7fea0751fa1513e1"><img src="http://bl.ocks.org/NPashaP/raw/113f7fea0751fa1513e1/thumbnail.png"  width="202"></a></td>
     <td>Visualizing MBTA Data<br><a href="http://mbtaviz.github.io"><img src="http://mbtaviz.github.io/media/preview.png"  width="202"></a></td>
-
+    <td>Sum of First n Numbers<br><a href="http://bl.ocks.org/NPashaP/06ff0f8cd198730815bf"><img src="http://bl.ocks.org/NPashaP/raw/06ff0f8cd198730815bf/thumbnail.png"  width="202"></a></td>
 </tr>
 <tr>
     <td>Animated Historical Weather Maps<br><a href="http://kyrandale.com/viz/uk-weather-stations.html"><img src="http://kyrandale.com/static/images/viz/uk-weather-stations.png"  width="202"></a></td>
