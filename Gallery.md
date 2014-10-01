@@ -937,6 +937,9 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Circular heat chart](http://prcweb.co.uk/lab/circularheat/)
 * [Word Tree](http://www.chrisbarrett.fr/fingerprint/)
 * [Simple XY Line Chart](http://bl.ocks.org/crayzeewulf/9719255)
+* [OHLC / Candlestick](http://www.scottlogic.com/blog/2014/08/19/an-ohlc-chart-component-for-d3.html)
+* [Stock Comparison](http://www.scottlogic.com/blog/2014/09/26/an-interactive-stock-comparison-chart-with-d3.html)
+
 
 #### Useful snippets
 
