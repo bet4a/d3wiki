@@ -200,7 +200,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 </tr>
 <tr>
     <td>Interactive Bible contradictions & bar charts [<a href="https://github.com/danielgtaylor/bibviz">source</a>]<br/><a href="http://bibviz.com/"><img src="http://bibviz.com/img/square.png" width="202"/></a></td>
-    <td>Force Edge Bundling For Graphs<br><a href="http://bl.ocks.org/upphiminn/6515478"><img src="https://raw.github.com/upphiminn/d3.ForceBundle/mr/readme_img/thumbnail.png" width="202"></a> [<a href="https://github.com/upphiminn/d3.ForceBundle">Source & Docs</a>]</td>
+    <td>Force Edge Bundling For Graphs<br><a href="http://bl.ocks.org/upphiminn/6515478"><img src="https://raw.github.com/upphiminn/d3.ForceBundle/master/readme_img/thumbnail.png" width="202"></a> [<a href="https://github.com/upphiminn/d3.ForceBundle">Source & Docs</a>]</td>
     <td>Gauge<br><a href="http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html"><img src="http://bl.ocks.org/tomerd/raw/1499279/thumbnail.png" width="202"></a></td>
     <td>Bullet Charts<br><a href="http://bl.ocks.org/CodeXmonk/6112167"><img src="https://gist.github.com/CodeXmonk/6112167/raw/bbd3c9b608ff8123c6664d1bf9a850dcc9ca1065/thumbnail.png" width="202"></a></td>
 </tr>
