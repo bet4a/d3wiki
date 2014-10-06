@@ -53,9 +53,13 @@ or for Python 3+
 
     python -m http.server 8888 &
 
-If you have got PHP installed you could try
+If you have have PHP installed you could try
 
     php -S localhost:8888
+
+or if you are running Ruby you can use
+
+    ruby -run -e httpd . -p 8787
 
 Once this is running, go to <http://localhost:8888/>.
 
