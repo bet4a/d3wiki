@@ -54,7 +54,7 @@ o.rangeExtent(); // returns [0, 100]
 
 Like [rangeBands](Ordinal-Scales#wiki-ordinal_rangeBands), except guarantees that the band width and offset are integer values, so as to avoid antialiasing artifacts.
 
-Bear in mind that the fractions that must be rounded off each band are distributed between the start and end of the range as an additional padding on top of <i>outerPadding</i>. This error padding is proportional to the domain length; on average, it add up to roughly `domain.length / 2`. This is trivial for 3 bars, as in the example, but grows to about 50 for a domain with length 100. In situations where the domain is not known or potentially unbounded, using [rangeBands](Ordinal-Scales#wiki-ordinal_rangeBands) with CSS [`shape-rendering: crispEdges`](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/shape-rendering) may be advisable. 
+Bear in mind that the fractions that must be rounded off each band are distributed between the start and end of the range as an additional padding on top of <i>outerPadding</i>. This error padding is proportional to the domain length; on average, it adds up to roughly `domain.length / 2`. This is trivial for 3 bars, as in the example, but grows to about 50 for a domain with length 100. In situations where the domain is not known or potentially unbounded, using [rangeBands](Ordinal-Scales#wiki-ordinal_rangeBands) with CSS [`shape-rendering: crispEdges`](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/shape-rendering) may be advisable. 
 
 ```javascript
 var o1 = d3.scale.ordinal().domain([1, 2, 3]).rangeBands([0, 100], 0, 0);
