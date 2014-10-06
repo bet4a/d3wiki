@@ -59,7 +59,7 @@ If you have have PHP installed you could try
 
 or if you are running Ruby you can use
 
-    ruby -run -e httpd . -p 8787
+    ruby -run -e httpd . -p 8888
 
 Once this is running, go to <http://localhost:8888/>.
 
