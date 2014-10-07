@@ -7,6 +7,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 <table>
 <tr height="207" valign="top">
     
+    <td width="207">Psychedelic British Isles<br><a href="http://go-down-the-drain.herokuapp.com/secretTomb/BritishIsles.html"><img src="https://github.com/BeniCheni/Music-Concierge/blob/master/app/images/Added%20Borders%2C%20Country%20and%20City%20Names.png" width="202"></a></td>
     <td width="207">Box Plots<br><a href="http://bl.ocks.org/mbostock/4061502"><img src="http://d3js.org/ex/box.png" width="202"></a></td>
     <td width="207">Bubble Chart<br><a href="http://bl.ocks.org/mbostock/4063269"><img src="http://d3js.org/ex/bubble.png" width="202"></a></td>
     <td width="207">Bullet Charts<br><a href="http://bl.ocks.org/mbostock/4061961"><img src="http://d3js.org/ex/bullet.png" width="202"></a></td>
