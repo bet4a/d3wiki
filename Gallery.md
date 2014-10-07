@@ -1061,6 +1061,10 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [matta](http://github.com/carnby/matta): d3.js charts in the IPython notebook.
 * [TechanJS](http://techanjs.org/): Financial charting and technical analysis - [candlestick](http://bl.ocks.org/andredumas/27c4a333b0e0813e093d), [ohlc](http://bl.ocks.org/andredumas/06ad3573c0053d0e1fc7) and [other technical analysis tools](http://bl.ocks.org/andredumas/edf630690c10b89be390)
 
+### Games
+
+* [Insanity](https://github.com/jirislav/Insanity) is an D3js based online game developed to train people's reaction time and awareness. Try it here: http://insanity.jkozlovsky.cz/
+
 ### Wish List
 
 * arc diagram
