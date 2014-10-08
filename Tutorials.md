@@ -18,7 +18,7 @@ Please feel free to add links to your work!
 * [Getting Started with D3 Graphs](http://thinkingonthinking.com/Getting-Started-With-D3/) - Patrick Mulder
 * [D3 for Mere Mortals](http://www.recursion.org/d3-for-mere-mortals/) - Luke Francl
 * [D3, Conceptually](http://code.hazzens.com/d3tut/) - Mikey Levine
-* [Introduction to D3](http://dealloc.me/2011/06/24/d3-is-not-a-graphing-library.html) - Justin Palmer
+* [Introduction to D3](http://dealloc.me/2011/06/24/d3-is-not-a-graphing-library/) - Justin Palmer
 * [D3.js experiments in the console](http://www.ultrasaurus.com/sarahblog/2012/03/d3-js-experiments-in-the-console/) - Sarah Allen
 * [Creating Basic Charts using d3.js](http://www.verisi.com/resources/d3-tutorial-basic-charts.htm) - Ben Lorica
 * [Get dirty with data using d3.js](http://2011.12devsofxmas.co.uk/2012/01/data-visualisation/) - Clinton Montague
