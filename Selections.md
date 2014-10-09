@@ -114,9 +114,14 @@ Removes the elements in the current selection from the current document. Returns
 
 <a name="data" href="Selections#data">#</a> selection.<b>data</b>([<i>values</i>[, <i>key</i>]])
 
-Joins the specified array of data with the current selection. The specified *values* is an array of data values, such as an array of numbers or objects, or a function that returns an array of values. If a *key* function is not specified, then the first datum in the specified array is assigned to the first element in the current selection, the second datum to the second selected element, and so on. When data is assigned to an element, it is stored in the property `__data__`, thus making the data "sticky" so that the data is available on re-selection.
+Joins the specified array of data with the current selection. The specified *values* is an array of data values (e.g. numbers or objects), or a function that returns an array of values. If a *key* function is not specified, then the first datum in the specified array is assigned to the first element in the current selection, the second datum to the second selected element, and so on. When data is assigned to an element, it is stored in the property `__data__`, thus making the data "sticky" so that the data is available on re-selection.
 
-The *values* array specifies the data **for each group** in the selection. Thus, if the selection has multiple groups (such as a [d3.selectAll](#d3_selectAll) followed by a [selection.selectAll](#selectAll)), then *data* should be specified as a function that returns an array (assuming that you want different data for each group). For example, you may bind a two-dimensional array to an initial selection, and then bind the contained inner arrays to each subselection. The *values* function in this case is the identity function: it is invoked for each group of child elements, being passed the data bound to the parent element, and returns this array of data.
+The result of the `data` operator is the *update* selection; this represents the selected DOM elements that were successfully bound to the specified data elements. The *update* selection also contains a reference to the [enter](Selections#enter) and [exit](Selections#exit) selections, for adding and removing nodes in correspondence with data. For more details, see the short tutorial [Thinking With Joins](http://bost.ocks.org/mike/join/).
+
+To control how data is joined to elements, a *key* function may be specified. This replaces the default by-index behavior; the key function is invoked once for each element in the new data array, and once again for each existing element in the selection. In both cases the key function is passed the datum `d` and the index `i`. When the key function is evaluated on new data elements, the `this` context is the data array; when the key function is evaluated on the existing selection, the `this` context is the associated DOM element. The key function returns a string which is used to join a datum with its corresponding element, based on the previously-bound data. For example, if each datum has a unique field `name`, the join might be specified as `.data(data, function(d) { return d.name; })` If a key function is specified, the `data` operator also affects the index of nodes; this index is passed as the second argument `i` to any operator function values. However, note that existing DOM elements are not automatically reordered; use [sort](#sort) or [order](#order) as needed. For a more detailed example of how the key function affects the data join, see the tutorial [[A Bar Chart, Part 2|http://mbostock.github.com/d3/tutorial/bar-2.html]].
+
+The *values* array specifies the data **for each group** in the selection. Thus, if the selection has multiple groups (such as a [d3.selectAll](#d3_selectAll) followed by a [selection.selectAll](#selectAll)), then *data* should be specified as a function that returns an array (assuming that you want different data for each group). The function will be passed the current group data (or *undefined*) and the index, with the group as the `this` context. 
+For example, you may bind a two-dimensional array to an initial selection, and then bind the contained inner arrays to each subselection. The *values* function in this case is the identity function: it is invoked for each group of child elements, being passed the data bound to the parent element, and returns this array of data.
 
 ```javascript
 var matrix = [
@@ -136,25 +141,13 @@ var td = tr.selectAll("td")
     .text(function(d) { return d; });
 ```
 
-To control how data is joined to elements, a *key* function may be specified. This replaces the default by-index behavior; the key function is invoked once for each element in the new data array, and once again for each existing element in the selection. In both cases the key function is passed the datum `d` and the index `i`. When the key function is evaluated on new data elements, the `this` context is the data array; when the key function is evaluated on the existing selection, the `this` context is the associated DOM element. The key function returns a string which is used to join a datum with its corresponding element, based on the previously-bound data. For example, if each datum has a unique field `name`, the join might be specified as:
-
-```javascript
-.data(data, function(d) { return d.name; })
-```
-
-For a more detailed example of how the key function affects the data join, see the tutorial [[A Bar Chart, Part 2|http://mbostock.github.com/d3/tutorial/bar-2.html]].
-
-The result of the `data` operator is the *update* selection; this represents the selected DOM elements that were successfully bound to the specified data elements. The *update* selection also contains a reference to the [enter](Selections#enter) and [exit](Selections#exit) selections, for adding and removing nodes in correspondence with data. For example, if the default by-index key is used, and the existing selection contains fewer elements than the specified data, then the *enter* selection will contain placeholders for the new data. On the other hand, if the existing contains more elements than the data, then the *exit* selection will contain the extra elements. And, if the existing selection exactly matches the data, then both the enter and exit selections will be empty, with all nodes in the update selection. For more details, see the short tutorial [Thinking With Joins](http://bost.ocks.org/mike/join/).
-
-If a key function is specified, the `data` operator also affects the index of nodes; this index is passed as the second argument `i` to any operator function values. However, note that existing DOM elements are not automatically reordered; use [sort](#sort) or [order](#order) as needed.
-
-If *values* is not specified, then this method returns the array of data for the first group in the selection. The length of the returned array will match the length of the first group, and the index of each datum in the returned array will match the corresponding index in the selection. If some of the elements in the selection are null, or if they have no associated data, then the corresponding element in the array will be undefined.
+If *values* is not specified, then this method returns the array of data for the first group in the selection. The length of the returned array will match the length of the first group, and the index of each datum in the returned array will match the corresponding index in the selection. If some of the elements in the selection are null, or if they have no associated data, then the corresponding element in the array will be *undefined*.
 
 Note: the `data` method cannot be used to clear previously-bound data; use [selection.datum](#datum) instead.
 
 <a name="enter" href="Selections#enter">#</a> selection.<b>enter()</b>
 
-Returns the entering selection: placeholder nodes for each data element for which no corresponding existing DOM element was found in the current selection. This method is only defined on a selection returned by the [data](Selections#data) operator. In addition, the entering selection only defines [append](Selections#append), [insert](Selections#insert), [select](Selections#select) and [call](Selections#call) operators; you must use these operators to instantiate the entering nodes before modifying any content. (Enter selections also support [empty](Selections#empty) to check if they are empty, and [size](Selections#size).) Note that the *enter* operator merely returns a reference to the entering selection, and it is up to you to add the new nodes.
+Returns the enter selection: placeholder nodes for each data element for which no corresponding existing DOM element was found in the current selection. This method is only defined on the update selection, which is returned by the [data](Selections#data) operator. In addition, the enter selection only defines [append](Selections#append), [insert](Selections#insert), [select](Selections#select) and [call](Selections#call) operators; you must use these operators to instantiate the enter nodes before modifying any content. (Enter selections also support [empty](Selections#empty) and [size](Selections#size).) Note that the *enter* operator merely returns a reference to the enter selection, and it is up to you to add the new nodes.
 
 As a simple example, consider the case where the existing selection is empty, and we wish to create new nodes to match our data:
 
@@ -178,12 +171,19 @@ Assuming that the body is initially empty, the above code will create six new DI
 
 Another way to think about the entering placeholder nodes is that they are pointers to the parent node (in this example, the document body); however, they only support append and insert.
 
-The enter selection **merges into the update selection** when you append or insert. This approach reduces code duplication between enter and update. Rather than applying operators to both the enter and update selection separately, you can now apply them to the update selection after entering the nodes. In the rare case that you want to run operators only on the
-updating nodes, you can run them on the update selection before entering new nodes.
+The enter selection **merges into the update selection** when you append or insert. Rather than applying the same operators to the enter and update selections separately, you can now apply them only once to the update selection after entering the nodes. For example:
+
+```javascript
+var update_sel = svg.selectAll("circle").data(data)
+// if you want to operate on only existing elements, do it here
+update_sel.enter().append("circle")
+update_sel.exit().remove()
+update_sel.attr(/* assign new circle attributes to old and new elements */)
+```
 
 <a name="exit" href="Selections#exit">#</a> selection.<b>exit()</b>
 
-Returns the exiting selection: existing DOM elements in the current selection for which no new data element was found. This method is only defined on a selection returned by the [data](Selections#data) operator. The exiting selection defines all the normal operators, though typically the main one you'll want to use is [remove](Selections#remove); the other operators exist primarily so you can define an exiting transition as desired. Note that the *exit* operator merely returns a reference to the exiting selection, and it is up to you to remove the new nodes.
+Returns the exit selection: existing DOM elements in the current selection for which no new data element was found. This method is only defined on the update selection, which is returned by the [data](Selections#data) operator. The exit selection defines all the normal operators, though typically the main one you'll want to use is [remove](Selections#remove); the other operators exist primarily so you can define an exiting transition as desired. Note that the *exit* operator merely returns a reference to the exit selection, and it is up to you to remove the new nodes.
 
 As a simple example, consider updating the six DIV elements created in the above example for the enter operator. Here we bind those elements to a new array of data with some new and some old:
 
@@ -192,7 +192,7 @@ var div = d3.select("body").selectAll("div")
     .data([1, 2, 4, 8, 16, 32], function(d) { return d; });
 ```
 
-Now `div`—the result of the data operator—refers to the updating selection. Since we specified a key function using the identity function, and the new data array contains the numbers [4, 8, 16] which also exist in the old data array, this updating selection contains three DIV elements. Let's say we leave those elements as-is. We can instantiate and add the new elements [1, 2, 32] using the entering selection:
+Now `div`—the result of the data operator—refers to the updating selection. Since we specified a key function using the identity function, and the new data array contains the numbers [4, 8, 16] which also exist in the old data array, this updating selection contains three DIV elements. Let's say we leave those elements as-is. We can instantiate and add the new elements [1, 2, 32] using the enter selection:
 
 ```javascript
 div.enter().append("div")
