@@ -114,11 +114,11 @@ Removes the elements in the current selection from the current document. Returns
 
 <a name="data" href="Selections#data">#</a> selection.<b>data</b>([<i>values</i>[, <i>key</i>]])
 
-Joins the specified array of data with the current selection. The specified *values* is an array of data values (e.g. numbers or objects), or a function that returns an array of values. If a *key* function is not specified, then the first datum in the specified array is assigned to the first element in the current selection, the second datum to the second selected element, and so on. When data is assigned to an element, it is stored in the property `__data__`, thus making the data "sticky" so that the data is available on re-selection.
+Joins the specified array of data with the current selection. The specified *values* is an array of data values (e.g. numbers or objects), or a function that returns an array of values. If a *key* function is not specified, then the first datum in *values* is assigned to the first element in the current selection, the second datum to the second selected element, and so on. When data is assigned to an element, it is stored in the property `__data__`, thus making the data "sticky" so that the data is available on re-selection.
 
 The result of the `data` operator is the *update* selection; this represents the selected DOM elements that were successfully bound to the specified data elements. The *update* selection also contains a reference to the [enter](Selections#enter) and [exit](Selections#exit) selections, for adding and removing nodes in correspondence with data. For more details, see the short tutorial [Thinking With Joins](http://bost.ocks.org/mike/join/).
 
-To control how data is joined to elements, a *key* function may be specified. This replaces the default by-index behavior; the key function is invoked once for each element in the new data array, and once again for each existing element in the selection. In both cases the key function is passed the datum `d` and the index `i`. When the key function is evaluated on new data elements, the `this` context is the data array; when the key function is evaluated on the existing selection, the `this` context is the associated DOM element. The key function returns a string which is used to join a datum with its corresponding element, based on the previously-bound data. For example, if each datum has a unique field `name`, the join might be specified as `.data(data, function(d) { return d.name; })` If a key function is specified, the `data` operator also affects the index of nodes; this index is passed as the second argument `i` to any operator function values. However, note that existing DOM elements are not automatically reordered; use [sort](#sort) or [order](#order) as needed. For a more detailed example of how the key function affects the data join, see the tutorial [[A Bar Chart, Part 2|http://mbostock.github.com/d3/tutorial/bar-2.html]].
+To control how data is joined to elements, a *key* function may be specified. This replaces the default by-index behavior; the key function is invoked once for each element in the new data array, and once again for each existing element in the selection. In both cases the key function is passed the datum `d` and the index `i`. When the key function is evaluated on new data elements, the `this` context is the data array; when the key function is evaluated on the existing selection, the `this` context is the associated DOM element. The key function returns a string which is used to join a datum with its corresponding element, based on the previously-bound data. For example, if each datum has a unique field `name`, the join might be specified as `.data(data, function(d) { return d.name; })` If a key function is specified, the `data` operator also affects the index of nodes; this index is passed as the second argument `i` to any operator function arguments. However, note that existing DOM elements are not automatically reordered; use [sort](#sort) or [order](#order) as needed. For a more detailed example of how the key function affects the data join, see the tutorial [[A Bar Chart, Part 2|http://mbostock.github.com/d3/tutorial/bar-2.html]].
 
 The *values* array specifies the data **for each group** in the selection. Thus, if the selection has multiple groups (such as a [d3.selectAll](#d3_selectAll) followed by a [selection.selectAll](#selectAll)), then *data* should be specified as a function that returns an array (assuming that you want different data for each group). The function will be passed the current group data (or *undefined*) and the index, with the group as the `this` context. 
 For example, you may bind a two-dimensional array to an initial selection, and then bind the contained inner arrays to each subselection. The *values* function in this case is the identity function: it is invoked for each group of child elements, being passed the data bound to the parent element, and returns this array of data.
@@ -171,14 +171,14 @@ Assuming that the body is initially empty, the above code will create six new DI
 
 Another way to think about the entering placeholder nodes is that they are pointers to the parent node (in this example, the document body); however, they only support append and insert.
 
-The enter selection **merges into the update selection** when you append or insert. Rather than applying the same operators to the enter and update selections separately, you can now apply them only once to the update selection after entering the nodes. For example:
+The enter selection **merges into the update selection** when you append or insert. Rather than applying the same operators to the enter and update selections separately, you can now apply them only once to the update selection after entering the nodes. If you find yourself removing an entire selection's elements only to reinsert most of them, do this instead. For example:
 
 ```javascript
 var update_sel = svg.selectAll("circle").data(data)
-// if you want to operate on only existing elements, do it here
-update_sel.enter().append("circle")
+// if you want to operate on old elements only, do it here
+update_sel.enter().append("circle").attr(/* operate on new elements only */)
 update_sel.exit().remove()
-update_sel.attr(/* assign new circle attributes to old and new elements */)
+update_sel.attr(/* operate on old and new elements */)
 ```
 
 <a name="exit" href="Selections#exit">#</a> selection.<b>exit()</b>
