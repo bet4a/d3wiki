@@ -6,23 +6,23 @@ The stack layout takes a two-dimensional array of data and computes a baseline; 
 
 The stack layout operates in an arbitrary two-dimensional *x* and *y* coordinate space, similar to D3's other layouts, including [tree](Tree-Layout). Thus, layers can be stacked vertically, horizontally, or even [radially](http://hint.fm/projects/flickr/). While the "zero" offset is the default, a streamgraph can be generated using the "wiggle" offset, which attempts to minimize change in slope weighted by layer thickness.
 
-<a name="stack" href="Stack-Layout#wiki-stack">#</a> d3.layout.<b>stack</b>()
+<a name="stack" href="Stack-Layout#stack">#</a> d3.layout.<b>stack</b>()
 
 Constructs a new stack layout with the default offset (zero) and order (null). The returned layout object is both an object and a function. That is: you can call the layout like any other function, and the layout has additional methods that change its behavior. Like other classes in D3, layouts follow the method chaining pattern where setter methods return the layout itself, allowing multiple setters to be invoked in a concise statement.
 
-<a name="_stack" href="Stack-Layout#wiki-_stack">#</a> <b>stack</b>(<i>layers</i>[, <i>index</i>])
+<a name="_stack" href="Stack-Layout#_stack">#</a> <b>stack</b>(<i>layers</i>[, <i>index</i>])
 
-Computes the *y*-coordinate baseline for each series (layer) in *layers*, and then propagate that baseline to the other layers. In the simplest case, *layers* is a two-dimensional array of values. All of the 2nd-dimensional arrays must be the same length. The [y](Stack-Layout#wiki-y) and [x](Stack-Layout#wiki-x) accessors are used to define the *y*-thickness of each layer at the given *x*-position, respectively. Thus, by default the following attributes are required on each value:
+Computes the *y*-coordinate baseline for each series (layer) in *layers*, and then propagate that baseline to the other layers. In the simplest case, *layers* is a two-dimensional array of values. All of the 2nd-dimensional arrays must be the same length. The [y](Stack-Layout#y) and [x](Stack-Layout#x) accessors are used to define the *y*-thickness of each layer at the given *x*-position, respectively. Thus, by default the following attributes are required on each value:
 
 * x - the *x*-position of the value.
 * y - the *y*-thickness of the value.
 * y0 - the minimum *y*-position of the value (baseline).
 
-These attributes can be customized by overriding the accessors and the [out](Stack-Layout#wiki-out) function.
+These attributes can be customized by overriding the accessors and the [out](Stack-Layout#out) function.
 
-<a name="values" href="Stack-Layout#wiki-values">#</a> stack.<b>values</b>([<i>accessor</i>])
+<a name="values" href="Stack-Layout#values">#</a> stack.<b>values</b>([<i>accessor</i>])
 
-Specifies how to extract values from the associated element in *layers*; *accessor* is a function which is invoked on each input layer passed to [stack](Stack-Layout#wiki-_stack), equivalent to calling *layers.map(accessor)* before computing the stack layout. The default values function is the built-in [Object](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object), which is similar to the identity function. If *accessor* is not specified, returns the current values accessor.
+Specifies how to extract values from the associated element in *layers*; *accessor* is a function which is invoked on each input layer passed to [stack](Stack-Layout#_stack), equivalent to calling *layers.map(accessor)* before computing the stack layout. The default values function is the built-in [Object](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object), which is similar to the identity function. If *accessor* is not specified, returns the current values accessor.
 
 The values accessor can be used to associate additional data per-layer, rather than per-point. For example, say your data were structured as follows:
 
@@ -64,7 +64,7 @@ svg.selectAll("path")
     .text(function(d) { return d.name; });
 ```
 
-<a name="offset" href="Stack-Layout#wiki-offset">#</a> stack.<b>offset</b>([<i>offset</i>])
+<a name="offset" href="Stack-Layout#offset">#</a> stack.<b>offset</b>([<i>offset</i>])
 
 If *offset* is specified, sets the stack offset algorithm to the specified value. If *offset* is not specified, returns the current offset algorithm. The following string values are supported:
 
@@ -85,7 +85,7 @@ function offset(data) {
 }
 ```
 
-<a name="order" href="Stack-Layout#wiki-order">#</a> stack.<b>order</b>([<i>order</i>])
+<a name="order" href="Stack-Layout#order">#</a> stack.<b>order</b>([<i>order</i>])
 
 If *order* is specified, sets the stack order to the specified value. If *order* is not specified, returns the current order. The following string values are supported:
 
@@ -101,9 +101,9 @@ function order(data) {
 }
 ```
 
-See also [d3.range](Arrays#wiki-d3_range).
+See also [d3.range](Arrays#d3_range).
 
-<a name="x" href="Stack-Layout#wiki-x">#</a> stack.<b>x</b>([<i>accessor</i>])
+<a name="x" href="Stack-Layout#x">#</a> stack.<b>x</b>([<i>accessor</i>])
 
 Specifies how to access the *x*-coordinate of each value's position. If *accessor* is specified, sets the accessor to the specified function. If *accessor* is not specified, returns the current function, which by default assumes that each input value has an x attribute:
 
@@ -115,7 +115,7 @@ function x(d) {
 
 The *x*-accessor is invoked for each input value, for each input layer, being passed the current data (d) and index (i). The return value of the accessor must be a number. Although the *x*-accessor is invoked for all layers (not just the bottommost layer), the stack layout assumes that the *x*-coordinates of all layers are consistent. In other words, the stack layout currently requires that the layers be homogenous: each must contain the same number of values at the same *x*-coordinates. If your data is not so regular, you will need to reinterpolate the data before computing the stack.
 
-<a name="y" href="Stack-Layout#wiki-y">#</a> stack.<b>y</b>([<i>accessor</i>])
+<a name="y" href="Stack-Layout#y">#</a> stack.<b>y</b>([<i>accessor</i>])
 
 Specifies how to access the *y*-coordinate of each value's thickness. If *accessor* is specified, sets the accessor to the specified function. If *accessor* is not specified, returns the current function, which by default assumes that each input value has a y attribute:
 
@@ -125,9 +125,9 @@ function y(d) {
 }
 ```
 
-The *y*-accessor is invoked for each input value, for each input layer, being passed the current data (d) and index (i). The return value of the accessor must be a number. With the exception of the "expand" offset, the stack layout does not perform any automatic scaling of data. To simplify scaling, use this layout in conjunction with a [linear scale](Quantitative-Scales#wiki-linear) or similar.
+The *y*-accessor is invoked for each input value, for each input layer, being passed the current data (d) and index (i). The return value of the accessor must be a number. With the exception of the "expand" offset, the stack layout does not perform any automatic scaling of data. To simplify scaling, use this layout in conjunction with a [linear scale](Quantitative-Scales#linear) or similar.
 
-<a name="out" href="Stack-Layout#wiki-out">#</a> stack.<b>out</b>([<i>setter</i>])
+<a name="out" href="Stack-Layout#out">#</a> stack.<b>out</b>([<i>setter</i>])
 
 Specifies how to propagate the computed baseline to above layers. If *setter* is specified, it is used as the output function. If *setter* is not specified, returns the current output function, which by default assumes that each input value has y and y0 attributes:
 
@@ -138,4 +138,4 @@ function out(d, y0, y) {
 }
 ```
 
-The *setter* is invoked for each input value, for each input layer, being passed the current data (d), the computed *y0* value, and the computed *y*-thickness. In all cases except the "expand" offset, the *y*-thickness is the same as the input value returned by [y](Stack-Layout#wiki-y), and thus may be ignored.
+The *setter* is invoked for each input value, for each input layer, being passed the current data (d), the computed *y0* value, and the computed *y*-thickness. In all cases except the "expand" offset, the *y*-thickness is the same as the input value returned by [y](Stack-Layout#y), and thus may be ignored.

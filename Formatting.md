@@ -17,9 +17,9 @@ In addition to numbers, D3 also supports formatting and parsing [[dates|Time-For
 
 ## Numbers
 
-<a name="d3_format" href="#wiki-d3_format">#</a> d3.<b>format</b>(<i>specifier</i>)
+<a name="d3_format" href="#d3_format">#</a> d3.<b>format</b>(<i>specifier</i>)
 
-Returns a new format function with the given string *specifier*. (Equivalent to [locale.numberFormat](Localization#wiki-locale_numberFormat) for the default U.S. English locale.) A format function takes a number as the only argument, and returns a string representing the formatted number. The format specifier is modeled after Python 3.1's built-in [[format specification mini-language|http://docs.python.org/release/3.1.3/library/string.html#formatspec]]. The general form of a specifier is:
+Returns a new format function with the given string *specifier*. (Equivalent to [locale.numberFormat](Localization#locale_numberFormat) for the default U.S. English locale.) A format function takes a number as the only argument, and returns a string representing the formatted number. The format specifier is modeled after Python 3.1's built-in [[format specification mini-language|http://docs.python.org/release/3.1.3/library/string.html#formatspec]]. The general form of a specifier is:
 ```
  [​[fill]align][sign][symbol][0][width][,][.precision][type]
 ```
@@ -68,9 +68,9 @@ The available *type* values are:
 
 The type "n" is also supported as shorthand for ",g". 
 
-<a name="d3_formatPrefix" href="#wiki-d3_formatPrefix">#</a> d3.<b>formatPrefix</b>(<i>value</i>[, <i>precision</i>])
+<a name="d3_formatPrefix" href="#d3_formatPrefix">#</a> d3.<b>formatPrefix</b>(<i>value</i>[, <i>precision</i>])
 
-Returns the [SI prefix](http://en.wikipedia.org/wiki/Metric_prefix) for the specified *value*. If an optional *precision* is specified, the *value* is rounded accordingly using [d3.round](#wiki-d3_round) before computing the prefix. The returned prefix object has two properties:
+Returns the [SI prefix](http://en.wikipedia.org/wiki/Metric_prefix) for the specified *value*. If an optional *precision* is specified, the *value* is rounded accordingly using [d3.round](#d3_round) before computing the prefix. The returned prefix object has two properties:
 
 * symbol - the prefix symbol, such as "M" for millions.
 * scale - the scale function, for converting numbers to the appropriate prefixed scale.
@@ -85,7 +85,7 @@ console.log(prefix.scale(1.21e9)); // 1.21
 
 This method is used by d3.format for the `s` format.
 
-<a name="d3_round" href="Formatting#wiki-d3_round">#</a> d3.<b>round</b>(<i>x</i>[, <i>n</i>])
+<a name="d3_round" href="Formatting#d3_round">#</a> d3.<b>round</b>(<i>x</i>[, <i>n</i>])
 
 Returns the value *x* rounded to *n* digits after the decimal point. If *n* is omitted, it defaults to zero. The result is a number. Values are rounded to the closest multiple of 10 to the power minus *n*; if two multiples are equally close, the value is rounded up in accordance with the built-in [[round|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/round]] function. For example:
 
@@ -97,11 +97,11 @@ d3.round(12.5, 0); // 13
 d3.round(12, -1); // 10
 ```
 
-Note that the resulting number when converted to a string may be imprecise due to IEEE floating point precision; to format a number to a string with a fixed number of decimal points, use [d3.format](Formatting#wiki-d3_format) instead.
+Note that the resulting number when converted to a string may be imprecise due to IEEE floating point precision; to format a number to a string with a fixed number of decimal points, use [d3.format](Formatting#d3_format) instead.
 
 ## Strings
 
-<a name="d3_requote" href="Formatting#wiki-d3_requote">#</a> d3.<b>requote</b>(<i>string</i>)
+<a name="d3_requote" href="Formatting#d3_requote">#</a> d3.<b>requote</b>(<i>string</i>)
 
 Returns a quoted (escaped) version of the specified *string* such that the string may be embedded in a regular expression as a string literal.
 

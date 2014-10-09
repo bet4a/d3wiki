@@ -2,7 +2,7 @@
 
 The formatting of numbers, dates and currencies varies by language and locale. While the default build of D3 is intended for U.S. English, you can change the behavior of D3’s formatters by loading new locales as needed.
 
-<a name="locale" href="#wiki-locale">#</a> d3.<b>locale</b>(<i>definition</i>)
+<a name="locale" href="#locale">#</a> d3.<b>locale</b>(<i>definition</i>)
 
 Returns a new locale given the specified *definition*. The locale definition must include the following properties for number formatting:
 
@@ -62,14 +62,14 @@ A locale for Russian (ru_RU) might be defined as:
 }
 ```
 
-<a name="locale_numberFormat" href="#wiki-locale_numberFormat">#</a> locale.<b>numberFormat</b>(<i>specifier</i>)
+<a name="locale_numberFormat" href="#locale_numberFormat">#</a> locale.<b>numberFormat</b>(<i>specifier</i>)
 
-The locale’s equivalent of [d3.format](Formatting#wiki-d3_format).
+The locale’s equivalent of [d3.format](Formatting#d3_format).
 
-<a name="locale_timeFormat" href="#wiki-locale_timeFormat">#</a> locale.<b>timeFormat</b>(<i>specifier</i>)
+<a name="locale_timeFormat" href="#locale_timeFormat">#</a> locale.<b>timeFormat</b>(<i>specifier</i>)
 
-The locale’s equivalent of [d3.time.format](Time-Formatting#wiki-format).
+The locale’s equivalent of [d3.time.format](Time-Formatting#format).
 
-<a name="locale_timeFormat_utc" href="#wiki-locale_timeFormat_utc">#</a> locale.timeFormat.<b>utc</b>(<i>specifier</i>)
+<a name="locale_timeFormat_utc" href="#locale_timeFormat_utc">#</a> locale.timeFormat.<b>utc</b>(<i>specifier</i>)
 
-The locale’s equivalent of [d3.time.format.utc](Time-Formatting#wiki-format_utc).
+The locale’s equivalent of [d3.time.format.utc](Time-Formatting#format_utc).

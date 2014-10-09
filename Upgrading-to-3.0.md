@@ -21,13 +21,13 @@ If you’d prefer to host your own copy of D3, download the [zipball](https://gi
 
 ## Selections
 
-The deprecated **selection.map method has been removed**; use [selection.datum](Selections#wiki-datum) instead.
+The deprecated **selection.map method has been removed**; use [selection.datum](Selections#datum) instead.
 
 ## Transitions
 
 D3’s transition subsystem has been significantly overhauled for 3.0 to make it easier to construct complex sequences of transitions. If you’re using transitions extensively, I recommend also reading [Working with Transitions](http://bost.ocks.org/mike/transition/).
 
-The first change is that **[transition.attr](Transitions#wiki-attr), [transition.style](Transitions#wiki-style) and [transition.text](Transitions#wiki-text) now evaluate their property functions immediately**. In 2.x, these functions were evaluated asynchronously when the transition started, which was frequently confusing! Consider the following code:
+The first change is that **[transition.attr](Transitions#attr), [transition.style](Transitions#style) and [transition.text](Transitions#text) now evaluate their property functions immediately**. In 2.x, these functions were evaluated asynchronously when the transition started, which was frequently confusing! Consider the following code:
 
 ```js
 // First transition the line to the new data.
@@ -40,7 +40,7 @@ line.transition().delay(250).attr("d", line);
 
 You might expect this code to first transition the line to the new data, and then transition to the new domain. In 2.x, however, this would not work because the first transition.attr would be evaluated *after* the y-scale’s domain changes. While deferred evaluation is occasionally what you want, immediate evaluation is much easier to understand and debug, so that’s what transitions do in 3.0. (The selection.attr, selection.style, and related methods have always used immediate evaluation for this reason.) This means you can now easily specify transitions that depend on external state, as in the above example showing [chained transitions of data and axes](http://bl.ocks.org/mbostock/3903818). You can also create transitions within for loops without worrying about the dreaded [closures in loops problem](http://www.mennovanslooten.nl/blog/post/62).
 
-The other big change is that **[transition.select](Transitions#wiki-select) and [transition.selectAll](Transitions#wiki-selectAll) now reselect existing transitions** rather than creating new transitions. This means that you can schedule a transition on a set of elements—say an axis—and then reselect a subset of those elements to customize the transition. This technique of customizing axes is called _postselection_, and in 3.0 you can use it for transitions as well as selections. For example, if you want to override the text-anchor for axis labels:
+The other big change is that **[transition.select](Transitions#select) and [transition.selectAll](Transitions#selectAll) now reselect existing transitions** rather than creating new transitions. This means that you can schedule a transition on a set of elements—say an axis—and then reselect a subset of those elements to customize the transition. This technique of customizing axes is called _postselection_, and in 3.0 you can use it for transitions as well as selections. For example, if you want to override the text-anchor for axis labels:
 
 ```js
 svg.select(".x.axis").transition()
@@ -49,7 +49,7 @@ svg.select(".x.axis").transition()
     .style("text-anchor", "start");
 ```
 
-In 2.x, transition.select and transition.selectAll would create a new transition that would conflict with the existing transition. Like selections, transitions in 3.0 and now stored entirely in the DOM, and thus can be reselected. Related to this, **[transition.transition](Transitions#wiki-transition) now creates a new transition that is scheduled to start when the originating transition ends**. This makes it very easy to create chained transitions, say from [stacked to grouped bars](http://bl.ocks.org/mbostock/3943967), without the hassle of listening for "end" events.
+In 2.x, transition.select and transition.selectAll would create a new transition that would conflict with the existing transition. Like selections, transitions in 3.0 and now stored entirely in the DOM, and thus can be reselected. Related to this, **[transition.transition](Transitions#transition) now creates a new transition that is scheduled to start when the originating transition ends**. This makes it very easy to create chained transitions, say from [stacked to grouped bars](http://bl.ocks.org/mbostock/3943967), without the hassle of listening for "end" events.
 
 ```js
 rect.transition()
@@ -138,7 +138,7 @@ The rarely-used **d3.first and d3.last methods have been removed**; in most case
 var first = objects.reduce(function(p, v) { return p.value < v.value ? p : v; });
 ```
 
-If you want a [selection algorithm](http://en.wikipedia.org/wiki/Selection_algorithm) (not to be confused with a D3 selection) to select the top or bottom K of an ordered set, consider using Crossfilter’s [heapselect implementation](https://github.com/square/crossfilter/blob/master/src/heapselect.js). The **d3.split helper has also been removed**, since d3.svg.line and d3.svg.area now provide a [defined](SVG-Shapes#wiki-line_defined) property for handling [missing data](http://bl.ocks.org/mbostock/3035090).
+If you want a [selection algorithm](http://en.wikipedia.org/wiki/Selection_algorithm) (not to be confused with a D3 selection) to select the top or bottom K of an ordered set, consider using Crossfilter’s [heapselect implementation](https://github.com/square/crossfilter/blob/master/src/heapselect.js). The **d3.split helper has also been removed**, since d3.svg.line and d3.svg.area now provide a [defined](SVG-Shapes#line_defined) property for handling [missing data](http://bl.ocks.org/mbostock/3035090).
 
 ## Geom
 
@@ -146,11 +146,11 @@ The rarely-used **[d3.geom.contour](http://bl.ocks.org/mbostock/4241134) method 
 
 ## Layouts
 
-**[Hierarchy layouts](Hierarchy-Layout) no longer support wrapping input data** to create nodes. Instead, the layout assigns the computed properties value, depth, etc. on the input data directly. If you were invoking the hierarchy layout using [hierarchy.nodes](Hierarchy-Layout#wiki-nodes), rather than using the deprecated method of invoking the layout directly, then you shouldn’t be affected by this change. All of the official examples were changed to use hierarchy.nodes ages ago.
+**[Hierarchy layouts](Hierarchy-Layout) no longer support wrapping input data** to create nodes. Instead, the layout assigns the computed properties value, depth, etc. on the input data directly. If you were invoking the hierarchy layout using [hierarchy.nodes](Hierarchy-Layout#nodes), rather than using the deprecated method of invoking the layout directly, then you shouldn’t be affected by this change. All of the official examples were changed to use hierarchy.nodes ages ago.
 
 ## SVG
 
-The aliases **d3.svg.mouse and d3.svg.touches have been removed**; use [d3.mouse](Selections#wiki-d3_mouse) and [d3.touches](Selections#wiki-d3_touches) instead. These methods are identical, and were moved in an earlier minor release that added support for HTML as well as SVG elements.
+The aliases **d3.svg.mouse and d3.svg.touches have been removed**; use [d3.mouse](Selections#d3_mouse) and [d3.touches](Selections#d3_touches) instead. These methods are identical, and were moved in an earlier minor release that added support for HTML as well as SVG elements.
 
 ## Other Miscellany
 

@@ -96,7 +96,7 @@ D3 におけるトランジションの詳しい仕組みについてはチュ�
   </tr>
 </table>
 
-3.0では、リクエスト発行のための D3 非同期メソッドが[d3.xhr](Requests#wiki-d3_xhr) を返すようになりました。これによって従来よりずっと優れたリクエスト管理が可能になりました。たとえば[progress](http://bl.ocks.org/mbostock/3750941)、load 、error の各イベントごとに別のリスナーを持たせるなど、複数のリスナー設定が可能となりました。[xhr.abort](Requests#wiki-abort) を使って実行中のリクエストをキャンセルしたり、[xhr.header](Requests#wiki-header) を使ってリクエストヘッダを追加したり、[xhr.send](Requests#wiki-send)で HTTP メソッドや body データのカスタマイズも可能になりました。不本意ではありますが、マイクロソフトの非標準の XDomainRequest オブジェクトを使う方法で IE9 への CORS 互換性の対応も行いました。
+3.0では、リクエスト発行のための D3 非同期メソッドが[d3.xhr](Requests#d3_xhr) を返すようになりました。これによって従来よりずっと優れたリクエスト管理が可能になりました。たとえば[progress](http://bl.ocks.org/mbostock/3750941)、load 、error の各イベントごとに別のリスナーを持たせるなど、複数のリスナー設定が可能となりました。[xhr.abort](Requests#abort) を使って実行中のリクエストをキャンセルしたり、[xhr.header](Requests#header) を使ってリクエストヘッダを追加したり、[xhr.send](Requests#send)で HTTP メソッドや body データのカスタマイズも可能になりました。不本意ではありますが、マイクロソフトの非標準の XDomainRequest オブジェクトを使う方法で IE9 への CORS 互換性の対応も行いました。
 
 また、非同期リクエストメソッドが Node.js のコールバック形式（ コールバック関数への最初の引数が「エラー」、第2引数が「結果」という形式）に対応しました。これにより d3.xhs が[Queue.js](/mbostock/queue) のような非同期 JavaScript ヘルパーライブラリとの互換性を持ち、複数のリソースの同時読み込みをずっと容易に行えるようになります。具体例は[[Upgrading to 3.0]] のリクエストのセクションをご参照ください。
 
