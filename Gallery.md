@@ -371,6 +371,8 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 </table>
 
 ## Examples
+* [Box Office collection of James Bond movies](https://my.infocaptor.com/dash/mt.php?mode=adhoc_public&x=DEMO&ds=james_bond_csv&r=Bond&m=box_office_millions&a=sum&v=hrchy_circle_pack&h=800&w=800
+) — James Bond
 * [The Network of Programming Languages](http://fatiherikli.github.io/programming-language-network/) — Fatih Erikli
 * [Visualization of the distribution of Russian budget 2013](http://clearspending.artzub.com/) — ArtZub
 * [Interactive World Cup Visualization](http://rasenball.com/) - Mondula
@@ -921,7 +923,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Digital Clock By Virtual Force](http://jklabz.com/d3/digital_clock/digital_clock.html)
 * [Radar Chart or Spider Chart](http://bl.ocks.org/nbremer/raw/6506614/)
 * [Battle Statistics from the MMO game World of Tanks] (http://www.polsci.ucsb.edu/faculty/glasgow/research/d3/WoTkillratio.html) - Garrett Glasgow
-
+* [Tendulkar's Rise and Fall](https://my.infocaptor.com/dash/mt.php?pa=tendulkar_5425757cbb623)
 
 #### Charts using the [reusable API](http://bost.ocks.org/mike/chart/)
 
@@ -1027,6 +1029,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [CSSdeck: Repulsion example](http://cssdeck.com/labs/d3-repulsive)
 
 #### Products
+* [InfoCaptor: Tableau like Drag and Drop D3 Chart Builder](http://www.infocaptor.com)
 * [Bitdeli: Custom analytics with Python and GitHub](https://bitdeli.com/)
 * [Chart.io: The Easiest Business Dashboard You'll Ever Use](http://chart.io/)
 * [Cube: Time Series Data Collection & Analysis](http://square.github.com/cube/)
@@ -1034,7 +1037,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [DropTask: Visual task management application using D3 for visuals](https://www.droptask.com)
 * [Explore Analytics: cloud-based data analytics and visualization](http://exploreanalytics.com/)
 * [Fast Multidimensional Filtering for Coordinated Views](http://square.github.com/tesseract/)
-* [InfoCaptor Dashboards with D3 and canvas](http://www.infocaptor.com)
+* [Free Chart Builder in the cloud](https://my.infocaptor.com/free_data_visualization.php)
 * [Meshu turns your places into beautiful objects.](http://meshu.io/)
 * [Mohiomap: A Visual Memory for Evernote](https://www.moh.io/)
 * [MortgageBloom Calculator](http://mortgagebloom.com)
