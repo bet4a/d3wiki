@@ -592,7 +592,7 @@ Returns the path data string for the specified *datum*. An optional *index* may 
 
 <a name="diagonal_source" href="SVG-Shapes#wiki-diagonal_source">#</a> diagonal.<b>source</b>([<i>source</i>])
 
-If *source* is specified, sets the *source*-accessor to the specified function or constant. If *source* is not specified, returns the current *source*-accessor. The purpose of the *source* accessor is to return an object that describes the starting point of the diagonal. The returned object is subsequently passed to the [projection](SVG-Shapes#wiki-diagonal_projection). The default accessor assumes that the input data is an object with suitably-named attributes:
+If *source* is specified, sets the *source*-accessor to the specified function or constant. If *source* is not specified, returns the current *source*-accessor. The purpose of the *source* accessor is to return an object of the form `{x, y}` that describes the starting point of the diagonal. (The returned object is subsequently passed to the [projection](SVG-Shapes#wiki-diagonal_projection).) The default accessor assumes that the input data is an object with suitably-named attributes:
 
 ```javascript
 function source(d) {
@@ -604,7 +604,7 @@ The *source*-accessor is invoked in the same manner as other value functions in 
 
 <a name="diagonal_target" href="SVG-Shapes#wiki-diagonal_target">#</a> diagonal.<b>target</b>([<i>target</i>])
 
-If *target* is specified, sets the *target*-accessor to the specified function or constant. If *target* is not specified, returns the current *target*-accessor. The purpose of the *target* accessor is to return an object that describes the ending point of the diagonal. The returned object is subsequently passed to the [projection](SVG-Shapes#wiki-diagonal_projection). The default accessor assumes that the input data is an object with suitably-named attributes:
+If *target* is specified, sets the *target*-accessor to the specified function or constant. If *target* is not specified, returns the current *target*-accessor. The purpose of the *target* accessor is to return an object of the form `{x, y}` that describes the ending point of the diagonal. (The returned object is subsequently passed to the [projection](SVG-Shapes#wiki-diagonal_projection).) The default accessor assumes that the input data is an object with suitably-named attributes:
 
 ```javascript
 function target(d) {
@@ -616,7 +616,7 @@ The *target*-accessor is invoked in the same manner as other value functions in 
 
 <a name="diagonal_projection" href="SVG-Shapes#wiki-diagonal_projection">#</a> diagonal.<b>projection</b>([<i>projection</i>])
 
-If *projection* is specified, sets the *projection* to the specified function. If *projection* is not specified, returns the current *projection*. The *projection* converts the starting or ending point returned by the source and target accessors, returning a two-element array of numbers. The default accessor assumes that the input point is an object with *x* and *y* attributes:
+If *projection* is specified, sets the *projection* to the specified function. If *projection* is not specified, returns the current *projection*. The *projection* converts a point (such as that returned by the source and target accessors) of the form `{x, y}` to a two-element array of numbers. The default accessor assumes that the input point is an object with *x* and *y* attributes:
 
 ```javascript
 function projection(d) {
