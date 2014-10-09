@@ -177,6 +177,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Geographical hexbins<br/><a href="http://ssz.fr/places?fr#ac$"><img src="http://ssz.fr/brdl/ac.png" width="202"></a></td>
     <td>xkcd-style Comic Narrative Charts<br/><a href="http://csclub.uwaterloo.ca/~n2iskand/?page_id=13"><img src="http://csclub.uwaterloo.ca/~n2iskand/wp-content/uploads/2013/06/Screen-Shot-2013-06-08-at-12.04.47-PM-300x200.png" width="202"></a></td>
     <td>GitHub Visualizer<br/><a href="http://ghv.artzub.com/#repo=d3&climit=100&user=mbostock&run"><img src="https://f.cloud.github.com/assets/134249/1274358/39cb552a-2d96-11e3-9936-c892a2f81bb6.gif" width="202"></a></td>
+
     <td>WorldBank Contract Awards<br/><a href="http://d3.artzub.com/wbca/"><img src="http://brainstorage.habrastorage.org/item_custom_image_images/6/68/68628/w206h160_screenshot_11.png" width="202"></a></td>
 </tr>
 <tr>
@@ -286,6 +287,10 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 <td>Network of soccer passes<br><a href="http://bl.ocks.org/fhernand/9a9f93f2a6b0e83a9294"><img src="http://bl.ocks.org/fhernand/raw/9a9f93f2a6b0e83a9294/thumbnail.png" width="202"></a></td>
 <td>Choropleth with svg filter<br><a href="http://bl.ocks.org/fhernand/be1e9c9fdb0473292abf"><img src="http://bl.ocks.org/fhernand/raw/be1e9c9fdb0473292abf/thumbnail.png" width="202"></a></td>
 <td>Psychedelic British Isles<br><a href="http://go-down-the-drain.herokuapp.com/secretTomb/BritishIsles.html"><img src="https://raw.githubusercontent.com/BeniCheni/Music-Concierge/master/app/images/Added%20Borders,%20Country%20and%20City%20Names.png" width="202"></a></td>
+</tr>
+
+<tr>
+<td>D3 Chart Builder - Drag and drop<br><a href="https://my.infocaptor.com/free_data_visualization.php"><img src="http://www.infocaptor.com/dashboard/wp-content/uploads/2014/10/image-358.jpg" width="202"></a></td>
 </tr>
 
 </table>
