@@ -332,12 +332,14 @@ See one of:
 * [[line.y|SVG-Shapes#wiki-line_y]] - get or set the *y*-coordinate accessor.
 * [[line.interpolate|SVG-Shapes#wiki-line_interpolate]] - get or set the interpolation mode.
 * [[line.tension|SVG-Shapes#wiki-line_tension]] - get or set the cardinal spline tension.
-* [line.defined](SVG-Shapes#wiki-line_defined) - control whether the line is defined at a given point.
+* [[line.defined|SVG-Shapes#wiki-line_defined]] - control whether the line is defined at a given point.
 * [[d3.svg.line.radial|SVG-Shapes#wiki-line_radial]] - create a new radial line generator.
 * [[line|SVG-Shapes#wiki-_line_radial]] - generate a piecewise linear curve, as in a polar line chart.
 * [[line.radius|SVG-Shapes#wiki-line_radial_radius]] - get or set the *radius* accessor.
 * [[line.angle|SVG-Shapes#wiki-line_radial_angle]] - get or set the *angle* accessor.
-* [line.defined](SVG-Shapes#wiki-line_radial_defined) - control whether the line is defined at a given point.
+* [[line.interpolate|SVG-Shapes#wiki-line_radial_interpolate]] - get or set the interpolation mode.
+* [[line.tension|SVG-Shapes#wiki-line_radial_tension]] - get or set the cardinal spline tension.
+* [[line.defined|SVG-Shapes#wiki-line_radial_defined]] - control whether the line is defined at a given point.
 * [[d3.svg.area|SVG-Shapes#wiki-area]] - create a new area generator.
 * [[area|SVG-Shapes#wiki-_area]] - generate a piecewise linear area, as in an area chart.
 * [[area.x|SVG-Shapes#wiki-area_x]] - get or set the *x*-coordinate accessors.

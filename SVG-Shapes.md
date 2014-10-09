@@ -228,6 +228,18 @@ function angle(d) {
 
 This method is a transformation of the Cartesian [line.y](SVG-Shapes#wiki-line_y) method.
 
+<a name="line_radial_interpolate" href="SVG-Shapes#wiki-line_radial_interpolate">#</a> line.<b>interpolate</b>([<i>interpolate</i>])
+
+See the Cartesian [line.interpolate](SVG-Shapes#wiki-line_interpolate) method.  The interpolation occurs after projecting to Cartesian space.
+
+<a name="line_radial_tension" href="SVG-Shapes#wiki-line_radial_tension">#</a> line.<b>tension</b>([<i>tension</i>])
+
+See the Cartesian [line.tension](SVG-Shapes#wiki-line_tension) method.  The interpolation occurs after projecting to Cartesian space.
+
+<a name="line_radial_defined" href="SVG-Shapes#wiki-line_radial_defined">#</a> line.<b>defined</b>([<i>defined</i>])
+
+See the Cartesian [line.defined](SVG-Shapes#wiki-line_defined) method.
+
 <a name="area" href="SVG-Shapes#wiki-area">#</a> d3.svg.<b>area</b>()
 
 Constructs a new area generator with the default *x*-, *y0*- and *y1*-accessor functions (that assume the input data is a two-element array of numbers; see below for details), and linear interpolation. The returned function generates path data for a closed piecewise linear curve, or polygon, as in an area chart:
