@@ -563,6 +563,7 @@ Interactive Unit Circle (Trigonometry)<br>
 * [Visualizing Joyce's 'Ulysses': "Sirens" as a Graphic Score] (http://y-li.me/x/sirens) - Emily Fuhrman
 * [Visualizing film dialogue - 255 fuck in Pulp Fiction](http://graphoverflow.com/graphs/pulp-fiction.html) - Sarath Saleem
 * [Drug adverse events](http://googledrive.com/host/0BwcmXsFAhzhoOTdydHhoRktlOUU/app/#/) - Etienne Ramstein
+* [Gene functional interaction networks](http://imp.princeton.edu/) - Aaron Wong
 
 ### Collections
 
