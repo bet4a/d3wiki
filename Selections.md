@@ -16,7 +16,7 @@ Selects the first element that matches the specified selector string, returning 
 
 <a href="Selections#d3_select">#</a> d3.<b>select</b>(<i>node</i>)
 
-Selects the specified node. This is useful if you already have a reference to a node, such as `d3.select(this)` within an event listener, or a global such as `document.body`.
+Selects the specified node. This is useful if you already have a reference to a node, such as `d3.select(this)` within an event listener, or a global such as `document.body`. This function does not traverse the DOM.
 
 <a name="d3_selectAll" href="Selections#d3_selectAll">#</a> d3.<b>selectAll</b>(<i>selector</i>)
 
@@ -24,7 +24,7 @@ Selects all elements that match the specified selector. The elements will be sel
 
 <a href="Selections#d3_selectAll">#</a> d3.<b>selectAll</b>(<i>nodes</i>)
 
-Selects the specified array of elements. This is useful if you already have a reference to nodes, such as `d3.selectAll(this.childNodes)` within an event listener, or a global such as `document.links`. The *nodes* argument doesn't have to be an array, exactly; any pseudo-array that can be coerced into an array (e.g., a `NodeList` or `arguments`) will work.
+Selects the specified array of elements. This is useful if you already have a reference to nodes, such as `d3.selectAll(this.childNodes)` within an event listener, or a global such as `document.links`. The *nodes* argument doesn't have to be an array, exactly; any pseudo-array that can be coerced into an array (e.g., a `NodeList` or `arguments`) will work. This function does not traverse the DOM.
 
 ## Operating on Selections
 
