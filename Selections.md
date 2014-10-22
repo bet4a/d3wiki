@@ -395,7 +395,7 @@ function foo(selection) {
 Now, we can say this:
 
 ```javascript
-foo(d3.selectAll("div"))
+foo(d3.selectAll("div"));
 ```
 
 Or equivalently:
