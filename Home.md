@@ -63,6 +63,11 @@ or if you are running Ruby you can use
 
 Once this is running, go to <http://localhost:8888/>.
 
+or if you are running nodejs you can do
+
+    npm install http-server -g
+    http-server
+
 D3 supports the asynchronous module definition (AMD) API. For example, if you use [RequireJS](http://requirejs.org/), you may load as follows:
 
 ```js
