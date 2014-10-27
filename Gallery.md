@@ -367,7 +367,7 @@ Interactive Unit Circle (Trigonometry)<br>
   <tr height="146" valign="top">
     <td>Spline Interpolation<br><a href="http://bl.ocks.org/mbostock/4342190"><img src="http://bl.ocks.org/mbostock/raw/4342190/thumbnail.png" width="202"></a></td>
     <td>Dispatching Events<br><a href="http://bl.ocks.org/mbostock/5872848"><img src="http://bl.ocks.org/mbostock/raw/5872848/thumbnail.png" width="202"></a></td>
-    <td>Better force layout selection<br><a href="http://bl.ocks.org/couchand/6420534"><img src="https://gist.github.com/couchand/6420534/raw/84a16303101dbe8adc0ecc298471d95ebac4356e/thumbnail.png" width="200"></a></td>
+    <td>Better force layout selection<br><a href="http://bl.ocks.org/couchand/6420534"><img src="http://bl.ocks.org/couchand/raw/6420534/thumbnail.png" width="200"></a></td>
 <td>v45 web theme using SVG<br><a href="http://twistedhardware.github.io/theme-v45"><img src="http://twistedhardware.github.io/theme-v45/images/v45_snap_small.jpg" width="200"></a></td>
   </tr>
   <tr>
