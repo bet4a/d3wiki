@@ -377,6 +377,7 @@ Interactive Unit Circle (Trigonometry)<br>
 </table>
 
 ## Examples
+* [US HEALTH EXPENDITURE COMPARISON TOOL](http://cs.ucla.edu/~wuxu/visual_masters/) — Shawn W
 * [Box Office collection of James Bond movies](https://my.infocaptor.com/dash/mt.php?mode=adhoc_public&x=DEMO&ds=james_bond_csv&r=Bond&m=box_office_millions&a=sum&v=hrchy_circle_pack&h=800&w=800
 ) — James Bond
 * [The Network of Programming Languages](http://fatiherikli.github.io/programming-language-network/) — Fatih Erikli
