@@ -341,7 +341,7 @@ Interactive Unit Circle (Trigonometry)<br>
   </tr>
   <tr height="146" valign="top">
     <td>Waterfall Chart<br><a href="http://bl.ocks.org/chucklam/f3c7b3e3709a0afd5d57"><img src="http://bl.ocks.org/chucklam/raw/f3c7b3e3709a0afd5d57/thumbnail.png" width="200"></a></td>
-  </tr> <td width="207">100% Stacked Bars<br><a href="https://demo.zoomdata.com/zoomdata/visualization?__target=embedded&key=544fafa960b23a7b9fa15e47#52168ad1e4b0fcc720f2e2cf-53f205bfe4b0e2c0080c0551"><img src="http://i57.tinypic.com/1pynhw.png" width="202"></a></td>
+  </tr> <td width="207">100% Stacked Bars<br><a href="https://live.zoomdata.com/zoomdata/visualization?__target=embedded&key=544fb187e4b0f4966438c4c3#51db7ad4e4b04caf9ab346db-5411ace4e4b065842f0df371"><img src="http://i57.tinypic.com/1pynhw.png" width="202"></a></td>
     </tr>
     
 </table>
