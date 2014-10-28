@@ -297,7 +297,7 @@ Interactive Unit Circle (Trigonometry)<br>
 <img src="http://i.imgur.com/Rh8bSNY.png?1" width="202">
 </a>
 </td>
-<td>Days-Hours Heatmap<br><a href="http://bl.ocks.org/oyyd/859fafc8122977a3afd6"><img src="https://gist.github.com/oyyd/859fafc8122977a3afd6/raw/3aaf5e40003e1a7b44f282e62cbc8b591b0d1dcf/thumbnail.png" width="202"></a></td>
+<td>Days-Hours Heatmap<br><a href="http://bl.ocks.org/oyyd/859fafc8122977a3afd6"><img src="https://gist.github.com/oyyd/859fafc8122977a3afd6/raw/be72ff80cad0aab8cb924989edf78794ebd8be67/thumbnail.png" width="202"></a></td>
 
 </tr>
 
