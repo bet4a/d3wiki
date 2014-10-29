@@ -200,9 +200,9 @@ line.defined(function(d) { return !isNaN(d[1]); });
 
 Constructs a new radial line generator with the default *radius*- and *angle*-accessor functions (that assume the input data is a two-element array of numbers; see below for details), and linear interpolation. The returned function generates path data for an open piecewise linear curve, or polyline, as with the Cartesian [line](SVG-Shapes#line) generator.
 
-<a name="_line_radial" href="SVG-Shapes#_line_radial">#</a> <b>line</b>(<i>data</i>[, <i>index</i>])
+<a name="_line_radial" href="SVG-Shapes#_line_radial">#</a> <b>line</b>(<i>data</i>)
 
-Returns the path data string for the specified array of *data* elements. An optional *index* may be specified, which is passed through to the line's accessor functions.
+Returns the path data string for the specified array of *data* elements.
 
 <a name="line_radial_radius" href="SVG-Shapes#line_radial_radius">#</a> line.<b>radius</b>([<i>radius</i>])
 
@@ -252,9 +252,9 @@ The area generator is designed to work in conjunction with the [line](SVG-Shapes
 
 To create [streamgraphs](http://mbostock.github.com/d3/ex/stream.html) (stacked area charts), use the [stack](Stack-Layout) layout. This layout sets the y0 attribute for each value in a series, which can be used from the *y0*- and *y1*-accessors. Note that each series must have the same number of values per series, and each value must have the same *x*-coordinate; if you have missing data or inconsistent *x*-coordinates per series, you must resample and interpolate your data before computing the stacked layout.
 
-<a name="_area" href="SVG-Shapes#_area">#</a> <b>area</b>(<i>data</i>[, <i>index</i>])
+<a name="_area" href="SVG-Shapes#_area">#</a> <b>area</b>(<i>data</i>)
 
-Returns the path data string for the specified array of *data* elements, or null if the path is empty. An optional *index* may be specified, which is passed through to the area's accessor functions.
+Returns the path data string for the specified array of *data* elements, or null if the path is empty.
 
 <a name="area_x" href="SVG-Shapes#area_x">#</a> area.<b>x</b>([<i>x</i>])
 
@@ -363,9 +363,9 @@ area.defined(function(d) { return !isNaN(d[1]); });
 
 …
 
-<a name="_area_radial" href="SVG-Shapes#_area_radial">#</a> <b>area</b>(<i>data</i>[, <i>index</i>])
+<a name="_area_radial" href="SVG-Shapes#_area_radial">#</a> <b>area</b>(<i>data</i>)
 
-Returns the path data string for the specified array of *data* elements. An optional *index* may be specified, which is passed through to the area's accessor functions.
+Returns the path data string for the specified array of *data* elements.
 
 <a name="area_radial_radius" href="SVG-Shapes#area_radial_radius">#</a> area.<b>radius</b>([<i>radius</i>])
 
