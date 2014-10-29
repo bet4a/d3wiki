@@ -68,6 +68,12 @@ or if you are running nodejs you can do
     npm install http-server -g
     http-server
 
+Another option is to start a local jetty instance, by using the jetty-runner library with the JVM already installed on your system. In order to achieve this you'll need to download [jetty-runner](http://central.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.3.0.M0/jetty-runner-9.3.0.M0.jar), then you can simply do:
+
+    java -jar jetty-runner-9.3.0.M0.jar  --port 8080  .
+
+and this will start the server on http://localhost:8080 as usual from the current directory, or a different directory, simply changing '.' to the path to that directory.
+
 D3 supports the asynchronous module definition (AMD) API. For example, if you use [RequireJS](http://requirejs.org/), you may load as follows:
 
 ```js
