@@ -382,7 +382,6 @@ Interactive Unit Circle (Trigonometry)<br>
 * [Box Office collection of James Bond movies](https://my.infocaptor.com/dash/mt.php?mode=adhoc_public&x=DEMO&ds=james_bond_csv&r=Bond&m=box_office_millions&a=sum&v=hrchy_circle_pack&h=800&w=800
 ) — James Bond
 * [The Network of Programming Languages](http://fatiherikli.github.io/programming-language-network/) — Fatih Erikli
-* [US Health Expenditure Comparison Tool](http://cs.ucla.edu/~wuxu/visual_masters/), [Github](https://github.com/shawnhero/dataVis) — Shawn W
 * [Visualization of the distribution of Russian budget 2013](http://clearspending.artzub.com/) — ArtZub
 * [Interactive World Cup Visualization](http://rasenball.com/) - Mondula
 * [Government Sequester 2013](http://labs.enigma.io/shutdown2013/) - Enigma
@@ -565,6 +564,7 @@ Interactive Unit Circle (Trigonometry)<br>
 * [Visualizing MBTA Data] (http://mbtaviz.github.io/) - Michael Barry and Brian Card
 * [Visualizing Joyce's 'Ulysses': "Sirens" as a Graphic Score] (http://y-li.me/x/sirens) - Emily Fuhrman
 * [Visualizing film dialogue - 255 fuck in Pulp Fiction](http://graphoverflow.com/graphs/pulp-fiction.html) - Sarath Saleem
+* [US Health Expenditure Comparison Tool](http://cs.ucla.edu/~wuxu/visual_masters/), [Github](https://github.com/shawnhero/dataVis) — Shawn W
 * [Drug adverse events](http://googledrive.com/host/0BwcmXsFAhzhoOTdydHhoRktlOUU/app/#/) - Etienne Ramstein
 * [Gene functional interaction networks](http://imp.princeton.edu/) - Aaron Wong
 
