@@ -754,6 +754,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Using a sunburst to analyze sequences of events](http://bl.ocks.org/kerryrodden/7090426)
 * [Zoomable sunburst with updating data](http://bl.ocks.org/kerryrodden/477c1bfb081b783f80ad)
 * [Sunburst for your skill map](http://bl.ocks.org/wizicer/f662a0b04425fc0f7489)
+* [Sunburst bilevel partition with tooltips](http://bl.ocks.org/vgrocha/1580af34e56ee6224d33)
 
 #### Force Layout
 
