@@ -9,37 +9,37 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 ### [[选择集]]
 
 * [[d3.select|选择集#d3_select]] - 从当前文档中选择一系列元素。
-* [[d3.selectAll|Selections#d3_selectAll]] - 从当前文档中选择多项元素。
-* [[selection.attr|Selections#attr]] - 设置或获取指定属性。
-* [[selection.classed|Selections#classed]] - 添加或删除选定元素的 CSS 类（CSS class）。
-* [[selection.style|Selections#style]] - 设置或删除 CSS 属性。style优先级高于attr。
-* [[selection.property|Selections#property]] - 设置或获原生的属性值（raw property）。
-* [[selection.text|Selections#text]] - 设置或获取选定元素的标签体文本内容。
-* [[selection.html|Selections#html]] - 设置或获取选定元素的 HTML 内容（类似 innerHTML ）
-* [[selection.append|Selections#append]] - 创建并添加新元素到选定元素后。
-* [[selection.insert|Selections#insert]] - 创建并添加新元素到选定元素前。
-* [[selection.remove|Selections#remove]] - 从当前文档对象中删除选定的元素。
-* [[selection.data|Selections#data]] - 设置或获取一组元素的绑定数据（get or set data for a group of elements, while computing a relational join.）
-* [[selection.enter|Selections#enter]] - 返回缺失元素的占位对象（placeholder），指向绑定的数据中比选定元素集多出的一部分元素。
-* [[selection.exit|Selections#exit]] - 返回多余元素的元素集，即选择元素中比绑定数据多出的一部分。(关于data, enter, exit原理的[示例1](http://bost.ocks.org/mike/join/), [示例2](http://bl.ocks.org/mbostock/3808218), [示例3](http://bl.ocks.org/mbostock/5779690))
-* [[selection.datum|Selections#datum]] - 设置或获取单独元素的数据，不进行关联。（get or set data for individual elements, without computing a join.）
-* [[selection.filter|Selections#filter]] - 根据绑定的数据过滤选择集。
-* [[selection.sort|Selections#sort]] - 根据绑定的数据对选择的元素进行排序。
-* [[selection.order|Selections#order]] - 对文档中的元素重排序以匹配选择集。
-* [[selection.on|Selections#on]] - 添加或删除事件监听器。
-* [[selection.transition|Selections#transition]] - 启动一个过渡效果（返回 Transition 对象），可以理解为动画。
-* [selection.interrupt](Selections#interrupt) - 立即停止所有正在进行的动画动作。
-* [[selection.each|Selections#each]] - 为每个选择的元素集调用指定的函数。
-* [[selection.call|Selections#call]] - 为当前选择的元素集调用指定的函数。
-* [[selection.empty|Selections#empty]] - 测试选择集是否为空。
-* [[selection.node|Selections#node]] - 返回选择集中的第一个元素。
-* [selection.size](Selections#size) - 返回选择集中的元素个数。
-* [[selection.select|Selections#select]] - 选择所选的元素中的第一个子元素组成新的选择集。
-* [[selection.selectAll|Selections#selectAll]] - 选择所选的元素中的多个子元素组成新的选择集。
-* [[d3.selection|Selections#d3_selection]] - 选择集对象原型（可通过 `d3.selection.prototype` 为选择集增强功能）。
-* [[d3.event|Selections#d3_event]] - 获取当前交互的用户事件。
-* [[d3.mouse|Selections#d3_mouse]] - 获取鼠标的相对某元素的坐标。
-* [[d3.touches|Selections#d3_touches]] - 获取相对某元素的触控点坐标。
+* [[d3.selectAll|选择集#d3_selectAll]] - 从当前文档中选择多项元素。
+* [[selection.attr|选择集#attr]] - 设置或获取指定属性。
+* [[selection.classed|选择集#classed]] - 添加或删除选定元素的 CSS 类（CSS class）。
+* [[selection.style|选择集#style]] - 设置或删除 CSS 属性。style优先级高于attr。
+* [[selection.property|选择集#property]] - 设置或获原生的属性值（raw property）。
+* [[selection.text|选择集#text]] - 设置或获取选定元素的标签体文本内容。
+* [[selection.html|选择集#html]] - 设置或获取选定元素的 HTML 内容（类似 innerHTML ）
+* [[selection.append|选择集#append]] - 创建并添加新元素到选定元素后。
+* [[selection.insert|选择集#insert]] - 创建并添加新元素到选定元素前。
+* [[selection.remove|选择集#remove]] - 从当前文档对象中删除选定的元素。
+* [[selection.data|选择集#data]] - 设置或获取一组元素的绑定数据（get or set data for a group of elements, while computing a relational join.）
+* [[selection.enter|选择集#enter]] - 返回缺失元素的占位对象（placeholder），指向绑定的数据中比选定元素集多出的一部分元素。
+* [[selection.exit|选择集#exit]] - 返回多余元素的元素集，即选择元素中比绑定数据多出的一部分。(关于data, enter, exit原理的[示例1](http://bost.ocks.org/mike/join/), [示例2](http://bl.ocks.org/mbostock/3808218), [示例3](http://bl.ocks.org/mbostock/5779690))
+* [[selection.datum|选择集#datum]] - 设置或获取单独元素的数据，不进行关联。（get or set data for individual elements, without computing a join.）
+* [[selection.filter|选择集#filter]] - 根据绑定的数据过滤选择集。
+* [[selection.sort|选择集#sort]] - 根据绑定的数据对选择的元素进行排序。
+* [[selection.order|选择集#order]] - 对文档中的元素重排序以匹配选择集。
+* [[selection.on|选择集#on]] - 添加或删除事件监听器。
+* [[selection.transition|选择集#transition]] - 启动一个过渡效果（返回 Transition 对象），可以理解为动画。
+* [selection.interrupt](选择集#interrupt) - 立即停止所有正在进行的动画动作。
+* [[selection.each|选择集#each]] - 为每个选择的元素集调用指定的函数。
+* [[selection.call|选择集#call]] - 为当前选择的元素集调用指定的函数。
+* [[selection.empty|选择集#empty]] - 测试选择集是否为空。
+* [[selection.node|选择集#node]] - 返回选择集中的第一个元素。
+* [selection.size](选择集#size) - 返回选择集中的元素个数。
+* [[selection.select|选择集#select]] - 选择所选的元素中的第一个子元素组成新的选择集。
+* [[selection.selectAll|选择集#selectAll]] - 选择所选的元素中的多个子元素组成新的选择集。
+* [[d3.selection|选择集#d3_selection]] - 选择集对象原型（可通过 `d3.selection.prototype` 为选择集增强功能）。
+* [[d3.event|选择集#d3_event]] - 获取当前交互的用户事件。
+* [[d3.mouse|选择集#d3_mouse]] - 获取鼠标的相对某元素的坐标。
+* [[d3.touches|选择集#d3_touches]] - 获取相对某元素的触控点坐标。
 
 ### [过渡效果](Transitions)
 
