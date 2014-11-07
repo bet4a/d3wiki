@@ -300,7 +300,9 @@ Interactive Unit Circle (Trigonometry)<br>
 <td>Days-Hours Heatmap<br><a href="http://bl.ocks.org/oyyd/859fafc8122977a3afd6"><img src="http://bl.ocks.org/oyyd/raw/859fafc8122977a3afd6/thumbnail.png" width="202"></a></td>
 <td>Trend Chart (Area + Line)<br><a href="http://bl.ocks.org/rkirsling/33a9e350516da54a5d4f"><img src="http://bl.ocks.org/rkirsling/raw/33a9e350516da54a5d4f/thumbnail.png" width="202"></a></td>
 </tr>
-
+<tr>
+<td>Stock Leaders Bubble Chart<br><a href="http://tomsisk.com/ondemand/"><img src="http://tomsisk.com/ondemand/img/screen.png"></a></td>
+</tr>
 </table>
 
 ## Basic Charts
@@ -376,7 +378,6 @@ Interactive Unit Circle (Trigonometry)<br>
   <tr height="146" valign="top">
     <td>Interactive force layout<br><a href="https://github.com/nylen/d3-process-map"><img src="http://i.imgur.com/LFM3KV5.png"></a></td>
     <td>EventDrops: Zoomable time series<br><a href="https://github.com/marmelab/EventDrops"><img src="http://i.imgur.com/fNPhBZ8.gif" width="202"></a></td>
-    <td>Stock Leaders Bubble Chart<br><a href="http://tomsisk.com/ondemand/"><img src="http://tomsisk.com/ondemand/img/screen.png"></a></td>
 </table>
 
 ## Examples
