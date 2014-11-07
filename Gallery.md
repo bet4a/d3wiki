@@ -376,6 +376,7 @@ Interactive Unit Circle (Trigonometry)<br>
   <tr height="146" valign="top">
     <td>Interactive force layout<br><a href="https://github.com/nylen/d3-process-map"><img src="http://i.imgur.com/LFM3KV5.png"></a></td>
     <td>EventDrops: Zoomable time series<br><a href="https://github.com/marmelab/EventDrops"><img src="http://i.imgur.com/fNPhBZ8.gif" width="202"></a></td>
+    <td>Stock Leaders Bubble Chart<br><a href="http://tomsisk.com/ondemand/"><img src="http://tomsisk.com/img/screen.png"></a></td>
 </table>
 
 ## Examples
