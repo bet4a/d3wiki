@@ -176,7 +176,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[d3.tsv.formatRows|CSV#tsv_formatRows]] - 类似于d3.csv.formatRows。
 * [d3.dsv](CSV#dsv) - 创建一个类似于d3.csv的文件处理对象，可以自定义分隔符和mime type。如：var dsv = d3.dsv("|", "text/plain");
 
-### [[Colors]]
+### [[颜色]]
 
 * [[d3.rgb|Colors#d3_rgb]] - 指定一种颜色，创建一个RGB颜色对象。支持多种颜色格式的输入。
 * [[rgb.brighter|Colors#rgb_brighter]] - 增强颜色的亮度，变化幅度由参数决定。
