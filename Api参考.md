@@ -8,7 +8,7 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 
 ### [[选择集]]
 
-* [[d3.select|Selections#d3_select]] - 从当前文档中选择一系列元素。
+* [[d3.select|选择集#d3_select]] - 从当前文档中选择一系列元素。
 * [[d3.selectAll|Selections#d3_selectAll]] - 从当前文档中选择多项元素。
 * [[selection.attr|Selections#attr]] - 设置或获取指定属性。
 * [[selection.classed|Selections#classed]] - 添加或删除选定元素的 CSS 类（CSS class）。
