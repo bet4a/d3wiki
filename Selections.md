@@ -147,7 +147,7 @@ Note: the `data` method cannot be used to clear previously-bound data; use [sele
 
 <a name="enter" href="Selections#enter">#</a> selection.<b>enter()</b>
 
-Returns the enter selection: placeholder nodes for each data element for which no corresponding existing DOM element was found in the current selection. This method is only defined on the update selection, which is returned by the [data](Selections#data) operator. In addition, the enter selection only defines [append](Selections#append), [insert](Selections#insert), [select](Selections#select) and [call](Selections#call) operators; you must use these operators to instantiate the entering elements before modifying any content. When you pass function arguments to operators on these inserted elements, the index argument will reflect the new positions and not necessarily start from zero or be continuous. (Enter selections also support [empty](Selections#empty) and [size](Selections#size).)
+Returns the enter selection: placeholder nodes for each data element for which no corresponding existing DOM element was found in the current selection. This method is only defined on the update selection, which is returned by the [data](Selections#data) operator. In addition, the enter selection only defines the [append](Selections#append), [insert](Selections#insert), [select](Selections#select) and [call](Selections#call) operators; you must use these operators to instantiate the entering elements before modifying any content. Enter selections also support [empty](Selections#empty) and [size](Selections#size).
 
 As a simple example, consider the case where the existing selection is empty, and we wish to create new nodes to match our data:
 
@@ -169,16 +169,16 @@ Assuming that the body is initially empty, the above code will create six new DI
 <div>42</div>
 ```
 
-Another way to think about the entering placeholder nodes is that they are pointers to the parent node (in this example, the document body); however, they only support append and insert.
+Another way to think about the entering placeholder nodes is that they are pointers to the parent node (in this example, the document body); however, they only support append and insert. Once elements have been inserted, their indices will reflect the new positions and not necessarily start from zero or be continuous.
 
 The enter selection **merges into the update selection** when you append or insert. Rather than applying the same operators to the enter and update selections separately, you can now apply them only once to the update selection after entering the nodes. If you find yourself removing an entire selection's elements only to reinsert most of them, do this instead. For example:
 
 ```javascript
 var update_sel = svg.selectAll("circle").data(data)
-// if you want to operate on old elements only, do it here
+update_sel.attr(/* operate on old elements only */)
 update_sel.enter().append("circle").attr(/* operate on new elements only */)
-update_sel.exit().remove()
 update_sel.attr(/* operate on old and new elements */)
+update_sel.exit().remove() /* complete the enter-update-exit pattern */
 ```
 
 <a name="exit" href="Selections#exit">#</a> selection.<b>exit()</b>
