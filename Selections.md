@@ -42,7 +42,7 @@ If *value* is specified, sets the attribute with the specified name to the speci
 
 If *value* is not specified, returns the value of the specified attribute for the first non-null element in the selection. This is generally useful only if you know that the selection contains exactly one element.
 
-The specified *name* may have a namespace prefix, such as `xlink:href`, to specify an "href" attribute in the XLink namespace. By default, D3 supports svg, xhtml, xlink, xml, and xmlns namespaces. Additional namespaces can be registered by adding to [d3.ns.prefix](Namespaces#prefix).
+The specified *name* may have a namespace prefix, such as `xlink:href`, to specify an "href" attribute in the XLink namespace. By default, D3 supports svg, xhtml, xlink, xml, and xmlns namespaces. Additional namespaces can be registered by adding them to [d3.ns.prefix](Namespaces#prefix) using dot notation.
 
 *name* can also be an Object of *name* and *value* attributes.
 
