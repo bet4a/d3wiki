@@ -615,18 +615,18 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [graticule.lines](Geo-Paths#graticule_lines) - 生成一个子午线和平行线的LineString的数组.
 * [graticule.outline](Geo-Paths#graticule_outline) - 生成一个表示该坐标网的外框多边形.
 * [graticule.extent](Geo-Paths#graticule_extent) - 获取或设置主要的和次要的范围.
-* [graticule.majorExtent](Geo-Paths#graticule_majorExtent) - get or set the major extent.
-* [graticule.minorExtent](Geo-Paths#graticule_minorExtent) - get or set the minor extent.
-* [graticule.step](Geo-Paths#graticule_step) - get or set the major & minor step intervals.
-* [graticule.majorStep](Geo-Paths#graticule_majorStep) - get or set the major step intervals.
-* [graticule.minorStep](Geo-Paths#graticule_minorStep) - get or set the minor step intervals.
-* [graticule.precision](Geo-Paths#graticule_precision) - get or set the latitudinal precision.
-* [d3.geo.circle](Geo-Paths#circle) - create a circle generator.
-* [circle](Geo-Paths#_circle) - generate a piecewise circle as a Polygon. 
-* [circle.origin](Geo-Paths#circle_origin) - specify the origin in latitude and longitude.
-* [circle.angle](Geo-Paths#circle_angle) - specify the angular radius in degrees.
-* [circle.precision](Geo-Paths#circle_precision) - specify the precision of the piecewise circle.
-* [d3.geo.area](Geo-Paths#area) - compute the spherical area of a given feature.
+* [graticule.majorExtent](Geo-Paths#graticule_majorExtent) - 获取或设置主要范围.
+* [graticule.minorExtent](Geo-Paths#graticule_minorExtent) - 获取或设置次要范围.
+* [graticule.step](Geo-Paths#graticule_step) - 获取或设置主要和次要的步间隔.
+* [graticule.majorStep](Geo-Paths#graticule_majorStep) - 获取或设置主要的步间隔.
+* [graticule.minorStep](Geo-Paths#graticule_minorStep) - 获取或设置次要的步间隔.
+* [graticule.precision](Geo-Paths#graticule_precision) - 设置或者获取横向精度.
+* [d3.geo.circle](Geo-Paths#circle) - 创建一个圆形的生成器.
+* [circle](Geo-Paths#_circle) - 使用多边形来生成一个分段的圆形. 
+* [circle.origin](Geo-Paths#circle_origin) - 通过横向和纵向坐标来指定原点.
+* [circle.angle](Geo-Paths#circle_angle) - 指定以度为单位的角半径.
+* [circle.precision](Geo-Paths#circle_precision) - 指定分段圆的精度.
+* [d3.geo.area](Geo-Paths#area) - 根据给定特征计算球面面积.
 * [d3.geo.bounds](Geo-Paths#bounds) - compute the latitude-longitude bounding box for a given feature.
 * [d3.geo.centroid](Geo-Paths#centroid) - compute the spherical centroid of a given feature.
 * [d3.geo.distance](Geo-Paths#distance) - compute the great-arc distance between two points.
@@ -729,10 +729,10 @@ d3 库所提供的所有 API 都在 d3 命名空间下。d3 库使用[[语义版
 * [[drag.origin|Drag-Behavior#origin]]
 * [[drag.on|Drag-Behavior#on]]
 
-### [Zoom](Zoom-Behavior)
+### [缩放 Zoom](Zoom-Behavior)
 
-* [d3.behavior.zoom](Zoom-Behavior#zoom) - create a zoom behavior.
-* [zoom](Zoom-Behavior#_zoom) - apply the zoom behavior to the selected elements.
+* [d3.behavior.zoom](Zoom-Behavior#zoom) - 创建一个缩放行为.
+* [zoom](Zoom-Behavior#_zoom) - 对指定元素应用缩放.
 * [zoom.scale](Zoom-Behavior#scale) - the current scale factor.
 * [zoom.translate](Zoom-Behavior#translate) - the current translate offset.
 * [zoom.scaleExtent](Zoom-Behavior#scaleExtent) - optional limits on the scale factor.
