@@ -68,7 +68,7 @@ If *value* is not specified, returns the current *computed* value of the specifi
 
 Some HTML elements have special properties that are not addressable using standard attributes or styles. For example, form text fields have a `value` string property, and checkboxes have a `checked` boolean property. You can use the `property` operator to get or set these properties, or any other addressable field on the underlying element, such as `className`.
 
-If *value* is specified, sets the property with the specified name to the specified value on all selected elements. If *value* is a constant, then all elements are given the same property value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's property. A null value will delete the specified attribute.
+If *value* is specified, sets the property with the specified name to the specified value on all selected elements. If *value* is a constant, then all elements are given the same property value; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's property. A null value will delete the specified property.
 
 If you want to set several properties at once, use an object literal like so: `selection.property({'foo': 'bar', 'baz': 'qux'})`.
 
