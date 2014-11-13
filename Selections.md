@@ -294,9 +294,13 @@ selection.datum(function() { return this.dataset; })
 
 This can then be used, [for example](http://bl.ocks.org/1323729), to sort elements by username.
 
-<a name="sort" href="#sort">#</a> selection.<b>sort</b>(<i>comparator</i>)
+<a name="sort" href="#sort">#</a> selection.<b>sort</b>([<i>comparator</i>])
 
-Sorts the elements in the current selection according to the specified comparator function. The comparator function is passed two data elements *a* and *b* to compare, returning either a negative, positive, or zero value. If negative, then *a* should be before *b*; if positive, then *a* should be after *b*; otherwise, *a* and *b* are considered equal and the order is arbitrary. Note that the sort is not guaranteed to be stable; however, it is guaranteed to have the same behavior as your browser's built-in [[sort|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort]] method on arrays.
+Sorts the elements in the current selection according to the *comparator* function, and then re-inserts the document elements to match. Returns the selection.
+
+The comparator function, which defaults to [d3.ascending](https://github.com/mbostock/d3/wiki/Arrays#d3_ascending), is passed two elements' data *a* and *b* to compare. It should return either a negative, positive, or zero value. If negative, then *a* should be before *b*; if positive, then *a* should be after *b*; otherwise, *a* and *b* are considered equal and the order is arbitrary. 
+
+Note that the sort is not guaranteed to be stable; however, it is guaranteed to have the same behavior as your browser's built-in [[sort|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort]] method on arrays.
 
 <a name="order" href="#order">#</a> selection.<b>order</b>()
 
