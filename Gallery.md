@@ -881,6 +881,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 
 * [Venn Diagram using Clipping](http://bl.ocks.org/mbostock/1067636)
 * [Venn Diagram using Opacity](http://bl.ocks.org/mbostock/1067616)
+* [Venn Diagram plugin up to 7 sets](http://bl.ocks.org/lafarer/0f7677bdfa6c3ab7f6c3)
 * [Marimekko Chart](http://bl.ocks.org/mbostock/1005090)
 * [Gauge](http://tomerdoron.blogspot.com/2011/12/google-style-gauges-using-d3js.html)
 * [Chernoff faces](http://bl.ocks.org/mbostock/2011590) and [Chernoff faces example: happy planet index](http://www.larsko.org/v/hpi/)
