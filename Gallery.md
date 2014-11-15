@@ -303,6 +303,9 @@ Interactive Unit Circle (Trigonometry)<br>
 <tr>
 <td>Stock Leaders Bubble Chart<br><a href="http://tomsisk.com/ondemand/"><img src="http://tomsisk.com/ondemand/img/screen.png"></a></td>
 </tr>
+<tr>
+<td>Asian Financial News Daily<br><a href="http://ywng-d3apps.rhcloud.com/MktInsight/"><img src="https://camo.githubusercontent.com/bb57bd84e2bc96a625319ec593fe14cf71a78fb8/68747470733a2f2f7261772e6769746875622e636f6d2f79776e672f50726f67726573736976652d4e6577732d436c6f75642f6d61737465722f73637265656e25323073686f742532306d61696e2e706e67"></a></td>
+</tr>
 </table>
 
 ## Basic Charts
