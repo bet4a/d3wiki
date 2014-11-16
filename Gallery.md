@@ -799,6 +799,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Collapsible, with Labels](http://bl.ocks.org/mbostock/1249394)
 * [Indented Tree (Collapsible)](http://bl.ocks.org/mbostock/1093025)
 * [Vertical, Collapsible Wikipedia Tree](http://bergeron.im/wikitree/)
+* [Focus on nodes while collapsing siblings and indirect ancestors](http://codepen.io/mikefab/full/IDdts/)
 
 #### Misc Trees and Graphs
 
