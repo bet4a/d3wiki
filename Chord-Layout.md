@@ -14,7 +14,7 @@ Constructs a new chord layout. By default, the input data is not sorted, and the
 
 <a name="matrix" href="Chord-Layout#matrix">#</a> chord.<b>matrix</b>([<i>matrix</i>])
 
-If *matrix* is specified, sets the input data matrix used by this layout. If *matrix* is not specified, returns the current data matrix, which defaults to undefined. The input matrix must be a [square matrix](http://en.wikipedia.org/wiki/Matrix_(mathematics\)#Square_matrices) of numbers, such as:
+If *matrix* is specified, sets the input data matrix used by this layout. If *matrix* is not specified, returns the current data matrix, which defaults to undefined. The input matrix must be a [square matrix](http://en.wikipedia.org/wiki/Matrix_(mathematics)#Square_matrices) of numbers, such as:
 
 ```javascript
 [[11975,  5871, 8916, 2868],
