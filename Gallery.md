@@ -304,6 +304,8 @@ Interactive Unit Circle (Trigonometry)<br>
 <td>Stock Leaders Bubble Chart<br><a href="http://tomsisk.com/ondemand/"><img src="http://tomsisk.com/ondemand/img/screen.png"></a></td>
 <td>Asian Financial News Daily<br><a href="http://ywng-d3apps.rhcloud.com/MktInsight/"><img src="https://camo.githubusercontent.com/bb57bd84e2bc96a625319ec593fe14cf71a78fb8/68747470733a2f2f7261772e6769746875622e636f6d2f79776e672f50726f67726573736976652d4e6577732d436c6f75642f6d61737465722f73637265656e25323073686f742532306d61696e2e706e67"></a></td>
 <td>Simple bar chart with lede & nut graf layout<br><a href="http://greencracker.net/?p=1874"><img src="http://greencracker.net/wp-content/uploads/2014/11/Screen-Shot-2014-11-16-at-12.32.51-PM.png"></a></td>
+<td>Node focusable radial tree<br><a href="http://codepen.io/mikefab/full/IDdts/"><img src="http://postimg.org/image/qz5waqy8p/"></a></td>
+
 </tr>
 </table>
 
@@ -800,7 +802,6 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Collapsible, with Labels](http://bl.ocks.org/mbostock/1249394)
 * [Indented Tree (Collapsible)](http://bl.ocks.org/mbostock/1093025)
 * [Vertical, Collapsible Wikipedia Tree](http://bergeron.im/wikitree/)
-* [Focus on nodes while collapsing siblings and indirect ancestors](http://codepen.io/mikefab/full/IDdts/)
 
 #### Misc Trees and Graphs
 
