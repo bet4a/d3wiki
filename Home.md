@@ -37,13 +37,13 @@ Or, to link directly to the latest release, copy this snippet:
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 ```
 
-Or, if you want the full repository including tests:
+**Note:** the non-minified source code contains non-ASCII characters and must be served with UTF-8 encoding, either via the `charset="utf-8"` attribute on the script tag or by adding `<meta charset="utf-8">` to the top of the page. If you see a SyntaxError: Unexpected token ILLEGAL at `var Ï€ = Math.PI`, it is because you are serving the non-minified source with the incorrect ISO-8859-1 encoding. See this [StackOverflow answer](http://stackoverflow.com/a/14301241) for more information.
+
+If you want the full repository including tests, download or clone the D3 git repository:
 
 * <https://github.com/mbostock/d3/zipball/master>
 
 D3 is also available via numerous package managers, including: [NPM](https://npmjs.org/package/d3) (Node.js), [Bower](http://bower.io/search/?q=d3), [Browserify](http://browserify.org/), [Component](http://component.io/), [Jam](http://jamjs.org/packages/#/details/d3), [Composer / Packagist](https://packagist.org/packages/mbostock/d3) (PHP), [SPM](https://spmjs.org/gallery/d3/), [JSPM](http://jspm.io/), [NuGet](https://www.nuget.org/packages/d3/) (.Net), and [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md) (e.g., [RequireJS](http://requirejs.org/)). The official releases of D3 are on [NPM](https://npmjs.org/package/d3) and [GitHub](/mbostock/d3) only; support for other package managers is unofficial and maintained by contributors.
-
-**Note:** the non-minified source code contains non-ASCII characters and must be served with UTF-8 encoding, either via the `charset="utf-8"` attribute on the script tag or by adding `<meta charset="utf-8">` to the top of the page. If you see a SyntaxError: Unexpected token ILLEGAL at `var Ï€ = Math.PI`, it is because you are serving the non-minified source with the incorrect ISO-8859-1 encoding. See this [StackOverflow answer](http://stackoverflow.com/a/14301241) for more information.
 
 ## Using
 
