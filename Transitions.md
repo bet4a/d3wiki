@@ -129,6 +129,8 @@ Tweens are often written using closures to capture state created when the transi
 
 Remove the selected elements at the end of a transition. If a newer transition is scheduled on any of the selected elements, these elements will not be removed; however, the "end" event will still be dispatched.
 
+To stop a transition already in progress, use [selection#interrupt](https://github.com/mbostock/d3/wiki/Selections#interrupt).
+
 ### Subtransitions
 
 Transitions may be derived from existing transitions, in a similar manner to subselections. Subtransitions inherit easing, duration and delay from the parent transition.
