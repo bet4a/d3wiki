@@ -6,7 +6,7 @@ Transitions may have per-element delays and durations, computed using functions 
 
 D3 has many built-in interpolators to simplify the transitioning of arbitrary values. For instance, you can transition from the font string "500 12px sans-serif" to "300 42px sans-serif", and D3 will find the numbers embedded within the string, interpolating both font size and weight automatically. You can even interpolate arbitrary nested objects and arrays or SVG path data. D3 allows custom interpolators should you find the built-in ones insufficient, using the [attrTween](Transitions#attrTween) and [styleTween](Transitions#styleTween) operators. D3's interpolators provide the basis for [[scales|Scales]] and can be used outside of transitions; an interpolator is a function that maps a parametric value *t* in the domain [0,1] to a color, number or arbitrary value.
 
-Only one transition may be *active* on a given element at a given time. However, multiple transitions may be *scheduled* on the same element; provided they are staggered in time, each transition will run in sequence. If a newer transition runs on a given element, it implicitly cancels any older transitions, including any that were scheduled but not yet run. This allows new transitions, such as those in response to a new user event, to supersede older transitions even if those older transitions are staged or have staggered delays. Multi-stage transitions (transitions that are created during the "end" event of an earlier transition) are considered the same "age" as the original transition; internally this is tracked by monotonically-increasing unique IDs which are inherited when multi-stage transitions are created.
+Only one transition may be *active* on a given element at a given time. However, multiple transitions may be *scheduled* on the same element; provided they are staggered in time, each transition will run in sequence. If a newer transition runs on a given element, it implicitly cancels any older transitions, including any that were scheduled but not yet run. This allows new transitions, such as those in response to a new user event, to supersede older transitions even if those older transitions are staged or have staggered delays. Multi-stage transitions (transitions that are created during the "end" event of an earlier transition) are considered the same "age" as the original transition; internally this is tracked by monotonically-increasing unique IDs which are inherited when multi-stage transitions are created. To interrupt an in-progress transition, use [selection.interrupt](Selections#interrupt).
 
 For more on transitions, read the [Working with Transitions](http://bost.ocks.org/mike/transition/) tutorial.
 
@@ -128,8 +128,6 @@ Tweens are often written using closures to capture state created when the transi
 <a name="remove" href="Transitions#remove">#</a> transition.<b>remove</b>()
 
 Remove the selected elements at the end of a transition. If a newer transition is scheduled on any of the selected elements, these elements will not be removed; however, the "end" event will still be dispatched.
-
-To stop a transition already in progress, use [selection#interrupt](https://github.com/mbostock/d3/wiki/Selections#interrupt).
 
 ### Subtransitions
 
