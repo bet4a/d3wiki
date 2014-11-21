@@ -945,6 +945,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Radar Chart or Spider Chart](http://bl.ocks.org/nbremer/raw/6506614/)
 * [Battle Statistics from the MMO game World of Tanks] (http://www.polsci.ucsb.edu/faculty/glasgow/research/d3/WoTkillratio.html) - Garrett Glasgow
 * [Tendulkar's Rise and Fall](https://my.infocaptor.com/dash/mt.php?pa=tendulkar_5425757cbb623)
+* [Dijkstra algorithm](http://bl.ocks.org/lafarer/7d8ecbf7b06b2ef0f72b) solves the single-source shortest path problem - Eric Lafargue
 
 #### Charts using the [reusable API](http://bost.ocks.org/mike/chart/)
 
