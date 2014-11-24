@@ -46,7 +46,7 @@ If *scale* is specified, sets the scale and returns the axis. If *scale* is not 
 
 <a name="orient" href="#orient">#</a> axis.<b>orient</b>([<i>orientation</i>])
 
-If *orientation* is specified, sets the orientation and returns the axis. If *orientation* is not specified, returns the current orientation with defaults to “bottom”. The following orientations are supported:
+If *orientation* is specified, sets the orientation and returns the axis. If *orientation* is not specified, returns the current orientation which defaults to `"bottom"`. The following orientations are supported:
 
 * `"top"` - horizontal axis with ticks above the domain path
 * `"bottom"` - horizontal axis with ticks below the domain path
