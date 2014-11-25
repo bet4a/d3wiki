@@ -817,6 +817,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Circular tree comparing the src directory for three versions of d3](http://bl.ocks.org/mbostock/4092944)
 * [Interactive visualization that shows changes in the internal node tree of a quadtree as points are added](http://jimkang.com/quadtreevis/)
 * [How a quadtree is created](http://bl.ocks.org/4ndr01d3/727175afbdc58c3626b8)
+* [Descendants tree of circle nodes using the pack layout](https://chezsoi.org/lucas/genealogic-d3/skywalker.html)
 
 #### Chord Layout (Circular Network)
 
