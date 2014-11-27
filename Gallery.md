@@ -575,6 +575,7 @@ Interactive Unit Circle (Trigonometry)<br>
 * [Drug adverse events](http://googledrive.com/host/0BwcmXsFAhzhoOTdydHhoRktlOUU/app/#/) - Etienne Ramstein
 * [Gene functional interaction networks](http://imp.princeton.edu/) - Aaron Wong
 * [Interactive Netcdf climate data plots](https://willospace.pythonanywhere.com) - Will Sijp
+* [Shrimp](http://ontoserver.csiro.au/shrimp) demonstrates a DAG Tree layout for browsing SNOMED CT - Michael Lawley, CSIRO
 
 ### Collections
 
