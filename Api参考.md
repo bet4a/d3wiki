@@ -1,4 +1,4 @@
-> [Wiki主页](CN-Home) ▸ **Api参考**
+> [Wiki主页](CN-Home) ▸ **Api 参考**
 
 此文档翻译自 [API Reference](API-Reference) （英语），版本为 2013-9-9 。不能保证文档的同步更新，因此，需要了解最新的开发特性，请移步英文版 [API 参考](API-Reference) 。
 
