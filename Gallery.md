@@ -307,7 +307,7 @@ Interactive Unit Circle (Trigonometry)<br>
 <td>Node Focusable Tree<br><a href="http://codepen.io/mikefab/full/IDdts/"><img src="http://s12.postimg.org/abee893h9/node_focusable_radial_tree.jpg"></a></td>
 </tr>
 <tr>
-<td>Tarot Card App made with D3 + Meteor framework<br><a href="http://tarot-pedia.meteor.com/"><img src="https://www.flickr.com/photos/benicheni/sets/72157647264996514/"></a></td>
+<td>Tarot Card App made with D3 + Meteor framework<br><a href="http://tarot-pedia.meteor.com/"><img src="https://farm8.staticflickr.com/7541/15320089804_2f5977c9b8_b.jpg"></a></td>
 </tr>
 </table>
 
