@@ -35,6 +35,7 @@ Adds the specified new _point_ to the quadtree.
 Visits each node in the quadtree, invoking the specified *callback* with arguments {<i>node</i>, *x1*, *y1*, *x2*, *y2*} for each node. Nodes are traversed in pre-order. If the *callback* returns true for a the given node, then the children of that node are not visited; otherwise, all child nodes are visited.
 
 <a name="visit" href="#visit">#</a> root.<b>find</b>(<i>point</i>)
+
 Given any point *[x,y]*, returns the closest point in the quadtree.
 
 <a name="x" href="#x">#</a> quadtree.<b>x</b>([<i>x</i>])
