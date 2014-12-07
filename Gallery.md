@@ -309,6 +309,11 @@ Interactive Unit Circle (Trigonometry)<br>
 <tr>
 <td>Tarot Card App made with D3 + Meteor framework<br><a href="http://tarot-pedia.meteor.com/"><img src="https://farm8.staticflickr.com/7541/15320089804_2f5977c9b8_b.jpg"></a></td>
 </tr>
+<tr height="207" valign="top">
+    <td width="207">Ulam Spiral<br><a href="http://bl.ocks.org/rouleur/260c5a9233fff0e8ddaf"><img
+            src="https://gist.github.com/rouleur/260c5a9233fff0e8ddaf/raw/273876f58cb44e206586cb9e5e75b9f994b23d7c/thumbnail.png"
+            width="202"></a></td>
+</tr>
 </table>
 
 ## Basic Charts
