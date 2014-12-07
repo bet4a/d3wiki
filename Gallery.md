@@ -756,7 +756,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Parallel Sets with reorderable heading](http://www.theage.com.au/national/parsets)
 * [Pair Contribution and Selection](http://bl.ocks.org/mbostock/4168921) - Jesse Heitler
 * [Graphicbaseball: 2012 Batters](http://charts.graphicbaseball.com/parallelbatting) and [2012 Pitchers](http://charts.graphicbaseball.com/parallelpitching) - Will Turman
-* [Sankey Generator](http://sankey.csaladen.es) - Denes Csala bl.ock(https://bl.ocks.org/csaladenes/38d92466c2ae4d68793e)
+* [Sankey Generator](http://sankey.csaladen.es) - Denes Csala
 
 #### Sunburst and Partition layout
 
