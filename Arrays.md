@@ -139,7 +139,7 @@ var bisect = d3.bisector(function(a, b) { return a.date - b.date; }).right;
 
 And then applied as `bisect(data, new Date(2011, 1, 2))`, returning an index. Use a comparator rather than an accessor if you want values to be sorted in an order different than natural order, such as in descending rather than ascending order.
 
-<a name="d3_shuffle" href="#d3_shuffle">#</a> d3.<b>shuffle</b>(<i>array</i>)
+<a name="d3_shuffle" href="#d3_shuffle">#</a> d3.<b>shuffle</b>(<i>array</i>[, <i>lo</i>[, <i>hi</i>]])
 
 Randomizes the order of the specified *array* using the [Fisher–Yates shuffle](http://bost.ocks.org/mike/shuffle/).
 
