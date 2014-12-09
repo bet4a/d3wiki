@@ -169,9 +169,13 @@ While it is tempting to use bare objects as maps in JavaScript, this can lead to
 
 Note: unlike the proposed ES6 map, d3.map still uses string-coercion for keys rather than strict equality.
 
-<a name="d3_map" href="#d3_map">#</a> d3.<b>map</b>([<i>object</i>])
+<a name="d3_map" href="#d3_map">#</a> d3.<b>map</b>([<i>object</i>][, <i>key</i>])
 
-Constructs a new map. If *object* is specified, copies all enumerable properties from the *object* into this map.
+Constructs a new map. If *object* is specified, copies all enumerable properties from the specified object into this map. The specified object may be an array. An optional *key* function may be specified to compute the key for each value in the array. For example:
+
+```js
+d3.map([{name: "foo"}, {name: "bar"}], function(d) { return d.name; }); // {"foo": {"name": "foo"}, "bar": {"name": "bar"}}
+```
 
 <a name="map_has" href="#map_has">#</a> map.<b>has</b>(<i>key</i>)
 
