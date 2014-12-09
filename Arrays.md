@@ -94,6 +94,14 @@ d3.quantile(a, 0.75); // return 2
 d3.quantile(a, 0.1); // return 0.19999999999999996 
 ```
 
+<a name="d3_variance" href="#d3_variance">#</a> d3.<b>variance</b>(<i>array</i>[, <i>accessor</i>])
+
+Returns an [unbiased estimator of the population variance](http://mathworld.wolfram.com/SampleVariance.html) of the given *array* of values. If the array is empty, returns 0. An optional *accessor* function may be specified, which is equivalent to calling *array.map(accessor)* before computing the variance. This method ignores invalid values such as NaN and undefined; this is useful for computing the sum of data while only considering the well-defined values.
+
+<a name="d3_deviation" href="#d3_deviation">#</a> d3.<b>deviation</b>(<i>array</i>[, <i>accessor</i>])
+
+…
+
 <a name="d3_bisectLeft" href="Arrays#d3_bisectLeft">#</a> d3.<b>bisectLeft</b>(<i>array</i>, <i>x</i>[, <i>lo</i>[, <i>hi</i>]])
 
 Locate the insertion point for *x* in *array* to maintain sorted order. The arguments *lo* and *hi* may be used to specify a subset of the array which should be considered; by default the entire array is used. If *x* is already present in *array*, the insertion point will be before (to the left of) any existing entries. The return value is suitable for use as the first argument to [[splice|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/splice]] assuming that *array* is already sorted. The returned insertion point *i* partitions the *array* into two halves so that all *v* < *x* for *v* in *array*.slice(lo, i) for the left side and all v >= x for v in *array*.slice(i, hi) for the right side.
