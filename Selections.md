@@ -346,15 +346,13 @@ Transitions of the same name are [exclusive per-element](http://bost.ocks.org/mi
 
 <a name="interrupt" href="#interrupt">#</a> selection.<b>interrupt</b>([<i>name</i>])
 
-Immediately interrupts the current [transition](Transitions), if any. Does not cancel any scheduled transitions that have not yet started. To cancel scheduled transitions as well, simply create a new zero-delay transition after interrupting the current transition:
+Immediately interrupts the active [transition](Transitions) of the specified *name* on the selected elements, if any. If a *name* is not specified, the empty name (“”) is used. Does not cancel any scheduled transitions that have not yet started. To cancel scheduled transitions as well, simply create a new zero-delay transition after interrupting the current transition:
 
 ```js
 selection
     .interrupt() // cancel the current transition
     .transition(); // preempt any scheduled transitions
 ```
-
-If *name* is specified, interrupts the transition with the specified name; otherwise, the unnamed (default) transition is interrupted.
 
 ### Subselections
 
