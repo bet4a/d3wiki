@@ -180,6 +180,8 @@ m.get("bar"); // {"name": "bar"}
 m.get("baz"); // undefined
 ```
 
+See also [d3.nest](#-nest).
+
 <a name="map_has" href="#map_has">#</a> map.<b>has</b>(<i>key</i>)
 
 Returns true if and only if this map has an entry for the specified *key* string. Note: the value may be null or undefined.
