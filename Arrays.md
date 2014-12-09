@@ -54,7 +54,7 @@ function descending(a, b) {
 }
 ```
 
-Note that if no comparator function is specified to the built-in sort method, the default order is lexicographic (alphabetical), not natural! This can lead to bugs when sorting an array of numbers.
+Note that if no comparator function is specified to the built-in sort method, the default order is lexicographic (alphabetical), not natural! This can lead to surprising behavior when sorting an array of numbers.
 
 <a name="d3_min" href="#d3_min">#</a> d3.<b>min</b>(<i>array</i>[, <i>accessor</i>])
 
