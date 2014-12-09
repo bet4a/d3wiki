@@ -392,6 +392,7 @@ Interactive Unit Circle (Trigonometry)<br>
 </table>
 
 ## Examples
+* [Spotify Artist Explorer](https://artistexplorer.spotify.com) — Faruk Sahin
 * [Visualizing cricket](http://live.cricket.com.au/#/5010/1) — Cricket Australia ([Roman Kalyakin](http://www.placefaraway.com))
 * [Box Office collection of James Bond movies](https://my.infocaptor.com/dash/mt.php?mode=adhoc_public&x=DEMO&ds=james_bond_csv&r=Bond&m=box_office_millions&a=sum&v=hrchy_circle_pack&h=800&w=800
 ) — James Bond
