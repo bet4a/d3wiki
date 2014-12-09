@@ -118,10 +118,10 @@ Returns a bisector using the specified *accessor* or *comparator* function. The 
 
 ```js
 var data = [
-  {date: new Date(2011,  1, 1), value: 0.5},
-  {date: new Date(2011,  2, 1), value: 0.6},
-  {date: new Date(2011,  3, 1), value: 0.7},
-  {date: new Date(2011,  4, 1), value: 0.8}
+  {date: new Date(2011, 1, 1), value: 0.5},
+  {date: new Date(2011, 2, 1), value: 0.6},
+  {date: new Date(2011, 3, 1), value: 0.7},
+  {date: new Date(2011, 4, 1), value: 0.8}
 ];
 ```
 
@@ -318,15 +318,18 @@ Nesting allows elements in an array to be grouped into a hierarchical tree struc
 
 For example, consider the following tabular data structure of Barley yields, from various sites in Minnesota during 1931-2:
 
-```javascript
-var yields = [{yield: 27.00, variety: "Manchuria", year: 1931, site: "University Farm"},
-              {yield: 48.87, variety: "Manchuria", year: 1931, site: "Waseca"},
-              {yield: 27.43, variety: "Manchuria", year: 1931, site: "Morris"}, ...]
+```js
+var yields = [
+  {yield: 27.00, variety: "Manchuria", year: 1931, site: "University Farm"},
+  {yield: 48.87, variety: "Manchuria", year: 1931, site: "Waseca"},
+  {yield: 27.43, variety: "Manchuria", year: 1931, site: "Morris"},
+  ...
+];
 ```
 
 To facilitate visualization, it may be useful to nest the elements first by year, and then by variety, as follows:
 
-```javascript
+```js
 var nest = d3.nest()
     .key(function(d) { return d.year; })
     .key(function(d) { return d.variety; })
@@ -335,7 +338,7 @@ var nest = d3.nest()
 
 This returns a nested array. Each element of the outer array is a key-values pair, listing the values for each distinct key:
 
-```javascript
+```js
 [{key: 1931, values: [
    {key: "Manchuria", values: [
      {yield: 27.00, variety: "Manchuria", year: 1931, site: "University Farm"},
