@@ -105,6 +105,8 @@ See one of:
 * [d3.mean](Arrays#d3_mean) - compute the arithmetic mean of an array of numbers.
 * [d3.median](Arrays#d3_median) - compute the median of an array of numbers (the 0.5-quantile).
 * [d3.quantile](Arrays#d3_quantile) - compute a quantile for a sorted array of numbers.
+* [d3.variance](Arrays#d3_sum) - compute the variance of an array of numbers.
+* [d3.deviation](Arrays#d3_mean) - compute the standard deviation of an array of numbers.
 * [d3.bisect](Arrays#d3_bisect) - search for a value in a sorted array.
 * [d3.bisectRight](Arrays#d3_bisectRight) - search for a value in a sorted array.
 * [d3.bisectLeft](Arrays#d3_bisectLeft) - search for a value in a sorted array.
@@ -312,7 +314,7 @@ See one of:
 * [ordinal.domain](Ordinal-Scales#ordinal_domain) - get or set the scale's input domain.
 * [ordinal.range](Ordinal-Scales#ordinal_range) - get or set the scale's output range.
 * [ordinal.rangePoints](Ordinal-Scales#ordinal_rangePoints) - divide a continuous output range for discrete points.
-* [ordinal.rangeRoundPoints](Ordinal-Scales#ordinal_rangeRoundPoints) - divide a continuous output range for discrete bands.
+* [ordinal.rangeRoundPoints](Ordinal-Scales#ordinal_rangeRoundPoints) - divide a continuous output range for discrete points.
 * [ordinal.rangeBands](Ordinal-Scales#ordinal_rangeBands) - divide a continuous output range for discrete bands.
 * [ordinal.rangeRoundBands](Ordinal-Scales#ordinal_rangeRoundBands) - divide a continuous output range for discrete bands.
 * [ordinal.rangeBand](Ordinal-Scales#ordinal_rangeBand) - get the discrete range band width.
@@ -741,6 +743,7 @@ See one of:
 * [d3.geom.quadtree](Quadtree-Geom#quadtree) - constructs a quadtree for an array of points.
 * [quadtree.add](Quadtree-Geom#add) - add a point to the quadtree.
 * [quadtree.visit](Quadtree-Geom#visit) - recursively visit nodes in the quadtree.
+* [quadtree.find](Quadtree-Geom#find) - find the closest point in the quadtree.
 
 ### [Polygon](Polygon-Geom)
 
