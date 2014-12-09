@@ -393,7 +393,7 @@ Returns the path data string for the specified array of *data* elements.
 
 <a name="arc" href="SVG-Shapes#arc">#</a> d3.svg.<b>arc</b>()
 
-Constructs a new arc generator with the default *innerRadius*-, *outerRadius*-, *startAngle*- and *endAngle*-accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). While the default accessors assume that the arc dimensions are all specified dynamically, it is very common to set one or more of the dimensions as a constant, such as setting the inner radius to zero for a pie chart. The returned function generates path data for a closed solid arc, as in a pie or donut chart:
+Constructs a new arc generator with the default inner radius, outer radius, start angle and end angle accessor functions (that assume the input data is an object with named attributes matching the accessors; see below for details). While the default accessors assume that the arc dimensions are all specified dynamically, it is very common to set one or more of the dimensions as a constant, such as setting the inner radius to zero for a pie chart. The returned function generates path data for a closed solid arc, as in a pie or donut chart:
 
 ![arc](arc.png)
 
@@ -449,7 +449,7 @@ If the pad radius is specified as an accessor function, the arc generator argume
 
 <a name="arc_startAngle" href="SVG-Shapes#arc_startAngle">#</a> arc.<b>startAngle</b>([<i>angle</i>])
 
-If *angle* is specified, sets the *startAngle*-accessor to the specified function or constant. If *angle* is not specified, returns the current *startAngle*-accessor. Angles are specified in radians; 0 corresponds to 12 o’clock (negative *y*) and proceeds clockwise, repeating at 2π. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+If *angle* is specified, sets the start angle accessor to the specified function or constant. If *angle* is not specified, returns the current start angle accessor, which defaults to:
 
 ```javascript
 function startAngle(d) {
@@ -457,37 +457,38 @@ function startAngle(d) {
 }
 ```
 
-For constructing pie or donut charts, you will need to compute the start angle of each arc as the end angle of the previous arc. This can be done very conveniently using the [pie](Pie-Layout) layout, which is similar to the [stack](Stack-Layout) layout; given a set of input data, the pie layout will construct arc objects with startAngle and endAngle attributes that you can use with the default arc accessors.
+Angles are specified in radians; 0 corresponds to 12 o’clock (negative *y*) and proceeds clockwise, repeating at 2π. If the start angle is specified as an accessor function, the arc generator arguments (typically `d` and `i`) and context (`this`) are passed through to the accessor function.
 
-The *startAngle*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *startAngle*-accessor as a constant rather than a function.
+For constructing pie or donut charts, you will need to compute the start angle of each arc as the end angle of the previous arc. This can be done conveniently using the [pie layout](Pie-Layout), which takes an array of input data and returns arc objects with `startAngle` and `endAngle` attributes compatible with the default arc accessors.
 
 <a name="arc_endAngle" href="SVG-Shapes#arc_endAngle">#</a> arc.<b>endAngle</b>([<i>angle</i>])
 
-If *angle* is specified, sets the *endAngle*-accessor to the specified function or constant. If *angle* is not specified, returns the current *endAngle*-accessor. Angles are specified in radians; 0 corresponds to 12 o’clock (negative *y*) and proceeds clockwise, repeating at 2π. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+If *angle* is specified, sets the end angle accessor to the specified function or constant. If *angle* is not specified, returns the current end angle accessor, which defaults to:
 
 ```javascript
-function endAngle(d) {
-  return d.endAngle;
+function startAngle(d) {
+  return d.startAngle;
 }
 ```
 
-For constructing pie or donut charts, you will need to compute the end angle of each arc as offset from the start angle. This can be done very conveniently using the [pie](Pie-Layout) layout, which is similar to the [stack](Stack-Layout) layout; given a set of input data, the pie layout will construct arc objects with startAngle and endAngle attributes that you can use with the default arc accessors.
+Angles are specified in radians; 0 corresponds to 12 o’clock (negative *y*) and proceeds clockwise, repeating at 2π. If the end angle is specified as an accessor function, the arc generator arguments (typically `d` and `i`) and context (`this`) are passed through to the accessor function.
 
-The *endAngle*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *endAngle*-accessor as a constant rather than a function.
+For constructing pie or donut charts, you will need to compute the end angle of each arc as appropriate. This can be done conveniently using the [pie layout](Pie-Layout), which takes an array of input data and returns arc objects with `startAngle` and `endAngle` attributes compatible with the default arc accessors.
 
 <a name="arc_padAngle" href="#arc_padAngle">#</a> arc.<b>padAngle</b>([<i>angle</i>])
 
-If *angle* is specified, sets the *padAngle*-accessor to the specified function or constant. If *angle* is not specified, returns the current *padAngle*-accessor. Angles are specified in radians. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+If *angle* is specified, sets the pad angle accessor to the specified function or constant. If *angle* is not specified, returns the current pad angle accessor, which defaults to:
 
 ```javascript
-function endAngle(d) {
-  return d.endAngle;
+function padAngle(d) {
+  return d.padAngle;
 }
 ```
 
-For constructing pie or donut charts, you will need to compute the end angle of each arc as offset from the start angle. This can be done very conveniently using the [pie](Pie-Layout) layout, which is similar to the [stack](Stack-Layout) layout; given a set of input data, the pie layout will construct arc objects with startAngle and endAngle attributes that you can use with the default arc accessors.
+Angles are specified in radians. If the pad angle is specified as an accessor function, the arc generator arguments (typically `d` and `i`) and context (`this`) are passed through to the accessor function.
 
-The *endAngle*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *endAngle*-accessor as a constant rather than a function.
+Although the pad angle can be specified as a constant, it is preferable to use the default pad angle accessor and instead use [pie.padAngle](Pie-Layout#padAngle) to compute the appropriate pad angle, and to recompute the start and end angles of each arc so as to preserve approximate relative areas.
+
 <a name="arc_centroid" href="SVG-Shapes#arc_centroid">#</a> arc.<b>centroid</b>(<i>arguments…</i>)
 
 Computes the centroid of the arc that would be generated from the specified input *arguments*; typically, the arguments are the current datum (d), and optionally the current index (i). The centroid is defined as the midpoint in polar coordinates of the inner and outer radius, and the start and end angle. This provides a convenient location for arc labels. For example:
