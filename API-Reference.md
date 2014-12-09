@@ -324,68 +324,69 @@ See one of:
 
 ## [d3.svg (SVG)](SVG)
 
-### [[Shapes|SVG-Shapes]]
+### [Shapes](SVG-Shapes)
 
-* [[d3.svg.line|SVG-Shapes#line]] - create a new line generator.
-* [[line|SVG-Shapes#_line]] - generate a piecewise linear curve, as in a line chart.
-* [[line.x|SVG-Shapes#line_x]] - get or set the *x*-coordinate accessor.
-* [[line.y|SVG-Shapes#line_y]] - get or set the *y*-coordinate accessor.
-* [[line.interpolate|SVG-Shapes#line_interpolate]] - get or set the interpolation mode.
-* [[line.tension|SVG-Shapes#line_tension]] - get or set the cardinal spline tension.
-* [[line.defined|SVG-Shapes#line_defined]] - control whether the line is defined at a given point.
-* [[d3.svg.line.radial|SVG-Shapes#line_radial]] - create a new radial line generator.
-* [[line|SVG-Shapes#_line_radial]] - generate a piecewise linear curve, as in a polar line chart.
-* [[line.radius|SVG-Shapes#line_radial_radius]] - get or set the *radius* accessor.
-* [[line.angle|SVG-Shapes#line_radial_angle]] - get or set the *angle* accessor.
-* [[line.interpolate|SVG-Shapes#line_radial_interpolate]] - get or set the interpolation mode.
-* [[line.tension|SVG-Shapes#line_radial_tension]] - get or set the cardinal spline tension.
-* [[line.defined|SVG-Shapes#line_radial_defined]] - control whether the line is defined at a given point.
-* [[d3.svg.area|SVG-Shapes#area]] - create a new area generator.
-* [[area|SVG-Shapes#_area]] - generate a piecewise linear area, as in an area chart.
-* [[area.x|SVG-Shapes#area_x]] - get or set the *x*-coordinate accessors.
-* [[area.x0|SVG-Shapes#area_x0]] - get or set the *x0*-coordinate (baseline) accessor.
-* [[area.x1|SVG-Shapes#area_x1]] - get or set the *x1*-coordinate (topline) accessor.
-* [[area.y|SVG-Shapes#area_y]] - get or set the *y*-coordinate accessors.
-* [[area.y0|SVG-Shapes#area_y0]] - get or set the *y0*-coordinate (baseline) accessor.
-* [[area.y1|SVG-Shapes#area_y1]] - get or set the *y1*-coordinate (topline) accessor.
-* [[area.interpolate|SVG-Shapes#area_interpolate]] - get or set the interpolation mode.
-* [[area.tension|SVG-Shapes#area_tension]] - get or set the cardinal spline tension.
+* [d3.svg.line](SVG-Shapes#line) - create a new line generator.
+* [line](SVG-Shapes#_line) - generate a piecewise linear curve, as in a line chart.
+* [line.x](SVG-Shapes#line_x) - get or set the *x*-coordinate accessor.
+* [line.y](SVG-Shapes#line_y) - get or set the *y*-coordinate accessor.
+* [line.interpolate](SVG-Shapes#line_interpolate) - get or set the interpolation mode.
+* [line.tension](SVG-Shapes#line_tension) - get or set the cardinal spline tension.
+* [line.defined](SVG-Shapes#line_defined) - control whether the line is defined at a given point.
+* [d3.svg.line.radial](SVG-Shapes#line_radial) - create a new radial line generator.
+* [line](SVG-Shapes#_line_radial) - generate a piecewise linear curve, as in a polar line chart.
+* [line.radius](SVG-Shapes#line_radial_radius) - get or set the *radius* accessor.
+* [line.angle](SVG-Shapes#line_radial_angle) - get or set the *angle* accessor.
+* [line.interpolate](SVG-Shapes#line_radial_interpolate) - get or set the interpolation mode.
+* [line.tension](SVG-Shapes#line_radial_tension) - get or set the cardinal spline tension.
+* [line.defined](SVG-Shapes#line_radial_defined) - control whether the line is defined at a given point.
+* [d3.svg.area](SVG-Shapes#area) - create a new area generator.
+* [area](SVG-Shapes#_area) - generate a piecewise linear area, as in an area chart.
+* [area.x](SVG-Shapes#area_x) - get or set the *x*-coordinate accessors.
+* [area.x0](SVG-Shapes#area_x0) - get or set the *x0*-coordinate (baseline) accessor.
+* [area.x1](SVG-Shapes#area_x1) - get or set the *x1*-coordinate (topline) accessor.
+* [area.y](SVG-Shapes#area_y) - get or set the *y*-coordinate accessors.
+* [area.y0](SVG-Shapes#area_y0) - get or set the *y0*-coordinate (baseline) accessor.
+* [area.y1](SVG-Shapes#area_y1) - get or set the *y1*-coordinate (topline) accessor.
+* [area.interpolate](SVG-Shapes#area_interpolate) - get or set the interpolation mode.
+* [area.tension](SVG-Shapes#area_tension) - get or set the cardinal spline tension.
 * [area.defined](SVG-Shapes#area_defined) - control whether the area is defined at a given point.
-* [[d3.svg.area.radial|SVG-Shapes#area_radial]] - create a new area generator.
-* [[area|SVG-Shapes#_area_radial]] - generate a piecewise linear area, as in a polar area chart.
-* [[area.radius|SVG-Shapes#area_radial_radius]] - get or set the *radius* accessors.
-* [[area.innerRadius|SVG-Shapes#area_radial_innerRadius]] - get or set the inner *radius* (baseline) accessor.
-* [[area.outerRadius|SVG-Shapes#area_radial_outerRadius]] - get or set the outer *radius* (topline) accessor.
-* [[area.angle|SVG-Shapes#area_radial_angle]] - get or set the *angle* accessors.
-* [[area.startAngle|SVG-Shapes#area_radial_startAngle]] - get or set the *angle* (baseline) accessor.
-* [[area.endAngle|SVG-Shapes#area_radial_endAngle]] - get or set the *angle* (topline) accessor.
+* [d3.svg.area.radial](SVG-Shapes#area_radial) - create a new area generator.
+* [area](SVG-Shapes#_area_radial) - generate a piecewise linear area, as in a polar area chart.
+* [area.radius](SVG-Shapes#area_radial_radius) - get or set the *radius* accessors.
+* [area.innerRadius](SVG-Shapes#area_radial_innerRadius) - get or set the inner *radius* (baseline) accessor.
+* [area.outerRadius](SVG-Shapes#area_radial_outerRadius) - get or set the outer *radius* (topline) accessor.
+* [area.angle](SVG-Shapes#area_radial_angle) - get or set the *angle* accessors.
+* [area.startAngle](SVG-Shapes#area_radial_startAngle) - get or set the *angle* (baseline) accessor.
+* [area.endAngle](SVG-Shapes#area_radial_endAngle) - get or set the *angle* (topline) accessor.
 * [area.defined](SVG-Shapes#area_radial_defined) - control whether the area is defined at a given point.
-* [[d3.svg.arc|SVG-Shapes#arc]] - create a new arc generator.
-* [[arc|SVG-Shapes#_arc]] - generate a solid arc, as in a pie or donut chart.
-* [[arc.innerRadius|SVG-Shapes#arc_innerRadius]] - get or set the inner radius accessor.
-* [[arc.outerRadius|SVG-Shapes#arc_outerRadius]] - get or set the outer radius accessor.
-* [[arc.startAngle|SVG-Shapes#arc_startAngle]] - get or set the start angle accessor.
-* [[arc.endAngle|SVG-Shapes#arc_endAngle]] - get or set the end angle accessor.
-* [[arc.centroid|SVG-Shapes#arc_centroid]] - compute the arc centroid.
-* [[d3.svg.symbol|SVG-Shapes#symbol]] - create a new symbol generator.
-* [[symbol|SVG-Shapes#_symbol]] - generate categorical symbols, as in a scatterplot.
-* [[symbol.type|SVG-Shapes#symbol_type]] - get or set the symbol type accessor.
-* [[symbol.size|SVG-Shapes#symbol_size]] - get or set the symbol size (in square pixels) accessor.
+* [d3.svg.arc](SVG-Shapes#arc) - create a new arc generator.
+* [arc](SVG-Shapes#_arc) - generate a solid arc, as in a pie or donut chart.
+* [arc.innerRadius](SVG-Shapes#arc_innerRadius) - get or set the inner radius accessor.
+* [arc.outerRadius](SVG-Shapes#arc_outerRadius) - get or set the outer radius accessor.
+* [arc.startAngle](SVG-Shapes#arc_startAngle) - get or set the start angle accessor.
+* [arc.endAngle](SVG-Shapes#arc_endAngle) - get or set the end angle accessor.
+* [arc.padAngle](SVG-Shapes#arc_padAngle) - get or set the pad angle accessor.
+* [arc.centroid](SVG-Shapes#arc_centroid) - compute the arc centroid.
+* [d3.svg.symbol](SVG-Shapes#symbol) - create a new symbol generator.
+* [symbol](SVG-Shapes#_symbol) - generate categorical symbols, as in a scatterplot.
+* [symbol.type](SVG-Shapes#symbol_type) - get or set the symbol type accessor.
+* [symbol.size](SVG-Shapes#symbol_size) - get or set the symbol size (in square pixels) accessor.
 * [d3.svg.symbolTypes](SVG-Shapes#symbolTypes) - the array of supported symbol types.
-* [[d3.svg.chord|SVG-Shapes#chord]] - create a new chord generator.
-* [[chord|SVG-Shapes#_chord]] - generate a quadratic Bézier connecting two arcs, as in a chord diagram.
-* [[chord.radius|SVG-Shapes#chord_radius]] - get or set the arc radius accessor.
-* [[chord.startAngle|SVG-Shapes#chord_startAngle]] - get or set the arc start angle accessor.
-* [[chord.endAngle|SVG-Shapes#chord_endAngle]] - get or set the arc end angle accessor.
-* [[chord.source|SVG-Shapes#chord_source]] - get or set the source arc accessor.
-* [[chord.target|SVG-Shapes#chord_target]] - get or set the target arc accessor.
-* [[d3.svg.diagonal|SVG-Shapes#diagonal]] - create a new diagonal generator.
-* [[diagonal|SVG-Shapes#_diagonal]] - generate a two-dimensional Bézier connector, as in a node-link diagram.
-* [[diagonal.source|SVG-Shapes#diagonal_source]] - get or set the source point accessor.
-* [[diagonal.target|SVG-Shapes#diagonal_target]] - get or set the target point accessor.
-* [[diagonal.projection|SVG-Shapes#diagonal_projection]] - get or set an optional point transform.
-* [[d3.svg.diagonal.radial|SVG-Shapes#diagonal_radial]] - create a new diagonal generator.
-* [[diagonal|SVG-Shapes#_diagonal_radial]] - generate a two-dimensional Bézier connector, as in a node-link diagram.
+* [d3.svg.chord](SVG-Shapes#chord) - create a new chord generator.
+* [chord](SVG-Shapes#_chord) - generate a quadratic Bézier connecting two arcs, as in a chord diagram.
+* [chord.radius](SVG-Shapes#chord_radius) - get or set the arc radius accessor.
+* [chord.startAngle](SVG-Shapes#chord_startAngle) - get or set the arc start angle accessor.
+* [chord.endAngle](SVG-Shapes#chord_endAngle) - get or set the arc end angle accessor.
+* [chord.source](SVG-Shapes#chord_source) - get or set the source arc accessor.
+* [chord.target](SVG-Shapes#chord_target) - get or set the target arc accessor.
+* [d3.svg.diagonal](SVG-Shapes#diagonal) - create a new diagonal generator.
+* [diagonal](SVG-Shapes#_diagonal) - generate a two-dimensional Bézier connector, as in a node-link diagram.
+* [diagonal.source](SVG-Shapes#diagonal_source) - get or set the source point accessor.
+* [diagonal.target](SVG-Shapes#diagonal_target) - get or set the target point accessor.
+* [diagonal.projection](SVG-Shapes#diagonal_projection) - get or set an optional point transform.
+* [d3.svg.diagonal.radial](SVG-Shapes#diagonal_radial) - create a new diagonal generator.
+* [diagonal](SVG-Shapes#_diagonal_radial) - generate a two-dimensional Bézier connector, as in a node-link diagram.
 
 ### [[Axes|SVG-Axes]]
 
@@ -582,14 +583,15 @@ See one of:
 * [partition.value](Partition-Layout#value) - get or set the value accessor used to size circles.
 * [partition.size](Partition-Layout#size) - specify the layout size in *x* and *y*.
 
-### [[Pie|Pie-Layout]]
+### [Pie](Pie-Layout)
 
-* [[d3.layout.pie|Pie-Layout#pie]] - construct a new default pie layout.
-* [[pie|Pie-Layout#_pie]] - compute the start and end angles for arcs in a pie or donut chart.
-* [[pie.value|Pie-Layout#value]] - get or set the value accessor function.
-* [[pie.sort|Pie-Layout#sort]] - control the clockwise order of pie slices.
-* [[pie.startAngle|Pie-Layout#startAngle]] - get or set the overall start angle of the pie.
-* [[pie.endAngle|Pie-Layout#endAngle]] - get or set the overall end angle of the pie.
+* [d3.layout.pie](Pie-Layout#pie) - construct a new default pie layout.
+* [pie](Pie-Layout#_pie) - compute the start and end angles for arcs in a pie or donut chart.
+* [pie.value](Pie-Layout#value) - get or set the value accessor function.
+* [pie.sort](Pie-Layout#sort) - control the clockwise order of pie slices.
+* [pie.startAngle](Pie-Layout#startAngle) - get or set the overall start angle of the pie.
+* [pie.endAngle](Pie-Layout#endAngle) - get or set the overall end angle of the pie.
+* [pie.padAngle](Pie-Layout#padAngle) - get or set the pad angle of the pie.
 
 ### [[Stack|Stack-Layout]]
 
