@@ -47,10 +47,8 @@ Like [rangePoints](#ordinal_rangePoints), except guarantees that the range value
 ```js
 var o = d3.scale.ordinal()
     .domain([1, 2, 3, 4])
-    .rangePoints([0, 100]);
+    .rangeRoundPoints([0, 100]);
 
-o.range(); // [0, 33.333333333333336, 66.66666666666667, 100]
-o.rangeRoundPoints([0, 100]);
 o.range(); // [1, 34, 67, 100]
 ```
 
@@ -76,11 +74,11 @@ Sets the output range from the specified continuous *interval*. The array *inter
 
 ```javascript
 var o = d3.scale.ordinal()
-    .domain([1, 2, 3, 4])
+    .domain([1, 2, 3])
     .rangeBands([0, 100]);
 
-o.rangeBand(); // 25
-o.range(); // [0, 25, 50, 75]
+o.rangeBand(); // 33.333333333333336
+o.range(); // [0, 33.333333333333336, 66.66666666666667]
 o.rangeExtent(); // [0, 100]
 ```
 
@@ -91,14 +89,11 @@ Like [rangeBands](Ordinal-Scales#ordinal_rangeBands), except guarantees that ran
 ```js
 var o = d3.scale.ordinal()
     .domain([1, 2, 3])
-    .rangeBands([0, 100]);
+    .rangeRoundBands([0, 100]);
 
-o.range(); // [0, 33.333333333333336, 66.66666666666667]
-o.rangeBand(); // 33.333333333333336
-
-o.rangeRoundBands([0, 100]);
 o.range(); // [1, 34, 67]
 o.rangeBand(); // 33
+o.rangeExtent(); // [0, 100]
 ```
 
 Note that rounding necessarily introduces additional outer padding which is, on average, proportional to the length of the domain. For example, for a domain of size 50, an additional 25px of outer padding on either side may be required. Modifying the range extent to be closer to a multiple of the domain length may reduce the additional padding.
