@@ -86,12 +86,12 @@ Returns the *p*-quantile of the given sorted array of *numbers*, where *p* is a 
 
 ```javascript
 var a = [0, 1, 3];
-d3.quantile(a, 0); // return 0
-d3.quantile(a, 0.5); // return 1
-d3.quantile(a, 1); // return 3
-d3.quantile(a, 0.25); // return 0.5
-d3.quantile(a, 0.75); // return 2
-d3.quantile(a, 0.1); // return 0.19999999999999996 
+d3.quantile(a, 0); // 0
+d3.quantile(a, 0.5); // 1
+d3.quantile(a, 1); // 3
+d3.quantile(a, 0.25); // 0.5
+d3.quantile(a, 0.75); // 2
+d3.quantile(a, 0.1); // 0.19999999999999996 
 ```
 
 <a name="d3_variance" href="#d3_variance">#</a> d3.<b>variance</b>(<i>array</i>[, <i>accessor</i>])
