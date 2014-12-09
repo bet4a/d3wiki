@@ -157,10 +157,10 @@ Returns an array containing the property values of the specified object (an asso
 
 <a name="d3_entries" href="#d3_entries">#</a> d3.<b>entries</b>(<i>object</i>)
 
-Returns an array containing the property keys and values of the specified object (an associative array). Each entry is an object with a key and value attribute, such as {key: "foo", value: 42}. The order of the returned array is undefined.
+Returns an array containing the property keys and values of the specified object (an associative array). Each entry is an object with a key and value attribute, such as `{key: "foo", value: 42}`. The order of the returned array is undefined.
 
 ```js
-var entry = d3.entries({ foo: 42 }); // returns [{key: "foo", value: 42}]
+d3.entries({foo: 42, bar: true}); // [{key: "foo", value: 42}, {key: "bar", value: true}]
 ```
 
 ### Maps
