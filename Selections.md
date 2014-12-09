@@ -338,11 +338,13 @@ Returns the *x* and *y* coordinates of the touch with the specified identifier a
 
 Returns the *x* and *y* coordinates of each touch associated with the current [d3.event](#d3_event), based on the [[touches|http://developer.apple.com/library/safari/documentation/UserExperience/Reference/TouchEventClassReference/TouchEvent/TouchEvent.html#//apple_ref/javascript/instp/TouchEvent/touches]] attribute, relative to the specified *container*. The container may be an HTML or SVG container element, such as an svg:g or svg:svg. The coordinates are returned as an array of two-element arrays [ [ *x1*, *y1*], [ *x2*, *y2*], … ]. If *touches* is specified, returns the positions of the specified touches; if *touches* is not specified, it defaults to the `touches` property on the current event.
 
-<a name="transition" href="Selections#transition">#</a> selection.<b>transition</b>()
+<a name="transition" href="Selections#transition">#</a> selection.<b>transition</b>([<i>name</i>])
 
 Starts a [[transition|Transitions]] for the current selection. Transitions behave much like selections, except operators animate smoothly over time rather than applying instantaneously.
 
-<a name="interrupt" href="#interrupt">#</a> selection.<b>interrupt</b>()
+Transitions of the same name are [exclusive per-element](http://bost.ocks.org/mike/transition/). When the new transition starts on a given element, it will interrupt an active transition of the same name on the element, if any. If a *name* is not specified, the empty name (“”) is used. Note that transitions with a zero delay do not start until the next timer tick, which is typically about 17ms after scheduling.
+
+<a name="interrupt" href="#interrupt">#</a> selection.<b>interrupt</b>([<i>name</i>])
 
 Immediately interrupts the current [transition](Transitions), if any. Does not cancel any scheduled transitions that have not yet started. To cancel scheduled transitions as well, simply create a new zero-delay transition after interrupting the current transition:
 
@@ -351,6 +353,8 @@ selection
     .interrupt() // cancel the current transition
     .transition(); // preempt any scheduled transitions
 ```
+
+If *name* is specified, interrupts the transition with the specified name; otherwise, the unnamed (default) transition is interrupted.
 
 ### Subselections
 
