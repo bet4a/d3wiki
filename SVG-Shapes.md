@@ -433,9 +433,7 @@ If *radius* is specified, sets the corner radius accessor to the specified funct
 
 <a name="arc_padRadius" href="#arc_padRadius">#</a> arc.<b>padRadius</b>([<i>radius</i>])
 
-If *radius* is specified, sets the pad radius accessor to the specified function or constant. If *radius* is not specified, returns the current pad radius accessor, which defaults to “auto”. The pad radius is the radius at which the [pad angle](#arc_padAngle) is applied: the nominal padding distance between parallel edges of adjacent arcs is defined as padRadius * padAngle. (The padding distance may be smaller if the inner radius is small relative to the pad angle.)
-
-The “auto” pad radius method computes the pad radius based on the previously-computed [inner](#arc_innerRadius) and [outer](#arc_outerRadius) as:
+If *radius* is specified, sets the pad radius accessor to the specified function or constant. If *radius* is not specified, returns the current pad radius accessor, which defaults to “auto”. The “auto” pad radius method computes the pad radius based on the previously-computed [inner](#arc_innerRadius) and [outer](#arc_outerRadius) as:
 
 ```javascript
 function padRadius(innerRadius, outerRadius) {
@@ -445,7 +443,9 @@ function padRadius(innerRadius, outerRadius) {
 
 This implementation is designed to preserve the approximate relative area of arcs in conjunction with [pie.padAngle](Pie-Layout#padAngle).
 
-The arc generator arguments (typically `d` and `i`) and context (`this`) are passed through to the accessor function.
+The pad radius is the radius at which the [pad angle](#arc_padAngle) is applied: the nominal padding distance between parallel edges of adjacent arcs is defined as padRadius * padAngle. (The padding distance may be smaller if the inner radius is small relative to the pad angle.) The pad radius typically does not need to be changed from “auto”, but can be useful to ensure parallel edges between arcs with differing inner or outer radii, as when [extending an arc on hover](http://bl.ocks.org/mbostock/32bd93b1cc0fbccc9bf9).
+
+If the pad radius is specified as an accessor function, the arc generator arguments (typically `d` and `i`) and context (`this`) are passed through to the accessor function.
 
 <a name="arc_startAngle" href="SVG-Shapes#arc_startAngle">#</a> arc.<b>startAngle</b>([<i>angle</i>])
 
