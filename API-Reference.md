@@ -17,7 +17,7 @@ See one of:
 
 ## [d3 (core)](Core)
 
-### [Selections]
+### [Selections](Selections)
 
 * [d3.select](Selections#d3_select) - select an element from the current document.
 * [d3.selectAll](Selections#d3_selectAll) - select multiple elements from the current document.
@@ -146,7 +146,7 @@ See one of:
 * [set.empty](Arrays#set_empty) - returns true if the set has at least one value.
 * [set.size](Arrays#set_size) - returns the number of values in the set.
 
-### [Math]
+### [Math](Math)
 
 * [d3.random.normal](Math#random_normal) - generate a random number with a normal distribution.
 * [d3.random.logNormal](Math#random_logNormal) - generate a random number with a log-normal distribution.
@@ -193,13 +193,13 @@ See one of:
 * [d3.tsv.formatRows](CSV#tsv_formatRows) - format an array of tuples into a TSV string.
 * [d3.dsv](CSV#dsv) - create a parser/formatter for the specified delimiter and mime type.
 
-### [Localization]
+### [Localization](Localization)
 
 * [d3.locale](Localization#d3_locale) - create a new locale using the specified strings.
 * [locale.numberFormat](Localization#locale_numberFormat) - create a new number formatter.
 * [locale.timeFormat](Localization#locale_timeFormat) - create a new time formatter / parser.
 
-### [Colors]
+### [Colors](Colors)
 
 * [d3.rgb](Colors#d3_rgb) - specify a color in RGB space.
 * [rgb.brighter](Colors#rgb_brighter) - increase RGB channels by some exponential factor (gamma).
@@ -222,12 +222,12 @@ See one of:
 * [hcl.rgb](Colors#hcl_rgb) - convert from HCL to RGB.
 * [hcl.toString](Colors#hcl_toString) - convert an HCL color to a string.
 
-### [Namespaces]
+### [Namespaces](Namespaces)
 
 * [d3.ns.prefix](Namespaces#prefix) - access or extend known XML namespaces.
 * [d3.ns.qualify](Namespaces#qualify) - qualify a prefixed name, such as "xlink:href".
 
-### [Internals]
+### [Internals](Internals)
 
 * [d3.functor](Internals#functor) - create a function that returns a constant.
 * [d3.rebind](Internals#rebind) - rebind an inherited getter/setter method to a subclass.
@@ -418,7 +418,7 @@ See one of:
 
 ## [d3.time (Time)](Time)
 
-### [Time Formatting]
+### [Time Formatting](Time Formatting)
 
 * [d3.time.format](Time-Formatting#format) - create a new local time formatter for a given specifier.
 * [format](Time-Formatting#_format) - format a date into a string.
@@ -427,7 +427,7 @@ See one of:
 * [d3.time.format.utc](Time-Formatting#format_utc) - create a new UTC time formatter for a given specifier.
 * [d3.time.format.iso](Time-Formatting#format_iso) - the ISO 8601 UTC time formatter.
 
-### [Time Scales]
+### [Time Scales](Time Scales)
 
 * [d3.time.scale](Time-Scales#scale) - construct a linear time scale.
 * [scale](Time-Scales#_scale) - get the range value corresponding to a given domain value.
@@ -442,7 +442,7 @@ See one of:
 * [scale.tickFormat](Time-Scales#tickFormat) - get a formatter for displaying tick values.
 * [scale.copy](Time-Scales#copy) - create a new scale from an existing scale.
 
-### [Time Intervals]
+### [Time Intervals](Time Intervals)
 
 * [d3.time.interval](Time-Intervals#interval) - a time interval in local time.
 * [interval](Time-Intervals#_interval) - alias for interval.floor.
