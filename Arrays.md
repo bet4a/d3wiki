@@ -34,23 +34,23 @@ And finally, **iteration methods** that apply functions to elements in the array
 
 <a name="d3_ascending" href="Arrays#d3_ascending">#</a> d3.<b>ascending</b>(<i>a</i>, <i>b</i>)
 
-Returns -1 if *a* is less than *b*, or 1 if *a* is greater than *b*, or 0. This is the comparator function for natural order, and can be used in conjunction with the built-in array sort method to arrange elements in ascending order:
+Returns -1 if *a* is less than *b*, or 1 if *a* is greater than *b*, or 0. This is the comparator function for natural order, and can be used in conjunction with the built-in array sort method to arrange elements in ascending order. It is implemented as:
 
-```javascript
-function(a, b) {
-  return a < b ? -1 : a > b ? 1 : 0;
+```js
+function ascending(a, b) {
+  return a < b ? -1 : a > b ? 1 : a >= b ? 0 : NaN;
 }
 ```
 
-Note that if no comparator function is specified to the built-in sort method, the default order is lexicographic (alphabetical), not natural! This can lead to bugs when sorting an array of numbers.
+Note that if no comparator function is specified to the built-in sort method, the default order is lexicographic (alphabetical), not natural! This can lead to surprising behavior when sorting an array of numbers.
 
 <a name="d3_descending" href="Arrays#d3_descending">#</a> d3.<b>descending</b>(<i>a</i>, <i>b</i>)
 
-Returns -1 if *a* is greater than *b*, or 1 if *a* is less than *b*, or 0. This is the comparator function for reverse natural order, and can be used in conjunction with the built-in array sort method to arrange elements in descending order:
+Returns -1 if *a* is greater than *b*, or 1 if *a* is less than *b*, or 0. This is the comparator function for reverse natural order, and can be used in conjunction with the built-in array sort method to arrange elements in descending order.  It is implemented as:
 
-```javascript
-function(a, b) {
-  return b < a ? -1 : b > a ? 1 : 0;
+```js
+function descending(a, b) {
+  return b < a ? -1 : b > a ? 1 : b >= a ? 0 : NaN;
 }
 ```
 
