@@ -35,7 +35,7 @@ Sets the output range from the specified continuous *interval*. The array *inter
 ```javascript
 var o = d3.scale.ordinal()
     .domain([1, 2, 3, 4])
-    .rangePoints([0, 100], 0);
+    .rangePoints([0, 100]);
 
 o.range(); // [0, 33.333333333333336, 66.66666666666667, 100]
 ```
