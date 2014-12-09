@@ -37,6 +37,21 @@ d3.scale.ordinal().domain([1, 2, 3, 4]).rangePoints([0, 100], 0).range();
 // returns [0, 33.333333333333336, 66.66666666666667, 100]
 ```
 
+<a name="ordinal_rangeRoundPoints" href="#ordinal_rangeRoundPoints">#</a> ordinal.<b>rangeRoundPoints</b>(<i>interval</i>[, <i>padding</i>])
+
+Like [rangePoints](#ordinal_rangePoints), except guarantees that the returned points are integer values, so as to avoid antialiasing artifacts.
+
+Note that the fractions that must be rounded off each point are distributed between the start and end of the range as additional outer padding. This error padding is proportional to the domain length; on average, it adds up to roughly domain.length / 2. This is trivial for 3 bars, as in the example, but grows to about 50 for a domain with length 100. In situations where the domain is not known or potentially unbounded, using [rangeBands](Ordinal-Scales#ordinal_rangeBands) with CSS [`shape-rendering: crispEdges`](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/shape-rendering) may be advisable. 
+
+```javascript
+var o1 = d3.scale.ordinal().domain([1, 2, 3]).rangeBands([0, 100], 0, 0);
+o1.range(); //returns [0, 33.333333333333336, 66.66666666666667]
+o1.rangeBand(); //returns 33.333333333333336
+var o2 = d3.scale.ordinal().domain([1, 2, 3]).rangeRoundBands([0, 100], 0, 0);
+o2.range(); //returns [1, 34, 67]
+o2.rangeBand(); //returns 33
+```
+
 <a name="ordinal_rangeBands" href="Ordinal-Scales#ordinal_rangeBands">#</a> ordinal.<b>rangeBands</b>(<i>interval</i>[, <i>padding</i>[, <i>outerPadding</i>]])
 
 Sets the output range from the specified continuous *interval*. The array *interval* contains two elements representing the minimum and maximum numeric value. This interval is subdivided into *n* evenly-spaced **bands**, where *n* is the number of (unique) values in the input domain. The bands may be offset from the edge of the interval and other bands according to the specified *padding*, which defaults to zero. The padding is typically in the range [0,1] and corresponds to the amount of space in the range interval to allocate to padding. A value of 0.5 means that the band width will be equal to the padding width. The *outerPadding* argument is for the entire group of bands; a value of 0 means there will be padding only between rangeBands.
@@ -54,15 +69,26 @@ o.rangeExtent(); // returns [0, 100]
 
 Like [rangeBands](Ordinal-Scales#ordinal_rangeBands), except guarantees that the band width and offset are integer values, so as to avoid antialiasing artifacts.
 
-Bear in mind that the fractions that must be rounded off each band are distributed between the start and end of the range as an additional padding on top of <i>outerPadding</i>. This error padding is proportional to the domain length; on average, it adds up to roughly `domain.length / 2`. This is trivial for 3 bars, as in the example, but grows to about 50 for a domain with length 100. In situations where the domain is not known or potentially unbounded, using [rangeBands](Ordinal-Scales#ordinal_rangeBands) with CSS [`shape-rendering: crispEdges`](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/shape-rendering) may be advisable. 
+```js
+var o = d3.scale.ordinal()
+    .domain([1, 2, 3])
+    .rangeBands([0, 100]);
+o.range(); // [0, 33.333333333333336, 66.66666666666667]
+o.rangeBand(); // 33.333333333333336
+o.rangeRoundBands([0, 100]);
+o.range(); // [1, 34, 67]
+o.rangeBand(); // 33
+```
 
-```javascript
-var o1 = d3.scale.ordinal().domain([1, 2, 3]).rangeBands([0, 100], 0, 0);
-o1.range(); //returns [0, 33.333333333333336, 66.66666666666667]
-o1.rangeBand(); //returns 33.333333333333336
-var o2 = d3.scale.ordinal().domain([1, 2, 3]).rangeRoundBands([0, 100], 0, 0);
-o2.range(); //returns [1, 34, 67]
-o2.rangeBand(); //returns 33
+Note that rounding necessarily introduces additional outer padding which is, on average, proportional to the length of the domain. For example, for a domain of size 50, an additional 25px of outer padding on either side may be required. Modifying the range extent to be closer to a multiple of the domain length may reduce the additional padding.
+
+```js
+var o = d3.scale.ordinal()
+    .domain(d3.range(50))
+    .rangeRoundBands([0, 95]);
+o.range(); // [23, 24, 25, …, 70, 71, 72]
+o.rangeRoundBands([0, 100]);
+o.range(); // [0, 2, 4, …, 94, 96, 98]
 ```
 
 <a name="ordinal_rangeBand" href="Ordinal-Scales#ordinal_rangeBand">#</a> ordinal.<b>rangeBand</b>()
