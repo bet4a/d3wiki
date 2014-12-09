@@ -33,8 +33,11 @@ Sets the output range from the specified continuous *interval*. The array *inter
 ![rangepoints](https://f.cloud.github.com/assets/230541/538689/46d87118-c193-11e2-83ab-2008df7c36aa.png)
 
 ```javascript
-d3.scale.ordinal().domain([1, 2, 3, 4]).rangePoints([0, 100], 0).range();
-// returns [0, 33.333333333333336, 66.66666666666667, 100]
+var o = d3.scale.ordinal()
+    .domain([1, 2, 3, 4])
+    .rangePoints([0, 100], 0);
+
+o.range(); // [0, 33.333333333333336, 66.66666666666667, 100]
 ```
 
 <a name="ordinal_rangeRoundPoints" href="#ordinal_rangeRoundPoints">#</a> ordinal.<b>rangeRoundPoints</b>(<i>interval</i>[, <i>padding</i>])
@@ -45,6 +48,7 @@ Like [rangePoints](#ordinal_rangePoints), except guarantees that the range value
 var o = d3.scale.ordinal()
     .domain([1, 2, 3, 4])
     .rangePoints([0, 100]);
+
 o.range(); // [0, 33.333333333333336, 66.66666666666667, 100]
 o.rangeRoundPoints([0, 100]);
 o.range(); // [1, 34, 67, 100]
@@ -56,6 +60,7 @@ Note that rounding necessarily introduces additional outer padding which is, on 
 var o = d3.scale.ordinal()
     .domain(d3.range(50))
     .rangeRoundPoints([0, 95]);
+
 o.range(); // [23, 24, 25, …, 70, 71, 72]
 o.rangeRoundPoints([0, 100]);
 o.range(); // [1, 3, 5, …, 95, 97, 98]
@@ -70,10 +75,13 @@ Sets the output range from the specified continuous *interval*. The array *inter
 ![rangebands](https://f.cloud.github.com/assets/230541/538688/46c298c0-c193-11e2-9a7e-15d9abcfab9b.png)
 
 ```javascript
-var o = d3.scale.ordinal().domain([1, 2, 3, 4]).rangeBands([0, 100]);
-o.rangeBand(); // returns 25
-o.range(); // returns [0, 25, 50, 75]
-o.rangeExtent(); // returns [0, 100]
+var o = d3.scale.ordinal()
+    .domain([1, 2, 3, 4])
+    .rangeBands([0, 100]);
+
+o.rangeBand(); // 25
+o.range(); // [0, 25, 50, 75]
+o.rangeExtent(); // [0, 100]
 ```
 
 <a name="ordinal_rangeRoundBands" href="Ordinal-Scales#ordinal_rangeRoundBands">#</a> ordinal.<b>rangeRoundBands</b>(<i>interval</i>[, <i>padding</i>[, <i>outerPadding</i>]])
@@ -84,8 +92,10 @@ Like [rangeBands](Ordinal-Scales#ordinal_rangeBands), except guarantees that ran
 var o = d3.scale.ordinal()
     .domain([1, 2, 3])
     .rangeBands([0, 100]);
+
 o.range(); // [0, 33.333333333333336, 66.66666666666667]
 o.rangeBand(); // 33.333333333333336
+
 o.rangeRoundBands([0, 100]);
 o.range(); // [1, 34, 67]
 o.rangeBand(); // 33
@@ -97,7 +107,9 @@ Note that rounding necessarily introduces additional outer padding which is, on 
 var o = d3.scale.ordinal()
     .domain(d3.range(50))
     .rangeRoundBands([0, 95]);
+
 o.range(); // [23, 24, 25, …, 70, 71, 72]
+
 o.rangeRoundBands([0, 100]);
 o.range(); // [0, 2, 4, …, 94, 96, 98]
 ```
@@ -217,7 +229,7 @@ For CSS, assign a class such as "q0-3", "q1-3" or "q2-3" to the element you wish
 For JavaScript, you can use colorbrewer.RdBu[9] or equivalent as the range of a d3.scale.ordinal. For example:
 
 ```js
-var z = d3.scale.ordinal()
+var o = d3.scale.ordinal()
     .domain(["foo", "bar", "baz"])
     .range(colorbrewer.RdBu[9]);
 ```
