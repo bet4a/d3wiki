@@ -105,8 +105,8 @@ See one of:
 * [d3.mean](Arrays#d3_mean) - compute the arithmetic mean of an array of numbers.
 * [d3.median](Arrays#d3_median) - compute the median of an array of numbers (the 0.5-quantile).
 * [d3.quantile](Arrays#d3_quantile) - compute a quantile for a sorted array of numbers.
-* [d3.variance](Arrays#d3_sum) - compute the variance of an array of numbers.
-* [d3.deviation](Arrays#d3_mean) - compute the standard deviation of an array of numbers.
+* [d3.variance](Arrays#d3_variance) - compute the variance of an array of numbers.
+* [d3.deviation](Arrays#d3_deviation) - compute the standard deviation of an array of numbers.
 * [d3.bisect](Arrays#d3_bisect) - search for a value in a sorted array.
 * [d3.bisectRight](Arrays#d3_bisectRight) - search for a value in a sorted array.
 * [d3.bisectLeft](Arrays#d3_bisectLeft) - search for a value in a sorted array.
