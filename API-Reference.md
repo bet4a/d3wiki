@@ -368,6 +368,7 @@ See one of:
 * [arc.innerRadius](SVG-Shapes#arc_innerRadius) - get or set the inner radius accessor.
 * [arc.outerRadius](SVG-Shapes#arc_outerRadius) - get or set the outer radius accessor.
 * [arc.cornerRadius](SVG-Shapes#arc_cornerRadius) - get or set the corner radius accessor.
+* [arc.padRadius](SVG-Shapes#arc_padRadius) - get or set the pad radius accessor.
 * [arc.startAngle](SVG-Shapes#arc_startAngle) - get or set the start angle accessor.
 * [arc.endAngle](SVG-Shapes#arc_endAngle) - get or set the end angle accessor.
 * [arc.padAngle](SVG-Shapes#arc_padAngle) - get or set the pad angle accessor.
