@@ -352,6 +352,11 @@ This returns a nested array. Each element of the outer array is a key-values pai
 
 The nested form allows easy iteration and generation of hierarchical structures in SVG or HTML.
 
+For a longer introduction to d3.nest, see:
+
+* Phoebe Bright’s [D3 Nest Tutorial and examples]()(http://bl.ocks.org/phoebebright/raw/3176159/) 
+* Shan Carter’s [Mister Nester](http://bl.ocks.org/shancarter/raw/4748131/)
+
 <a name="d3_nest" href="#d3_nest">#</a> d3.<b>nest</b>()
 
 Creates a new nest operator. The set of keys is initially empty. If the [map](#nest_map) or [entries](#nest_entries) operator is invoked before any key functions are registered, the nest operator simply returns the input array. Examples of nest: [http://bl.ocks.org/phoebebright/raw/3176159/](http://bl.ocks.org/phoebebright/raw/3176159/) 
@@ -397,5 +402,3 @@ Using d3.map rather than an object offers conveniences (e.g., the returned map h
 <a name="nest_entries" href="#nest_entries">#</a> nest.<b>entries</b>(<i>array</i>)
 
 Applies the nest operator to the specified *array*, returning an array of key-values entries. Conceptually, this is similar to applying [d3.entries](#d3_entries) to the associative array returned by [map](#nest_map), but it applies to every level of the hierarchy rather than just the first (outermost) level. Each entry in the returned array corresponds to a distinct key value returned by the first key function. The entry value depends on the number of registered key functions: if there is an additional key, the value is another nested array of entries; otherwise, the value is the array of elements filtered from the input *array* that have the given key value.
-
-nest examples: [http://bl.ocks.org/phoebebright/raw/3176159/](http://bl.ocks.org/phoebebright/raw/3176159/) 
