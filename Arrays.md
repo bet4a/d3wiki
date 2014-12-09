@@ -96,11 +96,11 @@ d3.quantile(a, 0.1); // return 0.19999999999999996
 
 <a name="d3_variance" href="#d3_variance">#</a> d3.<b>variance</b>(<i>array</i>[, <i>accessor</i>])
 
-Returns an [unbiased estimator of the population variance](http://mathworld.wolfram.com/SampleVariance.html) of the given *array* of values. If the array is empty, returns 0. An optional *accessor* function may be specified, which is equivalent to calling *array.map(accessor)* before computing the variance. This method ignores invalid values such as NaN and undefined; this is useful for computing the sum of data while only considering the well-defined values.
+Returns an [unbiased estimator of the population variance](http://mathworld.wolfram.com/SampleVariance.html) of the given *array* of numbers. If the array has fewer than two values, returns undefined. An optional *accessor* function may be specified, which is equivalent to calling *array.map(accessor)* before computing the variance. This method ignores invalid values such as NaN and undefined.
 
 <a name="d3_deviation" href="#d3_deviation">#</a> d3.<b>deviation</b>(<i>array</i>[, <i>accessor</i>])
 
-…
+Returns the standard deviation, defined as the square root of the [bias-corrected variance](#d3_variance), of the given *array* of numbers. If the array has fewer than two values, returns undefined. An optional *accessor* function may be specified, which is equivalent to calling *array.map(accessor)* before computing the standard deviation. This method ignores invalid values such as NaN and undefined.
 
 <a name="d3_bisectLeft" href="Arrays#d3_bisectLeft">#</a> d3.<b>bisectLeft</b>(<i>array</i>, <i>x</i>[, <i>lo</i>[, <i>hi</i>]])
 
