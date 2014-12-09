@@ -405,7 +405,7 @@ Returns the path data string for the specified *datum*. An optional *index* may 
 
 <a name="arc_innerRadius" href="SVG-Shapes#arc_innerRadius">#</a> arc.<b>innerRadius</b>([<i>radius</i>])
 
-If *radius* is specified, sets the *innerRadius*-accessor to the specified function or constant. If *radius* is not specified, returns the current *innerRadius*-accessor. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+If *radius* is specified, sets the inner radius accessor to the specified function or constant. If *radius* is not specified, returns the current inner radius accessor, which defaults to:
 
 ```javascript
 function innerRadius(d) {
@@ -413,13 +413,11 @@ function innerRadius(d) {
 }
 ```
 
-Typically, a *innerRadius*-accessor is specified because the input data is in a different format, because you want to apply a [[scale|Quantitative Scales]], or because you want to specify a constant inner radius for a donut chart.
-
-The *innerRadius*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the arc function; however, in the common case that the arc generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *innerRadius*-accessor as a constant rather than a function.
+The arc generator arguments (typically `d` and `i`) and context (`this`) are passed through to the accessor function. An inner radius accessor function is useful for handling data in a different format or for applying a [quantitative scale](Quantitative Scales) to encode data. A constant inner radius may be used to create a standard pie or donut chart.
 
 <a name="arc_outerRadius" href="SVG-Shapes#arc_outerRadius">#</a> arc.<b>outerRadius</b>([<i>radius</i>])
 
-If *radius* is specified, sets the *outerRadius*-accessor to the specified function or constant. If *radius* is not specified, returns the current *outerRadius*-accessor. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+If *radius* is specified, sets the outer radius accessor to the specified function or constant. If *radius* is not specified, returns the current outer radius accessor, which defaults to:
 
 ```javascript
 function outerRadius(d) {
@@ -427,13 +425,31 @@ function outerRadius(d) {
 }
 ```
 
-Typically, a *outerRadius*-accessor is specified because the input data is in a different format, because you want to apply a [[scale|Quantitative Scales]], or because you want to specify a constant outer radius for a donut chart.
+The arc generator arguments (typically `d` and `i`) and context (`this`) are passed through to the accessor function. An outer radius accessor function is useful for handling data in a different format or for applying a [quantitative scale](Quantitative Scales) to encode data. A constant outer radius may be used to create a standard pie or donut chart.
 
-The *outerRadius*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *outerRadius*-accessor as a constant rather than a function.
+<a name="arc_cornerRadius" href="#arc_cornerRadius">#</a> arc.<b>cornerRadius</b>([<i>radius</i>])
+
+If *radius* is specified, sets the corner radius accessor to the specified function or constant. If *radius* is not specified, returns the current outer radius accessor, which defaults to zero. Although a constant corner radius is typically used, the corner radius may also be specified as a function. The arc generator arguments (typically `d` and `i`) and context (`this`) are passed through to the accessor function.
+
+<a name="arc_padRadius" href="#arc_padRadius">#</a> arc.<b>padRadius</b>([<i>radius</i>])
+
+If *radius* is specified, sets the pad radius accessor to the specified function or constant. If *radius* is not specified, returns the current pad radius accessor, which defaults to “auto”. The pad radius is the radius at which the [pad angle](#arc_padAngle) is applied: the nominal padding distance between parallel edges of adjacent arcs is defined as padRadius * padAngle. (The padding distance may be smaller if the inner radius is small relative to the pad angle.)
+
+The “auto” pad radius method computes the pad radius based on the previously-computed [inner](#arc_innerRadius) and [outer](#arc_outerRadius) as:
+
+```javascript
+function padRadius(innerRadius, outerRadius) {
+  return Math.sqrt(innerRadius * innerRadius + outerRadius * outerRadius);
+}
+```
+
+This implementation is designed to preserve the approximate relative area of arcs in conjunction with [pie.padAngle](Pie-Layout#padAngle).
+
+The arc generator arguments (typically `d` and `i`) and context (`this`) are passed through to the accessor function.
 
 <a name="arc_startAngle" href="SVG-Shapes#arc_startAngle">#</a> arc.<b>startAngle</b>([<i>angle</i>])
 
-If *angle* is specified, sets the *startAngle*-accessor to the specified function or constant. If *angle* is not specified, returns the current *startAngle*-accessor. Angles are specified in [radians](http://en.wikipedia.org/wiki/Radian), even though SVG typically uses degrees. The angle 0 corresponds to 12 o'clock (negative y) and continues clockwise repeating at 2π. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+If *angle* is specified, sets the *startAngle*-accessor to the specified function or constant. If *angle* is not specified, returns the current *startAngle*-accessor. Angles are specified in radians; 0 corresponds to 12 o’clock (negative *y*) and proceeds clockwise, repeating at 2π. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
 
 ```javascript
 function startAngle(d) {
@@ -447,7 +463,7 @@ The *startAngle*-accessor is invoked in the same manner as other value functions
 
 <a name="arc_endAngle" href="SVG-Shapes#arc_endAngle">#</a> arc.<b>endAngle</b>([<i>angle</i>])
 
-If *angle* is specified, sets the *endAngle*-accessor to the specified function or constant. If *angle* is not specified, returns the current *endAngle*-accessor. Angles are specified in [radians](http://en.wikipedia.org/wiki/Radian), even though SVG typically uses degrees. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+If *angle* is specified, sets the *endAngle*-accessor to the specified function or constant. If *angle* is not specified, returns the current *endAngle*-accessor. Angles are specified in radians; 0 corresponds to 12 o’clock (negative *y*) and proceeds clockwise, repeating at 2π. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
 
 ```javascript
 function endAngle(d) {
@@ -459,6 +475,19 @@ For constructing pie or donut charts, you will need to compute the end angle of 
 
 The *endAngle*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *endAngle*-accessor as a constant rather than a function.
 
+<a name="arc_padAngle" href="#arc_padAngle">#</a> arc.<b>padAngle</b>([<i>angle</i>])
+
+If *angle* is specified, sets the *padAngle*-accessor to the specified function or constant. If *angle* is not specified, returns the current *padAngle*-accessor. Angles are specified in radians. This accessor is invoked on the argument passed to the arc generator. The default accessor assumes that the input data is an object with suitably-named attributes:
+
+```javascript
+function endAngle(d) {
+  return d.endAngle;
+}
+```
+
+For constructing pie or donut charts, you will need to compute the end angle of each arc as offset from the start angle. This can be done very conveniently using the [pie](Pie-Layout) layout, which is similar to the [stack](Stack-Layout) layout; given a set of input data, the pie layout will construct arc objects with startAngle and endAngle attributes that you can use with the default arc accessors.
+
+The *endAngle*-accessor is invoked in the same manner as other value functions in D3. The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *endAngle*-accessor as a constant rather than a function.
 <a name="arc_centroid" href="SVG-Shapes#arc_centroid">#</a> arc.<b>centroid</b>(<i>arguments…</i>)
 
 Computes the centroid of the arc that would be generated from the specified input *arguments*; typically, the arguments are the current datum (d), and optionally the current index (i). The centroid is defined as the midpoint in polar coordinates of the inner and outer radius, and the start and end angle. This provides a convenient location for arc labels. For example:
@@ -568,7 +597,7 @@ The *radius*-accessor is invoked in a similar manner as other value functions in
 
 <a name="chord_startAngle" href="SVG-Shapes#chord_startAngle">#</a> chord.<b>startAngle</b>([<i>angle</i>])
 
-If *startAngle* is specified, sets the *startAngle*-accessor to the specified function or constant. If *startAngle* is not specified, returns the current *startAngle*-accessor. Angles are specified in [radians](http://en.wikipedia.org/wiki/Radian), even though SVG typically uses degrees. The default accessor assumes that the input source or target description is an object with suitably-named attributes:
+If *startAngle* is specified, sets the *startAngle*-accessor to the specified function or constant. If *startAngle* is not specified, returns the current *startAngle*-accessor. Angles are specified in radians; 0 corresponds to 12 o’clock (negative *y*) and proceeds clockwise, repeating at 2π. The default accessor assumes that the input source or target description is an object with suitably-named attributes:
 
 ```javascript
 function startAngle(d) {
@@ -580,7 +609,7 @@ The *startAngle*-accessor is invoked in a similar manner as other value function
 
 <a name="chord_endAngle" href="SVG-Shapes#chord_endAngle">#</a> chord.<b>endAngle</b>([<i>angle</i>])
 
-If *endAngle* is specified, sets the *endAngle*-accessor to the specified function or constant. If *endAngle* is not specified, returns the current *endAngle*-accessor. Angles are specified in [radians](http://en.wikipedia.org/wiki/Radian), even though SVG typically uses degrees. The default accessor assumes that the input source or target description is an object with suitably-named attributes:
+If *endAngle* is specified, sets the *endAngle*-accessor to the specified function or constant. If *endAngle* is not specified, returns the current *endAngle*-accessor. Angles are specified in radians; 0 corresponds to 12 o’clock (negative *y*) and proceeds clockwise, repeating at 2π. The default accessor assumes that the input source or target description is an object with suitably-named attributes:
 
 ```javascript
 function endAngle(d) {
