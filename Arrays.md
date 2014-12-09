@@ -354,7 +354,7 @@ The nested form allows easy iteration and generation of hierarchical structures 
 
 For a longer introduction to d3.nest, see:
 
-* Phoebe Bright’s [D3 Nest Tutorial and examples]()(http://bl.ocks.org/phoebebright/raw/3176159/) 
+* Phoebe Bright’s [D3 Nest Tutorial and examples](http://bl.ocks.org/phoebebright/raw/3176159/) 
 * Shan Carter’s [Mister Nester](http://bl.ocks.org/shancarter/raw/4748131/)
 
 <a name="d3_nest" href="#d3_nest">#</a> d3.<b>nest</b>()
