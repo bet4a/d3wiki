@@ -39,18 +39,29 @@ d3.scale.ordinal().domain([1, 2, 3, 4]).rangePoints([0, 100], 0).range();
 
 <a name="ordinal_rangeRoundPoints" href="#ordinal_rangeRoundPoints">#</a> ordinal.<b>rangeRoundPoints</b>(<i>interval</i>[, <i>padding</i>])
 
-Like [rangePoints](#ordinal_rangePoints), except guarantees that the returned points are integer values, so as to avoid antialiasing artifacts.
+Like [rangePoints](#ordinal_rangePoints), except guarantees that the range values are integers so as to avoid antialiasing artifacts.
 
-Note that the fractions that must be rounded off each point are distributed between the start and end of the range as additional outer padding. This error padding is proportional to the domain length; on average, it adds up to roughly domain.length / 2. This is trivial for 3 bars, as in the example, but grows to about 50 for a domain with length 100. In situations where the domain is not known or potentially unbounded, using [rangeBands](Ordinal-Scales#ordinal_rangeBands) with CSS [`shape-rendering: crispEdges`](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/shape-rendering) may be advisable. 
-
-```javascript
-var o1 = d3.scale.ordinal().domain([1, 2, 3]).rangeBands([0, 100], 0, 0);
-o1.range(); //returns [0, 33.333333333333336, 66.66666666666667]
-o1.rangeBand(); //returns 33.333333333333336
-var o2 = d3.scale.ordinal().domain([1, 2, 3]).rangeRoundBands([0, 100], 0, 0);
-o2.range(); //returns [1, 34, 67]
-o2.rangeBand(); //returns 33
+```js
+var o = d3.scale.ordinal()
+    .domain([1, 2, 3, 4])
+    .rangePoints([0, 100]);
+o.range(); // [0, 33.333333333333336, 66.66666666666667, 100]
+o.rangeRoundPoints([0, 100]);
+o.range(); // [1, 34, 67, 100]
 ```
+
+Note that rounding necessarily introduces additional outer padding which is, on average, proportional to the length of the domain. For example, for a domain of size 50, an additional 25px of outer padding on either side may be required. Modifying the range extent to be closer to a multiple of the domain length may reduce the additional padding.
+
+```js
+var o = d3.scale.ordinal()
+    .domain(d3.range(50))
+    .rangeRoundPoints([0, 95]);
+o.range(); // [23, 24, 25, …, 70, 71, 72]
+o.rangeRoundPoints([0, 100]);
+o.range(); // [1, 3, 5, …, 95, 97, 98]
+```
+
+(Alternatively, you could round the output of the scale manually or apply shape-rendering: crispEdges. However, this will result in irregularly spaced points.)
 
 <a name="ordinal_rangeBands" href="Ordinal-Scales#ordinal_rangeBands">#</a> ordinal.<b>rangeBands</b>(<i>interval</i>[, <i>padding</i>[, <i>outerPadding</i>]])
 
@@ -67,7 +78,7 @@ o.rangeExtent(); // returns [0, 100]
 
 <a name="ordinal_rangeRoundBands" href="Ordinal-Scales#ordinal_rangeRoundBands">#</a> ordinal.<b>rangeRoundBands</b>(<i>interval</i>[, <i>padding</i>[, <i>outerPadding</i>]])
 
-Like [rangeBands](Ordinal-Scales#ordinal_rangeBands), except guarantees that the band width and offset are integer values, so as to avoid antialiasing artifacts.
+Like [rangeBands](Ordinal-Scales#ordinal_rangeBands), except guarantees that range values and band width are integers so as to avoid antialiasing artifacts.
 
 ```js
 var o = d3.scale.ordinal()
@@ -90,6 +101,8 @@ o.range(); // [23, 24, 25, …, 70, 71, 72]
 o.rangeRoundBands([0, 100]);
 o.range(); // [0, 2, 4, …, 94, 96, 98]
 ```
+
+(Alternatively, you could round the output of the scale manually or apply shape-rendering: crispEdges. However, this will result in irregularly spaced and sized bands.)
 
 <a name="ordinal_rangeBand" href="Ordinal-Scales#ordinal_rangeBand">#</a> ordinal.<b>rangeBand</b>()
 
