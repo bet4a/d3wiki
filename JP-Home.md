@@ -24,7 +24,7 @@ D3 は、いわゆる "モダン" ブラウザ (一般的に、IE8およびそ�
 
 最新の D3 のはこちらです。
 
-* <http://d3js.org/d3.v3.zip>
+* <https://github.com/mbostock/d3/releases>
 
 最新リリースの直リンクであれば、以下のスニペットをコピーしてください。
 
