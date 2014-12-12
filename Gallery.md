@@ -584,6 +584,7 @@ Interactive Unit Circle (Trigonometry)<br>
 * [Gene functional interaction networks](http://imp.princeton.edu/) - Aaron Wong
 * [Interactive Netcdf climate data plots](https://willospace.pythonanywhere.com) - Will Sijp
 * [Shrimp](http://ontoserver.csiro.au/shrimp) demonstrates a DAG Tree layout for browsing SNOMED CT - Michael Lawley, CSIRO
+* [Multi-line chart](http://bl.ocks.org/maithuy/5766374df8119e76969b) demonstrates the LendingClub.com's net annualized return of loans by vintage - Thuy Nguyen
 
 ### Collections
 
