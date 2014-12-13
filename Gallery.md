@@ -850,6 +850,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Visualizing Package Dependencies](http://redotheweb.com/DependencyWheel/)
 * [Switching behavior between phone brands of the Dutch ](http://nbremer.blogspot.nl/2014/02/switching-behavior-between-phone-brands.html) and [Code](http://bl.ocks.org/nbremer/raw/6540350/)
 * [BeerViz - Visualizing Beers and their relations](http://seekshreyas.com/beerviz/)
+* [Explaining a Chord Diagram with Animation & Storytelling](http://nbremer.blogspot.nl/2014/12/using-data-storytelling-with-chord.html)
 
 #### Maps
 
