@@ -910,7 +910,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Sankey Diagram with Overlap](http://bl.ocks.org/d/3779574/)
 * [Hierarchical Edge Bundling](http://bl.ocks.org/mbostock/1044242)
 * [Spiral for John Hunter](http://bl.ocks.org/mbostock/3543186)
-* [Hexagonal Heatmaps for e.g. Self Organizing Maps](http://nbremer.blogspot.com/2013/07/self-organizing-maps-adding-boundaries.html) and [code](http://bl.ocks.org/nbremer/6052681)
+* [Hexagonal Heatmaps for e.g. Self Organizing Maps (SOM)](http://nbremer.blogspot.com/2013/07/self-organizing-maps-adding-boundaries.html) and [code](http://bl.ocks.org/nbremer/6052681)
 
 #### Miscellaneous visualizations
 
