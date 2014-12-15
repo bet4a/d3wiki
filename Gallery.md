@@ -310,10 +310,11 @@ Interactive Unit Circle (Trigonometry)<br>
 </tr>
 <tr height="207" valign="top">
    <td>Tarot Card App made with D3 + Meteor framework<br><a href="http://tarot-pedia.meteor.com/"><img src="https://farm8.staticflickr.com/7541/15320089804_2f5977c9b8_b.jpg"></a></td>
-
-   <td width="207">Ulam Spiral<br><a href="http://bl.ocks.org/rouleur/260c5a9233fff0e8ddaf"><img
+<td width="207">Ulam Spiral<br><a href="http://bl.ocks.org/rouleur/260c5a9233fff0e8ddaf"><img
             src="http://bl.ocks.org/rouleur/raw/260c5a9233fff0e8ddaf/thumbnail.png"
             width="202"></a></td>
+<td width="207">Animated Chord Diagram<br><a href="http://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord.html">
+	<img src="https://dl.dropboxusercontent.com/u/11654088/Chord%20Diagram%20Video%20Fast%20202px.gif" width="202"></a></td>
 </tr>
 </table>
 
