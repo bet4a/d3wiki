@@ -315,6 +315,8 @@ Interactive Unit Circle (Trigonometry)<br>
             width="202"></a></td>
 <td width="207">Animated Chord Diagram<br><a href="http://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord.html">
 	<img src="https://dl.dropboxusercontent.com/u/11654088/Chord%20Diagram%20Video%20Fast%20202px.gif" width="202"></a></td>
+<td width="207">SOM Hexagonal Heatmap<br><a href="http://www.visualcinnamon.com/2013/07/self-organizing-maps-creating-hexagonal.html">
+	<img src="https://dl.dropboxusercontent.com/u/11654088/SOM%20Heatmap.png" width="202"></a></td>
 </tr>
 </table>
 
