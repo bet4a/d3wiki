@@ -412,7 +412,7 @@ d3.selectAll("div").call(foo);
 
 The `this` context of the called function is also the current selection. This is slightly redundant with the first argument, which we might fix in the future.
 
-If you use an objects method in selection.call and need `this` to point to that object you create a function *bound* to the object before calling.
+If you use an object's method in selection.call and need `this` to point to that object you create a function *bound* to the object before calling.
 
 ```
 function Foo(text) {
