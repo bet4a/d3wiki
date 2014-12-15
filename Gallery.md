@@ -852,9 +852,9 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Co-Authors Chords] (http://www.rjbaxley.com/p/publications.html)
 * [Visualizing Overlapping Sets] (http://radialsets.org) - [Bernd Landauer] (http://syrenio.com/)
 * [Visualizing Package Dependencies](http://redotheweb.com/DependencyWheel/)
-* [Switching behavior between phone brands of the Dutch ](http://nbremer.blogspot.nl/2014/02/switching-behavior-between-phone-brands.html) and [Code](http://bl.ocks.org/nbremer/raw/6540350/)
+* [Switching behavior between phone brands of the Dutch ](http://www.visualcinnamon.com/2014/02/switching-behavior-between-phone-brands.html) and [Code](http://bl.ocks.org/nbremer/raw/6540350/)
 * [BeerViz - Visualizing Beers and their relations](http://seekshreyas.com/beerviz/)
-* [Explaining a Chord Diagram with Animation & Storytelling](http://nbremer.blogspot.nl/2014/12/using-data-storytelling-with-chord.html)
+* [Explaining a Chord Diagram with Animation & Storytelling](http://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord.html)
 
 #### Maps
 
@@ -914,7 +914,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Sankey Diagram with Overlap](http://bl.ocks.org/d/3779574/)
 * [Hierarchical Edge Bundling](http://bl.ocks.org/mbostock/1044242)
 * [Spiral for John Hunter](http://bl.ocks.org/mbostock/3543186)
-* [Hexagonal Heatmaps for e.g. Self Organizing Maps (SOM)](http://nbremer.blogspot.com/2013/07/self-organizing-maps-adding-boundaries.html) and [code](http://bl.ocks.org/nbremer/6052681)
+* [Hexagonal Heatmaps for e.g. Self Organizing Maps (SOM)](http://www.visualcinnamon.com/2013/07/self-organizing-maps-adding-boundaries.html) and [code](http://bl.ocks.org/nbremer/6052681)
 
 #### Miscellaneous visualizations
 
@@ -959,7 +959,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Life expectancy: small multiples](http://bl.ocks.org/d/2361485/)
 * [Semi-manual force layout of cablegate reference graphs](http://bl.ocks.org/mbostock/4589092)
 * [Digital Clock By Virtual Force](http://jklabz.com/d3/digital_clock/digital_clock.html)
-* [Radar Chart or Spider Chart](http://bl.ocks.org/nbremer/raw/6506614/)
+* [Radar Chart or Spider Chart](http://www.visualcinnamon.com/2013/09/making-d3-radar-chart-look-bit-better.html)
 * [Battle Statistics from the MMO game World of Tanks] (http://www.polsci.ucsb.edu/faculty/glasgow/research/d3/WoTkillratio.html) - Garrett Glasgow
 * [Tendulkar's Rise and Fall](https://my.infocaptor.com/dash/mt.php?pa=tendulkar_5425757cbb623)
 * [Dijkstra algorithm solves the single-source shortest path problem](http://bl.ocks.org/lafarer/7d8ecbf7b06b2ef0f72b)  - Eric Lafargue
