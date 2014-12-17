@@ -6,7 +6,7 @@
 * [介绍](http://mbostock.github.com/d3/)
 * [[代码示例|Gallery]]
 * [[教程|Tutorials]]
-* [[API参考]]
+* [[API参考|Api-参考]]
 * [版本发布](https://github.com/mbostock/d3/releases)
 * [插件](/d3/d3-plugins)
 * [d3.js on Stack Overflow](http://stackoverflow.com/questions/tagged/d3.js)
