@@ -168,7 +168,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Language Network<br><a href="http://www.cotrino.com/2012/11/language-network/"><img src="https://raw.github.com/cotrino/experimentos/mr/langnet.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
-    <td>Wimbledon 2012<br><a href="http://charts.animateddata.co.uk/tennis/"><img src="http://animateddata.co.uk/img/ext/w2012-match-tree.jpg" width="202"></a></td>
+    <td>Wimbledon 2013<br><a href="http://charts.animateddata.co.uk/tennis/"><img src="http://animateddata.co.uk/img/ext/w2012-match-tree.jpg" width="202"></a></td>
     <td>Force directed tag/site explorer<br><a href="http://ramblings.mcpher.com/Home/excelquirks/gassites/d3nodefocus"><img src="http://xliberation.com/googlecharts/1731.png" width="200"></a></td>
     <td>Bus transit data<br/><a href="http://busrac.es"><img src="https://raw.github.com/bjuhn/UrbanDataChallenge/mr/data/busraces.png" width="202"></a></td>
     <td>Airline data from Fusion Tables<br/><a href="http://xliberation.com/googlecharts/d3flights.html"><img src="http://xliberation.com/googlecharts/1746.png" width="202"></a></td>
@@ -318,6 +318,14 @@ Interactive Unit Circle (Trigonometry)<br>
 <td width="207">SOM Hexagonal Heatmap<br><a href="http://www.visualcinnamon.com/2013/07/self-organizing-maps-creating-hexagonal.html">
 	<img src="https://dl.dropboxusercontent.com/u/11654088/SOM%20Heatmap.png" width="202"></a></td>
 </tr>
+
+<tr height="207" valign="top">
+    <td>Dataviz tree<br><a href="http://charts.animateddata.co.uk/datavistree/"><img src="http://animateddata.co.uk/img/ext/datavistree-thumb.jpg" width="202"></a></td>
+    <td>UK Temperature 1910-2014<br><a href="http://charts.animateddata.co.uk/uktemp/"><img src="http://animateddata.co.uk/img/ext/uktemprange-thumb.jpg" width="202"></a></td>
+    <td></td>
+    <td></td>
+</tr>
+
 </table>
 
 ## Basic Charts
