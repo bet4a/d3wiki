@@ -146,14 +146,14 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 <tr height="207" valign="top">
     <td>Explosions<br><a href="http://ggruiz.me/explosions/"><img src="http://puu.sh/2fO3P" width="202" height="146"></a></td>
     <td>CodeFlowers<br><a href="http://redotheweb.com/CodeFlower/"><img src="http://redotheweb.com/images/codeflower/codeflower.png" width="202" height="146"></a></td>
-    <td>Animated wind chart<br><a href="http://prcweb.co.uk/lab/ukwind"><img src="http://prcweb.co.uk/img/ext/d3-ukwind.jpg" width="202"></a></td>
-    <td>What makes us happy?<br><a href="http://prcweb.co.uk/lab/what-makes-us-happy"><img src="http://prcweb.co.uk/img/ext/what-makes-us-happy2.jpg" width="202"></a></td>
+    <td>Animated wind chart<br><a href="http://charts.animateddata.co.uk/ukwind/"><img src="http://animateddata.co.uk/img/ext/d3-ukwind.jpg" width="202"></a></td>
+    <td>What makes us happy?<br><a href="http://charts.animateddata.co.uk/whatmakesushappy/"><img src="http://animateddata.co.uk/img/ext/what-makes-us-happy2.jpg" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
     <td>Simple SOM Animation<br><a href="http://bl.ocks.org/e-/5244131"><img src="https://gist.github.com/e-/5244131/raw/2b721ed08e2361731b4d45370c9c8ddec63304e0/thumbnail.png" width="202"></a></td>
     <td>A mower demo<br><a href="http://bertranddechoux.github.io/d3js-sandbox/mower-demo/index.html"><img src="https://raw.github.com/BertrandDechoux/d3js-sandbox/gh-pages/mower-demo/screenshot.png" width="202"></a></td>
     <td>Map and context with brushing<br><a href="http://rbspd3.herokuapp.com"><img src="https://raw.github.com/sdelarquier/rbspd3/mr/snapshot.png" width="202"></a></td>
-    <td>Binary tree with transitions<br><a href="http://animateddata.co.uk/lab/d3-tree"><img src="http://prcweb.co.uk/img/ext/tree.jpg" width="202"></a></td>
+    <td>Binary tree with transitions<br><a href="http://animateddata.co.uk/lab/d3-tree"><img src="http://animateddata.co.uk/img/ext/tree.jpg" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
     <td>d3+ColorBrewer<br><a href="http://adilapapaya.com/color/"><img src="http://adilapapaya.com/color/d3colorbrewer.png" width="202"></a></td>
@@ -168,7 +168,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Language Network<br><a href="http://www.cotrino.com/2012/11/language-network/"><img src="https://raw.github.com/cotrino/experimentos/mr/langnet.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
-    <td>Wimbledon 2012<br><a href="http://wimbledon.prcweb.co.uk/"><img src="http://prcweb.co.uk/img/ext/w2012-match-tree.jpg" width="202"></a></td>
+    <td>Wimbledon 2012<br><a href="http://charts.animateddata.co.uk/tennis/"><img src="http://animateddata.co.uk/img/ext/w2012-match-tree.jpg" width="202"></a></td>
     <td>Force directed tag/site explorer<br><a href="http://ramblings.mcpher.com/Home/excelquirks/gassites/d3nodefocus"><img src="http://xliberation.com/googlecharts/1731.png" width="200"></a></td>
     <td>Bus transit data<br/><a href="http://busrac.es"><img src="https://raw.github.com/bjuhn/UrbanDataChallenge/mr/data/busraces.png" width="202"></a></td>
     <td>Airline data from Fusion Tables<br/><a href="http://xliberation.com/googlecharts/d3flights.html"><img src="http://xliberation.com/googlecharts/1746.png" width="202"></a></td>
