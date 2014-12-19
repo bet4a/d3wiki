@@ -50,6 +50,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 <tr height="207" valign="top">
     <td>Choropleth<br><a href="http://bl.ocks.org/mbostock/4060606"><img src="http://d3js.org/ex/choropleth.png" width="202"></a></td>
     <td>Collapsible Tree Layout<br><a href="http://mbostock.github.com/d3/talk/20111018/tree.html"><img src="http://d3js.org/ex/tree-zoom.png" width="202"></a></td>
+    <td>Collapsible 2-Way Tree Layout<br><a href="http://bl.ocks.org/kanesee/5d6c48bffd4ea31201fb"><img src="https://raw.githubusercontent.com/kanesee/d3-2way-tree/master/screenshot.png" width="202"></a></td>
     <td>Zoomable Treemap<br><a href="http://mbostock.github.com/d3/talk/20111018/treemap.html"><img src="http://d3js.org/ex/treemap-zoom.png" width="202"></a></td>
     <td>Zoomable Partition Layout<br><a href="http://mbostock.github.com/d3/talk/20111018/partition.html"><img src="http://d3js.org/ex/partition-zoom.png" width="202"></a></td>
 </tr>
