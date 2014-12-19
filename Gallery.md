@@ -299,6 +299,7 @@ Interactive Unit Circle (Trigonometry)<br>
 </td>
 <td>Days-Hours Heatmap<br><a href="http://bl.ocks.org/oyyd/859fafc8122977a3afd6"><img src="http://bl.ocks.org/oyyd/raw/859fafc8122977a3afd6/thumbnail.png" width="202"></a></td>
 <td>Trend Chart (Area + Line)<br><a href="http://bl.ocks.org/rkirsling/33a9e350516da54a5d4f"><img src="http://bl.ocks.org/rkirsling/raw/33a9e350516da54a5d4f/thumbnail.png" width="202"></a></td>
+<td>Simple Bubble Chart<br><a href="http://bl.ocks.org/phuonghuynh/54a2f97950feadb45b07"><img src="http://phuonghuynh.github.io/demo/bubble-chart/demo-bubble-chart.png" width="202"></a></td>
 </tr>
 <tr>
 
