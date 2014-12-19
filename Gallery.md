@@ -233,6 +233,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Epidemic Game <a href="http://vax.herokuapp.com"><img src="http://imgur.com/h3anuVg.gif" width="202"></a></td>
     <td>UK Temperature Graphs<br><a href="http://charts.animateddata.co.uk/uktemperaturelines"><img src="http://animateddata.co.uk/img/d3-gallery/uktemperaturelines3.jpg" width="202"></a></td>
     <td>Data Heatmap with Sorting Functions<br><a href="http://bl.ocks.org/ianyfchang/8119685"><img src="http://bl.ocks.org/ianyfchang/raw/8119685/thumbnail.png" width="202"></a></td>
+
 </tr>
 <tr height="207" valign="top">
     <td>Node-Link Tree Showing Branches of Government<br><a href="http://greencracker.net/wp-content/uploads/2013/11/final-cafe-press-dimensions-1106.jpg"><img src="http://greencracker.net/wp-content/uploads/2013/12/tree_thumb.jpg" width="202"></a></td>
@@ -299,7 +300,7 @@ Interactive Unit Circle (Trigonometry)<br>
 </td>
 <td>Days-Hours Heatmap<br><a href="http://bl.ocks.org/oyyd/859fafc8122977a3afd6"><img src="http://bl.ocks.org/oyyd/raw/859fafc8122977a3afd6/thumbnail.png" width="202"></a></td>
 <td>Trend Chart (Area + Line)<br><a href="http://bl.ocks.org/rkirsling/33a9e350516da54a5d4f"><img src="http://bl.ocks.org/rkirsling/raw/33a9e350516da54a5d4f/thumbnail.png" width="202"></a></td>
-<td>Simple Bubble Chart<br><a href="http://bl.ocks.org/phuonghuynh/54a2f97950feadb45b07"><img src="http://phuonghuynh.github.io/demo/bubble-chart/demo-bubble-chart.png" width="202"></a></td>
+
 </tr>
 <tr>
 
@@ -323,7 +324,7 @@ Interactive Unit Circle (Trigonometry)<br>
 <tr height="207" valign="top">
     <td>Dataviz tree<br><a href="http://charts.animateddata.co.uk/datavistree/"><img src="http://animateddata.co.uk/img/ext/datavistree-thumb.jpg" width="202"></a></td>
     <td>UK Temperature 1910-2014<br><a href="http://charts.animateddata.co.uk/uktemp/"><img src="http://animateddata.co.uk/img/ext/uktemprange-thumb.jpg" width="202"></a></td>
-    <td></td>
+    <td>Simple Bubble Chart<br><a href="http://bl.ocks.org/phuonghuynh/54a2f97950feadb45b07"><img src="http://phuonghuynh.github.io/demo/bubble-chart/demo-bubble-chart.png" width="202"></a></td>
     <td></td>
 </tr>
 
