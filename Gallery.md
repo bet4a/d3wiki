@@ -371,7 +371,7 @@ Interactive Unit Circle (Trigonometry)<br>
   </tr> <td width="207">100% Stacked Bars<br><a href="https://live.zoomdata.com/zoomdata/visualization?__target=embedded&key=544fb187e4b0f4966438c4c3#51db7ad4e4b04caf9ab346db-5411ace4e4b065842f0df371"><img src="http://i57.tinypic.com/1pynhw.png" width="202"></a></td>
 </tr> <td width="207">Interactive Scatterplot<br><a href="https://live2.zoomdata.com/zoomdata/visualization?__target=embedded&key=546ca53ae4b0f6e2257e3295#54292b07e4b011a99e1252ba-5411ace4e4b065842f0df36e"><img src="http://i61.tinypic.com/2hq9s2b.png" width="202"></a></td> </tr> <td width="207">Interactive Multi-Metric Bars<br><a href="https://live2.zoomdata.com/zoomdata/visualization?__target=embedded&key=546df937e4b0f6e226bdeb04#51db7ad4e4b04caf9ab346db-53c6a37ae4b040073c0b32c5"><img src="http://i62.tinypic.com/nphqmu.png" width="202"></a></td>
     </tr>  <td width="207">United States Map with Mapbox Tiles<br><a href="https://live2.zoomdata.com/zoomdata/visualization#53f22849e4b08f9d5f15360a-522655b0e4b00f4f3af30f12"><img src="http://i62.tinypic.com/rsfo79.png" width="202"></a></td>
-    
+   
 </table>
 
 ## Techniques, Interaction & Animation
@@ -729,6 +729,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Grouped and Stacked Bar Chart](https://github.com/gencay/stackedGroupedChart)
 * [Waterfall Chart](http://bl.ocks.org/rsloan/7123450)
 * [Dual-scale Bar Chart](https://github.com/liufly/Dual-scale-D3-Bar-Chart)
+* [Diverging Stacked Bar Chart](http://bl.ocks.org/wpoely86/e285b8e4c7b84710e463)
 
 #### Histogram
 
