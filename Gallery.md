@@ -328,6 +328,11 @@ Interactive Unit Circle (Trigonometry)<br>
     <td>Collapsible 2-Way Tree Layout<br><a href="http://bl.ocks.org/kanesee/5d6c48bffd4ea31201fb"><img src="https://raw.githubusercontent.com/kanesee/d3-2way-tree/master/screenshot.png" width="202"></a></td>
 </tr>
 
+
+<tr height="207" valign="top">
+    <td>Animated Pie<br><a href="http://vyacheslavryabinin.com/datavis/pie/"><img src="http://vyacheslavryabinin.com/datavis/pie/pie.png" width="230"></a></td>
+
+</tr>
 </table>
 
 ## Basic Charts
