@@ -306,12 +306,12 @@ Interactive Unit Circle (Trigonometry)<br>
 
 
 <td>Visualizations and Dashboard builder<br><a href="https://my.infocaptor.com/free_data_visualization.php"><img src="http://www.infocaptor.com/dashboard/wp-content/uploads/2014/10/image-358.jpg" width="202"></a></td>
-<td>Asian Financial News Daily<br><a href="http://ywng-d3apps.rhcloud.com/MktInsight/"><img src="https://camo.githubusercontent.com/bb57bd84e2bc96a625319ec593fe14cf71a78fb8/68747470733a2f2f7261772e6769746875622e636f6d2f79776e672f50726f67726573736976652d4e6577732d436c6f75642f6d61737465722f73637265656e25323073686f742532306d61696e2e706e67"></a></td>
+<td>Asian Financial News Daily<br><a href="http://ywng-d3apps.rhcloud.com/MktInsight/"><img src="https://camo.githubusercontent.com/bb57bd84e2bc96a625319ec593fe14cf71a78fb8/68747470733a2f2f7261772e6769746875622e636f6d2f79776e672f50726f67726573736976652d4e6577732d436c6f75642f6d61737465722f73637265656e25323073686f742532306d61696e2e706e67" width="200"></a></td>
 <td>Simple bar chart with lede & nut graf layout<br><a href="http://greencracker.net/?p=1874"><img src="http://greencracker.net/wp-content/uploads/2014/11/Screen-Shot-2014-11-16-at-12.32.51-PM.png"></a></td>
 <td>Node Focusable Tree<br><a href="http://codepen.io/mikefab/full/IDdts/"><img src="http://s12.postimg.org/abee893h9/node_focusable_radial_tree.jpg"></a></td>
 </tr>
 <tr height="207" valign="top">
-   <td>Tarot Card App made with D3 + Meteor framework<br><a href="http://tarot-pedia.meteor.com/"><img src="https://farm8.staticflickr.com/7541/15320089804_2f5977c9b8_b.jpg"></a></td>
+   <td>Tarot Card App made with D3 + Meteor framework<br><a href="http://tarot-pedia.meteor.com/"><img src="https://farm8.staticflickr.com/7541/15320089804_2f5977c9b8_m.jpg"></a></td>
 <td width="207">Ulam Spiral<br><a href="http://bl.ocks.org/rouleur/260c5a9233fff0e8ddaf"><img
             src="http://bl.ocks.org/rouleur/raw/260c5a9233fff0e8ddaf/thumbnail.png"
             width="202"></a></td>
