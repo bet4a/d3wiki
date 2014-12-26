@@ -331,6 +331,10 @@ Interactive Unit Circle (Trigonometry)<br>
 <tr height="207" valign="top">
     <td>Animated Pie<br><a href="http://vyacheslavryabinin.com/datavis/pie/"><img src="http://vyacheslavryabinin.com/datavis/pie/pie.png" width="230"></a></td>
     <td>Exoplanets in Orbit<br><a href="http://www.visualcinnamon.com/2014/12/creating-interactive-exoplanets-in.html"><img src="https://raw.githubusercontent.com/nbremer/exoplanets/gh-pages/img/Exoplanets%20-%20Animated.gif" width="230"></a></td>
+    <td>Worldcup'14 Drag & Drop Brackets<br><a href="http://romain.vuillemot.net/projects/worldcup14/"><img src="http://romain.vuillemot.net/projects/worldcup14/tutorial.gif" width="230"></a></td>
+
+
+
 </tr>
 </table>
 
