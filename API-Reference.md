@@ -421,7 +421,7 @@ See one of:
 
 ## [d3.time (Time)](Time)
 
-### [Time Formatting](Time Formatting)
+### [Time Formatting](Time-Formatting)
 
 * [d3.time.format](Time-Formatting#format) - create a new local time formatter for a given specifier.
 * [format](Time-Formatting#_format) - format a date into a string.
@@ -430,7 +430,7 @@ See one of:
 * [d3.time.format.utc](Time-Formatting#format_utc) - create a new UTC time formatter for a given specifier.
 * [d3.time.format.iso](Time-Formatting#format_iso) - the ISO 8601 UTC time formatter.
 
-### [Time Scales](Time Scales)
+### [Time Scales](Time-Scales)
 
 * [d3.time.scale](Time-Scales#scale) - construct a linear time scale.
 * [scale](Time-Scales#_scale) - get the range value corresponding to a given domain value.
@@ -445,7 +445,7 @@ See one of:
 * [scale.tickFormat](Time-Scales#tickFormat) - get a formatter for displaying tick values.
 * [scale.copy](Time-Scales#copy) - create a new scale from an existing scale.
 
-### [Time Intervals](Time Intervals)
+### [Time Intervals](Time-Intervals)
 
 * [d3.time.interval](Time-Intervals#interval) - a time interval in local time.
 * [interval](Time-Intervals#_interval) - alias for interval.floor.
