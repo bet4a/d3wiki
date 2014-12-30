@@ -16,7 +16,7 @@ Registers the specified *listener* to receive events of the specified *type* fro
 
 Drag events (but not dragstart and dragend events) expose "x" and "y" properties representing the current position of the drag gesture in local coordinates. By default, this position is simply the [mouse](Selections#d3_mouse) (or [touch](Selections#d3_touches)) position; however, the position can be modified by specifying an [origin](#origin). The drag event also exposes "dx" and "dy" properties representing the element’s coordinates relative to its position at the beginning of the gesture, which is occasionally more convenient than specifying an explicit origin.
 
-During a drag gesture, some browser default behaviors (such as text selection) are prevented. In addition, the default behavior for a click event immediately a non-empty drag gesture is prevented, so as to allow the dragging of links. When registering your own click listener on draggable elements, you can check whether the click event was suppressed as follows:
+During a drag gesture, some browser default behaviors (such as text selection) are prevented. In addition, the default behavior for a click event immediately after a non-empty drag gesture is prevented, so as to allow the dragging of links. When registering your own click listener on draggable elements, you can check whether the click event was suppressed as follows:
 
 ```js
 selection.on("click", function() {
