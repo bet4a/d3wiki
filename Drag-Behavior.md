@@ -25,7 +25,7 @@ selection.on("click", function() {
 });
 ```
 
-When combining drag behaviors with other event listeners for interaction events, you may also consider stopping propagation on the source event to prevent multiple actions:
+When combining drag behaviors with other event listeners for interaction events (such as having [drag take precedence over zoom](http://bl.ocks.org/mbostock/6123708)), you may also consider stopping propagation on the source event to prevent multiple actions:
 
 ```js
 drag.on("dragstart", function() {
