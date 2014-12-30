@@ -308,17 +308,17 @@ Re-inserts elements into the document such that the document order matches the s
 
 ### Animation & Interaction
 
-<a name="on" href="Selections#on">#</a> selection.<b>on</b>(<i>type</i>[, <i>listener</i>[, <i>capture</i>]])
+<a name="on" href="#on">#</a> selection.<b>on</b>(<i>type</i>[, <i>listener</i>[, <i>capture</i>]])
 
-Adds or removes an event *listener* to each element in the current selection, for the specified *type*. The *type* is a string event type name, such as "click", "mouseover", or "submit". Basically any dom-event is supported. For more details about possible event types in d3, please look at [Mozilla](https://developer.mozilla.org/en-US/docs/Web/Events) or [stackoverflow](http://stackoverflow.com/questions/21841942/a-list-of-event-types-that-d3js-supports). The specified *listener* is invoked in the same manner as other operator functions, being passed the current datum `d` and index `i`, with the `this` context as the current DOM element. To access the current event within a listener, use the global [d3.event](Selections#d3_event). The return value of the event listener is ignored. 
+Adds or removes an event *listener* to each element in the current selection, for the specified *type*. The *type* is a string event type name, such as "click", "mouseover", or "submit". (Any [DOM event type](https://developer.mozilla.org/en-US/docs/Web/Events#Standard_events) supported by your browser may be used.) The specified *listener* is invoked in the same manner as other operator functions, being passed the current datum `d` and index `i`, with the `this` context as the current DOM element. To access the current event within a listener, use the global [d3.event](Selections#d3_event). The return value of the event listener is ignored. 
 
-If an event listener was already registered for the same type on the selected element, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "click.foo" and "click.bar".
-
-To remove a listener, pass null as the *listener*. To remove all listeners for a particular event type, pass null as the *listener*, and `.type` as the *type*, e.g. `selection.on(".foo", null)`.
+If an event listener was already registered for the same type on the selected element, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "click.foo" and "click.bar". To remove a listener, pass null as the *listener*. To remove all listeners for a particular event type, pass null as the *listener*, and `.type` as the *type*, e.g. `selection.on(".foo", null)`.
 
 An optional *capture* flag may be specified, which corresponds to the W3C [useCapture flag](http://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-registration): "After initiating capture, all events of the specified type will be dispatched to the registered EventListener before being dispatched to any EventTargets beneath them in the tree. Events which are bubbling upward through the tree will not trigger an EventListener designated to use capture."
 
 If *listener* is not specified, returns the currently-assigned listener for the specified *type*, if any.
+
+Note that while listeners will always see the latest datum (`d`) for their element, the index (`i`) is a property of the selection, and is defined when the selection is created. Updating the index requires re-selecting and re-binding listeners.
 
 <a name="d3_event" href="Selections#d3_event">#</a> d3.<b>event</b>
 
