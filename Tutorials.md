@@ -79,7 +79,19 @@ Please feel free to add links to your work!
 * [Bharat Bhole](http://knowledgestockpile.blogspot.com/search/label/D3)
 * [OUR D3.JS(Chinese)](http://www.ourd3js.com/wordpress/)
 
+## Books
+
+* [Getting Started with D3](http://shop.oreilly.com/product/0636920025429.do)<br>Mike Dewar, O'Reilly Media, June 2012
+* [Interactive Data Visualization for the Web](http://ofps.oreilly.com/titles/9781449339739/)<br>Scott Murray, O'Reilly Media, November 2012
+* [Data Visualization with d3.js](http://www.packtpub.com/data-visualization-with-d3js/book)<br>Swizec Teller, Packt Publishing, October 2013
+* [Data Visualization with D3.js Cookbook](http://www.packtpub.com/data-visualization-with-d3-js-cookbook/book)<br>Nick Qi Zhu, Packt Publishing, October 2013
+* [Mastering D3.js](https://www.packtpub.com/web-development/mastering-d3js)<br>Pablo Navarro Castillo, Packt Publishing, August 2014
+* [D3.js in Action](http://www.manning.com/meeks/)<br>Elijah Meeks, Manning Publications, 2014
+* [Learning D3.js Mapping](https://www.packtpub.com/web-development/learning-d3js-mapping)<br> Thomas Newton, Oscar Villarreal, Packt Publishing, 2014
+* [Visual Storytelling with D3](http://ritchiesking.com/book/)<br>Ritchie King, Addison-Wesley, 2014
+
 ## Talks and Videos
+
 * [Free tagtree screencast - thinking with joins](https://www.tagtree.tv/d3-episode2-thinking-with-joins?share_code=unloveable-peanut)
 <br>August 2014
 * [For Example](https://vimeo.com/channels/544709/69448223) [(Write-up)](http://bost.ocks.org/mike/example/) <br>Eyeo Festival, June 2013.
@@ -116,11 +128,6 @@ Please feel free to add links to your work!
 * [Austin d3.js Meetup](http://www.meetup.com/Austin-d3-js-Meetup/)
 * [Auckland d3-js](http://www.meetup.com/Auckland-d3-js/)
 
-## Publications
+## Research Papers
 
 * [[D3: Data-Driven Documents|http://vis.stanford.edu/papers/d3]]<br>Michael Bostock, Vadim Ogievetsky, Jeffrey Heer<br>*IEEE Trans. Visualization & Comp. Graphics (Proc. InfoVis)*, 2011
-* [Getting Started with D3](http://shop.oreilly.com/product/0636920025429.do)<br>Mike Dewar, O'Reilly Media, June 2012
-* [Interactive Data Visualization for the Web](http://ofps.oreilly.com/titles/9781449339739/)<br>Scott Murray, O'Reilly Media, November 2012
-* [Data Visualization with d3.js](http://www.packtpub.com/data-visualization-with-d3js/book)<br>Swizec Teller, Packt Publishing, October 2013
-* [Data Visualization with D3.js Cookbook](http://www.packtpub.com/data-visualization-with-d3-js-cookbook/book)<br>Nick Qi Zhu, Packt Publishing, October 2013
-* [D3.js in Action](http://www.manning.com/meeks/)<br>Elijah Meeks, Manning Publications, 2014
