@@ -834,6 +834,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Interactive process map and documentation](https://github.com/nylen/d3-process-map)
 * [Scatterplot with CSS Sprites and Interaction](https://www.comparacaodefundos.com/blog/como-ganhar-a-copa/#x-axis-menu)
 * [Clustering a Force layout with a Quadtree](http://bl.ocks.org/4ndr01d3/2686646672a92aa89a0e)
+* [Scales in our Solar System](http://www.visualcinnamon.com/2015/01/scales-in-our-solar-system-enormity-of.html)
 
 #### Tree
 
