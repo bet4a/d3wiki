@@ -15,7 +15,8 @@
 
 * [한국어](/zziuni/d3/wiki)
 * [日本語](/mbostock/d3/wiki/JP-Home)
-* [中文](/mbostock/d3/wiki/CN-Home)
+* [簡體中文](/mbostock/d3/wiki/CN-Home)
+* [繁體中文](/mbostock/d3/wiku/TW-Home)
 * [Русский](/mbostock/d3/wiki/API-Reference-\(русскоязычная-версия\))
 * [Türkçe](/ahmetkurnaz/d3/wiki)
 
