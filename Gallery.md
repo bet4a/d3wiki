@@ -747,6 +747,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Waterfall Chart](http://bl.ocks.org/rsloan/7123450)
 * [Dual-scale Bar Chart](https://github.com/liufly/Dual-scale-D3-Bar-Chart)
 * [Diverging Stacked Bar Chart](http://bl.ocks.org/wpoely86/e285b8e4c7b84710e463)
+* [Horizontally Grouped Bar Chart](http://bl.ocks.org/erikvullings/51cc5332439939f1f292)
 
 #### Histogram
 
