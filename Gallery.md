@@ -420,6 +420,7 @@ Interactive Unit Circle (Trigonometry)<br>
 </table>
 
 ## Examples
+* [TwitterBeater - Real time visualisation of tweets](http://twitterbeater.datageeklab.com) - David Martín-Corral
 * [Logistic Map](http://datageeklab.com/stuff/logisticmap) - David Martín-Corral
 * [Big Data Trends](https://my.infocaptor.com/dash/mt.php?pa=trends_in_big_data_547dd81f6b723) - Big Data,Analytics
 * [Spotify Artist Explorer](https://artistexplorer.spotify.com) — Faruk Sahin
