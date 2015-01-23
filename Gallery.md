@@ -417,6 +417,7 @@ Interactive Unit Circle (Trigonometry)<br>
     <td>Interactive force layout<br><a href="https://github.com/nylen/d3-process-map"><img src="http://i.imgur.com/LFM3KV5.png"></a></td>
     <td>EventDrops: Zoomable time series<br><a href="https://github.com/marmelab/EventDrops"><img src="http://i.imgur.com/fNPhBZ8.gif" width="202"></a></td>
     <td>Draggable scatterplot with motion trails<br><a href="http://romsson.github.io/dragit/example/nations.html"><img src="http://i.imgur.com/gqnuQzb.gif" width="202"></a></td>
+    <td>Horizontally grouped bar chart<br><a href="http://bl.ocks.org/erikvullings/51cc5332439939f1f292"><img src="http://bl.ocks.org/erikvullings/raw/51cc5332439939f1f292/thumbnail.png" width="202"></a></td>
 </table>
 
 ## Examples
