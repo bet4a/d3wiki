@@ -159,7 +159,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>d3+ColorBrewer<br><a href="http://adilapapaya.com/color/"><img src="http://adilapapaya.com/color/d3colorbrewer.png" width="202"></a></td>
     <td>D3 JezzBall<br><a href="http://bl.ocks.org/ericcitaire/5408146"><img src="http://bl.ocks.org/ericcitaire/raw/5408146/thumbnail.png" width="202"></a></td>
     <td>Tetris<br><a href="http://d3tetris.herokuapp.com/"><img src="http://imageshack.us/a/img841/8619/tetrisn.png" width="202"></a></td>
-    <td>Gantt Chart<br><a href="http://bl.ocks.org/dk8996/5538271/"><img src="https://raw.github.com/dk8996/Gantt-Chart/mr/examples/screenshot2.png" width="202"></a></td>
+    <td>Gantt Chart<br><a href="http://bl.ocks.org/dk8996/5538271/"><img src="https://raw.github.com/dk8996/Gantt-Chart/master/examples/screenshot2.png" width="202"></a></td>
 </tr>
 <tr height="207" valign="top">
     <td>Day/Hour Heatmap<br><a href="http://bl.ocks.org/tjdecke/5558084"><img src="https://gist.github.com/tjdecke/5558084/raw/thumbnail2.png" width="202"></a></td>
