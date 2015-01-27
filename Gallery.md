@@ -335,7 +335,7 @@ Interactive Unit Circle (Trigonometry)<br>
     <td>A Scatterplot as Bar chart<br><a href="http://www.visualcinnamon.com/2015/01/the-top-2000-equalizer-songs.html"><img src="https://dl.dropboxusercontent.com/u/11654088/Top2000Animated.gif" width="230"></a></td>
 </tr>
 <tr>
-    <td>Conway's Game of Life<br><a href="http://bl.ocks.org/NPashaP/f1e73faef87bee899b47"><img src="http://bl.ocks.org/NPashaP/raw/f1e73faef87bee899b47/thumbnail.png"  width="202"></a></td></tr>
+    <td>Conway's Game of Life<br><a href="http://bl.ocks.org/NPashaP/f1e73faef87bee899b47"><img src="http://bl.ocks.org/NPashaP/raw/f1e73faef87bee899b47/thumbnail.png"  width="202"></a></td>
     <td>Editable tree mixing d3 &amp; Angular<br><a href="http://marmelab.com/ArchitectureTree/"><img src="http://i.imgur.com/9PG8v0J.png" width="202"></a></td></tr>
 </table>
 
