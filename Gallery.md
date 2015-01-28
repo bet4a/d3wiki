@@ -936,6 +936,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Visualization of the Persecution of the Baha'i community in Iran using d3.js, leaflet and Crossfilter](http://threatwiki.thesentinelproject.org/iranvisualization) - Jérôme Gagnon-Voyer 
 * [Live Intel Map for EVE Online]
 (https://github.com/jeremieroy/EVELiveIntel) - Jérémie Roy
+* RGB-plot and Human Development Index Map (https://csaladenes.wordpress.com/2015/01/09/colorful-development-dynamic-graphs/) - Denes Csala
 
 #### Misc Charts
 
