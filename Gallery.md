@@ -621,6 +621,7 @@ Interactive Unit Circle (Trigonometry)<br>
 * [Multi-line chart](http://bl.ocks.org/maithuy/5766374df8119e76969b) demonstrates the LendingClub.com's net annualized return of loans by vintage - Thuy Nguyen
 * [Mapping Solar Flares](http://www.scientificamerican.com/article/mapping-solar-flares-interactive/) - Monica Bobra and Chau Dang
 * [Circle Packing - Stories and other Interactive Animations](http://www.primordion.com/Xholon/gwt/XholonCirclePacking.html) - Ken Webb
+* [RGB-plot] (https://csaladenes.wordpress.com/2014/12/07/colorful-development-rgb-coded-multidimensional-hdi/) - Denes Csala
 
 ### Collections
 
