@@ -19,6 +19,7 @@
 * [繁體中文](/mbostock/d3/wiki/TW-Home)
 * [Русский](/mbostock/d3/wiki/API-Reference-\(русскоязычная-версия\))
 * [Türkçe](/ahmetkurnaz/d3/wiki)
+* [Indonesian](/widiantonugroho/d3/wiki)
 
 ## Browser / Platform Support
 
