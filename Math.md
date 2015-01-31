@@ -24,7 +24,7 @@ Returns a function for generating random numbers with an [Irwin–Hall distribut
 
 <a name="d3_transform" href="#d3_transform">#</a> d3.<b>transform</b>(<i>string</i>)
 
-Parses the given 2D affine transform string, as defined by SVG's [transform attribute](http://www.w3.org/TR/SVG/coords.html#TransformAttribute). The transform is then decomposed to a standard representation of translate, rotate, x-skew and scale. This behavior is standardized by CSS: see [matrix decomposition for animation](http://www.w3.org/TR/css3-2d-transforms/#matrix-decomposing).
+Parses the given 2D affine transform string, as defined by SVG's [transform attribute](http://www.w3.org/TR/SVG/coords.html#TransformAttribute). The transform is then decomposed to an object with fields for translate, rotate, x-skew and scale. This behavior is standardized by CSS: see [matrix decomposition for animation](http://www.w3.org/TR/css3-2d-transforms/#matrix-decomposing).
 
 <a name="transform_rotate" href="#transform_rotate">#</a> transform.<b>rotate</b>
 
@@ -42,6 +42,6 @@ Returns the *x*-skew φ of this transform, in degrees.
 
 Returns the [kx, ky] scale of this transform, as a two-element array.
 
-<a name="transform_toString" href="#transform_toString">#</a> transform.<b>toString</b>
+<a name="transform_toString" href="#transform_toString">#</a> transform.<b>toString()</b>
 
 Returns a string representation of this transform, in the form "translate(dx,dy)rotate(θ)skewX(φ)scale(kx,ky)".
