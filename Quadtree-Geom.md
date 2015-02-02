@@ -32,7 +32,7 @@ Adds the specified new _point_ to the quadtree.
 
 <a name="visit" href="#visit">#</a> root.<b>visit</b>(<i>callback</i>)
 
-Visits each node in the quadtree, invoking the specified *callback* with arguments {<i>node</i>, *x1*, *y1*, *x2*, *y2*} for each node. Nodes are traversed in pre-order. If the *callback* returns true for a the given node, then the children of that node are not visited; otherwise, all child nodes are visited.
+Visits each node in the quadtree, invoking the specified *callback* with arguments {<i>node</i>, *x1*, *y1*, *x2*, *y2*} for each node. Nodes are traversed in pre-order. If the *callback* returns true for a given node, then the children of that node are not visited; otherwise, all child nodes are visited.
 
 <a name="visit" href="#visit">#</a> root.<b>find</b>(<i>point</i>)
 
