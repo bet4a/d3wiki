@@ -339,7 +339,6 @@ Interactive Unit Circle (Trigonometry)<br>
     <td>Editable tree mixing d3 &amp; Angular<br><a href="http://marmelab.com/ArchitectureTree/"><img src="http://i.imgur.com/9PG8v0J.png" width="202"></a></td>
 <td>SFDC Training Videos<br><a href="https://mohansun-canvas.herokuapp.com/content/training/"><img src="http://d3js.org/ex/cluster.png" width="202"></a></td>
 <td>Editable Sankey with self-loops<br><a href="http://sankey.csaladen.es/"><img src="http://sankey.csaladen.es/snapshot.jpg" width="202"></a></td>
-    <td>A game based on d3<br><a href="http://wenchaojiang.github.io/d3game/"><img src="http://wenchaojiang.github.io/d3game/ScreenShot.png" width="202"></a></td>
 
 </tr>
 </table>
