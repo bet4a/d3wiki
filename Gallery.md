@@ -337,7 +337,10 @@ Interactive Unit Circle (Trigonometry)<br>
 </tr>
 <tr>
     <td>Conway's Game of Life<br><a href="http://bl.ocks.org/NPashaP/f1e73faef87bee899b47"><img src="http://bl.ocks.org/NPashaP/raw/f1e73faef87bee899b47/thumbnail.png"  width="202"></a></td>
-    <td>Editable tree mixing d3 &amp; Angular<br><a href="http://marmelab.com/ArchitectureTree/"><img src="http://i.imgur.com/9PG8v0J.png" width="202"></a></td></tr>
+    <td>Editable tree mixing d3 &amp; Angular<br><a href="http://marmelab.com/ArchitectureTree/"><img src="http://i.imgur.com/9PG8v0J.png" width="202"></a></td>
+<td>SFDC Training Videos<br><a href="https://mohansun-canvas.herokuapp.com/content/training/"><img src="http://d3js.org/ex/cluster.png" width="202"></a></td>
+
+</tr>
 </table>
 
 ## Basic Charts
@@ -385,7 +388,7 @@ Interactive Unit Circle (Trigonometry)<br>
   <tr height="146" valign="top">
     <td>Waterfall Chart<br><a href="http://bl.ocks.org/chucklam/f3c7b3e3709a0afd5d57"><img src="http://bl.ocks.org/chucklam/raw/f3c7b3e3709a0afd5d57/thumbnail.png" width="200"></a></td>
     <td>Diverging Stacked Bar Chart<br><a href="http://bl.ocks.org/wpoely86/e285b8e4c7b84710e463"><img src="http://bl.ocks.org/wpoely86/raw/e285b8e4c7b84710e463/thumbnail.png" width="200"></a></td>
-<td>SFDC Training Videos<br><a href="https://mohansun-canvas.herokuapp.com/content/training/"><img src="http://d3js.org/ex/cluster.png" width="202"></a></td>
+
 
   </tr>
 </table>
