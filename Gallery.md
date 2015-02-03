@@ -342,7 +342,7 @@ Interactive Unit Circle (Trigonometry)<br>
 <td>Editable Sankey with self-loops<br><a href="http://sankey.csaladen.es/"><img src="http://sankey.csaladen.es/snapshot.jpg" width="202"></a></td>
 </tr>
 <tr>
-    <td>England & Wales multi-variable house rice animation<br><a href="http://helenjacksonanalytic.co.uk/EW_prop_price.html"><img src="http://www.helenjacksonanalytic.co.uk/EaW.tiff"  width="202"></a></td>
+    <td>England & Wales house price animation<br><a href="http://helenjacksonanalytic.co.uk/EW_prop_price.html"><img src="http://www.helenjacksonanalytic.co.uk/EaW.png"  width="202"></a></td>
 </tr>
 </table>
 
