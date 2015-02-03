@@ -598,6 +598,7 @@ Interactive Unit Circle (Trigonometry)<br>
 * [Visualizing K-Means Clustering](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/) - Naftali Harris
 * [Australian Election Preferences](http://peterneish.github.io/preferences/) - Peter Neish
 * [Lifespan](http://www.cotrino.com/2014/02/lifespan-longevidad-animal/) - José Cotrino
+* [England and Wales house price evolution (multi-variable animation)](http://helenjacksonanalytic.co.uk/EW_prop_price.html) - Helen Jackson
 * [Millennium Development Goals and Economic Growth](http://helenjacksonanalytic.co.uk/MDG.html) - Helen Jackson
 * [Weather and UK Agricultural Yields Regression Results](http://helenjacksonanalytic.co.uk/agri.html) - Helen Jackson
 * [Simple Schelling Model of Urban Segregation](http://helenjacksonanalytic.co.uk/schelling.html) - Helen Jackson
