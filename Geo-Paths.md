@@ -7,7 +7,7 @@ For cartographic visualizations, D3 supports a handful of components for display
 Some other tools you may be interested in:
 
 * [TopoJSON](/mbostock/topojson) - shapefile simplification, topology construction and GeoJSON compression.
-* [Shapely](http://trac.gispython.org/lab/wiki/Shapely) - manipulation of planar geometry objects.
+* [Shapely](https://github.com/Toblerity/Shapely) - manipulation of planar geometry objects.
 * [ColorBrewer](http://colorbrewer2.org) - color scales for maps.
 * [PostGIS](http://postgis.refractions.net/) - a geospatial database.
 
