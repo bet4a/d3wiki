@@ -343,6 +343,7 @@ Interactive Unit Circle (Trigonometry)<br>
 </tr>
 <tr>
     <td>England & Wales house price animation<br><a href="http://helenjacksonanalytic.co.uk/EW_prop_price.html"><img src="http://www.helenjacksonanalytic.co.uk/EaW.png"  width="202"></a></td>
+    <td>Bi-directional Zoom and Drag D3 dependency tree<br><a href="http://bl.ocks.org/shunpochang/66620bad0e6b201f261c"><img src="https://raw.githubusercontent.com/shunpochang/d3tree/master/thumbnail.png"  width="202"></a></td>
 </tr>
 </table>
 
