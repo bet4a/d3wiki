@@ -326,6 +326,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   <tr valign="top">
     <td>England & Wales house price animation<br><a href="http://helenjacksonanalytic.co.uk/EW_prop_price.html"><img width="133" src="http://www.helenjacksonanalytic.co.uk/EaW.png"></a></td>
     <td>Bi-directional Zoom and Drag D3 dependency tree<br><a href="http://bl.ocks.org/shunpochang/66620bad0e6b201f261c"><img width="133" src="https://raw.githubusercontent.com/shunpochang/d3tree/master/thumbnail.png"></a></td>
+    <td>Selectable / Zoomable / Centerable Force Directed Graph<br><a href="http://emptypipes.org/2015/02/15/selectable-force-directed-graph/"><img width="133" src="http://emptypipes.org/img/d3_selectable_force_directed_graph.png"></a></td>
   </tr>
 </table>
 
