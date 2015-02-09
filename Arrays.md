@@ -111,10 +111,6 @@ Locate the insertion point for *x* in *array* to maintain sorted order. The argu
 
 Similar to bisectLeft, but returns an insertion point which comes after (to the right of) any existing entries of *x* in *array*. The returned insertion point *i* partitions the *array* into two halves so that all *v* <= *x* for *v* in *array*.slice(lo, i) for the left side and all *v* > *x* for *v* in *array*.slice(i, hi) for the right side.
 
-<a name="d3_bisectBy" href="#d3_bisectBy">#</a> d3.<b>bisectBy</b>(<i>array</i>, <i>x</i>, <i>comparator(a, b)</i>)
-
-Similar to bisectRight, but performs the bisection process using the given comparator function to find and return the insertion point for *x*.  The comparator function should return a value < 0 if *a* is less than *b*, 0 if they are the same, and > 0 if *a* is greater than *b*.
-
 <a name="d3_bisector" href="#d3_bisector">#</a> d3.<b>bisector</b>(<i>accessor</i>)
 <br><a name="d3_bisector" href="#d3_bisector">#</a> d3.<b>bisector</b>(<i>comparator</i>)
 
