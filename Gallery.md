@@ -1115,6 +1115,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Reports for Simple](http://www.simple.com/blog/Simple/announcing-reports)
 * [Trisul Network Analytic](http://trisul.org/)
 * [Ubiq Analytics: MySQL Analytics & Reporting made easy](http://www.ubiq.co)
+* [Branch: Explore Biological Data with Decision Trees](http://biobranch.org/)
 
 #### Store Apps
 * [Presentation Next: A Windows 8 HTML5/SVG Presentation Builder](http://apps.microsoft.com/windows/en-us/app/presentation-next/57c55802-1bdd-48c9-bf8b-e9e3c24cf051)
@@ -1142,6 +1143,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 ### Games
 
 * [Insanity](https://github.com/jirislav/Insanity) is an D3js based online game developed to train people's reaction time and awareness. Try it here: http://insanity.jkozlovsky.cz/
+* [Cure](https://bitbucket.org/sulab/thecure) is an D3js based game that utilizes crowdsourcing to aid in selecting genes that are predictive of breast cancer recurrence. Try it here: http://genegames.org/cure/
 
 ### Wish List
 
