@@ -55,7 +55,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   </tr>
   <tr valign="top">
     <td>Zoomable Area Chart<br><a href="http://mbostock.github.com/d3/talk/20111018/area-gradient.html"><img width="133" src="http://d3js.org/ex/area-gradient.png"></a></td>
-    <td>Drag and Drop Collapsible Tree Layout<br><a href="http://bl.ocks.org/robschmuecker/7880033"><img width="133" src="https://gist.github.com/robschmuecker/7880033/raw/eeabbfca4725a69474a828faa79cac586f5a3110/thumbnail.png"></a></td>
+    <td>Drag and Drop Collapsible Tree Layout<br><a href="http://bl.ocks.org/robschmuecker/7880033"><img width="133" src="https://cloud.githubusercontent.com/assets/4923966/6143256/7da0855e-b17a-11e4-817e-5f33b4077283.png"></a></td>
     <td>Rotating Cluster Layout<br><a href="http://mbostock.github.com/d3/talk/20111018/cluster.html"><img width="133" src="http://d3js.org/ex/cluster-radial.png"></a></td>
     <td>Sankey Diagram<br><a href="http://bost.ocks.org/mike/sankey/"><img width="133" src="http://d3js.org/ex/sankey.png"></a></td>
   </tr>
