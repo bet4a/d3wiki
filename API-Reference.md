@@ -6,52 +6,52 @@ D3 uses [semantic versioning](http://semver.org). You can find the current versi
 
 See one of:
 
+* [Behaviors](#d3behavior-behaviors) - reusable interaction behaviors
 * [Core](#d3-core) - selections, transitions, data, localization, colors, etc.
+* [Geography](#d3geo-geography) - project spherical coordinates, latitude & longitude math
+* [Geometry](#d3geom-geometry) - utilities for 2D geometry, such as Voronoi diagrams and quadtrees
+* [Layouts](#d3layout-layouts) - derive secondary data for positioning elements
 * [Scales](#d3scale-scales) - convert between data and visual encodings
 * [SVG](#d3svg-svg) - utilities for creating Scalable Vector Graphics
 * [Time](#d3time-time) - parse or format times, compute calendar intervals, etc.
-* [Layouts](#d3layout-layouts) - derive secondary data for positioning elements
-* [Geography](#d3geo-geography) - project spherical coordinates, latitude & longitude math
-* [Geometry](#d3geom-geometry) - utilities for 2D geometry, such as Voronoi diagrams and quadtrees
-* [Behaviors](#d3behavior-behaviors) - reusable interaction behaviors
 
 ## [d3 (core)](Core)
 
 ### [Selections](Selections)
 
-* [d3.select](Selections#d3_select) - select an element from the current document.
-* [d3.selectAll](Selections#d3_selectAll) - select multiple elements from the current document.
-* [selection.attr](Selections#attr) - get or set attribute values.
-* [selection.classed](Selections#classed) - add or remove CSS classes.
-* [selection.style](Selections#style) - get or set style properties.
-* [selection.property](Selections#property) - get or set raw properties.
-* [selection.text](Selections#text) - get or set text content.
-* [selection.html](Selections#html) - get or set inner HTML content.
-* [selection.append](Selections#append) - create and append new elements.
-* [selection.insert](Selections#insert) - create and insert new elements before existing elements.
-* [selection.remove](Selections#remove) - remove elements from the document.
-* [selection.data](Selections#data) - get or set data for a group of elements, while computing a relational join.
-* [selection.enter](Selections#enter) - returns placeholders for missing elements.
-* [selection.exit](Selections#exit) - returns elements that are no longer needed.
-* [selection.datum](Selections#datum) - get or set data for individual elements, without computing a join.
-* [selection.filter](Selections#filter) - filter a selection based on data.
-* [selection.sort](Selections#sort) - sort elements in the document based on data.
-* [selection.order](Selections#order) - reorders elements in the document to match the selection.
-* [selection.on](Selections#on) - add or remove event listeners for interaction.
-* [selection.transition](Selections#transition) - start a transition on the selected elements.
-* [selection.interrupt](Selections#interrupt) - immediately interrupt the current transition, if any.
-* [selection.each](Selections#each) - call a function for each selected element.
-* [selection.call](Selections#call) - call a function passing in the current selection.
-* [selection.empty](Selections#empty) - returns true if the selection is empty.
-* [selection.node](Selections#node) - returns the first node in the selection.
-* [selection.size](Selections#size) - returns the number of elements in the selection.
-* [selection.select](Selections#select) - subselect a descendant element for each selected element.
-* [selection.selectAll](Selections#selectAll) - subselect multiple descendants for each selected element.
-* [d3.selection](Selections#d3_selection) - augment the selection prototype, or test instance types.
 * [d3.event](Selections#d3_event) - access the current user event for interaction.
 * [d3.mouse](Selections#d3_mouse) - gets the mouse position relative to a specified container.
+* [d3.select](Selections#d3_select) - select an element from the current document.
+* [d3.selectAll](Selections#d3_selectAll) - select multiple elements from the current document.
+* [d3.selection](Selections#d3_selection) - augment the selection prototype, or test instance types.
 * [d3.touch](Selections#d3_touch) - gets a touch position relative to a specified container.
 * [d3.touches](Selections#d3_touches) - gets the touch positions relative to a specified container.
+* [selection.append](Selections#append) - create and append new elements.
+* [selection.attr](Selections#attr) - get or set attribute values.
+* [selection.call](Selections#call) - call a function passing in the current selection.
+* [selection.classed](Selections#classed) - add or remove CSS classes.
+* [selection.data](Selections#data) - get or set data for a group of elements, while computing a relational join.
+* [selection.datum](Selections#datum) - get or set data for individual elements, without computing a join.
+* [selection.each](Selections#each) - call a function for each selected element.
+* [selection.empty](Selections#empty) - returns true if the selection is empty.
+* [selection.enter](Selections#enter) - returns placeholders for missing elements.
+* [selection.exit](Selections#exit) - returns elements that are no longer needed.
+* [selection.filter](Selections#filter) - filter a selection based on data.
+* [selection.html](Selections#html) - get or set inner HTML content.
+* [selection.insert](Selections#insert) - create and insert new elements before existing elements.
+* [selection.interrupt](Selections#interrupt) - immediately interrupt the current transition, if any.
+* [selection.node](Selections#node) - returns the first node in the selection.
+* [selection.on](Selections#on) - add or remove event listeners for interaction.
+* [selection.order](Selections#order) - reorders elements in the document to match the selection.
+* [selection.property](Selections#property) - get or set raw properties.
+* [selection.remove](Selections#remove) - remove elements from the document.
+* [selection.select](Selections#select) - subselect a descendant element for each selected element.
+* [selection.selectAll](Selections#selectAll) - subselect multiple descendants for each selected element.
+* [selection.size](Selections#size) - returns the number of elements in the selection.
+* [selection.sort](Selections#sort) - sort elements in the document based on data.
+* [selection.style](Selections#style) - get or set style properties.
+* [selection.text](Selections#text) - get or set text content.
+* [selection.transition](Selections#transition) - start a transition on the selected elements.
 
 ### [Transitions](Transitions)
 
