@@ -55,44 +55,43 @@ See one of:
 
 ### [Transitions](Transitions)
 
-* [d3.transition](Transitions#d3_transition) - start an animated transition.
-* [transition.delay](Transitions#delay) - specify per-element delay in milliseconds.
-* [transition.duration](Transitions#duration) - specify per-element duration in milliseconds.
-* [transition.ease](Transitions#ease) - specify transition easing function.
-* [transition.attr](Transitions#attr) - smoothly transition to the new attribute value.
-* [transition.attrTween](Transitions#attrTween) - smoothly transition between two attribute values.
-* [transition.style](Transitions#style) - smoothly transition to the new style property value.
-* [transition.styleTween](Transitions#styleTween) - smoothly transition between two style property values.
-* [transition.text](Transitions#text) - set the text content when the transition starts.
-* [transition.tween](Transitions#tween) - specify a custom tween operator to run as part of the transition.
-* [transition.select](Transitions#select) - start a transition on a descendant element for each selected element.
-* [transition.selectAll](Transitions#selectAll) - start a transition on multiple descendants for each selected element.
-* [transition.filter](Transitions#filter) - filter a transition based on data.
-* [transition.transition](Transitions#transition) - when this transition ends, start another one on the same elements.
-* [transition.remove](Transitions#remove) - remove selected elements at the end of a transition.
-* [transition.empty](Transitions#empty) - returns true if the transition is empty.
-* [transition.node](Transitions#node) - returns the first node in the transition.
-* [transition.size](Transitions#size) - returns the number of elements in the selection.
-* [transition.each](Transitions#each) - add a listener for transition end events.
-* [transition.call](Transitions#call) - call a function passing in the current transition.
-* [d3.ease](Transitions#d3_ease) - customize transition timing.
-* [ease](Transitions#_ease) - a parametric easing function.
-* [d3.timer](Transitions#d3_timer) - start a custom animation timer.
-* [d3.timer.flush](Transitions#d3_timer_flush) - immediately execute any zero-delay timers.
+* [d3.ease](Transitions#d3_ease) - customize transition timing.* [d3.timer](Transitions#d3_timer) - start a custom animation timer.
 * [d3.interpolate](Transitions#d3_interpolate) - interpolate two values.
-* [interpolate](Transitions#_interpolate) - a parametric interpolation function.
-* [d3.interpolateNumber](Transitions#d3_interpolateNumber) - interpolate two numbers.
-* [d3.interpolateRound](Transitions#d3_interpolateRound) - interpolate two integers.
-* [d3.interpolateString](Transitions#d3_interpolateString) - interpolate two strings.
-* [d3.interpolateRgb](Transitions#d3_interpolateRgb) - interpolate two RGB colors.
+* [d3.interpolateArray](Transitions#d3_interpolateArray) - interpolate two arrays of values.
+* [d3.interpolateHcl](Transitions#d3_interpolateHcl) - interpolate two HCL colors.
 * [d3.interpolateHsl](Transitions#d3_interpolateHsl) - interpolate two HSL colors.
 * [d3.interpolateLab](Transitions#d3_interpolateLab) - interpolate two L\*a\*b\* colors.
-* [d3.interpolateHcl](Transitions#d3_interpolateHcl) - interpolate two HCL colors.
-* [d3.interpolateArray](Transitions#d3_interpolateArray) - interpolate two arrays of values.
+* [d3.interpolateNumber](Transitions#d3_interpolateNumber) - interpolate two numbers.
 * [d3.interpolateObject](Transitions#d3_interpolateObject) - interpolate two arbitrary objects.
+* [d3.interpolateRgb](Transitions#d3_interpolateRgb) - interpolate two RGB colors.
+* [d3.interpolateRound](Transitions#d3_interpolateRound) - interpolate two integers.
+* [d3.interpolateString](Transitions#d3_interpolateString) - interpolate two strings.
 * [d3.interpolateTransform](Transitions#d3_interpolateTransform) - interpolate two 2D matrix transforms.
 * [d3.interpolateZoom](Transitions#d3_interpolateZoom) - zoom and pan between two points smoothly.
 * [d3.interpolators](Transitions#d3_interpolators) - register a custom interpolator.
+* [d3.timer.flush](Transitions#d3_timer_flush) - immediately execute any zero-delay timers.
+* [d3.transition](Transitions#d3_transition) - start an animated transition.
+* [ease](Transitions#_ease) - a parametric easing function.
+* [interpolate](Transitions#_interpolate) - a parametric interpolation function.
+* [transition.attr](Transitions#attr) - smoothly transition to the new attribute value.
+* [transition.attrTween](Transitions#attrTween) - smoothly transition between two attribute values
+* [transition.call](Transitions#call) - call a function passing in the current transition.
+* [transition.delay](Transitions#delay) - specify per-element delay in milliseconds.
+* [transition.duration](Transitions#duration) - specify per-element duration in milliseconds.
+* [transition.each](Transitions#each) - add a listener for transition end events.
+* [transition.ease](Transitions#ease) - specify transition easing function..
+* [transition.empty](Transitions#empty) - returns true if the transition is empty.
+* [transition.filter](Transitions#filter) - filter a transition based on data.
+* [transition.node](Transitions#node) - returns the first node in the transition.
+* [transition.remove](Transitions#remove) - remove selected elements at the end of a transition.
+* [transition.select](Transitions#select) - start a transition on a descendant element for each selected element.
+* [transition.selectAll](Transitions#selectAll) - start a transition on multiple descendants for each selected element.
+* [transition.style](Transitions#style) - smoothly transition to the new style property value.
+* [transition.styleTween](Transitions#styleTween) - smoothly transition between two style property values.
+* [transition.text](Transitions#text) - set the text content when the transition starts.
+* [transition.transition](Transitions#transition) - when this transition ends, start another one on the same elements.
+* [transition.tween](Transitions#tween) - specify a custom tween operator to run as part of the transition.
+* [transition.size](Transitions#size) - returns the number of elements in the selection.
 
 ### [Working with Arrays](Arrays)
 
