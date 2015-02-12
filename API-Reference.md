@@ -86,12 +86,12 @@ See one of:
 * [transition.remove](Transitions#remove) - remove selected elements at the end of a transition.
 * [transition.select](Transitions#select) - start a transition on a descendant element for each selected element.
 * [transition.selectAll](Transitions#selectAll) - start a transition on multiple descendants for each selected element.
+* [transition.size](Transitions#size) - returns the number of elements in the selection.
 * [transition.style](Transitions#style) - smoothly transition to the new style property value.
 * [transition.styleTween](Transitions#styleTween) - smoothly transition between two style property values.
 * [transition.text](Transitions#text) - set the text content when the transition starts.
 * [transition.transition](Transitions#transition) - when this transition ends, start another one on the same elements.
 * [transition.tween](Transitions#tween) - specify a custom tween operator to run as part of the transition.
-* [transition.size](Transitions#size) - returns the number of elements in the selection.
 
 ### [Working with Arrays](Arrays)
 
