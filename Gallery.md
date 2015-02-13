@@ -442,8 +442,8 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [A Photographer's infographic](https://googledrive.com/host/0ByMecxlAS3YxQ3hoU21tdUNnc1E/photos.html) - Najeem Muhammed
 * [Visualizing word density in the Bible](http://stanford.edu/~garylee/bibly) - Gary Lee
 * [Election 2012 Social Dashboard (interactive Twitter visualization)] (http://events.current.com/social_dashboard) - Current TV
-* [Visualizing document similarity over time](http://www.davidmasad.com/sandbox/FirmClusters.html)
-* [Drought during Month](http://bost.ocks.org/mike/drought/)
+* [Visualizing document similarity over time](http://www.davidmasad.com/sandbox/FirmClusters.html) - David Masad
+* [Drought during Month](http://bost.ocks.org/mike/drought/) - Mike Bostock
 * [Interactive Publication History](http://www.cs.umd.edu/~bederson/papers/index.html) - Ben Bederson
 * [Visualizing Networks with Hive Plots](http://bost.ocks.org/mike/hive/)
 * [The Wealth & Health of Nations](http://bost.ocks.org/mike/nations/)
