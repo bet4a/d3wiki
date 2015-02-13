@@ -1095,6 +1095,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [D3.js playground](http://phrogz.net/JS/d3-playground/#BlankDefault)
 * [A CoffeeScript console for d3.js visualization](http://fleetinbeing.net/beans/d3)
 * [CSSdeck: Repulsion example](http://cssdeck.com/labs/d3-repulsive)
+* [8x8 Matrix Designer](http://gurgleapps.com/tools/matrix)  
 
 #### Products
 * [InfoCaptor: Tableau like Drag and Drop D3 Chart Builder](http://www.infocaptor.com)
