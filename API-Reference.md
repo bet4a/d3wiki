@@ -55,7 +55,8 @@ See one of:
 
 ### [Transitions](Transitions)
 
-* [d3.ease](Transitions#d3_ease) - customize transition timing.* [d3.timer](Transitions#d3_timer) - start a custom animation timer.
+* [d3.ease](Transitions#d3_ease) - customize transition timing.
+* [d3.timer](Transitions#d3_timer) - start a custom animation timer.
 * [d3.interpolate](Transitions#d3_interpolate) - interpolate two values.
 * [d3.interpolateArray](Transitions#d3_interpolateArray) - interpolate two arrays of values.
 * [d3.interpolateHcl](Transitions#d3_interpolateHcl) - interpolate two HCL colors.
