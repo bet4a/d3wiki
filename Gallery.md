@@ -727,6 +727,16 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Development assistance for health by health focus area](http://www.healthmetricsandevaluation.org/tools/data-visualization/development-assistance-health-health-focus-area-global-1990-2009-interactiv)
 * [Development assistance for health by channel of assistance](http://www.healthmetricsandevaluation.org/tools/data-visualization/development-assistance-health-channel-assistance-global-1990-2011-interacti)
 
+#### Peter Cook
+
+* [Who's Like Tatum?](http://charts.animateddata.co.uk/tatum/)
+* [UK Temperature 1910-2014] (http://charts.animateddata.co.uk/uktemp/)
+* [F1 Timeline](http://charts.animateddata.co.uk/f1/)
+* [Wimbledon 2013](http://charts.animateddata.co.uk/tennis/)
+* [What Makes Us Happy?](http://charts.animateddata.co.uk/whatmakesushappy/)
+* [Domestic Energy Consumption](http://charts.animateddata.co.uk/energywheel/)
+* [D3 Enter and Exit (Under the Hood)](http://animateddata.co.uk/lab/d3enterexit/)
+* [Two Tables (Understanding D3 Selections)](http://prcweb.co.uk/lab/selection/)
 
 ### Charts and Chart Components
 
