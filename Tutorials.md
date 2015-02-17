@@ -78,6 +78,7 @@ Please feel free to add links to your work!
 * [Jim Vallandingham](http://vallandingham.me/)
 * [Bharat Bhole](http://knowledgestockpile.blogspot.com/search/label/D3)
 * [OUR D3.JS(Chinese)](http://www.ourd3js.com/wordpress/)
+* [Peter Cook](http://animateddata.co.uk/articles/)
 
 ## Books
 
@@ -115,6 +116,7 @@ Please feel free to add links to your work!
 * [Building apps with D3.js](http://www.youtube.com/watch?v=hhSlX_r7GZA)<br>Nathan Vander Wilt, CascadiaJS, November 2013
 * [Data visualization for the web with D3.js (English slides)](http://ptamarit.com/slides-data-viz-web-d3/en/)<br>[Visualisation de données pour le web avec D3.js (French video)](http://www.infoq.com/fr/presentations/visualisation-donnees-web-d3js) [(French slides)](http://ptamarit.com/slides-data-viz-web-d3/fr/)<br>Pablo Tamarit, Soft-Shake conference, October 2013
 * [Ember and D3: Building a simple dashboard](http://www.samselikoff.com/blog/2013/08/09/ember-d3-simple-dashboards/)<br>Sam Selikoff, Boston Ember Meetup, August 2013
+* [D3 Layouts](http://animateddata.co.uk/slides/d3-layouts/slides/#/)<br>Peter Cook, Async Brighton, January 2015
 
 ## Meetups
 
