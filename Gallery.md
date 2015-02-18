@@ -413,6 +413,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 </table>
 
 ## Examples
+* [Israel election 2015 - coalition builder](http://www.coalitiongame2015.com) - Ran Ruder
 * [Light up! Denver](http://glennaxie.com/light-up-denver/) - Glenna Xie
 * [TwitterBeater - Real time visualisation of tweets](http://twitterbeater.datageeklab.com) - David Martín-Corral
 * [Logistic Map](http://datageeklab.com/stuff/logisticmap) - David Martín-Corral
