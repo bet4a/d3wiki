@@ -941,6 +941,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Live Intel Map for EVE Online]
 (https://github.com/jeremieroy/EVELiveIntel) - Jérémie Roy
 * [RGB-plot and Human Development Index Map] (https://csaladenes.wordpress.com/2015/01/09/colorful-development-dynamic-graphs/) - Denes Csala
+* [Élections départementales en Alsace : découvrez vos candidats] (http://www.rue89strasbourg.com/index.php/2015/02/03/politique/departementales-en-alsace-decouvrez-vos-candidats/) - Rue89 Strasbourg
 
 #### Misc Charts
 
