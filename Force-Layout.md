@@ -156,7 +156,13 @@ If you do not initialize the positions manually, the force layout will initializ
 
 <a name="on" href="Force-Layout#on">#</a> force.<b>on</b>(<i>type</i>, <i>listener</i>)
 
-Registers the specified *listener* to receive events of the specified *type* from the force layout. Currently, only "start", "tick", and "end" events are supported. "tick" events are dispatched for each tick of the simulation. Listen to tick events to update the displayed positions of nodes and links. For example, if you initially display the nodes and links like so:
+Registers the specified *listener* to receive events of the specified *type* from the force layout. Currently, only "start", "tick", and "end" events are supported. 
+
+The event objects that will be passed to the listener functions are custom objects created using the [`d3.dispatch()`](https://github.com/mbostock/d3/wiki/Internals#events) process.  Each event object has two properties: the `type` (a string, either `"start"`, `"tick"`, or `"end"`), and `alpha`, which is the current value of the alpha cooling parameter (a number between 0 and 1). The <code><i>event</i>.alpha</code> property can be used to monitor layout progress or to control your own custom adjustments.
+
+The "start" event is dispatched both for the initial start of the simulation and anytime the simulation is re-started.
+
+The "tick" events are dispatched for each tick of the simulation. Listen to tick events to update the displayed positions of nodes and links. For example, if you initially display the nodes and links like so:
 
 ```javascript
 var link = vis.selectAll("line")
@@ -185,7 +191,7 @@ force.on("tick", function() {
 
 In this case, we've stored the selections `node` and `link` on initialization, so that we don't need to reselect the nodes on every tick. If you prefer, you can display nodes and links differently; for example, you might use [symbols](SVG-Shapes#symbol) rather than circles.
 
-The "end" event is dispatched when the simulations internal alpha cooling parameter reaches zero.
+The "end" event is dispatched when the simulations internal alpha cooling parameter drops below the the cut-off value (0.005) and is set to zero.
 
 <a name="drag" href="Force-Layout#drag">#</a> force.<b>drag</b>()
 
