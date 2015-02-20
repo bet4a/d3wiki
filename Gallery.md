@@ -156,7 +156,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Binary tree with transitions<br><a href="http://animateddata.co.uk/lab/d3-tree"><img width="133" src="http://animateddata.co.uk/img/ext/tree.jpg"></a></td>
   </tr>
   <tr valign="top">
-    <td>d3+ColorBrewer<br><a href="http://adilapapaya.com/color/"><img width="133" src="http://adilapapaya.com/color/d3colorbrewer.png"></a></td>
+    <td>-<br><a href="#"><img width="133" src=""></a></td>
     <td>D3 JezzBall<br><a href="http://bl.ocks.org/ericcitaire/5408146"><img width="133" src="http://bl.ocks.org/ericcitaire/raw/5408146/thumbnail.png"></a></td>
     <td>Tetris<br><a href="http://d3tetris.herokuapp.com/"><img width="133" src="http://imageshack.us/a/img841/8619/tetrisn.png"></a></td>
     <td>Gantt Chart<br><a href="http://bl.ocks.org/dk8996/5538271/"><img width="133" src="https://raw.github.com/dk8996/Gantt-Chart/master/examples/screenshot2.png"></a></td>
@@ -170,7 +170,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   <tr valign="top">
     <td>Wimbledon 2013<br><a href="http://charts.animateddata.co.uk/tennis/"><img width="133" src="http://animateddata.co.uk/img/ext/w2012-match-tree.jpg"></a></td>
     <td>Force directed tag/site explorer<br><a href="http://ramblings.mcpher.com/Home/excelquirks/gassites/d3nodefocus"><img width="133" src="http://xliberation.com/googlecharts/1731.png"></a></td>
-    <td>Bus transit data<br/><a href="http://busrac.es"><img width="133" src="https://raw.github.com/bjuhn/UrbanDataChallenge/mr/data/busraces.png"></a></td>
+    <td>-<br/><a href="#"><img width="133" src="#"></a></td>
     <td>Airline data from Fusion Tables<br/><a href="http://xliberation.com/googlecharts/d3flights.html"><img width="133" src="http://xliberation.com/googlecharts/1746.png"></a></td>
   </tr>
   <tr valign="top">
@@ -224,11 +224,11 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   <tr valign="top">
     <td>Relative Size Of The Planets<br><a href="http://www.ununpentium.co.uk/pages/planets.jsp"><img width="133" src="http://i39.tinypic.com/ngsoj8.png"></a></td>
     <td>AWS EC2 Price Comparison Chart<br><a href="http://kenlin.com/x/aws-price-comparison-chart/"><img width="133" src="https://raw2.github.com/kenklin/aws-price-comparison-chart/mr/aws-price-comparison-chart-small.png"></a></td>
-    <td>Hurricane Forecast Path Evolution<br><a href="http://www.weather.com/news/weather-hurricanes/sandy-path-evolution-20121026"><img width="133" src="http://i.imwx.com/web/multimedia/images/sandy-cones-thumbnail.png"></a></td>
-    <td>Sandy's Storm Surge<br><a href="http://www.weather.com/news/weather-hurricanes/sandy-surge-interactive-20121105"><img width="133" src="http://i.imwx.com/web/multimedia/images/sandy-surge-thumbnail.png"></a></td>
+    <td>-<br><a href="#"><img width="133" src="#"></a></td>
+    <td>-<br><a href="#"><img width="133" src="#"></a></td>
   </tr>
   <tr valign="top">
-    <td>Monthly NCDC Climate Summary<br><a href="http://www.weather.com/news/april-ncdc-report-20130515"><img width="133" src="http://i.imwx.com/web/multimedia/images/ncdc-april-thumbnail.png"></a></td>
+    <td>-<br><a href="#"><img width="133" src="#"></a></td>
     <td>Epidemic Game <a href="http://vax.herokuapp.com"><img width="133" src="http://imgur.com/h3anuVg.gif"></a></td>
     <td>UK Temperature Graphs<br><a href="http://charts.animateddata.co.uk/uktemperaturelines"><img width="133" src="http://animateddata.co.uk/img/d3-gallery/uktemperaturelines3.jpg"></a></td>
     <td>Data Heatmap with Sorting Functions<br><a href="http://bl.ocks.org/ianyfchang/8119685"><img width="133" src="http://bl.ocks.org/ianyfchang/raw/8119685/thumbnail.png"></a></td>
@@ -254,7 +254,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   <tr valign="top">
     <td>Viroscope - virus taxonomy viewer<br><a href="http://viroscope.info/"><img width="133" src="http://jon.es/other/viroscope.png"></a></td>
     <td>Twitter & Reddit topics during week one of MH-370's disappearance<br><a href="http://mlvl.github.io/Hierarchie"><img width="133" src="http://mlvl.github.io/Hierarchie/app/img/layer.png"></a></td>
-    <td>Eurovision song contest voting oddities<br><a href="http://xliberation.com/e/d3euro.html"><img width="133" src="http://ramblings.mcpher.com/Home/excelquirks/d3/dceuro/5015.png"></a></td>
+    <td>-<br><a href="#"><img width="133" src="#"></a></td>
     <td>SizeViewer<br/><a href="https://d3.artzub.com/sv/"><img width="133" src="http://artzub.com/d3/sv/images/sv.gif"></a></td>
   </tr>
   <tr valign="top">
@@ -295,7 +295,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   </tr>
   <tr valign="top">
     <td>Visualizations and Dashboard builder<br><a href="https://my.infocaptor.com/free_data_visualization.php"><img width="133" src="http://www.infocaptor.com/dashboard/wp-content/uploads/2014/10/image-358.jpg"></a></td>
-    <td>Asian Financial News Daily<br><a href="http://ywng-d3apps.rhcloud.com/MktInsight/"><img width="133" src="https://camo.githubusercontent.com/bb57bd84e2bc96a625319ec593fe14cf71a78fb8/68747470733a2f2f7261772e6769746875622e636f6d2f79776e672f50726f67726573736976652d4e6577732d436c6f75642f6d61737465722f73637265656e25323073686f742532306d61696e2e706e67"></a></td>
+    <td>-<br><a href="#"><img width="133" src="#"></a></td>
     <td>Simple bar chart with lede & nut graf layout<br><a href="http://greencracker.net/?p=1874"><img width="133" src="http://greencracker.net/wp-content/uploads/2014/11/Screen-Shot-2014-11-16-at-12.32.51-PM.png"></a></td>
     <td>Node Focusable Tree<br><a href="http://codepen.io/mikefab/full/IDdts/"><img width="133" src="http://s12.postimg.org/abee893h9/node_focusable_radial_tree.jpg"></a></td>
   </tr>
