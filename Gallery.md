@@ -417,7 +417,6 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [Light up! Denver](http://glennaxie.com/light-up-denver/) - Glenna Xie
 * [TwitterBeater - Real time visualisation of tweets](http://twitterbeater.datageeklab.com) - David Martín-Corral
 * [Logistic Map](http://datageeklab.com/stuff/logisticmap) - David Martín-Corral
-* [Big Data Trends](https://my.infocaptor.com/dash/mt.php?pa=trends_in_big_data_547dd81f6b723) - Big Data,Analytics
 * [Spotify Artist Explorer](https://artistexplorer.spotify.com) — Faruk Sahin
 * [History of trending topics of twitter](http://tt-history.appspot.com) — Mustafa ilhan
 * [Visualizing cricket](http://live.cricket.com.au/#/5010/1) — Cricket Australia ([Roman Kalyakin](http://www.placefaraway.com))
@@ -441,10 +440,8 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [StockTwits Social Heatmap](http://stocktwits.com/signals/heatmap) - StockTwits
 * [Social web use in 2009](http://n79.org/infographics/asg1/) - Nikhil Bobb
 * [Visualizing opinons around the world (zoomable world map and interactive pie chart)](http://theartofasking.com/question/wjucdg6k) - Siamac Fazli, Bastian Venthur
-* [Running Away Balloons - simple game ](http://kfoto.blogspot.be/2012/11/running-away-ballons.html) - k
 * [A Photographer's infographic](https://googledrive.com/host/0ByMecxlAS3YxQ3hoU21tdUNnc1E/photos.html) - Najeem Muhammed
 * [Visualizing word density in the Bible](http://stanford.edu/~garylee/bibly) - Gary Lee
-* [Election 2012 Social Dashboard (interactive Twitter visualization)] (http://events.current.com/social_dashboard) - Current TV
 * [Visualizing document similarity over time](http://www.davidmasad.com/sandbox/FirmClusters.html) - David Masad
 * [Drought during Month](http://bost.ocks.org/mike/drought/) - Mike Bostock
 * [Interactive Publication History](http://www.cs.umd.edu/~bederson/papers/index.html) - Ben Bederson
@@ -472,23 +469,17 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [London Olympics Perceptions - Donuts to Chord Diagram Transition](http://www.visualizing.org/visualizations/uk-olympic-sentiment-analysis) - Kyle Foreman, Peter Hamilton, Cristina Grigoruta
 * [Colony - Visualising Javascript projects and their dependencies](http://hughsk.github.com/colony) - Hugh Kennedy
 * [Euro Debt Crisis](http://bl.ocks.org/mbostock/1308257)
-* [Fuzzy Link-Bot](http://www.atomodo.com/flb/?e=13839,25793#) - Entity co-occurrence in music news by Andrew Collins.
-* [Job Flow](https://github.com/fod/job_flow_vis)
-* [Visualizing a newborn's feeding and diaper activity](http://jerseyshots.com/viz/newborn.html) - Jimmie Yoo
 * [Inequality in America](http://visual.ly/vizbox/inequality-in-america/) - EJ Fox for Visual.ly
 * [Current Article Popularity Trends on Hacker News](http://hn.metamx.com/) -  Vadim Ogievetsky
 * [Hacker News statistics using PhantomJS](http://labs.im/hnstat/)
-* [AFL Brownlow Medalists](http://www.vislives.com/2011/09/brownlow-medal-winners-visualization.html), [Summer Olympics Home Ground Advantage](http://www.vislives.com/2012/10/summer-olympics-home-ground-advantage.html), [Formula 1 Lap Chart](http://www.vislives.com/2012/05/d3js-transitions-zoom-zoom.html), [When is Er?](http://www.vislives.com/2012/04/when-is-er-sunday.html) and [David Foster Wallace's "Infinite Jest"](http://www.vislives.com/2011/12/infinite-jest-visualization.html), and [more...](http://www.vislives.com/search/label/d3.js) - Chris Pudney (VisLives!)
+* [AFL Brownlow Medalists](http://www.vislives.com/2011/09/brownlow-medal-winners-visualization.html), [Summer Olympics Home Ground Advantage](http://www.vislives.com/2012/10/summer-olympics-home-ground-advantage.html), [Formula 1 Lap Chart](http://www.vislives.com/2012/05/d3js-transitions-zoom-zoom.html) and [David Foster Wallace's "Infinite Jest"](http://www.vislives.com/2011/12/infinite-jest-visualization.html), and [more...](http://www.vislives.com/search/label/d3.js) - Chris Pudney (VisLives!)
 * [Uber Rides by Neighborhood](http://bost.ocks.org/mike/uberdata/)
 * [Les Misérables Co-occurrence](http://bost.ocks.org/mike/miserables/)
 * [Les Misérables 'Gap Heat Map' Co-occurrence](http://joshua-gould.github.io/public/examples/miserables/)
-* [US Elections 2012 / Twitter](http://hotspots.io/election)
-* [Major League Baseball Home Runs, 1995-2010](http://visual-baseball.com/d3/baseball/Drillable_Bar_Charts/HR.html) - Ken Cherven (Visual-Baseball.com)
 * [Color: a color matching game](http://color.method.ac/) - Maria Munuera and Mark MacKay
 * [NCAA 2012 March Madness Power Rankings](http://thepowerrank.com/visual/NCAA_Tournament_Predictions) - Angi Chau
 * [iTunes Music Library Artist/Genre Graph](http://cgmartin.com/itunes-library-network-graph/) - Christopher Martin
-* [A Race to Entitlement](http://3angular.roberryarts.com/)
-* [Visualising New Zealand's Stolen Vehicle Database Part1](http://markhansen.co.nz/stolen-vehicles-pt1/) and [Part2](http://markhansen.co.nz/stolen-vehicles-pt2/) and [source code](https://github.com/mhansen/stolen-vehicles-pt2)
+* [Visualising New Zealand's Stolen Vehicle Database Part2](http://markhansen.co.nz/stolen-vehicles-pt2/) and [source code](https://github.com/mhansen/stolen-vehicles-pt2)
 * [Visualizing San Francisco Home Price Ranges](http://trends.truliablog.com/vis/pricerange-sf/)
 * [Daily data return rates for seismic networks in the EarthScope USArray](http://anf.ucsd.edu/tools/data_return_rates/) - [Rob Newman, Array Network Facility, UCSD](https://github.com/robnewman)
 * [What Size Am I? Finding dresses that fit](http://sizes.darkgreener.com/) - Anna Powell-Smith
@@ -496,8 +487,6 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [Last Chart! - See the Music](http://www.lastchart.com)
 * [Multiple visualization from the Société Typographique de Neuchâtel](http://chop.leeds.ac.uk/stn/interface/gallery.php) - Vincent Hiribarren
 * [Prime numbers pattern](http://www.jasondavies.com/primos/)
-* [Interactive visual breakpoint detection on SegAnnDB](http://bioviz.rocq.inria.fr/plotter/) - Toby Dylan Hocking
-* [Coordinated visualizations for Consumer Packaged Goods](http://theory.info/)
 * [eCommerce API Wheel for eBay](http://saranyan.github.com/commerce_wheel) - Saranyan Vigraham
 * [The business of Bond](http://007.lucklaboratories.com/)
 * [Home energy consumption](http://www.prcweb.co.uk/lab/energy) - Peter Cook
@@ -518,7 +507,6 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [Exploring d3.js with data from my runs to plot my heart rate](http://blog.freshteapot.net/post/31938798971/using-d3-js-to-visualise-my-heart-rate)
 * [Is Barack Obama the President? (Balloon charts)](http://www.isbarackobamathepresident.com/)
 * [Audio Spectrum Analyzer](http://d3-spectrum.herokuapp.com) - Ari Russo
-* [Browser usage plurality](http://thecelestialweb.com) - Ali Almossawi
 * [Places in the Game of Thrones](http://www.jeromecukier.net/projects/agot/places.html) - Jérôme Cukier
 * [A Visit From The Goon Squad - Interactive Character Map](http://www.filosophy.org/projects/goonsquad/) - Filip Zembowicz
 * [Twitter Influencer Visualization](http://www.influencermoth.com/) - Erik Driessen
@@ -536,7 +524,6 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [Linked Jazz network graph](http://linkedjazz.org/network/) - Matt Miller
 * [Bibly v2: Visualizing word distribution within the KJV bible](http://stanford.edu/~garylee/bibly/) - GARY LEE & ANIRUDH VENKATESH
 * [A physics model of a physics model](http://michiel.wordpress.com/2012/07/13/a-physics-model-of-a-physics-model/) - Michiel van der Blonk
-* [OECD Health, Government Spending, and Obesity Rates (nvd3)](http://ameliamango.com/fatness.html) - Amelia Mango
 * [The first thing that should be shown in any Trigonometry class](http://www.humblesoftware.com/demos/trig_d3)
 * [How educated are world leaders?](http://skyrill.com/leaders/) - Ali Almossawi
 * [Dynamic charts](http://bl.ocks.org/mbostock/4340039) and [dynamically populated charts](http://bl.ocks.org/mbostock/4339162) - Marcello La Rocca
@@ -546,10 +533,8 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [Displaying real-time data](http://bl.ocks.org/mbostock/4339162) - Marcello La Rocca
 * [“Decide the Czech 2013 Presidential Election” interactive visualization](http://prezidenti.databoutique.cz/index.en.html) - Vojtech Hyza, Karel Minarik, Josef Slerka ([about](http://ephemera.karmi.cz/post/41370777074/decide-the-election-interactive-visualization), [source](http://bl.ocks.org/mbostock/4626240))
 * [Mass Gun shootings in USA](http://massshootings.nandayadav.com/) - Nanda Yadav
-* [Clock visualization Dashboard](https://my.infocaptor.com/dash/mt.php?pa=world_clocks_using_d3_510da17d83b20)
 * [UK Rainfall 1910-2012](http://prcweb.co.uk/lab/rainfall) - Peter Cook
 * [Modal Logic Playground](http://rkirsling.github.com/modallogic/) - Ross Kirsling
-* [Slopegraph - 1 static & 1 with d3] (http://www.streamlinedataworks.com/example6.html) - Anna Mehrotra
 * [Collection of 9 dynamical systems examples] (http://sigsystext.com) - interactive examples found under educational material - Sean Summers
 * [Expected university tuition growth 2030] (http://rumachine.com/tuition/expectedgrowth.html) - Sean Summers
 * [Standings Slopegraph - Slopegraph of weekly NHL standings for 2012-13 season](http://standings.laserdeathstehr.com/), ([Github](https://github.com/nstehr/NHL-Slopegraph)) - Nathan Stehr
@@ -589,18 +574,13 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [UK Electricity Supply Crunch](http://helenjacksonanalytic.co.uk/power.html) - Helen Jackson
 * [New Years Resolutions and Search Trends] (http://www.bytemuse.com/post/resolutions-and-search-trends/) - Chris Polis
 * [Geometric Proof of the Pythagorean theorem] (http://www.bytemuse.com/post/geometric-proof-of-the-pythagorean-theorem-in-d3-js/) - Chris Polis
-* [NHL Cap Hits] (http://caphits.com) - Joe Meissler
 * [Top words and the words they frequently appear with in American Hip-Hop] (http://hiphop.laserdeathstehr.com/) - Nathan Stehr
 * [Sochi Winter Olympics Medals by Country and Sport] (http://www.bytemuse.com/post/sochi-winter-olympics-medals-by-country-sport/) - Chris Polis
 * [Process map and documentation using an interactive force layout](https://github.com/nylen/d3-process-map) - James Nylen
 * [Beijing Air Pollution Visualization](http://scottcheng.github.io/bj-air-vis/) - Scott Cheng
 * [China Historical Films Timeline](http://lcreation.fr/artnum/china_films_timeline.html) - Laurent C.
-* [What the SA job scene looks like for developers](http://ventureburn.com/2014/04/what-the-sa-job-scene-looks-like-for-developers-infographic/) - Eshaam Rabaney
 * [Can we have a Pie  chart like this?](http://bl.ocks.org/anwargm/11145882) - Anwarhusen Malgave
 * [And like this? A Pie  chart with dofferent angle](http://bl.ocks.org/anwargm/11152574) - Anwarhusen Malgave
-* [Tracking Flu Outbreaks with Wikipedia](http://www.additiveanalytics.com/solutions/flu_tracker) - Laura Hamilton
-* [Surgery Prices by State](http://www.additiveanalytics.com/solutions/nationwide_price_compare) - Laura Hamilton
-* [Eurovision song contest voting oddities] (http://xliberation.com/e/d3euro.html) - Bruce McPherson
 * [DogeOS/SmartOS SMF browser] (http://www.dogeos.net/smfgraph/) - LI, Yu
 * [Members of the Lower House of the Parliament of India] (http://www.datafootprints.com/loksabha/) - Raj Verma
 * [Archive of polling data for Austria] (http://www.strategieanalysen.at/umfragen/) - Flooh Perlot
@@ -613,7 +593,6 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [Interactive Netcdf climate data plots](https://willospace.pythonanywhere.com) - Will Sijp
 * [Shrimp](http://ontoserver.csiro.au/shrimp) demonstrates a DAG Tree layout for browsing SNOMED CT - Michael Lawley, CSIRO
 * [Multi-line chart](http://bl.ocks.org/maithuy/5766374df8119e76969b) demonstrates the LendingClub.com's net annualized return of loans by vintage - Thuy Nguyen
-* [Mapping Solar Flares](http://www.scientificamerican.com/article/mapping-solar-flares-interactive/) - Monica Bobra and Chau Dang
 * [Circle Packing - Stories and other Interactive Animations](http://www.primordion.com/Xholon/gwt/XholonCirclePacking.html) - Ken Webb
 * [RGB-plot] (https://csaladenes.wordpress.com/2014/12/07/colorful-development-rgb-coded-multidimensional-hdi/) - Denes Csala
 
