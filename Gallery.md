@@ -598,6 +598,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [Multi-line chart](http://bl.ocks.org/maithuy/5766374df8119e76969b) demonstrates the LendingClub.com's net annualized return of loans by vintage - Thuy Nguyen
 * [Circle Packing - Stories and other Interactive Animations](http://www.primordion.com/Xholon/gwt/XholonCirclePacking.html) - Ken Webb
 * [RGB-plot] (https://csaladenes.wordpress.com/2014/12/07/colorful-development-rgb-coded-multidimensional-hdi/) - Denes Csala
+* [nextflu: real-time tracking of influenza virus evolution](http://nextflu.org) - Trevor Bedford
 
 ### Collections
 
@@ -989,6 +990,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Battle Statistics from the MMO game World of Tanks] (http://www.polsci.ucsb.edu/faculty/glasgow/research/d3/WoTkillratio.html) - Garrett Glasgow
 * [Tendulkar's Rise and Fall](https://my.infocaptor.com/dash/mt.php?pa=tendulkar_5425757cbb623)
 * [Dijkstra algorithm solves the single-source shortest path problem](http://bl.ocks.org/lafarer/7d8ecbf7b06b2ef0f72b)  - Eric Lafargue
+
 
 #### Charts using the [reusable API](http://bost.ocks.org/mike/chart/)
 
