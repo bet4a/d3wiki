@@ -92,6 +92,10 @@ Please feel free to add links to your work!
 * [Visual Storytelling with D3](http://ritchiesking.com/book/)<br>Ritchie King, Addison-Wesley, 2014
 * [D3 on AngularJS](https://leanpub.com/d3angularjs)<br>Ari Lerner + Victor Powell, Leanpub, 2014
 
+## Courses
+
+* [Data Visualization and D3.js](https://www.udacity.com/course/ud507)<br>Jonathan Dinu + Ryan Orban, Udacity, 2014
+
 ## Talks and Videos
 
 * [Free tagtree screencast - thinking with joins](https://www.tagtree.tv/d3-episode2-thinking-with-joins?share_code=unloveable-peanut)
