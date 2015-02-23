@@ -329,6 +329,9 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Selectable / Zoomable / Centerable Force Directed Graph<br><a href="http://emptypipes.org/2015/02/15/selectable-force-directed-graph/"><img width="133" src="http://emptypipes.org/img/d3_selectable_force_directed_graph.png"></a></td>
     <td>F1 Timeline<br><a href="http://charts.animateddata.co.uk/f1/"><img width="133" src="http://animateddata.co.uk/img/ext/f1.jpg"></a></td>
   </tr>
+  <tr valign="top">
+    <td>Geocenter of F1 venues<br><a href="https://csaladenes.wordpress.com/2015/02/01/the-geocenter-of-formula-1-venues-between-1950-2014/"><img width="133" src="https://csaladenes.files.wordpress.com/2015/02/f1venues.jpg?w=1000&h=547"></a></td>
+  </tr>
 </table>
 
 ## Basic Charts
