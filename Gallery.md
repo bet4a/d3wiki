@@ -331,6 +331,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   </tr>
   <tr valign="top">
     <td>Geocenter of F1 venues<br><a href="https://csaladenes.wordpress.com/2015/02/01/the-geocenter-of-formula-1-venues-between-1950-2014/"><img width="133" src="https://csaladenes.files.wordpress.com/2015/02/f1venues.jpg?w=1000&h=547"></a></td>
+   <td>d3+Quandl<br><a href="https://csaladenes.wordpress.com/2015/02/24/quandl-nvd3-interactive-data-plotter/"><img width="133" src="https://csaladenes.files.wordpress.com/2015/02/quandl.jpg"></a></td>
   </tr>
 </table>
 
