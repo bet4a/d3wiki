@@ -69,6 +69,8 @@ Please feel free to add links to your work!
 * [Integrating D3 with a CouchDB database](https://gist.github.com/anonymous/9275891) - Reinhard Engel and Simon Metson
 * [An interactive explanation of quadtrees](http://jimkang.com/quadtreevis/) - Jim Kang
 * [An A to Z of extra features for the d3 force layout](http://www.coppelia.io/an-a-to-z-of-extra-features-for-the-d3-force-layout/) - Simon Raper
+* [Stream data to create realtime, live-updating D3.js charts](http://www.pubnub.com/blog/stream-data-to-create-realtime-charts-w-d3js-and-rickshaw/) - Ian Jennings
+* [Graphing memory usage in realtime using D3.js and Rickshaw](http://www.pubnub.com/blog/graphing-node-js-memory-usage-d3-js-rickshaw/) - Ian Jennings
 
 ## Blogs
 
@@ -79,6 +81,7 @@ Please feel free to add links to your work!
 * [Bharat Bhole](http://knowledgestockpile.blogspot.com/search/label/D3)
 * [OUR D3.JS(Chinese)](http://www.ourd3js.com/wordpress/)
 * [Peter Cook](http://animateddata.co.uk/articles/)
+* [PubNub](http://www.pubnub.com/blog/tag/d3-js/)
 
 ## Books
 
