@@ -1085,6 +1085,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Force directed node focus generated from Excel](http://ramblings.mcpher.com/Home/excelquirks/gassites/d3nodefocus) - Bruce McPherson
 * [US Airline performance bigdata direct from Google Fusion](http://ramblings.mcpher.com/Home/excelquirks/d3/flights) - Bruce McPherson
 * [Force directed site concept browser](http://ramblings.mcpher.com/Home/excelquirks/gassites/d3-concept-browser) - Bruce McPherson
+* [I See Hue: How People Perceive Hues](http://iseehue.herokuapp.com/) - Petr Devaikin
 
 #### Online Editors
 
