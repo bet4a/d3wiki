@@ -466,8 +466,8 @@ For constructing pie or donut charts, you will need to compute the start angle o
 If *angle* is specified, sets the end angle accessor to the specified function or constant. If *angle* is not specified, returns the current end angle accessor, which defaults to:
 
 ```javascript
-function startAngle(d) {
-  return d.startAngle;
+function endAngle(d) {
+  return d.endAngle;
 }
 ```
 
