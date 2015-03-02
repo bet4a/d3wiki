@@ -931,6 +931,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 (https://github.com/jeremieroy/EVELiveIntel) - Jérémie Roy
 * [RGB-plot and Human Development Index Map] (https://csaladenes.wordpress.com/2015/01/09/colorful-development-dynamic-graphs/) - Denes Csala
 * [Élections départementales en Alsace : découvrez vos candidats] (http://www.rue89strasbourg.com/index.php/2015/02/03/politique/departementales-en-alsace-decouvrez-vos-candidats/) - Rue89 Strasbourg
+* [Religions of Romania visualized on colorwheels] (https://csaladenes.wordpress.com/2015/03/01/religions-of-romania-visualized-on-colorwheels/#more-474) - Denes Csala
 
 #### Misc Charts
 
