@@ -732,7 +732,7 @@ See one of:
 ### [Voronoi](Voronoi-Geom)
 
 * [d3.geom.voronoi](Voronoi-Geom#voronoi) - create a Voronoi layout with default accessors.
-* [voronoi.clipExent](Voronoi-Geom#clipExtent) - get or set the clip extent for the tesselation.
+* [voronoi.clipExtent](Voronoi-Geom#clipExtent) - get or set the clip extent for the tesselation.
 * [voronoi.links](Voronoi-Geom#links) - compute the Delaunay mesh as a network of links.
 * [voronoi.triangles](Voronoi-Geom#triangles) - compute the Delaunay mesh as a triangular tessellation.
 * [voronoi.x](Voronoi-Geom#x) - get or set the x-coordinate accessor for each point.
