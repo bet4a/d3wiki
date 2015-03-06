@@ -379,7 +379,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Waterfall Chart<br><a href="http://bl.ocks.org/chucklam/f3c7b3e3709a0afd5d57"><img width="133" src="http://bl.ocks.org/chucklam/raw/f3c7b3e3709a0afd5d57/thumbnail.png"></a></td>
     <td>Diverging Stacked Bar Chart<br><a href="http://bl.ocks.org/wpoely86/e285b8e4c7b84710e463"><img width="133" src="http://bl.ocks.org/wpoely86/raw/e285b8e4c7b84710e463/thumbnail.png"></a></td>
     <td>Timeseries<br><a href="http://mlvl.github.io/timeseries/"><img width="133" src="http://mlvl.github.io/timeseries/images/timeseries-sm.png"></a></td>
-    <td>Sunburst bilevel partition with tooltips <br><a href="http://bl.ocks.org/vgrocha/1580af34e56ee6224d33"><img width="133" src="https://gist.github.com/vgrocha/1580af34e56ee6224d33/raw/205ed29a33481727cadedd6b2ecc1e4f2273bfbf/bilevel.png"></a></td>
+    <td>Sunburst bilevel partition with tooltips <br><a href="http://bl.ocks.org/vgrocha/1580af34e56ee6224d33"><img width="133" src="http://gist.github.com/vgrocha/1580af34e56ee6224d33/raw/205ed29a33481727cadedd6b2ecc1e4f2273bfbf/bilevel.png"></a></td>
   </tr>
 </table>
 
