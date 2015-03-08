@@ -335,6 +335,12 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
    <td>Religions of Romania visualized on colorwheels<br><a href="https://csaladenes.wordpress.com/2015/03/01/religions-of-romania-visualized-on-colorwheels/"><img width="133" src="https://csaladenes.files.wordpress.com/2015/03/clipboard02.png?w=133"></a></td>
    <td>Sunburst bilevel partition with tooltips <br><a href="http://bl.ocks.org/vgrocha/1580af34e56ee6224d33"><img width="133" src="https://gist.github.com/vgrocha/1580af34e56ee6224d33/raw/205ed29a33481727cadedd6b2ecc1e4f2273bfbf"></a></td>
   </tr>
+  <tr valign="top">
+    <td>The History of The Russian Budget from 1937-1950 years<br /><a href="http://budgetapps.artzub.com/minfin/"><img width="133" src="http://habrastorage.org/files/125/a61/c1f/125a61c1fbad4517922b4ef673cf2ef2.gif" alt=""></a></td>
+   <td></td>
+   <td></td>
+   <td></td>
+  </tr>
 </table>
 
 ## Basic Charts
