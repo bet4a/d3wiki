@@ -326,13 +326,13 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   <tr valign="top">
     <td>England & Wales house price animation<br><a href="http://helenjacksonanalytic.co.uk/EW_prop_price.html"><img width="133" src="http://www.helenjacksonanalytic.co.uk/EaW.png"></a></td>
     <td>Bi-directional Zoom and Drag D3 dependency tree<br><a href="http://bl.ocks.org/shunpochang/66620bad0e6b201f261c"><img width="133" src="https://raw.githubusercontent.com/shunpochang/d3tree/master/thumbnail.png"></a></td>
-    <td>Selectable / Zoomable / Centerable Force Directed Graph<br><a href="http://emptypipes.org/2015/02/15/selectable-force-directed-graph/"><img width="133" src="http://emptypipes.org/img/d3_selectable_force_directed_graph.png"></a></td>
+    <td>Interactive Force Directed Graph<br><a href="http://emptypipes.org/2015/02/15/selectable-force-directed-graph/"><img width="133" src="http://emptypipes.org/img/d3_selectable_force_directed_graph.png" alt="Selectable / Zoomable / Centerable Force Directed Graph"></a></td>
     <td>F1 Timeline<br><a href="http://charts.animateddata.co.uk/f1/"><img width="133" src="http://animateddata.co.uk/img/ext/f1.jpg"></a></td>
   </tr>
   <tr valign="top">
     <td>Geocenter of F1 venues<br><a href="https://csaladenes.wordpress.com/2015/02/01/the-geocenter-of-formula-1-venues-between-1950-2014/"><img width="133" src="https://csaladenes.files.wordpress.com/2015/02/f1venues.jpg?w=1000&h=547"></a></td>
-   <td>Access Quandl aggregator with D3<br><a href="https://csaladenes.wordpress.com/2015/02/24/quandl-nvd3-interactive-data-plotter/"><img width="133" src="https://csaladenes.files.wordpress.com/2015/02/quandl.jpg"></a></td>
-   <td>Religions in Romania with colorwheels<br><a href="https://csaladenes.wordpress.com/2015/03/01/religions-of-romania-visualized-on-colorwheels/"><img width="133" src="https://csaladenes.files.wordpress.com/2015/03/clipboard02.png?w=133"></a></td>
+   <td>Access Quandl aggregator<br><a href="https://csaladenes.wordpress.com/2015/02/24/quandl-nvd3-interactive-data-plotter/"><img width="133" src="https://csaladenes.files.wordpress.com/2015/02/quandl.jpg"></a></td>
+   <td>Religions in Romania on colorwheels<br><a href="https://csaladenes.wordpress.com/2015/03/01/religions-of-romania-visualized-on-colorwheels/"><img width="133" src="https://csaladenes.files.wordpress.com/2015/03/clipboard02.png?w=133"></a></td>
    <td>Sunburst bilevel partition with tooltips <br><a href="http://bl.ocks.org/vgrocha/1580af34e56ee6224d33"><img width="133" src="https://gist.github.com/vgrocha/1580af34e56ee6224d33/raw/205ed29a33481727cadedd6b2ecc1e4f2273bfbf"></a></td>
   </tr>
   <tr valign="top">
