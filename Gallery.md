@@ -332,13 +332,13 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   <tr valign="top">
     <td>Geocenter of F1 venues<br><a href="https://csaladenes.wordpress.com/2015/02/01/the-geocenter-of-formula-1-venues-between-1950-2014/"><img width="133" src="https://csaladenes.files.wordpress.com/2015/02/f1venues.jpg?w=1000&h=547"></a></td>
    <td>Accessing the Quandl database aggregator with D3<br><a href="https://csaladenes.wordpress.com/2015/02/24/quandl-nvd3-interactive-data-plotter/"><img width="133" src="https://csaladenes.files.wordpress.com/2015/02/quandl.jpg"></a></td>
-   <td>Religions of Romania visualized on colorwheels<br><a href="https://csaladenes.wordpress.com/2015/03/01/religions-of-romania-visualized-on-colorwheels/"><img width="133" src="https://csaladenes.files.wordpress.com/2015/03/clipboard02.png?w=133"></a></td>
+   <td>Religions in Romania with colorwheels<br><a href="https://csaladenes.wordpress.com/2015/03/01/religions-of-romania-visualized-on-colorwheels/"><img width="133" src="https://csaladenes.files.wordpress.com/2015/03/clipboard02.png?w=133"></a></td>
    <td>Sunburst bilevel partition with tooltips <br><a href="http://bl.ocks.org/vgrocha/1580af34e56ee6224d33"><img width="133" src="https://gist.github.com/vgrocha/1580af34e56ee6224d33/raw/205ed29a33481727cadedd6b2ecc1e4f2273bfbf"></a></td>
   </tr>
   <tr valign="top">
     <td>Russian Budget: 1937 to 1950<br /><a href="http://budgetapps.artzub.com/minfin/"><img width="133" src="http://habrastorage.org/files/125/a61/c1f/125a61c1fbad4517922b4ef673cf2ef2.gif" alt=""></a></td>
     <td>Liquid Fill Gauge<br /><a href="http://bl.ocks.org/brattonc/5e5ce9beee483220e2f6"><img width="133" src="https://gist.githubusercontent.com/brattonc/5e5ce9beee483220e2f6/raw/thumbnail.gif" alt=""></a></td>
-    <td>Bubble Menu<br /><a href="http://sunsp.net/demo/BubbleMenu/index.html"><img width="133" src="http://sunsp.net/demo/BubbleMenu/bubblemenu.gif" alt=""></a></td>
+    <td>Interactive Bubble Menu<br /><a href="http://sunsp.net/demo/BubbleMenu/index.html"><img width="133" src="http://sunsp.net/demo/BubbleMenu/bubblemenu.gif" alt=""></a></td>
 
   </tr>
 </table>
