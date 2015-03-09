@@ -337,7 +337,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   </tr>
   <tr valign="top">
     <td>The History of The Russian Budget from 1937-1950 years<br /><a href="http://budgetapps.artzub.com/minfin/"><img width="133" src="http://habrastorage.org/files/125/a61/c1f/125a61c1fbad4517922b4ef673cf2ef2.gif" alt=""></a></td>
-    <td>Liquid Fill Guage<br /><a href="http://bl.ocks.org/brattonc/5e5ce9beee483220e2f6"><img width="133" src="https://gist.githubusercontent.com/brattonc/5e5ce9beee483220e2f6/raw/thumbnail.gif" alt=""></a></td>
+    <td>Liquid Fill Gauge<br /><a href="http://bl.ocks.org/brattonc/5e5ce9beee483220e2f6"><img width="133" src="https://gist.githubusercontent.com/brattonc/5e5ce9beee483220e2f6/raw/thumbnail.gif" alt=""></a></td>
   </tr>
 </table>
 
