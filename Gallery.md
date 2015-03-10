@@ -338,9 +338,12 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   <tr valign="top">
     <td>Russian Budget: 1937 to 1950<br /><a href="http://budgetapps.artzub.com/minfin/" target="_blank"><img width="133" src="http://habrastorage.org/files/125/a61/c1f/125a61c1fbad4517922b4ef673cf2ef2.gif" alt=""></a></td>
     <td>Liquid Fill Gauge<br /><a href="http://bl.ocks.org/brattonc/5e5ce9beee483220e2f6" target="_blank"><img width="133" src="https://gist.githubusercontent.com/brattonc/5e5ce9beee483220e2f6/raw/thumbnail.gif" alt=""></a></td>
+    <td>Interactive Bubble Menu<br /><a href="http://sunsp.net/demo/BubbleMenu" target="_blank"><img width="133" src="http://sunsp.net/demo/BubbleMenu/bubblemenu.gif" alt=""></a></td>    
     <td>Global center of higher education: university rankings<br /><a href="https://csaladenes.wordpress.com/2015/03/10/the-global-center-of-mass-of-higher-education-university-rankings-mapped/" target="_blank"><img width="133" src="https://csaladenes.files.wordpress.com/2015/03/clipboard014.png?w=1000&h=553" alt=""></a></td>
   </tr>
-
+  <tr valign="top">
+    <td>Linked Geographic and Tree Maps<br /><a href="http://sunsp.net/demo/GeogTreeMaps" target="_blank"><img width="133" src="http://sunsp.net/demo/GeogTreeMaps/geogtreemaps.gif" alt=""></a></td>
+  </tr>
 </table>
 
 ## Basic Charts
@@ -422,10 +425,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
     <td>Draggable scatterplot with motion trails<br><a href="http://romsson.github.io/dragit/example/nations.html"><img width="133" src="http://i.imgur.com/gqnuQzb.gif"></a></td>
     <td>Horizontally grouped bar chart<br><a href="http://bl.ocks.org/erikvullings/51cc5332439939f1f292"><img width="133" src="http://bl.ocks.org/erikvullings/raw/51cc5332439939f1f292/thumbnail.png"></a></td>
   </tr>
-  <tr valign="top">
-    <td>Interactive Bubble Menu<br /><a href="http://sunsp.net/demo/BubbleMenu" target="_blank"><img width="133" src="http://sunsp.net/demo/BubbleMenu/bubblemenu.gif" alt=""></a></td>    
-    <td>Linked Geographic and Tree Maps<br /><a href="http://sunsp.net/demo/GeogTreeMaps" target="_blank"><img width="133" src="http://sunsp.net/demo/GeogTreeMaps/geogtreemaps.gif" alt=""></a></td>
-  </tr>
+
 </table>
 
 ## Examples
