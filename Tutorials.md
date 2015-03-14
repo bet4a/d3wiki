@@ -99,7 +99,7 @@ Please feel free to add links to your work!
 ## Courses
 
 * [Data Visualization and D3.js](https://www.udacity.com/course/ud507)<br>Jonathan Dinu + Ryan Orban, Udacity, 2014
-* [Data Visualization and Infographics with D3.js](http://journalismcourses.org/D3.html)
+* [Data Visualization and Infographics with D3.js](http://journalismcourses.org/D3.html)<br>Alberto Cairo + Scott Murray, Knight Center, 2015
 
 ## Talks and Videos
 
