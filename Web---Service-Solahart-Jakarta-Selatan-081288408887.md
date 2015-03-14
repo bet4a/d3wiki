@@ -1,3 +1,30 @@
+Service Solahart Cabang Jakarta Selatan Telp. 021-83471491
+Layanan Service Solahart Daerah Jakarta Selatan Call Center 081288408887.
+Kami Memiliki Teknisi Ahli Khusus, Profesional & Berpengalaman Siap Melayani Panggilan Anda Akan Service / Reparasi, Perawatan & Pemasangan Baru Solahart Seperti Berikut:
+
+A. Air Tidak Panas 
+B. Tekanan Air Kurang Kencang
+C. Tanky Bocor, Pipa Bocor
+D. Jasa Penurunan Unit/ Bongkar Pasang
+E. Jasa Penaikan Unit/ Bongkar Pasang
+F. Penggantian Sparepart,Element,Termorstat,1/2 Valve, Cek Valve Dll.
+G. Pemasangan Titik Air Panas/ Instalasi Pipa Air Panas & Air Dingin
+H. Service Berkala / Perawatan Solahart & Lain Sebagainya.
+
+Untuk keterangan lebih lanjut :
+Hubungi kami
+CV.Abadi Jaya Indonesia
+Telpon: +6221 8347 1491 / HP. +62812 8840 8887
+"Solusi Air Panas"
+
+
+
+
+
+
+
+
+
 **D3.js** is a JavaScript library for manipulating documents based on data. **D3** helps you bring data to life using HTML, SVG and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.
 
 ## Resources
