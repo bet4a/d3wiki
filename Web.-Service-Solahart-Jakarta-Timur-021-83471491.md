@@ -1,3 +1,34 @@
+Service Solahart Cabang Jakarta Timur Telp. 021-83471491
+Layanan Service Solahart Daerah Jakarta Timur Call Center 081288408887.
+Kami Memiliki Teknisi Ahli Khusus, Profesional & Berpengalaman Siap Melayani Panggilan Anda Akan Service / Reparasi, Perawatan & Pemasangan Baru Solahart Seperti Berikut:
+
+A. Air Tidak Panas 
+B. Tekanan Air Kurang Kencang
+C. Tanky Bocor, Pipa Bocor
+D. Jasa Penurunan Unit/ Bongkar Pasang
+E. Jasa Penaikan Unit/ Bongkar Pasang
+F. Penggantian Sparepart,Element,Termorstat,1/2 Valve, Cek Valve Dll.
+G. Pemasangan Titik Air Panas/ Instalasi Pipa Air Panas & Air Dingin
+H. Service Berkala / Perawatan Solahart & Lain Sebagainya.
+
+Untuk keterangan lebih lanjut :
+Hubungi kami
+CV.Abadi Jaya Indonesia
+Telpon: +6221 8347 1491 / HP. +62812 8840 8887
+"Solusi Air Panas"
+
+
+
+
+
+
+
+
+
+
+
+
+
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Core]] ▸ **Selections**
 
 A **selection** is an array of elements pulled from the current document. D3 uses [[CSS3|http://www.w3.org/TR/css3-selectors/]] to select elements. For example, you can select by tag  ("div"), class (".awesome"), unique identifier ("#foo"), attribute ("[color=red]"), or containment ("parent child"). Selectors can also be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR). If your browser doesn't support selectors natively, you can include [[Sizzle|http://sizzlejs.com/]] before D3 for backwards-compatibility.
