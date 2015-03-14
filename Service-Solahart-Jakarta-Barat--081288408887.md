@@ -1,57 +1,29 @@
-> [Wiki](Home) ▸ **Gallery**
+Service Solahart Cabang Jakarta Barat Telp. 021-83471491
+Layanan Service Solahart Daerah Jakarta Barat Call Center 081288408887.
+Kami Memiliki Teknisi Ahli Khusus, Profesional & Berpengalaman Siap Melayani Panggilan Anda Akan Service / Reparasi, Perawatan & Pemasangan Baru Solahart Seperti Berikut:
 
-Welcome to the **D3 gallery**! Feel free to add links to your work! More examples are available on [bl.ocks.org/mbostock](http://bl.ocks.org/mbostock). If you want to share an example and don't have your own hosting, consider using [Gist](http://gist.github.com) and [bl.ocks.org](http://bl.ocks.org). If you want to share or view live examples try [runnable.com](http://runnable.com/d3.js) or [vida.io](https://vida.io/explore).
+A. Air Tidak Panas 
+B. Tekanan Air Kurang Kencang
+C. Tanky Bocor, Pipa Bocor
+D. Jasa Penurunan Unit/ Bongkar Pasang
+E. Jasa Penaikan Unit/ Bongkar Pasang
+F. Penggantian Sparepart,Element,Termorstat,1/2 Valve, Cek Valve Dll.
+G. Pemasangan Titik Air Panas/ Instalasi Pipa Air Panas & Air Dingin
+H. Service Berkala / Perawatan Solahart & Lain Sebagainya.
 
-## Visual Index
+Untuk keterangan lebih lanjut :
+Hubungi kami
+CV.Abadi Jaya Indonesia
+Telpon: +6221 8347 1491 / HP. +62812 8840 8887
+"Solusi Air Panas"
 
-<table>
-  <tr valign="top">
-    <td width="25%">Box Plots<br><a href="http://bl.ocks.org/mbostock/4061502"><img width="133" src="http://d3js.org/ex/box.png"></a></td>
-    <td width="25%">Bubble Chart<br><a href="http://bl.ocks.org/mbostock/4063269"><img width="133" src="http://d3js.org/ex/bubble.png"></a></td>
-    <td width="25%">Bullet Charts<br><a href="http://bl.ocks.org/mbostock/4061961"><img width="133" src="http://d3js.org/ex/bullet.png"></a></td>
-    <td width="25%">Calendar View<br><a href="http://bl.ocks.org/mbostock/4063318"><img width="133" src="http://d3js.org/ex/calendar.png"></a></td>
-  </tr>
-  <tr valign="top">
-    <td>Non-contiguous Cartogram<br><a href="http://bl.ocks.org/mbostock/4055908"><img width="133" src="http://d3js.org/ex/cartogram.png"></a></td>
-    <td>Chord Diagram<br><a href="http://bl.ocks.org/mbostock/4062006"><img width="133" src="http://d3js.org/ex/chord.png"></a></td>
-    <td>Dendrogram<br><a href="http://bl.ocks.org/mbostock/4063570"><img width="133" src="http://d3js.org/ex/cluster.png"></a></td>
-    <td>Force-Directed Graph<br><a href="http://bl.ocks.org/mbostock/4062045"><img width="133" src="http://d3js.org/ex/force.png"></a></td>
-  </tr>
-  <tr valign="top">
-    <td>Circle Packing<br><a href="http://bl.ocks.org/mbostock/4063530"><img width="133" src="http://d3js.org/ex/pack.png"></a></td>
-    <td>Population Pyramid<br><a href="http://bl.ocks.org/mbostock/4062085"><img width="133" src="http://d3js.org/ex/population.png"></a></td>
-    <td>Stacked Bars<br><a href="http://bl.ocks.org/mbostock/3943967"><img width="133" src="http://d3js.org/ex/stack.png"></a></td>
-    <td>Streamgraph<br><a href="http://bl.ocks.org/mbostock/4060954"><img width="133" src="http://d3js.org/ex/stream.png"></a></td>
-  </tr>
-  <tr valign="top">
-    <td>Sunburst<br><a href="http://bl.ocks.org/mbostock/4063423"><img width="133" src="http://d3js.org/ex/sunburst.png"></a></td>
-    <td>Node-Link Tree<br><a href="http://bl.ocks.org/mbostock/4063550"><img width="133" src="http://d3js.org/ex/tree.png"></a></td>
-    <td>Treemap<br><a href="http://bl.ocks.org/mbostock/4063582"><img width="133" src="http://d3js.org/ex/treemap.png"></a></td>
-    <td>Voronoi Diagram<br><a href="http://bl.ocks.org/mbostock/4060366"><img width="133" src="http://d3js.org/ex/voronoi.png"></a></td>
-  </tr>
-  <tr valign="top">
-    <td>Hierarchical Edge Bundling<br><a href="http://mbostock.github.com/d3/talk/20111116/bundle.html"><img width="133" src="http://d3js.org/ex/bundle.png"></a></td>
-    <td>Voronoi Diagram<br><a href="http://mbostock.github.com/d3/talk/20111116/airports-all.html"><img width="133" src="http://d3js.org/ex/airports-all.png"></a></td>
-    <td>Symbol Map<br><a href="http://mbostock.github.com/d3/talk/20111116/airports.html"><img width="133" src="http://d3js.org/ex/airports.png"></a></td>
-    <td>Parallel Coordinates<br><a href="http://mbostock.github.com/d3/talk/20111116/iris-parallel.html"><img width="133" src="http://d3js.org/ex/iris-parallel.png"></a></td>
-  </tr>
-  <tr valign="top">
-    <td>Scatterplot Matrix<br><a href="http://mbostock.github.com/d3/talk/20111116/iris-splom.html"><img width="133" src="http://d3js.org/ex/iris-splom.png"></a></td>
-    <td>Zoomable Pack Layout<br><a href="http://mbostock.github.com/d3/talk/20111116/pack-hierarchy.html"><img width="133" src="http://d3js.org/ex/pack-hierarchy.png"></a></td>
-    <td>Hierarchical Bars<br><a href="http://mbostock.github.com/d3/talk/20111116/bar-hierarchy.html"><img width="133" src="http://d3js.org/ex/bar-hierarchy.png"></a></td>
-    <td>Epicyclical Gears<br><a href="http://bl.ocks.org/mbostock/1353700"><img width="133" src="http://d3js.org/ex/gears.png"></a></td>
-  </tr>
-  <tr valign="top">
-    <td>Collision Detection<br><a href="http://mbostock.github.com/d3/talk/20111018/collision.html"><img width="133" src="http://d3js.org/ex/force-collision.png"></a></td>
-    <td>Collapsible Force Layout<br><a href="http://mbostock.github.com/d3/talk/20111116/force-collapsible.html"><img width="133" src="http://d3js.org/ex/force-collapsible.png"></a></td>
-    <td>Force-Directed States<br><a href="http://mbostock.github.com/d3/talk/20111018/force-states.html"><img width="133" src="http://d3js.org/ex/force-states.png"></a></td>
-    <td>Azimuthal Projections<br><a href="http://mbostock.github.com/d3/talk/20111018/azimuthal.html"><img width="133" src="http://d3js.org/ex/azimuthal.png"></a></td>
-  </tr>
-  <tr valign="top">
-    <td>Choropleth<br><a href="http://bl.ocks.org/mbostock/4060606"><img width="133" src="http://d3js.org/ex/choropleth.png"></a></td>
-    <td>Collapsible Tree Layout<br><a href="http://mbostock.github.com/d3/talk/20111018/tree.html"><img width="133" src="http://d3js.org/ex/tree-zoom.png"></a></td>
-    <td>Zoomable Treemap<br><a href="http://mbostock.github.com/d3/talk/20111018/treemap.html"><img width="133" src="http://d3js.org/ex/treemap-zoom.png"></a></td>
-    <td>Zoomable Partition Layout<br><a href="http://mbostock.github.com/d3/talk/20111018/partition.html"><img width="133" src="http://d3js.org/ex/partition-zoom.png"></a></td>
+
+
+
+
+
+
+
   </tr>
   <tr valign="top">
     <td>Zoomable Area Chart<br><a href="http://mbostock.github.com/d3/talk/20111018/area-gradient.html"><img width="133" src="http://d3js.org/ex/area-gradient.png"></a></td>
