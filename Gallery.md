@@ -343,6 +343,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
   </tr>
   <tr valign="top">
     <td>Linked Geographic and Tree Maps<br /><a href="http://sunsp.net/demo/GeogTreeMaps" target="_blank"><img width="133" src="http://sunsp.net/demo/GeogTreeMaps/geogtreemaps.gif" alt=""></a></td>
+    <td>Bi-directional Hierarchical Sankey<br><a href="http://bl.ocks.org/Neilos/584b9a5d44d5fe00f779"><img width="133" src="https://cdn.rawgit.com/Neilos/584b9a5d44d5fe00f779/raw/926618763c8bac76ed6b561fdd789f931c3089cd/thumbnail.gif"></a></td>
   </tr>
 </table>
 
@@ -616,6 +617,7 @@ Welcome to the **D3 gallery**! Feel free to add links to your work! More example
 * [I See Hue: How People Perceive Hues](http://iseehue.herokuapp.com/) - Petr Devaikin
 * [Max Katz Crowdfunding Campaign (Age and Gender)](http://petr-devaikin.github.io/katz/eng/) - Petr Devaikin
 * [Max Katz Crowdfunding Campaign Timeline](http://petr-devaikin.github.io/katz/eng/timeline/) - Petr Devaikin
+* [Visualizing Cash Flows](http://bl.ocks.org/Neilos/584b9a5d44d5fe00f779) - Neil Atkinson
 
 ### Collections
 
