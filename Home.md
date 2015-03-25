@@ -104,4 +104,3 @@ To run the tests, use:
 
     make test
 
-test
