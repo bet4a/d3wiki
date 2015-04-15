@@ -344,6 +344,8 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
   <tr valign="top">
     <td>Linked Geographic and Tree Maps<br /><a href="http://sunsp.net/demo/GeogTreeMaps" target="_blank"><img width="133" src="http://sunsp.net/demo/GeogTreeMaps/geogtreemaps.gif" alt=""></a></td>
     <td>Bi-directional Hierarchical Sankey<br><a href="http://bl.ocks.org/Neilos/584b9a5d44d5fe00f779"><img width="133" src="https://cdn.rawgit.com/Neilos/584b9a5d44d5fe00f779/raw/926618763c8bac76ed6b561fdd789f931c3089cd/thumbnail.gif"></a></td>
+    <td>Colorful Development: 2 Interactive Colorwheels + Zoomable World Map<br><a href="https://csaladenes.wordpress.com/2015/03/27/colorful-development-cartagena-datafest-2015/"><img width="133" src="https://csaladenes.files.wordpress.com/2015/03/clipboard015.png?w=133"></a></td>
+
   </tr>
 </table>
 
@@ -947,6 +949,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Élections départementales en Alsace : découvrez vos candidats] (http://www.rue89strasbourg.com/index.php/2015/02/03/politique/departementales-en-alsace-decouvrez-vos-candidats/) - Rue89 Strasbourg
 * [Religions of Romania visualized on colorwheels] (https://csaladenes.wordpress.com/2015/03/01/religions-of-romania-visualized-on-colorwheels/#more-474) - Denes Csala
 * [The global center of mass of higher education: university rankings mapped] (https://csaladenes.wordpress.com/2015/03/10/the-global-center-of-mass-of-higher-education-university-rankings-mapped) - Denes Csala
+* [Colorful Development: 2 Interactive Colorwheels + Zoomable World Map] (https://csaladenes.wordpress.com/2015/03/27/colorful-development-cartagena-datafest-2015/) - Denes Csala
 
 #### Misc Charts
 
