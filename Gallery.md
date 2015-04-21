@@ -338,7 +338,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
   <tr valign="top">
     <td>Russian Budget: 1937 to 1950<br /><a href="http://budgetapps.artzub.com/minfin/" target="_blank"><img width="133" src="http://habrastorage.org/files/125/a61/c1f/125a61c1fbad4517922b4ef673cf2ef2.gif" alt=""></a></td>
     <td>Liquid Fill Gauge<br /><a href="http://bl.ocks.org/brattonc/5e5ce9beee483220e2f6" target="_blank"><img width="133" src="https://gist.githubusercontent.com/brattonc/5e5ce9beee483220e2f6/raw/thumbnail.gif" alt=""></a></td>
-    <td>Interactive Bubble Menu<br /><a href="http://sunsp.net/demo/BubbleMenu" target="_blank"><img width="133" src="http://sunsp.net/demo/BubbleMenu/bubblemenu.gif" alt=""></a></td>    
+    <td>Interactive Bubble Menu<br /><a href="http://sunsp.net/demo/BubbleMenu" target="_blank"><img width="133" src="http://sunsp.net/demo/BubbleMenu/bubblemenu.gif" alt=""></a></td>
     <td>Global center of higher education: university rankings<br /><a href="https://csaladenes.wordpress.com/2015/03/10/the-global-center-of-mass-of-higher-education-university-rankings-mapped/" target="_blank"><img width="133" src="https://csaladenes.files.wordpress.com/2015/03/clipboard014.png?w=1000&h=553" alt=""></a></td>
   </tr>
   <tr valign="top">
@@ -445,16 +445,16 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
 * [Visualization of the distribution of Russian budget 2013](http://clearspending.artzub.com/) — ArtZub
 * [Interactive World Cup Visualization](http://rasenball.com/) - Mondula
 * [Government Sequester 2013](http://labs.enigma.io/shutdown2013/) - Enigma
-* [World Inequality Database on Education] (http://www.education-inequalities.org/) - UNESCO
-* [Are global CO2 emissions still rising?] (http://infographics.pbl.nl/website/globalco2/) - Allard Warrink and Jeroen Dolmans
-* [BLOSUM Substitution Matrices as a Dynamic Network (force layout)] (http://ahmetrasit.com/blosum/) - Ahmet R. Ozturk, Ankara
-* [50 Years of Change (map, matrix, and block bar chart)] (http://50yearsofchange.com/) - Erin Hamilton, Rashauna Mead, and Vanessa Knoppke-Wetzel, UW-Madison
-* [Hurricane #Sandy Twitter DataViz] (http://geo-odyssey.com/links/sandy/) - Chris Cantey, Caroline Rose, Morgan Jarocki, UW-Madison
-* [Distribution of Grant Awards in Fiscal Year 2013](http://www.visualizing.org/sprint/launch/50407), ([github](https://github.com/artzub/wbgds/tree/v23)), [global-development-sprint version 23](http://www.visualizing.org/sprint/global-development-sprint) - [Artem Zubkov] (https://github.com/artzub)
-* [Commuting Scales, Lausanne Campus commuters] (http://choros.ch/cs/) - Boris Beaude and Luc Guillemot
-* [Disk Space Visualization] (http://wheresmydiskspace.com/) - Lou Montulli
-* [Visualization of the Flask Source Code] (http://www.andreas-dewes.de/code_is_beautiful) - Andreas Dewes ([bl.ocks.org] (http://bl.ocks.org/adewes/4710330))
-* [Violence in Nepal] (http://nepal.icbl.org/data-ncbl-main) - Shirish Pandey
+* [World Inequality Database on Education](http://www.education-inequalities.org/) - UNESCO
+* [Are global CO2 emissions still rising?](http://infographics.pbl.nl/website/globalco2/) - Allard Warrink and Jeroen Dolmans
+* [BLOSUM Substitution Matrices as a Dynamic Network (force layout)](http://ahmetrasit.com/blosum/) - Ahmet R. Ozturk, Ankara
+* [50 Years of Change (map, matrix, and block bar chart)](http://50yearsofchange.com/) - Erin Hamilton, Rashauna Mead, and Vanessa Knoppke-Wetzel, UW-Madison
+* [Hurricane #Sandy Twitter DataViz](http://geo-odyssey.com/links/sandy/) - Chris Cantey, Caroline Rose, Morgan Jarocki, UW-Madison
+* [Distribution of Grant Awards in Fiscal Year 2013](http://www.visualizing.org/sprint/launch/50407), ([github](https://github.com/artzub/wbgds/tree/v23)), [global-development-sprint version 23](http://www.visualizing.org/sprint/global-development-sprint) - [Artem Zubkov](https://github.com/artzub)
+* [Commuting Scales, Lausanne Campus commuters](http://choros.ch/cs/) - Boris Beaude and Luc Guillemot
+* [Disk Space Visualization](http://wheresmydiskspace.com/) - Lou Montulli
+* [Visualization of the Flask Source Code](http://www.andreas-dewes.de/code_is_beautiful) - Andreas Dewes ([bl.ocks.org](http://bl.ocks.org/adewes/4710330))
+* [Violence in Nepal](http://nepal.icbl.org/data-ncbl-main) - Shirish Pandey
 * [Photography Stats Analysis (bottom of the page)](http://remiescola.fr/about/index2.html) - Remi Escola
 * [StockTwits Social Heatmap](http://stocktwits.com/signals/heatmap) - StockTwits
 * [Social web use in 2009](http://n79.org/infographics/asg1/) - Nikhil Bobb
@@ -509,9 +509,9 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
 * [eCommerce API Wheel for eBay](http://saranyan.github.com/commerce_wheel) - Saranyan Vigraham
 * [The business of Bond](http://007.lucklaboratories.com/)
 * [Home energy consumption](http://www.prcweb.co.uk/lab/energy) - Peter Cook
-* [Heatmap of gene expression with hierarchical clustering ](http://blog.nextgenetics.net/?e=44), [demo here] (http://blog.nextgenetics.net/demo/entry0044/) - Damian Kao
-* [Graph diagram of gene ontology] (http://blog.nextgenetics.net/?e=19), [demo here] (http://blog.nextgenetics.net/demo/entry0019/demo.html) - Damian Kao
-* [UMLS (Unified Medical Language System) Visualizer] (https://ncc.cchmc.org/prod/umls_visualizer/index.do)
+* [Heatmap of gene expression with hierarchical clustering ](http://blog.nextgenetics.net/?e=44), [demo here](http://blog.nextgenetics.net/demo/entry0044/) - Damian Kao
+* [Graph diagram of gene ontology](http://blog.nextgenetics.net/?e=19), [demo here](http://blog.nextgenetics.net/demo/entry0019/demo.html) - Damian Kao
+* [UMLS (Unified Medical Language System) Visualizer](https://ncc.cchmc.org/prod/umls_visualizer/index.do)
 * [University of Washington Departments](http://www.sorens.in/posts/2012-8-11-uw-courses) - Matthew Sorensen
 * [Baby Names in England & Wales](http://names.darkgreener.com) - Anna Powell-Smith
 * [Realtime webserver stats](http://meloncholy.com/blog/using-d3-for-realtime-webserver-stats/) - [demo](http://bits.meloncholy.com/mt-stats) - ([Github](https://github.com/meloncholy/mt-stats-viewer), [Github](https://github.com/meloncholy/mt-stats)) - Andrew Weeks
@@ -555,10 +555,10 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
 * [Mass Gun shootings in USA](http://massshootings.nandayadav.com/) - Nanda Yadav
 * [UK Rainfall 1910-2012](http://prcweb.co.uk/lab/rainfall) - Peter Cook
 * [Modal Logic Playground](http://rkirsling.github.com/modallogic/) - Ross Kirsling
-* [Collection of 9 dynamical systems examples] (http://sigsystext.com) - interactive examples found under educational material - Sean Summers
-* [Expected university tuition growth 2030] (http://rumachine.com/tuition/expectedgrowth.html) - Sean Summers
+* [Collection of 9 dynamical systems examples](http://sigsystext.com) - interactive examples found under educational material - Sean Summers
+* [Expected university tuition growth 2030](http://rumachine.com/tuition/expectedgrowth.html) - Sean Summers
 * [Standings Slopegraph - Slopegraph of weekly NHL standings for 2012-13 season](http://standings.laserdeathstehr.com/), ([Github](https://github.com/nstehr/NHL-Slopegraph)) - Nathan Stehr
-* [Amsterdam Economic Performance 1995-2011] (http://www.iconomical.com/customers/Amsterdam-EZ/release/) - Iconomical
+* [Amsterdam Economic Performance 1995-2011](http://www.iconomical.com/customers/Amsterdam-EZ/release/) - Iconomical
 * [Examination Results in Karnataka, India](http://sslc.klp.org.in) | Dashboard with maps - [Sajjad Anwar](http://twitter.com/geohacker)
 * [2002-2011 International Phone Call Traffic bar chart with time series](http://fcc.github.io/calltraffic/trafficbyyear.html)
 * [Influence Map: Women &amp; Leadership](http://traackr.com/women-leadership/) - Dane Lyons
@@ -592,20 +592,20 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
 * [Simple Schelling Model of Urban Segregation](http://helenjacksonanalytic.co.uk/schelling.html) - Helen Jackson
 * [Sensitivity Analysis of Renewable Technology Costs](http://helenjacksonanalytic.co.uk/sens_analysis.html) - Helen Jackson
 * [UK Electricity Supply Crunch](http://helenjacksonanalytic.co.uk/power.html) - Helen Jackson
-* [New Years Resolutions and Search Trends] (http://www.bytemuse.com/post/resolutions-and-search-trends/) - Chris Polis
-* [Geometric Proof of the Pythagorean theorem] (http://www.bytemuse.com/post/geometric-proof-of-the-pythagorean-theorem-in-d3-js/) - Chris Polis
-* [Top words and the words they frequently appear with in American Hip-Hop] (http://hiphop.laserdeathstehr.com/) - Nathan Stehr
-* [Sochi Winter Olympics Medals by Country and Sport] (http://www.bytemuse.com/post/sochi-winter-olympics-medals-by-country-sport/) - Chris Polis
+* [New Years Resolutions and Search Trends](http://www.bytemuse.com/post/resolutions-and-search-trends/) - Chris Polis
+* [Geometric Proof of the Pythagorean theorem](http://www.bytemuse.com/post/geometric-proof-of-the-pythagorean-theorem-in-d3-js/) - Chris Polis
+* [Top words and the words they frequently appear with in American Hip-Hop](http://hiphop.laserdeathstehr.com/) - Nathan Stehr
+* [Sochi Winter Olympics Medals by Country and Sport](http://www.bytemuse.com/post/sochi-winter-olympics-medals-by-country-sport/) - Chris Polis
 * [Process map and documentation using an interactive force layout](https://github.com/nylen/d3-process-map) - James Nylen
 * [Beijing Air Pollution Visualization](http://scottcheng.github.io/bj-air-vis/) - Scott Cheng
 * [China Historical Films Timeline](http://lcreation.fr/artnum/china_films_timeline.html) - Laurent C.
 * [Can we have a Pie  chart like this?](http://bl.ocks.org/anwargm/11145882) - Anwarhusen Malgave
 * [And like this? A Pie  chart with dofferent angle](http://bl.ocks.org/anwargm/11152574) - Anwarhusen Malgave
-* [DogeOS/SmartOS SMF browser] (http://www.dogeos.net/smfgraph/) - LI, Yu
-* [Members of the Lower House of the Parliament of India] (http://www.datafootprints.com/loksabha/) - Raj Verma
-* [Archive of polling data for Austria] (http://www.strategieanalysen.at/umfragen/) - Flooh Perlot
-* [Visualizing MBTA Data] (http://mbtaviz.github.io/) - Michael Barry and Brian Card
-* [Visualizing Joyce's 'Ulysses': "Sirens" as a Graphic Score] (http://y-li.me/x/sirens) - Emily Fuhrman
+* [DogeOS/SmartOS SMF browser](http://www.dogeos.net/smfgraph/) - LI, Yu
+* [Members of the Lower House of the Parliament of India](http://www.datafootprints.com/loksabha/) - Raj Verma
+* [Archive of polling data for Austria](http://www.strategieanalysen.at/umfragen/) - Flooh Perlot
+* [Visualizing MBTA Data](http://mbtaviz.github.io/) - Michael Barry and Brian Card
+* [Visualizing Joyce's 'Ulysses': "Sirens" as a Graphic Score](http://y-li.me/x/sirens) - Emily Fuhrman
 * [Visualizing film dialogue - 255 fuck in Pulp Fiction](http://graphoverflow.com/graphs/pulp-fiction.html) - Sarath Saleem
 * [US Health Expenditure Comparison Tool](http://cs.ucla.edu/~wuxu/visual_masters/), [Github](https://github.com/shawnhero/dataVis) — Shawn W
 * [Drug adverse events](http://googledrive.com/host/0BwcmXsFAhzhoOTdydHhoRktlOUU/app/#/) - Etienne Ramstein
@@ -614,7 +614,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
 * [Shrimp](http://ontoserver.csiro.au/shrimp) demonstrates a DAG Tree layout for browsing SNOMED CT - Michael Lawley, CSIRO
 * [Multi-line chart](http://bl.ocks.org/maithuy/5766374df8119e76969b) demonstrates the LendingClub.com's net annualized return of loans by vintage - Thuy Nguyen
 * [Circle Packing - Stories and other Interactive Animations](http://www.primordion.com/Xholon/gwt/XholonCirclePacking.html) - Ken Webb
-* [RGB-plot] (https://csaladenes.wordpress.com/2014/12/07/colorful-development-rgb-coded-multidimensional-hdi/) - Denes Csala
+* [RGB-plot](https://csaladenes.wordpress.com/2014/12/07/colorful-development-rgb-coded-multidimensional-hdi/) - Denes Csala
 * [nextflu: real-time tracking of influenza virus evolution](http://nextflu.org) - Trevor Bedford
 * [I See Hue: How People Perceive Hues](http://iseehue.herokuapp.com/) - Petr Devaikin
 * [Max Katz Crowdfunding Campaign (Age and Gender)](http://petr-devaikin.github.io/katz/eng/) - Petr Devaikin
@@ -628,7 +628,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
 #### The New York Times visualizations
 
 * [The Facebook Offering: How It Compares](http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html) - Jeremy Ashkenas et al.
-* [Four Ways to Slice Obama’s 2013 Budget Proposal] (http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html) - Shan Carter
+* [Four Ways to Slice Obama’s 2013 Budget Proposal](http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html) - Shan Carter
 * [At the Democratic Convention, the Words Being Used](http://www.nytimes.com/interactive/2012/09/04/us/politics/democratic-convention-words.html)
 * [How the Chicago Public School District Compares](http://www.nytimes.com/interactive/2012/09/14/us/how-the-chicago-public-school-district-compares.html)
 * [Drought and Deluge in the Lower 48](http://www.nytimes.com/interactive/2012/08/11/sunday-review/drought-history.html)
@@ -722,7 +722,7 @@ http://vallandingham.me/vis/
 
 #### Institute for Health Metrics and Evaluation
 http://www.healthmetricsandevaluation.org/tools/data-visualizations
-* [US Health Map] (http://www.healthmetricsandevaluation.org/tools/data-visualization/us-health-map)
+* [US Health Map](http://www.healthmetricsandevaluation.org/tools/data-visualization/us-health-map)
 * [GBD Compare](http://viz.healthmetricsandevaluation.org/gbd-compare/)
 * [Mortality Visualization](http://viz.healthmetricsandevaluation.org/mortality/)
 * [COD Visualization](http://viz.healthmetricsandevaluation.org/cod/)
@@ -738,7 +738,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 #### Peter Cook
 
 * [Who's Like Tatum?](http://charts.animateddata.co.uk/tatum/)
-* [UK Temperature 1910-2014] (http://charts.animateddata.co.uk/uktemp/)
+* [UK Temperature 1910-2014](http://charts.animateddata.co.uk/uktemp/)
 * [F1 Timeline](http://charts.animateddata.co.uk/f1/)
 * [Wimbledon 2013](http://charts.animateddata.co.uk/tennis/)
 * [What Makes Us Happy?](http://charts.animateddata.co.uk/whatmakesushappy/)
@@ -776,21 +776,21 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Small Multiples](http://bl.ocks.org/mbostock/1157787)
 * [[Sparklines|http://benjchristensen.com/2011/08/08/simple-sparkline-using-svg-path-and-d3-js/]]
 * [Interactive Line Graph](http://benjchristensen.com/2012/05/15/interactive-line-graph-using-d3-js/)
-* [Comprehensive Line Graph] (http://mpf.vis.ywng.cloudbees.net/)
+* [Comprehensive Line Graph](http://mpf.vis.ywng.cloudbees.net/)
 * [Dual scale line chart](http://benjchristensen.com/2012/05/02/line-graphs-using-d3-js/)
 * [Horizon Chart](http://bl.ocks.org/mbostock/1483226)
 * [Line Chart with tooltips](http://bl.ocks.org/mbostock/1629644)
 * [Stacked layout with time axis](http://bl.ocks.org/mbostock/1314483)
 * [Multiple Area Charts with D3.JS](http://tympanus.net/codrops/2012/08/29/multiple-area-charts-with-d3-js/)
 * [Multiple time-series with object constancy](http://bl.ocks.org/mbostock/4175202) - Nikhil Sonnad
-* [Overlapped distribution Area chart] (http://bl.ocks.org/nswamy14/083a1e3181c81428f817) - Narayana Swamy
+* [Overlapped distribution Area chart](http://bl.ocks.org/nswamy14/083a1e3181c81428f817) - Narayana Swamy
 
 #### Pie Chart
 
 * [Reusable Pie Charts](https://github.com/gajus/pie-chart) ([demo](https://dev.anuary.com/858b33b7-bd66-507b-a9f1-533e4de79ba3/))
 * [Pie Multiples](http://bl.ocks.org/mbostock/1305111) / [Pie Multiples with Nesting](http://bl.ocks.org/mbostock/1305337)
 * [Pie Chart Updating (Part 1)](http://bl.ocks.org/mbostock/1346395) [(Part 2)](http://bl.ocks.org/mbostock/1346410)
-* [Hierarchical Pie Chart] (http://bl.ocks.org/4710330/94a7c0aeb6f09d681dbfdd0e5150578e4935c6ae) - [Andreas Dewes](http://www.andreas-dewes.de/code_is_beautiful)
+* [Hierarchical Pie Chart](http://bl.ocks.org/4710330/94a7c0aeb6f09d681dbfdd0e5150578e4935c6ae) - [Andreas Dewes](http://www.andreas-dewes.de/code_is_beautiful)
 
 #### Scatterplot and Bubble chart
 
@@ -852,7 +852,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Scatterplot with CSS Sprites and Interaction](https://www.comparacaodefundos.com/blog/como-ganhar-a-copa/#x-axis-menu)
 * [Clustering a Force layout with a Quadtree](http://bl.ocks.org/4ndr01d3/2686646672a92aa89a0e)
 * [Scales in our Solar System](http://www.visualcinnamon.com/2015/01/scales-in-our-solar-system-enormity-of.html)
-* [Connectome explorer for the "brain" of C. elegans] (https://elegans.herokuapp.com)
+* [Connectome explorer for the "brain" of C. elegans](https://elegans.herokuapp.com)
 
 #### Tree
 
@@ -885,7 +885,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 
 * [Football passes](http://www.tips-for-excel.com/MCFC/Passes.html)
 * [Selecties EK 2012](http://www.nu.nl/files/datajournalistiek/ek/ek2012.htm#.UKJ5yuOe8ww)
-* [Remittance flows] (http://www.torre.nl/remittances/)
+* [Remittance flows](http://www.torre.nl/remittances/)
 * [Dependencies Between Classes](http://bl.ocks.org/mbostock/1046712)
 * [Uber Rides by Neighborhood](http://bost.ocks.org/mike/uberdata/)
 * [Updating data](http://exposedata.com/tutorial/chord/latest.html)
@@ -893,11 +893,11 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Fade on Hover](http://livecoding.io/3419309)
 * [Fade on Hover](http://bl.ocks.org/mbostock/4062006)
 * [Fade on Hover](http://www.javainc.com/projects/dex/examples/vis/d3/presidents/presidentPartyChord.html)
-* [Static] (http://bl.ocks.org/1046712)
-* [Static] (http://bl.ocks.org/1308257)
+* [Static](http://bl.ocks.org/1046712)
+* [Static](http://bl.ocks.org/1308257)
 * [Chord Layout Transitions](http://fleetinbeing.net/d3e/chord.html)
-* [Co-Authors Chords] (http://www.rjbaxley.com/p/publications.html)
-* [Visualizing Overlapping Sets] (http://radialsets.org) - [Bernd Landauer] (http://syrenio.com/)
+* [Co-Authors Chords](http://www.rjbaxley.com/p/publications.html)
+* [Visualizing Overlapping Sets](http://radialsets.org) - [Bernd Landauer](http://syrenio.com/)
 * [Visualizing Package Dependencies](http://redotheweb.com/DependencyWheel/)
 * [Switching behavior between phone brands of the Dutch ](http://www.visualcinnamon.com/2014/02/switching-behavior-between-phone-brands.html) and [Code](http://bl.ocks.org/nbremer/raw/6540350/)
 * [BeerViz - Visualizing Beers and their relations](http://seekshreyas.com/beerviz/)
@@ -918,7 +918,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Non-Contiguous Cartogram](http://bl.ocks.org/mbostock/4055908)
 * [Reusable non-contiguous cartogram with force layout](http://bl.ocks.org/dgerber/6185526)
 * [Flows of refugees between the world countries in 2008](http://bl.ocks.org/mbostock/2209220)
-* [Interactive azimuthal projection simulating a 3D earth with stars] (http://marcneuwirth.com/blog/2012/06/24/creating-the-earth-with-d3-js/)
+* [Interactive azimuthal projection simulating a 3D earth with stars](http://marcneuwirth.com/blog/2012/06/24/creating-the-earth-with-d3-js/)
 * [Calculating quadtree bounding boxes, veronoi polygons, delaunay polygons and displaying them in leaflet](http://calvinmetcalf.github.com/leaflet.demos/)
 * [Projection Transitions](http://bl.ocks.org/mbostock/3711652) and [Comparing Map Projections](http://bl.ocks.org/mbostock/3711245)
 * [Composite Map Projection](http://cartography.oregonstate.edu/demos/CompositeMapProjection/)
@@ -933,7 +933,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [India population](http://bl.ocks.org/mbostock/4526201) - Liji Jinaraj
 * [US Senate and House Legislator Terms](http://indic8r.com/us/career-politicians)
 * [Hexbins in Leaflet](http://bl.ocks.org/mbostock/5669650)
-* [Interactive svg map using D3 circles and transitions] (http://www.incont.ro/infografice/judet-bogat-judet-sarac-unde-se-castiga-cei-mai-multi-bani-in-romania-si-in-ce-domeniu.html) - Vlad Moldoveanu
+* [Interactive svg map using D3 circles and transitions](http://www.incont.ro/infografice/judet-bogat-judet-sarac-unde-se-castiga-cei-mai-multi-bani-in-romania-si-in-ce-domeniu.html) - Vlad Moldoveanu
 * [ZipDecode](http://www.somebits.com/zipdecode-js/) - Nelson Minar (after Ben Fry)
 * [Interactive choropleth: San Francisco voter turnout and the 1989 earthquake](http://www.polsci.ucsb.edu/faculty/glasgow/research/d3/sfturnout.html) - Garrett Glasgow
 * [Visualizing transit data](http://busrac.es)
@@ -947,11 +947,11 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Visualization of the Persecution of the Baha'i community in Iran using d3.js, leaflet and Crossfilter](http://threatwiki.thesentinelproject.org/iranvisualization) - Jérôme Gagnon-Voyer
 * [Live Intel Map for EVE Online]
 (https://github.com/jeremieroy/EVELiveIntel) - Jérémie Roy
-* [RGB-plot and Human Development Index Map] (https://csaladenes.wordpress.com/2015/01/09/colorful-development-dynamic-graphs/) - Denes Csala
-* [Élections départementales en Alsace : découvrez vos candidats] (http://www.rue89strasbourg.com/index.php/2015/02/03/politique/departementales-en-alsace-decouvrez-vos-candidats/) - Rue89 Strasbourg
-* [Religions of Romania visualized on colorwheels] (https://csaladenes.wordpress.com/2015/03/01/religions-of-romania-visualized-on-colorwheels/#more-474) - Denes Csala
-* [The global center of mass of higher education: university rankings mapped] (https://csaladenes.wordpress.com/2015/03/10/the-global-center-of-mass-of-higher-education-university-rankings-mapped) - Denes Csala
-* [Colorful Development: 2 Interactive Colorwheels + Zoomable World Map] (https://csaladenes.wordpress.com/2015/03/27/colorful-development-cartagena-datafest-2015/) - Denes Csala
+* [RGB-plot and Human Development Index Map](https://csaladenes.wordpress.com/2015/01/09/colorful-development-dynamic-graphs/) - Denes Csala
+* [Élections départementales en Alsace : découvrez vos candidats](http://www.rue89strasbourg.com/index.php/2015/02/03/politique/departementales-en-alsace-decouvrez-vos-candidats/) - Rue89 Strasbourg
+* [Religions of Romania visualized on colorwheels](https://csaladenes.wordpress.com/2015/03/01/religions-of-romania-visualized-on-colorwheels/#more-474) - Denes Csala
+* [The global center of mass of higher education: university rankings mapped](https://csaladenes.wordpress.com/2015/03/10/the-global-center-of-mass-of-higher-education-university-rankings-mapped) - Denes Csala
+* [Colorful Development: 2 Interactive Colorwheels + Zoomable World Map](https://csaladenes.wordpress.com/2015/03/27/colorful-development-cartagena-datafest-2015/) - Denes Csala
 
 #### Misc Charts
 
@@ -1013,7 +1013,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Semi-manual force layout of cablegate reference graphs](http://bl.ocks.org/mbostock/4589092)
 * [Digital Clock By Virtual Force](http://jklabz.com/d3/digital_clock/digital_clock.html)
 * [Radar Chart or Spider Chart](http://www.visualcinnamon.com/2013/09/making-d3-radar-chart-look-bit-better.html)
-* [Battle Statistics from the MMO game World of Tanks] (http://www.polsci.ucsb.edu/faculty/glasgow/research/d3/WoTkillratio.html) - Garrett Glasgow
+* [Battle Statistics from the MMO game World of Tanks](http://www.polsci.ucsb.edu/faculty/glasgow/research/d3/WoTkillratio.html) - Garrett Glasgow
 * [Tendulkar's Rise and Fall](https://my.infocaptor.com/dash/mt.php?pa=tendulkar_5425757cbb623)
 * [Dijkstra algorithm solves the single-source shortest path problem](http://bl.ocks.org/lafarer/7d8ecbf7b06b2ef0f72b)  - Eric Lafargue
 
@@ -1054,7 +1054,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Simple HTML data tables](http://jsfiddle.net/7WQjr/)
 * [Responsive SVG resizing without re-rendering](http://jsfiddle.net/shawnbot/BJLe6/)
 * [Automatic floating labels using d3 force-layout](http://bl.ocks.org/mbostock/1691430)
-* [Long Scroll] (http://bl.ocks.org/3689677)
+* [Long Scroll](http://bl.ocks.org/3689677)
 * [Custom Line Interpolation](http://bl.ocks.org/mbostock/3310323)
 * [Export to SVG/PNG/PDF server-side using Perl](http://d3export.cancan.cshl.edu/)
 * [Constraint relaxation 1](http://bl.ocks.org/mbostock/4053096)[and 2](http://bl.ocks.org/mbostock/4054247)
@@ -1082,7 +1082,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Viewing OpenLearn Mindmaps Using d3.js](http://blog.ouseful.info/2012/05/11/viewing-openlearn-mindmaps-using-d3-js/)
 * [Splay Tree animation with dart, d3, and local storage](https://bitbucket.org/davidagraf/dartsplaytree/src)
 * [Sankey diagrams from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/sankey) - Bruce McPherson
-* [Plotsk: A python/coffeescript/d3.js-based library for plotting data in a web browser] (https://github.com/davidcox/plotsk)
+* [Plotsk: A python/coffeescript/d3.js-based library for plotting data in a web browser](https://github.com/davidcox/plotsk)
 * [Data visualization with D3.js and python](http://blog.nextgenetics.net/?e=7)
 * [d3.js force diagrams straight from Excel](http://ramblings.mcpher.com/Home/excelquirks/d3/anyforce) - Bruce McPherson
 * [Instant interactive visualization with d3 + ggplot2](http://blog.echen.me/2012/03/05/instant-interactive-visualization-with-d3-and-ggplot2/)
@@ -1095,7 +1095,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [SVG to Canvas](http://bl.ocks.org/mbostock/2294676)
 * [d3 rendered with RaphaelJS for IE Compatibility](https://github.com/mhemesath/r2d3/)
 * [d34raphael](http://webmonarch.github.com/d34raphael/usage.html)
-* [D3 graphics in a Pergola SVG UI] (http://www.dotuscomus.com/pergola/pergola_1.4.0/ExamplesHTML/D3/multiD3.html)
+* [D3 graphics in a Pergola SVG UI](http://www.dotuscomus.com/pergola/pergola_1.4.0/ExamplesHTML/D3/multiD3.html)
 * [Visualising ConAir Data With Cubism.js (Arduino, TempoDB, Sinatra)](http://sammyd.github.com/blog/2012/09/16/visualising-conair-data-with-cubism-dot-js/)
 * [Render Geographic Information in 3D With Three.js and D3.js](http://css.dzone.com/articles/render-geographic-information)
 * [D3 heatmap using Backbone.js and CoffeeScript](http://bl.ocks.org/mbostock/2759731) - Nacho Caballero
@@ -1110,7 +1110,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Force directed node focus generated from Excel](http://ramblings.mcpher.com/Home/excelquirks/gassites/d3nodefocus) - Bruce McPherson
 * [US Airline performance bigdata direct from Google Fusion](http://ramblings.mcpher.com/Home/excelquirks/d3/flights) - Bruce McPherson
 * [Force directed site concept browser](http://ramblings.mcpher.com/Home/excelquirks/gassites/d3-concept-browser) - Bruce McPherson
-* [Accessing the Quandl database aggregator with D3] (https://csaladenes.wordpress.com/2015/02/24/quandl-nvd3-interactive-data-plotter/) - Denes Csala
+* [Accessing the Quandl database aggregator with D3](https://csaladenes.wordpress.com/2015/02/24/quandl-nvd3-interactive-data-plotter/) - Denes Csala
 
 #### Online Editors
 
@@ -1121,7 +1121,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [D3.js playground](http://phrogz.net/JS/d3-playground/#BlankDefault)
 * [A CoffeeScript console for d3.js visualization](http://fleetinbeing.net/beans/d3)
 * [CSSdeck: Repulsion example](http://cssdeck.com/labs/d3-repulsive)
-* [8x8 Matrix Designer](http://gurgleapps.com/tools/matrix)  
+* [8x8 Matrix Designer](http://gurgleapps.com/tools/matrix)
 
 #### Products
 * [InfoCaptor: Tableau like Drag and Drop D3 Chart Builder](http://www.infocaptor.com)
