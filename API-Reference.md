@@ -80,7 +80,7 @@ See one of:
 * [transition.delay](Transitions#delay) - specify per-element delay in milliseconds.
 * [transition.duration](Transitions#duration) - specify per-element duration in milliseconds.
 * [transition.each](Transitions#each) - add a listener for transition end events.
-* [transition.ease](Transitions#ease) - specify transition easing function..
+* [transition.ease](Transitions#ease) - specify transition easing function.
 * [transition.empty](Transitions#empty) - returns true if the transition is empty.
 * [transition.filter](Transitions#filter) - filter a transition based on data.
 * [transition.node](Transitions#node) - returns the first node in the transition.
