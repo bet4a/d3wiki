@@ -6,6 +6,7 @@
 * [Examples Gallery](/mbostock/d3/wiki/Gallery)
 * [Tutorials and Talks](/mbostock/d3/wiki/Tutorials)
 * [API Reference](/mbostock/d3/wiki/API-Reference)
+* [API 中文手册](https://github.com/mbostock/d3/wiki/API--%E4%B8%AD%E6%96%87%E6%89%8B%E5%86%8C)
 * [Release Notes](/mbostock/d3/releases)
 * [Plugins](/d3/d3-plugins)
 * [d3.js on Stack Overflow](http://stackoverflow.com/questions/tagged/d3.js)
