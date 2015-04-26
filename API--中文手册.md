@@ -206,28 +206,28 @@ D3 API总览
 * [locale.numberFormat](Localization#locale_numberFormat) - create a new number formatter.
 * [locale.timeFormat](Localization#locale_timeFormat) - create a new time formatter / parser.
 
-### [Colors](Colors)
+### [颜色](颜色)
 
-* [d3.hcl](Colors#d3_hcl) - specify a color in HCL space.
-* [d3.hsl](Colors#d3_hsl) - specify a color in HSL space.
-* [d3.lab](Colors#d3_lab) - specify a color in L\*a\*b\* space.
-* [d3.rgb](Colors#d3_rgb) - specify a color in RGB space.
-* [hcl.brighter](Colors#hcl_brighter) - increase lightness by some exponential factor (gamma).
-* [hcl.darker](Colors#hcl_darker) - decrease lightness by some exponential factor (gamma).
-* [hcl.rgb](Colors#hcl_rgb) - convert from HCL to RGB.
-* [hcl.toString](Colors#hcl_toString) - convert an HCL color to a string.
-* [hsl.brighter](Colors#hsl_brighter) - increase lightness by some exponential factor (gamma).
-* [hsl.darker](Colors#hsl_darker) - decrease lightness by some exponential factor (gamma).
-* [hsl.rgb](Colors#hsl_rgb) - convert from HSL to RGB.
-* [hsl.toString](Colors#hsl_toString) - convert an HSL color to a string.
-* [lab.brighter](Colors#lab_brighter) - increase lightness by some exponential factor (gamma).
-* [lab.darker](Colors#lab_darker) - decrease lightness by some exponential factor (gamma).
-* [lab.rgb](Colors#lab_rgb) - convert from L\*a\*b\* to RGB.
-* [lab.toString](Colors#lab_toString) - convert a L\*a\*b\* color to a string.
-* [rgb.brighter](Colors#rgb_brighter) - increase RGB channels by some exponential factor (gamma).
-* [rgb.darker](Colors#rgb_darker) - decrease RGB channels by some exponential factor (gamma).
-* [rgb.hsl](Colors#rgb_hsl) - convert from RGB to HSL.
-* [rgb.toString](Colors#rgb_toString) - convert an RGB color to a string.
+* [d3.hcl](Colors#d3_hcl) - 指定一种颜色，创建一个HCL颜色对象。
+* [d3.hsl](Colors#d3_hsl) - 指定一种颜色，创建一个HSL颜色对象。
+* [d3.lab](Colors#d3_lab) - 指定一种颜色，创建一个L\*a\*b\*颜色对象。
+* [d3.rgb](Colors#d3_rgb) - 指定一种颜色，创建一个RGB颜色对象。
+* [hcl.brighter](Colors#hcl_brighter) - 增强颜色的亮度，变化幅度由参数决定。
+* [hcl.darker](Colors#hcl_darker) - 减弱颜色的亮度，变化幅度由参数决定。
+* [hcl.rgb](Colors#hcl_rgb) - 将HCL颜色对象转化成RGB颜色对象。
+* [hcl.toString](Colors#hcl_toString) - HCL颜色对象转化为字符串格式。
+* [hsl.brighter](Colors#hsl_brighter) - 增强颜色的亮度，变化幅度由参数决定。
+* [hsl.darker](Colors#hsl_darker) - 减弱颜色的亮度，变化幅度由参数决定。
+* [hsl.rgb](Colors#hsl_rgb) - 将HSL颜色对象转化成RGB颜色对象。
+* [hsl.toString](Colors#hsl_toString) - 将HSL颜色对象转化为字符串格式。
+* [lab.brighter](Colors#lab_brighter) - 增强颜色的亮度，变化幅度由参数决定。
+* [lab.darker](Colors#lab_darker) - 减弱颜色的亮度，变化幅度由参数决定。
+* [lab.rgb](Colors#lab_rgb) - 将L\*a\*b\*颜色对象转化成RGB颜色对象。
+* [lab.toString](Colors#lab_toString) - 将L\*a\*b\*颜色对象转化为字符串格式。
+* [rgb.brighter](Colors#rgb_brighter) - 增强颜色的亮度，变化幅度由参数决定。
+* [rgb.darker](Colors#rgb_darker) - 减弱颜色的亮度，变化幅度由参数决定。
+* [rgb.hsl](Colors#rgb_hsl) - 将RGB颜色对象转化成HSL颜色对象。
+* [rgb.toString](Colors#rgb_toString) - 将RGB颜色对象转化为字符串格式。
 
 ### [Namespaces](Namespaces)
 
