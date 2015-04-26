@@ -234,13 +234,13 @@ D3 API总览
 * [d3.ns.prefix](Namespaces#prefix) - access or extend known XML namespaces.
 * [d3.ns.qualify](Namespaces#qualify) - qualify a prefixed name, such as "xlink:href".
 
-### [Internals](Internals)
+### [内部](内部)
 
-* [d3.dispatch](Internals#d3_dispatch) - create a custom event dispatcher.
-* [d3.functor](Internals#functor) - create a function that returns a constant.
-* [d3.rebind](Internals#rebind) - rebind an inherited getter/setter method to a subclass.
-* [dispatch.on](Internals#dispatch_on) - register or unregister an event listener.
-* [dispatch.type](Internals#_dispatch) - dispatch an event to registered listeners.
+* [d3.dispatch](Internals#d3_dispatch) - 创建一个定制的事件分发器。
+* [d3.functor](Internals#functor) - 创建一个函数并返回一个常量。
+* [d3.rebind](Internals#rebind) - 重新绑定get/set方法到一个子类上。
+* [dispatch.on](Internals#dispatch_on) - 注册或者解除注册事件监听器。
+* [dispatch.type](Internals#_dispatch) - 为指定的监听器分发事件。
 
 ## [d3.scale (Scales)](Scales)
 
