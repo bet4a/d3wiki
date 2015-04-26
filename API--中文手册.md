@@ -20,9 +20,9 @@ D3 API总览
 * [可缩放矢量图形](#d3svg-svg) - 提供用于创建可伸缩矢量图形的实用工具。
 * [时间](#d3time-time) - 解析或格式化时间，计算日历的时间间隔等。
 
-## [d3 (core)](核心函数)
+## [d3 (核心)](核心函数)
 
-### [Selections](选择器)
+### [选择](选择器)
 
 * [d3.event](Selections#d3_event) - 访问用于交互的当前用户事件。
 * [d3.mouse](Selections#d3_mouse) - 获取相对于指定容器的鼠标位置。
@@ -58,7 +58,7 @@ D3 API总览
 * [selection.text](Selections#text) - 取得或设置文本内容。
 * [selection.transition](Selections#transition) - 在选中元素上开启过渡。
 
-### [Transitions](过渡)
+### [过渡](过渡)
 
 * [d3.ease](Transitions#d3_ease) - 自定义过渡时间。
 * [d3.timer](Transitions#d3_timer) - 开启一段自定义动画定时器。
@@ -99,7 +99,7 @@ D3 API总览
 * [transition.transition](Transitions#transition) - 当这次过渡结束时，在相同的元素上开启另一段过渡。
 * [transition.tween](Transitions#tween) - 指定一个自定义的补间操作符作为过渡的一部分运行。
 
-### [Working with Arrays](Arrays)
+### [数组](数组)
 
 * [d3.ascending](Arrays#d3_ascending) - 为排序比较两个值。
 * [d3.bisectLeft](Arrays#d3_bisectLeft) - 在排序数组中检索值。
@@ -153,15 +153,15 @@ D3 API总览
 * [set.size](Arrays#set_size) - 返回集合中的元素数量。
 * [set.values](Arrays#set_values) - 返回集合中的值数组。
 
-### [Math](Math)
+### [数学](数学)
 
-* [d3.random.bates](Math#random_bates) - generate a random number with a Bates distribution.
-* [d3.random.irwinHall](Math#random_irwinHall) - generate a random number with an Irwin–Hall distribution.
-* [d3.random.logNormal](Math#random_logNormal) - generate a random number with a log-normal distribution.
-* [d3.random.normal](Math#random_normal) - generate a random number with a normal distribution.
-* [d3.transform](Math#d3_transform) - compute the standard form of a 2D matrix transform.
+* [d3.random.bates](Math#random_bates) - 生成具有贝茨分布规律的随机数。
+* [d3.random.irwinHall](Math#random_irwinHall) - 生成具有Irwin–Hall分布规律的随机数。
+* [d3.random.logNormal](Math#random_logNormal) - 生成具有对数正态分布规律的随机数。
+* [d3.random.normal](Math#random_normal) - 生成具有正态分布规律的随机数。
+* [d3.transform](Math#d3_transform) - 计算2D放射变换的标准形式。
 
-### [Loading External Resources](Requests)
+### [加载外部数据](请求)
 
 * [d3.csv](CSV) - request a comma-separated values (CSV) file.
 * [d3.html](Requests#d3_html) - request an HTML document fragment.
