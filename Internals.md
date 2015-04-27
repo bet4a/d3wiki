@@ -50,7 +50,7 @@ If an event listener was already registered for the same type, the existing list
 
 If *listener* is not specified, returns the currently-assigned listener for the specified *type*, if any.
 
-<a name="dispatch" href="Internals#dispatch">#</a> dispatch.<b>type</b>(<i>arguments…</i>)
+<a name="dispatch" href="Internals#dispatch">#</a> dispatch.<b>*type*</b>(<i>arguments…</i>)
 
 The *type* method (such as `dispatch.start` in the above example) notifies each registered listener, passing the listener the specified *arguments*. The `this` context will be used as the context of the registered listeners. For example, to invoke all registered listeners with the context *foo* and the argument *bar*, say dispatch.call( *foo*, *bar* ). Thus, you can pass whatever arguments you want to the listeners; most commonly, you might create an object that represents the event, or pass along the current datum ( *d* ) and index ( *i* ). You can also control the "this" context of the listeners using [call](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/Call) or [apply](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/Apply).
 
