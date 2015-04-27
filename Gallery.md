@@ -622,6 +622,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
 * [Visualizing Cash Flows](http://bl.ocks.org/Neilos/584b9a5d44d5fe00f779) - Neil Atkinson
 * [BridgeViz](http://home.deib.polimi.it/saidinejad/VizDemo/index.html) - [Diego Bogni](https://github.com/diego89b) and [Hassan Saidinejad](http://home.deib.polimi.it/saidinejad/)
 * [NCAR Ensemble Skew-T Viewer](http://www.image.ucar.edu/wrfdart/ensemble/sounding.php) - Ryan Sobash
+* [Pazzla: Photo Mosaics of Instagram Pictures](http://pazzla.qoollo.com/) - Petr Devaikin
 
 ### Collections
 
