@@ -347,6 +347,9 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <td>2 Interactive Colorwheels + Zoomable World Map<br><a href="https://csaladenes.wordpress.com/2015/03/27/colorful-development-cartagena-datafest-2015/"><img width="133" src="https://csaladenes.files.wordpress.com/2015/03/clipboard015.png?w=133"></a></td>
     <td>Radial Boxplot<br><a href="http://bl.ocks.org/davidwclin/ad5d13db260caeffe9b3"><img width="133" src="http://bl.ocks.org/davidwclin/raw/ad5d13db260caeffe9b3/thumbnail.png"></a></td>
   </tr>
+  <tr valign="top">
+    <td>Pazzla: Mosaics of Instagram Pictures<br /><a href="http://pazzla.qoollo.com" target="_blank"><img width="133" src="http://petr-devaikin.github.io/img/pazzla.jpg" alt="Pazzla: Mosaics of Instagram Pictures"></a></td>
+  </tr>
 </table>
 
 ## Basic Charts
