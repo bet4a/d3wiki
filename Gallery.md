@@ -956,6 +956,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Religions of Romania visualized on colorwheels](https://csaladenes.wordpress.com/2015/03/01/religions-of-romania-visualized-on-colorwheels/#more-474) - Denes Csala
 * [The global center of mass of higher education: university rankings mapped](https://csaladenes.wordpress.com/2015/03/10/the-global-center-of-mass-of-higher-education-university-rankings-mapped) - Denes Csala
 * [Colorful Development: 2 Interactive Colorwheels + Zoomable World Map](https://csaladenes.wordpress.com/2015/03/27/colorful-development-cartagena-datafest-2015/) - Denes Csala
+* [Access to Water Supply and Sanitation (JMP WHO/UNICEF) - Animated/Map+Chart](http://braimbault.github.io/d3_WSS_explore/) - Bruno Raimbault
 
 #### Misc Charts
 
