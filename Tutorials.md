@@ -84,6 +84,7 @@ Please feel free to add links to your work!
 * [OUR D3.JS(Chinese)](http://www.ourd3js.com/wordpress/)
 * [Peter Cook](http://animateddata.co.uk/articles/)
 * [PubNub](http://www.pubnub.com/blog/tag/d3-js/)
+* [infographics.tw](http://blog.infographics.tw/tag/d3js/)
 
 ## Books
 
