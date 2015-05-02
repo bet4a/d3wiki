@@ -161,23 +161,23 @@ D3 API总览
 * [d3.random.normal](Math#random_normal) - 生成具有正态分布规律的随机数。
 * [d3.transform](Math#d3_transform) - 计算2D放射变换的标准形式。
 
-### [加载外部数据](请求)
+### [请求](请求)
 
-* [d3.csv](CSV) - request a comma-separated values (CSV) file.
-* [d3.html](Requests#d3_html) - request an HTML document fragment.
-* [d3.json](Requests#d3_json) - request a JSON blob.
-* [d3.text](Requests#d3_text) - request a text file.
-* [d3.tsv](CSV#tsv) - request a tab-separated values (TSV) file.
-* [d3.xhr](Requests#d3_xhr) - request a resource using XMLHttpRequest.
-* [d3.xml](Requests#d3_xml) - request an XML document fragment.
-* [xhr.abort](Requests#abort) - abort an outstanding request.
-* [xhr.get](Requests#get) - issue a GET request.
-* [xhr.header](Requests#header) - set a request header.
-* [xhr.mimeType](Requests#mimeType) - set the Accept request header and override the response MIME type.
-* [xhr.on](Requests#on) - add an event listener for "progress", "load" or "error" events.
-* [xhr.post](Requests#post) - issue a POST request.
-* [xhr.response](Requests#response) - set a response mapping function.
-* [xhr.send](Requests#send) - issue a request with the specified method and data.
+* [d3.csv](CSV) - 请求一个CSV（逗号分隔值）的文件。
+* [d3.html](Requests#d3_html) - 请求一个HTML文档片段。
+* [d3.json](Requests#d3_json) - 请求一个JSON对象。
+* [d3.text](Requests#d3_text) - 请求一个text文件。
+* [d3.tsv](CSV#tsv) - 请求一个TSV（制表符分隔值）的文件。
+* [d3.xhr](Requests#d3_xhr) - 使用XMLHttpRequest请求一个资源。
+* [d3.xml](Requests#d3_xml) - 请求一个XML文档片段。
+* [xhr.abort](Requests#abort) - 终止未完成的请求。
+* [xhr.get](Requests#get) - 发送一个GET请求。
+* [xhr.header](Requests#header) - 设置一个请求头。
+* [xhr.mimeType](Requests#mimeType) - 设置一个接受请求头并覆盖响应的MIME类型。
+* [xhr.on](Requests#on) - 为“progress”，“load”或“error”事件添加一个事件监听器。
+* [xhr.post](Requests#post) - 发送一个POST请求。
+* [xhr.response](Requests#response) - 设置一个响应映射函数。
+* [xhr.send](Requests#send) - 使用指定的数据和函数发送一个请求。
 
 ### [String Formatting](Formatting)
 
