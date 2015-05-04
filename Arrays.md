@@ -38,7 +38,7 @@ Returns -1 if *a* is less than *b*, or 1 if *a* is greater than *b*, or 0. This 
 
 ```js
 function ascending(a, b) {
-  return a < b ? -1 : a > b ? 1 : a >= b ? 0 : NaN;
+  return a < b ? -1 : a > b ? 1 : a = b ? 0 : NaN;
 }
 ```
 
