@@ -105,6 +105,7 @@ Please feel free to add links to your work!
 
 ## Talks and Videos
 
+* [Introduction to D3](https://www.youtube.com/watch?v=8jvoTV54nXw)<br>Curran Kelleher, Bay Area D3 Meetup, April 2015
 * [Free tagtree screencast - thinking with joins](https://www.tagtree.tv/d3-episode2-thinking-with-joins?share_code=unloveable-peanut)
 <br>August 2014
 * [For Example](https://vimeo.com/channels/544709/69448223) [(Write-up)](http://bost.ocks.org/mike/example/) <br>Eyeo Festival, June 2013.
