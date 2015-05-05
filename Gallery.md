@@ -350,7 +350,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
   <tr valign="top">
     <td>Pazzla: Mosaics of Instagram Pictures<br /><a href="http://pazzla.qoollo.com" target="_blank"><img width="133" src="http://petr-devaikin.github.io/img/pazzla.jpg" alt="Pazzla: Mosaics of Instagram Pictures"></a></td>
 <td>Community Pop-Culture References Heatmap<br /><a href="http://communitypoprefs.com/" target="_blank"><img width="133" src="http://i.imgur.com/t4Df6VD.jpg" alt="Community Pop-Culture References Heatmap"></a></td>
-    <td>Top baby names bump chart<br><a href="http://www.visualcinnamon.com/babynamesus"><img width="133" src="http://www.visualcinnamon.com/wp-content/uploads/2015/05/Babynames-Girls-US-1170x516.png"></a></td>
+    <td>Top baby names bump chart<br><a href="http://www.visualcinnamon.com/babynamesus"><img width="133" src="https://dl.dropboxusercontent.com/u/11654088/Babynames%20Combined.png"></a></td>
   </tr>
 </table>
 
