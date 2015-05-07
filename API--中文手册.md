@@ -179,12 +179,12 @@ D3 API总览
 * [xhr.response](Requests#response) - 设置一个响应映射函数。
 * [xhr.send](Requests#send) - 使用指定的数据和函数发送一个请求。
 
-### [String Formatting](Formatting)
+### [格式化](格式化)
 
-* [d3.format](Formatting#d3_format) - format a number as a string.
-* [d3.formatPrefix](Formatting#d3_formatPrefix) - returns the [SI prefix](http://en.wikipedia.org/wiki/Metric_prefix) for the specified value and precision.
-* [d3.requote](Formatting#d3_requote) - quote a string for use in a regular expression.
-* [d3.round](Formatting#d3_round) - rounds a value to some digits after the decimal point.
+* [d3.format](Formatting#d3_format) - 将一个数组格式化为字符串。
+* [d3.formatPrefix](Formatting#d3_formatPrefix) - 为指定的值和精度返回[SI 前缀](http://en.wikipedia.org/wiki/Metric_prefix)。
+* [d3.requote](Formatting#d3_requote) - 将字符串转义为正则表达式。
+* [d3.round](Formatting#d3_round) - 将值四舍五入到指定小数位。
 
 ### [CSV Formatting (d3.csv)](CSV)
 
