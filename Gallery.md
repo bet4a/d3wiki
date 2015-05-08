@@ -1118,6 +1118,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [US Airline performance bigdata direct from Google Fusion](http://ramblings.mcpher.com/Home/excelquirks/d3/flights) - Bruce McPherson
 * [Force directed site concept browser](http://ramblings.mcpher.com/Home/excelquirks/gassites/d3-concept-browser) - Bruce McPherson
 * [Accessing the Quandl database aggregator with D3](https://csaladenes.wordpress.com/2015/02/24/quandl-nvd3-interactive-data-plotter/) - Denes Csala
+* [How is a D3.js visualization made? – the road from CSV to SVG](https://csaladenes.wordpress.com/2015/05/08/how-a-d3-js-visualization-is-made-the-road-from-csv-to-svg/) - Denes Csala
 
 #### Online Editors
 
