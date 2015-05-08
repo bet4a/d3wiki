@@ -38,7 +38,7 @@ var force = d3.layout.force()
 
 Note that, like D3's other layouts, the force-directed layout doesn't mandate a particular visual representation. Most commonly, nodes are mapped to SVG circle elements, and links are mapped to SVG line elements. But you might also display nodes as [symbols](http://bl.ocks.org/mbostock/1062383) or [images](http://bl.ocks.org/mbostock/950642).
 
-<a name="size" href="Force-Layout#size">#</a> force.<b>size</b>([<i>size</i>])
+<a name="size" href="Force-Layout#size">#</a> force.<b>size</b>([<i>width, height</i>])
 
 If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1. The size affects two aspects of the force-directed layout: the gravitational center, and the initial random position. The center of gravity is simply [ *x* / 2, *y* / 2 ]. When nodes are added to the force layout, if they do not have *x* and *y* attributes already set, then these attributes are initialized using a uniform random distribution in the range [0, *x*] and [0, *y*], respectively.
 
