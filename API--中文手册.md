@@ -200,11 +200,11 @@ D3 API总览
 * [d3.tsv.parse](CSV#tsv_parse) - parse a TSV string into objects using the header row.
 * [d3.tsv](CSV#tsv) - request a tab-separated values (TSV) file.
 
-### [Localization](Localization)
+### [本地化](本地化)
 
-* [d3.locale](Localization#d3_locale) - create a new locale using the specified strings.
-* [locale.numberFormat](Localization#locale_numberFormat) - create a new number formatter.
-* [locale.timeFormat](Localization#locale_timeFormat) - create a new time formatter / parser.
+* [d3.locale](Localization#d3_locale) - 使用指定的字符串创建一个本地化。
+* [locale.numberFormat](Localization#locale_numberFormat) - 创建一个新的数字格式化器。
+* [locale.timeFormat](Localization#locale_timeFormat) - 创建一个新的时间格式化器/解析器。
 
 ### [颜色](颜色)
 
