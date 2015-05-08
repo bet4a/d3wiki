@@ -114,7 +114,7 @@ Removes the elements in the current selection from the current document. Returns
 
 <a name="data" href="Selections#data">#</a> selection.<b>data</b>([<i>values</i>[, <i>key</i>]])
 
-Joins the specified array of data with the current selection. The specified *values* is an array of data values (e.g. numbers or objects), or a function that returns an array of values. If a *key* function is not specified, then the first datum in *values* is assigned to the first element in the current selection, the second datum to the second selected element, and so on. When data is assigned to an element, it is stored in the property `__data__`, thus making the data "sticky" so that the data is available on re-selection.
+Joins the specified array of data with the current selection. The specified *values* is an array of data values (e.g. numbers or objects), or a function that returns an array of values. If a *key* function is not specified, then the first datum in *values* is assigned to the first element in the current selection, the second datum to the second selected element, and so on. When data is assigned to an element, it is stored in the property `__data__` which d3 adds to the element, thus making the data "sticky" so that the it is available on re-selection.
 
 The result of the `data` operator is the *update* selection; this represents the selected DOM elements that were successfully bound to the specified data elements. The *update* selection also contains a reference to the [enter](Selections#enter) and [exit](Selections#exit) selections, for adding and removing nodes in correspondence with data. For more details, see the short tutorial [Thinking With Joins](http://bost.ocks.org/mike/join/).
 
