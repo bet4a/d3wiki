@@ -22,169 +22,169 @@ D3 API总览
 
 ## [d3 (核心)](核心函数)
 
-### [选择](选择器)
+### [选择器](选择器)
 
-* [d3.event](Selections#d3_event) - 访问用于交互的当前用户事件。
-* [d3.mouse](Selections#d3_mouse) - 获取相对于指定容器的鼠标位置。
-* [d3.select](Selections#d3_select) - 从当前文档中选择一个元素。
-* [d3.selectAll](Selections#d3_selectAll) - 从当前文档中选择多个元素。
-* [d3.selection](Selections#d3_selection) - 增强选择器原型，或测试实例类型。
-* [d3.touch](Selections#d3_touch) - 获取相对于指定容器的单点触摸位置。
-* [d3.touches](Selections#d3_touches) - 获取相对于指定容器的多点触摸位置。
-* [selection.append](Selections#append) - 创建并追加一个新元素。
-* [selection.attr](Selections#attr) - 取得或设置属性的值。
-* [selection.call](Selections#call) - 为当前选择调用一个函数。
-* [selection.classed](Selections#classed) - 添加或移除CSS类。
-* [selection.data](Selections#data) - 在计算相关的连接时，取得或设置一组元素的数据。
-* [selection.datum](Selections#datum) - 取得或设置单个元素的数据，不必计算连接。
-* [selection.each](Selections#each) - 为每个选中的元素调用一个函数。
-* [selection.empty](Selections#empty) - 如果选择是空择返回true。
-* [selection.enter](Selections#enter) - 为缺失的元素返回占位符。
-* [selection.exit](Selections#exit) - 返回不再需要的元素。
-* [selection.filter](Selections#filter) - 基于数据过滤选择。
-* [selection.html](Selections#html) - 取得或设置innerHTML内容。
-* [selection.insert](Selections#insert) - 在已存在元素之前创建并插入一个元素。
-* [selection.interrupt](Selections#interrupt) - 如果有过渡的话，立即中断当前的过渡。
-* [selection.node](Selections#node) - 返回选择中的第一个节点。
-* [selection.on](Selections#on) - 为交互添加或移除事件监听器。
-* [selection.order](Selections#order) - 重排列文档中的元素，以匹配选择。
-* [selection.property](Selections#property) - 取得或设置行内属性。
-* [selection.remove](Selections#remove) - 从当前文档中移除当前元素。
-* [selection.select](Selections#select) - 为每个选中元素的在选择一个后代元素。
-* [selection.selectAll](Selections#selectAll) - 为每个选中元素的在选择多个后代元素。
-* [selection.size](Selections#size) - 返回选择中的元素数。
-* [selection.sort](Selections#sort) - 基于数据排列文档中的元素。
-* [selection.style](Selections#style) - 取得或设置样式属性。
-* [selection.text](Selections#text) - 取得或设置文本内容。
-* [selection.transition](Selections#transition) - 在选中元素上开启过渡。
+* [d3.event](选择器#d3_event) - 访问用于交互的当前用户事件。
+* [d3.mouse](选择器#d3_mouse) - 获取相对于指定容器的鼠标位置。
+* [d3.select](选择器#d3_select) - 从当前文档中选择一个元素。
+* [d3.selectAll](选择器#d3_selectAll) - 从当前文档中选择多个元素。
+* [d3.selection](选择器#d3_selection) - 增强选择器原型，或测试实例类型。
+* [d3.touch](选择器#d3_touch) - 获取相对于指定容器的单点触摸位置。
+* [d3.touches](选择器#d3_touches) - 获取相对于指定容器的多点触摸位置。
+* [selection.append](选择器#append) - 创建并追加一个新元素。
+* [selection.attr](选择器#attr) - 取得或设置属性的值。
+* [selection.call](选择器#call) - 为当前选择调用一个函数。
+* [selection.classed](选择器#classed) - 添加或移除CSS类。
+* [selection.data](选择器#data) - 在计算相关的连接时，取得或设置一组元素的数据。
+* [selection.datum](选择器#datum) - 取得或设置单个元素的数据，不必计算连接。
+* [selection.each](选择器#each) - 为每个选中的元素调用一个函数。
+* [selection.empty](选择器#empty) - 如果选择是空择返回true。
+* [selection.enter](选择器#enter) - 为缺失的元素返回占位符。
+* [selection.exit](选择器#exit) - 返回不再需要的元素。
+* [selection.filter](选择器#filter) - 基于数据过滤选择。
+* [selection.html](选择器#html) - 取得或设置innerHTML内容。
+* [selection.insert](选择器#insert) - 在已存在元素之前创建并插入一个元素。
+* [selection.interrupt](选择器#interrupt) - 如果有过渡的话，立即中断当前的过渡。
+* [selection.node](选择器#node) - 返回选择中的第一个节点。
+* [selection.on](选择器#on) - 为交互添加或移除事件监听器。
+* [selection.order](选择器#order) - 重排列文档中的元素，以匹配选择。
+* [selection.property](选择器#property) - 取得或设置行内属性。
+* [selection.remove](选择器#remove) - 从当前文档中移除当前元素。
+* [selection.select](选择器#select) - 为每个选中元素的在选择一个后代元素。
+* [selection.selectAll](选择器#selectAll) - 为每个选中元素的在选择多个后代元素。
+* [selection.size](选择器#size) - 返回选择中的元素数。
+* [selection.sort](选择器#sort) - 基于数据排列文档中的元素。
+* [selection.style](选择器#style) - 取得或设置样式属性。
+* [selection.text](选择器#text) - 取得或设置文本内容。
+* [selection.transition](选择器#transition) - 在选中元素上开启过渡。
 
 ### [过渡](过渡)
 
-* [d3.ease](Transitions#d3_ease) - 自定义过渡时间。
-* [d3.timer](Transitions#d3_timer) - 开启一段自定义动画定时器。
-* [d3.interpolate](Transitions#d3_interpolate) - 插补两个值。
-* [d3.interpolateArray](Transitions#d3_interpolateArray) - 插补两个数组。
-* [d3.interpolateHcl](Transitions#d3_interpolateHcl) - 插补两个HCL颜色值。
-* [d3.interpolateHsl](Transitions#d3_interpolateHsl) - 插补两个HSL颜色值。
-* [d3.interpolateLab](Transitions#d3_interpolateLab) - 插补两个L\*a\*b\*颜色值。
-* [d3.interpolateNumber](Transitions#d3_interpolateNumber) - 插补两个数字值。
-* [d3.interpolateObject](Transitions#d3_interpolateObject) - 插补两个任意对象。
-* [d3.interpolateRgb](Transitions#d3_interpolateRgb) - 插补两个RGB颜色值。
-* [d3.interpolateRound](Transitions#d3_interpolateRound) - 插补两个整数。
-* [d3.interpolateString](Transitions#d3_interpolateString) - 插补两个字符串。
-* [d3.interpolateTransform](Transitions#d3_interpolateTransform) - 插补两个2D矩阵变换。
-* [d3.interpolateZoom](Transitions#d3_interpolateZoom) - 在两个点之间平滑地缩放平移。
-* [d3.interpolators](Transitions#d3_interpolators) - 注册一个自定义的插值器。
-* [d3.timer.flush](Transitions#d3_timer_flush) - 立即执行一个0延迟的定时器。
-* [d3.transition](Transitions#d3_transition) - 开启一个动画过渡。
-* [ease](Transitions#_ease) - 一个参数化的缓动函数。
-* [interpolate](Transitions#_interpolate) - 一个参数化的插值器函数。
-* [transition.attr](Transitions#attr) - 平滑地过渡到一个新的属性值。
-* [transition.attrTween](Transitions#attrTween) - 在两个属性值之间平滑地过渡。
-* [transition.call](Transitions#call) - 为当前的过渡调用一个函数。
-* [transition.delay](Transitions#delay) - 指定每个元素的延迟时间（以毫秒为单位）。
-* [transition.duration](Transitions#duration) - 指定每个元素的持续时间（以毫秒为单位）。
-* [transition.each](Transitions#each) - 为过渡结束时间添加一个监听器。
-* [transition.ease](Transitions#ease) - 指定一个过渡的缓动函数。
-* [transition.empty](Transitions#empty) - 如果过渡是空则返回true。
-* [transition.filter](Transitions#filter) - 基于数据过滤一个过渡。
-* [transition.node](Transitions#node) - 返回过渡中的第一个节点。
-* [transition.remove](Transitions#remove) - 在过渡的最后移除选中的元素。
-* [transition.select](Transitions#select) - 为每个选中的元素在一个子元素开启一段过渡。
-* [transition.selectAll](Transitions#selectAll) - 为每个选中的元素在多个子元素开启一段过渡。
-* [transition.size](Transitions#size) - 返回在选择中元素的数量。
-* [transition.style](Transitions#style) - 平滑地过渡到一个新的样式值。
-* [transition.styleTween](Transitions#styleTween) - 在两个样式属性值之间平滑地过渡。
-* [transition.text](Transitions#text) - 在过渡开始时设置文本内容。
-* [transition.transition](Transitions#transition) - 当这次过渡结束时，在相同的元素上开启另一段过渡。
-* [transition.tween](Transitions#tween) - 指定一个自定义的补间操作符作为过渡的一部分运行。
+* [d3.ease](过渡#d3_ease) - 自定义过渡时间。
+* [d3.timer](过渡#d3_timer) - 开启一段自定义动画定时器。
+* [d3.interpolate](过渡#d3_interpolate) - 插补两个值。
+* [d3.interpolateArray](过渡#d3_interpolateArray) - 插补两个数组。
+* [d3.interpolateHcl](过渡#d3_interpolateHcl) - 插补两个HCL颜色值。
+* [d3.interpolateHsl](过渡#d3_interpolateHsl) - 插补两个HSL颜色值。
+* [d3.interpolateLab](过渡#d3_interpolateLab) - 插补两个L\*a\*b\*颜色值。
+* [d3.interpolateNumber](过渡#d3_interpolateNumber) - 插补两个数字值。
+* [d3.interpolateObject](过渡#d3_interpolateObject) - 插补两个任意对象。
+* [d3.interpolateRgb](过渡#d3_interpolateRgb) - 插补两个RGB颜色值。
+* [d3.interpolateRound](过渡#d3_interpolateRound) - 插补两个整数。
+* [d3.interpolateString](过渡#d3_interpolateString) - 插补两个字符串。
+* [d3.interpolateTransform](过渡#d3_interpolateTransform) - 插补两个2D矩阵变换。
+* [d3.interpolateZoom](过渡#d3_interpolateZoom) - 在两个点之间平滑地缩放平移。
+* [d3.interpolators](过渡#d3_interpolators) - 注册一个自定义的插值器。
+* [d3.timer.flush](过渡#d3_timer_flush) - 立即执行一个0延迟的定时器。
+* [d3.transition](过渡#d3_transition) - 开启一个动画过渡。
+* [ease](过渡#_ease) - 一个参数化的缓动函数。
+* [interpolate](过渡#_interpolate) - 一个参数化的插值器函数。
+* [transition.attr](过渡#attr) - 平滑地过渡到一个新的属性值。
+* [transition.attrTween](过渡#attrTween) - 在两个属性值之间平滑地过渡。
+* [transition.call](过渡#call) - 为当前的过渡调用一个函数。
+* [transition.delay](过渡#delay) - 指定每个元素的延迟时间（以毫秒为单位）。
+* [transition.duration](过渡#duration) - 指定每个元素的持续时间（以毫秒为单位）。
+* [transition.each](过渡#each) - 为过渡结束时间添加一个监听器。
+* [transition.ease](过渡#ease) - 指定一个过渡的缓动函数。
+* [transition.empty](过渡#empty) - 如果过渡是空则返回true。
+* [transition.filter](过渡#filter) - 基于数据过滤一个过渡。
+* [transition.node](过渡#node) - 返回过渡中的第一个节点。
+* [transition.remove](过渡#remove) - 在过渡的最后移除选中的元素。
+* [transition.select](过渡#select) - 为每个选中的元素在一个子元素开启一段过渡。
+* [transition.selectAll](过渡#selectAll) - 为每个选中的元素在多个子元素开启一段过渡。
+* [transition.size](过渡#size) - 返回在选择中元素的数量。
+* [transition.style](过渡#style) - 平滑地过渡到一个新的样式值。
+* [transition.styleTween](过渡#styleTween) - 在两个样式属性值之间平滑地过渡。
+* [transition.text](过渡#text) - 在过渡开始时设置文本内容。
+* [transition.transition](过渡#transition) - 当这次过渡结束时，在相同的元素上开启另一段过渡。
+* [transition.tween](过渡#tween) - 指定一个自定义的补间操作符作为过渡的一部分运行。
 
 ### [数组](数组)
 
-* [d3.ascending](Arrays#d3_ascending) - 为排序比较两个值。
-* [d3.bisectLeft](Arrays#d3_bisectLeft) - 在排序数组中检索值。
-* [d3.bisector](Arrays#d3_bisector) - 二等分使用访问器或比较器。
-* [d3.bisectRight](Arrays#d3_bisectRight) - 在排序数组中检索值。
-* [d3.bisect](Arrays#d3_bisect) - 在排序数组中检索值。
-* [d3.descending](Arrays#d3_descending) - 为排序比较两个值。
-* [d3.deviation](Arrays#d3_deviation) - 计算一组数据的标准差。
-* [d3.entries](Arrays#d3_entries) - 列出一个关联数组的键值对实体。
-* [d3.extent](Arrays#d3_extent) - 找出一个数组中的最大值和最小值。
-* [d3.keys](Arrays#d3_keys) - 列出一个关联数组中的键。
-* [d3.map](Arrays#d3_map) - 构建一个新的map。
-* [d3.max](Arrays#d3_max) - 找出一个数组中的最大值。
-* [d3.mean](Arrays#d3_mean) - 计算一组数据的算数平均值。
-* [d3.median](Arrays#d3_median) - 计算一组数据的算数中值。
-* [d3.merge](Arrays#d3_merge) - 合并多个数组为一个数组。
-* [d3.min](Arrays#d3_min) - 找出一个数组中的最小值。
-* [d3.nest](Arrays#d3_nest) - 分层地分组数组元素。
-* [d3.pairs](Arrays#d3_pairs) - 返回一个元素的相邻对数组。
-* [d3.permute](Arrays#d3_permute) - 按照数组的索引重新排序数组元素。
-* [d3.quantile](Arrays#d3_quantile) - 为一个排好序的数字数组的分位数。
-* [d3.range](Arrays#d3_range) - 产生一系列的数值。
-* [d3.set](Arrays#d3_set) - 构建一个新的集合。
-* [d3.shuffle](Arrays#d3_shuffle) - 随机化一个数组的顺序。
-* [d3.sum](Arrays#d3_sum) - 计算数字数组的和。
-* [d3.transpose](Arrays#d3_transpose) - 转置一个数组的数组。
-* [d3.values](Arrays#d3_values) - 列出关联数组的值。
-* [d3.variance](Arrays#d3_variance) - 计算数字数组的方差。
-* [d3.zip](Arrays#d3_zip) - 转置数组的可变数量。
-* [map.empty](Arrays#map_empty) - 如果map不包含元素就返回true。
-* [map.entries](Arrays#map_entries) - 返回map的实体数组。
-* [map.forEach](Arrays#map_forEach) - 为每个指定的实体调用一个函数。
-* [map.get](Arrays#map_get) - 为指定的键返回值。
-* [map.has](Arrays#map_has) - 如果map包含指定的值则返回true。
-* [map.keys](Arrays#map_keys) - 返回map的键数组。
-* [map.remove](Arrays#map_remove) - 为指定的键移除值。
-* [map.set](Arrays#map_set) - 为指定的键设置值。
-* [map.size](Arrays#map_size) - 返回map的实体数量。
-* [map.values](Arrays#map_values) - 返回map的值数组。
-* [nest.entries](Arrays#nest_entries) - 返回一组键-值元组
-* [nest.key](Arrays#nest_key) - 在嵌套层级中添加一个级别。
-* [nest.map](Arrays#nest_map) - 返回一个关联数组。
-* [nest.rollup](Arrays#nest_rollup) - 为叶子值指定一个汇总函数。
-* [nest.sortKeys](Arrays#nest_sortKeys) - 按照键排序叶子嵌套级别。
-* [nest.sortValues](Arrays#nest_sortValues) - 按照值排序叶子嵌套级别。
-* [set.add](Arrays#set_add) - 添加指定的值。
-* [set.empty](Arrays#set_empty) - 如果集合不含元素的话返回true。
-* [set.forEach](Arrays#set_forEach) - 为集合中的每个元素调用指定的函数。
-* [set.has](Arrays#set_has) - 如果集合中包含指定值就返回true。
-* [set.remove](Arrays#set_remove) - 移除指定的值。
-* [set.size](Arrays#set_size) - 返回集合中的元素数量。
-* [set.values](Arrays#set_values) - 返回集合中的值数组。
+* [d3.ascending](数组#d3_ascending) - 为排序比较两个值。
+* [d3.bisectLeft](数组#d3_bisectLeft) - 在排序数组中检索值。
+* [d3.bisector](数组#d3_bisector) - 二等分使用访问器或比较器。
+* [d3.bisectRight](数组#d3_bisectRight) - 在排序数组中检索值。
+* [d3.bisect](数组#d3_bisect) - 在排序数组中检索值。
+* [d3.descending](数组#d3_descending) - 为排序比较两个值。
+* [d3.deviation](数组#d3_deviation) - 计算一组数据的标准差。
+* [d3.entries](数组#d3_entries) - 列出一个关联数组的键值对实体。
+* [d3.extent](数组#d3_extent) - 找出一个数组中的最大值和最小值。
+* [d3.keys](数组#d3_keys) - 列出一个关联数组中的键。
+* [d3.map](数组#d3_map) - 构建一个新的map。
+* [d3.max](数组#d3_max) - 找出一个数组中的最大值。
+* [d3.mean](数组#d3_mean) - 计算一组数据的算数平均值。
+* [d3.median](数组#d3_median) - 计算一组数据的算数中值。
+* [d3.merge](数组#d3_merge) - 合并多个数组为一个数组。
+* [d3.min](数组#d3_min) - 找出一个数组中的最小值。
+* [d3.nest](数组#d3_nest) - 分层地分组数组元素。
+* [d3.pairs](数组#d3_pairs) - 返回一个元素的相邻对数组。
+* [d3.permute](数组#d3_permute) - 按照数组的索引重新排序数组元素。
+* [d3.quantile](数组#d3_quantile) - 为一个排好序的数字数组的分位数。
+* [d3.range](数组#d3_range) - 产生一系列的数值。
+* [d3.set](数组#d3_set) - 构建一个新的集合。
+* [d3.shuffle](数组#d3_shuffle) - 随机化一个数组的顺序。
+* [d3.sum](数组#d3_sum) - 计算数字数组的和。
+* [d3.transpose](数组#d3_transpose) - 转置一个数组的数组。
+* [d3.values](数组#d3_values) - 列出关联数组的值。
+* [d3.variance](数组#d3_variance) - 计算数字数组的方差。
+* [d3.zip](数组#d3_zip) - 转置数组的可变数量。
+* [map.empty](数组#map_empty) - 如果map不包含元素就返回true。
+* [map.entries](数组#map_entries) - 返回map的实体数组。
+* [map.forEach](数组#map_forEach) - 为每个指定的实体调用一个函数。
+* [map.get](数组#map_get) - 为指定的键返回值。
+* [map.has](数组#map_has) - 如果map包含指定的值则返回true。
+* [map.keys](数组#map_keys) - 返回map的键数组。
+* [map.remove](数组#map_remove) - 为指定的键移除值。
+* [map.set](数组#map_set) - 为指定的键设置值。
+* [map.size](数组#map_size) - 返回map的实体数量。
+* [map.values](数组#map_values) - 返回map的值数组。
+* [nest.entries](数组#nest_entries) - 返回一组键-值元组
+* [nest.key](数组#nest_key) - 在嵌套层级中添加一个级别。
+* [nest.map](数组#nest_map) - 返回一个关联数组。
+* [nest.rollup](数组#nest_rollup) - 为叶子值指定一个汇总函数。
+* [nest.sortKeys](数组#nest_sortKeys) - 按照键排序叶子嵌套级别。
+* [nest.sortValues](数组#nest_sortValues) - 按照值排序叶子嵌套级别。
+* [set.add](数组#set_add) - 添加指定的值。
+* [set.empty](数组#set_empty) - 如果集合不含元素的话返回true。
+* [set.forEach](数组#set_forEach) - 为集合中的每个元素调用指定的函数。
+* [set.has](数组#set_has) - 如果集合中包含指定值就返回true。
+* [set.remove](数组#set_remove) - 移除指定的值。
+* [set.size](数组#set_size) - 返回集合中的元素数量。
+* [set.values](数组#set_values) - 返回集合中的值数组。
 
 ### [数学](数学)
 
-* [d3.random.bates](Math#random_bates) - 生成具有贝茨分布规律的随机数。
-* [d3.random.irwinHall](Math#random_irwinHall) - 生成具有Irwin–Hall分布规律的随机数。
-* [d3.random.logNormal](Math#random_logNormal) - 生成具有对数正态分布规律的随机数。
-* [d3.random.normal](Math#random_normal) - 生成具有正态分布规律的随机数。
-* [d3.transform](Math#d3_transform) - 计算2D放射变换的标准形式。
+* [d3.random.bates](数学#random_bates) - 生成具有贝茨分布规律的随机数。
+* [d3.random.irwinHall](数学#random_irwinHall) - 生成具有Irwin–Hall分布规律的随机数。
+* [d3.random.logNormal](数学#random_logNormal) - 生成具有对数正态分布规律的随机数。
+* [d3.random.normal](数学#random_normal) - 生成具有正态分布规律的随机数。
+* [d3.transform](数学#d3_transform) - 计算2D放射变换的标准形式。
 
 ### [请求](请求)
 
-* [d3.csv](CSV) - 请求一个CSV（逗号分隔值）的文件。
-* [d3.html](Requests#d3_html) - 请求一个HTML文档片段。
-* [d3.json](Requests#d3_json) - 请求一个JSON对象。
-* [d3.text](Requests#d3_text) - 请求一个text文件。
-* [d3.tsv](CSV#tsv) - 请求一个TSV（制表符分隔值）的文件。
-* [d3.xhr](Requests#d3_xhr) - 使用XMLHttpRequest请求一个资源。
-* [d3.xml](Requests#d3_xml) - 请求一个XML文档片段。
-* [xhr.abort](Requests#abort) - 终止未完成的请求。
-* [xhr.get](Requests#get) - 发送一个GET请求。
-* [xhr.header](Requests#header) - 设置一个请求头。
-* [xhr.mimeType](Requests#mimeType) - 设置一个接受请求头并覆盖响应的MIME类型。
-* [xhr.on](Requests#on) - 为“progress”，“load”或“error”事件添加一个事件监听器。
-* [xhr.post](Requests#post) - 发送一个POST请求。
-* [xhr.response](Requests#response) - 设置一个响应映射函数。
-* [xhr.send](Requests#send) - 使用指定的数据和函数发送一个请求。
+* [d3.csv](请求#csv) - 请求一个CSV（逗号分隔值）的文件。
+* [d3.html](请求#d3_html) - 请求一个HTML文档片段。
+* [d3.json](请求#d3_json) - 请求一个JSON对象。
+* [d3.text](请求#d3_text) - 请求一个text文件。
+* [d3.tsv](请求#tsv) - 请求一个TSV（制表符分隔值）的文件。
+* [d3.xhr](请求#d3_xhr) - 使用XMLHttpRequest请求一个资源。
+* [d3.xml](请求#d3_xml) - 请求一个XML文档片段。
+* [xhr.abort](请求#abort) - 终止未完成的请求。
+* [xhr.get](请求#get) - 发送一个GET请求。
+* [xhr.header](请求#header) - 设置一个请求头。
+* [xhr.mimeType](请求#mimeType) - 设置一个接受请求头并覆盖响应的MIME类型。
+* [xhr.on](请求#on) - 为“progress”，“load”或“error”事件添加一个事件监听器。
+* [xhr.post](请求#post) - 发送一个POST请求。
+* [xhr.response](请求#response) - 设置一个响应映射函数。
+* [xhr.send](请求#send) - 使用指定的数据和函数发送一个请求。
 
 ### [格式化](格式化)
 
-* [d3.format](Formatting#d3_format) - 将一个数组格式化为字符串。
-* [d3.formatPrefix](Formatting#d3_formatPrefix) - 为指定的值和精度返回[SI 前缀](http://en.wikipedia.org/wiki/Metric_prefix)。
-* [d3.requote](Formatting#d3_requote) - 将字符串转义为正则表达式。
-* [d3.round](Formatting#d3_round) - 将值四舍五入到指定小数位。
+* [d3.format](格式化#d3_format) - 将一个数组格式化为字符串。
+* [d3.formatPrefix](格式化#d3_formatPrefix) - 为指定的值和精度返回[SI 前缀](http://en.wikipedia.org/wiki/Metric_prefix)。
+* [d3.requote](格式化#d3_requote) - 将字符串转义为正则表达式。
+* [d3.round](格式化#d3_round) - 将值四舍五入到指定小数位。
 
 ### [CSV Formatting (d3.csv)](CSV)
 
@@ -202,45 +202,45 @@ D3 API总览
 
 ### [本地化](本地化)
 
-* [d3.locale](Localization#d3_locale) - 使用指定的字符串创建一个本地化。
-* [locale.numberFormat](Localization#locale_numberFormat) - 创建一个新的数字格式化器。
-* [locale.timeFormat](Localization#locale_timeFormat) - 创建一个新的时间格式化器/解析器。
+* [d3.locale](本地化#d3_locale) - 使用指定的字符串创建一个本地化。
+* [locale.numberFormat](本地化#locale_numberFormat) - 创建一个新的数字格式化器。
+* [locale.timeFormat](本地化#locale_timeFormat) - 创建一个新的时间格式化器/解析器。
 
 ### [颜色](颜色)
 
-* [d3.hcl](Colors#d3_hcl) - 指定一种颜色，创建一个HCL颜色对象。
-* [d3.hsl](Colors#d3_hsl) - 指定一种颜色，创建一个HSL颜色对象。
-* [d3.lab](Colors#d3_lab) - 指定一种颜色，创建一个L\*a\*b\*颜色对象。
-* [d3.rgb](Colors#d3_rgb) - 指定一种颜色，创建一个RGB颜色对象。
-* [hcl.brighter](Colors#hcl_brighter) - 增强颜色的亮度，变化幅度由参数决定。
-* [hcl.darker](Colors#hcl_darker) - 减弱颜色的亮度，变化幅度由参数决定。
-* [hcl.rgb](Colors#hcl_rgb) - 将HCL颜色对象转化成RGB颜色对象。
-* [hcl.toString](Colors#hcl_toString) - HCL颜色对象转化为字符串格式。
-* [hsl.brighter](Colors#hsl_brighter) - 增强颜色的亮度，变化幅度由参数决定。
-* [hsl.darker](Colors#hsl_darker) - 减弱颜色的亮度，变化幅度由参数决定。
-* [hsl.rgb](Colors#hsl_rgb) - 将HSL颜色对象转化成RGB颜色对象。
-* [hsl.toString](Colors#hsl_toString) - 将HSL颜色对象转化为字符串格式。
-* [lab.brighter](Colors#lab_brighter) - 增强颜色的亮度，变化幅度由参数决定。
-* [lab.darker](Colors#lab_darker) - 减弱颜色的亮度，变化幅度由参数决定。
-* [lab.rgb](Colors#lab_rgb) - 将L\*a\*b\*颜色对象转化成RGB颜色对象。
-* [lab.toString](Colors#lab_toString) - 将L\*a\*b\*颜色对象转化为字符串格式。
-* [rgb.brighter](Colors#rgb_brighter) - 增强颜色的亮度，变化幅度由参数决定。
-* [rgb.darker](Colors#rgb_darker) - 减弱颜色的亮度，变化幅度由参数决定。
-* [rgb.hsl](Colors#rgb_hsl) - 将RGB颜色对象转化成HSL颜色对象。
-* [rgb.toString](Colors#rgb_toString) - 将RGB颜色对象转化为字符串格式。
+* [d3.hcl](颜色#d3_hcl) - 指定一种颜色，创建一个HCL颜色对象。
+* [d3.hsl](颜色#d3_hsl) - 指定一种颜色，创建一个HSL颜色对象。
+* [d3.lab](颜色#d3_lab) - 指定一种颜色，创建一个L\*a\*b\*颜色对象。
+* [d3.rgb](颜色#d3_rgb) - 指定一种颜色，创建一个RGB颜色对象。
+* [hcl.brighter](颜色#hcl_brighter) - 增强颜色的亮度，变化幅度由参数决定。
+* [hcl.darker](颜色#hcl_darker) - 减弱颜色的亮度，变化幅度由参数决定。
+* [hcl.rgb](颜色#hcl_rgb) - 将HCL颜色对象转化成RGB颜色对象。
+* [hcl.toString](颜色#hcl_toString) - HCL颜色对象转化为字符串格式。
+* [hsl.brighter](颜色#hsl_brighter) - 增强颜色的亮度，变化幅度由参数决定。
+* [hsl.darker](颜色#hsl_darker) - 减弱颜色的亮度，变化幅度由参数决定。
+* [hsl.rgb](颜色#hsl_rgb) - 将HSL颜色对象转化成RGB颜色对象。
+* [hsl.toString](颜色#hsl_toString) - 将HSL颜色对象转化为字符串格式。
+* [lab.brighter](颜色#lab_brighter) - 增强颜色的亮度，变化幅度由参数决定。
+* [lab.darker](颜色#lab_darker) - 减弱颜色的亮度，变化幅度由参数决定。
+* [lab.rgb](颜色#lab_rgb) - 将L\*a\*b\*颜色对象转化成RGB颜色对象。
+* [lab.toString](颜色#lab_toString) - 将L\*a\*b\*颜色对象转化为字符串格式。
+* [rgb.brighter](颜色#rgb_brighter) - 增强颜色的亮度，变化幅度由参数决定。
+* [rgb.darker](颜色#rgb_darker) - 减弱颜色的亮度，变化幅度由参数决定。
+* [rgb.hsl](颜色#rgb_hsl) - 将RGB颜色对象转化成HSL颜色对象。
+* [rgb.toString](颜色#rgb_toString) - 将RGB颜色对象转化为字符串格式。
 
-### [Namespaces](Namespaces)
+### [命名空间](命名空间)
 
-* [d3.ns.prefix](Namespaces#prefix) - access or extend known XML namespaces.
-* [d3.ns.qualify](Namespaces#qualify) - qualify a prefixed name, such as "xlink:href".
+* [d3.ns.prefix](命名空间#prefix) - 访问或扩展已知的XML命名空间。
+* [d3.ns.qualify](命名空间#qualify) - 限定一个前缀名称，例如"xlink:href".
 
 ### [内部](内部)
 
-* [d3.dispatch](Internals#d3_dispatch) - 创建一个定制的事件分发器。
-* [d3.functor](Internals#functor) - 创建一个函数并返回一个常量。
-* [d3.rebind](Internals#rebind) - 重新绑定get/set方法到一个子类上。
-* [dispatch.on](Internals#dispatch_on) - 注册或者解除注册事件监听器。
-* [dispatch.type](Internals#_dispatch) - 为指定的监听器分发事件。
+* [d3.dispatch](内部#d3_dispatch) - 创建一个定制的事件分发器。
+* [d3.functor](内部#functor) - 创建一个函数并返回一个常量。
+* [d3.rebind](内部#rebind) - 重新绑定get/set方法到一个子类上。
+* [dispatch.on](内部#dispatch_on) - 注册或者解除注册事件监听器。
+* [dispatch.type](内部#_dispatch) - 为指定的监听器分发事件。
 
 ## [d3.scale (Scales)](Scales)
 
