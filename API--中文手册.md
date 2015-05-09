@@ -38,7 +38,7 @@ D3 API总览
 * [selection.data](选择器#data) - 在计算相关的连接时，取得或设置一组元素的数据。
 * [selection.datum](选择器#datum) - 取得或设置单个元素的数据，不必计算连接。
 * [selection.each](选择器#each) - 为每个选中的元素调用一个函数。
-* [selection.empty](选择器#empty) - 如果选择是空择返回true。
+* [selection.empty](选择器#empty) - 如果选择是空则返回true。
 * [selection.enter](选择器#enter) - 为缺失的元素返回占位符。
 * [selection.exit](选择器#exit) - 返回不再需要的元素。
 * [selection.filter](选择器#filter) - 基于数据过滤选择。
