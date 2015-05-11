@@ -353,8 +353,8 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <td>Top baby names bump chart<br><a href="http://www.visualcinnamon.com/babynamesus"><img width="133" src="https://dl.dropboxusercontent.com/u/11654088/Babynames%20Combined.png"></a></td>
   <td>Real time electric consumption in Spain
     <br/>
-    <a href="http://energia.ningunaparte.net/" target="_blank">
-        <img width="133" src="http://i.imgur.com/eWdRKXL.gif" alt="Electric consumption in Spain - last 24h">
+    <a href="http://energia.ningunaparte.net/en/" target="_blank">
+        <img width="133" src="http://i.imgur.com/eWdRKXL.gif" alt="Electric consumption in Spain - latest 24h">
     </a>
 </td>
   </tr>
