@@ -332,35 +332,35 @@ D3 API总览
 
 ## [d3.svg (SVG)](SVG)
 
-### [Shapes](SVG-Shapes)
+### [形状](形状)
 
-* [arc.centroid](SVG-Shapes#arc_centroid) - compute the arc centroid.
-* [arc.cornerRadius](SVG-Shapes#arc_cornerRadius) - get or set the corner radius accessor.
-* [arc.endAngle](SVG-Shapes#arc_endAngle) - get or set the end angle accessor.
-* [arc.innerRadius](SVG-Shapes#arc_innerRadius) - get or set the inner radius accessor.
-* [arc.outerRadius](SVG-Shapes#arc_outerRadius) - get or set the outer radius accessor.
-* [arc.padAngle](SVG-Shapes#arc_padAngle) - get or set the pad angle accessor.
-* [arc.padRadius](SVG-Shapes#arc_padRadius) - get or set the pad radius accessor.
-* [arc.startAngle](SVG-Shapes#arc_startAngle) - get or set the start angle accessor.
-* [arc](SVG-Shapes#_arc) - generate a solid arc, as in a pie or donut chart.
-* [area.angle](SVG-Shapes#area_radial_angle) - get or set the *angle* accessors.
-* [area.defined](SVG-Shapes#area_defined) - control whether the area is defined at a given point.
-* [area.defined](SVG-Shapes#area_radial_defined) - control whether the area is defined at a given point.
-* [area.endAngle](SVG-Shapes#area_radial_endAngle) - get or set the *angle* (topline) accessor.
-* [area.innerRadius](SVG-Shapes#area_radial_innerRadius) - get or set the inner *radius* (baseline) accessor.
-* [area.interpolate](SVG-Shapes#area_interpolate) - get or set the interpolation mode.
-* [area.outerRadius](SVG-Shapes#area_radial_outerRadius) - get or set the outer *radius* (topline) accessor.
-* [area.radius](SVG-Shapes#area_radial_radius) - get or set the *radius* accessors.
-* [area.startAngle](SVG-Shapes#area_radial_startAngle) - get or set the *angle* (baseline) accessor.
-* [area.tension](SVG-Shapes#area_tension) - get or set the cardinal spline tension.
-* [area.x0](SVG-Shapes#area_x0) - get or set the *x0*-coordinate (baseline) accessor.
-* [area.x1](SVG-Shapes#area_x1) - get or set the *x1*-coordinate (topline) accessor.
-* [area.x](SVG-Shapes#area_x) - get or set the *x*-coordinate accessors.
-* [area.y0](SVG-Shapes#area_y0) - get or set the *y0*-coordinate (baseline) accessor.
-* [area.y1](SVG-Shapes#area_y1) - get or set the *y1*-coordinate (topline) accessor.
-* [area.y](SVG-Shapes#area_y) - get or set the *y*-coordinate accessors.
-* [area](SVG-Shapes#_area) - generate a piecewise linear area, as in an area chart.
-* [area](SVG-Shapes#_area_radial) - generate a piecewise linear area, as in a polar area chart.
+* [arc.centroid](SVG-Shapes#arc_centroid) - 计算弧中心。
+* [arc.cornerRadius](SVG-Shapes#arc_cornerRadius) - 获取或设置拐角（corner）半径访问器。
+* [arc.endAngle](SVG-Shapes#arc_endAngle) - 获取或设置结束角度访问器。
+* [arc.innerRadius](SVG-Shapes#arc_innerRadius) - 获取或设置内半径访问器。
+* [arc.outerRadius](SVG-Shapes#arc_outerRadius) - 获取或设置外半径访问器。
+* [arc.padAngle](SVG-Shapes#arc_padAngle) - 获取或设置填补（pad）角度访问器。
+* [arc.padRadius](SVG-Shapes#arc_padRadius) - 获取或设置填补（pad）半径访问器。
+* [arc.startAngle](SVG-Shapes#arc_startAngle) - 获取或设置开始角度访问器。
+* [arc](SVG-Shapes#_arc) - 生成一个像饼图或圆环图中的固定弧度。
+* [area.angle](SVG-Shapes#area_radial_angle) - 获取或设置*角度*访问器。
+* [area.defined](SVG-Shapes#area_defined) - 控制面积在给定点是否是有定义的。
+* [area.defined](SVG-Shapes#area_radial_defined) - 控制径向面积在给定点是否是有定义的。
+* [area.endAngle](SVG-Shapes#area_radial_endAngle) - 获取或设置*角度*（顶线）访问器。
+* [area.innerRadius](SVG-Shapes#area_radial_innerRadius) - 获取或设置内*半径*（基线）访问器。
+* [area.interpolate](SVG-Shapes#area_interpolate) - 获取或设置插值模式。
+* [area.outerRadius](SVG-Shapes#area_radial_outerRadius) - 获取或设置外*半径*（顶线）访问器。
+* [area.radius](SVG-Shapes#area_radial_radius) - 获取或设置*半径*访问器。
+* [area.startAngle](SVG-Shapes#area_radial_startAngle) - 获取或设置*角度*（基线）访问器。
+* [area.tension](SVG-Shapes#area_tension) - 获取或设置基本样条线的张力。
+* [area.x0](SVG-Shapes#area_x0) - 获取或设置*x0*-坐标（基线）访问器。
+* [area.x1](SVG-Shapes#area_x1) - 获取或设置*x1*-坐标（顶线）访问器。
+* [area.x](SVG-Shapes#area_x) - 获取或设置*x*-坐标访问器。
+* [area.y0](SVG-Shapes#area_y0) - 获取或设置*y0*-坐标（基线）访问器。
+* [area.y1](SVG-Shapes#area_y1) - 获取或设置*y1*-坐标（顶线）访问器。
+* [area.y](SVG-Shapes#area_y) - 获取或设置*y*-坐标访问器。
+* [area](SVG-Shapes#_area) - 生成一个像面积图中的分段线性面积。
+* [area](SVG-Shapes#_area_radial) - 生成一个像极坐标面积图中的分段线性面积。
 * [chord.endAngle](SVG-Shapes#chord_endAngle) - get or set the arc end angle accessor.
 * [chord.radius](SVG-Shapes#chord_radius) - get or set the arc radius accessor.
 * [chord.source](SVG-Shapes#chord_source) - get or set the source arc accessor.
