@@ -361,12 +361,12 @@ D3 API总览
 * [area.y](SVG-Shapes#area_y) - 获取或设置*y*-坐标访问器。
 * [area](SVG-Shapes#_area) - 生成一个像面积图中的分段线性面积。
 * [area](SVG-Shapes#_area_radial) - 生成一个像极坐标面积图中的分段线性面积。
-* [chord.endAngle](SVG-Shapes#chord_endAngle) - get or set the arc end angle accessor.
-* [chord.radius](SVG-Shapes#chord_radius) - get or set the arc radius accessor.
-* [chord.source](SVG-Shapes#chord_source) - get or set the source arc accessor.
-* [chord.startAngle](SVG-Shapes#chord_startAngle) - get or set the arc start angle accessor.
-* [chord.target](SVG-Shapes#chord_target) - get or set the target arc accessor.
-* [chord](SVG-Shapes#_chord) - generate a quadratic Bézier connecting two arcs, as in a chord diagram.
+* [chord.endAngle](SVG-Shapes#chord_endAngle) - 获取或设置圆弧结束角访问器。
+* [chord.radius](SVG-Shapes#chord_radius) - 获取或设置圆弧半径访问器。
+* [chord.source](SVG-Shapes#chord_source) - 获取或设置圆弧来源圆弧访问器。
+* [chord.startAngle](SVG-Shapes#chord_startAngle) - 获取或设置圆弧开始角访问器。
+* [chord.target](SVG-Shapes#chord_target) - 获取或设置目标圆弧访问器。
+* [chord](SVG-Shapes#_chord) - 在弦图中生成一个二次贝塞尔曲线连接两个弧。
 * [d3.svg.arc](SVG-Shapes#arc) - create a new arc generator.
 * [d3.svg.area.radial](SVG-Shapes#area_radial) - create a new area generator.
 * [d3.svg.area](SVG-Shapes#area) - create a new area generator.
