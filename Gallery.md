@@ -236,8 +236,8 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
   <tr valign="top">
     <td>Node-Link Tree Showing Branches of Government<br><a href="http://greencracker.net/wp-content/uploads/2013/11/final-cafe-press-dimensions-1106.jpg"><img width="133" src="http://greencracker.net/wp-content/uploads/2013/12/tree_thumb.jpg"></a></td>
     <td>3D Force Layout<br><a href="https://vida.io/documents/N4jSip7n68yQ48DXp"><img width="133" src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp"></a></td>
-    <td>Rotating Arcs<br><a href="http://vyacheslavryabinin.com/datavis/absind"><img width="133" src="http://vyacheslavryabinin.com/datavis/absind/absind.png"></a></td>
     <td>Lifespan<br><a href="http://www.cotrino.com/2014/02/lifespan-longevidad-animal/"><img width="133" src="https://raw.github.com/cotrino/experimentos/mr/lifespan.png"></a></td>
+    <td></td>
   </tr>
   <tr valign="top">
     <td>The Movie Network<br><a href="http://bl.ocks.org/paulovn/9686202"><img width="133" src="http://bl.ocks.org/paulovn/raw/9686202/thumbnail-s.png"></a></td>
