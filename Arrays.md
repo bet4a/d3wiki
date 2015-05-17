@@ -397,7 +397,7 @@ var yieldsByYearAndVariety = d3.nest()
     .map(yields, d3.map);
 ```
 
-Using d3.map rather than an object offers conveniences (e.g., the returned map has [keys](#map_keys) and [values](#map_values) functions), and protects against unusual key names that conflict with built-in JavaScript properties, such as "__proto__".
+Using d3.map rather than an object offers conveniences (e.g., the returned map has [keys](#map_keys) and [values](#map_values) functions), and protects against unusual key names that conflict with built-in JavaScript properties, such as `__proto__`.
 
 <a name="nest_entries" href="#nest_entries">#</a> nest.<b>entries</b>(<i>array</i>)
 
