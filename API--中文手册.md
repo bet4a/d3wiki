@@ -367,36 +367,36 @@ D3 API总览
 * [chord.startAngle](SVG-Shapes#chord_startAngle) - 获取或设置圆弧开始角访问器。
 * [chord.target](SVG-Shapes#chord_target) - 获取或设置目标圆弧访问器。
 * [chord](SVG-Shapes#_chord) - 在弦图中生成一个二次贝塞尔曲线连接两个弧。
-* [d3.svg.arc](SVG-Shapes#arc) - create a new arc generator.
-* [d3.svg.area.radial](SVG-Shapes#area_radial) - create a new area generator.
-* [d3.svg.area](SVG-Shapes#area) - create a new area generator.
-* [d3.svg.chord](SVG-Shapes#chord) - create a new chord generator.
-* [d3.svg.diagonal.radial](SVG-Shapes#diagonal_radial) - create a new diagonal generator.
-* [d3.svg.diagonal](SVG-Shapes#diagonal) - create a new diagonal generator.
-* [d3.svg.line.radial](SVG-Shapes#line_radial) - create a new radial line generator.
-* [d3.svg.line](SVG-Shapes#line) - create a new line generator.
-* [d3.svg.symbolTypes](SVG-Shapes#symbolTypes) - the array of supported symbol types.
-* [d3.svg.symbol](SVG-Shapes#symbol) - create a new symbol generator.
-* [diagonal.projection](SVG-Shapes#diagonal_projection) - get or set an optional point transform.
-* [diagonal.source](SVG-Shapes#diagonal_source) - get or set the source point accessor.
-* [diagonal.target](SVG-Shapes#diagonal_target) - get or set the target point accessor.
-* [diagonal](SVG-Shapes#_diagonal) - generate a two-dimensional Bézier connector, as in a node-link diagram.
-* [diagonal](SVG-Shapes#_diagonal_radial) - generate a two-dimensional Bézier connector, as in a node-link diagram.
-* [line.angle](SVG-Shapes#line_radial_angle) - get or set the *angle* accessor.
-* [line.defined](SVG-Shapes#line_defined) - control whether the line is defined at a given point.
-* [line.defined](SVG-Shapes#line_radial_defined) - control whether the line is defined at a given point.
-* [line.interpolate](SVG-Shapes#line_interpolate) - get or set the interpolation mode.
-* [line.interpolate](SVG-Shapes#line_radial_interpolate) - get or set the interpolation mode.
-* [line.radius](SVG-Shapes#line_radial_radius) - get or set the *radius* accessor.
-* [line.tension](SVG-Shapes#line_radial_tension) - get or set the cardinal spline tension.
-* [line.tension](SVG-Shapes#line_tension) - get or set the cardinal spline tension.
-* [line.x](SVG-Shapes#line_x) - get or set the *x*-coordinate accessor.
-* [line.y](SVG-Shapes#line_y) - get or set the *y*-coordinate accessor.
-* [line](SVG-Shapes#_line) - generate a piecewise linear curve, as in a line chart.
-* [line](SVG-Shapes#_line_radial) - generate a piecewise linear curve, as in a polar line chart.
-* [symbol.size](SVG-Shapes#symbol_size) - get or set the symbol size (in square pixels) accessor.
-* [symbol.type](SVG-Shapes#symbol_type) - get or set the symbol type accessor.
-* [symbol](SVG-Shapes#_symbol) - generate categorical symbols, as in a scatterplot.
+* [d3.svg.arc](SVG-Shapes#arc) - 新建一个弧度生成器。
+* [d3.svg.area.radial](SVG-Shapes#area_radial) - 新建一个径向面积生成器。
+* [d3.svg.area](SVG-Shapes#area) - 新建一个弧度生成器。
+* [d3.svg.chord](SVG-Shapes#chord) - 新建一个弦生成器。
+* [d3.svg.diagonal.radial](SVG-Shapes#diagonal_radial) - 新建一个径向对角线生成器。
+* [d3.svg.diagonal](SVG-Shapes#diagonal) - 新建一个对角线生成器。
+* [d3.svg.line.radial](SVG-Shapes#line_radial) - 新建一个径向线生成器。
+* [d3.svg.line](SVG-Shapes#line) - 新建一个线生成器。
+* [d3.svg.symbolTypes](SVG-Shapes#symbolTypes) - 一组符号类型。
+* [d3.svg.symbol](SVG-Shapes#symbol) - 新建一个符号生成器。
+* [diagonal.projection](SVG-Shapes#diagonal_projection) - 设置或获取一个可选的点转换。
+* [diagonal.source](SVG-Shapes#diagonal_source) - 设置或获取源点访问器。
+* [diagonal.target](SVG-Shapes#diagonal_target) - 设置或获取目标点访问器。
+* [diagonal](SVG-Shapes#_diagonal) - 生成一个像节点链接图中的二维贝塞尔连接器。
+* [diagonal](SVG-Shapes#_diagonal_radial) - 生成一个像节点链接图中的二维径向贝塞尔连接器。
+* [line.angle](SVG-Shapes#line_radial_angle) - 设置或获取*角度* accessor.
+* [line.defined](SVG-Shapes#line_defined) - 控制线在给定点是否是定义的。
+* [line.defined](SVG-Shapes#line_radial_defined) - 控制径向线在给定点是否是定义的。
+* [line.interpolate](SVG-Shapes#line_interpolate) - 设置或获取插值模式。
+* [line.interpolate](SVG-Shapes#line_radial_interpolate) - 设置或获取径向弦的插值模式。
+* [line.radius](SVG-Shapes#line_radial_radius) - 设置或获取*半径*访问器。
+* [line.tension](SVG-Shapes#line_radial_tension) - 设置或获取径向基本样条线的张力。
+* [line.tension](SVG-Shapes#line_tension) - 设置或获取基本样条线的张力。
+* [line.x](SVG-Shapes#line_x) - 设置或获取*x*-坐标访问器。
+* [line.y](SVG-Shapes#line_y) - 设置或获取*y*-坐标访问器。
+* [line](SVG-Shapes#_line) - 生成一个像线图中的分段线段。
+* [line](SVG-Shapes#_line_radial) - 生成一个像极线图中的分段线段。
+* [symbol.size](SVG-Shapes#symbol_size) - 设置或获取符号尺寸（平方像素）访问器。
+* [symbol.type](SVG-Shapes#symbol_type) - 设置或获取符号类型访问器。
+* [symbol](SVG-Shapes#_symbol) - 生成一个像散点图中的符号。
 
 ### [Axes](SVG-Axes)
 
