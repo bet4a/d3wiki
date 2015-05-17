@@ -11,7 +11,18 @@ This behavior automatically creates event listeners to handle zooming and pannin
 
 <a name="zoom" href="#zoom">#</a> d3.behavior.<b>zoom</b>()
 
-Constructs a new zoom behavior.
+Constructs a new zoom behavior. Once constructed, you can apply the behavior to selected elements using selection.call:
+
+```js
+var zoom = d3.behavior.zoom();
+selection.call(zoom);
+```
+
+All registered listeners use the “zoom” namespace, so to subsequently remove the behavior:
+
+```js
+selection.on(".zoom", null);
+```
 
 <a name="_zoom" href="#_zoom">#</a> <b>zoom</b>(<i>selection</i>)
 
