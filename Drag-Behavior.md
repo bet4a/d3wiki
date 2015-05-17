@@ -4,7 +4,18 @@ This behavior automatically creates event listeners to handle drag gestures on a
 
 <a name="drag" href="Drag-Behavior#drag">#</a> d3.behavior.<b>drag</b>()
 
-Constructs a new drag behavior.
+Constructs a new drag behavior. Once constructed, you can apply the drag behavior to selected elements using selection.call:
+
+```js
+var drag = d3.behavior.drag();
+selection.call(drag);
+```
+
+All registered listeners use the “drag” namespace, so to subsequently remove the behavior:
+
+```js
+selection.on(".drag", null);
+```
 
 <a name="on" href="Drag-Behavior#on">#</a> drag.<b>on</b>(<i>type</i>[, <i>listener</i>])
 
