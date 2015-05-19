@@ -4,6 +4,8 @@ A flexible force-directed graph layout implementation using position [Verlet int
 
 [![force](force.png)](http://bl.ocks.org/mbostock/4062045)
 
+For an extensive overview of the possibilities, with examples, see [this talk](https://vimeo.com/29458354) and [corresponding deck](http://mbostock.github.io/d3/talk/20110921/#0).
+
 Some fun examples:
 
 * [divergent forces](http://bl.ocks.org/mbostock/1021841)
