@@ -424,16 +424,16 @@ D3 API总览
 * [brush](SVG-Controls#_brush) - apply a brush to the given selection or transition.
 * [d3.svg.brush](SVG-Controls#brush) - click and drag to select one- or two-dimensional regions.
 
-## [d3.time (Time)](Time)
+## [d3.time (时间)](时间)
 
-### [Time Formatting](Time-Formatting)
+### [时间格式化](时间格式化)
 
-* [d3.time.format.iso](Time-Formatting#format_iso) - the ISO 8601 UTC time formatter.
-* [d3.time.format.multi](Time-Formatting#format_multi) - create a new local multi-resolution time formatter.
-* [d3.time.format.utc](Time-Formatting#format_utc) - create a new UTC time formatter for a given specifier.
-* [d3.time.format](Time-Formatting#format) - create a new local time formatter for a given specifier.
-* [format.parse](Time-Formatting#parse) - parse a string into a date.
-* [format](Time-Formatting#_format) - format a date into a string.
+* [d3.time.format.iso](Time-Formatting#format_iso) - ISO 8601 UTC时间格式化器。
+* [d3.time.format.multi](Time-Formatting#format_multi) - 创建一个新的本地多功能时间格式化器。
+* [d3.time.format.utc](Time-Formatting#format_utc) - 由指定的限定符创建一个新的UTC时间格式化器。
+* [d3.time.format](Time-Formatting#format) - 由指定的限定符创建一个新的本地时间格式化器。
+* [format.parse](Time-Formatting#parse) - 将字符串解析为时间对象。
+* [format](Time-Formatting#_format) - 将一个时间对象格式化为一个字符串。
 
 ### [Time Scales](Time-Scales)
 
