@@ -20,7 +20,7 @@ D3支持的主流浏览器不包括IE8及以前的版本。D3测试了Firefox、
 ## 安装
 下载最新的版本，并在你的代码中引用它:
 
-* <http://d3js.org/d3.v3.zip>
+* <https://github.com/mbostock/d3/releases>
 
 或者, 采用\<script\>标签在你的页面中动态引用最新的发布版本。方法：在你的页面代码中插入如下代码:
 
