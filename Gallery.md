@@ -237,7 +237,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <td>Node-Link Tree Showing Branches of Government<br><a href="http://greencracker.net/wp-content/uploads/2013/11/final-cafe-press-dimensions-1106.jpg"><img width="133" src="http://greencracker.net/wp-content/uploads/2013/12/tree_thumb.jpg"></a></td>
     <td>3D Force Layout<br><a href="https://vida.io/documents/N4jSip7n68yQ48DXp"><img width="133" src="https://s3.amazonaws.com/vida-production/thumbnails/N4jSip7n68yQ48DXp"></a></td>
     <td>Lifespan<br><a href="http://www.cotrino.com/2014/02/lifespan-longevidad-animal/"><img width="133" src="https://raw.github.com/cotrino/experimentos/mr/lifespan.png"></a></td>
-    <td></td>
+    <td>Choropleth word map<br><a href="http://www.ezglot.com/word-of-the-day.php"><img width="133" src="http://www.ezglot.com/hund-map.png" alt="word of the day"></a></td>
   </tr>
   <tr valign="top">
     <td>The Movie Network<br><a href="http://bl.ocks.org/paulovn/9686202"><img width="133" src="http://bl.ocks.org/paulovn/raw/9686202/thumbnail-s.png"></a></td>
@@ -942,6 +942,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Earthquakes in Chile since 1900](http://pnavarrc.github.com/earthquake/) ([Github](https://github.com/pnavarrc/earthquake/)) - Pablo Navarro
 * [Choropleth of White House Petition Signers](http://roadtolarissa.com/whitehouse/) - Adam Pearce
 * [Interactive choropleth of life excpectancy](http://bl.ocks.org/d/2366285/) – Karel Minarik
+* [Choropleth of common words](http://www.ezglot.com/word.php?l=eng&w=color) - ezGlot
 * [India population](http://bl.ocks.org/mbostock/4526201) - Liji Jinaraj
 * [US Senate and House Legislator Terms](http://indic8r.com/us/career-politicians)
 * [Hexbins in Leaflet](http://bl.ocks.org/mbostock/5669650)
