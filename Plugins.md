@@ -9,6 +9,7 @@ Please feel free to add links to your work!
 * [Cubehelix color scheme](https://github.com/d3/d3-plugins/tree/master/cubehelix)
 * [Fisheye distortion](https://github.com/d3/d3-plugins/tree/master/fisheye)
 * [Force-directed labels](https://github.com/d3/d3-plugins/tree/master/force_labels)
+* [Geometric primitives, labels, connections and more](https://github.com/christabor/d3-geometer)
 * [Graph analysis](https://github.com/d3/d3-plugins/tree/master/graph) (inactive)
 * [Hexagonal binning](https://github.com/d3/d3-plugins/tree/master/hexbin)
 * [Hive plot](https://github.com/d3/d3-plugins/tree/master/hive)
