@@ -5,6 +5,7 @@ Please feel free to add links to your work!
 * [Box plot](https://github.com/d3/d3-plugins/tree/master/box) ([demo](http://bl.ocks.org/mbostock/4061502))
 * [Bullet chart](https://github.com/d3/d3-plugins/tree/master/bullet)
 * [Chernoff face](https://github.com/d3/d3-plugins/tree/master/chernoff)
+* [Comic.js](https://github.com/balint42/comic.js)
 * [Contour plot](https://github.com/d3/d3-plugins/tree/master/geom/contour)
 * [Cubehelix color scheme](https://github.com/d3/d3-plugins/tree/master/cubehelix)
 * [Fisheye distortion](https://github.com/d3/d3-plugins/tree/master/fisheye)
