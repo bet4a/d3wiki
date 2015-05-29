@@ -90,7 +90,7 @@ Please feel free to add links to your work!
 ## Books
 
 * [Getting Started with D3](http://shop.oreilly.com/product/0636920025429.do)<br>Mike Dewar, O'Reilly Media, June 2012
-* [Interactive Data Visualization for the Web](http://ofps.oreilly.com/titles/9781449339739/)<br>Scott Murray, O'Reilly Media, November 2012
+* [Interactive Data Visualization for the Web](http://chimera.labs.oreilly.com/books/1230000000345)<br>Scott Murray, O'Reilly Media, November 2012
 * [Data Visualization with d3.js](http://www.packtpub.com/data-visualization-with-d3js/book)<br>Swizec Teller, Packt Publishing, October 2013
 * [Data Visualization with D3.js Cookbook](http://www.packtpub.com/data-visualization-with-d3-js-cookbook/book)<br>Nick Qi Zhu, Packt Publishing, October 2013
 * [Mastering D3.js](https://www.packtpub.com/web-development/mastering-d3js)<br>Pablo Navarro Castillo, Packt Publishing, August 2014
