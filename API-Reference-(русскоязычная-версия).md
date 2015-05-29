@@ -199,7 +199,7 @@ D3 состоит из:
 * [locale.numberFormat](Localization#locale_numberFormat) - create a new number formatter.
 * [locale.timeFormat](Localization#locale_timeFormat) - create a new time formatter / parser.
 
-### [[Colors]]
+### [[Colors]] ##[[Цвета]]
 
 * [[d3.rgb|Colors#d3_rgb]] - specify a color in RGB space.
 * [[rgb.brighter|Colors#rgb_brighter]] - increase RGB channels by some exponential factor (gamma).
@@ -222,7 +222,7 @@ D3 состоит из:
 * [[hcl.rgb|Colors#hcl_rgb]] - convert from HCL to RGB.
 * [[hcl.toString|Colors#hcl_toString]] - convert an HCL color to a string.
 
-### [[Namespaces]]
+### [[Namespaces]] ##[[Пространство имён]]
 
 * [[d3.ns.prefix|Namespaces#prefix]] - access or extend known XML namespaces.
 * [[d3.ns.qualify|Namespaces#qualify]] - qualify a prefixed name, such as "xlink:href".
@@ -305,7 +305,7 @@ D3 состоит из:
 * [[identity.tickFormat|Quantitative-Scales#identity_tickFormat]] - get a formatter for displaying tick values.
 * [[identity.copy|Quantitative-Scales#identity_copy]] - create a new scale from an existing scale.
 
-### [[Ordinal|Ordinal-Scales#ordinal]]
+### [[Ordinal|Ordinal-Scales#ordinal]] 
 
 * [[d3.scale.ordinal|Ordinal-Scales#ordinal]] - construct an ordinal scale.
 * [[ordinal|Ordinal-Scales#_ordinal]] - get the range value corresponding to a given domain value.
@@ -413,7 +413,7 @@ D3 состоит из:
 
 ## [d3.time (Time)](Time)
 
-### [[Time Formatting]]
+### [[Time Formatting]] ##[[Форматирование времени]]
 
 * [[d3.time.format|Time-Formatting#format]] - create a new local time formatter for a given specifier.
 * [[format|Time-Formatting#_format]] - format a date into a string.
