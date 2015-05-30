@@ -502,8 +502,8 @@ D3 API总览
 
 ### [Bundle](Bundle-Layout)
 
-* [bundle](Bundle-Layout#_bundle) - apply Holten's *hierarchical bundling* algorithm to edges.
-* [d3.layout.bundle](Bundle-Layout#bundle) - construct a new default bundle layout.
+* [bundle](Bundle-Layout#_bundle) - 对边使用Holten *层次捆绑* 算法。
+* [d3.layout.bundle](Bundle-Layout#bundle) - 构造一个新的默认的捆绑布局。
 
 ### [Chord](Chord-Layout)
 
