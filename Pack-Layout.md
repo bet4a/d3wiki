@@ -4,7 +4,7 @@ Enclosure diagrams use containment (nesting) to represent the hierarchy. The siz
 
 [![pack](pack.png)](http://bl.ocks.org/mbostock/4063530)
 
-By flattening the hierarchy, the **pack layout** can also be used to create [bubble charts](http://www-958.ibm.com/software/data/cognos/manyeyes/page/Bubble_Chart.html):
+By flattening the hierarchy, the **pack layout** can also be used to create [bubble charts](http://en.wikipedia.org/wiki/Bubble_chart):
 
 [![bubble](bubble.png)](http://bl.ocks.org/mbostock/4063269)
 
@@ -19,13 +19,13 @@ Creates a new pack layout with the default settings: the default sort order is b
 
 Runs the pack layout, returning the array of nodes associated with the specified *root* node. The cluster layout is part of D3's family of [hierarchical layouts](Hierarchy-Layout). These layouts follow the same basic structure: the input argument to the layout is the *root* node of the hierarchy, and the output return value is an array representing the computed positions of all nodes.  Several attributes are populated on each node:
 
-* parent - the parent node, or null for the root.
-* children - the array of child nodes, or null for leaf nodes.
-* value - the node value, as returned by the value accessor.
-* depth - the depth of the node, starting at 0 for the root.
-* x - the computed *x*-coordinate of the node position.
-* y - the computed *y*-coordinate of the node position.
-* r - the computed node radius.
+* `parent` - the parent node, or null for the root.
+* `children` - the array of child nodes, or null for leaf nodes.
+* `value` - the node value, as returned by the value accessor.
+* `depth` - the depth of the node, starting at 0 for the root.
+* `x` - the computed *x*-coordinate of the node position.
+* `y` - the computed *y*-coordinate of the node position.
+* `r` - the computed node radius.
 
 <a name="links" href="#links">#</a> pack.<b>links</b>(<i>nodes</i>)
 
@@ -83,11 +83,11 @@ Often, it is convenient to load the node hierarchy using [d3.json](Requests#d3_j
 }
 ```
 
-The children accessor is first invoked for root node in the hierarchy. If the accessor returns null, then the node is assumed to be a leaf node and the layout traversal terminates. Otherwise, the accessor should return an array of data elements representing the child nodes.
+The children accessor is first invoked for root node in the hierarchy. If the accessor returns `null`, then the node is assumed to be a leaf node and the layout traversal terminates. Otherwise, the accessor should return an array of data elements representing the child nodes.
 
 <a name="sort" href="#sort">#</a> pack.<b>sort</b>([<i>comparator</i>])
 
-If *comparator* is specified, sets the sort order of sibling nodes for the layout using the specified comparator function.  If *comparator* is not specified, returns the current group sort order, which defaults to ascending order by the associated input data's numeric value attribute:
+If *comparator* is specified, sets the sort order of sibling nodes for the layout using the specified comparator function.  If *comparator* is not specified, returns the current group sort order, which defaults to ascending order by the associated input data's numeric `value` attribute:
 
 ```javascript
 function comparator(a, b) {
@@ -99,7 +99,7 @@ The comparator function is invoked for pairs of nodes, being passed the input da
 
 <a name="value" href="#value">#</a> pack.<b>value</b>([<i>value</i>])
 
-If *value* is specified, sets the value accessor to the specified function. If *value* is not specified, returns the current value accessor, which assumes that the input data is an object with a numeric value attribute:
+If *value* is specified, sets the value accessor to the specified function. If *value* is not specified, returns the current value accessor, which assumes that the input data is an object with a numeric `value` attribute:
 
 ```javascript
 function value(d) {
