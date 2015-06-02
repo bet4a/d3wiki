@@ -261,17 +261,17 @@ D3 API总览
 * [identity.tickFormat](Quantitative-Scales#identity_tickFormat) - get a formatter for displaying tick values.
 * [identity.ticks](Quantitative-Scales#identity_ticks) - get representative values from the domain.
 * [identity](Quantitative-Scales#_identity) - the identity function.
-* [linear.clamp](Quantitative-Scales#linear_clamp) - enable or disable clamping of the output range.
-* [linear.copy](Quantitative-Scales#linear_copy) - create a new scale from an existing scale.
-* [linear.domain](Quantitative-Scales#linear_domain) - get or set the scale's input domain.
-* [linear.interpolate](Quantitative-Scales#linear_interpolate) - get or set the scale's output interpolator.
-* [linear.invert](Quantitative-Scales#linear_invert) - get the domain value corresponding to a given range value.
-* [linear.nice](Quantitative-Scales#linear_nice) - extend the scale domain to nice round numbers.
-* [linear.rangeRound](Quantitative-Scales#linear_rangeRound) - set the scale's output range, and enable rounding.
-* [linear.range](Quantitative-Scales#linear_range) - get or set the scale's output range.
-* [linear.tickFormat](Quantitative-Scales#linear_tickFormat) - get a formatter for displaying tick values.
-* [linear.ticks](Quantitative-Scales#linear_ticks) - get representative values from the input domain.
-* [linear](Quantitative-Scales#_linear) - get the range value corresponding to a given domain value.
+* [linear.clamp](Quantitative-Scales#linear_clamp) - 启用或者关闭值域的闭合。
+* [linear.copy](Quantitative-Scales#linear_copy) - 复制比例尺。
+* [linear.domain](Quantitative-Scales#linear_domain) - 取得或设置比例尺的定义域。
+* [linear.interpolate](Quantitative-Scales#linear_interpolate) - 取得或设置输出插值器。
+* [linear.invert](Quantitative-Scales#linear_invert) - 取得输出值对应的输入值。
+* [linear.nice](Quantitative-Scales#linear_nice) - 扩展比例尺的定义域为一个优化的定义域。
+* [linear.rangeRound](Quantitative-Scales#linear_rangeRound) - 设置比例尺的输出范围，并四舍五入。
+* [linear.range](Quantitative-Scales#linear_range) - 取得或设置比例尺的输出范围。
+* [linear.tickFormat](Quantitative-Scales#linear_tickFormat) - 获取一个用来展示刻度值得格式化器。
+* [linear.ticks](Quantitative-Scales#linear_ticks) - 取得定义域中典型的值。
+* [linear](Quantitative-Scales#_linear) - 取得输入值对应的输出值。
 * [log.clamp](Quantitative-Scales#log_clamp) - enable or disable clamping of the output range.
 * [log.copy](Quantitative-Scales#log_copy) - create a new scale from an existing scale.
 * [log.domain](Quantitative-Scales#log_domain) - get or set the scale's input domain.
