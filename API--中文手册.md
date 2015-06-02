@@ -272,17 +272,17 @@ D3 API总览
 * [linear.tickFormat](Quantitative-Scales#linear_tickFormat) - 获取一个用来展示刻度值得格式化器。
 * [linear.ticks](Quantitative-Scales#linear_ticks) - 取得定义域中典型的值。
 * [linear](Quantitative-Scales#_linear) - 取得输入值对应的输出值。
-* [log.clamp](Quantitative-Scales#log_clamp) - enable or disable clamping of the output range.
-* [log.copy](Quantitative-Scales#log_copy) - create a new scale from an existing scale.
-* [log.domain](Quantitative-Scales#log_domain) - get or set the scale's input domain.
-* [log.interpolate](Quantitative-Scales#log_interpolate) - get or set the scale's output interpolator.
-* [log.invert](Quantitative-Scales#log_invert) - get the domain value corresponding to a given range value.
-* [log.nice](Quantitative-Scales#log_nice) - extend the scale domain to nice powers of ten.
-* [log.rangeRound](Quantitative-Scales#log_rangeRound) - set the scale's output range, and enable rounding.
-* [log.range](Quantitative-Scales#log_range) - get or set the scale's output range.
-* [log.tickFormat](Quantitative-Scales#log_tickFormat) - get a formatter for displaying tick values.
-* [log.ticks](Quantitative-Scales#log_ticks) - get representative values from the input domain.
-* [log](Quantitative-Scales#_log) - get the range value corresponding to a given domain value.
+* [log.clamp](Quantitative-Scales#log_clamp) - 启用或者关闭值域的闭合。
+* [log.copy](Quantitative-Scales#log_copy) - 复制比例尺。
+* [log.domain](Quantitative-Scales#log_domain) - 取得或设置比例尺的定义域。
+* [log.interpolate](Quantitative-Scales#log_interpolate) - 取得或设置输出插值器。
+* [log.invert](Quantitative-Scales#log_invert) - 取得输出值对应的输入值。
+* [log.nice](Quantitative-Scales#log_nice) - 扩展比例尺的定义域为一个优化的10的次方。
+* [log.rangeRound](Quantitative-Scales#log_rangeRound) - 设置比例尺的输出范围，并四舍五入。
+* [log.range](Quantitative-Scales#log_range) - 取得或设置比例尺的输出范围。
+* [log.tickFormat](Quantitative-Scales#log_tickFormat) - 获取一个用来展示刻度值得格式化器。
+* [log.ticks](Quantitative-Scales#log_ticks) - 取得定义域中典型的值。
+* [log](Quantitative-Scales#_log) - 取得输入值对应的输出值。
 * [pow.clamp](Quantitative-Scales#pow_clamp) - enable or disable clamping of the output range.
 * [pow.copy](Quantitative-Scales#pow_copy) - create a new scale from an existing scale.
 * [pow.domain](Quantitative-Scales#pow_domain) - get or set the scale's input domain.
