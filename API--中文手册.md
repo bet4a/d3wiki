@@ -246,21 +246,21 @@ D3 API总览
 
 ### [Quantitative](Quantitative-Scales#quantitative)
 
-* [d3.scale.identity](Quantitative-Scales#identity) - construct a linear identity scale.
-* [d3.scale.linear](Quantitative-Scales#linear) - construct a linear quantitative scale.
-* [d3.scale.log](Quantitative-Scales#log) - construct a quantitative scale with an logarithmic transform.
-* [d3.scale.pow](Quantitative-Scales#pow) - construct a quantitative scale with an exponential transform.
-* [d3.scale.quantile](Quantitative-Scales#quantile) - construct a quantitative scale mapping to quantiles.
-* [d3.scale.quantize](Quantitative-Scales#quantize) - construct a linear quantitative scale with a discrete output range.
-* [d3.scale.sqrt](Quantitative-Scales#sqrt) - construct a quantitative scale with a square root transform.
-* [d3.scale.threshold](Quantitative-Scales#threshold) - construct a threshold scale with a discrete output range.
-* [identity.copy](Quantitative-Scales#identity_copy) - create a new scale from an existing scale.
-* [identity.domain](Quantitative-Scales#identity_domain) - get or set the scale's domain and range.
+* [d3.scale.identity](Quantitative-Scales#identity) - 构建一个线性恒等比例尺。
+* [d3.scale.linear](Quantitative-Scales#linear) - 构建一个线性定量比例尺。
+* [d3.scale.log](Quantitative-Scales#log) - 构建一个对数比例尺。
+* [d3.scale.pow](Quantitative-Scales#pow) - 构建一个指数比例尺。
+* [d3.scale.quantile](Quantitative-Scales#quantile) - 构建一个分位数比例尺。
+* [d3.scale.quantize](Quantitative-Scales#quantize) - 构建一个量化比例尺（值域离散）。
+* [d3.scale.sqrt](Quantitative-Scales#sqrt) - 构建一个平方根比例尺。
+* [d3.scale.threshold](Quantitative-Scales#threshold) - 构建一个临界值比例尺（值域离散）。
+* [identity.copy](Quantitative-Scales#identity_copy) - 复制比例尺。
+* [identity.domain](Quantitative-Scales#identity_domain) - 取得或设置比例尺的定义域。
 * [identity.invert](Quantitative-Scales#_identity) - equivalent to identity; the identity function.
 * [identity.range](Quantitative-Scales#identity_domain) - equivalent to identity.domain.
 * [identity.tickFormat](Quantitative-Scales#identity_tickFormat) - get a formatter for displaying tick values.
 * [identity.ticks](Quantitative-Scales#identity_ticks) - get representative values from the domain.
-* [identity](Quantitative-Scales#_identity) - the identity function.
+* [identity](Quantitative-Scales#_identity) - 恒等函数。
 * [linear.clamp](Quantitative-Scales#linear_clamp) - 启用或者关闭值域的闭合。
 * [linear.copy](Quantitative-Scales#linear_copy) - 复制比例尺。
 * [linear.domain](Quantitative-Scales#linear_domain) - 取得或设置比例尺的定义域。
@@ -283,9 +283,9 @@ D3 API总览
 * [log.tickFormat](Quantitative-Scales#log_tickFormat) - 获取一个用来展示刻度值得格式化器。
 * [log.ticks](Quantitative-Scales#log_ticks) - 取得定义域中典型的值。
 * [log](Quantitative-Scales#_log) - 取得输入值对应的输出值。
-* [pow.clamp](Quantitative-Scales#pow_clamp) - enable or disable clamping of the output range.
-* [pow.copy](Quantitative-Scales#pow_copy) - create a new scale from an existing scale.
-* [pow.domain](Quantitative-Scales#pow_domain) - get or set the scale's input domain.
+* [pow.clamp](Quantitative-Scales#pow_clamp) - 启用或者关闭值域的闭合。
+* [pow.copy](Quantitative-Scales#pow_copy) - 复制比例尺。
+* [pow.domain](Quantitative-Scales#pow_domain) - 取得或设置比例尺的定义域。
 * [pow.exponent](Quantitative-Scales#pow_exponent) - get or set the exponent power.
 * [pow.interpolate](Quantitative-Scales#pow_interpolate) - get or set the scale's output interpolator.
 * [pow.invert](Quantitative-Scales#pow_invert) - get the domain value corresponding to a given range value.
@@ -295,19 +295,19 @@ D3 API总览
 * [pow.tickFormat](Quantitative-Scales#pow_tickFormat) - get a formatter for displaying tick values.
 * [pow.ticks](Quantitative-Scales#pow_ticks) - get representative values from the input domain.
 * [pow](Quantitative-Scales#_pow) - get the range value corresponding to a given domain value.
-* [quantile.copy](Quantitative-Scales#quantile_copy) - create a new scale from an existing scale.
-* [quantile.domain](Quantitative-Scales#quantile_domain) - get or set the scale's input domain (as discrete values).
+* [quantile.copy](Quantitative-Scales#quantile_copy) - 复制比例尺。
+* [quantile.domain](Quantitative-Scales#quantile_domain) - 取得或设置比例尺的定义域。（离散的值）。
 * [quantile.invertExtent](Quantitative-Scales#quantile_invertExtent) - get the domain values for the specified range value.
 * [quantile.quantiles](Quantitative-Scales#quantile_quantiles) - get the scale's quantile bin thresholds.
 * [quantile.range](Quantitative-Scales#quantile_range) - get or set the scale's output range (as discrete values).
 * [quantile](Quantitative-Scales#_quantile) - get the range value corresponding to a given domain value.
-* [quantize.copy](Quantitative-Scales#quantize_copy) - create a new scale from an existing scale.
-* [quantize.domain](Quantitative-Scales#quantize_domain) - get or set the scale's input domain.
+* [quantize.copy](Quantitative-Scales#quantize_copy) - 复制比例尺。
+* [quantize.domain](Quantitative-Scales#quantize_domain) - 取得或设置比例尺的定义域。
 * [quantize.invertExtent](Quantitative-Scales#quantize_invertExtent) - get the domain values for the specified range value.
 * [quantize.range](Quantitative-Scales#quantize_range) - get or set the scale's output range (as discrete values).
 * [quantize](Quantitative-Scales#_quantize) - get the range value corresponding to a given domain value.
-* [threshold.copy](Quantitative-Scales#threshold_copy) - create a new scale from an existing scale.
-* [threshold.domain](Quantitative-Scales#threshold_domain) - get or set the scale's input domain.
+* [threshold.copy](Quantitative-Scales#threshold_copy) - 复制比例尺。
+* [threshold.domain](Quantitative-Scales#threshold_domain) - 取得或设置比例尺的定义域。
 * [threshold.invertExtent](Quantitative-Scales#threshold_invertExtent) - get the domain values for the specified range value.
 * [threshold.range](Quantitative-Scales#threshold_range) - get or set the scale's output range (as discrete values).
 * [threshold](Quantitative-Scales#_threshold) - get the range value corresponding to a given domain value.
@@ -319,8 +319,8 @@ D3 API总览
 * [d3.scale.category20c](Ordinal-Scales#category20c) - construct an ordinal scale with twenty categorical colors.
 * [d3.scale.category20](Ordinal-Scales#category20) - construct an ordinal scale with twenty categorical colors.
 * [d3.scale.ordinal](Ordinal-Scales#ordinal) - construct an ordinal scale.
-* [ordinal.copy](Ordinal-Scales#ordinal_copy) - create a new scale from an existing scale.
-* [ordinal.domain](Ordinal-Scales#ordinal_domain) - get or set the scale's input domain.
+* [ordinal.copy](Ordinal-Scales#ordinal_copy) - 复制比例尺。
+* [ordinal.domain](Ordinal-Scales#ordinal_domain) - 取得或设置比例尺的定义域。
 * [ordinal.rangeBands](Ordinal-Scales#ordinal_rangeBands) - divide a continuous output range for discrete bands.
 * [ordinal.rangeBand](Ordinal-Scales#ordinal_rangeBand) - get the discrete range band width.
 * [ordinal.rangeExtent](Ordinal-Scales#ordinal_rangeExtent) - get the minimum and maximum values of the output range.
