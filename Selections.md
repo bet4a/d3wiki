@@ -120,9 +120,9 @@ The result of the `data` method is the *update* selection; this represents the s
 
 A *key* function **key**([ *d* [, *i* ]]) may be specified to control how data is joined to elements (this replaces the default by-index behavior). The key function returns a string which is used to join a datum with its corresponding element, based on the previously-bound data. For example, if each datum has a unique field `name`, the join might be specified as `.data(data, function(d) { return d.name; })`
 
-The key function is called twice during data binding process, which proceeds in two phases.  
+The key function is called twice during the data binding process, which proceeds in two phases.  
 
-1.    The *key* function is evaluated on the nodes to form `nodeByKeyValue`: an associative array of nodes.  The `this` context is the node, `d` is the node `__data__` member and the the second argument `i` is the selection group index.  
+1.    The *key* function is evaluated on the nodes to form `nodeByKeyValue` (an associative array of nodes) with the `this` context as the node, `d` as the node `__data__` member and the the second argument `i` as the selection group index.  
 
 1.    The *key* function is evaluated on each element of the *values* array - this time with *values* as the `this` context, *values*[`i`] as the first argument `d` and the *values* index `i` as the second argument - and the results are then used to attempt to look up the nodes in the `nodeByKeyValue` collection.  If the lookup is successful, the node is added to the _update selection_, any nodes not queried are added to the exit selection.  Any data elements that failed to find a matching node are used to form the enter selection.  
 
