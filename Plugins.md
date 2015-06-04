@@ -31,7 +31,7 @@ Please feel free to add links to your work!
 * [Rollup (PivotGraph) layout](https://github.com/d3/d3-plugins/tree/master/rollup)
 * [Sankey diagram](https://github.com/d3/d3-plugins/tree/master/sankey) ([demo](http://bost.ocks.org/mike/sankey/))
 * [Sankey diagram (new and improved)](https://github.com/soxofaan/d3-plugin-captain-sankey)
-* [Sankey diagram (multi-part)[https://github.com/emeeks/d3-plugins/tree/master/sankey]
+* [Sankey diagram (multi-part)](https://github.com/emeeks/d3-plugins/tree/master/sankey)
 * [Superformula](https://github.com/d3/d3-plugins/tree/master/superformula)
 * [Transform format](https://github.com/trinary/d3-transform)
 * [URL format](https://github.com/d3/d3-plugins/tree/master/urlencode)
