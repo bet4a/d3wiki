@@ -2,9 +2,12 @@
 
 Please feel free to add links to your work!
 
+* [Adjacency Matrix](https://github.com/emeeks/d3-plugins/tree/master/adjacencyMatrix)
+* [Arc Diagram](https://github.com/goodmami/d3-plugins/tree/master/arcdiagram)
 * [Box plot](https://github.com/d3/d3-plugins/tree/master/box) ([demo](http://bl.ocks.org/mbostock/4061502))
 * [Bullet chart](https://github.com/d3/d3-plugins/tree/master/bullet)
 * [Chernoff face](https://github.com/d3/d3-plugins/tree/master/chernoff)
+* [Circular Brush](https://github.com/emeeks/d3.svg.circularbrush)
 * [Comic.js](https://github.com/balint42/comic.js)
 * [Contour plot](https://github.com/d3/d3-plugins/tree/master/geom/contour)
 * [Cubehelix color scheme](https://github.com/d3/d3-plugins/tree/master/cubehelix)
@@ -18,8 +21,10 @@ Please feel free to add links to your work!
 * [JSONP](https://github.com/d3/d3-plugins/tree/master/jsonp)
 * [Keybinding](https://github.com/d3/d3-plugins/tree/master/keybinding)
 * [Lasso selection](https://github.com/d3/d3-plugins/tree/master/lasso)
+* [Legend](https://github.com/emeeks/d3-svg-legend)
 * [Line simplification](https://github.com/d3/d3-plugins/tree/master/simplify) (deprecated; see [TopoJSON](https://github.com/mbostock/topojson))
 * [Longscroll](https://github.com/d3/d3-plugins/tree/master/longscroll)
+* [Orbital Layout](https://github.com/emeeks/d3.layout.orbit)
 * [Parallel coordinates](https://github.com/syntagmatic/parallel-coordinates)
 * [Parallel sets](https://github.com/jasondavies/d3-parsets)
 * [Q-Q plot](https://github.com/d3/d3-plugins/tree/master/qq)
