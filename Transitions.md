@@ -6,7 +6,7 @@ Transitions may have per-element delays and durations, computed using functions 
 
 D3 has many built-in interpolators to simplify the transitioning of arbitrary values. For instance, you can transition from the font string "500 12px sans-serif" to "300 42px sans-serif", and D3 will find the numbers embedded within the string, interpolating both font size and weight automatically. You can even interpolate arbitrary nested objects and arrays or SVG path data. D3 allows custom interpolators should you find the built-in ones insufficient, using the [attrTween](Transitions#attrTween) and [styleTween](Transitions#styleTween) operators. D3's interpolators provide the basis for [[scales|Scales]] and can be used outside of transitions; an interpolator is a function that maps a parametric value *t* in the domain [0,1] to a color, number or arbitrary value.
 
-Only one transition may be *active* on a given element at a given time. However, multiple transitions may be *scheduled* on the same element; provided they are staggered in time, each transition will run in sequence. If a newer transition runs on a given element, it implicitly cancels any older transitions, including any that were scheduled but not yet run. This allows new transitions, such as those in response to a new user event, to supersede older transitions even if those older transitions are staged or have staggered delays. Multi-stage transitions (transitions that are created during the "end" event of an earlier transition) are considered the same "age" as the original transition; internally this is tracked by monotonically-increasing unique IDs which are inherited when multi-stage transitions are created. To interrupt an in-progress transition, use [selection.interrupt](Selections#interrupt).
+Multiple transitions may operate on any selection sequentially or in parallel. Sequential transitions on a selection are enabled by chaining transitions using [transition.transition](Transitions#transition). Parallel transitions on a selection are enabled by assigning each parallel transition a unique name. Only one transition with a given name may be *active* on a given element at a given time. However, multiple transitions with the same name may be *scheduled* on the same element; provided they are staggered in time, each transition will run in sequence. If a newer transition runs on a given element, it implicitly cancels any older transitions with the same name, including any that were scheduled but not yet run. This allows new transitions, such as those in response to a new user event, to supersede older transitions even if those older transitions are staged or have staggered delays. Multi-stage transitions (transitions that are created during the "end" event of an earlier transition) are considered the same "age" as the original transition; internally this is tracked by monotonically-increasing unique IDs which are inherited when multi-stage transitions are created. To interrupt an in-progress transition, use [selection.interrupt](Selections#interrupt).
 
 For more on transitions, read the [Working with Transitions](http://bost.ocks.org/mike/transition/) tutorial.
 
@@ -31,6 +31,8 @@ Setting the delay to be a multiple of the index `i` is a convenient way to stagg
 ```
 
 You may also compute the delay as a function of the data, thereby creating a data-driven animation.
+
+Note that a delay is always relative to the *first* transition in a chain.
 
 <a name="duration" href="Transitions#duration">#</a> transition.<b>duration</b>([<i>duration</i>])
 
@@ -181,7 +183,7 @@ Thus, you can use either select or filter to apply tweens to a subset of element
 
 <a name="transition" href="Transitions#transition">#</a> transition.<b>transition</b>()
 
-Creates a new transition on the same selected elements that starts when this transition ends. The new transition inherits this transition’s duration and easing. This can be used to define [chained transitions](http://bl.ocks.org/mbostock/4341417) without needing to listen for "end" events.
+Creates a new transition on the same selected elements that starts when this transition ends. The new transition inherits a delay equal to this transition's delay + duration to control this timing. The new transition also inherits this transition’s name, duration, and easing. This can be used to define [chained transitions](http://bl.ocks.org/mbostock/4341417) without needing to listen for "end" events.
 
 ### Control
 
