@@ -306,6 +306,8 @@ You may use *delay* and *time* to specify relative and absolute moments in time 
 d3.timer(notify, -4 * 1000 * 60 * 60, +new Date(2012, 09, 29)); // four hours before midnight October 29 (months are zero-based)
 ```
 
+Note that if d3.timer is called within the callback of another timer, the new timer will be invoked immediately at the end of the current frame (if active as determined by the specified *delay* and *time*), rather than waiting until the next frame.
+
 <a name="d3_timer_flush" href="Transitions#d3_timer_flush">#</a> d3.timer.<b>flush</b>()
 
 Immediately execute (invoke once) any active timers. Normally, zero-delay transitions are executed after an instantaneous delay (<10ms). This can cause a brief flicker if the browser renders the page twice: once at the end of the first event loop, then again immediately on the first timer callback. By flushing the timer queue at the end of the first event loop, you can run any zero-delay transitions immediately and avoid the flicker.
