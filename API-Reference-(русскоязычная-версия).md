@@ -160,17 +160,17 @@ D3 состоит из:
 * [xhr.header](Requests#header) - set a request header.
 * [xhr.mimeType](Requests#mimeType) - set the Accept request header and override the response MIME type.
 * [xhr.response](Requests#response) - set a response mapping function.
-* [xhr.get](Requests#get) - issue a GET request.
-* [xhr.post](Requests#post) - issue a POST request.
+* [xhr.get](Requests#get) - GET запрос.
+* [xhr.post](Requests#post) - POST запрос.
 * [xhr.send](Requests#send) - issue a request with the specified method and data.
 * [xhr.abort](Requests#abort) - abort an outstanding request.
 * [xhr.on](Requests#on) - add an event listener for "progress", "load" or "error" events.
-* [[d3.text|Requests#d3_text]] - request a text file.
-* [[d3.json|Requests#d3_json]] - request a JSON blob.
-* [[d3.html|Requests#d3_html]] - request an HTML document fragment.
-* [[d3.xml|Requests#d3_xml]] - request an XML document fragment.
-* [[d3.csv|CSV]] - request a comma-separated values (CSV) file.
-* [[d3.tsv|CSV#tsv]] - request a tab-separated values (TSV) file.
+* [[d3.text|Requests#d3_text]] - запрос текстового файла.
+* [[d3.json|Requests#d3_json]] - запрос данных в формате JSON.
+* [[d3.html|Requests#d3_html]] - запрос HTML документа.
+* [[d3.xml|Requests#d3_xml]] - запрос XML документа.
+* [[d3.csv|CSV]] - запрос данных в формате СSV.
+* [[d3.tsv|CSV#tsv]] - запрос данных в формате TSV.
 
 ### [[String Formatting|Formatting]]
 
