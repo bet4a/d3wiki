@@ -256,10 +256,10 @@ D3 API总览
 * [d3.scale.threshold](Quantitative-Scales#threshold) - 构建一个临界值比例尺（值域离散）。
 * [identity.copy](Quantitative-Scales#identity_copy) - 复制比例尺。
 * [identity.domain](Quantitative-Scales#identity_domain) - 取得或设置比例尺的定义域。
-* [identity.invert](Quantitative-Scales#_identity) - equivalent to identity; the identity function.
-* [identity.range](Quantitative-Scales#identity_domain) - equivalent to identity.domain.
-* [identity.tickFormat](Quantitative-Scales#identity_tickFormat) - get a formatter for displaying tick values.
-* [identity.ticks](Quantitative-Scales#identity_ticks) - get representative values from the domain.
+* [identity.invert](Quantitative-Scales#_identity) - 等价于恒等函数。
+* [identity.range](Quantitative-Scales#identity_domain) - 等价于identity.domain。
+* [identity.tickFormat](Quantitative-Scales#identity_tickFormat) - 获取一个用来展示刻度值得格式化器。
+* [identity.ticks](Quantitative-Scales#identity_ticks) - 取得定义域中典型的值。
 * [identity](Quantitative-Scales#_identity) - 恒等函数。
 * [linear.clamp](Quantitative-Scales#linear_clamp) - 启用或者关闭值域的闭合。
 * [linear.copy](Quantitative-Scales#linear_copy) - 复制比例尺。
@@ -286,31 +286,31 @@ D3 API总览
 * [pow.clamp](Quantitative-Scales#pow_clamp) - 启用或者关闭值域的闭合。
 * [pow.copy](Quantitative-Scales#pow_copy) - 复制比例尺。
 * [pow.domain](Quantitative-Scales#pow_domain) - 取得或设置比例尺的定义域。
-* [pow.exponent](Quantitative-Scales#pow_exponent) - get or set the exponent power.
-* [pow.interpolate](Quantitative-Scales#pow_interpolate) - get or set the scale's output interpolator.
-* [pow.invert](Quantitative-Scales#pow_invert) - get the domain value corresponding to a given range value.
-* [pow.nice](Quantitative-Scales#pow_nice) - extend the scale domain to nice round numbers.
+* [pow.exponent](Quantitative-Scales#pow_exponent) - 取得或设置指数。
+* [pow.interpolate](Quantitative-Scales#pow_interpolate) - 取得或设置输出插值器。
+* [pow.invert](Quantitative-Scales#pow_invert) - 取得输出值对应的输入值。
+* [pow.nice](Quantitative-Scales#pow_nice) - 扩展比例尺的定义域为一个优化的定义域。
 * [pow.rangeRound](Quantitative-Scales#pow_rangeRound) - set the scale's output range, and enable rounding.
-* [pow.range](Quantitative-Scales#pow_range) - get or set the scale's output range.
+* [pow.range](Quantitative-Scales#pow_range) - 取得或设置比例尺的值域。
 * [pow.tickFormat](Quantitative-Scales#pow_tickFormat) - get a formatter for displaying tick values.
 * [pow.ticks](Quantitative-Scales#pow_ticks) - get representative values from the input domain.
-* [pow](Quantitative-Scales#_pow) - get the range value corresponding to a given domain value.
+* [pow](Quantitative-Scales#_pow) - 取得输出值对应的输入值。
 * [quantile.copy](Quantitative-Scales#quantile_copy) - 复制比例尺。
-* [quantile.domain](Quantitative-Scales#quantile_domain) - 取得或设置比例尺的定义域。（离散的值）。
-* [quantile.invertExtent](Quantitative-Scales#quantile_invertExtent) - get the domain values for the specified range value.
+* [quantile.domain](Quantitative-Scales#quantile_domain) - 取得或设置比例尺的定义域（离散的值）。
+* [quantile.invertExtent](Quantitative-Scales#quantile_invertExtent) - 取得输出值对应的输入值。
 * [quantile.quantiles](Quantitative-Scales#quantile_quantiles) - get the scale's quantile bin thresholds.
-* [quantile.range](Quantitative-Scales#quantile_range) - get or set the scale's output range (as discrete values).
-* [quantile](Quantitative-Scales#_quantile) - get the range value corresponding to a given domain value.
+* [quantile.range](Quantitative-Scales#quantile_range) - 取得或设置比例尺的值域（离散的值）。
+* [quantile](Quantitative-Scales#_quantile) - 取得输入值对应的输出值。
 * [quantize.copy](Quantitative-Scales#quantize_copy) - 复制比例尺。
 * [quantize.domain](Quantitative-Scales#quantize_domain) - 取得或设置比例尺的定义域。
-* [quantize.invertExtent](Quantitative-Scales#quantize_invertExtent) - get the domain values for the specified range value.
-* [quantize.range](Quantitative-Scales#quantize_range) - get or set the scale's output range (as discrete values).
-* [quantize](Quantitative-Scales#_quantize) - get the range value corresponding to a given domain value.
+* [quantize.invertExtent](Quantitative-Scales#quantize_invertExtent) - 取得输出值对应的输入值。
+* [quantize.range](Quantitative-Scales#quantize_range) - 取得或设置比例尺的值域（离散的值）。
+* [quantize](Quantitative-Scales#_quantize) - 取得输入值对应的输出值。
 * [threshold.copy](Quantitative-Scales#threshold_copy) - 复制比例尺。
 * [threshold.domain](Quantitative-Scales#threshold_domain) - 取得或设置比例尺的定义域。
 * [threshold.invertExtent](Quantitative-Scales#threshold_invertExtent) - get the domain values for the specified range value.
-* [threshold.range](Quantitative-Scales#threshold_range) - get or set the scale's output range (as discrete values).
-* [threshold](Quantitative-Scales#_threshold) - get the range value corresponding to a given domain value.
+* [threshold.range](Quantitative-Scales#threshold_range) - 取得或设置比例尺的值域（离散的值）。
+* [threshold](Quantitative-Scales#_threshold) - 取得输入值对应的输出值。
 
 ### [Ordinal](Ordinal-Scales#ordinal)
 
@@ -327,8 +327,8 @@ D3 API总览
 * [ordinal.rangePoints](Ordinal-Scales#ordinal_rangePoints) - divide a continuous output range for discrete points.
 * [ordinal.rangeRoundBands](Ordinal-Scales#ordinal_rangeRoundBands) - divide a continuous output range for discrete bands.
 * [ordinal.rangeRoundPoints](Ordinal-Scales#ordinal_rangeRoundPoints) - divide a continuous output range for discrete points.
-* [ordinal.range](Ordinal-Scales#ordinal_range) - get or set the scale's output range.
-* [ordinal](Ordinal-Scales#_ordinal) - get the range value corresponding to a given domain value.
+* [ordinal.range](Ordinal-Scales#ordinal_range) - 取得或设置比例尺的值域。
+* [ordinal](Ordinal-Scales#_ordinal) - 取得输入值对应的输出值。
 
 ## [d3.svg (SVG)](SVG)
 
