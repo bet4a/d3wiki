@@ -616,15 +616,15 @@ D3 API总览
 
 ### [Tree](Tree-Layout)
 
-* [d3.layout.tree](Tree-Layout#tree) - position a tree of nodes tidily.
-* [tree.children](Tree-Layout#children) - get or set the children accessor function.
-* [tree.links](Tree-Layout#links) - compute the parent-child links between tree nodes.
-* [tree.nodeSize](Tree-Layout#nodeSize) - specify a fixed size for each node.
-* [tree.nodes](Tree-Layout#nodes) - compute the tree layout and return the array of nodes.
-* [tree.separation](Tree-Layout#separation) - get or set the spacing function between neighboring nodes.
-* [tree.size](Tree-Layout#size) - specify the layout size in *x* and *y*.
-* [tree.sort](Tree-Layout#sort) - control the order in which sibling nodes are traversed.
-* [tree](Tree-Layout#_tree) - alias for tree.nodes.
+* [d3.layout.tree](Tree-Layout#tree) - 整齐地排列树节点。
+* [tree.children](Tree-Layout#children) - 取得或设置孩子访问器。
+* [tree.links](Tree-Layout#links) - 计算树节点的父-子连接。
+* [tree.nodeSize](Tree-Layout#nodeSize) - 为每个节点指定一个固定的尺寸。
+* [tree.nodes](Tree-Layout#nodes) - 计算父布局并返回一组节点。
+* [tree.separation](Tree-Layout#separation) - 取得或设置相邻节点的间隔函数。
+* [tree.size](Tree-Layout#size) - 用*x*和*y*指定树的尺寸。
+* [tree.sort](Tree-Layout#sort) - 控制遍历顺序中兄弟节点的顺序。
+* [tree](Tree-Layout#_tree) - tree.nodes的别名。
 
 ### [Treemap](Treemap-Layout)
 
