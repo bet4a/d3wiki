@@ -443,7 +443,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <td>Horizontally grouped bar chart<br><a href="http://bl.ocks.org/erikvullings/51cc5332439939f1f292"><img width="133" src="http://bl.ocks.org/erikvullings/raw/51cc5332439939f1f292/thumbnail.png"></a></td>
   </tr>
   <tr>
-    <td>Force directed Google Apps Script dependency analysis<br><a href="http://ramblings.mcpher.com/Home/excelquirks/drivesdk/vizdependencies"><img width="133" src="https://d475f4b7-a-150f6fab-s-sites.googlegroups.com/a/mcpher.com/share/Home/excelquirks/drivesdk/vizdependencies/Screenshot%202015-06-09%20at%2012.58.28.png?attachauth=ANoY7cqWSrymrBIDiP98ZEBJ3o5ER3rbiMik77xkOeoqvRT1GORBB7-aOd81xXzBSi2pBJIRtXjoUtZkrMqF2cuw_c3thKJ5t_76Mvu5TGX0cCcBgbaYyzVRttjqvzBGiiEDZA8oYvXk4gz1Kc9II18u86HZ61bWk2thoq-p7fZTa-oKrIeC7GCA1uvDzTc4DvLJkzGuj_EbQBYOSKzBgdBaDhSfNXUyAxGkjZMBoH3gE_7C-IH2IsuIn8Qv5dIpBH_wj-xDyJedVtOiHxRuIJY24WtMwq3LhhDf5zdQc4-xIcsLKyuIX8o%3D&attredirects=0"></a></td>
+    <td>Apps Script dependency analysis<br><a href="http://ramblings.mcpher.com/Home/excelquirks/drivesdk/vizdependencies"><img width="133" src="https://googledrive.com/host/0B92ExLh4POiZfkZsSDMwaHZUV3hneWdEbVV5aWVqenpWNjYtc29oYUZyYzVKVE50eFBMQm8/vizgas.png"></a></td>
   </tr>
 </table>
 
@@ -1131,6 +1131,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Force directed site concept browser](http://ramblings.mcpher.com/Home/excelquirks/gassites/d3-concept-browser) - Bruce McPherson
 * [Accessing the Quandl database aggregator with D3](https://csaladenes.wordpress.com/2015/02/24/quandl-nvd3-interactive-data-plotter/) - Denes Csala
 * [How is a D3.js visualization made? – the road from CSV to SVG](https://csaladenes.wordpress.com/2015/05/08/how-a-d3-js-visualization-is-made-the-road-from-csv-to-svg/) - Denes Csala
+* [Visualizing Apps Script library dependencies with with D3](http://ramblings.mcpher.com/Home/excelquirks/drivesdk/vizdependencies) - Bruce McPherson
 
 #### Online Editors
 
