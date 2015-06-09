@@ -442,7 +442,9 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <td>Draggable scatterplot with motion trails<br><a href="http://romsson.github.io/dragit/example/nations.html"><img width="133" src="http://i.imgur.com/gqnuQzb.gif"></a></td>
     <td>Horizontally grouped bar chart<br><a href="http://bl.ocks.org/erikvullings/51cc5332439939f1f292"><img width="133" src="http://bl.ocks.org/erikvullings/raw/51cc5332439939f1f292/thumbnail.png"></a></td>
   </tr>
-
+  <tr>
+    <td>Force directed Google Apps Script dependency analysis<br><a href="http://ramblings.mcpher.com/Home/excelquirks/drivesdk/vizdependencies"><img width="133" src="https://d475f4b7-a-150f6fab-s-sites.googlegroups.com/a/mcpher.com/share/Home/excelquirks/drivesdk/vizdependencies/Screenshot%202015-06-09%20at%2012.58.28.png?attachauth=ANoY7cqWSrymrBIDiP98ZEBJ3o5ER3rbiMik77xkOeoqvRT1GORBB7-aOd81xXzBSi2pBJIRtXjoUtZkrMqF2cuw_c3thKJ5t_76Mvu5TGX0cCcBgbaYyzVRttjqvzBGiiEDZA8oYvXk4gz1Kc9II18u86HZ61bWk2thoq-p7fZTa-oKrIeC7GCA1uvDzTc4DvLJkzGuj_EbQBYOSKzBgdBaDhSfNXUyAxGkjZMBoH3gE_7C-IH2IsuIn8Qv5dIpBH_wj-xDyJedVtOiHxRuIJY24WtMwq3LhhDf5zdQc4-xIcsLKyuIX8o%3D&attredirects=0"></a></td>
+  </tr>
 </table>
 
 ## Examples
