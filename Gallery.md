@@ -360,6 +360,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
   </tr>
   <tr valign="top">
   <td>Zoomable Unilevel Partition<br><a href="http://bl.ocks.org/apoorvnandan/8eb44a1990d4d9250700"><img width="133" src="https://5a44583fb28d25c751971f24d9bfeab2b7c159c6.googledrive.com/host/0B4hMaI5ok_84fi1oYWN6RzJCQ1BfTk5MSnVBQjdsMFhCeVBpZ19YMHpsTVdlM0FNZ2pWTTQ/thumbnail.png"></a></td>
+    <td>Apps Script dependency analysis<br><a href="http://ramblings.mcpher.com/Home/excelquirks/drivesdk/vizdependencies"><img width="133" src="https://googledrive.com/host/0B92ExLh4POiZfkZsSDMwaHZUV3hneWdEbVV5aWVqenpWNjYtc29oYUZyYzVKVE50eFBMQm8/vizgas.png"></a></td>
   </tr>
 </table>
 
@@ -406,7 +407,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <td>Waterfall Chart<br><a href="http://bl.ocks.org/chucklam/f3c7b3e3709a0afd5d57"><img width="133" src="http://bl.ocks.org/chucklam/raw/f3c7b3e3709a0afd5d57/thumbnail.png"></a></td>
     <td>Diverging Stacked Bar Chart<br><a href="http://bl.ocks.org/wpoely86/e285b8e4c7b84710e463"><img width="133" src="http://bl.ocks.org/wpoely86/raw/e285b8e4c7b84710e463/thumbnail.png"></a></td>
     <td>Timeseries<br><a href="http://mlvl.github.io/timeseries/"><img width="133" src="http://mlvl.github.io/timeseries/images/timeseries-sm.png"></a></td>
-    <td>Apps Script dependency analysis<br><a href="http://ramblings.mcpher.com/Home/excelquirks/drivesdk/vizdependencies"><img width="133" src="https://googledrive.com/host/0B92ExLh4POiZfkZsSDMwaHZUV3hneWdEbVV5aWVqenpWNjYtc29oYUZyYzVKVE50eFBMQm8/vizgas.png"></a></td>
+
   </tr>
 </table>
 
