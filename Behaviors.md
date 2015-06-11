@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ **Behaviors**
 
-Behaviors encapsulate a complex set of low-level DOM interactions (i.e. user gestures that vary between input methods) into a higher-level set of custom events (see [[d3.dispatch|Internals#d3_dispatch]]). Behaviors often allow some additional configuration of how user. D3 includes two built-in behaviors:
+Behaviors encapsulate a complex set of low-level DOM interactions (i.e. user gestures that vary between input methods) into a higher-level set of custom events (see [[d3.dispatch|Internals#d3_dispatch]]). Behaviors often allow some additional configuration by the user. D3 includes two built-in behaviors:
 
 * [[Drag|Drag-Behavior]] — tracks mouse or multitouch movement(s) relative to an origin
 * [[Zoom|Zoom-Behavior]] — emits zoom and pan events in response to common input idioms
