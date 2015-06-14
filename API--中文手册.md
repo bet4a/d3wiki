@@ -290,15 +290,15 @@ D3 API总览
 * [pow.interpolate](Quantitative-Scales#pow_interpolate) - 取得或设置输出插值器。
 * [pow.invert](Quantitative-Scales#pow_invert) - 取得输出值对应的输入值。
 * [pow.nice](Quantitative-Scales#pow_nice) - 扩展比例尺的定义域为一个优化的定义域。
-* [pow.rangeRound](Quantitative-Scales#pow_rangeRound) - set the scale's output range, and enable rounding.
+* [pow.rangeRound](Quantitative-Scales#pow_rangeRound) - 设置scale的输出范围，并四舍五入。
 * [pow.range](Quantitative-Scales#pow_range) - 取得或设置比例尺的值域。
-* [pow.tickFormat](Quantitative-Scales#pow_tickFormat) - get a formatter for displaying tick values.
-* [pow.ticks](Quantitative-Scales#pow_ticks) - get representative values from the input domain.
+* [pow.tickFormat](Quantitative-Scales#pow_tickFormat) - 获取一个用来展示刻度值得格式化器。
+* [pow.ticks](Quantitative-Scales#pow_ticks) - 取得定义域中典型的值。
 * [pow](Quantitative-Scales#_pow) - 取得输出值对应的输入值。
 * [quantile.copy](Quantitative-Scales#quantile_copy) - 复制比例尺。
 * [quantile.domain](Quantitative-Scales#quantile_domain) - 取得或设置比例尺的定义域（离散的值）。
 * [quantile.invertExtent](Quantitative-Scales#quantile_invertExtent) - 取得输出值对应的输入值。
-* [quantile.quantiles](Quantitative-Scales#quantile_quantiles) - get the scale's quantile bin thresholds.
+* [quantile.quantiles](Quantitative-Scales#quantile_quantiles) - 取得比例尺的分位数箱阈值。
 * [quantile.range](Quantitative-Scales#quantile_range) - 取得或设置比例尺的值域（离散的值）。
 * [quantile](Quantitative-Scales#_quantile) - 取得输入值对应的输出值。
 * [quantize.copy](Quantitative-Scales#quantize_copy) - 复制比例尺。
@@ -308,25 +308,25 @@ D3 API总览
 * [quantize](Quantitative-Scales#_quantize) - 取得输入值对应的输出值。
 * [threshold.copy](Quantitative-Scales#threshold_copy) - 复制比例尺。
 * [threshold.domain](Quantitative-Scales#threshold_domain) - 取得或设置比例尺的定义域。
-* [threshold.invertExtent](Quantitative-Scales#threshold_invertExtent) - get the domain values for the specified range value.
+* [threshold.invertExtent](Quantitative-Scales#threshold_invertExtent) - 取得输出值对应的输入值。
 * [threshold.range](Quantitative-Scales#threshold_range) - 取得或设置比例尺的值域（离散的值）。
 * [threshold](Quantitative-Scales#_threshold) - 取得输入值对应的输出值。
 
 ### [Ordinal](Ordinal-Scales#ordinal)
 
-* [d3.scale.category10](Ordinal-Scales#category10) - construct an ordinal scale with ten categorical colors.
-* [d3.scale.category20b](Ordinal-Scales#category20b) - construct an ordinal scale with twenty categorical colors.
-* [d3.scale.category20c](Ordinal-Scales#category20c) - construct an ordinal scale with twenty categorical colors.
-* [d3.scale.category20](Ordinal-Scales#category20) - construct an ordinal scale with twenty categorical colors.
-* [d3.scale.ordinal](Ordinal-Scales#ordinal) - construct an ordinal scale.
+* [d3.scale.category10](Ordinal-Scales#category10) - 构造一个10种颜色的序数比例尺。
+* [d3.scale.category20b](Ordinal-Scales#category20b) - 构造一个20种颜色的序数比例尺。
+* [d3.scale.category20c](Ordinal-Scales#category20c) - 构造一个20种颜色的序数比例尺。
+* [d3.scale.category20](Ordinal-Scales#category20) - 构造一个20种颜色的序数比例尺。
+* [d3.scale.ordinal](Ordinal-Scales#ordinal) - 构造一个序数比例尺。
 * [ordinal.copy](Ordinal-Scales#ordinal_copy) - 复制比例尺。
 * [ordinal.domain](Ordinal-Scales#ordinal_domain) - 取得或设置比例尺的定义域。
-* [ordinal.rangeBands](Ordinal-Scales#ordinal_rangeBands) - divide a continuous output range for discrete bands.
-* [ordinal.rangeBand](Ordinal-Scales#ordinal_rangeBand) - get the discrete range band width.
-* [ordinal.rangeExtent](Ordinal-Scales#ordinal_rangeExtent) - get the minimum and maximum values of the output range.
-* [ordinal.rangePoints](Ordinal-Scales#ordinal_rangePoints) - divide a continuous output range for discrete points.
-* [ordinal.rangeRoundBands](Ordinal-Scales#ordinal_rangeRoundBands) - divide a continuous output range for discrete bands.
-* [ordinal.rangeRoundPoints](Ordinal-Scales#ordinal_rangeRoundPoints) - divide a continuous output range for discrete points.
+* [ordinal.rangeBands](Ordinal-Scales#ordinal_rangeBands) - 为离散的块划分连续的值域。
+* [ordinal.rangeBand](Ordinal-Scales#ordinal_rangeBand) - 取得离散块的宽度。
+* [ordinal.rangeExtent](Ordinal-Scales#ordinal_rangeExtent) - 取得值域的范围。
+* [ordinal.rangePoints](Ordinal-Scales#ordinal_rangePoints) - 为离散的点划分连续的值域。
+* [ordinal.rangeRoundBands](Ordinal-Scales#ordinal_rangeRoundBands) - 为离散的块划分连续的值域。
+* [ordinal.rangeRoundPoints](Ordinal-Scales#ordinal_rangeRoundPoints) - 为离散的点划分连续的值域。
 * [ordinal.range](Ordinal-Scales#ordinal_range) - 取得或设置比例尺的值域。
 * [ordinal](Ordinal-Scales#_ordinal) - 取得输入值对应的输出值。
 
