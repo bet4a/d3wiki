@@ -216,7 +216,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <td>Table with Embedded Line Chart<br><a href="http://bl.ocks.org/llimllib/841dd138e429bb0545df"><img width="133" src="https://gist.github.com/llimllib/841dd138e429bb0545df/raw/a63c01b974e8e6e3be9a06eb1f67567cd7b4c322/table.jpg"></a></td>
   </tr>
   <tr valign="top">
-    <td>Dual-scale Bar Chart<br><a href="https://github.com/liufly/Dual-scale-D3-Bar-Chart"><img width="133" src="https://raw.github.com/liufly/Dual-scale-D3-Bar-Chart/mr/preview/thumbnail.png"></a></td>
+    <td>Dual-scale Bar Chart<br><a href="https://github.com/liufly/Dual-scale-D3-Bar-Chart"><img width="133" src="https://raw.githubusercontent.com/liufly/Dual-scale-D3-Bar-Chart/master/preview/thumbnail.png"></a></td>
     <td>Animated Pie and Line Chart<br><a href="http://codepen.io/stefanjudis/full/gkHwJ"><img width="133" src="http://stefanjudis.de/share/animatedChart.jpg"></a></td>
     <td>Multivariate Data Exploration with Scatterplots<br><a href="http://benjiec.github.io/scatter-matrix/demo/demo.html"><img width="133" src="http://benjiec.github.io/scatter-matrix/demo/demo.png"></a></td>
     <td>Live Power Outages In Maine<br><a href="http://rud.is/outage/"><img width="133" src="http://rud.is/outage/thumb2.png"></a></td>
