@@ -3,7 +3,8 @@
 * 本文档是D3官方文档中文翻译，并保持与[最新版](https://github.com/mbostock/d3/wiki/API-Reference)同步。
 * 如发现翻译不当或有其他问题可以通过以下方式联系译者:
 * 邮箱：zhang_tianxu@sina.com
-* QQ群：[D3数据可视化](http://jq.qq.com/?_wv=1027&k=ZGcqYF)205076374,[大数据可视化](http://jq.qq.com/?_wv=1027&k=S8wGMe)436442115
+* QQ群：[D3数据可视化](http://jq.qq.com/?_wv=1027&k=ZGcqYF)205076374，[大数据可视化](http://jq.qq.com/?_wv=1027&k=S8wGMe)436442115
+
 D3库中所有函数都在“d3”命名空间内。
 
 D3 使用[语义版本命名](http://semver.org)。 你可以使用“d3.version”查看D3的最新版本
@@ -399,17 +400,17 @@ D3 API总览
 
 ### [Axes](SVG-Axes)
 
-* [axis.innerTickSize](SVG-Axes#innerTickSize) - specify the size of inner ticks.
-* [axis.orient](SVG-Axes#orient) - get or set the axis orientation.
-* [axis.outerTickSize](SVG-Axes#outerTickSize) - specify the size of outer ticks.
-* [axis.scale](SVG-Axes#scale) - get or set the axis scale.
+* [axis.innerTickSize](SVG-Axes#innerTickSize) - 指定内刻度大小。
+* [axis.orient](SVG-Axes#orient) - 设置或者取得轴的方向。
+* [axis.outerTickSize](SVG-Axes#outerTickSize) - 指定外刻度大小。
+* [axis.scale](SVG-Axes#scale) - 设置或者取得比例尺。
 * [axis.tickFormat](SVG-Axes#tickFormat) - override the tick formatting for labels.
 * [axis.tickPadding](SVG-Axes#tickPadding) - specify padding between ticks and tick labels.
 * [axis.tickSize](SVG-Axes#tickSize) - specify the size of major, minor and end ticks.
 * [axis.ticks](SVG-Axes#ticks) - control how ticks are generated for the axis.
-* [axis.tickValues](SVG-Axes#tickValues) - specify tick values explicitly.
+* [axis.tickValues](SVG-Axes#tickValues) - 明确地指定刻度值。
 * [axis](SVG-Axes#_axis) - creates or updates an axis for the given selection or transition.
-* [d3.svg.axis](SVG-Axes#axis) - create a new axis generator.
+* [d3.svg.axis](SVG-Axes#axis) - 创建一个新的轴生成器。
 
 ### [控制](SVG-Controls)
 
