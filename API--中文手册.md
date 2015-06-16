@@ -412,17 +412,17 @@ D3 API总览
 * [axis](SVG-Axes#_axis) - creates or updates an axis for the given selection or transition.
 * [d3.svg.axis](SVG-Axes#axis) - create a new axis generator.
 
-### [Controls](SVG-Controls)
+### [控制](SVG-Controls)
 
-* [brush.clear](SVG-Controls#brush_clear) - reset the brush extent.
-* [brush.empty](SVG-Controls#brush_empty) - whether or not the brush extent is empty.
-* [brush.event](SVG-Controls#brush_event) - dispatch brush events after setting the extent.
-* [brush.extent](SVG-Controls#brush_extent) - the brush’s extent in zero, one or two dimensions.
-* [brush.on](SVG-Controls#brush_on) - listeners for when the brush is moved.
-* [brush.x](SVG-Controls#brush_x) - the brush’s <i>x</i>-scale, for horizontal brushing.
-* [brush.y](SVG-Controls#brush_y) - the brush’s <i>y</i>-scale, for vertical brushing.
-* [brush](SVG-Controls#_brush) - apply a brush to the given selection or transition.
-* [d3.svg.brush](SVG-Controls#brush) - click and drag to select one- or two-dimensional regions.
+* [brush.clear](SVG-Controls#brush_clear) - 重置拖选范围。
+* [brush.empty](SVG-Controls#brush_empty) - 拖选是否为空。
+* [brush.event](SVG-Controls#brush_event) - 在设置范围之后分发拖选事件。
+* [brush.extent](SVG-Controls#brush_extent) - 拖选范围可以是0,1，2维的。
+* [brush.on](SVG-Controls#brush_on) - 监听拖选何时改变。
+* [brush.x](SVG-Controls#brush_x) - 拖选的<i>x</i>-比例，用于水平拖选。
+* [brush.y](SVG-Controls#brush_y) - 拖选的<i>y</i>-比例，用于垂直拖选。
+* [brush](SVG-Controls#_brush) - 将拖选应用在指定的选择器和过渡上。
+* [d3.svg.brush](SVG-Controls#brush) - 点击和拖曳来选择一个1维或2维区域。
 
 ## [d3.time (时间)](时间)
 
