@@ -366,6 +366,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
   </tr>
   <tr valign="top">
     <td>Star Wars Character Profiles<br><a href="http://annalyn-ng.com/starwarsb5/chart.html"><img width="133" src="https://annalyzin.files.wordpress.com/2015/06/swcstill1.png"></a></td>
+    <td>Refugee dynamics - what does the data say? A visual exploratory of refugee flows over the world using dynamic chord diagrams.<br><a href="http://wp.me/pBH3w-9K"><img width="133" src="https://csaladenes.files.wordpress.com/2015/06/refugees.gif"></a></td>
   </tr>
 </table>
 
