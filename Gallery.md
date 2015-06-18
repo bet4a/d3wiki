@@ -331,7 +331,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
   </tr>
   <tr valign="top">
     <td>Geocenter of F1 venues<br><a href="https://csaladenes.wordpress.com/2015/02/01/the-geocenter-of-formula-1-venues-between-1950-2014/" target="_blank"><img width="133" src="https://csaladenes.files.wordpress.com/2015/02/f1venues.jpg?w=1000&h=547"></a></td>
-   <td>Access Quandl aggregator<br><a href="https://csaladenes.wordpress.com/2015/02/24/quandl-nvd3-interactive-data-plotter/" target="_blank"><img width="133" src="https://csaladenes.files.wordpress.com/2015/02/quandl.jpg"></a></td>
+   <td>Access Quandl aggregator<br><a href="https://csaladenes.wordpress.com/2015/02/24/quandl-nvd3-interactive-data-plotter/" target="_blank"><img width="133" src="https://csaladenes.files.wordpress.com/2015/06/qunadlnvd3.gif"></a></td>
    <td>Religions in Romania on colorwheels<br><a href="https://csaladenes.wordpress.com/2015/03/01/religions-of-romania-visualized-on-colorwheels/" target="_blank"><img width="133" src="https://csaladenes.files.wordpress.com/2015/03/clipboard02.png?w=133"></a></td>
    <td>Sunburst bilevel partition with tooltips <br><a href="http://bl.ocks.org/vgrocha/1580af34e56ee6224d33" target="_blank"><img width="133" src="https://gist.github.com/vgrocha/1580af34e56ee6224d33/raw/205ed29a33481727cadedd6b2ecc1e4f2273bfbf"></a></td>
   </tr>
