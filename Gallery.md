@@ -1152,6 +1152,8 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Accessing the Quandl database aggregator with D3](https://csaladenes.wordpress.com/2015/02/24/quandl-nvd3-interactive-data-plotter/) - Denes Csala
 * [How is a D3.js visualization made? – the road from CSV to SVG](https://csaladenes.wordpress.com/2015/05/08/how-a-d3-js-visualization-is-made-the-road-from-csv-to-svg/) - Denes Csala
 * [Visualizing Apps Script library dependencies with with D3](http://ramblings.mcpher.com/Home/excelquirks/drivesdk/vizdependencies) - Bruce McPherson
+* [D3kit - D3Kit is a set tools to speed D3 related project development from Twitter dev team](https://github.com/twitter/d3kit)
+
 
 #### Online Editors
 
