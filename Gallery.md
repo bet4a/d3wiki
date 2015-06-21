@@ -366,7 +366,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
   </tr>
   <tr valign="top">
     <td>Star Wars Character Profiles<br><a href="http://annalyn-ng.com/starwarsb5/chart.html"><img width="133" src="https://annalyzin.files.wordpress.com/2015/06/swcstill1.png"></a></td>
-    <td>Global Refugee Flows - 2 Dynamic Chord Diagrams<br><a href="http://wp.me/pBH3w-9K"><img width="133" src="https://csaladenes.files.wordpress.com/2015/06/refugees.gif"></a></td>
+    <td>Global Refugee Flows - 2 Dynamic Chord Diagrams<br><a href="http://wp.me/pBH3w-a5"><img width="133" src="https://csaladenes.files.wordpress.com/2015/06/refugees.gif"></a></td>
   </tr>
 </table>
 
@@ -656,7 +656,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
 * [Pazzla: Photo Mosaics of Instagram Pictures](http://pazzla.qoollo.com/) - Petr Devaikin
 * [Automated Biography of a Nation](http://annalyn-ng.com/sg50/chart.html) - Annalyn Ng
 * [Star Wars Character Profiles](http://annalyn-ng.com/starwarsb5/chart.html) - Annalyn Ng
-* [Refugee dynamics - what does the data say? A visual exploratory of refugee flows over the world using dynamic chord diagrams](http://wp.me/pBH3w-9K) - Denes Csala
+* [Refugee dynamics - what does the data say? A visual exploratory of refugee flows over the world using dynamic chord diagrams](http://wp.me/pBH3w-a5) - Denes Csala
 * [A World of Change - Climate change through the lens of Google search](http://news-lab-trends-experiment.appspot.com/) - Pitch Interactive & Michael Chang
 
 ### Collections
@@ -938,7 +938,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Switching behavior between phone brands of the Dutch ](http://www.visualcinnamon.com/2014/02/switching-behavior-between-phone-brands.html) and [Code](http://bl.ocks.org/nbremer/raw/6540350/)
 * [BeerViz - Visualizing Beers and their relations](http://seekshreyas.com/beerviz/)
 * [Explaining a Chord Diagram with Animation & Storytelling](http://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord.html)
-* [Refugee flows - 2 dynamic chord diagrams updated simultaneously](http://wp.me/pBH3w-9K)
+* [Refugee flows - 2 dynamic chord diagrams updated simultaneously](http://wp.me/pBH3w-a5)
 
 #### Maps
 
