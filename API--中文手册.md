@@ -507,14 +507,14 @@ D3 API总览
 
 ### [Chord](Chord-Layout)
 
-* [chord.chords](Chord-Layout#chords) - retrieve the computed chord angles.
-* [chord.groups](Chord-Layout#groups) - retrieve the computed group angles.
-* [chord.matrix](Chord-Layout#matrix) - get or set the matrix data backing the layout.
-* [chord.padding](Chord-Layout#padding) - get or set the angular padding between chord segments.
-* [chord.sortChords](Chord-Layout#sortChords) - get or set the comparator function for chords (z-order).
-* [chord.sortGroups](Chord-Layout#sortGroups) - get or set the comparator function for groups.
-* [chord.sortSubgroups](Chord-Layout#sortSubgroups) - get or set the comparator function for subgroups.
-* [d3.layout.chord](Chord-Layout#chord) - produce a chord diagram from a matrix of relationships.
+* [chord.chords](Chord-Layout#chords) - 取回计算的弦角度。
+* [chord.groups](Chord-Layout#groups) - 取回计算的分组角度。
+* [chord.matrix](Chord-Layout#matrix) - 取得或设置布局需要的矩阵数据。
+* [chord.padding](Chord-Layout#padding) - 取得或设置弦片段间的角填充。
+* [chord.sortChords](Chord-Layout#sortChords) - 取得或设置用于弦的比较器（Z轴顺序）。
+* [chord.sortGroups](Chord-Layout#sortGroups) - 取得或设置用于分组的比较器。
+* [chord.sortSubgroups](Chord-Layout#sortSubgroups) - 取得或设置用于子分组的比较器。
+* [d3.layout.chord](Chord-Layout#chord) - 从关系矩阵生成一个弦图。
 
 ### [Cluster](Cluster-Layout)
 
