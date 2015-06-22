@@ -397,7 +397,7 @@ Constructs a new arc generator with the default inner radius, outer radius, star
 
 ![arc](arc.png)
 
-In fact, four forms are possible: a [circle](http://en.wikipedia.org/wiki/Circle) (when the inner radius is zero and the angular span is greater than or equal to 2π), a [circular sector](http://en.wikipedia.org/wiki/Circular_sector) (when the inner radius is zero and the angular span is less than 2π), an [annulus](http://en.wikipedia.org/wiki/Annulus_(mathematics)) (when the inner radius is non-zero and the angular span is greater than or equal to 2π), and an annular sector (when the inner radius is non-zero and the angular span is less than 2π).
+In fact, four forms are possible: a [disk](https://en.wikipedia.org/wiki/Disk_(mathematics)) (when the inner radius is zero and the angular span is greater than or equal to 2π), a [circular sector](http://en.wikipedia.org/wiki/Circular_sector) (when the inner radius is zero and the angular span is less than 2π), an [annulus](http://en.wikipedia.org/wiki/Annulus_(mathematics)) (when the inner radius is non-zero and the angular span is greater than or equal to 2π), and an annular sector (when the inner radius is non-zero and the angular span is less than 2π).
 
 <a name="_arc" href="SVG-Shapes#_arc">#</a> <b>arc</b>(<i>datum</i>[, <i>index</i>])
 
