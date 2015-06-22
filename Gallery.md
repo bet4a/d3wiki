@@ -891,6 +891,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Clustering a Force layout with a Quadtree](http://bl.ocks.org/4ndr01d3/2686646672a92aa89a0e)
 * [Scales in our Solar System](http://www.visualcinnamon.com/2015/01/scales-in-our-solar-system-enormity-of.html)
 * [Connectome explorer for the "brain" of C. elegans](https://elegans.herokuapp.com)
+* [Ontology Visualization (VOWL)](http://vowl.visualdataweb.org/webvowl/)
 
 #### Tree
 
