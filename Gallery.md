@@ -367,7 +367,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
   <tr valign="top">
     <td>Star Wars Character Profiles<br><a href="http://annalyn-ng.com/starwarsb5/chart.html"><img width="133" src="https://annalyzin.files.wordpress.com/2015/06/swcstill1.png"></a></td>
     <td>Global Refugee Flows - 2 Dynamic Chord Diagrams<br><a href="http://wp.me/pBH3w-a5"><img width="133" src="https://csaladenes.files.wordpress.com/2015/06/refugees.gif"></a></td>
-    <td>VOWL - Ontology Visualization<br><a href="http://vowl.visualdataweb.org/webvowl/"><img width="133" src="http://vowl.visualdataweb.org/vowl_thumbnail.png"></a></td>
+    <td>Ontology Visualization<br><a href="http://vowl.visualdataweb.org/webvowl/"><img width="133" src="http://vowl.visualdataweb.org/webvowl/webvowl_thumbnail.png"></a></td>
   </tr>
 </table>
 
