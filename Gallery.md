@@ -461,7 +461,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <td>US States<br><a href="https://vida.io/gists/FLFFovRPbu2t5QwQC"><img width="133" src="https://vida-production.s3.amazonaws.com/thumbnails/4yATR8Z7T99KY4dzg"></a></td>
     <td>US States with Dropdown Selector<br><a href="https://vida.io/gists/vfP7KiHLfDbnDWBsX"><img width="133" src="https://vida-production.s3.amazonaws.com/thumbnails/mCo5Pi7nCu63qmrbp"></a></td>
     <td>World<br><a href="https://vida.io/gists/TWNbJrHvRcR3DeAZq"><img width="133" src="https://vida-production.s3.amazonaws.com/thumbnails/fjuXHEcEwEh55dopa"></a></td>
-    <td>US States<br><a href="https://vida.io/gists/ot4Ynw4gZdmKkofo8"><img width="133" src="https://vida-production.s3.amazonaws.com/thumbnails/4vZ9mRGyepoyQxFcK"></a></td>
+    <td>US States - Choropleth Bar<br><a href="https://vida.io/gists/ot4Ynw4gZdmKkofo8"><img width="133" src="https://vida-production.s3.amazonaws.com/thumbnails/4vZ9mRGyepoyQxFcK"></a></td>
   </tr>
 </table>
 
