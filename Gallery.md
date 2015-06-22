@@ -462,6 +462,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <td>US States with Dropdown Selector<br><a href="https://vida.io/gists/vfP7KiHLfDbnDWBsX"><img width="133" src="https://vida-production.s3.amazonaws.com/thumbnails/mCo5Pi7nCu63qmrbp"></a></td>
     <td>World<br><a href="https://vida.io/gists/TWNbJrHvRcR3DeAZq"><img width="133" src="https://vida-production.s3.amazonaws.com/thumbnails/fjuXHEcEwEh55dopa"></a></td>
     <td>US States - Choropleth Bar<br><a href="https://vida.io/gists/ot4Ynw4gZdmKkofo8"><img width="133" src="https://vida-production.s3.amazonaws.com/thumbnails/4vZ9mRGyepoyQxFcK"></a></td>
+    <td>US States Map - Side by Side<br><a href="https://vida.io/gists/JrG2Luv6pfJWyRvbw"><img width="133" src="https://vida-production.s3.amazonaws.com/thumbnails/3xHNc7JCLGRWoq9BG"></a></td>
   </tr>
 </table>
 
