@@ -61,7 +61,7 @@ Seconds (e.g., 01:23:45.0000 AM). Always 1,000 milliseconds long.
 
 <a name="minute" href="#minute">#</a> d3.time.<b>minute</b>
 
-Minutes (e.g., 01:02:00 AM). Most browsers do not support leap seconds, so minutes are almost always 60 seconds (6e4 milliseconds) long.
+Minutes (e.g., 01:02:00 AM). ECMAScript [explicitly ignores leap seconds](http://www.ecma-international.org/ecma-262/5.1/#sec-15.9.1.1), so minutes are always 60 seconds (6e4 milliseconds) long.
 
 <a name="hour" href="#hour">#</a> d3.time.<b>hour</b>
 
