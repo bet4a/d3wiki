@@ -1200,6 +1200,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Dc.js](http://nickqizhu.github.com/dc.js/)
 * [NVD3](http://nvd3.org/)
 * [Dimple](http://dimplejs.org/)
+* [C3:D3-based reusable chart library](http://c3js.org/)
 * [Cubism.js: Time Series Visualization](http://square.github.com/cubism/)
 * [Crossfilter](http://square.github.com/crossfilter/)
 * [Rickshaw: JavaScript toolkit for creating interactive real-time graphs](https://github.com/shutterstock/rickshaw)
