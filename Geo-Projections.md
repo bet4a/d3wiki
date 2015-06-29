@@ -58,7 +58,7 @@ If *rotation* is specified, sets the projection’s [three-axis rotation](http:/
 
 <a name="center" href="#center">#</a> projection.<b>center</b>([<i>location</i>])
 
-If *center* is specified, sets the projection’s center to the specified *location*, a two-element array of longitude and latitude in degrees and returns the projection. If *center* is not specified, returns the current center which defaults to ⟨0°,0°⟩.
+If *location* is specified, sets the projection’s center to the specified *location*, a two-element array of longitude and latitude in degrees and returns the projection. If *center* is not specified, returns the current center which defaults to ⟨0°,0°⟩.
 
 <a name="translate" href="#translate">#</a> projection.<b>translate</b>([<i>point</i>])
 
