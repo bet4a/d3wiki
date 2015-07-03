@@ -97,6 +97,7 @@ Please feel free to add links to your work!
 * [Learning D3.js Mapping](https://www.packtpub.com/web-development/learning-d3js-mapping)<br> Thomas Newton, Oscar Villarreal, Packt Publishing, 2014
 * [Visual Storytelling with D3](http://ritchiesking.com/book/)<br>Ritchie King, Addison-Wesley, 2014
 * [D3 on AngularJS](https://leanpub.com/d3angularjs)<br>Ari Lerner + Victor Powell, Leanpub, 2014
+* [Data Visualization with d3.js Cookbook](http://oreil.ly/1JCkacm)
 
 ## Courses
 
