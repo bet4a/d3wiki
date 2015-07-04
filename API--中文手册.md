@@ -404,12 +404,12 @@ D3 API总览
 * [axis.orient](SVG-Axes#orient) - 设置或者取得轴的方向。
 * [axis.outerTickSize](SVG-Axes#outerTickSize) - 指定外刻度大小。
 * [axis.scale](SVG-Axes#scale) - 设置或者取得比例尺。
-* [axis.tickFormat](SVG-Axes#tickFormat) - override the tick formatting for labels.
-* [axis.tickPadding](SVG-Axes#tickPadding) - specify padding between ticks and tick labels.
-* [axis.tickSize](SVG-Axes#tickSize) - specify the size of major, minor and end ticks.
-* [axis.ticks](SVG-Axes#ticks) - control how ticks are generated for the axis.
+* [axis.tickFormat](SVG-Axes#tickFormat) - 重载标签的刻度格式化。
+* [axis.tickPadding](SVG-Axes#tickPadding) - 指定刻度和刻度标签之间的间距。
+* [axis.tickSize](SVG-Axes#tickSize) - 指定主要的次要的和尾部的刻度。
+* [axis.ticks](SVG-Axes#ticks) - 控制轴的刻度如何生成。
 * [axis.tickValues](SVG-Axes#tickValues) - 明确地指定刻度值。
-* [axis](SVG-Axes#_axis) - creates or updates an axis for the given selection or transition.
+* [axis](SVG-Axes#_axis) - 为给定的选择器或过渡创建或者更新轴。
 * [d3.svg.axis](SVG-Axes#axis) - 创建一个新的轴生成器。
 
 ### [控制](SVG-Controls)
