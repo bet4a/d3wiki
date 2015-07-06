@@ -368,6 +368,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <td>Star Wars Character Profiles<br><a href="http://annalyn-ng.com/starwarsb5/chart.html"><img width="133" src="https://annalyzin.files.wordpress.com/2015/06/swcstill1.png"></a></td>
     <td>Global Refugee Flows - 2 Dynamic Chord Diagrams<br><a href="http://wp.me/pBH3w-a5"><img width="133" src="https://csaladenes.files.wordpress.com/2015/06/refugees.gif"></a></td>
     <td>Ontology Visualization <br><br><a href="http://vowl.visualdataweb.org/webvowl/"><img width="133" src="http://vowl.visualdataweb.org/webvowl/webvowl_thumbnail.png"></a></td>
+    <td>Vertical Sankey<br><br><a href="http://benlogan1981.github.io/VerticalSankey/UBS.html"><img width="133" src="http://benlogan1981.github.io/VerticalSankey/images/UbsExampleVS.png"></a></td>
   </tr>
 </table>
 
@@ -845,13 +846,14 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 
 * [Animated Sankey Diagram (alluvial)](http://nickrabinowitz.com/projects/d3/alluvial/alluvial-dynamic.html)
 * [Sankey diagram with cycles](http://bl.ocks.org/mbostock/3921009)
+* [Sankey Generator](http://sankey.csaladen.es) - Denes Csala
+* [Vertical Sankey](http://benlogan1981.github.io/VerticalSankey/UBS.html) - Ben Logan
 * [Parallel Coordinates](http://bl.ocks.org/mbostock/1341281)
 * [Parallel coordinates with fisheye distortion](http://bl.ocks.org/mbostock/3290263)
 * [Parallel Sets](http://www.jasondavies.com/parallel-sets/)
 * [Parallel Sets with reorderable heading](http://www.theage.com.au/national/parsets)
 * [Pair Contribution and Selection](http://bl.ocks.org/mbostock/4168921) - Jesse Heitler
 * [Graphicbaseball: 2012 Batters](http://charts.graphicbaseball.com/parallelbatting) and [2012 Pitchers](http://charts.graphicbaseball.com/parallelpitching) - Will Turman
-* [Sankey Generator](http://sankey.csaladen.es) - Denes Csala
 
 #### Sunburst and Partition layout
 
