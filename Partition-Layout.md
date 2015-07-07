@@ -110,4 +110,25 @@ The value accessor is invoked for each input data element, and must return a num
 
 <a name="size" href="#size">#</a> partition.<b>size</b>([<i>size</i>])
 
-If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. If *size* is not specified, returns the current size, which defaults to 1×1.
+If *size* is specified, sets the available layout size to the specified two-element array of numbers representing *x* and *y*. 
+```javascript
+var width = 1800, height = 2000;
+var partition = d3.layout.partition()
+    .size([width, height])
+    .value(function(d) { return d.size; });
+```
+If *size* is not specified, returns the current size, which defaults to 1×1. Notice, that if the size is not explicitly specified, i.e. defaults to 1×1, the calculated coordinates for each element will be normalized, i.e. each coordinate will be < 1, whereas sum of all coordinates giving 1. Consequently, you will not see anything on UI ( since 1x1 is too small to see anything). A good way to use such a situation is to apply linear range scaling. The rendering result will be the same as in case specifying explicitly the size of the diagram, however you will get a more flexible solution for further implementations: 
+```javascript
+// first, declare scaling for X and Y axis
+ var width = 1800, height = 2000,
+ x = d3.scale.linear().range([0, width]),
+ y = d3.scale.linear().range([0, height]);
+
+// then apply the scaling for each calculated coordinate
+svg.selectAll("rect").(nodes)
+		    .enter().append("svg:rect")
+		    .attr("x", function(d) { return x(d.x);})
+		    .attr("y", function(d) { return y(d.y);})
+		    .attr("width", function(d) {  return  x(d.dx);})
+		    .attr("height", function(d) { return y(d.dy); });
+```
