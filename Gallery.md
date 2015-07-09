@@ -371,7 +371,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <td>Vertical Sankey<br><br><a href="http://benlogan1981.github.io/VerticalSankey/UBS.html"><img width="133" src="http://benlogan1981.github.io/VerticalSankey/images/UbsExampleVS.png"></a></td>
   </tr>
   <tr>
-    <td>Visualizing a genetic algorithm <br><br><a href="http://karstenahnert.com/gp/"><img width="133" src="http://karstenahnert.com/gp/thumbnail3_133.png"></a></td>
+    <td>Visualizing a genetic algorithm <a href="http://karstenahnert.com/gp/"><img width="133" src="http://karstenahnert.com/gp/thumbnail3_133.png"></a></td>
   </tr>
 </table>
 
