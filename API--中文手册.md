@@ -437,18 +437,18 @@ D3 API总览
 
 ### [Time Scales](Time-Scales)
 
-* [d3.time.scale](Time-Scales#scale) - construct a linear time scale.
-* [scale.clamp](Time-Scales#clamp) - enable or disable clamping of the output range.
-* [scale.copy](Time-Scales#copy) - create a new scale from an existing scale.
-* [scale.domain](Time-Scales#domain) - get or set the scale's input domain.
-* [scale.interpolate](Time-Scales#interpolate) - get or set the scale's output interpolator.
-* [scale.invert](Time-Scales#invert) - get the domain value corresponding to a given range value.
-* [scale.nice](Time-Scales#nice) - extend the scale domain to nice round numbers.
-* [scale.rangeRound](Time-Scales#rangeRound) - set the scale's output range, and enable rounding.
-* [scale.range](Time-Scales#range) - get or set the scale's output range.
-* [scale.tickFormat](Time-Scales#tickFormat) - get a formatter for displaying tick values.
-* [scale.ticks](Time-Scales#ticks) - get representative values from the input domain.
-* [scale](Time-Scales#_scale) - get the range value corresponding to a given domain value.
+* [d3.time.scale](Time-Scales#scale) - 构造一个线性时间比例尺。
+* [scale.clamp](Time-Scales#clamp) - 指定输出范围是否闭合。
+* [scale.copy](Time-Scales#copy) - 创建比例尺的副本。
+* [scale.domain](Time-Scales#domain) - 取得或设置比例尺度的定义域。
+* [scale.interpolate](Time-Scales#interpolate) - 取得或设置比例尺的输出插值器。
+* [scale.invert](Time-Scales#invert) - 取得给定输出值对应定义域中的值。
+* [scale.nice](Time-Scales#nice) - 扩展比例尺的定义域为一个优化的整数值。
+* [scale.rangeRound](Time-Scales#rangeRound) - 设置比例尺的四舍五入输出范围。
+* [scale.range](Time-Scales#range) - 取得或设置比例尺的输出范围。
+* [scale.tickFormat](Time-Scales#tickFormat) - 取得用于展示刻度值的格式化器。
+* [scale.ticks](Time-Scales#ticks) - 取得定义域中有代表性的值。
+* [scale](Time-Scales#_scale) - 取得给定定义域中值对应的输出范围中的值。
 
 ### [Time Intervals](Time-Intervals)
 
