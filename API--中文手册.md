@@ -775,15 +775,15 @@ D3 API总览
 
 ### [Zoom](Zoom-Behavior)
 
-* [d3.behavior.zoom](Zoom-Behavior#zoom) - create a zoom behavior.
-* [zoom.center](Zoom-Behavior#center) - an optional focal point for mousewheel zooming.
-* [zoom.duration](Zoom-Behavior#duration) - get or set the dblclick transition duration.
-* [zoom.event](Zoom-Behavior#event) - dispatch zoom events after setting the scale or translate.
-* [zoom.on](Zoom-Behavior#on) - listeners for when the scale or translate changes.
-* [zoom.scaleExtent](Zoom-Behavior#scaleExtent) - optional limits on the scale factor.
-* [zoom.scale](Zoom-Behavior#scale) - the current scale factor.
-* [zoom.size](Zoom-Behavior#size) - the dimensions of the viewport.
-* [zoom.translate](Zoom-Behavior#translate) - the current translate offset.
-* [zoom.x](Zoom-Behavior#x) - an optional scale whose domain is bound to the _x_ extent of the viewport.
-* [zoom.y](Zoom-Behavior#y) - an optional scale whose domain is bound to the _y_ extent of the viewport.
-* [zoom](Zoom-Behavior#_zoom) - apply the zoom behavior to the selected elements.
+* [d3.behavior.zoom](Zoom-Behavior#zoom) - 创建缩放行为。
+* [zoom.center](Zoom-Behavior#center) - 鼠标滚轮缩放的焦点。
+* [zoom.duration](Zoom-Behavior#duration) - 取得或设置双击事件的过渡持续的时间。
+* [zoom.event](Zoom-Behavior#event) - 设置完缩放比例或平移之后分发缩放事件。
+* [zoom.on](Zoom-Behavior#on) - 事件监听器。
+* [zoom.scaleExtent](Zoom-Behavior#scaleExtent) - 可选参数，比例因子范围。
+* [zoom.scale](Zoom-Behavior#scale) - 当前的比例因子。
+* [zoom.size](Zoom-Behavior#size) - 视口的大小。
+* [zoom.translate](Zoom-Behavior#translate) - 当前的平移偏移量。
+* [zoom.x](Zoom-Behavior#x) - 可选比例尺，其定义域绑定到视口的_x_范围。
+* [zoom.y](Zoom-Behavior#y) - 可选比例尺，其定义域绑定到视口的_y_范围。
+* [zoom](Zoom-Behavior#_zoom) - 给指定的元素应用缩放行为。
