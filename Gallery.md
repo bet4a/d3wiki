@@ -294,7 +294,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <td>Trend Chart (Area + Line)<br><a href="http://bl.ocks.org/rkirsling/33a9e350516da54a5d4f"><img width="133" src="http://bl.ocks.org/rkirsling/raw/33a9e350516da54a5d4f/thumbnail.png"></a></td>
   </tr>
   <tr valign="top">
-    <td>Visualizations and Dashboard builder<br><a href="https://my.infocaptor.com/free_data_visualization.php"><img width="133" src="http://www.infocaptor.com/dashboard/wp-content/uploads/2014/10/image-358.jpg"></a></td>
+    <td>Create D3 Visualizations<br><a href="https://my.infocaptor.com/free_data_visualization.php"><img width="133" src="http://www.infocaptor.com/dashboard/wp-content/uploads/2014/10/image-358.jpg"></a></td>
     <td>-<br><a href="#"><img width="133" src="#"></a></td>
     <td>Simple bar chart with lede & nut graf layout<br><a href="http://greencracker.net/?p=1874"><img width="133" src="http://greencracker.net/wp-content/uploads/2014/11/Screen-Shot-2014-11-16-at-12.32.51-PM.png"></a></td>
     <td>Node Focusable Tree<br><a href="http://codepen.io/mikefab/full/IDdts/"><img width="133" src="http://s12.postimg.org/abee893h9/node_focusable_radial_tree.jpg"></a></td>
@@ -372,6 +372,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
   </tr>
   <tr>
     <td>Visualizing a genetic algorithm <a href="http://karstenahnert.com/gp/"><img width="133" src="http://karstenahnert.com/gp/thumbnail3_133.png"></a></td>
+<td>Create D3 Visualizations<br><a href="https://my.infocaptor.com/free_data_visualization.php"><img width="133" src="http://www.infocaptor.com/dashboard/wp-content/uploads/2014/10/image-358.jpg"></a></td>
   </tr>
 </table>
 
