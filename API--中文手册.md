@@ -518,15 +518,15 @@ D3 API总览
 
 ### [Cluster](Cluster-Layout)
 
-* [cluster.children](Cluster-Layout#children) - get or set the accessor function for child nodes.
-* [cluster.links](Cluster-Layout#links) - compute the parent-child links between tree nodes.
-* [cluster.nodeSize](Cluster-Layout#nodeSize) - specify a fixed size for each node.
-* [cluster.nodes](Cluster-Layout#nodes) - compute the cluster layout and return the array of nodes.
-* [cluster.separation](Cluster-Layout#separation) - get or set the spacing function between neighboring nodes.
-* [cluster.size](Cluster-Layout#size) - get or set the layout size in *x* and *y*.
-* [cluster.sort](Cluster-Layout#sort) - get or set the comparator function for sibling nodes.
-* [cluster](Cluster-Layout#_cluster) - alias for cluster.nodes.
-* [d3.layout.cluster](Cluster-Layout#cluster) - cluster entities into a dendrogram.
+* [cluster.children](Cluster-Layout#children) - 取得或者设置子节点的访问器函数。
+* [cluster.links](Cluster-Layout#links) - 技术树节点之间的父子连接。
+* [cluster.nodeSize](Cluster-Layout#nodeSize) - 为每个节点指定固定的尺寸。
+* [cluster.nodes](Cluster-Layout#nodes) - 计算簇布局并返回节点数组。
+* [cluster.separation](Cluster-Layout#separation) - 取得或设置邻接节点的分隔函数。
+* [cluster.size](Cluster-Layout#size) - 取得或设置布局的尺寸。
+* [cluster.sort](Cluster-Layout#sort) - 取得或设置兄弟节点的比较器函数。
+* [cluster](Cluster-Layout#_cluster) - cluster.nodes的别名。
+* [d3.layout.cluster](Cluster-Layout#cluster) - 将实体聚集成树状图。
 
 ### [Force](Force-Layout)
 
