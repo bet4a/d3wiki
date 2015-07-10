@@ -242,9 +242,9 @@ D3 API总览
 * [dispatch.on](内部#dispatch_on) - 注册或者解除注册事件监听器。
 * [dispatch.type](内部#_dispatch) - 为指定的监听器分发事件。
 
-## [d3.scale (Scales)](Scales)
+## [d3.scale (比例尺)](比例尺)
 
-### [Quantitative](Quantitative-Scales#quantitative)
+### [定量比例尺](Quantitative-Scales#quantitative)
 
 * [d3.scale.identity](Quantitative-Scales#identity) - 构建一个线性恒等比例尺。
 * [d3.scale.linear](Quantitative-Scales#linear) - 构建一个线性定量比例尺。
@@ -312,7 +312,7 @@ D3 API总览
 * [threshold.range](Quantitative-Scales#threshold_range) - 取得或设置比例尺的值域（离散的值）。
 * [threshold](Quantitative-Scales#_threshold) - 取得输入值对应的输出值。
 
-### [Ordinal](Ordinal-Scales#ordinal)
+### [序数比例尺](Ordinal-Scales#ordinal)
 
 * [d3.scale.category10](Ordinal-Scales#category10) - 构造一个10种颜色的序数比例尺。
 * [d3.scale.category20b](Ordinal-Scales#category20b) - 构造一个20种颜色的序数比例尺。
@@ -450,53 +450,53 @@ D3 API总览
 * [scale.ticks](Time-Scales#ticks) - 取得定义域中有代表性的值。
 * [scale](Time-Scales#_scale) - 取得给定定义域中值对应的输出范围中的值。
 
-### [Time Intervals](Time-Intervals)
+### [时间间隔](Time-Intervals)
 
-* [d3.time.dayOfYear](Time-Intervals#dayOfYear) - computes the day number.
-* [d3.time.days](Time-Intervals#day) - alias for day.range.
-* [d3.time.day](Time-Intervals#day) - every day (12:00 AM).
-* [d3.time.fridayOfYear](Time-Intervals#fridayOfYear) - computes the friday-based week number.
-* [d3.time.fridays](Time-Intervals#fridays) - alias for friday.range.
-* [d3.time.friday](Time-Intervals#friday) - every Friday (e.g., February 5, 12:00 AM).
-* [d3.time.hours](Time-Intervals#hours) - alias for hour.range.
-* [d3.time.hour](Time-Intervals#hour) - every hour (e.g., 1:00 AM).
-* [d3.time.interval](Time-Intervals#interval) - a time interval in local time.
-* [d3.time.minutes](Time-Intervals#minutes) - alias for minute.range.
-* [d3.time.minute](Time-Intervals#minute) - every minute (e.g., 1:02 AM).
-* [d3.time.mondayOfYear](Time-Intervals#mondayOfYear) - computes the monday-based week number.
-* [d3.time.mondays](Time-Intervals#mondays) - alias for monday.range.
-* [d3.time.monday](Time-Intervals#monday) - every Monday (e.g., February 5, 12:00 AM).
-* [d3.time.months](Time-Intervals#months) - alias for month.range.
-* [d3.time.month](Time-Intervals#month) - every month (e.g., February 1, 12:00 AM).
-* [d3.time.saturdayOfYear](Time-Intervals#saturdayOfYear) - computes the saturday-based week number.
-* [d3.time.saturdays](Time-Intervals#saturdays) - alias for saturday.range.
-* [d3.time.saturday](Time-Intervals#saturday) - every Saturday (e.g., February 5, 12:00 AM).
-* [d3.time.seconds](Time-Intervals#seconds) - alias for second.range.
-* [d3.time.second](Time-Intervals#second) - every second (e.g., 1:02:03 AM).
-* [d3.time.sundayOfYear](Time-Intervals#sundayOfYear) - computes the sunday-based week number.
-* [d3.time.sundays](Time-Intervals#sundays) - alias for sunday.range.
-* [d3.time.sunday](Time-Intervals#sunday) - every Sunday (e.g., February 5, 12:00 AM).
-* [d3.time.thursdayOfYear](Time-Intervals#thursdayOfYear) - computes the thursday-based week number.
-* [d3.time.thursdays](Time-Intervals#thursdays) - alias for thursday.range.
-* [d3.time.thursday](Time-Intervals#thursday) - every Thursday (e.g., February 5, 12:00 AM).
-* [d3.time.tuesdayOfYear](Time-Intervals#tuesdayOfYear) - computes the tuesday-based week number.
-* [d3.time.tuesdays](Time-Intervals#tuesdays) - alias for tuesday.range.
-* [d3.time.tuesday](Time-Intervals#tuesday) - every Tuesday (e.g., February 5, 12:00 AM).
-* [d3.time.wednesdayOfYear](Time-Intervals#tuesdayOfYear) - computes the wednesday-based week number.
-* [d3.time.wednesdays](Time-Intervals#wednesdays) - alias for wednesday.range.
-* [d3.time.wednesday](Time-Intervals#wednesday) - every Wednesday (e.g., February 5, 12:00 AM).
-* [d3.time.weekOfYear](Time-Intervals#weekOfYear) - alias for sundayOfYear.
-* [d3.time.weeks](Time-Intervals#weeks) - alias for sunday.range.
-* [d3.time.week](Time-Intervals#week) - alias for sunday.
-* [d3.time.years](Time-Intervals#years) - alias for year.range.
-* [d3.time.year](Time-Intervals#year) - every year (e.g., January 1, 12:00 AM).
-* [interval.ceil](Time-Intervals#interval_ceil) - rounds up to the nearest interval.
-* [interval.floor](Time-Intervals#interval_floor) - rounds down to the nearest interval.
-* [interval.offset](Time-Intervals#interval_offset) - returns a date offset by some interval.
-* [interval.range](Time-Intervals#interval_range) - returns dates within the specified range.
-* [interval.round](Time-Intervals#interval_round) - rounds up or down to the nearest interval.
-* [interval.utc](Time-Intervals#interval_utc) - returns the UTC-equivalent time interval.
-* [interval](Time-Intervals#_interval) - alias for interval.floor.
+* [d3.time.dayOfYear](Time-Intervals#dayOfYear) - 计算天数。
+* [d3.time.days](Time-Intervals#day) - day.range的别名。
+* [d3.time.day](Time-Intervals#day) - 每天（12:00 AM）。
+* [d3.time.fridayOfYear](Time-Intervals#fridayOfYear) - 计算基于周五的星期数。
+* [d3.time.fridays](Time-Intervals#fridays) -friday.range的别名。
+* [d3.time.friday](Time-Intervals#friday) - 每周五（例如February 5, 12:00 AM）。
+* [d3.time.hours](Time-Intervals#hours) - hour.range的别名。
+* [d3.time.hour](Time-Intervals#hour) - 每个小时（例如, 1:00 AM）。
+* [d3.time.interval](Time-Intervals#interval) - 一个基于本地时间的时间间隔。
+* [d3.time.minutes](Time-Intervals#minutes) - minute.range的别名。
+* [d3.time.minute](Time-Intervals#minute) - 每分钟（例如, 1:02 AM）。
+* [d3.time.mondayOfYear](Time-Intervals#mondayOfYear) - 计算基于周一的星期数。
+* [d3.time.mondays](Time-Intervals#mondays) - monday.range的别名。
+* [d3.time.monday](Time-Intervals#monday) - 每周一（例如, February 5, 12:00 AM）
+* [d3.time.months](Time-Intervals#months) - month.range的别名。
+* [d3.time.month](Time-Intervals#month) - 每个月（例如, February 1, 12:00 AM）
+* [d3.time.saturdayOfYear](Time-Intervals#saturdayOfYear) - 计算基于周六的星期数。
+* [d3.time.saturdays](Time-Intervals#saturdays) - saturday.range的别名。
+* [d3.time.saturday](Time-Intervals#saturday) - every Saturday （例如, February 5, 12:00 AM）。
+* [d3.time.seconds](Time-Intervals#seconds) - second.range的别名。
+* [d3.time.second](Time-Intervals#second) - 每秒（例如, 1:02:03 AM）。
+* [d3.time.sundayOfYear](Time-Intervals#sundayOfYear) - 计算基于周日的星期数。
+* [d3.time.sundays](Time-Intervals#sundays) - sunday.range的别名。
+* [d3.time.sunday](Time-Intervals#sunday) - 每周日（例如February 5, 12:00 AM）。
+* [d3.time.thursdayOfYear](Time-Intervals#thursdayOfYear) - 计算基于周四的星期数。
+* [d3.time.thursdays](Time-Intervals#thursdays) - thursday.range的别名。
+* [d3.time.thursday](Time-Intervals#thursday) - 每周四（例如February 5, 12:00 AM）。
+* [d3.time.tuesdayOfYear](Time-Intervals#tuesdayOfYear) - 计算基于周二的星期数。
+* [d3.time.tuesdays](Time-Intervals#tuesdays) - tuesday.range的别名。
+* [d3.time.tuesday](Time-Intervals#tuesday) - 每周二（例如February 5, 12:00 AM）。
+* [d3.time.wednesdayOfYear](Time-Intervals#tuesdayOfYear) - 计算基于周三的星期数。
+* [d3.time.wednesdays](Time-Intervals#wednesdays) - wednesday.range的别名。
+* [d3.time.wednesday](Time-Intervals#wednesday) - 每周三（例如February 5, 12:00 AM）。
+* [d3.time.weekOfYear](Time-Intervals#weekOfYear) - sundayOfYear的别名。
+* [d3.time.weeks](Time-Intervals#weeks) - sunday.range的别名。
+* [d3.time.week](Time-Intervals#week) - sunday的别名。
+* [d3.time.years](Time-Intervals#years) - year.range的别名。
+* [d3.time.year](Time-Intervals#year) - 每年（例如January 1, 12:00 AM）。
+* [interval.ceil](Time-Intervals#interval_ceil) - 上取整到最近的时间间隔。
+* [interval.floor](Time-Intervals#interval_floor) - 下取整到最近的时间间隔。
+* [interval.offset](Time-Intervals#interval_offset) - 基于一些间隔返回时间偏移。
+* [interval.range](Time-Intervals#interval_range) - 返回指定范围中的日期。
+* [interval.round](Time-Intervals#interval_round) - 四舍五入到最近的时间间隔。
+* [interval.utc](Time-Intervals#interval_utc) - 返回UTC时间间隔。
+* [interval](Time-Intervals#_interval) - interval.floor的别名。
 
 ## [d3.layout (Layouts)](Layouts)
 
