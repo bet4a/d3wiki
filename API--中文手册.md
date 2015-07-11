@@ -186,19 +186,19 @@ D3 API总览
 * [d3.requote](格式化#d3_requote) - 将字符串转义为正则表达式。
 * [d3.round](格式化#d3_round) - 将值四舍五入到指定小数位。
 
-### [CSV Formatting (d3.csv)](CSV)
+### [CSV格式化(d3.csv)](CSV)
 
-* [d3.csv.formatRows](CSV#formatRows) - format an array of tuples into a CSV string.
-* [d3.csv.format](CSV#format) - format an array of objects into a CSV string.
-* [d3.csv.parseRows](CSV#parseRows) - parse a CSV string into tuples, ignoring the header row.
-* [d3.csv.parse](CSV#parse) - parse a CSV string into objects using the header row.
-* [d3.csv](CSV#csv) - request a comma-separated values (CSV) file.
-* [d3.dsv](CSV#dsv) - create a parser/formatter for the specified delimiter and mime type.
-* [d3.tsv.formatRows](CSV#tsv_formatRows) - format an array of tuples into a TSV string.
-* [d3.tsv.format](CSV#tsv_format) - format an array of objects into a TSV string.
-* [d3.tsv.parseRows](CSV#tsv_parseRows) - parse a TSV string into tuples, ignoring the header row.
-* [d3.tsv.parse](CSV#tsv_parse) - parse a TSV string into objects using the header row.
-* [d3.tsv](CSV#tsv) - request a tab-separated values (TSV) file.
+* [d3.csv.formatRows](CSV#formatRows) - 格式化一组元组为CSV字符串。
+* [d3.csv.format](CSV#format) - 格式化一组对象为CSV字符串。
+* [d3.csv.parseRows](CSV#parseRows) - 解析CSV字符串为元组，忽略首行。
+* [d3.csv.parse](CSV#parse) - 把首行数据CSV字符串解析为对象。
+* [d3.csv](CSV#csv) - 请求一个CSV文件。
+* [d3.dsv](CSV#dsv) - 为指定的分隔符和mime类型创建一个解析器/格式化器。
+* [d3.tsv.formatRows](CSV#tsv_formatRows) - 格式化一组元组为TSV字符串。
+* [d3.tsv.format](CSV#tsv_format) - 格式化一组对象为TSV字符串。
+* [d3.tsv.parseRows](CSV#tsv_parseRows) - 解析TSV字符串为元组，忽略首行。
+* [d3.tsv.parse](CSV#tsv_parse) - 把首行数据TSV字符串解析为对象。
+* [d3.tsv](CSV#tsv) - 请求一个TSV文件。
 
 ### [本地化](本地化)
 
