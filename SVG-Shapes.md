@@ -1,6 +1,6 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[SVG]] ▸ **SVG Shapes**
 
-SVG has a number of built-in simple shapes, such as axis-aligned rectangles and circles. For greater flexibility, you can use SVG's [[path|http://www.w3.org/TR/SVG/paths.html#PathElement]] element in conjunction with D3's path data generators. If you're familiar with Protovis, you'll note that D3's path generators are similar to Protovis marks.
+SVG has a number of built-in simple shapes, such as axis-aligned rectangles and circles. For greater flexibility, you can use SVG's [[path|http://www.w3.org/TR/SVG/paths.html#PathElement]] element in conjunction with D3's path data generators.
 
 A shape generator, such as that returned by [d3.svg.arc](SVG-Shapes#arc), is both an object and a function. That is: you can call the shape like any other function, and the shape has additional methods that change its behavior. Like other classes in D3, shapes follow the method chaining pattern where setter methods return the shape itself, allowing multiple setters to be invoked in a concise statement.
 
@@ -56,7 +56,7 @@ The [[path|http://www.w3.org/TR/SVG/paths.html#PathElement]] element represents 
 
 ## Path Data Generators
 
-To simplify the construction of the *d* attribute for path elements, D3 includes a number of helper classes for generating path data. If you're familiar with [[Protovis|http://vis.stanford.edu/protovis/]], you'll find that these path generators are similar to Protovis mark types: each generator is a function of data. So, if your data is a sequence of *xy* coordinates, you can define accessor functions that the path generators use to produce path data. For example, you might define a line generator:
+To simplify the construction of the *d* attribute for path elements, D3 includes a number of helper classes for generating path data. Each generator is a function of data. So, if your data is a sequence of *xy* coordinates, you can define accessor functions that the path generators use to produce path data. For example, you might define a line generator:
 
 ```javascript
 var line = d3.svg.line()
@@ -536,7 +536,7 @@ If *type* is specified, sets the *type*-accessor to the specified function or co
 * triangle-down - a downward-pointing [equilateral triangle](http://en.wikipedia.org/wiki/Equilateral_triangle).
 * triangle-up - an upward-pointing equilateral triangle.
 
-Types are normalized to have the same area in square pixels, according to the specified [size](SVG-Shapes#symbol_size). However, note that different types' sizes may be affected by the stroke and stroke width in different ways. All of the types are designed to be visible when only a fill style is used (unlike the Protovis cross), although they generally look better when both a fill and stroke is used.
+Types are normalized to have the same area in square pixels, according to the specified [size](SVG-Shapes#symbol_size). However, note that different types' sizes may be affected by the stroke and stroke width in different ways. All of the types are designed to be visible when only a fill style is used, although they generally look better when both a fill and stroke is used.
 
 The *type*-accessor is invoked in the same manner as other value functions in D3. The *this* context of the function is the current element in the selection. (Technically, the same *this* context that invokes the arc function; however, in the common case that the symbol generator is passed to the [[attr|Selections#attr]] operator, the *this* context will be the associated DOM element.) The function is passed two arguments, the current datum (d) and the current index (i). It is also possible to specify the *type*-accessor as a constant rather than a function.
 
