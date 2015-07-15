@@ -373,6 +373,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
   <tr>
     <td>Visualizing a genetic algorithm <a href="http://karstenahnert.com/gp/"><img width="133" src="http://karstenahnert.com/gp/thumbnail3_133.png"></a></td>
 <td>Create D3 Visualizations<br><a href="https://my.infocaptor.com/free_data_visualization.php"><img width="133" src="http://www.infocaptor.com/dashboard/wp-content/uploads/2014/10/image-358.jpg"></a></td>
+    <td>Rectangular Area Chart<br /><a href="http://bl.ocks.org/brattonc/b1abb535227b2f722b51" target="_blank"><img width="133" src="https://gist.githubusercontent.com/brattonc/b1abb535227b2f722b51/raw/thumbnail.gif"></a></td>
   </tr>
 </table>
 
