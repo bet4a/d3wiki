@@ -95,7 +95,7 @@ Computes the projected centroid (in pixels) for the specified *feature*. This is
 
 <a name="path_bounds" href="#path_bounds">#</a> path.<b>bounds</b>(<i>feature</i>)
 
-Computes the projected bounding box (in pixels) for the specified *feature*. The bounding box is represented by a two-dimensional array: [[<i>left</i>, <i>top</i>], [<i>right</i>, <i>bottom</i>]] , different from GIS [geo.bounds](https://github.com/mbostock/d3/wiki/Geo-Paths#bounds)' convention. This is handy for, say, zooming in to a particular feature. This method observes any clipping and resampling performed by the projection stream. 
+Computes the projected bounding box (in pixels) for the specified *feature*. The bounding box is represented by a two-dimensional array: [\[<i>left</i>, <i>top</i>], [<i>right</i>, <i>bottom</i>]] , different from GIS [geo.bounds](https://github.com/mbostock/d3/wiki/Geo-Paths#bounds)' convention. This is handy for, say, zooming in to a particular feature. This method observes any clipping and resampling performed by the projection stream. 
 
 <a name="path_pointRadius" href="#path_pointRadius">#</a> path.<b>pointRadius</b>([<i>radius</i>])
 
