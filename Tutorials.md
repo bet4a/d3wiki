@@ -33,7 +33,7 @@ Please feel free to add links to your work!
 * [How to Make an Interactive Network Visualization](http://flowingdata.com/2012/08/02/how-to-make-an-interactive-network-visualization/) - Jim Vallandingham
 * [Learn how to make Data Visualizations with D3.js](http://www.dashingd3js.com/) - Dashingd3js
 * [Introduction to d3.js and data-driven visualizations](http://www.skillshare.com/Introduction-to-d3js-and-data-driven-visualizations/1912580409) - Kenny Peng
-* [http://nowherenearithaca.blogspot.com/2012/06/annotating-d3-example-with-docco.html](http://nowherenearithaca.github.com/empires/empires.html) - Brad Flyon
+* [http://nowherenearithaca.blogspot.com/2012/06/annotating-d3-example-with-docco.html](http://nowherenearithaca.blogspot.com/2012/06/annotating-d3-example-with-docco.html) - Brad Flyon
 * [D3.js Tips and Tricks Blog](http://www.d3noob.org/) and [pdf book version](https://leanpub.com/D3-Tips-and-Tricks) and [read full text online](https://leanpub.com/D3-Tips-and-Tricks/read) - D3noob
 * [Introduction to D3.js Geo](http://hashbang.co.nz/blog/2013/2/25/d3_js_geo_fun) - Graham Jenson
 * [learning D3.js(2)(Chinese)](http://www.d3js.cn/?p=41) - jtyjty99999
