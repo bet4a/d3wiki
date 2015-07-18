@@ -375,7 +375,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
 <td>Create D3 Visualizations<br><a href="https://my.infocaptor.com/free_data_visualization.php"><img width="133" src="http://www.infocaptor.com/dashboard/wp-content/uploads/2014/10/image-358.jpg"></a></td>
     <td>Rectangular Area Chart<br /><a href="http://bl.ocks.org/brattonc/b1abb535227b2f722b51" target="_blank"><img width="133" src="https://gist.githubusercontent.com/brattonc/b1abb535227b2f722b51/raw/thumbnail.gif"></a></td>
 
-    <td>Gaussian curve from random variable<br /><a href="http://run.plnkr.co/plunks/GOH3XH/" target="_blank"><img width="133" src="https://raw.githubusercontent.com/samyBadjoudj/gaussian-function/master/gaussian_function_d3.png"></a></td>
+    <td>Gaussian curve from random variable<br /><a href="http://plnkr.co/GOH3XH" target="_blank"><img width="133" src="https://raw.githubusercontent.com/samyBadjoudj/gaussian-function/master/gaussian_function_d3.png"></a></td>
   </tr>
 </table>
 
