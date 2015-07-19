@@ -530,24 +530,24 @@ D3 API总览
 
 ### [Force](Force-Layout)
 
-* [d3.layout.force](Force-Layout#force) - position linked nodes using physical simulation.
-* [force.alpha](Force-Layout#alpha) - get or set the layout's cooling parameter.
-* [force.chargeDistance](Force-Layout#chargeDistance) - get or set the maximum charge distance.
-* [force.charge](Force-Layout#charge) - get or set the charge strength.
-* [force.drag](Force-Layout#drag) - bind a behavior to nodes to allow interactive dragging.
-* [force.friction](Force-Layout#friction) - get or set the friction coefficient.
-* [force.gravity](Force-Layout#gravity) - get or set the gravity strength.
-* [force.linkDistance](Force-Layout#linkDistance) - get or set the link distance.
-* [force.linkStrength](Force-Layout#linkStrength) - get or set the link strength.
-* [force.links](Force-Layout#links) - get or set the array of links between nodes.
-* [force.nodes](Force-Layout#nodes) - get or set the array of nodes to layout.
-* [force.on](Force-Layout#on) - listen to updates in the computed layout positions.
-* [force.resume](Force-Layout#resume) - reheat the cooling parameter and restart simulation.
-* [force.size](Force-Layout#size) - get or set the layout size in *x* and *y*.
-* [force.start](Force-Layout#start) - start or restart the simulation when the nodes change.
-* [force.stop](Force-Layout#stop) - immediately terminate the simulation.
-* [force.theta](Force-Layout#theta) - get or set the accuracy of the charge interaction.
-* [force.tick](Force-Layout#tick) - run the layout simulation one step.
+* [d3.layout.force](Force-Layout#force) - 使用物理模拟排放链接节点的位置。
+* [force.alpha](Force-Layout#alpha) - 取得或者设置力布局的冷却参数。
+* [force.chargeDistance](Force-Layout#chargeDistance) - 取得或者设置最大电荷距离。
+* [force.charge](Force-Layout#charge) - 取得或者设置电荷强度。
+* [force.drag](Force-Layout#drag) - 给节点绑定拖动行为。
+* [force.friction](Force-Layout#friction) - 取得或者设置摩擦系数。
+* [force.gravity](Force-Layout#gravity) - 取得或者设置重力强度。
+* [force.linkDistance](Force-Layout#linkDistance) - 取得或者设置链接距离。
+* [force.linkStrength](Force-Layout#linkStrength) - 取得或者设置链接强度。
+* [force.links](Force-Layout#links) - 取得或者设置节点间的链接数组。
+* [force.nodes](Force-Layout#nodes) - 取得或者设置布局的节点数组。
+* [force.on](Force-Layout#on) - 监听在计算布局位置时的更新。
+* [force.resume](Force-Layout#resume) - 重新加热冷却参数，并重启模拟。
+* [force.size](Force-Layout#size) - 取得或者设置布局大小。
+* [force.start](Force-Layout#start) - 当节点变化时启动或者重启模拟。
+* [force.stop](Force-Layout#stop) - 立即停止模拟。
+* [force.theta](Force-Layout#theta) - 取得或者设置电荷作用的精度。
+* [force.tick](Force-Layout#tick) - 运行布局模拟的一步。
 
 ### [Hierarchy](Hierarchy-Layout)
 
