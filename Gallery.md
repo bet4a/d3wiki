@@ -631,6 +631,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
 * [Visualizing K-Means Clustering](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/) - Naftali Harris
 * [Australian Election Preferences](http://peterneish.github.io/preferences/) - Peter Neish
 * [Lifespan](http://www.cotrino.com/2014/02/lifespan-longevidad-animal/) - José Cotrino
+* [UK Economy as a Network](http://helenjacksonanalytic.co.uk/UKEconomyNetwork.html) - Helen Jackson
 * [England and Wales house price evolution (multi-variable animation)](http://helenjacksonanalytic.co.uk/EW_prop_price.html) - Helen Jackson
 * [Millennium Development Goals and Economic Growth](http://helenjacksonanalytic.co.uk/MDG.html) - Helen Jackson
 * [Weather and UK Agricultural Yields Regression Results](http://helenjacksonanalytic.co.uk/agri.html) - Helen Jackson
