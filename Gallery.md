@@ -637,7 +637,6 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
 * [Weather and UK Agricultural Yields Regression Results](http://helenjacksonanalytic.co.uk/agri.html) - Helen Jackson
 * [Simple Schelling Model of Urban Segregation](http://helenjacksonanalytic.co.uk/schelling.html) - Helen Jackson
 * [Sensitivity Analysis of Renewable Technology Costs](http://helenjacksonanalytic.co.uk/sens_analysis.html) - Helen Jackson
-* [UK Electricity Supply Crunch](http://helenjacksonanalytic.co.uk/power.html) - Helen Jackson
 * [New Years Resolutions and Search Trends](http://www.bytemuse.com/post/resolutions-and-search-trends/) - Chris Polis
 * [Geometric Proof of the Pythagorean theorem](http://www.bytemuse.com/post/geometric-proof-of-the-pythagorean-theorem-in-d3-js/) - Chris Polis
 * [Top words and the words they frequently appear with in American Hip-Hop](http://hiphop.laserdeathstehr.com/) - Nathan Stehr
