@@ -377,6 +377,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
 
     <td>Gaussian curve from random variable<br /><a href="http://plnkr.co/GOH3XH" target="_blank"><img width="133" src="https://raw.githubusercontent.com/samyBadjoudj/gaussian-function/master/gaussian_function_d3.png"></a></td>
   </tr>
+<tr><td>UK Economy as a Network<br /><a href="http://helenjacksonanalytic.co.uk/UKEconomyNetwork.html" target="_blank"><img width="133" src="http://helenjacksonanalytic.co.uk/EconomyNetwork.jpg"></a></td></tr>
 </table>
 
 ## Basic Charts
