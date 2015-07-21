@@ -250,13 +250,13 @@ Filters the selection, returning a new selection that contains only the elements
 For example, to select every element with an odd index (relative to the zero-based index):
 
 ```javascript
-var odds = selection.select(function(d, i) { return i & 1 ? this : null; });
+var odds = selection.select(function(d, i) { return i % 2 === 1 ? this : null; });
 ```
 
 Equivalently, using a filter function:
 
 ```javascript
-var odds = selection.filter(function(d, i) { return i & 1; });
+var odds = selection.filter(function(d, i) { return i % 2 === 1; });
 ```
 
 Or a filter selector (noting that the :nth-child pseudo-class is a one-based index rather than a zero-based index):
