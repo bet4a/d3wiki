@@ -377,7 +377,10 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
 
     <td>Gaussian curve from random variable<br /><a href="http://plnkr.co/GOH3XH" target="_blank"><img width="133" src="https://raw.githubusercontent.com/samyBadjoudj/gaussian-function/master/gaussian_function_d3.png"></a></td>
   </tr>
-<tr><td>UK Economy as a Network<br /><a href="http://helenjacksonanalytic.co.uk/UKEconomyNetwork.html" target="_blank"><img width="133" src="http://helenjacksonanalytic.co.uk/EconomyNetwork.jpg"></a></td></tr>
+<tr><td>UK Economy as a Network<br /><a href="http://helenjacksonanalytic.co.uk/UKEconomyNetwork.html" target="_blank"><img width="133" src="http://helenjacksonanalytic.co.uk/EconomyNetwork.jpg"></a></td>
+ <td align="center">Contouring Comparison<br><a href="http://emptypipes.org/2015/07/22/contour-comparison/"><img width="133" src="http://emptypipes.org/img/contouring_comparison2.png"></a></td>
+</tr>
+
 </table>
 
 ## Basic Charts
@@ -423,7 +426,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <td>Waterfall Chart<br><a href="http://bl.ocks.org/chucklam/f3c7b3e3709a0afd5d57"><img width="133" src="http://bl.ocks.org/chucklam/raw/f3c7b3e3709a0afd5d57/thumbnail.png"></a></td>
     <td>Diverging Stacked Bar Chart<br><a href="http://bl.ocks.org/wpoely86/e285b8e4c7b84710e463"><img width="133" src="http://bl.ocks.org/wpoely86/raw/e285b8e4c7b84710e463/thumbnail.png"></a></td>
     <td>Timeseries<br><a href="http://mlvl.github.io/timeseries/"><img width="133" src="http://mlvl.github.io/timeseries/images/timeseries-sm.png"></a></td>
- <td>Contouring Comparison<br><a href="http://emptypipes.org/2015/07/22/contour-comparison/"><img width="133" src="http://emptypipes.org/img/contouring_comparison2.png"></a></td>
+
 
   </tr>
 </table>
