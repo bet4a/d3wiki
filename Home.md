@@ -26,7 +26,19 @@
 
 D3 supports so-called “modern” browsers, which generally means everything _except_ IE8 and older versions. D3 is tested against Firefox, Chrome, Safari, Opera, IE9+, Android and iOS. Parts of D3 may work in older browsers, as the core D3 library has minimal requirements: JavaScript and the [W3C DOM](http://www.w3.org/DOM/) API. D3 uses the [Selectors API](http://www.w3.org/TR/selectors-api/) Level 1, but you can preload [Sizzle](http://sizzlejs.com/) for compatibility. You'll need a modern browser to use [SVG](http://www.w3.org/TR/SVG/) and [CSS3 Transitions](http://www.w3.org/TR/css3-transitions/). D3 is not a compatibility layer, so if your browser doesn't support standards, you're out of luck. Sorry!
 
-D3 also runs on [Node.js](http://nodejs.org/). Use `npm install d3` to install, and `require("d3")` to load. On Node, limited DOM support is provided by [JSDOM](https://github.com/tmpvar/jsdom). D3 can also run within a [WebWorker](http://www.whatwg.org/specs/web-apps/current-work/multipage/workers.html) by creating a [custom build](/mbostock/smash/wiki) containing only the desired (non-DOM) features.
+D3 also runs on [Node.js](http://nodejs.org/). Use `npm install d3` to install it.
+
+Note that because Node itself lacks a DOM and multiple DOM implementations exist for it (e.g., [JSDOM](https://github.com/tmpvar/jsdom)), you'll need to explicitly pass in a DOM element to your d3 methods like so:
+
+```js
+var d3 = require("d3"),
+    jsdom = require("jsdom");
+
+var document = jsdom.jsdom(),
+    svg = d3.select(document.body).append("svg");
+```
+
+D3 can also run within a [WebWorker](http://www.whatwg.org/specs/web-apps/current-work/multipage/workers.html) by creating a [custom build](/mbostock/smash/wiki) containing only the desired (non-DOM) features.
 
 ## Installing
 
