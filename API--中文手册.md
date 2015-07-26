@@ -569,18 +569,18 @@ D3 API总览
 * [histogram.value](Histogram-Layout#value) - 取得或设置值访问器。
 * [histogram](Histogram-Layout#_histogram) - 使用量化的箱计算数据的分布。
 
-### [Pack](Pack-Layout)
+### [包布局](包布局)
 
-* [d3.layout.pack](Pack-Layout#pack) - produce a hierarchical layout using recursive circle-packing.
-* [pack.children](Pack-Layout#children) - get or set the children accessor function.
-* [pack.links](Pack-Layout#links) - compute the parent-child links between tree nodes.
-* [pack.nodes](Pack-Layout#nodes) - compute the pack layout and return the array of nodes.
-* [pack.padding](Pack-Layout#padding) - specify the layout padding in (approximate) pixels.
-* [pack.radius](Pack-Layout#radius) - specify the node radius, rather than deriving it from value.
-* [pack.size](Pack-Layout#size) - specify the layout size in *x* and *y*.
-* [pack.sort](Pack-Layout#sort) - control the order in which sibling nodes are traversed.
-* [pack.value](Pack-Layout#value) - get or set the value accessor used to size circles.
-* [pack](Pack-Layout#_pack) - alias for pack.nodes.
+* [d3.layout.pack](Pack-Layout#pack) - 用递归的圆-包生成一个层次布局。
+* [pack.children](Pack-Layout#children) - 取得或设置子节点的访问器。
+* [pack.links](Pack-Layout#links) - 计算树节点中的父子链接。
+* [pack.nodes](Pack-Layout#nodes) - 计算包布局并返回节点数组。
+* [pack.padding](Pack-Layout#padding) - 指定布局间距（以像素为单位）
+* [pack.radius](Pack-Layout#radius) - 指定节点半径（不是由值派生来的）
+* [pack.size](Pack-Layout#size) - 指定布局尺寸。
+* [pack.sort](Pack-Layout#sort) - 控制兄弟节点的遍历顺序。
+* [pack.value](Pack-Layout#value) -  取得或设置用于圆尺寸的值访问器。
+* [pack](Pack-Layout#_pack) - pack.nodes的别名。
 
 ### [Partition](Partition-Layout)
 
