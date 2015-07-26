@@ -679,44 +679,44 @@ D3 API总览
 * [rotation.invert](Geo-Paths#rotation_invert) - inverse-rotate the given location around the sphere.
 * [rotation](Geo-Paths#_rotation) - rotate the given location around the sphere.
 
-### [Projections](Geo-Projections)
+### [地理投影](地理投影)
 
-* [albers.parallels](Geo-Projections#albers_parallels) - get or set the projection's two standard parallels.
-* [d3.geo.albersUsa](Geo-Projections#albersUsa) - a composite Albers projection for the United States.
-* [d3.geo.albers](Geo-Projections#albers) - the Albers equal-area conic projection.
-* [d3.geo.azimuthalEqualArea.raw](Geo-Projections#azimuthalEqualArea_raw) - the raw azimuthal equal-area projection.
-* [d3.geo.azimuthalEqualArea](Geo-Projections#azimuthalEqualArea) - the azimuthal equal-area projection.
-* [d3.geo.azimuthalEquidistant.raw](Geo-Projections#azimuthalEquidistant_raw) - the azimuthal equidistant projection.
-* [d3.geo.azimuthalEquidistant](Geo-Projections#azimuthalEquidistant) - the azimuthal equidistant projection.
-* [d3.geo.conicConformal.raw](Geo-Projections#conicConformal_raw) - the raw conic conformal projection.
-* [d3.geo.conicConformal](Geo-Projections#conicConformal) - the conic conformal projection.
-* [d3.geo.conicEqualArea.raw](Geo-Projections#conicEqualArea_raw) the raw conic equal-area (a.k.a. Albers) projection.
-* [d3.geo.conicEqualArea](Geo-Projections#conicEqualArea) the conic equal-area (a.k.a. Albers) projection.
-* [d3.geo.conicEquidistant.raw](Geo-Projections#conicEquidistant_raw) - the raw conic equidistant projection.
-* [d3.geo.conicEquidistant](Geo-Projections#conicEquidistant) - the conic equidistant projection.
-* [d3.geo.equirectangular.raw](Geo-Projections#equirectangular_raw) - the raw equirectangular (plate carrée) projection.
-* [d3.geo.equirectangular](Geo-Projections#equirectangular) - the equirectangular (plate carreé) projection.
-* [d3.geo.gnomonic.raw](Geo-Projections#gnomonic_raw) - the raw gnomonic projection.
-* [d3.geo.gnomonic](Geo-Projections#gnomonic) - the gnomonic projection.
-* [d3.geo.mercator.raw](Geo-Projections#mercator_raw) - the raw Mercator projection.
-* [d3.geo.mercator](Geo-Projections#mercator) - the spherical Mercator projection.
-* [d3.geo.orthographic.raw](Geo-Projections#orthographic_raw) - the raw azimuthal orthographic projection.
-* [d3.geo.orthographic](Geo-Projections#orthographic) - the azimuthal orthographic projection.
-* [d3.geo.projectionMutator](Geo-Projections#projectionMutator) - create a standard projection from a mutable raw projection.
-* [d3.geo.projection](Geo-Projections#projection) - create a standard projection from a raw projection.
-* [d3.geo.stereographic.raw](Geo-Projections#stereographic_raw) - the raw azimuthal stereographic projection.
-* [d3.geo.stereographic](Geo-Projections#stereographic) - the azimuthal stereographic projection.
-* [d3.geo.transverseMercator.raw](Geo-Projections#transverseMercator_raw) - the raw transverse Mercator projection.
-* [projection.center](Geo-Projections#center) - get or set the projection’s center location.
+* [albers.parallels](Geo-Projections#albers_parallels) - 取得或者设置投影的两条标准平行线。
+* [d3.geo.albersUsa](Geo-Projections#albersUsa) - 用于展示美国地图的Albers复合投影。
+* [d3.geo.albers](Geo-Projections#albers) - Albers等面积圆锥投影。
+* [d3.geo.azimuthalEqualArea.raw](Geo-Projections#azimuthalEqualArea_raw) - 原始方位角等面积投影。
+* [d3.geo.azimuthalEqualArea](Geo-Projections#azimuthalEqualArea) - 方位角等面积投影。
+* [d3.geo.azimuthalEquidistant.raw](Geo-Projections#azimuthalEquidistant_raw) - 原始方位角等距投影。
+* [d3.geo.azimuthalEquidistant](Geo-Projections#azimuthalEquidistant) - 方位角等距投影。
+* [d3.geo.conicConformal.raw](Geo-Projections#conicConformal_raw) - 原始圆锥正形投影。
+* [d3.geo.conicConformal](Geo-Projections#conicConformal) - 圆锥正形投影。
+* [d3.geo.conicEqualArea.raw](Geo-Projections#conicEqualArea_raw) 原始圆锥等面积投影 (a.k.a. Albers)。
+* [d3.geo.conicEqualArea](Geo-Projections#conicEqualArea) 圆锥等面积投影 (a.k.a. Albers)。
+* [d3.geo.conicEquidistant.raw](Geo-Projections#conicEquidistant_raw) - 原始圆锥等距投影。
+* [d3.geo.conicEquidistant](Geo-Projections#conicEquidistant) - 圆锥等距投影。
+* [d3.geo.equirectangular.raw](Geo-Projections#equirectangular_raw) - 原始等角投影（普通圆柱投影）。
+* [d3.geo.equirectangular](Geo-Projections#equirectangular) - 等角投影（普通圆柱投影）。
+* [d3.geo.gnomonic.raw](Geo-Projections#gnomonic_raw) - 原始球心投影。
+* [d3.geo.gnomonic](Geo-Projections#gnomonic) - 球心投影。
+* [d3.geo.mercator.raw](Geo-Projections#mercator_raw) - 原始墨卡托投影。
+* [d3.geo.mercator](Geo-Projections#mercator) - 球形墨卡托投影。
+* [d3.geo.orthographic.raw](Geo-Projections#orthographic_raw) - 原始方位角直角投影。
+* [d3.geo.orthographic](Geo-Projections#orthographic) - 方位角直角投影。
+* [d3.geo.projectionMutator](Geo-Projections#projectionMutator) - 从可变的原始投影创建一个标准投影。
+* [d3.geo.projection](Geo-Projections#projection) - 从原始投影创建一个标准投影。
+* [d3.geo.stereographic.raw](Geo-Projections#stereographic_raw) - 原始方位角立体投影。
+* [d3.geo.stereographic](Geo-Projections#stereographic) - 方位角立体投影。
+* [d3.geo.transverseMercator.raw](Geo-Projections#transverseMercator_raw) - 原始横向墨卡托投影。
+* [projection.center](Geo-Projections#center) - 取得或设置投影的中心位置。
 * [projection.clipAngle](Geo-Projections#clipAngle) - get or set the radius of the projection’s clip circle.
-* [projection.clipExtent](Geo-Projections#clipExtent) - get or set the projection’s viewport clip extent, in pixels.
-* [projection.invert](Geo-Projections#invert) - invert the projection for the specified point.
-* [projection.precision](Geo-Projections#precision) - get or set the precision threshold for adaptive resampling.
-* [projection.rotate](Geo-Projections#rotate) - get or set the projection’s three-axis rotation.
-* [projection.scale](Geo-Projections#scale) - get or set the projection’s scale factor.
-* [projection.stream](Geo-Projections#stream) - wrap the specified stream listener, projecting input geometry.
-* [projection.translate](Geo-Projections#translate) - get or set the projection’s translation position.
-* [projection](Geo-Projections#_projection) - project the specified location.
+* [projection.clipExtent](Geo-Projections#clipExtent) - 取得或设置投影的视口剪切范围（以像素为单位）。
+* [projection.invert](Geo-Projections#invert) - 为指定的位置反转投影。
+* [projection.precision](Geo-Projections#precision) - 取得或设置自适应重采样的精度阈值。
+* [projection.rotate](Geo-Projections#rotate) - 取得或设置投影的三轴旋转角。
+* [projection.scale](Geo-Projections#scale) - 取得或设置投影的缩放系数。
+* [projection.stream](Geo-Projections#stream) - 包装指定的流监听器，投影输入的几何图形。
+* [projection.translate](Geo-Projections#translate) - 取得或设置投影的平移位置。
+* [projection](Geo-Projections#_projection) - 投影指定的位置。
 
 ### [Streams](Geo-Streams)
 
