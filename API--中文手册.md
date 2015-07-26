@@ -398,7 +398,7 @@ D3 API总览
 * [symbol.type](SVG-Shapes#symbol_type) - 设置或获取符号类型访问器。
 * [symbol](SVG-Shapes#_symbol) - 生成一个像散点图中的符号。
 
-### [Axes](SVG-Axes)
+### [轴](轴)
 
 * [axis.innerTickSize](SVG-Axes#innerTickSize) - 指定内刻度大小。
 * [axis.orient](SVG-Axes#orient) - 设置或者取得轴的方向。
@@ -412,7 +412,7 @@ D3 API总览
 * [axis](SVG-Axes#_axis) - 为给定的选择器或过渡创建或者更新轴。
 * [d3.svg.axis](SVG-Axes#axis) - 创建一个新的轴生成器。
 
-### [控制](SVG-Controls)
+### [拖选](拖选)
 
 * [brush.clear](SVG-Controls#brush_clear) - 重置拖选范围。
 * [brush.empty](SVG-Controls#brush_empty) - 拖选是否为空。
@@ -435,7 +435,7 @@ D3 API总览
 * [format.parse](Time-Formatting#parse) - 将字符串解析为时间对象。
 * [format](Time-Formatting#_format) - 将一个时间对象格式化为一个字符串。
 
-### [Time Scales](Time-Scales)
+### [时间比例尺](时间比例尺)
 
 * [d3.time.scale](Time-Scales#scale) - 构造一个线性时间比例尺。
 * [scale.clamp](Time-Scales#clamp) - 指定输出范围是否闭合。
@@ -450,7 +450,7 @@ D3 API总览
 * [scale.ticks](Time-Scales#ticks) - 取得定义域中有代表性的值。
 * [scale](Time-Scales#_scale) - 取得给定定义域中值对应的输出范围中的值。
 
-### [时间间隔](Time-Intervals)
+### [时间间隔](时间间隔)
 
 * [d3.time.dayOfYear](Time-Intervals#dayOfYear) - 计算天数。
 * [d3.time.days](Time-Intervals#day) - day.range的别名。
@@ -500,12 +500,12 @@ D3 API总览
 
 ## [d3.layout (Layouts)](Layouts)
 
-### [Bundle](Bundle-Layout)
+### [捆布局](捆布局)
 
 * [bundle](Bundle-Layout#_bundle) - 对边使用Holten *层次捆绑* 算法。
 * [d3.layout.bundle](Bundle-Layout#bundle) - 构造一个新的默认的捆绑布局。
 
-### [Chord](Chord-Layout)
+### [弦布局](弦布局)
 
 * [chord.chords](Chord-Layout#chords) - 取回计算的弦角度。
 * [chord.groups](Chord-Layout#groups) - 取回计算的分组角度。
@@ -516,7 +516,7 @@ D3 API总览
 * [chord.sortSubgroups](Chord-Layout#sortSubgroups) - 取得或设置用于子分组的比较器。
 * [d3.layout.chord](Chord-Layout#chord) - 从关系矩阵生成一个弦图。
 
-### [Cluster](Cluster-Layout)
+### [簇布局](簇布局)
 
 * [cluster.children](Cluster-Layout#children) - 取得或者设置子节点的访问器函数。
 * [cluster.links](Cluster-Layout#links) - 技术树节点之间的父子连接。
@@ -528,7 +528,7 @@ D3 API总览
 * [cluster](Cluster-Layout#_cluster) - cluster.nodes的别名。
 * [d3.layout.cluster](Cluster-Layout#cluster) - 将实体聚集成树状图。
 
-### [Force](Force-Layout)
+### [力布局](力布局)
 
 * [d3.layout.force](Force-Layout#force) - 使用物理模拟排放链接节点的位置。
 * [force.alpha](Force-Layout#alpha) - 取得或者设置力布局的冷却参数。
@@ -549,16 +549,16 @@ D3 API总览
 * [force.theta](Force-Layout#theta) - 取得或者设置电荷作用的精度。
 * [force.tick](Force-Layout#tick) - 运行布局模拟的一步。
 
-### [Hierarchy](Hierarchy-Layout)
+### [层次布局](层次布局)
 
-* [d3.layout.hierarchy](Hierarchy-Layout#hierarchy) - derive a custom hierarchical layout implementation.
-* [hierarchy.children](Hierarchy-Layout#children) - get or set the accessor function for child nodes.
-* [hierarchy.links](Hierarchy-Layout#links) - compute the parent-child links between tree nodes.
-* [hierarchy.nodes](Hierarchy-Layout#nodes) - compute the layout and return the array of nodes.
-* [hierarchy.revalue](Hierarchy-Layout#revalue) - recompute the hierarchy values.
-* [hierarchy.sort](Hierarchy-Layout#sort) - get or set the comparator function for sibling nodes.
-* [hierarchy.value](Hierarchy-Layout#value) - get or set the value accessor function.
-* [hierarchy](Hierarchy-Layout#_hierarchy) - alias for hierarchy.nodes.
+* [d3.layout.hierarchy](Hierarchy-Layout#hierarchy) - 派生一个定制的层次布局实现。
+* [hierarchy.children](Hierarchy-Layout#children) -取得或设置子节点的访问器。
+* [hierarchy.links](Hierarchy-Layout#links) - 计算树节点中的父子链接。
+* [hierarchy.nodes](Hierarchy-Layout#nodes) - 计算布局并返回节点数组。
+* [hierarchy.revalue](Hierarchy-Layout#revalue) - 重新计算层次值。
+* [hierarchy.sort](Hierarchy-Layout#sort) - 取得或设置兄弟节点的比较器函数。
+* [hierarchy.value](Hierarchy-Layout#value) - 取得或设置值访问器函数。
+* [hierarchy](Hierarchy-Layout#_hierarchy) - hierarchy.nodes的别名。
 
 ### [Histogram](Histogram-Layout)
 
