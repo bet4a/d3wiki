@@ -554,7 +554,7 @@ D3 API总览
 * [d3.layout.hierarchy](Hierarchy-Layout#hierarchy) - 派生一个定制的层次布局实现。
 * [hierarchy.children](Hierarchy-Layout#children) -取得或设置子节点的访问器。
 * [hierarchy.links](Hierarchy-Layout#links) - 计算树节点中的父子链接。
-* [hierarchy.nodes](Hierarchy-Layout#nodes) - 计算布局并返回节点数组。
+* [hierarchy.nodes](Hierarchy-Layout#nodes) - 计算层次布局并返回节点数组。
 * [hierarchy.revalue](Hierarchy-Layout#revalue) - 重新计算层次值。
 * [hierarchy.sort](Hierarchy-Layout#sort) - 取得或设置兄弟节点的比较器函数。
 * [hierarchy.value](Hierarchy-Layout#value) - 取得或设置值访问器函数。
@@ -582,16 +582,16 @@ D3 API总览
 * [pack.value](Pack-Layout#value) -  取得或设置用于圆尺寸的值访问器。
 * [pack](Pack-Layout#_pack) - pack.nodes的别名。
 
-### [Partition](Partition-Layout)
+### [分区布局](分区布局)
 
-* [d3.layout.partition](Partition-Layout#partition) - recursively partition a node tree into a sunburst or icicle.
-* [partition.children](Partition-Layout#children) - get or set the children accessor function.
-* [partition.links](Partition-Layout#links) - compute the parent-child links between tree nodes.
-* [partition.nodes](Partition-Layout#nodes) - compute the partition layout and return the array of nodes.
-* [partition.size](Partition-Layout#size) - specify the layout size in *x* and *y*.
-* [partition.sort](Partition-Layout#sort) - control the order in which sibling nodes are traversed.
-* [partition.value](Partition-Layout#value) - get or set the value accessor used to size circles.
-* [partition](Partition-Layout#_partition) - alias for partition.nodes.
+* [d3.layout.partition](Partition-Layout#partition) - 递归地将节点树分区为旭日图或者冰柱图。
+* [partition.children](Partition-Layout#children) - 取得或设置孩子访问器。
+* [partition.links](Partition-Layout#links) - 计算树节点中的父子链接。
+* [partition.nodes](Partition-Layout#nodes) - 计算分区布局并返回节点数组。
+* [partition.size](Partition-Layout#size) - 指定布局的尺寸。
+* [partition.sort](Partition-Layout#sort) - 控制兄弟节点的遍历顺序。
+* [partition.value](Partition-Layout#value) - 取得或设置用来指定圆尺寸的值访问器。
+* [partition](Partition-Layout#_partition) - partition.nodes的别名。
 
 ### [Pie](Pie-Layout)
 
