@@ -498,7 +498,7 @@ D3 API总览
 * [interval.utc](Time-Intervals#interval_utc) - 返回UTC时间间隔。
 * [interval](Time-Intervals#_interval) - interval.floor的别名。
 
-## [d3.layout (Layouts)](Layouts)
+## [d3.layout (布局)](布局)
 
 ### [捆布局](捆布局)
 
@@ -560,14 +560,14 @@ D3 API总览
 * [hierarchy.value](Hierarchy-Layout#value) - 取得或设置值访问器函数。
 * [hierarchy](Hierarchy-Layout#_hierarchy) - hierarchy.nodes的别名。
 
-### [Histogram](Histogram-Layout)
+### [直方图布局](直方图布局)
 
-* [d3.layout.histogram](Histogram-Layout#histogram) - construct a new default histogram layout.
-* [histogram.bins](Histogram-Layout#bins) - specify how values are organized into bins.
-* [histogram.frequency](Histogram-Layout#frequency) - compute the distribution as counts or probabilities.
-* [histogram.range](Histogram-Layout#range) - get or set the considered value range.
-* [histogram.value](Histogram-Layout#value) - get or set the value accessor function.
-* [histogram](Histogram-Layout#_histogram) - compute the distribution of data using quantized bins.
+* [d3.layout.histogram](Histogram-Layout#histogram) - 构造一个新的默认的直方图布局。
+* [histogram.bins](Histogram-Layout#bins) - 指定值是如何组织到箱中的。
+* [histogram.frequency](Histogram-Layout#frequency) - 按频数或者频率计算分布。
+* [histogram.range](Histogram-Layout#range) - 取得或设置值得范围。
+* [histogram.value](Histogram-Layout#value) - 取得或设置值访问器。
+* [histogram](Histogram-Layout#_histogram) - 使用量化的箱计算数据的分布。
 
 ### [Pack](Pack-Layout)
 
