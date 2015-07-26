@@ -758,12 +758,12 @@ D3 API总览
 * [polygon.centroid](Polygon-Geom#centroid) - compute the area centroid of this polygon.
 * [polygon.clip](Polygon-Geom#clip) - clip the specified polygon to this polygon.
 
-### [Hull](Hull-Geom)
+### [赫尔](赫尔图)
 
-* [d3.geom.hull](Hull-Geom#hull) - create a convex hull layout with default accessors.
-* [hull](Hull-Geom#_hull) - compute the convex hull for the given array of points.
-* [hull.x](Hull-Geom#x) - get or set the *x*-coordinate accessor.
-* [hull.y](Hull-Geom#y) - get or set the *y*-coordinate accessor.
+* [d3.geom.hull](Hull-Geom#hull) - 使用默认访问器创建一个convex hull布局。
+* [hull](Hull-Geom#_hull) - 为给定的点数组计算convex hull。
+* [hull.x](Hull-Geom#x) - 取得或设置*x*-坐标访问器。
+* [hull.y](Hull-Geom#y) - 取得或设置*y*-坐标访问器。
 
 ## [d3.behavior (Behaviors)](Behaviors)
 
