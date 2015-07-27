@@ -196,6 +196,8 @@ Gets or sets the accessor function that controls where the line is defined. If *
 line.defined(function(d) { return !isNaN(d[1]); });
 ```
 
+If a datum is defined but surrounded by undefined data (or the end of the array), that datum will not be visible.
+
 <a name="line_radial" href="SVG-Shapes#line_radial">#</a> d3.svg.line.<b>radial</b>()
 
 Constructs a new radial line generator with the default *radius*- and *angle*-accessor functions (that assume the input data is a two-element array of numbers; see below for details), and linear interpolation. The returned function generates path data for an open piecewise linear curve, or polyline, as with the Cartesian [line](SVG-Shapes#line) generator.
