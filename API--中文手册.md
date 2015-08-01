@@ -593,15 +593,15 @@ D3 API总览
 * [partition.value](Partition-Layout#value) - 取得或设置用来指定圆尺寸的值访问器。
 * [partition](Partition-Layout#_partition) - partition.nodes的别名。
 
-### [Pie](Pie-Layout)
+### [饼](饼)
 
-* [d3.layout.pie](Pie-Layout#pie) - construct a new default pie layout.
-* [pie.endAngle](Pie-Layout#endAngle) - get or set the overall end angle of the pie.
-* [pie.padAngle](Pie-Layout#padAngle) - get or set the pad angle of the pie.
-* [pie.sort](Pie-Layout#sort) - control the clockwise order of pie slices.
-* [pie.startAngle](Pie-Layout#startAngle) - get or set the overall start angle of the pie.
-* [pie.value](Pie-Layout#value) - get or set the value accessor function.
-* [pie](Pie-Layout#_pie) - compute the start and end angles for arcs in a pie or donut chart.
+* [d3.layout.pie](Pie-Layout#pie) - 构造一个新的默认的饼布局。
+* [pie.endAngle](Pie-Layout#endAngle) -取得或设置饼布局整体的结束角度。
+* [pie.padAngle](Pie-Layout#padAngle) - 取得或设置饼布局填充角度。
+* [pie.sort](Pie-Layout#sort) - 控制饼片段的顺时针方向的顺序。
+* [pie.startAngle](Pie-Layout#startAngle) - 取得或设置饼布局整体的开始角度。
+* [pie.value](Pie-Layout#value) - 取得或设置值访问器函数。
+* [pie](Pie-Layout#_pie) - 计算饼图或圆环图中弧的开始和结束角度。
 
 ### [Stack](Stack-Layout)
 
