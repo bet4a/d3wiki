@@ -718,19 +718,19 @@ D3 API总览
 * [projection.translate](Geo-Projections#translate) - 取得或设置投影的平移位置。
 * [projection](Geo-Projections#_projection) - 投影指定的位置。
 
-### [Streams](Geo-Streams)
+### [流](流)
 
-* [clipExtent.extent](Geo-Streams#clipExtent_extent) - sets the clip extent.
-* [d3.geo.clipExtent](Geo-Streams#clipExtent) - a stream transform that clips geometries to a given axis-aligned rectangle.
-* [d3.geo.stream](Geo-Streams#stream) - convert a GeoJSON object to a geometry stream.
-* [d3.geo.transform](Geo-Streams#transform) - transform streaming geometries.
-* [stream.lineEnd](Geo-Streams#stream_lineEnd) - indicate the end of a line or ring.
-* [stream.lineStart](Geo-Streams#stream_lineStart) - indicate the start of a line or ring.
-* [stream.point](Geo-Streams#stream_point) - indicate an *x*, *y* (and optionally *z*) coordinate.
-* [stream.polygonEnd](Geo-Streams#stream_polygonEnd) - indicate the end of a polygon.
-* [stream.polygonStart](Geo-Streams#stream_polygonStart) - indicate the start of a polygon.
-* [stream.sphere](Geo-Streams#stream_sphere) - indicate a sphere.
-* [transform.stream](Geo-Streams#transform_stream) - wraps a given stream.
+* [clipExtent.extent](Geo-Streams#clipExtent_extent) - 设置剪裁范围。
+* [d3.geo.clipExtent](Geo-Streams#clipExtent) - 流转换剪切几何图形为给定的轴对齐矩形。
+* [d3.geo.stream](Geo-Streams#stream) - 将GeoJSON对象转换为几何流。
+* [d3.geo.transform](Geo-Streams#transform) - 转换流几何图形。
+* [stream.lineEnd](Geo-Streams#stream_lineEnd) - 表示线或者环的终点。
+* [stream.lineStart](Geo-Streams#stream_lineStart) - 表示线或者环的起点。
+* [stream.point](Geo-Streams#stream_point) - 表面*x*, *y* (可选的 *z*) 坐标。
+* [stream.polygonEnd](Geo-Streams#stream_polygonEnd) - 表明多边形的终点。
+* [stream.polygonStart](Geo-Streams#stream_polygonStart) - 表明多边形的起点。
+* [stream.sphere](Geo-Streams#stream_sphere) - 表明一个球体。
+* [transform.stream](Geo-Streams#transform_stream) - 包装指定的流。
 
 ## [d3.geom (Geometry)](Geometry)
 
