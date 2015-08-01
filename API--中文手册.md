@@ -614,7 +614,7 @@ D3 API总览
 * [stack.y](Stack-Layout#y) - get or set the *y*-dimension accessor function.
 * [stack](Stack-Layout#_stack) - compute the baseline for each series in a stacked bar or area chart.
 
-### [Tree](Tree-Layout)
+### [树](树)
 
 * [d3.layout.tree](Tree-Layout#tree) - 整齐地排列树节点。
 * [tree.children](Tree-Layout#children) - 取得或设置孩子访问器。
@@ -626,20 +626,20 @@ D3 API总览
 * [tree.sort](Tree-Layout#sort) - 控制遍历顺序中兄弟节点的顺序。
 * [tree](Tree-Layout#_tree) - tree.nodes的别名。
 
-### [Treemap](Treemap-Layout)
+### [矩形树](矩形树)
 
-* [d3.layout.treemap](Treemap-Layout#treemap) - use recursive spatial subdivision to display a tree of nodes.
-* [treemap.children](Treemap-Layout#children) - get or set the children accessor function.
-* [treemap.links](Treemap-Layout#links) - compute the parent-child links between tree nodes.
-* [treemap.mode](Treemap-Layout#mode) - change the treemap layout algorithm.
-* [treemap.nodes](Treemap-Layout#nodes) - compute the treemap layout and return the array of nodes.
-* [treemap.padding](Treemap-Layout#padding) - specify the padding between a parent and its children.
-* [treemap.round](Treemap-Layout#round) - enable or disable rounding to exact pixels.
-* [treemap.size](Treemap-Layout#size) - specify the layout size in *x* and *y*.
-* [treemap.sort](Treemap-Layout#sort) - control the order in which sibling nodes are traversed.
-* [treemap.sticky](Treemap-Layout#sticky) - make the layout sticky for stable updates.
-* [treemap.value](Treemap-Layout#value) - get or set the value accessor used to size treemap cells.
-* [treemap](Treemap-Layout#_treemap) - alias for treemap.nodes.
+* [d3.layout.treemap](Treemap-Layout#treemap) - 使用空间递归分区算法展示树的节点。
+* [treemap.children](Treemap-Layout#children) - 取得或设置孩子访问器。
+* [treemap.links](Treemap-Layout#links) - 计算树节点中的父子链接。
+* [treemap.mode](Treemap-Layout#mode) - 改变布局的算法。
+* [treemap.nodes](Treemap-Layout#nodes) - 计算矩形树布局并返回节点数组。
+* [treemap.padding](Treemap-Layout#padding) - 指定父子之间的间距。
+* [treemap.round](Treemap-Layout#round) - 启用或者禁用四舍五入像素值。
+* [treemap.size](Treemap-Layout#size) - 指定布局的尺寸。
+* [treemap.sort](Treemap-Layout#sort) - 控制兄弟节点的遍历顺序。
+* [treemap.sticky](Treemap-Layout#sticky) - 让布局对稳定的更新是粘滞的（sticky）。
+* [treemap.value](Treemap-Layout#value) - 取得或设置用来指定矩形树中矩形单元尺寸的值访问器。
+* [treemap](Treemap-Layout#_treemap) - treemap.nodes的别名。
 
 ## [d3.geo (Geography)](Geo)
 
@@ -732,7 +732,7 @@ D3 API总览
 * [stream.sphere](Geo-Streams#stream_sphere) - 表明一个球体。
 * [transform.stream](Geo-Streams#transform_stream) - 包装指定的流。
 
-## [d3.geom (Geometry)](Geometry)
+## [d3.geom (几何)](几何)
 
 ### [泰森多边形](泰森多边形)
 
@@ -765,15 +765,15 @@ D3 API总览
 * [hull.x](Hull-Geom#x) - 取得或设置*x*-坐标访问器。
 * [hull.y](Hull-Geom#y) - 取得或设置*y*-坐标访问器。
 
-## [d3.behavior (Behaviors)](Behaviors)
+## [d3.behavior (行为)](行为)
 
-### [Drag](Drag-Behavior)
+### [拖动](拖动r)
 
 * [d3.behavior.drag](Drag-Behavior#drag)
 * [drag.on](Drag-Behavior#on)
 * [drag.origin](Drag-Behavior#origin)
 
-### [Zoom](Zoom-Behavior)
+### [缩放](缩放)
 
 * [d3.behavior.zoom](Zoom-Behavior#zoom) - 创建缩放行为。
 * [zoom.center](Zoom-Behavior#center) - 鼠标滚轮缩放的焦点。
