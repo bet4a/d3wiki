@@ -744,12 +744,12 @@ D3 API总览
 * [voronoi.y](Voronoi-Geom#y) - get or set the y-coordinate accessor for each point.
 * [voronoi](Voronoi-Geom#_voronoi) - compute the Voronoi tessellation for the specified points.
 
-### [Quadtree](Quadtree-Geom)
+### [四叉树](四叉树)
 
-* [d3.geom.quadtree](Quadtree-Geom#quadtree) - constructs a quadtree for an array of points.
-* [quadtree.add](Quadtree-Geom#add) - add a point to the quadtree.
-* [quadtree.find](Quadtree-Geom#find) - find the closest point in the quadtree.
-* [quadtree.visit](Quadtree-Geom#visit) - recursively visit nodes in the quadtree.
+* [d3.geom.quadtree](Quadtree-Geom#quadtree) - 为一个点数组创建一个四叉树。
+* [quadtree.add](Quadtree-Geom#add) - 添加点到四叉树中。
+* [quadtree.find](Quadtree-Geom#find) - 找到四叉树中最近的点。
+* [quadtree.visit](Quadtree-Geom#visit) - 递归地遍历四叉树中的点。
 
 ### [多边形](多边形)
 
