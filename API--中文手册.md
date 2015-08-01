@@ -603,16 +603,16 @@ D3 API总览
 * [pie.value](Pie-Layout#value) - 取得或设置值访问器函数。
 * [pie](Pie-Layout#_pie) - 计算饼图或圆环图中弧的开始和结束角度。
 
-### [Stack](Stack-Layout)
+### [堆叠](堆叠)
 
-* [d3.layout.stack](Stack-Layout#stack) - construct a new default stack layout.
-* [stack.offset](Stack-Layout#offset) - specify the overall baseline algorithm.
-* [stack.order](Stack-Layout#order) - control the order in which series are stacked.
-* [stack.out](Stack-Layout#out) - get or set the output function for storing the baseline.
-* [stack.values](Stack-Layout#values) - get or set the values accessor function per series.
-* [stack.x](Stack-Layout#x) - get or set the *x*-dimension accessor function.
-* [stack.y](Stack-Layout#y) - get or set the *y*-dimension accessor function.
-* [stack](Stack-Layout#_stack) - compute the baseline for each series in a stacked bar or area chart.
+* [d3.layout.stack](Stack-Layout#stack) - 构造一个新的默认的堆叠布局。
+* [stack.offset](Stack-Layout#offset) - 指定整体的基线算法。
+* [stack.order](Stack-Layout#order) - 控制每个系列的顺序。
+* [stack.out](Stack-Layout#out) - 取得或设置用于存储基线的输出函数。
+* [stack.values](Stack-Layout#values) - 取得或设置每个系列的值访问器函数。
+* [stack.x](Stack-Layout#x) - 取得或设置*x*-维访问器函数。
+* [stack.y](Stack-Layout#y) - 取得或设置*y*-维访问器函数。
+* [stack](Stack-Layout#_stack) - 计算堆叠图或者面积图的基线。
 
 ### [树](树)
 
