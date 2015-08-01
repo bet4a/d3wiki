@@ -734,15 +734,15 @@ D3 API总览
 
 ## [d3.geom (Geometry)](Geometry)
 
-### [Voronoi](Voronoi-Geom)
+### [泰森多边形](泰森多边形)
 
-* [d3.geom.voronoi](Voronoi-Geom#voronoi) - create a Voronoi layout with default accessors.
-* [voronoi.clipExtent](Voronoi-Geom#clipExtent) - get or set the clip extent for the tesselation.
-* [voronoi.links](Voronoi-Geom#links) - compute the Delaunay mesh as a network of links.
-* [voronoi.triangles](Voronoi-Geom#triangles) - compute the Delaunay mesh as a triangular tessellation.
-* [voronoi.x](Voronoi-Geom#x) - get or set the x-coordinate accessor for each point.
-* [voronoi.y](Voronoi-Geom#y) - get or set the y-coordinate accessor for each point.
-* [voronoi](Voronoi-Geom#_voronoi) - compute the Voronoi tessellation for the specified points.
+* [d3.geom.voronoi](Voronoi-Geom#voronoi) - 用默认的访问器创建一个泰森多边形布局。
+* [voronoi.clipExtent](Voronoi-Geom#clipExtent) -取得或者设置铺嵌的剪切范围。
+* [voronoi.links](Voronoi-Geom#links) - 计算Delaunay mesh为一个链接网络。
+* [voronoi.triangles](Voronoi-Geom#triangles) - 计算Delaunay mesh为一个三角形密铺。
+* [voronoi.x](Voronoi-Geom#x) - 取得或者设置每个点的x-坐标访问器。
+* [voronoi.y](Voronoi-Geom#y) - 取得或者设置每个点的y-坐标访问器。
+* [voronoi](Voronoi-Geom#_voronoi) - 为每个指定的点计算泰森多边形密铺。
 
 ### [四叉树](四叉树)
 
