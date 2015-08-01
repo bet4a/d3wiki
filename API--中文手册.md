@@ -751,12 +751,12 @@ D3 API总览
 * [quadtree.find](Quadtree-Geom#find) - find the closest point in the quadtree.
 * [quadtree.visit](Quadtree-Geom#visit) - recursively visit nodes in the quadtree.
 
-### [Polygon](Polygon-Geom)
+### [多边形](多边形)
 
-* [d3.geom.polygon](Polygon-Geom#polygon) - create a polygon from the specified array of points.
-* [polygon.area](Polygon-Geom#area) - compute the counterclockwise area of this polygon.
-* [polygon.centroid](Polygon-Geom#centroid) - compute the area centroid of this polygon.
-* [polygon.clip](Polygon-Geom#clip) - clip the specified polygon to this polygon.
+* [d3.geom.polygon](Polygon-Geom#polygon) - 由指定的点数组创建多边形。
+* [polygon.area](Polygon-Geom#area) - 计算多边形逆时针方向的面积。
+* [polygon.centroid](Polygon-Geom#centroid) - 计算多边形的面积中心。
+* [polygon.clip](Polygon-Geom#clip) - 对这个多边形进行执行的多边形剪切。
 
 ### [赫尔](赫尔图)
 
