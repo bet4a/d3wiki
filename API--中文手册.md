@@ -641,43 +641,43 @@ D3 API总览
 * [treemap.value](Treemap-Layout#value) - 取得或设置用来指定矩形树中矩形单元尺寸的值访问器。
 * [treemap](Treemap-Layout#_treemap) - treemap.nodes的别名。
 
-## [d3.geo (Geography)](Geo)
+## [d3.geo (地理)](地理)
 
-### [Paths](Geo-Paths)
+### [地理路径](地理路径)
 
-* [circle.angle](Geo-Paths#circle_angle) - specify the angular radius in degrees.
-* [circle.origin](Geo-Paths#circle_origin) - specify the origin in latitude and longitude.
-* [circle.precision](Geo-Paths#circle_precision) - specify the precision of the piecewise circle.
-* [circle](Geo-Paths#_circle) - generate a piecewise circle as a Polygon.
-* [d3.geo.area](Geo-Paths#area) - compute the spherical area of a given feature.
-* [d3.geo.bounds](Geo-Paths#bounds) - compute the latitude-longitude bounding box for a given feature.
-* [d3.geo.centroid](Geo-Paths#centroid) - compute the spherical centroid of a given feature.
-* [d3.geo.circle](Geo-Paths#circle) - create a circle generator.
-* [d3.geo.distance](Geo-Paths#distance) - compute the great-arc distance between two points.
-* [d3.geo.graticule](Geo-Paths#graticule) - create a graticule generator.
-* [d3.geo.interpolate](Geo-Paths#interpolate) - interpolate between two points along a great arc.
-* [d3.geo.length](Geo-Paths#length) - compute the length of a line string or the perimeter of a polygon.
-* [d3.geo.path](Geo-Paths#path) - create a new geographic path generator.
-* [d3.geo.rotation](Geo-Paths#rotation) - create a rotation function for the specified angles [λ, φ, γ].
-* [graticule.extent](Geo-Paths#graticule_extent) - get or set the major & minor extents.
-* [graticule.lines](Geo-Paths#graticule_lines) - generate an array of LineStrings of meridians and parallels.
-* [graticule.majorExtent](Geo-Paths#graticule_majorExtent) - get or set the major extent.
-* [graticule.majorStep](Geo-Paths#graticule_majorStep) - get or set the major step intervals.
-* [graticule.minorExtent](Geo-Paths#graticule_minorExtent) - get or set the minor extent.
-* [graticule.minorStep](Geo-Paths#graticule_minorStep) - get or set the minor step intervals.
-* [graticule.outline](Geo-Paths#graticule_outline) - generate a Polygon of the graticule’s extent.
-* [graticule.precision](Geo-Paths#graticule_precision) - get or set the latitudinal precision.
-* [graticule.step](Geo-Paths#graticule_step) - get or set the major & minor step intervals.
-* [graticule](Geo-Paths#_graticule) - generate a MultiLineString of meridians and parallels.
-* [path.area](Geo-Paths#path_area) - compute the projected area of a given feature.
-* [path.bounds](Geo-Paths#path_bounds) - compute the projected bounds of a given feature.
-* [path.centroid](Geo-Paths#path_centroid) - compute the projected centroid of a given feature.
-* [path.context](Geo-Paths#path_context) - get or set the render context.
-* [path.pointRadius](Geo-Paths#path_pointRadius) - get or set the radius to display point features.
-* [path.projection](Geo-Paths#path_projection) - get or set the geographic projection.
-* [path](Geo-Paths#_path) - project the specified feature and render it to the context.
-* [rotation.invert](Geo-Paths#rotation_invert) - inverse-rotate the given location around the sphere.
-* [rotation](Geo-Paths#_rotation) - rotate the given location around the sphere.
+* [circle.angle](Geo-Paths#circle_angle) - 指定角半径（以度为单位）。
+* [circle.origin](Geo-Paths#circle_origin) - 指定经纬度原点。
+* [circle.precision](Geo-Paths#circle_precision) - 指定分段圆的精度。
+* [circle](Geo-Paths#_circle) - 生成一个分段圆。
+* [d3.geo.area](Geo-Paths#area) - 计算给定要素的球体面积。
+* [d3.geo.bounds](Geo-Paths#bounds) - 计算给定要素的经纬度边界框。
+* [d3.geo.centroid](Geo-Paths#centroid) - 计算给定要素的球体中心。
+* [d3.geo.circle](Geo-Paths#circle) - 创建一个圆生成器。
+* [d3.geo.distance](Geo-Paths#distance) - 计算两点之间的大弧距离。
+* [d3.geo.graticule](Geo-Paths#graticule) - 创建一个经纬网生成器。
+* [d3.geo.interpolate](Geo-Paths#interpolate) - 两个点之间插入一个大弧。
+* [d3.geo.length](Geo-Paths#length) - 计算线的长度或多边形的面积。
+* [d3.geo.path](Geo-Paths#path) - 创建一个地理路径生成器。
+* [d3.geo.rotation](Geo-Paths#rotation) - 为指定的角度[λ, φ, γ]创建一个旋转角度。
+* [graticule.extent](Geo-Paths#graticule_extent) - 取得或设置major & minor范围。
+* [graticule.lines](Geo-Paths#graticule_lines) - 为经线和纬线生成线数组。
+* [graticule.majorExtent](Geo-Paths#graticule_majorExtent) - 取得或设置major范围。
+* [graticule.majorStep](Geo-Paths#graticule_majorStep) - 取得或设置major步长间隔。
+* [graticule.minorExtent](Geo-Paths#graticule_minorExtent) - 取得或设置minor范围。
+* [graticule.minorStep](Geo-Paths#graticule_minorStep) - 取得或设置minor步长间隔。
+* [graticule.outline](Geo-Paths#graticule_outline) - 生成格子线范围的一个多边形。
+* [graticule.precision](Geo-Paths#graticule_precision) - 取得或设置纬度精度。
+* [graticule.step](Geo-Paths#graticule_step) - 取得或设置major & minor步长间隔。
+* [graticule](Geo-Paths#_graticule) - 生成经纬线的多线要素。
+* [path.area](Geo-Paths#path_area) - 计算给定要素的投影面积。
+* [path.bounds](Geo-Paths#path_bounds) - 计算给定要素的投影边界。
+* [path.centroid](Geo-Paths#path_centroid) - 计算给定要素的投影中心。
+* [path.context](Geo-Paths#path_context) - 取得或设置渲染上下文。
+* [path.pointRadius](Geo-Paths#path_pointRadius) - 取得或设置点要素的半径。
+* [path.projection](Geo-Paths#path_projection) - 取得或设置地理投影。
+* [path](Geo-Paths#_path) - 投影指定的要素并渲染上下文。
+* [rotation.invert](Geo-Paths#rotation_invert) - 反旋转球体周围的给定位置。
+* [rotation](Geo-Paths#_rotation) - 旋转球体周围的给定位置。
 
 ### [地理投影](地理投影)
 
