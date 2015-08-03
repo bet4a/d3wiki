@@ -10,7 +10,9 @@ Creates a Voronoi layout with default accessors.
 
 <a name="_voronoi" href="#_voronoi">#</a> <b>voronoi</b>(<i>data</i>)
 
-Returns an array of polygons, one for each input vertex in the specified *data* array. If any vertices are coincident or have NaN positions, *the behavior of this method is undefined*: most likely, invalid polygons will be returned! You should filter invalid vertices, and consolidate coincident vertices, before computing the tessellation.
+Returns an array of polygons, one for each input vertex in the specified *data* array. Each polygon is an array of points, and each point is a two-element array of _x_ and _y_ positions.
+
+If any vertices are coincident or have `NaN` positions, *the behavior of this method is undefined*: most likely, invalid polygons will be returned! You should filter invalid vertices, and consolidate coincident vertices, before calling this function.
 
 <a name="x" href="#x">#</a> voronoi.<b>x</b>([<i>x</i>])
 
@@ -30,7 +32,7 @@ function(d) { return d[1]; }
 
 <a name="clipExtent" href="#clipExtent">#</a> voronoi.<b>clipExtent</b>([<i>extent</i>])
 
-If *extent* is specified, sets the clip extent of the Voronoi layout to the specified bounds and returns the layout. The *extent* bounds are specified as an array [​[<i>x0</i>, <i>y0</i>], [<i>x1</i>, <i>y1</i>]​], where <i>x0</i> is the left side of the extent, <i>y0</i> is the top, <i>x1</i> is the right and <i>y1</i> is the bottom. If *extent* is null, no clipping is performed. If *extent* is not specified, returns the current clip extent which defaults to null.
+If *extent* is specified, sets the clip extent of the Voronoi layout to the specified bounds and returns the layout. The *extent* bounds are specified as an array [​[<i>x0</i>, <i>y0</i>], [<i>x1</i>, <i>y1</i>]​], where <i>x0</i> is the left side of the extent, <i>y0</i> is the top, <i>x1</i> is the right and <i>y1</i> is the bottom. If *extent* is `null`, no clipping is performed. If *extent* is not specified, returns the current clip extent which defaults to `null`.
 
 See [this example](http://bl.ocks.org/mbostock/4237768). Use of a clip extent is strongly recommended, as unclipped polygons may have large coordinates which do not display correctly.
 
