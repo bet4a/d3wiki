@@ -1205,6 +1205,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [Reports for Simple](http://www.simple.com/blog/Simple/announcing-reports)
 * [Trisul Network Analytic](http://trisul.org/)
 * [Ubiq Analytics: MySQL Analytics & Reporting made easy](http://www.ubiq.co)
+* [Viima: Visual Idea Management Software](https://www.viima.com)
 * [Branch: Explore Biological Data with Decision Trees](http://biobranch.org/)
 
 #### Store Apps
