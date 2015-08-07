@@ -379,6 +379,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
   </tr>
 <tr><td>UK Economy as a Network<br /><a href="http://helenjacksonanalytic.co.uk/UKEconomyNetwork.html" target="_blank"><img width="133" src="http://helenjacksonanalytic.co.uk/EconomyNetwork.jpg"></a></td>
  <td>Contouring Comparison<br><br><a href="http://emptypipes.org/2015/07/22/contour-comparison/"><img width="133" align="center" src="http://emptypipes.org/img/contouring_comparison2.png"></a></td>
+ <td>GitHub Commit Calendar<br><br><a href="http://bl.ocks.org/peterbsmith2/a37f2b733a75a6f348c2"><img width="133" align="center" src="http://i.imgur.com/bBcDsIW.png"></a></td>
 </tr>
 
 </table>
