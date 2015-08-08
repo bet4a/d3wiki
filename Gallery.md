@@ -379,6 +379,8 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     </tr>
     <tr><td>UK Economy as a Network<br /><a href="http://helenjacksonanalytic.co.uk/UKEconomyNetwork.html" target="_blank"><img width="133" src="http://helenjacksonanalytic.co.uk/EconomyNetwork.jpg"></a></td>
         <td>Contouring Comparison<br><br><a href="http://emptypipes.org/2015/07/22/contour-comparison/"><img width="133" align="center" src="http://emptypipes.org/img/contouring_comparison2.png"></a></td>
+<td>Force Directed Graph with search and subset view<br><a href="https://timebandit.github.io/graphSub/"><img src="http://i.picresize.com/images/2015/08/08/7W3ti.gif" data-canonical-src="http://i.picresize.com/images/2015/08/08/7W3ti.gif" width="133"></a>
+</td>
     </tr>
 
 </table>
