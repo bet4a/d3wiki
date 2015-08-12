@@ -10,6 +10,7 @@ Please feel free to add links to your work!
 * [Circular Brush](https://github.com/emeeks/d3.svg.circularbrush)
 * [Comic.js](https://github.com/balint42/comic.js)
 * [Contour plot](https://github.com/d3/d3-plugins/tree/master/geom/contour)
+* [Color wheel](https://github.com/betweentwobrackets/d3-colorwheel)
 * [Cubehelix color scheme](https://github.com/d3/d3-plugins/tree/master/cubehelix)
 * [Fisheye distortion](https://github.com/d3/d3-plugins/tree/master/fisheye)
 * [Force-directed labels](https://github.com/d3/d3-plugins/tree/master/force_labels)
