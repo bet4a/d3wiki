@@ -961,6 +961,7 @@ http://www.healthmetricsandevaluation.org/tools/data-visualizations
 * [BeerViz - Visualizing Beers and their relations](http://seekshreyas.com/beerviz/)
 * [Explaining a Chord Diagram with Animation & Storytelling](http://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord.html)
 * [Refugee flows - 2 dynamic chord diagrams updated simultaneously](http://wp.me/pBH3w-a5)
+* [Web Application and Combining Data Records](http://bl.ocks.org/anuwatb/b8d0c748441d81006103)
 
 #### Maps
 
