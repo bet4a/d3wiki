@@ -2,6 +2,7 @@
 
 Please feel free to add links to your work!
 
+* [2D Histogram](https://github.com/herkulano/d3-plugin-hist2d)
 * [Adjacency Matrix](https://github.com/emeeks/d3-plugins/tree/master/adjacencyMatrix)
 * [Arc Diagram](https://github.com/goodmami/d3-plugins/tree/master/arcdiagram)
 * [Box plot](https://github.com/d3/d3-plugins/tree/master/box) ([demo](http://bl.ocks.org/mbostock/4061502))
