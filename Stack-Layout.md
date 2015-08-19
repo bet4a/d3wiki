@@ -12,13 +12,15 @@ Constructs a new stack layout with the default offset (zero) and order (null). T
 
 <a name="_stack" href="Stack-Layout#_stack">#</a> <b>stack</b>(<i>layers</i>[, <i>index</i>])
 
-Computes the *y*-coordinate baseline for each series (layer) in *layers*, and then propagate that baseline to the other layers. In the simplest case, *layers* is a two-dimensional array of values. All of the 2nd-dimensional arrays must be the same length. The [y](Stack-Layout#y) and [x](Stack-Layout#x) accessors are used to define the *y*-thickness of each layer at the given *x*-position, respectively. Thus, by default the following attributes are required on each value:
+Computes the *y*-coordinate baseline for each series (layer) in *layers*, and then propagate that baseline to the other layers. In the simplest case, *layers* is a two-dimensional array of values. Each layer must be a single dimensioned array of points, all having the same length, and each having a vertical  and horizontal coordinate value to define the *y*-thickness of each layer at the given *x*-position, respectively. Thus, the following properties are required on each value:  
 
 * x - the *x*-position of the value.
 * y - the *y*-thickness of the value.
 * y0 - the minimum *y*-position of the value (baseline).
 
-These attributes can be customized by overriding the accessors and the [out](Stack-Layout#out) function.
+If the coordinate properties are not named *x* and *y*, then [x](Stack-Layout#x) and [y](Stack-Layout#y) *accessors* must be provided and the layout will then use them to create the above structure.
+
+Thus, these attributes can be customized by overriding the accessors and the [out](Stack-Layout#out) function.
 
 <a name="values" href="Stack-Layout#values">#</a> stack.<b>values</b>([<i>accessor</i>])
 
