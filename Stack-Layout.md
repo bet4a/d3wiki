@@ -12,7 +12,7 @@ Constructs a new stack layout with the default offset (zero) and order (null). T
 
 <a name="_stack" href="Stack-Layout#_stack">#</a> <b>stack</b>(<i>layers</i>[, <i>index</i>])
 
-Computes the *y*-coordinate baseline for each series (layer) in *layers*, and then propagate that baseline to the other layers. In the simplest case, *layers* is a two-dimensional array of values. Each layer must be a single dimensioned array of points, all having the same length, and each having a vertical  and horizontal coordinate value to define the *y*-thickness of each layer at the given *x*-position, respectively. Thus, the following properties are required on each value:  
+Computes the *y*-coordinate baseline for each series (layer) in *layers*, and then propagates that baseline to the other layers. In the simplest case, *layers* is a two-dimensional array of values. Each layer must be a single dimensioned array of points, all having the same length, and each having a vertical  and horizontal coordinate value to define the *y*-thickness of each layer at the given *x*-position, respectively. Thus, the following properties are required on each value:  
 
 * x - the *x*-position of the value.
 * y - the *y*-thickness of the value.
