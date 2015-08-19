@@ -1,6 +1,8 @@
 > [Wiki](Home) ▸ [[API Reference]] ▸ [[Layouts]] ▸ **Stack Layout**
 
-The stack layout takes a two-dimensional array of data and computes a baseline; the baseline is then propagated to the above layers, so as to produce a stacked graph. Several baseline algorithms are supported, along with sorting heuristics to improve perception, as described in [“Stacked Graphs—Geometry & Aesthetics”](http://www.leebyron.com/else/streamgraph/download.php?file=stackedgraphs_byron_wattenberg.pdf) by Byron & Wattenberg.
+The stack layout takes an array of layer objects, each having an series (array) of *point objects* as a member.  The point objects contain a pair of ordinates (as a minimum) that map the horizontal position of each point and it's vertical thickness.  The output from the stack layout is the same array of layers, but with state added onto the *point objects* to facilitate the selected stacking strategy.  
+The layout computes a baseline for the first layer which it then propagated to the above layers, so as to produce a stacked data set.  
+Several baseline algorithms are supported, along with sorting heuristics to improve perception, as described in [“Stacked Graphs—Geometry & Aesthetics”](http://www.leebyron.com/else/streamgraph/download.php?file=stackedgraphs_byron_wattenberg.pdf) by Byron & Wattenberg.
 
 [![stack](stack.png)](http://bl.ocks.org/mbostock/4060954)
 
@@ -12,19 +14,26 @@ Constructs a new stack layout with the default offset (zero) and order (null). T
 
 <a name="_stack" href="Stack-Layout#_stack">#</a> <b>stack</b>(<i>layers</i>[, <i>index</i>])
 
-Computes the *y*-coordinate baseline for each series (layer) in *layers*, and then propagates that baseline to the other layers. In the simplest case, *layers* is a two-dimensional array of values. Each layer must be a single dimensioned array of points, all having the same length, and each having a vertical  and horizontal coordinate value to define the *y*-thickness of each layer at the given *x*-position, respectively. Thus, the following properties are required on each value:  
+Computes the *y*-coordinate baseline for each layer in the *layers* array, and then propagates that baseline to the other layers. In the simplest case, *layers* is a two-dimensional array of *point objects*, all having the same length, and each having a vertical  and horizontal ordinate value to define, respectively, the *y*-thickness of each layer at the given *x*-position.    
+
+More complex structures are accepted by the layout, but only if an *accessor* function is passed to [values](Stack-Layout#values), which abstracts the structure back to the simple case described above.  In any case, the complexity is limited to an array of layer objects, each having a points array as a member.  It is not possible, for example to use a series hash table (object) containing key value pairs representing the coordinates.  Such a structure could be abstracted into the required format using an accessor function but, the object returned by the layout would not have the added offset state, as there is currently no means to abstract the output *with layer awareness*.  
+
+The default layout expects the point objects to carry *x* and *y* members to which it will add a *y0* member to store the offset values produced by the selected baseline algorithm.  
+If the coordinate properties (raw or [abstracted](Stack-Layout#values)) are not named *x* and *y*, then [x](Stack-Layout#x) and [y](Stack-Layout#y) *accessors* must be provided to complete the abstraction and deliver the above structure.
+
+Thus, each *point object* has the following abstract structure:  
 
 * x - the *x*-position of the value.
 * y - the *y*-thickness of the value.
 * y0 - the minimum *y*-position of the value (baseline).
 
-If the coordinate properties are not named *x* and *y*, then [x](Stack-Layout#x) and [y](Stack-Layout#y) *accessors* must be provided and the layout will then use them to create the above structure.
+The last two being physically added onto the point objects if required.  
 
-Thus, these attributes can be customized by overriding the accessors and the [out](Stack-Layout#out) function.
+The optional *index* argument is not consumed by the default layout, but is made available to custom [order](Stack-Layout#order) and [offset](Stack-Layout#offset) objects.
 
 <a name="values" href="Stack-Layout#values">#</a> stack.<b>values</b>([<i>accessor</i>])
 
-Specifies how to extract values from the associated element in *layers*; *accessor* is a function which is invoked on each input layer passed to [stack](Stack-Layout#_stack), equivalent to calling *layers.map(accessor)* before computing the stack layout. The default values function is the built-in [Object](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object), which is similar to the identity function. If *accessor* is not specified, returns the current values accessor.
+Specifies how to extract the *points* array from the *layer* elements of the *layers*; *accessor* is a function which is invoked on each input layer passed to [stack](Stack-Layout#_stack), equivalent to calling *layers.map(accessor)* before computing the stack layout. The default values function is the identity function. If *accessor* is not specified, returns the current values accessor.
 
 The values accessor can be used to associate additional data per-layer, rather than per-point. For example, say your data were structured as follows:
 
