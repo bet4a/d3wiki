@@ -228,7 +228,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
         <td>-<br><a href="#"><img width="133" src="#"></a></td>
     </tr>
     <tr valign="top">
-        <td>Reusable VIS Components with Responsive Design<br><a href="http://hijiangtao.github.io/ss-vis-component/"><img width="133" src="https://raw.githubusercontent.com/hijiangtao/ss-vis-component/gh-pages/assets/Example.png"></a></td>
+        <td>Reusable VIS Components(responsive)<br><a href="http://hijiangtao.github.io/ss-vis-component/"><img width="133" src="https://raw.githubusercontent.com/hijiangtao/ss-vis-component/gh-pages/assets/Example.png"></a></td>
         <td>Epidemic Game <a href="http://vax.herokuapp.com"><img width="133" src="http://imgur.com/h3anuVg.gif"></a></td>
         <td>UK Temperature Graphs<br><a href="http://charts.animateddata.co.uk/uktemperaturelines"><img width="133" src="http://animateddata.co.uk/img/d3-gallery/uktemperaturelines3.jpg"></a></td>
         <td>Data Heatmap with Sorting Functions<br><a href="http://bl.ocks.org/ianyfchang/8119685"><img width="133" src="http://bl.ocks.org/ianyfchang/raw/8119685/thumbnail.png"></a></td>
