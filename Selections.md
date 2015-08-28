@@ -128,7 +128,7 @@ A *key* function **key**([ *d* [, *i* ]]) may be specified to control how data i
 
 The key function is called twice during the data binding process, which proceeds in two phases.  
 
-1.    The *key* function is evaluated on the nodes to form `nodeByKeyValue` (an associative array of nodes) with the `this` context as the node, `d` as the node `__data__` member and the the second argument `i` as the selection group index.  
+1.    The *key* function is evaluated on the nodes to form `nodeByKeyValue` (an associative array of nodes) with the `this` context as the node, `d` as the node `__data__` member and the second argument `i` as the selection group index.  
 
 1.    The *key* function is evaluated on each element of the *values* array - this time with *values* as the `this` context, *values*[`i`] as the first argument `d` and the *values* index `i` as the second argument - and the results are then used to attempt to look up the nodes in the `nodeByKeyValue` collection.  If the lookup is successful, the node is added to the _update selection_, any nodes not queried are added to the exit selection.  Any data elements that failed to find a matching node are used to form the enter selection.  
 
