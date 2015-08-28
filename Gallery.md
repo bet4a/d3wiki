@@ -148,9 +148,9 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
         <td>Explosions<br><a href="http://ggruiz.me/explosions/"><img width="133" src="http://puu.sh/2fO3P"></a></td>
         <td>CodeFlowers<br><a href="http://redotheweb.com/CodeFlower/"><img width="133" src="http://redotheweb.com/images/codeflower/codeflower.png"></a></td>
         <td>Animated wind chart<br><a href="http://charts.animateddata.co.uk/ukwind/"><img width="133" src="http://animateddata.co.uk/img/ext/d3-ukwind.jpg"></a></td>
-        <td>What makes us happy?<br><a href="http://charts.animateddata.co.uk/whatmakesushappy/"><img width="133" src="http://animateddata.co.uk/img/ext/what-makes-us-happy2.jpg"></a></td>
     </tr>
     <tr valign="top">
+<td>What makes us happy?<br><a href="http://charts.animateddata.co.uk/whatmakesushappy/"><img width="133" src="http://animateddata.co.uk/img/ext/what-makes-us-happy2.jpg"></a></td>
         <td>Simple SOM Animation<br><a href="http://bl.ocks.org/e-/5244131"><img width="133" src="https://gist.github.com/e-/5244131/raw/2b721ed08e2361731b4d45370c9c8ddec63304e0/thumbnail.png"></a></td>
         <td>A mower demo<br><a href="http://bertranddechoux.github.io/d3js-sandbox/mower-demo/index.html"><img width="133" src="https://raw.github.com/BertrandDechoux/d3js-sandbox/gh-pages/mower-demo/screenshot.png"></a></td>
         <td>Map and context with brushing<br><a href="http://rbspd3.herokuapp.com"><img width="133" src="https://raw.github.com/sdelarquier/rbspd3/mr/snapshot.png"></a></td>
