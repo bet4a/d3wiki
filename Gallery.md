@@ -84,7 +84,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
         <td>Sequences sunburst<br><a href="http://bl.ocks.org/kerryrodden/7090426"><img width="133" src="https://gist.githubusercontent.com/kerryrodden/7090426/raw/66e9ce05ea907b3cb6b753cacc61aba45a78e21f/thumbnail.gif"></a></td>
     </tr>
     <tr valign="top">
-        <td>D3 Mobile Application<br><a href="http://www.brightpointinc.com/d3-mobile-web-application/?source=d3js" title="autocomplete component d3.js"><img width="133" src="http://www.brightpointinc.com/interactive/images/d3MobileApp.png"></a></td>
+        <td>D3 Mobile Application<br><a href="http://www.brightpointinc.com/d3-mobile-web-application/?source=d3js" title="D3 Mobile Application"><img width="133" src="http://www.brightpointinc.com/interactive/images/d3MobileApp.png"></a></td>
         <td>Radial Progress Component<br><a href="http://www.brightpointinc.com/clients/brightpointinc.com/library/radialProgress/index.html?source=d3js" title="radial progress component d3.js"><img width="133" src="http://www.brightpointinc.com/clients/brightpointinc.com/library/radialProgress/image.gif"></a></td>
         <td>Autocomplete Component<br><a href="http://www.brightpointinc.com/clients/brightpointinc.com/library/autocomplete/index.html?source=d3js" title="autocomplete component d3.js"><img width="133" src="http://www.brightpointinc.com/clients/brightpointinc.com/library/autocomplete/image.gif"></a></td>
         <td>Koalas to the Max<br><a href="http://www.koalastothemax.com/"><img width="133" src="http://d3js.org/ex/koalas.png"></a></td>
