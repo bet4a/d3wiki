@@ -483,6 +483,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
 </table>
 
 ## Examples
+* [India SECC Census Explorer](https://gramener.com/playground/secc/) - [Pratap Vardhan](https://twitter.com/PratapVardhan)
 * [Israel election 2015 - coalition builder](http://www.coalitiongame2015.com) - Ran Ruder
 * [Light up! Denver](http://glennaxie.com/light-up-denver/) - Glenna Xie
 * [TwitterBeater - Real time visualisation of tweets](http://twitterbeater.datageeklab.com) - David Martín-Corral
