@@ -33,7 +33,7 @@ D3 API总览
 * [d3.touches](选择器#d3_touches) - 获取相对于指定容器的多点触摸位置。
 * [selection.append](选择器#append) - 创建并追加一个新元素。
 * [selection.attr](选择器#attr) - 取得或设置属性的值。
-* [selection.call](选择器#call) - 为当前选择调用一个函数。
+* [selection.call](选择器#user-content-selectioncallfunction-arguments) - 为当前选择调用一个函数。
 * [selection.classed](选择器#classed) - 添加或移除CSS类。
 * [selection.data](选择器#data) - 在计算相关的连接时，取得或设置一组元素的数据。
 * [selection.datum](选择器#datum) - 取得或设置单个元素的数据，不必计算连接。
