@@ -86,6 +86,7 @@ Please feel free to add links to your work!
 * [Peter Cook](http://animateddata.co.uk/articles/)
 * [PubNub](http://www.pubnub.com/blog/tag/d3-js/)
 * [infographics.tw](http://blog.infographics.tw/tag/d3js/)
+* [neposlab.com (italian)](http://www.neposlab.com/tag/d3js/)
 
 ## Books
 
