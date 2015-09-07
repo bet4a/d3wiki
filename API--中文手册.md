@@ -412,7 +412,7 @@ D3 API总览
 * [axis](SVG-Axes#_axis) - 为给定的选择器或过渡创建或者更新轴。
 * [d3.svg.axis](SVG-Axes#axis) - 创建一个新的轴生成器。
 
-### [拖选](拖选)
+### [刷子](刷子)
 
 * [brush.clear](SVG-Controls#brush_clear) - 重置拖选范围。
 * [brush.empty](SVG-Controls#brush_empty) - 拖选是否为空。
@@ -593,7 +593,7 @@ D3 API总览
 * [partition.value](Partition-Layout#value) - 取得或设置用来指定圆尺寸的值访问器。
 * [partition](Partition-Layout#_partition) - partition.nodes的别名。
 
-### [饼](饼)
+### [饼布局](饼布局)
 
 * [d3.layout.pie](Pie-Layout#pie) - 构造一个新的默认的饼布局。
 * [pie.endAngle](Pie-Layout#endAngle) -取得或设置饼布局整体的结束角度。
@@ -603,7 +603,7 @@ D3 API总览
 * [pie.value](Pie-Layout#value) - 取得或设置值访问器函数。
 * [pie](Pie-Layout#_pie) - 计算饼图或圆环图中弧的开始和结束角度。
 
-### [堆叠](堆叠)
+### [堆叠布局](堆叠布局)
 
 * [d3.layout.stack](Stack-Layout#stack) - 构造一个新的默认的堆叠布局。
 * [stack.offset](Stack-Layout#offset) - 指定整体的基线算法。
@@ -614,7 +614,7 @@ D3 API总览
 * [stack.y](Stack-Layout#y) - 取得或设置*y*-维访问器函数。
 * [stack](Stack-Layout#_stack) - 计算堆叠图或者面积图的基线。
 
-### [树](树)
+### [树布局](树布局)
 
 * [d3.layout.tree](Tree-Layout#tree) - 整齐地排列树节点。
 * [tree.children](Tree-Layout#children) - 取得或设置孩子访问器。
@@ -626,7 +626,7 @@ D3 API总览
 * [tree.sort](Tree-Layout#sort) - 控制遍历顺序中兄弟节点的顺序。
 * [tree](Tree-Layout#_tree) - tree.nodes的别名。
 
-### [矩形树](矩形树)
+### [矩形树布局](矩形树布局)
 
 * [d3.layout.treemap](Treemap-Layout#treemap) - 使用空间递归分区算法展示树的节点。
 * [treemap.children](Treemap-Layout#children) - 取得或设置孩子访问器。
