@@ -313,8 +313,8 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <tr valign="top">
         <td>Tarot Card App made with D3 + Meteor framework<br><a href="http://tarot-pedia.meteor.com/"><img width="133" src="https://farm8.staticflickr.com/7541/15320089804_2f5977c9b8_m.jpg"></a></td>
         <td width="207">Ulam Spiral<br><a href="http://bl.ocks.org/rouleur/260c5a9233fff0e8ddaf"><img width="133" src="http://bl.ocks.org/rouleur/raw/260c5a9233fff0e8ddaf/thumbnail.png"></a></td>
-        <td width="207">Animated Chord Diagram<br><a href="http://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord.html"><img width="133" src="https://dl.dropboxusercontent.com/u/11654088/Chord%20Diagram%20Video%20Fast%20202px.gif"></a></td>
-        <td width="207">SOM Hexagonal Heatmap<br><a href="http://www.visualcinnamon.com/2013/07/self-organizing-maps-creating-hexagonal.html"><img width="133" src="https://dl.dropboxusercontent.com/u/11654088/SOM%20Heatmap.png"></a></td>
+        <td width="207">Animated Chord Diagram<br><a href="http://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord.html"><img width="133" src="https://raw.githubusercontent.com/nbremer/thumbnails/master/Chord%20Diagram%20Video%20Fast%20202px.gif"></a></td>
+        <td width="207">SOM Hexagonal Heatmap<br><a href="http://www.visualcinnamon.com/2013/07/self-organizing-maps-creating-hexagonal.html"><img width="133" src="https://raw.githubusercontent.com/nbremer/thumbnails/master/SOM%20Heatmap.png"></a></td>
     </tr>
     <tr valign="top">
         <td>Dataviz tree<br><a href="http://charts.animateddata.co.uk/datavistree/"><img width="133" src="http://animateddata.co.uk/img/ext/datavistree-thumb.jpg"></a></td>
@@ -326,7 +326,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
         <td>Animated Pie<br><a href="http://vyacheslavryabinin.com/datavis/pie/"><img width="133" src="http://vyacheslavryabinin.com/datavis/pie/pie.png"></a></td>
         <td>Exoplanets in Orbit<br><a href="http://www.visualcinnamon.com/2014/12/creating-interactive-exoplanets-in.html"><img width="133" src="https://raw.githubusercontent.com/nbremer/exoplanets/gh-pages/img/Exoplanets%20-%20Animated.gif"></a></td>
         <td>Worldcup'14 Drag & Drop Brackets<br><a href="http://romain.vuillemot.net/projects/worldcup14/"><img width="133" src="http://romain.vuillemot.net/projects/worldcup14/tutorial.gif"></a></td>
-        <td>A Scatterplot as Bar chart<br><a href="http://www.visualcinnamon.com/2015/01/the-top-2000-equalizer-songs.html"><img width="133" src="https://dl.dropboxusercontent.com/u/11654088/Top2000Animated.gif"></a></td>
+        <td>A Scatterplot as Bar chart<br><a href="http://www.visualcinnamon.com/2015/01/the-top-2000-equalizer-songs.html"><img width="133" src="https://raw.githubusercontent.com/nbremer/thumbnails/master/Top2000Animated.gif"></a></td>
     </tr>
     <tr valign="top">
         <td>Conway's Game of Life<br><a href="http://bl.ocks.org/NPashaP/f1e73faef87bee899b47"><img width="133" src="http://bl.ocks.org/NPashaP/raw/f1e73faef87bee899b47/thumbnail.png"></a></td>
@@ -361,7 +361,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <tr valign="top">
         <td>Pazzla: Mosaics of Instagram Pictures<br /><a href="http://pazzla.qoollo.com" target="_blank"><img width="133" src="http://petr-devaikin.github.io/img/pazzla.jpg" alt="Pazzla: Mosaics of Instagram Pictures"></a></td>
         <td>Community Pop-Culture References Heatmap<br /><a href="http://communitypoprefs.com/" target="_blank"><img width="133" src="http://i.imgur.com/t4Df6VD.jpg" alt="Community Pop-Culture References Heatmap"></a></td>
-        <td>Top baby names bump chart<br><a href="http://www.visualcinnamon.com/babynamesus"><img width="133" src="https://dl.dropboxusercontent.com/u/11654088/Babynames%20Combined.png"></a></td>
+        <td>Top baby names bump chart<br><a href="http://www.visualcinnamon.com/babynamesus"><img width="133" src="https://raw.githubusercontent.com/nbremer/thumbnails/master/Babynames%20Combined.png"></a></td>
         <td>Real time electric consumption in Spain
             <br/>
             <a href="http://energia.ningunaparte.net/en/" target="_blank">
@@ -392,7 +392,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
       <td>UK Economy as a Network<br /><a href="http://helenjacksonanalytic.co.uk/UKEconomyNetwork.html" target="_blank"><img width="133" src="http://helenjacksonanalytic.co.uk/EconomyNetwork.jpg"></a></td>
       <td>Contouring Comparison<br><br><a href="http://emptypipes.org/2015/07/22/contour-comparison/"><img width="133" align="center" src="http://emptypipes.org/img/contouring_comparison2.png"></a></td>
       <td>Force Directed Graph with search and subset view<br><a href="https://timebandit.github.io/graphSub/"><img src="http://i.picresize.com/images/2015/08/08/7W3ti.gif" data-canonical-src="http://i.picresize.com/images/2015/08/08/7W3ti.gif" width="133"></a></td>
-        <td>A circular flow diagram (Sankey meets Chord diagram)<br /><a href="http://www.visualcinnamon.com/2015/08/stretched-chord.html" target="_blank"><img width="133" src="https://dl.dropboxusercontent.com/u/11654088/Stretched%20Chord%20Flow%20chart.png"></a></td>
+        <td>A circular flow diagram (Sankey meets Chord diagram)<br /><a href="http://www.visualcinnamon.com/2015/08/stretched-chord.html" target="_blank"><img width="133" src="https://github.com/nbremer/thumbnails/blob/master/Stretched%20Chord%20Flow%20chart.png"></a></td>
     </tr>
 
 </table>
