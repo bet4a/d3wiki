@@ -395,7 +395,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
         <td>A circular flow diagram (Sankey meets Chord diagram)<br /><a href="http://www.visualcinnamon.com/2015/08/stretched-chord.html" target="_blank"><img width="133" src="https://github.com/nbremer/thumbnails/blob/master/Stretched%20Chord%20Flow%20chart.png"></a></td>
     </tr>
     <tr>
-         <td>Re-usable Sankey<br /><a href="http://bl.ocks.org/wvengen/cab9b01816490edb7083"><img width="150" src="https://gist.githubusercontent.com/wvengen/cab9b01816490edb7083/raw/7a859fd466a12754c731ba5dce41f25aed89547e/gallery_icon.png"></a></td>
+         <td>Re-usable Sankey<br /><a href="http://bl.ocks.org/wvengen/cab9b01816490edb7083"><img width="133" src="https://gist.githubusercontent.com/wvengen/cab9b01816490edb7083/raw/7a859fd466a12754c731ba5dce41f25aed89547e/gallery_icon.png"></a></td>
          <td></td>
          <td></td>
          <td></td>
