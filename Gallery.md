@@ -396,7 +396,9 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     </tr>
     <tr>
          <td>Re-usable Sankey<br /><a href="http://bl.ocks.org/wvengen/cab9b01816490edb7083"><img width="133" src="https://gist.githubusercontent.com/wvengen/cab9b01816490edb7083/raw/7a859fd466a12754c731ba5dce41f25aed89547e/gallery_icon.png"></a></td>
-         <td></td>
+         <td>Compare Results with Waterfall Charts
+             <a href="http://uo-lca.github.io/dist/#/home/fragment-lcia"><img width="133"       src="https://github.com/binaworks/binaworks.github.io/blob/master/images/GalleryWaterfalls.png"></a>
+         </td>
          <td></td>
          <td></td>
     </tr>
