@@ -14,7 +14,7 @@ d3.json("path/to/file.json", function(error, json) {
 });
 ```
 
-By default, most browsers do not allow cross-domain requests. To [enable cross-domain requests](http://enable-cors.org/), have the server set the header Access-Control-Allow-Origin: *. For more details, see the W3C recommendation on [[Cross-Origin Resource Sharing|http://www.w3.org/TR/cors/]]. For IE9, d3.xhr uses the nonstandard XDomainRequest for cross-domain requests.
+By default, most browsers do not allow cross-domain requests. To [enable cross-domain requests](http://enable-cors.org/), have the server set the header Access-Control-Allow-Origin: *. For more details, see the W3C recommendation on [[Cross-Origin Resource Sharing|http://www.w3.org/TR/cors/]]. For IE9, d3.xhr uses the nonstandard XDomainRequest for cross-domain requests. Note that to send credentials, the request will need to be decorated with .on("beforesend", function (request) {request.withCredentials = true;}) and not using .headers("withCredentials", "true")
 
 ## XHR
 
