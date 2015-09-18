@@ -502,7 +502,9 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
 </table>
 
 ## Examples
-* [Replay Edits - Visualizing the edits in a Wikipedia article](https://cosmiclattes.github.io/wikireplay/player.html) - Jeph Paul
+* [Replay Edits - Visualizing the edits in a Wikipedia article]
+* [Presidents of USA and their Birth Signs – Sankey Visualization](http://www.infocaptor.com/dashboard/presidents-of-usa-and-their-birth-signs-sankey-visualization) - Sankey Viz
+(https://cosmiclattes.github.io/wikireplay/player.html) - Jeph Paul
 * [India SECC Census Explorer](https://gramener.com/playground/secc/) - [Pratap Vardhan](https://twitter.com/PratapVardhan)
 * [Israel election 2015 - coalition builder](http://www.coalitiongame2015.com) - Ran Ruder
 * [Light up! Denver](http://glennaxie.com/light-up-denver/) - Glenna Xie
