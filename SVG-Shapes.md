@@ -377,7 +377,7 @@ Returns the path data string for the specified array of *data* elements.
 
 …
 
-<a name="area_radial_outerRadius" href="SVG-Shapes#area_radial_innerRadius">#</a> area.<b>innerRadius</b>([<i>radius</i>])
+<a name="area_radial_outerRadius" href="SVG-Shapes#area_radial_outerRadius">#</a> area.<b>outerRadius</b>([<i>radius</i>])
 
 …
 
