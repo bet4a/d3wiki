@@ -399,11 +399,13 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
          <td>Compare Results with Waterfall Charts
              <a href="http://uo-lca.github.io/dist/#/home/fragment-lcia"><img width="133"       src="https://github.com/binaworks/binaworks.github.io/blob/master/images/GalleryWaterfalls.png"></a>
          </td>
-         <td></td>
+         <td>Small Multiple Circle Packing</br>
+             <a href="http://visualcinnamon.com/occupations" target="_blank"><img width="133"       src="https://raw.githubusercontent.com/nbremer/thumbnails/master/Small%20Multiple%20Packing.png"></a></td>
          <td></td>
     </tr>
 
 </table>
+
 
 ## Basic Charts
 
