@@ -184,11 +184,11 @@ See also [d3.nest](#-nest).
 
 <a name="map_has" href="#map_has">#</a> map.<b>has</b>(<i>key</i>)
 
-Returns true if and only if this map has an entry for the specified *key* string. Note: the value may be null or undefined.
+Returns true if and only if this map has an entry for the specified *key* string. Note: the value may be `null` or `undefined`.
 
 <a name="map_get" href="#map_get">#</a> map.<b>get</b>(<i>key</i>)
 
-Returns the value for the specified *key* string. If the map does not have an entry for the specified *key*, returns undefined.
+Returns the value for the specified *key* string. If the map does not have an entry for the specified *key*, returns `undefined`.
 
 <a name="map_set" href="#map_set">#</a> map.<b>set</b>(<i>key</i>, <i>value</i>)
 
