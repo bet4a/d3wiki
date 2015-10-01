@@ -296,7 +296,7 @@ D3 internally maintains an efficient timer queue so that thousands of timers can
 
 <a name="d3_timer" href="Transitions#d3_timer">#</a> d3.<b>timer</b>(<i>function</i>[, <i>delay</i>[, <i>time</i>]])
 
-Start a custom animation timer, invoking the specified *function* repeatedly until it returns true. There is no way to cancel the timer after it starts, so make sure your timer function returns true when done!
+Start a custom animation timer, invoking the specified *function* repeatedly until it returns true. There is no way to cancel the timer after it starts, so make sure your timer function returns true when done! The *function* is passed the time elapsed in milliseconds since the timer started.
 
 An optional numeric *delay* in milliseconds may be specified when the given *function* should only be invoked after a delay. The delay is relative to the specified *time* in milliseconds since UNIX epoch; if *time* is not specified, it defaults to [Date.now](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Date/now).
 
