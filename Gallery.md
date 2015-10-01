@@ -133,8 +133,8 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <tr valign="top">
         <td>Cubic Hamiltonian Graphs<br><a href="http://www.christophermanning.org/projects/building-cubic-hamiltonian-graphs-from-lcf-notation/"><img width="133" src="http://d3js.org/ex/lcf.png"></a></td>
         <td>Force-Directed Voronoi<br><a href="http://www.christophermanning.org/projects/voronoi-diagram-with-force-directed-nodes-and-delaunay-links/"><img width="133" src="http://d3js.org/ex/force-voronoi.png"></a></td>
-        <td>Trulia Trends<br><a href="http://trends.truliablog.com/2011/09/house-hunter-by-day-not-so-much-after-midnight/"><img width="133" src="http://d3js.org/ex/house-heatmap.png"></a></td>
-        <td>Trulia Trends<br><a href="http://trends.truliablog.com/2012/02/where-are-house-hunters-searching/"><img width="133" src="http://d3js.org/ex/house-map.png"></a></td>
+        <td>Trulia Trends<br><a href="http://www.trulia.com/blog/trends/house-hunter-by-day-not-so-much-after-midnight/"><img width="133" src="http://d3js.org/ex/house-heatmap.png"></a></td>
+        <td>Trulia Trends<br><a href="http://www.trulia.com/blog/trends/where-are-house-hunters-searching/"><img width="133" src="http://d3js.org/ex/house-map.png"></a></td>
     </tr>
     <tr valign="top">
         <td>Open Budget<br><a href="http://marcinignac.com/projects/open-budget/"><img width="133" src="http://d3js.org/ex/open-budget.png"></a></td>
