@@ -1,4 +1,4 @@
-> [Wiki](Home) ▸ [[API Reference]] ▸ [[Core]]
+> [Wiki](Home) ▸ [[API Reference|API-Reference]] ▸ **Core**
  See one of:
  
 * [[Selections]] - manipulate elements in the current document.
