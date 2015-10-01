@@ -102,7 +102,13 @@ Note: as its name suggests, selection.html is only supported on HTML elements. S
 
 Appends a new element with the specified *name* as the last child of each element in the current selection, returning a new selection containing the appended elements. Each new element inherits the data of the current elements, if any, in the same manner as [select](Selections#select) for subselections.
 
-The *name* may be specified either as a constant string or as a function that returns the DOM element to append. When the *name* is specified as a string, it may have a namespace prefix of the form "namespace:tag". For example, "svg:text" will create a "text" element in the SVG namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to [d3.ns.prefix](Namespaces#prefix). If no namespace is specified, then the namespace will be inherited from the enclosing element; or, if the name is one of the known prefixes, the corresponding namespace will be used (for example, "svg" implies "svg:svg").
+The *name* may be specified either as a constant string or as a function that returns the DOM element to append.   If *name* is a function, it is passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. To append an arbitrary element based on the bound data it must be created in the function.  For example:
+```js
+selection.enter().append(function(d) {
+    return document.createElement(d.elementType)
+})
+```  
+When the *name* is specified as a string, it may have a namespace prefix of the form "namespace:tag". For example, "svg:text" will create a "text" element in the SVG namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to [d3.ns.prefix](Namespaces#prefix). If no namespace is specified, then the namespace will be inherited from the enclosing element; or, if the name is one of the known prefixes, the corresponding namespace will be used (for example, "svg" implies "svg:svg").
 
 <a name="insert" href="Selections#insert">#</a> selection.<b>insert</b>(<i>name</i>[, <i>before</i>])
 
