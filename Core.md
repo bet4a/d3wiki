@@ -1,13 +1,13 @@
-> [Wiki](Home) ▸ [[API--中文手册]] ▸ [[核心]] 
-See one of:
-
-* [[选择器]] - 操作当前文档中的元素。
-* [[过渡]] - 平滑地插入属性和样式。
-* [[数组]] - 方便地操作数组和对象。
-* [[请求]] - 加载外部数据。
-* [[格式化]] - 转换数字，时间和其他对象为字符串。
-* [[本地化]] - 控制具有本地特征的行为，例如数字格式化。
-* [[颜色]] - 解析和操作颜色；使用颜色空间。
-* [[命名空间]] - 扩展D3对XML命名空间的支持。
-* [[数学]] - 数学函数杂项。
-* [[内部]] - 各种用于扩展D3的工具。
+> [Wiki](Home) ▸ [[API Reference]] ▸ [[Core]]
+ See one of:
+ 
+* [[Selections]] - manipulate elements in the current document.
+* [[Transitions]] - interpolate attributes and styles smoothly over time.
+* [[Arrays]] - manipulate arrays and objects with ease.
+* [[Requests]] - load external data.
+* [[Formatting]] - convert numbers, dates and other objects to strings.
+* [[Localization]] - control locale-specific behavior, such as number formatting.
+* [[Colors]] - parse and manipulate colors; work with color spaces.
+* [[Namespaces]] - extend D3's support for XML namespaces.
+* [[Math]] - miscellaneous mathematical functions.
+* [[Internals]] - sundry utilities for extending D3.
