@@ -484,7 +484,7 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
   </tr>
   <tr valign="top">
     <td>Interactive force layout<br><a href="https://github.com/nylen/d3-process-map"><img width="133" src="http://i.imgur.com/LFM3KV5.png"></a></td>
-    <td>EventDrops: Zoomable time series<br><a href="https://github.com/marmelab/EventDrops"><img width="133" src="http://i.imgur.com/fNPhBZ8.gif"></a></td>
+    <td>EventDrops: Zoomable time series<br><a href="https://github.com/marmelab/EventDrops"><img width="133" src="http://static.marmelab.com/EventDrops_small.gif"></a></td>
     <td>Draggable scatterplot with motion trails<br><a href="http://romsson.github.io/dragit/example/nations.html"><img width="133" src="http://i.imgur.com/gqnuQzb.gif"></a></td>
     <td>Horizontally grouped bar chart<br><a href="http://bl.ocks.org/erikvullings/51cc5332439939f1f292"><img width="133" src="http://bl.ocks.org/erikvullings/raw/51cc5332439939f1f292/thumbnail.png"></a></td>
   </tr>
