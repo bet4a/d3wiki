@@ -207,7 +207,7 @@ d3.transition()
     .ease("linear")
     .each(function() {
       d3.selectAll(".foo").transition()
-          .style("opacity", 0)
+         .style("opacity", 0)
          .remove();
     })
   .transition()
