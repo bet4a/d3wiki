@@ -6,7 +6,9 @@ A scale object, such as that returned by [d3.scale.linear](Quantitative-Scales#l
 
 ## Linear Scales
 
-Linear scales are the most common scale, and a good default choice to map a continuous input domain to a continuous output range. The mapping is *linear* in that the output range value *y* can be expressed as a linear function of the input domain value *x*: *y* = *mx* + *b*. The input domain is typically a dimension of the data that you want to visualize, such as the height of students (measured in meters) in a sample population. The output range is typically a dimension of the desired output visualization, such as the height of bars (measured in pixels) in a histogram.
+Linear scales are the most common scale, and a good default choice to map a continuous input domain to a continuous output range. The mapping is *linear* in that the output range value *y* can be expressed as a linear function of the input domain value *x*: *y* = *mx* + *b*. The input domain is typically a dimension of the data that you want to visualize, such as the height of students (measured in meters) in a sample population. The output range is typically a dimension of the desired output visualization, such as the height of bars (measured in pixels) in a histogram.  
+
+The state dimensions are [domain](#linear_domain), [range](#linear_range), [output interpolator](#linear_interpolate) and [clamping behavior](linear_clamp).
 
 <a name="linear" href="Quantitative-Scales#linear">#</a> d3.scale.<b>linear</b>()
 
@@ -62,11 +64,11 @@ The optional tick *count* argument allows greater control over the step size use
 
 <a name="linear_ticks" href="Quantitative-Scales#linear_ticks">#</a> linear.<b>ticks</b>([<i>count</i>])
 
-Returns approximately *count* representative values from the scale's input domain. If *count* is not specified, it defaults to 10. The returned tick values are uniformly spaced, have human-readable values (such as multiples of powers of 10), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain.
+A stateless method that returns approximately *count* representative values from the scale's input domain. If *count* is not specified, it defaults to 10. The returned tick values are uniformly spaced, have human-readable values (such as multiples of powers of 10), and are guaranteed to be within the extent of the input domain. Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data. The specified *count* is only a hint; the scale may return more or fewer values depending on the input domain.
 
 <a name="linear_tickFormat" href="Quantitative-Scales#linear_tickFormat">#</a> linear.<b>tickFormat</b>(<i>count</i>, [<i>format</i>])
 
-Returns a [[number format|Formatting#d3_format]] function suitable for displaying a tick value. The specified *count* should have the same value as the count that is used to generate the tick values. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate precision based on the fixed interval between tick values.
+A stateless method that returns a [[number format|Formatting#d3_format]] function suitable for displaying a tick value. The specified *count* should have the same value as the count that is used to generate the tick values. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate precision based on the fixed interval between tick values.
 
 The optional *format* argument allows a [[format specifier|Formatting#d3_format]] to be specified, where the precision of the format is automatically substituted by the scale to be appropriate for the tick interval. For example, to format percentage change, you might say:
 
