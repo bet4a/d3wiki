@@ -1,4 +1,4 @@
-> [Wiki](Home) ▸ **Gallery**
+> [Wiki](Home)  **Gallery**
 
 Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbostock](http://bl.ocks.org/mbostock). If you want to share an example and don't have your own hosting, consider using [Gist](http://gist.github.com) and [bl.ocks.org](http://bl.ocks.org). If you want to share or view live examples try [runnable.com](http://runnable.com/d3.js) or [vida.io](https://vida.io/explore).
 
