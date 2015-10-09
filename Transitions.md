@@ -185,6 +185,19 @@ Thus, you can use either select or filter to apply tweens to a subset of element
 
 Creates a new transition on the same selected elements that starts when this transition ends. The new transition inherits a delay equal to this transition's delay + duration to control this timing. The new transition also inherits this transition’s name, duration, and easing. This can be used to define [chained transitions](http://bl.ocks.org/mbostock/4341417) without needing to listen for "end" events.
 
+If you want to add a delay between chained transitions, an easy way to do this is to have a no-op transition in between:
+
+```js
+selection.transition() // this transition runs from t=1s to t=3s
+    .delay(1000)
+    .duration(2000)
+  .transition() // then a delay from t=3s to t=4s
+    .duration(1000)
+  .transition() // then lastly another transition from t=4s to t=5s
+```
+
+Though, note that the last transition in this chain inherits the 1s duration from the interstitial pause, and not the 2s duration from the first transition.
+
 ### Control
 
 <a name="each" href="Transitions#each">#</a> transition.<b>each</b>([<i>type</i>, ]<i>listener</i>)
