@@ -77,17 +77,6 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
         <td>Obama's Budget Proposal<br><a href="http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html"><img width="133" src="http://d3js.org/ex/budget.png"></a></td>
         <td>Facebook IPO<br><a href="http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html"><img width="133" src="http://d3js.org/ex/facebook-ipo.png"></a></td>
     </tr>
-
-    <tr valign="top">
-        <td>Sankey Creator<br><a href="http://infocaptor.com/sankey-diagram-software.php" title="Sankey Visualization Builder"><img width="133" src="http://infocaptor.com/img/sankey_infocaptor.gif"></a></td>
-        
-        <td>Convert any page into bubbles<br><a href="http://www.infocaptor.com/bubble-my-page"><img width="133" src="http://www.infocaptor.com/wikipedia_visualization.png"></a></td>
-
-        <td>D3 Builder<br><a href="https://my.infocaptor.com/free_data_visualization.php"><img width="133" src="http://www.infocaptor.com/dashboard/wp-content/uploads/2014/10/image-358.jpg"></a></td>
-
-    </tr>
-
-
     <tr valign="top">
         <td>Political Influence<br><a href="http://www.brightpointinc.com/interactive/political_influence/index.html?source=d3js" title="political influence d3.js"><img width="133" src="http://www.brightpointinc.com/interactive/images/PoliticalInfluence_202px.png"></a></td>
         <td>Federal Budget<br><a href="http://www.brightpointinc.com/interactive/budget/index.html?source=d3js" title="federal budget d3.js"><img width="133" src="http://www.brightpointinc.com/interactive/images/Budget_202px.png"></a></td>
@@ -100,6 +89,17 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
         <td>Autocomplete Component<br><a href="http://www.brightpointinc.com/clients/brightpointinc.com/library/autocomplete/index.html?source=d3js" title="autocomplete component d3.js"><img width="133" src="http://www.brightpointinc.com/clients/brightpointinc.com/library/autocomplete/image.gif"></a></td>
         <td>Koalas to the Max<br><a href="http://www.koalastothemax.com/"><img width="133" src="http://d3js.org/ex/koalas.png"></a></td>
     </tr>
+
+
+    <tr valign="top">
+        <td>Sankey Creator<br><a href="http://infocaptor.com/sankey-diagram-software.php" title="Sankey Visualization Builder"><img width="133" src="http://infocaptor.com/img/sankey_infocaptor.gif"></a></td>
+        
+        <td>Convert any page into bubbles<br><a href="http://www.infocaptor.com/bubble-my-page"><img width="133" src="http://www.infocaptor.com/wikipedia_visualization.png"></a></td>
+
+        <td>D3 Builder<br><a href="https://my.infocaptor.com/free_data_visualization.php"><img width="133" src="http://www.infocaptor.com/dashboard/wp-content/uploads/2014/10/image-358.jpg"></a></td>
+
+    </tr>
+
     <tr valign="top">
         <td>Particles<br><a href="http://bl.ocks.org/mbostock/1062544"><img width="133" src="http://d3js.org/ex/particles.png"></a></td>
         <td>Indented Tree<br><a href="http://bl.ocks.org/mbostock/1093025"><img width="133" src="http://d3js.org/ex/indented-tree.png"></a></td>
