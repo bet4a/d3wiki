@@ -95,7 +95,7 @@ and this will start the server on http://localhost:8080 as usual from the curren
 D3 supports the asynchronous module definition (AMD) API. For example, if you use [RequireJS](http://requirejs.org/), you may load as follows:
 
 ```js
-require.config({paths: {d3: "http://d3js.org/d3.v3.min"}});
+require.config({paths: {d3: "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min"}});
 
 require(["d3"], function(d3) {
   console.log(d3.version);
