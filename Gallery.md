@@ -489,6 +489,9 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
     <td>Draggable scatterplot with motion trails<br><a href="http://romsson.github.io/dragit/example/nations.html"><img width="133" src="http://i.imgur.com/gqnuQzb.gif"></a></td>
     <td>Horizontally grouped bar chart<br><a href="http://bl.ocks.org/erikvullings/51cc5332439939f1f292"><img width="133" src="http://bl.ocks.org/erikvullings/raw/51cc5332439939f1f292/thumbnail.png"></a></td>
   </tr>
+  <tr valign="top">
+    <td>Band Zoom<br><a href="http://bl.ocks.org/jroetman/9b4c0599a4996edef0ab"><img width="133" src="https://cloud.githubusercontent.com/assets/5098704/10553432/860c20ec-740f-11e5-8e79-e0b30f352012.png"></a></td>
+  </tr>
 
 </table>
 
