@@ -107,23 +107,6 @@ See one of:
 * [d3.extent](Arrays#d3_extent) - find the minimum and maximum value in an array.
 * [d3.keys](Arrays#d3_keys) - list the keys of an associative array.
 * [d3.map](Arrays#d3_map) - a shim for ES6 maps, since objects are not hashes!
-* [d3.max](Arrays#d3_max) - find the maximum value in an array.
-* [d3.mean](Arrays#d3_mean) - compute the arithmetic mean of an array of numbers.
-* [d3.median](Arrays#d3_median) - compute the median of an array of numbers (the 0.5-quantile).
-* [d3.merge](Arrays#d3_merge) - merge multiple arrays into one array.
-* [d3.min](Arrays#d3_min) - find the minimum value in an array.
-* [d3.nest](Arrays#d3_nest) - group array elements hierarchically.
-* [d3.pairs](Arrays#d3_pairs) - returns an array of adjacent pairs of elements.
-* [d3.permute](Arrays#d3_permute) - reorder an array of elements according to an array of indexes.
-* [d3.quantile](Arrays#d3_quantile) - compute a quantile for a sorted array of numbers.
-* [d3.range](Arrays#d3_range) - generate a range of numeric values.
-* [d3.set](Arrays#d3_set) - a shim for ES6 sets, since objects are not hashes!
-* [d3.shuffle](Arrays#d3_shuffle) - randomize the order of an array.
-* [d3.sum](Arrays#d3_sum) - compute the sum of an array of numbers.
-* [d3.transpose](Arrays#d3_transpose) - transpose an array of arrays.
-* [d3.values](Arrays#d3_values) - list the values of an associated array.
-* [d3.variance](Arrays#d3_variance) - compute the variance of an array of numbers.
-* [d3.zip](Arrays#d3_zip) - transpose a variable number of arrays.
 * [map.empty](Arrays#map_empty) - returns false if the map has at least one entry.
 * [map.entries](Arrays#map_entries) - returns the map’s array of entries (key-values objects).
 * [map.forEach](Arrays#map_forEach) - calls the specified function for each entry in the map.
@@ -134,12 +117,23 @@ See one of:
 * [map.set](Arrays#map_set) - sets the value for the specified key.
 * [map.size](Arrays#map_size) - returns the number of entries in the map.
 * [map.values](Arrays#map_values) - returns the map’s array of values.
+* [d3.max](Arrays#d3_max) - find the maximum value in an array.
+* [d3.mean](Arrays#d3_mean) - compute the arithmetic mean of an array of numbers.
+* [d3.median](Arrays#d3_median) - compute the median of an array of numbers (the 0.5-quantile).
+* [d3.merge](Arrays#d3_merge) - merge multiple arrays into one array.
+* [d3.min](Arrays#d3_min) - find the minimum value in an array.
+* [d3.nest](Arrays#d3_nest) - group array elements hierarchically.
 * [nest.entries](Arrays#nest_entries) - evaluate the nest operator, returning an array of key-values tuples.
 * [nest.key](Arrays#nest_key) - add a level to the nest hierarchy.
 * [nest.map](Arrays#nest_map) - evaluate the nest operator, returning an associative array.
 * [nest.rollup](Arrays#nest_rollup) - specify a rollup function for leaf values.
 * [nest.sortKeys](Arrays#nest_sortKeys) - sort the current nest level by key.
 * [nest.sortValues](Arrays#nest_sortValues) - sort the leaf nest level by value.
+* [d3.pairs](Arrays#d3_pairs) - returns an array of adjacent pairs of elements.
+* [d3.permute](Arrays#d3_permute) - reorder an array of elements according to an array of indexes.
+* [d3.quantile](Arrays#d3_quantile) - compute a quantile for a sorted array of numbers.
+* [d3.range](Arrays#d3_range) - generate a range of numeric values.
+* [d3.set](Arrays#d3_set) - a shim for ES6 sets, since objects are not hashes!
 * [set.add](Arrays#set_add) - adds the specified value.
 * [set.empty](Arrays#set_empty) - returns true if the set has at least one value.
 * [set.forEach](Arrays#set_forEach) - calls the specified function for each value in the set.
@@ -147,6 +141,12 @@ See one of:
 * [set.remove](Arrays#set_remove) - removes the specified value.
 * [set.size](Arrays#set_size) - returns the number of values in the set.
 * [set.values](Arrays#set_values) - returns the set’s array of values.
+* [d3.shuffle](Arrays#d3_shuffle) - randomize the order of an array.
+* [d3.sum](Arrays#d3_sum) - compute the sum of an array of numbers.
+* [d3.transpose](Arrays#d3_transpose) - transpose an array of arrays.
+* [d3.values](Arrays#d3_values) - list the values of an associated array.
+* [d3.variance](Arrays#d3_variance) - compute the variance of an array of numbers.
+* [d3.zip](Arrays#d3_zip) - transpose a variable number of arrays.
 
 ### [Math](Math)
 
