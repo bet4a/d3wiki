@@ -1,6 +1,6 @@
  > [Wiki](Home) ▸ [[API Reference]] ▸ [[Core]] ▸ **Selections**
 
-A **selection** is an array of elements pulled from the current document. D3 uses [[CSS3|http://www.w3.org/TR/css3-selectors/]] to select elements. For example, you can select by tag  ("div"), class (".awesome"), unique identifier ("#foo"), attribute ("[color=red]"), or containment ("parent child"). Selectors can also be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR). If your browser doesn't support selectors natively, you can include [[Sizzle|http://sizzlejs.com/]] before D3 for backwards-compatibility.
+A **selection** is an array of elements pulled from the current document. D3 uses [CSS3](http://www.w3.org/TR/css3-selectors/ "|http://www.w3.org/TR/css3-selectors/") to select elements. For example, you can select by tag  ("div"), class (".awesome"), unique identifier ("#foo"), attribute ("[color=red]"), or containment ("parent child"). Selectors can also be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR). If your browser doesn't support selectors natively, you can include [Sizzle](http://sizzlejs.com/ "http://sizzlejs.com/") before D3 for backwards-compatibility.
 
 After selecting elements, you apply **operators** to them to do stuff. These operators can get or set [attributes](Selections#attr), [styles](Selections#style), [properties](Selections#property), [HTML](Selections#html) and [text](Selections#text) content. Attribute values and such are specified as either constants or functions; the latter are evaluated for each element. You can also join selections to [data](Selections#data); this data is available to operators for data-driven transformations. In addition, joining to data produces [enter](Selections#enter) and [exit](Selections#enter) subselections, so that you may [add](Selections#append) or [remove](Selections#remove) elements in response to changes in data.
 
@@ -28,7 +28,7 @@ Selects the specified array of elements. This is useful if you already have a re
 
 ## Operating on Selections
 
-Selections are arrays of elements—literally ([maybe not literally...](http://bost.ocks.org/mike/selection/#subclass)). D3 binds additional methods to the array so that you can apply operators to the selected elements, such as setting an attribute on all the selected elements. One nuance is that selections are *grouped*: rather than a one-dimensional array, each selection is an *array of arrays* of elements. This preserves the hierarchical structure of subselections. Most of the time, you can ignore this detail, but that's why a single-element selection looks like `[[node]]` rather than `[node]`. For more on nested selections, see [Nested Selections](http://bost.ocks.org/mike/nest/).
+Selections are arrays of elements—literally ([maybe not literally...](http://bost.ocks.org/mike/selection/#subclass "http://bost.ocks.org/mike/selection/#subclass")). D3 binds additional methods to the array so that you can apply operators to the selected elements, such as setting an attribute on all the selected elements. One nuance is that selections are *grouped*: rather than a one-dimensional array, each selection is an *array of arrays* of elements. This preserves the hierarchical structure of subselections. Most of the time, you can ignore this detail, but that's why a single-element selection looks like `[[node]]` rather than `[node]`. For more on nested selections, see [Nested Selections](http://bost.ocks.org/mike/nest/ "http://bost.ocks.org/mike/nest/").
 
 If you want to learn how selections work, try selecting elements interactively using your browser's developer console. You can inspect the returned array to see which elements were selected, and how they are grouped. You can also then apply operators to the selected elements and see how the page content changes.
 
@@ -48,7 +48,7 @@ The specified *name* may have a namespace prefix, such as `xlink:href`, to speci
 
 <a name="classed" href="Selections#classed">#</a> selection.<b>classed</b>(<i>name</i>[, <i>value</i>])
 
-This operator is a convenience routine for setting the "class" attribute; it understands that the "class" attribute is a set of tokens separated by spaces. Under the hood, it will use the [[classList|https://developer.mozilla.org/en/DOM/element.classList]] if available, for convenient adding, removing and toggling of CSS classes.
+This operator is a convenience routine for setting the "class" attribute; it understands that the "class" attribute is a set of tokens separated by spaces. Under the hood, it will use the [classList](https://developer.mozilla.org/en/DOM/element.classList "https://developer.mozilla.org/en/DOM/element.classList") if available, for convenient adding, removing and toggling of CSS classes.
 
 If *value* is specified, sets whether or not the specified class is associated with the selected elements. If *value* is a constant and truthy, then all elements are assigned the specified class, if not already assigned; if falsey, then the class is removed from all selected elements, if assigned. If *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to assign or unassign the specified class on each element.
 
@@ -82,7 +82,7 @@ If *value* is not specified, returns the value of the specified property for the
 
 <a name="text" href="Selections#text">#</a> selection.<b>text</b>([<i>value</i>])
 
-The `text` operator is based on the [[textContent|http://www.w3.org/TR/DOM-Level-3-Core/core.html#Node3-textContent]] property; setting the text content will replace any existing child elements.
+The `text` operator is based on the [textContent](http://www.w3.org/TR/DOM-Level-3-Core/core.html#Node3-textContent "http://www.w3.org/TR/DOM-Level-3-Core/core.html#Node3-textContent") property; setting the text content will replace any existing child elements.
 
 If *value* is specified, sets the text content to the specified value on all selected elements. If *value* is a constant, then all elements are given the same text content; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's text content. A null value will clear the content.
 
@@ -90,7 +90,7 @@ If *value* is not specified, returns the text content for the first non-null ele
 
 <a name="html" href="Selections#html">#</a> selection.<b>html</b>([<i>value</i>])
 
-The `html` operator is based on the [[innerHTML|http://dev.w3.org/html5/spec-LC/apis-in-html-documents.html#innerhtml]] property; setting the inner HTML content will replace any existing child elements. Also, you may prefer to use the `append` or `insert` operators to create HTML content in a data-driven way; this operator is intended for when you want a little bit of HTML, say for rich formatting.
+The `html` operator is based on the [innerHTML](http://dev.w3.org/html5/spec-LC/apis-in-html-documents.html#innerhtml "http://dev.w3.org/html5/spec-LC/apis-in-html-documents.html#innerhtml") property; setting the inner HTML content will replace any existing child elements. Also, you may prefer to use the `append` or `insert` operators to create HTML content in a data-driven way; this operator is intended for when you want a little bit of HTML, say for rich formatting.
 
 If *value* is specified, sets the inner HTML content to the specified value on all selected elements. If *value* is a constant, then all elements are given the same inner HTML content; otherwise, if *value* is a function, then the function is evaluated for each selected element (in order), being passed the current datum `d` and the current index `i`, with the `this` context as the current DOM element. The function's return value is then used to set each element's inner HTML content. A null value will clear the content.
 
@@ -128,7 +128,7 @@ Removes the elements in the current selection from the current document. Returns
 
 Joins the specified array of data with the current selection. The specified *values* is an array of data values (e.g. numbers or objects), or a function that returns an array of values. If a *key* function is not specified, then the first datum in *values* is assigned to the first element in the current selection, the second datum to the second selected element, and so on. When data is assigned to an element, it is stored in the property `__data__` (defined by D3), thus making the data "sticky" so that it is available on re-selection.
 
-The result of the `data` method is the *update* selection; this represents the selected DOM elements that were successfully bound to the specified data elements. The *update* selection also contains a reference to the [enter](Selections#enter) and [exit](Selections#exit) selections, for adding and removing nodes in correspondence with data. The *update* and *enter* selections are returned in data order and the *exit* selection in document order at the time that the selection was queried. For more details, see the short tutorial [Thinking With Joins](http://bost.ocks.org/mike/join/).
+The result of the `data` method is the *update* selection; this represents the selected DOM elements that were successfully bound to the specified data elements. The *update* selection also contains a reference to the [enter](Selections#enter) and [exit](Selections#exit) selections, for adding and removing nodes in correspondence with data. The *update* and *enter* selections are returned in data order and the *exit* selection in document order at the time that the selection was queried. For more details, see the short tutorial [Thinking With Joins](http://bost.ocks.org/mike/join/ "http://bost.ocks.org/mike/join/").
 
 A *key* function **key**([ *d* [, *i* ]]) may be specified to control how data is joined to elements (this replaces the default by-index behavior). The key function returns a string which is used to join a datum with its corresponding element, based on the previously-bound data. For example, if each datum has a unique field `name`, the join might be specified as `.data(data, function(d) { return d.name; })`
 
@@ -138,7 +138,7 @@ The key function is called twice during the data binding process, which proceeds
 
 1.    The *key* function is evaluated on each element of the *values* array - this time with *values* as the `this` context, *values*[`i`] as the first argument `d` and the *values* index `i` as the second argument - and the results are then used to attempt to look up the nodes in the `nodeByKeyValue` collection.  If the lookup is successful, the node is added to the _update selection_, any nodes not queried are added to the exit selection.  Any data elements that failed to find a matching node are used to form the enter selection.  
 
-If a key function is specified, the `data` operator also affects the index of nodes; this index is passed as the second argument `i` to any operator function arguments. However, note that existing DOM elements are not automatically reordered; use [sort](#sort) or [order](#order) as needed. For a more detailed example of how the key function affects the data join, see the tutorial [[A Bar Chart, Part 2|http://bost.ocks.org/mike/bar/2/]].
+If a key function is specified, the `data` operator also affects the index of nodes; this index is passed as the second argument `i` to any operator function arguments. However, note that existing DOM elements are not automatically reordered; use [sort](#sort) or [order](#order) as needed. For a more detailed example of how the key function affects the data join, see the tutorial [A Bar Chart, Part 2](http://bost.ocks.org/mike/bar/2/ "http://bost.ocks.org/mike/bar/2/").
 
 The *values* array specifies the data **for each group** in the selection. Thus, if the selection has multiple groups (such as a [d3.selectAll](#d3_selectAll) followed by a [selection.selectAll](#selectAll)), then *data* should be specified as a function that returns an array (assuming that you want different data for each group). The function will be passed the current group data (or `undefined`) and the index, with the group as the `this` context. 
 For example, you may bind a two-dimensional array to an initial selection, and then bind the contained inner arrays to each subselection. The *values* function in this case is the identity function: it is invoked for each group of child elements, being passed the data bound to the parent element, and returns this array of data.
@@ -257,7 +257,7 @@ If you want the document traversal order to match the selection data order, you 
 
 <a name="filter" href="Selections#filter">#</a> selection.<b>filter</b>(<i>selector</i>)
 
-Filters the selection, returning a new selection that contains only the elements for which the specified *selector* is true. The *selector* may be specified either as a function or as a selector string, such as ".foo". As with other operators, the function is passed the current datum `d` and index `i`, with the `this` context as the current DOM element. Filter should only be called on selections with DOM elements bound, e.g. from [append](Selections#append) or [insert](Selections#insert). To bind elements to only a subset of the data, call the built-in array [[filter|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter]] on the argument to [data](Selections#data). Like the built-in function, D3's filter *does not* preserve the index of the original selection in the returned selection; it returns a copy with elements removed. If you want to preserve the index, use [select](Selections#select) instead. 
+Filters the selection, returning a new selection that contains only the elements for which the specified *selector* is true. The *selector* may be specified either as a function or as a selector string, such as ".foo". As with other operators, the function is passed the current datum `d` and index `i`, with the `this` context as the current DOM element. Filter should only be called on selections with DOM elements bound, e.g. from [append](Selections#append) or [insert](Selections#insert). To bind elements to only a subset of the data, call the built-in array [filter](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/Filter") on the argument to [data](Selections#data). Like the built-in function, D3's filter *does not* preserve the index of the original selection in the returned selection; it returns a copy with elements removed. If you want to preserve the index, use [select](Selections#select) instead. 
 
 For example, to select every element with an odd index (relative to the zero-based index):
 
@@ -297,7 +297,7 @@ If *value* is not specified, returns the bound datum for the first non-null elem
 
 Note: this method was previously called "map". The old name is deprecated.
 
-The `datum` method is useful for accessing HTML5 [custom data attributes](http://www.w3.org/TR/html5/dom.html#custom-data-attribute) with D3. For example, given the following elements:
+The `datum` method is useful for accessing HTML5 [custom data attributes](http://www.w3.org/TR/html5/dom.html#custom-data-attribute "http://www.w3.org/TR/html5/dom.html#custom-data-attribute") with D3. For example, given the following elements:
 
 ```html
 <ul id="list">
@@ -306,13 +306,13 @@ The `datum` method is useful for accessing HTML5 [custom data attributes](http:/
 </ul>
 ```
 
-You can expose the custom data attributes to D3 by setting each element’s data as the built-in [dataset](http://www.w3.org/TR/html5/dom.html#dom-dataset) property:
+You can expose the custom data attributes to D3 by setting each element’s data as the built-in [dataset](http://www.w3.org/TR/html5/dom.html#dom-dataset "http://www.w3.org/TR/html5/dom.html#dom-dataset") property:
 
 ```javascript
 selection.datum(function() { return this.dataset; })
 ```
 
-This can then be used, [for example](http://bl.ocks.org/1323729), to sort elements by username.
+This can then be used, [for example](http://bl.ocks.org/1323729 "http://bl.ocks.org/1323729"), to sort elements by username.
 
 <a name="sort" href="#sort">#</a> selection.<b>sort</b>([<i>comparator</i>])
 
@@ -320,7 +320,7 @@ Sorts the elements in the current selection according to the *comparator* functi
 
 The comparator function, which defaults to [d3.ascending](https://github.com/mbostock/d3/wiki/Arrays#d3_ascending), is passed two elements' data *a* and *b* to compare. It should return either a negative, positive, or zero value. If negative, then *a* should be before *b*; if positive, then *a* should be after *b*; otherwise, *a* and *b* are considered equal and the order is arbitrary. 
 
-Note that the sort is not guaranteed to be stable; however, it is guaranteed to have the same behavior as your browser's built-in [[sort|https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort]] method on arrays.
+Note that the sort is not guaranteed to be stable; however, it is guaranteed to have the same behavior as your browser's built-in [sort](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort") method on arrays.
 
 <a name="order" href="#order">#</a> selection.<b>order</b>()
 
@@ -334,7 +334,7 @@ Adds or removes an event *listener* to each element in the current selection, fo
 
 If an event listener was already registered for the same type on the selected element, the existing listener is removed before the new listener is added. To register multiple listeners for the same event type, the type may be followed by an optional namespace, such as "click.foo" and "click.bar". The first part of the *type* ("click" for example) is used to register the event listener (using element.addEventListener()) and methods are added on the selected elements as __onclick.foo and __onclick.bar. To remove a listener, pass null as the *listener*. To remove all listeners for a particular event type, pass null as the *listener*, and `.type` as the *type*, e.g. `selection.on(".foo", null)`.
 
-An optional *capture* flag may be specified, which corresponds to the W3C [useCapture flag](http://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-registration): "After initiating capture, all events of the specified type will be dispatched to the registered EventListener before being dispatched to any EventTargets beneath them in the tree. Events which are bubbling upward through the tree will not trigger an EventListener designated to use capture."
+An optional *capture* flag may be specified, which corresponds to the W3C [useCapture flag](http://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-registration "http://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-registration"): "After initiating capture, all events of the specified type will be dispatched to the registered EventListener before being dispatched to any EventTargets beneath them in the tree. Events which are bubbling upward through the tree will not trigger an EventListener designated to use capture."
 
 If *listener* is not specified, returns the currently-assigned listener for the specified *type*, if any.
 
@@ -344,25 +344,25 @@ Note that while listeners will always see the latest datum (`d`) for their eleme
 
 Stores the current event, if any. This global is registered during an event listener callback with the [on](Selections#on) operator. The current event is reset after the listener is notified in a `finally` block. This allows the listener function to have the same form as other operator functions, being passed the current datum `d` and index `i`.
 
-The `d3.event` object is a [[DOM event|https://developer.mozilla.org/en-US/docs/DOM/event]] and implements the standard event fields like `timeStamp` and `keyCode` as well as methods like `preventDefault()` and `stopPropagation()`. While you can use the native event's [[pageX|https://developer.mozilla.org/en/DOM/event.pageX]] and [[pageY|https://developer.mozilla.org/en/DOM/event.pageY]], it is often more convenient to transform the event position to the local coordinate system of the container that received the event. For example, if you embed an SVG in the normal flow of your page, you may want the event position relative to the top-left corner of the SVG image. If your SVG contains transforms, you might also want to know the position of the event relative to those transforms. Use the [d3.mouse](#d3_mouse) operator for the standard mouse pointer, and use [d3.touches](#d3_touches) for multitouch events on iOS.
+The `d3.event` object is a [DOM event](https://developer.mozilla.org/en-US/docs/DOM/event "https://developer.mozilla.org/en-US/docs/DOM/event") and implements the standard event fields like `timeStamp` and `keyCode` as well as methods like `preventDefault()` and `stopPropagation()`. While you can use the native event's [pageX](https://developer.mozilla.org/en/DOM/event.pageX "https://developer.mozilla.org/en/DOM/event.pageX") and [pageY](https://developer.mozilla.org/en/DOM/event.pageY "https://developer.mozilla.org/en/DOM/event.pageY"), it is often more convenient to transform the event position to the local coordinate system of the container that received the event. For example, if you embed an SVG in the normal flow of your page, you may want the event position relative to the top-left corner of the SVG image. If your SVG contains transforms, you might also want to know the position of the event relative to those transforms. Use the [d3.mouse](#d3_mouse) operator for the standard mouse pointer, and use [d3.touches](#d3_touches) for multitouch events on iOS.
 
 <a name="d3_mouse" href="#d3_mouse">#</a> d3.<b>mouse</b>(<i>container</i>)
 
-Returns the *x* and *y* coordinates of the current [d3.event](#d3_event), relative to the specified *container*. The container may be an HTML or SVG container element, such as an [[svg:g|http://www.w3.org/TR/SVG/struct.html#Groups]] or [[svg:svg|http://www.w3.org/TR/SVG/struct.html#SVGElement]]. The coordinates are returned as a two-element array [*x*, *y*].
+Returns the *x* and *y* coordinates of the current [d3.event](#d3_event), relative to the specified *container*. The container may be an HTML or SVG container element, such as an [svg:g](http://www.w3.org/TR/SVG/struct.html#Groups "http://www.w3.org/TR/SVG/struct.html#Groups") or [svg:svg](http://www.w3.org/TR/SVG/struct.html#SVGElement "http://www.w3.org/TR/SVG/struct.html#SVGElement"). The coordinates are returned as a two-element array [*x*, *y*].
 
 <a name="d3_touch" href="#d3_touch">#</a> d3.<b>touch</b>(<i>container</i>[, <i>touches</i>], <i>identifier</i>)
 
-Returns the *x* and *y* coordinates of the touch with the specified identifier associated with the current [d3.event](#d3_event), relative to the specified *container*. If *touches* is not specified, defaults to the current event’s [[changedTouches|http://developer.apple.com/library/safari/documentation/UserExperience/Reference/TouchEventClassReference/TouchEvent/TouchEvent.html#//apple_ref/javascript/instp/TouchEvent/changedTouches]]. The container may be an HTML or SVG container element, such as an svg:g or svg:svg. The coordinates are returned as an array of two-element arrays [ [ *x1*, *y1*], [ *x2*, *y2*], … ]. If there is no touch with the specified identifier in *touches*, returns null; this can be useful for ignoring touchmove events where the only some touches have moved.
+Returns the *x* and *y* coordinates of the touch with the specified identifier associated with the current [d3.event](#d3_event), relative to the specified *container*. If *touches* is not specified, defaults to the current event’s [changedTouches](http://developer.apple.com/library/safari/documentation/UserExperience/Reference/TouchEventClassReference/TouchEvent/TouchEvent.html#//apple_ref/javascript/instp/TouchEvent/changedTouches "http://developer.apple.com/library/safari/documentation/UserExperience/Reference/TouchEventClassReference/TouchEvent/TouchEvent.html#//apple_ref/javascript/instp/TouchEvent/changedTouches"). The container may be an HTML or SVG container element, such as an svg:g or svg:svg. The coordinates are returned as an array of two-element arrays [ [ *x1*, *y1*], [ *x2*, *y2*], … ]. If there is no touch with the specified identifier in *touches*, returns null; this can be useful for ignoring touchmove events where the only some touches have moved.
 
 <a name="d3_touches" href="#d3_touches">#</a> d3.<b>touches</b>(<i>container</i>[, <i>touches</i>])
 
-Returns the *x* and *y* coordinates of each touch associated with the current [d3.event](#d3_event), based on the [[touches|http://developer.apple.com/library/safari/documentation/UserExperience/Reference/TouchEventClassReference/TouchEvent/TouchEvent.html#//apple_ref/javascript/instp/TouchEvent/touches]] attribute, relative to the specified *container*. The container may be an HTML or SVG container element, such as an svg:g or svg:svg. The coordinates are returned as an array of two-element arrays [ [ *x1*, *y1*], [ *x2*, *y2*], … ]. If *touches* is specified, returns the positions of the specified touches; if *touches* is not specified, it defaults to the `touches` property on the current event.
+Returns the *x* and *y* coordinates of each touch associated with the current [d3.event](#d3_event), based on the [touches](http://developer.apple.com/library/safari/documentation/UserExperience/Reference/TouchEventClassReference/TouchEvent/TouchEvent.html#//apple_ref/javascript/instp/TouchEvent/touches "http://developer.apple.com/library/safari/documentation/UserExperience/Reference/TouchEventClassReference/TouchEvent/TouchEvent.html#//apple_ref/javascript/instp/TouchEvent/touches") attribute, relative to the specified *container*. The container may be an HTML or SVG container element, such as an svg:g or svg:svg. The coordinates are returned as an array of two-element arrays [ [ *x1*, *y1*], [ *x2*, *y2*], … ]. If *touches* is specified, returns the positions of the specified touches; if *touches* is not specified, it defaults to the `touches` property on the current event.
 
 <a name="transition" href="Selections#transition">#</a> selection.<b>transition</b>([<i>name</i>])
 
-Starts a [[transition|Transitions]] for the current selection. Transitions behave much like selections, except operators animate smoothly over time rather than applying instantaneously.
+Starts a [transition](Transitions) for the current selection. Transitions behave much like selections, except operators animate smoothly over time rather than applying instantaneously.
 
-Transitions of the same name are [exclusive per-element](http://bost.ocks.org/mike/transition/). When the new transition starts on a given element, it will interrupt an active transition of the same name on the element, if any. If a *name* is not specified, the empty name (“”) is used. Note that transitions with a zero delay do not start until the next timer tick, which is typically about 17ms after scheduling.
+Transitions of the same name are [exclusive per-element](http://bost.ocks.org/mike/transition/ "http://bost.ocks.org/mike/transition/"). When the new transition starts on a given element, it will interrupt an active transition of the same name on the element, if any. If a *name* is not specified, the empty name (“”) is used. Note that transitions with a zero delay do not start until the next timer tick, which is typically about 17ms after scheduling.
 
 <a name="interrupt" href="#interrupt">#</a> selection.<b>interrupt</b>([<i>name</i>])
 
