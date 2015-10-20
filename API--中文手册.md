@@ -369,11 +369,11 @@ D3 API总览
 * [chord](SVG-Shapes#_chord) - 在弦图中生成一个二次贝塞尔曲线连接两个弧。
 * [d3.svg.arc](SVG-Shapes#arc) - 新建一个弧度生成器。
 * [d3.svg.area.radial](SVG-Shapes#area_radial) - 新建一个径向面积生成器。
-* [d3.svg.area](SVG-Shapes#area) - 新建一个弧度生成器。
+* [d3.svg.area](SVG-Shapes#area) - 新建一个面积生成器。
 * [d3.svg.chord](SVG-Shapes#chord) - 新建一个弦生成器。
 * [d3.svg.diagonal.radial](SVG-Shapes#diagonal_radial) - 新建一个径向对角线生成器。
 * [d3.svg.diagonal](SVG-Shapes#diagonal) - 新建一个对角线生成器。
-* [d3.svg.line.radial](SVG-Shapes#line_radial) - 新建一个径向线生成器。
+* [d3.svg.line.radial](SVG-Shapes#line_radial) - 新建一个放射式的线段生成器。
 * [d3.svg.line](SVG-Shapes#line) - 新建一个线生成器。
 * [d3.svg.symbolTypes](SVG-Shapes#symbolTypes) - 一组符号类型。
 * [d3.svg.symbol](SVG-Shapes#symbol) - 新建一个符号生成器。
