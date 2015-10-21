@@ -78,9 +78,9 @@ The following time intervals are considered for automatic ticks:
 
 This set of time intervals is somewhat arbitrary and additional values may be added in the future.
 
-<a name="tickFormat" href="Time-Scales#tickFormat">#</a> scale.<b>tickFormat</b>(<i>count</i>)
+<a name="tickFormat" href="Time-Scales#tickFormat">#</a> scale.<b>tickFormat</b>()
 
-Returns a [[time format|Time-Formatting]] function suitable for displaying a tick value. The specified *count* should have the same value as the count that is used to generate the tick values. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate display based on the input date.
+Returns a [[time format|Time-Formatting]] function suitable for displaying a tick value. You don't have to use the scale's built-in tick format, but it automatically computes the appropriate display based on the input date.
 
 The following time formats are considered:
 
