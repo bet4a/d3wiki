@@ -402,7 +402,6 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
          <td>Small Multiple Circle Packing</br>
              <a href="http://visualcinnamon.com/occupations" target="_blank"><img width="133"       src="https://raw.githubusercontent.com/nbremer/thumbnails/master/Small%20Multiple%20Packing.png"></a></td>
 <td>Nested Layouts<br><br><a href="http://emptypipes.org/2015/10/11/layouts-upon-layouts/"><img width="133" align="center" src="http://emptypipes.org/img/layouts_upon_layouts_itemprop.png"></a></td>
-         <td></td>
     </tr>
 
 </table>
