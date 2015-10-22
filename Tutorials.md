@@ -54,6 +54,7 @@ Please feel free to add links to your work!
 * [The Force-Directed Relationship Diagram with D3.js (Chinese)](http://www.ourd3js.com/wordpress/?p=606) by Mantouhuahua
 * [Introduction to D3.js(Traditional Chinese)](http://blog.infographics.tw/2015/03/d3js-the-introduction/) by infographics.tw
 * [Learn D3.js from scratch(Italian)](http://www.neposlab.com/series/d3js/) by Carlo
+* [Playing with React & D3.js](https://github.com/freddyrangel/playing-with-react-and-d3) by Freddy Rangel
 
 ### Specific Techniques
 
