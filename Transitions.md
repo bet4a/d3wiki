@@ -12,7 +12,9 @@ For more on transitions, read the [Working with Transitions](http://bost.ocks.or
 
 ## Starting Transitions
 
-Transitions are created using the [[transition|Selections#transition]] operator on a selection. Transitions start automatically upon creation after a delay which defaults to zero; however, note that a zero-delay transition actually starts after a minimal (~17ms) delay, pending the first timer callback. Transitions have a default duration of 250ms.
+Transitions are created using the [[transition|Selections#transition]] operator on a selection. Transitions start automatically upon creation after a delay which defaults to zero; however, note that a zero-delay transition actually starts after a minimal (~17ms) delay, pending the first timer callback. Transitions have a default duration of 250ms.  
+
+If another transition is already controlling a particular attribute of a particular node and a new transition is applied with the same target, the initial value of the target attribute will be the _next_ value placed on it by the _pre-existing transition_.  Any change to the value of the target attribute, placed on it while setting the new transition, will be _over-written_ by the last tick of the pre-existing transition.  In order to control the initial state of an interrupting transition, the [selection.interrupt](Selections#interrupt) method must be called first, as stated above, to explicitly clear any pre-existing transitions.  The default behaviour therefore, is that an interrupting transition will continue smoothly from the last step of the interrupted transition.
 
 <a name="d3_transition" href="#d3_transition">#</a> d3.<b>transition</b>([<i>selection</i>], [<i>name</i>])
 
