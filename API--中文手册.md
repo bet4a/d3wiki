@@ -159,7 +159,7 @@ D3 API总览
 * [d3.random.irwinHall](数学#random_irwinHall) - 生成具有Irwin–Hall分布规律的随机数。
 * [d3.random.logNormal](数学#random_logNormal) - 生成具有对数正态分布规律的随机数。
 * [d3.random.normal](数学#random_normal) - 生成具有正态分布规律的随机数。
-* [d3.transform](数学#d3_transform) - 计算2D放射变换的标准形式。
+* [d3.transform](数学#d3_transform) - 计算2D仿射变换的标准形式。
 
 ### [请求](请求)
 
