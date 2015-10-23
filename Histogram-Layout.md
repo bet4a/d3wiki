@@ -37,4 +37,4 @@ Lastly, if a binning *function* is specified, it is invoked when the layout is p
 
 <a name="frequency" href="Histogram-Layout#frequency">#</a> histogram.<b>frequency</b>([<i>frequency</i>])
 
-Specifies whether the histogram's `y` value is a count (frequency) or a probability (density); the default is frequency. If *frequency* is not specified, returns the current frequency boolean.
+Specifies the meaning of the bin’s *y*-value. If *frequency* is true, which is the default, the *y*-value represents the count of elements in the bin (frequency). If false, it represents the probability of a random element in the sample population being in that bin (probability). Note that this is a *probability*, not a *probability density*, and so for [irregular histograms](http://bl.ocks.org/mbostock/1624660), you must normalize the *y*-value by the bin width (`bin.y / bin.dx`) for the area of the displayed bar to be proportional to the probability. If *frequency* is not specified, returns the current frequency boolean.
