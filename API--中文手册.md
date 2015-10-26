@@ -244,10 +244,10 @@ D3 API总览
 
 ## [d3.scale (比例尺)](比例尺)
 
-### [定量比例尺](Quantitative-Scales#quantitative)
+### [数值比例尺](Quantitative-Scales#quantitative)
 
 * [d3.scale.identity](Quantitative-Scales#identity) - 构建一个线性恒等比例尺。
-* [d3.scale.linear](Quantitative-Scales#linear) - 构建一个线性定量比例尺。
+* [d3.scale.linear](Quantitative-Scales#linear) - 构建一个线性比例尺。
 * [d3.scale.log](Quantitative-Scales#log) - 构建一个对数比例尺。
 * [d3.scale.pow](Quantitative-Scales#pow) - 构建一个指数比例尺。
 * [d3.scale.quantile](Quantitative-Scales#quantile) - 构建一个分位数比例尺。
