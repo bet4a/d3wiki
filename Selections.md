@@ -110,7 +110,7 @@ selection.enter().append(function(d) {
 ```  
 When the *name* is specified as a string, it may have a namespace prefix of the form "namespace:tag". For example, "svg:text" will create a "text" element in the SVG namespace. By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to [d3.ns.prefix](Namespaces#prefix). If no namespace is specified, then the namespace will be inherited from the enclosing element; or, if the name is one of the known prefixes, the corresponding namespace will be used (for example, "svg" implies "svg:svg").
 
-<a name="insert" href="Selections#insert">#</a> selection.<b>insert</b>(<i>name</i>[, <i>before</i>])
+<a name="insert" href="Selections#insert">#</a> selection.<b>insert</b>(<i>name</i>,[<i>before</i>])
 
 Inserts a new element with the specified *name* before the element matching the specified *before* selector, for each element in the current selection, returning a new selection containing the inserted elements. If the before selector does not match any elements, then the new element will be the last child as with [append](Selections#append). Each new element inherits the data of the current elements (if any), in the same manner as [select](Selections#select) for subselections.
 
