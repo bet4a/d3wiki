@@ -125,7 +125,7 @@ If *size* is not specified, returns the current size, which defaults to 1×1. No
  y = d3.scale.linear().range([0, height]);
 
 // then apply the scaling for each calculated coordinate
-svg.selectAll("rect").(nodes)
+svg.selectAll("rect").data(nodes)
 		    .enter().append("svg:rect")
 		    .attr("x", function(d) { return x(d.x);})
 		    .attr("y", function(d) { return y(d.y);})
