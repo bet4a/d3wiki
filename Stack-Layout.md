@@ -116,7 +116,7 @@ See also [d3.range](Arrays#d3_range).
 
 <a name="x" href="Stack-Layout#x">#</a> stack.<b>x</b>([<i>accessor</i>])
 
-Specifies how to access the *x*-coordinate of each value's position. If *accessor* is specified, sets the accessor to the specified function. If *accessor* is not specified, returns the current function, which by default assumes that each input value has an x attribute:
+Specifies how to access the *x*-coordinate of each value’s position. If *accessor* is specified, sets the accessor to the specified function. If *accessor* is not specified, returns the current function, which by default assumes that each input value has an x attribute:
 
 ```javascript
 function x(d) {
@@ -124,7 +124,9 @@ function x(d) {
 }
 ```
 
-The *x*-accessor is invoked for each input value, for each input layer, being passed the current data (d) and index (i). The return value of the accessor must be a number. Although the *x*-accessor is invoked for all layers (not just the bottommost layer), the stack layout assumes that the *x*-coordinates of all layers are consistent. In other words, the stack layout currently requires that the layers be homogenous: each must contain the same number of values at the same *x*-coordinates. If your data is not so regular, you will need to reinterpolate the data before computing the stack.
+The *x*-accessor is invoked for each input value, for each input layer, being passed the current data (d) and index (i). The return value of the accessor must be a number.
+
+The *x*-coordinate only affects the behavior of the “wiggle” [offset](#offset); changing this accessor does *not* affect how data is grouped into stacks. Although the *x*-accessor is invoked for all layers (not just the bottommost layer), the stack layout assumes that the *x*-coordinates of all layers are consistent. In other words, the stack layout requires that layers be homogenous: each must contain the same number of values, at the same *x*-coordinates. If your data is not so regular, you will need to reinterpolate the data before computing the stack.
 
 <a name="y" href="Stack-Layout#y">#</a> stack.<b>y</b>([<i>accessor</i>])
 
