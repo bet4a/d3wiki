@@ -150,6 +150,8 @@ Please feel free to add links to your work!
 * [Auckland d3-js](http://www.meetup.com/Auckland-d3-js/)
 * [Bangalore d3.js User Group](http://www.meetup.com/Bangalore-d3-js-User-Group/)
 * [Boulder-Denver D3.js and Data Visualization] (http://www.meetup.com/Boulder-Denver-D3-and-Data-Visualization/)
+* [Taipei D3.js Meetup](http://www.meetup.com/Taipei-D3-js-Meetup/)
+
 
 ## Research Papers
 
