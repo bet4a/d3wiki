@@ -2,7 +2,7 @@
 
 ## Resources
 
-* [Introduction](http://d3js.org/)
+* [Introduction](https://d3js.org/)
 * [Examples Gallery](/mbostock/d3/wiki/Gallery)
 * [Tutorials and Talks](/mbostock/d3/wiki/Tutorials)
 * [API Reference](/mbostock/d3/wiki/API-Reference)

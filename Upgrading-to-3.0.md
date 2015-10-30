@@ -7,10 +7,10 @@ D3 3.0, released December 2012, is the first major release since 2.0 was release
 If you’re using the official hosted copy of D3, simply **replace d3.v2.min.js with d3.v3.min.js** in your script tag, like this:
 
 ```html
-<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 ```
 
-(There’s also a [d3.v3.js](http://d3js.org/d3.v3.js) for development.) Also, check that you have the DOCTYPE and charset set correctly on your HTML page:
+(There’s also a [d3.v3.js](https://d3js.org/d3.v3.js) for development.) Also, check that you have the DOCTYPE and charset set correctly on your HTML page:
 
 ```html
 <!DOCTYPE html>
@@ -154,6 +154,6 @@ The aliases **d3.svg.mouse and d3.svg.touches have been removed**; use [d3.mouse
 
 ## Other Miscellany
 
-The main library is now called `d3.js` in the repo, but still `d3.v3.js` on [d3js.org](http://d3js.org/). The official examples are now hosted on [bl.ocks.org](http://bl.ocks.org), rather than the git repo, so that they are easier to find and fork.
+The main library is now called `d3.js` in the repo, but still `d3.v3.js` on [d3js.org](https://d3js.org/). The official examples are now hosted on [bl.ocks.org](http://bl.ocks.org), rather than the git repo, so that they are easier to find and fork.
 
 [UglifyJS2](https://github.com/mishoo/UglifyJS2) is now used for minification; run `npm install` to ensure you have the latest version.
