@@ -50,7 +50,7 @@ Download the latest version here:
 Or, to link directly to the latest release, copy this snippet:
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 ```
 
 **Note:** the non-minified source code contains non-ASCII characters and must be served with UTF-8 encoding, either via the `charset="utf-8"` attribute on the script tag or by adding `<meta charset="utf-8">` to the top of the page. If you see a SyntaxError: Unexpected token ILLEGAL at `var Ï€ = Math.PI`, it is because you are serving the non-minified source with the incorrect ISO-8859-1 encoding. See this [StackOverflow answer](http://stackoverflow.com/a/14301241) for more information.
