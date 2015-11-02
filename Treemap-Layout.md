@@ -19,10 +19,13 @@ Runs the treemap layout, returning the array of nodes associated with the specif
 * children - the array of child nodes, or null for leaf nodes.
 * value - the node value, as returned by the value accessor.
 * depth - the depth of the node, starting at 0 for the root.
+* area - the computed pixel area of this node. (TODO: remove?)
 * x - the minimum *x*-coordinate of the node position.
 * y - the minimum *y*-coordinate of the node position.
+* z - true if this cell is a horizontal subdivision. (TODO: remove?)
 * dx - the *x*-extent of the node position.
 * dy - the *y*-extent of the node position.
+
 
 Note that this will modify the nodes that you pass in!
 
