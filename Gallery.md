@@ -87,11 +87,14 @@ Welcome to the **D3 gallery**! More examples are available on [bl.ocks.org/mbost
         <td>D3 Mobile Application<br><a href="http://www.brightpointinc.com/d3-mobile-web-application/" title="D3 Mobile Application"><img width="133" src="http://www.brightpointinc.com/interactive/images/D3_Mobile_202x202.png"></a></td>
         <td>Radial Progress Component<br><a href="http://www.brightpointinc.com/download/radial-progress-source-code/" title="radial progress component d3.js"><img width="133" src="http://www.brightpointinc.com/clients/brightpointinc.com/library/radialProgress/image.gif"></a></td>
         <td>Autocomplete Component<br><a href="http://www.brightpointinc.com/download/autocomplete-source-code/" title="autocomplete component d3.js"><img width="133" src="http://www.brightpointinc.com/clients/brightpointinc.com/library/autocomplete/image.gif"></a></td>
-        <td>Koalas to the Max<br><a href="http://www.koalastothemax.com/"><img width="133" src="http://d3js.org/ex/koalas.png"></a></td>
+        <td>NFL Predictions<br><a href="http://www.brightpointinc.com/2015-nfl-predictions/" title="2015 NFL Predictions"><img width="133" src="http://www.brightpointinc.com/labs/nfl_predictions/assets/nfl_predictions.png"></a></td>
     </tr>
 
 
     <tr valign="top">
+
+        <td>Koalas to the Max<br><a href="http://www.koalastothemax.com/"><img width="133" src="http://d3js.org/ex/koalas.png"></a></td>
+
         <td>Sankey Creator<br><a href="http://infocaptor.com/sankey-diagram-software.php" title="Sankey Visualization Builder"><img width="133" src="http://infocaptor.com/img/sankey_infocaptor.gif"></a></td>
         
         <td>Convert any page into bubbles<br><a href="http://www.infocaptor.com/bubble-my-page"><img width="133" src="http://www.infocaptor.com/wikipedia_visualization.png"></a></td>
