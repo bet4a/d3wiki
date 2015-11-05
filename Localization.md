@@ -48,7 +48,7 @@ A locale for Russian (ru_RU) might be defined as:
 ```json
 {
   "decimal": ",",
-  "thousands": "\xa0",
+  "thousands": "\u00A0",
   "grouping": [3],
   "currency": ["", " руб."],
   "dateTime": "%A, %e %B %Y г. %X",
