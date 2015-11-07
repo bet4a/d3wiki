@@ -73,7 +73,7 @@ or for Python 3+
 
     python -m http.server 8888 &
 
-If you have have PHP installed you could try
+If you have PHP installed you could try
 
     php -S localhost:8888
 
